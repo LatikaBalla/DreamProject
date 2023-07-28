@@ -1,0 +1,17 @@
+{
+ 
+    "dashboard": {
+        "accountdetials": "[data-testid='tabacc-1']",
+        "buildings": "[data-testid='tabacc-2']",
+        "tableaccount": ".MuiTable-root",
+        "addnewbtn": "[data-testid='AddIcon']",
+        "newContactTitle": "Add New Contact",
+        "title": "#title",
+        "fullname": "#full_name",
+        "email": "#email",
+        "phone": "#phone",
+        "cellnumber": "#cell_number",
+        "userrole": "#user_role",
+        "savebtn": "[type='submit']"
+    }
+}
