@@ -5,7 +5,14 @@
         "buildings": "[data-testid='tabacc-2']",
         "tableaccount": ".MuiTable-root",
         "addnewbtn": "[data-testid='AddIcon']",
-        "newContactTitle": "Add New Contact",
+        "newContactTitle": "Add New Contact",     
+        "editIcon":"[data-testid='EditOutlinedIcon']",
+        "deleteIcon":"[data-testid='DeleteOutlineOutlinedIcon']",
+        "conDeletebtn":"[type='button']",
+        "sliderMenu":".css-htxx1b",
+        "terms":".MuiToolbar-root > .MuiButton-root"
+    },
+    "newaccount":{
         "title": "#title",
         "fullname": "#full_name",
         "email": "#email",
@@ -13,5 +20,16 @@
         "cellnumber": "#cell_number",
         "userrole": "#user_role",
         "savebtn": "[type='submit']"
+    },
+    "edit":{
+        "title": "#title",
+        "fullname": "#name",
+        "email": "#email",
+        "phone": "#phone",
+        "cellnumber": "#cellphone",
+        "userrole": "#mui-component-select-name",
+        "userstatus":"#mui-component-select-role",
+        "editsubmit": "[data-testid='btnNewDataSubmit']"
+
     }
 }

@@ -1,3 +1,24 @@
 {
- 
+ "newaccount":{
+    "title": "Mr",
+    "fullname": "Demo Test",
+    "email": "@gmail.com",
+    "phone": "1231231231",
+    "cellnumber": "1231234121",
+    "userrole": "[data-value='1']"
+ },
+ "edit":{
+    "title": "Mrs",
+    "fullname": "Edit Test",
+    "email": "@gmail.com",
+    "phone": "24234234",
+    "cellnumber": "32387423",
+    "userrole": "[data-value='3']",
+    "userstatus":"[data-value='Inactive']"
+    
+ },
+ "delete":{
+    "fullname":"Delete Test"
+ }
+
 }
