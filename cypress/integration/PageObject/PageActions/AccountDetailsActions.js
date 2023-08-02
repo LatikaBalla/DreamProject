@@ -6,10 +6,24 @@ const tdata = require("../../../testData.json");
 export class AccountDetailsActions {
     constructor() {
         globalThis.dash = new AccountDetailsElements();
-        globalThis.dash1 = new DashboardElements 
+        globalThis.dash1 = new DashboardElements()
     }
-    closeTermsOfServiceWindow(){
-        dash1.termsElement().click({force:true})
+    closeTermsOfServiceWindow() {
+        dash1.termsElement().click({ force: true })
+    }
+    verifyTitleAccountDetails() {
+        dash.titleAccountElement().should('be.visible')
+    }
+    verifyFiltersVisible() {
+        dash.filtersElement().should('be.visible')
+    }
+    verifyMyaccountDeatilsVisbile() {
+        dash.accountnameElement().should('be.visible')
+        dash.accountnoElement().should('be.visible')
+        dash.accountcreditElement().should('be.visible')
+        dash.billingaddressElement().should('be.visible')
+        dash.shippingaddressElement().should('be.visible')
+        dash.accountmanagerElement().should('be.visible')
     }
     tableAccountVisible() {
         dash.tableAccountElement().should('be.visible')
@@ -93,13 +107,37 @@ export class AccountDetailsActions {
         cy.wait(2000)
         cy.get('tbody tr').eq(0).find('td').eq(0).should('not.contain', tdata.delete.fullname)
     }
-    enterSearchValue(){
+    enterSearchValue() {
         dash.searchElement().type(tdata.search.fullname)
     }
-    verifySearchResult(){
+    verifySearchResult() {
         cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.search.fullname)
     }
-
+    clickOnMoreFiltersButton() {
+        dash.morefiltersbtnElement().click()
+    }
+    clickOnAddFilterGroup() {
+        dash.addfilterElement().click()
+    }
+    selectFieldName() {
+        dash.fieldnameElement().select('email')
+    }
+    selectfieldOperation() {
+        dash.fieldoperationElement().select("does_not_contain")
+    }
+    enterFieldValueSearchBox() {
+        dash.fieldvalueElement().type('@gmail.com')
+    }
+    clickOnApplyButton() {
+        dash.applybtnElement().click()
+    }
+    clickOnClearFiltersButton() {
+        dash.clearfilterbtnElement().click()
+    }
+    verifyResultAfterFilter(){
+        cy.wait(2000)
+        cy.get('tbody tr td').should('not.contain',"@gmail.com")
+    }
 }
 
 export default AccountDetailsActions 

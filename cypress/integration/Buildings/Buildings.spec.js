@@ -68,7 +68,7 @@ And ('Enter Initial for state and Country for shipping',()=>{
 And ('Click on save button',()=>{
     build.clickOnSaveButton() 
 })
-Then ('Verify the account details added in table',()=>{
+Then ('Verify the builing details added in table',()=>{
 
 })
 And ('Click on Edit Icon',()=>{
@@ -100,9 +100,33 @@ Then ('Click on Confirm Delete button',()=>{
 And ('Verify the record is deleted successfully',()=>{
 
 })
+Then ('Click on More filters',()=>{
+    build.clickOnMoreFiltersButton()
+}) 
+And ('Click on Add Filters Group',()=>{
+    build.clickOnAddFilterGroup()
+}) 
+Then ('Select Field name and Field operation',()=>{
+    build.selectFieldName()
+    build.selectfieldOperation()
+}) 
+And ('Enter the Search value in search box',()=>{
+    build.enterFieldValueSearchBox()
+})  
+Then ('Click on Apply Button',()=>{
+    build.clickOnApplyButton() 
+}) 
+And ('Verify the Results in the table',()=>{
+    build.verifyResultAfterFilter()
+}) 
+Then ('Click on Clear filter',()=>{
+    build.clickOnClearFiltersButton()
+}) 
 Then ('Enter the building name in search box',()=>{
     build.enterInSearchBox()
 })
 And ('Verify the record in searching history',()=>{
+    cy.wait(2000)
     build.verifySearchResult()
 })
+

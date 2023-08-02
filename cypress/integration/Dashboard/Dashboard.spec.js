@@ -21,6 +21,9 @@ Then('I should be redirected to the dashboard page',  ()=> {
 And('Verify the Title of dashborad Page',  ()=> {
     cy.title().should('eq', 'Account Dashboard')
 })
+Then ('Verify the logo should be visible',()=>{
+    dash.verifyLogoVisible()
+})
 Then ('My Account Detail tab should be visible',()=>{
     dash.myAccountDetailsTabVisible()  
 })

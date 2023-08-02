@@ -1,7 +1,7 @@
 import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 import { AccountDetailsActions } from '../PageObject/PageActions/AccountDetailsActions'
 
-const dash = new AccountDetailsActions()
+const acc = new AccountDetailsActions()
 Cypress.on("uncaught:exception", () => {
   return false;
 });
@@ -13,100 +13,114 @@ When('I should Sign In into the application',  ()=> {
 })
 Then ('close the terms of service window',()=>{
     cy.wait(8000)
-    dash.closeTermsOfServiceWindow()   
+    acc.closeTermsOfServiceWindow()   
 })
-Then('I should be redirected to the dashboard page',  ()=> {
-    cy.url().should('include', '/') 
+Then ('My account Details should be visible',()=>{
+    acc.verifyMyaccountDeatilsVisbile()
 })
-And('Verify the Title of dashborad Page',  ()=> {
-    cy.title().should('eq', 'Account Dashboard')
+And ('Verify the Title of Account Details Page',()=>{
+    acc.verifyTitleAccountDetails()
 })
-Then ('My Account Detail tab should be visible',()=>{
-    dash.myAccountDetailsTabVisible()  
+Then ('Filters of account deatils should be visible',()=>{
+    acc.verifyFiltersVisible()
 })
-And ('Building tab should be visible',()=>{
-    dash.buildingTabVisible() 
-})
-And ('Table for my account deatils should be visible',()=>{
-    dash.tableAccountVisible()
-})
-Then ('Slider Menu should be visible',()=>{
-    dash.sliderMenuvisible()
+And ('Table for account deatils should be visible',()=>{
+    acc.tableAccountVisible()
 })
 Then ('I should click on Add New button',()=>{
-    dash.clickOnAddNewbutton()
+    acc.clickOnAddNewbutton()
 })
 And ('Verify the tilte of Add New Contact page',()=>{
-    dash.verifyNewContactTitle()
+    acc.verifyNewContactTitle()
 })
 Then ('Enter title, full name and valid Email',()=>{
-    dash.enterTitle()  
-    dash.enterFullname()
-    dash.enterEmail()
+    acc.enterTitle()  
+   acc.enterFullname()
+    acc.enterEmail()
 })
 And ('Enter Phone and Cell Number',()=>{  
-    dash.enterPhone()
-    dash.enterCellNumber()
+    acc.enterPhone()
+    acc.enterCellNumber()
 })
 Then('Select User Role from Dropdown List',()=>{
-    dash.selectUserRole()
+    acc.selectUserRole()
 })
 And ('Click on save button',()=>{
-    dash.clickOnASaveButton()
+    acc.clickOnASaveButton()
 })
 Then('Verify the account details added in table',()=>{
-    dash.verifyRecordTable()
+   acc.verifyRecordTable()
 })
 And ('Click on Edit Icon',()=>{
-    dash.clickOnEditIcon()
+    acc.clickOnEditIcon()
     cy.wait(2000)
 })
 Then ('I should edit title, full name',()=>{
-    dash.editTitle() 
-    dash.editFullname()
+    acc.editTitle() 
+    acc.editFullname()
 })
 And ('I should edit Phone and Cell Number and user role',()=>{
-    dash.editCellNumber()
-    dash.editPhone()
-    dash.editUserRole()
+    acc.editCellNumber()
+    acc.editPhone()
+    acc.editUserRole()
 })
 Then ('I edit User Status to inactive',()=>{
-    dash.editUserStatus()
+    acc.editUserStatus()
 })
 Then ('Click on Submit button',()=>{
-    dash.clickSubmitForUpdate()
+    acc.clickSubmitForUpdate()
 })
 And ('Verify the Record has been updated Meassage',()=>{
-    dash.verfifyDataUpdatedMessage()
+    acc.verfifyDataUpdatedMessage()
 })
 Then('Enter title, full name and valid Email for Delete',()=>{
-    dash.enterTitle()
-    dash.enterFullnameDelete()
-    dash.enterEmail()
+    acc.enterTitle()
+    acc.enterFullnameDelete()
+    acc.enterEmail()
 })
 And ('Click on Delete Icon',()=>{
     cy.wait(2000)
-    dash.clickDeleteIcon()
+    acc.clickDeleteIcon()
 })
 Then ('Click on Confirm Delete button',()=>{
-    dash.clickConfirmDeleteButton()
+    acc.clickConfirmDeleteButton()
 })
 And ('Verify the record is deleted successfully',()=>{
-    dash.verifyRecordDeleted()
+   acc.verifyRecordDeleted()
 })
-
 Then ('Enter title, full name and valid Email for Search',()=>{
-    dash.enterTitle()
-    dash.enterFullnameSearch()
-    dash.enterEmail()
+    acc.enterTitle()
+    acc.enterFullnameSearch()
+    acc.enterEmail()
 })
+Then ('Click on More filters',()=>{
+    acc.clickOnMoreFiltersButton()
+}) 
+And ('Click on Add Filters Group',()=>{
+    acc.clickOnAddFilterGroup()
+}) 
+Then ('Select Field name and Field operation',()=>{
+    acc.selectFieldName()
+    acc.selectfieldOperation()
+}) 
+And ('Enter the Search value in search box',()=>{
+    acc.enterFieldValueSearchBox()
+})  
+Then ('Click on Apply Button',()=>{
+    acc.clickOnApplyButton() 
+}) 
+And ('Verify the Results in the table',()=>{
+    acc.verifyResultAfterFilter()
+}) 
+Then ('Click on Clear filter',()=>{
+    acc.clickOnClearFiltersButton()
+}) 
 And ('Enter the full name in search box',()=>{
-    dash.enterSearchValue()
+    acc.enterSearchValue()
 })
 And ('Verify the record in searching history',()=>{
-    dash.verifySearchResult()
+    acc.verifySearchResult()
 })
-
 
 
 

@@ -14,14 +14,13 @@
     "phone": "24234234",
     "cellnumber": "32387423",
     "userrole": "[data-value='3']",
-    "userstatus":"[data-value='Inactive']"
-    
+    "userstatus":"[data-value='Inactive']"    
  },
  "delete":{
-    "fullname":"Delete Test"
+    "fullname":"Edit Test"
  },
  "search":{
-    "fullname":"Search Test"
+    "fullname":"Demo Test"
  },
  "buildings":{
    "buildingname": "Demo Building",

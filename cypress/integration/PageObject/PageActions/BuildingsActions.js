@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 const BuildingsElements = require("../PageElements/BuildingsElements.js")
-const DashboardElements = require("../PageElements/AccountDetailsElements.js")
+const DashboardElements = require("../PageElements/DashboardElements.js")
 const tdata = require("../../../testData.json");
 
 export class BuildingsActions {
@@ -83,11 +83,11 @@ export class BuildingsActions {
     }
     clickOnSaveButton() {
         build.savebtnElement().click({force:true})
+        cy.get('[data-testid="CloseIcon"]').click()
     }
 clickOnEditIcon(){
     build.editIconElement().eq(0).click({force:true})
 }
-
     editBuildingName() {
         build.editbuildingnameElement().clear().type(tdata.editbuildings.buildingname)
     }
@@ -114,13 +114,39 @@ clickOnEditIcon(){
         build.confirmdeleteElement().contains('Delete').click({force:true})
     }
     enterInSearchBox(){
-    cy.get("[data-testid='CachedIcon']").click()
+    //cy.get("[data-testid='CachedIcon']").click()    
 build.searchElement().type(tdata.buildings.buildingname+'{enter}')
 
     }
     verifySearchResult(){      
-        cy.wait(2000)
         cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.buildings.buildingname)
+    }
+    clickOnMoreFiltersButton() {
+        build.morefiltersbtnElement().click()
+    }
+    clickOnAddFilterGroup() {
+        build.addfilterElement().click()
+    }
+    selectFieldName() {
+        build.fieldnameElement().select('building_name')
+    }
+    selectfieldOperation() {
+        build.fieldoperationElement().select("does_not_contain")
+    }
+    enterFieldValueSearchBox() {
+        build.fieldvalueElement().type('.a')
+    }
+    clickOnApplyButton() {
+        
+        build.applybtnElement().click()
+        cy.get('[data-testid="btnClose"]').click()
+    }
+    clickOnClearFiltersButton() {
+        build.clearfilterbtnElement().click()
+    }
+    verifyResultAfterFilter(){
+        cy.wait(2000)
+        cy.get('tbody tr td').should('not.contain',".a")
     }
 
 }

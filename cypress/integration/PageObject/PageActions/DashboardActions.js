@@ -14,11 +14,12 @@ export class DashboardActions {
     buildingTabVisible() {
         dash.buildingsElement().should('be.visible')
     }
- 
     sliderMenuvisible(){
         dash.sliderMenuElement().should('be.visible')
     }
-   
+    verifyLogoVisible(){
+        dash.logoElement().should('be.visible')
+    }   
 }
 
 export default DashboardActions 

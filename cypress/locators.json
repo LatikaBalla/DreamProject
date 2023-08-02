@@ -6,16 +6,17 @@
         "terms": ".MuiToolbar-root > .MuiButton-root",
         "logo":"[src='/static/media/logo-v-purple.7593cbb85d4fd19e22cc.png']",
         "arrow":"[data-testid='ArrowForwardIosIcon']",
-        "accountdashboard":"",
-        "reportcenter":"",
-        "managedevices":"",
-        "repair360":"",
-        "users":"",
-        "shopinventory":"",
-        "resources":""
-
+        "accountdashboard":"Account Dashboard",
+        "reportcenter":"Report Center",
+        "managedevices":"Manage Devices",
+        "repair360":"Repair 360",
+        "users":"Users",
+        "shopinventory":"Shop Inventory",
+        "resources":"Resources"
     },
     "accountDetails":{
+        "title":"My Account Details ",
+        "filters":".css-k3gutg",
         "accountdetials": "[data-testid='tabacc-1']",
         "buildings": "[data-testid='tabacc-2']",
         "tableaccount": ".MuiTable-root",
@@ -26,7 +27,20 @@
         "conDeletebtn": "[type='button']",
         "sliderMenu": ".css-htxx1b",
         "terms": ".MuiToolbar-root > .MuiButton-root",
-        "search": "[placeholder='Search by table field values']"
+        "search": "[placeholder='Search by table field values']",
+        "accountname":"Vivacity Demo Account",
+        "accountno":"1",
+        "credit":"$100.00",
+        "billingaddress":"Billing Address",
+        "shippingaddress":"Shipping Address",
+        "accountmanager":"Account Manager",
+        "fieldname":"[name='fieldName']",
+        "fieldvalue":"[name='fieldValue']",
+        "fieldoperation":"[name='fieldOp']",
+        "applybtn":"[data-testid='btnHandleApply']",
+        "morefiltersbtn":"More Filters",
+       "clearfilterbtn": "Clear Filter",
+        "addfilter":"+ Add Filter Group"
     },
     "newaccount": {
         "title": "#title",
@@ -57,7 +71,14 @@
         "editIcon":"[data-testid='ModeEditOutlinedIcon']",
         "deleteIcon":"[data-testid='DeleteOutlineOutlinedIcon']",
         "confirmdelete":"[type='button']",
-        "detailsbtn":"Details"   
+        "detailsbtn":"Details",
+        "fieldname":"[name='fieldName']",
+        "fieldvalue":"[name='fieldValue']",
+        "fieldoperation":"[name='fieldOp']",
+        "applybtn":"[data-testid='btnHandleApply']",
+        "morefiltersbtn":"+ Add Filter",
+       "clearfilterbtn": "Clear Filter",
+        "addfilter":"+ Add Filter Group"   
     },
     "newbuilding": {
         "buildingname": "#building_name",

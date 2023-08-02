@@ -155,12 +155,40 @@ updatebtnElement(){
     return cy.get(locator.editbuilding.updatebtn, {
         timeout: 30000,
     })
+}  
+fieldnameElement(){
+    return cy.get(locator.buildings.fieldname, {
+        timeout: 30000,
+    });
+} 
+fieldvalueElement(){
+    return cy.get(locator.buildings.fieldvalue, {
+        timeout: 30000,
+    });
 }
-
-
-    
-  
-
-
-  
+fieldoperationElement(){
+    return cy.get(locator.buildings.fieldoperation, {
+        timeout: 30000,
+    });
+}
+applybtnElement(){
+    return cy.get(locator.buildings.applybtn, {
+        timeout: 30000,
+    });
+}
+morefiltersbtnElement(){
+    return cy.contains(locator.buildings.morefiltersbtn, {
+        timeout: 30000,
+    });
+}
+clearfilterbtnElement(){
+    return cy.contains(locator.buildings.clearfilterbtn, {
+        timeout: 30000,
+    });
+}
+addfilterElement(){
+    return cy.contains(locator.buildings.addfilter, {
+        timeout: 30000,
+    });
+}
 }

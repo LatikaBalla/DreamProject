@@ -6,6 +6,12 @@ export default class DashboardElements {
             timeout: 30000,
         })
     }
+    logoElement() {
+        return cy.get(locator.dashboard.logo, {
+            timeout: 30000,
+        })
+    }
+
     accountDetailsElement() {
         return cy.get(locator.dashboard.accountdetials, {
             timeout: 30000,
@@ -16,7 +22,6 @@ export default class DashboardElements {
             timeout: 30000,
         });
     }
-
     sliderMenuElement() {
         return cy.get(locator.dashboard.sliderMenu, {
             timeout: 30000,
