@@ -1,18 +1,19 @@
 {
- 
     "dashboard": {
         "accountdetials": "[data-testid='tabacc-1']",
         "buildings": "[data-testid='tabacc-2']",
         "tableaccount": ".MuiTable-root",
         "addnewbtn": "[data-testid='AddIcon']",
-        "newContactTitle": "Add New Contact",     
-        "editIcon":"[data-testid='EditOutlinedIcon']",
-        "deleteIcon":"[data-testid='DeleteOutlineOutlinedIcon']",
-        "conDeletebtn":"[type='button']",
-        "sliderMenu":".css-htxx1b",
-        "terms":".MuiToolbar-root > .MuiButton-root"
+        "newContactTitle": "Add New Contact",
+        "editIcon": "[data-testid='EditOutlinedIcon']",
+        "deleteIcon": "[data-testid='DeleteOutlineOutlinedIcon']",
+        "conDeletebtn": "[type='button']",
+        "sliderMenu": ".css-htxx1b",
+        "terms": ".MuiToolbar-root > .MuiButton-root",
+        "search": "[placeholder='Search by table field values']"
+
     },
-    "newaccount":{
+    "newaccount": {
         "title": "#title",
         "fullname": "#full_name",
         "email": "#email",
@@ -21,15 +22,56 @@
         "userrole": "#user_role",
         "savebtn": "[type='submit']"
     },
-    "edit":{
+    "edit": {
         "title": "#title",
         "fullname": "#name",
         "email": "#email",
         "phone": "#phone",
         "cellnumber": "#cellphone",
         "userrole": "#mui-component-select-name",
-        "userstatus":"#mui-component-select-role",
+        "userstatus": "#mui-component-select-role",
         "editsubmit": "[data-testid='btnNewDataSubmit']"
-
+    },
+    "buildings": {
+        "title": "Building",
+        "search": "[placeholder='Search by table field values']",
+        "addnewbtn": "+ Add New",
+        "addfilterbtn": "[data-testid='Filters']",
+        "refreshbtn": "[data-testid='CachedIcon']",
+        "tablebuilding": ".css-so6zac",
+        "editIcon":"[data-testid='ModeEditOutlinedIcon']",
+        "deleteIcon":"[data-testid='DeleteOutlineOutlinedIcon']",
+        "confirmdelete":"[type='button']",
+        "detailsbtn":"Details"
+      
+    },
+    "newbuilding": {
+        "buildingname": "#building_name",
+        "phone": "#phone",
+        "extension": "#extension",
+        "defaultbuilding": "#default_building",
+        "buildingimg":"[placeholder='Attachments']",
+        "baddress": "#billing_address_address_1",
+        "baddress2": "#billing_address_address_2",
+        "bcity": "#billing_address_city",
+        "bstate": "#billing_address_us_state",
+        "bzipcode": "#billing_address_zip",
+        "bcountry": "#billing_address_country",
+        "saddress": "#shipping_address_address_1",
+        "saddress2": "#shipping_address_address_2",
+        "scity": "#shipping_address_city",
+        "sstate": "#shipping_address_us_state",
+        "szipcode": "#shipping_address_zip",
+        "scountry": "#shipping_address_country",
+        "savebtn": "[type='submit']"
+    },
+    "editbuilding":{
+        "buildingname": "#building_name",
+        "phone": "#phone",
+        "extension": "#extension",
+        "defaultbuilding": "#default_building",
+        "buildingimg":"[placeholder='Attachments']",
+        "updatebtn": "[type='submit']"
     }
+    
 }

@@ -33,6 +33,9 @@ export class DashboardActions {
     enterFullnameDelete() {
         dash.fullnameElement().type(tdata.delete.fullname, { force: true })
     }
+    enterFullnameSearch() {
+        dash.fullnameElement().type(tdata.search.fullname, { force: true })
+    }
     enterEmail() {
         const uniqueSeed = Date.now();
         dash.emailElement().type(uniqueSeed + tdata.newaccount.email, { force: true })
@@ -97,6 +100,13 @@ export class DashboardActions {
         cy.wait(2000)
         cy.get('tbody tr').eq(0).find('td').eq(0).should('not.contain', tdata.delete.fullname)
     }
+    enterSearchValue(){
+        dash.searchElement().type(tdata.search.fullname)
+    }
+    verifySearchResult(){
+        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.search.fullname)
+    }
+
 }
 
 export default DashboardActions 

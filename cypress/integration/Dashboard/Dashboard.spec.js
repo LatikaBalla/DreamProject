@@ -95,6 +95,18 @@ And ('Verify the record is deleted successfully',()=>{
     dash.verifyRecordDeleted()
 })
 
+Then ('Enter title, full name and valid Email for Search',()=>{
+    dash.enterTitle()
+    dash.enterFullnameSearch()
+    dash.enterEmail()
+})
+And ('Enter the full name in search box',()=>{
+    dash.enterSearchValue()
+})
+And ('Verify the record in searching history',()=>{
+    dash.verifySearchResult()
+})
+
 
 
 

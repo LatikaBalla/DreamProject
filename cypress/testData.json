@@ -19,6 +19,29 @@
  },
  "delete":{
     "fullname":"Delete Test"
+ },
+ "search":{
+    "fullname":"Search Test"
+ },
+ "buildings":{
+   "buildingname": "Demo Building",
+   "buildingimg":"image1.jpeg",
+   "phone": "2734623428",
+   "extension": "1",
+   "defaultbuilding":"[data-value='true']",
+   "address": "5412 Wentworth Drive",
+   "city": "Beverly Hills",
+   "state": "CA",
+   "zipcode": "90213",
+   "country": "US",
+   "savebtn": "[type='submit']"
+ },
+ "editbuildings":{
+   "buildingname": "Edit Building",
+   "buildingimg":"image1.jpeg",
+   "phone": "2734633338",
+   "extension": "11",
+   "defaultbuilding":"[data-value='false']"
  }
 
 }

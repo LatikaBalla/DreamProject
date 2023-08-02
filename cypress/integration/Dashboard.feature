@@ -6,7 +6,7 @@ Feature: Dashboard Page Functionality
     Background: Background name
         Given I should navigate to application
         When I should Sign In into the application
-        Then close the terms of service window 
+        Then close the terms of service window
 
     Scenario: Admin can access the dashboard page
         Then I should be redirected to the dashboard page
@@ -30,7 +30,7 @@ Feature: Dashboard Page Functionality
     Scenario: Update new account in My Account Details tab
         Then I should click on Add New button
         And Verify the tilte of Add New Contact page
-        Then Enter title, full name and valid Email 
+        Then Enter title, full name and valid Email
         And Enter Phone and Cell Number
         Then Select User Role from Dropdown List
         And Click on save button
@@ -53,6 +53,17 @@ Feature: Dashboard Page Functionality
         And Click on Delete Icon
         Then Click on Confirm Delete button
         And Verify the record is deleted successfully
+
+    Scenario:Search account in My Account Details tab
+        Then I should click on Add New button
+        And Verify the tilte of Add New Contact page
+        Then Enter title, full name and valid Email for Search
+        And Enter Phone and Cell Number
+        Then Select User Role from Dropdown List
+        And Click on save button
+        Then Verify the account details added in table
+        And Enter the full name in search box
+        And Verify the record in searching history
 
 
 

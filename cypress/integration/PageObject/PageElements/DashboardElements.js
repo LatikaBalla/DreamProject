@@ -126,4 +126,9 @@ export default class DashboardElements {
             timeout: 30000,
         });
     }
+    searchElement(){
+        return cy.get(locator.dashboard.search, {
+            timeout: 30000,
+        });
+    }
 }
