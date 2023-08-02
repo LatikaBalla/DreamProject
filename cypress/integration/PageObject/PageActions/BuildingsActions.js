@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 const BuildingsElements = require("../PageElements/BuildingsElements.js")
-const DashboardElements = require("../PageElements/DashboardElements.js")
+const DashboardElements = require("../PageElements/AccountDetailsElements.js")
 const tdata = require("../../../testData.json");
 
 export class BuildingsActions {
