@@ -6,7 +6,7 @@ Feature: Dashboard Page Functionality
     Background: Background name
         Given I should navigate to application
         When I should Sign In into the application
-        Then close the terms of service window
+        Then Close the terms of service window
 
     Scenario: Admin can access the dashboard page and check the visiblity
         Then I should be redirected to the dashboard page
@@ -16,6 +16,5 @@ Feature: Dashboard Page Functionality
         And Building tab should be visible
         Then Slider Menu should be visible
 
-        
 
-    
+

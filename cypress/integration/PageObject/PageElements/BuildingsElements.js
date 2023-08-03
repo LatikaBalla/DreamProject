@@ -6,27 +6,27 @@ export default class BuildingsElements {
             timeout: 30000,
         })
     }
-    editIconElement(){
+    editIconElement() {
         return cy.get(locator.buildings.editIcon, {
             timeout: 30000,
         })
     }
-    deleteIconElement(){
+    deleteIconElement() {
         return cy.get(locator.buildings.deleteIcon, {
             timeout: 30000,
         })
     }
-    confirmdeleteElement(){
+    confirmdeleteElement() {
         return cy.get(locator.buildings.confirmdelete, {
             timeout: 30000,
-        }) 
+        })
     }
     titleElement() {
         return cy.contains(locator.buildings.title, {
             timeout: 30000,
         })
     }
-   addnewbtnElement() {
+    addnewbtnElement() {
         return cy.contains(locator.buildings.addnewbtn, {
             timeout: 30000,
         })
@@ -41,154 +41,154 @@ export default class BuildingsElements {
             timeout: 30000,
         })
     }
-    tablebuildingElement(){
+    tablebuildingElement() {
         return cy.get(locator.buildings.tablebuilding, {
             timeout: 30000,
         })
     }
-    baddressElement(){
+    baddressElement() {
         return cy.get(locator.newbuilding.baddress, {
             timeout: 30000,
         })
-    } saddressElement(){
+    } saddressElement() {
         return cy.get(locator.newbuilding.saddress, {
             timeout: 30000,
         })
     }
-    bcityElement(){
+    bcityElement() {
         return cy.get(locator.newbuilding.bcity, {
             timeout: 30000,
         })
     }
-    scityElement(){
+    scityElement() {
         return cy.get(locator.newbuilding.scity, {
             timeout: 30000,
         })
     }
-    bstateElement(){  
+    bstateElement() {
         return cy.get(locator.newbuilding.bstate, {
             timeout: 30000,
         })
     }
-    sstateElement(){  
+    sstateElement() {
         return cy.get(locator.newbuilding.sstate, {
             timeout: 30000,
         })
     }
-    bcountryElement(){
+    bcountryElement() {
         return cy.get(locator.newbuilding.bcountry, {
             timeout: 30000,
-        }) 
+        })
     }
-    scountryElement(){
+    scountryElement() {
         return cy.get(locator.newbuilding.scountry, {
             timeout: 30000,
         })
     }
-    bzipcodeElement(){
+    bzipcodeElement() {
         return cy.get(locator.newbuilding.bzipcode, {
             timeout: 30000,
         })
     }
-    szipcodeElement(){
+    szipcodeElement() {
         return cy.get(locator.newbuilding.szipcode, {
             timeout: 30000,
         })
     }
-    buildingnameElement(){
+    buildingnameElement() {
         return cy.get(locator.newbuilding.buildingname, {
             timeout: 30000,
         })
     }
-    phoneElement(){
+    phoneElement() {
         return cy.get(locator.newbuilding.phone, {
             timeout: 30000,
         })
     }
-    extensionElement(){
+    extensionElement() {
         return cy.get(locator.newbuilding.extension, {
             timeout: 30000,
         })
     }
-    defaultbuildingElement(){
+    defaultbuildingElement() {
         return cy.get(locator.newbuilding.defaultbuilding, {
             timeout: 30000,
         })
     }
-    buildingimgElement(){
+    buildingimgElement() {
         return cy.get(locator.newbuilding.buildingimg, {
             timeout: 30000,
         })
     }
-    savebtnElement(){
+    savebtnElement() {
         return cy.get(locator.newbuilding.savebtn, {
             timeout: 30000,
         })
     }
-//edit
-editbuildingnameElement(){
-    return cy.get(locator.editbuilding.buildingname, {
-        timeout: 30000,
-    })
-}
-editphoneElement(){
-    return cy.get(locator.editbuilding.phone, {
-        timeout: 30000,
-    })
-}
-editextensionElement(){
-    return cy.get(locator.editbuilding.extension, {
-        timeout: 30000,
-    })
-}
-editdefaultbuildingElement(){
-    return cy.get(locator.editbuilding.defaultbuilding, {
-        timeout: 30000,
-    })
-}
-editbuildingimgElement(){
-    return cy.get(locator.editbuilding.buildingimg, {
-        timeout: 30000,
-    })
-}
-updatebtnElement(){
-    return cy.get(locator.editbuilding.updatebtn, {
-        timeout: 30000,
-    })
-}  
-fieldnameElement(){
-    return cy.get(locator.buildings.fieldname, {
-        timeout: 30000,
-    });
-} 
-fieldvalueElement(){
-    return cy.get(locator.buildings.fieldvalue, {
-        timeout: 30000,
-    });
-}
-fieldoperationElement(){
-    return cy.get(locator.buildings.fieldoperation, {
-        timeout: 30000,
-    });
-}
-applybtnElement(){
-    return cy.get(locator.buildings.applybtn, {
-        timeout: 30000,
-    });
-}
-morefiltersbtnElement(){
-    return cy.contains(locator.buildings.morefiltersbtn, {
-        timeout: 30000,
-    });
-}
-clearfilterbtnElement(){
-    return cy.contains(locator.buildings.clearfilterbtn, {
-        timeout: 30000,
-    });
-}
-addfilterElement(){
-    return cy.contains(locator.buildings.addfilter, {
-        timeout: 30000,
-    });
-}
+    //edit
+    editbuildingnameElement() {
+        return cy.get(locator.editbuilding.buildingname, {
+            timeout: 30000,
+        })
+    }
+    editphoneElement() {
+        return cy.get(locator.editbuilding.phone, {
+            timeout: 30000,
+        })
+    }
+    editextensionElement() {
+        return cy.get(locator.editbuilding.extension, {
+            timeout: 30000,
+        })
+    }
+    editdefaultbuildingElement() {
+        return cy.get(locator.editbuilding.defaultbuilding, {
+            timeout: 30000,
+        })
+    }
+    editbuildingimgElement() {
+        return cy.get(locator.editbuilding.buildingimg, {
+            timeout: 30000,
+        })
+    }
+    updatebtnElement() {
+        return cy.get(locator.editbuilding.updatebtn, {
+            timeout: 30000,
+        })
+    }
+    fieldnameElement() {
+        return cy.get(locator.buildings.fieldname, {
+            timeout: 30000,
+        });
+    }
+    fieldvalueElement() {
+        return cy.get(locator.buildings.fieldvalue, {
+            timeout: 30000,
+        });
+    }
+    fieldoperationElement() {
+        return cy.get(locator.buildings.fieldoperation, {
+            timeout: 30000,
+        });
+    }
+    applybtnElement() {
+        return cy.get(locator.buildings.applybtn, {
+            timeout: 30000,
+        });
+    }
+    morefiltersbtnElement() {
+        return cy.contains(locator.buildings.morefiltersbtn, {
+            timeout: 30000,
+        });
+    }
+    clearfilterbtnElement() {
+        return cy.contains(locator.buildings.clearfilterbtn, {
+            timeout: 30000,
+        });
+    }
+    addfilterElement() {
+        return cy.contains(locator.buildings.addfilter, {
+            timeout: 30000,
+        });
+    }
 }

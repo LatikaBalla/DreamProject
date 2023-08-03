@@ -35,13 +35,13 @@ Feature: Building Page Functionality
         Then Click on Confirm Delete button
         And Verify the record is deleted successfully
 
-Scenario: add more filter, Clear filter and Search new building details
-        Then Click on More filters 
-        # And Click on Add Filters Group 
+    Scenario: add more filter, Clear filter and Search new building details
+        Then Click on More filters
+        # And Click on Add Filters Group
         Then Select Field name and Field operation
-        And Enter the Search value in search box 
-        Then Click on Apply Button 
-        And Verify the Results in the table 
+        And Enter the Search value in search box
+        Then Click on Apply Button
+        And Verify the Results in the table
         #Then Click on Clear filter
         And Enter the building name in search box
         And Verify the record in searching history

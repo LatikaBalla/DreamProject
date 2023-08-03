@@ -27,4 +27,39 @@ export default class DashboardElements {
             timeout: 30000,
         });
     }
+    reportcenterElement() {
+        return cy.contains(locator.dashboard.reportcenter, {
+            timeout: 30000,
+        });
+    }
+    usersElement() {
+        return cy.get(locator.dashboard.users, {
+            timeout: 30000,
+        });
+    }
+    repair360Element() {
+        return cy.get(locator.dashboard.repair360, {
+            timeout: 30000,
+        });
+    }
+    managedevicesElement() {
+        return cy.get(locator.dashboard.managedevices, {
+            timeout: 30000,
+        });
+    }
+    resourcesElement() {
+        return cy.get(locator.dashboard.resources, {
+            timeout: 30000,
+        });
+    }
+    shopinventoryElement() {
+        return cy.get(locator.dashboard.shopinventory, {
+            timeout: 30000,
+        });
+    }
+    arrowElement() {
+        return cy.get(locator.dashboard.arrow, {
+            timeout: 30000,
+        });
+    }
 }

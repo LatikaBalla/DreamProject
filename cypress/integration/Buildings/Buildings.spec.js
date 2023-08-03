@@ -3,129 +3,129 @@ import { BuildingsActions } from '../PageObject/PageActions/BuildingsActions'
 
 const build = new BuildingsActions()
 Cypress.on("uncaught:exception", () => {
-  return false;
+    return false;
 });
 Given('I should navigate to application', function () {
     cy.visit("/");
 })
-When('I should Sign In into the application',  ()=> {
-    cy.AdminLogin() 
+When('I should Sign In into the application', () => {
+    cy.AdminLogin()
 })
-Then ('close the terms of service window',()=>{
+Then('close the terms of service window', () => {
     cy.wait(8000)
-    build.closeTermsOfServiceWindow()   
+    build.closeTermsOfServiceWindow()
 })
-And ('Click on Buildings Tab',()=>{
+And('Click on Buildings Tab', () => {
     build.clickOnBuildingTab()
 })
-And('Verify the Title of Buildings Page',  ()=> {
+And('Verify the Title of Buildings Page', () => {
     build.verifyTitleBuildingPage()
-    
+
 })
-Then ('Filters of Buildings should be visible',()=>{
+Then('Filters of Buildings should be visible', () => {
     build.addNewButtonTabVisible()
-    build.addfilterButtonVisible() 
+    build.addfilterButtonVisible()
     build.searchBoxVisible()
     build.refreshButtonVisible()
 })
-And ('Table for Buildings should be visible',()=>{
+And('Table for Buildings should be visible', () => {
     build.tableofBuildingsVisible()
 })
 
-Then ('I should click on + Add New button',()=>{
+Then('I should click on + Add New button', () => {
     build.clickOnAddnewButton()
 })
-And ('I should Enter Building Name,Phone and Extension',()=>{
+And('I should Enter Building Name,Phone and Extension', () => {
     build.enterBuildingName()
     build.enterPhone()
     build.enterExtension()
 })
-Then ('Select Default building',()=>{
-    build.selectDefaultBuilding() 
+Then('Select Default building', () => {
+    build.selectDefaultBuilding()
 })
-And ('Upload the Building image',()=>{  
+And('Upload the Building image', () => {
     build.uploadBuildingImage()
 })
-Then('Enter Billing Address1, city and zip',()=>{
+Then('Enter Billing Address1, city and zip', () => {
     build.enterBillingAddress()
     build.enterBillingCity()
     build.enterBillingZipcode()
-   
-})
-And ('Enter Initial for state and Country for billing',()=>{
-    build.enterBillingState() 
-    build.enterBillingCountry()
-})
-Then('Enter Shipping Address1, city and zip',()=>{
-    build.enterShippingAddress()
-    build.enterShippingCity() 
-    build.enterShippingZipcode()
-})
-And ('Enter Initial for state and Country for shipping',()=>{
-    build.enterShippingState()
-    build.enterShippingCountry() 
-})
-And ('Click on save button',()=>{
-    build.clickOnSaveButton() 
-})
-Then ('Verify the builing details added in table',()=>{
 
 })
-And ('Click on Edit Icon',()=>{
+And('Enter Initial for state and Country for billing', () => {
+    build.enterBillingState()
+    build.enterBillingCountry()
+})
+Then('Enter Shipping Address1, city and zip', () => {
+    build.enterShippingAddress()
+    build.enterShippingCity()
+    build.enterShippingZipcode()
+})
+And('Enter Initial for state and Country for shipping', () => {
+    build.enterShippingState()
+    build.enterShippingCountry()
+})
+And('Click on save button', () => {
+    build.clickOnSaveButton()
+})
+Then('Verify the builing details added in table', () => {
+
+})
+And('Click on Edit Icon', () => {
     build.clickOnEditIcon()
 })
-And ('I should edit Building Name,Phone and Extension',()=>{
+And('I should edit Building Name,Phone and Extension', () => {
     build.editBuildingName()
     build.editPhone()
     build.editExtension()
 })
-Then ('I should edit Select Default building',()=>{
+Then('I should edit Select Default building', () => {
     build.editselectDefaultBuilding()
 })
-And ('I should edit Upload the Building image',()=>{
+And('I should edit Upload the Building image', () => {
     build.edituploadBuildingImage()
 })
-Then ('Click on update button',()=>{
+Then('Click on update button', () => {
     build.clickOnUpdateButton()
 })
-And ('Verify the Record has been updated Meassage',()=>{
+And('Verify the Record has been updated Meassage', () => {
 
 })
-And ('Click on Delete Icon',()=>{
+And('Click on Delete Icon', () => {
     build.clickOnDeleteIcon()
 })
-Then ('Click on Confirm Delete button',()=>{
+Then('Click on Confirm Delete button', () => {
     build.clickOnConfirmDeleteButton()
 })
-And ('Verify the record is deleted successfully',()=>{
+And('Verify the record is deleted successfully', () => {
 
 })
-Then ('Click on More filters',()=>{
+Then('Click on More filters', () => {
     build.clickOnMoreFiltersButton()
-}) 
-And ('Click on Add Filters Group',()=>{
+})
+And('Click on Add Filters Group', () => {
     build.clickOnAddFilterGroup()
-}) 
-Then ('Select Field name and Field operation',()=>{
+})
+Then('Select Field name and Field operation', () => {
     build.selectFieldName()
     build.selectfieldOperation()
-}) 
-And ('Enter the Search value in search box',()=>{
+})
+And('Enter the Search value in search box', () => {
     build.enterFieldValueSearchBox()
-})  
-Then ('Click on Apply Button',()=>{
-    build.clickOnApplyButton() 
-}) 
-And ('Verify the Results in the table',()=>{
+})
+Then('Click on Apply Button', () => {
+    build.clickOnApplyButton()
+})
+And('Verify the Results in the table', () => {
     build.verifyResultAfterFilter()
-}) 
-Then ('Click on Clear filter',()=>{
+})
+Then('Click on Clear filter', () => {
     build.clickOnClearFiltersButton()
-}) 
-Then ('Enter the building name in search box',()=>{
+})
+Then('Enter the building name in search box', () => {
     build.enterInSearchBox()
 })
-And ('Verify the record in searching history',()=>{
+And('Verify the record in searching history', () => {
     cy.wait(2000)
     build.verifySearchResult()
 })

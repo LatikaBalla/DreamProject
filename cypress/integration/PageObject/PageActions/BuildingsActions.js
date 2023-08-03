@@ -49,7 +49,7 @@ export class BuildingsActions {
         cy.get(tdata.buildings.defaultbuilding).click()
     }
     uploadBuildingImage() {
-        build.buildingimgElement().selectFile('cypress/fixtures/'+tdata.buildings.buildingimg)
+        build.buildingimgElement().selectFile('cypress/fixtures/' + tdata.buildings.buildingimg)
     }
     enterBillingAddress() {
         build.baddressElement().type(tdata.buildings.address)
@@ -77,24 +77,24 @@ export class BuildingsActions {
     }
     enterShippingCountry() {
         build.scountryElement().type(tdata.buildings.country)
-    }  
+    }
     enterShippingZipcode() {
         build.szipcodeElement().type(tdata.buildings.zipcode)
     }
     clickOnSaveButton() {
-        build.savebtnElement().click({force:true})
+        build.savebtnElement().click({ force: true })
         cy.get('[data-testid="CloseIcon"]').click()
     }
-clickOnEditIcon(){
-    build.editIconElement().eq(0).click({force:true})
-}
+    clickOnEditIcon() {
+        build.editIconElement().eq(0).click({ force: true })
+    }
     editBuildingName() {
         build.editbuildingnameElement().clear().type(tdata.editbuildings.buildingname)
     }
     editPhone() {
         build.editphoneElement().clear().type(tdata.editbuildings.phone)
     }
-   editExtension() {
+    editExtension() {
         build.editextensionElement().clear().type(tdata.editbuildings.extension)
     }
     editselectDefaultBuilding() {
@@ -102,23 +102,23 @@ clickOnEditIcon(){
         cy.get(tdata.editbuildings.defaultbuilding).click()
     }
     edituploadBuildingImage() {
-        build.editbuildingimgElement().selectFile('cypress/fixtures/'+tdata.editbuildings.buildingimg)
+        build.editbuildingimgElement().selectFile('cypress/fixtures/' + tdata.editbuildings.buildingimg)
     }
     clickOnUpdateButton() {
-        build.updatebtnElement().click({force:true})
+        build.updatebtnElement().click({ force: true })
     }
-    clickOnDeleteIcon(){
-        build.deleteIconElement().eq(0).click({force:true})
+    clickOnDeleteIcon() {
+        build.deleteIconElement().eq(0).click({ force: true })
     }
-    clickOnConfirmDeleteButton(){
-        build.confirmdeleteElement().contains('Delete').click({force:true})
+    clickOnConfirmDeleteButton() {
+        build.confirmdeleteElement().contains('Delete').click({ force: true })
     }
-    enterInSearchBox(){
-    //cy.get("[data-testid='CachedIcon']").click()    
-build.searchElement().type(tdata.buildings.buildingname+'{enter}')
+    enterInSearchBox() {
+        //cy.get("[data-testid='CachedIcon']").click()    
+        build.searchElement().type(tdata.buildings.buildingname + '{enter}')
 
     }
-    verifySearchResult(){      
+    verifySearchResult() {
         cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.buildings.buildingname)
     }
     clickOnMoreFiltersButton() {
@@ -137,16 +137,16 @@ build.searchElement().type(tdata.buildings.buildingname+'{enter}')
         build.fieldvalueElement().type('.a')
     }
     clickOnApplyButton() {
-        
+
         build.applybtnElement().click()
         cy.get('[data-testid="btnClose"]').click()
     }
     clickOnClearFiltersButton() {
         build.clearfilterbtnElement().click()
     }
-    verifyResultAfterFilter(){
+    verifyResultAfterFilter() {
         cy.wait(2000)
-        cy.get('tbody tr td').should('not.contain',".a")
+        cy.get('tbody tr td').should('not.contain', ".a")
     }
 
 }

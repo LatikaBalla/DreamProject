@@ -5,8 +5,8 @@ export class DashboardActions {
     constructor() {
         globalThis.dash = new DashboardElements();
     }
-    closeTermsOfServiceWindow(){
-        dash.termsElement().click({force:true})
+    closeTermsOfServiceWindow() {
+        dash.termsElement().click({ force: true })
     }
     myAccountDetailsTabVisible() {
         dash.accountDetailsElement().should('be.visible')
@@ -14,12 +14,12 @@ export class DashboardActions {
     buildingTabVisible() {
         dash.buildingsElement().should('be.visible')
     }
-    sliderMenuvisible(){
+    sliderMenuvisible() {
         dash.sliderMenuElement().should('be.visible')
     }
-    verifyLogoVisible(){
+    verifyLogoVisible() {
         dash.logoElement().should('be.visible')
-    }   
+    }
 }
 
 export default DashboardActions 

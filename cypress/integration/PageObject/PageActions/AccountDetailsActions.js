@@ -134,9 +134,9 @@ export class AccountDetailsActions {
     clickOnClearFiltersButton() {
         dash.clearfilterbtnElement().click()
     }
-    verifyResultAfterFilter(){
+    verifyResultAfterFilter() {
         cy.wait(2000)
-        cy.get('tbody tr td').should('not.contain',"@gmail.com")
+        cy.get('tbody tr td').should('not.contain', "@gmail.com")
     }
 }
 

@@ -16,13 +16,13 @@ export default class AccountDetailsElements {
         return cy.contains(locator.accountDetails.accountno, {
             timeout: 30000,
         });
-    } 
+    }
     accountcreditElement() {
         return cy.contains(locator.accountDetails.credit, {
             timeout: 30000,
         });
-    } 
-   billingaddressElement() {
+    }
+    billingaddressElement() {
         return cy.contains(locator.accountDetails.billingaddress, {
             timeout: 30000,
         });
@@ -31,26 +31,26 @@ export default class AccountDetailsElements {
         return cy.contains(locator.accountDetails.shippingaddress, {
             timeout: 30000,
         });
-    } 
+    }
     accountmanagerElement() {
         return cy.contains(locator.accountDetails.accountmanager, {
             timeout: 30000,
         });
-    } 
+    }
     titleAccountElement() {
         return cy.contains(locator.accountDetails.title, {
             timeout: 30000,
         });
     }
-    filtersElement(){
+    filtersElement() {
         return cy.get(locator.accountDetails.filters, {
             timeout: 30000,
-        });  
+        });
     }
-    tableAccountElement(){
+    tableAccountElement() {
         return cy.get(locator.accountDetails.tableaccount, {
             timeout: 30000,
-        });  
+        });
     }
     fullnameElement() {
         return cy.get(locator.newaccount.fullname, {
@@ -147,42 +147,42 @@ export default class AccountDetailsElements {
             timeout: 30000,
         });
     }
-    searchElement(){
+    searchElement() {
         return cy.get(locator.accountDetails.search, {
             timeout: 30000,
         });
     }
-    fieldnameElement(){
+    fieldnameElement() {
         return cy.get(locator.accountDetails.fieldname, {
             timeout: 30000,
         });
-    } 
-    fieldvalueElement(){
+    }
+    fieldvalueElement() {
         return cy.get(locator.accountDetails.fieldvalue, {
             timeout: 30000,
         });
     }
-    fieldoperationElement(){
+    fieldoperationElement() {
         return cy.get(locator.accountDetails.fieldoperation, {
             timeout: 30000,
         });
     }
-   applybtnElement(){
+    applybtnElement() {
         return cy.get(locator.accountDetails.applybtn, {
             timeout: 30000,
         });
     }
-   morefiltersbtnElement(){
+    morefiltersbtnElement() {
         return cy.contains(locator.accountDetails.morefiltersbtn, {
             timeout: 30000,
         });
     }
-    clearfilterbtnElement(){
+    clearfilterbtnElement() {
         return cy.contains(locator.accountDetails.clearfilterbtn, {
             timeout: 30000,
         });
     }
-    addfilterElement(){
+    addfilterElement() {
         return cy.contains(locator.accountDetails.addfilter, {
             timeout: 30000,
         });

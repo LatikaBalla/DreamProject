@@ -39,12 +39,12 @@ Feature: Account Details Page Functionality
         And Enter Phone and Cell Number
         Then Select User Role from Dropdown List
         And Click on save button
-        Then Click on More filters 
-        # And Click on Add Filters Group 
+        Then Click on More filters
+        # And Click on Add Filters Group
         Then Select Field name and Field operation
-        And Enter the Search value in search box 
-        Then Click on Apply Button 
-        And Verify the Results in the table 
+        And Enter the Search value in search box
+        Then Click on Apply Button
+        And Verify the Results in the table
         Then Click on Clear filter
         And Enter the full name in search box
         And Verify the record in searching history
