@@ -160,5 +160,36 @@
         "section3": "Tickets Approved",
         "section4": "Tickets Created",
         "ticketdata": "Ticket Data By Dates"
+    },
+    "manageDevices": {
+        "title": "Devices",
+        "myfleet": "My Fleet",
+        "loanerManagement": "Loaner Management",
+        "serialdevices": "Import Serial Devices",
+        "orgUpload": "Organization Uploaded Assets"
+    },
+    "myFleet": {
+        "title": "Manage Device Fleet",
+        "filters": ".css-k008qs",
+        "table": ".css-1xz8d5v",
+        "morefiltersbtn": " More Filters",
+        "clearfilterbtn": "Clear Filter",
+        "addDevicesbtn": " Add Device ",
+        "exportcsv": " Export To CSV",
+        "search": "[placeholder='Search by table field values']"
+    },
+    "importSerialDevices": {
+        "title": "Past Imports",
+        "filters": ".css-h719to",
+        "table": ".css-1xz8d5v"
+    },
+    "orgUploadAssets": {
+        "title": "Organization Uploaded Assets",
+        "filters": ".css-1vfjcsy",
+        "table": ".css-1owb465"
+    },
+    "loanerManagement": {
+        "table": ".css-1xz8d5v"
     }
+   
 }
