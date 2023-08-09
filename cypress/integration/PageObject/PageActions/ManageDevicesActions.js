@@ -11,7 +11,7 @@ export class ManageDevicesActions {
         dash.termsElement().click({ force: true })
     }
     verifyTitle() {
-       mdev.titleElement()
+        mdev.titleElement()
     }
     myFleetTabVisible() {
         mdev.myfleetElement().should('be.visible')
@@ -20,11 +20,11 @@ export class ManageDevicesActions {
         mdev.loanerManagementElement().should('be.visible')
     }
     organizationUploadedAssetsTabVisible() {
-       mdev.orgUploadAssestsElement().should('be.visible')
+        mdev.orgUploadAssestsElement().should('be.visible')
     }
     importSerialDevicesTabVisible() {
         mdev.serialdevicesElement().should('be.visible')
-     }
+    }
     clickOnManageDevices() {
         dash.arrowElement().click({ force: true })
         dash.managedevicesElement().click({ force: true })

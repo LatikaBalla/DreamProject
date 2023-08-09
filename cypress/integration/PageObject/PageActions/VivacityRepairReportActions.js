@@ -2,6 +2,7 @@
 const VivacityRepairReportElements = require("../PageElements/VivacityRepairReportElements.js")
 const DashboardElements = require("../PageElements/DashboardElements.js")
 const ReportCenterElements = require("../PageElements/ReportCenterElements.js")
+
 export class VivacityRepairReportActions {
     constructor() {
         globalThis.viva = new VivacityRepairReportElements();

@@ -7,7 +7,7 @@ Feature: MyFleet  Page Functionality
         Given I should navigate to application
         When I should Sign In into the application
         Then close the terms of service window
-        Then Click on Manage Devices 
+        Then Click on Manage Devices
         And Click on MyFleet Tab
 
     Scenario: Visiblity of MyFleet page

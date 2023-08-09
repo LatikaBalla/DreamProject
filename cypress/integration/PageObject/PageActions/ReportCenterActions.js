@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 const ReportCenterElements = require("../PageElements/ReportCenterElements.js")
 const DashboardElements = require("../PageElements/DashboardElements.js")
+
 export class ReportCenterActions {
     constructor() {
         globalThis.dash = new DashboardElements();

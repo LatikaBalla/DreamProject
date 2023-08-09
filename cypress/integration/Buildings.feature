@@ -36,6 +36,16 @@ Feature: Building Page Functionality
         And Verify the record is deleted successfully
 
     Scenario: add more filter, Clear filter and Search new building details
+        Then I should click on + Add New button
+        And I should Enter Building Name,Phone and Extension
+        Then Select Default building
+        And Upload the Building image
+        Then Enter Billing Address1, city and zip
+        And Enter Initial for state and Country for billing
+        Then Enter Shipping Address1, city and zip
+        And Enter Initial for state and Country for shipping
+        And Click on save button
+        Then Verify the builing details added in table
         Then Click on More filters
         # And Click on Add Filters Group
         Then Select Field name and Field operation

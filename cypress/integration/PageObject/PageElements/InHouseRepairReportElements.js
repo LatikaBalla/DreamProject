@@ -26,5 +26,4 @@ export default class InHouseRepairReportElements {
             timeout: 30000,
         })
     }
-
 }

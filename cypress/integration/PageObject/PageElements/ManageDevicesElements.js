@@ -6,7 +6,7 @@ export default class ManageDevicesElements {
             timeout: 30000,
         })
     }
-   myfleetElement() {
+    myfleetElement() {
         return cy.contains(locator.manageDevices.myfleet, {
             timeout: 30000,
         })

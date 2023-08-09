@@ -1,4 +1,4 @@
-        /// <reference types="cypress" />
+/// <reference types="cypress" />
 const locator = require("../../../locators.json");
 export default class MyFleetElements {
     titleElement() {
@@ -10,7 +10,7 @@ export default class MyFleetElements {
         return cy.get(locator.myFleet.filters, {
             timeout: 30000,
         })
-    } 
+    }
     tableElement() {
         return cy.get(locator.myFleet.table, {
             timeout: 30000,

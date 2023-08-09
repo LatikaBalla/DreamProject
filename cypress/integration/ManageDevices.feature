@@ -15,7 +15,7 @@ Feature: ManageDevices Page Functionality
         Then Verify the My Fleet Tab should be visible
         And Verify the Loaner Management tab should be visible
         Then Verify the Import Serial Devices tab should be visible
-         And Verify the Organization Uploaded Assets tab should be visible
+        And Verify the Organization Uploaded Assets tab should be visible
 
 
 

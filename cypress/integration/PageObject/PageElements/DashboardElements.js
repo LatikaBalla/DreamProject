@@ -11,7 +11,6 @@ export default class DashboardElements {
             timeout: 30000,
         })
     }
-
     accountDetailsElement() {
         return cy.get(locator.dashboard.accountdetials, {
             timeout: 30000,

@@ -190,6 +190,67 @@
     },
     "loanerManagement": {
         "table": ".css-1xz8d5v"
+    },
+    "repair360": {
+        "title": "Repair 360",
+        "vivacityrc": "[data-testid='tabrepa-1']",
+        "inhouserc": "[data-testid='tabrepa-2']",
+        "studentrc": "[data-testid='tabrepa-3']",
+        "partcloset": "[data-testid='tabrepa-4']"
+    },
+    "vivacityRepairCenter": {
+        "title": "Vivacity Repair Center",
+        "repairTickets": "[data-testid='tabvr-1']",
+        "repairBoxes": "[data-testid='tabvr-2']"
+    },
+    "repairTickets": {
+        "title": "All Vivacity Repair Tickets",
+        "filters": ".css-zdpt2t",
+        "table": ".css-1owb465"
+    },
+    "repairBoxes": {
+        "title": "All Shipping Boxes",
+        "filters": ".css-1g4lz0w",
+        "table": ".css-1owb465"
+    },
+    "inhouseRepairCenter": {
+        "title": "In-House Repair",
+        "inhouseworkflow": "[data-testid='tabihr-1']",
+        "inhouseTickets": "[data-testid='tabihr-2']"
+    },
+    "inhouseWorkflow": {
+        "title": "",
+        "filters": ".css-k008qs"
+    },
+    "inhouseTickets": {
+        "title": "All Vivacity Repair Tickets",
+        "filters": ".css-zdpt2t",
+        "table": ".css-1owb465"
+    },
+    "studentRepairCenter": {
+        "title": "Student Repair Center",
+        "srcRepairTickets": "[data-testid='tabsrc-1']",
+        "srcFacilitators": "[data-testid='tabsrc-2']",
+        "srcStudents": "[data-testid='tabsrc-3']"
+    },
+    "partCloset": {
+        "title": "Parts Closet",
+        "filters": ".css-1w1zorn",
+        "table": ".css-1owb465"
+    },
+    "srcRepairTickets": {
+        "title": "SRC Repair Tickets",
+        "filters": ".css-1g4lz0w",
+        "table": ".css-1owb465"
+    },
+    "srcFacilitators": {
+        "title": "SRC Facilitators",
+        "filters": ".css-al6ceu",
+        "table": ".css-1owb465"
+    },
+    "srcStudents": {
+        "title": "SRC Students",
+        "filters": ".css-al6ceu",
+        "table": ".css-1owb465"
     }
-   
 }

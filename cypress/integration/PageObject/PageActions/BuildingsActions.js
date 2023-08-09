@@ -116,9 +116,9 @@ export class BuildingsActions {
     enterInSearchBox() {
         //cy.get("[data-testid='CachedIcon']").click()    
         build.searchElement().type(tdata.buildings.buildingname + '{enter}')
-
     }
     verifySearchResult() {
+        cy.wait(5000)
         cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.buildings.buildingname)
     }
     clickOnMoreFiltersButton() {
@@ -145,7 +145,7 @@ export class BuildingsActions {
         build.clearfilterbtnElement().click()
     }
     verifyResultAfterFilter() {
-        cy.wait(2000)
+        cy.wait(5000)
         cy.get('tbody tr td').should('not.contain', ".a")
     }
 

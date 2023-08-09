@@ -2,6 +2,7 @@
 const ManageDevicesElements = require("../PageElements/ManageDevicesElements.js")
 const DashboardElements = require("../PageElements/DashboardElements.js")
 const OrgUploadAssetsElements = require("../PageElements/OrgUploadAssetsElements.js")
+
 export class OrgUploadAssetsActions {
     constructor() {
         globalThis.mdev = new ManageDevicesElements();
@@ -12,7 +13,7 @@ export class OrgUploadAssetsActions {
         dash.termsElement().click({ force: true })
     }
     clickOnManageDevices() {
-      dash.arrowElement().click({ force: true })
+        dash.arrowElement().click({ force: true })
         dash.managedevicesElement().click({ force: true })
     }
     clickOnOrgUploadAssets() {

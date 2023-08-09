@@ -2,7 +2,8 @@
 const ManageDevicesElements = require("../PageElements/ManageDevicesElements.js")
 const DashboardElements = require("../PageElements/DashboardElements.js")
 const LoanerManagementElements = require("../PageElements/LoanerManagementElements.js")
-export class  LoanerManagementActions {
+
+export class LoanerManagementActions {
     constructor() {
         globalThis.mdev = new ManageDevicesElements();
         globalThis.dash = new DashboardElements();
@@ -19,10 +20,8 @@ export class  LoanerManagementActions {
         mdev.loanerManagementElement().click({ force: true })
         cy.get('.MuiToolbar-root > .MuiButton-root').click({ force: true })
     }
-
     tableVisible() {
         mf.tableElement().should('be.visible')
     }
-
 }
 export default LoanerManagementActions 

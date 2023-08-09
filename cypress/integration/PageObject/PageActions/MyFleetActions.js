@@ -2,6 +2,7 @@
 const ManageDevicesElements = require("../PageElements/ManageDevicesElements.js")
 const DashboardElements = require("../PageElements/DashboardElements.js")
 const MyFleetElements = require("../PageElements/MyFleetElements.js")
+
 export class MyFleetActions {
     constructor() {
         globalThis.mdev = new ManageDevicesElements();
@@ -28,6 +29,5 @@ export class MyFleetActions {
     tableVisible() {
         mf.tableElement().should('be.visible')
     }
-
 }
 export default MyFleetActions 

@@ -22,7 +22,7 @@ export default class DeviceRepairReportElements {
             timeout: 30000,
         })
     }
-    clearbtnElement(){
+    clearbtnElement() {
         return cy.contains(locator.deviceRepairReport.clearbtn, {
             timeout: 30000,
         })

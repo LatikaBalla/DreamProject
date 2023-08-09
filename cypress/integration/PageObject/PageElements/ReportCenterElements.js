@@ -21,6 +21,4 @@ export default class ReportCenterElements {
             timeout: 30000,
         })
     }
-
-
 }

@@ -14,7 +14,7 @@ Feature: Account Details Page Functionality
         Then Filters of account deatils should be visible
         And Table for account deatils should be visible
 
-    Scenario: Adding,search,Update and Delete new account of Account Details page
+    Scenario: Adding,Update and Delete new account of Account Details page
         Then I should click on Add New button
         And Verify the tilte of Add New Contact page
         Then Enter title, full name and valid Email

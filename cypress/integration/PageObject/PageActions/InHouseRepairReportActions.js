@@ -2,6 +2,7 @@
 const InHouseRepairReportElements = require("../PageElements/InHouseRepairReportElements.js")
 const DashboardElements = require("../PageElements/DashboardElements.js")
 const ReportCenterElements = require("../PageElements/ReportCenterElements.js")
+
 export class InHouseRepairReportActions {
     constructor() {
         globalThis.inh = new InHouseRepairReportElements();
