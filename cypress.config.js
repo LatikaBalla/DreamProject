@@ -6,7 +6,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       return require('./cypress/plugins/index.js')(on, config)
     },
-    baseUrl: 'https://valkyrie-frontend-test.onrender.com',
+    baseUrl: 'https://dream-frontend-stage.onrender.com/',
     specPattern: 'cypress/integration/*.feature',
     supportFile: 'cypress/support/index.js',
     chromeWebSecurity: false ,
@@ -14,8 +14,8 @@ module.exports = defineConfig({
     experimentalOriginDependencies: true,
 
     env: {
-      USERNAME:'demo@vivacitytech.com',
-      PASSWORD:'VIVA2020!demo!'
+      USERNAME:'automation@vivacitytech.com',
+      PASSWORD:'P@ssw0rd'
     }
   },
 });

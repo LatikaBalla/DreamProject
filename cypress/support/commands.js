@@ -24,12 +24,12 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 Cypress.Commands.add("AdminLogin", () => {    
-        cy.origin('https://vivacity-valkyrie.us.auth0.com', () => {
+        cy.origin('https://dream-vivacity.us.auth0.com/', () => {
           Cypress.on("uncaught:exception", () => {
             return false;
           });
-          cy.get('#input-box-email').type('demo@vivacitytech.com')
-          cy.get('#input-box-password').type('VIVA2020!demo!')
+          cy.get('#input-box-email').type(Cypress.env('USERNAME'))
+          cy.get('#input-box-password').type(Cypress.env('PASSWORD'))
           cy.get('.submit-text').click()  
           cy.wait(1000)
         })
