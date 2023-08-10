@@ -1,0 +1,30 @@
+/// <reference types="cypress" />
+const InstructionsElements = require("../PageElements/InstructionsElements.js")
+const DashboardElements = require("../PageElements/DashboardElements.js")
+const ResourcesElements = require("../PageElements/ResourcesElements.js")
+
+export class InstructionsActions {
+    constructor() {
+        globalThis.dash = new DashboardElements();
+        globalThis.rep = new InstructionsElements();
+        globalThis.rep1 = new ResourcesElements()
+    }
+    closeTermsOfServiceWindow() {
+        dash.termsElement().click({ force: true })
+    }
+    clickOnInstructions() {
+        rep1.instructionsElement().click({ force: true })
+    }
+    provisionDeviceTabVisible() {
+        rep.provisionDeviceElement().should('be.visible')
+    }
+    deprovisionDeviceTabVisible() {
+        rep.deprovisionDeviceElement().should('be.visible')
+    }
+    clickOnResources() {
+        dash.arrowElement().click({ force: true })
+        dash.resourcesElement().click({ force: true })
+    }
+}
+
+export default InstructionsActions 

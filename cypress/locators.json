@@ -116,8 +116,9 @@
         "clearfilterbtn": "",
         "addfilterbtn": "",
         "table": ".css-1owb465",
-        "organizationunit": ".css-g8bg30",
-        "alluserunit": ".css-bjb4er",
+        "organizationalunit": ".css-g8bg30",
+        "allusersunit": ".css-bjb4er",
+        "filters": ".css-272gp",
         "editbtn": "",
         "deletebtn": ""
     },
@@ -252,5 +253,21 @@
         "title": "SRC Students",
         "filters": ".css-al6ceu",
         "table": ".css-1owb465"
+    },
+    "resources": {
+        "title": "Resources",
+        "instructions": "[data-testid='tabres-1']",
+        "howToVideos": "[data-testid='tabres-2']",
+        "warrantyInfo": "[data-testid='tabres-3']"
+    },
+    "instructions": {
+        "provisionDevice": "[data-testid='tabinst-1']",
+        "deprovisionDevice": "[data-testid='tabinst-2']"
+    },
+    "howToVideos": {
+        "videos": ".css-1d3bbye"
+    },
+    "warrantyInfo": {
+        "title": "EMPOWER+ Warranty"
     }
 }
