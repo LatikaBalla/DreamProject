@@ -27,5 +27,26 @@ export default class DeviceRepairReportElements {
             timeout: 30000,
         })
     }
+    printTicketElement() {
+        return cy.contains(locator.deviceRepairReport.printTicket, {
+            timeout: 30000,
+        })
+    }
+    downloadticketElement() {
+        return cy.contains(locator.deviceRepairReport.downloadticket, {
+            timeout: 30000,
+        })
+    }
+    backElement() {
+        return cy.get(locator.deviceRepairReport.back, {
+            timeout: 30000,
+        })
+    }
+    headingElement() {
+        return cy.contains(locator.deviceRepairReport.heading, {
+            timeout: 30000,
+        })
+    }
+
 
 }

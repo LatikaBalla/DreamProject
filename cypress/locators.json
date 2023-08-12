@@ -144,7 +144,11 @@
         "clearbtn": "Clear",
         "filters": ".css-1yuhvjn",
         "search": "[placeholder='Search Ticket Number']",
-        "table": ".css-1owb465"
+        "table": ".css-1owb465",
+        "printTicket":"Print Ticket Estimate",
+        "downloadticket":"Download Ticket Estimate",
+        "back":"[data-testid='KeyboardBackspaceIcon']",
+        "heading":"Repair Ticket Details"
     },
     "vivacityRepairReport": {
         "section1": "In Transit to Me",

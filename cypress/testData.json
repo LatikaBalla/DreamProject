@@ -41,6 +41,10 @@
    "phone": "2734633338",
    "extension": "11",
    "defaultbuilding":"[data-value='false']"
+ },
+ "deviceRepairReport":{
+   "ticketno":"VAL2023080715363517",
+   "filename":"undefined.pdf"
  }
 
 }
