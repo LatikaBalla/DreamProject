@@ -14,6 +14,7 @@ When('I should Sign In into the application', () => {
 Then('close the terms of service window', () => {
     cy.wait(8000)
     acc.closeTermsOfServiceWindow()
+    cy.wait(1000)
 })
 Then('Click on Repair360 page', () => {
     acc.clickOnRepair360()

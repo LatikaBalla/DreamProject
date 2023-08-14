@@ -18,7 +18,6 @@ export class RepairTicketsActions {
     }
     clickOnRepairTicketsTab() {
         mdev.repairTicketsElement().click({ force: true })
-        cy.get('.MuiToolbar-root > .MuiButton-root').click({ force: true })
     }
     verifyTitle() {
         mf.titleElement().should('be.visible')

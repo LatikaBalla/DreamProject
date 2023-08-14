@@ -23,7 +23,6 @@ export class SrcStudentsActions {
     }
     clickOnSrcStudentsTab() {
         mf1.srcStudentsElement().click({ force: true })
-        cy.get('.MuiToolbar-root > .MuiButton-root').click({ force: true })
     }
     verifyTitle() {
         mf.titleElement().should('be.visible')

@@ -14,6 +14,7 @@ When('I should Sign In into the application', () => {
 Then('Close the terms of service window', () => {
     cy.wait(8000)
     inh.closeTermsOfServiceWindow()
+    cy.wait(2000)
 })
 And('Click on Report center page', () => {
     inh.clickOnReportCenter()

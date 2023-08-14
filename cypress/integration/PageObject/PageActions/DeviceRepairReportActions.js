@@ -18,7 +18,6 @@ export class DeviceRepairReportActions {
     }
     clickOnDeviceRepairReport() {
         repc.devicerrElement().click({ force: true })
-        cy.get('.MuiToolbar-root > .MuiButton-root').click({ force: true })
     }
     verifyTitle() {
         dev.titleElement().should('be.visible')

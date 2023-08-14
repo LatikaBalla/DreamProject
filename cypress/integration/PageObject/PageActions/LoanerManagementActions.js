@@ -18,7 +18,6 @@ export class LoanerManagementActions {
     }
     clickOnLoanerManagement() {
         mdev.loanerManagementElement().click({ force: true })
-        cy.get('.MuiToolbar-root > .MuiButton-root').click({ force: true })
     }
     tableVisible() {
         mf.tableElement().should('be.visible')

@@ -17,7 +17,6 @@ export class VivacityRepairReportActions {
         dash.reportcenterElement().click({ force: true })
     }
     clickOnVivacityRepairReport() {
-        cy.get('.MuiToolbar-root > .MuiButton-root').click({ force: true })
         repc.vivacityrrElement().click({ force: true })
     }
     AllSectionsVisible() {

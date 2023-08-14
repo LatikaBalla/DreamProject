@@ -17,9 +17,7 @@ export class InHouseRepairReportActions {
         dash.reportcenterElement().click({ force: true })
     }
     clickOnInHouseRepairReport() {
-
         repc.inhouserrElement().click({ force: true })
-        cy.get('.MuiToolbar-root > .MuiButton-root').click({ force: true })
     }
     AllSectionsVisible() {
         inh.section1Element().should('be.visible')

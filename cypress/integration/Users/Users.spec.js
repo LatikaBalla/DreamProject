@@ -14,6 +14,7 @@ When('I should Sign In into the application', () => {
 Then('Close the terms of service window', () => {
     cy.wait(8000)
     acc.closeTermsOfServiceWindow()
+    cy.wait(1000)
 })
 And('Click on Users page', () => {
     acc.clickOnUsers()

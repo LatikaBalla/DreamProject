@@ -23,7 +23,6 @@ export class SrcFacilitatorsActions {
     }
     clickOnSrcFacilitatorsTab() {
         mf1.srcFacilitatorsElement().click({ force: true })
-        cy.get('.MuiToolbar-root > .MuiButton-root').click({ force: true })
     }
     verifyTitle() {
         mf.titleElement().should('be.visible')

@@ -17,7 +17,6 @@ export class ImportSerialDevicesActions {
     }
     clickOnImportSerialDevices() {
         mdev.serialdevicesElement().click({ force: true })
-        cy.get('.MuiToolbar-root > .MuiButton-root').click({ force: true })
     }
     verifyTitle() {
         isd.titleElement().should('be.visible')

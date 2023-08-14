@@ -23,7 +23,6 @@ export class SrcRepairTicketsActions {
     }
     clickOnSrcRepairTicketsTab() {
         mf1.srcRepairTicketsElement().click({ force: true })
-        cy.get('.MuiToolbar-root > .MuiButton-root').click({ force: true })
     }
     verifyTitle() {
         mf.titleElement().should('be.visible')
