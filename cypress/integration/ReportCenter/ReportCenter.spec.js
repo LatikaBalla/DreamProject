@@ -1,6 +1,12 @@
 import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 import { ReportCenterActions } from '../PageObject/PageActions/ReportCenterActions.js'
+import { InHouseRepairReportActions } from '../PageObject/PageActions/InHouseRepairReportActions'
+import { DeviceRepairReportActions } from '../PageObject/PageActions/DeviceRepairReportActions'
+import { VivacityRepairReportActions } from '../PageObject/PageActions/VivacityRepairReportActions'
 
+const viva = new VivacityRepairReportActions()
+const dev = new DeviceRepairReportActions()
+const inh = new InHouseRepairReportActions()
 const repc = new ReportCenterActions()
 Cypress.on("uncaught:exception", () => {
     return false;
@@ -34,3 +40,72 @@ And('Verify the InHouseRepairReport tab should be visible', () => {
 Then('Verify the DeviceRepairReport tab should be visible', () => {
     repc.deviceRepairReportTabVisible()
 })
+Then('Click on VivacityRepairReport page', () => {
+    viva.clickOnVivacityRepairReport()
+})
+And('Verify all sections of VivacityRepairReport Page should be visible', () => {
+    viva.AllSectionsVisible()
+})
+Then('Verify repair status graph should be visible', () => {
+    viva.repairStatusGraphVisible()
+})
+Then('Verify warranty claim graph should be visible', () => {
+    viva.warrantyClaimGraphvisible()
+})
+And('Verify cavas of Repair ticket by status should be visible', () => {
+    viva.cavasOfRepairTicketByStatusVisible()
+})
+Then('Click on InHouseRepairReport page', () => {
+    inh.clickOnInHouseRepairReport()
+})
+And('Verify all sections of InHouseRepairReport Page should be visible', () => {
+    inh.AllSectionsVisible()
+})
+Then('Verify ticketdata graph should be visible', () => {
+    inh.ticketDataGraphVisible()
+})
+Then('Click on DeviceRepairReport page', () => {
+    dev.clickOnDeviceRepairReport()
+})
+And('Verify title of DeviceRepairReport Page should be visible', () => {
+    dev.verifyTitle()
+})
+Then('Verify the filters should be visible', () => {
+    dev.filtersVisible()
+})
+Then('Verify history table should be visible', () => {
+    dev.tableVisible()
+})
+And('Enter the Ticket Number in search box', () => {
+    dev.enterTicketNumberSearch()
+})
+Then('Verify the Ticket details in table', () => {
+    dev.verifyTicketDetailsTable()
+})
+And('Click on clear button', () => {
+    dev.clickOnClearButton()
+})
+Then('Verify the search box is cleared', () => {
+    dev.searchBoxEmpty()
+})
+And('Enter the Ticket Number in search box', () => {
+    dev.enterTicketNumberSearch()
+})
+And('Click on the Ticket Number', () => {
+    dev.clickOnTicketNumberTable()
+})
+Then('Verify the Repair Ticket page will open', () => {
+    dev.verifyRapairTicketPAge()
+})
+And('Verfiy the details of Ticket', () => {
+    dev.verifyTicketDetails()
+})
+Then('Click on the download Ticket Estimation button', () => {
+    dev.clickOnDownloadButton()
+})
+And('Verify downloaded ticket successfully', () => {
+    dev.verifyDownloadSuccessful()
+})
+
+
+

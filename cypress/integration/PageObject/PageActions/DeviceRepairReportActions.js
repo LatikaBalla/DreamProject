@@ -18,6 +18,7 @@ export class DeviceRepairReportActions {
     }
     clickOnDeviceRepairReport() {
         repc.devicerrElement().click({ force: true })
+        cy.wait(1000)
     }
     verifyTitle() {
         dev.titleElement().should('be.visible')
