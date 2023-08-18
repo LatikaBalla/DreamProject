@@ -12,8 +12,8 @@ module.exports = defineConfig({
     experimentalOriginDependencies: true,
 
     env: {
-      USERNAME:'automation@vivacitytech.com',
-      PASSWORD:'P@ssw0rd'
+      USERNAME:'demo_adminSuper@vivacitytech.com',
+      PASSWORD:'VIVA!dreamdemo'
     }
   },
 });

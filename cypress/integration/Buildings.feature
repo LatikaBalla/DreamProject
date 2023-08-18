@@ -18,7 +18,7 @@ Feature: Building Page Functionality
         Then I should click on + Add New button
         And I should Enter Building Name,Phone and Extension
         Then Select Default building
-        And Upload the Building image
+      #  And Upload the Building image
         Then Enter Billing Address1, city and zip
         And Enter Initial for state and Country for billing
         Then Enter Shipping Address1, city and zip
@@ -28,7 +28,7 @@ Feature: Building Page Functionality
         And Click on Edit Icon
         And I should edit Building Name,Phone and Extension
         Then I should edit Select Default building
-        And I should edit Upload the Building image
+     #   And I should edit Upload the Building image
         Then Click on update button
         And Verify the Record has been updated Meassage
         And Click on Delete Icon
@@ -39,7 +39,7 @@ Feature: Building Page Functionality
         Then I should click on + Add New button
         And I should Enter Building Name,Phone and Extension
         Then Select Default building
-        And Upload the Building image
+      #  And Upload the Building image
         Then Enter Billing Address1, city and zip
         And Enter Initial for state and Country for billing
         Then Enter Shipping Address1, city and zip

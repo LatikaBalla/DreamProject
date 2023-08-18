@@ -182,8 +182,8 @@ export default class AccountDetailsElements {
             timeout: 30000,
         });
     }
-    addfilterElement() {
-        return cy.contains(locator.accountDetails.addfilter, {
+    addfilterGroupElement() {
+        return cy.contains(locator.accountDetails.addfilterGroup, {
             timeout: 30000,
         });
     }

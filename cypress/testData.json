@@ -45,6 +45,11 @@
  "deviceRepairReport":{
    "ticketno":"VAL2023080715363517",
    "filename":"undefined.pdf"
+ },
+ "myFleet":{
+   "filename":"manage_device_fleet.csv",
+   "serialno":"1CD1000005",
+   "assetTag":"12354"
  }
 
 }

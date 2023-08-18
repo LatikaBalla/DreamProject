@@ -78,7 +78,7 @@
         "applybtn": "[data-testid='btnHandleApply']",
         "morefiltersbtn": "+ Add Filter",
         "clearfilterbtn": "Clear Filter",
-        "addfilter": "+ Add Filter Group"
+        "addfilterGroup": "+ Add Filter Group"
     },
     "newbuilding": {
         "buildingname": "#building_name",
@@ -181,7 +181,13 @@
         "clearfilterbtn": "Clear Filter",
         "addDevicesbtn": " Add Device ",
         "exportcsv": " Export To CSV",
-        "search": "[placeholder='Search by table field values']"
+        "search": "[placeholder='Search by table field values']",
+        "fieldname": "[name='field']",
+        "fieldvalue": "[name='value']",
+        "fieldoperation": "[name='operation']",
+        "applybtn": "[data-testid='btnHandleApply']",
+        "addfilterGroup": "+ Add Filter Group",
+        "view":""
     },
     "importSerialDevices": {
         "title": "Past Imports",

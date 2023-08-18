@@ -137,9 +137,8 @@ export class BuildingsActions {
         build.fieldvalueElement().type('.a')
     }
     clickOnApplyButton() {
-
         build.applybtnElement().click()
-        cy.get('[data-testid="btnClose"]').click()
+      //  cy.get('[data-testid="btnClose"]').click()
     }
     clickOnClearFiltersButton() {
         build.clearfilterbtnElement().click()

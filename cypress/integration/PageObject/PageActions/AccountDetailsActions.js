@@ -117,7 +117,7 @@ export class AccountDetailsActions {
         dash.morefiltersbtnElement().click()
     }
     clickOnAddFilterGroup() {
-        dash.addfilterElement().click()
+        dash.addfilterGroupElement().click()
     }
     selectFieldName() {
         dash.fieldnameElement().select('email')
