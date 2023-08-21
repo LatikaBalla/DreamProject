@@ -12,7 +12,8 @@
         "repair360": "Repair 360",
         "users": "Users",
         "shopinventory": "Shop Inventory",
-        "resources": "Resources"
+        "resources": "Resources",
+        "message":".MuiAlert-message"
     },
     "accountDetails": {
         "title": "My Account Details ",
@@ -78,7 +79,8 @@
         "applybtn": "[data-testid='btnHandleApply']",
         "morefiltersbtn": "+ Add Filter",
         "clearfilterbtn": "Clear Filter",
-        "addfilterGroup": "+ Add Filter Group"
+        "addfilterGroup": "+ Add Filter Group",
+        "detailsBuildingname":".MuiTypography-h4"
     },
     "newbuilding": {
         "buildingname": "#building_name",

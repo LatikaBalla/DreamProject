@@ -190,5 +190,10 @@ export default class BuildingsElements {
         return cy.contains(locator.buildings.addfilter, {
             timeout: 30000,
         });
+    }  
+    detailsBuildingnameElement() {
+        return cy.get(locator.buildings.detailsBuildingname, {
+            timeout: 30000,
+        });
     }
 }

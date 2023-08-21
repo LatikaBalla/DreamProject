@@ -61,4 +61,9 @@ export default class DashboardElements {
             timeout: 30000,
         });
     }
+    messageElement(){
+        return cy.get(locator.dashboard.message, {
+            timeout: 30000,
+        }); 
+    }
 }

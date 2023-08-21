@@ -85,17 +85,21 @@ export class BuildingsActions {
         build.savebtnElement().click({ force: true })
         cy.get('[data-testid="CloseIcon"]').click()
     }
+    verifyNewBuilding(){
+        cy.wait(1000)
+      dash.messageElement().should('contain',tdata.buildings.addmsg)
+    }
     clickOnEditIcon() {
         build.editIconElement().eq(0).click({ force: true })
     }
     editBuildingName() {
-        build.editbuildingnameElement().clear().type(tdata.editbuildings.buildingname)
+        build.editbuildingnameElement().clear({ force: true }).should('have.value', '',{timeout:6000}).type(tdata.editbuildings.buildingname)
     }
     editPhone() {
-        build.editphoneElement().clear().type(tdata.editbuildings.phone)
+        build.editphoneElement().clear({ force: true }).should('have.value', '',{timeout:6000}).type(tdata.editbuildings.phone)
     }
     editExtension() {
-        build.editextensionElement().clear().type(tdata.editbuildings.extension)
+        build.editextensionElement().clear({ force: true }).should('have.value', '',{timeout:6000}).type(tdata.editbuildings.extension)
     }
     editselectDefaultBuilding() {
         build.editdefaultbuildingElement().click()
@@ -105,7 +109,10 @@ export class BuildingsActions {
         build.editbuildingimgElement().selectFile('cypress/fixtures/' + tdata.editbuildings.buildingimg)
     }
     clickOnUpdateButton() {
-        build.updatebtnElement().click({ force: true })
+        build.updatebtnElement().click({ force: true })   
+    }
+    verifyBuildingUpdated(){
+    //  dash.messageElement().should('contain',tdata.editbuildings.updatemsg)
     }
     clickOnDeleteIcon() {
         build.deleteIconElement().eq(0).click({ force: true })
@@ -114,11 +121,10 @@ export class BuildingsActions {
         build.confirmdeleteElement().contains('Delete').click({ force: true })
     }
     enterInSearchBox() {
-        //cy.get("[data-testid='CachedIcon']").click()    
         build.searchElement().type(tdata.buildings.buildingname + '{enter}')
     }
     verifySearchResult() {
-        cy.wait(5000)
+        cy.wait(3000)
         cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.buildings.buildingname)
     }
     clickOnMoreFiltersButton() {
@@ -138,14 +144,24 @@ export class BuildingsActions {
     }
     clickOnApplyButton() {
         build.applybtnElement().click()
-      //  cy.get('[data-testid="btnClose"]').click()
     }
     clickOnClearFiltersButton() {
         build.clearfilterbtnElement().click()
     }
     verifyResultAfterFilter() {
-        cy.wait(5000)
+        cy.wait(2000)
         cy.get('tbody tr td').should('not.contain', ".a")
+    }
+    clickOnDetailsButton() {
+        cy.wait(1000)
+        cy.get('tbody tr').eq(0).find("button").eq(0).click({force:true})
+    }
+    verifyDetails() {
+        build.detailsBuildingnameElement().should('contain',tdata.detailsBuilding.buildingname)
+    }
+    verifyDelete(){
+        cy.wait(1000)
+        cy.get('tbody tr').eq(0).should('not.contain', tdata.editbuildings.buildingname)
     }
 
 }

@@ -69,7 +69,7 @@ And('Click on save button', () => {
     build.clickOnSaveButton()
 })
 Then('Verify the builing details added in table', () => {
-
+    build.verifyNewBuilding()
 })
 And('Click on Edit Icon', () => {
     build.clickOnEditIcon()
@@ -89,7 +89,13 @@ Then('Click on update button', () => {
     build.clickOnUpdateButton()
 })
 And('Verify the Record has been updated Meassage', () => {
-
+    build.verifyBuildingUpdated()
+})
+And('Click on view Details Button', () => {
+    build.clickOnDetailsButton()
+})
+Then('Verfiy the Details are correct', () => {
+    build.verifyDetails()
 })
 And('Click on Delete Icon', () => {
     build.clickOnDeleteIcon()
@@ -98,7 +104,7 @@ Then('Click on Confirm Delete button', () => {
     build.clickOnConfirmDeleteButton()
 })
 And('Verify the record is deleted successfully', () => {
-
+    build.verifyDelete()
 })
 Then('Click on More filters', () => {
     build.clickOnMoreFiltersButton()

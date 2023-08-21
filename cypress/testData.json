@@ -33,14 +33,21 @@
    "state": "CA",
    "zipcode": "90213",
    "country": "US",
-   "savebtn": "[type='submit']"
+   "savebtn": "[type='submit']",
+   "addmsg":"Add New Building"
  },
  "editbuildings":{
    "buildingname": "Edit Building",
    "buildingimg":"image1.jpeg",
    "phone": "2734633338",
    "extension": "11",
-   "defaultbuilding":"[data-value='false']"
+   "defaultbuilding":"[data-value='false']",
+   "updatemsg":"Building updated"
+ },
+ "detailsBuilding":{
+  "details":"Details",
+  "buildingname": "Demo Building",
+  "active":"yes"
  },
  "deviceRepairReport":{
    "ticketno":"VAL2023080715363517",
