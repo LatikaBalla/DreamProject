@@ -51,12 +51,39 @@
  },
  "deviceRepairReport":{
    "ticketno":"VAL2023080715363517",
-   "filename":"undefined.pdf"
+   "filename":"VAL2023080715363517.pdf"
  },
  "myFleet":{
    "filename":"manage_device_fleet.csv",
    "serialno":"1CD1000005",
    "assetTag":"12354"
- }
-
+ },
+ "addasset":{
+  "title": "Mr",
+  "fullname": "Demo Test",
+  "location": "india",
+  "notes":"Testing",
+  "tag": "10",
+  "type": "aaabbbccc",
+  "description":"this is description"
+},
+"editasset":{
+  "title": "Mrs",
+  "fullname": "Edit Test",
+  "location": "UK",
+  "notes":"assest devices",
+  "tag": "12",
+  "type": "3absjkba",
+  "description":"I want to edit description"
+},
+"importDevice":{
+  "uploadfilename":"import_serial_devices1.csv",
+  "downloadfilename":"import_list.csv"
+},
+"orgAsset":{
+  "upload":"image1.jpeg",
+  "reupload":"image2.jpg",
+  "addassetmsg":"Add new asset form submitted",
+  "updatemsg":"Update asset form submitted"
+}
 }

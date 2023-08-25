@@ -6,4 +6,9 @@ export default class WarrantyInfoElements {
             timeout: 30000,
         })
     }
+    headingElement() {
+        return cy.contains(locator.warrantyInfo.heading, {
+            timeout: 30000,
+        })
+    }
 }

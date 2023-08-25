@@ -1,7 +1,7 @@
 import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 import { ImportSerialDevicesActions } from '../PageObject/PageActions/ImportSerialDevicesActions'
 
-const acc = new ImportSerialDevicesActions()
+const isd = new ImportSerialDevicesActions()
 Cypress.on("uncaught:exception", () => {
     return false;
 });
@@ -13,21 +13,45 @@ When('I should Sign In into the application', () => {
 })
 Then('close the terms of service window', () => {
     cy.wait(8000)
-    acc.closeTermsOfServiceWindow()
+    isd.closeTermsOfServiceWindow()
     cy.wait(1000)
 })
 Then('Click on Manage Devices', () => {
-    acc.clickOnManageDevices()
+    isd.clickOnManageDevices()
 })
 And('Click on ImportSerialDevices Tab', () => {
-    acc.clickOnImportSerialDevices()
+    isd.clickOnImportSerialDevices()
 })
 And('Verify the Title of ImportSerialDevices Page', () => {
-    acc.verifyTitle()
+    isd.verifyTitle()
 })
 Then('Filters of ImportSerialDevices should be visible', () => {
-    acc.filtersVisible()
+    isd.filtersVisible()
 })
 And('Table for ImportSerialDevices should be visible', () => {
-    acc.tableVisible()
+    isd.tableVisible()
 })
+Then ('I should click on Add New Import',()=>{
+    isd.clickOnAddNewImport()
+})
+Then ('Upload the CSV import file',()=>{
+    isd.uploadcsvFile()
+})
+And ('Click on submit button',()=>{
+    isd.clickOnSubmitButton()
+})
+Then('Verify the record in table',()=>{
+    isd.verfiyImportTable()
+})
+ And ('Click on Download import button',()=>{
+    isd.clickOnDownloadImport()
+ })
+Then ('Verify the successfully downloaded',()=>{
+    isd.verifyDownloaded()
+})
+And ('Click on Details button',()=>{
+    isd.clickOnDetailsButton()
+}) 
+Then ('Verify the Device Details',()=>{
+    isd.verifyDeviceDetails()
+}) 

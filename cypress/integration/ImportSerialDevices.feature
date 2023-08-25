@@ -14,3 +14,14 @@ Feature: ImportSerialDevices Page Functionality
         And Verify the Title of ImportSerialDevices Page
         Then Filters of ImportSerialDevices should be visible
         And Table for ImportSerialDevices should be visible
+
+    Scenario:Add new import, download import and view the details
+        Then I should click on Add New Import
+        Then Upload the CSV import file 
+        And Click on submit button
+        Then Verify the record in table 
+         And Click on Download import button 
+        Then Verify the successfully downloaded
+        And Click on Details button 
+        Then Verify the Device Details 
+   

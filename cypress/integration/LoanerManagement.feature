@@ -12,3 +12,5 @@ Feature: LoanerManagement Page Functionality
 
     Scenario: Visiblity of LoanerManagement page
         And Table for LoanerManagement should be visible
+
+        

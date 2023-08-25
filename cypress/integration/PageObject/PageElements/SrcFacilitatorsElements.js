@@ -16,4 +16,14 @@ export default class SrcFacilitatorsElements {
             timeout: 30000,
         })
     }
+    refreshbtnElement() {
+        return cy.get(locator.srcFacilitators.refreshbtn, {
+            timeout: 30000,
+        })
+    }
+    viewElement() {
+        return cy.contains(locator.srcFacilitators.view, {
+            timeout: 30000,
+        })
+    }
 }

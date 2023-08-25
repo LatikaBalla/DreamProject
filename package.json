@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.17.2"
+    "cypress": "^12.17.2",
+    "cypress-file-upload": "^5.0.8"
   },
   "dependencies": {
     "@cypress/browserify-preprocessor": "^3.0.2",

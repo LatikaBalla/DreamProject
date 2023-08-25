@@ -16,4 +16,79 @@ export default class OrgUploadAssetsElements {
             timeout: 30000,
         })
     }
+    deleteElement() {
+        return cy.contains(locator.orgUploadAssets.delete, {
+            timeout: 30000,
+        })
+    }
+    conDeletebtnElement() {
+        return cy.contains(locator.orgUploadAssets.conDeletebtn, {
+            timeout: 30000,
+        })
+    }
+    editElement() {
+        return cy.contains(locator.orgUploadAssets.edit, {
+            timeout: 30000,
+        })
+    }
+    addassetElement() {
+        return cy.contains(locator.orgUploadAssets.addasset, {
+            timeout: 30000,
+        })
+    }
+    searchbtnElement() {
+        return cy.contains(locator.orgUploadAssets.searchbtn, {
+            timeout: 30000,
+        })
+    }
+    searchboxElement() {
+        return cy.get(locator.orgUploadAssets.searchbox, {
+            timeout: 30000,
+        })
+    }
+    titleAssetElement() {
+        return cy.get(locator.orgUploadAssets.titleAsset, {
+            timeout: 30000,
+        })
+    }
+    fullnameElement() {
+        return cy.get(locator.orgUploadAssets.fullname, {
+            timeout: 30000,
+        })
+    }
+    locationElement() {
+        return cy.get(locator.orgUploadAssets.location, {
+            timeout: 30000,
+        })
+    }
+    tagElement() {
+        return cy.get(locator.orgUploadAssets.tag, {
+            timeout: 30000,
+        })
+    }
+    notesElement() {
+        return cy.get(locator.orgUploadAssets.notes, {
+            timeout: 30000,
+        })
+    }
+    typeElement() {
+        return cy.get(locator.orgUploadAssets.type, {
+            timeout: 30000,
+        })
+    }
+    descriptionElement() {
+        return cy.get(locator.orgUploadAssets.description, {
+            timeout: 30000,
+        })
+    }
+    uploadElement() {
+        return cy.get(locator.orgUploadAssets.upload, {
+            timeout: 30000,
+        })
+    }
+    savebtnElement() {
+        return cy.contains(locator.orgUploadAssets.savebtn, {
+            timeout: 30000,
+        })
+    }
 }

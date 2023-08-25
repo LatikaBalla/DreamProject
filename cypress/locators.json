@@ -13,7 +13,7 @@
         "users": "Users",
         "shopinventory": "Shop Inventory",
         "resources": "Resources",
-        "message":".MuiAlert-message"
+        "message": ".MuiAlert-message"
     },
     "accountDetails": {
         "title": "My Account Details ",
@@ -80,7 +80,7 @@
         "morefiltersbtn": "+ Add Filter",
         "clearfilterbtn": "Clear Filter",
         "addfilterGroup": "+ Add Filter Group",
-        "detailsBuildingname":".MuiTypography-h4"
+        "detailsBuildingname": ".MuiTypography-h4"
     },
     "newbuilding": {
         "buildingname": "#building_name",
@@ -147,10 +147,10 @@
         "filters": ".css-1yuhvjn",
         "search": "[placeholder='Search Ticket Number']",
         "table": ".css-1owb465",
-        "printTicket":"Print Ticket Estimate",
-        "downloadticket":"Download Ticket Estimate",
-        "back":"[data-testid='KeyboardBackspaceIcon']",
-        "heading":"Repair Ticket Details"
+        "printTicket": "Print Ticket Estimate",
+        "downloadticket": "Download Ticket Estimate",
+        "back": "[data-testid='KeyboardBackspaceIcon']",
+        "heading": "Repair Ticket Details"
     },
     "vivacityRepairReport": {
         "section1": "In Transit to Me",
@@ -189,20 +189,58 @@
         "fieldoperation": "[name='operation']",
         "applybtn": "[data-testid='btnHandleApply']",
         "addfilterGroup": "+ Add Filter Group",
-        "view":""
+        "view": "View"
     },
     "importSerialDevices": {
         "title": "Past Imports",
         "filters": ".css-h719to",
-        "table": ".css-1xz8d5v"
+        "table": ".css-1xz8d5v",
+        "instructions":"Import Instructions",
+        "addimport":"Add New Import",
+        "downloadimport":"Download Import",
+        "details":"Details" ,
+        "submit":"[data-testid='btnNewDataSubmit']",
+        "upload":"input[type='file']"
     },
     "orgUploadAssets": {
         "title": "Organization Uploaded Assets",
         "filters": ".css-1vfjcsy",
-        "table": ".css-1owb465"
+        "table": ".css-1owb465",
+        "searchbox":"[placeholder='Search by Title']",
+        "searchbtn":"Search",
+        "addasset":"Add Asset",
+        "edit":"EDIT",
+        "delete":"DELETE",
+        "conDeletebtn":"Delete",
+        "titleAsset":"#title",
+        "fullname":"#profile_full_name",
+        "location":"#acquire_location",
+        "tag":"#tag",
+        "notes":"#notes",
+        "type":"#type",
+        "description":"#description",
+        "upload":"[type='file']",
+        "savebtn":"Save"
     },
     "loanerManagement": {
-        "table": ".css-1xz8d5v"
+        "table": ".css-1xz8d5v",
+        "search": "[placeholder='Search by table field values']",
+        "addstudent": "[data-testid='checkoutFilter']",
+        "addfilter": "[data-testid='checkoutFilter']",
+        "refreshbtn": "[data-testid='CachedIcon']",
+        "addfilterDevices": "[data-testid='deviceTableFilter']",
+        "serialFilter": "#Serial Number",
+        "assetTagFilter": "#Asset Tag",
+        "SKUFilter": "#SKU",
+        "deviceNameFilter": "#Device Name",
+        "addloanerPool": "Add to Loaner Pool",
+        "removeloanerPool": "Remove from Loaner Pool",
+        "checkoutbtn": "Check Out",
+        "checkinbtn": "Check In",
+        "studentName": "#name",
+        "studentTitle": "#title",
+        "studentEmail": "#email",
+        "studentStatus": "#status"
     },
     "repair360": {
         "title": "Repair 360",
@@ -219,12 +257,32 @@
     "repairTickets": {
         "title": "All Vivacity Repair Tickets",
         "filters": ".css-zdpt2t",
-        "table": ".css-1owb465"
+        "table": ".css-1owb465",
+        "createTicket":"Create New Ticket",
+        "export":"Export",
+        "searchbox":"[data-testid='txtSearchData']",
+        "refreshbtn":"[data-testid='CachedIcon']",
+        "view":"View"
     },
     "repairBoxes": {
         "title": "All Shipping Boxes",
         "filters": ".css-1g4lz0w",
-        "table": ".css-1owb465"
+        "table": ".css-1owb465",
+        "seachbox":"[placeholder='Search']",
+        "addbox":"Add New Box",
+        "weight":"#weight",
+        "height":"#height",
+        "depth":"#depth",
+        "width":"#width",
+        "pickupsite":"[name='building']",
+        "checkbox":"[name='shipping_box']",
+        "createboxbtn":"Create Box",
+        "downloadlabel":"Download Shipping Label",
+        "downloadmanifest":"Download Shipping Manifest",
+        "addticket":"Add Tickets",
+        "selectTicket":"#repair_tickets",
+        "addticketbtn":"Add Ticket(s)",
+        "tickettitle":"Repair Tickets in this Box"
     },
     "inhouseRepairCenter": {
         "title": "In-House Repair",
@@ -233,12 +291,28 @@
     },
     "inhouseWorkflow": {
         "title": "",
-        "filters": ".css-k008qs"
+        "filters": ".css-k008qs",
+        "search":"[placeholder='Ticket No.']",
+        "newbtn":"New",
+        "exportbtn":"Export",
+        "viewdetails":"View Details",
+        "moverepairebtn":"Move to Repair Stage",
+        "addnote": "repair_note",
+        "savenote":"Save"
     },
     "inhouseTickets": {
         "title": "All Vivacity Repair Tickets",
         "filters": ".css-zdpt2t",
-        "table": ".css-1owb465"
+        "table": ".css-1owb465",
+        "search":"[data-testid='txtSearchData']",
+        "view":"View",
+        "createTicket":"Create New Ticket",
+        "exportbtn":"Export",
+        "failuretype":"#failure_type",
+        "serialdevice":"#device",
+        "technician":"#internal_technician",
+        "DescribeIssue":"#chromebook_issue",
+        "savebtn":"Save"
     },
     "studentRepairCenter": {
         "title": "Student Repair Center",
@@ -248,23 +322,78 @@
     },
     "partCloset": {
         "title": "Parts Closet",
-        "filters": ".css-1w1zorn",
-        "table": ".css-1owb465"
+        "filters": ".css-1d3bbye",
+        "table": ".css-1owb465",
+        "search":"[placeholder='Search']",
+        "custompart":"New Custom Part",
+        "tvpart":"New VT Part",
+        "editquality":"[editext='edit-button']",
+        "yes":"[editext='save-button']",
+        "no":"[editext='cancel-button']",
+        "delete":"Delete",
+        "ordermore":"Order More",
+        "partname":"#part_name",
+        "manufacturer":"#manufacturer",
+        "parentdevice":"#parent_device",
+        "partsku":"#part_sku"  ,
+        "quantity":"#quantity",
+        "cancel":"Cancel",
+        "submit":"Submit",
+        "device":"#device",
+        "partid":"#partId",
+        "quantitytv":"#quantity",
+        "submitTv":"Submit",
+        "cancelTv":"Cancel"
     },
     "srcRepairTickets": {
         "title": "SRC Repair Tickets",
         "filters": ".css-1g4lz0w",
-        "table": ".css-1owb465"
+        "table": ".css-1owb465",
+        "search":"",
+        "srtAdd":"Student Repair Ticket",
+        "refreshbtn":"[data-testid='CachedIcon']",
+        "failuretype":"[name='failure_type']",
+        "technician":"#student_technician",
+        "serialdevice":"#device",
+        "DescribeIssue":"#chromebook_issue",
+        "save":"Save",
+        "view":"View",
+        "editticket":"Edit Ticket",
+        "printTicket":"Print Ticket Estimate",
+        "downloadticket":"Download Ticket Estimate",
+        "lineitem":"Add New Line Item",
+        "vtverifypart":"VT Verfied Part",
+        "custompart":"Custom Part",
+        "part":"#part",
+        "createLineitem":"Create Line Item"
     },
     "srcFacilitators": {
         "title": "SRC Facilitators",
         "filters": ".css-al6ceu",
-        "table": ".css-1owb465"
+        "table": ".css-1owb465",
+        "refreshbtn":"[data-testid='CachedIcon']",
+        "view":"View"
     },
     "srcStudents": {
         "title": "SRC Students",
         "filters": ".css-al6ceu",
-        "table": ".css-1owb465"
+        "table": ".css-1owb465",
+        "addstudent":"Add New Student",
+        "titlestudent":"#title",
+        "fullname":"#full_name",
+        "email":"#email",
+        "phone":"#phone",
+        "cellnumber":"#cell_number",
+        "userstatus":"#user_status",
+        "vivanews":"#vivacity_news",
+        "productupdate":"#product_updates",
+        "vivaweekly":"#vivacity_weekly",
+        "betatester":"#beta_tester",
+        "usernotification":"#user_notifications",
+        "inhouserepair":"#in_house_repair",
+        "submit":"Submit",
+        "cancel":"Cancel",
+        "view":"View"
     },
     "resources": {
         "title": "Resources",
@@ -274,12 +403,22 @@
     },
     "instructions": {
         "provisionDevice": "[data-testid='tabinst-1']",
-        "deprovisionDevice": "[data-testid='tabinst-2']"
+        "deprovisionDevice": "[data-testid='tabinst-2']",
+        "gsuite":"Login to your G Suite Admin console",
+        "googleworkspace":"Login to your Google Workspace Admin console",
+        "device":"On Device",
+        "chromedevices":"Access Chrome Devices",
+        "Deprovision":"Deprovision Single Chromebook"
     },
     "howToVideos": {
-        "videos": ".css-1d3bbye"
+        "videos": ".css-1d3bbye",
+        "productv":"Product Video",
+          "HPrepairv": "HP Repair",
+          "lenovorepairv":"Lenovo Repair",
+          "dellrepairv":"Dell Repair"
     },
     "warrantyInfo": {
-        "title": "EMPOWER+ Warranty"
+        "title": "EMPOWER+ Warranty",
+        "heading":"Terms and Conditions"
     }
 }

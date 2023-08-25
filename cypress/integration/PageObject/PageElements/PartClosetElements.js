@@ -16,4 +16,104 @@ export default class PartClosetElements {
             timeout: 30000,
         })
     }
+    searchElement() {
+        return cy.get(locator.partCloset.search, {
+            timeout: 30000,
+        })
+    }
+    custompartElement() {
+        return cy.contains(locator.partCloset.custompart, {
+            timeout: 30000,
+        })
+    }
+    tvpartElement() {
+        return cy.contains(locator.partCloset.tvpart, {
+            timeout: 30000,
+        })
+    }
+    editqualityElement() {
+        return cy.get(locator.partCloset.editquality, {
+            timeout: 30000,
+        })
+    }
+    yesElement() {
+        return cy.get(locator.partCloset.yes, {
+            timeout: 30000,
+        })
+    }
+    noElement() {
+        return cy.get(locator.partCloset.no, {
+            timeout: 30000,
+        })
+    }
+    deleteElement() {
+        return cy.contains(locator.partCloset.delete, {
+            timeout: 30000,
+        })
+    }
+    ordermoreElement() {
+        return cy.contains(locator.partCloset.ordermore, {
+            timeout: 30000,
+        })
+    }
+    partnameElement() {
+        return cy.get(locator.partCloset.partname, {
+            timeout: 30000,
+        })
+    }
+    manufacturerElement() {
+        return cy.get(locator.partCloset.manufacturer, {
+            timeout: 30000,
+        })
+    }
+    parentdeviceElement() {
+        return cy.get(locator.partCloset.parentdevice, {
+            timeout: 30000,
+        })
+    }
+    partskuElement() {
+        return cy.get(locator.partCloset.partsku, {
+            timeout: 30000,
+        })
+    }
+    quantityElement() {
+        return cy.get(locator.partCloset.quantity, {
+            timeout: 30000,
+        })
+    }
+    submitElement() {
+        return cy.contains(locator.partCloset.submit, {
+            timeout: 30000,
+        })
+    }
+    cancelElement() {
+        return cy.contains(locator.partCloset.cancel, {
+            timeout: 30000,
+        })
+    }
+    deviceElement() {
+        return cy.get(locator.partCloset.device, {
+            timeout: 30000,
+        })
+    }
+    partidElement() {
+        return cy.get(locator.partCloset.partid, {
+            timeout: 30000,
+        })
+    }
+    quantitytvElement() {
+        return cy.get(locator.partCloset.quantitytv, {
+            timeout: 30000,
+        })
+    }
+    submitTvElement() {
+        return cy.contains(locator.partCloset.submitTv, {
+            timeout: 30000,
+        })
+    }
+    submitTvElement() {
+        return cy.contains(locator.partCloset.cancelTv, {
+            timeout: 30000,
+        })
+    }
 }

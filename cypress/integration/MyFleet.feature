@@ -10,10 +10,10 @@ Feature: MyFleet  Page Functionality
         Then Click on Manage Devices
         And Click on MyFleet Tab
 
-    # Scenario: Visiblity of MyFleet page
-    #     And Verify the Title of MyFleet Page
-    #     Then Filters of MyFleet should be visible
-    #     And Table for MyFleet should be visible
+    Scenario: Visiblity of MyFleet page
+        And Verify the Title of MyFleet Page
+        Then Filters of MyFleet should be visible
+        And Table for MyFleet should be visible
 
     Scenario: add more filter, Clear filter and Search
         Then Click on More filters
