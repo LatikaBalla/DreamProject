@@ -16,4 +16,64 @@ export default class RepairTicketsElements {
             timeout: 30000,
         })
     }
+    viewElement() {
+        return cy.contains(locator.repairTickets.view, {
+            timeout: 30000,
+        })
+    }
+    createTicketElement() {
+        return cy.contains(locator.repairTickets.createTicket, {
+            timeout: 30000,
+        })
+    }
+    exportElement() {
+        return cy.contains(locator.repairTickets.export, {
+            timeout: 30000,
+        })
+    }
+    searchboxElement() {
+        return cy.get(locator.repairTickets.searchbox, {
+            timeout: 30000,
+        })
+    }
+    refreshbtnElement() {
+        return cy.get(locator.repairTickets.refreshbtn, {
+            timeout: 30000,
+        })
+    }
+    failuretypeElement() {
+        return cy.get(locator.repairTickets.failuretype, {
+            timeout: 30000,
+        })
+    }
+    returnsiteElement() {
+        return cy.get(locator.repairTickets.returnsite, {
+            timeout: 30000,
+        })
+    }
+    serialdeviceElement() {
+        return cy.get(locator.repairTickets.serialdevice, {
+            timeout: 30000,
+        })
+    }
+    buildingElement() {
+        return cy.get(locator.repairTickets.building, {
+            timeout: 30000,
+        })
+    }
+    chromebookissueElement() {
+        return cy.get(locator.repairTickets.chromebookissue, {
+            timeout: 30000,
+        })
+    }
+    descriptionElement() {
+        return cy.get(locator.repairTickets.description, {
+            timeout: 30000,
+        })
+    }
+    savebtnElement() {
+        return cy.contains(locator.repairTickets.savebtn, {
+            timeout: 30000,
+        })
+    }
 }

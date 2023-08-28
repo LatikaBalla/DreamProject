@@ -85,5 +85,16 @@
   "reupload":"image2.jpg",
   "addassetmsg":"Add new asset form submitted",
   "updatemsg":"Update asset form submitted"
+},
+"repairTickets":{
+  "failuretype":"[data-value='ID']",
+  "filename":"RepairTickets.csv",
+  "returnsite":"[data-value='2269']",
+  "building":"[data-value='2269']",
+  "serialdevice":"#device-option-2",
+  "chromebookissue":"[data-value='System Board']",
+  "description":"there is some problem in System Board of the laptop",
+ "devicename":"Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
+  "createTicketmsg":"Add new ticket form submitted"
 }
 }

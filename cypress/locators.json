@@ -262,7 +262,14 @@
         "export":"Export",
         "searchbox":"[data-testid='txtSearchData']",
         "refreshbtn":"[data-testid='CachedIcon']",
-        "view":"View"
+        "view":"View",
+        "failuretype":"#failure_type",
+        "returnsite":"#outbound_address",
+        "serialdevice":"#device",
+        "building":"#building",
+        "chromebookissue":"#repair_issue",
+        "description":"#chromebook_issue",
+        "savebtn":"Save"
     },
     "repairBoxes": {
         "title": "All Shipping Boxes",
