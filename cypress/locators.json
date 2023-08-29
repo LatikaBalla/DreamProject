@@ -284,6 +284,8 @@
         "pickupsite":"[name='building']",
         "checkbox":"[name='shipping_box']",
         "createboxbtn":"Create Box",
+        "ticket":"#repair_tickets",
+        "finishbtn":"Finish",
         "downloadlabel":"Download Shipping Label",
         "downloadmanifest":"Download Shipping Manifest",
         "addticket":"Add Tickets",

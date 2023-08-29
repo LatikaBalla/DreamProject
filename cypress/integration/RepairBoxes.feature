@@ -14,3 +14,16 @@ Feature: PartCloset Page Functionality
         And Verify the Title of RepairBoxes Page
         Then Filters of RepairBoxes should be visible
         And Table for RepairBoxes should be visible
+
+      Scenario: Create New Box, Search ticket no and view details of box with create ticket on it 
+        Then I should click on create new Box
+        Then Enter weight, height, depth and width
+        And Select Pick-up site
+        Then Check the need shipping box 
+        And Click on Create box button
+        Then Select Ticket from dropdownlist 
+        And Click on Finish button
+        Then Verify new box is added in table 
+        And Click on new box row 
+        Then Verify the Details new box
+       

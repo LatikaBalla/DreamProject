@@ -31,3 +31,31 @@ Then('Filters of RepairBoxes should be visible', () => {
 And('Table for RepairBoxes should be visible', () => {
     acc.tableVisible()
 })
+Then ('I should click on create new Box',()=>{
+
+})
+Then ('Enter weight, height, depth and width',()=>{
+
+})
+And ('Select Pick-up site',()=>{
+
+})
+Then ('Check the need shipping box',()=>{
+
+}) 
+And ('Click on Create box button',()=>{
+
+})
+Then ('Select Ticket from dropdownlist',()=>{
+
+}) 
+And ('Click on Finish button',()=>{
+
+})
+Then ('Verify new box is added in table',()=>{
+
+}) 
+And ('Click on new box row ',()=>{
+    
+})
+Then ('Verify the Details new box',()=>{})
