@@ -16,6 +16,11 @@ export default class SrcStudentsElements {
             timeout: 30000,
         })
     }
+    addstudentElement(){
+        return cy.contains(locator.srcStudents.addstudent, {
+            timeout: 30000,
+        })
+    }
     titlestudentElement() {
         return cy.get(locator.srcStudents.titlestudent, {
             timeout: 30000,
@@ -33,6 +38,11 @@ export default class SrcStudentsElements {
     }
     phoneElement() {
         return cy.get(locator.srcStudents.phone, {
+            timeout: 30000,
+        })
+    }
+    cellnumberElement() {
+        return cy.get(locator.srcStudents.cellnumber, {
             timeout: 30000,
         })
     }
@@ -72,7 +82,7 @@ export default class SrcStudentsElements {
         })
     }
     submitElement() {
-        return cy.contains(locator.srcStudents.submit, {
+        return cy.get(locator.srcStudents.submit, {
             timeout: 30000,
         })
     }

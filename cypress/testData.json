@@ -96,5 +96,65 @@
   "description":"there is some problem in System Board of the laptop",
  "devicename":"Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
   "createTicketmsg":"Add new ticket form submitted"
+},
+"repairBox":{
+  "weight":"10",
+  "height":"10",
+  "depth":"10",
+  "width":"10",
+  "pickupsite":"[data-value='2269']",
+  "ticketcheckbox":"[data-value='VAL2023090111371349']"
+},
+"inHouseWorkflow":{
+  "failuretype":"[data-value='ID']",
+  "serialdevice":"#device-option-2",
+  "chromebookissue":"There is something fault",
+  "technician":"[data-value='818']",
+  "createTicketmsg":"Add new ticket form submitted",
+  "filename":"InHouseRepairTickets.csv"
+},
+"inHouseTicket":{
+  "failuretype":"[data-value='ID']",
+  "serialdevice":"#device-option-2",
+  "chromebookissue":"There is something fault",
+  "technician":"[data-value='818']",
+  "createTicketmsg":"Add new ticket form submitted",
+  "filename":"InHouseRepairTickets.csv"
+},
+"srcRepairTicket":{
+  "failuretype":"[data-value='ID']",
+  "serialdevice":"#device-option-2",
+  "chromebookissue":"There is something fault",
+  "technician":"[data-value='943']",
+  "createTicketmsg":"Add new student ticket form submitted",
+  "ticketno":"VAL2023083113443146"
+},
+"srcStudent":{
+    "title": "Mr",
+    "fullname": "Demo Student",
+    "email": "demostudent@gmail.com",
+    "phone": "1231231231",
+    "cellnumber": "1231234121",
+    "userstatus": "[data-value='Active']",
+    "vivanews":"[data-value='false']",
+    "productupdate":"[data-value='true']",
+    "vivaweekly":"[data-value='true']",
+    "betatester":"[data-value='true']",
+    "usernotification":"[data-value='true']",
+    "inhouserepair":"[data-value='true']",
+    "createStudentmsg":"student created"
+},
+"partCloset":{
+  "partname":"Test part",
+  "manufacturer":"test manufacturer",
+  "parentdevice":"test device",
+  "partsku":"111111"  ,
+  "quantity":"2",
+  "createpartmsg":"Part Closet item created",
+  "device":"#device-option-29",
+  "partid":"[data-value='1192']",
+  "search":"50053256"
+
 }
+
 }

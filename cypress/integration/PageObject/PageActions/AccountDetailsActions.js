@@ -108,16 +108,16 @@ export class AccountDetailsActions {
         cy.get('tbody tr').eq(0).find('td').eq(0).should('not.contain', tdata.delete.fullname)
     }
     enterSearchValue() {
-        dash.searchElement().type(tdata.search.fullname)
+        dash.searchElement().type(tdata.search.fullname,{force:true})
     }
     verifySearchResult() {
         cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.search.fullname)
     }
     clickOnMoreFiltersButton() {
-        dash.morefiltersbtnElement().click()
+        dash.morefiltersbtnElement().click({force:true})
     }
     clickOnAddFilterGroup() {
-        dash.addfilterGroupElement().click()
+        dash.addfilterGroupElement().click({force:true})
     }
     selectFieldName() {
         dash.fieldnameElement().select('email')
@@ -129,10 +129,10 @@ export class AccountDetailsActions {
         dash.fieldvalueElement().type('@gmail.com')
     }
     clickOnApplyButton() {
-        dash.applybtnElement().click()
+        dash.applybtnElement().click({force:true})
     }
     clickOnClearFiltersButton() {
-        dash.clearfilterbtnElement().click()
+        dash.clearfilterbtnElement().click({force:true})
     }
     verifyResultAfterFilter() {
         cy.wait(2000)

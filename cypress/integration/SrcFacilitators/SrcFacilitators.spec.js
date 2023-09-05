@@ -1,7 +1,7 @@
 import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 import { SrcFacilitatorsActions } from '../PageObject/PageActions/SrcFacilitatorsActions'
 
-const acc = new SrcFacilitatorsActions()
+const sf = new SrcFacilitatorsActions()
 Cypress.on("uncaught:exception", () => {
     return false;
 });
@@ -13,24 +13,30 @@ When('I should Sign In into the application', () => {
 })
 Then('close the terms of service window', () => {
     cy.wait(8000)
-    acc.closeTermsOfServiceWindow()
+    sf.closeTermsOfServiceWindow()
     cy.wait(1000)
 })
 Then('Click on Repair360 page', () => {
-    acc.clickOnRepair360()
+    sf.clickOnRepair360()
 })
 And('Click on StudentRepairCenter tab', () => {
-    acc.clickOnStudentRepairCenterTab()
+    sf.clickOnStudentRepairCenterTab()
 })
 Then('Click on SrcFacilitators tab', () => {
-    acc.clickOnSrcFacilitatorsTab()
+    sf.clickOnSrcFacilitatorsTab()
 })
 And('Verify the Title of SrcFacilitators Page', () => {
-    acc.verifyTitle()
+    sf.verifyTitle()
 })
 Then('Filters of SrcFacilitators should be visible', () => {
-    acc.filtersVisible()
+    sf.filtersVisible()
 })
 And('Table for SrcFacilitators should be visible', () => {
-    acc.tableVisible()
+    sf.tableVisible()
+})
+And ('Click on view button',()=>{
+    sf.clickOnViewButton()
+}) 
+Then ('Veriry the Details of Facilitator',()=>{
+sf.verifyViewDetails()
 })

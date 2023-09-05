@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+
 const Repair360Elements = require("../PageElements/Repair360Elements.js")
 const DashboardElements = require("../PageElements/DashboardElements.js")
 const SrcFacilitatorsElements = require("../PageElements/SrcFacilitatorsElements.js")
@@ -8,7 +9,7 @@ export class SrcFacilitatorsActions {
     constructor() {
         globalThis.mdev = new Repair360Elements();
         globalThis.dash = new DashboardElements();
-        globalThis.mf = new SrcFacilitatorsElements();
+        globalThis.sf = new SrcFacilitatorsElements();
         globalThis.mf1 = new StudentRepairCenterElements()
     }
     closeTermsOfServiceWindow() {
@@ -25,13 +26,20 @@ export class SrcFacilitatorsActions {
         mf1.srcFacilitatorsElement().click({ force: true })
     }
     verifyTitle() {
-        mf.titleElement().should('be.visible')
+        sf.titleElement().should('be.visible')
     }
     filtersVisible() {
-        mf.filtersElement().should('be.visible')
+        sf.filtersElement().should('be.visible')
     }
     tableVisible() {
-        mf.tableElement().should('be.visible')
+        sf.tableElement().should('be.visible')
+    }
+    clickOnViewButton(){
+        cy.wait(2000)
+        cy.get('tbody tr').eq(0).find('td').eq(4).contains("View").click({force:true})
+    }
+    verifyViewDetails(){
+sf.detailsRoleElement()
     }
 
 }

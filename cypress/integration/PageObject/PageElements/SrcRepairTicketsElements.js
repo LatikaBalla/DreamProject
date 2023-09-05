@@ -21,8 +21,8 @@ export default class SrcRepairTicketsElements {
             timeout: 30000,
         })
     }
-    srtAddElement() {
-        return cy.contains(locator.srcRepairTickets.srtAdd, {
+    createTicketElement() {
+        return cy.contains(locator.srcRepairTickets.createTicket, {
             timeout: 30000,
         })
     }
@@ -46,13 +46,13 @@ export default class SrcRepairTicketsElements {
             timeout: 30000,
         })
     }
-    describeIssueElement() {
-        return cy.get(locator.srcRepairTickets.describeIssue, {
+   chromebookissueElement() {
+        return cy.get(locator.srcRepairTickets.chromebookissue, {
             timeout: 30000,
         })
     }
-    saveElement() {
-        return cy.contains(locator.srcRepairTickets.save, {
+    savebtnElement() {
+        return cy.contains(locator.srcRepairTickets.savebtn, {
             timeout: 30000,
         })
     }

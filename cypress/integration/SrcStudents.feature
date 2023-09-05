@@ -15,3 +15,13 @@ Feature:SrcStudents Page Functionality
         And Verify the Title of SrcStudents Page
         Then Filters of SrcStudents should be visible
         And Table for SrcStudents should be visible
+
+ Scenario: Add new Srudent
+        Then I should click on Add New student 
+        Then Enter title, full name and Email
+        And Enter Phone and Cell Number
+        Then Select User Status, vivacity news and product Update 
+        Then Select Vivacity weekly and Beta tester 
+         Then Select User notification and in house repair 
+        And Click on submit button
+       # Then Verify the student added in table

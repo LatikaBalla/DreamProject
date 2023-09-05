@@ -101,18 +101,18 @@ export default class PartClosetElements {
             timeout: 30000,
         })
     }
-    quantitytvElement() {
-        return cy.get(locator.partCloset.quantitytv, {
+    quantityVTElement() {
+        return cy.get(locator.partCloset.quantityVT, {
             timeout: 30000,
         })
     }
-    submitTvElement() {
-        return cy.contains(locator.partCloset.submitTv, {
+    submitVTElement() {
+        return cy.contains(locator.partCloset.submitVT, {
             timeout: 30000,
         })
     }
-    submitTvElement() {
-        return cy.contains(locator.partCloset.cancelTv, {
+    submitVTElement() {
+        return cy.contains(locator.partCloset.cancelVT, {
             timeout: 30000,
         })
     }

@@ -26,4 +26,9 @@ export default class SrcFacilitatorsElements {
             timeout: 30000,
         })
     }
+    detailsRoleElement(){
+        return cy.contains(locator.srcFacilitators.detailsRole, {
+            timeout: 30000,
+        })
+    }
 }

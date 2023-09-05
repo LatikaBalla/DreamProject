@@ -3,12 +3,12 @@ const Repair360Elements = require("../PageElements/Repair360Elements.js")
 const DashboardElements = require("../PageElements/DashboardElements.js")
 const SrcRepairTicketsElements = require("../PageElements/SrcRepairTicketsElements.js")
 const StudentRepairCenterElements = require("../PageElements/StudentRepairCenterElements.js")
-
+const tdata = require("../../../testData.json");
 export class SrcRepairTicketsActions {
     constructor() {
         globalThis.mdev = new Repair360Elements();
         globalThis.dash = new DashboardElements();
-        globalThis.mf = new SrcRepairTicketsElements();
+        globalThis.srt = new SrcRepairTicketsElements();
         globalThis.mf1 = new StudentRepairCenterElements()
     }
     closeTermsOfServiceWindow() {
@@ -25,13 +25,44 @@ export class SrcRepairTicketsActions {
         mf1.srcRepairTicketsElement().click({ force: true })
     }
     verifyTitle() {
-        mf.titleElement().should('be.visible')
+        srt.titleElement().should('be.visible')
     }
     filtersVisible() {
-        mf.filtersElement().should('be.visible')
+        srt.filtersElement().should('be.visible')
     }
     tableVisible() {
-        mf.tableElement().should('be.visible')
+        srt.tableElement().should('be.visible')
+    }
+    clickOnCreateTicketButton(){
+        srt.createTicketElement().click({force:true})
+    }
+    selectFailureType() {
+        srt.failuretypeElement().click({ force: true })
+        cy.get(tdata.srcRepairTicket.failuretype).click()
+    }
+    selectSerialDevice() {
+        srt.serialdeviceElement().click({ force: true })
+        cy.get(tdata.srcRepairTicket.serialdevice).click()
+    }
+    selectTechnician(){
+        srt.technicianElement().click({ force: true })
+        cy.get(tdata.srcRepairTicket.technician).click()
+    }
+    enterChromebookIssue() {
+        srt.chromebookissueElement().type(tdata.srcRepairTicket.chromebookissue)
+    }
+    clickOnSaveButton() {
+        srt.savebtnElement().click({ force: true })
+    }
+    verifyNewTicket() {
+        cy.wait(1000)
+        dash.messageElement().should('contain', tdata.srcRepairTicket.createTicketmsg)
+    }
+    enterSearchBox(){
+        srt.searchElement().type(tdata.srcRepairTicket.ticketno+'{enter}')
+    }
+    verifySearchResult(){
+        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.srcRepairTicket.ticketno)
     }
 
 }

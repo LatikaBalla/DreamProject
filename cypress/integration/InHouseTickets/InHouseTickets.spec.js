@@ -1,7 +1,7 @@
 import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 import { InHouseTicketsActions } from '../PageObject/PageActions/InHouseTicketsActions'
 
-const acc = new InHouseTicketsActions()
+const iht = new InHouseTicketsActions()
 Cypress.on("uncaught:exception", () => {
     return false;
 });
@@ -13,24 +13,49 @@ When('I should Sign In into the application', () => {
 })
 Then('close the terms of service window', () => {
     cy.wait(8000)
-    acc.closeTermsOfServiceWindow()
+    iht.closeTermsOfServiceWindow()
     cy.wait(1000)
 })
 Then('Click on Repair360 page', () => {
-    acc.clickOnRepair360()
+    iht.clickOnRepair360()
 })
 And('Click on InHouseRepairCenter tab', () => {
-    acc.clickOnInHouseRepairCenterTab()
+    iht.clickOnInHouseRepairCenterTab()
 })
 Then('Click All InHouseTickets tab', () => {
-    acc.clickOnInHouseTicketsTab()
+    iht.clickOnInHouseTicketsTab()
 })
 And('Verify the Title of InHouseTickets Page', () => {
-    acc.verifyTitle()
+    iht.verifyTitle()
 })
 Then('Filters of InHouseTickets should be visible', () => {
-    acc.filtersVisible()
+    iht.filtersVisible()
 })
 And('Table for InHouseTickets should be visible', () => {
-    acc.tableVisible()
+    iht.tableVisible()
 })
+Then('I should click on Create new button', () => {
+    iht.clickOnCreateTicketButton()
+})
+And('Select failure Type, Serial Device and Technician', () => {
+    iht.selectFailureType()
+    iht.selectSerialDevice()
+    iht.selectTechnician()
+})
+Then('Enter the Chromebook issue', () => {
+    iht.enterChromebookIssue()
+})
+And('Click on save button', () => {
+    iht.clickOnSaveButton()
+})
+Then('Verify New Ticket is added', () => {
+    iht.verifyNewTicket()
+})
+And('Click on Download Export button', () => {
+    iht.clickOnExport()
+})
+Then('Verify the successfully downloaded', () => {
+    iht.verifyDownload()
+})
+
+

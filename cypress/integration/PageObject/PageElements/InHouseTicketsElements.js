@@ -16,4 +16,39 @@ export default class InHouseTicketsElements {
             timeout: 30000,
         })
     }
+    failuretypeElement() {
+        return cy.get(locator.inhouseTickets.failuretype, {
+            timeout: 30000,
+        })
+    }
+    serialdeviceElement() {
+        return cy.get(locator.inhouseTickets.serialdevice, {
+            timeout: 30000,
+        })
+    }
+    technicianElement() {
+        return cy.get(locator.inhouseTickets.technician, {
+            timeout: 30000,
+        })
+    }
+    chromebookissueElement() {
+        return cy.get(locator.inhouseTickets.chromebookissue, {
+            timeout: 30000,
+        })
+    }
+    savebtnElement() {
+        return cy.contains(locator.inhouseTickets.savebtn, {
+            timeout: 30000,
+        })
+    }
+    createTicketElement() {
+        return cy.contains(locator.inhouseTickets.createTicket, {
+            timeout: 30000,
+        })
+    }
+    exportbtnElement() {
+        return cy.contains(locator.inhouseTickets.exportbtn, {
+            timeout: 30000,
+        })
+    }
 }

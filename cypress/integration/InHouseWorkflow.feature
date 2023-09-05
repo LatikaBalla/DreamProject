@@ -12,3 +12,12 @@ Feature:InHouseWorkflow Page Functionality
 
     Scenario: Visiblity of InHouseWorkflow page
         Then Filters of InHouseWorkflow should be visible
+
+    Scenario: Create a ticket and download export
+        Then I should click on new button
+        And Select failure Type, Serial Device and Technician
+        Then Enter the Chromebook issue
+        And Click on save button
+        Then Verify New Ticket is added
+        And Click on Download Export button
+        Then Verify the successfully downloaded
