@@ -24,4 +24,4 @@ Feature:SrcStudents Page Functionality
         Then Select Vivacity weekly and Beta tester 
          Then Select User notification and in house repair 
         And Click on submit button
-       # Then Verify the student added in table
+        Then Verify the student added in table 

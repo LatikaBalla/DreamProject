@@ -66,4 +66,9 @@ export default class DashboardElements {
             timeout: 30000,
         }); 
     }
+    backArrowElement(){
+        return cy.get(locator.dashboard.backArrow, {
+            timeout: 30000,
+        }); 
+    }
 }

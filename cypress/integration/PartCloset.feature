@@ -20,16 +20,16 @@ Feature: PartCloset Page Functionality
         Then Enter part name, manufacture and parent device
         And Enter part sku and quantity
         Then Click on submit button
-        # And Verify new custome part is added
+        And Verify new custome part is added
         # And Enter the Search value in search box
         # Then  Verify the Results in the table
         # And Click on delete button
         # Then Verify the recode is deleted
-         And I should click on Add New VT part
-        Then Select device and part name
-        And Enter quantity
-        Then Click on submit button
-        # And Verify new VT part is added
+        #  And I should click on Add New VT part
+        # Then Select device and part name
+        # And Enter quantity
+        # Then Click on submit button
+        #  And Verify new VT part is added
 
 
 

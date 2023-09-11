@@ -10,7 +10,6 @@ module.exports = defineConfig({
     chromeWebSecurity: false ,
     failOnStatusCode: false,  
     experimentalOriginDependencies: true,
-
     env: {
       USERNAME:'demo_adminSuper@vivacitytech.com',
       PASSWORD:'VIVA!dreamdemo'

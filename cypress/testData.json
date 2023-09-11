@@ -103,7 +103,8 @@
   "depth":"10",
   "width":"10",
   "pickupsite":"[data-value='2269']",
-  "ticketcheckbox":"[data-value='VAL2023090111371349']"
+  "boxcreatedmsg":"New box submitted",
+  "filename":"Image.png"
 },
 "inHouseWorkflow":{
   "failuretype":"[data-value='ID']",
@@ -131,8 +132,8 @@
 },
 "srcStudent":{
     "title": "Mr",
-    "fullname": "Demo Student",
-    "email": "demostudent@gmail.com",
+    "fullname": "Demo Student1111111111",
+    "email": "demostudent1111@gmail.com",
     "phone": "1231231231",
     "cellnumber": "1231234121",
     "userstatus": "[data-value='Active']",
@@ -149,11 +150,12 @@
   "manufacturer":"test manufacturer",
   "parentdevice":"test device",
   "partsku":"111111"  ,
-  "quantity":"2",
+  "quantity":"1",
   "createpartmsg":"Part Closet item created",
   "device":"#device-option-29",
   "partid":"[data-value='1192']",
-  "search":"50053256"
+  "search":"50053256",
+  "partnameTable":"TouchPad"
 
 }
 

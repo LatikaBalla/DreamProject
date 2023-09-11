@@ -6,5 +6,6 @@ cypress/videos
 cypress/logs
 cypress/fixtures
 cypress/results
-cypress/reports
 cypress/cucumber-json
+/reports/cucumber-htmlreport.html/features
+/reports/cucumber-htmlreport.html/assets

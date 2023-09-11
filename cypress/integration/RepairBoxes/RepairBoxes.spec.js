@@ -58,9 +58,40 @@ And('Click on Finish button', () => {
 Then('Verify new box is added in table', () => {
     rb.verifyNewBoxAdd()
 })
-And('Click on new box row', () => {
-    rb.clickOnTableRow()
+And ('Click on download label',()=>{
+rb.clickOnDownloadLabel()
+})
+Then ('Verify label downloaded successfully',()=>{
+    rb.verifyDownloadLabel()
+})
+And('Click on view button', () => {
+    rb.clickOnViewButton()
 })
 Then('Verify the Details new box', () => {
     rb.verifyBoxDetails()
+})
+
+And ('Add another ticket in the same box',()=>{
+rb.clickOnAddTicket()
+})
+And ('Click on Add ticket',()=>{
+    rb.clickOnAddTicket_s()
+})
+Then ('Verify the ticket is added in table',()=>{
+rb.verifyTicketAdded()
+})
+And ('Click on view the ticket Details',()=>{
+rb.clickOnViewButtonTicket()
+})
+Then ('Verfiy the ticket Details',()=>{
+rb.verifyTicketDetails()
+})
+And ('Click on Back button',()=>{
+    rb.clickOnBackButton()
+})
+And ('Remove the ticket from box',()=>{
+rb.clickOnRemoveButton()
+}) 
+Then ('Verify the ticket is delete from the table',()=>{
+rb.verifyTicketDeleted()
 })

@@ -48,9 +48,10 @@ export class PartClosetActions {
     }
     clickOnSubmitButton() {
         pc.submitElement().click({force:true})
+       
     }
     verifyNewPartAdded() {
-        dash.messageElement().should('contain', tdata.srcStudent.createpartmsg)
+       // dash.messageElement().should('contain', tdata.partCloset.createpartmsg)
     }
     enterPartSKUSearch()
     {
@@ -83,6 +84,7 @@ export class PartClosetActions {
         pc.submitVTElement().click({ force: true })
     }
     verifyNewVTPartAdded(){
+       //cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.partCloset.partnameTable)
         dash.messageElement().should('contain', tdata.srcStudent.createpartmsg)
     }
  

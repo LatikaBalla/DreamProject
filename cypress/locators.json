@@ -13,7 +13,8 @@
         "users": "Users",
         "shopinventory": "Shop Inventory",
         "resources": "Resources",
-        "message": ".MuiAlert-message"
+        "message": ".MuiAlert-message",
+        "backArrow":"[data-testid='KeyboardBackspaceIcon']"
     },
     "accountDetails": {
         "title": "My Account Details ",
@@ -276,7 +277,7 @@
         "filters": ".css-1g4lz0w",
         "table": ".css-1owb465",
         "seachbox":"[placeholder='Search']",
-        "addbox":".css-aar2fs",
+        "addbox":".css-1hl2t07",
         "weight":"#weight",
         "height":"#height",
         "depth":"#depth",
@@ -361,7 +362,7 @@
     },
     "srcRepairTickets": {
         "title": "SRC Repair Tickets",
-        "filters": ".css-1g4lz0w",
+        "filters": ".css-zdpt2t",
         "table": ".css-1owb465",
         "search":"[data-testid='txtSearchData']",
         "createTicket":"Create New Ticket",
