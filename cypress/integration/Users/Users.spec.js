@@ -1,7 +1,7 @@
 import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 import { UsersActions } from '../PageObject/PageActions/UsersActions'
 
-const acc = new UsersActions()
+const user = new UsersActions()
 Cypress.on("uncaught:exception", () => {
     return false;
 });
@@ -13,27 +13,105 @@ When('I should Sign In into the application', () => {
 })
 Then('Close the terms of service window', () => {
     cy.wait(8000)
-    acc.closeTermsOfServiceWindow()
+    user.closeTermsOfServiceWindow()
     cy.wait(1000)
 })
 And('Click on Users page', () => {
-    acc.clickOnUsers()
+    user.clickOnUsers()
 })
 Then('I should be redirected to the Users page', () => {
     cy.url().should('include', '/users')
 })
 Then('All Organizational unit should be visible', () => {
-    acc.AllOrganizationalUnitVisible()
+    user.AllOrganizationalUnitVisible()
 })
 And('All Users Unit should be visible', () => {
-    acc.AllUserUnitVisible()
+    user.AllUserUnitVisible()
 })
 Then('Filters of Users unit should be visible', () => {
-    acc.filtersVisible()
+    user.filtersVisible()
 })
 And('Table for Users unit should be visible', () => {
-    acc.tableVisible()
+    user.tableVisible()
+})
+Then('I should click on Add New student', () => {
+    user.clickOnCreateNewStudent()
+})
+Then('Enter full name, title and Email', () => {
+    user.enterFullname()
+    user.enterTitle()
+    user.enterEmail()
+})
+And('Enter Phone and Cell Number', () => {
+    user.enterPhone()
+    user.enterCellNumber()
+})
+And('Click on submit button', () => {
+    user.clickOnASubmitButton()
+})
+Then('Verify the student added in table', () => {
+    user.verifyRecordTable()
+})
+And('Enter the Search value in search box', () => {
+    user.enterSearchValue()
+})
+Then('Verify the Results in the table', () => {
+    user.verifySearchResult()
+})
+And('Click on Edit button', () => {
+    user.clickOnEditButton()
+})
+Then('I should edit title, full name', () => {
+    user.editTitle()
+    user.editFullname()
+})
+And('I should edit Phone and Cell Number and user role', () => {
+    user.editCellNumber()
+    user.editPhone()
+    user.editUserRole()
+})
+Then('I edit User Status to inactive', () => {
+    user.editUserStatus()
+})
+And('I edit In-house Repaire to yes', () => {
+    user.editInhouseRepaire()
+})
+Then('Click on Submit button', () => {
+    user.clickSubmitForUpdate()
+})
+And('Verify the Record has been updated Meassage', () => {
+    user.verfifyDataUpdatedMessage()
+})
+And ('Click on Delete button',()=>{
+    user.clickDeleteButton() 
+})
+Then ('Click on Confirm Delete button',()=>{
+    user.clickConfirmDeleteButton() 
+})
+And ('Verify the record is deleted successfully',()=>{
+    user.verifyRecordDeleted()
 })
 
-
+Then ('Click on Add Filter',()=>{
+    user.clickOnAddFilterButton()
+})
+Then('Select Field name and Field operation', () => {
+    user.selectFieldName()
+    user.selectfieldOperation()
+})
+And('Enter the Search value in search box of Filter', () => {
+    user.enterFieldValueSearchBox()
+})
+Then('Click on Apply Button', () => {
+    user.clickOnApplyButton()
+})
+And('Verify the Filter Results in the table', () => {
+    user.verifyResultAfterFilter()
+})
+Then('Click on Download button', () => {
+    user.clickOnDownload()
+})
+And('Verify Download the successfully', () => {
+    user.verifyDowanload()
+})
 

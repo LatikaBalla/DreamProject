@@ -157,6 +157,23 @@
   "search":"50053256",
   "partnameTable":"TouchPad"
 
+},
+"users":{
+  "fullname":"Demo Testing User",
+  "title":"Miss",
+  "cellnumber":"1231234121",
+  "phone":"2734623428",
+  "email":"@gmail.com",
+  "createStudentmsg":"Add new user form submitted",
+  "editTitle":"Mr",
+  "editFullname":"Demo Testing Edit",
+  "editCellnumber":"2222222222",
+  "editPhone":"8888888888",
+  "editUserRole":"[data-value='4']",
+  "editUserStatus":"[data-value='Inactive']",
+  "editInhouseRepaire":"[data-value='true']",
+  "updateStudentmsg":"User has been updated",
+  "filename":"users_list.csv"
 }
 
 }
