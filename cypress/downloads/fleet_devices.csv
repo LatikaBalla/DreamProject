@@ -1,0 +1,2 @@
+record_id,device_status,serial_number,building,deviceid,import_number,studentid,base_warranty_description,base_warranty_sku,base_warranty_start_date,base_warranty_end_date,advanced_warranty_description,advanced_warranty_sku,advanced_warranty_start_date,advanced_warranty_end_date,asset_tag,student,loaner_status,created_date,last_modified_by,created_by,account,device
+591860,Active,98765Test,1,1,1,,,,,,,,,,673TY,,In Loaner Pool,,1,1,1,Lenovo Thinkpad

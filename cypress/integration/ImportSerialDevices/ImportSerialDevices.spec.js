@@ -40,6 +40,9 @@ Then ('Upload the CSV import file',()=>{
 And ('Click on submit button',()=>{
     isd.clickOnSubmitButton()
 })
+And ('Click on refresh button',()=>{
+    isd.clickOnRefreshButton()
+})
 Then('Verify the record in table',()=>{
     isd.verfiyImportTable()
 })

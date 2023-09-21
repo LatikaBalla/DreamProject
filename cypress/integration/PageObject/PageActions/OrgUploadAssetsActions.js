@@ -103,16 +103,17 @@ export class OrgUploadAssetsActions {
     }
     verifyRecordDeleted() {
         cy.wait(2000)
-        // cy.get('tbody tr').eq(0).find('td').eq(0).should('not.contain', tdata.delete.fullname)
+        cy.get('tbody tr').eq(0).find('td').eq(0).should('not.contain', tdata.editasset.title)
     }
     enterSearchValue() {
-        //  oua.searchboxElement().type(tdata.search.title)
+        oua.searchboxElement().type(tdata.addasset.title+'{enter}')
+        cy.wait(3000)
     }
     clickOnASearchButton() {
-        //oua.searchbtnElement().click({force:true})
+        oua.searchbtnElement().click({force:true})
     }
     verifySearchResult() {
-        // cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.search.fullname)
+        cy.get('tbody tr').eq(0).find('td').eq(1).should('contain', tdata.addasset.title)
     }
 
 }

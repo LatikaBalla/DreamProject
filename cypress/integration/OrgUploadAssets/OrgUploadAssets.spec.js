@@ -54,7 +54,6 @@ And('Click on save button', () => {
 Then('Verify the asset details added in table', () => {
     oua.verifyRecordTable()
 })
-
 And ('Enter the title in search box',()=>{
 oua.enterSearchValue()
 })

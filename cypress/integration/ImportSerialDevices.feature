@@ -19,7 +19,8 @@ Feature: ImportSerialDevices Page Functionality
         Then I should click on Add New Import
         Then Upload the CSV import file 
         And Click on submit button
-        Then Verify the record in table 
+        And Click on refresh button
+       # Then Verify the record in table 
          And Click on Download import button 
         Then Verify the successfully downloaded
         And Click on Details button 

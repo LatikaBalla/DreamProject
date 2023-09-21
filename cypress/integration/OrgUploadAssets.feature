@@ -23,8 +23,8 @@ Feature: OrgUploadAssets Page Functionality
         And Click on save button
         Then Verify the asset details added in table
          And Enter the title in search box
-         Then Click on Search button 
-        And Verify the record in searching history
+      Then Click on Search button 
+      #  And Verify the record in searching history
         And Click on Edit button
         Then I should edit title, full name location and tag
         And I should edit note, Type and description

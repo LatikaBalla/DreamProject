@@ -28,10 +28,10 @@
    "phone": "2734623428",
    "extension": "1",
    "defaultbuilding":"[data-value='true']",
-   "address": "5412 Wentworth Drive",
-   "city": "Beverly Hills",
-   "state": "CA",
-   "zipcode": "90213",
+   "address": "641 Fairview Avenue North",
+   "city": "Saint Paul",
+   "state": "MN",
+   "zipcode": "55104",
    "country": "US",
    "savebtn": "[type='submit']",
    "addmsg":"Add New Building"
@@ -54,12 +54,12 @@
    "filename":"VAL2023080715363517.pdf"
  },
  "myFleet":{
-   "filename":"manage_device_fleet.csv",
+   "filename":"fleet_devices.csv",
    "serialno":"1CD1000005",
-   "assetTag":"12354"
+   "search":"VIVATEST46Test"
  },
  "addasset":{
-  "title": "Mr",
+  "title": "AssetTitle",
   "fullname": "Demo Test",
   "location": "india",
   "notes":"Testing",
@@ -68,7 +68,7 @@
   "description":"this is description"
 },
 "editasset":{
-  "title": "Mrs",
+  "title": "EditAssetTitle",
   "fullname": "Edit Test",
   "location": "UK",
   "notes":"assest devices",
@@ -85,6 +85,7 @@
   "reupload":"image2.jpg",
   "addassetmsg":"Add new asset form submitted",
   "updatemsg":"Update asset form submitted"
+
 },
 "repairTickets":{
   "failuretype":"[data-value='ID']",

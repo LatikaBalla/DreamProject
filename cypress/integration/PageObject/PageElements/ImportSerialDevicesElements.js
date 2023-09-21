@@ -26,11 +26,23 @@ export default class ImportSerialDevicesElements {
             timeout: 30000,
         })
     }
+    refreshbtnElement(){
+        return cy.get(locator.importSerialDevices.refreshbtn, {
+            timeout: 30000,
+        })
+    }
     downloadimportElement() {
         return cy.contains(locator.importSerialDevices.downloadimport, {
             timeout: 30000,
         })
     }
+    devicesDetailsTitleElement()
+        {
+        return cy.contains(locator.importSerialDevices.devicesDetailsTitle, {
+            timeout: 30000,
+        }) 
+    }
+
     detailsElement() {
         return cy.contains(locator.importSerialDevices.details, {
             timeout: 30000,

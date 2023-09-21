@@ -30,11 +30,11 @@ export class MyFleetActions {
         mf.tableElement().should('be.visible')
     }
     enterSearchValue() {
-        mf.searchElement().type(tdata.myFleet.assetTag)
+        mf.searchElement().type(tdata.myFleet.search)
     }
     verifySearchResult() {
         cy.wait(3000)
-        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.myFleet.assetTag)
+        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.myFleet.search)
     }
     clickOnMoreFiltersButton() {
         mf.morefiltersbtnElement().click()
