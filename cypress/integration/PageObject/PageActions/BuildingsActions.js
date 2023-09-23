@@ -48,9 +48,6 @@ export class BuildingsActions {
         build.defaultbuildingElement().click()
         cy.get(tdata.buildings.defaultbuilding).click()
     }
-    uploadBuildingImage() {
-        build.buildingimgElement().selectFile('cypress/fixtures/' + tdata.buildings.buildingimg)
-    }
     enterBillingAddress() {
         build.baddressElement().type(tdata.buildings.address)
     }
@@ -93,13 +90,13 @@ export class BuildingsActions {
         build.editIconElement().eq(0).click({ force: true })
     }
     editBuildingName() {
-        build.editbuildingnameElement().clear({ force: true }).should('have.value', '',{timeout:6000}).type(tdata.editbuildings.buildingname)
+        build.editbuildingnameElement().clear({ force: true },{timeout:3000}).should('have.value', '',{timeout:6000}).type(tdata.editbuildings.buildingname)
     }
     editPhone() {
-        build.editphoneElement().clear({ force: true }).should('have.value', '',{timeout:6000}).type(tdata.editbuildings.phone)
+        build.editphoneElement().clear({ force: true },{timeout:3000}).should('have.value', '',{timeout:6000}).type(tdata.editbuildings.phone)
     }
     editExtension() {
-        build.editextensionElement().clear({ force: true }).should('have.value', '',{timeout:6000}).type(tdata.editbuildings.extension)
+        build.editextensionElement().clear({ force: true },{timeout:3000}).should('have.value', '',{timeout:6000}).type(tdata.editbuildings.extension)
     }
     editselectDefaultBuilding() {
         build.editdefaultbuildingElement().click()
@@ -112,7 +109,7 @@ export class BuildingsActions {
         build.updatebtnElement().click({ force: true })   
     }
     verifyBuildingUpdated(){
-    //  dash.messageElement().should('contain',tdata.editbuildings.updatemsg)
+      dash.messageElement().should('contain',tdata.editbuildings.updatemsg)
     }
     clickOnDeleteIcon() {
         build.deleteIconElement().eq(0).click({ force: true })

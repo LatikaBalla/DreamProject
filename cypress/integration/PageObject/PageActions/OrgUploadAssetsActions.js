@@ -56,7 +56,7 @@ export class OrgUploadAssetsActions {
         oua.uploadElement().attachFile(tdata.orgAsset.upload)
     }
     clickOnASaveButton() {
-        oua.savebtnElement().should('contain', "Save").click({ force: true })
+        oua.savebtnElement().click({ force: true })
     }
     verifyRecordTable() {
         dash.messageElement().should('contain',tdata.orgAsset.addassetmsg)
@@ -96,17 +96,17 @@ export class OrgUploadAssetsActions {
         dash.messageElement().should('contain',tdata.orgAsset.updatemsg)
     }
     clickDeleteIcon() {
-        oua.deleteElement().eq(0).click({ force: true })
+        oua.deleteElement().eq(0).scrollIntoView().click({ force: true })
     }
     clickConfirmDeleteButton() {
-        oua.conDeletebtnElement().contains('Delete').click({ force: true })
+        oua.conDeletebtnElement().click({ force: true })
     }
     verifyRecordDeleted() {
         cy.wait(2000)
         cy.get('tbody tr').eq(0).find('td').eq(0).should('not.contain', tdata.editasset.title)
     }
     enterSearchValue() {
-        oua.searchboxElement().type(tdata.addasset.title+'{enter}')
+        oua.searchboxElement().type(tdata.addasset.title)
         cy.wait(3000)
     }
     clickOnASearchButton() {

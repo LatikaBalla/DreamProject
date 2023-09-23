@@ -9,12 +9,12 @@ Feature:  Users Page Functionality
         Then Close the terms of service window
         And Click on Users page
 
-    # Scenario: Admin can access the  Users page and check the visiblity
-    #     Then I should be redirected to the Users page
-    #     Then All Organizational unit should be visible
-    #     And All Users Unit should be visible
-    #     Then Filters of Users unit should be visible
-    #     And Table for Users unit should be visible
+    Scenario: Admin can access the  Users page and check the visiblity
+        Then I should be redirected to the Users page
+        Then All Organizational unit should be visible
+        And All Users Unit should be visible
+        Then Filters of Users unit should be visible
+        And Table for Users unit should be visible
 
 Scenario: Add new Srudent, Search, Edit and search Delete the User and download
         Then I should click on Add New student 

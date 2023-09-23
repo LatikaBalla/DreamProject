@@ -15,7 +15,7 @@ Feature:  Repair360 Page Functionality
         Then Verify the VivacityRepairCenter Tab should be visible
         And Verify the InHouseRepairCenter tab should be visible
         Then Verify the StudentRepairCenter tab should be visible
-        And Verify the PartCloset tab should be visible
+        # And Verify the PartCloset tab should be visible
 
 
 

@@ -33,21 +33,21 @@ export class ImportSerialDevicesActions {
        // isd.addimportElement().eq(1).scrollIntoView().click({force:true})
     }
     uploadcsvFile(){
-        isd.uploadElement().attachFile(tdata.importDevice.uploadfilename)
+        cy.contains('Attach CSV file').click({force:true})
+        isd.uploadElement().attachFile(tdata.importDevice.uploadfilename,{force:true})
     }
     clickOnSubmitButton(){
         isd.submitElement().click({force:true})
     }
+
     clickOnRefreshButton(){
         isd.refreshbtnElement().click({force:true})
     }
     verfiyImportTable(){
-        const today = new Date();
-        let dd = today.getDate();
-        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', dd)
+       cy.get('tbody tr').eq(0).find('td').eq(1).should('contain', 'demo_adminsuper@vivacitytech.com')
     }
     clickOnDownloadImport(){
-        isd.downloadimportElement()
+        isd.downloadimportElement().click({force:true})
     }
     verifyDownloaded(){
         cy.verifyDownload(tdata.importDevice.downloadfilename)

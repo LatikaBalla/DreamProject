@@ -24,11 +24,11 @@ export class RepairBoxesActions {
     verifyTitle() {
         rb.titleElement().should('be.visible')
     }
-    filtersVisible() {
-        rb.filtersElement().should('be.visible')
+    inboundVisible() {
+        rb.inboundElement().should('be.visible')
     }
-    tableVisible() {
-        rb.tableElement().should('be.visible')
+    outboundVisible() {
+        rb.outboundElement().should('be.visible')
     }
     clickOnAddnewBox() {
         rb.addboxElement().click({ force: true })

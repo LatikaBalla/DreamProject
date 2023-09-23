@@ -59,10 +59,10 @@ export class SrcRepairTicketsActions {
         dash.messageElement().should('contain', tdata.srcRepairTicket.createTicketmsg)
     }
     enterSearchBox(){
-        srt.searchElement().type(tdata.srcRepairTicket.ticketno+'{enter}')
+        srt.searchElement().type(tdata.srcRepairTicket.serialno+'{enter}')
     }
     verifySearchResult(){
-        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.srcRepairTicket.ticketno)
+        cy.get('tbody tr').eq(0).find('td').eq(3).should('contain', tdata.srcRepairTicket.serialno)
     }
 
 }

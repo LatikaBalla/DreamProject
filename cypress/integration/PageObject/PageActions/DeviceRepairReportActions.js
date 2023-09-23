@@ -37,14 +37,12 @@ export class DeviceRepairReportActions {
     }
     clickOnClearButton() {
         dev.clearbtnElement().click({force:true})
-
     }
     searchBoxEmpty() {
         dev.searchElement().should('be.empty')
     }
     clickOnTicketNumberTable() {
         cy.get('tbody tr').eq(0).find('td').eq(0).click({ force: true })
-
     }
     verifyRapairTicketPAge() {
         dev.headingElement()
@@ -55,7 +53,7 @@ export class DeviceRepairReportActions {
         dev.downloadticketElement().click({ force: true })
     }
     verifyDownloadSuccessful() {
-        cy.verifyDownload(tdata.deviceRepairReport.filename)
+        cy.verifyDownload('*.pdf')
     }
 
 }

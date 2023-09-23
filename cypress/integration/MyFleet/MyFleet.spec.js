@@ -1,7 +1,7 @@
 import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 import { MyFleetActions } from '../PageObject/PageActions/MyFleetActions'
 
-const acc = new MyFleetActions()
+const mf = new MyFleetActions()
 Cypress.on("uncaught:exception", () => {
     return false;
 });
@@ -13,63 +13,59 @@ When('I should Sign In into the application', () => {
 })
 Then('close the terms of service window', () => {
     cy.wait(8000)
-    acc.closeTermsOfServiceWindow()
+    mf.closeTermsOfServiceWindow()
     cy.wait(1000)
 })
 Then('Click on Manage Devices', () => {
-    acc.clickOnManageDevices()
+    mf.clickOnManageDevices()
 })
 And('Click on MyFleet Tab', () => {
-    acc.clickOnMyFleet()
+    mf.clickOnMyFleet()
 })
 And('Verify the Title of MyFleet Page', () => {
-    acc.verifyTitle()
+    mf.verifyTitle()
 })
 Then('Filters of MyFleet should be visible', () => {
-    acc.filtersVisible()
+    mf.filtersVisible()
 })
 And('Table for MyFleet should be visible', () => {
-    acc.tableVisible()
+    mf.tableVisible()
 })
-
 
 Then('Click on More filters', () => {
-    acc.clickOnMoreFiltersButton()
+    mf.clickOnMoreFiltersButton()
 })
-// And('Click on Add Filters Group', () => {
-//     acc.clickOnAddFilterGroup()
-// })
 Then('Select Field name and Field operation', () => {
-    acc.selectFieldName()
-    acc.selectfieldOperation()
+    mf.selectFieldName()
+    mf.selectfieldOperation()
 })
 And('Enter the Search value in search box', () => {
-    acc.enterFieldValueSearchBox()
+    mf.enterFieldValueSearchBox()
 })
 Then('Click on Apply Button', () => {
-    acc.clickOnApplyButton()
+    mf.clickOnApplyButton()
 })
 And('Verify the Results in the table', () => {
-    acc.verifyResultAfterFilter()
+    mf.verifyResultAfterFilter()
 })
 Then('Click on Clear filter', () => {
-    acc.clickOnClearFiltersButton()
+    mf.clickOnClearFiltersButton()
 })
 And('Enter the table fields in search box', () => {
-    acc.enterSearchValue()
+    mf.enterSearchValue()
 })
 And('Verify the record in searching history', () => {
-    acc.verifySearchResult()
+    mf.verifySearchResult()
 })
-Then ('Click on view Button',()=>{
-
+Then('Click on view Button', () => {
+    mf.clickOnViewButton()
 })
-And ('Verify the Advanced Warranty Description',()=>{
-
+And('Verify the Warranty Description', () => {
+    mf.verifyViewResult()
 })
-Then ('Click on Export To CSV',()=>{
-    acc.clickOnCExportToCSVButton()
+Then('Click on Export To CSV', () => {
+    mf.clickOnCExportToCSVButton()
 })
-And ('Verify Downloaded successfully',()=>{
-    acc.verifyDownloadSuccessful() 
+And('Verify Downloaded successfully', () => {
+    mf.verifyDownloadSuccessful()
 })

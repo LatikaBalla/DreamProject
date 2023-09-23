@@ -15,17 +15,17 @@ Feature: MyFleet  Page Functionality
         Then Filters of MyFleet should be visible
         And Table for MyFleet should be visible
 
-    Scenario: add more filter, Clear filter and Search
+    Scenario: add more filter, view ,Clear filter and Search
         Then Click on More filters
         Then Select Field name and Field operation
         And Enter the Search value in search box
         Then Click on Apply Button
          And Verify the Results in the table
+         Then Click on view Button
+        And Verify the Warranty Description
         Then Click on Clear filter
         And Enter the table fields in search box
         And Verify the record in searching history
-        Then Click on view Button
-        And Verify the Advanced Warranty Description
         Then Click on Export To CSV
         And Verify Downloaded successfully
 

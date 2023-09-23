@@ -25,11 +25,10 @@ And('Click on RepairBoxes Tab', () => {
 And('Verify the Title of RepairBoxes Page', () => {
     rb.verifyTitle()
 })
-Then('Filters of RepairBoxes should be visible', () => {
-    rb.filtersVisible()
-})
-And('Table for RepairBoxes should be visible', () => {
-    rb.tableVisible()
+
+And('Outbound and Inbound Shipments for RepairBoxes should be visible', () => {
+   rb.outboundVisible()
+    rb.inboundVisible()
 })
 Then('I should click on create new Box', () => {
     rb.clickOnAddnewBox()

@@ -24,7 +24,7 @@ Feature: OrgUploadAssets Page Functionality
         Then Verify the asset details added in table
          And Enter the title in search box
       Then Click on Search button 
-      #  And Verify the record in searching history
+    #    And Verify the record in searching history
         And Click on Edit button
         Then I should edit title, full name location and tag
         And I should edit note, Type and description

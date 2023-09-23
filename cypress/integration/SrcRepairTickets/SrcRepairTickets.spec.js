@@ -39,8 +39,8 @@ Then('I should click on Create Student Repair Ticket button', () => {
 })
 And('Select failure Type, Serial Device and Technician', () => {
     srt.selectFailureType()
-    srt.selectSerialDevice()
     srt.selectTechnician()
+    srt.selectSerialDevice()
 })
 Then('Enter the Chromebook issue', () => {
     srt.enterChromebookIssue()

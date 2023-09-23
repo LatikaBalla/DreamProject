@@ -14,7 +14,7 @@ Feature: Account Details Page Functionality
         Then Filters of account deatils should be visible
         And Table for account deatils should be visible
 
-    Scenario: Adding,Update and Delete new account of Account Details page
+    Scenario: Adding,add more filter, Clear filter and Search ,Update and Delete new account of Account Details page
         Then I should click on Add New button
         And Verify the tilte of Add New Contact page
         Then Enter title, full name and valid Email
@@ -22,6 +22,14 @@ Feature: Account Details Page Functionality
         Then Select User Role from Dropdown List
         And Click on save button
         Then Verify the account details added in table
+        Then Click on More filters
+        Then Select Field name and Field operation
+        And Enter the Search value in search box
+        Then Click on Apply Button
+        And Verify the Results in the table
+        Then Click on Clear filter
+        And Enter the full name in search box
+        And Verify the record in searching history
         And Click on Edit Icon
         Then I should edit title, full name
         And I should edit Phone and Cell Number and user role
@@ -32,22 +40,6 @@ Feature: Account Details Page Functionality
         Then Click on Confirm Delete button
         And Verify the record is deleted successfully
 
-    Scenario: add more filter, Clear filter and Search new account of Account Details page
-        Then I should click on Add New button
-        And Verify the tilte of Add New Contact page
-        Then Enter title, full name and valid Email
-        And Enter Phone and Cell Number
-        Then Select User Role from Dropdown List
-        And Click on save button
-        Then Click on More filters
-        # And Click on Add Filters Group
-        Then Select Field name and Field operation
-        And Enter the Search value in search box
-        Then Click on Apply Button
-        And Verify the Results in the table
-        Then Click on Clear filter
-        And Enter the full name in search box
-        And Verify the record in searching history
 
 
 

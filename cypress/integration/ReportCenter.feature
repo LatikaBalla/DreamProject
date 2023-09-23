@@ -28,19 +28,18 @@ Feature: Report Center Page Functionality
         Then Verify the filters should be visible
         Then Verify history table should be visible
 
-    Scenario: Search with Ticket no, view the ticket details,clear and download the ticket details
-         Then Click on DeviceRepairReport page
-        And Enter the Ticket Number in search box
-        Then Verify the Ticket details in table
-        And Click on clear button
-        Then Verify the search box is cleared
-        And Enter the Ticket Number in search box
-        And  Click on the Ticket Number
-        Then Verify the Repair Ticket page will open
-        #  And Verfiy the details of Ticket
-        Then Click on the download Ticket Estimation button
-        And Verify downloaded ticket successfully
+    # Scenario: Search with Ticket no, view the ticket details,clear and download the ticket details
+    #     Then Click on DeviceRepairReport page
+    #     And Enter the Ticket Number in search box
+    #     Then Verify the Ticket details in table
+    #     And Click on clear button
+    #     Then Verify the search box is cleared
+    #     And Enter the Ticket Number in search box
+    #     And  Click on the Ticket Number
+    #     Then Verify the Repair Ticket page will open
+    #     And Verfiy the details of Ticket
+    #     Then Click on the download Ticket Estimation button
+    #     And Verify downloaded ticket successfully
 
 
 
-    

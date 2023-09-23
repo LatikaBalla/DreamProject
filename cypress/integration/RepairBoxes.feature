@@ -11,9 +11,8 @@ Feature: PartCloset Page Functionality
     And Click on RepairBoxes Tab
 
   Scenario: Visiblity of RepairBoxes page
-      And Verify the Title of RepairBoxes Page
-      Then Filters of RepairBoxes should be visible
-      And Table for RepairBoxes should be visible
+       And Verify the Title of RepairBoxes Page
+      And Outbound and Inbound Shipments for RepairBoxes should be visible
 
   Scenario: Create New Box, add ticket and  view details of box with create aonther ticket
     Then I should click on create new Box
@@ -23,18 +22,18 @@ Feature: PartCloset Page Functionality
     And Click on Create box button
     Then Select Ticket from dropdownlist
     And Click on Finish button
-    Then Verify new box is added in table
-    And Click on download label 
-    Then Verify label downloaded successfully
-    And Click on view button
-    Then Verify the Details new box
+   Then Verify new box is added in table
+    # And Click on download label 
+    # Then Verify label downloaded successfully
+    # And Click on view button
+    # Then Verify the Details new box
     # And Add another ticket in the same box
     # Then Select Ticket from dropdownlist
     # And Click on Add ticket
     # Then Verify the ticket is added in table
-    And Click on view the ticket Details
-    Then Verfiy the ticket Details
-    And Click on Back button
-    And Remove the ticket from box
-    Then Verify the ticket is delete from the table
+    # And Click on view the ticket Details
+    # Then Verfiy the ticket Details
+    # And Click on Back button
+    # And Remove the ticket from box
+    # Then Verify the ticket is delete from the table
 

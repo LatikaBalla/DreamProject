@@ -24,7 +24,6 @@
  },
  "buildings":{
    "buildingname": "Demo Building",
-   "buildingimg":"image1.jpeg",
    "phone": "2734623428",
    "extension": "1",
    "defaultbuilding":"[data-value='true']",
@@ -38,7 +37,6 @@
  },
  "editbuildings":{
    "buildingname": "Edit Building",
-   "buildingimg":"image1.jpeg",
    "phone": "2734633338",
    "extension": "11",
    "defaultbuilding":"[data-value='false']",
@@ -50,8 +48,8 @@
   "active":"yes"
  },
  "deviceRepairReport":{
-   "ticketno":"VAL2023080715363517",
-   "filename":"VAL2023080715363517.pdf"
+   "ticketno":"VAL2023092213362529",
+   "filename":"VAL2023092213362529.pdf"
  },
  "myFleet":{
    "filename":"fleet_devices.csv",
@@ -77,7 +75,7 @@
   "description":"I want to edit description"
 },
 "importDevice":{
-  "uploadfilename":"import_serial_devices1.csv",
+  "uploadfilename":"import_serial_devices.csv",
   "downloadfilename":"import_list.csv"
 },
 "orgAsset":{
@@ -109,7 +107,7 @@
 },
 "inHouseWorkflow":{
   "failuretype":"[data-value='ID']",
-  "serialdevice":"#device-option-2",
+  "serialdevice":"#device-option-0",
   "chromebookissue":"There is something fault",
   "technician":"[data-value='818']",
   "createTicketmsg":"Add new ticket form submitted",
@@ -129,12 +127,12 @@
   "chromebookissue":"There is something fault",
   "technician":"[data-value='943']",
   "createTicketmsg":"Add new student ticket form submitted",
-  "ticketno":"VAL2023083113443146"
+  "serialno":"VIVATEST86Test"
 },
 "srcStudent":{
     "title": "Mr",
-    "fullname": "Demo Student1111111111",
-    "email": "demostudent1111@gmail.com",
+    "fullname": "Demo Student",
+    "email": "@gmail.com",
     "phone": "1231231231",
     "cellnumber": "1231234121",
     "userstatus": "[data-value='Active']",
@@ -144,7 +142,7 @@
     "betatester":"[data-value='true']",
     "usernotification":"[data-value='true']",
     "inhouserepair":"[data-value='true']",
-    "createStudentmsg":"student created"
+    "createStudentmsg":"Student created"
 },
 "partCloset":{
   "partname":"Test part",

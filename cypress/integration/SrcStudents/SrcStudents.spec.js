@@ -46,10 +46,10 @@ And ('Enter Phone and Cell Number',()=>{
     ss.enterPhone()
     ss.enterCellNumber()
 }) 
-Then ('Select User Status, vivacity news and product Update',()=>{
+Then ('Select User Status',()=>{
     ss.selectUserStatus()
-    ss.selectVivaNews()
-    ss.selectProductUpdate()
+    // ss.selectVivaNews()
+    // ss.selectProductUpdate()
 }) 
 Then ('Select Vivacity weekly and Beta tester',()=>{
     ss.selectViivaWeekly()

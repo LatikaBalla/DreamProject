@@ -58,8 +58,7 @@ export class MyFleetActions {
         mf.clearfilterbtnElement().click()
     }
     verifyResultAfterFilter() {
-      //  cy.contains('serial_number').scrollIntoView()
-        cy.wait(3000)
+          cy.wait(3000)
         cy.get('tbody tr td').should('contain', tdata.myFleet.serialno)
     }
     clickOnCExportToCSVButton() {
@@ -68,6 +67,14 @@ export class MyFleetActions {
     verifyDownloadSuccessful() {
         cy.verifyDownload(tdata.myFleet.filename)
     }
+    clickOnViewButton(){
+        mf.viewElement().scrollIntoView().click({force:true})
+    }
+    verifyViewResult(){
+        cy.contains(tdata.myFleet.serialno).should('be.visible')
+    }
+
+
 
 }
 export default MyFleetActions 

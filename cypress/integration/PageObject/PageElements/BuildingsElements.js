@@ -115,11 +115,7 @@ export default class BuildingsElements {
             timeout: 30000,
         })
     }
-    buildingimgElement() {
-        return cy.get(locator.newbuilding.buildingimg, {
-            timeout: 30000,
-        })
-    }
+
     savebtnElement() {
         return cy.get(locator.newbuilding.savebtn, {
             timeout: 30000,
@@ -143,11 +139,6 @@ export default class BuildingsElements {
     }
     editdefaultbuildingElement() {
         return cy.get(locator.editbuilding.defaultbuilding, {
-            timeout: 30000,
-        })
-    }
-    editbuildingimgElement() {
-        return cy.get(locator.editbuilding.buildingimg, {
             timeout: 30000,
         })
     }

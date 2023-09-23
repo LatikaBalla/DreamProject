@@ -43,9 +43,6 @@ And('I should Enter Building Name,Phone and Extension', () => {
 Then('Select Default building', () => {
     build.selectDefaultBuilding()
 })
-And('Upload the Building image', () => {
-    build.uploadBuildingImage()
-})
 Then('Enter Billing Address1, city and zip', () => {
     build.enterBillingAddress()
     build.enterBillingCity()
@@ -81,9 +78,6 @@ And('I should edit Building Name,Phone and Extension', () => {
 })
 Then('I should edit Select Default building', () => {
     build.editselectDefaultBuilding()
-})
-And('I should edit Upload the Building image', () => {
-    build.edituploadBuildingImage()
 })
 Then('Click on update button', () => {
     build.clickOnUpdateButton()
@@ -132,7 +126,6 @@ Then('Enter the building name in search box', () => {
     build.enterInSearchBox()
 })
 And('Verify the record in searching history', () => {
-    cy.wait(2000)
     build.verifySearchResult()
 })
 

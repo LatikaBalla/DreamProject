@@ -6,11 +6,7 @@ export default class RepairBoxesElements {
             timeout: 30000,
         })
     }
-    filtersElement() {
-        return cy.get(locator.repairBoxes.filters, {
-            timeout: 30000,
-        })
-    }
+   
     tableElement() {
         return cy.get(locator.repairBoxes.table, {
             timeout: 30000,
@@ -94,6 +90,16 @@ export default class RepairBoxesElements {
     }
     tickettitleElement() {
         return cy.contains(locator.repairBoxes.tickettitle, {
+            timeout: 30000,
+        })
+    }
+    inboundElement() {
+        return cy.contains(locator.repairBoxes.inbound, {
+            timeout: 30000,
+        })
+    }
+    outboundElement() {
+        return cy.contains(locator.repairBoxes.outbound, {
             timeout: 30000,
         })
     }

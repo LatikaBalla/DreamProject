@@ -85,7 +85,8 @@ export class SrcStudentsActions {
     }
     verifyRecordTable() {
        // cy.get('[data-testid="CachedIcon"]').click()
-        //dash.messageElement().should('contain', tdata.srcStudent.createStudentmsg) 
+       cy.wait(3000)
+        dash.messageElement().should('contain', tdata.srcStudent.createStudentmsg) 
         //cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.srcStudent.fullname)
     }
 

@@ -20,8 +20,6 @@ Feature:SrcStudents Page Functionality
         Then I should click on Add New student 
         Then Enter title, full name and Email
         And Enter Phone and Cell Number
-        Then Select User Status, vivacity news and product Update 
-        Then Select Vivacity weekly and Beta tester 
-         Then Select User notification and in house repair 
+        Then Select User Status
         And Click on submit button
         Then Verify the student added in table 
