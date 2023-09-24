@@ -173,6 +173,25 @@
   "editInhouseRepaire":"[data-value='true']",
   "updateStudentmsg":"User has been updated",
   "filename":"users_list.csv"
+},
+"myprofile":{
+  "profileupdatemsg":"Profile updated successfully",
+  "emailname":"demo_adminsuper@vivacitytech.com",
+  "title":"MR",
+  "phone":"9090909090",
+  "option":"[data-value='vivacity_news']"
+},
+"support":{
+  "name":"Demo Test",
+  "priority":"[data-value='Low']",
+  "topic":"[data-value='General Inquiry']",
+  "image":"image1.jpeg",
+  "notes":"This is for Testing",
+  "submitmsg":"Support request submitted successfully"
+},
+"features":{
+  "title":"Testing",
+  "description":"QA Testing the Features page",
+"requestmsg":"Submitting Features request"
 }
-
 }

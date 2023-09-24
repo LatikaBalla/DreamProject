@@ -71,4 +71,24 @@ export default class DashboardElements {
             timeout: 30000,
         }); 
     }
+    myprofileElement(){
+        return cy.get(locator.dashboard.myprofile, {
+            timeout: 30000,
+        }); 
+    }
+    featuresElement(){
+        return cy.get(locator.dashboard.features, {
+            timeout: 30000,
+        }); 
+    }
+    supportElement(){
+        return cy.get(locator.dashboard.support, {
+            timeout: 30000,
+        }); 
+    }
+    logoutElement(){
+        return cy.get(locator.dashboard.logout, {
+            timeout: 30000,
+        }); 
+    }
 }

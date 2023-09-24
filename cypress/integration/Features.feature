@@ -1,0 +1,23 @@
+Feature: features Page Functionality
+    As a user
+    I want to access the MyProfile page
+    So that I can view my account information and data
+
+    Background: Background name
+        Given I should navigate to application
+        When I should Sign In into the application
+        Then Close the terms of service window
+        And Click on features page
+
+    Scenario: Features Page visiblity
+        Then I should be redirected to the Features page
+        And Verify the Title of Features Page
+        Then Verify the Under Consideration Tab should be visible
+        And Verify the Under Construction tab should be visible
+        Then Verify the Launched tab should be visible
+        Then Click on Submit a feature request button
+        And Enter Title and Description 
+        Then Click on submit button
+        Then Verify Submitting Features request Message
+
+

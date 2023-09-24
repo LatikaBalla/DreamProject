@@ -14,7 +14,11 @@
         "shopinventory": "Shop Inventory",
         "resources": "Resources",
         "message": ".MuiAlert-message",
-        "backArrow": "[data-testid='KeyboardBackspaceIcon']"
+        "backArrow": "[data-testid='KeyboardBackspaceIcon']",
+        "myprofile": "a[href='/my-profile']",
+        "features": "a[href='/features']",
+        "support": "a[href='/support']",
+        "logout": "[data-testid='LogoutIcon']"
     },
     "accountDetails": {
         "title": "My Account Details ",
@@ -440,5 +444,40 @@
     "warrantyInfo": {
         "title": "EMPOWER+ Warranty",
         "heading": "Terms and Conditions"
+    },
+    "myprofile": {
+        "titleprofile": "#title",
+        "title": "My Profile",
+        "fullname": "#full_name",
+        "email": "#email",
+        "phone": "#phone",
+        "preferences": "#preferences",
+        "profileupdate": "[data-testid='profileDetailsSubmit']",
+        "accountupdate": "[data-testid='accountDetailsSubmit']",
+        "oldpass": "#old_password",
+        "pass": "#password",
+        "upload": "input[type='file']",
+        "photo":"img[alt='Profile']",
+        "profiledetails": ".css-1dvhtlc",
+        "accountdetails": ".css-1c9o6ob",
+        "emailname":"h1"
+    },
+    "features": {
+        "title": "[name='title']",
+        "description":"textarea[name='description']",
+        "uconsideration": "[data-testid='tabres-1']",
+        "uconstruction": "[data-testid='tabres-2']",
+        "launched": "[data-testid='tabres-3']",
+        "submitrequest": "[data-testid='btnItemCreate']",
+        "submitbtn":"[data-testid='btnNewDataSubmit']"
+    },
+    "support": {
+        "title": "Dream Support",
+        "name": "#request_name",
+        "priority": "#mui-component-select-request_priority",
+        "topic": "#request_type",
+        "upload": "input[type='file']",
+        "notes": "#notes",
+        "submitbtn": "Submit"
     }
 }
