@@ -4,7 +4,6 @@ node_modules
 cypress/screenshots
 cypress/videos
 cypress/logs
-cypress/fixtures
 cypress/results
 cypress/cucumber-json
 /reports/cucumber-htmlreport.html/features
