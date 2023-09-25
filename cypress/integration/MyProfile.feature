@@ -14,13 +14,14 @@ Feature: MyProfile Page Functionality
         And User and User photo of MyProfile should be visible
         Then Profile and Account deatils section of MyProfile should be visible
 
- Scenario: Update Profile and Account Details 
+    Scenario: Profile photo,Update Profile and Account Details
+        And Click on upload image icon
         Then Enter tilte and phone no
-        And Eelect Email preference 
-        Then click on update button 
+        And Eelect Email preference
+        Then click on update button
         And Verify the updated successfully
 
-       
+
 
 
 

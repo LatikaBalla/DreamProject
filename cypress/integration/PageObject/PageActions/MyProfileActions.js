@@ -41,6 +41,10 @@ export class MyProfileActions {
     verifyUpdate() {
         dash.messageElement().should('contain', tdata.myprofile.profileupdatemsg)
     }
+    clickOnImageIcone(){
+        mp.uploadElement().attachFile(tdata.myprofile.image)
+    }
+
 }
 
 export default MyProfileActions 

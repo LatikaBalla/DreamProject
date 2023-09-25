@@ -30,6 +30,9 @@ Then('Profile and Account deatils section of MyProfile should be visible', () =>
     mp.profileDetailsVisible()
     mp.accountDetailsVisible()
 })
+And('Click on upload image icon',()=>{
+mp.clickOnImageIcone()
+})
 Then ('Enter tilte and phone no',()=>{
 mp.enterTitle()
 mp.enterPhone()

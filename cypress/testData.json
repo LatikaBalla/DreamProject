@@ -179,7 +179,8 @@
   "emailname":"demo_adminsuper@vivacitytech.com",
   "title":"MR",
   "phone":"9090909090",
-  "option":"[data-value='vivacity_news']"
+  "option":"[data-value='vivacity_news']",
+  "image":"image1.jpeg"
 },
 "support":{
   "name":"Demo Test",

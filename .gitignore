@@ -8,3 +8,4 @@ cypress/results
 cypress/cucumber-json
 /reports/cucumber-htmlreport.html/features
 /reports/cucumber-htmlreport.html/assets
+
