@@ -92,10 +92,10 @@ export class AccountDetailsActions {
         cy.get(tdata.edit.userstatus).click()
     }
     clickSubmitForUpdate() {
-        dash.editSubmitbtnElement().click({ force: true })
+        dash.editSubmitbtnElement().eq(0).click({ force: true })
     }
     verfifyDataUpdatedMessage() {
-        cy.contains('User has been updated').should('be.visible')
+        cy.contains(tdata.edit.updatemsg).should('be.visible')
     }
     clickDeleteIcon() {
         dash.deleteIconElement().eq(0).click({ force: true })
@@ -105,7 +105,7 @@ export class AccountDetailsActions {
     }
     verifyRecordDeleted() {
         cy.wait(2000)
-        cy.get('tbody tr').eq(0).find('td').eq(0).should('not.contain', tdata.delete.fullname)
+        dash1.messageElement().should('contain',tdata.delete.deletemsg)
     }
     enterSearchValue() {
         dash.searchElement().type(tdata.search.fullname,{force:true})

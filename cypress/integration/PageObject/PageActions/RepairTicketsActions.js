@@ -41,8 +41,10 @@ export class RepairTicketsActions {
         cy.get(tdata.repairTickets.returnsite).click()
     }
     selectSerialDevice() {
-        rt.serialdeviceElement().click({ force: true })
-        cy.get(tdata.repairTickets.serialdevice).click()
+        // rt.serialdeviceElement().click({ force: true })
+        // cy.get(tdata.repairTickets.serialdevice).click()
+        cy.get('[data-testid="ArrowDropDownIcon"]').eq(3).click({ force: true })
+        cy.get('#device').type('{downArrow}{enter}')
     }
     selectBuilding() {
         rt.buildingElement().click({ force: true })

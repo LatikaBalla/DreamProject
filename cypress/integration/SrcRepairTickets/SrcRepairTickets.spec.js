@@ -41,6 +41,7 @@ And('Select failure Type, Serial Device and Technician', () => {
     srt.selectFailureType()
     srt.selectTechnician()
     srt.selectSerialDevice()
+    srt.selectIssue()
 })
 Then('Enter the Chromebook issue', () => {
     srt.enterChromebookIssue()

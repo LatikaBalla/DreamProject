@@ -18,13 +18,11 @@ Feature: Building Page Functionality
         Then I should click on + Add New button
         And I should Enter Building Name,Phone and Extension
         Then Select Default building
-        Then Enter Billing Address1, city and zip
-        And Enter Initial for state and Country for billing
-        Then Enter Shipping Address1, city and zip
-        And Enter Initial for state and Country for shipping
+        And Enter Billing Address and select from dropdown 
+        Then Click on checkbox Same as Shipping Address
         And Click on save button
         Then Verify the builing details added in table
-         Then Click on More filters
+        Then Click on More filters
         Then Select Field name and Field operation
         And Enter the Search value in search box
         Then Click on Apply Button

@@ -39,8 +39,8 @@ Then('I should click on Create new button', () => {
 })
 And('Select failure Type, Serial Device and Technician', () => {
     iht.selectFailureType()
-    iht.selectSerialDevice()
     iht.selectTechnician()
+    iht.selectSerialDevice()
 })
 Then('Enter the Chromebook issue', () => {
     iht.enterChromebookIssue()

@@ -43,24 +43,11 @@ And('I should Enter Building Name,Phone and Extension', () => {
 Then('Select Default building', () => {
     build.selectDefaultBuilding()
 })
-Then('Enter Billing Address1, city and zip', () => {
+And('Enter Billing Address and select from dropdown', () => {
     build.enterBillingAddress()
-    build.enterBillingCity()
-    build.enterBillingZipcode()
-
 })
-And('Enter Initial for state and Country for billing', () => {
-    build.enterBillingState()
-    build.enterBillingCountry()
-})
-Then('Enter Shipping Address1, city and zip', () => {
-    build.enterShippingAddress()
-    build.enterShippingCity()
-    build.enterShippingZipcode()
-})
-And('Enter Initial for state and Country for shipping', () => {
-    build.enterShippingState()
-    build.enterShippingCountry()
+Then ('Click on checkbox Same as Shipping Address',()=>{
+    build.clickOnCheckbox()
 })
 And('Click on save button', () => {
     build.clickOnSaveButton()
@@ -128,4 +115,3 @@ Then('Enter the building name in search box', () => {
 And('Verify the record in searching history', () => {
     build.verifySearchResult()
 })
-

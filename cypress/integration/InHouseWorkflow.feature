@@ -10,10 +10,8 @@ Feature:InHouseWorkflow Page Functionality
         Then Click on Repair360 page
         And Click on InHouseRepairCenter tab
 
-    Scenario: Visiblity of InHouseWorkflow page
-        Then Filters of InHouseWorkflow should be visible
-
     Scenario: Create a ticket and download export
+     Then Filters of InHouseWorkflow should be visible
         Then I should click on new button
         And Select failure Type, Serial Device and Technician
         Then Enter the Chromebook issue

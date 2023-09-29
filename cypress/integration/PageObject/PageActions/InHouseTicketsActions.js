@@ -38,11 +38,13 @@ export class InHouseTicketsActions {
     }
     selectFailureType() {
         iht.failuretypeElement().click({ force: true })
-        cy.get(tdata.inHouseTicket.failuretype).click()
+       cy.get(tdata.inHouseTicket.failuretype).click()
     }
     selectSerialDevice() {
-        iht.serialdeviceElement().click({ force: true })
-        cy.get(tdata.inHouseTicket.serialdevice).click()
+       // iht.serialdeviceElement().click({ force: true })
+        cy.get('[data-testid="ArrowDropDownIcon"]').eq(3).click({ force: true })
+        cy.get('#device').type('{downArrow}{enter}')
+      // cy.get(tdata.inHouseTicket.serialdevice).click()
     }
     selectTechnician(){
         iht.technicianElement().click({ force: true })

@@ -38,8 +38,9 @@ export class ImportSerialDevicesActions {
     }
     clickOnSubmitButton(){
         isd.submitElement().click({force:true})
+        cy.wait(5000)
+        //dash.messageElement().should('contain','New import has been submitted')
     }
-
     clickOnRefreshButton(){
         isd.refreshbtnElement().click({force:true})
     }

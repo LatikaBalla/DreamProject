@@ -23,17 +23,17 @@ Feature: PartCloset Page Functionality
     Then Select Ticket from dropdownlist
     And Click on Finish button
    Then Verify new box is added in table
-    # And Click on download label 
-    # Then Verify label downloaded successfully
-    # And Click on view button
-    # Then Verify the Details new box
-    # And Add another ticket in the same box
-    # Then Select Ticket from dropdownlist
-    # And Click on Add ticket
-    # Then Verify the ticket is added in table
-    # And Click on view the ticket Details
-    # Then Verfiy the ticket Details
-    # And Click on Back button
-    # And Remove the ticket from box
-    # Then Verify the ticket is delete from the table
+    And Click on download label 
+    Then Verify label downloaded successfully
+    And Click on view button
+    Then Verify the Details new box
+    And Add another ticket in the same box
+    Then Select Ticket from dropdownlist
+    And Click on Add ticket
+    Then Verify the ticket is added in table
+    And Click on view the ticket Details
+    Then Verfiy the ticket Details
+    And Click on Back button
+    And Remove the ticket from box
+    Then Verify the ticket is delete from the table
 

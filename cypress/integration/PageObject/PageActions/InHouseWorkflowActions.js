@@ -34,11 +34,14 @@ export class InHouseWorkflowActions {
     }
     selectSerialDevice() {
         ihw.serialdeviceElement().click({ force: true })
-        cy.get(tdata.inHouseWorkflow.serialdevice).click()
+      cy.get(tdata.inHouseWorkflow.serialdevice).click()
+    //     cy.get('[data-testid="ArrowDropDownIcon"]').eq(3).click({ force: true })
+    //     cy.get('#device').type('{downArrow}{enter}')
     }
     selectTechnician(){
         ihw.technicianElement().click({ force: true })
         cy.get(tdata.inHouseWorkflow.technician).click({ force: true })
+      
     }
     enterChromebookIssue() {
         ihw.chromebookissueElement().type(tdata.inHouseWorkflow.chromebookissue)

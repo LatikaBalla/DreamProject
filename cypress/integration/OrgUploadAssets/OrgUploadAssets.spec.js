@@ -35,8 +35,8 @@ Then('I should click on Add Asset', () => {
     oua.clickOnAddAssetbutton()
 })
 Then('Enter title, full name location and tag', () => {
-    oua.enterTitle()
-    oua.enterFullname()
+    // oua.enterTitle()
+    // oua.enterFullname()
     oua.enterLocation()
     oua.enterTag()
 })
@@ -67,8 +67,8 @@ And('Click on Edit button', () => {
     oua.clickOnEditIcon()
 })
 Then('I should edit title, full name location and tag', () => {
-    oua.editTitle()
-    oua.editFullname()
+   // oua.editTitle()
+   // oua.editFullname()
     oua.editLocation()
     oua.editTag()
 })

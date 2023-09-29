@@ -50,6 +50,14 @@ export class BuildingsActions {
     }
     enterBillingAddress() {
         build.baddressElement().type(tdata.buildings.address)
+        cy.wait(1000)
+       /build.baddressElement().type(' {downArrow}{enter}')
+       // cy.get('#mbx04690449-ResultsList').find('#mbx04690449-ResultsList-0').click({force:true})
+    }
+    clickOnCheckbox(){
+        cy.wait(3000)
+        build.checkElement().click({force:true})
+        cy.wait(3000)
     }
     enterBillingCity() {
         build.bcityElement().type(tdata.buildings.city)
@@ -64,7 +72,7 @@ export class BuildingsActions {
         build.bzipcodeElement().type(tdata.buildings.zipcode)
     }
     enterShippingAddress() {
-        build.saddressElement().type(tdata.buildings.address)
+        build.saddressElement().type(tdata.buildings.address+'{downArrow}{enter}')
     }
     enterShippingCity() {
         build.scityElement().type(tdata.buildings.city)
@@ -83,7 +91,7 @@ export class BuildingsActions {
         cy.get('[data-testid="CloseIcon"]').click()
     }
     verifyNewBuilding(){
-        cy.wait(1000)
+        cy.wait(3000)
       dash.messageElement().should('contain',tdata.buildings.addmsg)
     }
     clickOnEditIcon() {

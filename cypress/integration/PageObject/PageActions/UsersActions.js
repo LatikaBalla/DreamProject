@@ -48,7 +48,7 @@ export class UsersActions {
         user.cellnumberElement().type(tdata.users.cellnumber)
     }
     clickOnASubmitButton() {
-        user.submitElement().click({ force: true })
+        user.submitElement().eq(0).click({ force: true })
     }
     verifyRecordTable() {
         dash.messageElement().should('contain', tdata.users.createStudentmsg)
@@ -88,7 +88,7 @@ export class UsersActions {
         cy.get(tdata.users.editUserStatus).click()
     }
     clickSubmitForUpdate() {
-        user.editsubmitElement().click({ force: true })
+        user.editsubmitElement().eq(0).click({ force: true })
     }
     verfifyDataUpdatedMessage() {
         cy.contains('User has been updated').should('be.visible')

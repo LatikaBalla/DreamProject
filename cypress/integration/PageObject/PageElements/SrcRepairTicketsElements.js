@@ -21,6 +21,11 @@ export default class SrcRepairTicketsElements {
             timeout: 30000,
         })
     }
+    issueElement() {
+        return cy.get(locator.srcRepairTickets.issue, {
+            timeout: 30000,
+        })
+    }
     createTicketElement() {
         return cy.contains(locator.srcRepairTickets.createTicket, {
             timeout: 30000,

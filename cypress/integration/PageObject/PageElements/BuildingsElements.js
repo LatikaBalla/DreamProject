@@ -187,4 +187,9 @@ export default class BuildingsElements {
             timeout: 30000,
         });
     }
+    checkElement(){
+        return cy.get(locator.newbuilding.check, {
+            timeout: 30000,
+        });
+    }
 }

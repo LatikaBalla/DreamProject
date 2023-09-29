@@ -41,15 +41,21 @@ export class SrcRepairTicketsActions {
         cy.get(tdata.srcRepairTicket.failuretype).click()
     }
     selectSerialDevice() {
-        srt.serialdeviceElement().click({ force: true })
-        cy.get(tdata.srcRepairTicket.serialdevice).click()
+      //  srt.serialdeviceElement().click({ force: true })
+        //cy.get(tdata.srcRepairTicket.serialdevice).click()
+        cy.get('[data-testid="ArrowDropDownIcon"]').eq(3).click({ force: true })
+         cy.get('#device').type('{downArrow}{enter}')
     }
     selectTechnician(){
         srt.technicianElement().click({ force: true })
-        cy.get(tdata.srcRepairTicket.technician).click()
+        cy.get(tdata.srcRepairTicket.technician).click({force:true})
+    }
+    selectIssue(){
+        srt.issueElement().click({ force: true })
+        cy.get(tdata.srcRepairTicket.issue).click({force:true})
     }
     enterChromebookIssue() {
-        srt.chromebookissueElement().type(tdata.srcRepairTicket.chromebookissue)
+        srt.chromebookissueElement().type(tdata.srcRepairTicket.chromebookissue,{force:true})
     }
     clickOnSaveButton() {
         srt.savebtnElement().click({ force: true })

@@ -14,20 +14,22 @@
     "phone": "24234234",
     "cellnumber": "32387423",
     "userrole": "[data-value='3']",
-    "userstatus":"[data-value='Inactive']"    
+    "userstatus":"[data-value='Inactive']"  ,
+    "updatemsg":  "User has been updated"
  },
  "delete":{
-    "fullname":"Edit Test"
+    "fullname":"Edit Test",
+    "deletemsg":"User has been deleted"
  },
  "search":{
     "fullname":"Demo Test"
  },
  "buildings":{
-   "buildingname": "Demo Building",
+   "buildingname": "Demo Building1",
    "phone": "2734623428",
    "extension": "1",
    "defaultbuilding":"[data-value='true']",
-   "address": "641 Fairview Avenue North",
+   "address": "641 Fairview Avenue Northeast",
    "city": "Saint Paul",
    "state": "MN",
    "zipcode": "55104",
@@ -44,7 +46,7 @@
  },
  "detailsBuilding":{
   "details":"Details",
-  "buildingname": "Demo Building",
+  "buildingname": "Demo Building1",
   "active":"yes"
  },
  "deviceRepairReport":{
@@ -86,7 +88,7 @@
 
 },
 "repairTickets":{
-  "failuretype":"[data-value='ID']",
+  "failuretype":"[data-value='Accidental']",
   "filename":"RepairTickets.csv",
   "returnsite":"[data-value='2269']",
   "building":"[data-value='2269']",
@@ -106,28 +108,29 @@
   "filename":"Image.png"
 },
 "inHouseWorkflow":{
-  "failuretype":"[data-value='ID']",
+  "failuretype":"[data-value='Accidental']",
   "serialdevice":"#device-option-0",
   "chromebookissue":"There is something fault",
-  "technician":"[data-value='818']",
+  "technician":"[data-value='1206']",
   "createTicketmsg":"Add new ticket form submitted",
   "filename":"InHouseRepairTickets.csv"
 },
 "inHouseTicket":{
-  "failuretype":"[data-value='ID']",
+  "failuretype":"[data-value='Accidental']",
   "serialdevice":"#device-option-2",
   "chromebookissue":"There is something fault",
-  "technician":"[data-value='818']",
+  "technician":"[data-value='1206']",
   "createTicketmsg":"Add new ticket form submitted",
   "filename":"InHouseRepairTickets.csv"
 },
 "srcRepairTicket":{
-  "failuretype":"[data-value='ID']",
+  "failuretype":"[data-value='Accidental']",
   "serialdevice":"#device-option-2",
   "chromebookissue":"There is something fault",
-  "technician":"[data-value='943']",
+  "technician":"[data-value='1183']",
   "createTicketmsg":"Add new student ticket form submitted",
-  "serialno":"VIVATEST86Test"
+  "serialno":"VIVATEST86Test",
+  "issue":"[data-value='Hinge']"
 },
 "srcStudent":{
     "title": "Mr",
