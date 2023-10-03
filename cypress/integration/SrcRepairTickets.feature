@@ -11,10 +11,10 @@ Feature:SrcRepairTickets Page Functionality
         And Click on StudentRepairCenter tab
         Then Click on SrcRepairTickets tab
 
-    # Scenario: Visiblity of SrcRepairTickets page
-    #     And Verify the Title of SrcRepairTickets Page
-    #     Then Filters of SrcRepairTickets should be visible
-    #     And Table for SrcRepairTickets should be visible
+    Scenario: Visiblity of SrcRepairTickets page
+        And Verify the Title of SrcRepairTickets Page
+        Then Filters of SrcRepairTickets should be visible
+        And Table for SrcRepairTickets should be visible
 
     Scenario: Create Student repair ticket and Search
         Then I should click on Create Student Repair Ticket button

@@ -66,8 +66,10 @@ Then('Verify ticketdata graph should be visible', () => {
 })
 Then('Click on DeviceRepairReport page', () => {
     dev.clickOnDeviceRepairReport()
+    cy.wait(3000)
 })
 And('Verify title of DeviceRepairReport Page should be visible', () => {
+
     dev.verifyTitle()
 })
 Then('Verify the filters should be visible', () => {
@@ -80,6 +82,7 @@ And('Enter the Ticket Number in search box', () => {
     dev.enterTicketNumberSearch()
 })
 Then('Verify the Ticket details in table', () => {
+    cy.wait(3000)
     dev.verifyTicketDetailsTable()
 })
 And('Click on clear button', () => {

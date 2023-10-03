@@ -94,17 +94,6 @@
         "defaultbuilding": "#default_building",
         "baddress": "#mapbox-autofill",
         "check":"input[type='checkbox']",    
-        "baddress2": "#billing_address_address_2",
-        "bcity": "#billing_address_city",
-        "bstate": "#billing_address_us_state",
-        "bzipcode": "#billing_address_zip",
-        "bcountry": "#billing_address_country",
-        "saddress": "#shipping_address_address_1",
-        "saddress2": "#shipping_address_address_2",
-        "scity": "#shipping_address_city",
-        "sstate": "#shipping_address_us_state",
-        "szipcode": "#shipping_address_zip",
-        "scountry": "#shipping_address_country",
         "savebtn": "[type='submit']"
     },
     "editbuilding": {

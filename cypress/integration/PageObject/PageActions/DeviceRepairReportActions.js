@@ -18,7 +18,6 @@ export class DeviceRepairReportActions {
     }
     clickOnDeviceRepairReport() {
         repc.devicerrElement().click({ force: true })
-        cy.wait(1000)
     }
     verifyTitle() {
         dev.titleElement().should('be.visible')
@@ -53,7 +52,7 @@ export class DeviceRepairReportActions {
         dev.downloadticketElement().click({ force: true })
     }
     verifyDownloadSuccessful() {
-        cy.verifyDownload('*.pdf')
+        cy.verifyDownload(tdata.deviceRepairReport.filename)
     }
 
 }

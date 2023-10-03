@@ -30,10 +30,6 @@
    "extension": "1",
    "defaultbuilding":"[data-value='true']",
    "address": "641 Fairview Avenue Northeast",
-   "city": "Saint Paul",
-   "state": "MN",
-   "zipcode": "55104",
-   "country": "US",
    "savebtn": "[type='submit']",
    "addmsg":"Add New Building"
  },
@@ -50,8 +46,8 @@
   "active":"yes"
  },
  "deviceRepairReport":{
-   "ticketno":"VAL2023092213362529",
-   "filename":"VAL2023092213362529.pdf"
+   "ticketno":"VAL20230927115502100",
+   "filename":"VAL20230927115502100.pdf"
  },
  "myFleet":{
    "filename":"fleet_devices.csv",

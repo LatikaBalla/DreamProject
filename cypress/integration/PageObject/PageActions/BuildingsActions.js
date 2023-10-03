@@ -51,40 +51,12 @@ export class BuildingsActions {
     enterBillingAddress() {
         build.baddressElement().type(tdata.buildings.address)
         cy.wait(1000)
-       /build.baddressElement().type(' {downArrow}{enter}')
-       // cy.get('#mbx04690449-ResultsList').find('#mbx04690449-ResultsList-0').click({force:true})
+       build.baddressElement().type(' {downArrow}{enter}')
     }
     clickOnCheckbox(){
         cy.wait(3000)
         build.checkElement().click({force:true})
         cy.wait(3000)
-    }
-    enterBillingCity() {
-        build.bcityElement().type(tdata.buildings.city)
-    }
-    enterBillingState() {
-        build.bstateElement().type(tdata.buildings.state)
-    }
-    enterBillingCountry() {
-        build.bcountryElement().type(tdata.buildings.country)
-    }
-    enterBillingZipcode() {
-        build.bzipcodeElement().type(tdata.buildings.zipcode)
-    }
-    enterShippingAddress() {
-        build.saddressElement().type(tdata.buildings.address+'{downArrow}{enter}')
-    }
-    enterShippingCity() {
-        build.scityElement().type(tdata.buildings.city)
-    }
-    enterShippingState() {
-        build.sstateElement().type(tdata.buildings.state)
-    }
-    enterShippingCountry() {
-        build.scountryElement().type(tdata.buildings.country)
-    }
-    enterShippingZipcode() {
-        build.szipcodeElement().type(tdata.buildings.zipcode)
     }
     clickOnSaveButton() {
         build.savebtnElement().click({ force: true })

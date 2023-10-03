@@ -50,51 +50,7 @@ export default class BuildingsElements {
         return cy.get(locator.newbuilding.baddress, {
             timeout: 30000,
         })
-    } saddressElement() {
-        return cy.get(locator.newbuilding.saddress, {
-            timeout: 30000,
-        })
-    }
-    bcityElement() {
-        return cy.get(locator.newbuilding.bcity, {
-            timeout: 30000,
-        })
-    }
-    scityElement() {
-        return cy.get(locator.newbuilding.scity, {
-            timeout: 30000,
-        })
-    }
-    bstateElement() {
-        return cy.get(locator.newbuilding.bstate, {
-            timeout: 30000,
-        })
-    }
-    sstateElement() {
-        return cy.get(locator.newbuilding.sstate, {
-            timeout: 30000,
-        })
-    }
-    bcountryElement() {
-        return cy.get(locator.newbuilding.bcountry, {
-            timeout: 30000,
-        })
-    }
-    scountryElement() {
-        return cy.get(locator.newbuilding.scountry, {
-            timeout: 30000,
-        })
-    }
-    bzipcodeElement() {
-        return cy.get(locator.newbuilding.bzipcode, {
-            timeout: 30000,
-        })
-    }
-    szipcodeElement() {
-        return cy.get(locator.newbuilding.szipcode, {
-            timeout: 30000,
-        })
-    }
+    } 
     buildingnameElement() {
         return cy.get(locator.newbuilding.buildingname, {
             timeout: 30000,
