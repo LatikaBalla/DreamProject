@@ -1,0 +1,113 @@
+[
+  {
+    "description": "    As a user\n    I want to access the dashboard page\n    So that I can view my account information and data",
+    "keyword": "Feature",
+    "name": "Repair360 Page Functionality",
+    "line": 1,
+    "id": "repair360-page-functionality",
+    "tags": [],
+    "uri": "Repair360.feature",
+    "elements": [
+      {
+        "id": "repair360-page-functionality;admin-can-access-the--repair360-page-and-check-the-visiblity",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Admin can access the  Repair360 page and check the visiblity",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I should navigate to application",
+            "result": {
+              "status": "passed",
+              "duration": 5647000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I should Sign In into the application",
+            "result": {
+              "status": "passed",
+              "duration": 7062000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Close the terms of service window",
+            "result": {
+              "status": "passed",
+              "duration": 9072000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Click on Repair360 page",
+            "result": {
+              "status": "passed",
+              "duration": 130000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should be redirected to the Repair360 page",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Verify the Title of Repair360 Page",
+            "result": {
+              "status": "passed",
+              "duration": 1367000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Verify the VivacityRepairCenter Tab should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 39000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Verify the InHouseRepairCenter tab should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Verify the StudentRepairCenter tab should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

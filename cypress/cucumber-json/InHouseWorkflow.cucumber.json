@@ -1,0 +1,131 @@
+[
+  {
+    "description": "    As a user\n    I want to access the dashboard page\n    So that I can view my account information and data",
+    "keyword": "Feature",
+    "name": "InHouseWorkflow Page Functionality",
+    "line": 1,
+    "id": "inhouseworkflow-page-functionality",
+    "tags": [],
+    "uri": "InHouseWorkflow.feature",
+    "elements": [
+      {
+        "id": "inhouseworkflow-page-functionality;create-a-ticket-and-download-export",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Create a ticket and download export",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I should navigate to application",
+            "result": {
+              "status": "passed",
+              "duration": 3984000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I should Sign In into the application",
+            "result": {
+              "status": "passed",
+              "duration": 9444000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Close the terms of service window",
+            "result": {
+              "status": "passed",
+              "duration": 9074000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Click on Repair360 page",
+            "result": {
+              "status": "passed",
+              "duration": 141000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Click on InHouseRepairCenter tab",
+            "result": {
+              "status": "passed",
+              "duration": 1166000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Filters of InHouseWorkflow should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should click on new button",
+            "result": {
+              "status": "passed",
+              "duration": 76000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Select failure Type, Serial Device and Technician",
+            "result": {
+              "status": "failed",
+              "duration": 5277000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#device-option-0`, but never found it.\n    at InHouseWorkflowActions.selectSerialDevice (cypress/integration/PageObject/PageActions/InHouseWorkflowActions.js:37:9)\n    at Context.eval (cypress/integration/InHouseWorkflow/InHouseWorkflow.spec.js:35:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Enter the Chromebook issue",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Click on save button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Verify New Ticket is added",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

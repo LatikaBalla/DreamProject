@@ -1,0 +1,193 @@
+[
+  {
+    "description": "    As a user\n    I want to access the MyProfile page\n    So that I can view my account information and data",
+    "keyword": "Feature",
+    "name": "MyProfile Page Functionality",
+    "line": 1,
+    "id": "myprofile-page-functionality",
+    "tags": [],
+    "uri": "MyProfile.feature",
+    "elements": [
+      {
+        "id": "myprofile-page-functionality;myprofile-page-visiblity",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "MyProfile Page visiblity",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I should navigate to application",
+            "result": {
+              "status": "passed",
+              "duration": 5897000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I should Sign In into the application",
+            "result": {
+              "status": "passed",
+              "duration": 7224000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Close the terms of service window",
+            "result": {
+              "status": "passed",
+              "duration": 8077000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Click on My profile page",
+            "result": {
+              "status": "passed",
+              "duration": 1063000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Verify the Title of My Profile Page",
+            "result": {
+              "status": "passed",
+              "duration": 488000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "User and User photo of MyProfile should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 803000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Profile and Account deatils section of MyProfile should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "myprofile-page-functionality;profile-photo,update-profile-and-account-details",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Profile photo,Update Profile and Account Details",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I should navigate to application",
+            "result": {
+              "status": "passed",
+              "duration": 2630000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I should Sign In into the application",
+            "result": {
+              "status": "passed",
+              "duration": 6339000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Close the terms of service window",
+            "result": {
+              "status": "passed",
+              "duration": 8066000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Click on My profile page",
+            "result": {
+              "status": "passed",
+              "duration": 1066000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Click on upload image icon",
+            "result": {
+              "status": "passed",
+              "duration": 507000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Enter tilte and phone no",
+            "result": {
+              "status": "passed",
+              "duration": 677000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Eelect Email preference",
+            "result": {
+              "status": "passed",
+              "duration": 124000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "click on update button",
+            "result": {
+              "status": "passed",
+              "duration": 61000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Verify the updated successfully",
+            "result": {
+              "status": "passed",
+              "duration": 347000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "description": "    As a user\n    I want to access the dashboard page\n    So that I can view my account information and data",
+    "keyword": "Feature",
+    "name": "InHouseRepairReport page Functionality",
+    "line": 1,
+    "id": "inhouserepairreport-page-functionality",
+    "tags": [],
+    "uri": "InHouseRepairReport.feature",
+    "elements": [
+      {
+        "id": "inhouserepairreport-page-functionality;admin-can-access-the-inhouserepairreport-page-and-check-the-visiblity",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Admin can access the InHouseRepairReport page and check the visiblity",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I should navigate to application",
+            "result": {
+              "status": "passed",
+              "duration": 3991000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I should Sign In into the application",
+            "result": {
+              "status": "passed",
+              "duration": 6155000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Close the terms of service window",
+            "result": {
+              "status": "passed",
+              "duration": 10113000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Click on Report center page",
+            "result": {
+              "status": "passed",
+              "duration": 174000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Click on InHouseRepairReport page",
+            "result": {
+              "status": "passed",
+              "duration": 1544000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Verify all sections of InHouseRepairReport Page should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 49000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Verify ticketdata graph should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

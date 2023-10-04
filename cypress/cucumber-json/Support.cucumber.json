@@ -1,0 +1,123 @@
+[
+  {
+    "description": "    As a user\n    I want to access the MyProfile page\n    So that I can view my account information and data",
+    "keyword": "Feature",
+    "name": "Support Page Functionality",
+    "line": 1,
+    "id": "support-page-functionality",
+    "tags": [],
+    "uri": "Support.feature",
+    "elements": [
+      {
+        "id": "support-page-functionality;support-page-visiblity",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Support Page visiblity",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I should navigate to application",
+            "result": {
+              "status": "passed",
+              "duration": 5545000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I should Sign In into the application",
+            "result": {
+              "status": "passed",
+              "duration": 5706000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Close the terms of service window",
+            "result": {
+              "status": "passed",
+              "duration": 8074000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Click on Support page",
+            "result": {
+              "status": "passed",
+              "duration": 1064000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Verify the Title of Support Page",
+            "result": {
+              "status": "passed",
+              "duration": 458000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Enter Full name",
+            "result": {
+              "status": "passed",
+              "duration": 365000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Select task Priority and Topic",
+            "result": {
+              "status": "passed",
+              "duration": 238000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Upload the image and enter Notes",
+            "result": {
+              "status": "passed",
+              "duration": 703000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Click on submit button",
+            "result": {
+              "status": "passed",
+              "duration": 62000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Verify the Send Feedback successfully",
+            "result": {
+              "status": "passed",
+              "duration": 745000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
