@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 8091000000
+              "duration": 4819000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5685000000
+              "duration": 2625000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9079000000
+              "duration": 9080000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Report center page",
             "result": {
               "status": "passed",
-              "duration": 144000000
+              "duration": 134000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on DeviceRepairReport page",
             "result": {
               "status": "passed",
-              "duration": 4226000000
+              "duration": 4200000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Enter the Ticket Number in search box",
             "result": {
               "status": "passed",
-              "duration": 425000000
+              "duration": 411000000
             }
           },
           {
@@ -82,8 +82,9 @@
             "line": 34,
             "name": "Verify the Ticket details in table",
             "result": {
-              "status": "passed",
-              "duration": 3042000000
+              "status": "failed",
+              "duration": 7399000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `tbody tr`, but never found it.\n    at DeviceRepairReportActions.verifyTicketDetailsTable (cypress/integration/PageObject/PageActions/DeviceRepairReportActions.js:35:11)\n    at Context.eval (cypress/integration/ReportCenter/ReportCenter.spec.js:86:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -92,8 +93,7 @@
             "line": 35,
             "name": "Click on clear button",
             "result": {
-              "status": "passed",
-              "duration": 65000000
+              "status": "skipped"
             }
           },
           {
@@ -102,8 +102,7 @@
             "line": 36,
             "name": "Verify the search box is cleared",
             "result": {
-              "status": "passed",
-              "duration": 8000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +111,7 @@
             "line": 37,
             "name": "Enter the Ticket Number in search box",
             "result": {
-              "status": "passed",
-              "duration": 421000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +120,7 @@
             "line": 38,
             "name": "Click on the Ticket Number",
             "result": {
-              "status": "passed",
-              "duration": 81000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +129,7 @@
             "line": 39,
             "name": "Verify the Repair Ticket page will open",
             "result": {
-              "status": "passed",
-              "duration": 2690000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +138,7 @@
             "line": 40,
             "name": "Verfiy the details of Ticket",
             "result": {
-              "status": "passed",
-              "duration": 2000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +147,7 @@
             "line": 41,
             "name": "Click on the download Ticket Estimation button",
             "result": {
-              "status": "passed",
-              "duration": 2004000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +156,7 @@
             "line": 42,
             "name": "Verify downloaded ticket successfully",
             "result": {
-              "status": "passed",
-              "duration": 22000000
+              "status": "skipped"
             }
           }
         ]

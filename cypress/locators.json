@@ -18,7 +18,8 @@
         "myprofile": "a[href='/my-profile']",
         "features": "a[href='/features']",
         "support": "a[href='/support']",
-        "logout": "[data-testid='LogoutIcon']"
+        "logout": "[data-testid='LogoutIcon']",
+        "vivaAdmin": "a[href='/admin']"
     },
     "accountDetails": {
         "title": "My Account Details ",
@@ -93,7 +94,7 @@
         "extension": "#extension",
         "defaultbuilding": "#default_building",
         "baddress": "#mapbox-autofill",
-        "check":"input[type='checkbox']",    
+        "check": "input[type='checkbox']",
         "savebtn": "[type='submit']"
     },
     "editbuilding": {
@@ -369,7 +370,7 @@
         "technician": "#student_technician",
         "serialdevice": "#device",
         "chromebookissue": "#chromebook_issue",
-        "issue":"#repair_issue",
+        "issue": "#repair_issue",
         "savebtn": "Save",
         "view": "View",
         "editticket": "Edit Ticket",
@@ -448,19 +449,19 @@
         "oldpass": "#old_password",
         "pass": "#password",
         "upload": "input[type='file']",
-        "photo":"img[alt='addimage']",
+        "photo": "img[alt='addimage']",
         "profiledetails": ".css-1dvhtlc",
         "accountdetails": ".css-1c9o6ob",
-        "emailname":"h1"
+        "emailname": "h1"
     },
     "features": {
         "title": "[name='title']",
-        "description":"textarea[name='description']",
+        "description": "textarea[name='description']",
         "uconsideration": "[data-testid='tabres-1']",
         "uconstruction": "[data-testid='tabres-2']",
         "launched": "[data-testid='tabres-3']",
         "submitrequest": "[data-testid='btnItemCreate']",
-        "submitbtn":"[data-testid='btnNewDataSubmit']"
+        "submitbtn": "[data-testid='btnNewDataSubmit']"
     },
     "support": {
         "title": "Dream Support",
@@ -470,5 +471,56 @@
         "upload": "input[type='file']",
         "notes": "#notes",
         "submitbtn": "Submit"
+    },
+    "vivacityAdmin": {
+        "title": "Vivacity Admin",
+        "section1": "All Paid Subscription Requests",
+        "approve": "Approve",
+        "deny": "Deny",
+        "section2": "Admin Users",
+        "addnewUserbtn": "Add New User",
+        "search": "[placeholder='Search for users']",
+        "table": ".css-1owb465",
+        "deletebtn": "[data-testid='DeleteOutlineOutlinedIcon']",
+        "conDeletebtn": "Delete",
+        "titleUser": "#title",
+        "fullname": "#name",
+        "email": "#email",
+        "phone": "#phone",
+        "cellnumber": "#cellphone",
+        "userrole": "#mui-component-select-name",
+        "editsubmit": "[data-testid='btnNewDataSubmit']",
+        "section3": "Serial Numbers & Warranties",
+        "addWarranty": "Add Warranty",
+        "bulkWarranty": "Bulk Warranty",
+        "upload":"Attach CSV file",
+        "warrantyName": "#warranty_name",
+        "sku": "#sku",
+        "warrantyType": "#warranty_type",
+        "protection": "#damage_protection",
+        "price": "#price_per_device",
+        "years": "#years",
+        "months": "#months",
+        "byear": "#battery_year",
+        "bmonth": "#battery_month",
+        "provider": "#warranty_provider",
+        "wdescription": "#warranty_description",
+        "submitbtn": "Submit",
+        "submit":"[data-testid='btnNewDataSubmit']",
+        "section4": "Account Management",
+        "addAccount":"Add Account",
+        "accountName":"#account_name",
+        "phoneNo":"#phone_number",
+        "domain":"#domain",
+        "creditLimit":"#credit_limit",
+        "ihrepairs":"#in_house_repairs",
+        "paymentTerms":"#payment_terms",
+        "subcription":".MuiSelect-select",
+        "updateSubcription":"Update Subcription",
+        "subUpdatebtn":".css-10g2wm1",
+        "section5": "Request Users",
+        "availableAccount":"#student_id",
+        "addbtn":".css-10g2wm1"
+        
     }
 }

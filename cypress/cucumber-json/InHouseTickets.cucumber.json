@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 5752000000
+              "duration": 7072000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5341000000
+              "duration": 6032000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9072000000
+              "duration": 9091000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on InHouseRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 118000000
+              "duration": 777000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the Title of InHouseTickets Page",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 13000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Filters of InHouseTickets should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 8000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3361000000
+              "duration": 3644000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 4986000000
+              "duration": 4961000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9065000000
+              "duration": 9063000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 130000000
+              "duration": 126000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click on InHouseRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 800000000
+              "duration": 1092000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click All InHouseTickets tab",
             "result": {
               "status": "passed",
-              "duration": 59000000
+              "duration": 65000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "I should click on Create new button",
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 68000000
             }
           },
           {
@@ -192,8 +192,8 @@
             "line": 21,
             "name": "Select failure Type, Serial Device and Technician",
             "result": {
-              "status": "passed",
-              "duration": 1493000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-value='1206']`, but never found it.\n    at InHouseTicketsActions.selectTechnician (cypress/integration/PageObject/PageActions/InHouseTicketsActions.js:51:11)\n    at Context.eval (cypress/integration/InHouseTickets/InHouseTickets.spec.js:42:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -202,8 +202,7 @@
             "line": 22,
             "name": "Enter the Chromebook issue",
             "result": {
-              "status": "passed",
-              "duration": 1032000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +211,7 @@
             "line": 23,
             "name": "Click on save button",
             "result": {
-              "status": "passed",
-              "duration": 71000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +220,7 @@
             "line": 24,
             "name": "Verify New Ticket is added",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiAlert-message`, but never found it.\n    at InHouseTicketsActions.verifyNewTicket (cypress/integration/PageObject/PageActions/InHouseTicketsActions.js:61:30)\n    at Context.eval (cypress/integration/InHouseTickets/InHouseTickets.spec.js:52:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "skipped"
             }
           },
           {

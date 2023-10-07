@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 4305000000
+              "duration": 4002000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 4228000000
+              "duration": 11017000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9072000000
+              "duration": 9070000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 131000000
+              "duration": 134000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on ImportSerialDevices Tab",
             "result": {
               "status": "passed",
-              "duration": 1894000000
+              "duration": 1584000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of ImportSerialDevices Page",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 12000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Filters of ImportSerialDevices should be visible",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 6000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1840000000
+              "duration": 2384000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 4413000000
+              "duration": 5867000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9062000000
+              "duration": 9081000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 129000000
+              "duration": 131000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on ImportSerialDevices Tab",
             "result": {
               "status": "passed",
-              "duration": 1212000000
+              "duration": 1122000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "I should click on Add New Import",
             "result": {
               "status": "passed",
-              "duration": 96000000
+              "duration": 97000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Upload the CSV import file",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 92000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 5064000000
+              "duration": 5068000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on refresh button",
             "result": {
               "status": "passed",
-              "duration": 76000000
+              "duration": 63000000
             }
           },
           {
@@ -202,8 +202,8 @@
             "line": 23,
             "name": "Verify the record in table",
             "result": {
-              "status": "passed",
-              "duration": 439000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<td.MuiTableCell-root.MuiTableCell-body.MuiTableCell-sizeMedium.css-q34dxg>' to contain 'demo_adminsuper@vivacitytech.com'\n    at ImportSerialDevicesActions.verfiyImportTable (cypress/integration/PageObject/PageActions/ImportSerialDevicesActions.js:48:49)\n    at Context.eval (cypress/integration/ImportSerialDevices/ImportSerialDevices.spec.js:47:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -212,8 +212,7 @@
             "line": 24,
             "name": "Click on Download import button",
             "result": {
-              "status": "passed",
-              "duration": 92000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +221,7 @@
             "line": 25,
             "name": "Verify the successfully downloaded",
             "result": {
-              "status": "passed",
-              "duration": 14000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +230,7 @@
             "line": 26,
             "name": "Click on Details button",
             "result": {
-              "status": "passed",
-              "duration": 84000000
+              "status": "skipped"
             }
           },
           {
@@ -242,8 +239,7 @@
             "line": 27,
             "name": "Verify the Device Details",
             "result": {
-              "status": "passed",
-              "duration": 11000000
+              "status": "skipped"
             }
           }
         ]

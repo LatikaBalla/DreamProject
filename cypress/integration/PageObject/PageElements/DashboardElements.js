@@ -91,4 +91,9 @@ export default class DashboardElements {
             timeout: 30000,
         }); 
     }
+    vivaAdminElement(){
+        return cy.get(locator.dashboard.vivaAdmin, {
+            timeout: 30000,
+        }); 
+    }
 }

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 8094000000
+              "duration": 4669000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5536000000
+              "duration": 7403000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9073000000
+              "duration": 9076000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 133000000
+              "duration": 134000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of RepairTickets Page",
             "result": {
               "status": "passed",
-              "duration": 1077000000
+              "duration": 85000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Filters of RepairTickets should be visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 12000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Table for RepairTickets should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 10000000
             }
           }
         ]
@@ -103,7 +103,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3508000000
+              "duration": 3089000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5892000000
+              "duration": 4460000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 130000000
+              "duration": 127000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "I should click on create new ticket",
             "result": {
               "status": "passed",
-              "duration": 184000000
+              "duration": 218000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Select failure Type, Return site and Serial Device",
             "result": {
               "status": "passed",
-              "duration": 1635000000
+              "duration": 1873000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Select Building and Chromebook issue",
             "result": {
               "status": "passed",
-              "duration": 653000000
+              "duration": 573000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Enter the Describe Your Issue",
             "result": {
               "status": "passed",
-              "duration": 2519000000
+              "duration": 2550000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 90000000
             }
           },
           {
@@ -192,8 +192,8 @@
             "line": 23,
             "name": "Verify New Ticket is added",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiAlert-message`, but never found it.\n    at RepairTicketsActions.verifyNewTicket (cypress/integration/PageObject/PageActions/RepairTicketsActions.js:66:30)\n    at Context.eval (cypress/integration/RepairTickets/RepairTickets.spec.js:51:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 7049000000
             }
           },
           {
@@ -202,7 +202,8 @@
             "line": 24,
             "name": "Click on Download import button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 87000000
             }
           },
           {
@@ -211,7 +212,8 @@
             "line": 25,
             "name": "Verify the successfully downloaded",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 21000000
             }
           },
           {
@@ -220,7 +222,8 @@
             "line": 26,
             "name": "Click on view the details",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 564000000
             }
           },
           {
@@ -229,7 +232,8 @@
             "line": 27,
             "name": "Verify the Details of Repair Ticket",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2037000000
             }
           }
         ]
