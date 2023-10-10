@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 5052000000
+              "duration": 5220000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 3089000000
+              "duration": 6854000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9081000000
+              "duration": 9073000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Users page",
             "result": {
               "status": "passed",
-              "duration": 155000000
+              "duration": 129000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I should be redirected to the Users page",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 12000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "All Organizational unit should be visible",
             "result": {
               "status": "passed",
-              "duration": 1001000000
+              "duration": 935000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "All Users Unit should be visible",
             "result": {
               "status": "passed",
-              "duration": 471000000
+              "duration": 992000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Filters of Users unit should be visible",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 8000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3273000000
+              "duration": 3611000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 4582000000
+              "duration": 1899000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9068000000
+              "duration": 9069000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on Users page",
             "result": {
               "status": "passed",
-              "duration": 126000000
+              "duration": 125000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "I should click on Add New student",
             "result": {
               "status": "passed",
-              "duration": 1703000000
+              "duration": 1294000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Enter full name, title and Email",
             "result": {
               "status": "passed",
-              "duration": 1512000000
+              "duration": 1150000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Enter Phone and Cell Number",
             "result": {
               "status": "passed",
-              "duration": 664000000
+              "duration": 575000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 67000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Verify the student added in table",
             "result": {
               "status": "passed",
-              "duration": 495000000
+              "duration": 445000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Enter the Search value in search box",
             "result": {
               "status": "passed",
-              "duration": 2368000000
+              "duration": 2343000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Verify the Results in the table",
             "result": {
               "status": "passed",
-              "duration": 38000000
+              "duration": 21000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Click on Edit button",
             "result": {
               "status": "passed",
-              "duration": 153000000
+              "duration": 122000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "I should edit title, full name",
             "result": {
               "status": "passed",
-              "duration": 828000000
+              "duration": 747000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "I should edit Phone and Cell Number and user role",
             "result": {
               "status": "passed",
-              "duration": 1048000000
+              "duration": 981000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "I edit User Status to inactive",
             "result": {
               "status": "passed",
-              "duration": 216000000
+              "duration": 199000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "I edit In-house Repaire to yes",
             "result": {
               "status": "passed",
-              "duration": 158000000
+              "duration": 155000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Click on Submit button",
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 67000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Verify the Record has been updated Meassage",
             "result": {
               "status": "passed",
-              "duration": 119000000
+              "duration": 137000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "Click on Delete button",
             "result": {
               "status": "passed",
-              "duration": 96000000
+              "duration": 79000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "Click on Confirm Delete button",
             "result": {
               "status": "passed",
-              "duration": 92000000
+              "duration": 79000000
             }
           },
           {
@@ -323,7 +323,7 @@
             "name": "Verify the record is deleted successfully",
             "result": {
               "status": "passed",
-              "duration": 2006000000
+              "duration": 2005000000
             }
           },
           {

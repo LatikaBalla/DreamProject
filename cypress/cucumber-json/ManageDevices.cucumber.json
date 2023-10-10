@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 6902000000
+              "duration": 4076000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6330000000
+              "duration": 5531000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on ManageDevices page",
             "result": {
               "status": "passed",
-              "duration": 131000000
+              "duration": 134000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I should be redirected to theManageDevices page",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 6000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of ManageDevices Page",
             "result": {
               "status": "passed",
-              "duration": 1118000000
+              "duration": 452000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the My Fleet Tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 12000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Verify the Import Serial Devices tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 8000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Verify the Organization Uploaded Assets tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 10000000
             }
           }
         ]

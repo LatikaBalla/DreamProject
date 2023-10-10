@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 4640000000
+              "duration": 6768000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6607000000
+              "duration": 6275000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9076000000
+              "duration": 9074000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 132000000
+              "duration": 134000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on RepairBoxes Tab",
             "result": {
               "status": "passed",
-              "duration": 541000000
+              "duration": 590000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of RepairBoxes Page",
             "result": {
               "status": "passed",
-              "duration": 22000000
+              "duration": 11000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Outbound and Inbound Shipments for RepairBoxes should be visible",
             "result": {
               "status": "passed",
-              "duration": 39000000
+              "duration": 21000000
             }
           }
         ]
@@ -103,7 +103,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2878000000
+              "duration": 4309000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 4381000000
+              "duration": 5432000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9070000000
+              "duration": 9069000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 140000000
+              "duration": 127000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on RepairBoxes Tab",
             "result": {
               "status": "passed",
-              "duration": 1437000000
+              "duration": 135000000
             }
           },
           {

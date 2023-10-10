@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 6643000000
+              "duration": 5624000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5374000000
+              "duration": 5101000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9075000000
+              "duration": 9085000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 137000000
+              "duration": 131000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on OrgUploadAssets Tab",
             "result": {
               "status": "passed",
-              "duration": 1484000000
+              "duration": 604000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of OrgUploadAssets Page",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 13000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3172000000
+              "duration": 3664000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 4658000000
+              "duration": 4793000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9068000000
+              "duration": 9067000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 129000000
+              "duration": 137000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on OrgUploadAssets Tab",
             "result": {
               "status": "passed",
-              "duration": 1101000000
+              "duration": 478000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "I should click on Add Asset",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 67000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Enter title, full name location and tag",
             "result": {
               "status": "passed",
-              "duration": 445000000
+              "duration": 399000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Enter note, Type and description",
             "result": {
               "status": "passed",
-              "duration": 1391000000
+              "duration": 1039000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Upload the image file",
             "result": {
               "status": "passed",
-              "duration": 26000000
+              "duration": 16000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 75000000
+              "duration": 67000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Verify the asset details added in table",
             "result": {
               "status": "passed",
-              "duration": 401000000
+              "duration": 991000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Enter the title in search box",
             "result": {
               "status": "passed",
-              "duration": 3318000000
+              "duration": 3298000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Click on Search button",
             "result": {
               "status": "passed",
-              "duration": 94000000
+              "duration": 89000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Click on Edit button",
             "result": {
               "status": "passed",
-              "duration": 144000000
+              "duration": 126000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "I should edit title, full name location and tag",
             "result": {
               "status": "passed",
-              "duration": 540000000
+              "duration": 470000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "I should edit note, Type and description",
             "result": {
               "status": "passed",
-              "duration": 1481000000
+              "duration": 1342000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "ReUpload the image file",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 19000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 69000000
+              "duration": 64000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Verify the Record has been updated Meassage",
             "result": {
               "status": "passed",
-              "duration": 435000000
+              "duration": 640000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "Click on Delete button",
             "result": {
               "status": "passed",
-              "duration": 97000000
+              "duration": 93000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "Click on Confirm Delete button",
             "result": {
               "status": "passed",
-              "duration": 66000000
+              "duration": 67000000
             }
           },
           {
@@ -323,7 +323,7 @@
             "name": "Verify the record is deleted successfully",
             "result": {
               "status": "passed",
-              "duration": 2028000000
+              "duration": 2029000000
             }
           }
         ]

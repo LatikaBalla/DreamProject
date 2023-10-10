@@ -13,6 +13,16 @@ module.exports = defineConfig({
     env: {
       USERNAME:'demo_adminSuper@vivacitytech.com',
       PASSWORD:'VIVA!dreamdemo'
+    },
+    "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+      "reportDir": "cypress/report", 
+      "saveHtml": true,
+      "reportPageTitle": "Legrande Cypress",
+      "reportFilename": "Report",
+      "embeddedScreenshots": true,
+      "inlineAssets": true,
+      "overwrite": true 
     }
   },
 });

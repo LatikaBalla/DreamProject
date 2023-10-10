@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 4097000000
+              "duration": 7158000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6890000000
+              "duration": 2414000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8074000000
+              "duration": 8071000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on My profile page",
             "result": {
               "status": "passed",
-              "duration": 1065000000
+              "duration": 1066000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of My Profile Page",
             "result": {
               "status": "passed",
-              "duration": 1089000000
+              "duration": 529000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "User and User photo of MyProfile should be visible",
             "result": {
               "status": "passed",
-              "duration": 460000000
+              "duration": 501000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Profile and Account deatils section of MyProfile should be visible",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 12000000
             }
           }
         ]
@@ -103,7 +103,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3576000000
+              "duration": 3542000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 3976000000
+              "duration": 1923000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8064000000
+              "duration": 8061000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on My profile page",
             "result": {
               "status": "passed",
-              "duration": 1063000000
+              "duration": 1064000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on upload image icon",
             "result": {
               "status": "passed",
-              "duration": 1078000000
+              "duration": 404000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Eelect Email preference",
             "result": {
               "status": "passed",
-              "duration": 119000000
+              "duration": 120000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "click on update button",
             "result": {
               "status": "passed",
-              "duration": 60000000
+              "duration": 63000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Verify the updated successfully",
             "result": {
               "status": "passed",
-              "duration": 842000000
+              "duration": 871000000
             }
           }
         ]

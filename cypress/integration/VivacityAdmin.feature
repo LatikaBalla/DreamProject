@@ -9,13 +9,13 @@ Feature:Vivacity admin Page Functionality
         Then Close the terms of service window
         And Click on Vivacity Admin page
 
-    # Scenario: Vivacity Admin can access page and check the visiblity
-    #     Then I should be redirected to the Users page
-    #     Then All Paid Subscription Requests unit should be visible
-    #     And Admin Users unit should be visible
-    #     Then Serial Numbers & Warranties unit should be visible
-    #     And Account Management unit should be visible
-    #     Then Request Users unit should be visible
+    Scenario: Vivacity Admin can access page and check the visiblity
+        Then I should be redirected to the Users page
+        Then All Paid Subscription Requests unit should be visible
+        And Admin Users unit should be visible
+        Then Serial Numbers & Warranties unit should be visible
+        And Account Management unit should be visible
+        Then Request Users unit should be visible
 
     Scenario: Add new Srudent, Search, Edit and search Delete the User and download
         Then Click on All Paid Subscription Requests unit

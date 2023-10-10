@@ -25,6 +25,6 @@ module.exports = (on, config) => {
   on('task', verifyDownloadTasks);
   on('file:preprocessor', browserify())
   on('file:preprocessor', cucumber())
-  //on('task', {downloadFile})
+  require('cypress-mochawesome-reporter/plugin')(on)
  
 }
