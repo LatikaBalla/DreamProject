@@ -45,10 +45,13 @@ export class SrcRepairTicketsActions {
         //cy.get(tdata.srcRepairTicket.serialdevice).click()
         cy.get('[data-testid="ArrowDropDownIcon"]').eq(3).click({ force: true })
          cy.get('#device').type('{downArrow}{enter}')
+        
     }
     selectTechnician(){
         srt.technicianElement().click({ force: true })
-        cy.get(tdata.srcRepairTicket.technician).click({force:true})
+       // cy.get('[name="internal_technician"]').type('{downArrow}{enter}')
+        cy.get('.Mui-focusVisible').click({ force: true })
+
     }
     selectIssue(){
         srt.issueElement().click({ force: true })
@@ -61,14 +64,14 @@ export class SrcRepairTicketsActions {
         srt.savebtnElement().click({ force: true })
     }
     verifyNewTicket() {
-        cy.wait(1000)
+        cy.wait(5000)
         dash.messageElement().should('contain', tdata.srcRepairTicket.createTicketmsg)
     }
     enterSearchBox(){
-        srt.searchElement().type(tdata.srcRepairTicket.serialno+'{enter}')
+        srt.searchElement().type(tdata.srcRepairTicket.ticketno+'{enter}')
     }
     verifySearchResult(){
-        cy.get('tbody tr').eq(0).find('td').eq(3).should('contain', tdata.srcRepairTicket.serialno)
+        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.srcRepairTicket.ticketno)
     }
 
 }

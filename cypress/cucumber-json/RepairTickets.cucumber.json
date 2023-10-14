@@ -9,10 +9,10 @@
     "uri": "RepairTickets.feature",
     "elements": [
       {
-        "id": "repairtickets-page-functionality;visiblity-of-repairtickets-page",
+        "id": "repairtickets-page-functionality;visiblity-check--create-a-ticket-and-download-eport",
         "keyword": "Scenario",
-        "line": 12,
-        "name": "Visiblity of RepairTickets page",
+        "line": 13,
+        "name": "Visiblity check  Create a ticket and download eport",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 7041000000
+              "duration": 18670000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7430000000
+              "duration": 4746000000
             }
           },
           {
@@ -53,187 +53,125 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 149000000
+              "duration": 132000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 13,
+            "line": 14,
             "name": "Verify the Title of RepairTickets Page",
             "result": {
               "status": "passed",
-              "duration": 530000000
+              "duration": 951000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
+            "line": 15,
             "name": "Filters of RepairTickets should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 10000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 15,
+            "line": 16,
             "name": "Table for RepairTickets should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "repairtickets-page-functionality;create-a-ticket-and-download-eport",
-        "keyword": "Scenario",
-        "line": 17,
-        "name": "Create a ticket and download eport",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I should navigate to application",
-            "result": {
-              "status": "passed",
-              "duration": 2353000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I should Sign In into the application",
-            "result": {
-              "status": "passed",
-              "duration": 5908000000
+              "duration": 7000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
-            "name": "close the terms of service window",
+            "line": 17,
+            "name": "I should click on create new ticket",
             "result": {
               "status": "passed",
-              "duration": 9066000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "Click on Repair360 page",
-            "result": {
-              "status": "passed",
-              "duration": 128000000
+              "duration": 135000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 18,
-            "name": "I should click on create new ticket",
-            "result": {
-              "status": "passed",
-              "duration": 609000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
             "name": "Select failure Type, Return site and Serial Device",
             "result": {
               "status": "passed",
-              "duration": 1458000000
+              "duration": 1519000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 20,
+            "line": 19,
             "name": "Select Building and Chromebook issue",
             "result": {
               "status": "passed",
-              "duration": 475000000
+              "duration": 445000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 21,
+            "line": 20,
             "name": "Enter the Describe Your Issue",
             "result": {
               "status": "passed",
-              "duration": 1665000000
+              "duration": 1603000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 22,
+            "line": 21,
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 76000000
+              "duration": 70000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 23,
+            "line": 22,
             "name": "Verify New Ticket is added",
             "result": {
-              "status": "passed",
-              "duration": 9593000000
+              "status": "failed",
+              "duration": 35344000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiAlert-message`, but never found it.\n    at RepairTicketsActions.verifyNewTicket (cypress/integration/PageObject/PageActions/RepairTicketsActions.js:66:30)\n    at Context.eval (cypress/integration/RepairTickets/RepairTickets.spec.js:51:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 24,
+            "line": 23,
             "name": "Click on Download import button",
             "result": {
-              "status": "passed",
-              "duration": 81000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "Verify the successfully downloaded",
-            "result": {
-              "status": "passed",
-              "duration": 13000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 26,
+            "line": 25,
             "name": "Click on view the details",
             "result": {
-              "status": "passed",
-              "duration": 1059000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 27,
+            "line": 26,
             "name": "Verify the Details of Repair Ticket",
             "result": {
-              "status": "passed",
-              "duration": 1011000000
+              "status": "skipped"
             }
           }
         ]

@@ -18,20 +18,6 @@ Then('close the terms of service window', () => {
 And('Click on Buildings Tab', () => {
     build.clickOnBuildingTab()
 })
-And('Verify the Title of Buildings Page', () => {
-    build.verifyTitleBuildingPage()
-
-})
-Then('Filters of Buildings should be visible', () => {
-    build.addNewButtonTabVisible()
-    build.addfilterButtonVisible()
-    build.searchBoxVisible()
-    build.refreshButtonVisible()
-})
-And('Table for Buildings should be visible', () => {
-    build.tableofBuildingsVisible()
-})
-
 Then('I should click on + Add New button', () => {
     build.clickOnAddnewButton()
 })

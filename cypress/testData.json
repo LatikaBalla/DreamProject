@@ -1,247 +1,253 @@
 {
- "newaccount":{
+  "newaccount": {
     "title": "Mr",
     "fullname": "Demo Test",
     "email": "@gmail.com",
     "phone": "1231231231",
     "cellnumber": "1231234121",
     "userrole": "[data-value='1']"
- },
- "edit":{
+  },
+  "edit": {
     "title": "Mrs",
     "fullname": "Edit Test",
     "email": "@gmail.com",
     "phone": "24234234",
     "cellnumber": "32387423",
     "userrole": "[data-value='3']",
-    "userstatus":"[data-value='Inactive']"  ,
-    "updatemsg":  "User has been updated"
- },
- "delete":{
-    "fullname":"Edit Test",
-    "deletemsg":"User has been deleted"
- },
- "search":{
-    "fullname":"Demo Test"
- },
- "buildings":{
-   "buildingname": "Demo Building1",
-   "phone": "2734623428",
-   "extension": "1",
-   "defaultbuilding":"[data-value='true']",
-   "address": "641 Fairview Avenue Northeast",
-   "savebtn": "[type='submit']",
-   "addmsg":"Add New Building"
- },
- "editbuildings":{
-   "buildingname": "Edit Building",
-   "phone": "2734633338",
-   "extension": "11",
-   "defaultbuilding":"[data-value='false']",
-   "updatemsg":"Building updated"
- },
- "detailsBuilding":{
-  "details":"Details",
-  "buildingname": "Demo Building1",
-  "active":"yes"
- },
- "deviceRepairReport":{
-   "ticketno":"VAL20230927115502100",
-   "filename":"VAL20230927115502100.pdf"
- },
- "myFleet":{
-   "filename":"fleet_devices.csv",
-   "serialno":"1CD1000005",
-   "search":"VIVATEST46Test"
- },
- "addasset":{
-  "title": "AssetTitle",
-  "fullname": "Demo Test",
-  "location": "india",
-  "notes":"Testing",
-  "tag": "10",
-  "type": "aaabbbccc",
-  "description":"this is description"
-},
-"editasset":{
-  "title": "EditAssetTitle",
-  "fullname": "Edit Test",
-  "location": "UK",
-  "notes":"assest devices",
-  "tag": "12",
-  "type": "3absjkba",
-  "description":"I want to edit description"
-},
-"importDevice":{
-  "uploadfilename":"import_serial_devices.csv",
-  "downloadfilename":"import_list.csv"
-},
-"orgAsset":{
-  "upload":"image1.jpeg",
-  "reupload":"image2.jpg",
-  "addassetmsg":"Add new asset form submitted",
-  "updatemsg":"Update asset form submitted"
-
-},
-"repairTickets":{
-  "failuretype":"[data-value='Accidental']",
-  "filename":"RepairTickets.csv",
-  "returnsite":"[data-value='2269']",
-  "building":"[data-value='2269']",
-  "serialdevice":"#device-option-2",
-  "chromebookissue":"[data-value='System Board']",
-  "description":"there is some problem in System Board of the laptop",
- "devicename":"Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
-  "createTicketmsg":"Add new ticket form submitted"
-},
-"repairBox":{
-  "weight":"10",
-  "height":"10",
-  "depth":"10",
-  "width":"10",
-  "pickupsite":"[data-value='2269']",
-  "boxcreatedmsg":"New box submitted",
-  "filename":"Image.png"
-},
-"inHouseWorkflow":{
-  "failuretype":"[data-value='Accidental']",
-  "serialdevice":"#device-option-0",
-  "chromebookissue":"There is something fault",
-  "technician":"[data-value='1206']",
-  "createTicketmsg":"Add new ticket form submitted",
-  "filename":"InHouseRepairTickets.csv"
-},
-"inHouseTicket":{
-  "failuretype":"[data-value='Accidental']",
-  "serialdevice":"#device-option-2",
-  "chromebookissue":"There is something fault",
-  "technician":"[data-value='1206']",
-  "createTicketmsg":"Add new ticket form submitted",
-  "filename":"InHouseRepairTickets.csv"
-},
-"srcRepairTicket":{
-  "failuretype":"[data-value='Accidental']",
-  "serialdevice":"#device-option-2",
-  "chromebookissue":"There is something fault",
-  "technician":"[data-value='1183']",
-  "createTicketmsg":"Add new student ticket form submitted",
-  "serialno":"VIVATEST86Test",
-  "issue":"[data-value='Hinge']"
-},
-"srcStudent":{
+    "userstatus": "[data-value='Inactive']",
+    "updatemsg": "User has been updated"
+  },
+  "delete": {
+    "fullname": "Edit Test",
+    "deletemsg": "User has been deleted"
+  },
+  "search": {
+    "fullname": "Demo Test"
+  },
+  "buildings": {
+    "buildingname": "Demo Building1",
+    "phone": "2734623428",
+    "extension": "1",
+    "defaultbuilding": "[data-value='true']",
+    "address": "641 Fairview Avenue Northeast",
+    "savebtn": "[type='submit']",
+    "addmsg": "Add New Building"
+  },
+  "editbuildings": {
+    "buildingname": "Edit Building",
+    "phone": "2734633338",
+    "extension": "11",
+    "defaultbuilding": "[data-value='false']",
+    "updatemsg": "Building updated"
+  },
+  "detailsBuilding": {
+    "details": "Details",
+    "buildingname": "Demo Building1",
+    "active": "yes"
+  },
+  "deviceRepairReport": {
+    "ticketno": "VAL20230927115502100",
+    "filename": "VAL20230927115502100.pdf"
+  },
+  "myFleet": {
+    "filename": "fleet_devices.csv",
+    "serialno": "VIVATEST19Test",
+    "search": "VIVATEST19Test",
+    "serialNo": "1111",
+    "deviceid": "#device-option-38",
+    "assetTag": "aa1",
+    "studentid": "[data-value='49']",
+    "lonarstatus": "[data-value='In Loaner Pool']",
+    "devicestatus": "[data-value='Active']",
+    "addDevicemsg":"Submitting form"
+  },
+  "addasset": {
+    "title": "AssetTitle",
+    "fullname": "Demo Test",
+    "location": "india",
+    "notes": "Testing",
+    "tag": "10",
+    "type": "aaabbbccc",
+    "description": "this is description"
+  },
+  "editasset": {
+    "title": "EditAssetTitle",
+    "fullname": "Edit Test",
+    "location": "UK",
+    "notes": "assest devices",
+    "tag": "12",
+    "type": "3absjkba",
+    "description": "I want to edit description"
+  },
+  "importDevice": {
+    "uploadfilename": "import_serial_devices.csv",
+    "downloadfilename": "import_list.csv"
+  },
+  "orgAsset": {
+    "upload": "image1.jpeg",
+    "reupload": "image2.jpg",
+    "addassetmsg": "Add new asset form submitted",
+    "updatemsg": "Update asset form submitted"
+  },
+  "repairTickets": {
+    "failuretype": "[data-value='Accidental']",
+    "filename": "RepairTickets.csv",
+    "returnsite": "[data-value='2269']",
+    "building": "[data-value='2269']",
+    "serialdevice": "#device-option-2",
+    "chromebookissue": "[data-value='System Board']",
+    "description": "there is some problem in System Board of the laptop",
+    "devicename": "Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
+    "createTicketmsg": "Add new ticket form submitted"
+  },
+  "repairBox": {
+    "weight": "10",
+    "height": "10",
+    "depth": "10",
+    "width": "10",
+    "pickupsite": "[data-value='2269']",
+    "boxcreatedmsg": "New box submitted",
+    "filename": "Image.png"
+  },
+  "inHouseWorkflow": {
+    "failuretype": "[data-value='Accidental']",
+    "serialdevice": "#device-option-0",
+    "chromebookissue": "There is something fault",
+    "technician": "[data-value='1266']",
+    "createTicketmsg": "Add new ticket form submitted",
+    "filename": "InHouseRepairTickets.csv"
+  },
+  "inHouseTicket": {
+    "failuretype": "[data-value='Accidental']",
+    "serialdevice": "#device-option-2",
+    "chromebookissue": "There is something fault",
+    "technician": "[data-value='1266']",
+    "createTicketmsg": "Add new ticket form submitted",
+    "filename": "InHouseRepairTickets.csv"
+  },
+  "srcRepairTicket": {
+    "failuretype": "[data-value='Accidental']",
+    "serialdevice": "#device-option-2",
+    "chromebookissue": "There is something fault",
+    "technician": "[data-value='1266']",
+    "createTicketmsg": "Add new ticket form submitted",
+    "ticketno": "VAL2023100608490067",
+    "issue": "[data-value='Hinge']"
+  },
+  "srcStudent": {
     "title": "Mr",
     "fullname": "Demo Student",
     "email": "@gmail.com",
     "phone": "1231231231",
     "cellnumber": "1231234121",
     "userstatus": "[data-value='Active']",
-    "vivanews":"[data-value='false']",
-    "productupdate":"[data-value='true']",
-    "vivaweekly":"[data-value='true']",
-    "betatester":"[data-value='true']",
-    "usernotification":"[data-value='true']",
-    "inhouserepair":"[data-value='true']",
-    "createStudentmsg":"Student created"
-},
-"partCloset":{
-  "partname":"Test part",
-  "manufacturer":"test manufacturer",
-  "parentdevice":"test device",
-  "partsku":"111111"  ,
-  "quantity":"1",
-  "createpartmsg":"Part Closet item created",
-  "device":"#device-option-29",
-  "partid":"[data-value='1192']",
-  "search":"50053256",
-  "partnameTable":"TouchPad"
-
-},
-"users":{
-  "fullname":"Demo Testing User",
-  "title":"Miss",
-  "cellnumber":"1231234121",
-  "phone":"2734623428",
-  "email":"@gmail.com",
-  "createStudentmsg":"Add new user form submitted",
-  "editTitle":"Mr",
-  "editFullname":"Demo Testing Edit",
-  "editCellnumber":"2222222222",
-  "editPhone":"8888888888",
-  "editUserRole":"[data-value='4']",
-  "editUserStatus":"[data-value='Inactive']",
-  "editInhouseRepaire":"[data-value='true']",
-  "updateStudentmsg":"User has been updated",
-  "filename":"users_list.csv"
-},
-"myprofile":{
-  "profileupdatemsg":"Profile updated successfully",
-  "emailname":"demo_adminsuper@vivacitytech.com",
-  "title":"MR",
-  "phone":"9090909090",
-  "option":"[data-value='vivacity_news']",
-  "image":"image1.jpeg"
-},
-"support":{
-  "name":"Demo Test",
-  "priority":"[data-value='Low']",
-  "topic":"[data-value='General Inquiry']",
-  "image":"image1.jpeg",
-  "notes":"This is for Testing",
-  "submitmsg":"Support request submitted successfully"
-},
-"features":{
-  "title":"Testing",
-  "description":"QA Testing the Features page",
-"requestmsg":"Submitting Features request"
-},
-"vivacityAdmin":{
-  "fullname":"Demo UserVivacity",
-  "titleUser":"Miss",
-  "cellnumber":"1231234121",
-  "phone":"2734623428",
-  "email":"@gmail.com",
-  "userRole":"[data-value='3']",
-  "createStudentmsg":"Add new user form submitted",
-  "editTitle":"Mr",
-  "editFullname":"Demo Testing Edit",
-  "editCellnumber":"2222222222",
-  "editPhone":"8888888888",
-  "editUserRole":"[data-value='1']",
-  "warrantyName": "Test Warranty",
-  "sku": "aabbbccc",
-  "warrantyType": "[data-value='Base']",
-  "protection": "[data-value='ADP']",
-  "price": "$100",
-  "years": "1",
-  "months": "2",
-  "byear": "1",
-  "bmonth": "2",
-  "provider": "[data-value='1']",
-  "wdescription": "This is warranty description",
- "warrantymsg" :"Warranty form submitted",
-
- "editwName": "Edit Test Warranty",
- "editsku": "aabbb",
- "editwarrantyType": "[data-value='Base']",
- "editprotection": "[data-value='ADP']",
- "editprice": "$110",
- "edityears": "1",
- "editmonths": "4",
- "editbyear": "1",
- "editbmonth": "3",
- "editprovider": "[data-value='1']",
- "editwdescription": "This is warranty description edited",
-"updateWarrantymsg" :"Warranty updated",
-"daleteWarrantymsg":"Warranty has been deleted",
-"accountName":"Test account_name",
-"phoneNo":"2345678912",
-"domain":"Repaire",
-"creditLimit":"100",
-"ihrepairs":"[data-value='true']",
-"paymentTerms":"[data-value='Net 60 Days']",
-"addAccountymsg":"Account added successfully",
-"subcription":"[data-value='Professional']",
-"subUpdatemsg":"Update Subcription submmited",
-"addAccUsermsg":"Account added successfully"
-}
+    "vivanews": "[data-value='false']",
+    "productupdate": "[data-value='true']",
+    "vivaweekly": "[data-value='true']",
+    "betatester": "[data-value='true']",
+    "usernotification": "[data-value='true']",
+    "inhouserepair": "[data-value='true']",
+    "createStudentmsg": "Student created"
+  },
+  "partCloset": {
+    "partname": "Test part",
+    "manufacturer": "test manufacturer",
+    "parentdevice": "test device",
+    "partsku": "111111",
+    "quantity": "1",
+    "createpartmsg": "Part Closet item created",
+    "device": "#device-option-3",
+    "partid": "[data-value='5448']",
+    "search": "50034089",
+    "partnameTable": "TouchPad",
+    "building": "[data-value='2199']"
+  },
+  "users": {
+    "fullname": "Demo Testing User",
+    "title": "Miss",
+    "cellnumber": "1231234121",
+    "phone": "2734623428",
+    "email": "@gmail.com",
+    "createStudentmsg": "Add new user form submitted",
+    "editTitle": "Mr",
+    "editFullname": "Demo Testing Edit",
+    "editCellnumber": "2222222222",
+    "editPhone": "8888888888",
+    "editUserRole": "[data-value='4']",
+    "editUserStatus": "[data-value='Inactive']",
+    "editInhouseRepaire": "[data-value='true']",
+    "updateStudentmsg": "User has been updated",
+    "filename": "users_list.csv"
+  },
+  "myprofile": {
+    "profileupdatemsg": "Profile updated successfully",
+    "emailname": "demo_adminsuper@vivacitytech.com",
+    "title": "MR",
+    "phone": "9090909090",
+    "option": "[data-value='vivacity_news']",
+    "image": "image1.jpeg"
+  },
+  "support": {
+    "name": "Demo Test",
+    "priority": "[data-value='Low']",
+    "topic": "[data-value='General Inquiry']",
+    "image": "image1.jpeg",
+    "notes": "This is for Testing",
+    "submitmsg": "Support request submitted successfully"
+  },
+  "features": {
+    "title": "Testing",
+    "description": "QA Testing the Features page",
+    "requestmsg": "Submitting Features request"
+  },
+  "vivacityAdmin": {
+    "fullname": "Demo UserVivacity",
+    "titleUser": "Miss",
+    "cellnumber": "1231234121",
+    "phone": "2734623428",
+    "email": "@gmail.com",
+    "userRole": "[data-value='3']",
+    "createStudentmsg": "Add new user form submitted",
+    "editTitle": "Mr",
+    "editFullname": "Demo Testing Edit",
+    "editCellnumber": "2222222222",
+    "editPhone": "8888888888",
+    "editUserRole": "[data-value='1']",
+    "warrantyName": "Test Warranty",
+    "sku": "aabbbccc",
+    "warrantyType": "[data-value='Base']",
+    "protection": "[data-value='ADP']",
+    "price": "$100",
+    "years": "1",
+    "months": "2",
+    "byear": "1",
+    "bmonth": "2",
+    "provider": "[data-value='1']",
+    "wdescription": "This is warranty description",
+    "warrantymsg": "Warranty form submitted",
+    "editwName": "Edit Test Warranty",
+    "editsku": "aabbb",
+    "editwarrantyType": "[data-value='Base']",
+    "editprotection": "[data-value='ADP']",
+    "editprice": "$110",
+    "edityears": "1",
+    "editmonths": "4",
+    "editbyear": "1",
+    "editbmonth": "3",
+    "editprovider": "[data-value='1']",
+    "editwdescription": "This is warranty description edited",
+    "updateWarrantymsg": "Warranty updated",
+    "daleteWarrantymsg": "Warranty has been deleted",
+    "accountName": "Test account_name",
+    "phoneNo": "2345678912",
+    "domain": "Repaire",
+    "creditLimit": "100",
+    "ihrepairs": "[data-value='true']",
+    "paymentTerms": "[data-value='Net 60 Days']",
+    "addAccountymsg": "Account added successfully",
+    "subcription": "[data-value='Professional']",
+    "subUpdatemsg": "Update Subcription submmited",
+    "account":"[data-value='21730']",
+    "addAccUsermsg": "Account added successfully"
+  }
 }

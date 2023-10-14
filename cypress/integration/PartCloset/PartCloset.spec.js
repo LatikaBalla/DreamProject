@@ -69,8 +69,9 @@ Then ('Select device and part name',()=>{
 pc.selectDevice()
 pc.selectPartName()
 })
-And ('Enter quantity',()=>{
+And ('Enter quantity and select building',()=>{
 pc.enterQuantityVT()
+pc.selectBuilding()
 })
 Then ('Click on submit button',()=>{
 pc.clickOnSubmitVTButton()

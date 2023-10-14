@@ -25,18 +25,45 @@ Then('I should be redirected to the Users page', () => {
 Then('All Paid Subscription Requests unit should be visible', () => {
     vadmin.allPaidSubcription()
 })
-And('Admin Users unit should be visible', () => {
+And ('Roadmap Requests unit should be visible',()=>{
+vadmin.roadmapRequest()
+})
+Then ('Admin Users unit should be visible', () => {
     vadmin.adminUser()
 })
-Then('Serial Numbers & Warranties unit should be visible', () => {
-    vadmin.serialNoWarrantyVisible()
+And('Warranties unit should be visible', () => {
+    vadmin.Warranty()
+})
+Then ('Import Serial Device unit should be visible',()=>{
+vadmin.iserialDevice()
 })
 And('Account Management unit should be visible', () => {
     vadmin.accManagement()
 })
-Then('Request Users unit should be visible', () => {
+Then('New User Creation Requests unit should be visible', () => {
     vadmin.requestUser()
 })
+And('All Users unit should be visible', () => {
+    vadmin.allUser()
+})
+Then ('Click on Roadmap Requests unit',()=>{
+vadmin.clickOnRoadmap()
+})
+And ('Click on view button',()=>{
+vadmin.clickOnViewButton()
+})
+Then ('Click on the Close button',()=>{
+vadmin.clickOnCloseButton()
+vadmin.clickOnRoadmap()
+})
+
+
+
+
+
+
+
+
 Then('Click on All Paid Subscription Requests unit', () => {
     vadmin.clickOnallPaidSubcription()
 })
@@ -49,6 +76,9 @@ Then('If any subscription request is there then approve or deny the request', ()
 And('Verify the Request', () => {
 
 })
+
+
+
 Then('Click on Admin Users unit', () => {
     vadmin.clickOnAdminUser()
 })
@@ -109,7 +139,8 @@ Then('Click on Confirm Delete button', () => {
 And('Verify the record is deleted successfully', () => {
     vadmin.verifyRecordDeleted()
 })
-Then('Click on Serial Numbers and warranty unit', () => {
+
+Then ('Click on warranty unit', () => {
     vadmin.serialNoWarrantySection()
 })
 And('I should click on Add warranty', () => {
@@ -178,6 +209,8 @@ vadmin.clickConDeleteButton()
 And ('Verify the record is deleted successfully for warranty',()=>{
 vadmin.verifyRecordDeletedWarranty()
 })
+
+
 Then ('Click on Account Management unit',()=>{
 vadmin.clickOnAccountMangment()
 })
@@ -213,6 +246,8 @@ vadmin.clickOnUpdateSub()
 And('Verify Updated subcription successfully',()=>{
     vadmin.verifyUpadtedSub()
 })
+
+
 Then ('Click on Request Users unit',()=>{
 vadmin.requestUserSection()
 })
@@ -227,4 +262,31 @@ vadmin.clickOnAddAccountsubmit()
 })
 And ('Verify add account successfully',()=>{
 vadmin.verifyAddAccUser()
+})
+Then ('Click on all Users unit',()=>{
+    vadmin.clickOnAllUser()
+})
+Then ('I should click on Add New student for allUser',()=>{
+    vadmin.clickOnCreateNewStudentAllUser()
+})
+Then ('Verify the student added in table for allUser',()=>{
+    vadmin.verifyStudentAddedAllUser()
+})
+And ('Enter the Search value in search box for alluser',()=>{
+    vadmin.enterSearchValueAllUser()
+})
+Then ('Verify the Results in the table for allUser',()=>{
+    vadmin.verifySearchResultAllUser()
+})
+And ('Click on Edit button for allUser',()=>{
+    vadmin.clickOnEditButtonAllUser()
+})
+And ('Click on Delete button for allUser',()=>{
+    vadmin.clickDeleteButtonAllUser()
+})
+And ('Verify the record is deleted successfully for allUser',()=>{
+    vadmin.verifyRecordDeletedAllUser() 
+})
+And ('Enter Email for allUser',()=>{
+    vadmin.enterEmailAllUser()
 })

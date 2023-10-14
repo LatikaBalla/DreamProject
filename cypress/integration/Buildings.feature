@@ -9,10 +9,6 @@ Feature: Building Page Functionality
         Then close the terms of service window
         And Click on Buildings Tab
 
-    Scenario: Visiblity of Buildings page
-        And Verify the Title of Buildings Page
-        Then Filters of Buildings should be visible
-        And Table for Buildings should be visible
 
     Scenario: Adding,Update,add more filter, Clear filter and Search,View Details and Delete new Buildings
         Then I should click on + Add New button

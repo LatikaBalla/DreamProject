@@ -45,13 +45,13 @@ export class ImportSerialDevicesActions {
         isd.refreshbtnElement().click({force:true})
     }
     verfiyImportTable(){
-       cy.get('tbody tr').eq(0).find('td').eq(1).should('contain', 'demo_adminsuper@vivacitytech.com')
+       cy.get('tbody tr').eq(0).find('td').eq(1).should('contain', 'demo_adminsuper@vivacitytech.com',{force:true})
     }
     clickOnDownloadImport(){
         isd.downloadimportElement().click({force:true})
     }
     verifyDownloaded(){
-        cy.verifyDownload(tdata.importDevice.downloadfilename)
+        cy.verifyDownload("/download/",tdata.importDevice.downloadfilename)
     }
     clickOnDetailsButton(){
         cy.get('tbody tr').eq(0).find('td').eq(4).contains("Details").click({force:true})

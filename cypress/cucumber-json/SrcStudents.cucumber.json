@@ -9,109 +9,9 @@
     "uri": "SrcStudents.feature",
     "elements": [
       {
-        "id": "srcstudents-page-functionality;visiblity-of-srcstudents-page",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Visiblity of SrcStudents page",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I should navigate to application",
-            "result": {
-              "status": "passed",
-              "duration": 4391000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I should Sign In into the application",
-            "result": {
-              "status": "passed",
-              "duration": 2444000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "close the terms of service window",
-            "result": {
-              "status": "passed",
-              "duration": 9072000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "Click on Repair360 page",
-            "result": {
-              "status": "passed",
-              "duration": 135000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "Click on StudentRepairCenter tab",
-            "result": {
-              "status": "passed",
-              "duration": 478000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "Click on SrcStudents tab",
-            "result": {
-              "status": "passed",
-              "duration": 62000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "Verify the Title of SrcStudents Page",
-            "result": {
-              "status": "passed",
-              "duration": 17000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "Filters of SrcStudents should be visible",
-            "result": {
-              "status": "passed",
-              "duration": 7000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "Table for SrcStudents should be visible",
-            "result": {
-              "status": "passed",
-              "duration": 5000000
-            }
-          }
-        ]
-      },
-      {
         "id": "srcstudents-page-functionality;add-new-srudent",
         "keyword": "Scenario",
-        "line": 19,
+        "line": 14,
         "name": "Add new Srudent",
         "tags": [],
         "type": "scenario",
@@ -123,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2033000000
+              "duration": 2282000000
             }
           },
           {
@@ -133,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7011000000
+              "duration": 8259000000
             }
           },
           {
@@ -143,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9062000000
+              "duration": 9074000000
             }
           },
           {
@@ -163,7 +63,7 @@
             "name": "Click on StudentRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 145000000
+              "duration": 907000000
             }
           },
           {
@@ -173,67 +73,87 @@
             "name": "Click on SrcStudents tab",
             "result": {
               "status": "passed",
+              "duration": 63000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Verify the Title of SrcStudents Page",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Table for SrcStudents should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should click on Add New student",
+            "result": {
+              "status": "passed",
               "duration": 68000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 20,
-            "name": "I should click on Add New student",
-            "result": {
-              "status": "passed",
-              "duration": 70000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
+            "line": 18,
             "name": "Enter title, full name and Email",
             "result": {
               "status": "passed",
-              "duration": 1214000000
+              "duration": 1261000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 22,
+            "line": 19,
             "name": "Enter Phone and Cell Number",
             "result": {
               "status": "passed",
-              "duration": 587000000
+              "duration": 667000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 23,
+            "line": 20,
             "name": "Select User Status",
             "result": {
               "status": "passed",
-              "duration": 131000000
+              "duration": 121000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 24,
+            "line": 21,
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 62000000
+              "duration": 61000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 25,
+            "line": 22,
             "name": "Verify the student added in table",
             "result": {
               "status": "passed",
-              "duration": 3012000000
+              "duration": 3009000000
             }
           }
         ]

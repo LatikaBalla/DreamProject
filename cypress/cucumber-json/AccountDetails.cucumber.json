@@ -9,89 +9,9 @@
     "uri": "AccountDetails.feature",
     "elements": [
       {
-        "id": "account-details-page-functionality;visiblity-of-account-details-page",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "Visiblity of Account Details page",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I should navigate to application",
-            "result": {
-              "status": "passed",
-              "duration": 9962000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I should Sign In into the application",
-            "result": {
-              "status": "passed",
-              "duration": 5880000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "close the terms of service window",
-            "result": {
-              "status": "passed",
-              "duration": 8073000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "My account Details should be visible",
-            "result": {
-              "status": "passed",
-              "duration": 111000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "Verify the Title of Account Details Page",
-            "result": {
-              "status": "passed",
-              "duration": 15000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "Filters of account deatils should be visible",
-            "result": {
-              "status": "passed",
-              "duration": 6000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "Table for account deatils should be visible",
-            "result": {
-              "status": "passed",
-              "duration": 7000000
-            }
-          }
-        ]
-      },
-      {
         "id": "account-details-page-functionality;adding,add-more-filter,-clear-filter-and-search-,update-and-delete-new-account-of-account-details-page",
         "keyword": "Scenario",
-        "line": 17,
+        "line": 11,
         "name": "Adding,add more filter, Clear filter and Search ,Update and Delete new account of Account Details page",
         "tags": [],
         "type": "scenario",
@@ -103,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3857000000
+              "duration": 7096000000
             }
           },
           {
@@ -113,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5605000000
+              "duration": 2414000000
             }
           },
           {
@@ -123,63 +43,63 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8063000000
+              "duration": 8902000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
+            "line": 12,
             "name": "I should click on Add New button",
             "result": {
               "status": "passed",
-              "duration": 66000000
+              "duration": 68000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 19,
+            "line": 13,
             "name": "Verify the tilte of Add New Contact page",
             "result": {
               "status": "passed",
-              "duration": 42000000
+              "duration": 16000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 20,
+            "line": 14,
             "name": "Enter title, full name and valid Email",
             "result": {
               "status": "passed",
-              "duration": 897000000
+              "duration": 895000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 21,
+            "line": 15,
             "name": "Enter Phone and Cell Number",
             "result": {
               "status": "passed",
-              "duration": 529000000
+              "duration": 533000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 22,
+            "line": 16,
             "name": "Select User Role from Dropdown List",
             "result": {
               "status": "passed",
-              "duration": 118000000
+              "duration": 120000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 23,
+            "line": 17,
             "name": "Click on save button",
             "result": {
               "status": "passed",
@@ -189,164 +109,181 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 24,
+            "line": 18,
             "name": "Verify the account details added in table",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<td.MuiTableCell-root.MuiTableCell-body.MuiTableCell-sizeMedium.css-q34dxg>' to contain '@gmail.com'\n    at AccountDetailsActions.verifyRecordTable (cypress/integration/PageObject/PageActions/AccountDetailsActions.js:69:50)\n    at Context.eval (cypress/integration/AccountDetails/AccountDetails.spec.js:52:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 10501000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 25,
+            "line": 19,
             "name": "Click on More filters",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 73000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 26,
+            "line": 20,
             "name": "Select Field name and Field operation",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 314000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Enter the Search value in search box",
+            "result": {
+              "status": "passed",
+              "duration": 367000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "Click on Apply Button",
+            "result": {
+              "status": "passed",
+              "duration": 60000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "Verify the Results in the table",
+            "result": {
+              "status": "passed",
+              "duration": 2066000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 69000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Enter the full name in search box",
+            "result": {
+              "status": "passed",
+              "duration": 220000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "Verify the record in searching history",
+            "result": {
+              "status": "passed",
+              "duration": 279000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 27,
-            "name": "Enter the Search value in search box",
+            "name": "Click on Edit Icon",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2127000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 28,
-            "name": "Click on Apply Button",
+            "name": "I should edit title, full name",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 648000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 29,
-            "name": "Verify the Results in the table",
+            "name": "I should edit Phone and Cell Number and user role",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 983000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 30,
-            "name": "Click on Clear filter",
+            "name": "I edit User Status to inactive",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 203000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 31,
-            "name": "Enter the full name in search box",
+            "name": "Click on Submit button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 67000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 32,
-            "name": "Verify the record in searching history",
+            "name": "Verify the Record has been updated Meassage",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 140000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 33,
-            "name": "Click on Edit Icon",
+            "name": "Click on Delete Icon",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2078000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 34,
-            "name": "I should edit title, full name",
+            "name": "Click on Confirm Delete button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 90000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 35,
-            "name": "I should edit Phone and Cell Number and user role",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 36,
-            "name": "I edit User Status to inactive",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 37,
-            "name": "Click on Submit button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 38,
-            "name": "Verify the Record has been updated Meassage",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 39,
-            "name": "Click on Delete Icon",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 40,
-            "name": "Click on Confirm Delete button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 41,
             "name": "Verify the record is deleted successfully",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2011000000
             }
           }
         ]

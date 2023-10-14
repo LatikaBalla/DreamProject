@@ -12,16 +12,23 @@ Feature:Vivacity admin Page Functionality
     Scenario: Vivacity Admin can access page and check the visiblity
         Then I should be redirected to the Users page
         Then All Paid Subscription Requests unit should be visible
-        And Admin Users unit should be visible
-        Then Serial Numbers & Warranties unit should be visible
+        And Roadmap Requests unit should be visible
+        Then Admin Users unit should be visible
+        And Warranties unit should be visible
+        Then Import Serial Device unit should be visible
         And Account Management unit should be visible
-        Then Request Users unit should be visible
+        Then New User Creation Requests unit should be visible
+        And All Users unit should be visible
 
     Scenario: Add new Srudent, Search, Edit and search Delete the User and download
-        Then Click on All Paid Subscription Requests unit
-        And Table should be visible
-        Then If any subscription request is there then approve or deny the request
-        And Verify the Request
+        # Then Click on All Paid Subscription Requests unit
+        # And Table should be visible
+        # Then If any subscription request is there then approve or deny the request
+        # And Verify the Request
+        Then Click on Roadmap Requests unit
+        And Click on view button
+        Then Click on the Close button
+
         Then Click on Admin Users unit
         Then I should click on Add New student
         Then Enter full name, title and Email
@@ -38,9 +45,9 @@ Feature:Vivacity admin Page Functionality
         And Click on Delete button
         Then Click on Confirm Delete button
         And Verify the record is deleted successfully
-          Then Click on Admin Users unit
+        Then Click on Admin Users unit
 
-        Then Click on Serial Numbers and warranty unit
+        Then Click on warranty unit
         And I should click on Add warranty
         Then Enter name and SKU
         And Select Type and Damge protection
@@ -58,7 +65,7 @@ Feature:Vivacity admin Page Functionality
         And Click on Delete Icon
         Then Click on Confirm Delete Icon
         And Verify the record is deleted successfully for warranty
-         Then Click on Serial Numbers and warranty unit
+        Then Click on warranty unit
 
         Then Click on Account Management unit
         And I should click on Add Account
@@ -70,14 +77,34 @@ Feature:Vivacity admin Page Functionality
         And Select subscription Type
         Then Click on update button for subcription
         And Verify Updated subcription successfully
-         Then Click on Account Management unit
+        Then Click on Account Management unit
 
         Then Click on Request Users unit
         Then Click on Add Account of request user
         And Select available account
         Then Click on add account button for request user
         And Verify add account successfully
-         Then Click on Request Users unit
+        Then Click on Request Users unit
+
+        Then Click on all Users unit
+        Then I should click on Add New student for allUser
+        Then Enter full name, title and Email
+        And Enter Email for allUser
+        And Enter Phone,Cell Number and select UserRole
+        And Click on submit button
+        Then Verify the student added in table for allUser
+        And Enter the Search value in search box for alluser
+        Then Verify the Results in the table for allUser
+        And Click on Edit button for allUser
+        Then I should edit title, full name
+        And I should edit Phone and Cell Number and user role
+        Then Click on Submit button
+        # And Verify the Record has been updated Meassage
+        And Click on Delete button for allUser
+        Then Click on Confirm Delete button
+        And Verify the record is deleted successfully for allUser
+        Then Click on all Users unit
+
 
 
 

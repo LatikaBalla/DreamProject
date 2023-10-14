@@ -10,21 +10,19 @@ Feature: OrgUploadAssets Page Functionality
         Then Click on Manage Devices
         And Click on OrgUploadAssets Tab
 
-    Scenario: Visiblity of OrgUploadAssets page
+    Scenario:Add Asset, Search, Edit and Delete Asset
         And Verify the Title of OrgUploadAssets Page
         Then Filters of OrgUploadAssets should be visible
         And Table for OrgUploadAssets should be visible
-
-    Scenario:Add Asset, Search, Edit and Delete Asset
         Then I should click on Add Asset
         Then Enter title, full name location and tag
-        And Enter note, Type and description 
+        And Enter note, Type and description
         Then Upload the image file
         And Click on save button
         Then Verify the asset details added in table
-         And Enter the title in search box
-      Then Click on Search button 
-    #    And Verify the record in searching history
+        And Enter the title in search box
+        Then Click on Search button
+        #    And Verify the record in searching history
         And Click on Edit button
         Then I should edit title, full name location and tag
         And I should edit note, Type and description

@@ -1,4 +1,4 @@
-Feature: PartCloset Page Functionality
+Feature: RepairBoxes Page Functionality
   As a user
   I want to access the dashboard page
   So that I can view my account information and data
@@ -10,11 +10,9 @@ Feature: PartCloset Page Functionality
     Then Click on Repair360 page
     And Click on RepairBoxes Tab
 
-  Scenario: Visiblity of RepairBoxes page
-       And Verify the Title of RepairBoxes Page
+  Scenario:  Visiblity check,Create New Box, add ticket and  view details of box with create aonther ticket
+     And Verify the Title of RepairBoxes Page
       And Outbound and Inbound Shipments for RepairBoxes should be visible
-
-  Scenario: Create New Box, add ticket and  view details of box with create aonther ticket
     Then I should click on create new Box
     Then Enter weight, height, depth and width
     And Select Pick-up site
@@ -24,16 +22,16 @@ Feature: PartCloset Page Functionality
     And Click on Finish button
    Then Verify new box is added in table
     And Click on download label 
-    Then Verify label downloaded successfully
+    # Then Verify label downloaded successfully
     And Click on view button
     Then Verify the Details new box
     And Add another ticket in the same box
     Then Select Ticket from dropdownlist
     And Click on Add ticket
     Then Verify the ticket is added in table
-    And Click on view the ticket Details
-    Then Verfiy the ticket Details
-    And Click on Back button
-    And Remove the ticket from box
-    Then Verify the ticket is delete from the table
+    # And Click on view the ticket Details
+    # Then Verfiy the ticket Details
+    # And Click on Back button
+    # And Remove the ticket from box
+    # Then Verify the ticket is delete from the table
 

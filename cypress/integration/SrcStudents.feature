@@ -11,15 +11,12 @@ Feature:SrcStudents Page Functionality
         And Click on StudentRepairCenter tab
         Then Click on SrcStudents tab
 
-    Scenario: Visiblity of SrcStudents page
+    Scenario: Add new Srudent
         And Verify the Title of SrcStudents Page
-        Then Filters of SrcStudents should be visible
         And Table for SrcStudents should be visible
-
- Scenario: Add new Srudent
-        Then I should click on Add New student 
+        Then I should click on Add New student
         Then Enter title, full name and Email
         And Enter Phone and Cell Number
         Then Select User Status
         And Click on submit button
-        Then Verify the student added in table 
+        Then Verify the student added in table

@@ -5,63 +5,63 @@ const tdata = require("../../../testData.json");
 
 export class AccountDetailsActions {
     constructor() {
-        globalThis.dash = new AccountDetailsElements();
+        globalThis.acc= new AccountDetailsElements();
         globalThis.dash1 = new DashboardElements()
     }
     closeTermsOfServiceWindow() {
         dash1.termsElement().click({ force: true })
     }
     verifyTitleAccountDetails() {
-        dash.titleAccountElement().should('be.visible')
+        acc.titleAccountElement().should('be.visible')
     }
     verifyFiltersVisible() {
-        dash.filtersElement().should('be.visible')
+        acc.filtersElement().should('be.visible')
     }
     verifyMyaccountDeatilsVisbile() {
-        dash.accountnameElement().should('be.visible')
-        dash.accountnoElement().should('be.visible')
-        dash.accountcreditElement().should('be.visible')
-        dash.billingaddressElement().should('be.visible')
-        dash.shippingaddressElement().should('be.visible')
-        dash.accountmanagerElement().should('be.visible')
+        acc.accountnameElement().should('be.visible')
+        acc.accountnoElement().should('be.visible')
+        acc.accountcreditElement().should('be.visible')
+       acc.billingaddressElement().should('be.visible')
+        acc.shippingaddressElement().should('be.visible')
+        acc.accountmanagerElement().should('be.visible')
     }
     tableAccountVisible() {
-        dash.tableAccountElement().should('be.visible')
+        acc.tableAccountElement().should('be.visible')
     }
     clickOnAddNewbutton() {
-        dash.addnewbtnElement().click({ force: true })
+        acc.addnewbtnElement().click({ force: true })
     }
     enterTitle() {
-        dash.titleElement().type(tdata.newaccount.title, { force: true })
+        acc.titleElement().type(tdata.newaccount.title, { force: true })
     }
     enterFullname() {
-        dash.fullnameElement().type(tdata.newaccount.fullname, { force: true })
+        acc.fullnameElement().type(tdata.newaccount.fullname, { force: true })
     }
     enterFullnameDelete() {
-        dash.fullnameElement().type(tdata.delete.fullname, { force: true })
+        acc.fullnameElement().type(tdata.delete.fullname, { force: true })
     }
     enterFullnameSearch() {
-        dash.fullnameElement().type(tdata.search.fullname, { force: true })
+        acc.fullnameElement().type(tdata.search.fullname, { force: true })
     }
     enterEmail() {
         const uniqueSeed = Date.now();
-        dash.emailElement().type(uniqueSeed + tdata.newaccount.email, { force: true })
+        acc.emailElement().type(uniqueSeed + tdata.newaccount.email, { force: true })
     }
     enterPhone() {
-        dash.phoneElement().type(tdata.newaccount.phone, { force: true })
+        acc.phoneElement().type(tdata.newaccount.phone, { force: true })
     }
     enterCellNumber() {
-        dash.cellnumberElement().type(tdata.newaccount.cellnumber, { force: true })
+        acc.cellnumberElement().type(tdata.newaccount.cellnumber, { force: true })
     }
     selectUserRole() {
-        dash.userroleElement().click({ force: true })
+        acc.userroleElement().click({ force: true })
         cy.get(tdata.newaccount.userrole).click({ force: true })
     }
     clickOnASaveButton() {
-        dash.savebtnElement().should('contain', "Save").click({ force: true })
+        acc.savebtnElement().should('contain', "Save").click({ force: true })
     }
     verifyNewContactTitle() {
-        dash.newContactTitleElement().should('be.visible')
+        acc.newContactTitleElement().should('be.visible')
     }
     verifyRecordTable() {
         cy.reload()
@@ -69,70 +69,70 @@ export class AccountDetailsActions {
         cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.newaccount.email)
     }
     clickOnEditIcon() {
-        dash.editIconElement().eq(0).click()
+        acc.editIconElement().eq(0).click()
     }
     editTitle() {
-        dash.editTitleElement().clear().type(tdata.edit.title)
+        acc.editTitleElement().clear().type(tdata.edit.title)
     }
     editFullname() {
-        dash.editFullnameElement().clear().type(tdata.edit.fullname)
+        acc.editFullnameElement().clear().type(tdata.edit.fullname)
     }
     editCellNumber() {
-        dash.editCellnumberElement().clear().type(tdata.edit.cellnumber)
+        acc.editCellnumberElement().clear().type(tdata.edit.cellnumber)
     }
     editPhone() {
-        dash.editPhoneElement().clear().type(tdata.edit.phone)
+        acc.editPhoneElement().clear().type(tdata.edit.phone)
     }
     editUserRole() {
-        dash.editUserroleElement().click({ force: true })
+        acc.editUserroleElement().click({ force: true })
         cy.get(tdata.edit.userrole).click()
     }
     editUserStatus() {
-        dash.editUserStatusElement().click({ force: true })
+        acc.editUserStatusElement().click({ force: true })
         cy.get(tdata.edit.userstatus).click()
     }
     clickSubmitForUpdate() {
-        dash.editSubmitbtnElement().eq(0).click({ force: true })
+        acc.editSubmitbtnElement().eq(0).click({ force: true })
     }
     verfifyDataUpdatedMessage() {
         cy.contains(tdata.edit.updatemsg).should('be.visible')
     }
     clickDeleteIcon() {
-        dash.deleteIconElement().eq(0).click({ force: true })
+        acc.deleteIconElement().eq(0).click({ force: true })
     }
     clickConfirmDeleteButton() {
-        dash.conDeletebtnElement().contains('Delete').click({ force: true })
+        acc.conDeletebtnElement().contains('Delete').click({ force: true })
     }
     verifyRecordDeleted() {
         cy.wait(2000)
         dash1.messageElement().should('contain',tdata.delete.deletemsg)
     }
     enterSearchValue() {
-        dash.searchElement().type(tdata.search.fullname,{force:true})
+        acc.searchElement().type(tdata.search.fullname,{force:true})
     }
     verifySearchResult() {
         cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.search.fullname)
     }
     clickOnMoreFiltersButton() {
-        dash.morefiltersbtnElement().click({force:true})
+        acc.morefiltersbtnElement().click({force:true})
     }
     clickOnAddFilterGroup() {
-        dash.addfilterGroupElement().click({force:true})
+        acc.addfilterGroupElement().click({force:true})
     }
     selectFieldName() {
-        dash.fieldnameElement().select('email')
+        acc.fieldnameElement().select('email')
     }
     selectfieldOperation() {
-        dash.fieldoperationElement().select("does_not_contain")
+        acc.fieldoperationElement().select("does_not_contain")
     }
     enterFieldValueSearchBox() {
-        dash.fieldvalueElement().type('@gmail.com')
+        acc.fieldvalueElement().type('@gmail.com')
     }
     clickOnApplyButton() {
-        dash.applybtnElement().click({force:true})
+        acc.applybtnElement().click({force:true})
     }
     clickOnClearFiltersButton() {
-        dash.clearfilterbtnElement().click({force:true})
+        acc.clearfilterbtnElement().click({force:true})
     }
     verifyResultAfterFilter() {
         cy.wait(2000)

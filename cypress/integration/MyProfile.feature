@@ -9,12 +9,10 @@ Feature: MyProfile Page Functionality
         Then Close the terms of service window
         And Click on My profile page
 
-    Scenario: MyProfile Page visiblity
-        Then Verify the Title of My Profile Page
+    Scenario: visibility check, Profile photo,Update Profile and Account Details
+       Then Verify the Title of My Profile Page
         And User and User photo of MyProfile should be visible
         Then Profile and Account deatils section of MyProfile should be visible
-
-    Scenario: Profile photo,Update Profile and Account Details
         And Click on upload image icon
         Then Enter tilte and phone no
         And Eelect Email preference

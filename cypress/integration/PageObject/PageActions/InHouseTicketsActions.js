@@ -48,7 +48,8 @@ export class InHouseTicketsActions {
     }
     selectTechnician(){
         iht.technicianElement().click({ force: true })
-        cy.get(tdata.inHouseTicket.technician).click()
+       // cy.get(tdata.inHouseTicket.technician).click()
+        cy.get('.Mui-focusVisible').click({ force: true })
     }
     enterChromebookIssue() {
         iht.chromebookissueElement().type(tdata.inHouseTicket.chromebookissue)
@@ -57,7 +58,7 @@ export class InHouseTicketsActions {
         iht.savebtnElement().click({ force: true })
     }
     verifyNewTicket() {
-        cy.wait(1000)
+        cy.wait(5000)
         dash.messageElement().should('contain', tdata.inHouseTicket.createTicketmsg)
         // cy.get('tbody tr').eq(0).find('td').eq(2).should('contain', tdata.repairTickets.devicename)
     }
@@ -65,7 +66,7 @@ export class InHouseTicketsActions {
         iht.exportbtnElement().click({ force: true })
     }
     verifyDownload() {
-        cy.verifyDownload(tdata.inHouseTicket.filename)
+        cy.verifyDownload("/download/",tdata.inHouseTicket.filename)
     }
 }
 export default InHouseTicketsActions 

@@ -20,7 +20,7 @@ And('Click on Support page', () => {
     su.clickOnSupport()
 })
 Then('Verify the Title of Support Page', () => {
-    cy.title().should('eq', 'Dream Support')
+    cy.title().should('eq', 'Support')
 })
 And('Enter Full name', () => {
     su.enterFullname()

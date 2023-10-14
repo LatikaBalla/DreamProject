@@ -31,6 +31,27 @@ Then('Filters of MyFleet should be visible', () => {
 And('Table for MyFleet should be visible', () => {
     mf.tableVisible()
 })
+Then ('Click on the add device',()=>{
+mf.clickOnAddDevice()
+})
+And ('Enter Serial no and select device id',()=>{
+mf.enterSerialNo()
+mf.selectDeviceId()
+})
+Then ('Enter Asset Tag and Select student id',()=>{
+mf.enterAssetTag()
+mf.selectStudentid()
+})
+And ('Select lonar status and Device status',()=>{
+mf.selectLonarStatus()
+mf.selectDeviceStatus()
+})
+Then ('Click on the Submit Button',()=>{
+mf.clickOnsubmitButton()
+})
+And ('Verify the device added successfully',()=>{
+mf.verfifyDeviceAdded()
+})
 
 Then('Click on More filters', () => {
     mf.clickOnMoreFiltersButton()

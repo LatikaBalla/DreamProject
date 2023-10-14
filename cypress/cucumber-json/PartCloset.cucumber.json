@@ -11,7 +11,7 @@
       {
         "id": "partcloset-page-functionality;add-new-custome-part,-search-,-delete-and-add-new-vt-part",
         "keyword": "Scenario",
-        "line": 18,
+        "line": 13,
         "name": "Add new custome part, search , delete and add new vt part",
         "tags": [],
         "type": "scenario",
@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2809000000
+              "duration": 4376000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8165000000
+              "duration": 4263000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9109000000
+              "duration": 9077000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 176000000
+              "duration": 159000000
             }
           },
           {
@@ -62,54 +62,168 @@
             "line": 11,
             "name": "Click on PartCloset Tab",
             "result": {
-              "status": "failed",
-              "duration": 30025000000,
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[data-testid='tabrepa-4']`, but never found it.\n    at Repair360Elements.partclosetElement (cypress/integration/PageObject/PageElements/Repair360Elements.js:25:18)\n    at PartClosetActions.clickOnPartClosetTab (cypress/integration/PageObject/PageActions/PartClosetActions.js:20:13)\n    at Context.eval (cypress/integration/PartCloset/PartCloset.spec.js:23:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 927000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Verify the Title of PartCloset Page",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
+            "line": 15,
+            "name": "Filters of PartCloset should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Table for PartCloset should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
             "name": "I should click on Add New custome part",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 90000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Enter part name, manufacture and parent device",
+            "result": {
+              "status": "passed",
+              "duration": 1600000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Enter part sku and quantity",
+            "result": {
+              "status": "passed",
+              "duration": 359000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 20,
-            "name": "Enter part name, manufacture and parent device",
+            "name": "Click on submit button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 74000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 21,
-            "name": "Enter part sku and quantity",
+            "name": "Verify new custome part is added",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 22,
-            "name": "Click on submit button",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 23,
-            "name": "Verify new custome part is added",
+            "line": 22,
+            "name": "Enter the Search value in search box",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 296000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Verify the Results in the table",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Click on delete button",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "Verify the recode is deleted",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I should click on Add New VT part",
+            "result": {
+              "status": "passed",
+              "duration": 80000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "Select device and part name",
+            "result": {
+              "status": "passed",
+              "duration": 659000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "Enter quantity and select building",
+            "result": {
+              "status": "passed",
+              "duration": 273000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "Click on submit button",
+            "result": {
+              "status": "passed",
+              "duration": 117000000
             }
           }
         ]

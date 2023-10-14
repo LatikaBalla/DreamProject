@@ -6,7 +6,7 @@ const ResourcesElements = require("../PageElements/ResourcesElements.js")
 export class InstructionsActions {
     constructor() {
         globalThis.dash = new DashboardElements();
-        globalThis.rep = new InstructionsElements();
+        globalThis.inst = new InstructionsElements();
         globalThis.rep1 = new ResourcesElements()
     }
     closeTermsOfServiceWindow() {
@@ -16,10 +16,10 @@ export class InstructionsActions {
         rep1.instructionsElement().click({ force: true })
     }
     provisionDeviceTabVisible() {
-        rep.provisionDeviceElement().should('be.visible')
+        inst.provisionDeviceElement().should('be.visible')
     }
     deprovisionDeviceTabVisible() {
-        rep.deprovisionDeviceElement().should('be.visible')
+        inst.deprovisionDeviceElement().should('be.visible')
     }
     clickOnResources() {
         dash.arrowElement().click({ force: true })

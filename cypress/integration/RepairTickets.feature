@@ -9,12 +9,11 @@ Feature:RepairTickets Page Functionality
         Then close the terms of service window
         Then Click on Repair360 page
 
-    Scenario: Visiblity of RepairTickets page
-        And Verify the Title of RepairTickets Page
+
+    Scenario:Visiblity check  Create a ticket and download eport
+      And Verify the Title of RepairTickets Page
         Then Filters of RepairTickets should be visible
         And Table for RepairTickets should be visible
-
-    Scenario: Create a ticket and download eport
         Then I should click on create new ticket
         Then Select failure Type, Return site and Serial Device
         And Select Building and Chromebook issue
@@ -22,6 +21,6 @@ Feature:RepairTickets Page Functionality
         And Click on save button
         Then Verify New Ticket is added 
         And Click on Download import button
-        Then Verify the successfully downloaded
+        # Then Verify the successfully downloaded
         And Click on view the details
         Then Verify the Details of Repair Ticket

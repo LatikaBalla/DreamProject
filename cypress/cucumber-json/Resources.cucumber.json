@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 5277000000
+              "duration": 5988000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5978000000
+              "duration": 5196000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Resources page",
             "result": {
               "status": "passed",
-              "duration": 132000000
+              "duration": 136000000
             }
           },
           {
@@ -73,14 +73,34 @@
             "name": "Verify the Title of Resources Page",
             "result": {
               "status": "passed",
-              "duration": 455000000
+              "duration": 393000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Click on Instructions tab",
+            "result": {
+              "status": "passed",
+              "duration": 62000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 15,
+            "line": 16,
             "name": "Verify the Instructions Tab should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Verify the provisionDevice Tab should be visible",
             "result": {
               "status": "passed",
               "duration": 7000000
@@ -89,8 +109,8 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 16,
-            "name": "Verify the HowToVideos tab should be visible",
+            "line": 18,
+            "name": "Verify the deprovisionDevice tab should be visible",
             "result": {
               "status": "passed",
               "duration": 8000000
@@ -98,12 +118,62 @@
           },
           {
             "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Click on HowToVideos tab",
+            "result": {
+              "status": "passed",
+              "duration": 81000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Verify the HowToVideos tab should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          },
+          {
+            "arguments": [],
             "keyword": "Then ",
-            "line": 17,
+            "line": 21,
+            "name": "Verify the Videos Section should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Click on WarrantyInfo tab",
+            "result": {
+              "status": "passed",
+              "duration": 90000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
             "name": "Verify the WarrantyInfo tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 14000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Verify the Title of WarrantyInfo Page",
+            "result": {
+              "status": "passed",
+              "duration": 90000000
             }
           }
         ]

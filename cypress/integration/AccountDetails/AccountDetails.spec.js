@@ -18,15 +18,7 @@ Then('close the terms of service window', () => {
 Then('My account Details should be visible', () => {
     acc.verifyMyaccountDeatilsVisbile()
 })
-And('Verify the Title of Account Details Page', () => {
-    acc.verifyTitleAccountDetails()
-})
-Then('Filters of account deatils should be visible', () => {
-    acc.verifyFiltersVisible()
-})
-And('Table for account deatils should be visible', () => {
-    acc.tableAccountVisible()
-})
+
 Then('I should click on Add New button', () => {
     acc.clickOnAddNewbutton()
 })

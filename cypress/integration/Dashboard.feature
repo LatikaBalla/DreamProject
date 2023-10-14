@@ -13,8 +13,15 @@ Feature: Dashboard Page Functionality
         And Verify the Title of dashborad Page
         Then Verify the logo should be visible
         Then My Account Detail tab should be visible
+        And Verify the Title of Account Details Page
+        Then Filters of account deatils should be visible
+        And Table for account deatils should be visible
         And Building tab should be visible
+        And Click on Buildings Tab
+        And Verify the Title of Buildings Page
+        Then Filters of Buildings should be visible
+        And Table for Buildings should be visible
         Then Slider Menu should be visible
 
 
-
+  

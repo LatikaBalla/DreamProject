@@ -2,17 +2,17 @@
   {
     "description": "  As a user\n  I want to access the dashboard page\n  So that I can view my account information and data",
     "keyword": "Feature",
-    "name": "PartCloset Page Functionality",
+    "name": "RepairBoxes Page Functionality",
     "line": 1,
-    "id": "partcloset-page-functionality",
+    "id": "repairboxes-page-functionality",
     "tags": [],
     "uri": "RepairBoxes.feature",
     "elements": [
       {
-        "id": "partcloset-page-functionality;visiblity-of-repairboxes-page",
+        "id": "repairboxes-page-functionality;visiblity-check,create-new-box,-add-ticket-and--view-details-of-box-with-create-aonther-ticket",
         "keyword": "Scenario",
         "line": 13,
-        "name": "Visiblity of RepairBoxes page",
+        "name": "Visiblity check,Create New Box, add ticket and  view details of box with create aonther ticket",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 6768000000
+              "duration": 4452000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6275000000
+              "duration": 5239000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9074000000
+              "duration": 9072000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 134000000
+              "duration": 139000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on RepairBoxes Tab",
             "result": {
               "status": "passed",
-              "duration": 590000000
+              "duration": 718000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of RepairBoxes Page",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 12000000
             }
           },
           {
@@ -83,257 +83,157 @@
             "name": "Outbound and Inbound Shipments for RepairBoxes should be visible",
             "result": {
               "status": "passed",
-              "duration": 21000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "partcloset-page-functionality;create-new-box,-add-ticket-and--view-details-of-box-with-create-aonther-ticket",
-        "keyword": "Scenario",
-        "line": 17,
-        "name": "Create New Box, add ticket and  view details of box with create aonther ticket",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I should navigate to application",
-            "result": {
-              "status": "passed",
-              "duration": 4309000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I should Sign In into the application",
-            "result": {
-              "status": "passed",
-              "duration": 5432000000
+              "duration": 26000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
-            "name": "close the terms of service window",
+            "line": 16,
+            "name": "I should click on create new Box",
             "result": {
               "status": "passed",
-              "duration": 9069000000
+              "duration": 62000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
-            "name": "Click on Repair360 page",
+            "line": 17,
+            "name": "Enter weight, height, depth and width",
             "result": {
               "status": "passed",
-              "duration": 127000000
+              "duration": 760000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 11,
-            "name": "Click on RepairBoxes Tab",
+            "line": 18,
+            "name": "Select Pick-up site",
             "result": {
               "status": "passed",
-              "duration": 135000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
-            "name": "I should click on create new Box",
-            "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.css-1qfr2hk`, but never found it.\n    at RepairBoxesElements.addboxElement (cypress/integration/PageObject/PageElements/RepairBoxesElements.js:21:18)\n    at RepairBoxesActions.clickOnAddnewBox (cypress/integration/PageObject/PageActions/RepairBoxesActions.js:34:11)\n    at Context.eval (cypress/integration/RepairBoxes/RepairBoxes.spec.js:34:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "duration": 180000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 19,
-            "name": "Enter weight, height, depth and width",
+            "name": "Check the need shipping box",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 245000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 20,
-            "name": "Select Pick-up site",
+            "name": "Click on Create box button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 111000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 21,
-            "name": "Check the need shipping box",
+            "name": "Select Ticket from dropdownlist",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 398000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 22,
-            "name": "Click on Create box button",
+            "name": "Click on Finish button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 114000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 23,
-            "name": "Select Ticket from dropdownlist",
+            "name": "Verify new box is added in table",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4056000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 24,
-            "name": "Click on Finish button",
+            "name": "Click on download label",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "Verify new box is added in table",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 147000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 26,
-            "name": "Click on download label",
+            "name": "Click on view button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 620000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 27,
-            "name": "Verify label downloaded successfully",
+            "name": "Verify the Details new box",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 834000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 28,
-            "name": "Click on view button",
+            "name": "Add another ticket in the same box",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 67000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 29,
-            "name": "Verify the Details new box",
+            "name": "Select Ticket from dropdownlist",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 207000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 30,
-            "name": "Add another ticket in the same box",
+            "name": "Click on Add ticket",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 67000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 31,
-            "name": "Select Ticket from dropdownlist",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 32,
-            "name": "Click on Add ticket",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 33,
             "name": "Verify the ticket is added in table",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 34,
-            "name": "Click on view the ticket Details",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 35,
-            "name": "Verfiy the ticket Details",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 36,
-            "name": "Click on Back button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "Remove the ticket from box",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 38,
-            "name": "Verify the ticket is delete from the table",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 9000000
             }
           }
         ]

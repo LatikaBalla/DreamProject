@@ -15,26 +15,49 @@ export class VivacityAdminActions {
         dash.arrowElement().click({ force: true })
         dash.vivaAdminElement().click({ force: true })
     }
+
     allPaidSubcription() {
         vadmin.section1Element().should('be.visible')
     }
-    adminUser() {
+    roadmapRequest() {
         vadmin.section2Element().should('be.visible')
     }
-    serialNoWarrantyVisible() {
+    adminUser() {
         vadmin.section3Element().should('be.visible')
     }
-    accManagement() {
+    Warranty() {
         vadmin.section4Element().should('be.visible')
     }
-    requestUser() {
+    iserialDevice() {
         vadmin.section5Element().should('be.visible')
     }
+    accManagement() {
+        vadmin.section6Element().should('be.visible')
+    }
+    requestUser() {
+        vadmin.section7Element().should('be.visible')
+    }
+    allUser() {
+        vadmin.section8Element().should('be.visible')
+    }
+    clickOnRoadmap() {
+        vadmin.section2Element().click({ force: true })
+    }
+    clickOnViewButton() {
+        vadmin.viewElement().click({ force: true })
+    }
+    clickOnCloseButton() {
+        vadmin.closeElement().click({ force: true })
+    }
+
+
+
+
     clickOnallPaidSubcription() {
-        vadmin.section1Element().click()
+        vadmin.section1Element().click({force:true})
     }
     clickOnAdminUser() {
-        vadmin.section2Element().click()
+        vadmin.section3Element().click({force:true})
     }
     clickOnCreateNewStudent() {
         vadmin.addnewUserbtnElement().click({ force: true })
@@ -54,40 +77,38 @@ export class VivacityAdminActions {
     enterCellNumber() {
         vadmin.cellnumberElement().type(tdata.vivacityAdmin.cellnumber)
     }
-
     clickOnASubmitButton() {
         vadmin.submitbtnElement().eq(0).click({ force: true })
     }
     verifyRecordTable() {
         cy.wait(1000)
-        // vadmin.messageElement().should('contain', tdata.uvivacityAdmin.createStudentmsg)
+       // dash.messageElement().should('contain', tdata.uvivacityAdmin.createStudentmsg)
     }
     enterSearchValue() {
-        vadmin.section2Element().click()
-        cy.wait(2000)
-        vadmin.searchElement().type(tdata.vivacityAdmin.fullname + '{enter}',{force:true})
+        vadmin.searchElement().eq(0).type(tdata.vivacityAdmin.fullname + '{enter}', { force: true })
     }
     verifySearchResult() {
-        cy.get('.css-1owb465').eq(1).find('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.vivacityAdmin.fullname)
+        cy.wait(2000)
+        cy.get('.css-1owb465').eq(1).find('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.vivacityAdmin.fullname,{force:true})
     }
     clickOnEditButton() {
-        cy.get('.css-1owb465').eq(1).find('tbody tr').eq(0).find('td').eq(6).scrollIntoView().find("[data-testid='EditOutlinedIcon']").click({force:true})
+        cy.get('.css-1owb465').eq(1).find('tbody tr').eq(0).find('td').eq(6).scrollIntoView().find("[data-testid='EditOutlinedIcon']").click({ force: true })
     }
     editTitle() {
-        vadmin.titleUserElement().clear().type(tdata.vivacityAdmin.editTitle)
+        vadmin.titleUserElement().clear({ force: true }).should('have.value', '').type(tdata.vivacityAdmin.editTitle,{ force: true })
     }
     editFullname() {
-        vadmin.fullnameElement().clear().type(tdata.vivacityAdmin.editFullname)
+        vadmin.fullnameElement().clear({ force: true }).should('have.value', '').type(tdata.vivacityAdmin.editFullname,{ force: true })
     }
     editCellNumber() {
-        vadmin.cellnumberElement().clear().type(tdata.vivacityAdmin.editCellnumber)
+        vadmin.cellnumberElement().clear({ force: true }).should('have.value', '').type(tdata.vivacityAdmin.editCellnumber,{ force: true })
     }
     editPhone() {
-        vadmin.phoneElement().clear().type(tdata.vivacityAdmin.editPhone)
+        vadmin.phoneElement().clear({ force: true }).should('have.value', '').type(tdata.vivacityAdmin.editPhone,{ force: true })
     }
     editUserRole() {
         vadmin.userroleElement().click({ force: true })
-        cy.get(tdata.users.editUserRole).click()
+        cy.get(tdata.users.editUserRole).click({force:true})
     }
     clickSubmitForUpdate() {
         vadmin.editsubmitElement().eq(0).click({ force: true })
@@ -96,17 +117,18 @@ export class VivacityAdminActions {
         cy.contains('User has been updated').should('be.visible')
     }
     clickDeleteButton() {
-        cy.get('.css-1owb465').eq(1).find('tbody tr').eq(0).find('td').eq(6).scrollIntoView().find("[data-testid='DeleteOutlineOutlinedIcon']").click({force:true})
+        cy.get('.css-1owb465').eq(1).find('tbody tr').eq(0).find('td').eq(6).scrollIntoView().find("[data-testid='DeleteOutlineOutlinedIcon']").click({ force: true })
     }
     clickConfirmDeleteButton() {
-        vadmin.conDeletebtnElement().contains('Delete').click({ force: true })
+        cy.get('.MuiBox-root > .MuiButton-outlinedError').click({ force: true })
+      //  vadmin.conDeletebtnElement().contains('Delete').click({ force: true })
     }
     verifyRecordDeleted() {
         cy.wait(2000)
         cy.get('.css-1owb465').eq(1).find('tbody tr').eq(0).find('td').eq(0).should('not.contain', tdata.vivacityAdmin.editFullname)
     }
     serialNoWarrantySection() {
-        vadmin.section3Element().click()
+        vadmin.section4Element().click({force:true})
     }
     clickOnAddWarranty() {
         vadmin.addWarrantyElement().click()
@@ -148,7 +170,7 @@ export class VivacityAdminActions {
         vadmin.wdescriptionElement().type(tdata.vivacityAdmin.wdescription)
     }
     clickOnSubmitButton() {
-        vadmin.submitElement().click()
+        vadmin.submitElement().click({force:true})
     }
     verifyWarrantyRecordAdded() {
         dash.messageElement().should('contain', tdata.vivacityAdmin.warrantymsg)
@@ -203,17 +225,20 @@ export class VivacityAdminActions {
         cy.get('.css-1owb465').eq(2).find('tbody tr').eq(0).find('td').eq(4).find("[data-testid='DeleteOutlineOutlinedIcon']").click()
     }
     clickConDeleteButton() {
-        vadmin.conDeletebtnElement().contains('Delete').click({ force: true })
+        cy.get('.MuiBox-root > .MuiButton-outlinedError').click({ force: true })
+       // vadmin.conDeletebtnElement().contains('Delete').click({ force: true })
     }
     verifyRecordDeletedWarranty() {
         cy.wait(2000)
         dash.messageElement().should('contain', tdata.vivacityAdmin.daleteWarrantymsg)
     }
+
+
     clickOnAccountMangment() {
-        vadmin.section4Element().click()
+        vadmin.section6Element().click({force:true})
     }
     clickOnAddAccount() {
-        vadmin.addAccountElement().click()
+        vadmin.addAccountElement().click({force:true})
     }
     enterAccName() {
         vadmin.accountNameElement().type(tdata.vivacityAdmin.accountName)
@@ -249,27 +274,60 @@ export class VivacityAdminActions {
         cy.get(tdata.vivacityAdmin.subcription).click()
     }
     clickOnUpdateSub() {
-        vadmin.subUpdatebtnElement().click()
+        cy.get('.css-1yuhvjn > :nth-child(2)').click({force:true})
+        //vadmin.subUpdatebtnElement().click({force:true})
     }
     verifyUpadtedSub() {
         dash.messageElement().should('contain', tdata.vivacityAdmin.subUpdatemsg)
     }
-    requestUserSection(){
-  vadmin.section5Element().click({force:true})
+    requestUserSection() {
+        vadmin.section7Element().click({ force: true })
     }
-    clickOnAddAccountUser(){
+    clickOnAddAccountUser() {
         cy.wait(2000)
-        cy.get('.css-1owb465').eq(3).find('tbody tr').eq(0).find('td').eq(5).contains('Add Account').click({force:true})
+        cy.get('.css-1owb465').eq(3).find('tbody tr').eq(0).find('td').eq(5).contains('Add Account').click({ force: true })
     }
-    selectAvailableAccount(){
- vadmin.availableAccountElement().click()
-cy.get('.MuiList-root > [tabindex="0"]').click()
+    selectAvailableAccount() {
+        vadmin.availableAccountElement().click({force:true})
+        cy.get(tdata.vivacityAdmin.account).click({force:true})
     }
-    clickOnAddAccountsubmit(){
-vadmin.addbtnElement().click()
+    clickOnAddAccountsubmit() {
+        cy.get('.css-1yuhvjn > :nth-child(2)').click({force:true})
+       // vadmin.addbtnElement().click({force:true})
     }
-    verifyAddAccUser(){
+    verifyAddAccUser() {
         //dash.messageElement().should('contain', tdata.vivacityAdmin.addAccUsermsg)
+    }
+
+    clickOnAllUser(){
+        vadmin.section8Element().click({force:true})
+    }
+    clickOnCreateNewStudentAllUser() {
+        cy.get('.MuiAccordionDetails-root > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > .MuiButtonBase-root').click({ force: true })
+       // vadmin.addnewUserbtnElement().eq(1).click({ force: true })
+    }
+    verifyStudentAddedAllUser(){
+      //  dash.messageElement().should('contain', tdata.uvivacityAdmin.createStudentmsg)
+    }
+    enterSearchValueAllUser() {
+        cy.get('.css-3e7ssz').type(tdata.vivacityAdmin.fullname + '{enter}', { force: true })
+       // vadmin.searchElement().eq(0).type(tdata.vivacityAdmin.fullname + '{enter}', { force: true })
+    }
+    verifySearchResultAllUser(){
+        cy.get('.css-1owb465').eq(4).find('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.vivacityAdmin.fullname)
+    }
+    clickOnEditButtonAllUser() {
+        cy.get('.css-1owb465').eq(4).find('tbody tr').eq(0).find('td').eq(6).scrollIntoView().contains("Edit").click({ force: true })
+    }
+    clickDeleteButtonAllUser() {
+        cy.get('.css-1owb465').eq(4).find('tbody tr').eq(0).find('td').eq(7).scrollIntoView().contains("Delete").click({ force: true })
+    }
+    verifyRecordDeletedAllUser() {
+        cy.wait(2000)
+        cy.get('.css-1owb465').eq(4).find('tbody tr').eq(0).find('td').eq(0).should('not.contain', tdata.vivacityAdmin.editFullname)
+    }
+    enterEmailAllUser(){
+        vadmin.emailElement().clear().should('have.value', '').type(tdata.vivacityAdmin.email)
     }
 
 }

@@ -44,7 +44,7 @@ export class PartClosetActions {
         pc.partskuElement().type(tdata.partCloset.partsku)
     }
     enterQuantity() {
-        pc.quantityElement().type(tdata.partCloset.quantity)
+        pc.quantityElement().type(tdata.partCloset.quantity,{force:true})
     }
     clickOnSubmitButton() {
         pc.submitElement().click({force:true})
@@ -78,7 +78,11 @@ export class PartClosetActions {
         cy.get(tdata.partCloset.partid).click({force:true})
     }
     enterQuantityVT() {
-        pc.quantityVTElement().type(tdata.partCloset.quantity)
+        pc.quantityVTElement().type(tdata.partCloset.quantity,{force:true})
+    }
+    selectBuilding(){
+        pc.buildingElement().click({force:true})
+        cy.get(tdata.partCloset.building).click({force:true})
     }
     clickOnSubmitVTButton() {
         pc.submitVTElement().click({ force: true })

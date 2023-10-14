@@ -8,12 +8,6 @@ Feature: Account Details Page Functionality
         When I should Sign In into the application
         Then close the terms of service window
 
-    Scenario: Visiblity of Account Details page
-        Then My account Details should be visible
-        And Verify the Title of Account Details Page
-        Then Filters of account deatils should be visible
-        And Table for account deatils should be visible
-
     Scenario: Adding,add more filter, Clear filter and Search ,Update and Delete new account of Account Details page
         Then I should click on Add New button
         And Verify the tilte of Add New Contact page

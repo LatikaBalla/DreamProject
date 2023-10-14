@@ -6,14 +6,14 @@ const ResourcesElements = require("../PageElements/ResourcesElements.js")
 export class WarrantyInfoActions {
     constructor() {
         globalThis.dash = new DashboardElements();
-        globalThis.rep = new WarrantyInfoElements();
+        globalThis.war = new WarrantyInfoElements();
         globalThis.rep1 = new ResourcesElements()
     }
     closeTermsOfServiceWindow() {
         dash.termsElement().click({ force: true })
     }
     verifyTitleWarrantyInfo() {
-        rep.titleElement()
+        war.titleElement()
     }
     clickOnInWarrantyInfo() {
         rep1.warrantyInfoElement().click({ force: true })

@@ -31,7 +31,9 @@ export class RepairBoxesActions {
         rb.outboundElement().should('be.visible')
     }
     clickOnAddnewBox() {
+        // cy.contains('Add New Box').eq(1).click({ force: true })
         rb.addboxElement().click({ force: true })
+        // cy.get('.css-i6pmbz')
     }
     enterWeight() {
         rb.weightElement().type(tdata.repairBox.weight)
@@ -60,50 +62,48 @@ export class RepairBoxesActions {
         cy.get('[role="listbox"]').find('[role="option"]').eq(0).click()
     }
     clickOnFinishButton() {
-        rb.finishbtnElement().click({force:true})
+        rb.finishbtnElement().click({ force: true })
     }
     verifyNewBoxAdd() {
         dash.messageElement().should('contain', tdata.repairBox.boxcreatedmsg)
     }
-    clickOnViewButton(){
+    clickOnViewButton() {
         cy.get('tbody tr').eq(0).find('td').eq(6).click()
     }
     verifyBoxDetails() {
-cy.contains('Demo Building').should('be.visible')
+        cy.contains('Demo Building').should('be.visible')
     }
-    clickOnAddTicket(){
-rb.addticketElement().click({force:true})
+    clickOnAddTicket() {
+        rb.addticketElement().click({ force: true })
     }
-    clickOnDownloadLabel(){      
-rb.downloadlabelElement().eq(0).click({force:true})
+    clickOnDownloadLabel() {
+        rb.downloadlabelElement().eq(0).click({ force: true })
     }
-    verifyDownloadLabel(){
-        cy.verifyDownload(tdata.repairBox.filename)
+    verifyDownloadLabel() {
+        cy.verifyDownload("/download/", tdata.repairBox.filename)
     }
-    clickOnAddTicket_s(){
-        rb.addticketbtnElement().click({force:true})    
+    clickOnAddTicket_s() {
+        rb.addticketbtnElement().click({ force: true })
     }
-    verifyTicketAdded(){
-        //cy.wait(2000)
-       // cy.get('tbody tr').eq(1).should('be.visible')
-       dash.messageElement().should('contain', tdata.repairBox.boxcreatedmsg)
-
+    verifyTicketAdded() {
+        dash.messageElement().should('contain', tdata.repairBox.boxcreatedmsg)
     }
-    clickOnViewButtonTicket(){
+    clickOnViewButtonTicket() {
+        //cy.wait(5000)
         cy.get('tbody tr').eq(0).find('td').eq(7).scrollIntoView().click()
     }
-    verifyTicketDetails(){
-cy.contains('Repair Ticket Details').should('be.visible')
+    verifyTicketDetails() {
+        cy.contains('Repair Ticket Details').should('be.visible')
     }
-    clickOnBackButton(){
-      dash.backArrowElement().click({force:true})
+    clickOnBackButton() {
+        dash.backArrowElement().click({ force: true })
     }
-    clickOnRemoveButton(){
-        cy.get('tbody tr').eq(0).find('td').eq(8).scrollIntoView().click({force:true})
+    clickOnRemoveButton() {
+        cy.get('tbody tr').eq(0).find('td').eq(8).scrollIntoView().click({ force: true })
     }
-    verifyTicketDeleted(){
-     //   cy.wait(1000)
-      // cy.get('tbody tr').eq(0).should('not.be.visible')
+    verifyTicketDeleted() {
+        //   cy.wait(1000)
+        // cy.get('tbody tr').eq(0).should('not.be.visible')
     }
 }
 export default RepairBoxesActions 

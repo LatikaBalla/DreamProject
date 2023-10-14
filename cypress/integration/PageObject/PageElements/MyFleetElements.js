@@ -66,4 +66,44 @@ export default class MyFleetElements {
             timeout: 30000,
         });
     }
+    serialNoElement() {
+        return cy.get(locator.myFleet.serialNo, {
+            timeout: 30000,
+        });
+    }
+    deviceidElement() {
+        return cy.get(locator.myFleet.deviceid, {
+            timeout: 30000,
+        });
+    }
+    assetTagElement() {
+        return cy.get(locator.myFleet.assetTag, {
+            timeout: 30000,
+        });
+    }
+    studentidElement() {
+        return cy.get(locator.myFleet.studentid, {
+            timeout: 30000,
+        });
+    }
+    lonarstatusElement() {
+        return cy.get(locator.myFleet.lonarstatus, {
+            timeout: 30000,
+        });
+    }
+    devicestatusElement() {
+        return cy.get(locator.myFleet.devicestatus, {
+            timeout: 30000,
+        });
+    }
+    submitbtnElement() {
+        return cy.contains(locator.myFleet.submitbtn, {
+            timeout: 30000,
+        });
+    }
+    addDeviceElement() {
+        return cy.contains(locator.myFleet.addDevice, {
+            timeout: 30000,
+        });
+    }
 }

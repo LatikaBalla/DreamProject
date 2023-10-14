@@ -62,14 +62,14 @@ export class RepairTicketsActions {
         rt.savebtnElement().click({ force: true })
     }
     verifyNewTicket() {
-        cy.wait(1000)
+        cy.wait(6000)
         dash.messageElement().should('contain', tdata.repairTickets.createTicketmsg)
     }
     clickOnExport() {
         rt.exportElement().click({ force: true })
     }
     verifyDownload() {
-        cy.verifyDownload(tdata.repairTickets.filename)
+        cy.verifyDownload("/download/",tdata.repairTickets.filename)
     }
     clickOnViewButton() {
         cy.get('tbody tr').eq(1).find('td').eq(9).contains('View').scrollIntoView().click({ force: true })

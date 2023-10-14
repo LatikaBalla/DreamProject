@@ -116,4 +116,9 @@ export default class PartClosetElements {
             timeout: 30000,
         })
     }
+    buildingElement(){
+        return cy.get(locator.partCloset.building, {
+            timeout: 30000,
+        })
+    }
 }

@@ -52,7 +52,7 @@ export class DeviceRepairReportActions {
         dev.downloadticketElement().click({ force: true })
     }
     verifyDownloadSuccessful() {
-        cy.verifyDownload(tdata.deviceRepairReport.filename)
+        cy.verifyDownload("/download/",tdata.deviceRepairReport.filename)
     }
 
 }

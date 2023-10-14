@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 6040000000
+              "duration": 12923000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7897000000
+              "duration": 4375000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9077000000
+              "duration": 9075000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Resources page",
             "result": {
               "status": "passed",
-              "duration": 138000000
+              "duration": 128000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on HowToVideos tab",
             "result": {
               "status": "passed",
-              "duration": 620000000
+              "duration": 794000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Videos Section should be visible",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 9000000
             }
           }
         ]

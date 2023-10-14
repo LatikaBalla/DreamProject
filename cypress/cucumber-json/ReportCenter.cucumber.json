@@ -9,10 +9,10 @@
     "uri": "ReportCenter.feature",
     "elements": [
       {
-        "id": "report-center-page-functionality;search-with-ticket-no,-view-the-ticket-details,clear-and-download-the-ticket-details",
+        "id": "report-center-page-functionality;admin-can-access-the-reportcenter-page-and-check-the-visiblity",
         "keyword": "Scenario",
-        "line": 31,
-        "name": "Search with Ticket no, view the ticket details,clear and download the ticket details",
+        "line": 12,
+        "name": "Admin can access the ReportCenter page and check the visiblity",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 4461000000
+              "duration": 5181000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5158000000
+              "duration": 6331000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9073000000
+              "duration": 9075000000
             }
           },
           {
@@ -59,11 +59,231 @@
           {
             "arguments": [],
             "keyword": "Then ",
+            "line": 13,
+            "name": "I should be redirected to the Report center page",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Verify the Title of Report center Page",
+            "result": {
+              "status": "passed",
+              "duration": 1008000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Verify the VivacityRepairReport Tab should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Click on VivacityRepairReport page",
+            "result": {
+              "status": "passed",
+              "duration": 61000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Verify all sections of VivacityRepairReport Page should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 54000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Verify repair status graph should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Verify warranty claim graph should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Verify cavas of Repair ticket by status should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Verify the InHouseRepairReport tab should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "Click on InHouseRepairReport page",
+            "result": {
+              "status": "passed",
+              "duration": 62000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "Verify all sections of InHouseRepairReport Page should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 50000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Verify ticketdata graph should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "Verify the DeviceRepairReport tab should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "Click on DeviceRepairReport page",
+            "result": {
+              "status": "passed",
+              "duration": 3066000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "Verify title of DeviceRepairReport Page should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "Verify the filters should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "Verify history table should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "report-center-page-functionality;search-with-ticket-no,-view-the-ticket-details,clear-and-download-the-ticket-details",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Search with Ticket no, view the ticket details,clear and download the ticket details",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I should navigate to application",
+            "result": {
+              "status": "passed",
+              "duration": 2487000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I should Sign In into the application",
+            "result": {
+              "status": "passed",
+              "duration": 5493000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Close the terms of service window",
+            "result": {
+              "status": "passed",
+              "duration": 9068000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Click on Report center page",
+            "result": {
+              "status": "passed",
+              "duration": 127000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
             "line": 32,
             "name": "Click on DeviceRepairReport page",
             "result": {
               "status": "passed",
-              "duration": 3723000000
+              "duration": 4344000000
             }
           },
           {
@@ -73,7 +293,7 @@
             "name": "Enter the Ticket Number in search box",
             "result": {
               "status": "passed",
-              "duration": 401000000
+              "duration": 427000000
             }
           },
           {
@@ -82,9 +302,8 @@
             "line": 34,
             "name": "Verify the Ticket details in table",
             "result": {
-              "status": "failed",
-              "duration": 7215000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `tbody tr`, but never found it.\n    at DeviceRepairReportActions.verifyTicketDetailsTable (cypress/integration/PageObject/PageActions/DeviceRepairReportActions.js:35:11)\n    at Context.eval (cypress/integration/ReportCenter/ReportCenter.spec.js:86:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 3021000000
             }
           },
           {
@@ -93,7 +312,8 @@
             "line": 35,
             "name": "Click on clear button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 64000000
             }
           },
           {
@@ -102,7 +322,8 @@
             "line": 36,
             "name": "Verify the search box is cleared",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6000000
             }
           },
           {
@@ -111,7 +332,8 @@
             "line": 37,
             "name": "Enter the Ticket Number in search box",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 432000000
             }
           },
           {
@@ -120,7 +342,8 @@
             "line": 38,
             "name": "Click on the Ticket Number",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 88000000
             }
           },
           {
@@ -129,7 +352,8 @@
             "line": 39,
             "name": "Verify the Repair Ticket page will open",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1923000000
             }
           },
           {
@@ -138,7 +362,8 @@
             "line": 40,
             "name": "Verfiy the details of Ticket",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2000000
             }
           },
           {
@@ -147,16 +372,8 @@
             "line": 41,
             "name": "Click on the download Ticket Estimation button",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 42,
-            "name": "Verify downloaded ticket successfully",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1091000000
             }
           }
         ]

@@ -60,10 +60,9 @@ export class BuildingsActions {
     }
     clickOnSaveButton() {
         build.savebtnElement().click({ force: true })
-        cy.get('[data-testid="CloseIcon"]').click()
+      //  cy.get('[data-testid="CloseIcon"]').click({force})
     }
     verifyNewBuilding(){
-        cy.wait(3000)
       dash.messageElement().should('contain',tdata.buildings.addmsg)
     }
     clickOnEditIcon() {

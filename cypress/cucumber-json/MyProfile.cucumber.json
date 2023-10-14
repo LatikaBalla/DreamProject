@@ -9,10 +9,10 @@
     "uri": "MyProfile.feature",
     "elements": [
       {
-        "id": "myprofile-page-functionality;myprofile-page-visiblity",
+        "id": "myprofile-page-functionality;visibility-check,-profile-photo,update-profile-and-account-details",
         "keyword": "Scenario",
         "line": 12,
-        "name": "MyProfile Page visiblity",
+        "name": "visibility check, Profile photo,Update Profile and Account Details",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 7158000000
+              "duration": 6179000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 2414000000
+              "duration": 4157000000
             }
           },
           {
@@ -43,87 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8071000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Click on My profile page",
-            "result": {
-              "status": "passed",
-              "duration": 1066000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "Verify the Title of My Profile Page",
-            "result": {
-              "status": "passed",
-              "duration": 529000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "User and User photo of MyProfile should be visible",
-            "result": {
-              "status": "passed",
-              "duration": 501000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "Profile and Account deatils section of MyProfile should be visible",
-            "result": {
-              "status": "passed",
-              "duration": 12000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "myprofile-page-functionality;profile-photo,update-profile-and-account-details",
-        "keyword": "Scenario",
-        "line": 17,
-        "name": "Profile photo,Update Profile and Account Details",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I should navigate to application",
-            "result": {
-              "status": "passed",
-              "duration": 3542000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I should Sign In into the application",
-            "result": {
-              "status": "passed",
-              "duration": 1923000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "Close the terms of service window",
-            "result": {
-              "status": "passed",
-              "duration": 8061000000
+              "duration": 8072000000
             }
           },
           {
@@ -138,28 +58,58 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "Click on upload image icon",
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Verify the Title of My Profile Page",
             "result": {
               "status": "passed",
-              "duration": 404000000
+              "duration": 437000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "User and User photo of MyProfile should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 382000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
-            "name": "Enter tilte and phone no",
+            "line": 15,
+            "name": "Profile and Account deatils section of MyProfile should be visible",
             "result": {
               "status": "passed",
-              "duration": 643000000
+              "duration": 11000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 20,
+            "line": 16,
+            "name": "Click on upload image icon",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Enter tilte and phone no",
+            "result": {
+              "status": "passed",
+              "duration": 664000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
             "name": "Eelect Email preference",
             "result": {
               "status": "passed",
@@ -169,7 +119,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 21,
+            "line": 19,
             "name": "click on update button",
             "result": {
               "status": "passed",
@@ -179,11 +129,11 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 22,
+            "line": 20,
             "name": "Verify the updated successfully",
             "result": {
               "status": "passed",
-              "duration": 871000000
+              "duration": 537000000
             }
           }
         ]

@@ -9,10 +9,10 @@
     "uri": "MyFleet.feature",
     "elements": [
       {
-        "id": "myfleet--page-functionality;visiblity-of-myfleet-page",
+        "id": "myfleet--page-functionality;visibility-,add-device,add-more-filter,-view-,clear-filter-and-search",
         "keyword": "Scenario",
         "line": 13,
-        "name": "Visiblity of MyFleet page",
+        "name": "Visibility ,add Device,add more filter, view ,Clear filter and Search",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3990000000
+              "duration": 4522000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7843000000
+              "duration": 4758000000
             }
           },
           {
@@ -43,97 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9072000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "Click on Manage Devices",
-            "result": {
-              "status": "passed",
-              "duration": 137000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "Click on MyFleet Tab",
-            "result": {
-              "status": "passed",
-              "duration": 993000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "Verify the Title of MyFleet Page",
-            "result": {
-              "status": "passed",
-              "duration": 11000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "Filters of MyFleet should be visible",
-            "result": {
-              "status": "passed",
-              "duration": 8000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "Table for MyFleet should be visible",
-            "result": {
-              "status": "passed",
-              "duration": 6000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "myfleet--page-functionality;add-more-filter,-view-,clear-filter-and-search",
-        "keyword": "Scenario",
-        "line": 18,
-        "name": "add more filter, view ,Clear filter and Search",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I should navigate to application",
-            "result": {
-              "status": "passed",
-              "duration": 3003000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I should Sign In into the application",
-            "result": {
-              "status": "passed",
-              "duration": 4802000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "close the terms of service window",
-            "result": {
-              "status": "passed",
-              "duration": 9064000000
+              "duration": 9075000000
             }
           },
           {
@@ -153,127 +63,207 @@
             "name": "Click on MyFleet Tab",
             "result": {
               "status": "passed",
-              "duration": 518000000
+              "duration": 173000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Verify the Title of MyFleet Page",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Filters of MyFleet should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Table for MyFleet should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Click on the add device",
+            "result": {
+              "status": "passed",
+              "duration": 76000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Enter Serial no and select device id",
+            "result": {
+              "status": "passed",
+              "duration": 1830000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 19,
+            "name": "Enter Asset Tag and Select student id",
+            "result": {
+              "status": "passed",
+              "duration": 673000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Select lonar status and Device status",
+            "result": {
+              "status": "passed",
+              "duration": 900000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Click on the Submit Button",
+            "result": {
+              "status": "passed",
+              "duration": 68000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Verify the device added successfully",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
             "name": "Click on More filters",
             "result": {
               "status": "passed",
-              "duration": 112000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "Select Field name and Field operation",
-            "result": {
-              "status": "passed",
-              "duration": 300000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "Enter the Search value in search box",
-            "result": {
-              "status": "passed",
-              "duration": 549000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 22,
-            "name": "Click on Apply Button",
-            "result": {
-              "status": "passed",
-              "duration": 59000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "Verify the Results in the table",
-            "result": {
-              "status": "passed",
-              "duration": 3026000000
+              "duration": 201000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 24,
-            "name": "Click on view Button",
+            "name": "Select Field name and Field operation",
             "result": {
               "status": "passed",
-              "duration": 72000000
+              "duration": 384000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 25,
-            "name": "Verify the Warranty Description",
+            "name": "Enter the Search value in search box",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 573000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 26,
-            "name": "Click on Clear filter",
+            "name": "Click on Apply Button",
             "result": {
               "status": "passed",
-              "duration": 105000000
+              "duration": 65000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 27,
-            "name": "Enter the table fields in search box",
+            "name": "Verify the Results in the table",
             "result": {
               "status": "passed",
-              "duration": 307000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 28,
-            "name": "Verify the record in searching history",
-            "result": {
-              "status": "passed",
-              "duration": 3028000000
+              "duration": 3141000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 29,
-            "name": "Click on Export To CSV",
+            "line": 28,
+            "name": "Click on view Button",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 93000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 30,
-            "name": "Verify Downloaded successfully",
+            "line": 29,
+            "name": "Verify the Warranty Description",
             "result": {
               "status": "passed",
-              "duration": 867000000
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 73000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "Enter the table fields in search box",
+            "result": {
+              "status": "passed",
+              "duration": 281000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "Verify the record in searching history",
+            "result": {
+              "status": "passed",
+              "duration": 3040000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "Click on Export To CSV",
+            "result": {
+              "status": "passed",
+              "duration": 66000000
             }
           }
         ]

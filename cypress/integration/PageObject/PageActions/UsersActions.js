@@ -130,7 +130,7 @@ export class UsersActions {
      user.downloadbtnElement().click({force:true})
     }
     verifyDowanload(){
-        cy.verifyDownload(tdata.users.filename)
+        cy.verifyDownload("/download/",tdata.users.filename)
     }
    
 }

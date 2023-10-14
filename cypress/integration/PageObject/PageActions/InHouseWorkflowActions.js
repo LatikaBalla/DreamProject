@@ -40,7 +40,8 @@ export class InHouseWorkflowActions {
     }
     selectTechnician(){
         ihw.technicianElement().click({ force: true })
-        cy.get(tdata.inHouseWorkflow.technician).click({ force: true })
+       // cy.get(tdata.inHouseWorkflow.technician).click({ force: true })
+        cy.get('.Mui-focusVisible').click({ force: true })
       
     }
     enterChromebookIssue() {
@@ -58,7 +59,7 @@ export class InHouseWorkflowActions {
         ihw.exportbtnElement().click({ force: true })
     }
     verifyDownload() {
-        cy.verifyDownload(tdata.inHouseWorkflow.filename)
+        cy.verifyDownload("/download/",tdata.inHouseWorkflow.filename)
     }
 
 }

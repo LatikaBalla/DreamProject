@@ -11,11 +11,9 @@ Feature:SrcFacilitators Page Functionality
         And Click on StudentRepairCenter tab
         Then Click on SrcFacilitators tab
 
-    Scenario: Visiblity of SrcFacilitators page
+    Scenario:Visiblity check, View the Facilitators
         And Verify the Title of SrcFacilitators Page
         Then Filters of SrcFacilitators should be visible
         And Table for SrcFacilitators should be visible
-
-    Scenario: View the Facilitators
         And Click on view button
         Then Veriry the Details of Facilitator

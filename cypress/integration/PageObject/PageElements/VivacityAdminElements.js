@@ -96,6 +96,21 @@ export default class VivacityAdminElements {
             timeout: 30000,
         })
     }
+    section6Element() {
+        return cy.contains(locator.vivacityAdmin.section6, {
+            timeout: 30000,
+        })
+    }
+    section7Element() {
+        return cy.contains(locator.vivacityAdmin.section7, {
+            timeout: 30000,
+        })
+    }
+    section8Element() {
+        return cy.contains(locator.vivacityAdmin.section8, {
+            timeout: 30000,
+        })
+    }
     approveElement() {
         return cy.contains(locator.vivacityAdmin.approve, {
             timeout: 30000,
@@ -233,6 +248,16 @@ export default class VivacityAdminElements {
     }
     availableAccountElement(){
         return cy.get(locator.vivacityAdmin.availableAccount, {
+            timeout: 30000,
+        }) 
+    }
+    viewElement(){
+        return cy.contains(locator.vivacityAdmin.view, {
+            timeout: 30000,
+        }) 
+    }
+    closeElement(){
+        return cy.get(locator.vivacityAdmin.close, {
             timeout: 30000,
         }) 
     }

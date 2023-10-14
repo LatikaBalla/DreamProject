@@ -177,6 +177,14 @@
         "title": "Manage Device Fleet",
         "filters": ".css-k008qs",
         "table": ".css-1xz8d5v",
+        "addDevice":" Add Device ",
+        "serialNo":"#serial_number",
+        "deviceid":"#device",
+        "assetTag":"#asset_tag",
+        "studentid":"#mui-component-select-student",
+       "lonarstatus": "#mui-component-select-loaner_status",
+       "devicestatus":"#mui-component-select-device_status",
+       "submitbtn":"Submit",
         "morefiltersbtn": " More Filters",
         "clearfilterbtn": "Clear Filter",
         "addDevicesbtn": " Add Device ",
@@ -276,7 +284,7 @@
         "inbound": "Inbound Shipments",
         "outbound": "Outbound Shipments",
         "seachbox": "[placeholder='Search']",
-        "addbox": ".css-1qfr2hk",
+        "addbox": ".css-i6pmbz",
         "weight": "#weight",
         "height": "#height",
         "depth": "#depth",
@@ -315,7 +323,7 @@
         "savebtn": "Save"
     },
     "inhouseTickets": {
-        "title": "All Vivacity Repair Tickets",
+        "title": "All In House Repair Tickets",
         "filters": ".css-zdpt2t",
         "table": ".css-1owb465",
         "search": "[data-testid='txtSearchData']",
@@ -354,6 +362,7 @@
         "cancel": "Cancel",
         "submit": "Submit",
         "device": "#device",
+        "building":"#building",
         "partid": "#mui-component-select-partId",
         "quantityVT": "#quantity",
         "submitVT": "Submit",
@@ -367,7 +376,7 @@
         "createTicket": "Create New Ticket",
         "refreshbtn": "[data-testid='CachedIcon']",
         "failuretype": "#failure_type",
-        "technician": "#student_technician",
+        "technician": "#internal_technician",
         "serialdevice": "#device",
         "chromebookissue": "#chromebook_issue",
         "issue": "#repair_issue",
@@ -464,7 +473,7 @@
         "submitbtn": "[data-testid='btnNewDataSubmit']"
     },
     "support": {
-        "title": "Dream Support",
+        "title": "Support",
         "name": "#request_name",
         "priority": "#mui-component-select-request_priority",
         "topic": "#request_type",
@@ -477,7 +486,13 @@
         "section1": "All Paid Subscription Requests",
         "approve": "Approve",
         "deny": "Deny",
-        "section2": "Admin Users",
+       
+
+        "section2": "Roadmap Requests",
+        "view":"View",
+        "close":"[data-testid='btnNewDataSubmit']",
+
+        "section3": "Admin Users",
         "addnewUserbtn": "Add New User",
         "search": "[placeholder='Search for users']",
         "table": ".css-1owb465",
@@ -490,7 +505,8 @@
         "cellnumber": "#cellphone",
         "userrole": "#mui-component-select-name",
         "editsubmit": "[data-testid='btnNewDataSubmit']",
-        "section3": "Serial Numbers & Warranties",
+
+        "section4": "Warranties",
         "addWarranty": "Add Warranty",
         "bulkWarranty": "Bulk Warranty",
         "upload":"Attach CSV file",
@@ -507,7 +523,8 @@
         "wdescription": "#warranty_description",
         "submitbtn": "Submit",
         "submit":"[data-testid='btnNewDataSubmit']",
-        "section4": "Account Management",
+
+        "section5": "Import Serial Device",
         "addAccount":"Add Account",
         "accountName":"#account_name",
         "phoneNo":"#phone_number",
@@ -518,9 +535,13 @@
         "subcription":".MuiSelect-select",
         "updateSubcription":"Update Subcription",
         "subUpdatebtn":".css-10g2wm1",
-        "section5": "Request Users",
+
+        "section6": "Account Management",
         "availableAccount":"#student_id",
-        "addbtn":".css-10g2wm1"
-        
+        "addbtn":".css-10g2wm1",
+
+        "section7":"New User Creation Requests",
+
+        "section8":"All Users"
     }
 }
