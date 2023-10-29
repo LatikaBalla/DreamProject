@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 4240000000
+              "duration": 19782000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5416000000
+              "duration": 11535000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9071000000
+              "duration": 9085000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 133000000
+              "duration": 80000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on InHouseRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 485000000
+              "duration": 874000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Filters of InHouseWorkflow should be visible",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 12000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I should click on new button",
             "result": {
               "status": "passed",
-              "duration": 69000000
+              "duration": 68000000
             }
           },
           {
@@ -92,8 +92,9 @@
             "line": 16,
             "name": "Select failure Type, Serial Device and Technician",
             "result": {
-              "status": "passed",
-              "duration": 1894000000
+              "status": "failed",
+              "duration": 5689000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#device-option-0`, but never found it.\n    at InHouseWorkflowActions.selectSerialDevice (cypress/integration/PageObject/PageActions/InHouseWorkflowActions.js:37:9)\n    at Context.eval (cypress/integration/InHouseWorkflow/InHouseWorkflow.spec.js:35:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -102,8 +103,7 @@
             "line": 17,
             "name": "Enter the Chromebook issue",
             "result": {
-              "status": "passed",
-              "duration": 593000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +112,7 @@
             "line": 18,
             "name": "Click on save button",
             "result": {
-              "status": "passed",
-              "duration": 86000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +121,7 @@
             "line": 19,
             "name": "Verify New Ticket is added",
             "result": {
-              "status": "passed",
-              "duration": 12673000000
+              "status": "skipped"
             }
           }
         ]

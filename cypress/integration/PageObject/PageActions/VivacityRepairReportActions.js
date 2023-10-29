@@ -13,7 +13,7 @@ export class VivacityRepairReportActions {
         dash.termsElement().click({ force: true })
     }
     clickOnReportCenter() {
-        dash.arrowElement().click({ force: true })
+       // dash.arrowElement().click({ force: true })
         dash.reportcenterElement().click({ force: true })
     }
     clickOnVivacityRepairReport() {

@@ -46,8 +46,8 @@
     "active": "yes"
   },
   "deviceRepairReport": {
-    "ticketno": "VAL20230927115502100",
-    "filename": "VAL20230927115502100.pdf"
+    "ticketno": "VAL2023102715322545",
+    "filename": "VAL2023102715322545.pdf"
   },
   "myFleet": {
     "filename": "fleet_devices.csv",
@@ -247,7 +247,7 @@
     "addAccountymsg": "Account added successfully",
     "subcription": "[data-value='Professional']",
     "subUpdatemsg": "Update Subcription submmited",
-    "account":"[data-value='21730']",
-    "addAccUsermsg": "Account added successfully"
+    "account":"#accounts-option-1",
+    "addAccUsermsg": "Add new user form submitted"
   }
 }

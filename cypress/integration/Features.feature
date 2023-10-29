@@ -15,9 +15,6 @@ Feature: features Page Functionality
         Then Verify the Under Consideration Tab should be visible
         And Verify the Under Construction tab should be visible
         Then Verify the Launched tab should be visible
-        Then Click on Submit a feature request button
-        And Enter Title and Description 
-        Then Click on submit button
-        Then Verify Submitting Features request Message
+ 
 
 

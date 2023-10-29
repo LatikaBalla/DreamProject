@@ -14,7 +14,7 @@ export class MyFleetActions {
         dash.termsElement().click({ force: true })
     }
     clickOnManageDevices() {
-        dash.arrowElement().click({ force: true })
+      //  dash.arrowElement().click({ force: true })
         dash.managedevicesElement().click({ force: true })
     }
     clickOnMyFleet() {

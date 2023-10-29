@@ -11,6 +11,7 @@ export class MyProfileActions {
         dash.termsElement().click({ force: true })
     }
     clickOnMyProfile() {
+        cy.contains('demo_adminsuper@vivacitytech.com').click({force:true})
         dash.myprofileElement().click({ force: true })
     }
     accountDetailsVisible() {

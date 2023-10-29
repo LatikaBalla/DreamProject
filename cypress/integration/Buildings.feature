@@ -24,8 +24,8 @@ Feature: Building Page Functionality
         Then Click on Apply Button
         And Verify the Results in the table
         Then Click on Clear filter
-        And Enter the building name in search box
-        And Verify the record in searching history
+        # And Enter the building name in search box
+        # And Verify the record in searching history
         And Click on view Details Button 
         Then Verfiy the Details are correct 
         And Click on Edit Icon

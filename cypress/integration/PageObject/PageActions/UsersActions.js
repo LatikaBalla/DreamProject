@@ -13,7 +13,7 @@ export class UsersActions {
         dash.termsElement().click({ force: true })
     }
     clickOnUsers() {
-        dash.arrowElement().click({ force: true })
+       // dash.arrowElement().click({ force: true })
         dash.usersElement().click({ force: true })
     }
     AllOrganizationalUnitVisible() {

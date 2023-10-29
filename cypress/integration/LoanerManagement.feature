@@ -12,5 +12,10 @@ Feature: LoanerManagement Page Functionality
 
     Scenario: Visiblity of LoanerManagement page
         And Table for LoanerManagement should be visible
+        Then search the serial no in search box 
+        And Verirfy the search result 
+        Then Click on the Add to lonar pool
+        And Verify device is added in Available section 
+        Then Search the serial in the Available 
 
         

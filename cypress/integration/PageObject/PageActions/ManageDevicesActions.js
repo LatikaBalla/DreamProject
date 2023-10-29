@@ -26,7 +26,7 @@ export class ManageDevicesActions {
         mdev.serialdevicesElement().should('be.visible')
     }
     clickOnManageDevices() {
-        dash.arrowElement().click({ force: true })
+        // dash.arrowElement().click({ force: true })
         dash.managedevicesElement().click({ force: true })
     }
 }

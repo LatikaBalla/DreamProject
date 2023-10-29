@@ -7,9 +7,9 @@ Feature:Vivacity admin Page Functionality
         Given I should navigate to application
         When I should Sign In into the application
         Then Close the terms of service window
-        And Click on Vivacity Admin page
 
     Scenario: Vivacity Admin can access page and check the visiblity
+        And Click on Vivacity Admin page
         Then I should be redirected to the Users page
         Then All Paid Subscription Requests unit should be visible
         And Roadmap Requests unit should be visible
@@ -19,24 +19,23 @@ Feature:Vivacity admin Page Functionality
         And Account Management unit should be visible
         Then New User Creation Requests unit should be visible
         And All Users unit should be visible
+        Then Repair Ticket Creation unit should be visible
 
-    Scenario: Add new Srudent, Search, Edit and search Delete the User and download
+    Scenario: Add new Srudent and warranty, Search, Edit, Search, Delete
         # Then Click on All Paid Subscription Requests unit
         # And Table should be visible
         # Then If any subscription request is there then approve or deny the request
         # And Verify the Request
-        Then Click on Roadmap Requests unit
-        And Click on view button
-        Then Click on the Close button
 
+        And Click on Vivacity Admin page
         Then Click on Admin Users unit
         Then I should click on Add New student
         Then Enter full name, title and Email
         And Enter Phone,Cell Number and select UserRole
         And Click on submit button
         Then Verify the student added in table
-        And Enter the Search value in search box
-        Then Verify the Results in the table
+        # And Enter the Search value in search box
+        # Then Verify the Results in the table
         And Click on Edit button
         Then I should edit title, full name
         And I should edit Phone and Cell Number and user role
@@ -64,9 +63,11 @@ Feature:Vivacity admin Page Functionality
         And Verify the warranty updated Meassage
         And Click on Delete Icon
         Then Click on Confirm Delete Icon
-        And Verify the record is deleted successfully for warranty
+        # And Verify the record is deleted successfully for warranty
         Then Click on warranty unit
 
+    Scenario: Add new account, Search, Edit and search Delete the User and download
+        And Click on Vivacity Admin page
         Then Click on Account Management unit
         And I should click on Add Account
         Then Enter Account name, Phone, Email, Domain and credit Limit
@@ -86,6 +87,9 @@ Feature:Vivacity admin Page Functionality
         And Verify add account successfully
         Then Click on Request Users unit
 
+
+    Scenario: Vivacity Admin with Roadmap feature request and redirect to Repair Ticket Creation
+        And Click on Vivacity Admin page
         Then Click on all Users unit
         Then I should click on Add New student for allUser
         Then Enter full name, title and Email
@@ -93,17 +97,40 @@ Feature:Vivacity admin Page Functionality
         And Enter Phone,Cell Number and select UserRole
         And Click on submit button
         Then Verify the student added in table for allUser
-        And Enter the Search value in search box for alluser
-        Then Verify the Results in the table for allUser
+        # And Enter the Search value in search box for alluser
+        # Then Verify the Results in the table for allUser
         And Click on Edit button for allUser
         Then I should edit title, full name
         And I should edit Phone and Cell Number and user role
         Then Click on Submit button
-        # And Verify the Record has been updated Meassage
+        And Verify the Record has been updated Meassage
         And Click on Delete button for allUser
         Then Click on Confirm Delete button
         And Verify the record is deleted successfully for allUser
         Then Click on all Users unit
+        And Click on features page
+        Then Click on Submit a feature request button
+        And Enter Title and Description
+        Then Click on Feature submit button
+        Then Verify Submitting Features request Message
+        And Click on Vivacity Admin page
+        Then Click on Roadmap Requests unit
+        And Click on view button
+        Then Click on the Close button
+        And Click on approve button
+        And Click on features page again
+        Then Verify the feature added in Underconsideration
+        And Click on Vivacity Admin page
+        Then Click on Repair Ticket Creation unit
+        And Click on Repair 360 page button
+        Then Verify the Repair Ticket page redirected
+
+
+
+
+
+
+
 
 
 

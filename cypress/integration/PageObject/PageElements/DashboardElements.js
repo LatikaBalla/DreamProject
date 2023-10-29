@@ -21,11 +21,6 @@ export default class DashboardElements {
             timeout: 30000,
         });
     }
-    sliderMenuElement() {
-        return cy.get(locator.dashboard.sliderMenu, {
-            timeout: 30000,
-        });
-    }
     reportcenterElement() {
         return cy.contains(locator.dashboard.reportcenter, {
             timeout: 30000,

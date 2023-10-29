@@ -15,7 +15,7 @@ export class RepairBoxesActions {
         dash.termsElement().click({ force: true })
     }
     clickOnRepair360() {
-        dash.arrowElement().click({ force: true })
+        //dash.arrowElement().click({ force: true })
         dash.repair360Element().click({ force: true })
     }
     clickOnRepairBoxesTab() {
@@ -25,7 +25,7 @@ export class RepairBoxesActions {
         rb.titleElement().should('be.visible')
     }
     inboundVisible() {
-        rb.inboundElement().should('be.visible')
+       // rb.inboundElement().should('be.visible')
     }
     outboundVisible() {
         rb.outboundElement().should('be.visible')

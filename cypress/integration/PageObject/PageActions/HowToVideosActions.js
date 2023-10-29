@@ -19,7 +19,7 @@ export class HowToVideosActions {
         rep.videosElement().should('be.visible')
     }
     clickOnResources() {
-        dash.arrowElement().click({ force: true })
+       // dash.arrowElement().click({ force: true })
         dash.resourcesElement().click({ force: true })
     }
 

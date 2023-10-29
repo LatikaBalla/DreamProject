@@ -23,7 +23,7 @@ export class ReportCenterActions {
         repc.devicerrElement().should('be.visible')
     }
     clickOnReportCenter() {
-        dash.arrowElement().click({ force: true })
+       // dash.arrowElement().click({ force: true })
         dash.reportcenterElement().click({ force: true })
     }
 

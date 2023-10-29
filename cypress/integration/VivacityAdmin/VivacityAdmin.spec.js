@@ -1,6 +1,8 @@
 import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 import { VivacityAdminActions } from '../PageObject/PageActions/VivacityAdminActions'
+import { FeaturesActions } from '../PageObject/PageActions/FeaturesActions'
 
+const ft = new FeaturesActions()
 const vadmin = new VivacityAdminActions()
 Cypress.on("uncaught:exception", () => {
     return false;
@@ -25,17 +27,17 @@ Then('I should be redirected to the Users page', () => {
 Then('All Paid Subscription Requests unit should be visible', () => {
     vadmin.allPaidSubcription()
 })
-And ('Roadmap Requests unit should be visible',()=>{
-vadmin.roadmapRequest()
+And('Roadmap Requests unit should be visible', () => {
+    vadmin.roadmapRequest()
 })
-Then ('Admin Users unit should be visible', () => {
+Then('Admin Users unit should be visible', () => {
     vadmin.adminUser()
 })
 And('Warranties unit should be visible', () => {
     vadmin.Warranty()
 })
-Then ('Import Serial Device unit should be visible',()=>{
-vadmin.iserialDevice()
+Then('Import Serial Device unit should be visible', () => {
+    vadmin.iserialDevice()
 })
 And('Account Management unit should be visible', () => {
     vadmin.accManagement()
@@ -46,22 +48,9 @@ Then('New User Creation Requests unit should be visible', () => {
 And('All Users unit should be visible', () => {
     vadmin.allUser()
 })
-Then ('Click on Roadmap Requests unit',()=>{
-vadmin.clickOnRoadmap()
+Then ('Repair Ticket Creation unit should be visible',()=>{
+    vadmin.RepairTicketCreation()
 })
-And ('Click on view button',()=>{
-vadmin.clickOnViewButton()
-})
-Then ('Click on the Close button',()=>{
-vadmin.clickOnCloseButton()
-vadmin.clickOnRoadmap()
-})
-
-
-
-
-
-
 
 
 Then('Click on All Paid Subscription Requests unit', () => {
@@ -140,7 +129,7 @@ And('Verify the record is deleted successfully', () => {
     vadmin.verifyRecordDeleted()
 })
 
-Then ('Click on warranty unit', () => {
+Then('Click on warranty unit', () => {
     vadmin.serialNoWarrantySection()
 })
 And('I should click on Add warranty', () => {
@@ -200,93 +189,142 @@ Then('Click on update button', () => {
 And('Verify the warranty updated Meassage', () => {
     vadmin.verifyWarrantyRecordUpdated()
 })
-And ('Click on Delete Icon',()=>{
-vadmin.clickDeleteIcon()
+And('Click on Delete Icon', () => {
+    vadmin.clickDeleteIcon()
 })
-Then ('Click on Confirm Delete Icon',()=>{
-vadmin.clickConDeleteButton()
+Then('Click on Confirm Delete Icon', () => {
+    vadmin.clickConDeleteButton()
 })
-And ('Verify the record is deleted successfully for warranty',()=>{
-vadmin.verifyRecordDeletedWarranty()
+And('Verify the record is deleted successfully for warranty', () => {
+    vadmin.verifyRecordDeletedWarranty()
 })
 
 
-Then ('Click on Account Management unit',()=>{
-vadmin.clickOnAccountMangment()
+Then('Click on Account Management unit', () => {
+    vadmin.clickOnAccountMangment()
 })
-And ('I should click on Add Account',()=>{
+And('I should click on Add Account', () => {
     vadmin.clickOnAddAccount()
 })
-Then ('Enter Account name, Phone, Email, Domain and credit Limit',()=>{
-vadmin.enterAccName()
-vadmin.enterPhoneNo()
-vadmin.enterEmail()
-vadmin.enterDomain()
-vadmin.enterCreditLimit()
+Then('Enter Account name, Phone, Email, Domain and credit Limit', () => {
+    vadmin.enterAccName()
+    vadmin.enterPhoneNo()
+    vadmin.enterEmail()
+    vadmin.enterDomain()
+    vadmin.enterCreditLimit()
 })
-And ('Select In house Repaire and Payment terms',()=>{
-vadmin.selectIhRepaire()
-vadmin.selectPaymentTerms()
+And('Select In house Repaire and Payment terms', () => {
+    vadmin.selectIhRepaire()
+    vadmin.selectPaymentTerms()
 })
-Then ('Click on submit button Account',()=>{
-vadmin.clickOnSubmitButtonAcc()
+Then('Click on submit button Account', () => {
+    vadmin.clickOnSubmitButtonAcc()
 })
-And ('Verify the Account added in table',()=>{
-vadmin.verifyRecordAccountAdded()
+And('Verify the Account added in table', () => {
+    vadmin.verifyRecordAccountAdded()
 })
-Then ('Click on update subscription',()=>{
-vadmin.clickOnUpdateSubcription()
+Then('Click on update subscription', () => {
+    vadmin.clickOnUpdateSubcription()
 })
-And ('Select subscription Type',()=>{
-vadmin.selectSubscription()
+And('Select subscription Type', () => {
+    vadmin.selectSubscription()
 })
-Then ('Click on update button for subcription',()=>{
-vadmin.clickOnUpdateSub()
+Then('Click on update button for subcription', () => {
+    vadmin.clickOnUpdateSub()
 })
-And('Verify Updated subcription successfully',()=>{
+And('Verify Updated subcription successfully', () => {
     vadmin.verifyUpadtedSub()
 })
 
 
-Then ('Click on Request Users unit',()=>{
-vadmin.requestUserSection()
+Then('Click on Request Users unit', () => {
+    vadmin.requestUserSection()
 })
-Then ('Click on Add Account of request user',()=>{
-vadmin.clickOnAddAccountUser()
+Then('Click on Add Account of request user', () => {
+    vadmin.clickOnAddAccountUser()
 })
-And ('Select available account',()=>{
-vadmin.selectAvailableAccount()
+And('Select available account', () => {
+    vadmin.selectAvailableAccount()
 })
-Then ('Click on add account button for request user',()=>{
-vadmin.clickOnAddAccountsubmit()
+Then('Click on add account button for request user', () => {
+    vadmin.clickOnAddAccountsubmit()
 })
-And ('Verify add account successfully',()=>{
-vadmin.verifyAddAccUser()
+And('Verify add account successfully', () => {
+    vadmin.verifyAddAccUser()
 })
-Then ('Click on all Users unit',()=>{
+Then('Click on all Users unit', () => {
     vadmin.clickOnAllUser()
 })
-Then ('I should click on Add New student for allUser',()=>{
+Then('I should click on Add New student for allUser', () => {
     vadmin.clickOnCreateNewStudentAllUser()
 })
-Then ('Verify the student added in table for allUser',()=>{
+Then('Verify the student added in table for allUser', () => {
     vadmin.verifyStudentAddedAllUser()
 })
-And ('Enter the Search value in search box for alluser',()=>{
+And('Enter the Search value in search box for alluser', () => {
     vadmin.enterSearchValueAllUser()
 })
-Then ('Verify the Results in the table for allUser',()=>{
+Then('Verify the Results in the table for allUser', () => {
     vadmin.verifySearchResultAllUser()
 })
-And ('Click on Edit button for allUser',()=>{
+And('Click on Edit button for allUser', () => {
     vadmin.clickOnEditButtonAllUser()
 })
-And ('Click on Delete button for allUser',()=>{
+And('Click on Delete button for allUser', () => {
     vadmin.clickDeleteButtonAllUser()
 })
-And ('Verify the record is deleted successfully for allUser',()=>{
-    vadmin.verifyRecordDeletedAllUser() 
+And('Verify the record is deleted successfully for allUser', () => {
+    vadmin.verifyRecordDeletedAllUser()
 })
-And ('Enter Email for allUser',()=>{
+And('Enter Email for allUser', () => {
     vadmin.enterEmailAllUser()
+})
+
+
+
+And('Click on features page', () => {
+    cy.wait(1000)
+    cy.contains('demo_adminvivacity@vivacitytech.com').click({force:true})
+    vadmin.clickOnFeatures()
+})
+Then('Click on Submit a feature request button', () => {
+    ft.clickOnSubmitfeatureButton()
+})
+And('Enter Title and Description', () => {
+    ft.enterTitle()
+    ft.enterDescription()
+})
+Then('Click on Feature submit button', () => {
+    ft.clickOnSubmitButton()
+})
+Then('Verify Submitting Features request Message', () => {
+    ft.verifySubmitedFeatureRequest()
+})
+
+Then('Click on Roadmap Requests unit', () => {
+    vadmin.clickOnRoadmap()
+})
+And('Click on view button', () => {
+    vadmin.clickOnViewButton()
+})
+Then('Click on the Close button', () => {
+    vadmin.clickOnCloseButton()
+})
+And('Click on approve button', () => {
+    vadmin.clickOnApproveButton()
+})
+And ('Click on features page again',()=>{
+    vadmin.clickOnFeatures()
+})
+Then('Verify the feature added in Underconsideration', () => {
+    ft.verifyFeatureUnderconsideration()
+})
+Then('Click on Repair Ticket Creation unit',()=>{
+vadmin.clickOnRepairTicketUnit()
+})
+And ('Click on Repair 360 page button',()=>{
+vadmin.clickOnRepair360btn()
+})
+Then ('Verify the Repair Ticket page redirected',()=>{
+    cy.url().should('include', '/repair-360')   
 })

@@ -34,19 +34,7 @@ And('Verify the Under Construction tab should be visible', () => {
 And('Verify the Launched tab should be visible', () => {
     ft.launchedTabVisible()
 })
-Then('Click on Submit a feature request button', () => {
-    ft.clickOnSubmitfeatureButton()
-})
-And ('Enter Title and Description',()=>{
-    ft.enterTitle()
-    ft.enterDescription()
-}) 
-Then ('Click on submit button',()=>{
-ft.clickOnSubmitButton()
-})
-Then ('Verify Submitting Features request Message',()=>{
-ft.verifySubmitedFeatureRequest()
-})
+
 
 
 

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 4376000000
+              "duration": 1858000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 4263000000
+              "duration": 8234000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9077000000
+              "duration": 9069000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 159000000
+              "duration": 77000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on PartCloset Tab",
             "result": {
               "status": "passed",
-              "duration": 927000000
+              "duration": 449000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of PartCloset Page",
             "result": {
               "status": "passed",
-              "duration": 21000000
+              "duration": 11000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Filters of PartCloset should be visible",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 5000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Table for PartCloset should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 7000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "I should click on Add New custome part",
             "result": {
               "status": "passed",
-              "duration": 90000000
+              "duration": 67000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Enter part name, manufacture and parent device",
             "result": {
               "status": "passed",
-              "duration": 1600000000
+              "duration": 1086000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Enter part sku and quantity",
             "result": {
               "status": "passed",
-              "duration": 359000000
+              "duration": 370000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 72000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Verify new custome part is added",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Enter the Search value in search box",
             "result": {
               "status": "passed",
-              "duration": 296000000
+              "duration": 276000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Verify the Results in the table",
             "result": {
               "status": "passed",
-              "duration": 27000000
+              "duration": 21000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Verify the recode is deleted",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 1000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "I should click on Add New VT part",
             "result": {
               "status": "passed",
-              "duration": 80000000
+              "duration": 76000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Select device and part name",
             "result": {
               "status": "passed",
-              "duration": 659000000
+              "duration": 579000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Enter quantity and select building",
             "result": {
               "status": "passed",
-              "duration": 273000000
+              "duration": 295000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 117000000
+              "duration": 75000000
             }
           }
         ]

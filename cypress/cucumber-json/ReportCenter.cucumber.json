@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 5181000000
+              "duration": 1886000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6331000000
+              "duration": 8644000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9075000000
+              "duration": 9070000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Report center page",
             "result": {
               "status": "passed",
-              "duration": 133000000
+              "duration": 71000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I should be redirected to the Report center page",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 6000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of Report center Page",
             "result": {
               "status": "passed",
-              "duration": 1008000000
+              "duration": 569000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the VivacityRepairReport Tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 15000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Click on VivacityRepairReport page",
             "result": {
               "status": "passed",
-              "duration": 61000000
+              "duration": 64000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Verify all sections of VivacityRepairReport Page should be visible",
             "result": {
               "status": "passed",
-              "duration": 54000000
+              "duration": 47000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Verify repair status graph should be visible",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 13000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Verify warranty claim graph should be visible",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 10000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Verify cavas of Repair ticket by status should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 8000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on InHouseRepairReport page",
             "result": {
               "status": "passed",
-              "duration": 62000000
+              "duration": 58000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Verify all sections of InHouseRepairReport Page should be visible",
             "result": {
               "status": "passed",
-              "duration": 50000000
+              "duration": 40000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Verify ticketdata graph should be visible",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 10000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Verify the DeviceRepairReport tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 7000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on DeviceRepairReport page",
             "result": {
               "status": "passed",
-              "duration": 3066000000
+              "duration": 3068000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Verify title of DeviceRepairReport Page should be visible",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 13000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Verify the filters should be visible",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 7000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Verify history table should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 6000000
             }
           }
         ]
@@ -243,7 +243,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2487000000
+              "duration": 473000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5493000000
+              "duration": 5404000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9068000000
+              "duration": 9069000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Click on Report center page",
             "result": {
               "status": "passed",
-              "duration": 127000000
+              "duration": 68000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Click on DeviceRepairReport page",
             "result": {
               "status": "passed",
-              "duration": 4344000000
+              "duration": 3498000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Enter the Ticket Number in search box",
             "result": {
               "status": "passed",
-              "duration": 427000000
+              "duration": 400000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "Verify the Ticket details in table",
             "result": {
               "status": "passed",
-              "duration": 3021000000
+              "duration": 3061000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "Click on clear button",
             "result": {
               "status": "passed",
-              "duration": 64000000
+              "duration": 69000000
             }
           },
           {
@@ -333,7 +333,7 @@
             "name": "Enter the Ticket Number in search box",
             "result": {
               "status": "passed",
-              "duration": 432000000
+              "duration": 414000000
             }
           },
           {
@@ -343,7 +343,7 @@
             "name": "Click on the Ticket Number",
             "result": {
               "status": "passed",
-              "duration": 88000000
+              "duration": 94000000
             }
           },
           {
@@ -353,7 +353,7 @@
             "name": "Verify the Repair Ticket page will open",
             "result": {
               "status": "passed",
-              "duration": 1923000000
+              "duration": 695000000
             }
           },
           {
@@ -363,7 +363,7 @@
             "name": "Verfiy the details of Ticket",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           },
           {
@@ -373,7 +373,7 @@
             "name": "Click on the download Ticket Estimation button",
             "result": {
               "status": "passed",
-              "duration": 1091000000
+              "duration": 1783000000
             }
           }
         ]

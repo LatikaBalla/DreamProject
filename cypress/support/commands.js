@@ -25,6 +25,7 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 import 'cypress-file-upload';
 Cypress.Commands.add("AdminLogin", () => {    
+  cy.get('[href="/login"]').click({force:true})
         cy.origin('https://dream-vivacity.us.auth0.com/', () => {
           Cypress.on("uncaught:exception", () => {
             return false;
@@ -36,6 +37,7 @@ Cypress.Commands.add("AdminLogin", () => {
         })
       })
       Cypress.Commands.add("VivacityAdminLogin", () => {    
+        cy.get('[href="/login"]').click({force:true})
         cy.origin('https://dream-vivacity.us.auth0.com/', () => {
           Cypress.on("uncaught:exception", () => {
             return false;

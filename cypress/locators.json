@@ -143,7 +143,7 @@
         "title": "Device Repair History",
         "clearbtn": "Clear",
         "filters": ".css-1yuhvjn",
-        "search": "[placeholder='Search Ticket Number']",
+        "search": "[placeholder='Search by fields value']",
         "table": ".css-1owb465",
         "printTicket": "Print Ticket Estimate",
         "downloadticket": "Download Ticket Estimate",
@@ -484,13 +484,13 @@
     "vivacityAdmin": {
         "title": "Vivacity Admin",
         "section1": "All Paid Subscription Requests",
-        "approve": "Approve",
+        "conapprove": ".css-9aulxs",
         "deny": "Deny",
        
 
         "section2": "Roadmap Requests",
         "view":"View",
-        "close":"[data-testid='btnNewDataSubmit']",
+        "close":"[data-testid='CancelIcon']",
 
         "section3": "Admin Users",
         "addnewUserbtn": "Add New User",
@@ -504,6 +504,7 @@
         "phone": "#phone",
         "cellnumber": "#cellphone",
         "userrole": "#mui-component-select-name",
+        "editbtn":"Edit",
         "editsubmit": "[data-testid='btnNewDataSubmit']",
 
         "section4": "Warranties",
@@ -537,11 +538,14 @@
         "subUpdatebtn":".css-10g2wm1",
 
         "section6": "Account Management",
-        "availableAccount":"#student_id",
+        "availableAccount":"#accounts",
         "addbtn":".css-10g2wm1",
 
         "section7":"New User Creation Requests",
 
-        "section8":"All Users"
+        "section8":"All Users",
+
+        "section9":"Repair Ticket Creation",
+        "repairbtn":"[type='button']"
     }
 }

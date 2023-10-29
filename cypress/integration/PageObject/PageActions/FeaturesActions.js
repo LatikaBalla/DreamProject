@@ -11,6 +11,7 @@ export class FeaturesActions {
         dash.termsElement().click({ force: true })
     }
     clickOnFeatures(){
+        cy.contains('demo_adminsuper@vivacitytech.com').click({force:true})
         dash.featuresElement().click({force:true})
     }
     underConsiderationTabVisible() {
@@ -36,6 +37,9 @@ ft.titleElement().type(tdata.features.title)
     }
     verifySubmitedFeatureRequest() {
         dash.messageElement().should('contain',tdata.features.requestmsg)
+    }
+    verifyFeatureUnderconsideration(){
+        cy.contains('Testing').should('be.visible')
     }
    
 }

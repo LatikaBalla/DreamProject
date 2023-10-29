@@ -21,7 +21,7 @@ Feature: Dashboard Page Functionality
         And Verify the Title of Buildings Page
         Then Filters of Buildings should be visible
         And Table for Buildings should be visible
-        Then Slider Menu should be visible
+     
 
 
   

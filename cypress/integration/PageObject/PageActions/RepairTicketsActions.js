@@ -13,7 +13,7 @@ export class RepairTicketsActions {
         dash.termsElement().click({ force: true })
     }
     clickOnRepair360() {
-        dash.arrowElement().click({ force: true })
+       // dash.arrowElement().click({ force: true })
         dash.repair360Element().click({ force: true })
     }
     clickOnRepairTicketsTab() {

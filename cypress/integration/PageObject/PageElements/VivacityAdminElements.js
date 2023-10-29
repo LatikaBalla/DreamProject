@@ -111,8 +111,13 @@ export default class VivacityAdminElements {
             timeout: 30000,
         })
     }
-    approveElement() {
-        return cy.contains(locator.vivacityAdmin.approve, {
+    section9Element() {
+        return cy.contains(locator.vivacityAdmin.section9, {
+            timeout: 30000,
+        })
+    }
+    conapproveElement() {
+        return cy.get(locator.vivacityAdmin.conapprove, {
             timeout: 30000,
         })
     }
@@ -261,4 +266,15 @@ export default class VivacityAdminElements {
             timeout: 30000,
         }) 
     }
+    editbtnElement(){
+        return cy.contains(locator.vivacityAdmin.editbtn, {
+            timeout: 30000,
+        }) 
+    }
+    repairbtnElement(){
+        return cy.get(locator.vivacityAdmin.repairbtn, {
+            timeout: 30000,
+        }) 
+    }
+
 }

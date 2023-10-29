@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 6179000000
+              "duration": 2237000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 4157000000
+              "duration": 9664000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on My profile page",
             "result": {
               "status": "passed",
-              "duration": 1064000000
+              "duration": 1135000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of My Profile Page",
             "result": {
               "status": "passed",
-              "duration": 437000000
+              "duration": 483000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "User and User photo of MyProfile should be visible",
             "result": {
               "status": "passed",
-              "duration": 382000000
+              "duration": 419000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Profile and Account deatils section of MyProfile should be visible",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 10000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Enter tilte and phone no",
             "result": {
               "status": "passed",
-              "duration": 664000000
+              "duration": 643000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Eelect Email preference",
             "result": {
               "status": "passed",
-              "duration": 120000000
+              "duration": 121000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "click on update button",
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 61000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Verify the updated successfully",
             "result": {
               "status": "passed",
-              "duration": 537000000
+              "duration": 393000000
             }
           }
         ]

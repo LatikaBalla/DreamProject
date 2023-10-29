@@ -36,22 +36,22 @@ export class BuildingsActions {
         build.addnewbtnElement().click({ force: true })
     }
     enterBuildingName() {
-        build.buildingnameElement().type(tdata.buildings.buildingname)
+        build.buildingnameElement().type(tdata.buildings.buildingname,{force:true})
     }
     enterPhone() {
-        build.phoneElement().type(tdata.buildings.phone)
+        build.phoneElement().type(tdata.buildings.phone,{force:true})
     }
     enterExtension() {
-        build.extensionElement().type(tdata.buildings.extension)
+        build.extensionElement().type(tdata.buildings.extension,{force:true})
     }
     selectDefaultBuilding() {
-        build.defaultbuildingElement().click()
-        cy.get(tdata.buildings.defaultbuilding).click()
+        build.defaultbuildingElement().click({force:true})
+        cy.get(tdata.buildings.defaultbuilding).click({force:true})
     }
     enterBillingAddress() {
-        build.baddressElement().type(tdata.buildings.address)
-        cy.wait(1000)
-       build.baddressElement().type(' {downArrow}{enter}')
+        build.baddressElement().type(tdata.buildings.address,{force:true})
+        cy.wait(2000)
+       build.baddressElement().type(' {downArrow}{enter}',{force:true})
     }
     clickOnCheckbox(){
         cy.wait(3000)
@@ -63,6 +63,7 @@ export class BuildingsActions {
       //  cy.get('[data-testid="CloseIcon"]').click({force})
     }
     verifyNewBuilding(){
+        cy.wait(3000)
       dash.messageElement().should('contain',tdata.buildings.addmsg)
     }
     clickOnEditIcon() {
@@ -78,11 +79,11 @@ export class BuildingsActions {
         build.editextensionElement().clear({ force: true },{timeout:3000}).should('have.value', '',{timeout:6000}).type(tdata.editbuildings.extension)
     }
     editselectDefaultBuilding() {
-        build.editdefaultbuildingElement().click()
-        cy.get(tdata.editbuildings.defaultbuilding).click()
+        build.editdefaultbuildingElement().click({force:true})
+        cy.get(tdata.editbuildings.defaultbuilding).click({force:true})
     }
     edituploadBuildingImage() {
-        build.editbuildingimgElement().selectFile('cypress/fixtures/' + tdata.editbuildings.buildingimg)
+        build.editbuildingimgElement().selectFile('cypress/fixtures/' + tdata.editbuildings.buildingimg,{force:true})
     }
     clickOnUpdateButton() {
         build.updatebtnElement().click({ force: true })   
@@ -97,17 +98,16 @@ export class BuildingsActions {
         build.confirmdeleteElement().contains('Delete').click({ force: true })
     }
     enterInSearchBox() {
-        build.searchElement().type(tdata.buildings.buildingname + '{enter}')
+        build.searchElement().type(tdata.buildings.buildingname + '{enter}',{force:true})
     }
     verifySearchResult() {
-        cy.wait(3000)
         cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.buildings.buildingname)
     }
     clickOnMoreFiltersButton() {
-        build.morefiltersbtnElement().click()
+        build.morefiltersbtnElement().click({force:true})
     }
     clickOnAddFilterGroup() {
-        build.addfilterElement().click()
+        build.addfilterElement().click({force:true})
     }
     selectFieldName() {
         build.fieldnameElement().select('building_name')
@@ -116,16 +116,15 @@ export class BuildingsActions {
         build.fieldoperationElement().select("does_not_contain")
     }
     enterFieldValueSearchBox() {
-        build.fieldvalueElement().type('.a')
+        build.fieldvalueElement().type('.a',{force:true})
     }
     clickOnApplyButton() {
-        build.applybtnElement().click()
+        build.applybtnElement().click({force:true})
     }
     clickOnClearFiltersButton() {
-        build.clearfilterbtnElement().click()
+        build.clearfilterbtnElement().click({force:true})
     }
     verifyResultAfterFilter() {
-        cy.wait(2000)
         cy.get('tbody tr td').should('not.contain', ".a")
     }
     clickOnDetailsButton() {

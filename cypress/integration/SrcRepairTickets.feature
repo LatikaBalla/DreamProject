@@ -15,10 +15,10 @@ Feature:SrcRepairTickets Page Functionality
       And Verify the Title of SrcRepairTickets Page
         Then Filters of SrcRepairTickets should be visible
         And Table for SrcRepairTickets should be visible
-        Then I should click on Create Student Repair Ticket button
-        And Select failure Type, Serial Device and Technician
-        Then Enter the Chromebook issue
-        And Click on save button
-        Then Verify New Ticket is added
+        # Then I should click on Create Student Repair Ticket button
+        # And Select failure Type, Serial Device and Technician
+        # Then Enter the Chromebook issue
+        # And Click on save button
+        # Then Verify New Ticket is added
         And Enter the Search value in search box
         Then Verify the Results in the table

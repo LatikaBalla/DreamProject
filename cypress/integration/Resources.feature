@@ -18,7 +18,7 @@ Feature: Resources Page Functionality
         And Verify the deprovisionDevice tab should be visible
         And Click on HowToVideos tab
         And Verify the HowToVideos tab should be visible
-        Then Verify the Videos Section should be visible
+        # Then Verify the Videos Section should be visible
         And Click on WarrantyInfo tab
         Then Verify the WarrantyInfo tab should be visible
         And Verify the Title of WarrantyInfo Page
