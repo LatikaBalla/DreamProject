@@ -5,22 +5,22 @@ const DashboardElements = require("../PageElements/DashboardElements.js")
 export class ResourcesActions {
     constructor() {
         globalThis.dash = new DashboardElements();
-        globalThis.repc = new ResourcesElements();
+        globalThis.res = new ResourcesElements();
     }
     closeTermsOfServiceWindow() {
         dash.termsElement().click({ force: true })
     }
     verifyTitleResources() {
-        repc.titleElement()
+        res.titleElement()
     }
     instructionsTabVisible() {
-        repc.instructionsElement().should('be.visible')
+        res.instructionsElement().should('be.visible')
     }
     howToVideosTabVisible() {
-        repc.howToVideosElement().should('be.visible')
+        res.howToVideosElement().should('be.visible')
     }
     warrantyInfoTabVisible() {
-        repc.warrantyInfoElement().should('be.visible')
+        res.warrantyInfoElement().should('be.visible')
     }
     clickOnResources() {
        // dash.arrowElement().click({ force: true })

@@ -11,6 +11,9 @@ export class DashboardActions {
     myAccountDetailsTabVisible() {
         dash.accountDetailsElement().should('be.visible')
     }
+    clickOnMyAccountTab() {
+        dash.accountDetailsElement().click({ force: true })
+    }
     buildingTabVisible() {
         dash.buildingsElement().should('be.visible')
     }

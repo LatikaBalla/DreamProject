@@ -77,6 +77,11 @@ export default class AccountDetailsElements {
             timeout: 30000,
         });
     }
+    buildingElement(){
+        return cy.get(locator.newaccount.building, {
+            timeout: 30000,
+        }); 
+    }
     editTitleElement() {
         return cy.get(locator.edit.title, {
             timeout: 30000,

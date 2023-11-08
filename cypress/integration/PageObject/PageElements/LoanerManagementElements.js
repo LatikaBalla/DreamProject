@@ -48,27 +48,37 @@ export default class LoanerManagementElements {
         })
     }
     addloanerPoolElement() {
-        return cy.get(locator.loanerManagement.addloanerPool, {
+        return cy.contains(locator.loanerManagement.addloanerPool, {
             timeout: 30000,
         })
     }
     removeloanerPoolElement() {
-        return cy.get(locator.loanerManagement.removeloanerPool, {
+        return cy.contains(locator.loanerManagement.removeloanerPool, {
             timeout: 30000,
         })
     }
     checkoutbtnElement() {
-        return cy.get(locator.loanerManagement.checkoutbtn, {
+        return cy.contains(locator.loanerManagement.checkoutbtn, {
             timeout: 30000,
         })
     }
     checkinbtnElement() {
-        return cy.get(locator.loanerManagement.checkinbtn, {
+        return cy.contains(locator.loanerManagement.checkinbtn, {
             timeout: 30000,
         })
     }
     studentNameElement() {
         return cy.get(locator.loanerManagement.studentName, {
+            timeout: 30000,
+        })
+    }
+    studentElement() {
+        return cy.get(locator.loanerManagement.student, {
+            timeout: 30000,
+        })
+    }
+    buildingElement() {
+        return cy.get(locator.loanerManagement.building, {
             timeout: 30000,
         })
     }
@@ -87,5 +97,20 @@ export default class LoanerManagementElements {
         return cy.get(locator.loanerManagement.studentStatus, {
             timeout: 30000,
         })
+    }
+    searchElement(){
+        return cy.get(locator.loanerManagement.search, {
+            timeout: 30000,
+        })
+    }
+    submitbtnElement(){
+        return cy.get(locator.loanerManagement.submitbtn, {
+            timeout: 30000,
+        }) 
+    }
+    notesElement(){
+        return cy.get(locator.loanerManagement.notes, {
+            timeout: 30000,
+        }) 
     }
 }

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2237000000
+              "duration": 5103000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9664000000
+              "duration": 9615000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8072000000
+              "duration": 8080000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on My profile page",
             "result": {
               "status": "passed",
-              "duration": 1135000000
+              "duration": 1142000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of My Profile Page",
             "result": {
               "status": "passed",
-              "duration": 483000000
+              "duration": 715000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "User and User photo of MyProfile should be visible",
             "result": {
               "status": "passed",
-              "duration": 419000000
+              "duration": 420000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Profile and Account deatils section of MyProfile should be visible",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 13000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Click on upload image icon",
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 24000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Enter tilte and phone no",
             "result": {
               "status": "passed",
-              "duration": 643000000
+              "duration": 719000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Eelect Email preference",
             "result": {
               "status": "passed",
-              "duration": 121000000
+              "duration": 129000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "click on update button",
             "result": {
               "status": "passed",
-              "duration": 61000000
+              "duration": 64000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Verify the updated successfully",
             "result": {
               "status": "passed",
-              "duration": 393000000
+              "duration": 389000000
             }
           }
         ]

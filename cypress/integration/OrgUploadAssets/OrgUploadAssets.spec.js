@@ -67,8 +67,6 @@ And('Click on Edit button', () => {
     oua.clickOnEditIcon()
 })
 Then('I should edit title, full name location and tag', () => {
-   // oua.editTitle()
-   // oua.editFullname()
     oua.editLocation()
     oua.editTag()
 })

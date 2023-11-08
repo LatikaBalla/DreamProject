@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1824000000
+              "duration": 4277000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8394000000
+              "duration": 13697000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9068000000
+              "duration": 9080000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 79000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on StudentRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 879000000
+              "duration": 942000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of StudentRepairCenter Page",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 16000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the SRCrepairTickets Tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 14000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Verify the SRCfacilitators tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 11000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Verify the Students Tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 16000000
             }
           }
         ]

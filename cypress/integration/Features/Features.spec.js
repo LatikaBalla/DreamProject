@@ -17,6 +17,7 @@ Then('Close the terms of service window', () => {
 })
 And ('Click on features page',()=>{
     cy.wait(1000)
+    cy.contains('demo_adminsuper@vivacitytech.com').click({force:true})
     ft.clickOnFeatures()
 })
 Then('I should be redirected to the Features page', () => {

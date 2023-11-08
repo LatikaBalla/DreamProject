@@ -1,2 +1,3 @@
 record_id,device_status,serial_number,building,deviceid,import_number,studentid,base_warranty_description,base_warranty_sku,base_warranty_start_date,base_warranty_end_date,advanced_warranty_description,advanced_warranty_sku,advanced_warranty_start_date,advanced_warranty_end_date,asset_tag,student,loaner_status,created_date,last_modified_by,created_by,account,device
-591974,Active,VIVATEST54Test,,9355,,,This is warranty description edited,aabbb,,,,,,,,,Not In Loaner Pool,,,,1,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch - New
+591969,Active,VIVATEST49Test,,9355,,,One-Year Manufacturer Limited Warranty,1YRLTDWAR,,,,,,,,,Not In Loaner Pool,,,,1,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch - New
+592005,Active,VIVATEST85Test,,9355,,,One-Year Manufacturer Limited Warranty,1YRLTDWAR,,,,,,,,,Not In Loaner Pool,,,,1,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch - New

@@ -5,7 +5,7 @@ const tdata = require("../../../testData.json");
 
 export class AccountDetailsActions {
     constructor() {
-        globalThis.acc= new AccountDetailsElements();
+        globalThis.acc = new AccountDetailsElements();
         globalThis.dash1 = new DashboardElements()
     }
     closeTermsOfServiceWindow() {
@@ -21,7 +21,7 @@ export class AccountDetailsActions {
         acc.accountnameElement().should('be.visible')
         acc.accountnoElement().should('be.visible')
         acc.accountcreditElement().should('be.visible')
-       acc.billingaddressElement().should('be.visible')
+        acc.billingaddressElement().should('be.visible')
         acc.shippingaddressElement().should('be.visible')
         acc.accountmanagerElement().should('be.visible')
     }
@@ -57,6 +57,10 @@ export class AccountDetailsActions {
         acc.userroleElement().click({ force: true })
         cy.get(tdata.newaccount.userrole).click({ force: true })
     }
+    selectBuilding() {
+        acc.buildingElement().click({ force: true })
+        cy.get('[role="listbox"]').eq(1).find('li').contains(tdata.buildings.buildingname).click({ force: true })
+    }
     clickOnASaveButton() {
         acc.savebtnElement().should('contain', "Save").click({ force: true })
     }
@@ -64,9 +68,8 @@ export class AccountDetailsActions {
         acc.newContactTitleElement().should('be.visible')
     }
     verifyRecordTable() {
-        cy.reload()
-        cy.wait(8000)
-        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.newaccount.email)
+        cy.wait(3000)
+        dash1.messageElement().should('contain', tdata.newaccount.addmsg)
     }
     clickOnEditIcon() {
         acc.editIconElement().eq(0).click()
@@ -105,19 +108,19 @@ export class AccountDetailsActions {
     }
     verifyRecordDeleted() {
         cy.wait(2000)
-        dash1.messageElement().should('contain',tdata.delete.deletemsg)
+        dash1.messageElement().should('contain', tdata.delete.deletemsg)
     }
     enterSearchValue() {
-        acc.searchElement().type(tdata.search.fullname,{force:true})
+        acc.searchElement().type(tdata.search.fullname, { force: true })
     }
     verifySearchResult() {
         cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.search.fullname)
     }
     clickOnMoreFiltersButton() {
-        acc.morefiltersbtnElement().click({force:true})
+        acc.morefiltersbtnElement().click({ force: true })
     }
     clickOnAddFilterGroup() {
-        acc.addfilterGroupElement().click({force:true})
+        acc.addfilterGroupElement().click({ force: true })
     }
     selectFieldName() {
         acc.fieldnameElement().select('email')
@@ -129,10 +132,10 @@ export class AccountDetailsActions {
         acc.fieldvalueElement().type('@gmail.com')
     }
     clickOnApplyButton() {
-        acc.applybtnElement().click({force:true})
+        acc.applybtnElement().click({ force: true })
     }
     clickOnClearFiltersButton() {
-        acc.clearfilterbtnElement().click({force:true})
+        acc.clearfilterbtnElement().click({ force: true })
     }
     verifyResultAfterFilter() {
         cy.wait(2000)

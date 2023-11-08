@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1665000000
+              "duration": 4189000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9235000000
+              "duration": 9615000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9069000000
+              "duration": 9077000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 75000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on RepairBoxes Tab",
             "result": {
               "status": "passed",
-              "duration": 559000000
+              "duration": 1207000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of RepairBoxes Page",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 25000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Outbound and Inbound Shipments for RepairBoxes should be visible",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 11000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "I should click on create new Box",
             "result": {
               "status": "passed",
-              "duration": 61000000
+              "duration": 100000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Enter weight, height, depth and width",
             "result": {
               "status": "passed",
-              "duration": 761000000
+              "duration": 874000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Select Pick-up site",
             "result": {
               "status": "passed",
-              "duration": 244000000
+              "duration": 245000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Check the need shipping box",
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 159000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on Create box button",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 110000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Select Ticket from dropdownlist",
             "result": {
               "status": "passed",
-              "duration": 361000000
+              "duration": 330000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on Finish button",
             "result": {
               "status": "passed",
-              "duration": 69000000
+              "duration": 119000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Verify new box is added in table",
             "result": {
               "status": "passed",
-              "duration": 2484000000
+              "duration": 1377000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on download label",
             "result": {
               "status": "passed",
-              "duration": 104000000
+              "duration": 113000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click on view button",
             "result": {
               "status": "passed",
-              "duration": 1044000000
+              "duration": 125000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Verify the Details new box",
             "result": {
               "status": "passed",
-              "duration": 1237000000
+              "duration": 3000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Add another ticket in the same box",
             "result": {
               "status": "passed",
-              "duration": 65000000
+              "duration": 1243000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Select Ticket from dropdownlist",
             "result": {
               "status": "passed",
-              "duration": 194000000
+              "duration": 204000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on Add ticket",
             "result": {
               "status": "passed",
-              "duration": 66000000
+              "duration": 72000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Verify the ticket is added in table",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 9000000
             }
           }
         ]

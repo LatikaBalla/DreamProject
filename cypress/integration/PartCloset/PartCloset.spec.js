@@ -31,7 +31,6 @@ Then('Filters of PartCloset should be visible', () => {
 And('Table for PartCloset should be visible', () => {
     pc.tableVisible()
 })
-
 Then ('I should click on Add New custome part',()=>{
 pc.clickOnNewCustomePart()
 })
@@ -43,6 +42,7 @@ pc.enterParentDevice()
 And ('Enter part sku and quantity',()=>{
 pc.enterPartSKU()
 pc.enterQuantity()
+pc.selectBuilding()
 })
 Then ('Click on submit button',()=>{
 pc.clickOnSubmitButton()

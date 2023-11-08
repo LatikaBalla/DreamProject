@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1733000000
+              "duration": 3569000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8055000000
+              "duration": 12633000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9068000000
+              "duration": 9086000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Users page",
             "result": {
               "status": "passed",
-              "duration": 72000000
+              "duration": 77000000
             }
           },
           {
@@ -63,277 +63,187 @@
             "name": "I should be redirected to the Users page",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 8000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
-            "name": "All Organizational unit should be visible",
+            "name": "Filters of Users unit should be visible",
             "result": {
               "status": "passed",
-              "duration": 936000000
+              "duration": 1335000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 15,
-            "name": "All Users Unit should be visible",
+            "name": "Table for Users unit should be visible",
             "result": {
               "status": "passed",
-              "duration": 473000000
+              "duration": 24000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 16,
-            "name": "Filters of Users unit should be visible",
-            "result": {
-              "status": "passed",
-              "duration": 9000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "Table for Users unit should be visible",
-            "result": {
-              "status": "passed",
-              "duration": 7000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
             "name": "I should click on Add New student",
             "result": {
               "status": "passed",
-              "duration": 99000000
+              "duration": 156000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
+            "line": 17,
             "name": "Enter full name, title and Email",
             "result": {
               "status": "passed",
-              "duration": 1443000000
+              "duration": 2688000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 20,
+            "line": 18,
             "name": "Enter Phone and Cell Number",
             "result": {
               "status": "passed",
-              "duration": 645000000
+              "duration": 726000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Click on submit button",
+            "result": {
+              "status": "passed",
+              "duration": 80000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Verify the student added in table",
+            "result": {
+              "status": "passed",
+              "duration": 409000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 21,
-            "name": "Click on submit button",
+            "name": "Enter the Search value in search box",
             "result": {
               "status": "passed",
-              "duration": 62000000
+              "duration": 3589000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 22,
-            "name": "Verify the student added in table",
+            "name": "Verify the Results in the table",
             "result": {
               "status": "passed",
-              "duration": 432000000
+              "duration": 43000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 23,
-            "name": "Enter the Search value in search box",
+            "name": "Click on Edit button",
             "result": {
               "status": "passed",
-              "duration": 2357000000
+              "duration": 229000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 24,
-            "name": "Verify the Results in the table",
+            "name": "I should edit title, full name",
             "result": {
               "status": "passed",
-              "duration": 26000000
+              "duration": 950000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 25,
-            "name": "Click on Edit button",
+            "name": "I should edit Phone and Cell Number and user role",
             "result": {
               "status": "passed",
-              "duration": 131000000
+              "duration": 1093000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 26,
-            "name": "I should edit title, full name",
+            "name": "I edit User Status to inactive",
             "result": {
               "status": "passed",
-              "duration": 754000000
+              "duration": 136000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 27,
-            "name": "I should edit Phone and Cell Number and user role",
+            "name": "I edit Building",
             "result": {
               "status": "passed",
-              "duration": 976000000
+              "duration": 198000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 28,
-            "name": "I edit User Status to inactive",
+            "name": "Click on Submit button",
             "result": {
               "status": "passed",
-              "duration": 186000000
+              "duration": 94000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 29,
-            "name": "I edit In-house Repaire to yes",
-            "result": {
-              "status": "passed",
-              "duration": 153000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 30,
-            "name": "Click on Submit button",
-            "result": {
-              "status": "passed",
-              "duration": 66000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
             "name": "Verify the Record has been updated Meassage",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 53000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 32,
+            "line": 30,
             "name": "Click on Delete button",
             "result": {
               "status": "passed",
-              "duration": 90000000
+              "duration": 181000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 33,
+            "line": 31,
             "name": "Click on Confirm Delete button",
             "result": {
               "status": "passed",
-              "duration": 88000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 34,
-            "name": "Verify the record is deleted successfully",
-            "result": {
-              "status": "passed",
-              "duration": 2013000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 35,
-            "name": "Click on Add Filter",
-            "result": {
-              "status": "passed",
-              "duration": 66000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 36,
-            "name": "Select Field name and Field operation",
-            "result": {
-              "status": "passed",
-              "duration": 303000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "Enter the Search value in search box of Filter",
-            "result": {
-              "status": "passed",
-              "duration": 360000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 38,
-            "name": "Click on Apply Button",
-            "result": {
-              "status": "passed",
-              "duration": 64000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 39,
-            "name": "Verify the Filter Results in the table",
-            "result": {
-              "status": "passed",
-              "duration": 2004000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 40,
-            "name": "Click on Download button",
-            "result": {
-              "status": "passed",
-              "duration": 73000000
+              "duration": 70000000
             }
           }
         ]

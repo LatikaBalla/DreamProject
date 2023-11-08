@@ -22,10 +22,15 @@ export class ReportCenterActions {
     deviceRepairReportTabVisible() {
         repc.devicerrElement().should('be.visible')
     }
+    nonwarrantyRepairsTabVisible(){
+        cy.get('[data-testid="ChevronLeftIcon"]').click({force:true})
+        repc.warrantyrElement().should('be.visible')
+    }
     clickOnReportCenter() {
        // dash.arrowElement().click({ force: true })
         dash.reportcenterElement().click({ force: true })
     }
+
 
 }
 

@@ -34,8 +34,9 @@ And('Enter Phone and Cell Number', () => {
     acc.enterPhone()
     acc.enterCellNumber()
 })
-Then('Select User Role from Dropdown List', () => {
+Then('Select User Role and Building from Dropdown List', () => {
     acc.selectUserRole()
+    acc.selectBuilding()
 })
 And('Click on save button', () => {
     acc.clickOnASaveButton()

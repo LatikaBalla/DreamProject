@@ -24,31 +24,46 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 import 'cypress-file-upload';
-Cypress.Commands.add("AdminLogin", () => {    
-  cy.get('[href="/login"]').click({force:true})
-        cy.origin('https://dream-vivacity.us.auth0.com/', () => {
-          Cypress.on("uncaught:exception", () => {
-            return false;
-          });
-          cy.get('#input-box-email').type(Cypress.env('USERNAME'))
-          cy.get('#input-box-password').type(Cypress.env('PASSWORD'))
-          cy.get('.submit-text').click()  
-          cy.wait(1000)
-        })
-      })
-      Cypress.Commands.add("VivacityAdminLogin", () => {    
-        cy.get('[href="/login"]').click({force:true})
-        cy.origin('https://dream-vivacity.us.auth0.com/', () => {
-          Cypress.on("uncaught:exception", () => {
-            return false;
-          });
-          cy.get('#input-box-email').type('demo_adminVivacity@vivacitytech.com')
-          cy.get('#input-box-password').type(Cypress.env('PASSWORD'))
-          cy.get('.submit-text').click()  
-          cy.wait(1000)
-        })
-      })
-    
-    
+Cypress.Commands.add("AdminLogin", () => {
+  cy.get('[href="/login"]').click({ force: true })
+  cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
+  //  cy.origin('https://dream-vivacity.us.auth0.com/', () => {
+    Cypress.on("uncaught:exception", () => {
+      return false;
+    });
+    cy.get('#input-box-email').type(Cypress.env('USERNAME'))
+    cy.get('#input-box-password').type(Cypress.env('PASSWORD'))
+    cy.get('.submit-text').click()
+    cy.wait(1000)
+  })
+})
+Cypress.Commands.add("VivacityAdminLogin", () => {
+  cy.get('[href="/login"]').click({ force: true })
+  // cy.origin('https://dream-vivacity.us.auth0.com/', () => {
+  cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
+    Cypress.on("uncaught:exception", () => {
+      return false;
+    });
+    cy.get('#input-box-email').type('demo_adminVivacity@vivacitytech.com')
+    cy.get('#input-box-password').type(Cypress.env('PASSWORD'))
+    cy.get('.submit-text').click()
+    cy.wait(1000)
+  })
+})
 
-    
+Cypress.Commands.add("RepaireTechLogin", () => {
+  cy.get('[href="/login"]').click({ force: true })
+  cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
+  //  cy.origin('https://dream-vivacity.us.auth0.com/', () => {
+    Cypress.on("uncaught:exception", () => {
+      return false;
+    });
+    cy.get('#input-box-email').type('demo_repairTech@vivacitytech.com')
+    cy.get('#input-box-password').type(Cypress.env('PASSWORD'))
+    cy.get('.submit-text').click()
+    cy.wait(1000)
+  })
+})
+
+
+

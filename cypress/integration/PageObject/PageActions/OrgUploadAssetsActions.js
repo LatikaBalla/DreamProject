@@ -81,7 +81,7 @@ export class OrgUploadAssetsActions {
         oua.tagElement().clear({ force: true }).should('have.value', '',{timeout:6000}).type(tdata.editasset.tag)
     }
     editType() {
-        oua.typeElement().clear({ force: true }).should('have.value', '',{timeout:6000}).type(tdata.editasset.type)
+        oua.typeElement().clear({ force: true }).type(tdata.editasset.type+' ')
     }
     editDescription() {
         oua.descriptionElement().clear({ force: true }).should('have.value', '',{timeout:6000}).type(tdata.editasset.description)
@@ -103,17 +103,17 @@ export class OrgUploadAssetsActions {
     }
     verifyRecordDeleted() {
         cy.wait(2000)
-        cy.get('tbody tr').eq(0).find('td').eq(0).should('not.contain', tdata.editasset.title)
+        cy.get('tbody tr').eq(0).find('td').eq(3).should('not.contain', tdata.editasset.location)
     }
     enterSearchValue() {
-        oua.searchboxElement().type(tdata.addasset.title)
+        oua.searchboxElement().type(tdata.addasset.location)
         cy.wait(3000)
     }
     clickOnASearchButton() {
         oua.searchbtnElement().click({force:true})
     }
     verifySearchResult() {
-        cy.get('tbody tr').eq(0).find('td').eq(1).should('contain', tdata.addasset.title)
+        cy.get('tbody tr').eq(0).find('td').eq(3).should('contain', tdata.addasset.location)
     }
 
 }

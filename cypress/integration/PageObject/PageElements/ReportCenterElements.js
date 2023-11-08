@@ -21,4 +21,10 @@ export default class ReportCenterElements {
             timeout: 30000,
         })
     }
+    warrantyrElement() {
+        return cy.get(locator.reportCenter.warrantyr, {
+            timeout: 30000,
+        })
+    }
+
 }

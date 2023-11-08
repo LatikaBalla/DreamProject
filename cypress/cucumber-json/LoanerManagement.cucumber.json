@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2960000000
+              "duration": 4159000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9407000000
+              "duration": 12181000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8065000000
+              "duration": 9071000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 83000000
+              "duration": 88000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on LoanerManagement Tab",
             "result": {
               "status": "passed",
-              "duration": 593000000
+              "duration": 1196000000
             }
           },
           {
@@ -73,53 +73,177 @@
             "name": "Table for LoanerManagement should be visible",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 15000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 15,
-            "name": "search the serial no in search box",
+            "name": "Search the serial no in search box of Available Devices section",
             "result": {
-              "status": "undefined",
-              "duration": 226000000
+              "status": "passed",
+              "duration": 3559000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 16,
-            "name": "Verirfy the search result",
+            "name": "Verify the search result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 28000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 17,
-            "name": "Click on the Add to lonar pool",
+            "name": "Click on the Add to loaner pool",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "Verify device is added in Available section",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 74000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
-            "name": "Search the serial in the Available",
+            "line": 18,
+            "name": "Search the serial no in the Available section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3506000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Click on th add Student button",
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Enter Fullname, title and email",
+            "result": {
+              "status": "passed",
+              "duration": 1061000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Select status, building and student_id",
+            "result": {
+              "status": "passed",
+              "duration": 421000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "Click on the submit button of form",
+            "result": {
+              "status": "passed",
+              "duration": 88000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "Verify the student added successfully",
+            "result": {
+              "status": "passed",
+              "duration": 2012000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Click on check out button",
+            "result": {
+              "status": "passed",
+              "duration": 2073000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Select the student name",
+            "result": {
+              "status": "passed",
+              "duration": 130000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "Click on the submit button",
+            "result": {
+              "status": "passed",
+              "duration": 69000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "Search the serial no in the check out section",
+            "result": {
+              "status": "passed",
+              "duration": 1473000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "Click on the Check in button",
+            "result": {
+              "status": "passed",
+              "duration": 73000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "Enter note and click on submit button",
+            "result": {
+              "status": "passed",
+              "duration": 416000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Verify the device is added in Available section",
+            "result": {
+              "status": "passed",
+              "duration": 3505000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "Click on remove from loaner pool button",
+            "result": {
+              "status": "passed",
+              "duration": 3674000000
             }
           }
         ]

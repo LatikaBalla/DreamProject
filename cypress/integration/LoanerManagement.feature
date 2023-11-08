@@ -12,10 +12,22 @@ Feature: LoanerManagement Page Functionality
 
     Scenario: Visiblity of LoanerManagement page
         And Table for LoanerManagement should be visible
-        Then search the serial no in search box 
-        And Verirfy the search result 
-        Then Click on the Add to lonar pool
-        And Verify device is added in Available section 
-        Then Search the serial in the Available 
+        Then Search the serial no in search box of Available Devices section
+        And Verify the search result
+        Then Click on the Add to loaner pool
+        Then Search the serial no in the Available section
+        And Click on th add Student button
+        Then Enter Fullname, title and email
+        And Select status, building and student_id
+        Then Click on the submit button of form
+        And Verify the student added successfully
+        Then Click on check out button
+        And Select the student name
+        Then Click on the submit button
+        And Search the serial no in the check out section
+        Then Click on the Check in button
+        And Enter note and click on submit button
+        Then Verify the device is added in Available section
+        And Click on remove from loaner pool button 
 
-        
+

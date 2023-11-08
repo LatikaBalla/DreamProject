@@ -11,7 +11,7 @@ export class SupportActions {
         dash.termsElement().click({ force: true })
     }
     clickOnSupport() {
-        cy.contains('demo_adminsuper@vivacitytech.com').click({force:true})
+      //  cy.contains('demo_adminsuper@vivacitytech.com').click({force:true})
         dash.supportElement().click({ force: true })
     }
     enterFullname() {

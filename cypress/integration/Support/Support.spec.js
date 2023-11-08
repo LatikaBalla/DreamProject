@@ -17,6 +17,7 @@ Then('Close the terms of service window', () => {
 })
 And('Click on Support page', () => {
     cy.wait(1000)
+    cy.contains('demo_adminsuper@vivacitytech.com').click({force:true})
     su.clickOnSupport()
 })
 Then('Verify the Title of Support Page', () => {

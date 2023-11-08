@@ -3,11 +3,15 @@ import { ReportCenterActions } from '../PageObject/PageActions/ReportCenterActio
 import { InHouseRepairReportActions } from '../PageObject/PageActions/InHouseRepairReportActions'
 import { DeviceRepairReportActions } from '../PageObject/PageActions/DeviceRepairReportActions'
 import { VivacityRepairReportActions } from '../PageObject/PageActions/VivacityRepairReportActions'
+import { NonWarrantyRepairsActions } from '../PageObject/PageActions/NonWarrantyRepairsActions'
+
 
 const viva = new VivacityRepairReportActions()
 const dev = new DeviceRepairReportActions()
 const inh = new InHouseRepairReportActions()
 const repc = new ReportCenterActions()
+const nwr=new NonWarrantyRepairsActions()
+
 Cypress.on("uncaught:exception", () => {
     return false;
 });
@@ -39,6 +43,9 @@ And('Verify the InHouseRepairReport tab should be visible', () => {
 })
 Then('Verify the DeviceRepairReport tab should be visible', () => {
     repc.deviceRepairReportTabVisible()
+})
+And('Verify the NonwarrantyRepairs tab should be visible',()=>{
+    repc.nonwarrantyRepairsTabVisible()
 })
 Then('Click on VivacityRepairReport page', () => {
     viva.clickOnVivacityRepairReport()
@@ -110,5 +117,19 @@ And('Verify downloaded ticket successfully', () => {
     dev.verifyDownloadSuccessful()
 })
 
+
+And ('Click on NonwarrantyRepairs page',()=>{
+nwr.clickOnNonWarrantyRepairs()
+})
+Then ('Verify title of NonWarrantyRepairs Page should be visible',()=>{
+nwr.verifyTitle()
+})
+And ('Verify the NonWarranty Form should be visible',()=>{
+nwr.formVisible()
+})
+Then ('Verify table and filter should be visible',()=>{
+nwr.filtersVisible()
+nwr.tableVisible()
+})
 
 

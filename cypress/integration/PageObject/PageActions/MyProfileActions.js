@@ -10,8 +10,7 @@ export class MyProfileActions {
     closeTermsOfServiceWindow() {
         dash.termsElement().click({ force: true })
     }
-    clickOnMyProfile() {
-        cy.contains('demo_adminsuper@vivacitytech.com').click({force:true})
+    clickOnMyProfile() {       
         dash.myprofileElement().click({ force: true })
     }
     accountDetailsVisible() {

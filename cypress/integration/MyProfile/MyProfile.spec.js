@@ -17,6 +17,7 @@ Then('Close the terms of service window', () => {
 })
 And('Click on My profile page', () => {
     cy.wait(1000)
+    cy.contains('demo_adminsuper@vivacitytech.com').click({force:true})
     mp.clickOnMyProfile()
 })
 Then('Verify the Title of My Profile Page', () => {

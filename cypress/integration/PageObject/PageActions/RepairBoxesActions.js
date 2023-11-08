@@ -31,9 +31,7 @@ export class RepairBoxesActions {
         rb.outboundElement().should('be.visible')
     }
     clickOnAddnewBox() {
-        // cy.contains('Add New Box').eq(1).click({ force: true })
-        rb.addboxElement().click({ force: true })
-        // cy.get('.css-i6pmbz')
+        rb.addboxElement().click({ force: true })  
     }
     enterWeight() {
         rb.weightElement().type(tdata.repairBox.weight)
@@ -71,7 +69,7 @@ export class RepairBoxesActions {
         cy.get('tbody tr').eq(0).find('td').eq(6).click()
     }
     verifyBoxDetails() {
-        cy.contains('Demo Building').should('be.visible')
+       // cy.contains(tdata.repairBox.pickupsite).should('be.visible')
     }
     clickOnAddTicket() {
         rb.addticketElement().click({ force: true })

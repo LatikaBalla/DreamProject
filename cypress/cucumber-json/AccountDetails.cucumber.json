@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3371000000
+              "duration": 2535000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8989000000
+              "duration": 8107000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8067000000
+              "duration": 8102000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "I should click on Add New button",
             "result": {
               "status": "passed",
-              "duration": 62000000
+              "duration": 99000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the tilte of Add New Contact page",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 53000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Enter title, full name and valid Email",
             "result": {
               "status": "passed",
-              "duration": 877000000
+              "duration": 1075000000
             }
           },
           {
@@ -83,17 +83,18 @@
             "name": "Enter Phone and Cell Number",
             "result": {
               "status": "passed",
-              "duration": 531000000
+              "duration": 600000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 16,
-            "name": "Select User Role from Dropdown List",
+            "name": "Select User Role and Building from Dropdown List",
             "result": {
-              "status": "passed",
-              "duration": 118000000
+              "status": "failed",
+              "duration": 4317000000,
+              "error_message": "CypressError: Timed out retrying after 4000ms: `cy.contains()` failed because it requires a DOM element or document.\n\nNo elements in the current DOM matched your query:\n\n  > cy.get([role=\"listbox\"]).eq(1).find(li)\n    at isElement (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:161645:70)\n    at validateType (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:161503:14)\n    at Object.isType (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:161534:7)\n    at Array.<anonymous> (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:151292:24)\n    at $Cy.getSubjectFromChain (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:161302:34)\n    at $Cy.subject (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:161256:17)\n    at Object.subjectFn (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:159491:28)\n    at $Cy.verifyUpcomingAssertions (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:140576:31)\n    at onRetry (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:159486:15)\nFrom previous event:\n    at whenStable (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:156356:65)\n    at <unknown> (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:155797:14)\nFrom Your Spec Code:\n    at AccountDetailsActions.selectBuilding (cypress/integration/PageObject/PageActions/AccountDetailsActions.js:62:52)\n    at Context.eval (cypress/integration/AccountDetails/AccountDetails.spec.js:39:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -102,8 +103,7 @@
             "line": 17,
             "name": "Click on save button",
             "result": {
-              "status": "passed",
-              "duration": 68000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +112,7 @@
             "line": 18,
             "name": "Verify the account details added in table",
             "result": {
-              "status": "passed",
-              "duration": 8992000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +121,7 @@
             "line": 19,
             "name": "Click on More filters",
             "result": {
-              "status": "passed",
-              "duration": 75000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +130,7 @@
             "line": 20,
             "name": "Select Field name and Field operation",
             "result": {
-              "status": "passed",
-              "duration": 319000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +139,7 @@
             "line": 21,
             "name": "Enter the Search value in search box",
             "result": {
-              "status": "passed",
-              "duration": 368000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +148,7 @@
             "line": 22,
             "name": "Click on Apply Button",
             "result": {
-              "status": "passed",
-              "duration": 63000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +157,7 @@
             "line": 23,
             "name": "Verify the Results in the table",
             "result": {
-              "status": "passed",
-              "duration": 2064000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +166,7 @@
             "line": 24,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 66000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +175,7 @@
             "line": 25,
             "name": "Enter the full name in search box",
             "result": {
-              "status": "passed",
-              "duration": 221000000
+              "status": "skipped"
             }
           },
           {
@@ -192,8 +184,7 @@
             "line": 26,
             "name": "Verify the record in searching history",
             "result": {
-              "status": "passed",
-              "duration": 1676000000
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +193,7 @@
             "line": 27,
             "name": "Click on Edit Icon",
             "result": {
-              "status": "passed",
-              "duration": 2120000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +202,7 @@
             "line": 28,
             "name": "I should edit title, full name",
             "result": {
-              "status": "passed",
-              "duration": 643000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +211,7 @@
             "line": 29,
             "name": "I should edit Phone and Cell Number and user role",
             "result": {
-              "status": "passed",
-              "duration": 973000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +220,7 @@
             "line": 30,
             "name": "I edit User Status to inactive",
             "result": {
-              "status": "passed",
-              "duration": 209000000
+              "status": "skipped"
             }
           },
           {
@@ -242,8 +229,7 @@
             "line": 31,
             "name": "Click on Submit button",
             "result": {
-              "status": "passed",
-              "duration": 70000000
+              "status": "skipped"
             }
           },
           {
@@ -252,8 +238,7 @@
             "line": 32,
             "name": "Verify the Record has been updated Meassage",
             "result": {
-              "status": "passed",
-              "duration": 33000000
+              "status": "skipped"
             }
           },
           {
@@ -262,8 +247,7 @@
             "line": 33,
             "name": "Click on Delete Icon",
             "result": {
-              "status": "passed",
-              "duration": 2076000000
+              "status": "skipped"
             }
           },
           {
@@ -272,8 +256,7 @@
             "line": 34,
             "name": "Click on Confirm Delete button",
             "result": {
-              "status": "passed",
-              "duration": 94000000
+              "status": "skipped"
             }
           },
           {
@@ -282,8 +265,7 @@
             "line": 35,
             "name": "Verify the record is deleted successfully",
             "result": {
-              "status": "passed",
-              "duration": 2013000000
+              "status": "skipped"
             }
           }
         ]

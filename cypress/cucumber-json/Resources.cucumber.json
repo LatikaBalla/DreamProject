@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3139000000
+              "duration": 5476000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7680000000
+              "duration": 10248000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9068000000
+              "duration": 9080000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Resources page",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 81000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I should be redirected to the Resources page",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 9000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of Resources Page",
             "result": {
               "status": "passed",
-              "duration": 383000000
+              "duration": 867000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Click on Instructions tab",
             "result": {
               "status": "passed",
-              "duration": 60000000
+              "duration": 68000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Verify the Instructions Tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 8000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Verify the provisionDevice Tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 9000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Verify the deprovisionDevice tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 9000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on HowToVideos tab",
             "result": {
               "status": "passed",
-              "duration": 66000000
+              "duration": 109000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Verify the HowToVideos tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 14000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on WarrantyInfo tab",
             "result": {
               "status": "passed",
-              "duration": 61000000
+              "duration": 98000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Verify the WarrantyInfo tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 19000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Verify the Title of WarrantyInfo Page",
             "result": {
               "status": "passed",
-              "duration": 48000000
+              "duration": 84000000
             }
           }
         ]

@@ -32,7 +32,7 @@ Then('Select Default building', () => {
 And('Enter Billing Address and select from dropdown', () => {
     build.enterBillingAddress()
 })
-Then ('Click on checkbox Same as Shipping Address',()=>{
+Then('Click on checkbox Same as Shipping Address', () => {
     build.clickOnCheckbox()
 })
 And('Click on save button', () => {

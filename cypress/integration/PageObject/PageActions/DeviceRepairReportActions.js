@@ -13,7 +13,6 @@ export class DeviceRepairReportActions {
         dash.termsElement().click({ force: true })
     }
     clickOnReportCenter() {
-       // dash.arrowElement().click({ force: true })
         dash.reportcenterElement().click({ force: true })
     }
     clickOnDeviceRepairReport() {
@@ -32,6 +31,7 @@ export class DeviceRepairReportActions {
         dev.searchElement().type(tdata.deviceRepairReport.ticketno,{force:true})
     }
     verifyTicketDetailsTable() {
+        cy.wait(1000)
         cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.deviceRepairReport.ticketno)
     }
     clickOnClearButton() {

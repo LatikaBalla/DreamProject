@@ -1,15 +1,16 @@
 {
   "newaccount": {
     "title": "Mr",
-    "fullname": "Demo Test",
+    "fullname": "Account_Test1",
     "email": "@gmail.com",
     "phone": "1231231231",
     "cellnumber": "1231234121",
-    "userrole": "[data-value='1']"
+    "userrole": "[data-value='1']",
+    "addmsg":"Contact form submitted successfully"
   },
   "edit": {
     "title": "Mrs",
-    "fullname": "Edit Test",
+    "fullname": "Account_Edit1",
     "email": "@gmail.com",
     "phone": "24234234",
     "cellnumber": "32387423",
@@ -18,23 +19,24 @@
     "updatemsg": "User has been updated"
   },
   "delete": {
-    "fullname": "Edit Test",
+    "fullname": "Account_Edit1",
     "deletemsg": "User has been deleted"
   },
   "search": {
-    "fullname": "Demo Test"
+    "fullname": "Account_Test1"
   },
   "buildings": {
-    "buildingname": "Demo Building1",
+    "buildingname": "Building_T1",
     "phone": "2734623428",
     "extension": "1",
     "defaultbuilding": "[data-value='true']",
     "address": "641 Fairview Avenue Northeast",
     "savebtn": "[type='submit']",
-    "addmsg": "Add New Building"
+    "addmsg": "Add New Building",
+    "deletemsg":"Record deleted successfully"
   },
   "editbuildings": {
-    "buildingname": "Edit Building",
+    "buildingname": "Building_E1",
     "phone": "2734633338",
     "extension": "11",
     "defaultbuilding": "[data-value='false']",
@@ -42,12 +44,12 @@
   },
   "detailsBuilding": {
     "details": "Details",
-    "buildingname": "Demo Building1",
+    "buildingname": "Building_T1",
     "active": "yes"
   },
   "deviceRepairReport": {
-    "ticketno": "VAL2023102715322545",
-    "filename": "VAL2023102715322545.pdf"
+    "ticketno": "VAL2023110212171589",
+    "filename": "VAL2023110212171589.pdf"
   },
   "myFleet": {
     "filename": "fleet_devices.csv",
@@ -76,7 +78,7 @@
     "location": "UK",
     "notes": "assest devices",
     "tag": "12",
-    "type": "3absjkba",
+    "type": "aaabbbccc",
     "description": "I want to edit description"
   },
   "importDevice": {
@@ -131,7 +133,7 @@
     "chromebookissue": "There is something fault",
     "technician": "[data-value='1266']",
     "createTicketmsg": "Add new ticket form submitted",
-    "ticketno": "VAL2023100608490067",
+    "ticketno": "VAL2023110523123891",
     "issue": "[data-value='Hinge']"
   },
   "srcStudent": {
@@ -177,6 +179,7 @@
     "editUserStatus": "[data-value='Inactive']",
     "editInhouseRepaire": "[data-value='true']",
     "updateStudentmsg": "User has been updated",
+    "deleteStudentmsg":"User has been deleted successfully",
     "filename": "users_list.csv"
   },
   "myprofile": {
@@ -249,5 +252,17 @@
     "subUpdatemsg": "Update Subcription submmited",
     "account":"#accounts-option-1",
     "addAccUsermsg": "Add new user form submitted"
+  },
+  "loanerManagement":
+  {
+    "serialno":"VIVATEST203Test1",
+    "studentname":"[data-value='41']",
+    "title": "Mr",
+    "fullname": "Demo Student",
+    "email": "@gmail.com",
+    "status": "[data-value='Active']",
+    "building":"[data-value='2438']",
+    "student_id":"[data-value='YS001']",
+    "stdcreatedmsg":"Add new Student form submitted"
   }
 }

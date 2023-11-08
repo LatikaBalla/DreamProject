@@ -7,7 +7,7 @@ import { InstructionsActions } from '../PageObject/PageActions/InstructionsActio
 const inst = new InstructionsActions()
 const war = new WarrantyInfoActions()
 const hto = new HowToVideosActions()
-const repc = new ResourcesActions()
+const res = new ResourcesActions()
 Cypress.on("uncaught:exception", () => {
     return false;
 });
@@ -19,20 +19,20 @@ When('I should Sign In into the application', () => {
 })
 Then('Close the terms of service window', () => {
     cy.wait(8000)
-    repc.closeTermsOfServiceWindow()
+    res.closeTermsOfServiceWindow()
     cy.wait(1000)
 })
 And('Click on Resources page', () => {
-    repc.clickOnResources()
+    res.clickOnResources()
 })
 Then('I should be redirected to the Resources page', () => {
     cy.url().should('include', '/resources')
 })
 And('Verify the Title of Resources Page', () => {
-    repc.verifyTitleResources()
+    res.verifyTitleResources()
 })
 Then('Verify the Instructions Tab should be visible', () => {
-    repc.instructionsTabVisible()
+    res.instructionsTabVisible()
 })
 Then('Click on Instructions tab', () => {
     inst.clickOnInstructions()
@@ -44,7 +44,7 @@ And('Verify the deprovisionDevice tab should be visible', () => {
     inst.deprovisionDeviceTabVisible()
 })
 And('Verify the HowToVideos tab should be visible', () => {
-    repc.howToVideosTabVisible()
+    res.howToVideosTabVisible()
 })
 Then('Click on HowToVideos tab', () => {
     hto.clickOnHowToVideos()
@@ -53,7 +53,7 @@ Then('Verify the Videos Section should be visible', () => {
     hto.videosVisible()
 })
 Then('Verify the WarrantyInfo tab should be visible', () => {
-    repc.warrantyInfoTabVisible()
+    res.warrantyInfoTabVisible()
 })
 Then('Click on WarrantyInfo tab', () => {
     war.clickOnInWarrantyInfo()

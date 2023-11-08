@@ -22,12 +22,6 @@ And('Click on Users page', () => {
 Then('I should be redirected to the Users page', () => {
     cy.url().should('include', '/users')
 })
-Then('All Organizational unit should be visible', () => {
-    user.AllOrganizationalUnitVisible()
-})
-And('All Users Unit should be visible', () => {
-    user.AllUserUnitVisible()
-})
 Then('Filters of Users unit should be visible', () => {
     user.filtersVisible()
 })
@@ -73,8 +67,8 @@ And('I should edit Phone and Cell Number and user role', () => {
 Then('I edit User Status to inactive', () => {
     user.editUserStatus()
 })
-And('I edit In-house Repaire to yes', () => {
-    user.editInhouseRepaire()
+And('I edit Building', () => {
+    user.editBuilding()
 })
 Then('Click on Submit button', () => {
     user.clickSubmitForUpdate()

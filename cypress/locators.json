@@ -56,7 +56,8 @@
         "phone": "#phone",
         "cellnumber": "#cell_number",
         "userrole": "#user_role",
-        "savebtn": "[type='submit']"
+        "savebtn": "[type='submit']",
+        "building":"#building"
     },
     "edit": {
         "title": "#title",
@@ -111,8 +112,6 @@
         "downloadbtn": "Download",
         "clearfilterbtn": "Clear Filter",
         "table": ".css-1owb465",
-        "organizationalunit": ".css-g8bg30",
-        "allusersunit": ".css-bjb4er",
         "filters": ".css-272gp",
         "deletebtn": "Delete",
         "conDeletebtn": "Delete",
@@ -126,6 +125,7 @@
         "userrole": "#mui-component-select-name",
         "userstatus": "#mui-component-select-role",
         "inhouserepaire": "#mui-component-select-in_house_repair",
+        "building":"#mui-component-select-building",
         "editsubmit": "[data-testid='btnNewDataSubmit']",
         "fieldname": "[name='field']",
         "fieldvalue": "[name='value']",
@@ -137,7 +137,8 @@
         "title": "Report Center",
         "vivacityrr": "[data-testid='tabrep-1']",
         "inhouserr": "[data-testid='tabrep-2']",
-        "devicerr": "[data-testid='tabrep-3']"
+        "devicerr": "[data-testid='tabrep-3']",
+        "warrantyr": "[data-testid='tabrep-4']"
     },
     "deviceRepairReport": {
         "title": "Device Repair History",
@@ -165,6 +166,19 @@
         "section3": "Tickets Approved",
         "section4": "Tickets Created",
         "ticketdata": "Ticket Data By Dates"
+    },
+    "nonWarrantyRepairs":{
+        "title": "Non-Warranty Repairs",
+        "filters": ".css-rpbpc1",
+        "search": "[placeholder='Search Ticket Number']",
+        "table": ".css-1owb465",
+        "form":"form[class='MuiBox-root css-0']",
+        "failureType":"#failure_type",
+        "site":"#outbound_address",
+        "building":"#outbound_address",
+        "serialdevice":"#serial_device",
+        "issue":"#repair_issue",
+        "describe":"#chromebook_issue"
     },
     "manageDevices": {
         "title": "Devices",
@@ -212,9 +226,9 @@
     },
     "orgUploadAssets": {
         "title": "Organization Uploaded Assets",
-        "filters": ".css-1vfjcsy",
+        "filters": ".css-18groci",
         "table": ".css-1owb465",
-        "searchbox": "[placeholder='Search by table field values']",
+        "searchbox": "[placeholder='Search']",
         "searchbtn": "Search",
         "addasset": "Add Asset",
         "edit": "EDIT",
@@ -245,10 +259,15 @@
         "removeloanerPool": "Remove from Loaner Pool",
         "checkoutbtn": "Check Out",
         "checkinbtn": "Check In",
+        "submitbtn":"[type='submit']",
+
+        "student":"#student_id",
         "studentName": "#name",
         "studentTitle": "#title",
         "studentEmail": "#email",
-        "studentStatus": "#status"
+        "studentStatus": "#status",
+        "building":"#buildings",
+        "notes":"[placeholder='Notes']"
     },
     "repair360": {
         "title": "Repair 360",
@@ -284,7 +303,7 @@
         "inbound": "Inbound Shipments",
         "outbound": "Outbound Shipments",
         "seachbox": "[placeholder='Search']",
-        "addbox": ".css-i6pmbz",
+        "addbox": "[data-testid='AddIcon']",
         "weight": "#weight",
         "height": "#height",
         "depth": "#depth",

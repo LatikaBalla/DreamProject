@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2363000000
+              "duration": 3954000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8641000000
+              "duration": 12916000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9124000000
+              "duration": 9072000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 97000000
+              "duration": 80000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on OrgUploadAssets Tab",
             "result": {
               "status": "passed",
-              "duration": 981000000
+              "duration": 995000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of OrgUploadAssets Page",
             "result": {
               "status": "passed",
-              "duration": 26000000
+              "duration": 38000000
             }
           },
           {
@@ -82,9 +82,8 @@
             "line": 15,
             "name": "Filters of OrgUploadAssets should be visible",
             "result": {
-              "status": "failed",
-              "duration": 30395000000,
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.css-1vfjcsy`, but never found it.\n    at OrgUploadAssetsActions.filtersVisible (cypress/integration/PageObject/PageActions/OrgUploadAssetsActions.js:26:29)\n    at Context.eval (cypress/integration/OrgUploadAssets/OrgUploadAssets.spec.js:29:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 15000000
             }
           },
           {
@@ -93,7 +92,8 @@
             "line": 16,
             "name": "Table for OrgUploadAssets should be visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 10000000
             }
           },
           {
@@ -102,7 +102,8 @@
             "line": 17,
             "name": "I should click on Add Asset",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 86000000
             }
           },
           {
@@ -111,7 +112,8 @@
             "line": 18,
             "name": "Enter title, full name location and tag",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 478000000
             }
           },
           {
@@ -120,7 +122,8 @@
             "line": 19,
             "name": "Enter note, Type and description",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1211000000
             }
           },
           {
@@ -129,7 +132,8 @@
             "line": 20,
             "name": "Upload the image file",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 19000000
             }
           },
           {
@@ -138,7 +142,8 @@
             "line": 21,
             "name": "Click on save button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 69000000
             }
           },
           {
@@ -147,7 +152,8 @@
             "line": 22,
             "name": "Verify the asset details added in table",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 686000000
             }
           },
           {
@@ -156,97 +162,108 @@
             "line": 23,
             "name": "Enter the title in search box",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "Click on Search button",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3232000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 26,
+            "line": 24,
+            "name": "Verify the record in searching history",
+            "result": {
+              "status": "passed",
+              "duration": 58000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
             "name": "Click on Edit button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 141000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 27,
+            "line": 26,
             "name": "I should edit title, full name location and tag",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 491000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 28,
+            "line": 27,
             "name": "I should edit note, Type and description",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1523000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "ReUpload the image file",
+            "result": {
+              "status": "passed",
+              "duration": 23000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 29,
-            "name": "ReUpload the image file",
+            "name": "Click on save button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 72000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 30,
-            "name": "Click on save button",
+            "name": "Verify the Record has been updated Meassage",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 882000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 31,
-            "name": "Verify the Record has been updated Meassage",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 32,
             "name": "Click on Delete button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 100000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 33,
+            "line": 32,
             "name": "Click on Confirm Delete button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 78000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 34,
+            "line": 33,
             "name": "Verify the record is deleted successfully",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2025000000
             }
           }
         ]

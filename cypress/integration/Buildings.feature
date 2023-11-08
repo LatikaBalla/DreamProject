@@ -14,7 +14,7 @@ Feature: Building Page Functionality
         Then I should click on + Add New button
         And I should Enter Building Name,Phone and Extension
         Then Select Default building
-        And Enter Billing Address and select from dropdown 
+        And Enter Billing Address and select from dropdown
         Then Click on checkbox Same as Shipping Address
         And Click on save button
         Then Verify the builing details added in table
@@ -24,19 +24,19 @@ Feature: Building Page Functionality
         Then Click on Apply Button
         And Verify the Results in the table
         Then Click on Clear filter
-        # And Enter the building name in search box
-        # And Verify the record in searching history
-        And Click on view Details Button 
-        Then Verfiy the Details are correct 
+        And Enter the building name in search box
+        And Verify the record in searching history
+        And Click on view Details Button
+        Then Verfiy the Details are correct
         And Click on Edit Icon
         And I should edit Building Name,Phone and Extension
-        Then I should edit Select Default building    
+        Then I should edit Select Default building
         Then Click on update button
         And Verify the Record has been updated Meassage
         And Click on Delete Icon
         Then Click on Confirm Delete button
         And Verify the record is deleted successfully
-  
+
 
 
 

@@ -14,20 +14,20 @@ Feature: PartCloset Page Functionality
         And Verify the Title of PartCloset Page
         Then Filters of PartCloset should be visible
         And Table for PartCloset should be visible
+        And I should click on Add New VT part
+        Then Select device and part name
+        And Enter quantity and select building
+        Then Click on submit button
+        And Verify new VT part is added
         Then I should click on Add New custome part
         Then Enter part name, manufacture and parent device
         And Enter part sku and quantity
         Then Click on submit button
         And Verify new custome part is added
         And Enter the Search value in search box
-        Then  Verify the Results in the table
+        Then Verify the Results in the table
         And Click on delete button
         Then Verify the recode is deleted
-        And I should click on Add New VT part
-        Then Select device and part name
-        And Enter quantity and select building
-        Then Click on submit button
-#  And Verify new VT part is added
 
 
 

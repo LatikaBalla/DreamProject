@@ -16,12 +16,6 @@ export class UsersActions {
        // dash.arrowElement().click({ force: true })
         dash.usersElement().click({ force: true })
     }
-    AllOrganizationalUnitVisible() {
-        user.organizationalunitElement().should('be.visible')
-    }
-    AllUserUnitVisible() {
-        user.allusersunitElement().should('be.visible')
-    }
     filtersVisible() {
         user.filtersElement().should('be.visible')
     }
@@ -55,13 +49,13 @@ export class UsersActions {
     }
     enterSearchValue(){
         cy.wait(2000)
-        user.searchElement().type(tdata.users.email+'{enter}')
+        user.searchElement().type(tdata.users.fullname+'{enter}')
     }
     verifySearchResult(){
-        cy.get('tbody tr').eq(0).find('td').eq(1).should('contain',tdata.users.email)
+        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain',tdata.users.fullname)
     }
     clickOnEditButton() {
-        cy.get('tbody tr').eq(0).find('td').eq(6).contains('Edit').click()
+        cy.get('tbody tr').eq(0).find('td').eq(7).contains('Edit').click()
     }
     editTitle() {
         user.titleElement().clear().type(tdata.users.editTitle)
@@ -77,15 +71,19 @@ export class UsersActions {
     }
     editUserRole() {
         user.userroleElement().click({ force: true })
-        cy.get(tdata.users.editUserRole).click()
+        cy.get(tdata.users.editUserRole).click({force:true})
     }
     editInhouseRepaire() {
         user.inhouserepaireElement().click({ force: true })
-        cy.get(tdata.users.editInhouseRepaire).click()
+        cy.get(tdata.users.editInhouseRepaire).click({force:true})
     }
     editUserStatus() {
         user.userstatusElement().click({ force: true })
-        cy.get(tdata.users.editUserStatus).click()
+        cy.get(tdata.users.editUserStatus).click({force:true})
+    }
+    editBuilding(){
+       user.buildingElement().click({force:true})
+       cy.get('[role="listbox"]').find('[role="option"]').eq(0).click({force:true}) 
     }
     clickSubmitForUpdate() {
         user.editsubmitElement().eq(0).click({ force: true })
@@ -95,14 +93,15 @@ export class UsersActions {
        // dash.messageElement().should('contain', tdata.users.updateStudentmsg)
     }
     clickDeleteButton() {
-        user.deletebtnElement().eq(0).click({ force: true })
+        cy.get('tbody tr').eq(0).find('td').eq(8).contains('Delete').click()
+      
     }
     clickConfirmDeleteButton() {
-        user.conDeletebtnElement().contains('Delete').click({ force: true })
+        cy.get('.MuiBox-root > .MuiButton-outlinedError').click({ force: true })
     }
     verifyRecordDeleted() {
-        cy.wait(2000)
-       // cy.get('tbody tr').eq(0).find('td').eq(0).should('not.contain', tdata.delete.fullname)
+       cy.wait(100)
+        dash.messageElement().should('contain', tdata.users.deleteStudentmsg)
     }
     clickOnAddFilterButton() {
         user.addfilterbtnElement().click({force:true})
