@@ -51,6 +51,9 @@ And('All Users unit should be visible', () => {
 Then ('Repair Ticket Creation unit should be visible',()=>{
     vadmin.RepairTicketCreation()
 })
+And ('Employee management unit should be visible',()=>{
+    vadmin.employeeManagment()
+})
 
 
 Then('Click on All Paid Subscription Requests unit', () => {
@@ -217,6 +220,10 @@ And('Select In house Repaire and Payment terms', () => {
     vadmin.selectIhRepaire()
     vadmin.selectPaymentTerms()
 })
+And ('Select account site and account manager',()=>{
+    vadmin.selectAccountSite()
+    vadmin.selectAccountManager()
+})
 Then('Click on submit button Account', () => {
     vadmin.clickOnSubmitButtonAcc()
 })
@@ -328,3 +335,49 @@ vadmin.clickOnRepair360btn()
 Then ('Verify the Repair Ticket page redirected',()=>{
     cy.url().should('include', '/repair-360')   
 })
+
+Then ('Click on Employee management unit',()=>{
+vadmin.clickOnEmployeeManagment()
+})
+Then ('I should click on Create new Employee',()=>{
+vadmin.clickOnCreateNewEmp()
+})
+Then ('Enter full name, title and Email for Employee',()=>{
+vadmin.enterFullnameEmp()
+vadmin.enterTitle()
+vadmin.enterEmailEmp()
+})
+And ('Enter Phone and select userStatus',()=>{
+vadmin.enterPhone()
+vadmin.selectUserStatus()
+})
+And ('Click on submit button',()=>{
+vadmin.clickOnSubmitButton()
+})
+Then ('Verify the Employee added in table',()=>{
+vadmin.verifyEmployeeAdded()
+cy.get('[data-testid="btnNewDataSubmit"]').eq(1).click({force:true})
+})
+ Then ('Select Email from Dropdownlist',()=>{
+vadmin.selectEmail()
+})
+And ('Enter the Search value in search box for employee',()=>{
+vadmin.enterSerachEmp()
+})
+Then ('Verify the Results in the table for employee',()=>{
+vadmin.verifyResultEmp()
+})
+And ('Click on Edit button new Employee',()=>{
+    vadmin.clickConEditEmp()
+})
+Then ('I should edit fullname and title for Employee',()=>{
+    vadmin.editTitle()
+    vadmin.editFullnameEmp()
+}) 
+And ('I should edit Phone and user status for Employee',()=>{
+    vadmin.editPhone()
+    vadmin.editUserStatusEmp()
+})
+Then ('Click on Submit button',()=>{})
+And ('Verify the Record has been updated Meassage',()=>{})
+Then ('Click on the Export Button ',()=>{})

@@ -503,7 +503,7 @@
     "vivacityAdmin": {
         "title": "Vivacity Admin",
         "section1": "All Paid Subscription Requests",
-        "conapprove": ".css-9aulxs",
+        "conapprove": ".css-vb65ld",
         "deny": "Deny",
        
 
@@ -558,6 +558,8 @@
 
         "section6": "Account Management",
         "availableAccount":"#accounts",
+        "accSite":"#office_site",
+        "accManager":"#account_manager",
         "addbtn":".css-10g2wm1",
 
         "section7":"New User Creation Requests",
@@ -565,6 +567,16 @@
         "section8":"All Users",
 
         "section9":"Repair Ticket Creation",
-        "repairbtn":"[type='button']"
+        "repairbtn":"[type='button']",
+
+        "section10":"Employee Management",
+        "AddEmployee":"Create New",
+        "name":"#full_name",
+        "titleEmp":"#title",
+        "status":"#mui-component-select-role",
+        "addfilter":"[data-testid='Filters']",
+        "clearfilter":"Clear Filter",
+        "export":"Export",
+        "searchEmp":"[data-testid='txtSearchData']"
     }
 }

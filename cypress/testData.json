@@ -205,6 +205,7 @@
   },
   "vivacityAdmin": {
     "fullname": "Demo UserVivacity",
+    "editfullname": "Demo edit UserVivacity",
     "titleUser": "Miss",
     "cellnumber": "1231234121",
     "phone": "2734623428",
@@ -226,6 +227,8 @@
     "byear": "1",
     "bmonth": "2",
     "provider": "[data-value='1']",
+    "accSite":"[data-value='5']",
+    "accManager":"[data-value='84']",
     "wdescription": "This is warranty description",
     "warrantymsg": "Warranty form submitted",
     "editwName": "Edit Test Warranty",
@@ -238,20 +241,24 @@
     "editbyear": "1",
     "editbmonth": "3",
     "editprovider": "[data-value='1']",
+
     "editwdescription": "This is warranty description edited",
     "updateWarrantymsg": "Warranty updated",
     "daleteWarrantymsg": "Warranty has been deleted",
     "accountName": "Test account_name",
     "phoneNo": "2345678912",
     "domain": "Repaire",
-    "creditLimit": "100",
+    "creditLimit": "1000",
     "ihrepairs": "[data-value='true']",
     "paymentTerms": "[data-value='Net 60 Days']",
     "addAccountymsg": "Account added successfully",
     "subcription": "[data-value='Professional']",
     "subUpdatemsg": "Update Subcription submmited",
     "account":"#accounts-option-1",
-    "addAccUsermsg": "Add new user form submitted"
+    "addAccUsermsg": "Add new user form submitted",
+    "status": "[data-value='Active']",
+  "editStatus":"[data-value='Inactive']",
+    "emaildrop":"[data-value='email']"
   },
   "loanerManagement":
   {
@@ -264,5 +271,6 @@
     "building":"[data-value='2438']",
     "student_id":"[data-value='YS001']",
     "stdcreatedmsg":"Add new Student form submitted"
+   
   }
 }

@@ -206,6 +206,16 @@ export default class VivacityAdminElements {
             timeout: 30000,
         })
     }
+    accSiteElement() {
+        return cy.get(locator.vivacityAdmin.accSite, {
+            timeout: 30000,
+        })
+    }
+    accManagerElement() {
+        return cy.get(locator.vivacityAdmin.accManager, {
+            timeout: 30000,
+        })
+    }
     phoneNoElement() {
         return cy.get(locator.vivacityAdmin.phoneNo, {
             timeout: 30000,
@@ -276,5 +286,50 @@ export default class VivacityAdminElements {
             timeout: 30000,
         }) 
     }
-
+    section10Element(){
+        return cy.contains(locator.vivacityAdmin.section10, {
+            timeout: 30000,
+        }) 
+    } 
+    AddEmployeeElement(){
+        return cy.contains(locator.vivacityAdmin.AddEmployee, {
+            timeout: 30000,
+        }) 
+    }
+    nameElement(){
+        return cy.get(locator.vivacityAdmin.name, {
+            timeout: 30000,
+        }) 
+    }
+    titleEmpElement(){
+        return cy.get(locator.vivacityAdmin.titleEmp, {
+            timeout: 30000,
+        }) 
+    }
+    statusElement(){
+        return cy.get(locator.vivacityAdmin.status, {
+            timeout: 30000,
+        }) 
+    }
+ 
+    addfilterElement(){
+        return cy.get(locator.vivacityAdmin.addfilter, {
+            timeout: 30000,
+        }) 
+    }
+    searchEmpElement(){
+        return cy.get(locator.vivacityAdmin.searchEmp, {
+            timeout: 30000,
+        }) 
+    }
+    clearfilterElement() {
+        return cy.contains(locator.vivacityAdmin.clearfilter, {
+            timeout: 30000,
+        })
+    }
+    exportElement() {
+        return cy.contains(locator.vivacityAdmin.export, {
+            timeout: 30000,
+        })
+    }
 }
