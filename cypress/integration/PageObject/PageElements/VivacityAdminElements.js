@@ -196,6 +196,11 @@ export default class VivacityAdminElements {
             timeout: 30000,
         })
     }
+    searchWarElement(){
+        return cy.get(locator.vivacityAdmin.searchWar, {
+            timeout: 30000,
+        }) 
+    }
     addAccountElement() {
         return cy.contains(locator.vivacityAdmin.addAccount, {
             timeout: 30000,
@@ -257,7 +262,7 @@ export default class VivacityAdminElements {
         }) 
     } 
     addbtnElement(){
-        return cy.get(locator.vivacityAdmin.addbtn, {
+        return cy.contains(locator.vivacityAdmin.addbtn, {
             timeout: 30000,
         }) 
     }

@@ -54,6 +54,7 @@ mf.verfifyDeviceAdded()
 })
 
 Then('Click on More filters', () => {
+    cy.wait(3000)
     mf.clickOnMoreFiltersButton()
 })
 Then('Select Field name and Field operation', () => {

@@ -36,6 +36,7 @@ export class BuildingsActions {
         build.addnewbtnElement().click({ force: true })
     }
     enterBuildingName() {
+        cy.get('[data-testid="ChevronLeftIcon"]').click()
         build.buildingnameElement().type(tdata.buildings.buildingname, { force: true })
     }
     enterPhone() {
@@ -63,8 +64,11 @@ export class BuildingsActions {
         //  cy.get('[data-testid="CloseIcon"]').click({force})
     }
     verifyNewBuilding() {
-        cy.wait(3000)
-        dash.messageElement().should('contain', tdata.buildings.addmsg)
+        cy.wait(5000)
+        cy.get('[data-testid="CachedIcon"]').click({force:true})
+        cy.wait(2000)
+        cy.get('tr td').eq(1).should('contain', tdata.buildings.buildingname)
+       // dash.messageElement().should('contain', tdata.buildings.addmsg)
     }
     clickOnEditIcon() {
         build.editIconElement().eq(0).click({ force: true })
@@ -101,7 +105,10 @@ export class BuildingsActions {
         build.searchElement().type(tdata.buildings.buildingname + '{enter}', { force: true })
     }
     verifySearchResult() {
-        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.buildings.buildingname)
+        cy.wait(2000)
+        cy.get('tr td').eq(1).should('contain', tdata.buildings.buildingname)
+        cy.wait(2000)
+         build.searchElement().clear({ force: true }).should('have.value', '')
     }
     clickOnMoreFiltersButton() {
         build.morefiltersbtnElement().click({ force: true })
@@ -110,10 +117,10 @@ export class BuildingsActions {
         build.addfilterElement().click({ force: true })
     }
     selectFieldName() {
-        build.fieldnameElement().select('building_name')
+        build.fieldnameElement().select(1).invoke("val").should("eq", 'building_name')
     }
     selectfieldOperation() {
-        build.fieldoperationElement().select("does_not_contain")
+        build.fieldoperationElement().select(1).invoke("val").should("eq","Does Not Contain",{force:true})
     }
     enterFieldValueSearchBox() {
         build.fieldvalueElement().type(tdata.buildings.buildingname, { force: true })
@@ -126,7 +133,7 @@ export class BuildingsActions {
     }
     verifyResultAfterFilter() {
         cy.wait(1000)
-        cy.get('tbody tr').eq(0).find('td').eq(0).should('not.contain', tdata.buildings.buildingname)
+        cy.get('tr td').should('not.contain', tdata.buildings.buildingname)
     }
     clickOnDetailsButton() {
         cy.wait(1000)

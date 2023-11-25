@@ -35,14 +35,10 @@ export class InHouseWorkflowActions {
     selectSerialDevice() {
         ihw.serialdeviceElement().click({ force: true })
       cy.get(tdata.inHouseWorkflow.serialdevice).click()
-    //     cy.get('[data-testid="ArrowDropDownIcon"]').eq(3).click({ force: true })
-    //     cy.get('#device').type('{downArrow}{enter}')
     }
     selectTechnician(){
         ihw.technicianElement().click({ force: true })
-       // cy.get(tdata.inHouseWorkflow.technician).click({ force: true })
-        cy.get('.Mui-focusVisible').click({ force: true })
-      
+        cy.get('[role="listbox"]').find('li').contains(tdata.inHouseWorkflow.technician).click({ force: true })     
     }
     enterChromebookIssue() {
         ihw.chromebookissueElement().type(tdata.inHouseWorkflow.chromebookissue)

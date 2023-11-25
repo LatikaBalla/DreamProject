@@ -10,7 +10,7 @@ Feature: LoanerManagement Page Functionality
         Then Click on Manage Devices
         And Click on LoanerManagement Tab
 
-    Scenario: Visiblity of LoanerManagement page
+    Scenario: Visiblity and add, remove loaner pool of LoanerManagement page
         And Table for LoanerManagement should be visible
         Then Search the serial no in search box of Available Devices section
         And Verify the search result

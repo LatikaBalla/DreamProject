@@ -57,7 +57,7 @@ export class RepairBoxesActions {
     }
     selectTickets() {
         rb.ticketElement().click()
-        cy.get('[role="listbox"]').find('[role="option"]').eq(0).click()
+        cy.get('[role="listbox"]').find('[role="option"]').eq(1).click()
     }
     clickOnFinishButton() {
         rb.finishbtnElement().click({ force: true })
@@ -66,10 +66,10 @@ export class RepairBoxesActions {
         dash.messageElement().should('contain', tdata.repairBox.boxcreatedmsg)
     }
     clickOnViewButton() {
-        cy.get('tbody tr').eq(0).find('td').eq(6).click()
+        cy.get('tr td').eq(5).click()
     }
     verifyBoxDetails() {
-       // cy.contains(tdata.repairBox.pickupsite).should('be.visible')
+        cy.contains("Box Details").should('be.visible')
     }
     clickOnAddTicket() {
         rb.addticketElement().click({ force: true })

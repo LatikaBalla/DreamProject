@@ -11,7 +11,7 @@ Feature:SrcStudents Page Functionality
         And Click on StudentRepairCenter tab
         Then Click on SrcStudents tab
 
-    Scenario: Add new Srudent
+    Scenario: Add new Srudent, search and view
         And Verify the Title of SrcStudents Page
         And Table for SrcStudents should be visible
         Then I should click on Add New student
@@ -20,3 +20,10 @@ Feature:SrcStudents Page Functionality
         Then Select User Status
         And Click on submit button
         # Then Verify the student added in table
+        And Enter the student name in search box
+        Then Verify the record in searching history
+        And Click on view button
+        Then Veriry the Details of Student
+
+
+

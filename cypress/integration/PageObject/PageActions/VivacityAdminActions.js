@@ -87,6 +87,7 @@ export class VivacityAdminActions {
         vadmin.searchElement().eq(0).type(tdata.vivacityAdmin.fullname + '{enter}')
     }
     verifySearchResult() {
+        cy.wait(3000)
         cy.get('.css-1owb465').eq(1).find('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.vivacityAdmin.fullname, { force: true })
     }
     clickOnEditButton() {
@@ -172,6 +173,12 @@ export class VivacityAdminActions {
     }
     verifyWarrantyRecordAdded() {
         dash.messageElement().should('contain', tdata.vivacityAdmin.warrantymsg)
+    }
+    enterSearchWarranty(){
+vadmin.searchWarElement().type(tdata.vivacityAdmin.warrantyName)
+    }
+    verifySearchWarranty(){
+
     }
     clickOnWEditIcon() {
         cy.wait(2000)
@@ -273,18 +280,20 @@ export class VivacityAdminActions {
         vadmin.submitbtnElement().click({ force: true })
     }
     verifyRecordAccountAdded() {
-        cy.wait(4000)
         dash.messageElement().should('contain', tdata.vivacityAdmin.addAccountymsg)
     }
     clickOnUpdateSubcription() {
+      
         vadmin.updateSubcriptionElement().click({ force: true })
     }
     selectSubscription() {
-        vadmin.subcriptionElement().click({ force: true })
+          cy.get('[role="combobox"]').eq(6).click({ force: true })
+        //vadmin.subcriptionElement().click({ force: true })
         cy.get(tdata.vivacityAdmin.subcription).click({ force: true })
     }
     clickOnUpdateSub() {
-        cy.get('.css-1yuhvjn > :nth-child(2)').click({ force: true })
+        //cy.get('[type="button"]').contains('Update Subcription').click({ force: true })
+        cy.get('.css-79elbk > .css-1yuhvjn > :nth-child(2)').click({ force: true })
         //vadmin.subUpdatebtnElement().click({force:true})
     }
     verifyUpadtedSub() {
@@ -295,19 +304,19 @@ export class VivacityAdminActions {
     }
     clickOnAddAccountUser() {
         cy.wait(2000)
-        cy.get('.css-1owb465').eq(3).find('tbody tr').eq(0).find('td').eq(5).contains('Add Account').click({ force: true })
+        cy.get('.css-1owb465').eq(5).find('tbody tr').eq(0).find('td').eq(5).contains('Add Account').click({ force: true })
     }
     selectAvailableAccount() {
         vadmin.availableAccountElement().click({ force: true })
         cy.get(tdata.vivacityAdmin.account).click({ force: true })
     }
     clickOnAddAccountsubmit() {
-        cy.get('.css-1yuhvjn > :nth-child(2)').click({ force: true })
-        // vadmin.addbtnElement().click({force:true})
+        vadmin.addbtnElement().click({ force: true })
     }
     verifyAddAccUser() {
-        //dash.messageElement().should('contain', tdata.vivacityAdmin.addAccUsermsg)
+        dash.messageElement().should('contain', tdata.vivacityAdmin.addAccUsermsg)
     }
+
 
     clickOnAllUser() {
         vadmin.section8Element().click({ force: true })
@@ -317,7 +326,7 @@ export class VivacityAdminActions {
         // vadmin.addnewUserbtnElement().eq(1).click({ force: true })
     }
     verifyStudentAddedAllUser() {
-        dash.messageElement().should('contain', tdata.vivacityAdmin.addAccUsermsg)
+        dash.messageElement().should('contain', tdata.vivacityAdmin.createStudentmsg)
     }
     enterSearchValueAllUser() {
         cy.get('.css-3e7ssz').eq(6).type(tdata.vivacityAdmin.fullname + '{enter}', { force: true })
@@ -330,6 +339,7 @@ export class VivacityAdminActions {
         cy.get('.css-1owb465').eq(6).find('tbody tr').eq(0).find('td').eq(6).scrollIntoView().contains("Edit").click({ force: true })
     }
     clickDeleteButtonAllUser() {
+        cy.wait(2000)
         cy.get('.css-1owb465').eq(6).find('tbody tr').eq(0).find('td').eq(7).scrollIntoView().contains("Delete").click({ force: true })
     }
     verifyRecordDeletedAllUser() {
@@ -356,8 +366,8 @@ export class VivacityAdminActions {
         vadmin.closeElement().click({ force: true })
     }
     clickOnApproveButton() {
-        cy.get('.css-11w1fmz').find('tbody tr').eq(0).find('td').eq(4).scrollIntoView().contains("Approve").click({ force: true })
-        vadmin.conapproveElement().click({ Force: true })
+        cy.get('.css-11w1fmz').find('tbody tr').eq(1).find('td').eq(4).scrollIntoView().contains("Approve").click({ force: true })
+        cy.get('[type="button"]').contains('Approve').click({ Force: true })
     }
 
     clickOnRepairTicketUnit() {
@@ -394,16 +404,16 @@ export class VivacityAdminActions {
     }
     verifyResultEmp() {
         cy.wait(3000)
-        cy.get('.css-1owb465').eq(2).find('tr',{timeout:1000}).find('td').eq(1).should('contain', tdata.vivacityAdmin.fullname)
+        cy.get('.css-1owb465').eq(2).find('tr', { timeout: 1000 }).find('td').eq(1).should('contain', tdata.vivacityAdmin.fullname)
     }
-    clickConEditEmp(){
-        cy.get('.css-1owb465').eq(2).find('tr',{timeout:1000}).find('td').find('[data-testid="ModeEditOutlinedIcon"]').eq(0).scrollIntoView().click({ force: true })
+    clickConEditEmp() {
+        cy.get('.css-1owb465').eq(2).find('tr', { timeout: 1000 }).find('td').find('[data-testid="ModeEditOutlinedIcon"]').eq(0).scrollIntoView().click({ force: true })
     }
-    editUserStatusEmp(){
+    editUserStatusEmp() {
         vadmin.statusElement().click({ force: true })
         cy.get(tdata.vivacityAdmin.editStatus).click({ force: true })
     }
-    editFullnameEmp(){
+    editFullnameEmp() {
         vadmin.nameElement().clear().should('have.value', '').type(tdata.vivacityAdmin.editfullname)
     }
 

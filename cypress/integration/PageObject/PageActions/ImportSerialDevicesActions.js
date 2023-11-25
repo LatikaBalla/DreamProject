@@ -33,6 +33,7 @@ export class ImportSerialDevicesActions {
        // isd.addimportElement().eq(1).scrollIntoView().click({force:true})
     }
     uploadcsvFile(){
+        cy.get('#quantityDevices').type("2")
         cy.contains('Attach CSV file').click({force:true})
         isd.uploadElement().attachFile(tdata.importDevice.uploadfilename,{force:true})
     }

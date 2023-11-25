@@ -18,7 +18,7 @@ export default class RepairBoxesElements {
         })
     }
     addboxElement() {
-        return cy.get(locator.repairBoxes.addbox, {
+        return cy.contains(locator.repairBoxes.addbox, {
             timeout: 30000,
         })
     }

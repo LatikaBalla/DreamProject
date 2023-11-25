@@ -41,21 +41,20 @@ export class SrcRepairTicketsActions {
         cy.get(tdata.srcRepairTicket.failuretype).click()
     }
     selectSerialDevice() {
-      //  srt.serialdeviceElement().click({ force: true })
-        //cy.get(tdata.srcRepairTicket.serialdevice).click()
-        cy.get('[data-testid="ArrowDropDownIcon"]').eq(3).click({ force: true })
-         cy.get('#device').type('{downArrow}{enter}')
-        
+       srt.serialdeviceElement().click({ force: true })
+        cy.get(tdata.srcRepairTicket.serialdevice).click()        
     }
     selectTechnician(){
         srt.technicianElement().click({ force: true })
-       // cy.get('[name="internal_technician"]').type('{downArrow}{enter}')
-        cy.get('.Mui-focusVisible').click({ force: true })
-
+        cy.get('[role="listbox"]').find('li').contains(tdata.srcRepairTicket.technician).click({force:true}) 
     }
     selectIssue(){
         srt.issueElement().click({ force: true })
         cy.get(tdata.srcRepairTicket.issue).click({force:true})
+    }
+    selectBuilding(){
+        srt.buildingElement().click({force:true})
+        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
     }
     enterChromebookIssue() {
         srt.chromebookissueElement().type(tdata.srcRepairTicket.chromebookissue,{force:true})
@@ -64,14 +63,21 @@ export class SrcRepairTicketsActions {
         srt.savebtnElement().click({ force: true })
     }
     verifyNewTicket() {
-        cy.wait(5000)
         dash.messageElement().should('contain', tdata.srcRepairTicket.createTicketmsg)
     }
     enterSearchBox(){
-        srt.searchElement().type(tdata.srcRepairTicket.ticketno+'{enter}')
+        cy.get('[role="combobox"]').eq(0).click({force:true})
+        cy.get('[data-value="ticket_number"]').click({force:true})
+        srt.searchElement().type(tdata.srcRepairTicket.ticketno+'{enter}',{force:true})
     }
     verifySearchResult(){
-        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.srcRepairTicket.ticketno)
+        cy.get('tr td').eq(1).should('contain', tdata.srcRepairTicket.ticketno)
+    }
+    clickViewButton(){
+srt.viewElement().click({force:true})
+    }
+    verifySrcRepairTicket(){
+        cy.contains('Repair Ticket Details').should('be.visible')
     }
 
 }

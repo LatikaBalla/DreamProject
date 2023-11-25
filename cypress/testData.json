@@ -6,7 +6,7 @@
     "phone": "1231231231",
     "cellnumber": "1231234121",
     "userrole": "[data-value='1']",
-    "addmsg":"Contact form submitted successfully"
+    "addmsg": "Contact form submitted successfully"
   },
   "edit": {
     "title": "Mrs",
@@ -33,14 +33,14 @@
     "address": "641 Fairview Avenue Northeast",
     "savebtn": "[type='submit']",
     "addmsg": "Add New Building",
-    "deletemsg":"Record deleted successfully"
+    "deletemsg": "Building Deleted"
   },
   "editbuildings": {
     "buildingname": "Building_E1",
     "phone": "2734633338",
     "extension": "11",
     "defaultbuilding": "[data-value='false']",
-    "updatemsg": "Building updated"
+    "updatemsg": "Building Edited"
   },
   "detailsBuilding": {
     "details": "Details",
@@ -48,8 +48,8 @@
     "active": "yes"
   },
   "deviceRepairReport": {
-    "ticketno": "VAL2023110212171589",
-    "filename": "VAL2023110212171589.pdf"
+    "ticketno": "VAL2023102715322545",
+    "filename": "VAL2023102715322545.pdf"
   },
   "myFleet": {
     "filename": "fleet_devices.csv",
@@ -61,7 +61,7 @@
     "studentid": "[data-value='49']",
     "lonarstatus": "[data-value='In Loaner Pool']",
     "devicestatus": "[data-value='Active']",
-    "addDevicemsg":"Submitting form"
+    "addDevicemsg": "Submitting form"
   },
   "addasset": {
     "title": "AssetTitle",
@@ -82,7 +82,7 @@
     "description": "I want to edit description"
   },
   "importDevice": {
-    "uploadfilename": "import_serial_devices.csv",
+    "uploadfilename": "import_serial_devices1.csv",
     "downloadfilename": "import_list.csv"
   },
   "orgAsset": {
@@ -96,7 +96,7 @@
     "filename": "RepairTickets.csv",
     "returnsite": "[data-value='2269']",
     "building": "[data-value='2269']",
-    "serialdevice": "#device-option-2",
+    "serialdevice": "#device-option-0",
     "chromebookissue": "[data-value='System Board']",
     "description": "there is some problem in System Board of the laptop",
     "devicename": "Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
@@ -115,25 +115,26 @@
     "failuretype": "[data-value='Accidental']",
     "serialdevice": "#device-option-0",
     "chromebookissue": "There is something fault",
-    "technician": "[data-value='1266']",
+    "technician": "Demo UserVivacity",
     "createTicketmsg": "Add new ticket form submitted",
     "filename": "InHouseRepairTickets.csv"
   },
   "inHouseTicket": {
     "failuretype": "[data-value='Accidental']",
-    "serialdevice": "#device-option-2",
+    "serialdevice": "#device-option-0",
     "chromebookissue": "There is something fault",
-    "technician": "[data-value='1266']",
+    "technician": "Demo UserVivacity",
     "createTicketmsg": "Add new ticket form submitted",
-    "filename": "InHouseRepairTickets.csv"
+    "filename": "InHouseRepairTickets.csv",
+    "repairissue": "[data-value='RAM issue']"
   },
   "srcRepairTicket": {
     "failuretype": "[data-value='Accidental']",
-    "serialdevice": "#device-option-2",
+    "serialdevice": "#device-option-0",
     "chromebookissue": "There is something fault",
-    "technician": "[data-value='1266']",
+    "technician": "Demo UserVivacity",
     "createTicketmsg": "Add new ticket form submitted",
-    "ticketno": "VAL2023110523123891",
+    "ticketno": "VAL2023100608470053",
     "issue": "[data-value='Hinge']"
   },
   "srcStudent": {
@@ -179,7 +180,7 @@
     "editUserStatus": "[data-value='Inactive']",
     "editInhouseRepaire": "[data-value='true']",
     "updateStudentmsg": "User has been updated",
-    "deleteStudentmsg":"User has been deleted successfully",
+    "deleteStudentmsg": "User has been deleted successfully",
     "filename": "users_list.csv"
   },
   "myprofile": {
@@ -227,8 +228,8 @@
     "byear": "1",
     "bmonth": "2",
     "provider": "[data-value='1']",
-    "accSite":"[data-value='5']",
-    "accManager":"[data-value='84']",
+    "accSite": "[data-value='5']",
+    "accManager": "[data-value='84']",
     "wdescription": "This is warranty description",
     "warrantymsg": "Warranty form submitted",
     "editwName": "Edit Test Warranty",
@@ -241,36 +242,39 @@
     "editbyear": "1",
     "editbmonth": "3",
     "editprovider": "[data-value='1']",
-
     "editwdescription": "This is warranty description edited",
     "updateWarrantymsg": "Warranty updated",
     "daleteWarrantymsg": "Warranty has been deleted",
-    "accountName": "Test account_name",
+    "accountName": "Test_account_name",
     "phoneNo": "2345678912",
     "domain": "Repaire",
-    "creditLimit": "1000",
+    "creditLimit": "100",
     "ihrepairs": "[data-value='true']",
     "paymentTerms": "[data-value='Net 60 Days']",
     "addAccountymsg": "Account added successfully",
     "subcription": "[data-value='Professional']",
     "subUpdatemsg": "Update Subcription submmited",
-    "account":"#accounts-option-1",
-    "addAccUsermsg": "Add new user form submitted",
+    "account": "#accounts-option-1",
+    "addAccUsermsg": "Account assigned successfully",
     "status": "[data-value='Active']",
-  "editStatus":"[data-value='Inactive']",
-    "emaildrop":"[data-value='email']"
+    "editStatus": "[data-value='Inactive']",
+    "emaildrop": "[data-value='email']"
   },
-  "loanerManagement":
-  {
-    "serialno":"VIVATEST203Test1",
-    "studentname":"[data-value='41']",
+  "loanerManagement": {
+    "serialno": "VIVATEST22Test",
+    "studentname": "[data-value='41']",
     "title": "Mr",
     "fullname": "Demo Student",
     "email": "@gmail.com",
     "status": "[data-value='Active']",
-    "building":"[data-value='2438']",
-    "student_id":"[data-value='YS001']",
-    "stdcreatedmsg":"Add new Student form submitted"
-   
+    "building": "[data-value='2438']",
+    "student_id": "[data-value='YS001']",
+    "stdcreatedmsg": "Add new Student form submitted"
+  },
+  "login": {
+    "username": "demo_studentNormal@vivacitytech.com",
+    "password": "VIVA!dreamdemo",
+    "wusername": "demo@vivacitytech.com",
+    "wpassword": "VIVA2020Testing"
   }
 }

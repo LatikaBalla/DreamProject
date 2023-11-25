@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 4067000000
+              "duration": 3796000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9471000000
+              "duration": 8822000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9071000000
+              "duration": 9073000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 79000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on InHouseRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 983000000
+              "duration": 153000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Filters of InHouseWorkflow should be visible",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 11000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I should click on new button",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 75000000
             }
           },
           {
@@ -92,8 +92,9 @@
             "line": 16,
             "name": "Select failure Type, Serial Device and Technician",
             "result": {
-              "status": "passed",
-              "duration": 1639000000
+              "status": "failed",
+              "duration": 30197000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `#failure_type`, but never found it.\n    at InHouseWorkflowElements.failuretypeElement (cypress/integration/PageObject/PageElements/InHouseWorkflowElements.js:50:18)\n    at InHouseWorkflowActions.selectFailureType (cypress/integration/PageObject/PageActions/InHouseWorkflowActions.js:32:12)\n    at Context.eval (cypress/integration/InHouseWorkflow/InHouseWorkflow.spec.js:33:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -102,8 +103,7 @@
             "line": 17,
             "name": "Enter the Chromebook issue",
             "result": {
-              "status": "passed",
-              "duration": 688000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +112,7 @@
             "line": 18,
             "name": "Click on save button",
             "result": {
-              "status": "passed",
-              "duration": 94000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +121,7 @@
             "line": 19,
             "name": "Verify New Ticket is added",
             "result": {
-              "status": "passed",
-              "duration": 16941000000
+              "status": "skipped"
             }
           }
         ]

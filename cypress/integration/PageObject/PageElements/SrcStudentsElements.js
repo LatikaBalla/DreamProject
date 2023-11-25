@@ -96,4 +96,9 @@ export default class SrcStudentsElements {
             timeout: 30000,
         })
     }
+    searchElement(){
+        return cy.get(locator.srcStudents.search, {
+            timeout: 30000,
+        })
+    }
 }

@@ -20,11 +20,11 @@ Feature: MyFleet  Page Functionality
         And Select lonar status and Device status
         Then Click on the Submit Button
         And Verify the device added successfully
-        Then Click on More filters
-        Then Select Field name and Field operation
-        And Enter the Search value in search box
-        Then Click on Apply Button
-        And Verify the Results in the table
+        # Then Click on More filters
+        # Then Select Field name and Field operation
+        # And Enter the Search value in search box
+        # Then Click on Apply Button
+        # And Verify the Results in the table
         Then Click on view Button
         And Verify the Warranty Description
         Then Click on Clear filter

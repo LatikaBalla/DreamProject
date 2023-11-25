@@ -15,7 +15,6 @@ export class InHouseTicketsActions {
         dash.termsElement().click({ force: true })
     }
     clickOnRepair360() {
-       // dash.arrowElement().click({ force: true })
         dash.repair360Element().click({ force: true })
     }
     clickOnInHouseRepairCenterTab() {
@@ -33,40 +32,44 @@ export class InHouseTicketsActions {
     tableVisible() {
         iht.tableElement().should('be.visible')
     }
-    clickOnCreateTicketButton(){
-        iht.createTicketElement().click({force:true})
+    clickOnCreateTicketButton() {
+        iht.createTicketElement().click({ force: true })
     }
     selectFailureType() {
         iht.failuretypeElement().click({ force: true })
-       cy.get(tdata.inHouseTicket.failuretype).click()
+        cy.get(tdata.inHouseTicket.failuretype).click()
     }
     selectSerialDevice() {
-       // iht.serialdeviceElement().click({ force: true })
-        cy.get('[data-testid="ArrowDropDownIcon"]').eq(3).click({ force: true })
-        cy.get('#device').type('{downArrow}{enter}')
-      // cy.get(tdata.inHouseTicket.serialdevice).click()
+        iht.serialdeviceElement().click({ force: true })
+        cy.get(tdata.inHouseTicket.serialdevice).click()
     }
-    selectTechnician(){
+    selectTechnician() {
         iht.technicianElement().click({ force: true })
-       // cy.get(tdata.inHouseTicket.technician).click()
-        cy.get('.Mui-focusVisible').click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains(tdata.inHouseTicket.technician).click({ force: true })  
+    }
+    selectBilding() {
+        iht.buildingElement().click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
+    }
+    selectRepaireIssue() {
+        iht.repairissueElement().click({ force: true })
+        cy.get(tdata.inHouseTicket.repairissue).click({ force: true })
     }
     enterChromebookIssue() {
-        iht.chromebookissueElement().type(tdata.inHouseTicket.chromebookissue)
+        iht.chromebookissueElement().type(tdata.inHouseTicket.chromebookissue, { force: true })
     }
     clickOnSaveButton() {
         iht.savebtnElement().click({ force: true })
     }
     verifyNewTicket() {
-        cy.wait(5000)
+       // cy.wait(6000)
         dash.messageElement().should('contain', tdata.inHouseTicket.createTicketmsg)
-        // cy.get('tbody tr').eq(0).find('td').eq(2).should('contain', tdata.repairTickets.devicename)
     }
     clickOnExport() {
         iht.exportbtnElement().click({ force: true })
     }
     verifyDownload() {
-        cy.verifyDownload("/download/",tdata.inHouseTicket.filename)
+        cy.verifyDownload("/download/", tdata.inHouseTicket.filename)
     }
 }
 export default InHouseTicketsActions 

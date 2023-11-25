@@ -26,9 +26,9 @@
 import 'cypress-file-upload';
 Cypress.Commands.add("AdminLogin", () => {
   cy.get('[href="/login"]').click({ force: true })
-  cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
-  //  cy.origin('https://dream-vivacity.us.auth0.com/', () => {
-    Cypress.on("uncaught:exception", () => {
+//cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
+    cy.origin('https://dream-vivacity.us.auth0.com/', () => {
+  Cypress.on("uncaught:exception", () => {
       return false;
     });
     cy.get('#input-box-email').type(Cypress.env('USERNAME'))
@@ -39,8 +39,8 @@ Cypress.Commands.add("AdminLogin", () => {
 })
 Cypress.Commands.add("VivacityAdminLogin", () => {
   cy.get('[href="/login"]').click({ force: true })
-  // cy.origin('https://dream-vivacity.us.auth0.com/', () => {
-  cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
+  cy.origin('https://dream-vivacity.us.auth0.com/', () => {
+//cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
     Cypress.on("uncaught:exception", () => {
       return false;
     });
@@ -53,8 +53,8 @@ Cypress.Commands.add("VivacityAdminLogin", () => {
 
 Cypress.Commands.add("RepaireTechLogin", () => {
   cy.get('[href="/login"]').click({ force: true })
-  cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
-  //  cy.origin('https://dream-vivacity.us.auth0.com/', () => {
+  //cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
+    cy.origin('https://dream-vivacity.us.auth0.com/', () => {
     Cypress.on("uncaught:exception", () => {
       return false;
     });

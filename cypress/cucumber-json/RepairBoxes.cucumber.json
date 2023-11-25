@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 4189000000
+              "duration": 1407000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9615000000
+              "duration": 9040000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9077000000
+              "duration": 9078000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on RepairBoxes Tab",
             "result": {
               "status": "passed",
-              "duration": 1207000000
+              "duration": 478000000
             }
           },
           {
@@ -73,17 +73,7 @@
             "name": "Verify the Title of RepairBoxes Page",
             "result": {
               "status": "passed",
-              "duration": 25000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "Outbound and Inbound Shipments for RepairBoxes should be visible",
-            "result": {
-              "status": "passed",
-              "duration": 11000000
+              "duration": 12000000
             }
           },
           {
@@ -93,7 +83,7 @@
             "name": "I should click on create new Box",
             "result": {
               "status": "passed",
-              "duration": 100000000
+              "duration": 72000000
             }
           },
           {
@@ -103,7 +93,7 @@
             "name": "Enter weight, height, depth and width",
             "result": {
               "status": "passed",
-              "duration": 874000000
+              "duration": 838000000
             }
           },
           {
@@ -113,7 +103,7 @@
             "name": "Select Pick-up site",
             "result": {
               "status": "passed",
-              "duration": 245000000
+              "duration": 212000000
             }
           },
           {
@@ -123,7 +113,7 @@
             "name": "Check the need shipping box",
             "result": {
               "status": "passed",
-              "duration": 159000000
+              "duration": 86000000
             }
           },
           {
@@ -133,7 +123,7 @@
             "name": "Click on Create box button",
             "result": {
               "status": "passed",
-              "duration": 110000000
+              "duration": 71000000
             }
           },
           {
@@ -142,8 +132,9 @@
             "line": 21,
             "name": "Select Ticket from dropdownlist",
             "result": {
-              "status": "passed",
-              "duration": 330000000
+              "status": "failed",
+              "duration": 30205000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `#repair_tickets`, but never found it.\n    at RepairBoxesElements.ticketElement (cypress/integration/PageObject/PageElements/RepairBoxesElements.js:62:18)\n    at RepairBoxesActions.selectTickets (cypress/integration/PageObject/PageActions/RepairBoxesActions.js:59:11)\n    at Context.eval (cypress/integration/RepairBoxes/RepairBoxes.spec.js:52:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -152,8 +143,7 @@
             "line": 22,
             "name": "Click on Finish button",
             "result": {
-              "status": "passed",
-              "duration": 119000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +152,7 @@
             "line": 23,
             "name": "Verify new box is added in table",
             "result": {
-              "status": "passed",
-              "duration": 1377000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +161,7 @@
             "line": 24,
             "name": "Click on download label",
             "result": {
-              "status": "passed",
-              "duration": 113000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +170,7 @@
             "line": 26,
             "name": "Click on view button",
             "result": {
-              "status": "passed",
-              "duration": 125000000
+              "status": "skipped"
             }
           },
           {
@@ -192,8 +179,7 @@
             "line": 27,
             "name": "Verify the Details new box",
             "result": {
-              "status": "passed",
-              "duration": 3000000
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +188,7 @@
             "line": 28,
             "name": "Add another ticket in the same box",
             "result": {
-              "status": "passed",
-              "duration": 1243000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +197,7 @@
             "line": 29,
             "name": "Select Ticket from dropdownlist",
             "result": {
-              "status": "passed",
-              "duration": 204000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +206,7 @@
             "line": 30,
             "name": "Click on Add ticket",
             "result": {
-              "status": "passed",
-              "duration": 72000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +215,7 @@
             "line": 31,
             "name": "Verify the ticket is added in table",
             "result": {
-              "status": "passed",
-              "duration": 9000000
+              "status": "skipped"
             }
           }
         ]

@@ -29,31 +29,29 @@ export class RepairTicketsActions {
         rt.tableElement().should('be.visible')
     }
     clickOnCreateNewTicket() {
-        rt.createTicketElement().click()
-
+        rt.createTicketElement().click({ force: true })
     }
     selectFailureType() {
         rt.failuretypeElement().click({ force: true })
-        cy.get(tdata.repairTickets.failuretype).click()
+        cy.get(tdata.repairTickets.failuretype).click({ force: true })
     }
     selectReturnSite() {
         rt.returnsiteElement().click({ force: true })
-        cy.get(tdata.repairTickets.returnsite).click()
+       // cy.get(tdata.repairTickets.returnsite).click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
     }
     selectSerialDevice() {
-        // rt.serialdeviceElement().click({ force: true })
-        // cy.get(tdata.repairTickets.serialdevice).click()
-        cy.get('[data-testid="ArrowDropDownIcon"]').eq(3).click({ force: true })
-        cy.get('#device').type('{downArrow}{enter}')
+        rt.serialdeviceElement().click({ force: true })
+        cy.get(tdata.repairTickets.serialdevice).click({ force: true })    
     }
     selectBuilding() {
         rt.buildingElement().click({ force: true })
-        cy.get(tdata.repairTickets.building).eq(0).click()
+        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
+       // cy.get(tdata.repairTickets.building).eq(0).click({ force: true })
     }
     selectChromebookIssue() {
         rt.chromebookissueElement().click({ force: true })
         cy.get(tdata.repairTickets.chromebookissue).click({ force: true })
-
     }
     enterDescritionOfIssue() {
         rt.descriptionElement().type(tdata.repairTickets.description, { force: true })
@@ -72,7 +70,7 @@ export class RepairTicketsActions {
         cy.verifyDownload("/download/",tdata.repairTickets.filename)
     }
     clickOnViewButton() {
-        cy.get('tbody tr').eq(1).find('td').eq(9).contains('View').scrollIntoView().click({ force: true })
+        cy.get('tr td').eq(9).contains('View').scrollIntoView().click({ force: true })
     }
     verifyDetails() {
         cy.wait(1000)

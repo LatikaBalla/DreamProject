@@ -34,7 +34,7 @@ export class MyFleetActions {
     }
     verifySearchResult() {
         cy.wait(3000)
-        cy.get('tbody tr').eq(0).find('td').eq(1).should('contain', tdata.myFleet.search,{force:true})
+        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.myFleet.search,{force:true})
     }
     clickOnMoreFiltersButton() {
       //  cy.get('[data-testid="CloseIcon"]').eq(0).click({force:true})
@@ -42,6 +42,7 @@ export class MyFleetActions {
         mf.morefiltersbtnElement().scrollIntoView().click({force:true})
     }
     clickOnAddFilterGroup() {
+  
         mf.addfilterGroupElement().click()
     }
     selectFieldName() {

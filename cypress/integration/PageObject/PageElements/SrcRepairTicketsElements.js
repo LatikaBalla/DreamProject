@@ -106,4 +106,9 @@ export default class SrcRepairTicketsElements {
             timeout: 30000,
         })
     }
+    buildingElement(){
+        return cy.get(locator.srcRepairTickets.building, {
+            timeout: 30000,
+        })
+    }
 }

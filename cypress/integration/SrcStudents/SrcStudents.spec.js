@@ -34,34 +34,46 @@ Then('Filters of SrcStudents should be visible', () => {
 And('Table for SrcStudents should be visible', () => {
     ss.tableVisible()
 })
-Then ('I should click on Add New student',()=>{
-ss.clickOnCreateNewStudent()
-}) 
-Then ('Enter title, full name and Email',()=>{
+Then('I should click on Add New student', () => {
+    ss.clickOnCreateNewStudent()
+})
+Then('Enter title, full name and Email', () => {
     ss.enterTitle()
     ss.enterFullname()
     ss.enterEmail()
-}) 
-And ('Enter Phone and Cell Number',()=>{
+})
+And('Enter Phone and Cell Number', () => {
     ss.enterPhone()
     ss.enterCellNumber()
-}) 
-Then ('Select User Status',()=>{
+})
+Then('Select User Status', () => {
     ss.selectUserStatus()
     // ss.selectVivaNews()
     // ss.selectProductUpdate()
-}) 
-Then ('Select Vivacity weekly and Beta tester',()=>{
+})
+Then('Select Vivacity weekly and Beta tester', () => {
     ss.selectViivaWeekly()
     ss.selectBetaTester()
-})  
- Then ('Select User notification and in house repair',()=>{
+})
+Then('Select User notification and in house repair', () => {
     ss.selectUserNotification()
     ss.selectInHouseRepair()
- })  
-And ('Click on submit button',()=>{
+})
+And('Click on submit button', () => {
     ss.clickOnASubmitButton()
-}) 
-Then ('Verify the student added in table',()=>{
+})
+Then('Verify the student added in table', () => {
     ss.verifyRecordTable()
-}) 
+})
+And('Enter the student name in search box', () => {
+    ss.searchName()
+})
+Then('Verify the record in searching history', () => {
+    ss.verfiySearchResult()
+})
+And('Click on view button', () => {
+    ss.clickViewButtton()
+})
+Then('Veriry the Details of Student', () => {
+    ss.verifyStudentDetails()
+})

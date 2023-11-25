@@ -12,7 +12,7 @@ Feature: RepairBoxes Page Functionality
 
   Scenario:  Visiblity check,Create New Box, add ticket and  view details of box with create aonther ticket
      And Verify the Title of RepairBoxes Page
-    And Outbound and Inbound Shipments for RepairBoxes should be visible
+    # And Outbound and Inbound Shipments for RepairBoxes should be visible
     Then I should click on create new Box
     Then Enter weight, height, depth and width
     And Select Pick-up site

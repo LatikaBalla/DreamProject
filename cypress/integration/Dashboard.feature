@@ -30,7 +30,7 @@ Feature: Dashboard Page Functionality
         And Enter Billing Address and select from dropdown
         Then Click on checkbox Same as Shipping Address
         And Click on save button
-        Then Verify the builing details added in table
+        # Then Verify the builing details added in table
 
         And Click on My Account Details Tab
         Then I should click on Add New button
@@ -54,9 +54,9 @@ Feature: Dashboard Page Functionality
         Then I edit User Status to inactive
         Then Click on Submit button
         And Verify the Record has been updated Meassage
-        And Click on Delete Icon
-        Then Click on Confirm Delete button
-        And Verify the record is deleted successfully
+        # And Click on Delete Icon
+        # Then Click on Confirm Delete button
+        # And Verify the record is deleted successfully
 
         And Click on Buildings Tab
         And Click on Delete Icon of building

@@ -43,10 +43,11 @@ Then('Enter title, full name location and tag', () => {
 And('Enter note, Type and description', () => {
     oua.enterNote()
     oua.enterType()
-    oua.enterDescription()
+  //  oua.enterDescription()
 })
 Then('Upload the image file', () => {
     oua.selectFileForUpload()
+    oua.enterDescription()
 })
 And('Click on save button', () => {
     oua.clickOnASaveButton()

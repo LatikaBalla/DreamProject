@@ -15,7 +15,6 @@ export class SrcStudentsActions {
         dash.termsElement().click({ force: true })
     }
     clickOnRepair360() {
-       // dash.arrowElement().click({ force: true })
         dash.repair360Element().click({ force: true })
     }
     clickOnStudentRepairCenterTab() {
@@ -82,12 +81,25 @@ export class SrcStudentsActions {
     }
     clickOnASubmitButton() {
         ss.submitElement().click({ force: true })
+        cy.get('[type="button"]').contains('Cancel').click({ force: true })
     }
     verifyRecordTable() {
-       // cy.get('[data-testid="CachedIcon"]').click()
-       cy.wait(3000)
-        dash.messageElement().should('contain', tdata.srcStudent.createStudentmsg) 
+        // cy.get('[data-testid="CachedIcon"]').click()
+        cy.wait(3000)
+        dash.messageElement().should('contain', tdata.srcStudent.createStudentmsg)
         //cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.srcStudent.fullname)
+    }
+    searchName() {
+        ss.searchElement().type(tdata.srcStudent.fullname,{force:true})
+    }
+    verfiySearchResult() {
+        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.srcStudent.fullname)
+    }
+    clickViewButtton() {
+        cy.get('tbody tr').eq(0).find('td').eq(4).contains('View').click({ force: true })
+    }
+    verifyStudentDetails() {
+        cy.contains(tdata.srcStudent.fullname).should('be.visible')
     }
 
 }

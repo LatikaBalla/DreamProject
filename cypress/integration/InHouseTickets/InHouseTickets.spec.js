@@ -37,10 +37,12 @@ And('Table for InHouseTickets should be visible', () => {
 Then('I should click on Create new button', () => {
     iht.clickOnCreateTicketButton()
 })
-And('Select failure Type, Serial Device and Technician', () => {
+And('Select failure Type, Serial Device, Technician, issue and Building', () => {
     iht.selectFailureType()
     iht.selectTechnician()
     iht.selectSerialDevice()
+    iht.selectRepaireIssue()
+    iht.selectBilding()
 })
 Then('Enter the Chromebook issue', () => {
     iht.enterChromebookIssue()

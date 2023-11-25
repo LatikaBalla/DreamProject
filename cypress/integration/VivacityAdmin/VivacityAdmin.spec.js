@@ -83,8 +83,8 @@ Then('Enter full name, title and Email', () => {
     vadmin.enterEmail()
 })
 And('Enter Phone,Cell Number and select UserRole', () => {
-    vadmin.enterPhone()
     vadmin.enterCellNumber()
+    vadmin.enterPhone()  
 })
 And('Click on submit button', () => {
     vadmin.clickOnASubmitButton()
@@ -106,8 +106,8 @@ Then('I should edit title, full name', () => {
     vadmin.editFullname()
 })
 And('I should edit Phone and Cell Number and user role', () => {
-    vadmin.editCellNumber()
     vadmin.editPhone()
+    vadmin.editCellNumber()  
     vadmin.editUserRole()
 })
 Then('I edit User Status to inactive', () => {
@@ -163,7 +163,12 @@ Then('Click on submit button', () => {
 And('Verify the warranty added in table', () => {
     vadmin.verifyWarrantyRecordAdded()
 })
-
+Then ('Enter the value in search warranty',()=>{
+vadmin.enterSearchWarranty()
+})
+And ('Verify search result warranty',()=>{
+vadmin.verifySearchWarranty()
+})
 And('Click On Edit icon', () => {
     vadmin.clickOnWEditIcon()
 })
@@ -259,6 +264,8 @@ Then('Click on add account button for request user', () => {
 And('Verify add account successfully', () => {
     vadmin.verifyAddAccUser()
 })
+
+
 Then('Click on all Users unit', () => {
     vadmin.clickOnAllUser()
 })

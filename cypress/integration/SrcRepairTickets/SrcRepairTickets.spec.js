@@ -37,11 +37,12 @@ And('Table for SrcRepairTickets should be visible', () => {
 Then('I should click on Create Student Repair Ticket button', () => {
     srt.clickOnCreateTicketButton()
 })
-And('Select failure Type, Serial Device and Technician', () => {
+And('Select failure Type, Serial Device, Technician and building', () => {
     srt.selectFailureType()
     srt.selectTechnician()
     srt.selectSerialDevice()
     srt.selectIssue()
+    srt.selectBuilding()
 })
 Then('Enter the Chromebook issue', () => {
     srt.enterChromebookIssue()
@@ -57,4 +58,10 @@ srt.enterSearchBox()
 })
 Then ('Verify the Results in the table',()=>{
 srt.verifySearchResult()
+})
+And ('Click on view button',()=>{
+srt.clickViewButton()
+})
+Then ('Veriry the Details of student repair ticket',()=>{
+srt.verifySrcRepairTicket()
 })
