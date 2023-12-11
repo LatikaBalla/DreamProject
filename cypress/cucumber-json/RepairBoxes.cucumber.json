@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1407000000
+              "duration": 2858000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9040000000
+              "duration": 10396000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9078000000
+              "duration": 9077000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 75000000
+              "duration": 76000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on RepairBoxes Tab",
             "result": {
               "status": "passed",
-              "duration": 478000000
+              "duration": 202000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of RepairBoxes Page",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 16000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I should click on create new Box",
             "result": {
               "status": "passed",
-              "duration": 72000000
+              "duration": 215000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Enter weight, height, depth and width",
             "result": {
               "status": "passed",
-              "duration": 838000000
+              "duration": 926000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Select Pick-up site",
             "result": {
               "status": "passed",
-              "duration": 212000000
+              "duration": 182000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Check the need shipping box",
             "result": {
               "status": "passed",
-              "duration": 86000000
+              "duration": 92000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on Create box button",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 77000000
             }
           },
           {
@@ -132,9 +132,8 @@
             "line": 21,
             "name": "Select Ticket from dropdownlist",
             "result": {
-              "status": "failed",
-              "duration": 30205000000,
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `#repair_tickets`, but never found it.\n    at RepairBoxesElements.ticketElement (cypress/integration/PageObject/PageElements/RepairBoxesElements.js:62:18)\n    at RepairBoxesActions.selectTickets (cypress/integration/PageObject/PageActions/RepairBoxesActions.js:59:11)\n    at Context.eval (cypress/integration/RepairBoxes/RepairBoxes.spec.js:52:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 357000000
             }
           },
           {
@@ -143,7 +142,8 @@
             "line": 22,
             "name": "Click on Finish button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 91000000
             }
           },
           {
@@ -152,7 +152,8 @@
             "line": 23,
             "name": "Verify new box is added in table",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2353000000
             }
           },
           {
@@ -161,7 +162,8 @@
             "line": 24,
             "name": "Click on download label",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 111000000
             }
           },
           {
@@ -170,7 +172,8 @@
             "line": 26,
             "name": "Click on view button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 148000000
             }
           },
           {
@@ -179,7 +182,8 @@
             "line": 27,
             "name": "Verify the Details new box",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 351000000
             }
           },
           {
@@ -188,7 +192,8 @@
             "line": 28,
             "name": "Add another ticket in the same box",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1350000000
             }
           },
           {
@@ -197,7 +202,8 @@
             "line": 29,
             "name": "Select Ticket from dropdownlist",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 555000000
             }
           },
           {
@@ -206,7 +212,8 @@
             "line": 30,
             "name": "Click on Add ticket",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 70000000
             }
           },
           {
@@ -215,7 +222,78 @@
             "line": 31,
             "name": "Verify the ticket is added in table",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "Click on view the ticket Details",
+            "result": {
+              "status": "passed",
+              "duration": 116000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "Verfiy the ticket Details",
+            "result": {
+              "status": "passed",
+              "duration": 565000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "Click on Back button",
+            "result": {
+              "status": "passed",
+              "duration": 81000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "Remove the ticket from box",
+            "result": {
+              "status": "passed",
+              "duration": 1710000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "Verify the ticket is delete from the table",
+            "result": {
+              "status": "passed",
+              "duration": 105000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "Enter the Search - Tracking Number in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 6986000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "Enter the Search - Record Id in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 668000000
             }
           }
         ]

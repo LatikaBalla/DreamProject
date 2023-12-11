@@ -9,10 +9,10 @@
     "uri": "RepairTickets.feature",
     "elements": [
       {
-        "id": "repairtickets-page-functionality;visiblity-check--create-a-ticket-and-download-eport",
+        "id": "repairtickets-page-functionality;visiblity-check--create-a-ticket-download-export,view-and-search-with-all-type",
         "keyword": "Scenario",
         "line": 13,
-        "name": "Visiblity check  Create a ticket and download eport",
+        "name": "Visiblity check  Create a ticket download export,view and search with all type",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3714000000
+              "duration": 3308000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 13616000000
+              "duration": 8824000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9079000000
+              "duration": 9074000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 78000000
+              "duration": 74000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of RepairTickets Page",
             "result": {
               "status": "passed",
-              "duration": 89000000
+              "duration": 414000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Filters of RepairTickets should be visible",
             "result": {
               "status": "passed",
-              "duration": 419000000
+              "duration": 1004000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Table for RepairTickets should be visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 1006000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "I should click on create new ticket",
             "result": {
               "status": "passed",
-              "duration": 76000000
+              "duration": 108000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Select failure Type, Return site and Serial Device",
             "result": {
               "status": "passed",
-              "duration": 835000000
+              "duration": 858000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Select Building and Chromebook issue",
             "result": {
               "status": "passed",
-              "duration": 403000000
+              "duration": 472000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Enter the Describe Your Issue",
             "result": {
               "status": "passed",
-              "duration": 2780000000
+              "duration": 3029000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 103000000
+              "duration": 112000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Verify New Ticket is added",
             "result": {
               "status": "passed",
-              "duration": 6999000000
+              "duration": 7128000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on Download import button",
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 85000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click on view the details",
             "result": {
               "status": "passed",
-              "duration": 539000000
+              "duration": 514000000
             }
           },
           {
@@ -173,7 +173,67 @@
             "name": "Verify the Details of Repair Ticket",
             "result": {
               "status": "passed",
-              "duration": 1097000000
+              "duration": 1115000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "Enter the Search - Ticket Number in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 4049000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "Enter the Search - Repair type in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 31603000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "Enter the Search - Serial Number in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 10165000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Enter the Search - Repair status in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 269000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "Enter the Search - Repair Box in search box and Verify the Result",
+            "result": {
+              "status": "failed",
+              "duration": 5122000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<td.MuiTableCell-root.MuiTableCell-alignCenter.MuiTableCell-sizeMedium.css-42rti1>' to contain '247'\n    at RepairTicketsActions.searchRepairBox (cypress/integration/PageObject/PageActions/RepairTicketsActions.js:113:30)\n    at Context.eval (cypress/integration/RepairTickets/RepairTickets.spec.js:78:3)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "Enter the Search - Asset tag in search box and Verify the Result",
+            "result": {
+              "status": "skipped"
             }
           }
         ]

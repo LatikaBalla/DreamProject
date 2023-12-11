@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3280000000
+              "duration": 4245000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 11525000000
+              "duration": 10336000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9079000000
+              "duration": 9076000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 75000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of VivacityRepairCenter Page",
             "result": {
               "status": "passed",
-              "duration": 403000000
+              "duration": 494000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the VivaRepairTickets Tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 9000000
             }
           },
           {

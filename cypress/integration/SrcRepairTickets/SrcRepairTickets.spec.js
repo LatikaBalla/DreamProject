@@ -64,4 +64,17 @@ srt.clickViewButton()
 })
 Then ('Veriry the Details of student repair ticket',()=>{
 srt.verifySrcRepairTicket()
+cy.go('back')
+})
+And('Enter the Search - Record Id in search box and Verify the Result', () => {
+    srt.searchRecordId()
+})
+Then('Enter the Search - Ticket Number in search box and Verify the Result', () => {
+    srt.searchTicketNumber()
+})
+And('Enter the Search - Repair type in search box and Verify the Result', () => {
+    srt.searchRepairType()
+})
+Then('Enter the Search - Repair status in search box and Verify the Result', () => {
+    srt.searchRepairStatus()
 })

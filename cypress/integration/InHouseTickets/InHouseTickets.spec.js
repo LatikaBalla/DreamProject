@@ -59,5 +59,17 @@ And('Click on Download Export button', () => {
 Then('Verify the successfully downloaded', () => {
     iht.verifyDownload()
 })
+And('Enter the Search - Record Id in search box and  Verify the Result', () => {
+    iht.searchRecordId()
+})
+Then('Enter the Search - Ticket Number in search box and  Verify the Result', () => {
+    iht.searchTicketNumber()
+})
+And('Enter the Search - Repair type in search box and  Verify the Result', () => {
+    iht.searchRepairType()
+})
+Then('Enter the Search - Repair status in search box and  Verify the Result', () => {
+    iht.searchRepairStatus()
+})
 
 

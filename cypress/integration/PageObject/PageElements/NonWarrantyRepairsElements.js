@@ -27,7 +27,7 @@ export default class NonWarrantyRepairsElements {
             timeout: 30000,
         })
     }
-    failureTypeElement() {
+    failuretypeElement(){
         return cy.get(locator.nonWarrantyRepairs.failureType, {
             timeout: 30000,
         })
@@ -41,12 +41,7 @@ export default class NonWarrantyRepairsElements {
         return cy.get(locator.nonWarrantyRepairs.building, {
             timeout: 30000,
         })
-    }
-    siteElement() {
-        return cy.get(locator.nonWarrantyRepairs.site, {
-            timeout: 30000,
-        })
-    }   
+    }  
     issueElement() {
         return cy.get(locator.nonWarrantyRepairs.issue, {
             timeout: 30000,
@@ -67,4 +62,20 @@ export default class NonWarrantyRepairsElements {
             timeout: 30000,
         })
     } 
+    
+savebtnElement(){
+    return cy.get(locator.nonWarrantyRepairs.savebtn, {
+        timeout: 30000,
+    })
+}
+searchdropdownElement(){
+    return cy.get(locator.nonWarrantyRepairs.searchdropdown, {
+        timeout: 30000,
+    })
+}
+downloadticketElement(){
+    return cy.contains(locator.nonWarrantyRepairs.downloadticket, {
+        timeout: 30000,
+    })
+}
 } 

@@ -31,4 +31,34 @@ export default class SrcFacilitatorsElements {
             timeout: 30000,
         })
     }
+    searchElement(){
+        return cy.get(locator.srcFacilitators.search, {
+            timeout: 30000,
+        })
+    }
+    searchboxElement(){
+        return cy.get(locator.srcFacilitators.searchbox, {
+            timeout: 30000,
+        })
+    }
+    fullNameElement(){
+        return cy.get(locator.srcFacilitators.fullName, {
+            timeout: 30000,
+        })
+    }
+    emaildropElement(){
+        return cy.get(locator.srcFacilitators.emaildrop, {
+            timeout: 30000,
+        })
+    }
+    statusElement(){
+        return cy.get(locator.srcFacilitators.status, {
+            timeout: 30000,
+        })
+    }
+    phoneNoElement(){
+        return cy.get(locator.srcFacilitators.phoneNo, {
+            timeout: 30000,
+        })
+    }
 }

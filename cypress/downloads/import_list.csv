@@ -1,3 +1,9 @@
-date_imported,importer,quantity_devices,import,account
-Sat Aug 26 2023 02:33:51 GMT+0530 (India Standard Time),shyama,2,test data,1
-Sat Aug 26 2023 02:33:51 GMT+0530 (India Standard Time),dutta,3,test data2,2
+Warranty Name,SKU,Warranty Type,Damage Protection,Price Per Device,Years,Months,Battery Month,Battery Year,Priority,Warranty Provider
+Lenovo 5-Year,U7925E,Advanced,Mechanical,100,5,60,59,5,1,1
+Lenovo 4-Year Care Pack,U17XSE,Advanced,Mechanical,200,4,48,48,4,2,1
+Lenovo 3-Year Pickup,UQ990E,Advanced,Mechanical,300,3,36,36,3,3,1
+Lenovo 5-Year,U7925E,Advanced,Mechanical,100,5,60,59,5,1,1
+Lenovo 5-Year,U7925E,Advanced,Mechanical,100,5,60,59,5,1,1
+Lenovo 4-Year Care Pack,U17XSE,Advanced,Mechanical,200,4,48,48,4,2,1
+Lenovo 3-Year Pickup,UQ990E,Advanced,Mechanical,300,3,36,36,3,3,1
+Lenovo 5-Year,U7925E,Advanced,Mechanical,100,5,60,59,5,1,1

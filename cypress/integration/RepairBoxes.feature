@@ -11,7 +11,7 @@ Feature: RepairBoxes Page Functionality
     And Click on RepairBoxes Tab
 
   Scenario:  Visiblity check,Create New Box, add ticket and  view details of box with create aonther ticket
-     And Verify the Title of RepairBoxes Page
+    And Verify the Title of RepairBoxes Page
     # And Outbound and Inbound Shipments for RepairBoxes should be visible
     Then I should click on create new Box
     Then Enter weight, height, depth and width
@@ -20,8 +20,8 @@ Feature: RepairBoxes Page Functionality
     And Click on Create box button
     Then Select Ticket from dropdownlist
     And Click on Finish button
-   Then Verify new box is added in table
-    And Click on download label 
+    Then Verify new box is added in table
+    And Click on download label
     # Then Verify label downloaded successfully
     And Click on view button
     Then Verify the Details new box
@@ -29,9 +29,11 @@ Feature: RepairBoxes Page Functionality
     Then Select Ticket from dropdownlist
     And Click on Add ticket
     Then Verify the ticket is added in table
-    # And Click on view the ticket Details
-    # Then Verfiy the ticket Details
-    # And Click on Back button
-    # And Remove the ticket from box
-    # Then Verify the ticket is delete from the table
+    And Click on view the ticket Details
+    Then Verfiy the ticket Details
+    And Click on Back button
+    And Remove the ticket from box
+    Then Verify the ticket is delete from the table
+    And Enter the Search - Tracking Number in search box and Verify the Result
+    Then Enter the Search - Record Id in search box and Verify the Result
 

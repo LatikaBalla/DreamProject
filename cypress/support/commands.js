@@ -25,6 +25,14 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 import 'cypress-file-upload';
 Cypress.Commands.add("AdminLogin", () => {
+
+  // cy.wait(1000)
+  // cy.get('[title="Widget containing a Cloudflare security challenge"]').within(($iframe)=>{
+  //        const iframe=$iframe.contents().find('Verify you are human')
+  //        cy.wrap(iframe).click({force:true})
+  // })
+  // cy.get('[type="checkbox"]').click()
+
   cy.get('[href="/login"]').click({ force: true })
 //cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
     cy.origin('https://dream-vivacity.us.auth0.com/', () => {
@@ -52,6 +60,7 @@ Cypress.Commands.add("VivacityAdminLogin", () => {
 })
 
 Cypress.Commands.add("RepaireTechLogin", () => {
+  
   cy.get('[href="/login"]').click({ force: true })
   //cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
     cy.origin('https://dream-vivacity.us.auth0.com/', () => {

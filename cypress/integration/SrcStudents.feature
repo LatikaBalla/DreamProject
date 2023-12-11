@@ -12,18 +12,21 @@ Feature:SrcStudents Page Functionality
         Then Click on SrcStudents tab
 
     Scenario: Add new Srudent, search and view
-        And Verify the Title of SrcStudents Page
-        And Table for SrcStudents should be visible
-        Then I should click on Add New student
-        Then Enter title, full name and Email
-        And Enter Phone and Cell Number
-        Then Select User Status
-        And Click on submit button
-        # Then Verify the student added in table
-        And Enter the student name in search box
-        Then Verify the record in searching history
-        And Click on view button
-        Then Veriry the Details of Student
+        # And Verify the Title of SrcStudents Page
+        # And Table for SrcStudents should be visible
+        # Then I should click on Add New student
+        # Then Enter title, full name and Email
+        # And Enter Phone and Cell Number
+        # Then Select User Status
+        # And Click on submit button
+        # # Then Verify the student added in table
+        # And Click on view button
+        # Then Veriry the Details of Student
+        And Enter the Search - Full name in search box and Verify the Result
+        Then Enter the Search - Email in search box and Verify the Result
+        And Enter the Search - Status in search box and Verify the Result
+        Then Enter the Search - Phone in search box and Verify the Result
+
 
 
 

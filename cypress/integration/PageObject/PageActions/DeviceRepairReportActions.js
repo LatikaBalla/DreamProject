@@ -31,28 +31,33 @@ export class DeviceRepairReportActions {
         dev.searchElement().type(tdata.deviceRepairReport.ticketno,{force:true})
     }
     verifyTicketDetailsTable() {
-        cy.wait(1000)
-        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.deviceRepairReport.ticketno)
+        cy.get('tr td').eq(1).should('contain', tdata.deviceRepairReport.ticketno)
     }
     clickOnClearButton() {
+        cy.get('[data-testid="KeyboardBackspaceIcon"]').click({force:true})
         dev.clearbtnElement().click({force:true})
     }
     searchBoxEmpty() {
         dev.searchElement().should('be.empty')
     }
     clickOnTicketNumberTable() {
-        cy.get('tbody tr').eq(0).find('td').eq(0).click({ force: true })
+        cy.get('tr td').eq(9).contains('View').click({ force: true })
     }
     verifyRapairTicketPAge() {
-        dev.headingElement()
+        dev.headingElement().should('be.visible')
     }
     verifyTicketDetails() {
+        cy.contains(tdata.deviceRepairReport.ticketno).should('be.visible')
     }
     clickOnDownloadButton() {
         dev.downloadticketElement().click({ force: true })
     }
     verifyDownloadSuccessful() {
         cy.verifyDownload("/download/",tdata.deviceRepairReport.filename)
+    }
+    selectdropdownList(){
+        dev.searchdropdownElement().eq(0).click({force:true})
+        cy.get('[data-value="ticket_number"]').click()
     }
 
 }

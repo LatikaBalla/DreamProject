@@ -89,17 +89,35 @@ export class SrcStudentsActions {
         dash.messageElement().should('contain', tdata.srcStudent.createStudentmsg)
         //cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.srcStudent.fullname)
     }
-    searchName() {
-        ss.searchElement().type(tdata.srcStudent.fullname,{force:true})
-    }
-    verfiySearchResult() {
-        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.srcStudent.fullname)
-    }
     clickViewButtton() {
         cy.get('tbody tr').eq(0).find('td').eq(4).contains('View').click({ force: true })
     }
     verifyStudentDetails() {
         cy.contains(tdata.srcStudent.fullname).should('be.visible')
+    }
+    searchFullName(){
+        ss.searchboxElement().eq(0).click({ force: true })
+        ss.fullNameElement().click({ force: true })
+        ss.searchElement().clear().type(tdata.srcStudent.fullName + '{enter}', { force: true })
+        cy.get('tr td').eq(0).should('contain', tdata.srcStudent.fullName)
+    }
+    searchEmail(){
+        ss.searchboxElement().eq(0).click({ force: true })
+        ss.emaildropElement().click({ force: true })
+        ss.searchElement().clear().type(tdata.srcStudent.emaildrop + '{enter}', { force: true })
+        cy.get('tr td').eq(2).should('contain', tdata.srcStudent.emaildrop)
+    }
+    searchStatus(){
+        ss.searchboxElement().eq(0).click({ force: true })
+        ss.statusElement().click({ force: true })
+        ss.searchElement().clear().type(tdata.srcStudent.status + '{enter}', { force: true })
+        cy.get('tr td').eq(3).should('contain', tdata.srcStudent.status)
+    }
+    searchPhone(){
+        ss.searchboxElement().eq(0).click({ force: true })
+        ss.phoneNoElement().click({ force: true })
+        ss.searchElement().clear().type(tdata.srcStudent.phoneNo1 + '{enter}', { force: true })
+        cy.get('tr td').eq(4).should('contain', tdata.srcStudent.phoneNo2)
     }
 
 }

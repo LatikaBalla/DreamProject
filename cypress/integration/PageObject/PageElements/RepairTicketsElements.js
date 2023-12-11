@@ -76,4 +76,45 @@ export default class RepairTicketsElements {
             timeout: 30000,
         })
     }
+    ticketnumberElement() {
+        return cy.get(locator.repairTickets.ticketnumber, {
+            timeout: 30000,
+        })
+    }
+    repairtypeElement() {
+        return cy.get(locator.repairTickets.repairtype, {
+            timeout: 30000,
+        })
+    }
+    serialnumberElement() {
+        return cy.get(locator.repairTickets.serialnumber, {
+            timeout: 30000,
+        })
+    }
+    repairstatusElement() {
+        return cy.get(locator.repairTickets.repairstatus, {
+            timeout: 30000,
+        })
+    }
+    repairboxElement() {
+        return cy.get(locator.repairTickets.repairbox, {
+            timeout: 30000,
+        })
+    }
+    assettagElement() {
+        return cy.get(locator.repairTickets.assettag, {
+            timeout: 30000,
+        })
+    }
+    searchElement() {
+        return cy.get(locator.repairTickets.search, {
+            timeout: 30000,
+        })
+    }
+    intransitElement() {
+        return cy.get(locator.repairTickets.intransit, {
+            timeout: 30000,
+        })
+    }
+   
 }

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2953000000
+              "duration": 1214000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 10667000000
+              "duration": 9723000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9074000000
+              "duration": 9073000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 78000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of Repair360 Page",
             "result": {
               "status": "passed",
-              "duration": 1213000000
+              "duration": 388000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Verify the StudentRepairCenter tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 10000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Verify the PartCloset tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 6000000
             }
           }
         ]

@@ -61,4 +61,34 @@ export default class InHouseTicketsElements {
             timeout: 30000,
         })
     }
+    searchboxElement(){
+        return cy.get(locator.inhouseTickets.searchbox, {
+            timeout: 30000,
+        })
+    }
+    ticketnumberElement(){
+        return cy.get(locator.inhouseTickets.ticketnumber, {
+            timeout: 30000,
+        })
+    }
+    repairtypeElement(){
+        return cy.get(locator.inhouseTickets.repairtype, {
+            timeout: 30000,
+        })
+    }
+    recordidElement(){
+        return cy.get(locator.inhouseTickets.recordid, {
+            timeout: 30000,
+        })
+    }
+    repairstatusElement(){
+        return cy.get(locator.inhouseTickets.repairstatus, {
+            timeout: 30000,
+        })
+    }
+    searchElement(){
+        return cy.get(locator.inhouseTickets.search, {
+            timeout: 30000,
+        })
+    }
 }

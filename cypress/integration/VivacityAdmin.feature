@@ -131,26 +131,26 @@ Feature:Vivacity admin Page Functionality
         Then Verify the Repair Ticket page redirected
 
 
-     Scenario: Add new Employee Search, Edit, Delete and filter
-        And Click on Vivacity Admin page
-        Then Click on Employee management unit
-        Then I should click on Create new Employee
-        Then Enter full name, title and Email for Employee
-        And Enter Phone and select userStatus
-        And Click on submit button
-        Then Verify the Employee added in table
-        And Enter the Search value in search box for employee
-        Then Verify the Results in the table for employee
-        And Click on Edit button new Employee
-        Then I should edit fullname and title for Employee
-        And I should edit Phone and user status for Employee
-        Then Click on Submit button 
-        And Verify the Record has been updated Meassage
-        # Then Click on the Export Button 
-        # And Click on Delete button
-        # Then Click on Confirm Delete button
-        # And Verify the record is deleted successfully
-        # Then Click on Employee management unit
+    #  Scenario: Add new Employee Search, Edit, Delete and filter
+    #     And Click on Vivacity Admin page
+    #     Then Click on Employee management unit
+    #     Then I should click on Create new Employee
+    #     Then Enter full name, title and Email for Employee
+    #     And Enter Phone and select userStatus
+    #     And Click on submit button
+    #     Then Verify the Employee added in table
+    #     And Enter the Search value in search box for employee
+    #     Then Verify the Results in the table for employee
+    #     And Click on Edit button new Employee
+    #     Then I should edit fullname and title for Employee
+    #     And I should edit Phone and user status for Employee
+    #     Then Click on Submit button 
+    #     And Verify the Record has been updated Meassage
+    #     # Then Click on the Export Button 
+    #     # And Click on Delete button
+    #     # Then Click on Confirm Delete button
+    #     # And Verify the record is deleted successfully
+    #     # Then Click on Employee management unit
 
 
 

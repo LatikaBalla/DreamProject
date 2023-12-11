@@ -12,8 +12,13 @@ export default class RepairBoxesElements {
             timeout: 30000,
         })
     }
-    seachboxElement() {
-        return cy.get(locator.repairBoxes.seachbox, {
+    searchboxElement() {
+        return cy.get(locator.repairBoxes.searchbox, {
+            timeout: 30000,
+        })
+    }
+    searchElement() {
+        return cy.get(locator.repairBoxes.search, {
             timeout: 30000,
         })
     }
@@ -100,6 +105,16 @@ export default class RepairBoxesElements {
     }
     outboundElement() {
         return cy.contains(locator.repairBoxes.outbound, {
+            timeout: 30000,
+        })
+    }
+    trackingnumberElement(){
+        return cy.get(locator.repairBoxes.trackingnumber, {
+            timeout: 30000,
+        })
+    }
+    recordidElement(){
+        return cy.get(locator.repairBoxes.recordid, {
             timeout: 30000,
         })
     }

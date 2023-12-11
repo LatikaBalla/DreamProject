@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 7649000000
+              "duration": 7470000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 11558000000
+              "duration": 11178000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8075000000
+              "duration": 8077000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Buildings Tab",
             "result": {
               "status": "passed",
-              "duration": 65000000
+              "duration": 66000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I should click on + Add New button",
             "result": {
               "status": "passed",
-              "duration": 923000000
+              "duration": 918000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "I should Enter Building Name,Phone and Extension",
             "result": {
               "status": "passed",
-              "duration": 870000000
+              "duration": 884000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Select Default building",
             "result": {
               "status": "passed",
-              "duration": 146000000
+              "duration": 138000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Enter Billing Address and select from dropdown",
             "result": {
               "status": "passed",
-              "duration": 2833000000
+              "duration": 2872000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click on checkbox Same as Shipping Address",
             "result": {
               "status": "passed",
-              "duration": 6095000000
+              "duration": 6097000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 66000000
+              "duration": 71000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Enter the building name in search box",
             "result": {
               "status": "passed",
-              "duration": 348000000
+              "duration": 355000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Verify the record in searching history",
             "result": {
               "status": "passed",
-              "duration": 4116000000
+              "duration": 4140000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on More filters",
             "result": {
               "status": "passed",
-              "duration": 78000000
+              "duration": 74000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Select Field name and Field operation",
             "result": {
               "status": "passed",
-              "duration": 306000000
+              "duration": 342000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Enter the Search value in search box",
             "result": {
               "status": "passed",
-              "duration": 373000000
+              "duration": 363000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on Apply Button",
             "result": {
               "status": "passed",
-              "duration": 62000000
+              "duration": 64000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Verify the Results in the table",
             "result": {
               "status": "passed",
-              "duration": 1532000000
+              "duration": 1538000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 107000000
+              "duration": 95000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click on Edit Icon",
             "result": {
               "status": "passed",
-              "duration": 138000000
+              "duration": 119000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "I should edit Building Name,Phone and Extension",
             "result": {
               "status": "passed",
-              "duration": 986000000
+              "duration": 990000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on update button",
             "result": {
               "status": "passed",
-              "duration": 66000000
+              "duration": 73000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Verify the Record has been updated Meassage",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 8000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Click on Delete Icon",
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 74000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Click on Confirm Delete button",
             "result": {
               "status": "passed",
-              "duration": 93000000
+              "duration": 95000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Verify the record is deleted successfully",
             "result": {
               "status": "passed",
-              "duration": 539000000
+              "duration": 1069000000
             }
           }
         ]

@@ -65,15 +65,23 @@ And('Click on submit button', () => {
 Then('Verify the student added in table', () => {
     ss.verifyRecordTable()
 })
-And('Enter the student name in search box', () => {
-    ss.searchName()
-})
-Then('Verify the record in searching history', () => {
-    ss.verfiySearchResult()
-})
+
 And('Click on view button', () => {
     ss.clickViewButtton()
 })
 Then('Veriry the Details of Student', () => {
     ss.verifyStudentDetails()
+})
+
+And('Enter the Search - Full name in search box and Verify the Result', () => {
+    ss.searchFullName()
+})
+Then('Enter the Search - Email in search box and Verify the Result', () => {
+    ss.searchEmail()
+})
+And('Enter the Search - Status in search box and Verify the Result', () => {
+    ss.searchStatus()
+})
+Then('Enter the Search - Phone in search box and Verify the Result', () => {
+    ss.searchPhone()
 })

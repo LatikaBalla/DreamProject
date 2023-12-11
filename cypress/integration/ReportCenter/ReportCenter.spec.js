@@ -75,8 +75,8 @@ Then('Click on DeviceRepairReport page', () => {
     dev.clickOnDeviceRepairReport()
     cy.wait(3000)
 })
-And('Verify title of DeviceRepairReport Page should be visible', () => {
 
+And('Verify title of DeviceRepairReport Page should be visible', () => {
     dev.verifyTitle()
 })
 Then('Verify the filters should be visible', () => {
@@ -86,20 +86,11 @@ Then('Verify history table should be visible', () => {
     dev.tableVisible()
 })
 And('Enter the Ticket Number in search box', () => {
+    dev.selectdropdownList()
     dev.enterTicketNumberSearch()
 })
 Then('Verify the Ticket details in table', () => {
-    cy.wait(3000)
     dev.verifyTicketDetailsTable()
-})
-And('Click on clear button', () => {
-    dev.clickOnClearButton()
-})
-Then('Verify the search box is cleared', () => {
-    dev.searchBoxEmpty()
-})
-And('Enter the Ticket Number in search box', () => {
-    dev.enterTicketNumberSearch()
 })
 And('Click on the Ticket Number', () => {
     dev.clickOnTicketNumberTable()
@@ -116,6 +107,12 @@ Then('Click on the download Ticket Estimation button', () => {
 And('Verify downloaded ticket successfully', () => {
     dev.verifyDownloadSuccessful()
 })
+And('Click on clear button', () => {
+    dev.clickOnClearButton()
+})
+Then('Verify the search box is cleared', () => {
+    dev.searchBoxEmpty()
+})
 
 
 And ('Click on NonwarrantyRepairs page',()=>{
@@ -131,5 +128,45 @@ Then ('Verify table and filter should be visible',()=>{
 nwr.filtersVisible()
 nwr.tableVisible()
 })
-
+Then ('Select failure Type, Return site and Serial Device',()=>{
+    nwr.selectFailureType()
+    nwr.selectSite()
+    nwr.selectSerialDevice()
+})
+And ('Select Building and Chromebook issue',()=>{
+    //iht.selectBilding()
+  // nwr.selectRepaireIssue()
+})
+Then ('Enter the Describe Your Issue',()=>{
+    nwr.enterChromebookIssue()
+})
+And ('Click on save button',()=>{
+    nwr.clickOnSaveButton()
+})
+Then ('Verify New Ticket is added',()=>{
+    nwr.verifyNewTicket()
+})
+And('Enter the Ticket Number in search box for warranty', () => {
+    nwr.selectdropdownList()
+    nwr.enterTicketNumberSearch()
+})
+Then('Verify the Ticket details in table for warranty', () => {
+  
+    nwr.verifyTicketDetailsTable()
+})
+And('Click on the Ticket Number for warranty', () => {
+    nwr.clickOnTicketNumberTable()
+})
+Then('Verify the Repair Ticket page will open for warranty', () => {
+    nwr.verifyRapairTicketPAge()
+})
+And('Verfiy the details of Ticket for warranty', () => {
+    nwr.verifyTicketDetails()
+})
+Then('Click on the download Ticket Estimation button for warranty', () => {
+    nwr.clickOnDownloadButton()
+})
+And('Verify downloaded ticket successfully for warranty', () => {
+    nwr.verifyDownloadSuccessful()
+})
 

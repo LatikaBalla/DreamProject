@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3029000000
+              "duration": 2804000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 11687000000
+              "duration": 8504000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9077000000
+              "duration": 9074000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 76000000
+              "duration": 77000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on StudentRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 1081000000
+              "duration": 1316000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click on SrcFacilitators tab",
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 62000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the Title of SrcFacilitators Page",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 15000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Filters of SrcFacilitators should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 1602000000
             }
           },
           {
@@ -103,27 +103,47 @@
             "name": "Table for SrcFacilitators should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 944000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 18,
-            "name": "Click on view button",
+            "line": 20,
+            "name": "Enter the Search - Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2093000000
+              "duration": 921000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
-            "name": "Veriry the Details of Facilitator",
+            "line": 21,
+            "name": "Enter the Search - Email in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 1018000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Enter the Search - Status in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 714000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Enter the Search - Phone in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 757000000
             }
           }
         ]

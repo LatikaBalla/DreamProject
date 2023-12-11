@@ -1,2 +1,2 @@
 record_id,device_status,serial_number,building,deviceid,import_number,studentid,base_warranty_description,base_warranty_sku,base_warranty_start_date,base_warranty_end_date,advanced_warranty_description,advanced_warranty_sku,advanced_warranty_start_date,advanced_warranty_end_date,asset_tag,student,loaner_status,created_date,last_modified_by,created_by,account,device
-591944,Active,VIVATEST26Test,,,,,This is warranty description edited,aabbb,,,,,,,,,In Loaner Pool,,,,1,
+591920,Active,VIVATEST2Test,,,,,This is warranty description edited,aabbb,,,,,,,,,In Loaner Pool,,,,1,

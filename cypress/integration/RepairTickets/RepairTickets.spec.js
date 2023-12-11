@@ -62,3 +62,21 @@ rt.clickOnViewButton()
 Then ('Verify the Details of Repair Ticket',()=>{
 rt.verifyDetails()
 })
+And ('Enter the Search - Ticket Number in search box and Verify the Result',()=>{
+rt.searchTicketNumber()
+})
+Then ('Enter the Search - Repair type in search box and Verify the Result',()=>{
+rt.searchRepairType()
+})
+And ('Enter the Search - Serial Number in search box and Verify the Result',()=>{
+rt.searchSerialNumber()
+})
+Then ('Enter the Search - Repair status in search box and Verify the Result',()=>{
+rt.searchRepairStatus()
+})
+And ('Enter the Search - Repair Box in search box and Verify the Result',()=>{
+rt.searchRepairBox()
+})
+Then ('Enter the Search - Asset tag in search box and Verify the Result',()=>{
+rt.searchAssetTag()
+})

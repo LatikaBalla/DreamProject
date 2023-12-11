@@ -93,4 +93,11 @@ rb.clickOnRemoveButton()
 }) 
 Then ('Verify the ticket is delete from the table',()=>{
 rb.verifyTicketDeleted()
+cy.go('back')
+})
+And ('Enter the Search - Tracking Number in search box and Verify the Result',()=>{
+rb.searchTrackingNumber()
+})
+Then ('Enter the Search - Record Id in search box and Verify the Result',()=>{
+rb.searchRecordId()
 })

@@ -14,7 +14,7 @@ export class NonWarrantyRepairsActions {
         dash.termsElement().click({ force: true })
     }
     clickOnReportCenter() {
-       // dash.arrowElement().click({ force: true })
+        // dash.arrowElement().click({ force: true })
         dash.reportcenterElement().click({ force: true })
     }
     clickOnNonWarrantyRepairs() {
@@ -29,36 +29,68 @@ export class NonWarrantyRepairsActions {
     tableVisible() {
         nwr.tableElement().should('be.visible')
     }
-    formVisible(){
-        nwr.formElement().should('be.visible')  
+    formVisible() {
+        nwr.formElement().should('be.visible')
     }
 
-    // enterTicketNumberSearch() {
-    //     dev.searchElement().type(tdata.deviceRepairReport.ticketno,{force:true})
+    selectFailureType() {
+        nwr.failuretypeElement().click({ force: true })
+        cy.get(tdata.nonwarrantyRepairs.failuretype).click({ force: true })
+    }
+    selectSerialDevice() {
+        nwr.serialdeviceElement().click({ force: true })
+        cy.get(tdata.nonwarrantyRepairs.serialdevice).eq(0).click({ force: true })
+    }
+    // selectTechnician() {
+    //     iht.technicianElement().click({ force: true })
+    //     cy.get('[role="listbox"]').find('li').contains(tdata.nonwarrantyRepairs.technician).click({ force: true })  
     // }
+    selectSite() {
+        nwr.siteElement().click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
+    }
+    selectRepaireIssue() {
+        nwr.issueElement().click({ force: true })
+        cy.get(tdata.nonwarrantyRepairs.repairissue).click({ force: true })
+    }
+    enterChromebookIssue() {
+        nwr.describeElement().type(tdata.nonwarrantyRepairs.chromebookissue, { force: true })
+    }
+    clickOnSaveButton() {
+        nwr.savebtnElement().click({ force: true })
+    }
+    verifyNewTicket() {
+        dash.messageElement().should('contain', tdata.nonwarrantyRepairs.createTicketmsg)
+    }
+    selectdropdownList() {
+        nwr.searchdropdownElement().eq(5).click({ force: true })
+        cy.get('[data-value="ticket_number"]').click()
+    }
+    enterTicketNumberSearch() {
+        nwr.searchElement().type(tdata.nonwarrantyRepairs.ticketno, { force: true })
+    }
+    verifyTicketDetailsTable() {
+        cy.get('tr td').eq(1).should('contain', tdata.nonwarrantyRepairs.ticketno)
+    }
+    verifyRapairTicketPAge(){
+        cy.contains('Repair Ticket Details').should('be.visible')
+    }
 
-
-    // verifyTicketDetailsTable() {
-    //     cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.deviceRepairReport.ticketno)
-    // }
-   
-    // searchBoxEmpty() {
-    //     dev.searchElement().should('be.empty')
-    // }
-    // clickOnTicketNumberTable() {
-    //     cy.get('tbody tr').eq(0).find('td').eq(0).click({ force: true })
-    // }
-    // verifyRapairTicketPAge() {
-    //     dev.headingElement()
-    // }
-    // verifyTicketDetails() {
-    // }
-    // clickOnDownloadButton() {
-    //     dev.downloadticketElement().click({ force: true })
-    // }
-    // verifyDownloadSuccessful() {
-    //     cy.verifyDownload("/download/",tdata.NonWarrantyRepairs.filename)
-    // }
-
+    clickOnClearButton() {
+        cy.get('[data-testid="KeyboardBackspaceIcon"]').click({force:true})
+        nwr.clearbtnElement().click({force:true})
+    }
+    searchBoxEmpty() {
+        nwr.searchElement().should('be.empty')
+    }
+    clickOnTicketNumberTable() {
+        cy.get('tr td').eq(9).contains('View').click({ force: true })
+    }
+    verifyTicketDetails() {
+        cy.contains(tdata.nonwarrantyRepairs.ticketno).should('be.visible')
+    }
+    clickOnDownloadButton() {
+        nwr.downloadticketElement().click({ force: true })
+    }
 }
 export default NonWarrantyRepairsActions 

@@ -111,4 +111,30 @@ export default class SrcRepairTicketsElements {
             timeout: 30000,
         })
     }
+    searchboxElement(){
+        return cy.get(locator.srcRepairTickets.searchbox, {
+            timeout: 30000,
+        })
+    }
+    ticketnumberElement(){
+        return cy.get(locator.srcRepairTickets.ticketnumber, {
+            timeout: 30000,
+        })
+    }
+    repairtypeElement(){
+        return cy.get(locator.srcRepairTickets.repairtype, {
+            timeout: 30000,
+        })
+    }
+    recordidElement(){
+        return cy.get(locator.srcRepairTickets.recordid, {
+            timeout: 30000,
+        })
+    }
+    repairstatusElement(){
+        return cy.get(locator.srcRepairTickets.repairstatus, {
+            timeout: 30000,
+        })
+    }
+
 }

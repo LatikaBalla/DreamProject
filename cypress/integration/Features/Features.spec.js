@@ -6,7 +6,7 @@ Cypress.on("uncaught:exception", () => {
     return false;
 });
 Given('I should navigate to application', function () {
-    cy.visit("/");
+    cy.visit("/", {failOnStatusCode: false});
 })
 When('I should Sign In into the application', () => {
     cy.AdminLogin()

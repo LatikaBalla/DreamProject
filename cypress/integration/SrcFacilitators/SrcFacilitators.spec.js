@@ -40,3 +40,15 @@ And ('Click on view button',()=>{
 Then ('Veriry the Details of Facilitator',()=>{
 sf.verifyViewDetails()
 })
+And('Enter the Search - Full name in search box and Verify the Result', () => {
+    sf.searchFullName()
+})
+Then('Enter the Search - Email in search box and Verify the Result', () => {
+    sf.searchEmail()
+})
+And('Enter the Search - Status in search box and Verify the Result', () => {
+    sf.searchStatus()
+})
+Then('Enter the Search - Phone in search box and Verify the Result', () => {
+    sf.searchPhone()
+})

@@ -144,7 +144,8 @@
         "title": "Device Repair History",
         "clearbtn": "Clear",
         "filters": ".css-1yuhvjn",
-        "search": "[placeholder='Search by fields value']",
+        "searchdropdown":"[role='combobox']",
+        "search": "[data-testid='txtSearchData']",
         "table": ".css-1owb465",
         "printTicket": "Print Ticket Estimate",
         "downloadticket": "Download Ticket Estimate",
@@ -169,8 +170,8 @@
     },
     "nonWarrantyRepairs": {
         "title": "Non-Warranty Repairs",
-        "filters": ".css-rpbpc1",
-        "search": "[placeholder='Search Ticket Number']",
+        "filters": ".css-1yuhvjn",
+        "search": "[data-testid='txtSearchData']",
         "table": ".css-1owb465",
         "form": "form[class='MuiBox-root css-0']",
         "failureType": "#failure_type",
@@ -178,7 +179,10 @@
         "building": "#outbound_address",
         "serialdevice": "#serial_device",
         "issue": "#repair_issue",
-        "describe": "#chromebook_issue"
+        "describe": "#chromebook_issue",
+        "savebtn":"[type='submit']",
+        "searchdropdown":"[role='combobox']",
+        "downloadticket": "Download Ticket Estimate"
     },
     "manageDevices": {
         "title": "Devices",
@@ -226,7 +230,7 @@
     },
     "orgUploadAssets": {
         "title": "Organization Uploaded Assets",
-        "filters": ".css-1qluk4p",
+        "filters": ".css-1tz8m30",
         "table": ".css-1owb465",
         "searchbox": "[placeholder='Search']",
         "searchbtn": "Search",
@@ -286,7 +290,7 @@
         "table": ".css-1owb465",
         "createTicket": "Create New",
         "export": "Export",
-        "searchbox": "[data-testid='txtSearchData']",
+        "searchbox": "[role='combobox']",
         "refreshbtn": "[data-testid='CachedIcon']",
         "view": "View",
         "failuretype": "#failure_type",
@@ -295,13 +299,21 @@
         "building": "#building",
         "chromebookissue": "#repair_issue",
         "description": "#chromebook_issue",
-        "savebtn": "Save"
+        "savebtn": "Save",
+        "search":"[data-testid='txtSearchData']",
+        "ticketnumber":"[data-value='ticket_number']",
+        "repairtype":"[data-value='repair_type']",
+        "serialnumber":"[data-value='serial_number']",
+        "repairstatus":"[data-value='repair_status']",
+        "repairbox":"[data-value='repair_box']",
+        "assettag":"[data-value='asset_tag']",
+        "intransit":"[data-value='In Transit']"
     },
     "repairBoxes": {
         "title": "Repair Ticket Instructions",
         "inbound": "Inbound Shipments",
         "outbound": "Outbound Shipments",
-        "seachbox": "[placeholder='Search']",
+      
         "addbox": "Create New",
         "weight": "#weight",
         "height": "#height",
@@ -317,7 +329,11 @@
         "addticket": "Add Tickets",
         "selectTicket": "#repair_tickets",
         "addticketbtn": "Add Ticket(s)",
-        "tickettitle": "Repair Tickets in this Box"
+        "tickettitle": "Repair Tickets in this Box",
+        "searchbox": "[role='combobox']",
+        "search":"[data-testid='txtSearchData']",
+        "trackingnumber":"[data-value='tracking_number_from']",
+        "recordid":"[data-value='record_id']"
     },
     "inhouseRepairCenter": {
         "title": "In-House Repair",
@@ -344,7 +360,6 @@
         "title": "In House Repair Tickets",
         "filters": ".css-1yuhvjn",
         "table": ".css-1owb465",
-        "search": "[data-testid='txtSearchData']",
         "view": "View",
         "createTicket": "Create New",
         "exportbtn": "Export",
@@ -354,7 +369,13 @@
         "technician": "#internal_technician",
         "chromebookissue": "#chromebook_issue",
         "savebtn": "Save",
-        "building": "#building"
+        "building": "#building",
+        "searchbox": "[role='combobox']",
+        "search":"[data-testid='txtSearchData']",
+        "ticketnumber":"[data-value='ticket_number']",
+        "repairtype":"[data-value='repair_type']",
+        "recordid":"[data-value='record_id']",
+        "repairstatus":"[data-value='repair_status']"
     },
     "studentRepairCenter": {
         "title": "Student Repair Center",
@@ -410,15 +431,26 @@
         "vtverifypart": "VT Verfied Part",
         "custompart": "Custom Part",
         "part": "#part",
-        "createLineitem": "Create Line Item"
+        "createLineitem": "Create Line Item",
+        "searchbox": "[role='combobox']",
+        "ticketnumber":"[data-value='ticket_number']",
+        "repairtype":"[data-value='repair_type']",
+        "recordid":"[data-value='record_id']",
+        "repairstatus":"[data-value='repair_status']"
     },
     "srcFacilitators": {
         "title": "SRC Facilitators",
-        "filters": ".css-al6ceu",
+        "filters": ".css-1yuhvjn",
         "table": ".css-1owb465",
         "refreshbtn": "[data-testid='CachedIcon']",
         "view": "View",
-        "detailsRole": " Faciliator "
+        "detailsRole": " Faciliator ",
+        "search": "[data-testid='txtSearchData']",
+        "searchbox": "[role='combobox']",
+        "fullName":"[data-value='full_name']",
+        "emaildrop":"[data-value='email']",
+        "status":"[data-value='status']",
+        "phoneNo":"[data-value='phone']"
     },
     "srcStudents": {
         "title": "SRC Students",
@@ -440,7 +472,12 @@
         "submit": "[type='submit']",
         "cancel": "Cancel",
         "view": "View",
-        "search": "[data-testid='txtSearchData']"
+        "search": "[data-testid='txtSearchData']",
+        "searchbox": "[role='combobox']",
+        "fullName":"[data-value='full_name']",
+        "emaildrop":"[data-value='email']",
+        "status":"[data-value='status']",
+        "phoneNo":"[data-value='phone']"
     },
     "resources": {
         "title": "Resources",
@@ -604,7 +641,7 @@
         "contact": "[href='https://vivacitytech.com/contact-us']",
         "privacyPolicy": "[href='/privacy-policy']",
         "termsofService": "[href='/terms-of-service']",
-        "googleDisclosure": "[href='/disclosure-google']",
+        "googleDisclosure": "[href='/google-use-policy']",
         "shipping": "[href='https://vivacitytech.com/shipping-policy']",
         "login":"[href='/login']"
     },

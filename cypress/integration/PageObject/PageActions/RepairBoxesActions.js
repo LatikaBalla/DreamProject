@@ -25,13 +25,13 @@ export class RepairBoxesActions {
         rb.titleElement().should('be.visible')
     }
     inboundVisible() {
-       // rb.inboundElement().should('be.visible')
+        // rb.inboundElement().should('be.visible')
     }
     outboundVisible() {
         rb.outboundElement().should('be.visible')
     }
     clickOnAddnewBox() {
-        rb.addboxElement().click({ force: true })  
+        rb.addboxElement().click({ force: true })
     }
     enterWeight() {
         rb.weightElement().type(tdata.repairBox.weight)
@@ -102,6 +102,19 @@ export class RepairBoxesActions {
     verifyTicketDeleted() {
         //   cy.wait(1000)
         // cy.get('tbody tr').eq(0).should('not.be.visible')
+    }
+    searchTrackingNumber() {
+        rb.searchboxElement().eq(0).click({ force: true })
+        rb.trackingnumberElement().click({ force: true })
+        rb.searchElement().clear().type(tdata.repairBox.trackingnumber + '{enter}', { force: true })
+        cy.wait(2000)
+        cy.get('tr td').eq(1).should('contain', tdata.repairBox.trackingnumber)
+    }
+    searchRecordId() {
+        rb.searchboxElement().eq(0).click({ force: true })
+        rb.recordidElement().click({ force: true })
+        rb.searchElement().clear().type(tdata.repairBox.recordid + '{enter}', { force: true })
+        cy.get('tr td').eq(0).should('contain', tdata.repairBox.recordid)
     }
 }
 export default RepairBoxesActions 

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2580000000
+              "duration": 2663000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 11260000000
+              "duration": 10352000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 79000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on MyFleet Tab",
             "result": {
               "status": "passed",
-              "duration": 853000000
+              "duration": 871000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Filters of MyFleet should be visible",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 15000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Table for MyFleet should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 8000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click on the add device",
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 104000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Enter Serial no and select device id",
             "result": {
               "status": "passed",
-              "duration": 1369000000
+              "duration": 1358000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Enter Asset Tag and Select student id",
             "result": {
               "status": "passed",
-              "duration": 677000000
+              "duration": 836000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Select lonar status and Device status",
             "result": {
               "status": "passed",
-              "duration": 897000000
+              "duration": 962000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on the Submit Button",
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 73000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Verify the device added successfully",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 8000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click on view Button",
             "result": {
               "status": "passed",
-              "duration": 105000000
+              "duration": 112000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Verify the Warranty Description",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 17000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Enter the table fields in search box",
             "result": {
               "status": "passed",
-              "duration": 286000000
+              "duration": 291000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Verify the record in searching history",
             "result": {
               "status": "passed",
-              "duration": 3031000000
+              "duration": 3033000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on Export To CSV",
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 73000000
             }
           }
         ]

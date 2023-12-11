@@ -10,7 +10,7 @@ Feature:RepairTickets Page Functionality
     Then Click on Repair360 page
 
 
-  Scenario:Visiblity check  Create a ticket and download eport
+  Scenario:Visiblity check  Create a ticket download export,view and search with all type
     And Verify the Title of RepairTickets Page
     Then Filters of RepairTickets should be visible
     And Table for RepairTickets should be visible
@@ -24,3 +24,9 @@ Feature:RepairTickets Page Functionality
     # Then Verify the successfully downloaded
     And Click on view the details
     Then Verify the Details of Repair Ticket
+    And Enter the Search - Ticket Number in search box and Verify the Result
+    Then Enter the Search - Repair type in search box and Verify the Result
+    And Enter the Search - Serial Number in search box and Verify the Result
+    Then Enter the Search - Repair status in search box and Verify the Result
+    And Enter the Search - Repair Box in search box and Verify the Result
+    Then Enter the Search - Asset tag in search box and Verify the Result

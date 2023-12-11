@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 5158000000
+              "duration": 1312000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9503000000
+              "duration": 11700000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9078000000
+              "duration": 9075000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 79000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on InHouseRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 464000000
+              "duration": 889000000
             }
           },
           {
@@ -73,87 +73,44 @@
             "name": "Click All InHouseTickets tab",
             "result": {
               "status": "passed",
-              "duration": 62000000
+              "duration": 71000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 15,
-            "name": "Verify the Title of InHouseTickets Page",
+            "line": 25,
+            "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 679000000
+              "status": "undefined",
+              "duration": 257000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 16,
-            "name": "Filters of InHouseTickets should be visible",
+            "line": 26,
+            "name": "Enter the Search - Ticket Number in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 17,
-            "name": "Table for InHouseTickets should be visible",
+            "line": 27,
+            "name": "Enter the Search - Repair type in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 943000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
-            "name": "I should click on Create new button",
+            "line": 28,
+            "name": "Enter the Search - Repair status in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 92000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "Select failure Type, Serial Device, Technician, issue and Building",
-            "result": {
-              "status": "passed",
-              "duration": 1220000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "Enter the Chromebook issue",
-            "result": {
-              "status": "passed",
-              "duration": 1036000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "Click on save button",
-            "result": {
-              "status": "passed",
-              "duration": 83000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "Click on Download Export button",
-            "result": {
-              "status": "passed",
-              "duration": 84000000
+              "status": "skipped"
             }
           }
         ]

@@ -126,7 +126,7 @@ Then('Redirect to Feature-Repair 360 section', () => {
     lan.clickOngoogleDisclosure()
  })
  Then ('Redirect to Information->Google Privacy Disclosure page',()=>{
-    cy.url().should('include', '/disclosure-google')
+    cy.url().should('include', '/google-use-policy')
     cy.go('back')
  })
  And ('Click on the Information->Shipping of footer',()=>{

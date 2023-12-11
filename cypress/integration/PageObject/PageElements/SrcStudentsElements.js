@@ -101,4 +101,29 @@ export default class SrcStudentsElements {
             timeout: 30000,
         })
     }
+    searchboxElement(){
+        return cy.get(locator.srcStudents.searchbox, {
+            timeout: 30000,
+        })
+    }
+    fullNameElement(){
+        return cy.get(locator.srcStudents.fullName, {
+            timeout: 30000,
+        })
+    }
+    emaildropElement(){
+        return cy.get(locator.srcStudents.emaildrop, {
+            timeout: 30000,
+        })
+    }
+    statusElement(){
+        return cy.get(locator.srcStudents.status, {
+            timeout: 30000,
+        })
+    }
+    phoneNoElement(){
+        return cy.get(locator.srcStudents.phoneNo, {
+            timeout: 30000,
+        })
+    }
 }

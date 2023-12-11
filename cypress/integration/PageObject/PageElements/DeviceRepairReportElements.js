@@ -47,6 +47,10 @@ export default class DeviceRepairReportElements {
             timeout: 30000,
         })
     }
-
+searchdropdownElement(){
+    return cy.get(locator.deviceRepairReport.searchdropdown, {
+        timeout: 30000,
+    }) 
+}
 
 }
