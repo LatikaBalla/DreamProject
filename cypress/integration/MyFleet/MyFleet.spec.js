@@ -31,45 +31,45 @@ Then('Filters of MyFleet should be visible', () => {
 And('Table for MyFleet should be visible', () => {
     mf.tableVisible()
 })
-Then ('Click on the add device',()=>{
-mf.clickOnAddDevice()
+Then('Click on the add device', () => {
+    mf.clickOnAddDevice()
 })
-And ('Enter Serial no and select device id',()=>{
-mf.enterSerialNo()
-mf.selectDeviceId()
+And('Enter Serial no and select device id', () => {
+    mf.enterSerialNo()
+    mf.selectDeviceId()
 })
-Then ('Enter Asset Tag and Select student id',()=>{
-mf.enterAssetTag()
-mf.selectStudentid()
+Then('Enter Asset Tag and Select student id', () => {
+    mf.enterAssetTag()
+    mf.selectStudentid()
 })
-And ('Select lonar status and Device status',()=>{
-mf.selectLonarStatus()
-mf.selectDeviceStatus()
+And('Select lonar status and Device status', () => {
+    mf.selectLonarStatus()
+    mf.selectDeviceStatus()
 })
-Then ('Click on the Submit Button',()=>{
-mf.clickOnsubmitButton()
+Then('Click on the Submit Button', () => {
+    mf.clickOnsubmitButton()
 })
-And ('Verify the device added successfully',()=>{
-mf.verfifyDeviceAdded()
+And('Verify the device added successfully', () => {
+    mf.verfifyDeviceAdded()
 })
 
-Then('Click on More filters', () => {
-    cy.wait(3000)
-    mf.clickOnMoreFiltersButton()
-})
-Then('Select Field name and Field operation', () => {
-    mf.selectFieldName()
-    mf.selectfieldOperation()
-})
-And('Enter the Search value in search box', () => {
-    mf.enterFieldValueSearchBox()
-})
-Then('Click on Apply Button', () => {
-    mf.clickOnApplyButton()
-})
-And('Verify the Results in the table', () => {
-    mf.verifyResultAfterFilter()
-})
+// Then('Click on More filters', () => {
+//     cy.wait(3000)
+//     mf.clickOnMoreFiltersButton()
+// })
+// Then('Select Field name and Field operation', () => {
+//     mf.selectFieldName()
+//     mf.selectfieldOperation()
+// })
+// And('Enter the Search value in search box', () => {
+//     mf.enterFieldValueSearchBox()
+// })
+// Then('Click on Apply Button', () => {
+//     mf.clickOnApplyButton()
+// })
+// And('Verify the Results in the table', () => {
+//     mf.verifyResultAfterFilter()
+// })
 Then('Click on Clear filter', () => {
     mf.clickOnClearFiltersButton()
 })
@@ -90,4 +90,23 @@ Then('Click on Export To CSV', () => {
 })
 And('Verify Downloaded successfully', () => {
     mf.verifyDownloadSuccessful()
+})
+And('Click More filter select- Serial Number in search box and Verify the Result', () => {
+    mf.clickOnMoreFiltersButton()
+    mf.selectFilterSerialNumber()
+})
+And('Click More filter select- Asset tag in search box and Verify the Result', () => {
+    mf.clickOnMoreFiltersButton()
+    mf.selectFilterAssetTag()
+})
+And('Click More filter select- Device in search box and Verify the Result', () => {
+    mf.clickOnMoreFiltersButton()
+    mf.selectFilterDevice()
+})
+And('Click More filter select- Student in search box and Verify the Result', () => {
+    mf.clickOnMoreFiltersButton()
+    mf.selectFilterStudent()
+})
+Then('Click on Retired Tab', () => {
+    mf.clickOnRetiredTab()
 })

@@ -7,7 +7,7 @@ export class LoginActions {
     constructor() {
         globalThis.log = new LoginElements();
         globalThis.lan = new LandingElements();
-        globalThis.dash= new DashboardElements();
+        globalThis.dash = new DashboardElements();
     }
     closeTermsOfServiceWindow() {
         dash.termsElement().click({ force: true })
@@ -22,7 +22,7 @@ export class LoginActions {
         log.passwordElement().type(tdata.login.password)
     }
     clickOnContiune() {
-       log.continueElement().click({ force: true })
+        log.continueElement().click({ force: true })
     }
     verifyTitleDashboard() {
         cy.title().should('eq', 'Account Dashboard')
@@ -36,7 +36,5 @@ export class LoginActions {
     verifyErrorMessage() {
         cy.contains('Wrong email or password.').should('be.visible')
     }
-
 }
-
 export default LoginActions 

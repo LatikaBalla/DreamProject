@@ -52,3 +52,40 @@ And('Enter the Search - Status in search box and Verify the Result', () => {
 Then('Enter the Search - Phone in search box and Verify the Result', () => {
     sf.searchPhone()
 })
+// Then('Click on More filters', () => {
+//     sf.clickOnMoreFilter()
+// })
+// And('Select Field name and Field operation and Enter the Search value', () => {
+//     sf.enterFieldName()
+//     sf.enterFieldOperation()
+//     sf.enterSearchValue()
+// })
+// Then('Click on Apply Button', () => {
+//     sf.clickOnApply()
+// })
+// And('Verify the Results in the table', () => {
+//     sf.verifyResultFilter()
+// })
+Then('Click on Clear filter', () => {
+    sf.clickOnClearFilter()
+})
+And ('Click More filter select- Full name in search box and Verify the Result',()=>{
+    sf.clickOnMoreFilter()
+    sf.selectFilterFullname()
+})
+And ('Click More filter select- Phone in search box and Verify the Result',()=>{
+    sf.clickOnMoreFilter()
+    sf.selectFilterPhone()
+})
+And ('Click More filter select- Title in search box and Verify the Result',()=>{
+    sf.clickOnMoreFilter()
+    sf.selectFilterTitle()
+})
+And ('Click More filter select- Eamil in search box and Verify the Result',()=>{
+    sf.clickOnMoreFilter()
+    sf.selectFilterEmail()
+})
+And ('Click More filter select- User status in search box and Verify the Result',()=>{
+    sf.clickOnMoreFilter()
+    sf.selectFilterUserStatus()
+})

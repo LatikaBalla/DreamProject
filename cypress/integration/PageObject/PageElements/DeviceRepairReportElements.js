@@ -47,10 +47,66 @@ export default class DeviceRepairReportElements {
             timeout: 30000,
         })
     }
-searchdropdownElement(){
-    return cy.get(locator.deviceRepairReport.searchdropdown, {
-        timeout: 30000,
-    }) 
-}
+    searchdropdownElement() {
+        return cy.get(locator.deviceRepairReport.searchdropdown, {
+            timeout: 30000,
+        })
+    }
+
+    ticketnumberElement() {
+        return cy.get(locator.deviceRepairReport.ticketnumber, {
+            timeout: 30000,
+        })
+    }
+    repairtypeElement() {
+        return cy.get(locator.deviceRepairReport.repairtype, {
+            timeout: 30000,
+        })
+    }
+    recordidElement() {
+        return cy.get(locator.deviceRepairReport.recordid, {
+            timeout: 30000,
+        })
+    }
+    repairstatusElement() {
+        return cy.get(locator.deviceRepairReport.repairstatus, {
+            timeout: 30000,
+        })
+    }
+    repairboxElement() {
+        return cy.get(locator.deviceRepairReport.repairbox, {
+            timeout: 30000,
+        })
+    }
+    addFilterElement() {
+        return cy.get(locator.deviceRepairReport.addFilter, {
+            timeout: 30000,
+        })
+    }
+    clearFilterElement() {
+        return cy.contains(locator.deviceRepairReport.clearFilter, {
+            timeout: 30000,
+        })
+    }
+    fieldNameElement() {
+        return cy.get(locator.deviceRepairReport.fieldName, {
+            timeout: 30000,
+        })
+    }
+    fieldOpElement() {
+        return cy.get(locator.deviceRepairReport.fieldOp, {
+            timeout: 30000,
+        })
+    }
+    applyElement() {
+        return cy.get(locator.deviceRepairReport.apply, {
+            timeout: 30000,
+        })
+    }
+    fieldValueElement() {
+        return cy.get(locator.deviceRepairReport.fieldValue, {
+            timeout: 30000,
+        })
+    }
 
 }

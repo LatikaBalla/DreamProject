@@ -53,18 +53,30 @@ And('Click on save button', () => {
 Then('Verify New Ticket is added', () => {
     srt.verifyNewTicket()
 })
-And ('Enter the Search value in search box',()=>{
-srt.enterSearchBox()
+And('Enter the Search value in search box', () => {
+    srt.enterSearchBox()
 })
-Then ('Verify the Results in the table',()=>{
-srt.verifySearchResult()
+Then('Verify the Results in the table', () => {
+    srt.verifySearchResult()
 })
-And ('Click on view button',()=>{
-srt.clickViewButton()
+And('Click on view button', () => {
+    srt.clickViewButton()
 })
-Then ('Veriry the Details of student repair ticket',()=>{
-srt.verifySrcRepairTicket()
-cy.go('back')
+Then('Verify the Details of student repair ticket', () => {
+    srt.verifySrcRepairTicket()
+})
+And('Click on the Edit Ticket Button', () => {
+    srt.clickOnEditButton()
+})
+Then('Update the Technician and Repair Status', () => {
+    srt.editTehnician()
+    srt.editRepairStatus()
+})
+And('Click on Update Button', () => {
+    srt.clickOnUpdate()
+})
+Then('Verify Updated successfully', () => {
+    srt.verifyUpdate()
 })
 And('Enter the Search - Record Id in search box and Verify the Result', () => {
     srt.searchRecordId()
@@ -77,4 +89,52 @@ And('Enter the Search - Repair type in search box and Verify the Result', () => 
 })
 Then('Enter the Search - Repair status in search box and Verify the Result', () => {
     srt.searchRepairStatus()
+})
+Then('Click on Clear filter', () => {
+    srt.clickOnClearFilter()
+})
+And('Click More filter select- Record Id in search box and Verify the Result', () => {
+    srt.clickOnMoreFilter()
+    srt.selectFilterRecordId()
+})
+And('Click More filter select- Ticket Number in search box and Verify the Result', () => {
+    srt.clickOnMoreFilter()
+    srt.selectFilterTicketNumber()
+})
+And('Click More filter select- Repair type in search box and Verify the Result', () => {
+    srt.clickOnMoreFilter()
+    srt.selectFilterRepairType()
+})
+And('Click More filter select- Serial Number in search box and Verify the Result', () => {
+    srt.clickOnMoreFilter()
+    srt.selectFilterSerialNumber()
+})
+And('Click More filter select- Repair status in search box and Verify the Result', () => {
+    srt.clickOnMoreFilter()
+    srt.selectFilterRepairStatus()
+})
+And('Click More filter select- Repair device in search box and Verify the Result', () => {
+    srt.clickOnMoreFilter()
+    srt.selectFilterRepairDevice()
+})
+And('Click More filter select- Asset tag in search box and Verify the Result', () => {
+    srt.clickOnMoreFilter()
+    srt.selectFilterAssetTag()
+})
+And('Click More filter select- internal Technician in search box and Verify the Result', () => {
+    srt.clickOnMoreFilter()
+    srt.selectFilterStudentTechnician()
+})
+And('Click More filter select- Created By in search box and Verify the Result', () => {
+    srt.clickOnMoreFilter()
+    srt.selectFilterCreatedBy()
+})
+And('Click on Add Line and Verify', () => {
+    srt.clickOnAddLine()
+})
+Then('Click on Add Repair Image and Verify', () => {
+    srt.clickOnAddRepairImage()
+})
+And('Click on Add Note and Verify', () => {
+    srt.clickOnAddNote()
 })

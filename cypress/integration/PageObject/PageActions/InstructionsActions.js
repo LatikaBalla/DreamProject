@@ -22,7 +22,6 @@ export class InstructionsActions {
         inst.deprovisionDeviceElement().should('be.visible')
     }
     clickOnResources() {
-      //  dash.arrowElement().click({ force: true })
         dash.resourcesElement().click({ force: true })
     }
 }

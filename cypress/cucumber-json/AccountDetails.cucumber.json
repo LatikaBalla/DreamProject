@@ -9,10 +9,10 @@
     "uri": "AccountDetails.feature",
     "elements": [
       {
-        "id": "account-details-page-functionality;adding,add-more-filter,-clear-filter-and-search-,update-and-delete-new-account-of-account-details-page",
+        "id": "account-details-page-functionality;adding,add-more-filter,-clear-filter-of-account-details-page",
         "keyword": "Scenario",
         "line": 11,
-        "name": "Adding,add more filter, Clear filter and Search ,Update and Delete new account of Account Details page",
+        "name": "Adding,add more filter, Clear filter of Account Details page",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2535000000
+              "duration": 10024000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8107000000
+              "duration": 12394000000
             }
           },
           {
@@ -43,229 +43,87 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8102000000
+              "duration": 8070000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 12,
-            "name": "I should click on Add New button",
+            "name": "Click More filter select- Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 99000000
+              "duration": 944000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 13,
-            "name": "Verify the tilte of Add New Contact page",
+            "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 53000000
+              "duration": 72000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 14,
-            "name": "Enter title, full name and valid Email",
+            "name": "Click More filter select- Title in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1075000000
+              "duration": 1713000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 15,
-            "name": "Enter Phone and Cell Number",
+            "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 600000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "Select User Role and Building from Dropdown List",
-            "result": {
-              "status": "failed",
-              "duration": 4317000000,
-              "error_message": "CypressError: Timed out retrying after 4000ms: `cy.contains()` failed because it requires a DOM element or document.\n\nNo elements in the current DOM matched your query:\n\n  > cy.get([role=\"listbox\"]).eq(1).find(li)\n    at isElement (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:161645:70)\n    at validateType (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:161503:14)\n    at Object.isType (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:161534:7)\n    at Array.<anonymous> (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:151292:24)\n    at $Cy.getSubjectFromChain (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:161302:34)\n    at $Cy.subject (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:161256:17)\n    at Object.subjectFn (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:159491:28)\n    at $Cy.verifyUpcomingAssertions (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:140576:31)\n    at onRetry (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:159486:15)\nFrom previous event:\n    at whenStable (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:156356:65)\n    at <unknown> (https://valkyrie-frontend-test.onrender.com/__cypress/runner/cypress_runner.js:155797:14)\nFrom Your Spec Code:\n    at AccountDetailsActions.selectBuilding (cypress/integration/PageObject/PageActions/AccountDetailsActions.js:62:52)\n    at Context.eval (cypress/integration/AccountDetails/AccountDetails.spec.js:39:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "duration": 66000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 17,
-            "name": "Click on save button",
+            "line": 16,
+            "name": "Click More filter select- Eamil in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1945000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
-            "name": "Verify the account details added in table",
+            "line": 17,
+            "name": "Click on Clear filter",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 68000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Click More filter select- Phone in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1963000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 19,
-            "name": "Click on More filters",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "Select Field name and Field operation",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "Enter the Search value in search box",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 22,
-            "name": "Click on Apply Button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "Verify the Results in the table",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
             "name": "Click on Clear filter",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "Enter the full name in search box",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 26,
-            "name": "Verify the record in searching history",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 27,
-            "name": "Click on Edit Icon",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 28,
-            "name": "I should edit title, full name",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 29,
-            "name": "I should edit Phone and Cell Number and user role",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 30,
-            "name": "I edit User Status to inactive",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 31,
-            "name": "Click on Submit button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 32,
-            "name": "Verify the Record has been updated Meassage",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 33,
-            "name": "Click on Delete Icon",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 34,
-            "name": "Click on Confirm Delete button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 35,
-            "name": "Verify the record is deleted successfully",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 68000000
             }
           }
         ]

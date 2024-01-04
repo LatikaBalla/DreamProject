@@ -33,7 +33,13 @@
     "address": "641 Fairview Avenue Northeast",
     "savebtn": "[type='submit']",
     "addmsg": "Add New Building",
-    "deletemsg": "Building Deleted"
+    "deletemsg": "Building Deleted",
+    "recordid":"2424",
+    "defaultBuilding":"true",
+    "shippingaddress":"2005 University Avenue , Saint Paul, MN, 55104",
+    "billingaddress":"2005 University Avenue , Saint Paul, MN, 55104"  ,
+    "phoneNo":"3333333333",
+    "phoneNo1":"(333) 333-3333"
   },
   "editbuildings": {
     "buildingname": "Building_E1",
@@ -48,8 +54,16 @@
     "active": "yes"
   },
   "deviceRepairReport": {
-    "ticketno": "V0019888",
-    "filename": "V0019888.pdf"
+    "ticketno": "V0019915",
+    "filename": "V0019915.pdf",
+    "repairtype":"Vivacity",
+    "repairstatus":"Pending Repair Box",
+    "repairbox":"247",
+    "recordid":"1463",
+    "ticketnumber":"V0019915",
+    "serialnumber":"VIVATEST47Test",
+    "repairdevice":"Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
+   "createdby" :"demo_adminvivacity@vivacitytech.com"
   },
   "nonwarrantyRepairs":{
     "failuretype": "[data-value='Accidental']",
@@ -57,19 +71,28 @@
     "chromebookissue": "There is something fault",
     "createTicketmsg": "Add new ticket form submitted",
     "repairissue": "[data-value='RAM issue']",
-    "ticketno":"V0019887"
+    "ticketno":"VAL2023090715464039",
+    "repairtype":"In House",
+    "repairstatus":"Pending Repair Box",
+    "repairbox":" ",
+    "recordid":"19974",
+    "serialnumber":"VIVATEST47Test",
+    "repairdevice":"Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
+   "createdby" :"demo_adminvivacity@vivacitytech.com"
   },
   "myFleet": {
     "filename": "fleet_devices.csv",
-    "serialno": "VIVATEST19Test",
-    "search": "VIVATEST19Test",
+    "serialno": "VIVATEST85Test",
+    "search": "VIVATEST85Test",
     "serialNo": "1111",
     "deviceid": "#device-option-38",
     "assetTag": "aa1",
     "studentid": "[data-value='49']",
     "lonarstatus": "[data-value='In Loaner Pool']",
     "devicestatus": "[data-value='Active']",
-    "addDevicemsg": "Submitting form"
+    "addDevicemsg": "Submitting form",
+    "student":"Lyanna Mormont",
+    "device":"Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch - New"
   },
   "addasset": {
     "title": "AssetTitle",
@@ -90,7 +113,7 @@
     "description": "I want to edit description"
   },
   "importDevice": {
-    "uploadfilename": "import_serial_devices1.csv",
+    "uploadfilename": "import_serial_devices.csv",
     "downloadfilename": "import_list.csv"
   },
   "orgAsset": {
@@ -114,7 +137,10 @@
     "serialnumber":"VIVATEST12Test",
     "repairstatus":"In Transit",
     "repairbox":"247",
-    "assettag":""
+    "assettag":"",
+    "recordid":"19959",
+    "createdby":"demo_adminsuper@vivacitytech.com",
+    "repairdevice":"Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New"
   },
   "repairBox": {
     "weight": "10",
@@ -125,15 +151,20 @@
     "boxcreatedmsg": "New box submitted",
     "filename": "Image.png",
     "trackingnumber":"1Z6X34470331492859",
-    "recordid":"248"
+    "recordid":"200",
+    "labelfrom":"",
+    "shippeddate":"2023-09-27T11:05:37.000Z",
+    "shippingcost":"$23.36"
   },
   "inHouseWorkflow": {
     "failuretype": "[data-value='Accidental']",
     "serialdevice": "#device-option-0",
     "chromebookissue": "There is something fault",
-    "technician": "Demo UserVivacity",
+    "technician": "Account_Edit1",
     "createTicketmsg": "Add new ticket form submitted",
-    "filename": "InHouseRepairTickets.csv"
+    "filename": "InHouseRepairTickets.csv",
+    "repairissue":"[data-value='RAM issue']",
+    "ticketno":"V0019995"
   },
   "inHouseTicket": {
     "failuretype": "[data-value='Accidental']",
@@ -143,10 +174,15 @@
     "createTicketmsg": "Add new ticket form submitted",
     "filename": "InHouseRepairTickets.csv",
     "repairissue": "[data-value='RAM issue']",
-    "ticketnumber":"V0019901",
+    "ticketnumber":"V0019936",
     "repairtype":"In House",
     "recordid":"19901",
-    "repairstatus":"Pending Repair Box"
+    "repairstatus":"Pending Repair Box",
+    "serialnumber":"VIVATEST47Test",
+    "repairdevice":"Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
+    "internaltechnician":"test",
+   "createdby" :"demo_adminvivacity@vivacitytech.com",
+   "repairstatusEdit":"[data-value='In Transit']"
   },
   "srcRepairTicket": {
     "failuretype": "[data-value='Accidental']",
@@ -156,17 +192,23 @@
     "createTicketmsg": "Add new ticket form submitted",
     "ticketno": "V0019882",
     "issue": "[data-value='Hinge']",
-    "ticketnumber":"V0019901",
-    "repairtype":"In House",
-    "recordid":"19901",
-    "repairstatus":"Pending Repair Box"
+    "ticketnumber":"V0019978",
+    "repairtype":"Student",
+    "recordid":"19956",
+    "repairstatus":"Intake",
+    "repairstatusEdit":"[data-value='In Transit']",
+    "serialnumber":"VIVATEST47Test",
+    "repairdevice":"Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
+    "studenttechnician":"Demo Test",
+   "createdby" :"demo_adminvivacity@vivacitytech.com"
   },
   "srcFacilitators":{
     "fullName":"Lisa Burton",
     "emaildrop":"davidtaylor@example.net",
     "status":"Active",
     "phoneNo1":"81405463",
-    "phoneNo2":"(814) 054-63"
+    "phoneNo2":"(814) 054-63",
+    "title":"Miss"
   },
   "srcStudent": {
     "title": "Mr",
@@ -206,6 +248,7 @@
     "title": "Miss",
     "cellnumber": "1231234121",
     "phone": "2734623428",
+    "emaildrop":"@vivacitytech.com",
     "email": "@gmail.com",
     "createStudentmsg": "Add new user form submitted",
     "editTitle": "Mr",
@@ -217,7 +260,8 @@
     "editInhouseRepaire": "[data-value='true']",
     "updateStudentmsg": "User has been updated",
     "deleteStudentmsg": "User has been deleted successfully",
-    "filename": "users_list.csv"
+    "filename": "users_list.csv",
+    "rolename":"Building Admin"
   },
   "myprofile": {
     "profileupdatemsg": "Profile updated successfully",
@@ -238,7 +282,8 @@
   "features": {
     "title": "Testing",
     "description": "QA Testing the Features page",
-    "requestmsg": "Submitting Features request"
+    "requestmsg": "Submitting Features request",
+    "createdby":"demo_adminvivacity@vivacitytech.com"
   },
   "vivacityAdmin": {
     "fullname": "Demo UserVivacity",
@@ -298,7 +343,7 @@
   },
   "loanerManagement": {
     "serialno": "VIVATEST22Test",
-    "studentname": "[data-value='41']",
+    "studentname": "Demo User",
     "title": "Mr",
     "fullname": "Demo Student",
     "email": "@gmail.com",

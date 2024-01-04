@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 const locator = require("../../../locators.json");
-export default class FeaturesElements { 
+export default class FeaturesElements {
     titleElement() {
         return cy.contains(locator.landing.title, {
             timeout: 30000,
@@ -41,25 +41,25 @@ export default class FeaturesElements {
             timeout: 30000,
         });
     }
-    userAccoElement(){
+    userAccoElement() {
         return cy.get(locator.landing.userAcco, {
             timeout: 30000,
-        }); 
+        });
     }
-    reportCenterElement(){
+    reportCenterElement() {
         return cy.get(locator.landing.reportCenter, {
             timeout: 30000,
-        }); 
+        });
     }
-    reportCenterElement(){
+    reportCenterElement() {
         return cy.get(locator.landing.reportCenter, {
             timeout: 30000,
-        }); 
+        });
     }
-    repair360Element(){
+    repair360Element() {
         return cy.get(locator.landing.repair360, {
             timeout: 30000,
-        }); 
+        });
     }
     googleSyncSectionElement() {
         return cy.get(locator.landing.googleSyncSection, {
@@ -81,99 +81,99 @@ export default class FeaturesElements {
             timeout: 30000,
         });
     }
-    userAccoSectionElement(){
+    userAccoSectionElement() {
         return cy.get(locator.landing.userAccoSection, {
             timeout: 30000,
-        }); 
+        });
     }
-    reportCenterSectionElement(){
+    reportCenterSectionElement() {
         return cy.get(locator.landing.reportCenterSection, {
             timeout: 30000,
-        }); 
+        });
     }
-    reportCenterSectionElement(){
+    reportCenterSectionElement() {
         return cy.get(locator.landing.reportCenterSection, {
             timeout: 30000,
-        }); 
+        });
     }
-    repair360SectionElement(){
+    repair360SectionElement() {
         return cy.get(locator.landing.repair360Section, {
             timeout: 30000,
-        }); 
+        });
     }
-    reqAQuoteElement(){
+    reqAQuoteElement() {
         return cy.get(locator.landing.reqAQuote, {
             timeout: 30000,
-        }); 
+        });
     }
-    productsElement(){
+    productsElement() {
         return cy.get(locator.landing.products, {
             timeout: 30000,
-        }); 
+        });
     }
-    servicesElement(){
+    servicesElement() {
         return cy.get(locator.landing.services, {
             timeout: 30000,
-        }); 
+        });
     }
-    contactElement(){
+    contactElement() {
         return cy.get(locator.landing.contact, {
             timeout: 30000,
-        }); 
+        });
     }
-    privacyPolicyElement(){
+    privacyPolicyElement() {
         return cy.get(locator.landing.privacyPolicy, {
             timeout: 30000,
-        }); 
+        });
     }
-    termsofServiceElement(){
+    termsofServiceElement() {
         return cy.get(locator.landing.termsofService, {
             timeout: 30000,
-        }); 
+        });
     }
-    googleDisclosureElement(){
+    googleDisclosureElement() {
         return cy.get(locator.landing.googleDisclosure, {
             timeout: 30000,
-        }); 
+        });
     }
-    shippingElement(){
+    shippingElement() {
         return cy.get(locator.landing.shipping, {
             timeout: 30000,
-        }); 
+        });
     }
-    headerElement(){
+    headerElement() {
         return cy.get(locator.landing.header, {
             timeout: 30000,
-        }); 
+        });
     }
-    footerElement(){
+    footerElement() {
         return cy.get(locator.landing.footer, {
             timeout: 30000,
-        }); 
+        });
     }
-     logoElement(){
+    logoElement() {
         return cy.get(locator.landing.logo, {
             timeout: 30000,
-        }); 
+        });
     }
-    FAQSectionElement(){
+    FAQSectionElement() {
         return cy.get(locator.landing.FAQSection, {
             timeout: 30000,
-        }); 
+        });
     }
-    featureSectionElement(){
+    featureSectionElement() {
         return cy.get(locator.landing.featureSection, {
             timeout: 30000,
-        }); 
+        });
     }
-    productSectionElement(){
+    productSectionElement() {
         return cy.get(locator.landing.productSection, {
             timeout: 30000,
-        }); 
+        });
     }
-    loginElement(){
+    loginElement() {
         return cy.get(locator.landing.login, {
             timeout: 30000,
-        });  
+        });
     }
 } 

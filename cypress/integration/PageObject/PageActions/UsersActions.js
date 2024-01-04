@@ -100,10 +100,10 @@ export class UsersActions {
         cy.get('.MuiBox-root > .MuiButton-outlinedError').click({ force: true })
     }
     verifyRecordDeleted() {
-       cy.wait(100)
+      // cy.wait(1000)
         dash.messageElement().should('contain', tdata.users.deleteStudentmsg)
     }
-    clickOnAddFilterButton() {
+    clickOnMoreFilter(){
         user.addfilterbtnElement().click({force:true})
     }
     selectFieldName() {
@@ -118,7 +118,7 @@ export class UsersActions {
     clickOnApplyButton() {
         user.applybtnElement().click({force:true})
     }
-    clickOnClearFiltersButton() {
+    clickOnClearFilter(){
         user.clearfilterbtnElement().click({force:true})
     }
     verifyResultAfterFilter() {
@@ -128,9 +128,44 @@ export class UsersActions {
     clickOnDownload(){
      user.downloadbtnElement().click({force:true})
     }
-    verifyDowanload(){
-        cy.verifyDownload("/download/",tdata.users.filename)
+    selectFilterFullname(){
+        user.fieldNameElement().select(1).invoke("val").should("eq", 'full_name',{force:true})
+        user.fieldOpElement().select('does_not_contain',{force:true}).should('have.value', 'does_not_contain')
+        user.fieldValueElement().type(tdata.users.fullname)
+        user.applyElement().click({ force: true })
+        cy.get('tr td').eq(0).should('not.contain', tdata.users.fullname)
     }
-   
+    selectFilterEmail(){
+        cy.contains('+ Add Filter Group').click({force:true})
+        user.fieldNameElement().select(2).invoke("val").should("eq", "email")
+        user.fieldOpElement().select('does_not_contain',{force:true})
+        user.fieldValueElement().type(tdata.users.emaildrop)
+        user.applyElement().click({ force: true })
+        cy.get('tr td').eq(1).should('not.contain', tdata.users.emaildrop)
+    }
+    selectFilterPhone(){
+        cy.contains('+ Add Filter Group').click({force:true})
+        user.fieldNameElement().select('phone',{force:true})
+        user.fieldOpElement().select('does_not_contain',{force:true})
+        user.fieldValueElement().type(tdata.users.phone)
+        user.applyElement().click({ force: true })
+        cy.get('tr td').eq(3).should('not.contain', tdata.users.phone)
+    }
+    selectFilterCellNumber(){
+        cy.contains('+ Add Filter Group').click({force:true})
+        user.fieldNameElement().select('cell_number',{force:true})
+        user.fieldOpElement().select('does_not_contain',{force:true})
+        user.fieldValueElement().type(tdata.users.cellnumber)
+        user.applyElement().click({ force: true })
+        cy.get('tr td').eq(4).should('not.contain', tdata.users.cellnumber)
+    }
+    selectFilterRoleName(){
+        cy.contains('+ Add Filter Group').click({force:true})
+        user.fieldNameElement().select('role_name',{force:true})
+        user.fieldOpElement().select('does_not_contain',{force:true})
+        user.fieldValueElement().type(tdata.users.rolename)
+        user.applyElement().click({ force: true })
+        cy.get('tr td').eq(5).should('not.contain', tdata.users.rolename)
+    } 
 }
 export default UsersActions 

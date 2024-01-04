@@ -14,7 +14,6 @@ export class LoanerManagementActions {
         dash.termsElement().click({ force: true })
     }
     clickOnManageDevices() {
-        // dash.arrowElement().click({ force: true })
         dash.managedevicesElement().click({ force: true })
     }
     clickOnLoanerManagement() {
@@ -26,7 +25,7 @@ export class LoanerManagementActions {
     }
     serachAvailableDevice() {
         cy.wait(3000)
-        loan.searchElement().eq(2).clear({ force: true }).type(tdata.loanerManagement.serialno + '{enter}')
+        loan.searchElement().clear({ force: true }).type(tdata.loanerManagement.serialno + '{enter}')
     }
     verifySerachAvailableDevice() {
         loan.tableElement().eq(2).find('tbody tr').eq(0).find('td').eq(1).should('contain', tdata.loanerManagement.serialno)
@@ -36,7 +35,7 @@ export class LoanerManagementActions {
     }
     searchAvailable() {
         cy.wait(3000)
-        loan.searchElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.serialno + '{enter}')
+        loan.searchAboveElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.serialno + '{enter}')
     }
     verifySearchAvailable() {
         loan.tableElement().eq(0).find('tbody tr').eq(0).find('td').eq(2).should('contain', tdata.loanerManagement.serialno)
@@ -59,14 +58,11 @@ export class LoanerManagementActions {
     }
     selectBuilding() {
         loan.buildingElement().click({ force: true })
-        cy.get(tdata.loanerManagement.building).click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
+        // cy.get(tdata.loanerManagement.building).click({ force: true })
     }
     selectStudent_id() {
-        loan.studentElement().click({ force: true })
-
-        //cy.get(tdata.loanerManagement.student_id).click({force:true})
-        cy.get('.MuiList-root > [tabindex="0"]').eq(1).click('topRight', { force: true })
-
+        loan.studentElement().type('abc')
     }
     clickOnsubmitForm() {
         loan.submitbtnElement().click({ force: true })
@@ -77,19 +73,18 @@ export class LoanerManagementActions {
     }
     clickOnCheckOut() {
         cy.wait(2000)
-        //  loan.tableElement().eq(0).find('tbody tr').eq(0).find('td').eq(4).contains("Check Out").click({force:true})
         loan.checkoutbtnElement().click({ force: true })
     }
     selectStudentName() {
         loan.studentElement().click({ force: true })
-        cy.get(tdata.loanerManagement.studentname).click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains(tdata.loanerManagement.studentname).click({ force: true })
     }
     clickOnSubmitbtn() {
         loan.submitbtnElement().click({ force: true })
     }
     serachCheckOut() {
         cy.wait(1000)
-        loan.searchElement().eq(1).type(tdata.loanerManagement.serialno + '{enter}')
+        loan.searchAboveElement().eq(1).type(tdata.loanerManagement.serialno + '{enter}')
     }
     verifySerachCheckOut() {
         loan.tableElement().eq(1).find('tbody tr').eq(0).find('td').eq(2).should('contain', tdata.loanerManagement.serialno)

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3744000000
+              "duration": 2939000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9456000000
+              "duration": 8510000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 73000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on InHouseRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 509000000
+              "duration": 728000000
             }
           },
           {
@@ -73,55 +73,27 @@
             "name": "Filters of InHouseWorkflow should be visible",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 12000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "I should click on new button",
+            "keyword": "And ",
+            "line": 20,
+            "name": "Enter Search ticket no in search box",
             "result": {
               "status": "passed",
-              "duration": 73000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "Select failure Type, Serial Device and Technician",
-            "result": {
-              "status": "failed",
-              "duration": 30217000000,
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `#failure_type`, but never found it.\n    at InHouseWorkflowElements.failuretypeElement (cypress/integration/PageObject/PageElements/InHouseWorkflowElements.js:50:18)\n    at InHouseWorkflowActions.selectFailureType (cypress/integration/PageObject/PageActions/InHouseWorkflowActions.js:32:12)\n    at Context.eval (cypress/integration/InHouseWorkflow/InHouseWorkflow.spec.js:33:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "duration": 244000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 17,
-            "name": "Enter the Chromebook issue",
+            "line": 21,
+            "name": "Verify search result below",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "Click on save button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "Verify New Ticket is added",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5037000000
             }
           }
         ]

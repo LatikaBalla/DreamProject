@@ -61,4 +61,35 @@ export default class SrcFacilitatorsElements {
             timeout: 30000,
         })
     }
+
+    addFilterElement() {
+        return cy.get(locator.srcFacilitators.addFilter, {
+            timeout: 30000,
+        })
+    }
+    clearFilterElement() {
+        return cy.contains(locator.srcFacilitators.clearFilter, {
+            timeout: 30000,
+        })
+    }
+    fieldNameElement() {
+        return cy.get(locator.srcFacilitators.fieldName, {
+            timeout: 30000,
+        })
+    }
+    fieldOpElement() {
+        return cy.get(locator.srcFacilitators.fieldOp, {
+            timeout: 30000,
+        })
+    }
+    applyElement() {
+        return cy.get(locator.srcFacilitators.apply, {
+            timeout: 30000,
+        })
+    }
+    fieldValueElement() {
+        return cy.get(locator.srcFacilitators.fieldValue, {
+            timeout: 30000,
+        })
+    }
 }

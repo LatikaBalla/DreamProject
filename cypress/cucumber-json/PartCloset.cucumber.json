@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2678000000
+              "duration": 3554000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7963000000
+              "duration": 8713000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9087000000
+              "duration": 9074000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 74000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on PartCloset Tab",
             "result": {
               "status": "passed",
-              "duration": 774000000
+              "duration": 510000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of PartCloset Page",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 11000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Filters of PartCloset should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 7000000
             }
           },
           {
@@ -93,103 +93,103 @@
             "name": "Table for PartCloset should be visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 6000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 17,
+            "line": 30,
             "name": "I should click on Add New VT part",
             "result": {
               "status": "passed",
-              "duration": 76000000
+              "duration": 70000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
+            "line": 31,
             "name": "Select device and part name",
             "result": {
               "status": "passed",
-              "duration": 1095000000
+              "duration": 1350000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 19,
+            "line": 32,
             "name": "Enter quantity and select building",
             "result": {
               "status": "passed",
-              "duration": 307000000
+              "duration": 311000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 20,
+            "line": 33,
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 124000000
+              "duration": 81000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 21,
+            "line": 34,
             "name": "Verify new VT part is added",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 6000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 22,
+            "line": 35,
             "name": "I should click on Add New custome part",
             "result": {
               "status": "passed",
-              "duration": 113000000
+              "duration": 107000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 23,
+            "line": 36,
             "name": "Enter part name, manufacture and parent device",
             "result": {
               "status": "passed",
-              "duration": 998000000
+              "duration": 949000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 24,
+            "line": 37,
             "name": "Enter part sku and quantity",
             "result": {
               "status": "passed",
-              "duration": 493000000
+              "duration": 505000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 25,
+            "line": 38,
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 77000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 26,
+            "line": 39,
             "name": "Verify new custome part is added",
             "result": {
               "status": "passed",
@@ -199,41 +199,41 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 27,
+            "line": 40,
             "name": "Enter the Search value in search box",
             "result": {
               "status": "passed",
-              "duration": 252000000
+              "duration": 240000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 28,
+            "line": 41,
             "name": "Verify the Results in the table",
             "result": {
               "status": "passed",
-              "duration": 1128000000
+              "duration": 661000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 29,
+            "line": 42,
             "name": "Click on delete button",
             "result": {
               "status": "passed",
-              "duration": 228000000
+              "duration": 222000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 30,
+            "line": 43,
             "name": "Verify the recode is deleted",
             "result": {
               "status": "passed",
-              "duration": 393000000
+              "duration": 213000000
             }
           }
         ]

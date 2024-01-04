@@ -116,7 +116,7 @@ export class AccountDetailsActions {
     verifySearchResult() {
         cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.search.fullname)
     }
-    clickOnMoreFiltersButton() {
+    clickOnMoreFilter() {
         acc.morefiltersbtnElement().click({ force: true })
     }
     clickOnAddFilterGroup() {
@@ -140,6 +140,40 @@ export class AccountDetailsActions {
     verifyResultAfterFilter() {
         cy.wait(2000)
         cy.get('tbody tr td').should('not.contain', "@gmail.com")
+    }
+    selectFilterFullName() {
+        acc.fieldNameElement().select(1).invoke("val").should("eq", 'full_name', { force: true })
+        acc.fieldOpElement().select('does_not_contain', { force: true }).should('have.value', 'does_not_contain')
+        acc.fieldValueElement().type(tdata.newaccount.fullname)
+        acc.applyElement().click({ force: true })
+        cy.get('tr td').eq(0).should('not.contain', tdata.newaccount.fullname)
+    }
+    selectFilterEmail() {
+        acc.addfilterGroupElement().click({ force: true })
+        acc.fieldNameElement().select(2).invoke("val").should("eq", "email")
+        acc.fieldOpElement().select('does_not_contain', { force: true })
+        acc.fieldValueElement().type(tdata.newaccount.email)
+        acc.applyElement().click({ force: true })
+        cy.wait(1000)
+        cy.get('tr td').eq(0).should('not.contain', tdata.newaccount.email)
+    }
+    selectFilterPhone() {
+        acc.addfilterGroupElement().click({ force: true })
+        acc.fieldNameElement().select('phone', { force: true })
+        acc.fieldOpElement().select('does_not_contain', { force: true })
+        acc.fieldValueElement().type(tdata.srcStudent.phoneNo2)
+        acc.applyElement().click({ force: true })
+        cy.wait(1000)
+        cy.get('tr td').eq(2).should('not.contain', tdata.srcStudent.phoneNo2)
+    }
+    selectFilterTitle() {
+        acc.addfilterGroupElement().click({ force: true })
+        acc.fieldNameElement().select('title', { force: true })
+        acc.fieldOpElement().select('does_not_contain', { force: true })
+        acc.fieldValueElement().type(tdata.newaccount.title)
+        acc.applyElement().click({ force: true })
+        cy.wait(1000)
+        cy.get('tr td').eq(1).should('not.contain', tdata.newaccount.title)
     }
 }
 

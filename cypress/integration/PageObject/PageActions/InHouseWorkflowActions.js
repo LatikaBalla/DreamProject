@@ -13,7 +13,6 @@ export class InHouseWorkflowActions {
         dash.termsElement().click({ force: true })
     }
     clickOnRepair360() {
-      //  dash.arrowElement().click({ force: true })
         dash.repair360Element().click({ force: true })
     }
     clickOnInHouseRepairCenter() {
@@ -25,8 +24,8 @@ export class InHouseWorkflowActions {
     filtersVisible() {
         ihw.filtersElement().should('be.visible')
     }
-    clickOnNewButton(){
-        ihw.newbtnElement().click({force:true})
+    clickOnNewButton() {
+        ihw.newbtnElement().click({ force: true })
     }
     selectFailureType() {
         ihw.failuretypeElement().click({ force: true })
@@ -34,28 +33,43 @@ export class InHouseWorkflowActions {
     }
     selectSerialDevice() {
         ihw.serialdeviceElement().click({ force: true })
-      cy.get(tdata.inHouseWorkflow.serialdevice).click()
+        cy.get(tdata.inHouseWorkflow.serialdevice).click()
     }
-    selectTechnician(){
+    selectTechnician() {
         ihw.technicianElement().click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains(tdata.inHouseWorkflow.technician).click({ force: true })     
+        cy.get('[role="listbox"]').find('li').contains(tdata.inHouseWorkflow.technician).click({ force: true })
+    }
+    selectBuilding() {
+        ihw.buildingElement().click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
+    }
+    selectRepairissue() {
+        ihw.repairissueElement().click({ force: true })
+        cy.get(tdata.inHouseWorkflow.repairissue).click({ force: true })
     }
     enterChromebookIssue() {
-        ihw.chromebookissueElement().type(tdata.inHouseWorkflow.chromebookissue)
+        ihw.chromebookissueElement().type(tdata.inHouseWorkflow.chromebookissue, { force: true })
     }
     clickOnSaveButton() {
         ihw.savebtnElement().click({ force: true })
+
     }
     verifyNewTicket() {
-        cy.wait(1000)
+        cy.wait(8000)
         dash.messageElement().should('contain', tdata.inHouseWorkflow.createTicketmsg)
-        // cy.get('tbody tr').eq(0).find('td').eq(2).should('contain', tdata.repairTickets.devicename)
     }
     clickOnExport() {
         ihw.exportbtnElement().click({ force: true })
     }
     verifyDownload() {
-        cy.verifyDownload("/download/",tdata.inHouseWorkflow.filename)
+        cy.verifyDownload("/download/", tdata.inHouseWorkflow.filename)
+    }
+    searchTicketNo() {
+        ihw.searchElement().type(tdata.inHouseWorkflow.ticketno + '{enter}', { force: true })
+    }
+    verfiySearchResult() {
+        cy.wait(5000)
+        cy.get('.css-ax8uhp').eq(0).contains(tdata.inHouseWorkflow.ticketno).should('be.visible')
     }
 
 }

@@ -20,10 +20,7 @@ export class VivacityRepairCenterActions {
         rep.repairBoxesElement().should('be.visible')
     }
     clickOnRepair360() {
-        //dash.arrowElement().click({ force: true })
         dash.repair360Element().click({ force: true })
     }
-
 }
-
 export default VivacityRepairCenterActions 

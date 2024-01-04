@@ -93,11 +93,44 @@ rb.clickOnRemoveButton()
 }) 
 Then ('Verify the ticket is delete from the table',()=>{
 rb.verifyTicketDeleted()
-cy.go('back')
+//cy.go('back')
 })
 And ('Enter the Search - Tracking Number in search box and Verify the Result',()=>{
 rb.searchTrackingNumber()
 })
 Then ('Enter the Search - Record Id in search box and Verify the Result',()=>{
 rb.searchRecordId()
+})
+
+Then('Click on More filters', () => {
+    rb.clickOnMoreFilter()
+})
+And('Select Field name and Field operation and Enter the Search value', () => {
+    rb.enterFieldName()
+    rb.enterFieldOperation()
+    rb.enterSearchValue()
+})
+Then('Click on Apply Button', () => {
+    rb.clickOnApply()
+})
+And('Verify the Results in the table', () => {
+    rb.verifyResultFilter()
+})
+Then('Click on Clear filter', () => {
+    rb.clickOnClearFilter()
+})
+And ('Click More filter select- Record Id in search box and Verify the Result',()=>{
+    rb.selectFilterRecordId()
+})
+And ('Click More filter select- Tracking Number From in search box and Verify the Result',()=>{
+    rb.selectFilterTrackingNumberFrom()
+})
+ Then ('Click More filter select- Shipping From Cost in search box and Verify the Result',()=>{
+    rb.selectFilterShippingFromCost()
+ })
+And ('Click More filter select- Shipped From Date in search box and Verify the Result',()=>{
+    rb.selectFilterShippedFromDate()
+})
+Then ('Click More filter select- Label From in search box and Verify the Result',()=>{
+    rb.selectFilterLabelFrom()
 })

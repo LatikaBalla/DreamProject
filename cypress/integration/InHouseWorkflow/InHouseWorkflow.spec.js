@@ -29,12 +29,14 @@ Then('Filters of InHouseWorkflow should be visible', () => {
 Then('I should click on new button', () => {
     ihw.clickOnNewButton()
 })
-And('Select failure Type, Serial Device and Technician', () => {
+And('Select failure Type, Serial Device, Technician and repair issue', () => {
     ihw.selectFailureType()
     ihw.selectTechnician()
     ihw.selectSerialDevice()
+    ihw.selectRepairissue()
 })
-Then('Enter the Chromebook issue', () => {
+Then('Select building and Enter the Chromebook issue', () => {
+    ihw.selectBuilding()
     ihw.enterChromebookIssue()
 })
 And('Click on save button', () => {
@@ -49,4 +51,9 @@ And('Click on Download Export button', () => {
 Then('Verify the successfully downloaded', () => {
     ihw.verifyDownload()
 })
-
+And('Enter Search ticket no in search box', () => {
+    ihw.searchTicketNo()
+})
+Then('Verify search result below', () => {
+    ihw.verfiySearchResult()
+})

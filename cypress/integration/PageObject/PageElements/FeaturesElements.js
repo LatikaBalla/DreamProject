@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 const locator = require("../../../locators.json");
-export default class FeaturesElements { 
+export default class FeaturesElements {
     submitbtnElement() {
         return cy.get(locator.features.submitbtn, {
             timeout: 30000,
@@ -26,14 +26,44 @@ export default class FeaturesElements {
             timeout: 30000,
         });
     }
-    uconstructionElement(){
+    uconstructionElement() {
         return cy.get(locator.features.uconstruction, {
             timeout: 30000,
-        }); 
+        });
     }
-    launchedElement(){
+    launchedElement() {
         return cy.get(locator.features.launched, {
             timeout: 30000,
-        }); 
+        });
+    }
+    addFilterElement() {
+        return cy.contains(locator.features.addFilter, {
+            timeout: 30000,
+        })
+    }
+    clearFilterElement() {
+        return cy.contains(locator.features.clearFilter, {
+            timeout: 30000,
+        })
+    }
+    fieldNameElement() {
+        return cy.get(locator.features.fieldName, {
+            timeout: 30000,
+        })
+    }
+    fieldOpElement() {
+        return cy.get(locator.features.fieldOp, {
+            timeout: 30000,
+        })
+    }
+    applyElement() {
+        return cy.get(locator.features.apply, {
+            timeout: 30000,
+        })
+    }
+    fieldValueElement() {
+        return cy.get(locator.features.fieldValue, {
+            timeout: 30000,
+        })
     }
 }

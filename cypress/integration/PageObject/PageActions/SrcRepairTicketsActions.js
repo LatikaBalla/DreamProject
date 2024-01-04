@@ -79,6 +79,25 @@ export class SrcRepairTicketsActions {
     verifySrcRepairTicket() {
         cy.contains('Repair Ticket Details').should('be.visible')
     }
+    clickOnEditButton() {
+        cy.wait(4000)
+        srt.editTicketElement().click({ force: true })
+    }
+    editTehnician() {
+        srt.technicianElement().click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains(tdata.srcRepairTicket.technician).click({ force: true })
+    }
+    editRepairStatus() {
+        srt.repairstatusEditElement().click({ force: true })
+        cy.get(tdata.srcRepairTicket.repairstatusEdit).click({ force: true })
+    }
+    clickOnUpdate() {
+        srt.updateElement().click({ force: true })
+        //cy.contains('Update').click({force:true})
+    }
+    verifyUpdate() {
+        //cy.get('tr td').eq(1).should('contain', tdata.srcRepairTicket.recordid)
+    }
     searchRecordId() {
         srt.searchboxElement().eq(0).click({ force: true })
         srt.recordidElement().click({ force: true })
@@ -90,7 +109,7 @@ export class SrcRepairTicketsActions {
         srt.searchboxElement().eq(0).click({ force: true })
         srt.ticketnumberElement().click({ force: true })
         srt.searchElement().clear().type(tdata.srcRepairTicket.ticketnumber + '{enter}', { force: true })
-        cy.wait(1000)
+        cy.wait(3000)
         cy.get('tr td').eq(1).should('contain', tdata.srcRepairTicket.ticketnumber)
     }
     searchRepairType() {
@@ -105,7 +124,102 @@ export class SrcRepairTicketsActions {
         srt.repairstatusElement().click({ force: true })
         srt.searchElement().clear().type(tdata.srcRepairTicket.repairstatus + '{enter}', { force: true })
         cy.wait(1000)
-        cy.get('tr td').eq(5).should('contain', tdata.srcRepairTicket.repairstatus,{ force: true })
+        cy.get('tr td').eq(5).should('contain', tdata.srcRepairTicket.repairstatus, { force: true })
+        srt.searchElement().clear()
+    }
+    clickOnMoreFilter() {
+        srt.addFilterElement().click({ force: true })
+    }
+    clickOnClearFilter() {
+        srt.clearFilterElement().click({ force: true })
+    }
+    selectFilterRecordId() {
+        srt.fieldNameElement().select(0).invoke("val").should("eq", 'record_id', { force: true })
+        srt.fieldOpElement().select('Does Not Contain', { force: true }).should('have.value', 'Does Not Contain')
+        srt.fieldValueElement().type(tdata.srcRepairTicket.recordid)
+        srt.applyElement().click({ force: true })
+        cy.get('tr td').eq(0).should('not.contain', tdata.srcRepairTicket.recordid)
+    }
+    selectFilterTicketNumber() {
+        srt.fieldNameElement().select(1).invoke("val").should("eq", "ticket_number")
+        srt.fieldOpElement().select('Does Not Contain', { force: true })
+        srt.fieldValueElement().type(tdata.srcRepairTicket.ticketnumber)
+        srt.applyElement().click({ force: true })
+        cy.get('tr td').eq(1).should('not.contain', tdata.srcRepairTicket.ticketnumber)
+    }
+    selectFilterRepairType() {
+        srt.fieldNameElement().select('repair_type', { force: true })
+        srt.fieldOpElement().select('Contains', { force: true })
+        srt.fieldValueElement().type(tdata.srcRepairTicket.repairtype)
+        srt.applyElement().click({ force: true })
+        cy.get('tr td').eq(2).should('contain', tdata.srcRepairTicket.repairtype)
+    }
+    selectFilterSerialNumber() {
+        srt.fieldNameElement().select('serial_number', { force: true })
+        srt.fieldOpElement().select('Does Not Contain', { force: true })
+        srt.fieldValueElement().type(tdata.srcRepairTicket.serialnumber)
+        srt.applyElement().click({ force: true })
+        cy.get('tr td').eq(3).should('not.contain', tdata.srcRepairTicket.serialnumber)
+    }
+    selectFilterRepairStatus() {
+        srt.fieldNameElement().select('repair_status', { force: true })
+        srt.fieldOpElement().select('Does Not Contain', { force: true })
+        srt.fieldValueElement().type(tdata.srcRepairTicket.repairstatus)
+        srt.applyElement().click({ force: true })
+        cy.get('tr td').eq(6).should('not.contain', tdata.srcRepairTicket.repairstatus)
+    }
+    selectFilterRepairDevice() {
+        srt.fieldNameElement().select('repair_device', { force: true })
+        srt.fieldOpElement().select('Does Not Contain', { force: true })
+        srt.fieldValueElement().type(tdata.srcRepairTicket.repairdevice)
+        srt.applyElement().click({ force: true })
+        cy.get('tr td').eq(4).should('not.contain', tdata.srcRepairTicket.repairdevice)
+    }
+    selectFilterAssetTag() {
+        srt.fieldNameElement().select('asset_tag', { force: true })
+        srt.fieldOpElement().select('Does Not Contain', { force: true })
+        srt.fieldValueElement().type('Lea')
+        srt.applyElement().click({ force: true })
+        cy.get('tr td').eq(5).should('not.contain', 'Lea')
+    }
+    selectFilterStudentTechnician() {
+        srt.fieldNameElement().select('student_technician', { force: true })
+        srt.fieldOpElement().select('Does Not Contain', { force: true })
+        srt.fieldValueElement().type(tdata.srcRepairTicket.studenttechnician)
+        srt.applyElement().click({ force: true })
+        cy.get('tr td').eq(7).should('not.contain', tdata.srcRepairTicket.studenttechnician)
+    }
+    selectFilterCreatedBy() {
+        srt.fieldNameElement().select('created_by', { force: true })
+        srt.fieldOpElement().select('Does Not Contain', { force: true })
+        srt.fieldValueElement().type(tdata.srcRepairTicket.createdby)
+        srt.applyElement().click({ force: true })
+        cy.get('tr td').eq(8).should('not.contain', tdata.srcRepairTicket.createdby)
+    }
+    clickOnAddLine() {
+        srt.addlineElement().click({ force: true })
+        srt.custompartElemnet().click({ force: true })
+        srt.partElement().click({ force: true })
+        cy.get('[role="listbox"]').contains('demo unit').click({ force: true })
+        srt.noteElement().type('Testing line', { force: true })
+        srt.createlineElement().contains('Create Line Item').click({ force: true })
+        dash.messageElement().should('contain', 'Line Item Created')
+        cy.get('[data-testid="CloseIcon"]').click({ force: true })
+    }
+    clickOnAddRepairImage() {
+        srt.addimageElement().click({ force: true })
+        srt.uploadimageElement().attachFile('image1.jpeg', { force: true })
+        srt.imagedescriptionElement().type('Testing Image')
+        srt.updateimageElement().contains('Upload Image').click({ force: true })
+        dash.messageElement().should('contain', 'Image Created')
+    }
+    clickOnAddNote() {
+        srt.addnoteElement().click({ force: true })
+        srt.notetypeElement().click({ force: true })
+        cy.get('[data-value="QA"]').click({ force: true })
+        srt.noteElement().type('Testing Note', { force: true })
+        srt.createnoteElement().contains('Create').click({ force: true })
+        dash.messageElement().should('contain', 'Ticket updated')
     }
 }
 export default SrcRepairTicketsActions 

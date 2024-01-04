@@ -11,63 +11,73 @@ export default class InHouseWorkflowElements {
             timeout: 30000,
         })
     }
-    searchElement(){
+    searchElement() {
         return cy.get(locator.inHouseWorkflow.search, {
             timeout: 30000,
         })
     }
-    newbtnElement(){
+    newbtnElement() {
         return cy.contains(locator.inHouseWorkflow.newbtn, {
             timeout: 30000,
         })
     }
-    exportbtnElement(){
+    exportbtnElement() {
         return cy.contains(locator.inHouseWorkflow.exportbtn, {
             timeout: 30000,
         })
     }
-    viewdetailsElement(){
+    viewdetailsElement() {
         return cy.contains(locator.inHouseWorkflow.viewdetails, {
             timeout: 30000,
         })
     }
-    moverepairebtnElement(){
+    moverepairebtnElement() {
         return cy.contains(locator.inHouseWorkflow.moverepairebtn, {
             timeout: 30000,
         })
     }
-    addnoteElement(){
+    addnoteElement() {
         return cy.contains(locator.inHouseWorkflow.addnote, {
             timeout: 30000,
         })
     }
-    savenoteElement(){
+    savenoteElement() {
         return cy.contains(locator.inHouseWorkflow.savenote, {
             timeout: 30000,
         })
     }
-    failuretypeElement(){
+    failuretypeElement() {
         return cy.get(locator.inHouseWorkflow.failuretype, {
             timeout: 30000,
         })
     }
-    serialdeviceElement(){
+    serialdeviceElement() {
         return cy.get(locator.inHouseWorkflow.serialdevice, {
             timeout: 30000,
         })
     }
-    technicianElement(){
+    technicianElement() {
         return cy.get(locator.inHouseWorkflow.technician, {
             timeout: 30000,
         })
     }
-    chromebookissueElement(){
+    chromebookissueElement() {
         return cy.get(locator.inHouseWorkflow.chromebookissue, {
             timeout: 30000,
         })
     }
-    savebtnElement(){
+    savebtnElement() {
         return cy.contains(locator.inHouseWorkflow.savebtn, {
+            timeout: 30000,
+        })
+    }
+    buildingElement() {
+        return cy.get(locator.inHouseWorkflow.building, {
+            timeout: 30000,
+        })
+    }
+    repairissueElement() {
+        return cy.get(locator.inHouseWorkflow.repairissue, {
             timeout: 30000,
         })
     }

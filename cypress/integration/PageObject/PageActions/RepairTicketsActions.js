@@ -110,6 +110,7 @@ export class RepairTicketsActions {
         rt.searchboxElement().eq(0).click({ force: true })
         rt.repairboxElement().click({ force: true })
         rt.searchElement().clear().type(tdata.repairTickets.repairbox + '{enter}', { force: true })
+        cy.wait(1000)
         cy.get('tr td').eq(6).should('contain', tdata.repairTickets.repairbox,{ force: true })
     }
     searchAssetTag() {
@@ -118,6 +119,90 @@ export class RepairTicketsActions {
         rt.searchElement().clear().type(tdata.repairTickets.assettag + '{enter}', { force: true })
         cy.wait(1000)
         cy.get('tr td').eq(4).should('contain', tdata.repairTickets.assettag)
+    }
+    clickOnMoreFilter() {
+        rt.addFilterElement().click({ force: true })
+    }
+    // enterFieldName() {
+    //     rt.fieldNameElement().select('Ticket Number')
+    // }
+    // enterFieldOperation() {
+    //     rt.fieldOpElement().select('Does Not Contain')
+    // }
+    // enterSearchValue() {
+    //     rt.fieldValueElement().type(tdata.repairTickets.ticketnumber)
+    // }
+    // clickOnApply() {
+    //     rt.applyElement().click({ force: true })
+    // }
+    // verifyResultFilter() {
+    //     cy.get('tr td').eq(1).should('not.contain', tdata.repairTickets.ticketnumber)
+    // }
+    clickOnClearFilter() {
+        rt.clearFilterElement().click({ force: true })
+    }
+    selectFilterRecordId(){
+        rt.fieldNameElement().select(0).invoke("val").should("eq", 'record_id',{force:true})
+        rt.fieldOpElement().select('Does Not Contain',{force:true}).should('have.value', 'Does Not Contain')
+        rt.fieldValueElement().type(tdata.repairTickets.recordid)
+        rt.applyElement().click({ force: true })
+        cy.get('tr td').eq(0).should('not.contain', tdata.repairTickets.recordid)
+    }
+    selectFilterTicketNumber(){
+        rt.fieldNameElement().select(1).invoke("val").should("eq", "ticket_number")
+        rt.fieldOpElement().select('Does Not Contain',{force:true})
+        rt.fieldValueElement().type(tdata.repairTickets.ticketnumber)
+        rt.applyElement().click({ force: true })
+        cy.get('tr td').eq(1).should('not.contain', tdata.repairTickets.ticketnumber)
+    }
+    selectFilterRepairType(){
+        rt.fieldNameElement().select('repair_type',{force:true})
+        rt.fieldOpElement().select('Contains',{force:true})
+        rt.fieldValueElement().type(tdata.repairTickets.repairtype)
+        rt.applyElement().click({ force: true })
+        cy.get('tr td').eq(2).should('contain', tdata.repairTickets.repairtype)
+    }
+    selectFilterSerialNumber(){
+        rt.fieldNameElement().select('serial_number',{force:true})
+        rt.fieldOpElement().select('Does Not Contain',{force:true})
+        rt.fieldValueElement().type(tdata.repairTickets.serialnumber)
+        rt.applyElement().click({ force: true })
+        cy.get('tr td').eq(3).should('not.contain', tdata.repairTickets.serialnumber)
+    }
+    selectFilterRepairStatus(){
+        rt.fieldNameElement().select('repair_status',{force:true})
+        rt.fieldOpElement().select('Does Not Contain',{force:true})
+        rt.fieldValueElement().type(tdata.repairTickets.repairstatus)
+        rt.applyElement().click({ force: true })
+        cy.get('tr td').eq(6).should('not.contain', tdata.repairTickets.repairstatus)
+    }
+    selectFilterRepairBox(){
+        rt.fieldNameElement().select('repair_box',{force:true})
+        rt.fieldOpElement().select('Does Not Contain',{force:true})
+        rt.fieldValueElement().type(tdata.repairTickets.repairbox)
+        rt.applyElement().click({ force: true })
+        cy.get('tr td').eq(7).should('not.contain', tdata.repairTickets.repairbox)
+    }
+    selectFilterAssetTag(){
+        rt.fieldNameElement().select('asset_tag',{force:true})
+        rt.fieldOpElement().select('Does Not Contain',{force:true})
+        rt.fieldValueElement().type('Lea')
+        rt.applyElement().click({ force: true })
+        cy.get('tr td').eq(5).should('not.contain', 'Lea')
+    }
+    selectFilterCreatedBy(){
+        rt.fieldNameElement().select('created_by',{force:true})
+        rt.fieldOpElement().select('Does Not Contain',{force:true})
+        rt.fieldValueElement().type(tdata.repairTickets.createdby)
+        rt.applyElement().click({ force: true })
+        cy.get('tr td').eq(8).should('not.contain', tdata.repairTickets.createdby)
+    }
+    selectFilterRepairDevice(){
+        rt.fieldNameElement().select('repair_device',{force:true})
+        rt.fieldOpElement().select('Does Not Contain',{force:true})
+        rt.fieldValueElement().type(tdata.repairTickets.repairdevice)
+        rt.applyElement().click({ force: true })
+        cy.get('tr td').eq(4).should('not.contain', tdata.repairTickets.repairdevice)
     }
 }
 export default RepairTicketsActions 

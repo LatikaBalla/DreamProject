@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2497000000
+              "duration": 4215000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 11604000000
+              "duration": 8970000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9078000000
+              "duration": 9101000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 81000000
+              "duration": 99000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on OrgUploadAssets Tab",
             "result": {
               "status": "passed",
-              "duration": 477000000
+              "duration": 1381000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of OrgUploadAssets Page",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 21000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Filters of OrgUploadAssets should be visible",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 18000000
             }
           },
           {
@@ -93,177 +93,217 @@
             "name": "Table for OrgUploadAssets should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 17000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 17,
-            "name": "I should click on Add Asset",
+            "name": "Click More filter select- Description in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 72000000
+              "duration": 1128000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 18,
-            "name": "Enter title, full name location and tag",
+            "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 409000000
+              "duration": 86000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 19,
-            "name": "Enter note, Type and description",
+            "name": "Click More filter select- Acquire Location in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 608000000
+              "duration": 787000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 20,
-            "name": "Upload the image file",
+            "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 478000000
+              "duration": 85000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 21,
-            "name": "Click on save button",
+            "name": "I should click on Add Asset",
             "result": {
               "status": "passed",
-              "duration": 81000000
+              "duration": 99000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 22,
-            "name": "Verify the asset details added in table",
+            "name": "Enter title, full name location and tag",
             "result": {
               "status": "passed",
-              "duration": 374000000
+              "duration": 442000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 23,
-            "name": "Enter the title in search box",
+            "name": "Enter note, Type and description",
             "result": {
               "status": "passed",
-              "duration": 3202000000
+              "duration": 562000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 24,
-            "name": "Verify the record in searching history",
+            "name": "Upload the image file",
             "result": {
               "status": "passed",
-              "duration": 28000000
+              "duration": 489000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 25,
-            "name": "Click on Edit button",
+            "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 127000000
+              "duration": 88000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 26,
-            "name": "I should edit title, full name location and tag",
+            "name": "Verify the asset details added in table",
             "result": {
               "status": "passed",
-              "duration": 492000000
+              "duration": 879000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 27,
-            "name": "I should edit note, Type and description",
+            "name": "Enter the title in search box",
             "result": {
               "status": "passed",
-              "duration": 1406000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 28,
-            "name": "ReUpload the image file",
-            "result": {
-              "status": "passed",
-              "duration": 22000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "Click on save button",
-            "result": {
-              "status": "passed",
-              "duration": 68000000
+              "duration": 3236000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 30,
-            "name": "Verify the Record has been updated Meassage",
+            "line": 28,
+            "name": "Verify the record in searching history",
             "result": {
               "status": "passed",
-              "duration": 455000000
+              "duration": 74000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "Click on Edit button",
+            "result": {
+              "status": "passed",
+              "duration": 149000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "I should edit title, full name location and tag",
+            "result": {
+              "status": "passed",
+              "duration": 537000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 31,
-            "name": "Click on Delete button",
+            "name": "I should edit note, Type and description",
             "result": {
               "status": "passed",
-              "duration": 94000000
+              "duration": 1572000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 32,
-            "name": "Click on Confirm Delete button",
+            "name": "ReUpload the image file",
             "result": {
               "status": "passed",
-              "duration": 66000000
+              "duration": 70000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "Click on save button",
+            "result": {
+              "status": "passed",
+              "duration": 157000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 33,
+            "line": 34,
+            "name": "Verify the Record has been updated Meassage",
+            "result": {
+              "status": "passed",
+              "duration": 545000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "Click on Delete button",
+            "result": {
+              "status": "passed",
+              "duration": 123000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "Click on Confirm Delete button",
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
             "name": "Verify the record is deleted successfully",
             "result": {
               "status": "passed",
-              "duration": 2025000000
+              "duration": 2084000000
             }
           }
         ]

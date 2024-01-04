@@ -3,9 +3,7 @@ import { ReportCenterActions } from '../PageObject/PageActions/ReportCenterActio
 import { InHouseRepairReportActions } from '../PageObject/PageActions/InHouseRepairReportActions'
 import { DeviceRepairReportActions } from '../PageObject/PageActions/DeviceRepairReportActions'
 import { VivacityRepairReportActions } from '../PageObject/PageActions/VivacityRepairReportActions'
-import { NonWarrantyRepairsActions } from '../PageObject/PageActions/NonWarrantyRepairsActions'
-
-
+import { NonWarrantyRepairsActions } from '../PageObject/PageActions/NonWarrantyRepairsActions.js'
 const viva = new VivacityRepairReportActions()
 const dev = new DeviceRepairReportActions()
 const inh = new InHouseRepairReportActions()
@@ -75,7 +73,6 @@ Then('Click on DeviceRepairReport page', () => {
     dev.clickOnDeviceRepairReport()
     cy.wait(3000)
 })
-
 And('Verify title of DeviceRepairReport Page should be visible', () => {
     dev.verifyTitle()
 })
@@ -85,36 +82,46 @@ Then('Verify the filters should be visible', () => {
 Then('Verify history table should be visible', () => {
     dev.tableVisible()
 })
-And('Enter the Ticket Number in search box', () => {
-    dev.selectdropdownList()
-    dev.enterTicketNumberSearch()
-})
-Then('Verify the Ticket details in table', () => {
-    dev.verifyTicketDetailsTable()
-})
-And('Click on the Ticket Number', () => {
-    dev.clickOnTicketNumberTable()
-})
-Then('Verify the Repair Ticket page will open', () => {
-    dev.verifyRapairTicketPAge()
-})
-And('Verfiy the details of Ticket', () => {
-    dev.verifyTicketDetails()
-})
-Then('Click on the download Ticket Estimation button', () => {
-    dev.clickOnDownloadButton()
-})
-And('Verify downloaded ticket successfully', () => {
-    dev.verifyDownloadSuccessful()
-})
-And('Click on clear button', () => {
-    dev.clickOnClearButton()
-})
-Then('Verify the search box is cleared', () => {
-    dev.searchBoxEmpty()
-})
-
-
+// And ('Enter the Search - Record Id in search box and Verify the Result',()=>{
+//     dev.searchRecordId()
+// })
+// Then ('Enter the Search - Repair type in search box and Verify the Result',()=>{
+//     dev.searchRepairType() 
+// })
+// Then ('Enter the Search - Repair status in search box and Verify the Result',()=>{
+//     //dev.searchRepairStatus() 
+// })
+// And ('Enter the Search - Repair Box in search box and Verify the Result',()=>{
+//     dev.searchRepairBox()
+// })
+// And('Enter the Ticket Number in search box', () => {
+//     dev.selectdropdownList()
+//     dev.enterTicketNumberSearch()
+// })
+// Then('Verify the Ticket details in table', () => {
+//     dev.verifyTicketDetailsTable()
+// })
+// And('Click on the Ticket Number', () => {
+//     dev.clickOnTicketNumberTable()
+// })
+// Then('Verify the Repair Ticket page will open', () => {
+//     dev.verifyRapairTicketPAge()
+// })
+// And('Verfiy the details of Ticket', () => {
+//     dev.verifyTicketDetails()
+// })
+// Then('Click on the download Ticket Estimation button', () => {
+//     dev.clickOnDownloadButton()
+// })
+// And('Verify downloaded ticket successfully', () => {
+//     dev.verifyDownloadSuccessful()
+// })
+// And('Click on clear button', () => {
+//     dev.clickOnClearButton()
+// })
+// Then('Verify the search box is cleared', () => {
+//     dev.searchBoxEmpty()
+// })
 And ('Click on NonwarrantyRepairs page',()=>{
 nwr.clickOnNonWarrantyRepairs()
 })
@@ -128,45 +135,62 @@ Then ('Verify table and filter should be visible',()=>{
 nwr.filtersVisible()
 nwr.tableVisible()
 })
-Then ('Select failure Type, Return site and Serial Device',()=>{
-    nwr.selectFailureType()
-    nwr.selectSite()
-    nwr.selectSerialDevice()
-})
-And ('Select Building and Chromebook issue',()=>{
-    //iht.selectBilding()
-  // nwr.selectRepaireIssue()
-})
-Then ('Enter the Describe Your Issue',()=>{
-    nwr.enterChromebookIssue()
-})
-And ('Click on save button',()=>{
-    nwr.clickOnSaveButton()
-})
-Then ('Verify New Ticket is added',()=>{
-    nwr.verifyNewTicket()
-})
-And('Enter the Ticket Number in search box for warranty', () => {
-    nwr.selectdropdownList()
-    nwr.enterTicketNumberSearch()
-})
-Then('Verify the Ticket details in table for warranty', () => {
+// Then('Click on More filters', () => {
+//     dev.clickOnMoreFilter()
+// })
+// And('Select Field name and Field operation and Enter the Search value', () => {
+//     dev.enterFieldName()
+//     dev.enterFieldOperation()
+//     dev.enterSearchValue()
+// })
+// Then('Click on Apply Button', () => {
+//     dev.clickOnApply()
+// })
+// And('Verify the Results in the table', () => {
+//     dev.verifyResultFilter()
+// })
+
+
+
+// Then ('Select failure Type, Return site and Serial Device',()=>{
+//     nwr.selectFailureType()
+//     nwr.selectSite()
+//     nwr.selectSerialDevice()
+// })
+// And ('Select Building and Chromebook issue',()=>{
+//     //iht.selectBilding()
+//   // nwr.selectRepaireIssue()
+// })
+// Then ('Enter the Describe Your Issue',()=>{
+//     nwr.enterChromebookIssue()
+// })
+// And ('Click on save button',()=>{
+//     nwr.clickOnSaveButton()
+// })
+// Then ('Verify New Ticket is added',()=>{
+//     nwr.verifyNewTicket()
+// })
+// And('Enter the Ticket Number in search box for warranty', () => {
+//     nwr.selectdropdownList()
+//     nwr.enterTicketNumberSearch()
+// })
+// Then('Verify the Ticket details in table for warranty', () => {
   
-    nwr.verifyTicketDetailsTable()
-})
-And('Click on the Ticket Number for warranty', () => {
-    nwr.clickOnTicketNumberTable()
-})
-Then('Verify the Repair Ticket page will open for warranty', () => {
-    nwr.verifyRapairTicketPAge()
-})
-And('Verfiy the details of Ticket for warranty', () => {
-    nwr.verifyTicketDetails()
-})
-Then('Click on the download Ticket Estimation button for warranty', () => {
-    nwr.clickOnDownloadButton()
-})
-And('Verify downloaded ticket successfully for warranty', () => {
-    nwr.verifyDownloadSuccessful()
-})
+//     nwr.verifyTicketDetailsTable()
+// })
+// And('Click on the Ticket Number for warranty', () => {
+//     nwr.clickOnTicketNumberTable()
+// })
+// Then('Verify the Repair Ticket page will open for warranty', () => {
+//     nwr.verifyRapairTicketPAge()
+// })
+// And('Verfiy the details of Ticket for warranty', () => {
+//     nwr.verifyTicketDetails()
+// })
+// Then('Click on the download Ticket Estimation button for warranty', () => {
+//     nwr.clickOnDownloadButton()
+// })
+// And('Verify downloaded ticket successfully for warranty', () => {
+//     nwr.verifyDownloadSuccessful()
+// })
 

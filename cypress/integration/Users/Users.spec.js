@@ -105,7 +105,26 @@ And('Verify the Filter Results in the table', () => {
 Then('Click on Download button', () => {
     user.clickOnDownload()
 })
-And('Verify Download the successfully', () => {
-    user.verifyDowanload()
+Then('Click on Clear filter', () => {
+    user.clickOnClearFilter()
 })
-
+And ('Click More filter select- Full name in search box and Verify the Result',()=>{
+    user.clickOnMoreFilter()
+    user.selectFilterFullname()
+})
+And ('Click More filter select- Phone in search box and Verify the Result',()=>{
+    user.clickOnMoreFilter()
+    user.selectFilterPhone()
+})
+And ('Click More filter select- Cell Number in search box and Verify the Result',()=>{
+    user.clickOnMoreFilter()
+    user.selectFilterCellNumber()
+})
+And ('Click More filter select- Eamil in search box and Verify the Result',()=>{
+    user.clickOnMoreFilter()
+    user.selectFilterEmail()
+})
+And ('Click More filter select- Role Name in search box and Verify the Result',()=>{
+    user.clickOnMoreFilter()
+    user.selectFilterRoleName()
+})

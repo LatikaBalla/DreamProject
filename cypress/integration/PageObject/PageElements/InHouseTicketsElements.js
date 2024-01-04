@@ -51,44 +51,156 @@ export default class InHouseTicketsElements {
             timeout: 30000,
         })
     }
-    buildingElement(){
+    buildingElement() {
         return cy.get(locator.inhouseTickets.building, {
             timeout: 30000,
         })
     }
-    repairissueElement(){
+    repairissueElement() {
         return cy.get(locator.inhouseTickets.repairissue, {
             timeout: 30000,
         })
     }
-    searchboxElement(){
+    searchboxElement() {
         return cy.get(locator.inhouseTickets.searchbox, {
             timeout: 30000,
         })
     }
-    ticketnumberElement(){
+    ticketnumberElement() {
         return cy.get(locator.inhouseTickets.ticketnumber, {
             timeout: 30000,
         })
     }
-    repairtypeElement(){
+    repairtypeElement() {
         return cy.get(locator.inhouseTickets.repairtype, {
             timeout: 30000,
         })
     }
-    recordidElement(){
+    recordidElement() {
         return cy.get(locator.inhouseTickets.recordid, {
             timeout: 30000,
         })
     }
-    repairstatusElement(){
+    repairstatusElement() {
         return cy.get(locator.inhouseTickets.repairstatus, {
             timeout: 30000,
         })
     }
-    searchElement(){
+    searchElement() {
         return cy.get(locator.inhouseTickets.search, {
             timeout: 30000,
         })
     }
+
+    addFilterElement() {
+        return cy.get(locator.inhouseTickets.addFilter, {
+            timeout: 30000,
+        })
+    }
+    clearFilterElement() {
+        return cy.contains(locator.inhouseTickets.clearFilter, {
+            timeout: 30000,
+        })
+    }
+    fieldNameElement() {
+        return cy.get(locator.inhouseTickets.fieldName, {
+            timeout: 30000,
+        })
+    }
+    fieldOpElement() {
+        return cy.get(locator.inhouseTickets.fieldOp, {
+            timeout: 30000,
+        })
+    }
+    applyElement() {
+        return cy.get(locator.inhouseTickets.apply, {
+            timeout: 30000,
+        })
+    }
+    fieldValueElement() {
+        return cy.get(locator.inhouseTickets.fieldValue, {
+            timeout: 30000,
+        })
+    }
+    editTicketElement() {
+        return cy.contains(locator.inhouseTickets.editTicket, {
+            timeout: 30000,
+        })
+    }
+    updateElement() {
+        return cy.contains(locator.inhouseTickets.update, {
+            timeout: 30000,
+        })
+    }
+    repairstatusEditElement() {
+        return cy.get(locator.inhouseTickets.repairstatusEdit, {
+            timeout: 30000,
+        })
+    }
+    addlineElement() {
+        return cy.contains(locator.inhouseTickets.addline, {
+            timeout: 30000,
+        })
+    }
+    addimageElement() {
+        return cy.contains(locator.inhouseTickets.addimage, {
+            timeout: 30000,
+        })
+    }
+    addnoteElement() {
+        return cy.contains(locator.inhouseTickets.addnote, {
+            timeout: 30000,
+        })
+    }
+    noteElement() {
+        return cy.get(locator.inhouseTickets.note, {
+            timeout: 30000,
+        })
+    }
+    uploadimageElement() {
+        return cy.get(locator.inhouseTickets.uploadimage, {
+            timeout: 30000,
+        })
+    }
+    imagedescriptionElement() {
+        return cy.get(locator.inhouseTickets.imagedescription, {
+            timeout: 30000,
+        })
+    }
+    notetypeElement() {
+        return cy.get(locator.inhouseTickets.notetype, {
+            timeout: 30000,
+        })
+    }
+    createlineElement() {
+        return cy.get(locator.inhouseTickets.createline, {
+            timeout: 30000,
+        })
+    }
+    updateimageElement() {
+        return cy.get(locator.inhouseTickets.updateimage, {
+            timeout: 30000,
+        })
+    }
+    createnoteElement() {
+        return cy.get(locator.inhouseTickets.createnote, {
+            timeout: 30000,
+        })
+    }
+    custompartElemnet() {
+        return cy.contains(locator.inhouseTickets.custompart, {
+            timeout: 30000,
+        })
+    }
+    viewElemnet() {
+        return cy.contains(locator.inhouseTickets.view, {
+            timeout: 30000,
+        })
+    }
+    partElement() {
+        return cy.get(locator.inhouseTickets.part, {
+            timeout: 30000,
+        })
+    }
+
 }

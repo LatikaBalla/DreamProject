@@ -20,7 +20,7 @@ And('Click on Repair360 page', () => {
     repc.clickOnRepair360()
 })
 Then('Click on InHouseRepairCenter tab', () => {
-   repc.clickOnInHouseRepairCenter()
+    repc.clickOnInHouseRepairCenter()
 })
 And('Verify the Title of InHouseRepairCenter Page', () => {
     repc.verifyTitleInHouseRepairCenter()
@@ -28,7 +28,7 @@ And('Verify the Title of InHouseRepairCenter Page', () => {
 Then('Verify the inhouseworkflow Tab should be visible', () => {
     repc.inhouseworkflowTabVisible()
 })
-And ('Verify the inhouseTickets tab should be visible',()=>{
-    repc.inhouseTicketsTabVisible() 
+And('Verify the inhouseTickets tab should be visible', () => {
+    repc.inhouseTicketsTabVisible()
 })
 

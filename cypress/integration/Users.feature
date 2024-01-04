@@ -24,21 +24,24 @@ Feature:  Users Page Functionality
     Then I should edit title, full name
     And I should edit Phone and Cell Number and user role
     Then I edit User Status to inactive
-    And I edit Building 
+    And I edit Building
     Then Click on Submit button
     And Verify the Record has been updated Meassage
     And Click on Delete button
     Then Click on Confirm Delete button
     # And Verify the record is deleted successfully
-    # Then Click on Add Filter
-    # Then Select Field name and Field operation
-    # And Enter the Search value in search box of Filter
-    # Then Click on Apply Button
-    # And Verify the Filter Results in the table
-    # Then Click on Download button
-# And Verify Download the successfully
-
-
+    Then Click on Download button
+    # And Verify Download the successfully
+    And Click More filter select- Full name in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Eamil in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Phone in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Cell Number in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Role Name in search box and Verify the Result
+    Then Click on Clear filter
 
 
 

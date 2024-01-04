@@ -36,18 +36,18 @@ export default class MyFleetElements {
             timeout: 30000,
         });
     }
-    applybtnElement() {
-        return cy.get(locator.myFleet.applybtn, {
+    applyElement() {
+        return cy.get(locator.myFleet.apply, {
             timeout: 30000,
         });
     }
-    morefiltersbtnElement() {
-        return cy.contains(locator.myFleet.morefiltersbtn, {
+    morefiltersElement() {
+        return cy.contains(locator.myFleet.morefilters, {
             timeout: 30000,
         });
     }
-    clearfilterbtnElement() {
-        return cy.contains(locator.myFleet.clearfilterbtn, {
+    clearfilterElement() {
+        return cy.contains(locator.myFleet.clearfilter, {
             timeout: 30000,
         });
     }
@@ -61,7 +61,7 @@ export default class MyFleetElements {
             timeout: 30000,
         });
     }
-    viewElement(){
+    viewElement() {
         return cy.contains(locator.myFleet.view, {
             timeout: 30000,
         });
@@ -105,5 +105,25 @@ export default class MyFleetElements {
         return cy.contains(locator.myFleet.addDevice, {
             timeout: 30000,
         });
+    }
+    fieldNameElement() {
+        return cy.get(locator.myFleet.fieldName, {
+            timeout: 30000,
+        })
+    }
+    fieldOpElement() {
+        return cy.get(locator.myFleet.fieldOp, {
+            timeout: 30000,
+        })
+    }
+    fieldValueElement() {
+        return cy.get(locator.myFleet.fieldValue, {
+            timeout: 30000,
+        })
+    }
+    applyElement() {
+        return cy.get(locator.myFleet.apply, {
+            timeout: 30000,
+        })
     }
 }

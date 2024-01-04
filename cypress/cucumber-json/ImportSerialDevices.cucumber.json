@@ -9,10 +9,10 @@
     "uri": "ImportSerialDevices.feature",
     "elements": [
       {
-        "id": "importserialdevices-page-functionality;visiblity-of-importserialdevices-page",
+        "id": "importserialdevices-page-functionality;visiblity-of-importserialdevices-page-and-add-ticket,-download-import-and-view-the-details",
         "keyword": "Scenario",
         "line": 13,
-        "name": "Visiblity of ImportSerialDevices page",
+        "name": "Visiblity of ImportSerialDevices page and add ticket, download import and view the details",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3525000000
+              "duration": 3396000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8190000000
+              "duration": 10714000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9076000000
+              "duration": 9075000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 80000000
+              "duration": 75000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on ImportSerialDevices Tab",
             "result": {
               "status": "passed",
-              "duration": 986000000
+              "duration": 822000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of ImportSerialDevices Page",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 18000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Filters of ImportSerialDevices should be visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 10000000
             }
           },
           {
@@ -93,137 +93,119 @@
             "name": "Table for ImportSerialDevices should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "importserialdevices-page-functionality;add-new-import,download-import-and-view-the-details",
-        "keyword": "Scenario",
-        "line": 18,
-        "name": "Add new import,download import and view the details",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I should navigate to application",
-            "result": {
-              "status": "passed",
-              "duration": 2263000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I should Sign In into the application",
-            "result": {
-              "status": "passed",
-              "duration": 6939000000
+              "duration": 10000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
-            "name": "close the terms of service window",
-            "result": {
-              "status": "passed",
-              "duration": 9063000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "Click on Manage Devices",
-            "result": {
-              "status": "passed",
-              "duration": 73000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "Click on ImportSerialDevices Tab",
-            "result": {
-              "status": "passed",
-              "duration": 1397000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
+            "line": 17,
             "name": "I should click on Add New Import",
             "result": {
               "status": "passed",
-              "duration": 124000000
+              "duration": 114000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 20,
+            "line": 18,
             "name": "Upload the CSV import file",
             "result": {
               "status": "passed",
-              "duration": 254000000
+              "duration": 253000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 21,
+            "line": 19,
             "name": "Click on submit button",
             "result": {
-              "status": "passed",
-              "duration": 5069000000
+              "status": "failed",
+              "duration": 35425000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiAlert-message`, but never found it.\n    at ImportSerialDevicesActions.clickOnSubmitButton (cypress/integration/PageObject/PageActions/ImportSerialDevicesActions.js:43:30)\n    at Context.eval (cypress/integration/ImportSerialDevices/ImportSerialDevices.spec.js:41:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Click on refresh button",
+            "result": {
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 22,
-            "name": "Click on refresh button",
+            "name": "Click on Download import button",
             "result": {
-              "status": "passed",
-              "duration": 83000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 24,
-            "name": "Click on Download import button",
-            "result": {
-              "status": "passed",
-              "duration": 99000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 26,
             "name": "Click on Details button",
             "result": {
-              "status": "passed",
-              "duration": 439000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 27,
+            "line": 25,
             "name": "Verify the Device Details",
             "result": {
-              "status": "passed",
-              "duration": 15000000
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "Click on More filters",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "Select Field name and Field operation and Enter the Search value",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "Click on Apply Button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "Verify the Results in the table",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "skipped"
             }
           }
         ]

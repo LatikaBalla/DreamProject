@@ -14,6 +14,10 @@ Feature: OrgUploadAssets Page Functionality
         And Verify the Title of OrgUploadAssets Page
         Then Filters of OrgUploadAssets should be visible
         And Table for OrgUploadAssets should be visible
+          And Click More filter select- Description in search box and Verify the Result
+        Then Click on Clear filter
+        And Click More filter select- Acquire Location in search box and Verify the Result
+        Then Click on Clear filter
         Then I should click on Add Asset
         Then Enter title, full name location and tag
         And Enter note, Type and description
@@ -31,4 +35,6 @@ Feature: OrgUploadAssets Page Functionality
         And Click on Delete button
         Then Click on Confirm Delete button
         And Verify the record is deleted successfully
+      
+
 

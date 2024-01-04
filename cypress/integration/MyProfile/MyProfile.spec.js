@@ -17,7 +17,7 @@ Then('Close the terms of service window', () => {
 })
 And('Click on My profile page', () => {
     cy.wait(1000)
-    cy.contains('demo_adminsuper@vivacitytech.com').click({force:true})
+    cy.contains('demo_adminsuper@vivacitytech.com').click({ force: true })
     mp.clickOnMyProfile()
 })
 Then('Verify the Title of My Profile Page', () => {
@@ -31,21 +31,21 @@ Then('Profile and Account deatils section of MyProfile should be visible', () =>
     mp.profileDetailsVisible()
     mp.accountDetailsVisible()
 })
-And('Click on upload image icon',()=>{
-mp.clickOnImageIcone()
+And('Click on upload image icon', () => {
+    mp.clickOnImageIcone()
 })
-Then ('Enter tilte and phone no',()=>{
-mp.enterTitle()
-mp.enterPhone()
+Then('Enter tilte and phone no', () => {
+    mp.enterTitle()
+    mp.enterPhone()
 })
-And ('Eelect Email preference',()=>{
-mp.selectEmailPreference()
+And('Eelect Email preference', () => {
+    mp.selectEmailPreference()
 })
-Then ('click on update button',()=>{
-mp.clickOnUpdateButton()
+Then('click on update button', () => {
+    mp.clickOnUpdateButton()
 })
-And ('Verify the updated successfully',()=>{
-mp.verifyUpdate()
+And('Verify the updated successfully', () => {
+    mp.verifyUpdate()
 })
 
 

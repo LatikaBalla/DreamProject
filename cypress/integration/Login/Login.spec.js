@@ -8,24 +8,24 @@ Cypress.on("uncaught:exception", () => {
 Given('I should navigate to application', function () {
     cy.visit("/");
 })
-When ('On landing page Click on login button',()=>{
+When('On landing page Click on login button', () => {
     log.clickOnLoginButton()
 })
-Then ('User enters valid credentials',()=>{
+Then('User enters valid credentials', () => {
     log.enterUsername()
     log.enterPassword()
 })
-And ('Clicks the login button',()=>{
-log.clickOnContiune()
+And('Clicks the login button', () => {
+    log.clickOnContiune()
 })
-Then ('User should be redirected to the dashboard',()=>{
+Then('User should be redirected to the dashboard', () => {
     log.closeTermsOfServiceWindow()
-log.verifyTitleDashboard()
+    log.verifyTitleDashboard()
 })
-Then ('User enters invalid credentials',()=>{
+Then('User enters invalid credentials', () => {
     log.enterWrongUsername()
     log.enterWrongPassword()
 })
-Then ('Verify error message should be displayed',()=>{
+Then('Verify error message should be displayed', () => {
     log.verifyErrorMessage()
 })

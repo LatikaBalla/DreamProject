@@ -31,7 +31,6 @@ Feature: Dashboard Page Functionality
         Then Click on checkbox Same as Shipping Address
         And Click on save button
          Then Verify the builing details added in table
-
         And Click on My Account Details Tab
         Then I should click on Add New button
         And Verify the tilte of Add New Contact page
@@ -40,12 +39,6 @@ Feature: Dashboard Page Functionality
         Then Select User Role and Building from Dropdown List
         And Click on save button
         Then Verify the account details added in table
-        Then Click on More filters
-        Then Select Field name and Field operation
-        And Enter the Search value in search box
-        Then Click on Apply Button
-        And Verify the Results in the table
-        Then Click on Clear filter
         And Enter the full name in search box
         And Verify the record in searching history
         And Click on Edit Icon
@@ -57,7 +50,6 @@ Feature: Dashboard Page Functionality
         And Click on Delete Icon
         Then Click on Confirm Delete button
         And Verify the record is deleted successfully
-
         And Click on Buildings Tab
         And Click on Delete Icon of building
         Then Click on Confirm Delete button of building

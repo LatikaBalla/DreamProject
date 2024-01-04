@@ -73,31 +73,68 @@ Then('Click on Confirm Delete button', () => {
 And('Verify the record is deleted successfully', () => {
     build.verifyDelete()
 })
-Then('Click on More filters', () => {
-    build.clickOnMoreFiltersButton()
-})
-And('Click on Add Filters Group', () => {
-    build.clickOnAddFilterGroup()
-})
-Then('Select Field name and Field operation', () => {
-    build.selectFieldName()
-    build.selectfieldOperation()
-})
-And('Enter the Search value in search box', () => {
-    build.enterFieldValueSearchBox()
-})
-Then('Click on Apply Button', () => {
-    build.clickOnApplyButton()
-})
-And('Verify the Results in the table', () => {
-    build.verifyResultAfterFilter()
-})
+// Then('Click on More filters', () => {
+//     build.clickOnMoreFiltersButton()
+// })
+// And('Click on Add Filters Group', () => {
+//     build.clickOnAddFilterGroup()
+// })
+// Then('Select Field name and Field operation', () => {
+//     build.selectFieldName()
+//     build.selectfieldOperation()
+// })
+// And('Enter the Search value in search box', () => {
+//     build.enterFieldValueSearchBox()
+// })
+// Then('Click on Apply Button', () => {
+//     build.clickOnApplyButton()
+// })
+// And('Verify the Results in the table', () => {
+//     build.verifyResultAfterFilter()
+// })
 Then('Click on Clear filter', () => {
     build.clickOnClearFiltersButton()
 })
-Then('Enter the building name in search box', () => {
-    build.enterInSearchBox()
+// Then('Enter the building name in search box', () => {
+//     build.enterInSearchBox()
+// })
+// And('Verify the record in searching history', () => {
+//     build.verifySearchResult()
+// })
+And('Click More filter select- Record Id in search box and Verify the Result', () => {
+    build.clickOnMoreFiltersButton()
+    build.selectFilterRecordId()
 })
-And('Verify the record in searching history', () => {
-    build.verifySearchResult()
+And('Click More filter select- Building Name in search box and Verify the Result', () => {
+    build.clickOnMoreFiltersButton()
+    build.selectFilterBuildingName()
 })
+And('Click More filter select- Default Building in search box and Verify the Result', () => {
+    build.clickOnMoreFiltersButton()
+    build.selectFilterDefaultBuilding()
+})
+And('Click More filter select- Phone in search box and Verify the Result', () => {
+    build.clickOnMoreFiltersButton()
+    build.selectFilterPhone()
+})
+And('Click More filter select- Building Shipping Address in search box and Verify the Result', () => {
+    build.clickOnMoreFiltersButton()
+    build.selectFilterShippingAddress()
+})
+And('Click More filter select- Building Billing Address in search box and Verify the Result', () => {
+    build.clickOnMoreFiltersButton()
+    build.selectFilterBillingAddress()
+})
+And('Enter the Search - Building Name in search box and Verify the Result', () => {
+    build.searchBuildingName()
+})
+Then('Enter the Search - Building Shipping Address in search box and Verify the Result', () => {
+    build.searchShippingAddress()
+})
+And('Enter the Search - Phone in search box and Verify the Result', () => {
+    build.searchPhone()
+})
+And('Click on Export To CSV', () => {
+    build.clickOnExport()
+})
+

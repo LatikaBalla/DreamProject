@@ -61,29 +61,29 @@ export default class MyProfileElements {
             timeout: 30000,
         });
     }
-    uploadElement(){
+    uploadElement() {
         return cy.get(locator.myprofile.upload, {
             timeout: 30000,
-        }); 
+        });
     }
-    photoElement(){
+    photoElement() {
         return cy.get(locator.myprofile.photo, {
             timeout: 30000,
-        }); 
+        });
     }
-    profiledetailsElement(){
+    profiledetailsElement() {
         return cy.get(locator.myprofile.profiledetails, {
             timeout: 30000,
-        }); 
+        });
     }
-    accountdetailsElement(){
+    accountdetailsElement() {
         return cy.get(locator.myprofile.accountdetails, {
             timeout: 30000,
-        }); 
+        });
     }
-    emailnameElement(){
+    emailnameElement() {
         return cy.get(locator.myprofile.emailname, {
             timeout: 30000,
-        }); 
+        });
     }
 } 

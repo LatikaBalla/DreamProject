@@ -26,9 +26,7 @@ export class Repair360Actions {
         rep.partclosetElement().should('be.visible')
     }
     clickOnRepair360() {
-       // dash.arrowElement().click({ force: true })
         dash.repair360Element().click({ force: true })
     }
-
 }
 export default Repair360Actions 

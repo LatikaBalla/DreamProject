@@ -86,25 +86,25 @@ Then('Enter title, full name and valid Email for Search', () => {
     acc.enterFullnameSearch()
     acc.enterEmail()
 })
-Then('Click on More filters', () => {
-    acc.clickOnMoreFiltersButton()
-})
-And('Click on Add Filters Group', () => {
-    acc.clickOnAddFilterGroup()
-})
-Then('Select Field name and Field operation', () => {
-    acc.selectFieldName()
-    acc.selectfieldOperation()
-})
-And('Enter the Search value in search box', () => {
-    acc.enterFieldValueSearchBox()
-})
-Then('Click on Apply Button', () => {
-    acc.clickOnApplyButton()
-})
-And('Verify the Results in the table', () => {
-    acc.verifyResultAfterFilter()
-})
+// Then('Click on More filters', () => {
+//     acc.clickOnMoreFiltersButton()
+// })
+// And('Click on Add Filters Group', () => {
+//     acc.clickOnAddFilterGroup()
+// })
+// Then('Select Field name and Field operation', () => {
+//     acc.selectFieldName()
+//     acc.selectfieldOperation()
+// })
+// And('Enter the Search value in search box', () => {
+//     acc.enterFieldValueSearchBox()
+// })
+// Then('Click on Apply Button', () => {
+//     acc.clickOnApplyButton()
+// })
+// And('Verify the Results in the table', () => {
+//     acc.verifyResultAfterFilter()
+// })
 Then('Click on Clear filter', () => {
     acc.clickOnClearFiltersButton()
 })
@@ -114,7 +114,22 @@ And('Enter the full name in search box', () => {
 And('Verify the record in searching history', () => {
     acc.verifySearchResult()
 })
-
+And('Click More filter select- Full name in search box and Verify the Result', () => {
+    acc.clickOnMoreFilter()
+    acc.selectFilterFullName()
+})
+And('Click More filter select- Phone in search box and Verify the Result', () => {
+    acc.clickOnMoreFilter()
+    acc.selectFilterPhone()
+})
+And('Click More filter select- Title in search box and Verify the Result', () => {
+    acc.clickOnMoreFilter()
+    acc.selectFilterTitle()
+})
+And('Click More filter select- Eamil in search box and Verify the Result', () => {
+    acc.clickOnMoreFilter()
+    acc.selectFilterEmail()
+})
 
 
 

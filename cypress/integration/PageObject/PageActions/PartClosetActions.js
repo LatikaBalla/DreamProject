@@ -13,7 +13,6 @@ export class PartClosetActions {
         dash.termsElement().click({ force: true })
     }
     clickOnRepair360() {
-        // dash.arrowElement().click({ force: true })
         dash.repair360Element().click({ force: true })
     }
     clickOnPartClosetTab() {
@@ -64,7 +63,7 @@ export class PartClosetActions {
     }
     clickOnDeleteButton() {
         cy.get('tbody tr').eq(0).find('td').eq(8).scrollIntoView().contains("Delete").click({ force: true })
-        cy.get('.MuiPaper-root > .MuiButtonBase-root').click({force:true})
+        cy.get('.MuiPaper-root > .MuiButtonBase-root').click({ force: true })
     }
     verifyDeleted() {
         cy.get('tbody tr').eq(0).find('td').eq(0).should('not.contain', tdata.partCloset.partname)
@@ -94,10 +93,60 @@ export class PartClosetActions {
     verifyNewVTPartAdded() {
         dash.messageElement().should('contain', 'Submitting form')
         //cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.partCloset.partnameTable)
-      //  dash.messageElement().should('contain', tdata.srcStudent.createpartmsg)
+        //  dash.messageElement().should('contain', tdata.srcStudent.createpartmsg)
     }
-
-
-
+    clickOnMoreFilter() {
+        pc.addFilterElement().click({ force: true })
+    }
+    clickOnClearFilter() {
+        pc.clearFilterElement().click({ force: true })
+    }
+    selectFilterBuilding() {
+        pc.fieldNameElement().select('building_name', { force: true })
+        pc.fieldOpElement().select('does_not_contain', { force: true })
+        pc.fieldValueElement().type(tdata.partCloset.building)
+        pc.applyElement().click({ force: true })
+        cy.get('tr td').eq(8).should('not.contain', tdata.partCloset.building)
+    }
+    selectFilterManufacturer() {
+        cy.contains('+ Add Filter Group').click({ force: true })
+        pc.fieldNameElement().select('manufacturer', { force: true })
+        pc.fieldOpElement().select('does_not_contain', { force: true })
+        pc.fieldValueElement().type(tdata.partCloset.manufacturer, { force: true })
+        pc.applyElement().click({ force: true })
+        cy.get('tr td').eq(8).should('not.contain', tdata.partCloset.manufacturer)
+    }
+    selectFilterParentDevice() {
+        cy.contains('+ Add Filter Group').click({ force: true })
+        pc.fieldNameElement().select('parent_device', { force: true })
+        pc.fieldOpElement().select('does_not_contain', { force: true })
+        pc.fieldValueElement().type(tdata.partCloset.parentdevice)
+        pc.applyElement().click({ force: true })
+        cy.get('tr td').eq(8).should('not.contain', tdata.partCloset.parentdevice)
+    }
+    selectFilterPartName() {
+        cy.contains('+ Add Filter Group').click({ force: true })
+        pc.fieldNameElement().select('part_name', { force: true })
+        pc.fieldOpElement().select('does_not_contain', { force: true })
+        pc.fieldValueElement().type(tdata.partCloset.partname)
+        pc.applyElement().click({ force: true })
+        cy.get('tr td').eq(8).should('not.contain', tdata.partCloset.partname)
+    }
+    selectFilterQuantity() {
+        cy.contains('+ Add Filter Group').click({ force: true })
+        pc.fieldNameElement().select('quantity', { force: true })
+        pc.fieldOpElement().select('does_not_contain', { force: true })
+        pc.fieldValueElement().type(tdata.partCloset.quantity)
+        pc.applyElement().click({ force: true })
+        cy.get('tr td').eq(8).should('not.contain', tdata.partCloset.quantity)
+    }
+    selectFilterSku() {
+        cy.contains('+ Add Filter Group').click({ force: true })
+        pc.fieldNameElement().select('sku', { force: true })
+        pc.fieldOpElement().select('does_not_contain', { force: true })
+        pc.fieldValueElement().type(tdata.partCloset.partsku)
+        pc.applyElement().click({ force: true })
+        cy.get('tr td').eq(8).should('not.contain', tdata.partCloset.partsku)
+    }
 }
 export default PartClosetActions 

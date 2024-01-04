@@ -50,7 +50,7 @@ export default class BuildingsElements {
         return cy.get(locator.newbuilding.baddress, {
             timeout: 30000,
         })
-    } 
+    }
     buildingnameElement() {
         return cy.get(locator.newbuilding.buildingname, {
             timeout: 30000,
@@ -71,7 +71,6 @@ export default class BuildingsElements {
             timeout: 30000,
         })
     }
-
     savebtnElement() {
         return cy.get(locator.newbuilding.savebtn, {
             timeout: 30000,
@@ -103,22 +102,22 @@ export default class BuildingsElements {
             timeout: 30000,
         })
     }
-    fieldnameElement() {
+    fieldNameElement() {
         return cy.get(locator.buildings.fieldname, {
             timeout: 30000,
         });
     }
-    fieldvalueElement() {
+    fieldValueElement() {
         return cy.get(locator.buildings.fieldvalue, {
             timeout: 30000,
         });
     }
-    fieldoperationElement() {
+    fieldOpElement() {
         return cy.get(locator.buildings.fieldoperation, {
             timeout: 30000,
         });
     }
-    applybtnElement() {
+    applyElement() {
         return cy.get(locator.buildings.applybtn, {
             timeout: 30000,
         });
@@ -137,15 +136,42 @@ export default class BuildingsElements {
         return cy.contains(locator.buildings.addfilter, {
             timeout: 30000,
         });
-    }  
+    }
     detailsBuildingnameElement() {
         return cy.get(locator.buildings.detailsBuildingname, {
             timeout: 30000,
         });
     }
-    checkElement(){
+    checkElement() {
         return cy.get(locator.newbuilding.check, {
             timeout: 30000,
         });
     }
+    buildingnamedropElement() {
+        return cy.get(locator.buildings.buildingnamedrop, {
+            timeout: 30000,
+        });
+    }
+    shippingaddressElement() {
+        return cy.get(locator.buildings.shippingaddress, {
+            timeout: 30000,
+        });
+    }
+    phonedropElement() {
+        return cy.get(locator.buildings.phonedrop, {
+            timeout: 30000,
+        });
+    }
+    searchboxElement() {
+        return cy.get(locator.buildings.searchbox, {
+            timeout: 30000,
+        });
+    }
+    exportElement() {
+        return cy.contains(locator.buildings.export, {
+            timeout: 30000,
+        });
+    }
+
+
 }

@@ -95,30 +95,70 @@ export class SrcStudentsActions {
     verifyStudentDetails() {
         cy.contains(tdata.srcStudent.fullname).should('be.visible')
     }
-    searchFullName(){
+    searchFullName() {
         ss.searchboxElement().eq(0).click({ force: true })
         ss.fullNameElement().click({ force: true })
         ss.searchElement().clear().type(tdata.srcStudent.fullName + '{enter}', { force: true })
         cy.get('tr td').eq(0).should('contain', tdata.srcStudent.fullName)
     }
-    searchEmail(){
+    searchEmail() {
         ss.searchboxElement().eq(0).click({ force: true })
         ss.emaildropElement().click({ force: true })
         ss.searchElement().clear().type(tdata.srcStudent.emaildrop + '{enter}', { force: true })
         cy.get('tr td').eq(2).should('contain', tdata.srcStudent.emaildrop)
     }
-    searchStatus(){
+    searchStatus() {
         ss.searchboxElement().eq(0).click({ force: true })
         ss.statusElement().click({ force: true })
         ss.searchElement().clear().type(tdata.srcStudent.status + '{enter}', { force: true })
         cy.get('tr td').eq(3).should('contain', tdata.srcStudent.status)
     }
-    searchPhone(){
+    searchPhone() {
         ss.searchboxElement().eq(0).click({ force: true })
         ss.phoneNoElement().click({ force: true })
         ss.searchElement().clear().type(tdata.srcStudent.phoneNo1 + '{enter}', { force: true })
         cy.get('tr td').eq(4).should('contain', tdata.srcStudent.phoneNo2)
     }
-
+    clickOnMoreFilter() {
+        ss.addFilterElement().click({ force: true })
+    }
+    clickOnClearFilter() {
+        ss.clearFilterElement().click({ force: true })
+    }
+    selectFilterFullName() {
+        ss.fieldNameElement().select(0).invoke("val").should("eq", 'full_name', { force: true })
+        ss.fieldOpElement().select('Does Not Contain', { force: true }).should('have.value', 'Does Not Contain')
+        ss.fieldValueElement().type(tdata.srcStudent.fullName)
+        ss.applyElement().click({ force: true })
+        cy.get('tr td').eq(0).should('not.contain', tdata.srcStudent.fullName)
+    }
+    selectFilterEmail() {
+        ss.fieldNameElement().select(2).invoke("val").should("eq", "email")
+        ss.fieldOpElement().select('Does Not Contain', { force: true })
+        ss.fieldValueElement().type(tdata.srcStudent.emaildrop)
+        ss.applyElement().click({ force: true })
+        cy.get('tr td').eq(2).should('not.contain', tdata.srcStudent.emaildrop)
+    }
+    selectFilterPhone() {
+        ss.fieldNameElement().select('phone', { force: true })
+        ss.fieldOpElement().select('Does Not Contain', { force: true })
+        ss.fieldValueElement().type(tdata.srcStudent.phoneNo2)
+        ss.applyElement().click({ force: true })
+        cy.get('tr td').eq(4).should('not.contain', tdata.srcStudent.phoneNo2)
+    }
+    selectFilterTitle() {
+        ss.fieldNameElement().select('title', { force: true })
+        ss.fieldOpElement().select('Does Not Contain', { force: true })
+        ss.fieldValueElement().type(tdata.srcStudent.title)
+        ss.applyElement().click({ force: true })
+        cy.get('tr td').eq(1).should('not.contain', tdata.srcStudent.title)
+    }
+    selectFilterUserStatus() {
+        ss.fieldNameElement().select('user_status', { force: true })
+        ss.fieldOpElement().select('Does Not Contain', { force: true })
+        ss.fieldValueElement().type(tdata.srcStudent.status)
+        ss.applyElement().click({ force: true })
+        cy.get('tr td').eq(3).should('not.contain', tdata.srcStudent.status)
+    }
 }
 export default SrcStudentsActions 

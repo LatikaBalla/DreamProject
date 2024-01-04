@@ -85,7 +85,7 @@ export class LandingActions {
     clickreqAQuote() {
         lan.reqAQuoteElement().click({ force: true })
     }
-    clickOncontact(){
+    clickOncontact() {
         lan.contactElement().click({ force: true })
     }
     clickOnproducts() {
@@ -109,7 +109,5 @@ export class LandingActions {
     clickOnshipping() {
         lan.shippingElement().click({ force: true })
     }
-
 }
-
 export default LandingActions

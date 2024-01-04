@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2711000000
+              "duration": 3689000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 10232000000
+              "duration": 9580000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8072000000
+              "duration": 8069000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "I should be redirected to the dashboard page",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 7000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the logo should be visible",
             "result": {
               "status": "passed",
-              "duration": 154000000
+              "duration": 147000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "My Account Detail tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 7000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Verify the Title of Account Details Page",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 15000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Table for account deatils should be visible",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 7000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Building tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 6000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on Buildings Tab",
             "result": {
               "status": "passed",
-              "duration": 61000000
+              "duration": 62000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Verify the Title of Buildings Page",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 10000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Filters of Buildings should be visible",
             "result": {
               "status": "passed",
-              "duration": 752000000
+              "duration": 833000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3036000000
+              "duration": 2939000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8030000000
+              "duration": 6358000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8065000000
+              "duration": 8079000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on Buildings Tab",
             "result": {
               "status": "passed",
-              "duration": 65000000
+              "duration": 64000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "I should click on + Add New button",
             "result": {
               "status": "passed",
-              "duration": 1341000000
+              "duration": 1053000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "I should Enter Building Name,Phone and Extension",
             "result": {
               "status": "passed",
-              "duration": 877000000
+              "duration": 860000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Select Default building",
             "result": {
               "status": "passed",
-              "duration": 122000000
+              "duration": 126000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Enter Billing Address and select from dropdown",
             "result": {
               "status": "passed",
-              "duration": 2901000000
+              "duration": 2819000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Click on checkbox Same as Shipping Address",
             "result": {
               "status": "passed",
-              "duration": 6076000000
+              "duration": 6096000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 86000000
+              "duration": 66000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Verify the builing details added in table",
             "result": {
               "status": "passed",
-              "duration": 7123000000
+              "duration": 7132000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Click on My Account Details Tab",
             "result": {
               "status": "passed",
-              "duration": 91000000
+              "duration": 111000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "I should click on Add New button",
             "result": {
               "status": "passed",
-              "duration": 91000000
+              "duration": 90000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "Verify the tilte of Add New Contact page",
             "result": {
               "status": "passed",
-              "duration": 38000000
+              "duration": 35000000
             }
           },
           {
@@ -323,7 +323,7 @@
             "name": "Enter title, full name and valid Email",
             "result": {
               "status": "passed",
-              "duration": 1339000000
+              "duration": 1309000000
             }
           },
           {
@@ -333,7 +333,7 @@
             "name": "Enter Phone and Cell Number",
             "result": {
               "status": "passed",
-              "duration": 551000000
+              "duration": 564000000
             }
           },
           {
@@ -343,7 +343,7 @@
             "name": "Select User Role and Building from Dropdown List",
             "result": {
               "status": "passed",
-              "duration": 372000000
+              "duration": 436000000
             }
           },
           {
@@ -353,7 +353,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 100000000
+              "duration": 114000000
             }
           },
           {
@@ -363,153 +363,93 @@
             "name": "Verify the account details added in table",
             "result": {
               "status": "passed",
-              "duration": 3011000000
+              "duration": 3017000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 43,
-            "name": "Click on More filters",
+            "name": "Enter the full name in search box",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 287000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 44,
-            "name": "Select Field name and Field operation",
+            "name": "Verify the record in searching history",
             "result": {
               "status": "passed",
-              "duration": 331000000
+              "duration": 319000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 45,
-            "name": "Enter the Search value in search box",
+            "name": "Click on Edit Icon",
             "result": {
               "status": "passed",
-              "duration": 371000000
+              "duration": 2181000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 46,
-            "name": "Click on Apply Button",
+            "name": "I should edit title, full name",
             "result": {
               "status": "passed",
-              "duration": 64000000
+              "duration": 712000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 47,
-            "name": "Verify the Results in the table",
+            "name": "I should edit Phone and Cell Number and user role",
             "result": {
               "status": "passed",
-              "duration": 2062000000
+              "duration": 943000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 48,
-            "name": "Click on Clear filter",
+            "name": "I edit User Status to inactive",
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 213000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 49,
-            "name": "Enter the full name in search box",
+            "name": "Click on Submit button",
             "result": {
               "status": "passed",
-              "duration": 276000000
+              "duration": 74000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 50,
-            "name": "Verify the record in searching history",
+            "name": "Verify the Record has been updated Meassage",
             "result": {
               "status": "passed",
-              "duration": 185000000
+              "duration": 33000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 51,
-            "name": "Click on Edit Icon",
-            "result": {
-              "status": "passed",
-              "duration": 2239000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 52,
-            "name": "I should edit title, full name",
-            "result": {
-              "status": "passed",
-              "duration": 710000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 53,
-            "name": "I should edit Phone and Cell Number and user role",
-            "result": {
-              "status": "passed",
-              "duration": 965000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 54,
-            "name": "I edit User Status to inactive",
-            "result": {
-              "status": "passed",
-              "duration": 207000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 55,
-            "name": "Click on Submit button",
-            "result": {
-              "status": "passed",
-              "duration": 76000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 56,
-            "name": "Verify the Record has been updated Meassage",
-            "result": {
-              "status": "passed",
-              "duration": 43000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 57,
             "name": "Click on Delete Icon",
             "result": {
               "status": "passed",
@@ -519,57 +459,61 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 58,
+            "line": 52,
             "name": "Click on Confirm Delete button",
             "result": {
               "status": "passed",
-              "duration": 98000000
+              "duration": 94000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 59,
+            "line": 53,
             "name": "Verify the record is deleted successfully",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiAlert-message`, but never found it.\n    at AccountDetailsActions.verifyRecordDeleted (cypress/integration/PageObject/PageActions/AccountDetailsActions.js:111:31)\n    at Context.eval (cypress/integration/Dashboard/Dashboard.spec.js:215:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 2986000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 61,
+            "line": 55,
             "name": "Click on Buildings Tab",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 64000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 62,
+            "line": 56,
             "name": "Click on Delete Icon of building",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2456000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 63,
+            "line": 57,
             "name": "Click on Confirm Delete button of building",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 92000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 64,
+            "line": 58,
             "name": "Verify the record is deleted successfully of building",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 677000000
             }
           }
         ]

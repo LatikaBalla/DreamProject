@@ -23,10 +23,7 @@ export class ResourcesActions {
         res.warrantyInfoElement().should('be.visible')
     }
     clickOnResources() {
-       // dash.arrowElement().click({ force: true })
         dash.resourcesElement().click({ force: true })
     }
-
 }
-
 export default ResourcesActions 

@@ -80,3 +80,58 @@ rt.searchRepairBox()
 Then ('Enter the Search - Asset tag in search box and Verify the Result',()=>{
 rt.searchAssetTag()
 })
+// Then('Click on More filters', () => {
+//     rt.clickOnMoreFilter()
+// })
+// And('Select Field name and Field operation and Enter the Search value', () => {
+//     rt.enterFieldName()
+//     rt.enterFieldOperation()
+//     rt.enterSearchValue()
+// })
+// Then('Click on Apply Button', () => {
+//     rt.clickOnApply()
+// })
+// And('Verify the Results in the table', () => {
+//     rt.verifyResultFilter()
+// })
+
+
+And ('Click More filter select- Record Id in search box and Verify the Result',()=>{
+    rt.clickOnMoreFilter()
+    rt.selectFilterRecordId()
+})
+And ('Click More filter select- Ticket Number in search box and Verify the Result',()=>{
+    rt.clickOnMoreFilter()
+    rt.selectFilterTicketNumber()
+})
+And ('Click More filter select- Repair type in search box and Verify the Result',()=>{
+    rt.clickOnMoreFilter()
+    rt.selectFilterRepairType()
+})
+And ('Click More filter select- Serial Number in search box and Verify the Result',()=>{
+    rt.clickOnMoreFilter()
+    rt.selectFilterSerialNumber()
+})
+And ('Click More filter select- Repair status in search box and Verify the Result',()=>{
+    rt.clickOnMoreFilter()
+    rt.selectFilterRepairStatus()
+})
+And ('Click More filter select- Repair Box in search box and Verify the Result',()=>{
+    rt.clickOnMoreFilter()
+    rt.selectFilterRepairBox()
+})
+And ('Click More filter select- Asset tag in search box and Verify the Result',()=>{
+    rt.clickOnMoreFilter()
+    rt.selectFilterAssetTag()
+})
+And ('Click More filter select- Created By in search box and Verify the Result',()=>{
+    rt.clickOnMoreFilter()
+    rt.selectFilterCreatedBy()
+})
+Then('Click on Clear filter', () => {
+    rt.clickOnClearFilter()
+})
+And ('Click More filter select- Repair device in search box and Verify the Result',()=>{
+    rt.clickOnMoreFilter()
+    rt.selectFilterRepairDevice()
+})

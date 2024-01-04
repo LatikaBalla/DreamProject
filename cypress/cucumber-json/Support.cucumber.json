@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2619000000
+              "duration": 4684000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8650000000
+              "duration": 9156000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8071000000
+              "duration": 8076000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of Support Page",
             "result": {
               "status": "passed",
-              "duration": 862000000
+              "duration": 574000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Enter Full name",
             "result": {
               "status": "passed",
-              "duration": 393000000
+              "duration": 376000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Select task Priority and Topic",
             "result": {
               "status": "passed",
-              "duration": 245000000
+              "duration": 247000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Upload the image and enter Notes",
             "result": {
               "status": "passed",
-              "duration": 738000000
+              "duration": 754000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 62000000
+              "duration": 63000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Verify the Send Feedback successfully",
             "result": {
               "status": "passed",
-              "duration": 1025000000
+              "duration": 898000000
             }
           }
         ]

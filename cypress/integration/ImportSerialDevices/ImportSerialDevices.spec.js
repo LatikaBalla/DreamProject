@@ -31,30 +31,30 @@ Then('Filters of ImportSerialDevices should be visible', () => {
 And('Table for ImportSerialDevices should be visible', () => {
     isd.tableVisible()
 })
-Then ('I should click on Add New Import',()=>{
+Then('I should click on Add New Import', () => {
     isd.clickOnAddNewImport()
 })
-Then ('Upload the CSV import file',()=>{
+Then('Upload the CSV import file', () => {
     isd.uploadcsvFile()
 })
-And ('Click on submit button',()=>{
+And('Click on submit button', () => {
     isd.clickOnSubmitButton()
 })
-And ('Click on refresh button',()=>{
+And('Click on refresh button', () => {
     isd.clickOnRefreshButton()
 })
-Then('Verify the record in table',()=>{
+Then('Verify the record in table', () => {
     isd.verfiyImportTable()
 })
- And ('Click on Download import button',()=>{
+And('Click on Download import button', () => {
     isd.clickOnDownloadImport()
- })
-Then ('Verify the successfully downloaded',()=>{
+})
+Then('Verify the successfully downloaded', () => {
     isd.verifyDownloaded()
 })
-And ('Click on Details button',()=>{
+And('Click on Details button', () => {
     isd.clickOnDetailsButton()
-}) 
-Then ('Verify the Device Details',()=>{
+})
+Then('Verify the Device Details', () => {
     isd.verifyDeviceDetails()
 }) 

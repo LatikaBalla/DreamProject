@@ -14,6 +14,19 @@ Feature: PartCloset Page Functionality
         And Verify the Title of PartCloset Page
         Then Filters of PartCloset should be visible
         And Table for PartCloset should be visible
+        # And Click More filter select- Building in search box and Verify the Result
+        # Then Click on Clear filter
+        # And Click More filter select- Manufacturer in search box and Verify the Result
+        # Then Click on Clear filter
+        # And Click More filter select- Parent Device in search box and Verify the Result
+        # Then Click on Clear filter
+        # And Click More filter select- Part Name in search box and Verify the Result
+        # Then Click on Clear filter
+        # And Click More filter select- Quantity in search box and Verify the Result
+        # Then Click on Clear filter
+        # And Click More filter select- Sku in search box and Verify the Result
+        # Then Click on Clear filter
+
         And I should click on Add New VT part
         Then Select device and part name
         And Enter quantity and select building
@@ -28,6 +41,6 @@ Feature: PartCloset Page Functionality
         Then Verify the Results in the table
         And Click on delete button
         Then Verify the recode is deleted
-
+     
 
 

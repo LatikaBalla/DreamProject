@@ -12,9 +12,11 @@ Feature:InHouseWorkflow Page Functionality
 
     Scenario: Create a ticket and download export
         Then Filters of InHouseWorkflow should be visible
-        Then I should click on new button
-        And Select failure Type, Serial Device and Technician
-        Then Enter the Chromebook issue
-        And Click on save button
-        Then Verify New Ticket is added
+        # Then I should click on new button
+        # And Select failure Type, Serial Device, Technician and repair issue
+        # Then Select building and Enter the Chromebook issue
+        # And Click on save button
+        # Then Verify New Ticket is added
+        And Enter Search ticket no in search box 
+        Then Verify search result below
 

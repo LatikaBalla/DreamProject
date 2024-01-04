@@ -10,7 +10,7 @@ export class MyProfileActions {
     closeTermsOfServiceWindow() {
         dash.termsElement().click({ force: true })
     }
-    clickOnMyProfile() {       
+    clickOnMyProfile() {
         dash.myprofileElement().click({ force: true })
     }
     accountDetailsVisible() {
@@ -41,10 +41,8 @@ export class MyProfileActions {
     verifyUpdate() {
         dash.messageElement().should('contain', tdata.myprofile.profileupdatemsg)
     }
-    clickOnImageIcone(){
+    clickOnImageIcone() {
         mp.uploadElement().attachFile(tdata.myprofile.image)
     }
-
 }
-
 export default MyProfileActions 

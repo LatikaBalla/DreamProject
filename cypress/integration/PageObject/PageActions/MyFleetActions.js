@@ -30,7 +30,8 @@ export class MyFleetActions {
         mf.tableElement().should('be.visible')
     }
     enterSearchValue() {
-        mf.searchElement().type(tdata.myFleet.search,{force:true})
+       // cy.get("[placeholder='Search by table field values']").type(tdata.myFleet.search,{force:true})
+ mf.searchElement().type(tdata.myFleet.search,{force:true})
     }
     verifySearchResult() {
         cy.wait(3000)
@@ -39,26 +40,26 @@ export class MyFleetActions {
     clickOnMoreFiltersButton() {
       //  cy.get('[data-testid="CloseIcon"]').eq(0).click({force:true})
        // cy.get('[data-testid="ArrowBackIosNewIcon"]').click({ force: true })
-        mf.morefiltersbtnElement().scrollIntoView().click({force:true})
+        mf.morefiltersElement().scrollIntoView().click({force:true})
     }
-    clickOnAddFilterGroup() {
+    // clickOnAddFilterGroup() {
   
-        mf.addfilterGroupElement().click()
-    }
-    selectFieldName() {
-        mf.fieldnameElement().select('Serial Number')
-    }
-    selectfieldOperation() {
-        mf.fieldoperationElement().select("Contains")
-    }
-    enterFieldValueSearchBox() {
-        mf.fieldvalueElement().type(tdata.myFleet.serialno)
-    }
-    clickOnApplyButton() {
-        mf.applybtnElement().click({ force: true })
-    }
+    //     mf.addfilterGroupElement().click()
+    // }
+    // selectFieldName() {
+    //     mf.fieldnameElement().select('Serial Number')
+    // }
+    // selectfieldOperation() {
+    //     mf.fieldoperationElement().select("Contains")
+    // }
+    // enterFieldValueSearchBox() {
+    //     mf.fieldvalueElement().type(tdata.myFleet.serialno)
+    // }
+    // clickOnApplyButton() {
+    //     mf.applybtnElement().click({ force: true })
+    // }
     clickOnClearFiltersButton() {
-        mf.clearfilterbtnElement().click({force:true})
+        mf.clearfilterElement().click({force:true})
     }
     verifyResultAfterFilter() {
         cy.wait(3000)
@@ -71,7 +72,9 @@ export class MyFleetActions {
         cy.verifyDownload("/download/",tdata.myFleet.filename)
     }
     clickOnViewButton() {
-        mf.viewElement().scrollIntoView().click({ force: true })
+        cy.wait(5000)
+        cy.get('tbody tr').eq(0).find('td').eq(7).scrollIntoView().contains("View").click({ force: true })
+       // mf.viewElement().scrollIntoView().click({ force: true })
     }
     verifyViewResult() {
         cy.contains(tdata.myFleet.serialno).should('be.visible')
@@ -108,7 +111,41 @@ export class MyFleetActions {
     }
     verfifyDeviceAdded() {
         dash.messageElement().should('contain', tdata.myFleet.addDevicemsg)
-    }
 
+    }
+    selectFilterSerialNumber(){   
+        mf.fieldNameElement().select('serial_number',{force:true})
+        mf.fieldOpElement().select('does_not_contain',{force:true})
+        mf.fieldValueElement().type(tdata.myFleet.serialno)
+        mf.applyElement().click({ force: true })     
+        cy.get('tr td').eq(1).should('not.contain', tdata.myFleet.serialno)
+    }
+    selectFilterStudent(){
+        cy.contains('+ Add Filter Group').click({force:true})
+        mf.fieldNameElement().select('student',{force:true})
+        mf.fieldOpElement().select('does_not_contain',{force:true})
+        mf.fieldValueElement().type(tdata.myFleet.student)
+        mf.applyElement().click({ force: true })
+        cy.get('tr td').eq(4).should('not.contain', tdata.myFleet.student)
+    }
+    selectFilterDevice(){
+        cy.contains('+ Add Filter Group').click({force:true})
+        mf.fieldNameElement().select('device',{force:true})
+        mf.fieldOpElement().select('does_not_contain',{force:true})
+        mf.fieldValueElement().type(tdata.myFleet.device)
+        mf.applyElement().click({ force: true })
+        cy.get('tr td').eq(3).should('not.contain', tdata.myFleet.device)
+    }
+    selectFilterAssetTag(){
+        cy.contains('+ Add Filter Group').click({force:true})
+        mf.fieldNameElement().select('asset_tag',{force:true})
+        mf.fieldOpElement().select('does_not_contain',{force:true})
+        mf.fieldValueElement().type('Lea')
+        mf.applyElement().click({ force: true })
+        cy.get('tr td').eq(2).should('not.contain', 'Lea')
+    }
+    clickOnRetiredTab(){
+        cy.get('[data-testid="tabDeactivate"]').click({force:true})
+    }
 }
 export default MyFleetActions 

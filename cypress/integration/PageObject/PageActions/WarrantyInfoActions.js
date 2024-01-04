@@ -19,7 +19,6 @@ export class WarrantyInfoActions {
         rep1.warrantyInfoElement().click({ force: true })
     }
     clickOnResources() {
-       // dash.arrowElement().click({ force: true })
         dash.resourcesElement().click({ force: true })
     }
 }

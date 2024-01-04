@@ -5,7 +5,7 @@
         "sliderMenu": ".css-htxx1b",
         "terms": ".MuiToolbar-root > .MuiButton-root",
         "logo": "[src='/static/media/logo-v-purple.7593cbb85d4fd19e22cc.png']",
-        "arrow": "[data-testid='ArrowForwardIosIcon']",
+        "arrow": "[ data-testid='ChevronLeftIcon']",
         "accountdashboard": "Account Dashboard",
         "reportcenter": "Report Center",
         "managedevices": "Manage Devices",
@@ -19,7 +19,8 @@
         "features": "a[href='/features']",
         "support": "a[href='/support']",
         "logout": "[data-testid='LogoutIcon']",
-        "vivaAdmin": "a[href='/admin']"
+        "vivaAdmin": "a[href='/admin']",
+        "favorite":"Favorite"
     },
     "accountDetails": {
         "title": "My Account Details ",
@@ -47,7 +48,7 @@
         "applybtn": "[data-testid='btnHandleApply']",
         "morefiltersbtn": "More Filters",
         "clearfilterbtn": "Clear Filter",
-        "addfilter": "+ Add Filter Group"
+        "addfilterGroup": "+ Add Filter Group"
     },
     "newaccount": {
         "title": "#title",
@@ -87,7 +88,12 @@
         "morefiltersbtn": "+ Add Filter",
         "clearfilterbtn": "Clear Filter",
         "addfilterGroup": "+ Add Filter Group",
-        "detailsBuildingname": ".MuiTypography-h4"
+        "detailsBuildingname": ".MuiTypography-h4",
+        "buildingnamedrop":"[data-value='building_name']",
+        "shippingaddress":"[data-value='building_shipping_address']",
+        "phonedrop":"[data-value='phone']",
+        "searchbox":"[role='combobox']",
+        "export":"Export"
     },
     "newbuilding": {
         "buildingname": "#building_name",
@@ -127,10 +133,10 @@
         "inhouserepaire": "#mui-component-select-in_house_repair",
         "building": "#mui-component-select-building",
         "editsubmit": "[data-testid='btnNewDataSubmit']",
-        "fieldname": "[name='field']",
-        "fieldvalue": "[name='value']",
-        "fieldoperation": "[name='operation']",
-        "applybtn": "[data-testid='btnHandleApply']",
+        "fieldName": "[name='fieldName']",
+        "fieldValue": "[name='fieldValue']",
+        "fieldOp": "[name='fieldOp']",
+        "apply": "[data-testid='btnHandleApply']",
         "addfilterbtn": "Add Filter"
     },
     "reportCenter": {
@@ -150,7 +156,18 @@
         "printTicket": "Print Ticket Estimate",
         "downloadticket": "Download Ticket Estimate",
         "back": "[data-testid='KeyboardBackspaceIcon']",
-        "heading": "Repair Ticket Details"
+        "heading": "Repair Ticket Details",
+        "repairtype":"[data-value='repair_type']",
+        "recordid":"[data-value='record_id']",
+        "ticketnumber":"[data-value='ticket_number']",
+        "repairstatus":"[data-value='repair_status']",
+        "repairbox":"[data-value='repair_box']",
+        "addFilter":"[data-testid='Filters']",
+        "clearFilter":"Clear Filter",
+        "fieldName":"[name='fieldName']",
+        "fieldOp":"[name='fieldOp']",
+        "fieldValue":"[name='fieldValue']",
+        "apply":"[data-testid='btnHandleApply']"
     },
     "vivacityRepairReport": {
         "section1": "In Transit to Me",
@@ -182,7 +199,19 @@
         "describe": "#chromebook_issue",
         "savebtn":"[type='submit']",
         "searchdropdown":"[role='combobox']",
-        "downloadticket": "Download Ticket Estimate"
+        "downloadticket": "Download Ticket Estimate",
+        "repairtype":"[data-value='repair_type']",
+        "recordid":"[data-value='record_id']",
+        "ticketnumber":"[data-value='ticket_number']",
+        "repairstatus":"[data-value='repair_status']",
+        "repairbox":"[data-value='repair_box']",
+        "addFilter":"[data-testid='Filters']",
+        "clearFilter":"Clear Filter",
+        "fieldName":"[name='fieldName']",
+        "fieldOp":"[name='fieldOp']",
+        "fieldValue":"[name='fieldValue']",
+        "apply":"[data-testid='btnHandleApply']"
+
     },
     "manageDevices": {
         "title": "Devices",
@@ -203,15 +232,15 @@
         "lonarstatus": "#mui-component-select-loaner_status",
         "devicestatus": "#mui-component-select-device_status",
         "submitbtn": "Submit",
-        "morefiltersbtn": " More Filters",
-        "clearfilterbtn": "Clear Filter",
+        "morefilters": " More Filters",
+        "clearfilter": "Clear Filter",
         "addDevicesbtn": " Add Device ",
         "exportcsv": " Export To CSV",
         "search": "[placeholder='Search by table field values']",
-        "fieldname": "[name='fieldName']",
-        "fieldvalue": "[name='fieldValue']",
-        "fieldoperation": "[name='fieldOp']",
-        "applybtn": "[data-testid='btnHandleApply']",
+        "fieldName": "[name='fieldName']",
+        "fieldValue": "[name='fieldValue']",
+        "fieldOp": "[name='fieldOp']",
+        "apply": "[data-testid='btnHandleApply']",
         "addfilterGroup": "+ Add Filter Group",
         "view": "View"
     },
@@ -246,11 +275,18 @@
         "type": "#category",
         "description": "#description",
         "upload": "[type='file']",
-        "savebtn": "Save"
+        "savebtn": "Save",
+        "addFilter":"Add Filter",
+        "clearFilter":"Clear Filter",
+        "fieldName":"[name='fieldName']",
+        "fieldOp":"[name='fieldOp']",
+        "fieldValue":"[name='fieldValue']",
+        "apply":"[data-testid='btnHandleApply']"
     },
     "loanerManagement": {
         "table": ".css-1xz8d5v",
         "search": "[placeholder='Search by table field values']",
+        "searchAbove":"[placeholder='Search ']",
         "addstudent": "[data-testid='checkoutFilter']",
         "addfilter": "[data-testid='checkoutFilter']",
         "refreshbtn": "[data-testid='CachedIcon']",
@@ -307,13 +343,18 @@
         "repairstatus":"[data-value='repair_status']",
         "repairbox":"[data-value='repair_box']",
         "assettag":"[data-value='asset_tag']",
-        "intransit":"[data-value='In Transit']"
+        "intransit":"[data-value='In Transit']",
+        "addFilter":"[data-testid='Filters']",
+        "clearFilter":"Clear Filter",
+        "fieldName":"[name='fieldName']",
+        "fieldOp":"[name='fieldOp']",
+        "fieldValue":"[name='fieldValue']",
+        "apply":"[data-testid='btnHandleApply']"
     },
     "repairBoxes": {
         "title": "Repair Ticket Instructions",
         "inbound": "Inbound Shipments",
         "outbound": "Outbound Shipments",
-      
         "addbox": "Create New",
         "weight": "#weight",
         "height": "#height",
@@ -333,7 +374,14 @@
         "searchbox": "[role='combobox']",
         "search":"[data-testid='txtSearchData']",
         "trackingnumber":"[data-value='tracking_number_from']",
-        "recordid":"[data-value='record_id']"
+        "recordid":"[data-value='record_id']",
+        "addFilter":"[data-testid='Filters']",
+        "clearFilter":"Clear Filter",
+        "fieldName":"[name='fieldName']",
+        "fieldOp":"[name='fieldOp']",
+        "fieldValue":"[name='fieldValue']",
+        "apply":"[data-testid='btnHandleApply']"
+
     },
     "inhouseRepairCenter": {
         "title": "In-House Repair",
@@ -354,7 +402,9 @@
         "serialdevice": "#device",
         "technician": "#internal_technician",
         "chromebookissue": "#chromebook_issue",
-        "savebtn": "Save"
+        "savebtn": "Save",
+        "building":"#building",
+        "repairissue":"#repair_issue"
     },
     "inhouseTickets": {
         "title": "In House Repair Tickets",
@@ -369,13 +419,38 @@
         "technician": "#internal_technician",
         "chromebookissue": "#chromebook_issue",
         "savebtn": "Save",
+        "printTicket": "Print Ticket Estimate",
+        "downloadticket": "Download Ticket Estimate",
+        "lineitem": "Add New Line Item",
+        "vtverifypart": "VT Verfied Part",
         "building": "#building",
         "searchbox": "[role='combobox']",
         "search":"[data-testid='txtSearchData']",
         "ticketnumber":"[data-value='ticket_number']",
         "repairtype":"[data-value='repair_type']",
         "recordid":"[data-value='record_id']",
-        "repairstatus":"[data-value='repair_status']"
+        "repairstatus":"[data-value='repair_status']",
+        "addFilter":"[data-testid='Filters']",
+        "clearFilter":"Clear Filter",
+        "fieldName":"[name='fieldName']",
+        "fieldOp":"[name='fieldOp']",
+        "fieldValue":"[name='fieldValue']",
+        "apply":"[data-testid='btnHandleApply']",
+        "editTicket":"Edit Ticket",
+        "repairstatusEdit":"#repair_status",
+        "update":"Update",
+        "addline":"Add New Line Item",
+        "addimage":"Add New Repair Image",
+        "addnote":"Add New Note",
+        "note":"#note",
+        "createline":"button[type='submit']",
+        "uploadimage":"#image",
+        "imagedescription":"#image_description",
+        "updateimage":"button[type='submit']",
+        "notetype":"#note_type",
+        "createnote":"button[type='submit']",
+        "part": "#part",
+        "custompart": "Custom Part"
     },
     "studentRepairCenter": {
         "title": "Student Repair Center",
@@ -407,7 +482,13 @@
         "partid": "#mui-component-select-partId",
         "quantityVT": "#quantity",
         "submitVT": "Submit",
-        "cancelVT": "Cancel"
+        "cancelVT": "Cancel",
+        "addFilter":"Add Filter",
+        "clearFilter":"Clear Filter",
+        "fieldName":"[name='fieldName']",
+        "fieldOp":"[name='fieldOp']",
+        "fieldValue":"[name='fieldValue']",
+        "apply":"[data-testid='btnHandleApply']"
     },
     "srcRepairTickets": {
         "title": "SRC Repair Tickets",
@@ -424,7 +505,6 @@
         "issue": "#repair_issue",
         "savebtn": "Save",
         "view": "View",
-        "editticket": "Edit Ticket",
         "printTicket": "Print Ticket Estimate",
         "downloadticket": "Download Ticket Estimate",
         "lineitem": "Add New Line Item",
@@ -436,7 +516,26 @@
         "ticketnumber":"[data-value='ticket_number']",
         "repairtype":"[data-value='repair_type']",
         "recordid":"[data-value='record_id']",
-        "repairstatus":"[data-value='repair_status']"
+        "repairstatus":"[data-value='repair_status']",
+        "addFilter":"[data-testid='Filters']",
+        "clearFilter":"Clear Filter",
+        "fieldName":"[name='fieldName']",
+        "fieldOp":"[name='fieldOp']",
+        "fieldValue":"[name='fieldValue']",
+        "apply":"[data-testid='btnHandleApply']",
+        "editTicket":"Edit Ticket",
+        "repairstatusEdit":"#repair_status",
+        "update":"Update",
+        "addline":"Add New Line Item",
+        "addimage":"Add New Repair Image",
+        "addnote":"Add New Note",
+        "note":"#note",
+        "createline":"button[type='submit']",
+        "uploadimage":"#image",
+        "imagedescription":"#image_description",
+        "updateimage":"button[type='submit']",
+        "notetype":"#note_type",
+        "createnote":"button[type='submit']"
     },
     "srcFacilitators": {
         "title": "SRC Facilitators",
@@ -450,7 +549,13 @@
         "fullName":"[data-value='full_name']",
         "emaildrop":"[data-value='email']",
         "status":"[data-value='status']",
-        "phoneNo":"[data-value='phone']"
+        "phoneNo":"[data-value='phone']",
+        "addFilter":"[data-testid='Filters']",
+        "clearFilter":"Clear Filter",
+        "fieldName":"[name='fieldName']",
+        "fieldOp":"[name='fieldOp']",
+        "fieldValue":"[name='fieldValue']",
+        "apply":"[data-testid='btnHandleApply']"
     },
     "srcStudents": {
         "title": "SRC Students",
@@ -477,7 +582,13 @@
         "fullName":"[data-value='full_name']",
         "emaildrop":"[data-value='email']",
         "status":"[data-value='status']",
-        "phoneNo":"[data-value='phone']"
+        "phoneNo":"[data-value='phone']",
+        "addFilter":"[data-testid='Filters']",
+        "clearFilter":"Clear Filter",
+        "fieldName":"[name='fieldName']",
+        "fieldOp":"[name='fieldOp']",
+        "fieldValue":"[name='fieldValue']",
+        "apply":"[data-testid='btnHandleApply']"
     },
     "resources": {
         "title": "Resources",
@@ -529,7 +640,13 @@
         "uconstruction": "[data-testid='tabres-2']",
         "launched": "[data-testid='tabres-3']",
         "submitrequest": "[data-testid='btnItemCreate']",
-        "submitbtn": "[data-testid='btnNewDataSubmit']"
+        "submitbtn": "[data-testid='btnNewDataSubmit']",
+        "fieldName": "[name='fieldName']",
+        "fieldValue": "[name='fieldValue']",
+        "fieldOp": "[name='fieldOp']",
+        "apply": "[data-testid='btnHandleApply']",
+        "addFilter": "Add Filter",
+        "clearFilter":"Clear Filter"
     },
     "support": {
         "title": "Support",
@@ -652,5 +769,10 @@
         "forgotpass": "Forgot password?",
         "signup": "#btn-signup",
         "googlesignin": "Sign in with Google"
+    },
+    "favorite":{
+        "star":"[data-testid='StarBorderIcon']",
+        "deletebtn":"[data-testid='DeleteOutlinedIcon']",
+        "title":"Favorite"
     }
 }

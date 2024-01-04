@@ -91,23 +91,23 @@ export default class UsersElements {
             timeout: 30000,
         })
     }
-    fieldnameElement() {
-        return cy.get(locator.users.fieldname, {
+    fieldNameElement() {
+        return cy.get(locator.users.fieldName, {
             timeout: 30000,
         });
     }
-    fieldvalueElement() {
-        return cy.get(locator.users.fieldvalue, {
+    fieldValueElement() {
+        return cy.get(locator.users.fieldValue, {
             timeout: 30000,
         });
     }
-    fieldoperationElement() {
-        return cy.get(locator.users.fieldoperation, {
+    fieldOpElement() {
+        return cy.get(locator.users.fieldOp, {
             timeout: 30000,
         });
     }
-    applybtnElement() {
-        return cy.get(locator.users.applybtn, {
+    applyElement() {
+        return cy.get(locator.users.apply, {
             timeout: 30000,
         });
     }

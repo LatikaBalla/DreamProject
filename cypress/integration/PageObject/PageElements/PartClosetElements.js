@@ -116,9 +116,40 @@ export default class PartClosetElements {
             timeout: 30000,
         })
     }
-    buildingElement(){
+    buildingElement() {
         return cy.get(locator.partCloset.building, {
             timeout: 30000,
         })
     }
+    clearFilterElement() {
+        return cy.contains(locator.partCloset.clearFilter, {
+            timeout: 30000,
+        })
+    }
+    addFilterElement() {
+        return cy.contains(locator.partCloset.addFilter, {
+            timeout: 30000,
+        })
+    }
+    fieldNameElement() {
+        return cy.get(locator.partCloset.fieldName, {
+            timeout: 30000,
+        })
+    }
+    fieldOpElement() {
+        return cy.get(locator.partCloset.fieldOp, {
+            timeout: 30000,
+        })
+    }
+    fieldValueElement() {
+        return cy.get(locator.partCloset.fieldValue, {
+            timeout: 30000,
+        })
+    }
+    applyElement() {
+        return cy.get(locator.partCloset.apply, {
+            timeout: 30000,
+        })
+    }
+
 }

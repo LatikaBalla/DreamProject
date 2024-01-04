@@ -15,7 +15,6 @@ export class VivacityAdminActions {
         dash.termsElement().click({ force: true })
     }
     clickOnVivacityAdmin() {
-        //  dash.arrowElement().click({ force: true })
         dash.vivaAdminElement().click({ force: true })
     }
     allPaidSubcription() {
@@ -48,11 +47,6 @@ export class VivacityAdminActions {
     employeeManagment() {
         vadmin.section10Element().should('be.visible')
     }
-
-
-
-
-
     clickOnallPaidSubcription() {
         vadmin.section1Element().click({ force: true })
     }
@@ -174,10 +168,10 @@ export class VivacityAdminActions {
     verifyWarrantyRecordAdded() {
         dash.messageElement().should('contain', tdata.vivacityAdmin.warrantymsg)
     }
-    enterSearchWarranty(){
-vadmin.searchWarElement().type(tdata.vivacityAdmin.warrantyName)
+    enterSearchWarranty() {
+        vadmin.searchWarElement().type(tdata.vivacityAdmin.warrantyName)
     }
-    verifySearchWarranty(){
+    verifySearchWarranty() {
 
     }
     clickOnWEditIcon() {
@@ -283,11 +277,11 @@ vadmin.searchWarElement().type(tdata.vivacityAdmin.warrantyName)
         dash.messageElement().should('contain', tdata.vivacityAdmin.addAccountymsg)
     }
     clickOnUpdateSubcription() {
-      
+
         vadmin.updateSubcriptionElement().click({ force: true })
     }
     selectSubscription() {
-          cy.get('[role="combobox"]').eq(6).click({ force: true })
+        cy.get('[role="combobox"]').eq(6).click({ force: true })
         //vadmin.subcriptionElement().click({ force: true })
         cy.get(tdata.vivacityAdmin.subcription).click({ force: true })
     }

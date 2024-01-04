@@ -98,19 +98,24 @@ export default class LoanerManagementElements {
             timeout: 30000,
         })
     }
-    searchElement(){
+    searchElement() {
         return cy.get(locator.loanerManagement.search, {
             timeout: 30000,
         })
     }
-    submitbtnElement(){
+    searchAboveElement() {
+        return cy.get(locator.loanerManagement.searchAbove, {
+            timeout: 30000,
+        })
+    }
+    submitbtnElement() {
         return cy.get(locator.loanerManagement.submitbtn, {
             timeout: 30000,
-        }) 
+        })
     }
-    notesElement(){
+    notesElement() {
         return cy.get(locator.loanerManagement.notes, {
             timeout: 30000,
-        }) 
+        })
     }
 }

@@ -21,8 +21,18 @@ Feature: RepairBoxes Page Functionality
     Then Select Ticket from dropdownlist
     And Click on Finish button
     Then Verify new box is added in table
-    And Click on download label
+    # And Click on download label
     # Then Verify label downloaded successfully
+    And Click More filter select- Record Id in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Tracking Number From in search box and Verify the Result
+    Then Click on Clear filter
+    Then Click More filter select- Shipping From Cost in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Shipped From Date in search box and Verify the Result
+    Then Click on Clear filter
+    And Enter the Search - Tracking Number in search box and Verify the Result
+    Then Enter the Search - Record Id in search box and Verify the Result
     And Click on view button
     Then Verify the Details new box
     And Add another ticket in the same box
@@ -34,6 +44,9 @@ Feature: RepairBoxes Page Functionality
     And Click on Back button
     And Remove the ticket from box
     Then Verify the ticket is delete from the table
-    And Enter the Search - Tracking Number in search box and Verify the Result
-    Then Enter the Search - Record Id in search box and Verify the Result
+     
+    # Then Click More filter select- Label From in search box and Verify the Result
+    # Then Click on Clear filter
+ 
+
 

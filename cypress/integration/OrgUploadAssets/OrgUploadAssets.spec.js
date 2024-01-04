@@ -43,7 +43,7 @@ Then('Enter title, full name location and tag', () => {
 And('Enter note, Type and description', () => {
     oua.enterNote()
     oua.enterType()
-  //  oua.enterDescription()
+    //  oua.enterDescription()
 })
 Then('Upload the image file', () => {
     oua.selectFileForUpload()
@@ -55,14 +55,14 @@ And('Click on save button', () => {
 Then('Verify the asset details added in table', () => {
     oua.verifyRecordTable()
 })
-And ('Enter the title in search box',()=>{
-oua.enterSearchValue()
+And('Enter the title in search box', () => {
+    oua.enterSearchValue()
 })
-Then ('Click on Search button',()=>{
+Then('Click on Search button', () => {
     oua.clickOnASearchButton()
 })
-And ('Verify the record in searching history',()=>{
-oua.verifySearchResult()
+And('Verify the record in searching history', () => {
+    oua.verifySearchResult()
 })
 And('Click on Edit button', () => {
     oua.clickOnEditIcon()
@@ -77,7 +77,7 @@ And('I should edit note, Type and description', () => {
     oua.editDescription()
 })
 Then('ReUpload the image file', () => {
-    oua.editUpload() 
+    oua.editUpload()
 })
 Then('Click on save button', () => {
     oua.clickSubmitForUpdate()
@@ -93,5 +93,17 @@ Then('Click on Confirm Delete button', () => {
 })
 And('Verify the record is deleted successfully', () => {
     oua.verifyRecordDeleted()
+})
+Then('Click on Clear filter', () => {
+    oua.clickOnClearFilter()
+})
+And('Click More filter select- Description in search box and Verify the Result', () => {
+    oua.clickOnMoreFilter()
+    oua.selectFilterDescription()
+    cy.wait(100)
+})
+And('Click More filter select- Acquire Location in search box and Verify the Result', () => {
+    oua.clickOnMoreFilter()
+    oua.selectFilterAcquireLocation()
 })
 

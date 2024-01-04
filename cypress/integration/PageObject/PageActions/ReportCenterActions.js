@@ -27,11 +27,7 @@ export class ReportCenterActions {
         repc.warrantyrElement().should('be.visible')
     }
     clickOnReportCenter() {
-       // dash.arrowElement().click({ force: true })
         dash.reportcenterElement().click({ force: true })
     }
-
-
 }
-
 export default ReportCenterActions 

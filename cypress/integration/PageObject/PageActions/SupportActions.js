@@ -11,7 +11,6 @@ export class SupportActions {
         dash.termsElement().click({ force: true })
     }
     clickOnSupport() {
-      //  cy.contains('demo_adminsuper@vivacitytech.com').click({force:true})
         dash.supportElement().click({ force: true })
     }
     enterFullname() {
@@ -33,11 +32,10 @@ export class SupportActions {
     }
     clickOnSubmit() {
         cy.get('.MuiGrid-container > .MuiButtonBase-root').click({ force: true })
-       // su.submitbtnElement().click({ force: true })
+        // su.submitbtnElement().click({ force: true })
     }
     verfiyFeedbackSuccess() {
         dash.messageElement().should('contain', tdata.support.submitmsg)
     }
 }
-
 export default SupportActions 

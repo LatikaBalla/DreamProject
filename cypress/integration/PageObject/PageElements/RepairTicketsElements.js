@@ -116,5 +116,35 @@ export default class RepairTicketsElements {
             timeout: 30000,
         })
     }
+    addFilterElement() {
+        return cy.get(locator.repairTickets.addFilter, {
+            timeout: 30000,
+        })
+    }
+    clearFilterElement() {
+        return cy.contains(locator.repairTickets.clearFilter, {
+            timeout: 30000,
+        })
+    }
+    fieldNameElement() {
+        return cy.get(locator.repairTickets.fieldName, {
+            timeout: 30000,
+        })
+    }
+    fieldOpElement() {
+        return cy.get(locator.repairTickets.fieldOp, {
+            timeout: 30000,
+        })
+    }
+    applyElement() {
+        return cy.get(locator.repairTickets.apply, {
+            timeout: 30000,
+        })
+    }
+    fieldValueElement() {
+        return cy.get(locator.repairTickets.fieldValue, {
+            timeout: 30000,
+        })
+    }
    
 }

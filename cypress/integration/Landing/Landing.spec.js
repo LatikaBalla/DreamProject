@@ -38,103 +38,103 @@ And('Click on the product tab', () => {
 Then('Redirect to Product section and should be visible', () => {
     lan.verifyProductSection()
 })
-And('Click on Features-Google Admin Console Sync of footer', () => { 
-lan.clickOngoogleSync()
+And('Click on Features-Google Admin Console Sync of footer', () => {
+    lan.clickOngoogleSync()
 })
-Then('Redirect to the Features-Google Admin Console Sync section', () => { 
-lan.redrectTogoogleSync()
+Then('Redirect to the Features-Google Admin Console Sync section', () => {
+    lan.redrectTogoogleSync()
 })
-And('Click on the Feature-Role-Based Organization Access of footer', () => { 
+And('Click on the Feature-Role-Based Organization Access of footer', () => {
     lan.clickOnroleAccess()
 })
 Then('Redirect to Feature-Role-Based Organization Access section', () => {
     lan.redrectToroleAccess()
- })
+})
 And('Click on the Feature-Device Management of footer', () => {
     lan.clickOndeviceMan()
- })
+})
 Then('Redirect to Feature-Device Management section', () => {
     lan.redrectTodeviceMan()
- })
+})
 And('Click on Features-Device Telemetry Reports of footer', () => {
     lan.clickOndeviceTelemetry()
- })
+})
 Then('Redirect to the Features-Device Telemetry Reports section', () => {
     lan.redrectTodeviceTelemetry()
- })
-And('Click on the Feature-User Accounts of footer', () => { 
+})
+And('Click on the Feature-User Accounts of footer', () => {
     lan.clickOnuserAcco()
 })
-Then('Redirect to Feature-User Accounts section', () => { 
+Then('Redirect to Feature-User Accounts section', () => {
     lan.redrectTouserAcco()
 })
-And('Click on the Feature-Report Center of footer', () => { 
+And('Click on the Feature-Report Center of footer', () => {
     lan.clickOnreportCenter()
 })
 Then('Redirect t0 Feature-Report Center section', () => {
     lan.redrectToreportCenter()
- })
-And('Click on the Feature-Repair 360 of footer', () => { 
+})
+And('Click on the Feature-Repair 360 of footer', () => {
     lan.clickOnrepair360()
 })
 Then('Redirect to Feature-Repair 360 section', () => {
     lan.redrectTorepair360()
- })
- And ('Click on Company->Request A Quote of footer',()=>{
+})
+And('Click on Company->Request A Quote of footer', () => {
     lan.clickreqAQuote()
- })
- Then ('Redirect to the Company->Request A Quote Page',()=>{
+})
+Then('Redirect to the Company->Request A Quote Page', () => {
     cy.url().should('include', '/request-a-quote')
     cy.go('back')
- })
- And ('Click on the Company->Products of footer',()=>{
+})
+And('Click on the Company->Products of footer', () => {
     lan.clickOnproducts()
- })
- Then('Redirect to Company->Products Page',()=>{
+})
+Then('Redirect to Company->Products Page', () => {
     cy.url().should('include', '/products/')
     cy.go('back')
- })
- And ('Click on the Company->Services of footer',()=>{
+})
+And('Click on the Company->Services of footer', () => {
     lan.clickOnservices()
- })
- Then ('Redirect to Company->Services Page',()=>{
+})
+Then('Redirect to Company->Services Page', () => {
     cy.url().should('include', '/chromebook-deployment')
     cy.go('back')
- })
- And ('Click on Company->Contact of footer',()=>{
+})
+And('Click on Company->Contact of footer', () => {
     lan.clickOncontact()
- })
- Then ('Redirect to the Company->Contact page',()=>{
+})
+Then('Redirect to the Company->Contact page', () => {
     cy.url().should('include', '/contact-us')
     cy.go('back')
- })
- And ('Click on the Information->Privacy Policy of footer',()=>{
+})
+And('Click on the Information->Privacy Policy of footer', () => {
     lan.clickOnprivacyPolicy()
- })
- Then ('Redirect to Information->Privacy Policy page',()=>{
+})
+Then('Redirect to Information->Privacy Policy page', () => {
     cy.url().should('include', '/privacy-policy')
     cy.go('back')
- })
- And ('Click on the Information->Terms of Service of footer',()=>{
+})
+And('Click on the Information->Terms of Service of footer', () => {
     lan.clickOntermsofService()
- })
- Then ('Redirect t0 Information->Terms of Service page',()=>{
+})
+Then('Redirect t0 Information->Terms of Service page', () => {
     cy.url().should('include', '/terms-of-service')
     cy.go('back')
- })
- And ('Click on the Information->Google Privacy Disclosure of footer',()=>{
+})
+And('Click on the Information->Google Privacy Disclosure of footer', () => {
     lan.clickOngoogleDisclosure()
- })
- Then ('Redirect to Information->Google Privacy Disclosure page',()=>{
+})
+Then('Redirect to Information->Google Privacy Disclosure page', () => {
     cy.url().should('include', '/google-use-policy')
     cy.go('back')
- })
- And ('Click on the Information->Shipping of footer',()=>{
+})
+And('Click on the Information->Shipping of footer', () => {
     lan.clickOnshipping()
- })
- Then ('Redirect to Information->Shipping page',()=>{
+})
+Then('Redirect to Information->Shipping page', () => {
     cy.url().should('include', '/shipping-policy')
- })
+})
 
 
 

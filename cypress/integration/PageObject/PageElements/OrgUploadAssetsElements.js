@@ -91,4 +91,34 @@ export default class OrgUploadAssetsElements {
             timeout: 30000,
         })
     }
+    addFilterElement() {
+        return cy.contains(locator.orgUploadAssets.addFilter, {
+            timeout: 30000,
+        })
+    }
+    clearFilterElement() {
+        return cy.contains(locator.orgUploadAssets.clearFilter, {
+            timeout: 30000,
+        })
+    }
+    fieldNameElement() {
+        return cy.get(locator.orgUploadAssets.fieldName, {
+            timeout: 30000,
+        })
+    }
+    fieldOpElement() {
+        return cy.get(locator.orgUploadAssets.fieldOp, {
+            timeout: 30000,
+        })
+    }
+    applyElement() {
+        return cy.get(locator.orgUploadAssets.apply, {
+            timeout: 30000,
+        })
+    }
+    fieldValueElement() {
+        return cy.get(locator.orgUploadAssets.fieldValue, {
+            timeout: 30000,
+        })
+    }
 }

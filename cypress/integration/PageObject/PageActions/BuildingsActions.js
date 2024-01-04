@@ -61,14 +61,13 @@ export class BuildingsActions {
     }
     clickOnSaveButton() {
         build.savebtnElement().click({ force: true })
-        //  cy.get('[data-testid="CloseIcon"]').click({force})
+
     }
     verifyNewBuilding() {
         cy.wait(5000)
-        cy.get('[data-testid="CachedIcon"]').click({force:true})
+        cy.get('[data-testid="CachedIcon"]').click({ force: true })
         cy.wait(2000)
         cy.get('tr td').eq(1).should('contain', tdata.buildings.buildingname)
-       // dash.messageElement().should('contain', tdata.buildings.addmsg)
     }
     clickOnEditIcon() {
         build.editIconElement().eq(0).click({ force: true })
@@ -101,39 +100,11 @@ export class BuildingsActions {
     clickOnConfirmDeleteButton() {
         build.confirmdeleteElement().contains('Delete').click({ force: true })
     }
-    enterInSearchBox() {
-        build.searchElement().type(tdata.buildings.buildingname + '{enter}', { force: true })
-    }
-    verifySearchResult() {
-        cy.wait(2000)
-        cy.get('tr td').eq(1).should('contain', tdata.buildings.buildingname)
-        cy.wait(2000)
-         build.searchElement().clear({ force: true }).should('have.value', '')
-    }
     clickOnMoreFiltersButton() {
         build.morefiltersbtnElement().click({ force: true })
     }
-    clickOnAddFilterGroup() {
-        build.addfilterElement().click({ force: true })
-    }
-    selectFieldName() {
-        build.fieldnameElement().select(1).invoke("val").should("eq", 'building_name')
-    }
-    selectfieldOperation() {
-        build.fieldoperationElement().select(1).invoke("val").should("eq","Does Not Contain",{force:true})
-    }
-    enterFieldValueSearchBox() {
-        build.fieldvalueElement().type(tdata.buildings.buildingname, { force: true })
-    }
-    clickOnApplyButton() {
-        build.applybtnElement().click({ force: true })
-    }
     clickOnClearFiltersButton() {
         build.clearfilterbtnElement().click({ force: true })
-    }
-    verifyResultAfterFilter() {
-        cy.wait(1000)
-        cy.get('tr td').should('not.contain', tdata.buildings.buildingname)
     }
     clickOnDetailsButton() {
         cy.wait(1000)
@@ -145,6 +116,70 @@ export class BuildingsActions {
     verifyDelete() {
         dash.messageElement().should('contain', tdata.buildings.deletemsg)
     }
-
+    selectFilterRecordId() {
+        build.fieldNameElement().select(0).invoke("val").should("eq", 'record_id', { force: true })
+        build.fieldOpElement().select('Does Not Contain', { force: true }).should('have.value', 'Does Not Contain')
+        build.fieldValueElement().type(tdata.buildings.recordid)
+        build.applyElement().click({ force: true })
+        cy.get('tr td').eq(0).should('not.contain', tdata.buildings.recordid)
+    }
+    selectFilterBuildingName() {
+        build.fieldNameElement().select(1).invoke("val").should("eq", "building_name")
+        build.fieldOpElement().select('Does Not Contain', { force: true })
+        build.fieldValueElement().type(tdata.buildings.buildingname)
+        build.applyElement().click({ force: true })
+        cy.get('tr td').eq(1).should('not.contain', tdata.buildings.buildingname)
+    }
+    selectFilterPhone() {
+        build.fieldNameElement().select('phone', { force: true })
+        build.fieldOpElement().select('Contains', { force: true })
+        build.fieldValueElement().type(tdata.buildings.phoneNo)
+        build.applyElement().click({ force: true })
+        cy.get('tr td').eq(2).should('contain', tdata.buildings.phoneNo1)
+    }
+    selectFilterDefaultBuilding() {
+        build.fieldNameElement().select('default_building', { force: true })
+        build.fieldOpElement().select('Does Not Contain', { force: true })
+        build.fieldValueElement().type(tdata.buildings.defaultbuilding)
+        build.applyElement().click({ force: true })
+        cy.get('tr td').eq(3).should('not.contain', tdata.buildings.defaultbuilding)
+    }
+    selectFilterShippingAddress() {
+        build.fieldNameElement().select('building_shipping_address', { force: true })
+        build.fieldOpElement().select('Does Not Contain', { force: true })
+        build.fieldValueElement().type(tdata.buildings.shippingaddress)
+        build.applyElement().click({ force: true })
+        cy.get('tr td').eq(4).should('not.contain', tdata.buildings.shippingaddress)
+    }
+    selectFilterBillingAddress() {
+        build.fieldNameElement().select('building_billing_address', { force: true })
+        build.fieldOpElement().select('Does Not Contain', { force: true })
+        build.fieldValueElement().type(tdata.buildings.billingaddress)
+        build.applyElement().click({ force: true })
+        cy.get('tr td').eq(5).should('not.contain', tdata.buildings.billingaddress)
+    }
+    searchBuildingName() {
+        build.searchboxElement().eq(0).click({ force: true })
+        build.buildingnamedropElement().click({ force: true })
+        build.searchElement().type(tdata.buildings.buildingname + '{enter}', { force: true })
+        cy.get('tr td').eq(1).should('contain', tdata.buildings.buildingname)
+    }
+    searchShippingAddress() {
+        build.searchboxElement().eq(0).click({ force: true })
+        build.shippingaddressElement().click({ force: true })
+        build.searchElement().clear().type(tdata.buildings.shippingaddress + '{enter}', { force: true })
+        cy.wait(1000)
+        cy.get('tr td').eq(4).should('contain', tdata.buildings.shippingaddress)
+    }
+    searchPhone() {
+        build.searchboxElement().eq(0).click({ force: true })
+        build.phonedropElement().click({ force: true })
+        build.searchElement().clear().type(tdata.buildings.phoneNo + '{enter}', { force: true })
+        cy.wait(1000)
+        cy.get('tr td').eq(2).should('contain', tdata.buildings.phoneNo1)
+    }
+    clickOnExport() {
+        build.exportElement().click({ force: true })
+    }
 }
 export default BuildingsActions 

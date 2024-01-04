@@ -30,3 +30,21 @@ Feature:RepairTickets Page Functionality
     Then Enter the Search - Repair status in search box and Verify the Result
     And Enter the Search - Repair Box in search box and Verify the Result
     Then Enter the Search - Asset tag in search box and Verify the Result
+    And Click More filter select- Record Id in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Ticket Number in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Repair type in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Serial Number in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Repair device in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Repair status in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Repair Box in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Asset tag in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Created By in search box and Verify the Result
+    Then Click on Clear filter

@@ -26,7 +26,7 @@ export default class ImportSerialDevicesElements {
             timeout: 30000,
         })
     }
-    refreshbtnElement(){
+    refreshbtnElement() {
         return cy.get(locator.importSerialDevices.refreshbtn, {
             timeout: 30000,
         })
@@ -36,11 +36,10 @@ export default class ImportSerialDevicesElements {
             timeout: 30000,
         })
     }
-    devicesDetailsTitleElement()
-        {
+    devicesDetailsTitleElement() {
         return cy.contains(locator.importSerialDevices.devicesDetailsTitle, {
             timeout: 30000,
-        }) 
+        })
     }
 
     detailsElement() {

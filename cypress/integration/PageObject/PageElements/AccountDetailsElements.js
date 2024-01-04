@@ -77,10 +77,10 @@ export default class AccountDetailsElements {
             timeout: 30000,
         });
     }
-    buildingElement(){
+    buildingElement() {
         return cy.get(locator.newaccount.building, {
             timeout: 30000,
-        }); 
+        });
     }
     editTitleElement() {
         return cy.get(locator.edit.title, {
@@ -157,22 +157,22 @@ export default class AccountDetailsElements {
             timeout: 30000,
         });
     }
-    fieldnameElement() {
+    fieldNameElement() {
         return cy.get(locator.accountDetails.fieldname, {
             timeout: 30000,
         });
     }
-    fieldvalueElement() {
+    fieldValueElement() {
         return cy.get(locator.accountDetails.fieldvalue, {
             timeout: 30000,
         });
     }
-    fieldoperationElement() {
+    fieldOpElement() {
         return cy.get(locator.accountDetails.fieldoperation, {
             timeout: 30000,
         });
     }
-    applybtnElement() {
+    applyElement() {
         return cy.get(locator.accountDetails.applybtn, {
             timeout: 30000,
         });

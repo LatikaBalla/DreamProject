@@ -9,10 +9,10 @@
     "uri": "ReportCenter.feature",
     "elements": [
       {
-        "id": "report-center-page-functionality;device-repair-history--search-with-ticket-no-and-non-warranty-repair",
+        "id": "report-center-page-functionality;admin-can-access-the-reportcenter-page-and-check-the-visiblity",
         "keyword": "Scenario",
-        "line": 41,
-        "name": "Device Repair history -Search with Ticket no and Non warranty Repair",
+        "line": 12,
+        "name": "Admin can access the ReportCenter page and check the visiblity",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2676000000
+              "duration": 2255000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8582000000
+              "duration": 8334000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9074000000
+              "duration": 9099000000
             }
           },
           {
@@ -53,125 +53,227 @@
             "name": "Click on Report center page",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 102000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should be redirected to the Report center page",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 52,
+            "line": 14,
+            "name": "Verify the Title of Report center Page",
+            "result": {
+              "status": "passed",
+              "duration": 1266000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Verify the VivacityRepairReport Tab should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 60000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Click on VivacityRepairReport page",
+            "result": {
+              "status": "passed",
+              "duration": 92000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Verify all sections of VivacityRepairReport Page should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 85000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Verify repair status graph should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 39000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Verify warranty claim graph should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 54000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Verify cavas of Repair ticket by status should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "Verify the InHouseRepairReport tab should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Click on InHouseRepairReport page",
+            "result": {
+              "status": "passed",
+              "duration": 109000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Verify all sections of InHouseRepairReport Page should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 65000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "Verify ticketdata graph should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "Verify the DeviceRepairReport tab should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "Click on DeviceRepairReport page",
+            "result": {
+              "status": "passed",
+              "duration": 3091000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "Verify title of DeviceRepairReport Page should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "Verify the filters should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "Verify history table should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "Verify the NonwarrantyRepairs tab should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 93000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
             "name": "Click on NonwarrantyRepairs page",
             "result": {
               "status": "passed",
-              "duration": 207000000
+              "duration": 97000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 53,
-            "name": "Select failure Type, Return site and Serial Device",
+            "line": 36,
+            "name": "Verify title of NonWarrantyRepairs Page should be visible",
             "result": {
               "status": "passed",
-              "duration": 1726000000
+              "duration": 32000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 54,
-            "name": "Select Building and Chromebook issue",
+            "line": 37,
+            "name": "Verify the NonWarranty Form should be visible",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 20000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 55,
-            "name": "Enter the Describe Your Issue",
+            "line": 38,
+            "name": "Verify table and filter should be visible",
             "result": {
               "status": "passed",
-              "duration": 829000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 56,
-            "name": "Click on save button",
-            "result": {
-              "status": "passed",
-              "duration": 71000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 57,
-            "name": "Verify New Ticket is added",
-            "result": {
-              "status": "passed",
-              "duration": 7115000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 58,
-            "name": "Enter the Ticket Number in search box for warranty",
-            "result": {
-              "status": "passed",
-              "duration": 569000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 59,
-            "name": "Verify the Ticket details in table for warranty",
-            "result": {
-              "status": "passed",
-              "duration": 1624000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 60,
-            "name": "Click on the Ticket Number for warranty",
-            "result": {
-              "status": "failed",
-              "duration": 4270000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'View' within the element: <td.MuiTableCell-root.MuiTableCell-alignCenter.MuiTableCell-sizeMedium.css-42rti1> but never did.\n    at NonWarrantyRepairsActions.clickOnTicketNumberTable (cypress/integration/PageObject/PageActions/NonWarrantyRepairsActions.js:87:30)\n    at Context.eval (cypress/integration/ReportCenter/ReportCenter.spec.js:158:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 61,
-            "name": "Verify the Repair Ticket page will open for warranty",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 62,
-            "name": "Verfiy the details of Ticket for warranty",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 63,
-            "name": "Click on the download Ticket Estimation button for warranty",
-            "result": {
-              "status": "skipped"
+              "duration": 34000000
             }
           }
         ]

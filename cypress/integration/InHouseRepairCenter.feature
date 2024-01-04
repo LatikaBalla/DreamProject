@@ -10,7 +10,7 @@ Feature: InHouseRepairCenter Page Functionality
         And Click on Repair360 page
         Then Click on InHouseRepairCenter tab
 
-    Scenario: Admin can access the  InHouseRepairCenter page and check the visiblity
+    Scenario: Admin can access the InHouseRepairCenter page and check the visiblity
         And Verify the Title of InHouseRepairCenter Page
         Then Verify the inhouseworkflow Tab should be visible
         And Verify the inhouseTickets tab should be visible

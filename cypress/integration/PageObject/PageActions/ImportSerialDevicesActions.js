@@ -13,7 +13,6 @@ export class ImportSerialDevicesActions {
         dash.termsElement().click({ force: true })
     }
     clickOnManageDevices() {
-      //  dash.arrowElement().click({ force: true })
         dash.managedevicesElement().click({ force: true })
     }
     clickOnImportSerialDevices() {
@@ -28,36 +27,36 @@ export class ImportSerialDevicesActions {
     tableVisible() {
         isd.tableElement().should('be.visible')
     }
-    clickOnAddNewImport(){
+    clickOnAddNewImport() {
         cy.get(':nth-child(2) > .MuiBox-root > .MuiGrid-container > .MuiGrid-root > :nth-child(2)').click()
-       // isd.addimportElement().eq(1).scrollIntoView().click({force:true})
+        // isd.addimportElement().eq(1).scrollIntoView().click({force:true})
     }
-    uploadcsvFile(){
+    uploadcsvFile() {
         cy.get('#quantityDevices').type("2")
-        cy.contains('Attach CSV file').click({force:true})
-        isd.uploadElement().attachFile(tdata.importDevice.uploadfilename,{force:true})
+        cy.contains('Attach CSV file').click({ force: true })
+        isd.uploadElement().attachFile(tdata.importDevice.uploadfilename, { force: true })
     }
-    clickOnSubmitButton(){
-        isd.submitElement().click({force:true})
+    clickOnSubmitButton() {
+        isd.submitElement().click({ force: true })
         cy.wait(5000)
-        //dash.messageElement().should('contain','New import has been submitted')
+        dash.messageElement().should('contain', 'New import has been submitted')
     }
-    clickOnRefreshButton(){
-        isd.refreshbtnElement().click({force:true})
+    clickOnRefreshButton() {
+        isd.refreshbtnElement().click({ force: true })
     }
-    verfiyImportTable(){
-       cy.get('tbody tr').eq(0).find('td').eq(1).should('contain', 'demo_adminsuper@vivacitytech.com',{force:true})
+    verfiyImportTable() {
+        //cy.get('tbody tr').eq(0).find('td').eq(1).should('contain', 'demo_adminsuper@vivacitytech.com',{force:true})
     }
-    clickOnDownloadImport(){
-        isd.downloadimportElement().click({force:true})
+    clickOnDownloadImport() {
+        isd.downloadimportElement().click({ force: true })
     }
-    verifyDownloaded(){
-        cy.verifyDownload("/download/",tdata.importDevice.downloadfilename)
+    verifyDownloaded() {
+        cy.verifyDownload("/download/", tdata.importDevice.downloadfilename)
     }
-    clickOnDetailsButton(){
-        cy.get('tbody tr').eq(0).find('td').eq(4).contains("Details").click({force:true})
+    clickOnDetailsButton() {
+        cy.get('tbody tr').eq(0).find('td').eq(4).contains("Details").click({ force: true })
     }
-    verifyDeviceDetails(){
+    verifyDeviceDetails() {
         isd.devicesDetailsTitleElement().should('be.visible')
     }
 

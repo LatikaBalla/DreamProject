@@ -14,7 +14,6 @@ export class NonWarrantyRepairsActions {
         dash.termsElement().click({ force: true })
     }
     clickOnReportCenter() {
-        // dash.arrowElement().click({ force: true })
         dash.reportcenterElement().click({ force: true })
     }
     clickOnNonWarrantyRepairs() {
@@ -32,7 +31,6 @@ export class NonWarrantyRepairsActions {
     formVisible() {
         nwr.formElement().should('be.visible')
     }
-
     selectFailureType() {
         nwr.failuretypeElement().click({ force: true })
         cy.get(tdata.nonwarrantyRepairs.failuretype).click({ force: true })
@@ -64,33 +62,150 @@ export class NonWarrantyRepairsActions {
     }
     selectdropdownList() {
         nwr.searchdropdownElement().eq(5).click({ force: true })
-        cy.get('[data-value="ticket_number"]').click()
+        nwr.ticketnumberElement().click({ force: true })
     }
     enterTicketNumberSearch() {
-        nwr.searchElement().type(tdata.nonwarrantyRepairs.ticketno, { force: true })
+        nwr.searchElement().clear().type(tdata.nonwarrantyRepairs.ticketno, { force: true })
     }
     verifyTicketDetailsTable() {
+        cy.wait(5000)
         cy.get('tr td').eq(1).should('contain', tdata.nonwarrantyRepairs.ticketno)
     }
-    verifyRapairTicketPAge(){
+    verifyRapairTicketPAge() {
         cy.contains('Repair Ticket Details').should('be.visible')
     }
-
     clickOnClearButton() {
-        cy.get('[data-testid="KeyboardBackspaceIcon"]').click({force:true})
-        nwr.clearbtnElement().click({force:true})
+        cy.get('[data-testid="KeyboardBackspaceIcon"]').click({ force: true })
+        nwr.clearbtnElement().click({ force: true })
     }
     searchBoxEmpty() {
         nwr.searchElement().should('be.empty')
     }
     clickOnTicketNumberTable() {
-        cy.get('tr td').eq(9).contains('View').click({ force: true })
+        cy.get('tr td').eq(8).scrollIntoView().contains('View').click({ force: true })
     }
     verifyTicketDetails() {
         cy.contains(tdata.nonwarrantyRepairs.ticketno).should('be.visible')
     }
     clickOnDownloadButton() {
         nwr.downloadticketElement().click({ force: true })
+    }
+    searchRecordId() {
+        cy.wait(3000)
+        nwr.searchdropdownElement().eq(5).click({ force: true })
+        nwr.recordidElement().click({ force: true })
+        cy.wait(1000)
+        nwr.searchElement().clear().type(tdata.nonwarrantyRepairs.recordid + '{enter}', { force: true })
+        // cy.wait(2000)
+        cy.get('tr td').eq(0).should('contain', tdata.nonwarrantyRepairs.recordid)
+    }
+    searchRepairType() {
+        nwr.searchdropdownElement().eq(5).click({ force: true })
+        nwr.repairtypeElement().click({ force: true })
+        nwr.searchElement().clear().type(tdata.nonwarrantyRepairs.repairtype + '{enter}', { force: true })
+        cy.wait(1000)
+        cy.get('tr td').eq(2).should('contain', tdata.nonwarrantyRepairs.repairtype)
+    }
+    searchRepairStatus() {
+        nwr.searchdropdownElement().eq(5).click({ force: true })
+        nwr.repairstatusElement().click({ force: true })
+        nwr.searchdropdownElement().eq(1).click({ force: true })
+        nwr.intransitElement().click({ force: true })
+        cy.get('tr td').eq(6).should('contain', tdata.repairTickets.repairstatus, { force: true })
+    }
+    searchRepairBox() {
+        nwr.searchdropdownElement().eq(5).click({ force: true })
+        nwr.repairboxElement().click({ force: true })
+        nwr.searchElement().clear().type(tdata.nonwarrantyRepairs.repairbox + '{enter}', { force: true })
+        cy.get('tr td').eq(6).should('contain', tdata.nonwarrantyRepairs.repairbox, { force: true })
+    }
+    clickOnMoreFilter() {
+        nwr.addFilterElement().click({ force: true })
+    }
+    enterFieldName() {
+        nwr.fieldNameElement().select('Ticket Number')
+    }
+    enterFieldOperation() {
+        nwr.fieldOpElement().select('Does Not Contain')
+    }
+    enterSearchValue() {
+        nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.ticketno)
+    }
+    clickOnApply() {
+        nwr.applyElement().click({ force: true })
+    }
+    verifyResultFilter() {
+        cy.get('tr td').eq(1).should('not.contain', tdata.nonwarrantyRepairs.ticketno)
+    }
+    clickOnClearFilter() {
+        nwr.clearFilterElement().click({ force: true })
+    }
+    selectFilterRecordId() {
+        nwr.fieldNameElement().select(0).invoke("val").should("eq", 'record_id', { force: true })
+        nwr.fieldOpElement().select('Does Not Contain', { force: true }).should('have.value', 'Does Not Contain')
+        nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.recordid)
+        nwr.applyElement().click({ force: true })
+        cy.wait(1000)
+        cy.get('tr td').eq(0).should('not.contain', tdata.nonwarrantyRepairs.recordid)
+    }
+    selectFilterTicketNumber() {
+        nwr.fieldNameElement().select(1).invoke("val").should("eq", "ticket_number")
+        nwr.fieldOpElement().select('Does Not Contain', { force: true })
+        nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.ticketno)
+        nwr.applyElement().click({ force: true })
+        cy.get('tr td').eq(1).should('not.contain', tdata.nonwarrantyRepairs.ticketno)
+    }
+    selectFilterRepairType() {
+        nwr.fieldNameElement().select('repair_type', { force: true })
+        nwr.fieldOpElement().select('Contains', { force: true })
+        nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.repairtype)
+        nwr.applyElement().click({ force: true })
+        cy.get('tr td').eq(2).should('contain', tdata.nonwarrantyRepairs.repairtype)
+    }
+    selectFilterSerialNumber() {
+        nwr.fieldNameElement().select('serial_number', { force: true })
+        nwr.fieldOpElement().select('Does Not Contain', { force: true })
+        nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.serialnumber)
+        nwr.applyElement().click({ force: true })
+        cy.get('tr td').eq(3).should('not.contain', tdata.nonwarrantyRepairs.serialnumber)
+    }
+    selectFilterRepairStatus() {
+        nwr.fieldNameElement().select('repair_status', { force: true })
+        nwr.fieldOpElement().select('Does Not Contain', { force: true })
+        nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.repairstatus)
+        nwr.applyElement().click({ force: true })
+        cy.get('tr td').eq(6).should('not.contain', tdata.nonwarrantyRepairs.repairstatus)
+    }
+    selectFilterRepairDevice() {
+        nwr.fieldNameElement().select('repair_device', { force: true })
+        nwr.fieldOpElement().select('Does Not Contain', { force: true })
+        nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.repairdevice)
+        nwr.applyElement().click({ force: true })
+        cy.get('tr td').eq(4).should('not.contain', tdata.nonwarrantyRepairs.repairdevice)
+    }
+    selectFilterAssetTag() {
+        nwr.fieldNameElement().select('asset_tag', { force: true })
+        nwr.fieldOpElement().select('Does Not Contain', { force: true })
+        nwr.fieldValueElement().type('Lea')
+        nwr.applyElement().click({ force: true })
+        cy.get('tr td').eq(5).should('not.contain', 'Lea')
+    }
+    selectFilterRepairBox() {
+        nwr.fieldNameElement().select('repair_box', { force: true })
+        nwr.fieldOpElement().select('Does Not Contain', { force: true })
+        nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.repairbox)
+        nwr.applyElement().click({ force: true })
+        cy.get('tr td').eq(7).should('not.contain', tdata.nonwarrantyRepairs.repairbox)
+    }
+    selectFilterCreatedBy() {
+        nwr.fieldNameElement().select('created_by', { force: true })
+        nwr.fieldOpElement().select('Does Not Contain', { force: true })
+        nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.createdby)
+        nwr.applyElement().click({ force: true })
+        cy.get('tr td').eq(8).should('not.contain', tdata.nonwarrantyRepairs.createdby)
+    }
+    clickOnExport() {
+        cy.contains('Export').click({ force: true })
     }
 }
 export default NonWarrantyRepairsActions 

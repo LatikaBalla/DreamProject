@@ -16,7 +16,6 @@ export class SrcFacilitatorsActions {
         dash.termsElement().click({ force: true })
     }
     clickOnRepair360() {
-        // dash.arrowElement().click({ force: true })
         dash.repair360Element().click({ force: true })
     }
     clickOnStudentRepairCenterTab() {
@@ -64,6 +63,47 @@ export class SrcFacilitatorsActions {
         sf.phoneNoElement().click({ force: true })
         sf.searchElement().clear().type(tdata.srcFacilitators.phoneNo1 + '{enter}', { force: true })
         cy.get('tr td').eq(4).should('contain', tdata.srcFacilitators.phoneNo2)
+    }
+    clickOnMoreFilter() {
+        sf.addFilterElement().click({ force: true })
+    }
+    clickOnClearFilter() {
+        sf.clearFilterElement().click({ force: true })
+    }
+    selectFilterFullname(){
+        sf.fieldNameElement().select(0).invoke("val").should("eq", 'full_name',{force:true})
+        sf.fieldOpElement().select('Does Not Contain',{force:true}).should('have.value', 'Does Not Contain')
+        sf.fieldValueElement().type(tdata.srcFacilitators.fullName)
+        sf.applyElement().click({ force: true })
+        cy.get('tr td').eq(0).should('not.contain', tdata.srcFacilitators.fullName)
+    }
+    selectFilterEmail(){
+        sf.fieldNameElement().select(2).invoke("val").should("eq", "email")
+        sf.fieldOpElement().select('Does Not Contain',{force:true})
+        sf.fieldValueElement().type(tdata.srcFacilitators.emaildrop)
+        sf.applyElement().click({ force: true })
+        cy.get('tr td').eq(2).should('not.contain', tdata.srcFacilitators.emaildrop)
+    }
+    selectFilterPhone(){
+        sf.fieldNameElement().select('phone',{force:true})
+        sf.fieldOpElement().select('Does Not Contain',{force:true})
+        sf.fieldValueElement().type(tdata.srcFacilitators.phoneNo2)
+        sf.applyElement().click({ force: true })
+        cy.get('tr td').eq(4).should('not.contain', tdata.srcFacilitators.phoneNo2)
+    }
+    selectFilterTitle(){
+        sf.fieldNameElement().select('title',{force:true})
+        sf.fieldOpElement().select('Does Not Contain',{force:true})
+        sf.fieldValueElement().type(tdata.srcFacilitators.title)
+        sf.applyElement().click({ force: true })
+        cy.get('tr td').eq(1).should('not.contain', tdata.srcFacilitators.title)
+    }
+    selectFilterUserStatus(){
+        sf.fieldNameElement().select('user_status',{force:true})
+        sf.fieldOpElement().select('Does Not Contain',{force:true})
+        sf.fieldValueElement().type(tdata.srcFacilitators.status)
+        sf.applyElement().click({ force: true })
+        cy.get('tr td').eq(3).should('not.contain', tdata.srcFacilitators.status)
     }
 }
 export default SrcFacilitatorsActions 

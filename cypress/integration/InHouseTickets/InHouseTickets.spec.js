@@ -59,17 +59,89 @@ And('Click on Download Export button', () => {
 Then('Verify the successfully downloaded', () => {
     iht.verifyDownload()
 })
-And('Enter the Search - Record Id in search box and  Verify the Result', () => {
+And('Enter the Search - Record Id in search box and Verify the Result', () => {
     iht.searchRecordId()
 })
-Then('Enter the Search - Ticket Number in search box and  Verify the Result', () => {
+Then('Enter the Search - Ticket Number in search box and Verify the Result', () => {
     iht.searchTicketNumber()
 })
-And('Enter the Search - Repair type in search box and  Verify the Result', () => {
+And('Enter the Search - Repair type in search box and Verify the Result', () => {
     iht.searchRepairType()
 })
-Then('Enter the Search - Repair status in search box and  Verify the Result', () => {
+Then('Enter the Search - Repair status in search box and Verify the Result', () => {
     iht.searchRepairStatus()
 })
+Then('Click on Clear filter', () => {
+    iht.clickOnClearFilter()
+})
 
-
+And('Click More filter select- Record Id in search box and Verify the Result', () => {
+    iht.clickOnMoreFilter()
+    iht.selectFilterRecordId()
+})
+And('Click More filter select- Ticket Number in search box and Verify the Result', () => {
+    iht.clickOnMoreFilter()
+    iht.selectFilterTicketNumber()
+})
+And('Click More filter select- Repair type in search box and Verify the Result', () => {
+    iht.clickOnMoreFilter()
+    iht.selectFilterRepairType()
+})
+And('Click More filter select- Serial Number in search box and Verify the Result', () => {
+    iht.clickOnMoreFilter()
+    iht.selectFilterSerialNumber()
+})
+And('Click More filter select- Repair status in search box and Verify the Result', () => {
+    iht.clickOnMoreFilter()
+    iht.selectFilterRepairStatus()
+})
+And('Click More filter select- Repair device in search box and Verify the Result', () => {
+    iht.clickOnMoreFilter()
+    iht.selectFilterRepairDevice()
+})
+And('Click More filter select- Asset tag in search box and Verify the Result', () => {
+    iht.clickOnMoreFilter()
+    iht.selectFilterAssetTag()
+})
+And('Click More filter select- internal Technician in search box and Verify the Result', () => {
+    iht.clickOnMoreFilter()
+    iht.selectFilterInternalTechnician()
+})
+And('Click More filter select- Created By in search box and Verify the Result', () => {
+    iht.clickOnMoreFilter()
+    iht.selectFilterCreatedBy()
+})
+And('Enter the Search value in search box', () => {
+    iht.enterSearchBox()
+})
+Then('Verify the Results in the table', () => {
+    iht.verifySearchResult()
+})
+And('Click on view button', () => {
+    iht.clickViewButton()
+})
+Then('Verify the Details of student repair ticket', () => {
+    iht.verifySrcRepairTicket()
+})
+And('Click on the Edit Ticket Button', () => {
+    iht.clickOnEditButton()
+})
+Then('Update the Technician and Repair Status', () => {
+    iht.editTehnician()
+    iht.editRepairStatus()
+})
+And('Click on Update Button', () => {
+    iht.clickOnUpdate()
+})
+Then('Verify Updated successfully', () => {
+    iht.verifyUpdate()
+})
+And('Click on Add Line and Verify', () => {
+    iht.clickOnAddLine()
+})
+Then('Click on Add Repair Image and Verify', () => {
+    iht.clickOnAddRepairImage()
+})
+And('Click on Add Note and Verify', () => {
+    iht.clickOnAddNote()
+})

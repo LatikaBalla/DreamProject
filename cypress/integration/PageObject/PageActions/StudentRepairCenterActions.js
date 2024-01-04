@@ -8,7 +8,6 @@ export class StudentRepairCenterActions {
         globalThis.dash = new DashboardElements();
         globalThis.rep = new StudentRepairCenterElements();
         globalThis.rep1 = new Repair360Elements();
-
     }
     closeTermsOfServiceWindow() {
         dash.termsElement().click({ force: true })
@@ -29,10 +28,7 @@ export class StudentRepairCenterActions {
         rep.srcStudentsElement().should('be.visible')
     }
     clickOnRepair360() {
-       // dash.arrowElement().click({ force: true })
         dash.repair360Element().click({ force: true })
     }
-
 }
-
 export default StudentRepairCenterActions 

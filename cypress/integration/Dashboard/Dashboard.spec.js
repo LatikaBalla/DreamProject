@@ -85,29 +85,6 @@ And('Click on save button', () => {
 Then('Verify the builing details added in table', () => {
     build.verifyNewBuilding()
 })
-// And('Click on Edit Icon', () => {
-//     build.clickOnEditIcon()
-// })
-// And('I should edit Building Name,Phone and Extension', () => {
-//     build.editBuildingName()
-//     build.editPhone()
-//     build.editExtension()
-// })
-// Then('I should edit Select Default building', () => {
-//     build.editselectDefaultBuilding()
-// })
-// Then('Click on update button', () => {
-//     build.clickOnUpdateButton()
-// })
-// And('Verify the Record has been updated Meassage', () => {
-//     build.verifyBuildingUpdated()
-// })
-// And('Click on view Details Button', () => {
-//     build.clickOnDetailsButton()
-// })
-// Then('Verfiy the Details are correct', () => {
-//     build.verifyDetails()
-// })
 And('Click on Delete Icon of building', () => {
     build.clickOnDeleteIcon()
 })
@@ -117,36 +94,6 @@ Then('Click on Confirm Delete button of building', () => {
 And('Verify the record is deleted successfully of building', () => {
     build.verifyDelete()
 })
-// Then('Click on More filters', () => {
-//     build.clickOnMoreFiltersButton()
-// })
-// And('Click on Add Filters Group', () => {
-//     build.clickOnAddFilterGroup()
-// })
-// Then('Select Field name and Field operation', () => {
-//     build.selectFieldName()
-//     build.selectfieldOperation()
-// })
-// And('Enter the Search value in search box', () => {
-//     build.enterFieldValueSearchBox()
-// })
-// Then('Click on Apply Button', () => {
-//     build.clickOnApplyButton()
-// })
-// And('Verify the Results in the table', () => {
-//     build.verifyResultAfterFilter()
-// })
-// Then('Click on Clear filter', () => {
-//     build.clickOnClearFiltersButton()
-// })
-// Then('Enter the building name in search box', () => {
-//     build.enterInSearchBox()
-// })
-// And('Verify the record in searching history', () => {
-//     build.verifySearchResult()
-// })
-
-
 And('Click on My Account Details Tab', () => {
     dash.clickOnMyAccountTab()
 })

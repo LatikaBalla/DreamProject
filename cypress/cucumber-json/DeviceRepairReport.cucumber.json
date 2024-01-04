@@ -2,17 +2,17 @@
   {
     "description": "    As a user\n    I want to access the dashboard page\n    So that I can view my account information and data",
     "keyword": "Feature",
-    "name": "InHouseRepairReport page Functionality",
+    "name": "DeviceRepairReport Page Functionality",
     "line": 1,
-    "id": "inhouserepairreport-page-functionality",
+    "id": "devicerepairreport-page-functionality",
     "tags": [],
     "uri": "DeviceRepairReport.feature",
     "elements": [
       {
-        "id": "inhouserepairreport-page-functionality;admin-can-access-the-devicerepairreport-page-and-check-the-visiblity",
+        "id": "devicerepairreport-page-functionality;device-repair-history--search-with-ticket-no-and-non-warranty-repair",
         "keyword": "Scenario",
         "line": 13,
-        "name": "Admin can access the DeviceRepairReport page and check the visiblity",
+        "name": "Device Repair history -Search with Ticket no and Non warranty Repair",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 4270000000
+              "duration": 1919000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 3359000000
+              "duration": 6827000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9106000000
+              "duration": 9093000000
             }
           },
           {
@@ -53,191 +53,307 @@
             "name": "Click on Report center page",
             "result": {
               "status": "passed",
-              "duration": 153000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
-            "name": "Click on DeviceRepairReport page",
-            "result": {
-              "status": "passed",
-              "duration": 1015000000
+              "duration": 95000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 14,
-            "name": "Verify title of DeviceRepairReport Page should be visible",
+            "line": 11,
+            "name": "Click on DeviceRepairReport page",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 3654000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 15,
-            "name": "Verify the filters should be visible",
+            "line": 14,
+            "name": "Click on the export button",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 110000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Click More filter select- Record Id in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 772000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 16,
-            "name": "Verify history table should be visible",
+            "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 11000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "inhouserepairreport-page-functionality;search-with-ticket-no,-view-the-ticket-details,clear-and-download-the-ticket-details",
-        "keyword": "Scenario",
-        "line": 18,
-        "name": "Search with Ticket no, view the ticket details,clear and download the ticket details",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I should navigate to application",
-            "result": {
-              "status": "passed",
-              "duration": 3154000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I should Sign In into the application",
-            "result": {
-              "status": "passed",
-              "duration": 4224000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "Close the terms of service window",
-            "result": {
-              "status": "passed",
-              "duration": 9112000000
+              "duration": 81000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
-            "name": "Click on Report center page",
+            "line": 17,
+            "name": "Click More filter select- Ticket Number in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 165000000
+              "duration": 867000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
-            "name": "Click on DeviceRepairReport page",
+            "line": 18,
+            "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 800000000
+              "duration": 145000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 19,
-            "name": "Enter the Ticket Number in search box",
+            "name": "Click More filter select- Repair type in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 397000000
+              "duration": 846000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 20,
-            "name": "Verify the Ticket details in table",
+            "name": "Click on Clear filter",
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<td.MuiTableCell-root.MuiTableCell-body.MuiTableCell-alignLeft.MuiTableCell-sizeMedium.css-q34dxg>' to contain 'VAL2023080715363517'\n    at DeviceRepairReportActions.verifyTicketDetailsTable (cypress/integration/PageObject/PageActions/DeviceRepairReportActions.js:36:50)\n    at Context.eval (cypress/integration/DeviceRepairReport/DeviceRepairReport.spec.js:39:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 146000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 21,
-            "name": "Click on clear button",
+            "name": "Click More filter select- Serial Number in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1667000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 22,
-            "name": "Verify the search box is cleared",
+            "name": "Click on Clear filter",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 126000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 23,
+            "name": "Click More filter select- Repair device in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 2548000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 85000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Click More filter select- Repair status in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 2112000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 110000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "Click More filter select- Asset tag in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1446000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 122000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "Click More filter select- Repair Box in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1227000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 125000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "Click More filter select- Created By in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 2865000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 110000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "Enter the Search - Record Id in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 5822000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "Enter the Search - Repair type in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 2472000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "Enter the Search - Repair status in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "Enter the Search - Repair Box in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1924000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
             "name": "Enter the Ticket Number in search box",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 866000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "Verify the Ticket details in table",
+            "result": {
+              "status": "passed",
+              "duration": 2052000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 24,
+            "line": 39,
             "name": "Click on the Ticket Number",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 109000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 25,
+            "line": 40,
             "name": "Verify the Repair Ticket page will open",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 27,
-            "name": "Click on the download Ticket Estimation button",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 28572000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 28,
-            "name": "Verify downloaded ticket successfully",
+            "line": 41,
+            "name": "Verfiy the details of Ticket",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1362000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "Click on the download Ticket Estimation button",
+            "result": {
+              "status": "passed",
+              "duration": 1267000000
             }
           }
         ]

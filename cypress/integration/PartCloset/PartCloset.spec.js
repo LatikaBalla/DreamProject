@@ -79,3 +79,30 @@ pc.clickOnSubmitVTButton()
 And ('Verify new VT part is added',()=>{
     pc.verifyNewVTPartAdded()
 })
+And ('Click More filter select- Building in search box and Verify the Result',()=>{
+    pc.clickOnMoreFilter()
+    pc.selectFilterBuilding()
+})
+And ('Click More filter select- Manufacturer in search box and Verify the Result',()=>{
+    pc.clickOnMoreFilter()
+    pc.selectFilterManufacturer()
+})
+And ('Click More filter select- Parent Device in search box and Verify the Result',()=>{
+    pc.clickOnMoreFilter()
+    pc.selectFilterParentDevice()
+})
+And ('Click More filter select- Part Name in search box and Verify the Result',()=>{
+    pc.clickOnMoreFilter()
+    pc.selectFilterPartName()
+})
+And ('Click More filter select- Quantity in search box and Verify the Result',()=>{
+    pc.clickOnMoreFilter()
+    pc.selectFilterQuantity()
+})
+And ('Click More filter select- Sku in search box and Verify the Result',()=>{
+    pc.clickOnMoreFilter()
+    pc.selectFilterSku()
+})
+Then ('Click on Clear filter',()=>{
+    pc.clickOnClearFilter()
+})

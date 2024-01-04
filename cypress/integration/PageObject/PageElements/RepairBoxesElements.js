@@ -118,4 +118,34 @@ export default class RepairBoxesElements {
             timeout: 30000,
         })
     }
+    addFilterElement() {
+        return cy.get(locator.repairBoxes.addFilter, {
+            timeout: 30000,
+        })
+    }
+    clearFilterElement() {
+        return cy.contains(locator.repairBoxes.clearFilter, {
+            timeout: 30000,
+        })
+    }
+    fieldNameElement() {
+        return cy.get(locator.repairBoxes.fieldName, {
+            timeout: 30000,
+        })
+    }
+    fieldOpElement() {
+        return cy.get(locator.repairBoxes.fieldOp, {
+            timeout: 30000,
+        })
+    }
+    applyElement() {
+        return cy.get(locator.repairBoxes.apply, {
+            timeout: 30000,
+        })
+    }
+    fieldValueElement() {
+        return cy.get(locator.repairBoxes.fieldValue, {
+            timeout: 30000,
+        })
+    }
 }
