@@ -6,7 +6,12 @@
     "phone": "1231231231",
     "cellnumber": "1231234121",
     "userrole": "[data-value='1']",
-    "addmsg": "Contact form submitted successfully"
+    "addmsg": "Contact form submitted successfully",
+    "userstatus":"Active",
+    "userrole1":"Loaner Manager",
+    "recordid":"1500",
+    "emaildrop":"shyamadutta715+1@gmail.com",
+    "fullName":"Demo Student"
   },
   "edit": {
     "title": "Mrs",
@@ -74,8 +79,8 @@
     "ticketno":"VAL2023090715464039",
     "repairtype":"In House",
     "repairstatus":"Pending Repair Box",
-    "repairbox":" ",
-    "recordid":"19974",
+    "repairbox":"247 ",
+    "recordid":"20040",
     "serialnumber":"VIVATEST47Test",
     "repairdevice":"Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
    "createdby" :"demo_adminvivacity@vivacitytech.com"
@@ -114,7 +119,9 @@
   },
   "importDevice": {
     "uploadfilename": "import_serial_devices.csv",
-    "downloadfilename": "import_list.csv"
+    "downloadfilename": "import_list.csv",
+    "importer":"demo_adminsuper@vivacitytech.com",
+    "quantitydevices":"2"
   },
   "orgAsset": {
     "upload": "image1.jpeg",
@@ -132,7 +139,7 @@
     "description": "there is some problem in System Board of the laptop",
     "devicename": "Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
     "createTicketmsg": "Add new ticket form submitted",
-    "ticketnumber":"V0019895",
+    "ticketnumber":"V0019938",
     "repairtype":"Vivacity",
     "serialnumber":"VIVATEST12Test",
     "repairstatus":"In Transit",
@@ -140,7 +147,8 @@
     "assettag":"",
     "recordid":"19959",
     "createdby":"demo_adminsuper@vivacitytech.com",
-    "repairdevice":"Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New"
+    "repairdevice":"Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
+    "repairstatusEdit":"[data-value='In Transit']"
   },
   "repairBox": {
     "weight": "10",
@@ -150,7 +158,7 @@
     "pickupsite": "[data-value='2269']",
     "boxcreatedmsg": "New box submitted",
     "filename": "Image.png",
-    "trackingnumber":"1Z6X34470331492859",
+    "trackingnumber":"1Z6X34470302472710",
     "recordid":"200",
     "labelfrom":"",
     "shippeddate":"2023-09-27T11:05:37.000Z",
@@ -158,13 +166,14 @@
   },
   "inHouseWorkflow": {
     "failuretype": "[data-value='Accidental']",
-    "serialdevice": "#device-option-0",
+    "serialdevice": "#device-option-2",
     "chromebookissue": "There is something fault",
-    "technician": "Account_Edit1",
+    "technician": "Demo Student",
     "createTicketmsg": "Add new ticket form submitted",
     "filename": "InHouseRepairTickets.csv",
     "repairissue":"[data-value='RAM issue']",
-    "ticketno":"V0019995"
+    "ticketno":"V0020051",
+    "repairstatusEdit":"[data-value='In Transit']"
   },
   "inHouseTicket": {
     "failuretype": "[data-value='Accidental']",
@@ -194,7 +203,7 @@
     "issue": "[data-value='Hinge']",
     "ticketnumber":"V0019978",
     "repairtype":"Student",
-    "recordid":"19956",
+    "recordid":"19955",
     "repairstatus":"Intake",
     "repairstatusEdit":"[data-value='In Transit']",
     "serialnumber":"VIVATEST47Test",

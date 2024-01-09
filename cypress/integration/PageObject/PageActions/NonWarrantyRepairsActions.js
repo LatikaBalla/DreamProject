@@ -109,9 +109,10 @@ export class NonWarrantyRepairsActions {
     searchRepairStatus() {
         nwr.searchdropdownElement().eq(5).click({ force: true })
         nwr.repairstatusElement().click({ force: true })
-        nwr.searchdropdownElement().eq(1).click({ force: true })
-        nwr.intransitElement().click({ force: true })
-        cy.get('tr td').eq(6).should('contain', tdata.repairTickets.repairstatus, { force: true })
+       // nwr.searchdropdownElement().eq(1).click({ force: true })
+        nwr.searchElement().clear().type(tdata.nonwarrantyRepairs.repairstatus + '{enter}', { force: true })
+       // nwr.intransitElement().click({ force: true })
+        cy.get('tr td').eq(5).should('contain', tdata.nonwarrantyRepairs.repairstatus, { force: true })
     }
     searchRepairBox() {
         nwr.searchdropdownElement().eq(5).click({ force: true })

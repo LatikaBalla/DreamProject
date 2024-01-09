@@ -57,3 +57,32 @@ And('Enter Search ticket no in search box', () => {
 Then('Verify search result below', () => {
     ihw.verfiySearchResult()
 })
+And('Click on view button', () => {
+    ihw.clickViewButton()
+})
+Then('Verify the Details of student repair ticket', () => {
+    ihw.verifySrcRepairTicket()
+})
+And('Click on the Edit Ticket Button', () => {
+    ihw.clickOnEditButton()
+})
+Then('Update the Technician and Repair Status', () => {
+    ihw.editTehnician()
+    ihw.editRepairStatus()
+})
+And('Click on Update Button', () => {
+    ihw.clickOnUpdate()
+})
+Then('Verify Updated successfully', () => {
+    ihw.verifyUpdate()
+})
+And('Click on Add Line and Verify', () => {
+    ihw.clickOnAddLine()
+})
+Then('Click on Add Repair Image and Verify', () => {
+    ihw.clickOnAddRepairImage()
+})
+And('Click on Add Note and Verify', () => {
+    ihw.clickOnAddNote()
+})
+

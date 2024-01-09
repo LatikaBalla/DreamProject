@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 16615000000
+              "duration": 3557000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9041000000
+              "duration": 14024000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9073000000
+              "duration": 9070000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 78000000
+              "duration": 73000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I should be redirected to the Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 6000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of VivacityRepairCenter Page",
             "result": {
               "status": "passed",
-              "duration": 1135000000
+              "duration": 759000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the VivaRepairTickets Tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 10000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Verify the RepairBoxes tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 6000000
             }
           }
         ]

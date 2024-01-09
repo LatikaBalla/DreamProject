@@ -85,20 +85,7 @@ And('Enter the Search - Status in search box and Verify the Result', () => {
 Then('Enter the Search - Phone in search box and Verify the Result', () => {
     ss.searchPhone()
 })
-// Then('Click on More filters', () => {
-//     ss.clickOnMoreFilter()
-// })
-// And('Select Field name and Field operation and Enter the Search value', () => {
-//     ss.enterFieldName()
-//     ss.enterFieldOperation()
-//     ss.enterSearchValue()
-// })
-// Then('Click on Apply Button', () => {
-//     ss.clickOnApply()
-// })
-// And('Verify the Results in the table', () => {
-//     ss.verifyResultFilter()
-// })
+
 Then('Click on Clear filter', () => {
     ss.clickOnClearFilter()
 })

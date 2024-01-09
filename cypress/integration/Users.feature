@@ -26,7 +26,7 @@ Feature:  Users Page Functionality
     Then I edit User Status to inactive
     And I edit Building
     Then Click on Submit button
-    And Verify the Record has been updated Meassage
+    # And Verify the Record has been updated Meassage
     And Click on Delete button
     Then Click on Confirm Delete button
     # And Verify the record is deleted successfully

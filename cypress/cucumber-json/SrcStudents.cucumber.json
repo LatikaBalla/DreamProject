@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 4306000000
+              "duration": 3982000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8678000000
+              "duration": 9607000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9073000000
+              "duration": 9071000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 75000000
+              "duration": 83000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on StudentRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 1110000000
+              "duration": 959000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click on SrcStudents tab",
             "result": {
               "status": "passed",
-              "duration": 64000000
+              "duration": 63000000
             }
           },
           {
@@ -93,57 +93,7 @@
             "name": "Table for SrcStudents should be visible",
             "result": {
               "status": "passed",
-              "duration": 1639000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 17,
-            "name": "I should click on Add New student",
-            "result": {
-              "status": "passed",
-              "duration": 74000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
-            "name": "Enter title, full name and Email",
-            "result": {
-              "status": "passed",
-              "duration": 1091000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "Enter Phone and Cell Number",
-            "result": {
-              "status": "passed",
-              "duration": 590000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "Select User Status",
-            "result": {
-              "status": "passed",
-              "duration": 121000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "Click on submit button",
-            "result": {
-              "status": "passed",
-              "duration": 160000000
+              "duration": 1257000000
             }
           },
           {
@@ -153,7 +103,7 @@
             "name": "Click More filter select- Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 817000000
+              "duration": 776000000
             }
           },
           {
@@ -173,7 +123,7 @@
             "name": "Click More filter select- Title in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 593000000
+              "duration": 581000000
             }
           },
           {
@@ -183,7 +133,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 74000000
             }
           },
           {
@@ -193,7 +143,7 @@
             "name": "Click More filter select- Eamil in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1192000000
+              "duration": 1064000000
             }
           },
           {
@@ -203,7 +153,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 70000000
             }
           },
           {
@@ -213,7 +163,7 @@
             "name": "Click More filter select- User status in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1563000000
+              "duration": 1678000000
             }
           },
           {
@@ -230,60 +180,40 @@
             "arguments": [],
             "keyword": "And ",
             "line": 33,
-            "name": "Click More filter select- Phone in search box and Verify the Result",
+            "name": "Enter the Search - Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 774000000
+              "duration": 990000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 34,
-            "name": "Click on Clear filter",
+            "name": "Enter the Search - Email in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 973000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 35,
-            "name": "Enter the Search - Full name in search box and Verify the Result",
+            "name": "Enter the Search - Status in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 983000000
+              "duration": 686000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 36,
-            "name": "Enter the Search - Email in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1026000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "Enter the Search - Status in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 701000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 38,
             "name": "Enter the Search - Phone in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 737000000
+              "duration": 720000000
             }
           }
         ]

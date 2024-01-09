@@ -9,14 +9,26 @@ Feature: Account Details Page Functionality
         Then close the terms of service window
 
     Scenario: Adding,add more filter, Clear filter of Account Details page
+        And Click More filter select- Record Id in search box and Verify the Result
+        Then Click on Clear filter
         And Click More filter select- Full name in search box and Verify the Result
         Then Click on Clear filter
         And Click More filter select- Title in search box and Verify the Result
         Then Click on Clear filter
         And Click More filter select- Eamil in search box and Verify the Result
         Then Click on Clear filter
+        And Click More filter select- User Role in search box and Verify the Result
+        Then Click on Clear filter
         And Click More filter select- Phone in search box and Verify the Result
         Then Click on Clear filter
+        And Click More filter select- User Status in search box and Verify the Result
+        Then Click on Clear filter
+         And Enter the Search - Record Id in search box and Verify the Result
+        And Enter the Search - Full name in search box and Verify the Result
+        Then Enter the Search - Email in search box and Verify the Result
+        And Enter the Search - Title in search box and Verify the Result
+        Then Enter the Search - Phone in search box and Verify the Result
+
 
 
 

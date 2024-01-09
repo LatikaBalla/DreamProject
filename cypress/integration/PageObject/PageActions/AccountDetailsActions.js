@@ -28,8 +28,10 @@ export class AccountDetailsActions {
     tableAccountVisible() {
         acc.tableAccountElement().should('be.visible')
     }
-    clickOnAddNewbutton() {
-        acc.addnewbtnElement().click({ force: true })
+    clickOnAddNewbutton() {   
+      //  cy.get('.css-zosbzo > .MuiPaper-root > :nth-child(1) > :nth-child(1) > .MuiBox-root > :nth-child(1)').click({ force: true })
+        acc.addnewbtnElement().contains('Create New').click({ force: true })
+        cy.wait(1000)
     }
     enterTitle() {
         acc.titleElement().type(tdata.newaccount.title, { force: true })
@@ -126,7 +128,7 @@ export class AccountDetailsActions {
         acc.fieldnameElement().select('email')
     }
     selectfieldOperation() {
-        acc.fieldoperationElement().select("does_not_contain")
+        acc.fieldoperationElement().select("Does Not Contain")
     }
     enterFieldValueSearchBox() {
         acc.fieldvalueElement().type('@gmail.com')
@@ -143,37 +145,90 @@ export class AccountDetailsActions {
     }
     selectFilterFullName() {
         acc.fieldNameElement().select(1).invoke("val").should("eq", 'full_name', { force: true })
-        acc.fieldOpElement().select('does_not_contain', { force: true }).should('have.value', 'does_not_contain')
+        acc.fieldOpElement().select('Does Not Contain', { force: true }).should('have.value', 'Does Not Contain')
         acc.fieldValueElement().type(tdata.newaccount.fullname)
         acc.applyElement().click({ force: true })
         cy.get('tr td').eq(0).should('not.contain', tdata.newaccount.fullname)
     }
     selectFilterEmail() {
-        acc.addfilterGroupElement().click({ force: true })
-        acc.fieldNameElement().select(2).invoke("val").should("eq", "email")
-        acc.fieldOpElement().select('does_not_contain', { force: true })
-        acc.fieldValueElement().type(tdata.newaccount.email)
+        acc.fieldNameElement().select(3).invoke("val").should("eq", "email")
+        acc.fieldOpElement().select('Does Not Contain', { force: true })
+        acc.fieldValueElement().type(tdata.newaccount.emaildrop)
         acc.applyElement().click({ force: true })
         cy.wait(1000)
-        cy.get('tr td').eq(0).should('not.contain', tdata.newaccount.email)
+        cy.get('tr td').eq(3).should('not.contain', tdata.newaccount.emaildrop)
     }
     selectFilterPhone() {
-        acc.addfilterGroupElement().click({ force: true })
-        acc.fieldNameElement().select('phone', { force: true })
-        acc.fieldOpElement().select('does_not_contain', { force: true })
+        acc.fieldNameElement().select('cell_number', { force: true })
+        acc.fieldOpElement().select('Does Not Contain', { force: true })
         acc.fieldValueElement().type(tdata.srcStudent.phoneNo2)
         acc.applyElement().click({ force: true })
         cy.wait(1000)
-        cy.get('tr td').eq(2).should('not.contain', tdata.srcStudent.phoneNo2)
+        cy.get('tr td').eq(5).should('not.contain', tdata.srcStudent.phoneNo2)
     }
     selectFilterTitle() {
-        acc.addfilterGroupElement().click({ force: true })
         acc.fieldNameElement().select('title', { force: true })
-        acc.fieldOpElement().select('does_not_contain', { force: true })
+        acc.fieldOpElement().select('Does Not Contain', { force: true })
         acc.fieldValueElement().type(tdata.newaccount.title)
         acc.applyElement().click({ force: true })
         cy.wait(1000)
-        cy.get('tr td').eq(1).should('not.contain', tdata.newaccount.title)
+        cy.get('tr td').eq(2).should('not.contain', tdata.newaccount.title)
+    }
+    selectFilterRecordId(){
+        acc.fieldNameElement().select('record_id', { force: true })
+        acc.fieldOpElement().select('Does Not Contain', { force: true })
+        acc.fieldValueElement().type(tdata.newaccount.recordid)
+        acc.applyElement().click({ force: true })
+        cy.wait(1000)
+        cy.get('tr td').eq(0).should('not.contain', tdata.newaccount.recordid)
+    }
+    selectFilterUserRole(){
+        acc.fieldNameElement().select('user_role', { force: true })
+        acc.fieldOpElement().select('Does Not Contain', { force: true })
+        acc.fieldValueElement().type(tdata.newaccount.userrole1)
+        acc.applyElement().click({ force: true })
+        cy.wait(1000)
+        cy.get('tr td').eq(4).should('not.contain', tdata.newaccount.userrole1)
+    }
+    selectFilterUserStatus(){
+        acc.fieldNameElement().select('user_status', { force: true })
+        acc.fieldOpElement().select('Does Not Contain', { force: true })
+        acc.fieldValueElement().type(tdata.newaccount.userstatus)
+        acc.applyElement().click({ force: true })
+        cy.wait(1000)
+        cy.get('tr td').eq(7).should('not.contain', tdata.newaccount.userstatus)
+    }
+   
+    searchRecordId() {
+        acc.searchboxElement().eq(0).click({ force: true })
+        acc.recordidElement().click({ force: true })
+        acc.searchElement().clear().type(tdata.newaccount.recordid + '{enter}', { force: true })
+        cy.wait(1000)
+        cy.get('tr td').eq(0).should('contain', tdata.newaccount.recordid)
+    }
+    searchFullName() {
+        acc.searchboxElement().eq(0).click({ force: true })
+        acc.fullNameElement().click({ force: true })
+        acc.searchElement().clear().type(tdata.newaccount.fullName + '{enter}', { force: true })
+        cy.get('tr td').eq(1).should('contain', tdata.newaccount.fullName)
+    }
+    searchEmail() {
+        acc.searchboxElement().eq(0).click({ force: true })
+        acc.emaildropElement().click({ force: true })
+        acc.searchElement().clear().type(tdata.newaccount.emaildrop + '{enter}', { force: true })
+        cy.get('tr td').eq(3).should('contain', tdata.newaccount.emaildrop)
+    }
+    searchTitle() {
+        acc.searchboxElement().eq(0).click({ force: true })
+        acc.titleElement().click({ force: true })
+        acc.searchElement().clear().type(tdata.newaccount.title + '{enter}', { force: true })
+        cy.get('tr td').eq(2).should('contain', tdata.newaccount.title)
+    }
+    searchPhone() {
+        acc.searchboxElement().eq(0).click({ force: true })
+        acc.phoneNoElement().click({ force: true })
+        acc.searchElement().clear().type(tdata.newaccount.cellnumber + '{enter}', { force: true })
+        cy.get('tr td').eq(6).should('contain', tdata.newaccount.cellnumber)
     }
 }
 

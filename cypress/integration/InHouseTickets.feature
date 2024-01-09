@@ -51,6 +51,6 @@ Feature:InHouseTickets Page Functionality
     Then Update the Technician and Repair Status
     And Click on Update Button
     Then Verify Updated successfully
-    # And Click on Add Line and Verify
-    # Then Click on Add Repair Image and Verify
-    # And Click on Add Note and Verify
+    And Click on Add Line and Verify
+    Then Click on Add Repair Image and Verify
+    And Click on Add Note and Verify

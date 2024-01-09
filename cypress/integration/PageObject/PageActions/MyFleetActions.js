@@ -14,7 +14,7 @@ export class MyFleetActions {
         dash.termsElement().click({ force: true })
     }
     clickOnManageDevices() {
-      //  dash.arrowElement().click({ force: true })
+        //  dash.arrowElement().click({ force: true })
         dash.managedevicesElement().click({ force: true })
     }
     clickOnMyFleet() {
@@ -30,20 +30,20 @@ export class MyFleetActions {
         mf.tableElement().should('be.visible')
     }
     enterSearchValue() {
-       // cy.get("[placeholder='Search by table field values']").type(tdata.myFleet.search,{force:true})
- mf.searchElement().type(tdata.myFleet.search,{force:true})
+        // cy.get("[placeholder='Search by table field values']").type(tdata.myFleet.search,{force:true})
+        mf.searchElement().type(tdata.myFleet.search, { force: true })
     }
     verifySearchResult() {
         cy.wait(3000)
-        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.myFleet.search,{force:true})
+        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.myFleet.search, { force: true })
     }
     clickOnMoreFiltersButton() {
-      //  cy.get('[data-testid="CloseIcon"]').eq(0).click({force:true})
-       // cy.get('[data-testid="ArrowBackIosNewIcon"]').click({ force: true })
-        mf.morefiltersElement().scrollIntoView().click({force:true})
+        //  cy.get('[data-testid="CloseIcon"]').eq(0).click({force:true})
+        // cy.get('[data-testid="ArrowBackIosNewIcon"]').click({ force: true })
+        mf.morefiltersElement().scrollIntoView().click({ force: true })
     }
     // clickOnAddFilterGroup() {
-  
+
     //     mf.addfilterGroupElement().click()
     // }
     // selectFieldName() {
@@ -59,7 +59,7 @@ export class MyFleetActions {
     //     mf.applybtnElement().click({ force: true })
     // }
     clickOnClearFiltersButton() {
-        mf.clearfilterElement().click({force:true})
+        mf.clearfilterElement().click({ force: true })
     }
     verifyResultAfterFilter() {
         cy.wait(3000)
@@ -69,12 +69,12 @@ export class MyFleetActions {
         mf.exportcsvElement().click({ force: true })
     }
     verifyDownloadSuccessful() {
-        cy.verifyDownload("/download/",tdata.myFleet.filename)
+        cy.verifyDownload("/download/", tdata.myFleet.filename)
     }
     clickOnViewButton() {
         cy.wait(5000)
         cy.get('tbody tr').eq(0).find('td').eq(7).scrollIntoView().contains("View").click({ force: true })
-       // mf.viewElement().scrollIntoView().click({ force: true })
+        // mf.viewElement().scrollIntoView().click({ force: true })
     }
     verifyViewResult() {
         cy.contains(tdata.myFleet.serialno).should('be.visible')
@@ -99,11 +99,11 @@ export class MyFleetActions {
     selectLonarStatus() {
         mf.lonarstatusElement().click()
         cy.get('.MuiList-root > [tabindex="0"]').click()
-       // cy.get(tdata.myFleet.loanarstatus).click()
+        // cy.get(tdata.myFleet.loanarstatus).click()
     }
     selectDeviceStatus() {
         mf.devicestatusElement().click()
-      //  cy.get('.MuiList-root > [tabindex="0"]').click()
+        //  cy.get('.MuiList-root > [tabindex="0"]').click()
         cy.get(tdata.myFleet.devicestatus).click()
     }
     clickOnsubmitButton() {
@@ -113,39 +113,39 @@ export class MyFleetActions {
         dash.messageElement().should('contain', tdata.myFleet.addDevicemsg)
 
     }
-    selectFilterSerialNumber(){   
-        mf.fieldNameElement().select('serial_number',{force:true})
-        mf.fieldOpElement().select('does_not_contain',{force:true})
+    selectFilterSerialNumber() {
+        mf.fieldNameElement().select('serial_number', { force: true })
+        mf.fieldOpElement().select('does_not_contain', { force: true })
         mf.fieldValueElement().type(tdata.myFleet.serialno)
-        mf.applyElement().click({ force: true })     
+        mf.applyElement().click({ force: true })
         cy.get('tr td').eq(1).should('not.contain', tdata.myFleet.serialno)
     }
-    selectFilterStudent(){
-        cy.contains('+ Add Filter Group').click({force:true})
-        mf.fieldNameElement().select('student',{force:true})
-        mf.fieldOpElement().select('does_not_contain',{force:true})
+    selectFilterStudent() {
+        cy.contains('+ Add Filter Group').click({ force: true })
+        mf.fieldNameElement().select('student', { force: true })
+        mf.fieldOpElement().select('does_not_contain', { force: true })
         mf.fieldValueElement().type(tdata.myFleet.student)
         mf.applyElement().click({ force: true })
         cy.get('tr td').eq(4).should('not.contain', tdata.myFleet.student)
     }
-    selectFilterDevice(){
-        cy.contains('+ Add Filter Group').click({force:true})
-        mf.fieldNameElement().select('device',{force:true})
-        mf.fieldOpElement().select('does_not_contain',{force:true})
+    selectFilterDevice() {
+        cy.contains('+ Add Filter Group').click({ force: true })
+        mf.fieldNameElement().select('device', { force: true })
+        mf.fieldOpElement().select('does_not_contain', { force: true })
         mf.fieldValueElement().type(tdata.myFleet.device)
         mf.applyElement().click({ force: true })
         cy.get('tr td').eq(3).should('not.contain', tdata.myFleet.device)
     }
-    selectFilterAssetTag(){
-        cy.contains('+ Add Filter Group').click({force:true})
-        mf.fieldNameElement().select('asset_tag',{force:true})
-        mf.fieldOpElement().select('does_not_contain',{force:true})
+    selectFilterAssetTag() {
+        cy.contains('+ Add Filter Group').click({ force: true })
+        mf.fieldNameElement().select('asset_tag', { force: true })
+        mf.fieldOpElement().select('does_not_contain', { force: true })
         mf.fieldValueElement().type('Lea')
         mf.applyElement().click({ force: true })
         cy.get('tr td').eq(2).should('not.contain', 'Lea')
     }
-    clickOnRetiredTab(){
-        cy.get('[data-testid="tabDeactivate"]').click({force:true})
+    clickOnRetiredTab() {
+        cy.get('[data-testid="tabDeactivate"]').click({ force: true })
     }
 }
 export default MyFleetActions 

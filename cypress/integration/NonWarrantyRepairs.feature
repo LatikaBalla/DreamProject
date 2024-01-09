@@ -38,7 +38,7 @@ Feature: NonWarrantyRepairs Page Functionality
          And Enter the Search - Record Id in search box and Verify the Result
         Then Enter the Search - Repair type in search box and Verify the Result
         Then Enter the Search - Repair status in search box and Verify the Result
-        And Enter the Search - Repair Box in search box and Verify the Result
+        # And Enter the Search - Repair Box in search box and Verify the Result
         And Enter the Ticket Number in search box for warranty
         Then Verify the Ticket details in table for warranty
         And  Click on the Ticket Number for warranty

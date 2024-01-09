@@ -49,7 +49,7 @@ Then('Enter the Search - Repair type in search box and Verify the Result', () =>
     nwr.searchRepairType()
 })
 Then('Enter the Search - Repair status in search box and Verify the Result', () => {
-    //nwr.searchRepairStatus() 
+    nwr.searchRepairStatus() 
 })
 And('Enter the Search - Repair Box in search box and Verify the Result', () => {
     nwr.searchRepairBox()

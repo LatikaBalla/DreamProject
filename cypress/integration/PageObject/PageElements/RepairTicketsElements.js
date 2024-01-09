@@ -146,5 +146,85 @@ export default class RepairTicketsElements {
             timeout: 30000,
         })
     }
-   
+    editTicketElement() {
+        return cy.contains(locator.repairTickets.editTicket, {
+            timeout: 30000,
+        })
+    }
+    updateElement() {
+        return cy.contains(locator.repairTickets.update, {
+            timeout: 30000,
+        })
+    }
+    repairstatusEditElement() {
+        return cy.get(locator.repairTickets.repairstatusEdit, {
+            timeout: 30000,
+        })
+    }
+    addlineElement() {
+        return cy.contains(locator.repairTickets.addline, {
+            timeout: 30000,
+        })
+    }
+    addimageElement() {
+        return cy.contains(locator.repairTickets.addimage, {
+            timeout: 30000,
+        })
+    }
+    addnoteElement() {
+        return cy.contains(locator.repairTickets.addnote, {
+            timeout: 30000,
+        })
+    }
+    noteElement() {
+        return cy.get(locator.repairTickets.note, {
+            timeout: 30000,
+        })
+    }
+    uploadimageElement() {
+        return cy.get(locator.repairTickets.uploadimage, {
+            timeout: 30000,
+        })
+    }
+    imagedescriptionElement() {
+        return cy.get(locator.repairTickets.imagedescription, {
+            timeout: 30000,
+        })
+    }
+    notetypeElement() {
+        return cy.get(locator.repairTickets.notetype, {
+            timeout: 30000,
+        })
+    }
+    createlineElement() {
+        return cy.get(locator.repairTickets.createline, {
+            timeout: 30000,
+        })
+    }
+    updateimageElement() {
+        return cy.get(locator.repairTickets.updateimage, {
+            timeout: 30000,
+        })
+    }
+    createnoteElement() {
+        return cy.get(locator.repairTickets.createnote, {
+            timeout: 30000,
+        })
+    }
+    custompartElemnet() {
+        return cy.contains(locator.repairTickets.custompart, {
+            timeout: 30000,
+        })
+    }
+    viewElemnet() {
+        return cy.contains(locator.repairTickets.view, {
+            timeout: 30000,
+        })
+    }
+    partElement() {
+        return cy.get(locator.repairTickets.part, {
+            timeout: 30000,
+        })
+    }
+
 }

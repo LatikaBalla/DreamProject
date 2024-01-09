@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3326000000
+              "duration": 6779000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8848000000
+              "duration": 11245000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9074000000
+              "duration": 9115000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 81000000
+              "duration": 101000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on RepairBoxes Tab",
             "result": {
               "status": "passed",
-              "duration": 537000000
+              "duration": 1331000000
             }
           },
           {
@@ -78,139 +78,249 @@
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "I should click on create new Box",
-            "result": {
-              "status": "passed",
-              "duration": 88000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 17,
-            "name": "Enter weight, height, depth and width",
-            "result": {
-              "status": "passed",
-              "duration": 1074000000
-            }
-          },
-          {
-            "arguments": [],
             "keyword": "And ",
-            "line": 18,
-            "name": "Select Pick-up site",
-            "result": {
-              "status": "passed",
-              "duration": 254000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
             "line": 19,
-            "name": "Check the need shipping box",
+            "name": "Click More filter select- Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 101000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "Click on Create box button",
-            "result": {
-              "status": "passed",
-              "duration": 121000000
+              "duration": 690000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 21,
-            "name": "Select Ticket from dropdownlist",
+            "line": 20,
+            "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 372000000
+              "duration": 80000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 22,
-            "name": "Click on Finish button",
+            "line": 21,
+            "name": "Click More filter select- Tracking Number From in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 111000000
+              "duration": 1044000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 80000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 23,
-            "name": "Verify new box is added in table",
+            "name": "Click More filter select- Shipping From Cost in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2566000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 26,
-            "name": "Click More filter select- Record Id in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 829000000
+              "duration": 760000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 27,
+            "line": 24,
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 85000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 28,
-            "name": "Click More filter select- Tracking Number From in search box and Verify the Result",
+            "line": 25,
+            "name": "Click More filter select- Shipped From Date in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1184000000
+              "duration": 1249000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 181000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "Enter the Search - Tracking Number in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 3148000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "Enter the Search - Record Id in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 6486000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 29,
-            "name": "Click on Clear filter",
+            "name": "I should click on create new Box",
             "result": {
               "status": "passed",
-              "duration": 76000000
+              "duration": 96000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 30,
-            "name": "Click More filter select- Shipping From Cost in search box and Verify the Result",
+            "name": "Enter weight, height, depth and width",
             "result": {
               "status": "passed",
-              "duration": 904000000
+              "duration": 1374000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "Select Pick-up site",
+            "result": {
+              "status": "passed",
+              "duration": 217000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 31,
-            "name": "Click on Clear filter",
+            "line": 32,
+            "name": "Check the need shipping box",
+            "result": {
+              "status": "passed",
+              "duration": 128000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "Click on Create box button",
+            "result": {
+              "status": "passed",
+              "duration": 132000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "Select Ticket from dropdownlist",
+            "result": {
+              "status": "passed",
+              "duration": 441000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "Click on Finish button",
+            "result": {
+              "status": "passed",
+              "duration": 137000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "Verify new box is added in table",
+            "result": {
+              "status": "passed",
+              "duration": 2326000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "Click on view button",
+            "result": {
+              "status": "passed",
+              "duration": 2447000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "Verify the Details new box",
+            "result": {
+              "status": "passed",
+              "duration": 3109000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "Add another ticket in the same box",
+            "result": {
+              "status": "passed",
+              "duration": 1746000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "Select Ticket from dropdownlist",
+            "result": {
+              "status": "passed",
+              "duration": 886000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "Click on Add ticket",
+            "result": {
+              "status": "passed",
+              "duration": 98000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "Verify the ticket is added in table",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "Click on view the ticket Details",
             "result": {
               "status": "passed",
               "duration": 109000000
@@ -218,152 +328,42 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 32,
-            "name": "Click More filter select- Shipped From Date in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1578000000
-            }
-          },
-          {
-            "arguments": [],
             "keyword": "Then ",
-            "line": 33,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 72000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 34,
-            "name": "Enter the Search - Tracking Number in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 9204000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 35,
-            "name": "Enter the Search - Record Id in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1179000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 36,
-            "name": "Click on view button",
-            "result": {
-              "status": "passed",
-              "duration": 81000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 37,
-            "name": "Verify the Details new box",
-            "result": {
-              "status": "passed",
-              "duration": 394000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 38,
-            "name": "Add another ticket in the same box",
-            "result": {
-              "status": "passed",
-              "duration": 1142000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 39,
-            "name": "Select Ticket from dropdownlist",
-            "result": {
-              "status": "passed",
-              "duration": 529000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 40,
-            "name": "Click on Add ticket",
-            "result": {
-              "status": "passed",
-              "duration": 71000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 41,
-            "name": "Verify the ticket is added in table",
-            "result": {
-              "status": "passed",
-              "duration": 7000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 42,
-            "name": "Click on view the ticket Details",
-            "result": {
-              "status": "passed",
-              "duration": 87000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 43,
+            "line": 44,
             "name": "Verfiy the ticket Details",
             "result": {
               "status": "passed",
-              "duration": 2572000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 44,
-            "name": "Click on Back button",
-            "result": {
-              "status": "passed",
-              "duration": 81000000
+              "duration": 3352000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 45,
+            "name": "Click on Back button",
+            "result": {
+              "status": "passed",
+              "duration": 105000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
             "name": "Remove the ticket from box",
             "result": {
               "status": "passed",
-              "duration": 2074000000
+              "duration": 2425000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 46,
+            "line": 47,
             "name": "Verify the ticket is delete from the table",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 7000000
             }
           }
         ]

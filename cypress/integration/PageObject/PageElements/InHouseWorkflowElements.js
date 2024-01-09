@@ -81,4 +81,84 @@ export default class InHouseWorkflowElements {
             timeout: 30000,
         })
     }
+    editTicketElement() {
+        return cy.contains(locator.inHouseWorkflow.editTicket, {
+            timeout: 30000,
+        })
+    }
+    updateElement() {
+        return cy.contains(locator.inHouseWorkflow.update, {
+            timeout: 30000,
+        })
+    }
+    repairstatusEditElement() {
+        return cy.get(locator.inHouseWorkflow.repairstatusEdit, {
+            timeout: 30000,
+        })
+    }
+    addlineElement() {
+        return cy.contains(locator.inHouseWorkflow.addline, {
+            timeout: 30000,
+        })
+    }
+    addimageElement() {
+        return cy.contains(locator.inHouseWorkflow.addimage, {
+            timeout: 30000,
+        })
+    }
+    addnoteElement() {
+        return cy.contains(locator.inHouseWorkflow.addnote, {
+            timeout: 30000,
+        })
+    }
+    noteElement() {
+        return cy.get(locator.inHouseWorkflow.note, {
+            timeout: 30000,
+        })
+    }
+    uploadimageElement() {
+        return cy.get(locator.inHouseWorkflow.uploadimage, {
+            timeout: 30000,
+        })
+    }
+    imagedescriptionElement() {
+        return cy.get(locator.inHouseWorkflow.imagedescription, {
+            timeout: 30000,
+        })
+    }
+    notetypeElement() {
+        return cy.get(locator.inHouseWorkflow.notetype, {
+            timeout: 30000,
+        })
+    }
+    createlineElement() {
+        return cy.get(locator.inHouseWorkflow.createline, {
+            timeout: 30000,
+        })
+    }
+    updateimageElement() {
+        return cy.get(locator.inHouseWorkflow.updateimage, {
+            timeout: 30000,
+        })
+    }
+    createnoteElement() {
+        return cy.get(locator.inHouseWorkflow.createnote, {
+            timeout: 30000,
+        })
+    }
+    custompartElemnet() {
+        return cy.contains(locator.inHouseWorkflow.custompart, {
+            timeout: 30000,
+        })
+    }
+    viewElemnet() {
+        return cy.contains(locator.inHouseWorkflow.view, {
+            timeout: 30000,
+        })
+    }
+    partElement() {
+        return cy.get(locator.inHouseWorkflow.part, {
+            timeout: 30000,
+        })
+    }
 }

@@ -103,8 +103,7 @@ export class RepairTicketsActions {
         rt.repairstatusElement().click({ force: true })
         rt.searchboxElement().eq(1).click({ force: true })
        rt.intransitElement().click({ force: true })
-       
-      //  cy.get('tr td').eq(6).should('contain', tdata.repairTickets.repairstatus,{ force: true })
+      cy.get('tr td').eq(5).should('contain', tdata.repairTickets.repairstatus,{ force: true })
     }
     searchRepairBox() {
         rt.searchboxElement().eq(0).click({ force: true })
@@ -123,21 +122,6 @@ export class RepairTicketsActions {
     clickOnMoreFilter() {
         rt.addFilterElement().click({ force: true })
     }
-    // enterFieldName() {
-    //     rt.fieldNameElement().select('Ticket Number')
-    // }
-    // enterFieldOperation() {
-    //     rt.fieldOpElement().select('Does Not Contain')
-    // }
-    // enterSearchValue() {
-    //     rt.fieldValueElement().type(tdata.repairTickets.ticketnumber)
-    // }
-    // clickOnApply() {
-    //     rt.applyElement().click({ force: true })
-    // }
-    // verifyResultFilter() {
-    //     cy.get('tr td').eq(1).should('not.contain', tdata.repairTickets.ticketnumber)
-    // }
     clickOnClearFilter() {
         rt.clearFilterElement().click({ force: true })
     }
@@ -203,6 +187,65 @@ export class RepairTicketsActions {
         rt.fieldValueElement().type(tdata.repairTickets.repairdevice)
         rt.applyElement().click({ force: true })
         cy.get('tr td').eq(4).should('not.contain', tdata.repairTickets.repairdevice)
+    }
+    clickOnAddLine() {
+        rt.addlineElement().click({ force: true })
+        rt.custompartElemnet().click({ force: true })
+        rt.partElement().click({ force: true })
+        cy.get('[role="listbox"]').contains('demo unit').click({ force: true })
+        rt.noteElement().type('Testing line', { force: true })
+        rt.createlineElement().contains('Create Line Item').click({ force: true })
+        dash.messageElement().should('contain', 'Line Item Created')
+        // cy.get('[data-testid="CloseIcon"]').click({ force: true })
+    }
+    clickOnAddRepairImage() {
+        rt.addimageElement().click({ force: true })
+        rt.uploadimageElement().attachFile('image1.jpeg', { force: true })
+        rt.imagedescriptionElement().type('Testing Image')
+        rt.updateimageElement().contains('Upload Image').click({ force: true })
+        dash.messageElement().should('contain', 'Image Created')
+        //cy.get('[data-testid="CloseIcon"]').click({force:true})
+    }
+    clickOnAddNote() {
+        rt.addnoteElement().click({ force: true })
+        rt.notetypeElement().click({ force: true })
+        cy.get('[data-value="QA"]').click({ force: true })
+        rt.noteElement().type('Testing Note', { force: true })
+        rt.createnoteElement().contains('Create').click({ force: true })
+        dash.messageElement().should('contain', 'Ticket updated')
+    }
+    enterSearchBox() {
+        cy.get('[role="combobox"]').eq(0).click({ force: true })
+        cy.get('[data-value="ticket_number"]').click({ force: true })
+        rt.searchElement().type( tdata.repairTickets.ticketnumber + '{enter}', { force: true })
+    }
+    verifySearchResult() {
+        cy.get('tr td').eq(1).should('contain', tdata.repairTickets.ticketnumber)
+    }
+    clickViewButton() {
+        cy.get('tr td').eq(8).scrollIntoView().contains('View').click({ force: true })
+        //  iht.viewElement().click({ force: true })
+    }
+    verifySrcRepairTicket() {
+        cy.contains('Repair Ticket Details').should('be.visible')
+    }
+    clickOnEditButton() {
+        cy.wait(4000)
+        rt.editTicketElement().click({ force: true })
+    }
+    editTehnician() {
+        rt.technicianElement().click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains(tdata.repairTickets.technician).click({ force: true })
+    }
+    editRepairStatus() {
+        rt.repairstatusEditElement().click({ force: true })
+        cy.get(tdata.repairTickets.repairstatusEdit).click({ force: true })
+    }
+    clickOnUpdate() {
+        rt.updateElement().click({ force: true })
+    }
+    verifyUpdate() {
+        //cy.get('tr td').eq(1).should('contain', tdata.inHouseTicket.recordid)
     }
 }
 export default RepairTicketsActions 

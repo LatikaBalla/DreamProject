@@ -3,7 +3,12 @@ const locator = require("../../../locators.json");
 export default class AccountDetailsElements {
 
     titleElement() {
-        return cy.get(locator.newaccount.title, {
+        return cy.get(locator.accountDetails.title, {
+            timeout: 30000,
+        });
+    }
+    titleAccountElement() {
+        return cy.contains(locator.accountDetails.titleAccount, {
             timeout: 30000,
         });
     }
@@ -34,11 +39,6 @@ export default class AccountDetailsElements {
     }
     accountmanagerElement() {
         return cy.contains(locator.accountDetails.accountmanager, {
-            timeout: 30000,
-        });
-    }
-    titleAccountElement() {
-        return cy.contains(locator.accountDetails.title, {
             timeout: 30000,
         });
     }
@@ -178,7 +178,7 @@ export default class AccountDetailsElements {
         });
     }
     morefiltersbtnElement() {
-        return cy.contains(locator.accountDetails.morefiltersbtn, {
+        return cy.get(locator.accountDetails.morefiltersbtn, {
             timeout: 30000,
         });
     }
@@ -191,5 +191,35 @@ export default class AccountDetailsElements {
         return cy.contains(locator.accountDetails.addfilterGroup, {
             timeout: 30000,
         });
+    }
+    searchboxElement(){
+        return cy.get(locator.accountDetails.searchbox, {
+            timeout: 30000,
+        })
+    }
+    fullNameElement(){
+        return cy.get(locator.accountDetails.fullName, {
+            timeout: 30000,
+        })
+    }
+    emaildropElement(){
+        return cy.get(locator.accountDetails.emaildrop, {
+            timeout: 30000,
+        })
+    }
+    statusElement(){
+        return cy.get(locator.accountDetails.status, {
+            timeout: 30000,
+        })
+    }
+    phoneNoElement(){
+        return cy.get(locator.accountDetails.phoneNo, {
+            timeout: 30000,
+        })
+    }
+    recordidElement(){
+        return cy.get(locator.accountDetails.recordid, {
+            timeout: 30000,
+        })
     }
 }

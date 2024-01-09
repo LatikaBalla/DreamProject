@@ -57,4 +57,34 @@ export default class ImportSerialDevicesElements {
             timeout: 30000,
         })
     }
+    addFilterElement() {
+        return cy.contains(locator.importSerialDevices.addFilter, {
+            timeout: 30000,
+        })
+    }
+    clearFilterElement() {
+        return cy.contains(locator.importSerialDevices.clearFilter, {
+            timeout: 30000,
+        })
+    }
+    fieldNameElement() {
+        return cy.get(locator.importSerialDevices.fieldName, {
+            timeout: 30000,
+        })
+    }
+    fieldOpElement() {
+        return cy.get(locator.importSerialDevices.fieldOp, {
+            timeout: 30000,
+        })
+    }
+    applyElement() {
+        return cy.get(locator.importSerialDevices.apply, {
+            timeout: 30000,
+        })
+    }
+    fieldValueElement() {
+        return cy.get(locator.importSerialDevices.fieldValue, {
+            timeout: 30000,
+        })
+    }
 }

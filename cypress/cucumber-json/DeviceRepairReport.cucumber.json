@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1919000000
+              "duration": 6766000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6827000000
+              "duration": 10102000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9093000000
+              "duration": 9060000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Report center page",
             "result": {
               "status": "passed",
-              "duration": 95000000
+              "duration": 75000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on DeviceRepairReport page",
             "result": {
               "status": "passed",
-              "duration": 3654000000
+              "duration": 3881000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click on the export button",
             "result": {
               "status": "passed",
-              "duration": 110000000
+              "duration": 76000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Click More filter select- Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 772000000
+              "duration": 742000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 81000000
+              "duration": 71000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click More filter select- Ticket Number in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 867000000
+              "duration": 824000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 145000000
+              "duration": 74000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click More filter select- Repair type in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 846000000
+              "duration": 849000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 146000000
+              "duration": 83000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click More filter select- Serial Number in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1667000000
+              "duration": 1801000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 126000000
+              "duration": 117000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click More filter select- Repair device in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2548000000
+              "duration": 2488000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 85000000
+              "duration": 70000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click More filter select- Repair status in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2112000000
+              "duration": 2195000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 110000000
+              "duration": 96000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click More filter select- Asset tag in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1446000000
+              "duration": 1469000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 122000000
+              "duration": 123000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click More filter select- Repair Box in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1227000000
+              "duration": 1121000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 125000000
+              "duration": 97000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Click More filter select- Created By in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2865000000
+              "duration": 1731000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 110000000
+              "duration": 67000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 5822000000
+              "duration": 5602000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Enter the Search - Repair type in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2472000000
+              "duration": 2433000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Enter the Search - Repair status in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 1000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Enter the Search - Repair Box in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1924000000
+              "duration": 2089000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "Enter the Ticket Number in search box",
             "result": {
               "status": "passed",
-              "duration": 866000000
+              "duration": 705000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "Verify the Ticket details in table",
             "result": {
               "status": "passed",
-              "duration": 2052000000
+              "duration": 2019000000
             }
           },
           {
@@ -323,7 +323,7 @@
             "name": "Click on the Ticket Number",
             "result": {
               "status": "passed",
-              "duration": 109000000
+              "duration": 1469000000
             }
           },
           {
@@ -333,7 +333,7 @@
             "name": "Verify the Repair Ticket page will open",
             "result": {
               "status": "passed",
-              "duration": 28572000000
+              "duration": 3340000000
             }
           },
           {
@@ -343,7 +343,7 @@
             "name": "Verfiy the details of Ticket",
             "result": {
               "status": "passed",
-              "duration": 1362000000
+              "duration": 1171000000
             }
           },
           {
@@ -353,7 +353,7 @@
             "name": "Click on the download Ticket Estimation button",
             "result": {
               "status": "passed",
-              "duration": 1267000000
+              "duration": 724000000
             }
           }
         ]

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 10024000000
+              "duration": 9534000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 12394000000
+              "duration": 13190000000
             }
           },
           {
@@ -43,17 +43,17 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8070000000
+              "duration": 8072000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 12,
-            "name": "Click More filter select- Full name in search box and Verify the Result",
+            "name": "Click More filter select- Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 944000000
+              "duration": 2764000000
             }
           },
           {
@@ -63,17 +63,17 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 72000000
+              "duration": 197000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 14,
-            "name": "Click More filter select- Title in search box and Verify the Result",
+            "name": "Click More filter select- Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1713000000
+              "duration": 1268000000
             }
           },
           {
@@ -83,17 +83,17 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 66000000
+              "duration": 75000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 16,
-            "name": "Click More filter select- Eamil in search box and Verify the Result",
+            "name": "Click More filter select- Title in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1945000000
+              "duration": 2712000000
             }
           },
           {
@@ -103,17 +103,17 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 180000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 18,
-            "name": "Click More filter select- Phone in search box and Verify the Result",
+            "name": "Click More filter select- Eamil in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1963000000
+              "duration": 2442000000
             }
           },
           {
@@ -123,7 +123,117 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 217000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Click More filter select- User Role in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 3119000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 162000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Click More filter select- Phone in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 2137000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 225000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Click More filter select- User Status in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 2128000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 72000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "Enter the Search - Record Id in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1752000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "Enter the Search - Full name in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1126000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "Enter the Search - Email in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1621000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "Enter the Search - Title in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 2067000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Enter the Search - Phone in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1090000000
             }
           }
         ]

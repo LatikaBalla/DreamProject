@@ -58,3 +58,14 @@ And('Click on Details button', () => {
 Then('Verify the Device Details', () => {
     isd.verifyDeviceDetails()
 }) 
+And ('Click More filter select- Importer in search box and Verify the Result',()=>{
+    isd.clickOnMoreFilter()
+    isd.selectFilterImporter()
+})
+And ('Click More filter select- Quantity Devices in search box and Verify the Result',()=>{
+    isd.clickOnMoreFilter()
+    isd.selectFilterQuantityDevices()
+})
+Then ('Click on Clear filter',()=>{
+    isd.clickOnClearFilter()
+})

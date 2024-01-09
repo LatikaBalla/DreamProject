@@ -80,22 +80,6 @@ rt.searchRepairBox()
 Then ('Enter the Search - Asset tag in search box and Verify the Result',()=>{
 rt.searchAssetTag()
 })
-// Then('Click on More filters', () => {
-//     rt.clickOnMoreFilter()
-// })
-// And('Select Field name and Field operation and Enter the Search value', () => {
-//     rt.enterFieldName()
-//     rt.enterFieldOperation()
-//     rt.enterSearchValue()
-// })
-// Then('Click on Apply Button', () => {
-//     rt.clickOnApply()
-// })
-// And('Verify the Results in the table', () => {
-//     rt.verifyResultFilter()
-// })
-
-
 And ('Click More filter select- Record Id in search box and Verify the Result',()=>{
     rt.clickOnMoreFilter()
     rt.selectFilterRecordId()
@@ -134,4 +118,38 @@ Then('Click on Clear filter', () => {
 And ('Click More filter select- Repair device in search box and Verify the Result',()=>{
     rt.clickOnMoreFilter()
     rt.selectFilterRepairDevice()
+})
+And('Enter the Search value in search box', () => {
+    rt.enterSearchBox()
+})
+Then('Verify the Results in the table', () => {
+    rt.verifySearchResult()
+})
+And('Click on view button', () => {
+    rt.clickViewButton()
+})
+Then('Verify the Details of student repair ticket', () => {
+    rt.verifySrcRepairTicket()
+})
+And('Click on the Edit Ticket Button', () => {
+    rt.clickOnEditButton()
+})
+Then('Update the Technician and Repair Status', () => {
+    rt.editTehnician()
+    rt.editRepairStatus()
+})
+And('Click on Update Button', () => {
+    rt.clickOnUpdate()
+})
+Then('Verify Updated successfully', () => {
+    rt.verifyUpdate()
+})
+And('Click on Add Line and Verify', () => {
+    rt.clickOnAddLine()
+})
+Then('Click on Add Repair Image and Verify', () => {
+    rt.clickOnAddRepairImage()
+})
+And('Click on Add Note and Verify', () => {
+    rt.clickOnAddNote()
 })
