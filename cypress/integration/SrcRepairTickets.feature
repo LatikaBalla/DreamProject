@@ -41,7 +41,7 @@ Feature:SrcRepairTickets Page Functionality
     And Select failure Type, Serial Device, Technician and building
     Then Enter the Chromebook issue
     And Click on save button
-    # Then Verify New Ticket is added
+    Then Verify New Ticket is added
     And Enter the Search value in search box
     Then Verify the Results in the table
     And Click on view button

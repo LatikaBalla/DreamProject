@@ -5,7 +5,7 @@ const PartClosetElements = require("../PageElements/PartClosetElements.js")
 const tdata = require("../../../testData.json");
 export class PartClosetActions {
     constructor() {
-        globalThis.mdev = new Repair360Elements();
+        globalThis.rep = new Repair360Elements();
         globalThis.dash = new DashboardElements();
         globalThis.pc = new PartClosetElements();
     }
@@ -16,7 +16,7 @@ export class PartClosetActions {
         dash.repair360Element().click({ force: true })
     }
     clickOnPartClosetTab() {
-        mdev.partclosetElement().click({ force: true })
+        rep.partclosetElement().click({ force: true })
     }
     verifyTitle() {
         pc.titleElement().should('be.visible')

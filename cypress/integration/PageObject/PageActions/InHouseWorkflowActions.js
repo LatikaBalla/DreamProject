@@ -33,7 +33,8 @@ export class InHouseWorkflowActions {
     }
     selectSerialDevice() {
         ihw.serialdeviceElement().click({ force: true })
-        cy.get(tdata.inHouseWorkflow.serialdevice).click()
+        cy.get('[role="listbox"]').find('li').contains(tdata.inHouseWorkflow.serialdevice).click({ force: true })
+        // cy.get(tdata.inHouseWorkflow.serialdevice).click()
     }
     selectTechnician() {
         ihw.technicianElement().click({ force: true })
@@ -41,7 +42,7 @@ export class InHouseWorkflowActions {
     }
     selectBuilding() {
         ihw.buildingElement().click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains("Dream Building").click({ force: true })
     }
     selectRepairissue() {
         ihw.repairissueElement().click({ force: true })
@@ -54,8 +55,8 @@ export class InHouseWorkflowActions {
         ihw.savebtnElement().click({ force: true })
     }
     verifyNewTicket() {
-        cy.wait(8000)
-       // dash.messageElement().should('contain', tdata.inHouseWorkflow.createTicketmsg)
+        cy.wait(10000)
+        // dash.messageElement().should('contain', tdata.inHouseWorkflow.createTicketmsg)
     }
     clickOnExport() {
         ihw.exportbtnElement().click({ force: true })
@@ -64,11 +65,11 @@ export class InHouseWorkflowActions {
         cy.verifyDownload("/download/", tdata.inHouseWorkflow.filename)
     }
     searchTicketNo() {
-        cy.wait(2000)
+       // cy.wait(10000)
         ihw.searchElement().type(tdata.inHouseWorkflow.ticketno + '{enter}', { force: true })
     }
     verfiySearchResult() {
-        cy.wait(5000)
+       //cy.wait(8000)
         cy.get('.css-ax8uhp').eq(0).contains(tdata.inHouseWorkflow.ticketno).should('be.visible')
     }
     clickOnAddLine() {
@@ -96,6 +97,9 @@ export class InHouseWorkflowActions {
         ihw.noteElement().type('Testing Note', { force: true })
         ihw.createnoteElement().contains('Create').click({ force: true })
         dash.messageElement().should('contain', 'Ticket updated')
+        cy.get('body').type('{ctrl}w');
+        cy.get('[data-testid="KeyboardBackspaceIcon"]').click({force:true})
+        mdev.inhousercElement().click({ force: true })
     }
     // enterSearchBox() {
     //     cy.get('[role="combobox"]').eq(0).click({ force: true })
@@ -106,8 +110,14 @@ export class InHouseWorkflowActions {
     //     cy.get('tr td').eq(1).should('contain', tdata.inHouseWorkflow.ticketnumber)
     // }
     clickViewButton() {
-       // cy.get('tr td').eq(8).scrollIntoView().contains('View').click({ force: true })
-       ihw.viewdetailsElement().click({ force: true })
+        //ihw.viewdetailsElement().click({ force: true })
+        // cy.get('tr td').eq(8).scrollIntoView().contains('View').click({ force: true })
+        cy.window().then(win => {
+            // win.open('https://google.com', '_blank')
+        });
+        cy.get('body').type('{ctrl}t');
+        cy.visit("https://dream-frontend-stage.onrender.com/repair/inHouse-detail/" + tdata.inHouseWorkflow.recordid, { visitTimeout: 30000 })
+        cy.wait(2000)
     }
     verifySrcRepairTicket() {
         cy.contains('Repair Ticket Details').should('be.visible')
@@ -130,6 +140,6 @@ export class InHouseWorkflowActions {
     verifyUpdate() {
         //cy.get('tr td').eq(1).should('contain', tdata.inHouseWorkflow.recordid)
     }
-    
+
 }
 export default InHouseWorkflowActions 

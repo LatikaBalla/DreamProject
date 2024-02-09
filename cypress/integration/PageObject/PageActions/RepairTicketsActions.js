@@ -38,7 +38,7 @@ export class RepairTicketsActions {
     selectReturnSite() {
         rt.returnsiteElement().click({ force: true })
         // cy.get(tdata.repairTickets.returnsite).click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains('Dream Building').click({ force: true })
     }
     selectSerialDevice() {
         rt.serialdeviceElement().click({ force: true })
@@ -46,7 +46,7 @@ export class RepairTicketsActions {
     }
     selectBuilding() {
         rt.buildingElement().click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains('Dream Building').click({ force: true })
         // cy.get(tdata.repairTickets.building).eq(0).click({ force: true })
     }
     selectChromebookIssue() {
@@ -70,6 +70,11 @@ export class RepairTicketsActions {
         cy.verifyDownload("/download/", tdata.repairTickets.filename)
     }
     clickOnViewButton() {
+        cy.window().then(win => {
+            // win.open('https://google.com', '_blank');
+           });
+           cy.get('body').type('{ctrl}t');
+           cy.visit("https://dream-frontend-stage.onrender.com/repair-center/ticket-detail/"+tdata.repairTickets.recordid)
         cy.get('tr td').eq(9).contains('View').scrollIntoView().click({ force: true })
     }
     verifyDetails() {
@@ -118,6 +123,7 @@ export class RepairTicketsActions {
         rt.searchElement().clear().type(tdata.repairTickets.assettag + '{enter}', { force: true })
         cy.wait(1000)
         cy.get('tr td').eq(4).should('contain', tdata.repairTickets.assettag)
+        rt.searchElement().clear()
     }
     clickOnMoreFilter() {
         rt.addFilterElement().click({ force: true })
@@ -223,7 +229,13 @@ export class RepairTicketsActions {
         cy.get('tr td').eq(1).should('contain', tdata.repairTickets.ticketnumber)
     }
     clickViewButton() {
-        cy.get('tr td').eq(8).scrollIntoView().contains('View').click({ force: true })
+        cy.window().then(win => {
+            // win.open('https://google.com', '_blank');
+           });
+           cy.get('body').type('{ctrl}t');
+           cy.visit("https://dream-frontend-stage.onrender.com/repair-center/ticket-detail/"+tdata.repairTickets.recordid)
+      //  cy.get('tr td').eq(9).contains('View').scrollIntoView().click({ force: true })
+        //cy.get('tr td').eq(10).scrollIntoView().contains('View').click({ force: true })
         //  iht.viewElement().click({ force: true })
     }
     verifySrcRepairTicket() {

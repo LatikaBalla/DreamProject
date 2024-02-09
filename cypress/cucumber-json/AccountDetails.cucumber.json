@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 9534000000
+              "duration": 11185000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 13190000000
+              "duration": 12719000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8072000000
+              "duration": 8088000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click More filter select- Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2764000000
+              "duration": 1679000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 197000000
+              "duration": 106000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click More filter select- Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1268000000
+              "duration": 960000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 75000000
+              "duration": 70000000
             }
           },
           {
@@ -92,8 +92,9 @@
             "line": 16,
             "name": "Click More filter select- Title in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2712000000
+              "status": "failed",
+              "duration": 5874000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<td.MuiTableCell-root.MuiTableCell-alignCenter.MuiTableCell-sizeMedium.css-42rti1>' not to contain 'Mr'\n    at AccountDetailsActions.selectFilterTitle (cypress/integration/PageObject/PageActions/AccountDetailsActions.js:175:30)\n    at Context.eval (cypress/integration/AccountDetails/AccountDetails.spec.js:127:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -102,8 +103,7 @@
             "line": 17,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 180000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +112,7 @@
             "line": 18,
             "name": "Click More filter select- Eamil in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2442000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +121,7 @@
             "line": 19,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 217000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +130,7 @@
             "line": 20,
             "name": "Click More filter select- User Role in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 3119000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +139,7 @@
             "line": 21,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 162000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +148,7 @@
             "line": 22,
             "name": "Click More filter select- Phone in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2137000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +157,7 @@
             "line": 23,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 225000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +166,7 @@
             "line": 24,
             "name": "Click More filter select- User Status in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2128000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +175,7 @@
             "line": 25,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 72000000
+              "status": "skipped"
             }
           },
           {
@@ -192,8 +184,7 @@
             "line": 26,
             "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1752000000
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +193,7 @@
             "line": 27,
             "name": "Enter the Search - Full name in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1126000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +202,7 @@
             "line": 28,
             "name": "Enter the Search - Email in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1621000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +211,7 @@
             "line": 29,
             "name": "Enter the Search - Title in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2067000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +220,7 @@
             "line": 30,
             "name": "Enter the Search - Phone in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1090000000
+              "status": "skipped"
             }
           }
         ]

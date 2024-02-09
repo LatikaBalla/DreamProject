@@ -126,5 +126,39 @@ export default class UsersElements {
             timeout: 30000,
         });
     }
-  
+    recordidElement() {
+        return cy.get(locator.users.recordid, {
+            timeout: 30000,
+        });
+    } 
+    fullnamedropElement() {
+        return cy.get(locator.users.fullnamedrop, {
+            timeout: 30000,
+        });
+    }
+     phonedropElement() {
+        return cy.get(locator.users.phonedrop, {
+            timeout: 30000,
+        });
+    } 
+    emaildropElement() {
+        return cy.get(locator.users.emaildrop, {
+            timeout: 30000,
+        });
+    } 
+    cellnumberdropElement() {
+        return cy.get(locator.users.cellnumberdrop, {
+            timeout: 30000,
+        });
+    } 
+    userroledropElement() {
+        return cy.get(locator.users.userroledrop, {
+            timeout: 30000,
+        });
+    }
+    searchboxElement() {
+        return cy.get(locator.users.searchbox, {
+            timeout: 30000,
+        });
+    }
 }

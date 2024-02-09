@@ -34,7 +34,7 @@ export class AccountDetailsActions {
         cy.wait(1000)
     }
     enterTitle() {
-        acc.titleElement().type(tdata.newaccount.title, { force: true })
+        acc.titlenewElement().type(tdata.newaccount.title, { force: true })
     }
     enterFullname() {
         acc.fullnameElement().type(tdata.newaccount.fullname, { force: true })
@@ -116,7 +116,7 @@ export class AccountDetailsActions {
         acc.searchElement().type(tdata.search.fullname, { force: true })
     }
     verifySearchResult() {
-        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.search.fullname)
+        cy.get('tr td').eq(1).should('contain', tdata.search.fullname)
     }
     clickOnMoreFilter() {
         acc.morefiltersbtnElement().click({ force: true })

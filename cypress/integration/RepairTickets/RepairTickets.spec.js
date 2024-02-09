@@ -31,7 +31,6 @@ And('Table for RepairTickets should be visible', () => {
 Then('I should click on create new ticket', () => {
     rt.clickOnCreateNewTicket()
 })
-
 Then('Select failure Type, Return site and Serial Device', () => {
     rt.selectFailureType()
     rt.selectReturnSite()

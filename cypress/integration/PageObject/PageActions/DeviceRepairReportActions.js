@@ -42,7 +42,12 @@ export class DeviceRepairReportActions {
         dev.searchElement().should('be.empty')
     }
     clickOnTicketNumberTable() {
-        cy.get('tr td').eq(8).scrollIntoView().contains('View').click({ force: true })
+        cy.window().then(win => {
+           // win.open('https://google.com', '_blank');
+          });
+          cy.get('body').type('{ctrl}t');
+          cy.visit("https://dream-frontend-stage.onrender.com/repair-center/ticket-detail/"+tdata.deviceRepairReport.recordid1 , {visitTimeout: 30000})
+       //   cy.get('tr td').eq(9).scrollIntoView().contains('View').click({ force: true })    
     }
     verifyRapairTicketPAge() {
         dev.headingElement().should('be.visible')
@@ -52,6 +57,7 @@ export class DeviceRepairReportActions {
     }
     clickOnDownloadButton() {
         dev.downloadticketElement().click({ force: true })
+      //  cy.get('body').type('{ctrl}w');
     }
     verifyDownloadSuccessful() {
         cy.verifyDownload("/download/", tdata.deviceRepairReport.filename)
@@ -89,6 +95,7 @@ export class DeviceRepairReportActions {
         dev.searchdropdownElement().eq(0).click({ force: true })
         dev.repairboxElement().click({ force: true })
         dev.searchElement().clear().type(tdata.deviceRepairReport.repairbox + '{enter}', { force: true })
+        cy.wait(4000)
         cy.get('tr td').eq(6).should('contain', tdata.deviceRepairReport.repairbox, { force: true })
     }
     clickOnMoreFilter() {

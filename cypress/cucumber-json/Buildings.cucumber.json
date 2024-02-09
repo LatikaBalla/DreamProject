@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3765000000
+              "duration": 3548000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 11345000000
+              "duration": 13159000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8071000000
+              "duration": 8073000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Buildings Tab",
             "result": {
               "status": "passed",
-              "duration": 65000000
+              "duration": 64000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I should click on + Add New button",
             "result": {
               "status": "passed",
-              "duration": 1096000000
+              "duration": 1275000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "I should Enter Building Name,Phone and Extension",
             "result": {
               "status": "passed",
-              "duration": 847000000
+              "duration": 950000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Select Default building",
             "result": {
               "status": "passed",
-              "duration": 125000000
+              "duration": 124000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Enter Billing Address and select from dropdown",
             "result": {
               "status": "passed",
-              "duration": 2848000000
+              "duration": 2875000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click on checkbox Same as Shipping Address",
             "result": {
               "status": "passed",
-              "duration": 6092000000
+              "duration": 6086000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 81000000
+              "duration": 64000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Verify the builing details added in table",
             "result": {
               "status": "passed",
-              "duration": 7116000000
+              "duration": 7136000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on Edit Icon",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 79000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "I should edit Building Name,Phone and Extension",
             "result": {
               "status": "passed",
-              "duration": 953000000
+              "duration": 1005000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on update button",
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 72000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on Delete Icon",
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 68000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click on Confirm Delete button",
             "result": {
               "status": "passed",
-              "duration": 100000000
+              "duration": 90000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Verify the record is deleted successfully",
             "result": {
               "status": "passed",
-              "duration": 763000000
+              "duration": 590000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click More filter select- Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 700000000
+              "duration": 726000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 69000000
+              "duration": 75000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click More filter select- Building Name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1868000000
+              "duration": 870000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 103000000
+              "duration": 77000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Click More filter select- Default Building in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1177000000
+              "duration": 974000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Click More filter select- Phone in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1925000000
+              "duration": 1620000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 69000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Click More filter select- Building Shipping Address in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1545000000
+              "duration": 1540000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 72000000
+              "duration": 77000000
             }
           },
           {
@@ -302,8 +302,9 @@
             "line": 38,
             "name": "Click More filter select- Building Billing Address in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2285000000
+              "status": "failed",
+              "duration": 5627000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `5`, but never found it. Queried from:\n\n              > cy.get(tr td)\n    at BuildingsActions.selectFilterBillingAddress (cypress/integration/PageObject/PageActions/BuildingsActions.js:159:30)\n    at Context.eval (cypress/integration/Buildings/Buildings.spec.js:126:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -312,8 +313,7 @@
             "line": 39,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 101000000
+              "status": "skipped"
             }
           },
           {
@@ -322,8 +322,7 @@
             "line": 40,
             "name": "Click on Export To CSV",
             "result": {
-              "status": "passed",
-              "duration": 104000000
+              "status": "skipped"
             }
           },
           {
@@ -332,8 +331,7 @@
             "line": 41,
             "name": "Enter the Search - Building Name in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 687000000
+              "status": "skipped"
             }
           },
           {
@@ -342,8 +340,7 @@
             "line": 43,
             "name": "Enter the Search - Phone in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1846000000
+              "status": "skipped"
             }
           }
         ]

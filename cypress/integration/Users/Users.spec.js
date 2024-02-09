@@ -105,17 +105,36 @@ And('Verify the Filter Results in the table', () => {
 Then('Click on Download button', () => {
     user.clickOnDownload()
 })
+And('Enter the Search - Record Id in search box and Verify the Result', () => {
+    user.searchRecordId()
+})
+Then('Enter the Search - Full Name in search box and Verify the Result', () => {
+    user.searchFullName()
+})
+And('Enter the Search - Email in search box and Verify the Result', () => {
+    user.searchEmail()
+})
+Then('Enter the Search - Phone in search box and Verify the Result', () => {
+    user.searchPhone()
+})
+And('Enter the Search - CellNumber in search box and Verify the Result', () => {
+    user.searchCellNumber()
+})
+Then('Enter the Search - User Role in search box and Verify the Result', () => {
+    user.searchUserRole()
+})
 Then('Click on Clear filter', () => {
     user.clickOnClearFilter()
+})
+And('Click More filter select- Record Id in search box and Verify the Result', () => {
+    user.clickOnMoreFilter()
+    user.selectFilterRecordId()
 })
 And ('Click More filter select- Full name in search box and Verify the Result',()=>{
     user.clickOnMoreFilter()
     user.selectFilterFullname()
 })
-And ('Click More filter select- Phone in search box and Verify the Result',()=>{
-    user.clickOnMoreFilter()
-    user.selectFilterPhone()
-})
+
 And ('Click More filter select- Cell Number in search box and Verify the Result',()=>{
     user.clickOnMoreFilter()
     user.selectFilterCellNumber()
@@ -127,4 +146,8 @@ And ('Click More filter select- Eamil in search box and Verify the Result',()=>{
 And ('Click More filter select- Role Name in search box and Verify the Result',()=>{
     user.clickOnMoreFilter()
     user.selectFilterRoleName()
+})
+And ('Click More filter select- User status in search box and Verify the Result',()=>{
+    user.clickOnMoreFilter()
+    user.selectFilterUserStatus()
 })

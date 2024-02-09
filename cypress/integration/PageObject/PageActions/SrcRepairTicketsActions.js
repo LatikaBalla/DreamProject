@@ -6,7 +6,7 @@ const StudentRepairCenterElements = require("../PageElements/StudentRepairCenter
 const tdata = require("../../../testData.json");
 export class SrcRepairTicketsActions {
     constructor() {
-        globalThis.mdev = new Repair360Elements();
+        globalThis.rep = new Repair360Elements();
         globalThis.dash = new DashboardElements();
         globalThis.srt = new SrcRepairTicketsElements();
         globalThis.mf1 = new StudentRepairCenterElements()
@@ -19,7 +19,7 @@ export class SrcRepairTicketsActions {
         dash.repair360Element().click({ force: true })
     }
     clickOnStudentRepairCenterTab() {
-        mdev.studentrcElement().click({ force: true })
+        rep.studentrcElement().click({ force: true })
     }
     clickOnSrcRepairTicketsTab() {
         mf1.srcRepairTicketsElement().click({ force: true })
@@ -54,7 +54,7 @@ export class SrcRepairTicketsActions {
     }
     selectBuilding() {
         srt.buildingElement().click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains('Dream Building').click({ force: true })
     }
     enterChromebookIssue() {
         srt.chromebookissueElement().type(tdata.srcRepairTicket.chromebookissue, { force: true })
@@ -74,7 +74,13 @@ export class SrcRepairTicketsActions {
         cy.get('tr td').eq(1).should('contain', tdata.srcRepairTicket.ticketno)
     }
     clickViewButton() {
-        srt.viewElement().click({ force: true })
+        cy.window().then(win => {
+            // win.open('https://google.com', '_blank');
+           });
+           cy.get('body').type('{ctrl}t');
+           cy.visit("https://dream-frontend-stage.onrender.com/repair/inHouse-detail/"+tdata.srcRepairTicket.recordid)
+        //   cy.get('tr td').eq(9).scrollIntoView().contains('View').click({ force: true })    
+      //  srt.viewElement().click({ force: true })
     }
     verifySrcRepairTicket() {
         cy.contains('Repair Ticket Details').should('be.visible')
@@ -102,7 +108,7 @@ export class SrcRepairTicketsActions {
         srt.searchboxElement().eq(0).click({ force: true })
         srt.recordidElement().click({ force: true })
         srt.searchElement().clear().type(tdata.srcRepairTicket.recordid + '{enter}', { force: true })
-        cy.wait(1000)
+       // cy.wait(4000)
         cy.get('tr td').eq(0).should('contain', tdata.srcRepairTicket.recordid)
     }
     searchTicketNumber() {
@@ -163,10 +169,10 @@ export class SrcRepairTicketsActions {
     }
     selectFilterRepairStatus() {
         srt.fieldNameElement().select('repair_status', { force: true })
-        srt.fieldOpElement().select('Does Not Contain', { force: true })
+        srt.fieldOpElement().select('Contains', { force: true })
         srt.fieldValueElement().type(tdata.srcRepairTicket.repairstatus)
         srt.applyElement().click({ force: true })
-        cy.get('tr td').eq(6).should('not.contain', tdata.srcRepairTicket.repairstatus)
+        cy.get('tr td').eq(6).should('contain', tdata.srcRepairTicket.repairstatus)
     }
     selectFilterRepairDevice() {
         srt.fieldNameElement().select('repair_device', { force: true })

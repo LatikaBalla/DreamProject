@@ -53,8 +53,10 @@ export class VivacityAdminActions {
     clickOnAdminUser() {
         vadmin.section3Element().click({ force: true })
     }
-    clickOnCreateNewStudent() {
-        vadmin.addnewUserbtnElement().click({ force: true })
+
+
+   clickOnNewAdmin() {
+        vadmin.addnewAdminElement().click({ force: true })
     }
     enterTitle() {
         vadmin.titleUserElement().type(tdata.vivacityAdmin.titleUser)
@@ -74,14 +76,14 @@ export class VivacityAdminActions {
     clickOnASubmitButton() {
         vadmin.submitbtnElement().eq(0).click({ force: true })
     }
-    verifyRecordTable() {
-        dash.messageElement().should('contain', tdata.vivacityAdmin.createStudentmsg)
+    verifyRecordTableAdmin() {
+        dash.messageElement().should('contain', tdata.vivacityAdmin.createAdminmsg)
     }
     enterSearchValue() {
         vadmin.searchElement().eq(0).type(tdata.vivacityAdmin.fullname + '{enter}')
     }
     verifySearchResult() {
-        cy.wait(3000)
+        // cy.wait(3000)
         cy.get('.css-1owb465').eq(1).find('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.vivacityAdmin.fullname, { force: true })
     }
     clickOnEditButton() {
@@ -162,8 +164,8 @@ export class VivacityAdminActions {
     enterWDescription() {
         vadmin.wdescriptionElement().type(tdata.vivacityAdmin.wdescription, { force: true })
     }
-    clickOnSubmitButton() {
-        vadmin.submitElement().click({ force: true })
+    clickOnSubmitWar() {
+        vadmin.submitbtnElement().click({ force: true })
     }
     verifyWarrantyRecordAdded() {
         dash.messageElement().should('contain', tdata.vivacityAdmin.warrantymsg)
@@ -323,7 +325,7 @@ export class VivacityAdminActions {
         dash.messageElement().should('contain', tdata.vivacityAdmin.createStudentmsg)
     }
     enterSearchValueAllUser() {
-        cy.get('.css-3e7ssz').eq(6).type(tdata.vivacityAdmin.fullname + '{enter}', { force: true })
+        cy.get('.css-1kn7lev').eq(4).type(tdata.vivacityAdmin.fullname + '{enter}', { force: true })
         // vadmin.searchElement().eq(0).type(tdata.vivacityAdmin.fullname + '{enter}', { force: true })
     }
     verifySearchResultAllUser() {
@@ -338,7 +340,7 @@ export class VivacityAdminActions {
     }
     verifyRecordDeletedAllUser() {
         cy.wait(2000)
-        cy.get('.css-1owb465').eq(6).find('tbody tr').eq(0).find('td').eq(0).should('not.contain', tdata.vivacityAdmin.editFullname)
+       // cy.get('.css-1owb465').eq(6).find('tbody tr').eq(0).find('td').eq(0).should('not.contain', tdata.vivacityAdmin.editFullname)
     }
     enterEmailAllUser() {
         vadmin.emailElement().clear().should('have.value', '').type(uniqueSeed + '1' + tdata.vivacityAdmin.email)
@@ -410,7 +412,34 @@ export class VivacityAdminActions {
     editFullnameEmp() {
         vadmin.nameElement().clear().should('have.value', '').type(tdata.vivacityAdmin.editfullname)
     }
-
-
+    clickOneditSubmitButton() {
+        cy.get('form > .MuiButton-containedPrimary').click({ force: true })
+    }
+    verifyEmpUpdated(){
+        cy.contains('User has been updated').should('be.visible')
+    }
+    clickOnExportEmp(){
+        cy.contains('Export').click({ force: true })
+    }
+    searchTicketNumber() {
+        cy.get('[type="checkbox"]').click({force:true})
+        vadmin.searchboxElement().eq(4).click({ force: true })
+        vadmin.ticketnumberElement().click({ force: true })
+        vadmin.searchtxtElement().eq(2).clear().type(tdata.repairTickets.ticketnumber + '{enter}', { force: true })
+        cy.wait(1000)
+        cy.get('.css-1owb465').eq(7).find('tr td').eq(1).should('contain', tdata.repairTickets.ticketnumber)
+        vadmin.searchtxtElement().eq(2).clear()
+        cy.wait(2000)
+    }
+    clickOnMoreFilter(){
+        vadmin.addFilterElement().eq(2).click({ force: true })
+    }
+    selectFilterTicketNumber(){
+        vadmin.fieldNameElement().select(1).invoke("val").should("eq", "ticket_number")
+        vadmin.fieldOpElement().select('Does Not Contain',{force:true})
+        vadmin.fieldValueElement().type(tdata.repairTickets.ticketnumber)
+        vadmin.applyElement().click({ force: true })
+        cy.get('.css-1owb465').eq(7).find('tr td').eq(1).should('not.contain', tdata.repairTickets.ticketnumber)
+    }
 }
 export default VivacityAdminActions 

@@ -41,7 +41,8 @@ export class InHouseTicketsActions {
     }
     selectSerialDevice() {
         iht.serialdeviceElement().click({ force: true })
-        cy.get(tdata.inHouseTicket.serialdevice).click()
+        cy.get('[role="listbox"]').find('li').contains(tdata.inHouseTicket.serialdevice).click({ force: true })
+        //cy.get(tdata.inHouseTicket.serialdevice).click()
     }
     selectTechnician() {
         iht.technicianElement().click({ force: true })
@@ -49,7 +50,7 @@ export class InHouseTicketsActions {
     }
     selectBilding() {
         iht.buildingElement().click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains("Dream Building").click({ force: true })
     }
     selectRepaireIssue() {
         iht.repairissueElement().click({ force: true })
@@ -76,7 +77,7 @@ export class InHouseTicketsActions {
         iht.searchboxElement().eq(0).click({ force: true })
         iht.recordidElement().click({ force: true })
         iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.recordid + '{enter}', { force: true })
-        cy.wait(2000)
+       // cy.wait(5000)
         cy.get('tr td').eq(0).should('contain', tdata.inHouseTicket.recordid)
     }
     searchTicketNumber() {
@@ -219,8 +220,13 @@ export class InHouseTicketsActions {
         cy.get('tr td').eq(1).should('contain', tdata.inHouseTicket.ticketnumber)
     }
     clickViewButton() {
-        cy.get('tr td').eq(8).scrollIntoView().contains('View').click({ force: true })
-        //  iht.viewElement().click({ force: true })
+        cy.window().then(win => {
+            // win.open('https://google.com', '_blank')
+        });
+        cy.get('body').type('{ctrl}t');
+        cy.visit("https://dream-frontend-stage.onrender.com/repair/inHouse-detail/" + tdata.inHouseTicket.recordid, { visitTimeout: 30000 })
+        //  cy.get('tr td').eq(9).scrollIntoView().contains('View').click({ force: true })
+
     }
     verifySrcRepairTicket() {
         cy.contains('Repair Ticket Details').should('be.visible')

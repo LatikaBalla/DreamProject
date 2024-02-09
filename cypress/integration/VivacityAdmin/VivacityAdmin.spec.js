@@ -48,10 +48,10 @@ Then('New User Creation Requests unit should be visible', () => {
 And('All Users unit should be visible', () => {
     vadmin.allUser()
 })
-Then ('Repair Ticket Creation unit should be visible',()=>{
+Then('Repair Ticket Creation unit should be visible', () => {
     vadmin.RepairTicketCreation()
 })
-And ('Employee management unit should be visible',()=>{
+And('Employee management unit should be visible', () => {
     vadmin.employeeManagment()
 })
 
@@ -74,61 +74,61 @@ And('Verify the Request', () => {
 Then('Click on Admin Users unit', () => {
     vadmin.clickOnAdminUser()
 })
-Then('I should click on Add New student', () => {
-    vadmin.clickOnCreateNewStudent()
+Then('I should click on Add New Admin', () => {
+    vadmin.clickOnNewAdmin()
 })
-Then('Enter full name, title and Email', () => {
+Then('Enter full name, title and Email of Admin', () => {
     vadmin.enterFullname()
     vadmin.enterTitle()
     vadmin.enterEmail()
 })
-And('Enter Phone,Cell Number and select UserRole', () => {
+And('Enter Phone,Cell Number and select UserRole of Admin', () => {
     vadmin.enterCellNumber()
-    vadmin.enterPhone()  
+    vadmin.enterPhone()
 })
-And('Click on submit button', () => {
+And('Click on submit button of Admin', () => {
     vadmin.clickOnASubmitButton()
 })
-Then('Verify the student added in table', () => {
-    vadmin.verifyRecordTable()
+Then('Verify the student added in table of Admin', () => {
+    vadmin.verifyRecordTableAdmin()
 })
-And('Enter the Search value in search box', () => {
+And('Enter the Search value in search box of Admin', () => {
     vadmin.enterSearchValue()
 })
-Then('Verify the Results in the table', () => {
+Then('Verify the Results in the table of Admin', () => {
     vadmin.verifySearchResult()
 })
-And('Click on Edit button', () => {
+And('Click on Edit button of Admin', () => {
     vadmin.clickOnEditButton()
 })
-Then('I should edit title, full name', () => {
+Then('I should edit title, full name of Admin', () => {
     vadmin.editTitle()
     vadmin.editFullname()
 })
-And('I should edit Phone and Cell Number and user role', () => {
+And('I should edit Phone and Cell Number and user role of Admin', () => {
     vadmin.editPhone()
-    vadmin.editCellNumber()  
+    vadmin.editCellNumber()
     vadmin.editUserRole()
 })
-Then('I edit User Status to inactive', () => {
+Then('I edit User Status to inactive of Admin', () => {
     vadmin.editUserStatus()
 })
-And('I edit In-house Repaire to yes', () => {
+And('I edit In-house Repaire to yes of Admin', () => {
     vadmin.editInhouseRepaire()
 })
-Then('Click on Submit button', () => {
+Then('Click on Submit button of Admin', () => {
     vadmin.clickSubmitForUpdate()
 })
-And('Verify the Record has been updated Meassage', () => {
+And('Verify the Record has been updated Meassage of Admin', () => {
     vadmin.verfifyDataUpdatedMessage()
 })
-And('Click on Delete button', () => {
+And('Click on Delete button of Admin', () => {
     vadmin.clickDeleteButton()
 })
-Then('Click on Confirm Delete button', () => {
+Then('Click on Confirm Delete button of Admin', () => {
     vadmin.clickConfirmDeleteButton()
 })
-And('Verify the record is deleted successfully', () => {
+And('Verify the record is deleted successfully of Admin', () => {
     vadmin.verifyRecordDeleted()
 })
 
@@ -157,17 +157,17 @@ And('Select provider and write description', () => {
     vadmin.selectProvider()
     vadmin.enterWDescription()
 })
-Then('Click on submit button', () => {
-    vadmin.clickOnSubmitButton()
+Then('Click on submit button of warranty', () => {
+    vadmin.clickOnSubmitWar()
 })
 And('Verify the warranty added in table', () => {
     vadmin.verifyWarrantyRecordAdded()
 })
-Then ('Enter the value in search warranty',()=>{
-vadmin.enterSearchWarranty()
+Then('Enter the value in search warranty', () => {
+    vadmin.enterSearchWarranty()
 })
-And ('Verify search result warranty',()=>{
-vadmin.verifySearchWarranty()
+And('Verify search result warranty', () => {
+    vadmin.verifySearchWarranty()
 })
 And('Click On Edit icon', () => {
     vadmin.clickOnWEditIcon()
@@ -198,6 +198,7 @@ And('Verify the warranty updated Meassage', () => {
     vadmin.verifyWarrantyRecordUpdated()
 })
 And('Click on Delete Icon', () => {
+    cy.wait(1000)
     vadmin.clickDeleteIcon()
 })
 Then('Click on Confirm Delete Icon', () => {
@@ -225,7 +226,7 @@ And('Select In house Repaire and Payment terms', () => {
     vadmin.selectIhRepaire()
     vadmin.selectPaymentTerms()
 })
-And ('Select account site and account manager',()=>{
+And('Select account site and account manager', () => {
     vadmin.selectAccountSite()
     vadmin.selectAccountManager()
 })
@@ -269,8 +270,21 @@ And('Verify add account successfully', () => {
 Then('Click on all Users unit', () => {
     vadmin.clickOnAllUser()
 })
-Then('I should click on Add New student for allUser', () => {
+And('I should click on Add New user for allUser', () => {
     vadmin.clickOnCreateNewStudentAllUser()
+})
+Then('Enter full name, title and Email for allUser', () => {
+    vadmin.enterFullname()
+    vadmin.enterTitle()
+    vadmin.enterEmailAllUser()
+})
+
+And('Enter Phone,Cell Number and select UserRole for allUser', () => {
+    vadmin.enterCellNumber()
+    vadmin.enterPhone()
+})
+And('Click on submit button for allUser', () => {
+    vadmin.clickOnASubmitButton()
 })
 Then('Verify the student added in table for allUser', () => {
     vadmin.verifyStudentAddedAllUser()
@@ -284,21 +298,33 @@ Then('Verify the Results in the table for allUser', () => {
 And('Click on Edit button for allUser', () => {
     vadmin.clickOnEditButtonAllUser()
 })
+Then('I should edit title, full name for allUser', () => {
+    vadmin.editTitle()
+    vadmin.editFullname()
+})
+And('I should edit Phone and Cell Number and user role for allUser', () => {
+    vadmin.editPhone()
+    vadmin.editCellNumber()
+    vadmin.editUserRole()
+})
+Then('Click on Submit update button for allUser', () => {
+    vadmin.clickSubmitForUpdate()
+})
+And('Verify the Record has been updated Meassage for allUser', () => {
+    vadmin.verfifyDataUpdatedMessage()
+})
 And('Click on Delete button for allUser', () => {
     vadmin.clickDeleteButtonAllUser()
+    cy.get('.MuiBox-root > .MuiButton-outlinedError').click({ force: true })
 })
 And('Verify the record is deleted successfully for allUser', () => {
     vadmin.verifyRecordDeletedAllUser()
 })
-And('Enter Email for allUser', () => {
-    vadmin.enterEmailAllUser()
-})
-
 
 
 And('Click on features page', () => {
     cy.wait(1000)
-    cy.contains('demo_adminvivacity@vivacitytech.com').click({force:true})
+    cy.contains('demo_adminvivacity@vivacitytech.com').click({ force: true })
     vadmin.clickOnFeatures()
 })
 Then('Click on Submit a feature request button', () => {
@@ -327,64 +353,78 @@ Then('Click on the Close button', () => {
 And('Click on approve button', () => {
     vadmin.clickOnApproveButton()
 })
-And ('Click on features page again',()=>{
+And('Click on features page again', () => {
     vadmin.clickOnFeatures()
 })
 Then('Verify the feature added in Underconsideration', () => {
     ft.verifyFeatureUnderconsideration()
 })
-Then('Click on Repair Ticket Creation unit',()=>{
-vadmin.clickOnRepairTicketUnit()
+Then('Click on Repair Ticket Creation unit', () => {
+    vadmin.clickOnRepairTicketUnit()
 })
-And ('Click on Repair 360 page button',()=>{
-vadmin.clickOnRepair360btn()
+And('Click on Repair 360 page button', () => {
+    vadmin.clickOnRepair360btn()
 })
-Then ('Verify the Repair Ticket page redirected',()=>{
-    cy.url().should('include', '/repair-360')   
+Then('Verify the Repair Ticket page redirected', () => {
+    cy.url().should('include', '/repair-360')
 })
 
-Then ('Click on Employee management unit',()=>{
-vadmin.clickOnEmployeeManagment()
+Then('Click on Employee management unit', () => {
+    vadmin.clickOnEmployeeManagment()
 })
-Then ('I should click on Create new Employee',()=>{
-vadmin.clickOnCreateNewEmp()
+Then('I should click on Create new Employee', () => {
+    vadmin.clickOnCreateNewEmp()
 })
-Then ('Enter full name, title and Email for Employee',()=>{
-vadmin.enterFullnameEmp()
-vadmin.enterTitle()
-vadmin.enterEmailEmp()
+Then('Enter full name, title and Email for Employee', () => {
+    vadmin.enterFullnameEmp()
+    vadmin.enterTitle()
+    vadmin.enterEmailEmp()
 })
-And ('Enter Phone and select userStatus',()=>{
-vadmin.enterPhone()
-vadmin.selectUserStatus()
+And('Enter Phone and select userStatus for Employee', () => {
+    vadmin.enterPhone()
+    vadmin.selectUserStatus()
 })
-And ('Click on submit button',()=>{
-vadmin.clickOnSubmitButton()
+And('Click on submit button for Employee', () => {
+    cy.get('form > .MuiButton-containedPrimary').click({ force: true })
+    //vadmin.clickOnSubmitButton()
 })
-Then ('Verify the Employee added in table',()=>{
-vadmin.verifyEmployeeAdded()
-cy.get('[data-testid="btnNewDataSubmit"]').eq(1).click({force:true})
+Then('Verify the Employee added in table', () => {
+    vadmin.verifyEmployeeAdded()
+    cy.get('[data-testid="btnNewDataSubmit"]').eq(1).click({ force: true })
 })
- Then ('Select Email from Dropdownlist',()=>{
-vadmin.selectEmail()
+Then('Select Email from Dropdownlist', () => {
+    vadmin.selectEmail()
 })
-And ('Enter the Search value in search box for employee',()=>{
-vadmin.enterSerachEmp()
+And('Enter the Search value in search box for employee', () => {
+    vadmin.enterSerachEmp()
 })
-Then ('Verify the Results in the table for employee',()=>{
-vadmin.verifyResultEmp()
+Then('Verify the Results in the table for employee', () => {
+    vadmin.verifyResultEmp()
 })
-And ('Click on Edit button new Employee',()=>{
+And('Click on Edit button new Employee', () => {
     vadmin.clickConEditEmp()
 })
-Then ('I should edit fullname and title for Employee',()=>{
+Then('I should edit fullname and title for Employee', () => {
     vadmin.editTitle()
     vadmin.editFullnameEmp()
-}) 
-And ('I should edit Phone and user status for Employee',()=>{
+})
+And('I should edit Phone and user status for Employee', () => {
     vadmin.editPhone()
     vadmin.editUserStatusEmp()
 })
-Then ('Click on Submit button',()=>{})
-And ('Verify the Record has been updated Meassage',()=>{})
-Then ('Click on the Export Button ',()=>{})
+Then('Click on edit Submit button for Employee', () => {
+    vadmin.clickOneditSubmitButton()
+})
+And('Verify the Record has been updated Meassage', () => {
+    vadmin.verifyEmpUpdated()
+})
+Then('Click on the Export Button for Employee', () => {
+    vadmin.clickOnExportEmp()
+})
+And('Enter the Search - Ticket Number in search box and Verify the Result', () => {
+    vadmin.searchTicketNumber()
+})
+And('Click More filter select- Ticket Number in search box and Verify the Result', () => {
+    vadmin.clickOnMoreFilter()
+    vadmin.selectFilterTicketNumber()
+})

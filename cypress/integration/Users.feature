@@ -18,8 +18,6 @@ Feature:  Users Page Functionality
     And Enter Phone and Cell Number
     And Click on submit button
     Then Verify the student added in table
-    And Enter the Search value in search box
-    Then Verify the Results in the table
     And Click on Edit button
     Then I should edit title, full name
     And I should edit Phone and Cell Number and user role
@@ -31,17 +29,24 @@ Feature:  Users Page Functionality
     Then Click on Confirm Delete button
     # And Verify the record is deleted successfully
     Then Click on Download button
-    # And Verify Download the successfully
+  #  And Verify Download the successfully
+    And Enter the Search - Record Id in search box and Verify the Result
+    Then Enter the Search - Full Name in search box and Verify the Result
+    And Enter the Search - Email in search box and Verify the Result
+    Then Enter the Search - Phone in search box and Verify the Result
+    And Enter the Search - CellNumber in search box and Verify the Result
+    # Then Enter the Search - User Role in search box and Verify the Result
+    And Click More filter select- Record Id in search box and Verify the Result
+    Then Click on Clear filter
     And Click More filter select- Full name in search box and Verify the Result
     Then Click on Clear filter
     And Click More filter select- Eamil in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- Phone in search box and Verify the Result
     Then Click on Clear filter
     And Click More filter select- Cell Number in search box and Verify the Result
     Then Click on Clear filter
     And Click More filter select- Role Name in search box and Verify the Result
     Then Click on Clear filter
-
+    And Click More filter select- User status in search box and Verify the Result
+    Then Click on Clear filter
 
 

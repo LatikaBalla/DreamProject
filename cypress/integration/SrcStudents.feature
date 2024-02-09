@@ -14,12 +14,12 @@ Feature:SrcStudents Page Functionality
     Scenario: Add new Srudent, search and view
         And Verify the Title of SrcStudents Page
         And Table for SrcStudents should be visible
-        # Then I should click on Add New student
-        # Then Enter title, full name and Email
-        # And Enter Phone and Cell Number
-        # Then Select User Status
-        # And Click on submit button
-        # Then Verify the student added in table
+        Then I should click on Add New student
+        Then Enter title, full name and Email
+        And Enter Phone and Cell Number
+        Then Select User Status
+        And Click on submit button
+        Then Verify the student added in table
         # And Click on view button
         # Then Veriry the Details of Student
         And Click More filter select- Full name in search box and Verify the Result

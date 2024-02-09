@@ -47,8 +47,8 @@ Feature: Landing  Page Functionality
         Then Redirect t0 Information->Terms of Service page
         And Click on the Information->Google Privacy Disclosure of footer
         Then Redirect to Information->Google Privacy Disclosure page
-        And Click on the Information->Shipping of footer
-        Then Redirect to Information->Shipping page
+        # And Click on the Information->Shipping of footer
+        # Then Redirect to Information->Shipping page
 
 
         

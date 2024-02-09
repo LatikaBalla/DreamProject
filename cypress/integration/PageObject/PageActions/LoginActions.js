@@ -28,13 +28,30 @@ export class LoginActions {
         cy.title().should('eq', 'Account Dashboard')
     }
     enterWrongUsername() {
-        log.usernameElement().type(tdata.login.wusername)
+        const uniqueSeed = Date.now();
+        log.usernameElement().type(uniqueSeed + tdata.newaccount.email, { force: true })
     }
     enterWrongPassword() {
         log.passwordElement().type(tdata.login.wpassword)
     }
     verifyErrorMessage() {
-        cy.contains('Wrong email or password.').should('be.visible')
+        cy.contains( tdata.login.errormsg).should('be.visible')
     }
+    verifyMailforgetpass() {
+        log.errormessageElement().should('contain', tdata.login.forgotpassmsg)
+    }
+    clickOnForgetPassword() {
+        log.forgotpassElement().click({ force: true })
+    }
+    verifyErrorforgetpass() {
+        log.errormessageElement().should('contain', tdata.login.errormsg)
+    }
+    enterWrongUsernameLock(){
+        log.usernameElement().type(tdata.login.wusername)
+    }
+    verifyLockedacc(){
+        log.errormessageElement().should('contain', tdata.login.lockerrormsg)
+    }
+
 }
 export default LoginActions 

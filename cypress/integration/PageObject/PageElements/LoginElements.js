@@ -31,4 +31,9 @@ export default class LoginElements {
             timeout: 30000,
         });
     }
+    errormessageElement(){
+        return cy.get(locator.login. errormessage, {
+            timeout: 30000,
+        });
+    }
 }

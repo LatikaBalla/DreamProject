@@ -84,10 +84,10 @@ export class SrcStudentsActions {
         cy.get('[type="button"]').contains('Cancel').click({ force: true })
     }
     verifyRecordTable() {
-        // cy.get('[data-testid="CachedIcon"]').click()
+         cy.get('[data-testid="CachedIcon"]').click()
         cy.wait(3000)
-        dash.messageElement().should('contain', tdata.srcStudent.createStudentmsg)
-        //cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.srcStudent.fullname)
+       // dash.messageElement().should('contain', tdata.srcStudent.createStudentmsg)
+        cy.get('tr td').eq(0).should('contain', tdata.srcStudent.fullname)
     }
     clickViewButtton() {
         cy.get('tbody tr').eq(0).find('td').eq(4).contains('View').click({ force: true })
@@ -155,10 +155,10 @@ export class SrcStudentsActions {
     }
     selectFilterUserStatus() {
         ss.fieldNameElement().select('user_status', { force: true })
-        ss.fieldOpElement().select('Does Not Contain', { force: true })
+        ss.fieldOpElement().select('Contains', { force: true })
         ss.fieldValueElement().type(tdata.srcStudent.status)
         ss.applyElement().click({ force: true })
-        cy.get('tr td').eq(3).should('not.contain', tdata.srcStudent.status)
+        cy.get('tr td').eq(3).should('contain', tdata.srcStudent.status)
     }
 }
 export default SrcStudentsActions 

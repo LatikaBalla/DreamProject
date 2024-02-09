@@ -6,6 +6,11 @@ export default class VivacityAdminElements {
             timeout: 30000,
         })
     }
+    addnewAdminElement(){
+        return cy.contains(locator.vivacityAdmin.addnewAdmin, {
+            timeout: 30000,
+        })
+    }
     addnewUserbtnElement() {
         return cy.contains(locator.vivacityAdmin.addnewUserbtn, {
             timeout: 30000,
@@ -334,6 +339,61 @@ export default class VivacityAdminElements {
     }
     exportElement() {
         return cy.contains(locator.vivacityAdmin.export, {
+            timeout: 30000,
+        })
+    }
+    searchtxtElement(){
+        return cy.get(locator.vivacityAdmin.searchtxt, {
+            timeout: 30000,
+        }) 
+    }
+    ticketnumberElement(){
+        return cy.get(locator.vivacityAdmin.ticketnumber, {
+            timeout: 30000,
+        }) 
+    }
+    repairtypeElement(){
+        return cy.get(locator.vivacityAdmin.repairtype, {
+            timeout: 30000,
+        }) 
+    }
+    failuretypeElement(){
+        return cy.get(locator.vivacityAdmin.failuretype, {
+            timeout: 30000,
+        }) 
+    }
+    searchboxElement(){
+        return cy.get(locator.vivacityAdmin.searchbox, {
+            timeout: 30000,
+        }) 
+    }
+    addFilterElement() {
+        return cy.get(locator.vivacityAdmin.addFilter, {
+            timeout: 30000,
+        })
+    }
+    clearFilterElement() {
+        return cy.contains(locator.vivacityAdmin.clearFilter, {
+            timeout: 30000,
+        })
+    }
+    fieldNameElement() {
+        return cy.get(locator.vivacityAdmin.fieldName, {
+            timeout: 30000,
+        })
+    }
+    fieldOpElement() {
+        return cy.get(locator.vivacityAdmin.fieldOp, {
+            timeout: 30000,
+        })
+    }
+    applyElement() {
+        return cy.get(locator.vivacityAdmin.apply, {
+            timeout: 30000,
+        })
+    }
+    fieldValueElement() {
+        return cy.get(locator.vivacityAdmin.fieldValue, {
             timeout: 30000,
         })
     }

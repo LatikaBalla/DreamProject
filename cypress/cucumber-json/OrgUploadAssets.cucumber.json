@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 6061000000
+              "duration": 4687000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 11298000000
+              "duration": 9872000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9073000000
+              "duration": 9083000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 84000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on OrgUploadAssets Tab",
             "result": {
               "status": "passed",
-              "duration": 1113000000
+              "duration": 1014000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of OrgUploadAssets Page",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 19000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Filters of OrgUploadAssets should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 11000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Table for OrgUploadAssets should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 12000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click More filter select- Description in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 989000000
+              "duration": 1307000000
             }
           },
           {
@@ -113,27 +113,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 69000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "Click More filter select- Acquire Location in search box and Verify the Result",
-            "result": {
-              "status": "failed",
-              "duration": 30603000000,
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[name='fieldValue']`, but never found it.\n    at OrgUploadAssetsElements.fieldValueElement (cypress/integration/PageObject/PageElements/OrgUploadAssetsElements.js:120:18)\n    at OrgUploadAssetsActions.selectFilterAcquireLocation (cypress/integration/PageObject/PageActions/OrgUploadAssetsActions.js:134:12)\n    at Context.eval (cypress/integration/OrgUploadAssets/OrgUploadAssets.spec.js:107:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "skipped"
+              "duration": 84000000
             }
           },
           {
@@ -142,7 +122,8 @@
             "line": 21,
             "name": "I should click on Add Asset",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 138000000
             }
           },
           {
@@ -151,7 +132,8 @@
             "line": 22,
             "name": "Enter title, full name location and tag",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 711000000
             }
           },
           {
@@ -160,7 +142,8 @@
             "line": 23,
             "name": "Enter note, Type and description",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 668000000
             }
           },
           {
@@ -169,7 +152,8 @@
             "line": 24,
             "name": "Upload the image file",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 592000000
             }
           },
           {
@@ -178,7 +162,8 @@
             "line": 25,
             "name": "Click on save button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 81000000
             }
           },
           {
@@ -187,7 +172,8 @@
             "line": 26,
             "name": "Verify the asset details added in table",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 437000000
             }
           },
           {
@@ -196,7 +182,8 @@
             "line": 27,
             "name": "Enter the title in search box",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3227000000
             }
           },
           {
@@ -205,7 +192,8 @@
             "line": 28,
             "name": "Verify the record in searching history",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 35000000
             }
           },
           {
@@ -214,7 +202,8 @@
             "line": 29,
             "name": "Click on Edit button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 136000000
             }
           },
           {
@@ -223,7 +212,8 @@
             "line": 30,
             "name": "I should edit title, full name location and tag",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 514000000
             }
           },
           {
@@ -232,7 +222,8 @@
             "line": 31,
             "name": "I should edit note, Type and description",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1804000000
             }
           },
           {
@@ -241,7 +232,8 @@
             "line": 32,
             "name": "ReUpload the image file",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 38000000
             }
           },
           {
@@ -250,7 +242,8 @@
             "line": 33,
             "name": "Click on save button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 87000000
             }
           },
           {
@@ -259,7 +252,8 @@
             "line": 34,
             "name": "Verify the Record has been updated Meassage",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 634000000
             }
           },
           {
@@ -268,7 +262,8 @@
             "line": 35,
             "name": "Click on Delete button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 136000000
             }
           },
           {
@@ -277,7 +272,8 @@
             "line": 36,
             "name": "Click on Confirm Delete button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 80000000
             }
           },
           {
@@ -286,7 +282,8 @@
             "line": 37,
             "name": "Verify the record is deleted successfully",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2032000000
             }
           }
         ]

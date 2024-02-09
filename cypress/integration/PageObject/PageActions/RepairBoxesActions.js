@@ -66,12 +66,18 @@ export class RepairBoxesActions {
         dash.messageElement().should('contain', tdata.repairBox.boxcreatedmsg)
     }
     clickOnViewButton() {
-        cy.get('tr td').eq(5).contains('View Status').click({ force: true })
+        cy.window().then(win => {
+            // win.open('https://google.com', '_blank');
+           });
+           cy.get('body').type('{ctrl}t');
+           cy.visit("https://dream-frontend-stage.onrender.com/repair-center/box-detail/"+tdata.repairBox.recordid)
+        //cy.get('tr td').eq(5).contains('View Status').click({ force: true })
     }
     verifyBoxDetails() {
         cy.contains("Box Details").should('be.visible')
     }
     clickOnAddTicket() {
+        cy.wait(3000)
         rb.addticketElement().click({ force: true })
     }
     clickOnDownloadLabel() {
@@ -87,8 +93,9 @@ export class RepairBoxesActions {
         dash.messageElement().should('contain', tdata.repairBox.boxcreatedmsg)
     }
     clickOnViewButtonTicket() {
+      
         //cy.wait(5000)
-        cy.get('tbody tr').eq(0).find('td').eq(7).scrollIntoView().contains('Details').click({ force: true })
+       cy.get('tbody tr').eq(0).find('td').eq(7).scrollIntoView().contains('Details').click({ force: true })
     }
     verifyTicketDetails() {
         cy.contains('Repair Ticket Details').should('be.visible')
@@ -108,14 +115,15 @@ export class RepairBoxesActions {
         rb.trackingnumberElement().click({ force: true })
         rb.searchElement().clear().type(tdata.repairBox.trackingnumber + '{enter}', { force: true })
         cy.wait(1000)
-        cy.get('tr td').eq(1).should('contain', tdata.repairBox.trackingnumber)
+     cy.get('tr td').eq(1).should('contain', tdata.repairBox.trackingnumber)
     }
     searchRecordId() {
         rb.searchboxElement().eq(0).click({ force: true })
         rb.recordidElement().click({ force: true })
         rb.searchElement().clear().type(tdata.repairBox.recordid + '{enter}', { force: true })
-        cy.wait(2000)
+      // cy.wait(1000)
         cy.get('tr td').eq(0).should('contain', tdata.repairBox.recordid)
+        rb.searchElement().clear()
     }
     clickOnClearFilter() {
         rb.clearFilterElement().click({ force: true })

@@ -15,11 +15,11 @@ Feature:InHouseTickets Page Functionality
     And Verify the Title of InHouseTickets Page
     Then Filters of InHouseTickets should be visible
     And Table for InHouseTickets should be visible
-    # Then I should click on Create new button
-    # And Select failure Type, Serial Device, Technician, issue and Building
-    # Then Enter the Chromebook issue
-    # And Click on save button
-    # Then Verify New Ticket is added
+    Then I should click on Create new button
+    And Select failure Type, Serial Device, Technician, issue and Building
+    Then Enter the Chromebook issue
+    And Click on save button
+    Then Verify New Ticket is added
     And Click on Download Export button
     And Enter the Search - Record Id in search box and Verify the Result
     Then Enter the Search - Ticket Number in search box and Verify the Result

@@ -26,6 +26,28 @@ Then('User enters invalid credentials', () => {
     log.enterWrongUsername()
     log.enterWrongPassword()
 })
+Then ('User enters invalid credentials for lock',()=>{
+    log.enterWrongUsernameLock()
+    log.enterWrongPassword()
+})
+Then ('Verify error lock account message should be displayed',()=>{
+    log.verifyLockedacc()
+})
 Then('Verify error message should be displayed', () => {
     log.verifyErrorMessage()
+})
+Then('User enter the wrong emailid', () => {
+    log.enterWrongUsername()
+})
+Then('Verify recovery password to email has been send message should be displayed', () => {
+    log.verifyMailforgetpass()
+})
+Then('User enter the valid emailid', () => {
+    log.enterUsername()
+})
+And('Clicks the ForgetPassword button', () => {
+    log.clickOnForgetPassword()
+})
+Then('Verify recovery email has been send message should be displayed', () => {
+    log.verifyErrorforgetpass()
 })

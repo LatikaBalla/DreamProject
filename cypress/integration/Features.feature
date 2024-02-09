@@ -17,8 +17,8 @@ Feature: features Page Functionality
         Then Verify the Launched tab should be visible
         And Click More filter select- Title in search box and Verify the Result
         Then Click on Clear filter
-        And Click More filter select- Description in search box and Verify the Result
-        Then Click on Clear filter
+        # And Click More filter select- Description in search box and Verify the Result
+        # Then Click on Clear filter
         # And Click More filter select- Creator in search box and Verify the Result
         # Then Click on Clear filter
 

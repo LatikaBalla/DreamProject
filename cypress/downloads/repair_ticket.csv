@@ -1,0 +1,11 @@
+record_id,ticket_number,repair_type,serial_number,repair_device,asset_tag,repair_status,repair_box,created_by,last_modified_date
+45326,V0045326,In House,VIVATEST47Test,Chromebook,,Pending Repair Box,,demo_adminsuper@vivacitytech.com,2024-02-08T17:05:09.000Z
+45325,V0045325,In House,VIVATEST47Test,Chromebook,,Pending Repair Box,,demo_adminsuper@vivacitytech.com,2024-02-08T17:04:39.000Z
+45324,V0045324,In House,VIVATEST47Test,Chromebook,,Pending Repair Box,,demo_adminsuper@vivacitytech.com,2024-02-08T17:01:13.000Z
+45323,V0045323,In House,VIVATEST47Test,Chromebook,,Pending Repair Box,,demo_adminsuper@vivacitytech.com,2024-02-08T17:00:19.000Z
+45322,V0045322,In House,VIVATEST47Test,Chromebook,,Pending Repair Box,,demo_adminsuper@vivacitytech.com,2024-02-08T16:57:15.000Z
+45321,V0045321,In House,VIVATEST47Test,Chromebook,,Pending Repair Box,,demo_adminsuper@vivacitytech.com,2024-02-08T16:54:21.000Z
+45320,V0045320,In House,VIVATEST47Test,Chromebook,,Pending Repair Box,,demo_adminsuper@vivacitytech.com,2024-02-08T16:30:49.000Z
+42826,V0042826,In House,VIVATEST53Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,On Hold,,Alejandra Duque,2024-01-25T19:45:51.000Z
+42825,V0042825,In House,VIVATEST53Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Quality Assurance,,Alejandra Duque,2024-01-30T20:20:02.349Z
+42824,V0042824,In House,VIVATEST53Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Intake,,Alejandra Duque,2024-01-25T19:45:50.000Z
