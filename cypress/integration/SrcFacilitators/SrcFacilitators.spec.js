@@ -34,6 +34,9 @@ Then('Filters of SrcFacilitators should be visible', () => {
 And('Table for SrcFacilitators should be visible', () => {
     sf.tableVisible()
 })
+And('Click on Download Export button', () => {
+    sf.clickOnExport()
+})
 And ('Click on view button',()=>{
     sf.clickOnViewButton()
 }) 
@@ -52,20 +55,7 @@ And('Enter the Search - Status in search box and Verify the Result', () => {
 Then('Enter the Search - Phone in search box and Verify the Result', () => {
     sf.searchPhone()
 })
-// Then('Click on More filters', () => {
-//     sf.clickOnMoreFilter()
-// })
-// And('Select Field name and Field operation and Enter the Search value', () => {
-//     sf.enterFieldName()
-//     sf.enterFieldOperation()
-//     sf.enterSearchValue()
-// })
-// Then('Click on Apply Button', () => {
-//     sf.clickOnApply()
-// })
-// And('Verify the Results in the table', () => {
-//     sf.verifyResultFilter()
-// })
+
 Then('Click on Clear filter', () => {
     sf.clickOnClearFilter()
 })

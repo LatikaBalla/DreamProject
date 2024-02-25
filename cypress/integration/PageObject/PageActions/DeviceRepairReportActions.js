@@ -95,7 +95,7 @@ export class DeviceRepairReportActions {
         dev.searchdropdownElement().eq(0).click({ force: true })
         dev.repairboxElement().click({ force: true })
         dev.searchElement().clear().type(tdata.deviceRepairReport.repairbox + '{enter}', { force: true })
-        cy.wait(4000)
+       // cy.wait(4000)
         cy.get('tr td').eq(6).should('contain', tdata.deviceRepairReport.repairbox, { force: true })
     }
     clickOnMoreFilter() {

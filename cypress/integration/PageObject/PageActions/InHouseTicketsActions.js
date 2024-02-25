@@ -6,10 +6,10 @@ const InHouseRepairCenterElements = require("../PageElements/InHouseRepairCenter
 const tdata = require("../../../testData.json");
 export class InHouseTicketsActions {
     constructor() {
-        globalThis.mdev = new Repair360Elements();
+        globalThis.rep = new Repair360Elements();
         globalThis.dash = new DashboardElements();
         globalThis.iht = new InHouseTicketsElements();
-        globalThis.mf1 = new InHouseRepairCenterElements()
+        globalThis.ihrc = new InHouseRepairCenterElements()
     }
     closeTermsOfServiceWindow() {
         dash.termsElement().click({ force: true })
@@ -18,10 +18,10 @@ export class InHouseTicketsActions {
         dash.repair360Element().click({ force: true })
     }
     clickOnInHouseRepairCenterTab() {
-        mdev.inhousercElement().click({ force: true })
+       rep.inhousercElement().click({ force: true })
     }
     clickOnInHouseTicketsTab() {
-        mf1.inhouseTicketsElement().click({ force: true })
+        ihrc.inhouseTicketsElement().click({ force: true })
     }
     verifyTitle() {
         iht.titleElement().should('be.visible')
@@ -77,7 +77,7 @@ export class InHouseTicketsActions {
         iht.searchboxElement().eq(0).click({ force: true })
         iht.recordidElement().click({ force: true })
         iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.recordid + '{enter}', { force: true })
-       // cy.wait(5000)
+        cy.wait(1000)
         cy.get('tr td').eq(0).should('contain', tdata.inHouseTicket.recordid)
     }
     searchTicketNumber() {
@@ -89,17 +89,17 @@ export class InHouseTicketsActions {
     searchRepairType() {
         iht.searchboxElement().eq(0).click({ force: true })
         iht.repairtypeElement().click({ force: true })
-        iht.searchElement().clear().type(tdata.inHouseTicket.repairtype + '{enter}', { force: true })
+        iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.repairtype + '{enter}', { force: true })
         cy.wait(1000)
         cy.get('tr td').eq(2).should('contain', tdata.inHouseTicket.repairtype)
     }
     searchRepairStatus() {
         iht.searchboxElement().eq(0).click({ force: true })
         iht.repairstatusElement().click({ force: true })
-        iht.searchElement().clear().type(tdata.inHouseTicket.repairstatus + '{enter}', { force: true })
+        iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.repairstatus + '{enter}', { force: true })
         cy.wait(1000)
         cy.get('tr td').eq(5).should('contain', tdata.inHouseTicket.repairstatus, { force: true })
-        iht.searchElement().clear()
+        iht.searchElement().clear({ force: true })
     }
     clickOnMoreFilter() {
         iht.addFilterElement().click({ force: true })

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 4481000000
+              "duration": 2835000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 13397000000
+              "duration": 23755000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9133000000
+              "duration": 9077000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Users page",
             "result": {
               "status": "passed",
-              "duration": 173000000
+              "duration": 73000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I should be redirected to the Users page",
             "result": {
               "status": "passed",
-              "duration": 24000000
+              "duration": 7000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Filters of Users unit should be visible",
             "result": {
               "status": "passed",
-              "duration": 1462000000
+              "duration": 935000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Table for Users unit should be visible",
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 7000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "I should click on Add New student",
             "result": {
               "status": "passed",
-              "duration": 553000000
+              "duration": 110000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Enter full name, title and Email",
             "result": {
               "status": "passed",
-              "duration": 6510000000
+              "duration": 1379000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Enter Phone and Cell Number",
             "result": {
               "status": "passed",
-              "duration": 1517000000
+              "duration": 791000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 119000000
+              "duration": 64000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Verify the student added in table",
             "result": {
               "status": "passed",
-              "duration": 1919000000
+              "duration": 1546000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on Edit button",
             "result": {
               "status": "passed",
-              "duration": 1473000000
+              "duration": 947000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "I should edit title, full name",
             "result": {
               "status": "passed",
-              "duration": 2083000000
+              "duration": 1299000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "I should edit Phone and Cell Number and user role",
             "result": {
               "status": "passed",
-              "duration": 1773000000
+              "duration": 889000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "I edit User Status to inactive",
             "result": {
               "status": "passed",
-              "duration": 198000000
+              "duration": 122000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "I edit Building",
             "result": {
               "status": "passed",
-              "duration": 326000000
+              "duration": 130000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on Submit button",
             "result": {
               "status": "passed",
-              "duration": 366000000
+              "duration": 101000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click on Delete button",
             "result": {
               "status": "passed",
-              "duration": 1403000000
+              "duration": 940000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on Confirm Delete button",
             "result": {
               "status": "passed",
-              "duration": 106000000
+              "duration": 64000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on Download button",
             "result": {
               "status": "passed",
-              "duration": 147000000
+              "duration": 79000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 5173000000
+              "duration": 1012000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Enter the Search - Full Name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3440000000
+              "duration": 614000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Enter the Search - Email in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2784000000
+              "duration": 976000000
             }
           },
           {
@@ -262,8 +262,9 @@
             "line": 36,
             "name": "Enter the Search - Phone in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2156000000
+              "status": "failed",
+              "duration": 30317000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[data-value='phone']`, but never found it.\n    at UsersElements.phonedropElement (cypress/integration/PageObject/PageElements/UsersElements.js:140:18)\n    at UsersActions.searchPhone (cypress/integration/PageObject/PageActions/UsersActions.js:156:13)\n    at Context.eval (cypress/integration/Users/Users.spec.js:118:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -271,119 +272,6 @@
             "keyword": "And ",
             "line": 37,
             "name": "Enter the Search - CellNumber in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 2620000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 39,
-            "name": "Click More filter select- Record Id in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1324000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 40,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 189000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 41,
-            "name": "Click More filter select- Full name in search box and Verify the Result",
-            "result": {
-              "status": "failed",
-              "duration": 6127000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<td.MuiTableCell-root.MuiTableCell-alignCenter.MuiTableCell-sizeMedium.css-42rti1>' not to contain 'Demo Testing User'\n    at UsersActions.selectFilterFullname (cypress/integration/PageObject/PageActions/UsersActions.js:189:30)\n    at Context.eval (cypress/integration/Users/Users.spec.js:135:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 42,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 43,
-            "name": "Click More filter select- Eamil in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 44,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 45,
-            "name": "Click More filter select- Cell Number in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 46,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 47,
-            "name": "Click More filter select- Role Name in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 48,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 49,
-            "name": "Click More filter select- User status in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 50,
-            "name": "Click on Clear filter",
             "result": {
               "status": "skipped"
             }

@@ -30,7 +30,7 @@ Feature: Dashboard Page Functionality
         And Enter Billing Address and select from dropdown
         Then Click on checkbox Same as Shipping Address
         And Click on save button
-         Then Verify the builing details added in table
+        Then Verify the builing details added in table
         And Click on My Account Details Tab
         Then I should click on Add New button
         And Verify the tilte of Add New Contact page
@@ -50,6 +50,11 @@ Feature: Dashboard Page Functionality
         Then Click on Confirm Delete button
         And Verify the record is deleted successfully
         And Click on Buildings Tab
+         And Click on Edit Icon of builing
+        And I should edit Building Name,Phone and Extension of builing
+        Then I should edit Select Default building
+        Then Click on update button of builing
+        And Verify the Record has been updated Meassage of builing
         And Click on Delete Icon of building
         Then Click on Confirm Delete button of building
         And Verify the record is deleted successfully of building

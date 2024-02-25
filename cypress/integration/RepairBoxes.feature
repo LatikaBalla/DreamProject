@@ -12,9 +12,14 @@ Feature: RepairBoxes Page Functionality
 
   Scenario:  Visiblity check,Create New Box, add ticket and  view details of box with create aonther ticket
     And Verify the Title of RepairBoxes Page
-    # And Outbound and Inbound Shipments for RepairBoxes should be visible
-    # And Click on download label
-    # Then Verify label downloaded successfully
+     Then I should click on create new Box
+    Then Enter weight, height, depth and width
+    And Select Pick-up site
+    Then Check the need shipping box
+    And Click on Create box button
+    Then Select Ticket from dropdownlist
+    And Click on Finish button
+    Then Verify new box is added in table
     # And Click More filter select- Record Id in search box and Verify the Result
     # Then Click on Clear filter
     # And Click More filter select- Tracking Number From in search box and Verify the Result
@@ -25,17 +30,9 @@ Feature: RepairBoxes Page Functionality
     # Then Click on Clear filter
     # #  Then Click More filter select- Label From in search box and Verify the Result
     # # Then Click on Clear filter
- 
     And Enter the Search - Tracking Number in search box and Verify the Result
     Then Enter the Search - Record Id in search box and Verify the Result
-  Then I should click on create new Box
-    Then Enter weight, height, depth and width
-    And Select Pick-up site
-    Then Check the need shipping box
-    And Click on Create box button
-    Then Select Ticket from dropdownlist
-    And Click on Finish button
-    Then Verify new box is added in table
+        And Click on Export Button 
     And Click on view button
     Then Verify the Details new box
     And Add another ticket in the same box

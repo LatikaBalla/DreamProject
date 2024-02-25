@@ -30,34 +30,33 @@ export class MyFleetActions {
         mf.tableElement().should('be.visible')
     }
     enterSearchValue() {
-        // cy.get("[placeholder='Search by table field values']").type(tdata.myFleet.search,{force:true})
         mf.searchElement().type(tdata.myFleet.search, { force: true })
     }
     verifySearchResult() {
-        cy.wait(3000)
         cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.myFleet.search, { force: true })
     }
     clickOnMoreFiltersButton() {
-        //  cy.get('[data-testid="CloseIcon"]').eq(0).click({force:true})
-        // cy.get('[data-testid="ArrowBackIosNewIcon"]').click({ force: true })
         mf.morefiltersElement().scrollIntoView().click({ force: true })
     }
-    // clickOnAddFilterGroup() {
+    clickOnEditButton() {
+         cy.wait(3000)
+        cy.get('tr td').eq(8).contains('Edit').click({ force: true })
+    }
+    editInformation() {
+        mf.assetTagElement().clear().type(tdata.myFleet.serialnoEdit)
+        mf.studentinfoElement().click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains('Test').click({ force: true })
+        // cy.get(tdata.myFleet.studentidEdit).click()
+        mf.buildingElement().click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains('Building_T1').click({ force: true })
+    }
+    clickOnUpdateButton() {
+        mf.updatebtnElement().click({ froce: true })
+    }
+    verifyUdated() {
+        dash.messageElement().should('contain', 'Device Update')
 
-    //     mf.addfilterGroupElement().click()
-    // }
-    // selectFieldName() {
-    //     mf.fieldnameElement().select('Serial Number')
-    // }
-    // selectfieldOperation() {
-    //     mf.fieldoperationElement().select("Contains")
-    // }
-    // enterFieldValueSearchBox() {
-    //     mf.fieldvalueElement().type(tdata.myFleet.serialno)
-    // }
-    // clickOnApplyButton() {
-    //     mf.applybtnElement().click({ force: true })
-    // }
+    }
     clickOnClearFiltersButton() {
         mf.clearfilterElement().click({ force: true })
     }

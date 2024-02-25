@@ -86,25 +86,6 @@ Then('Enter title, full name and valid Email for Search', () => {
     acc.enterFullnameSearch()
     acc.enterEmail()
 })
-// Then('Click on More filters', () => {
-//     acc.clickOnMoreFiltersButton()
-// })
-// And('Click on Add Filters Group', () => {
-//     acc.clickOnAddFilterGroup()
-// })
-// Then('Select Field name and Field operation', () => {
-//     acc.selectFieldName()
-//     acc.selectfieldOperation()
-// })
-// And('Enter the Search value in search box', () => {
-//     acc.enterFieldValueSearchBox()
-// })
-// Then('Click on Apply Button', () => {
-//     acc.clickOnApplyButton()
-// })
-// And('Verify the Results in the table', () => {
-//     acc.verifyResultAfterFilter()
-// })
 Then('Click on Clear filter', () => {
     acc.clickOnClearFiltersButton()
 })
@@ -130,18 +111,15 @@ And('Click More filter select- Eamil in search box and Verify the Result', () =>
     acc.clickOnMoreFilter()
     acc.selectFilterEmail()
 })
-
-And ('Click More filter select- Record Id in search box and Verify the Result', () => {
+And('Click More filter select- Record Id in search box and Verify the Result', () => {
     acc.clickOnMoreFilter()
     acc.selectFilterRecordId()
 })
-
-  And ('Click More filter select- User Role in search box and Verify the Result', () => {
+And('Click More filter select- User Role in search box and Verify the Result', () => {
     acc.clickOnMoreFilter()
     acc.selectFilterUserRole()
 })
-
-  And ('Click More filter select- User Status in search box and Verify the Result', () => {
+And('Click More filter select- User Status in search box and Verify the Result', () => {
     acc.clickOnMoreFilter()
     acc.selectFilterUserStatus()
 })
@@ -159,6 +137,24 @@ And('Enter the Search - Title in search box and Verify the Result', () => {
 })
 Then('Enter the Search - Phone in search box and Verify the Result', () => {
     acc.searchPhone()
+})
+Then('Account Details -Aaccount Name and no should be visible', () => {
+    acc.AccountDetailsVisible()
+})
+And('Account Manager,Billing Address and Shipping Address should be visible', () => {
+    acc.sectionManaddressVisible()
+})
+And('Click on Export To CSV', () => {
+    acc.clickOnExporttoCSV()
+})
+Then('Click on Bulk Upload button', () => {
+    acc.clickOnBulkUpload()
+})
+And('Click on Attach CSV file and Click on submit button', () => {
+    acc.attachCsvfile()
+})
+Then('Verify the Uploaded successfully', () => {
+    acc.verifyuploaded()
 })
 
 

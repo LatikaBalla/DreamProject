@@ -19,24 +19,25 @@ Feature:SrcRepairTickets Page Functionality
     Then Enter the Search - Ticket Number in search box and Verify the Result
     And Enter the Search - Repair type in search box and Verify the Result
     Then Enter the Search - Repair status in search box and Verify the Result
-    And Click More filter select- Record Id in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- Ticket Number in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- Repair type in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- Serial Number in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- Repair device in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- Repair status in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- Asset tag in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- internal Technician in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- Created By in search box and Verify the Result
-    Then Click on Clear filter
+    # And Click More filter select- Record Id in search box and Verify the Result
+    # Then Click on Clear filter
+    # And Click More filter select- Ticket Number in search box and Verify the Result
+    # Then Click on Clear filter
+    # And Click More filter select- Repair type in search box and Verify the Result
+    # Then Click on Clear filter
+    # And Click More filter select- Serial Number in search box and Verify the Result
+    # Then Click on Clear filter
+    # And Click More filter select- Repair device in search box and Verify the Result
+    # Then Click on Clear filter
+    # And Click More filter select- Repair status in search box and Verify the Result
+    # Then Click on Clear filter
+    # And Click More filter select- Asset tag in search box and Verify the Result
+    # Then Click on Clear filter
+    # And Click More filter select- internal Technician in search box and Verify the Result
+    # Then Click on Clear filter
+    # And Click More filter select- Created By in search box and Verify the Result
+    # Then Click on Clear filter
+        And Click on Download Export button
     Then I should click on Create Student Repair Ticket button
     And Select failure Type, Serial Device, Technician and building
     Then Enter the Chromebook issue

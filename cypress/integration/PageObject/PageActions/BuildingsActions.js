@@ -47,7 +47,7 @@ export class BuildingsActions {
     }
     selectDefaultBuilding() {
         build.defaultbuildingElement().click({ force: true })
-        cy.get(tdata.buildings.defaultbuilding).click({ force: true })
+       cy.get(tdata.buildings.defaultbuilding).click({ force: true })
     }
     enterBillingAddress() {
         build.baddressElement().type(tdata.buildings.address, { force: true })
@@ -83,7 +83,7 @@ export class BuildingsActions {
     }
     editselectDefaultBuilding() {
         build.editdefaultbuildingElement().click({ force: true })
-        cy.get(tdata.editbuildings.defaultbuilding).click({ force: true })
+       // cy.get(tdata.editbuildings.defaultbuilding).click({ force: true })
     }
     edituploadBuildingImage() {
         build.editbuildingimgElement().selectFile('cypress/fixtures/' + tdata.editbuildings.buildingimg, { force: true })
@@ -180,6 +180,17 @@ export class BuildingsActions {
     }
     clickOnExport() {
         build.exportElement().click({ force: true })
+    }
+    clickOnBulkUpload() {
+        cy.contains('Bulk Upload').click({ force: true })
+    }
+    attachCsvfile() {
+        cy.contains('Attach CSV file').click({ force: true })
+        build.uploadElement().attachFile(tdata.buildings.uploadfilename, { force: true })
+        cy.contains('Submit').click({ force: true })
+    }
+    verifyuploaded() {
+
     }
 }
 export default BuildingsActions 

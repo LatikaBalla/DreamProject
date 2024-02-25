@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3762000000
+              "duration": 46626000000
             }
           },
           {
@@ -32,8 +32,9 @@
             "line": 8,
             "name": "I should Sign In into the application",
             "result": {
-              "status": "passed",
-              "duration": 14882000000
+              "status": "failed",
+              "duration": 24331000000,
+              "error_message": "CypressError: Timed out retrying after 4000ms: The command was expected to run against origin `https://dream-vivacity.us.auth0.com` but the application is at origin `null`.\n\nThis commonly happens when you have either not navigated to the expected origin or have navigated away unexpectedly.\n\nUsing `cy.origin()` to wrap the commands run on `null` will likely fix this issue.\n\n`cy.origin('null', () => {`\n`  <commands targeting null go here>`\n`})`\n\nhttps://on.cypress.io/cy-visit-succeeded-but-commands-fail\n    at Context.eval (cypress/support/commands.js:30:7)\nFrom Your Spec Code:\n    at Context.eval (cypress/support/commands.js:30:7)"
             }
           },
           {
@@ -42,8 +43,7 @@
             "line": 9,
             "name": "Close the terms of service window",
             "result": {
-              "status": "passed",
-              "duration": 8083000000
+              "status": "skipped"
             }
           },
           {
@@ -52,8 +52,7 @@
             "line": 10,
             "name": "Click on Support page",
             "result": {
-              "status": "passed",
-              "duration": 1205000000
+              "status": "skipped"
             }
           },
           {
@@ -62,8 +61,7 @@
             "line": 13,
             "name": "Verify the Title of Support Page",
             "result": {
-              "status": "passed",
-              "duration": 819000000
+              "status": "skipped"
             }
           },
           {
@@ -72,8 +70,7 @@
             "line": 14,
             "name": "Enter Full name",
             "result": {
-              "status": "passed",
-              "duration": 551000000
+              "status": "skipped"
             }
           },
           {
@@ -82,8 +79,7 @@
             "line": 15,
             "name": "Select task Priority and Topic",
             "result": {
-              "status": "passed",
-              "duration": 368000000
+              "status": "skipped"
             }
           },
           {
@@ -92,8 +88,7 @@
             "line": 16,
             "name": "Upload the image and enter Notes",
             "result": {
-              "status": "passed",
-              "duration": 988000000
+              "status": "skipped"
             }
           },
           {
@@ -102,8 +97,7 @@
             "line": 17,
             "name": "Click on submit button",
             "result": {
-              "status": "passed",
-              "duration": 75000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +106,7 @@
             "line": 18,
             "name": "Verify the Send Feedback successfully",
             "result": {
-              "status": "passed",
-              "duration": 1286000000
+              "status": "skipped"
             }
           }
         ]

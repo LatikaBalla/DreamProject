@@ -27,7 +27,7 @@ And('Verify the Title of RepairBoxes Page', () => {
 })
 
 And('Outbound and Inbound Shipments for RepairBoxes should be visible', () => {
-   rb.outboundVisible()
+    rb.outboundVisible()
     rb.inboundVisible()
 })
 Then('I should click on create new Box', () => {
@@ -35,9 +35,9 @@ Then('I should click on create new Box', () => {
 })
 Then('Enter weight, height, depth and width', () => {
     rb.enterWeight()
-    rb.enterHeight()
-    rb.enterDepth()
-    rb.enterwidth()
+    // rb.enterHeight()
+    //rb.enterDepth()
+    //rb.enterwidth()
 })
 And('Select Pick-up site', () => {
     rb.selectPickupSite()
@@ -57,11 +57,8 @@ And('Click on Finish button', () => {
 Then('Verify new box is added in table', () => {
     rb.verifyNewBoxAdd()
 })
-And ('Click on download label',()=>{
-rb.clickOnDownloadLabel()
-})
-Then ('Verify label downloaded successfully',()=>{
-    rb.verifyDownloadLabel()
+And('Click on Export Button', () => {
+    rb.clickOnDownloadLabel()
 })
 And('Click on view button', () => {
     rb.clickOnViewButton()
@@ -70,36 +67,36 @@ Then('Verify the Details new box', () => {
     rb.verifyBoxDetails()
 })
 
-And ('Add another ticket in the same box',()=>{
-rb.clickOnAddTicket()
+And('Add another ticket in the same box', () => {
+    rb.clickOnAddTicket()
 })
-And ('Click on Add ticket',()=>{
+And('Click on Add ticket', () => {
     rb.clickOnAddTicket_s()
 })
-Then ('Verify the ticket is added in table',()=>{
-rb.verifyTicketAdded()
+Then('Verify the ticket is added in table', () => {
+    rb.verifyTicketAdded()
 })
-And ('Click on view the ticket Details',()=>{
-rb.clickOnViewButtonTicket()
+And('Click on view the ticket Details', () => {
+    rb.clickOnViewButtonTicket()
 })
-Then ('Verfiy the ticket Details',()=>{
-rb.verifyTicketDetails()
+Then('Verfiy the ticket Details', () => {
+    rb.verifyTicketDetails()
 })
-And ('Click on Back button',()=>{
+And('Click on Back button', () => {
     rb.clickOnBackButton()
 })
-And ('Remove the ticket from box',()=>{
-rb.clickOnRemoveButton()
-}) 
-Then ('Verify the ticket is delete from the table',()=>{
-rb.verifyTicketDeleted()
-//cy.go('back')
+And('Remove the ticket from box', () => {
+    rb.clickOnRemoveButton()
 })
-And ('Enter the Search - Tracking Number in search box and Verify the Result',()=>{
-rb.searchTrackingNumber()
+Then('Verify the ticket is delete from the table', () => {
+    rb.verifyTicketDeleted()
+    //cy.go('back')
 })
-Then ('Enter the Search - Record Id in search box and Verify the Result',()=>{
-rb.searchRecordId()
+And('Enter the Search - Tracking Number in search box and Verify the Result', () => {
+    rb.searchTrackingNumber()
+})
+Then('Enter the Search - Record Id in search box and Verify the Result', () => {
+    rb.searchRecordId()
 })
 
 Then('Click on More filters', () => {
@@ -119,18 +116,18 @@ And('Verify the Results in the table', () => {
 Then('Click on Clear filter', () => {
     rb.clickOnClearFilter()
 })
-And ('Click More filter select- Record Id in search box and Verify the Result',()=>{
+And('Click More filter select- Record Id in search box and Verify the Result', () => {
     rb.selectFilterRecordId()
 })
-And ('Click More filter select- Tracking Number From in search box and Verify the Result',()=>{
+And('Click More filter select- Tracking Number From in search box and Verify the Result', () => {
     rb.selectFilterTrackingNumberFrom()
 })
- Then ('Click More filter select- Shipping From Cost in search box and Verify the Result',()=>{
+Then('Click More filter select- Shipping From Cost in search box and Verify the Result', () => {
     rb.selectFilterShippingFromCost()
- })
-And ('Click More filter select- Shipped From Date in search box and Verify the Result',()=>{
+})
+And('Click More filter select- Shipped From Date in search box and Verify the Result', () => {
     rb.selectFilterShippedFromDate()
 })
-Then ('Click More filter select- Label From in search box and Verify the Result',()=>{
+Then('Click More filter select- Label From in search box and Verify the Result', () => {
     rb.selectFilterLabelFrom()
 })

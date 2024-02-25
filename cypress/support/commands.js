@@ -25,16 +25,7 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 import 'cypress-file-upload';
 Cypress.Commands.add("AdminLogin", () => {
-
-  // cy.wait(1000)
-  // cy.get('[title="Widget containing a Cloudflare security challenge"]').within(($iframe)=>{
-  //        const iframe=$iframe.contents().find('Verify you are human')
-  //        cy.wrap(iframe).click({force:true})
-  // })
-  // cy.get('[type="checkbox"]').click()
-
- 
-// cy.origin('https://dream.vivacitytech.com', () => {
+  //cy.get('#cf-chl-widget-osivq').click({ force: true })
   cy.get('[href="/login"]').click({ force: true })
   //cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
     cy.origin('https://dream-vivacity.us.auth0.com/', () => {
@@ -76,5 +67,34 @@ Cypress.Commands.add("RepaireTechLogin", () => {
   })
 })
 
+Cypress.Commands.add("FacilitatorLogin", () => {
+
+  cy.get('[href="/login"]').click({ force: true })
+  //cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
+      cy.origin('https://dream-vivacity.us.auth0.com/', () => {
+    Cypress.on("uncaught:exception", () => {
+      return false;
+    });
+    cy.get('#input-box-email').type('demo_repairFacilitator@vivacitytech.com')
+    cy.get('#input-box-password').type(Cypress.env('PASSWORD'))
+    cy.get('.submit-text').click()
+    cy.wait(1000)
+  })
+})
+
+Cypress.Commands.add("StudentLogin", () => {
+
+  cy.get('[href="/login"]').click({ force: true })
+  //cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
+      cy.origin('https://dream-vivacity.us.auth0.com/', () => {
+    Cypress.on("uncaught:exception", () => {
+      return false;
+    });
+    cy.get('#input-box-email').type('demo_studentNormal@vivacitytech.com')
+    cy.get('#input-box-password').type(Cypress.env('PASSWORD'))
+    cy.get('.submit-text').click()
+    cy.wait(1000)
+  })
+})
 
 

@@ -24,7 +24,7 @@
     },
     "accountDetails": {
         "titleAccount": "My Account Details",
-        "filters": ".css-1yuhvjn",
+        "filters": ".css-1tx38fa",
         "accountdetials": "[data-testid='tabacc-1']",
         "buildings": "[data-testid='tabacc-2']",
         "tableaccount": ".MuiTable-root",
@@ -36,8 +36,8 @@
         "sliderMenu": ".css-htxx1b",
         "terms": ".MuiToolbar-root > .MuiButton-root",
         "search": "[data-testid='txtSearchData']",
-        "accountname": "Vivacity Demo Account",
-        "accountno": "1",
+        "accountname": "Southern Columbia Area School District",
+        "accountno": "19948",
         "credit": "$100.00",
         "billingaddress": "Billing Address",
         "shippingaddress": "Shipping Address",
@@ -55,7 +55,8 @@
         "status": "[data-value='status']",
         "title": "[data-value='title']",
         "phoneNo": "[data-value='cell_number']",
-        "recordid": "[data-value='record_id']"
+        "recordid": "[data-value='record_id']",
+        "upload": "input[type='file']"
     },
     "newaccount": {
         "titlenew": "#title",
@@ -100,7 +101,8 @@
         "shippingaddress": "[data-value='building_shipping_address']",
         "phonedrop": "[data-value='phone']",
         "searchbox": "[role='combobox']",
-        "export": "Export"
+        "export": "Export",
+        "upload": "input[type='file']"
     },
     "newbuilding": {
         "buildingname": "#building_name",
@@ -163,7 +165,7 @@
     "deviceRepairReport": {
         "title": "Device Repair History",
         "clearbtn": "Clear",
-        "filters": ".css-1yuhvjn",
+        "filters": ".css-1tx38fa",
         "searchdropdown": "[role='combobox']",
         "search": "[data-testid='txtSearchData']",
         "table": ".css-1owb465",
@@ -235,12 +237,15 @@
     },
     "myFleet": {
         "title": "Manage Device Fleet",
-        "filters": ".css-k008qs",
-        "table": ".css-1xz8d5v",
+        "filters": ".css-17bzc13",
+        "table": ".css-14cyhk6",
         "addDevice": " Add Device ",
         "serialNo": "#serial_number",
         "deviceid": "#device",
         "assetTag": "#asset_tag",
+        "building":"#Building",
+        "updatebtn":"[form='device-form']",
+        "studentinfo":"#Student",
         "studentid": "#mui-component-select-student",
         "lonarstatus": "#mui-component-select-loaner_status",
         "devicestatus": "#mui-component-select-device_status",
@@ -341,7 +346,7 @@
     },
     "repairTickets": {
         "title": "Repair Tickets",
-        "filters": ".css-1yuhvjn",
+        "filters": ".css-1tx38fa",
         "table": ".css-1owb465",
         "createTicket": "Create New",
         "export": "Export",
@@ -455,7 +460,7 @@
     },
     "inhouseTickets": {
         "title": "In House Repair Tickets",
-        "filters": ".css-1yuhvjn",
+        "filters": ".css-1tx38fa",
         "table": ".css-1owb465",
         "view": "View",
         "createTicket": "Create New",
@@ -539,7 +544,7 @@
     },
     "srcRepairTickets": {
         "title": "SRC Repair Tickets",
-        "filters": ".css-1yuhvjn",
+        "filters": ".css-1tx38fa",
         "table": ".css-1owb465",
         "search": "[data-testid='txtSearchData']",
         "createTicket": "Create New",
@@ -548,6 +553,7 @@
         "technician": "#internal_technician",
         "serialdevice": "#device",
         "building": "#building",
+        "exportbtn": "Export",
         "chromebookissue": "#chromebook_issue",
         "issue": "#repair_issue",
         "savebtn": "Save",
@@ -586,10 +592,11 @@
     },
     "srcFacilitators": {
         "title": "SRC Facilitators",
-        "filters": ".css-1yuhvjn",
+        "filters": ".css-1tx38fa",
         "table": ".css-1owb465",
         "refreshbtn": "[data-testid='CachedIcon']",
         "view": "View",
+        "exportbtn": "Export",
         "detailsRole": " Faciliator ",
         "search": "[data-testid='txtSearchData']",
         "searchbox": "[role='combobox']",
@@ -606,13 +613,14 @@
     },
     "srcStudents": {
         "title": "SRC Students",
-        "filters": ".css-al6ceu",
+        "filters": ".css-1tx38fa",
         "table": ".css-1owb465",
         "addstudent": "Add New Student",
         "titlestudent": "#title",
         "fullname": "#full_name",
         "email": "#email",
         "phone": "#phone",
+        "exportbtn": "Export",
         "cellnumber": "#cell_number",
         "userstatus": "#mui-component-select-user_status",
         "vivanews": "#mui-component-select-vivacity_news",

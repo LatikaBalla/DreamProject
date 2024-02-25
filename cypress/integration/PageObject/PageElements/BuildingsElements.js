@@ -172,6 +172,10 @@ export default class BuildingsElements {
             timeout: 30000,
         });
     }
-
+    uploadElement(){
+        return cy.get(locator.buildings.upload, {
+            timeout: 30000,
+        })
+    }
 
 }

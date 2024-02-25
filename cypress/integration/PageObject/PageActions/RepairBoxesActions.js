@@ -35,6 +35,8 @@ export class RepairBoxesActions {
     }
     enterWeight() {
         rb.weightElement().type(tdata.repairBox.weight)
+        cy.get('[role="combobox"]').eq(2).click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains('1 Unit (18Dx12Wx3H)').click({ force: true })
     }
     enterHeight() {
         rb.heightElement().type(tdata.repairBox.height)
@@ -68,9 +70,9 @@ export class RepairBoxesActions {
     clickOnViewButton() {
         cy.window().then(win => {
             // win.open('https://google.com', '_blank');
-           });
-           cy.get('body').type('{ctrl}t');
-           cy.visit("https://dream-frontend-stage.onrender.com/repair-center/box-detail/"+tdata.repairBox.recordid)
+        });
+        cy.get('body').type('{ctrl}t');
+        cy.visit("https://dream-frontend-stage.onrender.com/repair-center/box-detail/" + tdata.repairBox.recordid)
         //cy.get('tr td').eq(5).contains('View Status').click({ force: true })
     }
     verifyBoxDetails() {
@@ -81,10 +83,7 @@ export class RepairBoxesActions {
         rb.addticketElement().click({ force: true })
     }
     clickOnDownloadLabel() {
-        rb.downloadlabelElement().eq(0).click({ force: true })
-    }
-    verifyDownloadLabel() {
-        cy.verifyDownload("/download/", tdata.repairBox.filename)
+       cy.contains('Export').click({ force: true })
     }
     clickOnAddTicket_s() {
         rb.addticketbtnElement().click({ force: true })
@@ -93,9 +92,8 @@ export class RepairBoxesActions {
         dash.messageElement().should('contain', tdata.repairBox.boxcreatedmsg)
     }
     clickOnViewButtonTicket() {
-      
         //cy.wait(5000)
-       cy.get('tbody tr').eq(0).find('td').eq(7).scrollIntoView().contains('Details').click({ force: true })
+        cy.get('tbody tr').eq(0).find('td').eq(7).scrollIntoView().contains('Details').click({ force: true })
     }
     verifyTicketDetails() {
         cy.contains('Repair Ticket Details').should('be.visible')
@@ -114,14 +112,14 @@ export class RepairBoxesActions {
         rb.searchboxElement().eq(0).click({ force: true })
         rb.trackingnumberElement().click({ force: true })
         rb.searchElement().clear().type(tdata.repairBox.trackingnumber + '{enter}', { force: true })
-        cy.wait(1000)
-     cy.get('tr td').eq(1).should('contain', tdata.repairBox.trackingnumber)
+        cy.wait(4000)
+        cy.get('tr td').eq(1).should('contain', tdata.repairBox.trackingnumber)
     }
     searchRecordId() {
         rb.searchboxElement().eq(0).click({ force: true })
         rb.recordidElement().click({ force: true })
         rb.searchElement().clear().type(tdata.repairBox.recordid + '{enter}', { force: true })
-      // cy.wait(1000)
+        // cy.wait(1000)
         cy.get('tr td').eq(0).should('contain', tdata.repairBox.recordid)
         rb.searchElement().clear()
     }

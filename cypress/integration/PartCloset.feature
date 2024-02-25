@@ -26,7 +26,6 @@ Feature: PartCloset Page Functionality
         # Then Click on Clear filter
         # And Click More filter select- Sku in search box and Verify the Result
         # Then Click on Clear filter
-
         And I should click on Add New VT part
         Then Select device and part name
         And Enter quantity and select building

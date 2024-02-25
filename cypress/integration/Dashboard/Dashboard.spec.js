@@ -196,7 +196,23 @@ And('Verify the record in searching history', () => {
     acc.verifySearchResult()
 })
 
-
+And('Click on Edit Icon of builing', () => {
+    build.clickOnEditIcon()
+})
+And('I should edit Building Name,Phone and Extension of builing', () => {
+    build.editBuildingName()
+    build.editPhone()
+    build.editExtension()
+})
+Then('I should edit Select Default building', () => {
+    build.editselectDefaultBuilding()
+})
+Then('Click on update button of builing', () => {
+    build.clickOnUpdateButton()
+})
+And('Verify the Record has been updated Meassage of builing', () => {
+    build.verifyBuildingUpdated()
+})
 
 
 

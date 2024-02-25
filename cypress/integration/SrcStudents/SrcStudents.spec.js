@@ -85,11 +85,9 @@ And('Enter the Search - Status in search box and Verify the Result', () => {
 Then('Enter the Search - Phone in search box and Verify the Result', () => {
     ss.searchPhone()
 })
-
 Then('Click on Clear filter', () => {
     ss.clickOnClearFilter()
 })
-
 And ('Click More filter select- Full name in search box and Verify the Result',()=>{
     ss.clickOnMoreFilter()
     ss.selectFilterFullName()
@@ -109,4 +107,7 @@ And ('Click More filter select- Eamil in search box and Verify the Result',()=>{
 And ('Click More filter select- User status in search box and Verify the Result',()=>{
     ss.clickOnMoreFilter()
     ss.selectFilterUserStatus()
+})
+And('Click on Download Export button', () => {
+    ss.clickOnExport()
 })

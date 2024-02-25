@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3548000000
+              "duration": 2284000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 13159000000
+              "duration": 6198000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8073000000
+              "duration": 8099000000
             }
           },
           {
@@ -53,294 +53,67 @@
             "name": "Click on Buildings Tab",
             "result": {
               "status": "passed",
-              "duration": 64000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "I should click on + Add New button",
-            "result": {
-              "status": "passed",
-              "duration": 1275000000
+              "duration": 82000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 15,
-            "name": "I should Enter Building Name,Phone and Extension",
-            "result": {
-              "status": "passed",
-              "duration": 950000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "Select Default building",
-            "result": {
-              "status": "passed",
-              "duration": 124000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "Enter Billing Address and select from dropdown",
-            "result": {
-              "status": "passed",
-              "duration": 2875000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
-            "name": "Click on checkbox Same as Shipping Address",
-            "result": {
-              "status": "passed",
-              "duration": 6086000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "Click on save button",
-            "result": {
-              "status": "passed",
-              "duration": 64000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "Verify the builing details added in table",
-            "result": {
-              "status": "passed",
-              "duration": 7136000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "Click on Edit Icon",
-            "result": {
-              "status": "passed",
-              "duration": 79000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "I should edit Building Name,Phone and Extension",
-            "result": {
-              "status": "passed",
-              "duration": 1005000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 23,
-            "name": "Click on update button",
-            "result": {
-              "status": "passed",
-              "duration": 72000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "Verify the Record has been updated Meassage",
-            "result": {
-              "status": "passed",
-              "duration": 8000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "Click on Delete Icon",
-            "result": {
-              "status": "passed",
-              "duration": 68000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
             "line": 26,
-            "name": "Click on Confirm Delete button",
+            "name": "Enter the Search - Building Name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 90000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 27,
-            "name": "Verify the record is deleted successfully",
-            "result": {
-              "status": "passed",
-              "duration": 590000000
+              "duration": 1299000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 28,
-            "name": "Click More filter select- Record Id in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 726000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 75000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 30,
-            "name": "Click More filter select- Building Name in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 870000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 31,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 77000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 32,
-            "name": "Click More filter select- Default Building in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 974000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 33,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 71000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 34,
-            "name": "Click More filter select- Phone in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1620000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 35,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 69000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 36,
-            "name": "Click More filter select- Building Shipping Address in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1540000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 37,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 77000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 38,
-            "name": "Click More filter select- Building Billing Address in search box and Verify the Result",
-            "result": {
-              "status": "failed",
-              "duration": 5627000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `5`, but never found it. Queried from:\n\n              > cy.get(tr td)\n    at BuildingsActions.selectFilterBillingAddress (cypress/integration/PageObject/PageActions/BuildingsActions.js:159:30)\n    at Context.eval (cypress/integration/Buildings/Buildings.spec.js:126:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 39,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 40,
-            "name": "Click on Export To CSV",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 41,
-            "name": "Enter the Search - Building Name in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 43,
             "name": "Enter the Search - Phone in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1873000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "Click on Export To CSV",
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Click on Bulk Upload button",
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "Click on Attach CSV file and Click on submit button",
+            "result": {
+              "status": "passed",
+              "duration": 207000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "Verify the Uploaded successfully",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
             }
           }
         ]

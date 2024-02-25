@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3269000000
+              "duration": 2933000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 12680000000
+              "duration": 8249000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9099000000
+              "duration": 9079000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 92000000
+              "duration": 72000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on StudentRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 598000000
+              "duration": 504000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click on SrcFacilitators tab",
             "result": {
               "status": "passed",
-              "duration": 78000000
+              "duration": 63000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the Title of SrcFacilitators Page",
             "result": {
               "status": "passed",
-              "duration": 31000000
+              "duration": 16000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Filters of SrcFacilitators should be visible",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 9000000
             }
           },
           {
@@ -103,85 +103,7 @@
             "name": "Table for SrcFacilitators should be visible",
             "result": {
               "status": "passed",
-              "duration": 18000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "Click More filter select- Full name in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1272000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 118000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "Click More filter select- Title in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 892000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 23,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 104000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "Click More filter select- Eamil in search box and Verify the Result",
-            "result": {
-              "status": "failed",
-              "duration": 5589000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<td.MuiTableCell-root.MuiTableCell-alignCenter.MuiTableCell-sizeMedium.css-42rti1>' not to contain 'davidtaylor@example.net'\n    at SrcFacilitatorsActions.selectFilterEmail (cypress/integration/PageObject/PageActions/SrcFacilitatorsActions.js:85:30)\n    at Context.eval (cypress/integration/SrcFacilitators/SrcFacilitators.spec.js:86:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 26,
-            "name": "Click More filter select- User status in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 27,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "skipped"
+              "duration": 6000000
             }
           },
           {
@@ -190,7 +112,8 @@
             "line": 28,
             "name": "Enter the Search - Full name in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 742000000
             }
           },
           {
@@ -199,7 +122,8 @@
             "line": 29,
             "name": "Enter the Search - Email in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 725000000
             }
           },
           {
@@ -208,7 +132,8 @@
             "line": 30,
             "name": "Enter the Search - Status in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 459000000
             }
           },
           {
@@ -217,7 +142,8 @@
             "line": 31,
             "name": "Enter the Search - Phone in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 489000000
             }
           }
         ]

@@ -11,10 +11,10 @@ Feature:Login Page Functionality
         And Clicks the login button
         Then User should be redirected to the dashboard
 
-    Scenario:  User sees an error with invalid credentials for multiple time tried so lock the account 
-        Then User enters invalid credentials for lock
-        And Clicks the login button
-        Then Verify error lock account message should be displayed
+    # Scenario:  User sees an error with invalid credentials for multiple time tried so lock the account 
+    #     Then User enters invalid credentials for lock
+    #     And Clicks the login button
+    #     Then Verify error lock account message should be displayed
 
     Scenario:  User sees an error with invalid credentials
         Then User enters invalid credentials

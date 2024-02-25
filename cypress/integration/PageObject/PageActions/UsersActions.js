@@ -133,45 +133,45 @@ export class UsersActions {
     searchRecordId() {
         user.searchboxElement().eq(0).click({ force: true })
         user.recordidElement().click({ force: true })
-        user.searchElement().clear().type(tdata.users.recordid + '{enter}', { force: true })
+        user.searchElement().clear({force:true}).type(tdata.users.recordid + '{enter}', { force: true })
         
         cy.get('tr td').eq(0).should('contain', tdata.users.recordid)
     }
     searchFullName() {
         user.searchboxElement().eq(0).click({ force: true })
         user.fullnamedropElement().click({ force: true })
-        user.searchElement().clear().type(tdata.users.fullname + '{enter}', { force: true })
+        user.searchElement().clear({force:true}).type(tdata.users.fullname + '{enter}', { force: true })
      //   cy.wait(3000)
         cy.get('tr td').eq(1).should('contain', tdata.users.fullname)
     }
     searchEmail() {
         user.searchboxElement().eq(0).click({ force: true })
         user.emaildropElement().click({ force: true })
-        user.searchElement().clear().type(tdata.users.email + '{enter}', { force: true })
+        user.searchElement().clear({force:true}).type(tdata.users.email + '{enter}', { force: true })
        // cy.wait(1000)
         cy.get('tr td').eq(2).should('contain', tdata.users.email)
     }
     searchPhone() {
         user.searchboxElement().eq(0).click({ force: true })
         user.phonedropElement().click({ force: true })
-        user.searchElement().clear().type(tdata.users.phone + '{enter}', { force: true })
+        user.searchElement().clear({force:true}).type(tdata.users.phone + '{enter}', { force: true })
       //  cy.wait(1000)
         cy.get('tr td').eq(3).should('contain', tdata.users.phoneNo)
     }
     searchCellNumber() {
         user.searchboxElement().eq(0).click({ force: true })
         user.cellnumberdropElement().click({ force: true })
-        user.searchElement().clear().type(tdata.users.cellnumber + '{enter}', { force: true })
+        user.searchElement().clear({force:true}).type(tdata.users.cellnumber + '{enter}', { force: true })
         //cy.wait(1000)
         cy.get('tr td').eq(4).should('contain', tdata.users.cellnumber)
     }
     searchUserRole() {
         user.searchboxElement().eq(0).click({ force: true })
         user.userroledropElement().click({ force: true })
-        user.searchElement().clear().type(tdata.users.rolename + '{enter}', { force: true })
+        user.searchElement().clear({force:true}).type(tdata.users.rolename + '{enter}', { force: true })
        // cy.wait(1000)
         cy.get('tr td').eq(5).should('contain', tdata.users.rolename, { force: true })
-        user.searchElement().clear()
+        user.searchElement().clear({force:true})
     }
 
     selectFilterRecordId(){

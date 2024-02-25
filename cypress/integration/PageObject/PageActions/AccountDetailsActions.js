@@ -28,8 +28,8 @@ export class AccountDetailsActions {
     tableAccountVisible() {
         acc.tableAccountElement().should('be.visible')
     }
-    clickOnAddNewbutton() {   
-      //  cy.get('.css-zosbzo > .MuiPaper-root > :nth-child(1) > :nth-child(1) > .MuiBox-root > :nth-child(1)').click({ force: true })
+    clickOnAddNewbutton() {
+        //  cy.get('.css-zosbzo > .MuiPaper-root > :nth-child(1) > :nth-child(1) > .MuiBox-root > :nth-child(1)').click({ force: true })
         acc.addnewbtnElement().contains('Create New').click({ force: true })
         cy.wait(1000)
     }
@@ -174,7 +174,7 @@ export class AccountDetailsActions {
         cy.wait(1000)
         cy.get('tr td').eq(2).should('not.contain', tdata.newaccount.title)
     }
-    selectFilterRecordId(){
+    selectFilterRecordId() {
         acc.fieldNameElement().select('record_id', { force: true })
         acc.fieldOpElement().select('Does Not Contain', { force: true })
         acc.fieldValueElement().type(tdata.newaccount.recordid)
@@ -182,7 +182,7 @@ export class AccountDetailsActions {
         cy.wait(1000)
         cy.get('tr td').eq(0).should('not.contain', tdata.newaccount.recordid)
     }
-    selectFilterUserRole(){
+    selectFilterUserRole() {
         acc.fieldNameElement().select('user_role', { force: true })
         acc.fieldOpElement().select('Does Not Contain', { force: true })
         acc.fieldValueElement().type(tdata.newaccount.userrole1)
@@ -190,7 +190,7 @@ export class AccountDetailsActions {
         cy.wait(1000)
         cy.get('tr td').eq(4).should('not.contain', tdata.newaccount.userrole1)
     }
-    selectFilterUserStatus(){
+    selectFilterUserStatus() {
         acc.fieldNameElement().select('user_status', { force: true })
         acc.fieldOpElement().select('Does Not Contain', { force: true })
         acc.fieldValueElement().type(tdata.newaccount.userstatus)
@@ -198,12 +198,12 @@ export class AccountDetailsActions {
         cy.wait(1000)
         cy.get('tr td').eq(7).should('not.contain', tdata.newaccount.userstatus)
     }
-   
+
     searchRecordId() {
         acc.searchboxElement().eq(0).click({ force: true })
         acc.recordidElement().click({ force: true })
         acc.searchElement().clear().type(tdata.newaccount.recordid + '{enter}', { force: true })
-        cy.wait(1000)
+        // cy.wait(1000)
         cy.get('tr td').eq(0).should('contain', tdata.newaccount.recordid)
     }
     searchFullName() {
@@ -219,9 +219,11 @@ export class AccountDetailsActions {
         cy.get('tr td').eq(3).should('contain', tdata.newaccount.emaildrop)
     }
     searchTitle() {
+        acc.searchElement().clear({ force: true })
         acc.searchboxElement().eq(0).click({ force: true })
         acc.titleElement().click({ force: true })
-        acc.searchElement().clear().type(tdata.newaccount.title + '{enter}', { force: true })
+        acc.searchElement().clear({ force: true }).type(tdata.newaccount.title + '{enter}', { force: true })
+        // cy.wait(1000)
         cy.get('tr td').eq(2).should('contain', tdata.newaccount.title)
     }
     searchPhone() {
@@ -229,6 +231,29 @@ export class AccountDetailsActions {
         acc.phoneNoElement().click({ force: true })
         acc.searchElement().clear().type(tdata.newaccount.cellnumber + '{enter}', { force: true })
         cy.get('tr td').eq(6).should('contain', tdata.newaccount.cellnumber)
+    }
+    AccountDetailsVisible() {
+        acc.accountnameElement().should('be.visible')
+        acc.accountnoElement().should('be.visible')
+    }
+    sectionManaddressVisible() {
+        acc.accountmanagerElement().should('be.visible')
+        acc.billingaddressElement().should('be.visible')
+        acc.shippingaddressElement().should('be.visible')
+    }
+    clickOnExporttoCSV() {
+        cy.contains('Export').click({ force: true })
+    }
+    clickOnBulkUpload() {
+        cy.contains('Bulk Upload').click({ force: true })
+    }
+    attachCsvfile() {
+        cy.contains('Attach CSV file').click({ force: true })
+        acc.uploadElement().attachFile(tdata.newaccount.uploadfilename, { force: true })
+        cy.contains('Submit').click({ force: true })
+    }
+    verifyuploaded() {
+
     }
 }
 

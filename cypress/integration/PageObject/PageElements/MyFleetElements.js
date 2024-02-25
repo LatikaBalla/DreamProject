@@ -41,6 +41,21 @@ export default class MyFleetElements {
             timeout: 30000,
         });
     }
+   studentinfoElement() {
+        return cy.get(locator.myFleet.studentinfo, {
+            timeout: 30000,
+        });
+    }
+ buildingElement() {
+        return cy.get(locator.myFleet.building, {
+            timeout: 30000,
+        });
+    }
+   updatebtnElement() {
+        return cy.get(locator.myFleet.updatebtn, {
+            timeout: 30000,
+        });
+    }
     morefiltersElement() {
         return cy.contains(locator.myFleet.morefilters, {
             timeout: 30000,

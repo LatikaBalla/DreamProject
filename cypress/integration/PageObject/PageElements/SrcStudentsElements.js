@@ -156,4 +156,9 @@ export default class SrcStudentsElements {
             timeout: 30000,
         })
     }
+    exportbtnElement() {
+        return cy.contains(locator.srcStudents.exportbtn, {
+            timeout: 30000,
+        })
+    }
 }

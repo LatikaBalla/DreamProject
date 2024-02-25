@@ -92,4 +92,9 @@ export default class SrcFacilitatorsElements {
             timeout: 30000,
         })
     }
+    exportbtnElement() {
+        return cy.contains(locator.srcFacilitators.exportbtn, {
+            timeout: 30000,
+        })
+    }
 }

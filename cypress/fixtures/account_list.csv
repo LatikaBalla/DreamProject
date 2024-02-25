@@ -1,0 +1,7 @@
+account_name,account_number,phone_number,email,domain,credit_limit,account_credit,account_balance,account_manager,account_site,in_house_repairs,territory,payment_terms,last_modified_by,tadabase_account_number,netsuite_id,account_paid_tier,subscription_tier
+AccountTest1,1001,1212121212,abcd1@gmail.com,Test,100,100,100,DemoTest1,India,Test,Test,Test,Vivacity,100,100,100,Yes
+AccountTest2,1002,9090909090,abcd2@gmail.com,Test,200,200,200,DemoTest2,UK,Test,Test,Test,Vivacity,100,100,100,Yes
+AccountTest3,1003,9090909090,abcd3@gmail.com,Test,300,300,300,DemoTest3,India,Test,Test,v,Vivacity,100,100,100,Yes
+AccountTest4,1004,1212121212,abcd4@gmail.com,Test,400,400,400,DemoTest4,UK,Test,Test,Test,Vivacity,100,100,100,Yes
+AccountTest5,1005,9090909090,abcd5@gmail.com,Test,500,500,500,DemoTest5,India,Test,Test,v,Vivacity,100,100,100,Yes
+AccountTest6,1006,1212121212,abcd6@gmail.com,Test,600,600,600,DemoTest6,UK,Test,Test,v,Vivacity,100,100,100,Yes

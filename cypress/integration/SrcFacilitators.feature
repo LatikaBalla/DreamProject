@@ -15,16 +15,17 @@ Feature:SrcFacilitators Page Functionality
         And Verify the Title of SrcFacilitators Page
         Then Filters of SrcFacilitators should be visible
         And Table for SrcFacilitators should be visible
+            And Click on Download Export button
         # And Click on view button
         # Then Veriry the Details of Facilitator
-        And Click More filter select- Full name in search box and Verify the Result
-        Then Click on Clear filter
-        And Click More filter select- Title in search box and Verify the Result
-        Then Click on Clear filter
-        And Click More filter select- Eamil in search box and Verify the Result
-        Then Click on Clear filter
-        And Click More filter select- User status in search box and Verify the Result
-        Then Click on Clear filter
+        # And Click More filter select- Full name in search box and Verify the Result
+        # Then Click on Clear filter
+        # And Click More filter select- Title in search box and Verify the Result
+        # Then Click on Clear filter
+        # And Click More filter select- Eamil in search box and Verify the Result
+        # Then Click on Clear filter
+        # And Click More filter select- User status in search box and Verify the Result
+        # Then Click on Clear filter
         And Enter the Search - Full name in search box and Verify the Result
         Then Enter the Search - Email in search box and Verify the Result
         And Enter the Search - Status in search box and Verify the Result

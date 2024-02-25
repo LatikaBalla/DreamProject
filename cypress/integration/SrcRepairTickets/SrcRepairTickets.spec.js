@@ -138,3 +138,6 @@ Then('Click on Add Repair Image and Verify', () => {
 And('Click on Add Note and Verify', () => {
     srt.clickOnAddNote()
 })
+And('Click on Download Export button', () => {
+    srt.clickOnExport()
+})

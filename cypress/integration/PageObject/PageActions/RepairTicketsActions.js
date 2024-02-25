@@ -85,21 +85,21 @@ export class RepairTicketsActions {
     searchTicketNumber() {
         rt.searchboxElement().eq(0).click({ force: true })
         rt.ticketnumberElement().click({ force: true })
-        rt.searchElement().clear().type(tdata.repairTickets.ticketnumber + '{enter}', { force: true })
+        rt.searchElement().clear({ force: true }).type(tdata.repairTickets.ticketnumber + '{enter}', { force: true })
         cy.wait(1000)
         cy.get('tr td').eq(1).should('contain', tdata.repairTickets.ticketnumber)
     }
     searchRepairType() {   
         rt.searchboxElement().eq(0).click({ force: true })
         rt.repairtypeElement().click({ force: true })
-        rt.searchElement().clear().type(tdata.repairTickets.repairtype + '{enter}', { force: true })
+        rt.searchElement().clear({ force: true }).type(tdata.repairTickets.repairtype + '{enter}', { force: true })
         cy.wait(1000)
         cy.get('tr td').eq(2).should('contain', tdata.repairTickets.repairtype)
     }
     searchSerialNumber() {
         rt.searchboxElement().eq(0).click({ force: true })
         rt.serialnumberElement().click({ force: true })
-        rt.searchElement().clear().type(tdata.repairTickets.serialnumber + '{enter}', { force: true })
+        rt.searchElement().clear({ force: true }).type(tdata.repairTickets.serialnumber + '{enter}', { force: true })
         cy.wait(1000)
         cy.get('tr td').eq(3).should('contain', tdata.repairTickets.serialnumber)
     }
@@ -113,14 +113,14 @@ export class RepairTicketsActions {
     searchRepairBox() {
         rt.searchboxElement().eq(0).click({ force: true })
         rt.repairboxElement().click({ force: true })
-        rt.searchElement().clear().type(tdata.repairTickets.repairbox + '{enter}', { force: true })
+        rt.searchElement().clear({ force: true }).type(tdata.repairTickets.repairbox + '{enter}', { force: true })
         cy.wait(1000)
         cy.get('tr td').eq(6).should('contain', tdata.repairTickets.repairbox,{ force: true })
     }
     searchAssetTag() {
         rt.searchboxElement().eq(0).click({ force: true })
         rt.assettagElement().click({ force: true })
-        rt.searchElement().clear().type(tdata.repairTickets.assettag + '{enter}', { force: true })
+        rt.searchElement().clear({ force: true }).type(tdata.repairTickets.assettag + '{enter}', { force: true })
         cy.wait(1000)
         cy.get('tr td').eq(4).should('contain', tdata.repairTickets.assettag)
         rt.searchElement().clear()

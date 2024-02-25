@@ -30,7 +30,6 @@ Feature: Repaire Tech Page Functionality
         Then Verify the Import Serial Devices tab should be visible
         And Verify the Organization Uploaded Assets tab should be visible
 
-
         And Click on Repair360 page
         Then I should be redirected to the Repair360 page
         And Verify the Title of Repair360 Page
@@ -59,30 +58,163 @@ Feature: Repaire Tech Page Functionality
         And Verify the Under Construction tab should be visible
         Then Verify the Launched tab should be visible
 
-    Scenario:My profile ,Non Warranty Repairs, Repair360 create
-        And Click on My profile page
-        And Click on upload image icon of mp
-        Then Enter tilte and phone no of mp
-        And Eelect Email preference of mp
-        Then click on update button of mp
-        And Verify the updated successfully of mp
+    Scenario: Dashboard
+        Then Account Details -Aaccount Name and no should be visible of acc
+        And Account Manager,Billing Address and Shipping Address should be visible of acc
+        #   And Click More filter select- Record Id in search box and Verify the Result of acc
+        #     Then Click on Clear filter of acc
+        #     And Click More filter select- Full name in search box and Verify the Result of acc
+        #     Then Click on Clear filter of acc
+        #     And Click More filter select- Title in search box and Verify the Result of acc
+        #     Then Click on Clear filter of acc
+        #     And Click More filter select- Eamil in search box and Verify the Result of acc
+        #     Then Click on Clear filter of acc
+        #     And Click More filter select- User Role in search box and Verify the Result of acc
+        #     Then Click on Clear filter of acc
+        #     And Click More filter select- Phone in search box and Verify the Result of acc
+        #     Then Click on Clear filter of acc
+        #     And Click More filter select- User Status in search box and Verify the Result of acc
+        #     Then Click on Clear filter of acc
+        And Enter the Search - Record Id in search box and Verify the Result of acc
+        And Enter the Search - Full name in search box and Verify the Result of acc
+        Then Enter the Search - Email in search box and Verify the Result of acc
+        And Enter the Search - Title in search box and Verify the Result of acc
+        Then Enter the Search - Phone in search box and Verify the Result of acc
+        And Click on Export To CSV of acc
+        Then Click on Bulk Upload button of acc
+        And Click on Attach CSV file and Click on submit button of acc
+        Then Verify the Uploaded successfully of acc
 
-        And Click on Report center page
-        And Click on NonwarrantyRepairs page
-        Then Select failure Type, Return site and Serial Device of Nwr
-        And Select Building and Chromebook issue of Nwr
-        Then Enter the Describe Your Issue of Nwr
-        And Click on save button of Nwr
-        Then Verify New Ticket is added of Nwr
+        And Click on Buildings Tab
+        # And Click More filter select- Record Id in search box and Verify the Result of build
+        # Then Click on Clear filter of build
+        # And Click More filter select- Building Name in search box and Verify the Result of build
+        # Then Click on Clear filter of build
+        # And Click More filter select- Default Building in search box and Verify the Result of build
+        # Then Click on Clear filter of build
+        # And Click More filter select- Phone in search box and Verify the Result of build
+        # Then Click on Clear filter of build
+        # And Click More filter select- Building Shipping Address in search box and Verify the Result of build
+        # Then Click on Clear filter of build
+        # And Click More filter select- Building Billing Address in search box and Verify the Result of build
+        # Then Click on Clear filter of build
+        And Enter the Search - Building Name in search box and Verify the Result of build
+        # Then Enter the Search - Building Shipping Address in search box and Verify the Result of build
+        And Enter the Search - Phone in search box and Verify the Result of build
 
-        And Click on Repair360 page
-        Then I should click on create new ticket of rt
-        Then Select failure Type, Return site and Serial Device of rt
-        And Select Building and Chromebook issue of rt
-        Then Enter the Describe Your Issue of rt
-        And Click on save button of rt
-        Then Verify New Ticket is added of rt
+    Scenario: Manage device:
+        Then Click on Manage Devices
+        And Click on MyFleet Tab
+        Then Click on the add device of MyF
+        And Enter Serial no and select device id of MyF
+        Then Enter Asset Tag and Select student id of MyF
+        And Select lonar status and Device status of MyF
+        Then Click on the Submit Button of MyF
+        And Verify the device added successfully of MyF
+        Then Click on Edit button of MyF
+        And Update Asset tag, student info and building information and Click on update button of MyF
+        Then Verfiy Record updated successfully of MyF
+        # And Click More filter select- Serial Number in search box and Verify the Result of MyF
+        # Then Click on Clear filter of MyF
+        # And Click More filter select- Asset tag in search box and Verify the Result of MyF
+        # Then Click on Clear filter of MyF
+        # And Click More filter select- Device in search box and Verify the Result of MyF
+        # Then Click on Clear filter of MyF
+        # And Click More filter select- Student in search box and Verify the Result of MyF
+        # Then Click on Clear filter of MyF
+        Then Click on Export To CSV of MyF
+        And Enter the table fields in search box of MyF
+        And Verify the record in searching history of MyF
+        Then Click on view Button of MyF
+        And Verify the Warranty Description of MyF
 
+        Then Click on Manage Devices
+        And Click on MyFleet Tab
+        Then Click on Retired Tab
+        Then Click on the add device of MyF
+        And Enter Serial no and select device id of MyF
+        Then Enter Asset Tag and Select student id of MyF
+        And Select lonar status and Device status of MyF
+        Then Click on the Submit Button of MyF
+        And Verify the device added successfully of MyF
+        Then Click on Edit button of MyF
+        And Update Asset tag, student info and building information and Click on update button of MyF
+        Then Verfiy Record updated successfully of MyF
+        # And Click More filter select- Serial Number in search box and Verify the Result of MyF
+        # Then Click on Clear filter of MyF
+        # And Click More filter select- Asset tag in search box and Verify the Result of MyF
+        # Then Click on Clear filter of MyF
+        # And Click More filter select- Device in search box and Verify the Result of MyF
+        # Then Click on Clear filter of MyF
+        # And Click More filter select- Student in search box and Verify the Result of MyF
+        # Then Click on Clear filter of MyF
+        Then Click on Export To CSV of MyF
+        And Enter the table fields in search box of MyF
+        And Verify the record in searching history of MyF
+        Then Click on view Button of MyF
+        And Verify the Warranty Description of MyF
+
+        Then Click on Manage Devices
+        And Click on ImportSerialDevices Tab
+        # And Click More filter select- Importer in search box and Verify the Result of isd
+        # Then Click on Clear filter of isd
+        # And Click More filter select- Quantity Devices in search box and Verify the Result of isd
+        # Then Click on Clear filter of isd
+        # Then I should click on Add New Import of isd
+        # Then Upload the CSV import file of isd
+        # And Click on submit button of isd
+        # And Click on refresh button of isd
+        # Then Verify the record in table of isd
+        And Click on Download import button of isd
+        And Click on Details button of isd
+        Then Verify the Device Details of isd
+
+        Then Click on Manage Devices
+        And Click on LoanerManagement Tab
+        Then Search the serial no in search box of Available Devices section of lm
+        And Verify the search result of lm
+        Then Click on the Add to loaner pool of lm
+        Then Search the serial no in the Available section of lm
+        And Click on th add Student button of lm
+        Then Enter Fullname, title and email of lm
+        And Select status, building and student_id of lm
+        Then Click on the submit button of form of lm
+        And Verify the student added successfully of lm
+        Then Click on check out button of lm
+        And Select the student name of lm
+        Then Click on the submit button of lm
+        And Search the serial no in the check out section of lm
+        Then Click on the Check in button of lm
+        And Enter note and click on submit button of lm
+        Then Verify the device is added in Available section of lm
+        And Click on remove from loaner pool button of lm
+
+        Then Click on Manage Devices
+        And Click on OrgUploadAssets Tab
+        Then I should click on Add Asset of oua
+        Then Enter title, full name location and tag of oua
+        And Enter note, Type and description of oua
+        Then Upload the image file of oua
+        And Click on save button of oua
+        Then Verify the asset details added in table of oua
+        # And Click More filter select- Description in search box and Verify the Result of oua
+        # Then Click on Clear filter of oua
+        # And Click More filter select- Acquire Location in search box and Verify the Result of oua
+        # Then Click on Clear filter of oua
+        And Enter the title in search box of oua
+        And Verify the record in searching history of oua
+        And Click on Edit button of oua
+        Then I should edit title, full name location and tag of oua
+        And I should edit note, Type and description of oua
+        Then ReUpload the image file of oua
+        Then Click on save button of oua
+        And Verify the Record has been updated Meassage of oua
+        And Click on Delete button of oua
+        Then Click on Confirm Delete button of oua
+        And Verify the record is deleted successfully of oua
+
+
+    Scenario: Repair360 -repaireTicket
         Then Click on Repair360 page
         And Click on RepairBoxes Tab
         Then I should click on create new Box of rb
@@ -93,6 +225,232 @@ Feature: Repaire Tech Page Functionality
         Then Select Ticket from dropdownlist of rb
         And Click on Finish button of rb
         Then Verify new box is added in table of rb
+        And Enter the Search - Tracking Number in search box and Verify the Result of rb
+        Then Enter the Search - Record Id in search box and Verify the Result of rb
+
+    Scenario: Repair360  -repaireBox
+        And Click on Repair360 page
+        Then I should click on create new ticket of rt
+        Then Select failure Type, Return site and Serial Device of rt
+        And Select Building and Chromebook issue of rt
+        Then Enter the Describe Your Issue of rt
+        And Click on save button of rt
+        Then Verify New Ticket is added of rt
+        And Enter the Search - Ticket Number in search box and Verify the Result of rt
+        Then Enter the Search - Repair type in search box and Verify the Result of rt
+        Then Enter the Search - Repair status in search box and Verify the Result of rt
+        And Enter the Search - Repair Box in search box and Verify the Result of rt
+        Then Enter the Search - Asset tag in search box and Verify the Result of rt
+    # And Click More filter select- Record Id in search box and Verify the Result of rt
+    # Then Click on Clear filter of rt
+    # And Click More filter select- Ticket Number in search box and Verify the Result of rt
+    # Then Click on Clear filter of rt
+    # And Click More filter select- Repair type in search box and Verify the Result of rt
+    # Then Click on Clear filter of rt
+    # And Click More filter select- Serial Number in search box and Verify the Result of rt
+    # Then Click on Clear filter of rt
+    # And Click More filter select- Repair device in search box and Verify the Result of rt
+    # Then Click on Clear filter of rt
+    # And Click More filter select- Repair status in search box and Verify the Result of rt
+    # Then Click on Clear filter of rt
+    # And Click More filter select- Repair Box in search box and Verify the Result of rt
+    # Then Click on Clear filter of rt
+    # And Click More filter select- Asset tag in search box and Verify the Result of rt
+    # Then Click on Clear filter of rt
+    # And Click More filter select- Created By in search box and Verify the Result of rt
+    # Then Click on Clear filter of rt
+
+    Scenario: Report Center -NonwarrantyRepairs , DeviceRepairReport
+
+
+        And Click on Report center page
+        And Click on NonwarrantyRepairs page
+        Then Select failure Type, Return site and Serial Device of Nwr
+        And Select Building and Chromebook issue of Nwr
+        Then Enter the Describe Your Issue of Nwr
+        And Click on save button of Nwr
+        Then Verify New Ticket is added of Nwr
+        # And Click More filter select- Record Id in search box and Verify the Result of Nwr
+        # Then Click on Clear filter of Nwr
+        # And Click More filter select- Ticket Number in search box and Verify the Result of Nwr
+        # Then Click on Clear filter of Nwr
+        # And Click More filter select- Repair type in search box and Verify the Result of Nwr
+        # Then Click on Clear filter of Nwr
+        # And Click More filter select- Serial Number in search box and Verify the Result of Nwr
+        # Then Click on Clear filter of Nwr
+        # And Click More filter select- Repair device in search box and Verify the Result of Nwr
+        # Then Click on Clear filter of Nwr
+        # And Click More filter select- Repair status in search box and Verify the Result of Nwr
+        # Then Click on Clear filter of Nwr
+        # And Click More filter select- Asset tag in search box and Verify the Result of Nwr
+        # Then Click on Clear filter of Nwr
+        # And Click More filter select- Repair Box in search box and Verify the Result of Nwr
+        # Then Click on Clear filter of Nwr
+        # And Click More filter select- Created By in search box and Verify the Result of Nwr
+        # Then Click on Clear filter of Nwr
+        And Enter the Search - Record Id in search box and Verify the Result of Nwr
+        Then Enter the Search - Repair type in search box and Verify the Result of Nwr
+        Then Enter the Search - Repair status in search box and Verify the Result of Nwr
+
+        And Click on Report center page
+        And Click on DeviceRepairReport page
+        # And Click More filter select- Record Id in search box and Verify the Result of drr
+        # Then Click on Clear filter of drr
+        # And Click More filter select- Ticket Number in search box and Verify the Result of drr
+        # Then Click on Clear filter of drr
+        # And Click More filter select- Repair type in search box and Verify the Result of drr
+        # Then Click on Clear filter of drr
+        # And Click More filter select- Serial Number in search box and Verify the Result of drr
+        # Then Click on Clear filter of drr
+        # And Click More filter select- Repair device in search box and Verify the Result of drr
+        # Then Click on Clear filter of drr
+        # # And Click More filter select- Repair status in search box and Verify the Result of drr
+        # # Then Click on Clear filter of drr
+        # And Click More filter select- Asset tag in search box and Verify the Result of drr
+        # Then Click on Clear filter of drr
+        # And Click More filter select- Repair Box in search box and Verify the Result of drr
+        # Then Click on Clear filter of drr
+        # And Click More filter select- Created By in search box and Verify the Result of drr
+        # Then Click on Clear filter of drr
+        And Enter the Search - Record Id in search box and Verify the Result of drr
+        Then Enter the Search - Repair type in search box and Verify the Result of drr
+        Then Enter the Search - Repair status in search box and Verify the Result of drr
+        And Enter the Search - Repair Box in search box and Verify the Result of drr
+
+
+    Scenario:Repair360 create, search and filters InHouseRepairCenter, StudentRepairCenter
+        # Then Click on Repair360 page
+        # And Click on InHouseRepairCenter tab
+        # Then I should click on new button of inw
+        # And Select failure Type, Serial Device, Technician and repair issue of inw
+        # Then Select building and Enter the Chromebook issue of inw
+        # And Click on save button of inw
+        # Then Verify New Ticket is added of inw
+
+
+        Then Click on Repair360 page
+        And Click on InHouseRepairCenter tab
+        Then Click All InHouseTickets tab
+        #    Then I should click on Create new button of Inrt
+        #     And Select failure Type, Serial Device, Technician, issue and Building of Inrt
+        #     Then Enter the Chromebook issue of Inrt
+        #     And Click on save button of Inrt
+        #     Then Verify New Ticket is added of Inrt
+        #     And Click on Download Export button of Inrt
+        And Enter the Search - Record Id in search box and Verify the Result of Inrt
+        Then Enter the Search - Ticket Number in search box and Verify the Result of Inrt
+        And Enter the Search - Repair type in search box and Verify the Result of Inrt
+        Then Enter the Search - Repair status in search box and Verify the Result of Inrt
+        # And Click More filter select- Record Id in search box and Verify the Result of Inrt
+        # Then Click on Clear filter of Inrt
+        # And Click More filter select- Ticket Number in search box and Verify the Result of Inrt
+        # Then Click on Clear filter of Inrt
+        # And Click More filter select- Repair type in search box and Verify the Result of Inrt
+        # Then Click on Clear filter of Inrt
+        # And Click More filter select- Serial Number in search box and Verify the Result of Inrt
+        # Then Click on Clear filter of Inrt
+        # And Click More filter select- Repair device in search box and Verify the Result of Inrt
+        # Then Click on Clear filter of Inrt
+        # # And Click More filter select- Repair status in search box and Verify the Result of Inrt
+        # # Then Click on Clear filter of Inrt
+        # And Click More filter select- Asset tag in search box and Verify the Result of Inrt
+        # Then Click on Clear filter of Inrt
+        # And Click More filter select- internal Technician in search box and Verify the Result of Inrt
+        # Then Click on Clear filter of Inrt
+        # And Click More filter select- Created By in search box and Verify the Result of Inrt
+        # Then Click on Clear filter of Inrt
+
+        Then Click on Repair360 page
+        And Click on InHouseRepairCenter tab
+        # And Enter Search ticket no in search box of ihw
+        # Then Verify search result below of ihw
+        # And Click on view button of ihw
+        # Then Verify the Details of student repair ticket of ihw
+        # And Click on the Edit Ticket Button of ihw
+        # Then Update the Technician and Repair Status of ihw
+        # And Click on Update Button of ihw
+        # Then Verify Updated successfully of ihw
+        # And Click on Add Line and Verify of ihw
+        # Then Click on Add Repair Image and Verify of ihw
+        # And Click on Add Note and Verify of ihw
+        Then I should click on new button of ihw
+        And Select failure Type, Serial Device, Technician and repair issue of ihw
+        Then Select building and Enter the Chromebook issue of ihw
+        And Click on save button of ihw
+        Then Verify New Ticket is added of ihw
+
+
+        Then Click on Repair360 page
+        And Click on StudentRepairCenter tab
+        Then Click on SrcStudents tab
+        Then I should click on Add New student of srcs
+        Then Enter title, full name and Email of srcs
+        And Enter Phone and Cell Number of srcs
+        Then Select User Status of srcs
+        And Click on submit button of srcs
+        Then Verify the student added in table of srcs
+        # And Click More filter select- Full name in search box and Verify the Result of srcs
+        # Then Click on Clear filter of srcs
+        # And Click More filter select- Title in search box and Verify the Result of srcs
+        # Then Click on Clear filter of srcs
+        # And Click More filter select- Eamil in search box and Verify the Result of srcs
+        # Then Click on Clear filter of srcs
+        # And Click More filter select- User status in search box and Verify the Result of srcs
+        # Then Click on Clear filter of srcs
+        And Enter the Search - Full name in search box and Verify the Result of srcs
+        Then Enter the Search - Email in search box and Verify the Result of srcs
+        And Enter the Search - Status in search box and Verify the Result of srcs
+        Then Enter the Search - Phone in search box and Verify the Result of srcs
+
+
+        Then Click on Repair360 page
+        And Click on StudentRepairCenter tab
+        Then Click on SrcRepairTickets tab
+        And Enter the Search - Record Id in search box and Verify the Result of srcRt
+        Then Enter the Search - Ticket Number in search box and Verify the Result of srcRt
+        And Enter the Search - Repair type in search box and Verify the Result of srcRt
+        Then Enter the Search - Repair status in search box and Verify the Result of srcRt
+        # And Click More filter select- Record Id in search box and Verify the Result of srcRt
+        # Then Click on Clear filter of srcRt
+        # And Click More filter select- Ticket Number in search box and Verify the Result of srcRt
+        # Then Click on Clear filter of srcRt
+        # And Click More filter select- Repair type in search box and Verify the Result of srcRt
+        # Then Click on Clear filter of srcRt
+        # And Click More filter select- Serial Number in search box and Verify the Result of srcRt
+        # Then Click on Clear filter of srcRt
+        # And Click More filter select- Repair device in search box and Verify the Result of srcRt
+        # Then Click on Clear filter of srcRt
+        # And Click More filter select- Repair status in search box and Verify the Result of srcRt
+        # Then Click on Clear filter of srcRt
+        # And Click More filter select- Asset tag in search box and Verify the Result of srcRt
+        # Then Click on Clear filter of srcRt
+        # And Click More filter select- internal Technician in search box and Verify the Result of srcRt
+        # Then Click on Clear filter of srcRt
+        # And Click More filter select- Created By in search box and Verify the Result of srcRt
+        # Then Click on Clear filter of srcRt
+        # Then I should click on Create Student Repair Ticket button of srcRt
+        # And Select failure Type, Serial Device, Technician and building of srcRt
+        # Then Enter the Chromebook issue of srcRt
+        # And Click on save button of srcRt
+        # Then Verify New Ticket is added of srcRt
+
+
+        Then Click on Repair360 page
+        And Click on StudentRepairCenter tab
+        Then Click on SrcFacilitators tab
+        And Click More filter select- Full name in search box and Verify the Result of srcF
+        Then Click on Clear filter of srcF
+        And Click More filter select- Title in search box and Verify the Result of srcF
+        Then Click on Clear filter of srcF
+        # And Click More filter select- Eamil in search box and Verify the Result of srcF
+        # Then Click on Clear filter of srcF
+        # And Click More filter select- User status in search box and Verify the Result of srcF
+        # Then Click on Clear filter of srcF
+        And Enter the Search - Full name in search box and Verify the Result of srcF
+        Then Enter the Search - Email in search box and Verify the Result of srcF
+        And Enter the Search - Status in search box and Verify the Result of srcF
+        Then Enter the Search - Phone in search box and Verify the Result of srcF
+
 
         And Click on Repair360 page
         And Click on PartCloset Tab
@@ -109,16 +467,28 @@ Feature: Repaire Tech Page Functionality
         And Enter the Search value in search box of pc
         Then Verify the Results in the table of pc
         And Click on delete button of pc
-        Then Verify the recode is deleted of pc
+    # Then Verify the recode is deleted of pc
 
+    Scenario:My profile and feature and support
 
+        And Click on My profile page
+        And Click on upload image icon of mp
+        Then Enter tilte and phone no of mp
+        And Eelect Email preference of mp
+        Then click on update button of mp
+        And Verify the updated successfully of mp
 
+        And Click on features page
+        And Click More filter select- Title in search box and Verify the Result of ft
+        Then Click on Clear filter of ft
+# And Click More filter select- Description in search box and Verify the Result of ft
+# Then Click on Clear filter of ft
+# And Click More filter select- Creator in search box and Verify the Result of ft
+# Then Click on Clear filter of ft
 
-
-# And Click on Repair360 page
-# And Click on StudentRepairCenter tab
-# Then Click on SrcRepairTickets tab
-# Then I should click on Create Student Repair Ticket button
-# And Select failure Type, Serial Device, Technician and building
-# Then Enter the Chromebook issue
-# And Click on save button
+  And Click on Support page
+   And Enter Full name of sup
+        Then Select task Priority and Topic of sup
+        And Upload the image and enter Notes of sup 
+        Then Click on submit button of sup
+        And Verify the Send Feedback successfully of sup

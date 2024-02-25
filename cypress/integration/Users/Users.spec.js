@@ -85,7 +85,6 @@ Then ('Click on Confirm Delete button',()=>{
 And ('Verify the record is deleted successfully',()=>{
     user.verifyRecordDeleted()
 })
-
 Then ('Click on Add Filter',()=>{
     user.clickOnAddFilterButton()
 })

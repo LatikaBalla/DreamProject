@@ -107,28 +107,28 @@ export class SrcRepairTicketsActions {
     searchRecordId() {
         srt.searchboxElement().eq(0).click({ force: true })
         srt.recordidElement().click({ force: true })
-        srt.searchElement().clear().type(tdata.srcRepairTicket.recordid + '{enter}', { force: true })
+        srt.searchElement().clear({ force: true }).type(tdata.srcRepairTicket.recordid + '{enter}', { force: true })
        // cy.wait(4000)
         cy.get('tr td').eq(0).should('contain', tdata.srcRepairTicket.recordid)
     }
     searchTicketNumber() {
         srt.searchboxElement().eq(0).click({ force: true })
         srt.ticketnumberElement().click({ force: true })
-        srt.searchElement().clear().type(tdata.srcRepairTicket.ticketnumber + '{enter}', { force: true })
+        srt.searchElement().clear({ force: true }).type(tdata.srcRepairTicket.ticketnumber + '{enter}', { force: true })
         cy.wait(3000)
         cy.get('tr td').eq(1).should('contain', tdata.srcRepairTicket.ticketnumber)
     }
     searchRepairType() {
         srt.searchboxElement().eq(0).click({ force: true })
         srt.repairtypeElement().click({ force: true })
-        srt.searchElement().clear().type(tdata.srcRepairTicket.repairtype + '{enter}', { force: true })
+        srt.searchElement().clear({ force: true }).type(tdata.srcRepairTicket.repairtype + '{enter}', { force: true })
         cy.wait(1000)
         cy.get('tr td').eq(2).should('contain', tdata.srcRepairTicket.repairtype)
     }
     searchRepairStatus() {
         srt.searchboxElement().eq(0).click({ force: true })
         srt.repairstatusElement().click({ force: true })
-        srt.searchElement().clear().type(tdata.srcRepairTicket.repairstatus + '{enter}', { force: true })
+        srt.searchElement().clear({ force: true }).type(tdata.srcRepairTicket.repairstatus + '{enter}', { force: true })
         cy.wait(1000)
         cy.get('tr td').eq(5).should('contain', tdata.srcRepairTicket.repairstatus, { force: true })
         srt.searchElement().clear()
@@ -226,6 +226,9 @@ export class SrcRepairTicketsActions {
         srt.noteElement().type('Testing Note', { force: true })
         srt.createnoteElement().contains('Create').click({ force: true })
         dash.messageElement().should('contain', 'Ticket updated')
+    }
+    clickOnExport() {
+      srt.exportbtnElement().click({ force: true })
     }
 }
 export default SrcRepairTicketsActions 

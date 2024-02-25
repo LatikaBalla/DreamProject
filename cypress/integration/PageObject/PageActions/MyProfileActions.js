@@ -20,16 +20,16 @@ export class MyProfileActions {
         mp.profiledetailsElement().should('be.visible')
     }
     userNameVisible() {
-        mp.emailnameElement().should('contain', tdata.myprofile.emailname)
+        mp.emailnameElement().should('contain', tdata.myprofile.emailname,{ force: true })
     }
     userPhotoVisible() {
         mp.photoElement().should('be.visible')
     }
     enterTitle() {
-        mp.titleprofileElement().clear().type(tdata.myprofile.title)
+        mp.titleprofileElement().clear({ force: true }).type(tdata.myprofile.title,{ force: true } )
     }
     enterPhone() {
-        mp.phoneElement().clear().type(tdata.myprofile.phone)
+        mp.phoneElement().clear({ force: true }).type(tdata.myprofile.phone,{ force: true })
     }
     selectEmailPreference() {
         mp.preferencesElement().click({ force: true })
@@ -39,10 +39,10 @@ export class MyProfileActions {
         mp.profileupdateElement().click({ force: true })
     }
     verifyUpdate() {
-        dash.messageElement().should('contain', tdata.myprofile.profileupdatemsg)
+        dash.messageElement().should('contain', tdata.myprofile.profileupdatemsg,{ force: true })
     }
     clickOnImageIcone() {
-        mp.uploadElement().attachFile(tdata.myprofile.image)
+        mp.uploadElement().attachFile(tdata.myprofile.image,{ force: true })
     }
 }
 export default MyProfileActions 

@@ -84,10 +84,10 @@ export class SrcStudentsActions {
         cy.get('[type="button"]').contains('Cancel').click({ force: true })
     }
     verifyRecordTable() {
-         cy.get('[data-testid="CachedIcon"]').click()
+         cy.get('[data-testid="CachedIcon"]').click({ force: true })
         cy.wait(3000)
        // dash.messageElement().should('contain', tdata.srcStudent.createStudentmsg)
-        cy.get('tr td').eq(0).should('contain', tdata.srcStudent.fullname)
+        cy.get('tr td').eq(0).should('contain', tdata.srcStudent.fullname, { force: true })
     }
     clickViewButtton() {
         cy.get('tbody tr').eq(0).find('td').eq(4).contains('View').click({ force: true })
@@ -98,25 +98,25 @@ export class SrcStudentsActions {
     searchFullName() {
         ss.searchboxElement().eq(0).click({ force: true })
         ss.fullNameElement().click({ force: true })
-        ss.searchElement().clear().type(tdata.srcStudent.fullName + '{enter}', { force: true })
+        ss.searchElement().clear({ force: true }).type(tdata.srcStudent.fullName + '{enter}', { force: true })
         cy.get('tr td').eq(0).should('contain', tdata.srcStudent.fullName)
     }
     searchEmail() {
         ss.searchboxElement().eq(0).click({ force: true })
         ss.emaildropElement().click({ force: true })
-        ss.searchElement().clear().type(tdata.srcStudent.emaildrop + '{enter}', { force: true })
+        ss.searchElement().clear({ force: true }).type(tdata.srcStudent.emaildrop + '{enter}', { force: true })
         cy.get('tr td').eq(2).should('contain', tdata.srcStudent.emaildrop)
     }
     searchStatus() {
         ss.searchboxElement().eq(0).click({ force: true })
         ss.statusElement().click({ force: true })
-        ss.searchElement().clear().type(tdata.srcStudent.status + '{enter}', { force: true })
+        ss.searchElement().clear({ force: true }).type(tdata.srcStudent.status + '{enter}', { force: true })
         cy.get('tr td').eq(3).should('contain', tdata.srcStudent.status)
     }
     searchPhone() {
         ss.searchboxElement().eq(0).click({ force: true })
         ss.phoneNoElement().click({ force: true })
-        ss.searchElement().clear().type(tdata.srcStudent.phoneNo1 + '{enter}', { force: true })
+        ss.searchElement().clear({ force: true }).type(tdata.srcStudent.phoneNo1 + '{enter}', { force: true })
         cy.get('tr td').eq(4).should('contain', tdata.srcStudent.phoneNo2)
     }
     clickOnMoreFilter() {
@@ -159,6 +159,9 @@ export class SrcStudentsActions {
         ss.fieldValueElement().type(tdata.srcStudent.status)
         ss.applyElement().click({ force: true })
         cy.get('tr td').eq(3).should('contain', tdata.srcStudent.status)
+    }
+    clickOnExport() {
+        ss.exportbtnElement().click({ force: true })
     }
 }
 export default SrcStudentsActions 

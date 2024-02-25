@@ -52,24 +52,16 @@ Then('Click on the Submit Button', () => {
 And('Verify the device added successfully', () => {
     mf.verfifyDeviceAdded()
 })
-
-// Then('Click on More filters', () => {
-//     cy.wait(3000)
-//     mf.clickOnMoreFiltersButton()
-// })
-// Then('Select Field name and Field operation', () => {
-//     mf.selectFieldName()
-//     mf.selectfieldOperation()
-// })
-// And('Enter the Search value in search box', () => {
-//     mf.enterFieldValueSearchBox()
-// })
-// Then('Click on Apply Button', () => {
-//     mf.clickOnApplyButton()
-// })
-// And('Verify the Results in the table', () => {
-//     mf.verifyResultAfterFilter()
-// })
+Then('Click on Edit button', () => {
+    mf.clickOnEditButton()
+})
+And('Update Asset tag, student info and building information and Click on update button', () => {
+    mf.editInformation()
+    mf.clickOnUpdateButton()
+})
+Then('Verfiy Record updated successfully', () => {
+mf.verifyUdated()
+})
 Then('Click on Clear filter', () => {
     mf.clickOnClearFiltersButton()
 })

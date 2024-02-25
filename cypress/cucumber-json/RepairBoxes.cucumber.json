@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3780000000
+              "duration": 2550000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 14129000000
+              "duration": 11092000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9103000000
+              "duration": 9078000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 95000000
+              "duration": 81000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on RepairBoxes Tab",
             "result": {
               "status": "passed",
-              "duration": 1115000000
+              "duration": 1235000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of RepairBoxes Page",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 18000000
             }
           },
           {
@@ -82,8 +82,9 @@
             "line": 29,
             "name": "Enter the Search - Tracking Number in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2569000000
+              "status": "failed",
+              "duration": 9531000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<td.MuiTableCell-root.MuiTableCell-alignCenter.MuiTableCell-sizeMedium.css-42rti1>' to contain '1Z6X34470327576875'\n    at RepairBoxesActions.searchTrackingNumber (cypress/integration/PageObject/PageActions/RepairBoxesActions.js:120:27)\n    at Context.eval (cypress/integration/RepairBoxes/RepairBoxes.spec.js:99:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -92,8 +93,7 @@
             "line": 30,
             "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1295000000
+              "status": "skipped"
             }
           },
           {
@@ -102,8 +102,7 @@
             "line": 31,
             "name": "I should click on create new Box",
             "result": {
-              "status": "passed",
-              "duration": 85000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +111,7 @@
             "line": 32,
             "name": "Enter weight, height, depth and width",
             "result": {
-              "status": "passed",
-              "duration": 809000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +120,7 @@
             "line": 33,
             "name": "Select Pick-up site",
             "result": {
-              "status": "passed",
-              "duration": 158000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +129,7 @@
             "line": 34,
             "name": "Check the need shipping box",
             "result": {
-              "status": "passed",
-              "duration": 93000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +138,7 @@
             "line": 35,
             "name": "Click on Create box button",
             "result": {
-              "status": "passed",
-              "duration": 111000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +147,7 @@
             "line": 36,
             "name": "Select Ticket from dropdownlist",
             "result": {
-              "status": "passed",
-              "duration": 263000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +156,7 @@
             "line": 37,
             "name": "Click on Finish button",
             "result": {
-              "status": "passed",
-              "duration": 92000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +165,7 @@
             "line": 38,
             "name": "Verify new box is added in table",
             "result": {
-              "status": "passed",
-              "duration": 2115000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +174,7 @@
             "line": 39,
             "name": "Click on view button",
             "result": {
-              "status": "passed",
-              "duration": 4015000000
+              "status": "skipped"
             }
           },
           {
@@ -192,8 +183,7 @@
             "line": 40,
             "name": "Verify the Details new box",
             "result": {
-              "status": "passed",
-              "duration": 64000000
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +192,7 @@
             "line": 41,
             "name": "Add another ticket in the same box",
             "result": {
-              "status": "passed",
-              "duration": 3098000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +201,7 @@
             "line": 42,
             "name": "Select Ticket from dropdownlist",
             "result": {
-              "status": "passed",
-              "duration": 262000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +210,7 @@
             "line": 43,
             "name": "Click on Add ticket",
             "result": {
-              "status": "passed",
-              "duration": 84000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +219,7 @@
             "line": 44,
             "name": "Verify the ticket is added in table",
             "result": {
-              "status": "passed",
-              "duration": 15000000
+              "status": "skipped"
             }
           },
           {
@@ -242,8 +228,7 @@
             "line": 45,
             "name": "Click on view the ticket Details",
             "result": {
-              "status": "passed",
-              "duration": 105000000
+              "status": "skipped"
             }
           },
           {
@@ -252,8 +237,7 @@
             "line": 46,
             "name": "Verfiy the ticket Details",
             "result": {
-              "status": "passed",
-              "duration": 2516000000
+              "status": "skipped"
             }
           },
           {
@@ -262,8 +246,7 @@
             "line": 47,
             "name": "Click on Back button",
             "result": {
-              "status": "passed",
-              "duration": 105000000
+              "status": "skipped"
             }
           },
           {
@@ -272,8 +255,7 @@
             "line": 48,
             "name": "Remove the ticket from box",
             "result": {
-              "status": "passed",
-              "duration": 1666000000
+              "status": "skipped"
             }
           },
           {
@@ -282,8 +264,7 @@
             "line": 49,
             "name": "Verify the ticket is delete from the table",
             "result": {
-              "status": "passed",
-              "duration": 6000000
+              "status": "skipped"
             }
           }
         ]

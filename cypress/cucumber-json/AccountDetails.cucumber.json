@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 11185000000
+              "duration": 3862000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 12719000000
+              "duration": 1390868000000
             }
           },
           {
@@ -43,184 +43,117 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8088000000
+              "duration": 8116000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 12,
-            "name": "Click More filter select- Record Id in search box and Verify the Result",
+            "name": "Account Details -Aaccount Name and no should be visible",
             "result": {
               "status": "passed",
-              "duration": 1679000000
+              "duration": 50000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 13,
-            "name": "Click on Clear filter",
+            "name": "Account Manager,Billing Address and Shipping Address should be visible",
             "result": {
               "status": "passed",
-              "duration": 106000000
+              "duration": 64000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 14,
-            "name": "Click More filter select- Full name in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 960000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 70000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "Click More filter select- Title in search box and Verify the Result",
-            "result": {
-              "status": "failed",
-              "duration": 5874000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<td.MuiTableCell-root.MuiTableCell-alignCenter.MuiTableCell-sizeMedium.css-42rti1>' not to contain 'Mr'\n    at AccountDetailsActions.selectFilterTitle (cypress/integration/PageObject/PageActions/AccountDetailsActions.js:175:30)\n    at Context.eval (cypress/integration/AccountDetails/AccountDetails.spec.js:127:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 17,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "Click More filter select- Eamil in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "Click More filter select- User Role in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "Click More filter select- Phone in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 23,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "Click More filter select- User Status in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 26,
+            "line": 28,
             "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 27,
-            "name": "Enter the Search - Full name in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 28,
-            "name": "Enter the Search - Email in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1004000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 29,
-            "name": "Enter the Search - Title in search box and Verify the Result",
+            "name": "Enter the Search - Full name in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1080000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 30,
+            "name": "Enter the Search - Email in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1217000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "Enter the Search - Title in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 2166000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
             "name": "Enter the Search - Phone in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 918000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "Click on Export To CSV",
+            "result": {
+              "status": "passed",
+              "duration": 103000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "Click on Bulk Upload button",
+            "result": {
+              "status": "passed",
+              "duration": 126000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "Click on Attach CSV file and Click on submit button",
+            "result": {
+              "status": "passed",
+              "duration": 248000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "Verify the Uploaded successfully",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
             }
           }
         ]

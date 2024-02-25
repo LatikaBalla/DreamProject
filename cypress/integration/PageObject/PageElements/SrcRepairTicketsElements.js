@@ -237,5 +237,10 @@ export default class SrcRepairTicketsElements {
             timeout: 30000,
         })
     }
+    exportbtnElement() {
+        return cy.contains(locator.srcRepairTickets.exportbtn, {
+            timeout: 30000,
+        })
+    }
 
 }
