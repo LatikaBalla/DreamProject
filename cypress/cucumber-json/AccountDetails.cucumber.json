@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2191000000
+              "duration": 3299000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6072000000
+              "duration": 10761000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8073000000
+              "duration": 8075000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Account Details -Aaccount Name and no should be visible",
             "result": {
               "status": "passed",
-              "duration": 36000000
+              "duration": 35000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Account Manager,Billing Address and Shipping Address should be visible",
             "result": {
               "status": "passed",
-              "duration": 38000000
+              "duration": 37000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1125000000
+              "duration": 1093000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Enter the Search - Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1110000000
+              "duration": 1056000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Enter the Search - Email in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 882000000
+              "duration": 1109000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Enter the Search - Title in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1710000000
+              "duration": 1692000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Enter the Search - Phone in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1118000000
+              "duration": 950000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on Export To CSV",
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 72000000
             }
           }
         ]

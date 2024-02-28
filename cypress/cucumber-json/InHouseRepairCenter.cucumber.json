@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2726000000
+              "duration": 3391000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6012000000
+              "duration": 7533000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9077000000
+              "duration": 9070000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 76000000
+              "duration": 75000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on InHouseRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 621000000
+              "duration": 1239000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of InHouseRepairCenter Page",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 11000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the inhouseworkflow Tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 8000000
             }
           },
           {

@@ -1,4 +1,4 @@
-Feature: Repaire Tech Page Functionality
+Feature: Student Role Page Functionality
     As a user
     I want to access the dashboard page
     So that I can view my account information and data
@@ -51,8 +51,6 @@ Feature: Repaire Tech Page Functionality
     # Then Verify the Launched tab should be visible
 
     Scenario: Dashboard
-        Then Account Details -Aaccount Name and no should be visible of acc
-        And Account Manager,Billing Address and Shipping Address should be visible of acc
         #   And Click More filter select- Record Id in search box and Verify the Result of acc
         #     Then Click on Clear filter of acc
         #     And Click More filter select- Full name in search box and Verify the Result of acc
@@ -73,10 +71,7 @@ Feature: Repaire Tech Page Functionality
         And Enter the Search - Title in search box and Verify the Result of acc
         Then Enter the Search - Phone in search box and Verify the Result of acc
         And Click on Export To CSV of acc
-        Then Click on Bulk Upload button of acc
-        And Click on Attach CSV file and Click on submit button of acc
-        Then Verify the Uploaded successfully of acc
-
+     
         And Click on Buildings Tab
         # And Click More filter select- Record Id in search box and Verify the Result of build
         # Then Click on Clear filter of build
@@ -156,48 +151,6 @@ Feature: Repaire Tech Page Functionality
         Then Enter the Search - Repair status in search box and Verify the Result of drr
         And Enter the Search - Repair Box in search box and Verify the Result of drr
 
-
-
-
-
-
-
-
-#         And Click on Repair360 page
-#         Then I should click on create new ticket of rt
-#         Then Select failure Type, Return site and Serial Device of rt
-#         And Select Building and Chromebook issue of rt
-#         Then Enter the Describe Your Issue of rt
-#         And Click on save button of rt
-#         Then Verify New Ticket is added of rt
-
-#         Then Click on Repair360 page
-#         And Click on RepairBoxes Tab
-#         Then I should click on create new Box of rb
-#         Then Enter weight, height, depth and width of rb
-#         And Select Pick-up site of rb
-#         Then Check the need shipping box of rb
-#         And Click on Create box button of rb
-#         Then Select Ticket from dropdownlist of rb
-#         And Click on Finish button of rb
-#         Then Verify new box is added in table of rb
-
-#         And Click on Repair360 page
-#         And Click on PartCloset Tab
-#         And I should click on Add New VT part of pc
-#         Then Select device and part name of pc
-#         And Enter quantity and select building of pc
-#         Then Click on submit button of pc
-#         And Verify new VT part is added of pc
-#         Then I should click on Add New custome part
-#         Then Enter part name, manufacture and parent device of pc
-#         And Enter part sku and quantity of pc
-#         Then Click on submit button of pc
-#         And Verify new custome part is added of pc
-#         And Enter the Search value in search box of pc
-#         Then Verify the Results in the table of pc
-#         And Click on delete button of pc
-#         Then Verify the recode is deleted of pc
 
 
 

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2739000000
+              "duration": 2159000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5345000000
+              "duration": 11427000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9076000000
+              "duration": 9080000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Users page",
             "result": {
               "status": "passed",
-              "duration": 80000000
+              "duration": 77000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I should be redirected to the Users page",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 7000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Filters of Users unit should be visible",
             "result": {
               "status": "passed",
-              "duration": 888000000
+              "duration": 951000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Table for Users unit should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 8000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "I should click on Add New student",
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 78000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Enter full name, title and Email",
             "result": {
               "status": "passed",
-              "duration": 1387000000
+              "duration": 1360000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Enter Phone and Cell Number",
             "result": {
               "status": "passed",
-              "duration": 693000000
+              "duration": 697000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 65000000
+              "duration": 67000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Verify the student added in table",
             "result": {
               "status": "passed",
-              "duration": 1475000000
+              "duration": 1552000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on Edit button",
             "result": {
               "status": "passed",
-              "duration": 925000000
+              "duration": 918000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "I should edit title, full name",
             "result": {
               "status": "passed",
-              "duration": 1357000000
+              "duration": 1232000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "I should edit Phone and Cell Number and user role",
             "result": {
               "status": "passed",
-              "duration": 1049000000
+              "duration": 951000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "I edit Building",
             "result": {
               "status": "passed",
-              "duration": 127000000
+              "duration": 129000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on Submit button",
             "result": {
               "status": "passed",
-              "duration": 95000000
+              "duration": 100000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click on Delete button",
             "result": {
               "status": "passed",
-              "duration": 156000000
+              "duration": 953000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on Confirm Delete button",
             "result": {
               "status": "passed",
-              "duration": 61000000
+              "duration": 62000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on Download button",
             "result": {
               "status": "passed",
-              "duration": 72000000
+              "duration": 73000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 888000000
+              "duration": 891000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Enter the Search - Full Name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 652000000
+              "duration": 912000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Enter the Search - Email in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 833000000
+              "duration": 975000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Enter the Search - CellNumber in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1145000000
+              "duration": 980000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Enter the Search - User Role in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 887000000
+              "duration": 911000000
             }
           }
         ]

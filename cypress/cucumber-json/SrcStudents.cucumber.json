@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2759000000
+              "duration": 4738000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5918000000
+              "duration": 6689000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9079000000
+              "duration": 9072000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 78000000
+              "duration": 75000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on StudentRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 1048000000
+              "duration": 1025000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click on SrcStudents tab",
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 61000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the Title of SrcStudents Page",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 16000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "I should click on Add New student",
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 71000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Enter title, full name and Email",
             "result": {
               "status": "passed",
-              "duration": 1013000000
+              "duration": 1031000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Enter Phone and Cell Number",
             "result": {
               "status": "passed",
-              "duration": 596000000
+              "duration": 641000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Select User Status",
             "result": {
               "status": "passed",
-              "duration": 121000000
+              "duration": 126000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 142000000
+              "duration": 147000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Verify the student added in table",
             "result": {
               "status": "passed",
-              "duration": 3122000000
+              "duration": 3104000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Enter the Search - Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 696000000
+              "duration": 733000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Enter the Search - Email in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 742000000
+              "duration": 720000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Enter the Search - Status in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 447000000
+              "duration": 490000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Enter the Search - Phone in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 481000000
+              "duration": 483000000
             }
           }
         ]

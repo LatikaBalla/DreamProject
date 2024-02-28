@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 4309000000
+              "duration": 3151000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8366000000
+              "duration": 7855000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9078000000
+              "duration": 9077000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 75000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on RepairBoxes Tab",
             "result": {
               "status": "passed",
-              "duration": 744000000
+              "duration": 494000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of RepairBoxes Page",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 14000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I should click on create new Box",
             "result": {
               "status": "passed",
-              "duration": 66000000
+              "duration": 76000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Enter weight, height, depth and width",
             "result": {
               "status": "passed",
-              "duration": 315000000
+              "duration": 507000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Select Pick-up site",
             "result": {
               "status": "passed",
-              "duration": 361000000
+              "duration": 162000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Check the need shipping box",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 113000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on Create box button",
             "result": {
               "status": "passed",
-              "duration": 67000000
+              "duration": 87000000
             }
           },
           {
@@ -132,9 +132,8 @@
             "line": 20,
             "name": "Select Ticket from dropdownlist",
             "result": {
-              "status": "failed",
-              "duration": 30017000000,
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `#repair_tickets`, but never found it.\n    at RepairBoxesElements.ticketElement (cypress/integration/PageObject/PageElements/RepairBoxesElements.js:67:18)\n    at RepairBoxesActions.selectTickets (cypress/integration/PageObject/PageActions/RepairBoxesActions.js:61:11)\n    at Context.eval (cypress/integration/RepairBoxes/RepairBoxes.spec.js:52:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 275000000
             }
           },
           {
@@ -143,7 +142,8 @@
             "line": 21,
             "name": "Click on Finish button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 72000000
             }
           },
           {
@@ -152,7 +152,8 @@
             "line": 22,
             "name": "Verify new box is added in table",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2561000000
             }
           },
           {
@@ -161,7 +162,8 @@
             "line": 33,
             "name": "Enter the Search - Tracking Number in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5161000000
             }
           },
           {
@@ -170,7 +172,8 @@
             "line": 34,
             "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1200000000
             }
           },
           {
@@ -179,7 +182,8 @@
             "line": 35,
             "name": "Click on Export Button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 78000000
             }
           },
           {
@@ -188,7 +192,8 @@
             "line": 36,
             "name": "Click on view button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3210000000
             }
           },
           {
@@ -197,7 +202,8 @@
             "line": 37,
             "name": "Verify the Details new box",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 64000000
             }
           },
           {
@@ -206,7 +212,9 @@
             "line": 38,
             "name": "Add another ticket in the same box",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "duration": 33315000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find content: 'Add Tickets' but never did.\n    at RepairBoxesElements.addticketElement (cypress/integration/PageObject/PageElements/RepairBoxesElements.js:92:18)\n    at RepairBoxesActions.clickOnAddTicket (cypress/integration/PageObject/PageActions/RepairBoxesActions.js:83:11)\n    at Context.eval (cypress/integration/RepairBoxes/RepairBoxes.spec.js:71:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {

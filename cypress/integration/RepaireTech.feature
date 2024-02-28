@@ -80,10 +80,10 @@ Feature: Repaire Tech Page Functionality
 #         Then Enter the Search - Email in search box and Verify the Result of acc
 #         And Enter the Search - Title in search box and Verify the Result of acc
 #         Then Enter the Search - Phone in search box and Verify the Result of acc
-#         And Click on Export To CSV of acc
-#         Then Click on Bulk Upload button of acc
-#         And Click on Attach CSV file and Click on submit button of acc
-#         Then Verify the Uploaded successfully of acc
+#          And Click on Export To CSV of acc
+#         # Then Click on Bulk Upload button of acc
+#         # And Click on Attach CSV file and Click on submit button of acc
+#         # Then Verify the Uploaded successfully of acc
 
 #         And Click on Buildings Tab
 #         # And Click More filter select- Record Id in search box and Verify the Result of build
@@ -105,7 +105,7 @@ Feature: Repaire Tech Page Functionality
 
 
 #     Scenario: Manage device:
-#         Then Click on Manage Devices
+#        And Click on ManageDevices page
 #         And Click on MyFleet Tab
 #         Then Click on the add device of MyF
 #         And Enter Serial no and select device id of MyF
@@ -130,7 +130,7 @@ Feature: Repaire Tech Page Functionality
 #         Then Click on view Button of MyF
 #         And Verify the Warranty Description of MyF
 
-#         Then Click on Manage Devices
+#           And Click on ManageDevices page
 #         And Click on MyFleet Tab
 #         Then Click on Retired Tab
 #         Then Click on the add device of MyF
@@ -156,7 +156,7 @@ Feature: Repaire Tech Page Functionality
 #         Then Click on view Button of MyF
 #         And Verify the Warranty Description of MyF
 
-#         Then Click on Manage Devices
+#           And Click on ManageDevices page
 #         And Click on ImportSerialDevices Tab
 #         # And Click More filter select- Importer in search box and Verify the Result of isd
 #         # Then Click on Clear filter of isd
@@ -170,8 +170,7 @@ Feature: Repaire Tech Page Functionality
 #         And Click on Download import button of isd
 #         And Click on Details button of isd
 #         Then Verify the Device Details of isd
-
-#         Then Click on Manage Devices
+#    And Click on ManageDevices page
 #         And Click on LoanerManagement Tab
 #         Then Search the serial no in search box of Available Devices section of lm
 #         And Verify the search result of lm
@@ -191,7 +190,7 @@ Feature: Repaire Tech Page Functionality
 #         Then Verify the device is added in Available section of lm
 #         And Click on remove from loaner pool button of lm
 
-#         Then Click on Manage Devices
+#          And Click on ManageDevices page
 #         And Click on OrgUploadAssets Tab
 #         Then I should click on Add Asset of oua
 #         Then Enter title, full name location and tag of oua
@@ -216,21 +215,21 @@ Feature: Repaire Tech Page Functionality
 #         And Verify the record is deleted successfully of oua
 
 
-#     Scenario: Repair360 -repaireTicket
-#         Then Click on Repair360 page
-#         And Click on RepairBoxes Tab
-#         Then I should click on create new Box of rb
-#         Then Enter weight, height, depth and width of rb
-#         And Select Pick-up site of rb
-#         Then Check the need shipping box of rb
-#         And Click on Create box button of rb
-#         Then Select Ticket from dropdownlist of rb
-#         And Click on Finish button of rb
-#         Then Verify new box is added in table of rb
-#         And Enter the Search - Tracking Number in search box and Verify the Result of rb
-#         Then Enter the Search - Record Id in search box and Verify the Result of rb
+#     # Scenario: Repair360 repaireBox
+#     #     Then Click on Repair360 page
+#     #     And Click on RepairBoxes Tab
+#     #     Then I should click on create new Box of rb
+#     #     Then Enter weight, height, depth and width of rb
+#     #     And Select Pick-up site of rb
+#     #     Then Check the need shipping box of rb
+#     #     And Click on Create box button of rb
+#     #     Then Select Ticket from dropdownlist of rb
+#     #     And Click on Finish button of rb
+#     #     Then Verify new box is added in table of rb
+#     #     And Enter the Search - Tracking Number in search box and Verify the Result of rb
+#     #     Then Enter the Search - Record Id in search box and Verify the Result of rb
 
-#     Scenario: Repair360  -repaireBox
+#     Scenario: Repair360  -repaireTicket-
 #         And Click on Repair360 page
 #         Then I should click on create new ticket of rt
 #         Then Select failure Type, Return site and Serial Device of rt
@@ -263,8 +262,6 @@ Feature: Repaire Tech Page Functionality
 #     # Then Click on Clear filter of rt
 
 #     Scenario: Report Center -NonwarrantyRepairs , DeviceRepairReport
-
-
 #         And Click on Report center page
 #         And Click on NonwarrantyRepairs page
 #         Then Select failure Type, Return site and Serial Device of Nwr

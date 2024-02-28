@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 5693000000
+              "duration": 1492000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6942000000
+              "duration": 16891000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9070000000
+              "duration": 9073000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 78000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on ImportSerialDevices Tab",
             "result": {
               "status": "passed",
-              "duration": 1101000000
+              "duration": 1114000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of ImportSerialDevices Page",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 14000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Filters of ImportSerialDevices should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 8000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Upload the CSV import file",
             "result": {
               "status": "passed",
-              "duration": 256000000
+              "duration": 257000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 86000000
+              "duration": 64000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on refresh button",
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 64000000
             }
           }
         ]

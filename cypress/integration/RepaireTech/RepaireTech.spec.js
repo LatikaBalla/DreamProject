@@ -18,7 +18,11 @@ import { SrcFacilitatorsActions } from '../PageObject/PageActions/SrcFacilitator
 import { InHouseTicketsActions } from '../PageObject/PageActions/InHouseTicketsActions'
 import { InHouseWorkflowActions } from '../PageObject/PageActions/InHouseWorkflowActions.js'
 import { LoanerManagementActions } from '../PageObject/PageActions/LoanerManagementActions'
+import { AccountDetailsActions } from '../PageObject/PageActions/AccountDetailsActions'
+import { BuildingsActions } from '../PageObject/PageActions/BuildingsActions'
 
+const build = new BuildingsActions()
+const acc = new AccountDetailsActions()
 const loan = new LoanerManagementActions()
 const ihw = new InHouseWorkflowActions()
 const iht = new InHouseTicketsActions()
@@ -91,7 +95,7 @@ And('Verify the NonwarrantyRepairs tab should be visible', () => {
 
 
 And('Click on ManageDevices page', () => {
-    cy.get('[data-testid="ChevronRightIcon"]').click({ force: true })
+  //  cy.get('[data-testid="ChevronRightIcon"]').click({ force: true })
     mdev.clickOnManageDevices()
 })
 Then('I should be redirected to theManageDevices page', () => {
@@ -829,7 +833,12 @@ Then('Verify New Ticket is added of inw', () => {
 })
 
 
-
+Then('Account Details -Aaccount Name and no should be visible of acc', () => {
+    acc.AccountDetailsVisible()
+})
+And('Account Manager,Billing Address and Shipping Address should be visible of acc', () => {
+    acc.sectionManaddressVisible()
+})
 Then('Click on Clear filter of acc', () => {
     acc.clickOnClearFiltersButton()
 })

@@ -9,98 +9,98 @@ Feature: School Admin Role Page Functionality
         Then Close the terms of service window
 
     Scenario: School Admin Role can access the dashboard page and check the visiblity
-#         Then I should be redirected to the dashboard page
-#         And Verify the Title of dashborad Page
-#         Then My Account Detail tab should be visible
-#         And Building tab should be visible
+        Then I should be redirected to the dashboard page
+        And Verify the Title of dashborad Page
+        Then My Account Detail tab should be visible
+        And Building tab should be visible
 
-#         And Click on Report center page
-#         Then I should be redirected to the Report center page
-#         And Verify the Title of Report center Page
-#         Then Verify the VivacityRepairReport Tab should be visible
-#         And Verify the InHouseRepairReport tab should be visible
-#         Then Verify the DeviceRepairReport tab should be visible
-#         And Verify the NonwarrantyRepairs tab should be visible
+        And Click on Report center page
+        Then I should be redirected to the Report center page
+        And Verify the Title of Report center Page
+        Then Verify the VivacityRepairReport Tab should be visible
+        And Verify the InHouseRepairReport tab should be visible
+        Then Verify the DeviceRepairReport tab should be visible
+        And Verify the NonwarrantyRepairs tab should be visible
 
-#         And Click on ManageDevices page
-#         Then I should be redirected to theManageDevices page
-#         And Verify the Title of ManageDevices Page
-#         Then Verify the My Fleet Tab should be visible
-#         And Verify the Loaner Management tab should be visible
-#         Then Verify the Import Serial Devices tab should be visible
-#         And Verify the Organization Uploaded Assets tab should be visible
+        And Click on ManageDevices page
+        Then I should be redirected to theManageDevices page
+        And Verify the Title of ManageDevices Page
+        Then Verify the My Fleet Tab should be visible
+        And Verify the Loaner Management tab should be visible
+        Then Verify the Import Serial Devices tab should be visible
+        And Verify the Organization Uploaded Assets tab should be visible
 
-#         And Click on Repair360 page
-#         Then I should be redirected to the Repair360 page
-#         And Verify the Title of Repair360 Page
-#         Then Verify the VivacityRepairCenter Tab should be visible
-#         And Verify the InHouseRepairCenter tab should be visible
-#         Then Verify the StudentRepairCenter tab should be visible
-#         And Verify the PartCloset tab should be visible
+        And Click on Repair360 page
+        Then I should be redirected to the Repair360 page
+        And Verify the Title of Repair360 Page
+        Then Verify the VivacityRepairCenter Tab should be visible
+        And Verify the InHouseRepairCenter tab should be visible
+        Then Verify the StudentRepairCenter tab should be visible
+        And Verify the PartCloset tab should be visible
 
-#         And Click on Resources page
-#         Then I should be redirected to the Resources page
-#         And Verify the Title of Resources Page
-#         Then Verify the Instructions Tab should be visible
-#         And Verify the HowToVideos tab should be visible
-#         Then Verify the WarrantyInfo tab should be visible
+        And Click on Resources page
+        Then I should be redirected to the Resources page
+        And Verify the Title of Resources Page
+        Then Verify the Instructions Tab should be visible
+        And Verify the HowToVideos tab should be visible
+        Then Verify the WarrantyInfo tab should be visible
 
-#         And Click on My profile page
-#         Then Verify the Title of My Profile Page
+        And Click on My profile page
+        Then Verify the Title of My Profile Page
 
-#         And Click on Support page
-#         Then Verify the Title of Support Page
+        And Click on Support page
+        Then Verify the Title of Support Page
 
-#         And Click on features page
-#         Then I should be redirected to the Features page
-#         And Verify the Title of Features Page
-#         Then Verify the Under Consideration Tab should be visible
-#         And Verify the Under Construction tab should be visible
-#         Then Verify the Launched tab should be visible
+        And Click on features page
+        Then I should be redirected to the Features page
+        And Verify the Title of Features Page
+        Then Verify the Under Consideration Tab should be visible
+        And Verify the Under Construction tab should be visible
+        Then Verify the Launched tab should be visible
 
-#     Scenario: Dashboard
-#         Then Account Details -Aaccount Name and no should be visible of acc
-#         And Account Manager,Billing Address and Shipping Address should be visible of acc
-#         #   And Click More filter select- Record Id in search box and Verify the Result of acc
-#         #     Then Click on Clear filter of acc
-#         #     And Click More filter select- Full name in search box and Verify the Result of acc
-#         #     Then Click on Clear filter of acc
-#         #     And Click More filter select- Title in search box and Verify the Result of acc
-#         #     Then Click on Clear filter of acc
-#         #     And Click More filter select- Eamil in search box and Verify the Result of acc
-#         #     Then Click on Clear filter of acc
-#         #     And Click More filter select- User Role in search box and Verify the Result of acc
-#         #     Then Click on Clear filter of acc
-#         #     And Click More filter select- Phone in search box and Verify the Result of acc
-#         #     Then Click on Clear filter of acc
-#         #     And Click More filter select- User Status in search box and Verify the Result of acc
-#         #     Then Click on Clear filter of acc
-#         And Enter the Search - Record Id in search box and Verify the Result of acc
-#         And Enter the Search - Full name in search box and Verify the Result of acc
-#         Then Enter the Search - Email in search box and Verify the Result of acc
-#         And Enter the Search - Title in search box and Verify the Result of acc
-#         Then Enter the Search - Phone in search box and Verify the Result of acc
-#         And Click on Export To CSV of acc
-#         Then Click on Bulk Upload button of acc
-#         And Click on Attach CSV file and Click on submit button of acc
-#         Then Verify the Uploaded successfully of acc
+    Scenario: Dashboard
+        # Then Account Details -Aaccount Name and no should be visible of acc
+        # And Account Manager,Billing Address and Shipping Address should be visible of acc
+        #   And Click More filter select- Record Id in search box and Verify the Result of acc
+        #     Then Click on Clear filter of acc
+        #     And Click More filter select- Full name in search box and Verify the Result of acc
+        #     Then Click on Clear filter of acc
+        #     And Click More filter select- Title in search box and Verify the Result of acc
+        #     Then Click on Clear filter of acc
+        #     And Click More filter select- Eamil in search box and Verify the Result of acc
+        #     Then Click on Clear filter of acc
+        #     And Click More filter select- User Role in search box and Verify the Result of acc
+        #     Then Click on Clear filter of acc
+        #     And Click More filter select- Phone in search box and Verify the Result of acc
+        #     Then Click on Clear filter of acc
+        #     And Click More filter select- User Status in search box and Verify the Result of acc
+        #     Then Click on Clear filter of acc
+        And Enter the Search - Record Id in search box and Verify the Result of acc
+        And Enter the Search - Full name in search box and Verify the Result of acc
+        Then Enter the Search - Email in search box and Verify the Result of acc
+        And Enter the Search - Title in search box and Verify the Result of acc
+        Then Enter the Search - Phone in search box and Verify the Result of acc
+        And Click on Export To CSV of acc
+        # Then Click on Bulk Upload button of acc
+        # And Click on Attach CSV file and Click on submit button of acc
+        # Then Verify the Uploaded successfully of acc
 
-#         And Click on Buildings Tab
-#         # And Click More filter select- Record Id in search box and Verify the Result of build
-#         # Then Click on Clear filter of build
-#         # And Click More filter select- Building Name in search box and Verify the Result of build
-#         # Then Click on Clear filter of build
-#         # And Click More filter select- Default Building in search box and Verify the Result of build
-#         # Then Click on Clear filter of build
-#         # And Click More filter select- Phone in search box and Verify the Result of build
-#         # Then Click on Clear filter of build
-#         # And Click More filter select- Building Shipping Address in search box and Verify the Result of build
-#         # Then Click on Clear filter of build
-#         # And Click More filter select- Building Billing Address in search box and Verify the Result of build
-#         # Then Click on Clear filter of build
-#         And Enter the Search - Building Name in search box and Verify the Result of build
-#         # Then Enter the Search - Building Shipping Address in search box and Verify the Result of build
-#         And Enter the Search - Phone in search box and Verify the Result of build
+        And Click on Buildings Tab
+        # And Click More filter select- Record Id in search box and Verify the Result of build
+        # Then Click on Clear filter of build
+        # And Click More filter select- Building Name in search box and Verify the Result of build
+        # Then Click on Clear filter of build
+        # And Click More filter select- Default Building in search box and Verify the Result of build
+        # Then Click on Clear filter of build
+        # And Click More filter select- Phone in search box and Verify the Result of build
+        # Then Click on Clear filter of build
+        # And Click More filter select- Building Shipping Address in search box and Verify the Result of build
+        # Then Click on Clear filter of build
+        # And Click More filter select- Building Billing Address in search box and Verify the Result of build
+        # Then Click on Clear filter of build
+        And Enter the Search - Building Name in search box and Verify the Result of build
+        # Then Enter the Search - Building Shipping Address in search box and Verify the Result of build
+        And Enter the Search - Phone in search box and Verify the Result of build
 
 #     Scenario: Manage device:
 #         Then Click on Manage Devices

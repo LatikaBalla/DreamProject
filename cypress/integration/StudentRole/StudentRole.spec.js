@@ -468,8 +468,9 @@ And('Enter the Search - Title in search box and Verify the Result of acc', () =>
 Then('Enter the Search - Phone in search box and Verify the Result of acc', () => {
     acc.searchPhone()
 })
-
-
+And('Click on Export To CSV of acc', () => {
+    acc.clickOnExporttoCSV()
+})
 
 And('Click on Buildings Tab', () => {
     build.clickOnBuildingTab()
