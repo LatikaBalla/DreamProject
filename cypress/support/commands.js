@@ -51,6 +51,19 @@ Cypress.Commands.add("VivacityAdminLogin", () => {
     cy.wait(1000)
   })
 })
+Cypress.Commands.add("SchoolAdminLogin", () => {
+  cy.get('[href="/login"]').click({ force: true })
+   cy.origin('https://dream-vivacity.us.auth0.com/', () => {
+  //cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
+    Cypress.on("uncaught:exception", () => {
+      return false;
+    });
+    cy.get('#input-box-email').type('demo_adminSchoolDistrict@vivacitytech.com')
+    cy.get('#input-box-password').type(Cypress.env('PASSWORD'))
+    cy.get('.submit-text').click()
+    cy.wait(1000)
+  })
+})
 
 Cypress.Commands.add("RepaireTechLogin", () => {
 

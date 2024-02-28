@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2600000000
+              "duration": 3862000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 17109000000
+              "duration": 7973000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9074000000
+              "duration": 9071000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 79000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of Repair360 Page",
             "result": {
               "status": "passed",
-              "duration": 909000000
+              "duration": 953000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the VivacityRepairCenter Tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 8000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Verify the InHouseRepairCenter tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 7000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Verify the StudentRepairCenter tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 6000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Verify the PartCloset tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 8000000
             }
           }
         ]

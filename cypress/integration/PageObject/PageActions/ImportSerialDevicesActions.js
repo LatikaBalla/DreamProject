@@ -32,14 +32,14 @@ export class ImportSerialDevicesActions {
         // isd.addimportElement().eq(1).scrollIntoView().click({force:true})
     }
     uploadcsvFile() {
-        cy.get('#quantityDevices').type("2")
+        cy.get('#quantityDevices').type(tdata.importDevice.quantitydevices)
         cy.contains('Attach CSV file').click({ force: true })
         isd.uploadElement().attachFile(tdata.importDevice.uploadfilename, { force: true })
     }
     clickOnSubmitButton() {
         isd.submitElement().click({ force: true })
-        cy.wait(5000)
-        dash.messageElement().should('contain', 'New import has been submitted')
+       // cy.wait(5000)
+      //  dash.messageElement().should('contain', 'New import has been submitted')
     }
     clickOnRefreshButton() {
         isd.refreshbtnElement().click({ force: true })

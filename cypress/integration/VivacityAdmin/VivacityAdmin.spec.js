@@ -54,6 +54,15 @@ Then('Repair Ticket Creation unit should be visible', () => {
 And('Employee management unit should be visible', () => {
     vadmin.employeeManagment()
 })
+And ('Import serial device Request should be visible',()=>{
+    vadmin.importserialdeviceRequest()
+})
+Then ('Spoof Dream User should be visible',()=>{
+    vadmin.spoofDreamUser()
+})
+And ('Import Parts Closet should be visible',()=>{
+    vadmin.importPartsCloset()
+})
 
 
 Then('Click on All Paid Subscription Requests unit', () => {

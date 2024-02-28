@@ -63,8 +63,8 @@ export class InHouseTicketsActions {
         iht.savebtnElement().click({ force: true })
     }
     verifyNewTicket() {
-        // cy.wait(6000)
-        dash.messageElement().should('contain', tdata.inHouseTicket.createTicketmsg)
+        cy.wait(6000)
+        dash.messageElement().should('contain', tdata.inHouseTicket.createTicketmsg, { force: true })
     }
     clickOnExport() {
         iht.exportbtnElement().click({ force: true })
@@ -77,7 +77,7 @@ export class InHouseTicketsActions {
         iht.searchboxElement().eq(0).click({ force: true })
         iht.recordidElement().click({ force: true })
         iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.recordid + '{enter}', { force: true })
-        cy.wait(1000)
+       // cy.wait(1000)
         cy.get('tr td').eq(0).should('contain', tdata.inHouseTicket.recordid)
     }
     searchTicketNumber() {
@@ -111,13 +111,13 @@ export class InHouseTicketsActions {
         iht.fieldOpElement().select('Does Not Contain')
     }
     enterSearchValue() {
-        iht.fieldValueElement().type(tdata.inHouseTicket.ticketnumber)
+        iht.fieldValueElement().type(tdata.inHouseTicket.ticketnumber, { force: true })
     }
     clickOnApply() {
         iht.applyElement().click({ force: true })
     }
     verifyResultFilter() {
-        cy.get('tr td').eq(1).should('not.contain', tdata.inHouseTicket.ticketnumber)
+        cy.get('tr td').eq(1).should('not.contain', tdata.inHouseTicket.ticketnumber, { force: true })
     }
     clickOnClearFilter() {
         iht.clearFilterElement().click({ force: true })
@@ -217,7 +217,7 @@ export class InHouseTicketsActions {
         iht.searchElement().type(tdata.inHouseTicket.ticketnumber + '{enter}', { force: true })
     }
     verifySearchResult() {
-        cy.get('tr td').eq(1).should('contain', tdata.inHouseTicket.ticketnumber)
+        cy.get('tr td').eq(1).should('contain', tdata.inHouseTicket.ticketnumber, { force: true })
     }
     clickViewButton() {
         cy.window().then(win => {

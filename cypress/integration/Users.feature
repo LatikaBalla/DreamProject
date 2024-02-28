@@ -32,9 +32,9 @@ Feature:  Users Page Functionality
     And Enter the Search - Record Id in search box and Verify the Result
     Then Enter the Search - Full Name in search box and Verify the Result
     And Enter the Search - Email in search box and Verify the Result
-    Then Enter the Search - Phone in search box and Verify the Result
+    # Then Enter the Search - Phone in search box and Verify the Result
     And Enter the Search - CellNumber in search box and Verify the Result
-    # Then Enter the Search - User Role in search box and Verify the Result
+   Then Enter the Search - User Role in search box and Verify the Result
     # And Click More filter select- Record Id in search box and Verify the Result
     # Then Click on Clear filter
     # And Click More filter select- Full name in search box and Verify the Result

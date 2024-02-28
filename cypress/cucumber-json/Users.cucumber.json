@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2835000000
+              "duration": 2739000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 23755000000
+              "duration": 5345000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9077000000
+              "duration": 9076000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Users page",
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 80000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I should be redirected to the Users page",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 4000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Filters of Users unit should be visible",
             "result": {
               "status": "passed",
-              "duration": 935000000
+              "duration": 888000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "I should click on Add New student",
             "result": {
               "status": "passed",
-              "duration": 110000000
+              "duration": 70000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Enter full name, title and Email",
             "result": {
               "status": "passed",
-              "duration": 1379000000
+              "duration": 1387000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Enter Phone and Cell Number",
             "result": {
               "status": "passed",
-              "duration": 791000000
+              "duration": 693000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 64000000
+              "duration": 65000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Verify the student added in table",
             "result": {
               "status": "passed",
-              "duration": 1546000000
+              "duration": 1475000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on Edit button",
             "result": {
               "status": "passed",
-              "duration": 947000000
+              "duration": 925000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "I should edit title, full name",
             "result": {
               "status": "passed",
-              "duration": 1299000000
+              "duration": 1357000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "I should edit Phone and Cell Number and user role",
             "result": {
               "status": "passed",
-              "duration": 889000000
+              "duration": 1049000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "I edit Building",
             "result": {
               "status": "passed",
-              "duration": 130000000
+              "duration": 127000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on Submit button",
             "result": {
               "status": "passed",
-              "duration": 101000000
+              "duration": 95000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click on Delete button",
             "result": {
               "status": "passed",
-              "duration": 940000000
+              "duration": 156000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on Confirm Delete button",
             "result": {
               "status": "passed",
-              "duration": 64000000
+              "duration": 61000000
             }
           },
           {
@@ -223,57 +223,57 @@
             "name": "Click on Download button",
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 72000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 33,
+            "line": 32,
             "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1012000000
+              "duration": 888000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 34,
+            "line": 33,
             "name": "Enter the Search - Full Name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 614000000
+              "duration": 652000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 35,
+            "line": 34,
             "name": "Enter the Search - Email in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 976000000
+              "duration": 833000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "Enter the Search - CellNumber in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1145000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 36,
-            "name": "Enter the Search - Phone in search box and Verify the Result",
-            "result": {
-              "status": "failed",
-              "duration": 30317000000,
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[data-value='phone']`, but never found it.\n    at UsersElements.phonedropElement (cypress/integration/PageObject/PageElements/UsersElements.js:140:18)\n    at UsersActions.searchPhone (cypress/integration/PageObject/PageActions/UsersActions.js:156:13)\n    at Context.eval (cypress/integration/Users/Users.spec.js:118:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 37,
-            "name": "Enter the Search - CellNumber in search box and Verify the Result",
+            "name": "Enter the Search - User Role in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 887000000
             }
           }
         ]

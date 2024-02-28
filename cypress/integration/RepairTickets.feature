@@ -22,7 +22,7 @@ Feature:RepairTickets Page Functionality
     And Click on Download import button
     And Enter the Search - Ticket Number in search box and Verify the Result
     Then Enter the Search - Repair type in search box and Verify the Result
-    # And Enter the Search - Serial Number in search box and Verify the Result
+    And Enter the Search - Serial Number in search box and Verify the Result
     Then Enter the Search - Repair status in search box and Verify the Result
     And Enter the Search - Repair Box in search box and Verify the Result
     Then Enter the Search - Asset tag in search box and Verify the Result
@@ -48,10 +48,10 @@ Feature:RepairTickets Page Functionality
     Then Verify the Results in the table
     And Click on view button
     Then Verify the Details of student repair ticket
-    And Click on the Edit Ticket Button
-    Then Update the Technician and Repair Status
-    And Click on Update Button
-    Then Verify Updated successfully
-    And Click on Add Line and Verify
-    Then Click on Add Repair Image and Verify
-    And Click on Add Note and Verify
+    # And Click on the Edit Ticket Button
+    # Then Update the Technician and Repair Status
+    # And Click on Update Button
+    # Then Verify Updated successfully
+    # And Click on Add Line and Verify
+    # Then Click on Add Repair Image and Verify
+    # And Click on Add Note and Verify

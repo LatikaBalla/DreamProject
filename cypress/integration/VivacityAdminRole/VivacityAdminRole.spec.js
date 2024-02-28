@@ -17,7 +17,13 @@ import { SrcStudentsActions } from '../PageObject/PageActions/SrcStudentsActions
 import { SrcFacilitatorsActions } from '../PageObject/PageActions/SrcFacilitatorsActions'
 import { InHouseTicketsActions } from '../PageObject/PageActions/InHouseTicketsActions'
 import { InHouseWorkflowActions } from '../PageObject/PageActions/InHouseWorkflowActions.js'
+import { AccountDetailsActions } from '../PageObject/PageActions/AccountDetailsActions'
+import { BuildingsActions } from '../PageObject/PageActions/BuildingsActions'
+import { UsersActions } from '../PageObject/PageActions/UsersActions'
 
+const user = new UsersActions()
+const build = new BuildingsActions()
+const acc = new AccountDetailsActions()
 const ihw = new InHouseWorkflowActions()
 const iht = new InHouseTicketsActions()
 const sf = new SrcFacilitatorsActions()
@@ -43,7 +49,7 @@ Given('I should navigate to application', function () {
     cy.visit("/");
 })
 When('I should Sign In into the application', () => {
-    cy.RepaireTechLogin()
+    cy.VivacityAdminLogin()
 })
 Then('Close the terms of service window', () => {
     cy.wait(5000)
@@ -157,7 +163,7 @@ Then('Verify the WarrantyInfo tab should be visible', () => {
 
 And('Click on My profile page', () => {
     cy.wait(1000)
-    cy.contains('demo_repairtech@vivacitytech.com').click({ force: true })
+    cy.contains('demo_adminvivacity@vivacitytech.com').click({ force: true })
     mp.clickOnMyProfile()
 })
 Then('Verify the Title of My Profile Page', () => {
@@ -166,7 +172,7 @@ Then('Verify the Title of My Profile Page', () => {
 
 And('Click on Support page', () => {
     cy.wait(1000)
-    // cy.contains('demo_repairtech@vivacitytech.com').click({force:true})
+    // cy.contains('demo_adminVivacity@vivacitytech.com').click({force:true})
     su.clickOnSupport()
 })
 Then('Verify the Title of Support Page', () => {
@@ -176,7 +182,7 @@ Then('Verify the Title of Support Page', () => {
 
 And('Click on features page', () => {
     cy.wait(1000)
-    //  cy.contains('demo_repairtech@vivacitytech.com').click({force:true})
+    //  cy.contains('demo_adminVivacity@vivacitytech.com').click({force:true})
     ft.clickOnFeatures()
 })
 Then('I should be redirected to the Features page', () => {
@@ -403,7 +409,7 @@ Then('Enter the Search - Record Id in search box and Verify the Result of rb', (
 
 And('Click on My profile page', () => {
     cy.wait(1000)
-    cy.contains('demo_repairtech@vivacitytech.com').click({ force: true })
+    cy.contains('demo_adminvivacity@vivacitytech.com').click({ force: true })
     mp.clickOnMyProfile()
 })
 
@@ -826,7 +832,12 @@ Then('Verify New Ticket is added of inw', () => {
     ihw.verifyNewTicket()
 })
 
-
+Then('Account Details -Aaccount Name and no should be visible of acc', () => {
+    acc.AccountDetailsVisible()
+})
+And('Account Manager,Billing Address and Shipping Address should be visible of acc', () => {
+    acc.sectionManaddressVisible()
+})
 
 Then('Click on Clear filter of acc', () => {
     acc.clickOnClearFiltersButton()
@@ -938,6 +949,163 @@ And('Click on Attach CSV file and Click on submit button of build', () => {
 Then('Verify the Uploaded successfully of build', () => {
     build.verifyuploaded()
 })
+
+Then('I should click on + Add New button of build', () => {
+    build.clickOnAddnewButton()
+})
+And('I should Enter Building Name,Phone and Extension of build', () => {
+    build.enterBuildingName()
+    build.enterPhone()
+    build.enterExtension()
+})
+Then('Select Default building of build', () => {
+    build.selectDefaultBuilding()
+})
+And('Enter Billing Address and select from dropdown of build', () => {
+    build.enterBillingAddress()
+})
+Then('Click on checkbox Same as Shipping Address of build', () => {
+    build.clickOnCheckbox()
+})
+And('Click on save button of build', () => {
+    build.clickOnSaveButton()
+})
+Then('Verify the builing details added in table of build', () => {
+    build.verifyNewBuilding()
+})
+And('Click on Delete Icon of build', () => {
+    build.clickOnDeleteIcon()
+})
+Then('Click on Confirm Delete button of build', () => {
+    build.clickOnConfirmDeleteButton()
+})
+And('Verify the record is deleted successfully of build', () => {
+    build.verifyDelete()
+})
+And('Click on My Account Details Tab', () => {
+    dash.clickOnMyAccountTab()
+})
+
+Then('I should click on Add New button of acc', () => {
+    acc.clickOnAddNewbutton()
+})
+And('Verify the tilte of Add New Contact page of acc', () => {
+    acc.verifyNewContactTitle()
+})
+Then('Enter title, full name and valid Email of acc', () => {
+    acc.enterTitle()
+    acc.enterFullname()
+    acc.enterEmail()
+})
+And('Enter Phone and Cell Number of acc', () => {
+    acc.enterPhone()
+    acc.enterCellNumber()
+})
+Then('Select User Role and Building from Dropdown List of acc', () => {
+    acc.selectUserRole()
+    acc.selectBuilding()
+})
+And('Click on save button of acc', () => {
+    acc.clickOnASaveButton()
+})
+Then('Verify the account details added in table of acc', () => {
+    acc.verifyRecordTable()
+})
+
+And('Click on Edit Icon of acc', () => {
+    acc.clickOnEditIcon()
+    cy.wait(2000)
+})
+Then('I should edit title, full name of acc', () => {
+    acc.editTitle()
+    acc.editFullname()
+})
+And('I should edit Phone and Cell Number and user role of acc', () => {
+    acc.editCellNumber()
+    acc.editPhone()
+    acc.editUserRole()
+})
+Then('I edit User Status to inactive of acc', () => {
+    acc.editUserStatus()
+})
+Then('Click on Submit button of acc', () => {
+    acc.clickSubmitForUpdate()
+})
+And('Verify the Record has been updated Meassage of acc', () => {
+    acc.verfifyDataUpdatedMessage()
+})
+Then('Enter title, full name and valid Email for Delete of acc', () => {
+    acc.enterTitle()
+    acc.enterFullnameDelete()
+    acc.enterEmail()
+})
+And('Click on Delete Icon of acc', () => {
+    cy.wait(2000)
+    acc.clickDeleteIcon()
+})
+Then('Click on Confirm Delete button of acc', () => {
+    acc.clickConfirmDeleteButton()
+})
+And('Verify the record is deleted successfully of acc', () => {
+    acc.verifyRecordDeleted()
+})
+
+Then('Enter title, full name and valid Email for Search of acc', () => {
+    acc.enterTitle()
+    acc.enterFullnameSearch()
+    acc.enterEmail()
+})
+Then('Click on More filters of acc', () => {
+    acc.clickOnMoreFiltersButton()
+})
+And('Click on Add Filters Group of acc', () => {
+    acc.clickOnAddFilterGroup()
+})
+Then('Select Field name and Field operation of acc', () => {
+    acc.selectFieldName()
+    acc.selectfieldOperation()
+})
+And('Enter the Search value in search box of acc', () => {
+    acc.enterFieldValueSearchBox()
+})
+Then('Click on Apply Button of acc', () => {
+    acc.clickOnApplyButton()
+})
+And('Verify the Results in the table of acc', () => {
+    acc.verifyResultAfterFilter()
+})
+Then('Click on Clear filter of acc', () => {
+    acc.clickOnClearFiltersButton()
+})
+And('Enter the full name in search box of acc', () => {
+    acc.enterSearchValue()
+})
+And('Verify the record in searching history of acc', () => {
+    acc.verifySearchResult()
+})
+
+And('Click on Edit Icon of build', () => {
+    build.clickOnEditIcon()
+})
+And('I should edit Building Name,Phone and Extension of build', () => {
+    build.editBuildingName()
+    build.editPhone()
+    build.editExtension()
+})
+Then('I should edit Select Default building', () => {
+    build.editselectDefaultBuilding()
+})
+Then('Click on update button of build', () => {
+    build.clickOnUpdateButton()
+})
+And('Verify the Record has been updated Meassage of build', () => {
+    build.verifyBuildingUpdated()
+})
+
+
+
+
+
 
 Then('I should click on new button of ihw', () => {
     ihw.clickOnNewButton()

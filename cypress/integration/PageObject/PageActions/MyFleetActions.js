@@ -43,12 +43,12 @@ export class MyFleetActions {
         cy.get('tr td').eq(8).contains('Edit').click({ force: true })
     }
     editInformation() {
-        mf.assetTagElement().clear().type(tdata.myFleet.serialnoEdit)
+        mf.assetTagElement().clear({ force: true }).type(tdata.myFleet.serialnoEdit)
         mf.studentinfoElement().click({ force: true })
         cy.get('[role="listbox"]').find('li').contains('Test').click({ force: true })
         // cy.get(tdata.myFleet.studentidEdit).click()
         mf.buildingElement().click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains('Building_T1').click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
     }
     clickOnUpdateButton() {
         mf.updatebtnElement().click({ froce: true })
@@ -92,8 +92,8 @@ export class MyFleetActions {
         mf.assetTagElement().type(tdata.myFleet.serialno)
     }
     selectStudentid() {
-        mf.studentidElement().click()
-        cy.get(tdata.myFleet.studentid).click()
+        mf.studentidElement().click({ force: true })
+        cy.get(tdata.myFleet.studentid).click({ force: true })
     }
     selectLonarStatus() {
         mf.lonarstatusElement().click()
@@ -103,7 +103,7 @@ export class MyFleetActions {
     selectDeviceStatus() {
         mf.devicestatusElement().click()
         //  cy.get('.MuiList-root > [tabindex="0"]').click()
-        cy.get(tdata.myFleet.devicestatus).click()
+        cy.get(tdata.myFleet.devicestatus).click({ force: true })
     }
     clickOnsubmitButton() {
         mf.submitbtnElement().click({ force: true })

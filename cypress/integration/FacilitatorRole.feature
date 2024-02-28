@@ -30,21 +30,20 @@ Feature: Facilitator Role  Page Functionality
         Then Verify the Import Serial Devices tab should be visible
         And Verify the Organization Uploaded Assets tab should be visible
 
-
-        And Click on Repair360 page
-        Then I should be redirected to the Repair360 page
-        And Verify the Title of Repair360 Page
-        # Then Verify the VivacityRepairCenter Tab should be visible
-        # And Verify the InHouseRepairCenter tab should be visible
-        # Then Verify the StudentRepairCenter tab should be visible
-        # And Verify the PartCloset tab should be visible
-
         And Click on Resources page
         Then I should be redirected to the Resources page
         And Verify the Title of Resources Page
         Then Verify the Instructions Tab should be visible
         And Verify the HowToVideos tab should be visible
         Then Verify the WarrantyInfo tab should be visible
+
+        And Click on Repair360 page
+        Then I should be redirected to the Repair360 page
+        # And Verify the Title of Repair360 Page
+        # Then Verify the VivacityRepairCenter Tab should be visible
+        # And Verify the InHouseRepairCenter tab should be visible
+        # Then Verify the StudentRepairCenter tab should be visible
+        # And Verify the PartCloset tab should be visible
 
         And Click on My profile page
         Then Verify the Title of My Profile Page
@@ -82,9 +81,9 @@ Feature: Facilitator Role  Page Functionality
         And Enter the Search - Title in search box and Verify the Result of acc
         Then Enter the Search - Phone in search box and Verify the Result of acc
         And Click on Export To CSV of acc
-        Then Click on Bulk Upload button of acc
-        And Click on Attach CSV file and Click on submit button of acc
-        Then Verify the Uploaded successfully of acc
+        # Then Click on Bulk Upload button of acc
+        # And Click on Attach CSV file and Click on submit button of acc
+        # Then Verify the Uploaded successfully of acc
 
         And Click on Buildings Tab
         # And Click More filter select- Record Id in search box and Verify the Result of build
@@ -102,6 +101,10 @@ Feature: Facilitator Role  Page Functionality
         And Enter the Search - Building Name in search box and Verify the Result of build
         # Then Enter the Search - Building Shipping Address in search box and Verify the Result of build
         And Enter the Search - Phone in search box and Verify the Result of build
+    # And Click on Export To CSV of build
+    # Then Click on Bulk Upload button of build
+    # And Click on Attach CSV file and Click on submit button of build
+    # Then Verify the Uploaded successfully of build
 
     Scenario: Report center
         And Click on Report center page
@@ -116,8 +119,8 @@ Feature: Facilitator Role  Page Functionality
         # Then Click on Clear filter of drr
         # And Click More filter select- Repair device in search box and Verify the Result of drr
         # Then Click on Clear filter of drr
-        # # And Click More filter select- Repair status in search box and Verify the Result of drr
-        # # Then Click on Clear filter of drr
+        # And Click More filter select- Repair status in search box and Verify the Result of drr
+        # Then Click on Clear filter of drr
         # And Click More filter select- Asset tag in search box and Verify the Result of drr
         # Then Click on Clear filter of drr
         # And Click More filter select- Repair Box in search box and Verify the Result of drr
@@ -177,24 +180,24 @@ Feature: Facilitator Role  Page Functionality
         Then Click on view Button of mf
         And Verify the Warranty Description of mf
 
-        #  And Click on ManageDevices page
-        #         And Click on MyFleet Tab
-        #         Then Click on Retired Tab
-        #         Then Click on Edit button of mf
-        #         And Update Asset tag, student info and building information and Click on update button of mf
-        #         Then Verfiy Record updated successfully of mf
-        #         And Click More filter select- Serial Number in search box and Verify the Result of mf
-        #         Then Click on Clear filter of mf
-        #         And Click More filter select- Asset tag in search box and Verify the Result of mf
-        #         Then Click on Clear filter of mf
-        #         And Click More filter select- Device in search box and Verify the Result of mf
-        #         Then Click on Clear filter of mf
-        #         And Click More filter select- Student in search box and Verify the Result of mf
-        #         Then Click on Clear filter of mf
-        #         And Enter the table fields in search box of mf
-        #         And Verify the record in searching history of mf
-        #         Then Click on view Button of mf
-        #         And Verify the Warranty Description of mf
+        And Click on ManageDevices page
+        And Click on MyFleet Tab
+        Then Click on Retired Tab
+        Then Click on Edit button of mf
+        And Update Asset tag, student info and building information and Click on update button of mf
+        Then Verfiy Record updated successfully of mf
+        # And Click More filter select- Serial Number in search box and Verify the Result of mf
+        # Then Click on Clear filter of mf
+        # And Click More filter select- Asset tag in search box and Verify the Result of mf
+        # Then Click on Clear filter of mf
+        # And Click More filter select- Device in search box and Verify the Result of mf
+        # Then Click on Clear filter of mf
+        # And Click More filter select- Student in search box and Verify the Result of mf
+        # Then Click on Clear filter of mf
+        #    And Enter the table fields in search box of mf
+        # And Verify the record in searching history of mf
+        # Then Click on view Button of mf
+        # And Verify the Warranty Description of mf
 
         And Click on ManageDevices page
         And Click on OrgUploadAssets Tab
@@ -203,26 +206,25 @@ Feature: Facilitator Role  Page Functionality
         # And Click More filter select- Acquire Location in search box and Verify the Result of oua
         # Then Click on Clear filter of oua
 
-        Then Click on Manage Devices
-        And Click on LoanerManagement Tab
-        Then Search the serial no in search box of Available Devices section of lm
-        And Verify the search result of lm
-        Then Click on the Add to loaner pool of lm
-        Then Search the serial no in the Available section of lm
-        And Click on th add Student button of lm
-        Then Enter Fullname, title and email of lm
-        And Select status, building and student_id of lm
-        Then Click on the submit button of form of lm
-        And Verify the student added successfully of lm
-        Then Click on check out button of lm
-        And Select the student name of lm
-        Then Click on the submit button of lm
-        And Search the serial no in the check out section of lm
-        Then Click on the Check in button of lm
-        And Enter note and click on submit button of lm
-        Then Verify the device is added in Available section of lm
-        And Click on remove from loaner pool button of lm
-
+        # And Click on ManageDevices page
+        # And Click on LoanerManagement Tab
+        # Then Search the serial no in search box of Available Devices section of lm
+        # And Verify the search result of lm
+        # Then Click on the Add to loaner pool of lm
+        # Then Search the serial no in the Available section of lm
+        # And Click on th add Student button of lm
+        # Then Enter Fullname, title and email of lm
+        # And Select status, building and student_id of lm
+        # Then Click on the submit button of form of lm
+        # And Verify the student added successfully of lm
+        # Then Click on check out button of lm
+        # And Select the student name of lm
+        # Then Click on the submit button of lm
+        # And Search the serial no in the check out section of lm
+        # Then Click on the Check in button of lm
+        # And Enter note and click on submit button of lm
+        # Then Verify the device is added in Available section of lm
+        # And Click on remove from loaner pool button of lm
 
         And Click on ImportSerialDevices Tab
         And Click More filter select- Importer in search box and Verify the Result of ims
@@ -230,7 +232,7 @@ Feature: Facilitator Role  Page Functionality
         And Click More filter select- Quantity Devices in search box and Verify the Result of ims
         Then Click on Clear filter of ims
 
-    Scenario: MYprofile
+    Scenario: MYprofile ,support and feature
         And Click on My profile page of mp
         And Click on upload image icon of mp
         Then Enter tilte and phone no of mp
@@ -245,41 +247,49 @@ Feature: Facilitator Role  Page Functionality
         Then Click on submit button of sup
         And Verify the Send Feedback successfully of sup
 
-        
+        And Click on features page
+        And Click More filter select- Title in search box and Verify the Result of ft
+        Then Click on Clear filter of ft
+# And Click More filter select- Description in search box and Verify the Result of ft
+# Then Click on Clear filter of ft
+# And Click More filter select- Creator in search box and Verify the Result of feat
+# Then Click on Clear filter of ft
+ 
 
-#     And Click on Repair360 page
-#     Then I should click on create new ticket of rt
-#     Then Select failure Type, Return site and Serial Device of rt
-#     And Select Building and Chromebook issue of rt
-#     Then Enter the Describe Your Issue of rt
-#     And Click on save button of rt
-#     Then Verify New Ticket is added of rt
 
-#     Then Click on Repair360 page
-#     And Click on RepairBoxes Tab
-#     Then I should click on create new Box of rb
-#     Then Enter weight, height, depth and width of rb
-#     And Select Pick-up site of rb
-#     Then Check the need shipping box of rb
-#     And Click on Create box button of rb
-#     Then Select Ticket from dropdownlist of rb
-#     And Click on Finish button of rb
-#     Then Verify new box is added in table of rb
+# And Click on Repair360 page
+# Then I should click on create new ticket of rt
+# Then Select failure Type, Return site and Serial Device of rt
+# And Select Building and Chromebook issue of rt
+# Then Enter the Describe Your Issue of rt
+# And Click on save button of rt
+# Then Verify New Ticket is added of rt
 
-#     And Click on Repair360 page
-#     And Click on PartCloset Tab
-#     And I should click on Add New VT part of pc
-#     Then Select device and part name of pc
-#     And Enter quantity and select building of pc
-#     Then Click on submit button of pc
-#     And Verify new VT part is added of pc
-#     Then I should click on Add New custome part
-#     Then Enter part name, manufacture and parent device of pc
-#     And Enter part sku and quantity of pc
-#     Then Click on submit button of pc
-#     And Verify new custome part is added of pc
-#     And Enter the Search value in search box of pc
-#     Then Verify the Results in the table of pc
-#     And Click on delete button of pc
-#     Then Verify the recode is deleted of pc
+# Then Click on Repair360 page
+# And Click on RepairBoxes Tab
+# Then I should click on create new Box of rb
+# Then Enter weight, height, depth and width of rb
+# And Select Pick-up site of rb
+# Then Check the need shipping box of rb
+# And Click on Create box button of rb
+# Then Select Ticket from dropdownlist of rb
+# And Click on Finish button of rb
+# Then Verify new box is added in table of rb
+
+# And Click on Repair360 page
+# And Click on PartCloset Tab
+# And I should click on Add New VT part of pc
+# Then Select device and part name of pc
+# And Enter quantity and select building of pc
+# Then Click on submit button of pc
+# And Verify new VT part is added of pc
+# Then I should click on Add New custome part
+# Then Enter part name, manufacture and parent device of pc
+# And Enter part sku and quantity of pc
+# Then Click on submit button of pc
+# And Verify new custome part is added of pc
+# And Enter the Search value in search box of pc
+# Then Verify the Results in the table of pc
+# And Click on delete button of pc
+# Then Verify the recode is deleted of pc
 

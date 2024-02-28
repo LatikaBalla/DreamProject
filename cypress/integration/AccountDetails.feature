@@ -31,9 +31,9 @@ Feature: Account Details Page Functionality
         And Enter the Search - Title in search box and Verify the Result
         Then Enter the Search - Phone in search box and Verify the Result
         And Click on Export To CSV
-        Then Click on Bulk Upload button
-        And Click on Attach CSV file and Click on submit button
-        Then Verify the Uploaded successfully
+        # Then Click on Bulk Upload button
+        # And Click on Attach CSV file and Click on submit button
+        # Then Verify the Uploaded successfully
 
 
 

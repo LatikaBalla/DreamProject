@@ -22,8 +22,9 @@
             "line": 7,
             "name": "I should navigate to application",
             "result": {
-              "status": "passed",
-              "duration": 4861000000
+              "status": "failed",
+              "duration": 60521000000,
+              "error_message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:146876:72)\n    at <unknown> (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:147850:16)\n    at tryCatcher (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:18744:23)\n    at <unknown> (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:13866:41)\n    at tryCatcher (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:16857:18)\n    at _drainQueueStep (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:13451:12)\n    at _drainQueue (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:13330:14)\nFrom Your Spec Code:\n    at Context.eval (cypress/integration/VivacityRepairCenter/VivacityRepairCenter.spec.js:9:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -32,8 +33,7 @@
             "line": 8,
             "name": "I should Sign In into the application",
             "result": {
-              "status": "passed",
-              "duration": 10361000000
+              "status": "skipped"
             }
           },
           {
@@ -42,8 +42,7 @@
             "line": 9,
             "name": "Close the terms of service window",
             "result": {
-              "status": "passed",
-              "duration": 9076000000
+              "status": "skipped"
             }
           },
           {
@@ -52,8 +51,7 @@
             "line": 10,
             "name": "Click on Repair360 page",
             "result": {
-              "status": "passed",
-              "duration": 72000000
+              "status": "skipped"
             }
           },
           {
@@ -62,8 +60,7 @@
             "line": 13,
             "name": "I should be redirected to the Repair360 page",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "skipped"
             }
           },
           {
@@ -72,8 +69,7 @@
             "line": 14,
             "name": "Verify the Title of VivacityRepairCenter Page",
             "result": {
-              "status": "passed",
-              "duration": 691000000
+              "status": "skipped"
             }
           },
           {
@@ -82,8 +78,7 @@
             "line": 15,
             "name": "Verify the VivaRepairTickets Tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 9000000
+              "status": "skipped"
             }
           },
           {
@@ -92,8 +87,7 @@
             "line": 16,
             "name": "Verify the RepairBoxes tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 9000000
+              "status": "skipped"
             }
           }
         ]

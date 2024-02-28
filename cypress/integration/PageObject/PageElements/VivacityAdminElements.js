@@ -397,4 +397,19 @@ export default class VivacityAdminElements {
             timeout: 30000,
         })
     }
+    section11Element(){
+        return cy.contains(locator.vivacityAdmin.section11, {
+            timeout: 30000,
+        }) 
+    } 
+    section12Element(){
+        return cy.contains(locator.vivacityAdmin.section12, {
+            timeout: 30000,
+        }) 
+    } 
+    section13Element(){
+        return cy.contains(locator.vivacityAdmin.section13, {
+            timeout: 30000,
+        }) 
+    } 
 }

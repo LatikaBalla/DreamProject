@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2657000000
+              "duration": 5843000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 15569000000
+              "duration": 10899000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 82000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on OrgUploadAssets Tab",
             "result": {
               "status": "passed",
-              "duration": 1022000000
+              "duration": 1136000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of OrgUploadAssets Page",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 11000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Filters of OrgUploadAssets should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 7000000
             }
           },
           {
@@ -93,67 +93,67 @@
             "name": "Table for OrgUploadAssets should be visible",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 6000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 21,
+            "line": 17,
             "name": "I should click on Add Asset",
             "result": {
               "status": "passed",
-              "duration": 93000000
+              "duration": 75000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Enter title, full name location and tag",
+            "result": {
+              "status": "passed",
+              "duration": 390000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Enter note, Type and description",
+            "result": {
+              "status": "passed",
+              "duration": 540000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Upload the image file",
+            "result": {
+              "status": "passed",
+              "duration": 718000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Click on save button",
+            "result": {
+              "status": "passed",
+              "duration": 74000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 22,
-            "name": "Enter title, full name location and tag",
-            "result": {
-              "status": "passed",
-              "duration": 611000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "Enter note, Type and description",
-            "result": {
-              "status": "passed",
-              "duration": 757000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "Upload the image file",
-            "result": {
-              "status": "passed",
-              "duration": 1395000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "Click on save button",
-            "result": {
-              "status": "passed",
-              "duration": 84000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 26,
             "name": "Verify the asset details added in table",
             "result": {
               "status": "passed",
-              "duration": 423000000
+              "duration": 924000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Enter the title in search box",
             "result": {
               "status": "passed",
-              "duration": 3216000000
+              "duration": 3195000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Verify the record in searching history",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 56000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click on Edit button",
             "result": {
               "status": "passed",
-              "duration": 108000000
+              "duration": 105000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "I should edit title, full name location and tag",
             "result": {
               "status": "passed",
-              "duration": 471000000
+              "duration": 474000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "I should edit note, Type and description",
             "result": {
               "status": "passed",
-              "duration": 1396000000
+              "duration": 1376000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "ReUpload the image file",
             "result": {
               "status": "passed",
-              "duration": 21000000
+              "duration": 20000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 66000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Verify the Record has been updated Meassage",
             "result": {
               "status": "passed",
-              "duration": 1143000000
+              "duration": 769000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Click on Delete button",
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 95000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Click on Confirm Delete button",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 66000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Verify the record is deleted successfully",
             "result": {
               "status": "passed",
-              "duration": 2031000000
+              "duration": 2034000000
             }
           }
         ]

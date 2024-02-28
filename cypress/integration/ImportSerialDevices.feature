@@ -18,12 +18,12 @@ Feature: ImportSerialDevices Page Functionality
         # Then Click on Clear filter
         # And Click More filter select- Quantity Devices in search box and Verify the Result
         # Then Click on Clear filter
-        # Then I should click on Add New Import
-        # Then Upload the CSV import file
-        # And Click on submit button
-        # And Click on refresh button
+        Then I should click on Add New Import
+        Then Upload the CSV import file
+        And Click on submit button
+        And Click on refresh button
         # Then Verify the record in table
-        And Click on Download import button
-        And Click on Details button
-        Then Verify the Device Details
+        # And Click on Download import button
+        # And Click on Details button
+        # Then Verify the Device Details
       

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3862000000
+              "duration": 2191000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 1390868000000
+              "duration": 6072000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8116000000
+              "duration": 8073000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Account Details -Aaccount Name and no should be visible",
             "result": {
               "status": "passed",
-              "duration": 50000000
+              "duration": 36000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Account Manager,Billing Address and Shipping Address should be visible",
             "result": {
               "status": "passed",
-              "duration": 64000000
+              "duration": 38000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1004000000
+              "duration": 1125000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Enter the Search - Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1080000000
+              "duration": 1110000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Enter the Search - Email in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1217000000
+              "duration": 882000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Enter the Search - Title in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2166000000
+              "duration": 1710000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Enter the Search - Phone in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 918000000
+              "duration": 1118000000
             }
           },
           {
@@ -123,37 +123,7 @@
             "name": "Click on Export To CSV",
             "result": {
               "status": "passed",
-              "duration": 103000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 34,
-            "name": "Click on Bulk Upload button",
-            "result": {
-              "status": "passed",
-              "duration": 126000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 35,
-            "name": "Click on Attach CSV file and Click on submit button",
-            "result": {
-              "status": "passed",
-              "duration": 248000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 36,
-            "name": "Verify the Uploaded successfully",
-            "result": {
-              "status": "passed",
-              "duration": 9000000
+              "duration": 73000000
             }
           }
         ]

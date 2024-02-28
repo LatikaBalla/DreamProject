@@ -22,9 +22,8 @@
             "line": 7,
             "name": "I should navigate to application",
             "result": {
-              "status": "failed",
-              "duration": 52054000000,
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://dream-frontend-stage.onrender.com/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ESOCKETTIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:147833:82)\n    at visitFailedByErr (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:147225:12)\n    at <unknown> (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:147832:11)\n    at tryCatcher (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:16857:18)\n    at _drainQueueStep (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:13451:12)\n    at _drainQueue (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (https://dream-frontend-stage.onrender.com/__cypress/runner/cypress_runner.js:13330:14)\nFrom Your Spec Code:\n    at Context.eval (cypress/integration/SrcStudents/SrcStudents.spec.js:9:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: ESOCKETTIMEDOUT\n      at ClientRequest.<anonymous> (<embedded>:1969:100506)\n      at Object.onceWrapper (node:events:641:28)\n      at ClientRequest.emit (node:events:527:28)\n      at TLSSocket.emitRequestTimeout (node:_http_client:771:9)\n      at Object.onceWrapper (node:events:641:28)\n      at TLSSocket.emit (node:events:539:35)\n      at Socket._onTimeout (node:net:516:8)\n      at listOnTimeout (node:internal/timers:559:17)\n      at process.processTimers (node:internal/timers:502:7)"
+              "status": "passed",
+              "duration": 2759000000
             }
           },
           {
@@ -33,7 +32,8 @@
             "line": 8,
             "name": "I should Sign In into the application",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5918000000
             }
           },
           {
@@ -42,7 +42,8 @@
             "line": 9,
             "name": "close the terms of service window",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 9079000000
             }
           },
           {
@@ -51,7 +52,8 @@
             "line": 10,
             "name": "Click on Repair360 page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 78000000
             }
           },
           {
@@ -60,7 +62,8 @@
             "line": 11,
             "name": "Click on StudentRepairCenter tab",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1048000000
             }
           },
           {
@@ -69,7 +72,8 @@
             "line": 12,
             "name": "Click on SrcStudents tab",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 63000000
             }
           },
           {
@@ -78,7 +82,8 @@
             "line": 15,
             "name": "Verify the Title of SrcStudents Page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 13000000
             }
           },
           {
@@ -87,7 +92,8 @@
             "line": 16,
             "name": "Table for SrcStudents should be visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7000000
             }
           },
           {
@@ -96,7 +102,8 @@
             "line": 17,
             "name": "I should click on Add New student",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 68000000
             }
           },
           {
@@ -105,7 +112,8 @@
             "line": 18,
             "name": "Enter title, full name and Email",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1013000000
             }
           },
           {
@@ -114,7 +122,8 @@
             "line": 19,
             "name": "Enter Phone and Cell Number",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 596000000
             }
           },
           {
@@ -123,7 +132,8 @@
             "line": 20,
             "name": "Select User Status",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 121000000
             }
           },
           {
@@ -132,7 +142,8 @@
             "line": 21,
             "name": "Click on submit button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 142000000
             }
           },
           {
@@ -141,43 +152,58 @@
             "line": 22,
             "name": "Verify the student added in table",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3122000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 33,
+            "line": 23,
+            "name": "Click on Download Export button",
+            "result": {
+              "status": "passed",
+              "duration": 72000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
             "name": "Enter the Search - Full name in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 696000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 34,
+            "line": 35,
             "name": "Enter the Search - Email in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 742000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 35,
+            "line": 36,
             "name": "Enter the Search - Status in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 447000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 36,
+            "line": 37,
             "name": "Enter the Search - Phone in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 481000000
             }
           }
         ]

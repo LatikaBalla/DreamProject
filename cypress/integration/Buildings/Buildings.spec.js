@@ -57,12 +57,12 @@ And('Enter the Search - Phone in search box and Verify the Result', () => {
 And('Click on Export To CSV', () => {
     build.clickOnExport()
 })
-    Then ('Click on Bulk Upload button',()=>{
+Then('Click on Bulk Upload button', () => {
     build.clickOnBulkUpload()
-    })
-    And ('Click on Attach CSV file and Click on submit button',()=>{
+})
+And('Click on Attach CSV file and Click on submit button', () => {
     build.attachCsvfile()
-    })
-    Then ('Verify the Uploaded successfully',()=>{
+})
+Then('Verify the Uploaded successfully', () => {
     build.verifyuploaded()
-    })
+})

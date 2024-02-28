@@ -45,7 +45,7 @@ export class NonWarrantyRepairsActions {
     // }
     selectSite() {
         nwr.siteElement().click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains('Dream Building').click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
     }
     selectRepaireIssue() {
         nwr.issueElement().click({ force: true })

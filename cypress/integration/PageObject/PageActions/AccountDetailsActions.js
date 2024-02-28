@@ -223,7 +223,7 @@ export class AccountDetailsActions {
         acc.searchboxElement().eq(0).click({ force: true })
         acc.titleElement().click({ force: true })
         acc.searchElement().clear({ force: true }).type(tdata.newaccount.title + '{enter}', { force: true })
-        // cy.wait(1000)
+         cy.wait(1000)
         cy.get('tr td').eq(2).should('contain', tdata.newaccount.title)
     }
     searchPhone() {

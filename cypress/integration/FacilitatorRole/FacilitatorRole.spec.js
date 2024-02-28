@@ -427,8 +427,12 @@ And('Verify the updated successfully of mp', () => {
     mp.verifyUpdate()
 })
 
-
-
+Then('Account Details -Aaccount Name and no should be visible of acc', () => {
+    acc.AccountDetailsVisible()
+})
+And('Account Manager,Billing Address and Shipping Address should be visible of acc', () => {
+    acc.sectionManaddressVisible()
+})
 Then('Click on Clear filter of acc', () => {
     acc.clickOnClearFiltersButton()
 })
@@ -475,7 +479,18 @@ And('Enter the Search - Title in search box and Verify the Result of acc', () =>
 Then('Enter the Search - Phone in search box and Verify the Result of acc', () => {
     acc.searchPhone()
 })
-
+And('Click on Export To CSV of acc', () => {
+    acc.clickOnExporttoCSV()
+})
+Then('Click on Bulk Upload button of acc', () => {
+    acc.clickOnBulkUpload()
+})
+And('Click on Attach CSV file and Click on submit button of acc', () => {
+    acc.attachCsvfile()
+})
+Then('Verify the Uploaded successfully of acc', () => {
+    acc.verifyuploaded()
+})
 
 
 And('Click on Buildings Tab', () => {
@@ -517,7 +532,18 @@ Then('Enter the Search - Building Shipping Address in search box and Verify the 
 And('Enter the Search - Phone in search box and Verify the Result of build', () => {
     build.searchPhone()
 })
-
+And('Click on Export To CSV of build', () => {
+    build.clickOnExport()
+})
+Then('Click on Bulk Upload button of build', () => {
+    build.clickOnBulkUpload()
+})
+And('Click on Attach CSV file and Click on submit button of build', () => {
+    build.attachCsvfile()
+})
+Then('Verify the Uploaded successfully of build', () => {
+    build.verifyuploaded()
+})
 
 Then('Click on DeviceRepairReport page', () => {
     dev.clickOnDeviceRepairReport()
@@ -754,3 +780,4 @@ And('Click More filter select- Creator in search box and Verify the Result of ft
 Then('Click on Clear filter of ft', () => {
     ft.clickOnClearFilter()
 })
+

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2550000000
+              "duration": 4309000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 11092000000
+              "duration": 8366000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 81000000
+              "duration": 82000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on RepairBoxes Tab",
             "result": {
               "status": "passed",
-              "duration": 1235000000
+              "duration": 744000000
             }
           },
           {
@@ -73,87 +73,74 @@
             "name": "Verify the Title of RepairBoxes Page",
             "result": {
               "status": "passed",
-              "duration": 18000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 29,
-            "name": "Enter the Search - Tracking Number in search box and Verify the Result",
-            "result": {
-              "status": "failed",
-              "duration": 9531000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<td.MuiTableCell-root.MuiTableCell-alignCenter.MuiTableCell-sizeMedium.css-42rti1>' to contain '1Z6X34470327576875'\n    at RepairBoxesActions.searchTrackingNumber (cypress/integration/PageObject/PageActions/RepairBoxesActions.js:120:27)\n    at Context.eval (cypress/integration/RepairBoxes/RepairBoxes.spec.js:99:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "duration": 9000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 30,
-            "name": "Enter the Search - Record Id in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 31,
+            "line": 15,
             "name": "I should click on create new Box",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 66000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 32,
+            "line": 16,
             "name": "Enter weight, height, depth and width",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 315000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 33,
+            "line": 17,
             "name": "Select Pick-up site",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 361000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 34,
+            "line": 18,
             "name": "Check the need shipping box",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 71000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 35,
+            "line": 19,
             "name": "Click on Create box button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 67000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 36,
+            "line": 20,
             "name": "Select Ticket from dropdownlist",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "duration": 30017000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `#repair_tickets`, but never found it.\n    at RepairBoxesElements.ticketElement (cypress/integration/PageObject/PageElements/RepairBoxesElements.js:67:18)\n    at RepairBoxesActions.selectTickets (cypress/integration/PageObject/PageActions/RepairBoxesActions.js:61:11)\n    at Context.eval (cypress/integration/RepairBoxes/RepairBoxes.spec.js:52:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 37,
+            "line": 21,
             "name": "Click on Finish button",
             "result": {
               "status": "skipped"
@@ -162,7 +149,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 38,
+            "line": 22,
             "name": "Verify new box is added in table",
             "result": {
               "status": "skipped"
@@ -171,7 +158,34 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 39,
+            "line": 33,
+            "name": "Enter the Search - Tracking Number in search box and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "Enter the Search - Record Id in search box and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "Click on Export Button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
             "name": "Click on view button",
             "result": {
               "status": "skipped"
@@ -180,7 +194,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 40,
+            "line": 37,
             "name": "Verify the Details new box",
             "result": {
               "status": "skipped"
@@ -189,7 +203,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 41,
+            "line": 38,
             "name": "Add another ticket in the same box",
             "result": {
               "status": "skipped"
@@ -198,7 +212,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 42,
+            "line": 39,
             "name": "Select Ticket from dropdownlist",
             "result": {
               "status": "skipped"
@@ -207,7 +221,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 43,
+            "line": 40,
             "name": "Click on Add ticket",
             "result": {
               "status": "skipped"
@@ -216,7 +230,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 44,
+            "line": 41,
             "name": "Verify the ticket is added in table",
             "result": {
               "status": "skipped"
@@ -225,7 +239,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 45,
+            "line": 42,
             "name": "Click on view the ticket Details",
             "result": {
               "status": "skipped"
@@ -234,7 +248,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 46,
+            "line": 43,
             "name": "Verfiy the ticket Details",
             "result": {
               "status": "skipped"
@@ -243,7 +257,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 47,
+            "line": 44,
             "name": "Click on Back button",
             "result": {
               "status": "skipped"
@@ -252,7 +266,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 48,
+            "line": 45,
             "name": "Remove the ticket from box",
             "result": {
               "status": "skipped"
@@ -261,7 +275,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 49,
+            "line": 46,
             "name": "Verify the ticket is delete from the table",
             "result": {
               "status": "skipped"

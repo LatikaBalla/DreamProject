@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2933000000
+              "duration": 2050000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8249000000
+              "duration": 6493000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9079000000
+              "duration": 9078000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 72000000
+              "duration": 85000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on StudentRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 504000000
+              "duration": 856000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click on SrcFacilitators tab",
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 61000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Filters of SrcFacilitators should be visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 7000000
             }
           },
           {
@@ -109,41 +109,51 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 28,
-            "name": "Enter the Search - Full name in search box and Verify the Result",
+            "line": 18,
+            "name": "Click on Download Export button",
             "result": {
               "status": "passed",
-              "duration": 742000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "Enter the Search - Email in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 725000000
+              "duration": 65000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 30,
-            "name": "Enter the Search - Status in search box and Verify the Result",
+            "line": 29,
+            "name": "Enter the Search - Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 459000000
+              "duration": 797000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
+            "line": 30,
+            "name": "Enter the Search - Email in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 833000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
             "line": 31,
+            "name": "Enter the Search - Status in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 522000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
             "name": "Enter the Search - Phone in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 489000000
+              "duration": 554000000
             }
           }
         ]

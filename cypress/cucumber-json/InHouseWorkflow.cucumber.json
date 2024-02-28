@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3553000000
+              "duration": 5187000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8248000000
+              "duration": 9096000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9071000000
+              "duration": 9083000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 76000000
+              "duration": 79000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on InHouseRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 477000000
+              "duration": 870000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Filters of InHouseWorkflow should be visible",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 10000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Enter Search ticket no in search box",
             "result": {
               "status": "passed",
-              "duration": 247000000
+              "duration": 235000000
             }
           },
           {
@@ -92,9 +92,8 @@
             "line": 16,
             "name": "Verify search result below",
             "result": {
-              "status": "failed",
-              "duration": 4313000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'V0046052' within the element: <div.MuiGrid-root.MuiGrid-item.MuiGrid-grid-sm-12.MuiGrid-grid-md-6.MuiGrid-grid-lg-3.css-ax8uhp> but never did.\n    at InHouseWorkflowActions.verfiySearchResult (cypress/integration/PageObject/PageActions/InHouseWorkflowActions.js:73:77)\n    at Context.eval (cypress/integration/InHouseWorkflow/InHouseWorkflow.spec.js:58:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 419000000
             }
           },
           {
@@ -103,7 +102,8 @@
             "line": 17,
             "name": "Click on view button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7977000000
             }
           },
           {
@@ -112,7 +112,8 @@
             "line": 18,
             "name": "Verify the Details of student repair ticket",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 14000000
             }
           },
           {
@@ -121,7 +122,8 @@
             "line": 19,
             "name": "Click on the Edit Ticket Button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4085000000
             }
           },
           {
@@ -130,7 +132,8 @@
             "line": 20,
             "name": "Update the Technician and Repair Status",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 967000000
             }
           },
           {
@@ -139,7 +142,8 @@
             "line": 21,
             "name": "Click on Update Button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 68000000
             }
           },
           {
@@ -148,7 +152,8 @@
             "line": 22,
             "name": "Verify Updated successfully",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2000000
             }
           },
           {
@@ -157,7 +162,8 @@
             "line": 23,
             "name": "Click on Add Line and Verify",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1872000000
             }
           },
           {
@@ -166,7 +172,8 @@
             "line": 24,
             "name": "Click on Add Repair Image and Verify",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1360000000
             }
           },
           {
@@ -175,7 +182,8 @@
             "line": 25,
             "name": "Click on Add Note and Verify",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4982000000
             }
           },
           {
@@ -184,7 +192,8 @@
             "line": 26,
             "name": "I should click on new button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 81000000
             }
           },
           {
@@ -193,7 +202,8 @@
             "line": 27,
             "name": "Select failure Type, Serial Device, Technician and repair issue",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1973000000
             }
           },
           {
@@ -202,7 +212,8 @@
             "line": 28,
             "name": "Select building and Enter the Chromebook issue",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1047000000
             }
           },
           {
@@ -211,7 +222,8 @@
             "line": 29,
             "name": "Click on save button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 80000000
             }
           },
           {
@@ -220,7 +232,8 @@
             "line": 30,
             "name": "Verify New Ticket is added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 10004000000
             }
           }
         ]
