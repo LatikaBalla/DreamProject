@@ -20,7 +20,15 @@ import { InHouseWorkflowActions } from '../PageObject/PageActions/InHouseWorkflo
 import { LoanerManagementActions } from '../PageObject/PageActions/LoanerManagementActions'
 import { AccountDetailsActions } from '../PageObject/PageActions/AccountDetailsActions'
 import { BuildingsActions } from '../PageObject/PageActions/BuildingsActions'
+import { MyFleetActions } from '../PageObject/PageActions/MyFleetActions'
+import { StudentRepairCenterActions } from '../PageObject/PageActions/StudentRepairCenterActions.js'
+import { ImportSerialDevicesActions } from '../PageObject/PageActions/ImportSerialDevicesActions'
+import { OrgUploadAssetsActions } from '../PageObject/PageActions/OrgUploadAssetsActions'
 
+const oua = new OrgUploadAssetsActions()
+const isd = new ImportSerialDevicesActions()
+const srepc = new StudentRepairCenterActions()
+const mf = new MyFleetActions()
 const build = new BuildingsActions()
 const acc = new AccountDetailsActions()
 const loan = new LoanerManagementActions()
@@ -93,7 +101,9 @@ And('Verify the NonwarrantyRepairs tab should be visible', () => {
 
 })
 
-
+Then('Click on StudentRepairCenter tab', () => {
+    srepc.clickOnStudentRepairCenter()
+})
 And('Click on ManageDevices page', () => {
   //  cy.get('[data-testid="ChevronRightIcon"]').click({ force: true })
     mdev.clickOnManageDevices()

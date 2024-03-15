@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3896000000
+              "duration": 4976000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9757000000
+              "duration": 10998000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9074000000
+              "duration": 9073000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Report center page",
             "result": {
               "status": "passed",
-              "duration": 76000000
+              "duration": 77000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on DeviceRepairReport page",
             "result": {
               "status": "passed",
-              "duration": 4094000000
+              "duration": 3884000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click on the export button",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 72000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 5480000000
+              "duration": 5430000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Enter the Search - Repair type in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2859000000
+              "duration": 2966000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Enter the Search - Repair status in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Enter the Search - Repair Box in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2235000000
+              "duration": 2125000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Enter the Ticket Number in search box",
             "result": {
               "status": "passed",
-              "duration": 681000000
+              "duration": 688000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Verify the Ticket details in table",
             "result": {
               "status": "passed",
-              "duration": 2014000000
+              "duration": 2015000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on the Ticket Number",
             "result": {
               "status": "passed",
-              "duration": 3984000000
+              "duration": 3044000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Verify the Repair Ticket page will open",
             "result": {
               "status": "passed",
-              "duration": 48000000
+              "duration": 52000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Verfiy the details of Ticket",
             "result": {
               "status": "passed",
-              "duration": 1041000000
+              "duration": 969000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on the download Ticket Estimation button",
             "result": {
               "status": "passed",
-              "duration": 1059000000
+              "duration": 1371000000
             }
           }
         ]

@@ -18,7 +18,22 @@ import { SrcFacilitatorsActions } from '../PageObject/PageActions/SrcFacilitator
 import { InHouseTicketsActions } from '../PageObject/PageActions/InHouseTicketsActions.js'
 import { InHouseWorkflowActions } from '../PageObject/PageActions/InHouseWorkflowActions.js'
 import { LoanerManagementActions } from '../PageObject/PageActions/LoanerManagementActions.js'
+import { AccountDetailsActions } from '../PageObject/PageActions/AccountDetailsActions'
+import { BuildingsActions } from '../PageObject/PageActions/BuildingsActions'
+import { MyFleetActions } from '../PageObject/PageActions/MyFleetActions'
+import { OrgUploadAssetsActions } from '../PageObject/PageActions/OrgUploadAssetsActions'
+import { ImportSerialDevicesActions } from '../PageObject/PageActions/ImportSerialDevicesActions'
+import { UsersActions } from '../PageObject/PageActions/UsersActions'
+import { StudentRepairCenterActions } from '../PageObject/PageActions/StudentRepairCenterActions.js'
 
+const srepc = new StudentRepairCenterActions()
+const repc = new ReportCenterActions()
+const user = new UsersActions()
+const isd = new ImportSerialDevicesActions()
+const oua = new OrgUploadAssetsActions()
+const mf = new MyFleetActions()
+const build = new BuildingsActions()
+const acc = new AccountDetailsActions()
 const loan = new LoanerManagementActions()
 const ihw = new InHouseWorkflowActions()
 const iht = new InHouseTicketsActions()
@@ -36,7 +51,7 @@ const mp = new MyProfileActions()
 const res = new ResourcesActions()
 const rep = new Repair360Actions()
 const mdev = new ManageDevicesActions()
-const repc = new ReportCenterActions()
+
 const dash = new DashboardActions()
 Cypress.on("uncaught:exception", () => {
     return false;
@@ -91,7 +106,7 @@ And('Verify the NonwarrantyRepairs tab should be visible', () => {
 
 
 And('Click on ManageDevices page', () => {
-    cy.get('[data-testid="ChevronRightIcon"]').click({ force: true })
+    // cy.get('[data-testid="ChevronRightIcon"]').click({ force: true })
     mdev.clickOnManageDevices()
 })
 Then('I should be redirected to theManageDevices page', () => {
@@ -158,8 +173,9 @@ Then('Verify the WarrantyInfo tab should be visible', () => {
 
 
 And('Click on My profile page', () => {
+    cy.get('[data-testid="ChevronRightIcon"]').click({ force: true })
     cy.wait(1000)
-    cy.contains('demo_adminSchoolDistrict@vivacitytech.com').click({ force: true })
+    cy.contains('demo_adminschooldistrict@vivacitytech.com').click({ force: true })
     mp.clickOnMyProfile()
 })
 Then('Verify the Title of My Profile Page', () => {
@@ -403,9 +419,10 @@ Then('Enter the Search - Record Id in search box and Verify the Result of rb', (
 
 
 
-And('Click on My profile page', () => {
+And('Click on My profile page of mp', () => {
+   // cy.get('[data-testid="ChevronRightIcon"]').click({ force: true })
     cy.wait(1000)
-    cy.contains('demo_adminSchoolDistrict@vivacitytech.com').click({ force: true })
+    cy.contains('demo_adminschooldistrict@vivacitytech.com').click({ force: true })
     mp.clickOnMyProfile()
 })
 
@@ -603,6 +620,9 @@ And('Click More filter select- User status in search box and Verify the Result o
     ss.selectFilterUserStatus()
 })
 
+Then('Click on StudentRepairCenter tab', () => {
+    srepc.clickOnStudentRepairCenter()
+})
 //srcRepairTicket
 Then('Click on SrcRepairTickets tab', () => {
     srt.clickOnSrcRepairTicketsTab()
@@ -828,8 +848,12 @@ Then('Verify New Ticket is added of inw', () => {
     ihw.verifyNewTicket()
 })
 
-
-
+Then('Account Details -Aaccount Name and no should be visible of acc', () => {
+    acc.AccountDetailsVisible()
+})
+And('Account Manager,Billing Address and Shipping Address should be visible of acc', () => {
+    acc.sectionManaddressVisible()
+})
 Then('Click on Clear filter of acc', () => {
     acc.clickOnClearFiltersButton()
 })
@@ -940,6 +964,160 @@ And('Click on Attach CSV file and Click on submit button of build', () => {
 Then('Verify the Uploaded successfully of build', () => {
     build.verifyuploaded()
 })
+Then('I should click on + Add New button of build', () => {
+    build.clickOnAddnewButton()
+})
+And('I should Enter Building Name,Phone and Extension of build', () => {
+    build.enterBuildingName()
+    build.enterPhone()
+    build.enterExtension()
+})
+Then('Select Default building of build', () => {
+    build.selectDefaultBuilding()
+})
+And('Enter Billing Address and select from dropdown of build', () => {
+    build.enterBillingAddress()
+})
+Then('Click on checkbox Same as Shipping Address of build', () => {
+    build.clickOnCheckbox()
+})
+And('Click on save button of build', () => {
+    build.clickOnSaveButton()
+})
+Then('Verify the builing details added in table of build', () => {
+    build.verifyNewBuilding()
+})
+And('Click on Delete Icon of build', () => {
+    build.clickOnDeleteIcon()
+})
+Then('Click on Confirm Delete button of build', () => {
+    build.clickOnConfirmDeleteButton()
+})
+And('Verify the record is deleted successfully of build', () => {
+    build.verifyDelete()
+})
+And('Click on My Account Details Tab', () => {
+    dash.clickOnMyAccountTab()
+})
+
+Then('I should click on Add New button of acc', () => {
+    acc.clickOnAddNewbutton()
+})
+And('Verify the tilte of Add New Contact page of acc', () => {
+    acc.verifyNewContactTitle()
+})
+Then('Enter title, full name and valid Email of acc', () => {
+    acc.enterTitle()
+    acc.enterFullname()
+    acc.enterEmail()
+})
+And('Enter Phone and Cell Number of acc', () => {
+    acc.enterPhone()
+    acc.enterCellNumber()
+})
+Then('Select User Role and Building from Dropdown List of acc', () => {
+    acc.selectUserRole()
+    acc.selectBuilding()
+})
+And('Click on save button of acc', () => {
+    acc.clickOnASaveButton()
+})
+Then('Verify the account details added in table of acc', () => {
+    acc.verifyRecordTable()
+})
+
+And('Click on Edit Icon of acc', () => {
+    acc.clickOnEditIcon()
+    cy.wait(2000)
+})
+Then('I should edit title, full name of acc', () => {
+    acc.editTitle()
+    acc.editFullname()
+})
+And('I should edit Phone and Cell Number and user role of acc', () => {
+    acc.editCellNumber()
+    acc.editPhone()
+    acc.editUserRole()
+})
+Then('I edit User Status to inactive of acc', () => {
+    acc.editUserStatus()
+})
+Then('Click on Submit button of acc', () => {
+    acc.clickSubmitForUpdate()
+})
+And('Verify the Record has been updated Meassage of acc', () => {
+    acc.verfifyDataUpdatedMessage()
+})
+Then('Enter title, full name and valid Email for Delete of acc', () => {
+    acc.enterTitle()
+    acc.enterFullnameDelete()
+    acc.enterEmail()
+})
+And('Click on Delete Icon of acc', () => {
+    cy.wait(2000)
+    acc.clickDeleteIcon()
+})
+Then('Click on Confirm Delete button of acc', () => {
+    acc.clickConfirmDeleteButton()
+})
+And('Verify the record is deleted successfully of acc', () => {
+    acc.verifyRecordDeleted()
+})
+
+Then('Enter title, full name and valid Email for Search of acc', () => {
+    acc.enterTitle()
+    acc.enterFullnameSearch()
+    acc.enterEmail()
+})
+Then('Click on More filters of acc', () => {
+    acc.clickOnMoreFiltersButton()
+})
+And('Click on Add Filters Group of acc', () => {
+    acc.clickOnAddFilterGroup()
+})
+Then('Select Field name and Field operation of acc', () => {
+    acc.selectFieldName()
+    acc.selectfieldOperation()
+})
+And('Enter the Search value in search box of acc', () => {
+    acc.enterFieldValueSearchBox()
+})
+Then('Click on Apply Button of acc', () => {
+    acc.clickOnApplyButton()
+})
+And('Verify the Results in the table of acc', () => {
+    acc.verifyResultAfterFilter()
+})
+Then('Click on Clear filter of acc', () => {
+    acc.clickOnClearFiltersButton()
+})
+And('Enter the full name in search box of acc', () => {
+    acc.enterSearchValue()
+})
+And('Verify the record in searching history of acc', () => {
+    acc.verifySearchResult()
+})
+
+And('Click on Edit Icon of build', () => {
+    build.clickOnEditIcon()
+})
+And('I should edit Building Name,Phone and Extension of build', () => {
+    build.editBuildingName()
+    build.editPhone()
+    build.editExtension()
+})
+Then('I should edit Select Default building', () => {
+    build.editselectDefaultBuilding()
+})
+Then('Click on update button of build', () => {
+    build.clickOnUpdateButton()
+})
+And('Verify the Record has been updated Meassage of build', () => {
+    build.verifyBuildingUpdated()
+})
+
+
+
 
 Then('I should click on new button of ihw', () => {
     ihw.clickOnNewButton()
@@ -1007,7 +1185,7 @@ And('Click on ImportSerialDevices Tab', () => {
 Then('I should click on Add New Import of isd', () => {
     isd.clickOnAddNewImport()
 })
-Then('Upload the CSV import file of isd' , () => {
+Then('Upload the CSV import file of isd', () => {
     isd.uploadcsvFile()
 })
 And('Click on submit button of isd', () => {
@@ -1027,20 +1205,22 @@ And('Click on Details button of isd', () => {
 })
 Then('Verify the Device Details of isd', () => {
     isd.verifyDeviceDetails()
-}) 
-And ('Click More filter select- Importer in search box and Verify the Result of isd',()=>{
+})
+And('Click More filter select- Importer in search box and Verify the Result of isd', () => {
     isd.clickOnMoreFilter()
     isd.selectFilterImporter()
 })
-And ('Click More filter select- Quantity Devices in search box and Verify the Result of isd',()=>{
+And('Click More filter select- Quantity Devices in search box and Verify the Result of isd', () => {
     isd.clickOnMoreFilter()
     isd.selectFilterQuantityDevices()
 })
-Then ('Click on Clear filter of isd',()=>{
+Then('Click on Clear filter of isd', () => {
     isd.clickOnClearFilter()
 })
 
-
+And('Click on ManageDevices page', () => {
+    mdev.clickOnManageDevices()
+})
 And('Click on MyFleet Tab', () => {
     mf.clickOnMyFleet()
 })
@@ -1073,7 +1253,7 @@ And('Update Asset tag, student info and building information and Click on update
     mf.clickOnUpdateButton()
 })
 Then('Verfiy Record updated successfully of MyF', () => {
-mf.verifyUdated()
+    mf.verifyUdated()
 })
 Then('Click on Clear filter of MyF', () => {
     mf.clickOnClearFiltersButton()
@@ -1287,12 +1467,15 @@ And('Upload the image and enter Notes of sup', () => {
     su.enterNotes()
 })
 Then('Click on submit button of sup', () => {
-  su.clickOnSubmit()
+    su.clickOnSubmit()
 })
 And('Verify the Send Feedback successfully of sup', () => {
     su.verfiyFeedbackSuccess()
 })
 
+And('Click on Users page', () => {
+    user.clickOnUsers()
+})
 Then('I should click on Add New student of user', () => {
     user.clickOnCreateNewStudent()
 })
@@ -1341,16 +1524,16 @@ Then('Click on Submit button of user', () => {
 And('Verify the Record has been updated Meassage of user', () => {
     user.verfifyDataUpdatedMessage()
 })
-And ('Click on Delete button of user',()=>{
-    user.clickDeleteButton() 
+And('Click on Delete button of user', () => {
+    user.clickDeleteButton()
 })
-Then ('Click on Confirm Delete button of user',()=>{
-    user.clickConfirmDeleteButton() 
+Then('Click on Confirm Delete button of user', () => {
+    user.clickConfirmDeleteButton()
 })
-And ('Verify the record is deleted successfully of user',()=>{
+And('Verify the record is deleted successfully of user', () => {
     user.verifyRecordDeleted()
 })
-Then ('Click on Add Filter of user',()=>{
+Then('Click on Add Filter of user', () => {
     user.clickOnAddFilterButton()
 })
 Then('Select Field name and Field operation of user', () => {
@@ -1394,23 +1577,23 @@ And('Click More filter select- Record Id in search box and Verify the Result of 
     user.clickOnMoreFilter()
     user.selectFilterRecordId()
 })
-And ('Click More filter select- Full name in search box and Verify the Result of user',()=>{
+And('Click More filter select- Full name in search box and Verify the Result of user', () => {
     user.clickOnMoreFilter()
     user.selectFilterFullname()
 })
-And ('Click More filter select- Cell Number in search box and Verify the Result of user',()=>{
+And('Click More filter select- Cell Number in search box and Verify the Result of user', () => {
     user.clickOnMoreFilter()
     user.selectFilterCellNumber()
 })
-And ('Click More filter select- Eamil in search box and Verify the Result of user',()=>{
+And('Click More filter select- Eamil in search box and Verify the Result of user', () => {
     user.clickOnMoreFilter()
     user.selectFilterEmail()
 })
-And ('Click More filter select- Role Name in search box and Verify the Result of user',()=>{
+And('Click More filter select- Role Name in search box and Verify the Result of user', () => {
     user.clickOnMoreFilter()
     user.selectFilterRoleName()
 })
-And ('Click More filter select- User status in search box and Verify the Result of user',()=>{
+And('Click More filter select- User status in search box and Verify the Result of user', () => {
     user.clickOnMoreFilter()
     user.selectFilterUserStatus()
 })

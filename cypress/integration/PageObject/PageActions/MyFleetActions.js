@@ -30,7 +30,7 @@ export class MyFleetActions {
         mf.tableElement().should('be.visible')
     }
     enterSearchValue() {
-        mf.searchElement().type(tdata.myFleet.search, { force: true })
+        mf.searchElement().clear({force:true}).type(tdata.myFleet.search, { force: true })
     }
     verifySearchResult() {
         cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.myFleet.search, { force: true })
@@ -43,7 +43,7 @@ export class MyFleetActions {
         cy.get('tr td').eq(8).contains('Edit').click({ force: true })
     }
     editInformation() {
-        mf.assetTagElement().clear({ force: true }).type(tdata.myFleet.serialnoEdit)
+        mf.assetTagElement().clear({ force: true }).type(tdata.myFleet.serialnoEdit,{ force: true })
         mf.studentinfoElement().click({ force: true })
         cy.get('[role="listbox"]').find('li').contains('Test').click({ force: true })
         // cy.get(tdata.myFleet.studentidEdit).click()

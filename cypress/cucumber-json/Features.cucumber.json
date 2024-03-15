@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3388000000
+              "duration": 5835000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9313000000
+              "duration": 11593000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8072000000
+              "duration": 8075000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on features page",
             "result": {
               "status": "passed",
-              "duration": 1139000000
+              "duration": 1141000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of Features Page",
             "result": {
               "status": "passed",
-              "duration": 969000000
+              "duration": 998000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the Under Consideration Tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 9000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Verify the Under Construction tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 6000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click More filter select- Title in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 995000000
+              "duration": 1120000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 70000000
             }
           }
         ]

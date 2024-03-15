@@ -13,6 +13,12 @@ Feature:RepairTickets Page Functionality
     And Verify the Title of RepairTickets Page
     Then Filters of RepairTickets should be visible
     And Table for RepairTickets should be visible
+     And Enter the Search - Ticket Number in search box and Verify the Result
+    Then Enter the Search - Repair type in search box and Verify the Result
+    And Enter the Search - Serial Number in search box and Verify the Result
+    Then Enter the Search - Repair status in search box and Verify the Result
+    And Enter the Search - Repair Box in search box and Verify the Result
+    Then Enter the Search - Asset tag in search box and Verify the Result
     Then I should click on create new ticket
     Then Select failure Type, Return site and Serial Device
     And Select Building and Chromebook issue
@@ -20,12 +26,6 @@ Feature:RepairTickets Page Functionality
     And Click on save button
     Then Verify New Ticket is added
     And Click on Download import button
-    And Enter the Search - Ticket Number in search box and Verify the Result
-    Then Enter the Search - Repair type in search box and Verify the Result
-    And Enter the Search - Serial Number in search box and Verify the Result
-    Then Enter the Search - Repair status in search box and Verify the Result
-    And Enter the Search - Repair Box in search box and Verify the Result
-    Then Enter the Search - Asset tag in search box and Verify the Result
     # And Click More filter select- Record Id in search box and Verify the Result
     # Then Click on Clear filter
     # And Click More filter select- Ticket Number in search box and Verify the Result

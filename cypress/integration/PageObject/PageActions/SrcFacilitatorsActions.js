@@ -7,7 +7,7 @@ const StudentRepairCenterElements = require("../PageElements/StudentRepairCenter
 const tdata = require("../../../testData.json");
 export class SrcFacilitatorsActions {
     constructor() {
-        globalThis.mdev = new Repair360Elements();
+        globalThis.rep = new Repair360Elements();
         globalThis.dash = new DashboardElements();
         globalThis.sf = new SrcFacilitatorsElements();
         globalThis.mf1 = new StudentRepairCenterElements()
@@ -19,7 +19,7 @@ export class SrcFacilitatorsActions {
         dash.repair360Element().click({ force: true })
     }
     clickOnStudentRepairCenterTab() {
-        mdev.studentrcElement().click({ force: true })
+        rep.studentrcElement().click({ force: true })
     }
     clickOnSrcFacilitatorsTab() {
         mf1.srcFacilitatorsElement().click({ force: true })

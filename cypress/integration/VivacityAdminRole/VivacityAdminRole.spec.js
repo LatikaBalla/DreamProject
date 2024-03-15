@@ -20,7 +20,9 @@ import { InHouseWorkflowActions } from '../PageObject/PageActions/InHouseWorkflo
 import { AccountDetailsActions } from '../PageObject/PageActions/AccountDetailsActions'
 import { BuildingsActions } from '../PageObject/PageActions/BuildingsActions'
 import { UsersActions } from '../PageObject/PageActions/UsersActions'
+import { VivacityAdminActions } from '../PageObject/PageActions/VivacityAdminActions'
 
+const vadmin = new VivacityAdminActions()
 const user = new UsersActions()
 const build = new BuildingsActions()
 const acc = new AccountDetailsActions()
@@ -52,7 +54,7 @@ When('I should Sign In into the application', () => {
     cy.VivacityAdminLogin()
 })
 Then('Close the terms of service window', () => {
-    cy.wait(5000)
+    cy.wait(8000)
     dash.closeTermsOfServiceWindow()
 })
 Then('I should be redirected to the dashboard page', () => {
@@ -608,6 +610,9 @@ And('Click More filter select- User status in search box and Verify the Result o
 })
 
 //srcRepairTicket
+And('Click on StudentRepairCenter tab', () => {
+    srt.clickOnStudentRepairCenterTab()
+})
 Then('Click on SrcRepairTickets tab', () => {
     srt.clickOnSrcRepairTicketsTab()
 })
@@ -1103,10 +1108,6 @@ And('Verify the Record has been updated Meassage of build', () => {
 })
 
 
-
-
-
-
 Then('I should click on new button of ihw', () => {
     ihw.clickOnNewButton()
 })
@@ -1207,6 +1208,9 @@ Then ('Click on Clear filter of isd',()=>{
 })
 
 
+And('Click on ManageDevices page', () => {
+    mdev.clickOnManageDevices()
+})
 And('Click on MyFleet Tab', () => {
     mf.clickOnMyFleet()
 })
@@ -1426,6 +1430,11 @@ And('Click More filter select- Acquire Location in search box and Verify the Res
 })
 
 
+And('Click on Users page', () => {
+    dash.closeTermsOfServiceWindow()
+    user.clickOnUsers()
+    cy.url().should('include', '/users')
+})
 Then('I should click on Add New student of user', () => {
     user.clickOnCreateNewStudent()
 })
@@ -1585,3 +1594,46 @@ And('Verify the Send Feedback successfully of sup', () => {
 
 
 
+And('Click on Vivacity Admin page', () => {
+    vadmin.clickOnVivacityAdmin()
+})
+
+Then('All Paid Subscription Requests unit should be visible', () => {
+    vadmin.allPaidSubcription()
+})
+And('Roadmap Requests unit should be visible', () => {
+    vadmin.roadmapRequest()
+})
+Then('Admin Users unit should be visible', () => {
+    vadmin.adminUser()
+})
+And('Warranties unit should be visible', () => {
+    vadmin.Warranty()
+})
+Then('Import Serial Device unit should be visible', () => {
+    vadmin.iserialDevice()
+})
+And('Account Management unit should be visible', () => {
+    vadmin.accManagement()
+})
+Then('New User Creation Requests unit should be visible', () => {
+    vadmin.requestUser()
+})
+And('All Users unit should be visible', () => {
+    vadmin.allUser()
+})
+Then('Repair Ticket Creation unit should be visible', () => {
+    vadmin.RepairTicketCreation()
+})
+And('Employee management unit should be visible', () => {
+    vadmin.employeeManagment()
+})
+And ('Import serial device Request should be visible',()=>{
+    vadmin.importserialdeviceRequest()
+})
+Then ('Spoof Dream User should be visible',()=>{
+    vadmin.spoofDreamUser()
+})
+And ('Import Parts Closet should be visible',()=>{
+    vadmin.importPartsCloset()
+})

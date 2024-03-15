@@ -171,7 +171,7 @@ export class AccountDetailsActions {
         acc.fieldOpElement().select('Does Not Contain', { force: true })
         acc.fieldValueElement().type(tdata.newaccount.title)
         acc.applyElement().click({ force: true })
-        cy.wait(1000)
+       // cy.wait(1000)
         cy.get('tr td').eq(2).should('not.contain', tdata.newaccount.title)
     }
     selectFilterRecordId() {

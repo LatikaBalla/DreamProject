@@ -17,7 +17,7 @@ export class LoanerManagementActions {
         dash.managedevicesElement().click({ force: true })
     }
     clickOnLoanerManagement() {
-        dash.termsElement().click({ force: true })
+      //  dash.termsElement().click({ force: true })
         mdev.loanerManagementElement().click({ force: true })
     }
     tableVisible() {

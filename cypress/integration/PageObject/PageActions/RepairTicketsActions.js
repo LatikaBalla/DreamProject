@@ -86,7 +86,7 @@ export class RepairTicketsActions {
         rt.searchboxElement().eq(0).click({ force: true })
         rt.ticketnumberElement().click({ force: true })
         rt.searchElement().clear({ force: true }).type(tdata.repairTickets.ticketnumber + '{enter}', { force: true })
-        cy.wait(1000)
+       // cy.wait(1000)
         cy.get('tr td').eq(1).should('contain', tdata.repairTickets.ticketnumber)
     }
     searchRepairType() {   
@@ -123,7 +123,7 @@ export class RepairTicketsActions {
         rt.searchElement().clear({ force: true }).type(tdata.repairTickets.assettag + '{enter}', { force: true })
         cy.wait(1000)
         cy.get('tr td').eq(4).should('contain', tdata.repairTickets.assettag)
-        rt.searchElement().clear()
+        rt.searchElement().clear({ force: true })
     }
     clickOnMoreFilter() {
         rt.addFilterElement().click({ force: true })

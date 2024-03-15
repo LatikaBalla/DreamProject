@@ -23,7 +23,8 @@ export class UsersActions {
         user.tableElement().should('be.visible')
     }
     clickOnCreateNewStudent() {
-        user.addnewUserbtnElement().click({ force: true })
+        cy.get('.css-mz6knu > :nth-child(1) > :nth-child(1) > .MuiBox-root > :nth-child(1)').click({ force: true })
+        //user.addnewUserbtnElement().click({ force: true })
     }
     enterTitle() {
         user.titleElement().type(tdata.users.title)

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1786000000
+              "duration": 3983000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8200000000
+              "duration": 9073000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9079000000
+              "duration": 9070000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 78000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on StudentRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 1030000000
+              "duration": 611000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of StudentRepairCenter Page",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 9000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the SRCrepairTickets Tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 10000000
             }
           },
           {

@@ -85,7 +85,7 @@ export class PartClosetActions {
     }
     selectBuilding() {
         pc.buildingElement().click({ force: true })
-        cy.get(tdata.partCloset.building).click({ force: true })
+        cy.get('[role="listbox"]').find('[role="option"]').contains(tdata.buildings.buildingname).click({ force: true })
     }
     clickOnSubmitVTButton() {
         pc.submitVTElement().click({ force: true })

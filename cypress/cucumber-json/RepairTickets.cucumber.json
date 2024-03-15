@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3371000000
+              "duration": 3579000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 11935000000
+              "duration": 13930000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9075000000
+              "duration": 9072000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 77000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of RepairTickets Page",
             "result": {
               "status": "passed",
-              "duration": 377000000
+              "duration": 646000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Filters of RepairTickets should be visible",
             "result": {
               "status": "passed",
-              "duration": 412000000
+              "duration": 719000000
             }
           },
           {
@@ -83,137 +83,137 @@
             "name": "Table for RepairTickets should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 9000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 16,
-            "name": "I should click on create new ticket",
+            "name": "Enter the Search - Ticket Number in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 93000000
+              "duration": 2367000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 17,
-            "name": "Select failure Type, Return site and Serial Device",
+            "name": "Enter the Search - Repair type in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 747000000
+              "duration": 3170000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 18,
-            "name": "Select Building and Chromebook issue",
+            "name": "Enter the Search - Serial Number in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 344000000
+              "duration": 3740000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 19,
-            "name": "Enter the Describe Your Issue",
+            "name": "Enter the Search - Repair status in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2078000000
+              "duration": 364000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 20,
-            "name": "Click on save button",
+            "name": "Enter the Search - Repair Box in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 89000000
+              "duration": 1595000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 21,
-            "name": "Verify New Ticket is added",
-            "result": {
-              "status": "passed",
-              "duration": 7452000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "Click on Download import button",
-            "result": {
-              "status": "passed",
-              "duration": 75000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "Enter the Search - Ticket Number in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 2786000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "Enter the Search - Repair type in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 2570000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "Enter the Search - Serial Number in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 3556000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 26,
-            "name": "Enter the Search - Repair status in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 304000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 27,
-            "name": "Enter the Search - Repair Box in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1844000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 28,
             "name": "Enter the Search - Asset tag in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1481000000
+              "duration": 1715000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I should click on create new ticket",
+            "result": {
+              "status": "passed",
+              "duration": 96000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Select failure Type, Return site and Serial Device",
+            "result": {
+              "status": "passed",
+              "duration": 757000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Select Building and Chromebook issue",
+            "result": {
+              "status": "passed",
+              "duration": 390000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "Enter the Describe Your Issue",
+            "result": {
+              "status": "passed",
+              "duration": 2704000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "Click on save button",
+            "result": {
+              "status": "passed",
+              "duration": 115000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "Verify New Ticket is added",
+            "result": {
+              "status": "passed",
+              "duration": 7358000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "Click on Download import button",
+            "result": {
+              "status": "passed",
+              "duration": 73000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Enter the Search value in search box",
             "result": {
               "status": "passed",
-              "duration": 429000000
+              "duration": 442000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Verify the Results in the table",
             "result": {
               "status": "passed",
-              "duration": 1744000000
+              "duration": 2072000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Click on view button",
             "result": {
               "status": "passed",
-              "duration": 1433000000
+              "duration": 1309000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Verify the Details of student repair ticket",
             "result": {
               "status": "passed",
-              "duration": 2645000000
+              "duration": 2920000000
             }
           }
         ]

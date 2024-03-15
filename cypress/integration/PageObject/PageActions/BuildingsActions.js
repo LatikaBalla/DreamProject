@@ -66,7 +66,7 @@ export class BuildingsActions {
     verifyNewBuilding() {
         cy.wait(5000)
         cy.get('[data-testid="CachedIcon"]').click({ force: true })
-        cy.wait(2000)
+        cy.wait(5000)
         cy.get('tr td').eq(1).should('contain', tdata.buildings.buildingname)
     }
     clickOnEditIcon() {
@@ -174,9 +174,10 @@ export class BuildingsActions {
     searchPhone() {
         build.searchboxElement().eq(0).click({ force: true })
         build.phonedropElement().click({ force: true })
-        build.searchElement().clear().type(tdata.buildings.phoneNo + '{enter}', { force: true })
+        build.searchElement().clear({ force: true }).type(tdata.buildings.phoneNo + '{enter}', { force: true })
         cy.wait(1000)
         cy.get('tr td').eq(2).should('contain', tdata.buildings.phoneNo1)
+        build.searchElement().clear({ force: true })
     }
     clickOnExport() {
         build.exportElement().click({ force: true })

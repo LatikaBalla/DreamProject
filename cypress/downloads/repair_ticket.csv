@@ -1,3 +1,2 @@
 record_id,ticket_number,repair_type,serial_number,repair_device,asset_tag,repair_status,student_technician,created_by,last_modified_date
-48588,V0048588,Student,VIVATEST66Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Intake,,demo_adminsuper@vivacitytech.com,2024-02-28T09:22:59.000Z
-48587,V0048587,Student,VIVATEST138Test,VT Chromebook,"y9E0|4(""4]",Intake,,demo_adminsuper@vivacitytech.com,2024-02-28T09:20:17.000Z
+51068,V0051068,Student,VIVATEST58Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Intake,Demo Student,,2024-03-13T11:58:05.872Z

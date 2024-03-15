@@ -63,7 +63,7 @@ export class InHouseTicketsActions {
         iht.savebtnElement().click({ force: true })
     }
     verifyNewTicket() {
-        cy.wait(6000)
+        cy.wait(8000)
         dash.messageElement().should('contain', tdata.inHouseTicket.createTicketmsg, { force: true })
     }
     clickOnExport() {
@@ -77,7 +77,7 @@ export class InHouseTicketsActions {
         iht.searchboxElement().eq(0).click({ force: true })
         iht.recordidElement().click({ force: true })
         iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.recordid + '{enter}', { force: true })
-       // cy.wait(1000)
+     //  cy.wait(1000)
         cy.get('tr td').eq(0).should('contain', tdata.inHouseTicket.recordid)
     }
     searchTicketNumber() {

@@ -1,6 +1,6 @@
 {
   "newaccount": {
-    "title": "Guru",
+    "title": "test user",
     "fullname": "Account_Test1",
     "email": "@gmail.com",
     "phone": "1231231231",
@@ -33,7 +33,7 @@
   },
   "buildings": {
     "buildingname": "Dream Building",
-    "phone": "2734623428",
+    "phone": "7777777777",
     "extension": "1",
     "defaultbuilding": "[data-value='true']",
     "address": "641 Fairview Avenue Northeast",
@@ -44,8 +44,8 @@
     "defaultBuilding": "true",
     "shippingaddress": "2005 University Avenue , Saint Paul, MN, 55104",
     "billingaddress": "2005 University Avenue , Saint Paul, MN, 55104",
-    "phoneNo": "2734623428",
-    "phoneNo1": "(273) 462-3428",
+    "phoneNo": "7777777777",
+    "phoneNo1": "(777) 777-7777",
     "uploadfilename": "building_list.csv"
   },
   "editbuildings": {
@@ -65,7 +65,7 @@
     "filename": "V0019915.pdf",
     "repairtype": "Vivacity",
     "repairstatus": "Pending Repair Box",
-    "repairbox": "5066",
+    "repairbox": "5423",
     "recordid": "47623",
     "recordid1": "47623",
     "ticketnumber": "V0047623",
@@ -144,13 +144,13 @@
     "description": "there is some problem in System Board of the laptop",
     "devicename": "Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
     "createTicketmsg": "Add new ticket form submitted",
-    "ticketnumber": "V0048592",
+    "ticketnumber": "V0050458",
     "repairtype": "Vivacity",
     "serialnumber": "VIVATEST12Test",
     "repairstatus": "In Transit",
-    "repairbox": "4962",
-    "assettag": "",
-    "recordid": "48592",
+    "repairbox": "5725",
+    "assettag": "12365",
+    "recordid": "50458",
     "createdby": "demo_adminsuper@vivacitytech.com",
     "repairdevice": "Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
     "repairstatusEdit": "[data-value='In Transit']"
@@ -160,11 +160,11 @@
     "height": "10",
     "depth": "10",
     "width": "10",
-    "pickupsite": "[data-value='2269']",
+    "pickupsite": "[data-value='2372']",
     "boxcreatedmsg": "New box submitted",
     "filename": "Image.png",
-    "trackingnumber": "1Z6X34470304329916",
-    "recordid": "115",
+    "trackingnumber": "1Z6X34470304080756",
+    "recordid": "5764",
     "labelfrom": "",
     "shippeddate": "2023-09-27T11:05:37.000Z",
     "shippingcost": "$23.36"
@@ -177,8 +177,8 @@
     "createTicketmsg": "Add new ticket form submitted",
     "filename": "InHouseRepairTickets.csv",
     "repairissue": "[data-value='RAM issue']",
-    "ticketno": "V0048584",
-    "recordid": "48584",
+    "ticketno": "V0051058",
+    "recordid": "51058",
     "repairstatusEdit": "[data-value='In Transit']"
   },
   "inHouseTicket": {
@@ -189,9 +189,9 @@
     "createTicketmsg": "Add new ticket form submitted",
     "filename": "InHouseRepairTickets.csv",
     "repairissue": "[data-value='RAM issue']",
-    "ticketnumber": "V0048578",
+    "ticketnumber": "V0051056",
     "repairtype": "In House",
-    "recordid": "48578",
+    "recordid": "51056",
     "repairstatus": "Pending Repair Box",
     "serialnumber": "VIVATEST90Test",
     "repairdevice": "Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
@@ -256,7 +256,7 @@
     "partid": "[data-value='5448']",
     "search": "50034089",
     "partnameTable": "TouchPad",
-    "building": "[data-value='2199']"
+    "building": "[data-value='2861']"
   },
   "users": {
     "fullname": "Demo Test",

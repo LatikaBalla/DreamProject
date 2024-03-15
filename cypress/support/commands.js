@@ -37,6 +37,13 @@ Cypress.Commands.add("AdminLogin", () => {
     cy.get('.submit-text').click()
     cy.wait(1000)
   })
+//   cy.request('GET', 'https://dream-vivacity.us.auth0.com/oauth/token').then(
+//   (response) => {
+//     let tokenValue=response.body.access_token
+//  cy.log(tokenValue)
+//   }
+//)
+  
 })
 Cypress.Commands.add("VivacityAdminLogin", () => {
   cy.get('[href="/login"]').click({ force: true })

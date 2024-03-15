@@ -5,7 +5,7 @@ const InHouseWorkflowElements = require("../PageElements/InHouseWorkflowElements
 const tdata = require("../../../testData.json");
 export class InHouseWorkflowActions {
     constructor() {
-        globalThis.mdev = new Repair360Elements();
+        globalThis.rep = new Repair360Elements();
         globalThis.dash = new DashboardElements();
         globalThis.ihw = new InHouseWorkflowElements();
     }
@@ -16,7 +16,7 @@ export class InHouseWorkflowActions {
         dash.repair360Element().click({ force: true })
     }
     clickOnInHouseRepairCenter() {
-        mdev.inhousercElement().click({ force: true })
+        rep.inhousercElement().click({ force: true })
     }
     verifyTitle() {
         ihw.titleElement().should('be.visible')
@@ -56,6 +56,12 @@ export class InHouseWorkflowActions {
     }
     verifyNewTicket() {
         cy.wait(10000)
+        // cy.request('GET', 'https://dream-api-stage.onrender.com/repair_ticket/inHouseWorkflow/1').as('comments')
+        // cy.get('@comments').should((response) => {
+        // //  expect(response.body).to.have.length(500)
+        //   expect(response).to.have.property('record_id')
+        //   expect(response).to.have.property('ticket_number')
+        // })
         // dash.messageElement().should('contain', tdata.inHouseWorkflow.createTicketmsg)
     }
     clickOnExport() {
@@ -99,7 +105,7 @@ export class InHouseWorkflowActions {
         dash.messageElement().should('contain', 'Ticket updated')
         cy.get('body').type('{ctrl}w');
         cy.get('[data-testid="KeyboardBackspaceIcon"]').click({force:true})
-        mdev.inhousercElement().click({ force: true })
+        rep.inhousercElement().click({ force: true })
     }
     // enterSearchBox() {
     //     cy.get('[role="combobox"]').eq(0).click({ force: true })
