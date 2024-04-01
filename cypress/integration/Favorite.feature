@@ -30,13 +30,13 @@ Feature: Favorite Page Functionality
         And Click on Favorite page
         Then Delete the Favorite item and verify no favorite items
 
-        # Then Click on the Star button of Dream Support
-        # And Click on Favorite page
-        # Then Delete the Favorite item and verify no favorite items
+#         Then Click on the Star button of Dream Support
+#         And Click on Favorite page
+#         Then Delete the Favorite item and verify no favorite items
 
-        # Then Click on the Star button of Features
-        # And Click on Favorite page
-        # Then Delete the Favorite item and verify no favorite items
+#         Then Click on the Star button of Features
+#         And Click on Favorite page
+#         Then Delete the Favorite item and verify no favorite items
 
 # Then Click on the Star button of Repair Ticket Details
 # And Click on Favorite page

@@ -12,24 +12,24 @@ Feature: DeviceRepairReport Page Functionality
 
     Scenario:Device Repair history -Search with Ticket no and Non warranty Repair
         Then Click on the export button
-        # And Click More filter select- Record Id in search box and Verify the Result
-        # Then Click on Clear filter
-        # And Click More filter select- Ticket Number in search box and Verify the Result
-        # Then Click on Clear filter
-        # And Click More filter select- Repair type in search box and Verify the Result
-        # Then Click on Clear filter
-        # And Click More filter select- Serial Number in search box and Verify the Result
-        # Then Click on Clear filter
-        # And Click More filter select- Repair device in search box and Verify the Result
-        # Then Click on Clear filter
-        # And Click More filter select- Repair status in search box and Verify the Result
-        # Then Click on Clear filter
-        # And Click More filter select- Asset tag in search box and Verify the Result
-        # Then Click on Clear filter
-        # And Click More filter select- Repair Box in search box and Verify the Result
-        # Then Click on Clear filter
-        # And Click More filter select- Created By in search box and Verify the Result
-        # Then Click on Clear filter
+        And Click More filter select- Record Id in search box and Verify the Result
+        Then Click on Clear filter
+        And Click More filter select- Ticket Number in search box and Verify the Result
+        Then Click on Clear filter
+        And Click More filter select- Repair type in search box and Verify the Result
+        Then Click on Clear filter
+        And Click More filter select- Serial Number in search box and Verify the Result
+        Then Click on Clear filter
+        And Click More filter select- Repair device in search box and Verify the Result
+        Then Click on Clear filter
+        And Click More filter select- Repair status in search box and Verify the Result
+        Then Click on Clear filter
+        And Click More filter select- Asset tag in search box and Verify the Result
+        Then Click on Clear filter
+        And Click More filter select- Repair Box in search box and Verify the Result
+        Then Click on Clear filter
+        And Click More filter select- Created By in search box and Verify the Result
+        Then Click on Clear filter
         And Enter the Search - Record Id in search box and Verify the Result
         Then Enter the Search - Repair type in search box and Verify the Result
         Then Enter the Search - Repair status in search box and Verify the Result

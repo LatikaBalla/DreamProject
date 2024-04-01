@@ -23,14 +23,14 @@ Feature: MyFleet  Page Functionality
         Then Click on Edit button
         And Update Asset tag, student info and building information and Click on update button
         Then Verfiy Record updated successfully
-        # And Click More filter select- Serial Number in search box and Verify the Result
-        # Then Click on Clear filter
-        # And Click More filter select- Asset tag in search box and Verify the Result
-        # Then Click on Clear filter
-        # And Click More filter select- Device in search box and Verify the Result
-        # Then Click on Clear filter
-        # And Click More filter select- Student in search box and Verify the Result
-        # Then Click on Clear filter
+        And Click More filter select- Serial Number in search box and Verify the Result
+        Then Click on Clear filter
+        And Click More filter select- Asset tag in search box and Verify the Result
+        Then Click on Clear filter
+        And Click More filter select- Device in search box and Verify the Result
+        Then Click on Clear filter
+        And Click More filter select- Student in search box and Verify the Result
+        Then Click on Clear filter
         Then Click on Export To CSV
         And Enter the table fields in search box
         And Verify the record in searching history
@@ -51,14 +51,14 @@ Feature: MyFleet  Page Functionality
         Then Click on Edit button
         And Update Asset tag, student info and building information and Click on update button
         Then Verfiy Record updated successfully
-        # And Click More filter select- Serial Number in search box and Verify the Result
-        # Then Click on Clear filter
-        # And Click More filter select- Asset tag in search box and Verify the Result
-        # Then Click on Clear filter
-        # And Click More filter select- Device in search box and Verify the Result
-        # Then Click on Clear filter
-        # And Click More filter select- Student in search box and Verify the Result
-        # Then Click on Clear filter
+        And Click More filter select- Serial Number in search box and Verify the Result
+        Then Click on Clear filter
+        And Click More filter select- Asset tag in search box and Verify the Result
+        Then Click on Clear filter
+        And Click More filter select- Device in search box and Verify the Result
+        Then Click on Clear filter
+        And Click More filter select- Student in search box and Verify the Result
+        Then Click on Clear filter
         Then Click on Export To CSV
         And Enter the table fields in search box
         And Verify the record in searching history

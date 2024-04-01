@@ -62,7 +62,7 @@ export class OrgUploadAssetsActions {
         dash.messageElement().should('contain', tdata.orgAsset.addassetmsg)
     }
     clickOnEditIcon() {
-        oua.editElement().eq(0).scrollIntoView().click()
+        oua.editElement().eq(0).scrollIntoView({ force: true }).click({ force: true })
     }
     editTitle() {
         oua.titleAssetElement().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.title)
@@ -105,7 +105,7 @@ export class OrgUploadAssetsActions {
         cy.get('tbody tr').eq(0).find('td').eq(3).should('not.contain', tdata.editasset.location)
     }
     enterSearchValue() {
-        oua.searchboxElement().type(tdata.addasset.location)
+        oua.searchboxElement().type(tdata.addasset.location,{ force: true })
         cy.wait(3000)
     }
     clickOnASearchButton() {

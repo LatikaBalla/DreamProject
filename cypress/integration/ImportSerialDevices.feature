@@ -14,10 +14,10 @@ Feature: ImportSerialDevices Page Functionality
         And Verify the Title of ImportSerialDevices Page
         Then Filters of ImportSerialDevices should be visible
         And Table for ImportSerialDevices should be visible
-        # And Click More filter select- Importer in search box and Verify the Result
-        # Then Click on Clear filter
-        # And Click More filter select- Quantity Devices in search box and Verify the Result
-        # Then Click on Clear filter
+        And Click More filter select- Importer in search box and Verify the Result
+        Then Click on Clear filter
+        And Click More filter select- Quantity Devices in search box and Verify the Result
+        Then Click on Clear filter
         Then I should click on Add New Import
         Then Upload the CSV import file
         And Click on submit button

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 7679000000
+              "duration": 3972000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 11025000000
+              "duration": 9175000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8081000000
+              "duration": 8077000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Account Details -Aaccount Name and no should be visible",
             "result": {
               "status": "passed",
-              "duration": 43000000
+              "duration": 37000000
             }
           },
           {
@@ -63,7 +63,147 @@
             "name": "Account Manager,Billing Address and Shipping Address should be visible",
             "result": {
               "status": "passed",
-              "duration": 48000000
+              "duration": 45000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Click More filter select- Record Id in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 2637000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 328000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Click More filter select- Full name in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1126000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 66000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Click More filter select- Title in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 632000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 69000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Click More filter select- Eamil in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 3710000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 199000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Click More filter select- User Role in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 2942000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 257000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Click More filter select- Phone in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 3010000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 292000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "Click More filter select- User Status in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 4394000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 185000000
             }
           },
           {
@@ -73,7 +213,7 @@
             "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1260000000
+              "duration": 1141000000
             }
           },
           {
@@ -83,7 +223,7 @@
             "name": "Enter the Search - Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1117000000
+              "duration": 904000000
             }
           },
           {
@@ -93,7 +233,7 @@
             "name": "Enter the Search - Email in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 972000000
+              "duration": 1171000000
             }
           },
           {
@@ -103,7 +243,7 @@
             "name": "Enter the Search - Title in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2157000000
+              "duration": 2008000000
             }
           },
           {
@@ -113,7 +253,7 @@
             "name": "Enter the Search - Phone in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1126000000
+              "duration": 1312000000
             }
           },
           {
@@ -123,7 +263,7 @@
             "name": "Click on Export To CSV",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 86000000
             }
           }
         ]

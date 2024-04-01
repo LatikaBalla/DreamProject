@@ -11,18 +11,18 @@ Feature: Building Page Functionality
 
 
   Scenario: Adding,Update,add more filter, Clear filter and Search,View Details and Delete new Buildings
-    # And Click More filter select- Record Id in search box and Verify the Result
-    # Then Click on Clear filter
-    # And Click More filter select- Building Name in search box and Verify the Result
-    # Then Click on Clear filter
-    # And Click More filter select- Default Building in search box and Verify the Result
-    # Then Click on Clear filter
-    # And Click More filter select- Phone in search box and Verify the Result
-    # Then Click on Clear filter
-    # And Click More filter select- Building Shipping Address in search box and Verify the Result
-    # Then Click on Clear filter
-    # And Click More filter select- Building Billing Address in search box and Verify the Result
-    # Then Click on Clear filter
+    And Click More filter select- Record Id in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Building Name in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Default Building in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Phone in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Building Shipping Address in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Building Billing Address in search box and Verify the Result
+    Then Click on Clear filter
     And Enter the Search - Building Name in search box and Verify the Result
     # Then Enter the Search - Building Shipping Address in search box and Verify the Result
     And Enter the Search - Phone in search box and Verify the Result

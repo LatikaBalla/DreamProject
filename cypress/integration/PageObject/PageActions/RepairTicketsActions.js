@@ -108,14 +108,14 @@ export class RepairTicketsActions {
         rt.repairstatusElement().click({ force: true })
         rt.searchboxElement().eq(1).click({ force: true })
        rt.intransitElement().click({ force: true })
-      cy.get('tr td').eq(5).should('contain', tdata.repairTickets.repairstatus,{ force: true })
+      cy.get('tr td').eq(6).should('contain', tdata.repairTickets.repairstatus,{ force: true })
     }
     searchRepairBox() {
         rt.searchboxElement().eq(0).click({ force: true })
         rt.repairboxElement().click({ force: true })
         rt.searchElement().clear({ force: true }).type(tdata.repairTickets.repairbox + '{enter}', { force: true })
         cy.wait(1000)
-        cy.get('tr td').eq(6).should('contain', tdata.repairTickets.repairbox,{ force: true })
+        cy.get('tr td').eq(7).should('contain', tdata.repairTickets.repairbox,{ force: true })
     }
     searchAssetTag() {
         rt.searchboxElement().eq(0).click({ force: true })
@@ -233,7 +233,7 @@ export class RepairTicketsActions {
             // win.open('https://google.com', '_blank');
            });
            cy.get('body').type('{ctrl}t');
-           cy.visit("https://dream-frontend-stage.onrender.com/repair-center/ticket-detail/"+tdata.repairTickets.recordid)
+           cy.visit("/repair-center/ticket-detail/"+tdata.repairTickets.recordid)
       //  cy.get('tr td').eq(9).contains('View').scrollIntoView().click({ force: true })
         //cy.get('tr td').eq(10).scrollIntoView().contains('View').click({ force: true })
         //  iht.viewElement().click({ force: true })

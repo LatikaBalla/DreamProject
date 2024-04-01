@@ -1,3 +1,3 @@
 record_id,building_name,phone,default_building,building_shipping_address,building_billing_address
-2914,Bulk upload test 13th march,(273) 462-3428,true,"641 Fairview Avenue Northeast  , Grand Rapids, MI, 49503","641 Fairview Avenue Northeast  , Grand Rapids, MI, 49503"
-2913,Bulk upload test2 13 March,(273) 462-3429,false,"19224 Autumn Woods Avenue , Tampa, FL, 33647","19224 Autumn Woods Avenue , Tampa, FL, 33647"
+2795,South Point Elementary_,2187731149,false,"1900 13th Street Southeast, East Grand Forks, MN, 56721","1900 13th Street Southeast, East Grand Forks, MN, 56721"
+2773,Test Maleja,7777777777,false,"19224 Autumn Woods Avenue, Tampa, FL, 33647","19224 Autumn Woods Avenue, Tampa, FL, 33647"

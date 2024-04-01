@@ -20,16 +20,16 @@ Feature: RepairBoxes Page Functionality
     Then Select Ticket from dropdownlist
     And Click on Finish button
     Then Verify new box is added in table
-    # And Click More filter select- Record Id in search box and Verify the Result
+    And Click More filter select- Record Id in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Tracking Number From in search box and Verify the Result
+    Then Click on Clear filter
+    Then Click More filter select- Shipping From Cost in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Shipped From Date in search box and Verify the Result
+    Then Click on Clear filter
+    #  Then Click More filter select- Label From in search box and Verify the Result
     # Then Click on Clear filter
-    # And Click More filter select- Tracking Number From in search box and Verify the Result
-    # Then Click on Clear filter
-    # Then Click More filter select- Shipping From Cost in search box and Verify the Result
-    # Then Click on Clear filter
-    # And Click More filter select- Shipped From Date in search box and Verify the Result
-    # Then Click on Clear filter
-    # #  Then Click More filter select- Label From in search box and Verify the Result
-    # # Then Click on Clear filter
     And Enter the Search - Tracking Number in search box and Verify the Result
     Then Enter the Search - Record Id in search box and Verify the Result
         And Click on Export Button 

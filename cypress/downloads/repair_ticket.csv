@@ -1,2 +1,29 @@
 record_id,ticket_number,repair_type,serial_number,repair_device,asset_tag,repair_status,student_technician,created_by,last_modified_date
-51068,V0051068,Student,VIVATEST58Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Intake,Demo Student,,2024-03-13T11:58:05.872Z
+53527,V0053527,Student,VIVATEST80Test,VT Chromebook,,Intake,Demo Test,demo_adminsuper@vivacitytech.com,2024-03-27T16:07:22.000Z
+53526,V0053526,Student,VIVATEST0Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Intake,Demo Test,demo_adminsuper@vivacitytech.com,2024-03-27T16:04:28.000Z
+51249,V0051249,Student,VIVATEST91Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Intake,,,2024-03-13T18:29:41.000Z
+51248,V0051248,Student,VIVATEST119Test,VT Chromebook,"""0HOpc*q<x",Intake,,,2024-03-13T18:25:51.000Z
+51233,V0051233,Student,VIVATEST44Test,VT Chromebook,,Intake,,,2024-03-13T15:11:40.000Z
+50706,V0050706,Student,1CD1000006Test,Vivacity Tech Demo Chromebook - Intel/4GB/16GB - Non-Touch,12399,Closed,,Dream,2024-03-11T16:50:53.132Z
+48870,V0048870,Student,VIVATEST91Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,,Conan Malady,2024-03-11T16:45:11.508Z
+46821,V0046821,Student,1CD1000006Test,Vivacity Tech Demo Chromebook - Intel/4GB/16GB - Non-Touch,12399,Closed,,Conan Malady,2024-03-11T16:41:46.041Z
+40607,V0040607,Student,VIVATEST27Test,VT Chromebook,1,Closed,,Dream,2024-03-11T16:34:18.850Z
+39272,V0039272,Student,VIVATEST27Test,VT Chromebook,1,Closed,,fx,2024-03-11T16:33:52.138Z
+39244,V0039244,Student,VIVATEST12Test,VT Chromebook,,Closed,,Dream,2024-03-11T16:33:33.035Z
+39021,V0039021,Student,VIVATEST2Test,VT Chromebook,VivaTEST2Test,Intake,,Dream,2023-12-13T19:28:54.815Z
+37545,V0037525,Student,VIVATEST2Test,VT Chromebook,VivaTEST2Test,Intake,,Abby Erickson,2023-12-04T17:04:27.000Z
+13182,VAL2023100608490067,Student,VIVATEST117Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,YNZ0iS{)Ds,In House,,Dream,2023-10-06T08:49:00.000Z
+13181,VAL2023100608470053,Student,VIVATEST114Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,33\C8}ctz@,In House,,Dream,2023-10-06T08:47:00.000Z
+6687,VAL2023100212494163,Student,1100903Test,Vivacity Tech Demo Chromebook - Intel/4GB/16GB - Non-Touch,12312,In House,Ana Endres,Dream,2023-10-02T17:49:40.000Z
+6627,VAL202309262209123,Student,Test123Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,t233,Closed,Sohan Saini,Dream,2024-03-11T16:30:17.217Z
+1615,VAL2023092511191955,Student,VIVATEST87Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In House,Conan Malady,Conan Malady,2023-09-25T16:19:19.000Z
+1477,VAL2023091208215922,Student,VIVATESTTest,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In House,add name clowe,Dream,2023-09-12T02:51:46.000Z
+1466,VAL2023091117274641,Student,VIVATEST67Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In House,add name clowe,Dream,2023-09-11T11:57:47.000Z
+1457,VAL2023090818414999,Student,VIVATEST86Test,VT Chromebook,Asset,In Transit,Demo Test,Dream,2023-09-27T00:00:00.000Z
+1456,VAL2023090818371939,Student,AAAAATest,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,673TY,In House,Demo Test,Dream,2023-09-08T22:37:19.000Z
+1439,VAL2023083109153049,Student,VIVATEST28Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Repair,Demo Test,Dream,2023-09-05T00:00:00.000Z
+1437,VAL2023083109105692,Student,1234567Test,Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch,assasd,In House,Nicky,Dream,2023-08-31T09:10:56.000Z
+1436,VAL2023083109092289,Student,VIVATEST5Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In House,add name clowe,Dream,2023-08-31T09:09:22.000Z
+1428,VAL2023083009512410,Student,VIVATEST72Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In House,add name clowe,Dream,2023-08-30T14:51:24.000Z
+1426,VAL2023083009363583,Student,VIVATEST27Test,VT Chromebook,1,In House,Megan,Dream,2023-08-30T14:36:35.000Z
+1424,VAL2023083009081316,Student,VIVATEST12Test,VT Chromebook,,In House,Demo Test,Dream,2023-08-30T09:08:13.000Z

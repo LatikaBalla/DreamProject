@@ -550,7 +550,7 @@
         "createTicket": "Create New",
         "refreshbtn": "[data-testid='CachedIcon']",
         "failuretype": "#failure_type",
-        "technician": "#internal_technician",
+        "technician": "#student_technician",
         "serialdevice": "#device",
         "building": "#building",
         "exportbtn": "Export",

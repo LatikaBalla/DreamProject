@@ -14,7 +14,7 @@ export class SupportActions {
         dash.supportElement().click({ force: true })
     }
     enterFullname() {
-        su.nameElement().clear().type(tdata.support.name)
+        su.nameElement().clear({ force: true }).type(tdata.support.name,{ force: true })
     }
     selectPriority() {
         su.priorityElement().click({ force: true })
@@ -25,17 +25,17 @@ export class SupportActions {
         cy.get(tdata.support.topic).click({ force: true })
     }
     uploadImage() {
-        su.uploadElement().attachFile(tdata.support.image)
+        su.uploadElement().attachFile(tdata.support.image,{ force: true })
     }
     enterNotes() {
-        su.notesElement().clear().type(tdata.support.notes)
+        su.notesElement().clear({ force: true }).type(tdata.support.notes,{ force: true })
     }
     clickOnSubmit() {
         cy.get('.MuiGrid-container > .MuiButtonBase-root').click({ force: true })
         // su.submitbtnElement().click({ force: true })
     }
     verfiyFeedbackSuccess() {
-        dash.messageElement().should('contain', tdata.support.submitmsg)
+        dash.messageElement().should('contain', tdata.support.submitmsg),{ force: true }
     }
 }
 export default SupportActions 

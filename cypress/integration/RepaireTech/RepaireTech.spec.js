@@ -171,8 +171,13 @@ Then('Verify the WarrantyInfo tab should be visible', () => {
 })
 
 
-And('Click on My profile page', () => {
+And('Click on My profile page visible', () => {
+    cy.get('[data-testid="ChevronRightIcon"]').click({ force: true })
     cy.wait(1000)
+    cy.contains('demo_repairtech@vivacitytech.com').click({ force: true })
+    mp.clickOnMyProfile()
+})
+And('Click on My profile page', () => {
     cy.contains('demo_repairtech@vivacitytech.com').click({ force: true })
     mp.clickOnMyProfile()
 })

@@ -87,7 +87,7 @@ export class NonWarrantyRepairsActions {
             // win.open('https://google.com', '_blank');
            });
            cy.get('body').type('{ctrl}t');
-           cy.visit("https://dream-frontend-stage.onrender.com/repair-center/ticket-detail/"+tdata.nonwarrantyRepairs.recordid)
+           cy.visit("/repair-center/ticket-detail/"+tdata.nonwarrantyRepairs.recordid)
        // cy.get('tr td').eq(8).scrollIntoView().contains('View').click({ force: true })
     }
     verifyTicketDetails() {
@@ -100,9 +100,8 @@ export class NonWarrantyRepairsActions {
         cy.wait(3000)
         nwr.searchdropdownElement().eq(5).click({ force: true })
         nwr.recordidElement().click({ force: true })
-        cy.wait(1000)
+       // cy.wait(1000)
         nwr.searchElement().clear().type(tdata.nonwarrantyRepairs.recordid + '{enter}', { force: true })
-      
         cy.get('tr td').eq(0).should('contain', tdata.nonwarrantyRepairs.recordid)
     }
     searchRepairType() {

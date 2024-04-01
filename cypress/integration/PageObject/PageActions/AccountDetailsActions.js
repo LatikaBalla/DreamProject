@@ -191,6 +191,7 @@ export class AccountDetailsActions {
         cy.get('tr td').eq(4).should('not.contain', tdata.newaccount.userrole1)
     }
     selectFilterUserStatus() {
+        cy.wait(2000)
         acc.fieldNameElement().select('user_status', { force: true })
         acc.fieldOpElement().select('Does Not Contain', { force: true })
         acc.fieldValueElement().type(tdata.newaccount.userstatus)

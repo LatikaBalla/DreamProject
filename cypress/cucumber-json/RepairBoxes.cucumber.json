@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3482000000
+              "duration": 2940000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9906000000
+              "duration": 14336000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9070000000
+              "duration": 9088000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 87000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on RepairBoxes Tab",
             "result": {
               "status": "passed",
-              "duration": 1102000000
+              "duration": 355000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of RepairBoxes Page",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 41000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I should click on create new Box",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 163000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Enter weight, height, depth and width",
             "result": {
               "status": "passed",
-              "duration": 384000000
+              "duration": 2000000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Select Pick-up site",
             "result": {
               "status": "passed",
-              "duration": 616000000
+              "duration": 515000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Check the need shipping box",
             "result": {
               "status": "passed",
-              "duration": 106000000
+              "duration": 202000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on Create box button",
             "result": {
               "status": "passed",
-              "duration": 95000000
+              "duration": 315000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Select Ticket from dropdownlist",
             "result": {
               "status": "passed",
-              "duration": 440000000
+              "duration": 723000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on Finish button",
             "result": {
               "status": "passed",
-              "duration": 91000000
+              "duration": 188000000
             }
           },
           {
@@ -153,7 +153,85 @@
             "name": "Verify new box is added in table",
             "result": {
               "status": "passed",
-              "duration": 1445000000
+              "duration": 2540000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "Click More filter select- Record Id in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1665000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 206000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Click More filter select- Tracking Number From in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 8723000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 771000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "Click More filter select- Shipping From Cost in search box and Verify the Result",
+            "result": {
+              "status": "failed",
+              "duration": 4684000000,
+              "error_message": "CypressError: Timed out retrying after 4000ms: `cy.select()` failed because it could not find a single `<option>` with value, index, or text matching: `shipping_from_cost`\n\nhttps://on.cypress.io/select\n    at getOptions (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:142934:80)\n    at tryCatcher (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise.attempt.Promise.try (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:16018:29)\n    at retryOptions (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:142966:67)\n    at tryCatcher (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise.attempt.Promise.try (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:16018:29)\n    at whenStable (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:156356:65)\n    at <unknown> (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:155797:14)\n    at tryCatcher (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:16861:18)\n    at Promise._fulfill (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:16805:18)\n    at <unknown> (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:18419:46)\nFrom Your Spec Code:\n    at RepairBoxesActions.selectFilterShippingFromCost (cypress/integration/PageObject/PageActions/RepairBoxesActions.js:147:30)\n    at Context.eval (cypress/integration/RepairBoxes/RepairBoxes.spec.js:126:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "Click More filter select- Shipped From Date in search box and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "skipped"
             }
           },
           {
@@ -162,9 +240,7 @@
             "line": 33,
             "name": "Enter the Search - Tracking Number in search box and Verify the Result",
             "result": {
-              "status": "failed",
-              "duration": 5709000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<td.MuiTableCell-root.MuiTableCell-alignCenter.MuiTableCell-sizeMedium.css-42rti1>' to contain '1Z6X34470304080756'\n    at RepairBoxesActions.searchTrackingNumber (cypress/integration/PageObject/PageActions/RepairBoxesActions.js:116:30)\n    at Context.eval (cypress/integration/RepairBoxes/RepairBoxes.spec.js:96:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "skipped"
             }
           },
           {

@@ -9,7 +9,7 @@ Given('I should navigate to application', function () {
     cy.visit("/");
 })
 When('I should Sign In into the application', () => {
-    cy.AdminLogin()
+    cy.VivacityAdminLogin()
 })
 Then('Close the terms of service window', () => {
     cy.wait(8000)

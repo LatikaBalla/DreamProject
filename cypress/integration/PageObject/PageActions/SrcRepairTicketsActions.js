@@ -78,7 +78,7 @@ export class SrcRepairTicketsActions {
             // win.open('https://google.com', '_blank');
            });
            cy.get('body').type('{ctrl}t');
-           cy.visit("https://dream-frontend-stage.onrender.com/repair/inHouse-detail/"+tdata.srcRepairTicket.recordid)
+           cy.visit("/repair/inHouse-detail/"+tdata.srcRepairTicket.recordid)
         //   cy.get('tr td').eq(9).scrollIntoView().contains('View').click({ force: true })    
       //  srt.viewElement().click({ force: true })
     }

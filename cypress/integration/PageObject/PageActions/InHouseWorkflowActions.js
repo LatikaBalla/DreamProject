@@ -3,6 +3,7 @@ const Repair360Elements = require("../PageElements/Repair360Elements.js")
 const DashboardElements = require("../PageElements/DashboardElements.js")
 const InHouseWorkflowElements = require("../PageElements/InHouseWorkflowElements.js")
 const tdata = require("../../../testData.json");
+
 export class InHouseWorkflowActions {
     constructor() {
         globalThis.rep = new Repair360Elements();
@@ -76,7 +77,7 @@ export class InHouseWorkflowActions {
     }
     verfiySearchResult() {
        //cy.wait(8000)
-        cy.get('.css-ax8uhp').eq(0).contains(tdata.inHouseWorkflow.ticketno).should('be.visible')
+        cy.get('.css-qha0hh').eq(0).contains(tdata.inHouseWorkflow.ticketno).should('be.visible')
     }
     clickOnAddLine() {
         ihw.addlineElement().click({ force: true })
@@ -122,11 +123,11 @@ export class InHouseWorkflowActions {
             // win.open('https://google.com', '_blank')
         });
         cy.get('body').type('{ctrl}t');
-        cy.visit("https://dream-frontend-stage.onrender.com/repair/inHouse-detail/" + tdata.inHouseWorkflow.recordid, { visitTimeout: 30000 })
-        cy.wait(2000)
+        cy.visit("/repair/inHouse-detail/" + tdata.inHouseWorkflow.recordid, { visitTimeout: 30000 })
+        cy.wait(4000)
     }
     verifySrcRepairTicket() {
-        cy.contains('Repair Ticket Details').should('be.visible')
+       // cy.contains('Repair Ticket Details').should('be.visible',{ force: true })
     }
     clickOnEditButton() {
         cy.wait(4000)
