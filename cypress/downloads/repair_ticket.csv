@@ -1,29 +1,142 @@
-record_id,ticket_number,repair_type,serial_number,repair_device,asset_tag,repair_status,student_technician,created_by,last_modified_date
-53527,V0053527,Student,VIVATEST80Test,VT Chromebook,,Intake,Demo Test,demo_adminsuper@vivacitytech.com,2024-03-27T16:07:22.000Z
-53526,V0053526,Student,VIVATEST0Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Intake,Demo Test,demo_adminsuper@vivacitytech.com,2024-03-27T16:04:28.000Z
-51249,V0051249,Student,VIVATEST91Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Intake,,,2024-03-13T18:29:41.000Z
-51248,V0051248,Student,VIVATEST119Test,VT Chromebook,"""0HOpc*q<x",Intake,,,2024-03-13T18:25:51.000Z
-51233,V0051233,Student,VIVATEST44Test,VT Chromebook,,Intake,,,2024-03-13T15:11:40.000Z
-50706,V0050706,Student,1CD1000006Test,Vivacity Tech Demo Chromebook - Intel/4GB/16GB - Non-Touch,12399,Closed,,Dream,2024-03-11T16:50:53.132Z
-48870,V0048870,Student,VIVATEST91Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,,Conan Malady,2024-03-11T16:45:11.508Z
-46821,V0046821,Student,1CD1000006Test,Vivacity Tech Demo Chromebook - Intel/4GB/16GB - Non-Touch,12399,Closed,,Conan Malady,2024-03-11T16:41:46.041Z
-40607,V0040607,Student,VIVATEST27Test,VT Chromebook,1,Closed,,Dream,2024-03-11T16:34:18.850Z
-39272,V0039272,Student,VIVATEST27Test,VT Chromebook,1,Closed,,fx,2024-03-11T16:33:52.138Z
-39244,V0039244,Student,VIVATEST12Test,VT Chromebook,,Closed,,Dream,2024-03-11T16:33:33.035Z
-39021,V0039021,Student,VIVATEST2Test,VT Chromebook,VivaTEST2Test,Intake,,Dream,2023-12-13T19:28:54.815Z
-37545,V0037525,Student,VIVATEST2Test,VT Chromebook,VivaTEST2Test,Intake,,Abby Erickson,2023-12-04T17:04:27.000Z
-13182,VAL2023100608490067,Student,VIVATEST117Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,YNZ0iS{)Ds,In House,,Dream,2023-10-06T08:49:00.000Z
-13181,VAL2023100608470053,Student,VIVATEST114Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,33\C8}ctz@,In House,,Dream,2023-10-06T08:47:00.000Z
-6687,VAL2023100212494163,Student,1100903Test,Vivacity Tech Demo Chromebook - Intel/4GB/16GB - Non-Touch,12312,In House,Ana Endres,Dream,2023-10-02T17:49:40.000Z
-6627,VAL202309262209123,Student,Test123Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,t233,Closed,Sohan Saini,Dream,2024-03-11T16:30:17.217Z
-1615,VAL2023092511191955,Student,VIVATEST87Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In House,Conan Malady,Conan Malady,2023-09-25T16:19:19.000Z
-1477,VAL2023091208215922,Student,VIVATESTTest,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In House,add name clowe,Dream,2023-09-12T02:51:46.000Z
-1466,VAL2023091117274641,Student,VIVATEST67Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In House,add name clowe,Dream,2023-09-11T11:57:47.000Z
-1457,VAL2023090818414999,Student,VIVATEST86Test,VT Chromebook,Asset,In Transit,Demo Test,Dream,2023-09-27T00:00:00.000Z
-1456,VAL2023090818371939,Student,AAAAATest,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,673TY,In House,Demo Test,Dream,2023-09-08T22:37:19.000Z
-1439,VAL2023083109153049,Student,VIVATEST28Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Repair,Demo Test,Dream,2023-09-05T00:00:00.000Z
-1437,VAL2023083109105692,Student,1234567Test,Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch,assasd,In House,Nicky,Dream,2023-08-31T09:10:56.000Z
-1436,VAL2023083109092289,Student,VIVATEST5Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In House,add name clowe,Dream,2023-08-31T09:09:22.000Z
-1428,VAL2023083009512410,Student,VIVATEST72Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In House,add name clowe,Dream,2023-08-30T14:51:24.000Z
-1426,VAL2023083009363583,Student,VIVATEST27Test,VT Chromebook,1,In House,Megan,Dream,2023-08-30T14:36:35.000Z
-1424,VAL2023083009081316,Student,VIVATEST12Test,VT Chromebook,,In House,Demo Test,Dream,2023-08-30T09:08:13.000Z
+record_id,ticket_number,repair_type,serial_number,repair_device,asset_tag,repair_status,last_modified_date,internal_technician,created_by,repair_note,chromebook_issue,created_date
+54736,V0054736,In House,VIVATEST58Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Intake,2024-04-08T17:29:04.000Z,Demo Test,,,There is something fault,2024-04-08T17:29:04.000Z
+54735,V0054735,In House,VIVATEST58Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Intake,2024-04-08T17:28:51.000Z,Demo Test,,,There is something fault,2024-04-08T17:28:51.000Z
+54734,V0054734,In House,VIVATEST47Test,VT Chromebook,,Pending Repair Box,2024-04-08T17:27:08.000Z,,,,There is something fault,2024-04-08T17:27:08.000Z
+54731,V0054731,In House,VIVATEST58Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Waiting on Repair Approval,2024-04-08T17:28:41.583Z,Demo Test,demo_adminbuilding@vivacitytech.com,,There is something fault,2024-04-08T16:13:24.000Z
+54730,V0054730,In House,VIVATEST58Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Intake,2024-04-08T16:12:52.000Z,Demo Test,demo_adminbuilding@vivacitytech.com,,There is something fault,2024-04-08T16:12:52.000Z
+54729,V0054729,In House,VIVATEST47Test,VT Chromebook,,Pending Repair Box,2024-04-08T16:11:31.000Z,,demo_adminbuilding@vivacitytech.com,,There is something fault,2024-04-08T16:11:31.000Z
+54727,V0054695,In House,VIVATEST53Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Waiting on Repair Approval,2024-04-08T16:13:13.263Z,Edit Test,demo_adminvivacity@vivacitytech.com,,Test,2024-04-02T20:49:01.000Z
+54691,V0054691,In House,VIVATEST79Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Waiting on Repair Approval,2024-04-01T18:19:14.128Z,Akash,Conan Malady,,asdasdasd,2024-04-01T18:18:17.000Z
+53437,V0053437,In House,VIVATEST80Test,VT Chromebook,,Waiting on Repair Approval,2024-03-26T20:50:54.423Z,Nancy Stewart,Chase Roberts,,"kjhb,jhv",2024-03-26T18:48:06.000Z
+52298,V0052298,In House,VIVATEST25Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Repair,2024-04-01T15:12:15.091Z,Akash,Conan Malady,,broken hinge,2024-03-20T14:26:00.000Z
+52129,V0052129,In House,VIVATEST20Test,VT Chromebook,,Waiting on Repair Approval,2024-03-19T13:05:50.000Z,Akash,Dream,,issue,2024-03-19T13:05:50.000Z
+52126,V0052126,In House,VIVATEST119Test,VT Chromebook,"""0HOpc*q<x",Waiting on Repair Approval,2024-03-19T13:03:53.000Z,Akash,Dream,,issue,2024-03-19T13:03:53.000Z
+51816,V0051816,In House,VIVATEST55Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,5678,Part Queue,2024-03-15T19:54:29.000Z,Akash,Conan Malady,,won't boot,2024-03-15T19:54:29.000Z
+51807,V0051807,In House,VIVATEST46Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Quality Assurance,2024-03-20T14:38:43.528Z,Akash,Conan Malady,,asdasd,2024-03-15T19:02:06.000Z
+51803,V0051803,In House,VIVATEST99Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-25T18:01:48.364Z,Akash,Conan Malady,,Camera not working,2024-03-15T18:51:44.000Z
+51463,V0051463,In House,VIVATEST44Test,VT Chromebook,,Repair,2024-03-15T15:50:11.300Z,Demo Test,Dream,,twst,2024-03-14T14:08:18.000Z
+51232,V0051232,In House,VIVATEST50Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Waiting on Repair Approval,2024-03-13T15:10:09.000Z,,demo_adminbuilding@vivacitytech.com,,testr,2024-03-13T15:10:09.000Z
+51213,V0051213,In House,VIVATEST9Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Waiting on Repair Approval,2024-03-13T14:30:07.526Z,Jason Emricson,Conan Malady,,Keys not working,2024-03-13T14:25:53.000Z
+51036,V0051036,In House,P206P12Test,Lenovo ThinkPad C14 Gen 1 Chromebook - Intel/8GB/256GB - Non-Touch,3,Intake,2024-03-12T14:24:48.000Z,Sohan Saini,Dream,,test,2024-03-12T14:24:48.000Z
+50979,V0050979,In House,VIVATESTTest,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Waiting on Repair Approval,2024-03-15T20:00:56.041Z,Akash,Conan Malady,,Keys aren't working,2024-03-11T15:56:08.000Z
+50970,V0050970,In House,VIVATEST91Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:51:01.646Z,Akash,Conan Malady,,Won't boot,2024-03-11T14:25:31.000Z
+50619,V0050619,In House,VIVATEST91Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:50:26.618Z,Nancy Stewart,Conan Malady,,Keyboard not working,2024-03-08T15:09:59.000Z
+50469,V0050469,In House,VIVATEST58Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:50:16.823Z,test name,Conan Malady,,Broken Screen,2024-03-07T21:31:06.000Z
+50460,V0050460,In House,VIVATEST91Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:50:07.623Z,Akash,Conan Malady,,asdasdas,2024-03-07T20:40:16.000Z
+50456,V0050456,In House,P206XP14Test,Lenovo ThinkPad C14 Gen 1 Chromebook - Intel/8GB/256GB - Non-Touch,673TY,Closed,2024-03-11T16:49:59.309Z,Nancy Stewart,Dream,,test,2024-03-07T20:07:50.000Z
+50454,V0050454,In House,VIVATEST91Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:49:50.378Z,Sohan Saini,Conan Malady,," sdfgws",2024-03-07T19:46:43.000Z
+50451,V0050451,In House,VIVATEST58Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:49:41.603Z,Nancy Stewart,Conan Malady,,Keys not working,2024-03-07T19:40:00.000Z
+50446,V0050446,In House,VIVATEST91Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:49:32.534Z,Test,Conan Malady,,sdfsdf,2024-03-07T19:10:26.000Z
+50443,V0050443,In House,VIVATEST99Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:49:24.058Z,Test,Conan Malady,,broken,2024-03-07T19:08:57.000Z
+50440,V0050440,In House,VIVATEST58Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:49:14.717Z,,Conan Malady,,Broken screen,2024-03-07T19:03:41.000Z
+50405,V0050405,In House,VIVATEST58Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:48:56.730Z,,Conan Malady,,Keys aren't working,2024-03-07T17:32:57.000Z
+50397,V0050397,In House,1100907Test,Vivacity Tech Demo Chromebook - Intel/4GB/16GB - Non-Touch,12365,Closed,2024-03-11T16:48:47.756Z,Akash,Conan Malady,,Keys are not working,2024-03-07T17:13:37.000Z
+49935,V0049935,In House,VIVATEST41Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:48:21.369Z,Shyama Dutta,Conan Malady,,Screen broken,2024-03-05T18:15:38.000Z
+49782,V0049782,In House,VIVATEST58Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:47:54.526Z,Dream,Conan Malady,,broken hinge,2024-03-05T13:44:42.000Z
+49730,V0049730,In House,VIVATEST67Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:47:45.126Z,Sohan Saini,Dream,,Test,2024-03-04T20:04:09.000Z
+49711,V0049711,In House,5CD83049TGTest,HP Chromebook 11 G6 EE - Intel/4GB/16GB - Touch,4813932,Closed,2024-03-11T16:47:25.994Z,Jason Emricson,Jeff Metz,,asdf,2024-03-04T16:55:51.000Z
+49697,V0049697,In House,12345619,VT Chromebook,12345619,Closed,2024-03-25T18:02:09.483Z,,Conan Malady,,Keyboard is not longer working,2024-03-04T15:59:53.000Z
+49696,V0049696,In House,VIVATEST58Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:47:16.578Z,Demo Test,Conan Malady,,Keys aren't working,2024-03-04T15:58:05.000Z
+49571,V0049571,In House,VIVATEST10Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:47:06.343Z,Jason Emricson,Conan Malady,,broken screen,2024-03-04T15:32:24.000Z
+49284,V0049284,In House,VIVATEST91Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:46:31.854Z,,Conan Malady,,Keys aren't working,2024-03-01T15:21:27.000Z
+49097,V0049097,In House,VIVATEST10Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:46:14.877Z,Akash,Dream,,asdf,2024-02-29T19:27:56.000Z
+49078,V0049078,In House,VIVATEST58Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:45:57.132Z,,demo_adminbuilding@vivacitytech.com,,test,2024-02-29T18:32:32.000Z
+49074,V0049074,In House,VIVATEST58Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:46:06.303Z,,Conan Malady,,Broken,2024-02-29T18:13:20.000Z
+49073,V0049073,In House,856324gzTest,VT Chromebook,test123,Pending Repair Box,2024-02-29T18:01:03.000Z,,demo_adminbuilding@vivacitytech.com,,test_yosef_feb29th,2024-02-29T18:01:03.000Z
+48239,V0048239,In House,VIVATEST58Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:43:02.571Z,,Conan Malady,,broken,2024-02-23T17:50:27.000Z
+46823,V0046823,In House,VIVATEST58Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:41:23.656Z,Maleja DB test,Conan Malady,,Broken screen,2024-02-15T18:23:55.000Z
+46528,V0046528,In House,VIVATEST86Test,VT Chromebook,Asset,Closed,2024-03-11T16:40:08.098Z,Main_Street,Dream,,asdfads asdf asdf,2024-02-14T17:01:48.000Z
+46498,V0046498,In House,1CD1000009Test,Vivacity Tech Demo Chromebook - Intel/4GB/16GB - Non-Touch,12343,Closed,2024-03-11T16:39:58.417Z,Jesus Del Barrio Sanchez,Dream,,issue,2024-02-14T04:55:04.000Z
+46493,V0046493,In House,856324gzTest,VT Chromebook,test123,Closed,2024-03-11T16:39:48.665Z,Jesus Del Barrio Sanchez,Dream,,test,2024-02-13T20:41:34.000Z
+45539,V0045539,In House,VIVATEST46Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:38:32.225Z,Gerald Nolt,Conan Malady,,not working,2024-02-08T20:40:37.000Z
+42826,V0042826,In House,VIVATEST53Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T15:14:16.221Z,Maleja DB test,Dream,,test,2024-01-25T19:45:51.000Z
+42825,V0042825,In House,VIVATEST53Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:35:14.585Z,Maleja DB test,Dream,asd,test,2024-01-25T19:45:51.000Z
+42824,V0042824,In House,VIVATEST53Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:34:55.879Z,Maleja DB test,Dream,,test,2024-01-25T19:45:50.000Z
+42823,V0042823,In House,VIVATEST53Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:35:05.642Z,Maleja DB test,Dream,,test,2024-01-25T19:45:50.000Z
+42822,V0042822,In House,VIVATEST53Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:35:24.701Z,Maleja DB test,Dream,,test,2024-01-25T19:45:49.000Z
+42821,V0042821,In House,856324gzTest,VT Chromebook,test123,Intake,2024-01-25T19:44:40.000Z,Maleja DB test,Dream,,test,2024-01-25T19:44:40.000Z
+42339,V0042339,In House,VIVATEST86Test,VT Chromebook,Asset,Closed,2024-03-11T16:34:46.380Z,Bria Test,Jeff Metz,,Scotty broke screen,2024-01-22T17:22:06.000Z
+41352,V0041352,In House,VIVATEST57Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:34:37.275Z,Alejandra123 Duque,Conan Malady,dsafsdf,broken help,2024-01-11T18:52:45.000Z
+40684,V0040684,In House,VIVATEST63Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2024-03-11T16:34:28.365Z,,Conan Malady,,Keys aren't working,2024-01-05T17:45:23.000Z
+40602,V0040602,In House,8675309223344,HP Chromebook 11 G8 EE - Intel/4GB/32GB - Non-Touch,8675309223344,Closed,2024-03-11T16:34:10.804Z,,Conan Malady,Needs a screen,SCreen broke.,2024-01-02T20:05:32.000Z
+39696,V0039696,In House,VIVATEST27Test,VT Chromebook,1,Closed,2024-03-11T16:34:01.781Z,Alejandra123 Duque,Dream,,Maleja test,2023-12-20T19:59:11.000Z
+39254,V0039254,In House,VIVATEST12Test,VT Chromebook,,Closed,2024-03-11T16:33:42.419Z,Alejandra123 Duque,Dream,,test,2023-12-15T16:16:25.000Z
+39243,V0039243,In House,VIVATEST12Test,VT Chromebook,,Closed,2024-03-11T16:33:23.630Z,skippysg@gmail.com,Dream,,in house ticket creation,2023-12-15T12:27:18.000Z
+39242,V0039242,In House,VIVATEST12Test,VT Chromebook,,Closed,2024-03-11T16:33:14.059Z,Maleja123,Dream,,issue,2023-12-15T12:26:06.000Z
+39241,V0039241,In House,VIVATEST2Test,VT Chromebook,VivaTEST2Test,Closed,2024-03-11T16:33:04.220Z,Alejandra123 Duque,Dream,,Test,2023-12-15T03:02:13.000Z
+39238,V0039238,In House,VIVATEST2Test,VT Chromebook,VivaTEST2Test,Intake,2023-12-15T00:13:28.000Z,Alejandra123 Duque,Dream,,Maleja,2023-12-15T00:13:28.000Z
+39237,V0039237,In House,VIVATEST2Test,VT Chromebook,VivaTEST2Test,Intake,2023-12-14T23:23:31.000Z,Alejandra123 Duque,Dream,,test,2023-12-14T23:23:31.000Z
+39236,V0039236,In House,VIVATEST2Test,VT Chromebook,VivaTEST2Test,Intake,2023-12-14T23:21:42.000Z,test,Dream,,Maleja,2023-12-14T23:21:42.000Z
+39234,V0039234,In House,VIVATEST2Test,VT Chromebook,VivaTEST2Test,Intake,2023-12-14T22:24:18.000Z,Alejandra123 Duque,Dream,,<aleja,2023-12-14T22:24:18.000Z
+39175,V0039175,In House,VIVATEST97Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Intake,2023-12-13T22:35:04.000Z,Alejandra123 Duque,Dream,,123123,2023-12-13T22:35:04.000Z
+39004,V0039004,In House,VIVATEST2Test,VT Chromebook,VivaTEST2Test,Intake,2023-12-12T23:41:20.000Z,Alejandra123 Duque,Dream,,dfsdfsdf,2023-12-12T23:41:20.000Z
+39003,V0039003,In House,VIVATEST2Test,VT Chromebook,VivaTEST2Test,Intake,2023-12-12T22:35:18.000Z,Maleja123,Dream,,Test,2023-12-12T22:35:18.000Z
+39002,V0039002,In House,VIVATEST26Test,VT Chromebook,12345612345612,Intake,2023-12-12T21:35:59.000Z,,Conan Malady,,22222,2023-12-12T21:35:59.000Z
+39001,V0039001,In House,VIVATEST26Test,VT Chromebook,12345612345612,Intake,2023-12-12T21:35:06.000Z,Maleja123,Conan Malady,,hjasgd,2023-12-12T21:35:06.000Z
+39000,V0039000,In House,VIVATEST12Test,VT Chromebook,,Intake,2023-12-12T21:34:01.000Z,Maleja123,Conan Malady,,broken,2023-12-12T21:34:01.000Z
+38999,V0038999,In House,VIVATEST47Test,VT Chromebook,,Intake,2023-12-12T21:31:23.000Z,,Conan Malady,,Won't boot,2023-12-12T21:31:23.000Z
+38998,V0038998,In House,VIVATEST27Test,VT Chromebook,1,Intake,2023-12-12T21:30:41.000Z,Maleja123,Conan Malady,,Keys aren't working,2023-12-12T21:30:41.000Z
+38997,V0038997,In House,VIVATEST2Test,VT Chromebook,VivaTEST2Test,Intake,2023-12-12T21:24:09.000Z,,Conan Malady,,Broken screen,2023-12-12T21:24:09.000Z
+38978,V0038978,In House,VIVATEST97Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Complete,2023-12-12T17:32:13.349Z,Abby Erickson,Conan Malady,,asdasd,2023-12-12T17:29:08.000Z
+38977,V0038977,In House,VIVATEST2Test,VT Chromebook,VivaTEST2Test,Intake,2023-12-12T17:28:21.000Z,,Conan Malady,,sdfsd,2023-12-12T17:28:21.000Z
+38976,V0038976,In House,VIVATEST2Test,VT Chromebook,VivaTEST2Test,Intake,2023-12-12T17:27:31.000Z,Maleja123,Conan Malady,,no charge,2023-12-12T17:27:31.000Z
+37552,V0037552,In House,VIVATEST2Test,VT Chromebook,VivaTEST2Test,Intake,2023-12-04T17:47:53.000Z,Maleja Duque,Conan Malady,,TestCSM,2023-12-04T17:47:53.000Z
+37192,V0037192,In House,VIVATEST2Test,VT Chromebook,VivaTEST2Test,Closed,2024-03-11T16:32:54.403Z,Test Account creation,fx,,"LCD screen is black ",2023-12-01T16:58:27.000Z
+37191,V0037191,In House,VIVATEST22Test,VT Chromebook,123,Closed,2024-03-11T16:32:44.405Z,test,fx,,"broken ",2023-12-01T16:16:19.000Z
+31381,VAL2023111010292313,In House,VIVATEST22Test,VT Chromebook,123,Closed,2024-03-11T16:32:33.652Z,David Lukaskiewicz,Megan,,broke,2023-11-10T15:29:23.000Z
+28672,VAL2023110809443440,In House,VIVATEST22Test,VT Chromebook,123,Closed,2024-03-11T16:32:23.762Z,Test Account creation,Megan,,222,2023-11-08T14:44:34.000Z
+28669,VAL2023110811120170,In House,VIVATEST72Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Pending Repair Box,2023-11-08T05:42:15.000Z,,demo_adminsuper@vivacitytech.com,,se,2023-11-08T05:42:15.000Z
+26556,VAL2023110611324795,In House,12091921,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,1212121,Closed,2024-03-11T16:32:15.226Z,Dream,Megan,,"need lcd - warranty 
+",2023-11-06T16:32:48.000Z
+24244,VAL2023110214061487,In House,VIVATEST145Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,3F[v3}&)`F,Intake,2023-11-03T16:07:26.422Z,Maleja Duque,Dream,,Test ticket created in non-warranty repairs view.,2023-11-02T18:06:15.000Z
+24242,VAL2023110213040086,In House,VIVATEST172Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,aoO>4<qK5?,Repair,2023-11-02T17:14:04.561Z,Maleja Duque,Dream,,Test Non-Warranty Repair,2023-11-02T17:04:01.000Z
+22582,VAL2023102614501218,In House,1234,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,werwer,Complete,2023-11-30T20:25:41.819Z,Test Akash,Dream,re,keys not working,2023-10-26T19:50:13.000Z
+22546,VAL2023102413483790,In House,VIVATEST149Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,HvST&O$ERw,Complete,2023-10-30T11:36:28.872Z,,Dream,move to repair,Won't boot,2023-10-24T18:48:38.000Z
+19652,VAL202310090939029,In House,VIVATEST122Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,YF_[4:nQaF,Pending Repair Box,2023-10-09T14:39:03.000Z,,Conan Malady,,not booting up,2023-10-09T14:39:03.000Z
+19651,VAL2023100917093241,In House,VIVATEST144Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,tq'u%67lK_,Pending Repair Box,2023-10-09T11:38:52.000Z,,Dream,,issue,2023-10-09T11:38:52.000Z
+13185,VAL2023100609093164,In House,VIVATEST125Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,NG{yV<Pe(*,Quality Assurance,2023-10-11T16:00:16.058Z,Alejandra Duque,Dream,Done,Tst,2023-10-06T09:09:31.000Z
+13184,VAL2023100608534555,In House,VIVATEST121Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,WG@EJ]oU(6,Repair,2023-10-11T18:56:57.517Z,demo admin sd,Dream,,"Test ",2023-10-06T08:53:45.000Z
+13173,VAL2023100612272430,In House,TEST089,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,me78,Pending Repair Box,2023-10-06T06:57:25.000Z,,Dream,,sss,2023-10-06T06:57:25.000Z
+13172,VAL2023100611565034,In House,1234AC,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,673TY,Pending Repair Box,2023-10-06T06:26:51.000Z,,Dream,,qwertyuio,2023-10-06T06:26:51.000Z
+6723,VAL2023100313060839,In House,VIVATEST108Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,"[8h^,YschB",Repair,2023-10-06T00:00:00.000Z,demo admin sd,Dream,,Test CC,2023-10-03T13:06:08.000Z
+6718,VAL2023100312194418,In House,VIVATEST106Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,\|_3U}*s6],Quality Assurance,2023-10-16T14:47:39.239Z,demo admin sd,Dream,Sending to QA,TEst CC,2023-10-03T12:19:44.000Z
+6706,VAL2023100310184773,In House,VIVATEST179Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,Fe09u^F1OU,Repair,2023-10-16T14:50:26.617Z,test,Dream,,Test CC,2023-10-03T10:18:47.000Z
+6705,VAL2023100308303962,In House,VIVATEST177Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,xK.Uu1%lW[,Intake,2023-10-03T08:30:39.000Z,demo admin sd,Dream,,TEst CC,2023-10-03T08:30:39.000Z
+6704,VAL2023100308175028,In House,VIVATEST176Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,>&?#ZQxy8%,Intake,2023-10-03T08:17:50.000Z,demo admin sd,Dream,,Test CC,2023-10-03T08:17:50.000Z
+6700,VAL2023100214301140,In House,867530910223,Acer Chromebook 11 N7 C731T-C42N - Intel/4GB/16GB - Touch,867530910223,Repair,1202-01-20T00:00:00.000Z,Dream,Dream,,Not charging,2023-10-02T14:30:11.000Z
+6692,VAL202310021405352,In House,VIVATEST99Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Quality Assurance,2023-11-02T15:33:33.068Z,demo admin sd,Dream,,Maleja Test,2023-10-02T18:05:36.000Z
+6679,VAL2023092913501364,In House,VIVATEST49Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,2023-09-29T18:50:13.000Z,test,Dream,,No picture,2023-09-29T18:50:13.000Z
+6676,VAL2023092909584378,In House,VIVATEST53Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Complete,2023-10-02T00:00:00.000Z,test,Dream,,keys not working right,2023-09-29T14:58:43.000Z
+6674,VAL2023092815255831,In House,VIVATEST22Test,VT Chromebook,123,Closed,2024-03-11T16:31:08.616Z,test,Dream,,Test line items for netsuite,2023-09-28T20:25:58.000Z
+6673,VAL2023092815175012,In House,DEMOTest,Vivacity Tech Demo Chromebook - Intel/4GB/16GB - Non-Touch,12357,Closed,2024-03-11T16:31:01.177Z,test,Dream,,"Netsuite test in house ",2023-09-28T20:17:50.000Z
+6656,VAL2023092714554997,In House,768686,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,88,Closed,2024-03-11T16:30:46.507Z,test,Dream,,Maleja 2:55PM,2023-09-27T18:55:49.000Z
+6655,VAL2023092711554418,In House,VIVATEST51Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In Transit,2023-09-27T00:00:00.000Z,test,Dream,,Maleja Test,2023-09-27T15:55:44.000Z
+6653,VAL2023092711515755,In House,TEST085,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,me77,Closed,2024-03-11T16:30:39.099Z,test,Dream,,Maleja test with netsuite,2023-09-27T15:51:57.000Z
+6652,VAL2023092710430140,In House,1100901Test,VT Chromebook,12333,Quality Assurance,2023-09-27T15:45:01.877Z,test,Conan Malady,Move to QA note,Kb not working,2023-09-27T15:43:01.000Z
+6643,VAL2023092709330433,In House,VIVATEST20Test,VT Chromebook,,Repair,2023-09-27T15:38:52.351Z,test,Conan Malady,,BSOD,2023-09-27T14:33:04.000Z
+6642,VAL2023092709322998,In House,P206XP41Test,Vivacity Tech Demo Chromebook - Intel/4GB/16GB - Non-Touch,673TY,Closed,2024-03-11T16:30:31.731Z,test,Conan Malady,,not working,2023-09-27T14:32:30.000Z
+6636,VAL2023092715405049,In House,P206P20Test,Lenovo ThinkPad C14 Gen 1 Chromebook - Intel/8GB/256GB - Non-Touch,673TZ,Closed,2024-03-11T16:30:24.449Z,Dream API,Dream,,test ticket edit,2023-09-27T10:10:51.000Z
+1620,VAL2023092512464020,In House,VIVATEST98Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Repair,2023-09-27T00:00:00.000Z,Akash,Dream,,Test,2023-09-25T12:46:42.000Z
+1519,VAL2023092009144315,In House,VIVATEST42Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In Transit,2023-09-21T00:00:00.000Z,Dream,Conan Malady,,keys not working,2023-09-20T14:14:44.000Z
+1493,VAL2023091408554666,In House,VIVATEST44Test,VT Chromebook,,In House,2023-09-14T13:55:46.000Z,Ben Erickson,Conan Malady,,Smashed screen,2023-09-14T13:55:46.000Z
+1470,VAL2023091109224325,In House,1244Test,HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch,132,In House,2023-09-11T14:22:44.000Z,Ben Erickson,Conan Malady,,broken screen,2023-09-11T14:22:44.000Z
+1468,VAL202309110915324,In House,VIVATEST41Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In House,2023-09-11T09:15:32.000Z,TesterRT,Dream,,Test,2023-09-11T09:15:32.000Z
+1460,VAL2023090819451637,In House,VIVATEST74Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In House,2023-09-08T23:45:17.000Z,TesterRT,Dream,,"Broken headphone jack, hinge",2023-09-08T23:45:17.000Z
+1451,VAL2023090715464039,In House,VIVATEST58Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In House,2023-09-07T15:46:40.000Z,UI TEST delete,Dream,,Netsuite UI test,2023-09-07T15:46:40.000Z
+1449,VAL2023090715534851,In House,VIVATEST85Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,6767,In House,2023-09-07T19:53:48.000Z,Ben Erickson,Dream,,Maleja Test,2023-09-07T19:53:48.000Z
+1448,VAL2023090715512167,In House,VIVATEST34Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In House,2023-09-07T19:51:22.000Z,Ben Erickson,Dream,,Maleja Test,2023-09-07T19:51:22.000Z
+1447,VAL2023090715493539,In House,VIVATEST76Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In House,2023-09-07T19:49:36.000Z,Ben Erickson,Dream,,this is Maleja,2023-09-07T19:49:36.000Z
+1446,VAL2023090715413223,In House,VIVATEST64Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,24,In House,2023-09-07T19:41:33.000Z,Md Raja,Dream,,this is my second test,2023-09-07T19:41:33.000Z
+1444,VAL2023090713314396,In House,VIVATEST54Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,aaassee,In House,2023-09-07T13:31:43.000Z,Ben Erickson,Dream,,tyesetstres,2023-09-07T13:31:43.000Z
+1443,VAL2023090713235083,In House,VIVATEST55Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,5678,In House,2023-09-07T13:23:50.000Z,UI TEST delete,Dream,,Test,2023-09-07T13:23:50.000Z
+1442,VAL2023090713204310,In House,VIVATEST13Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,432786,In House,2023-09-07T13:20:43.000Z,UI TEST delete,Dream,,"Screen has spilled milk on it. ",2023-09-07T13:20:43.000Z
+1435,VAL2023083108245736,In House,VIVATEST25Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In House,2023-09-05T00:00:00.000Z,Dream,Dream,,Test,2023-08-31T08:24:58.000Z
+1434,VAL2023083110463877,In House,VIVATEST97Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In House,2023-08-30T05:16:42.000Z,UI TEST delete,Dream,,hgj,2023-08-31T05:16:42.000Z
+1416,VAL2023082811463436,In House,VIVATEST10Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,In House,2023-08-29T18:25:02.000Z,UI TEST delete,Dream,,Repair tech,2023-08-28T11:46:34.000Z
+1415,VAL2023082811452678,In House,VIVATEST2Test,VT Chromebook,VivaTEST2Test,In House,2023-08-29T18:25:02.000Z,,Dream,,Test,2023-08-28T11:45:26.000Z
+1413,VAL2023082811581976,In House,P206XP1336Test,Vivacity Tech Demo Chromebook - Intel/4GB/16GB - Non-Touch,mXdwJ\^_Pp,In Transit,2023-09-08T00:00:00.000Z,Manidipa Das,Dream,,testing,2023-08-28T06:28:17.000Z
+1411,VAL2023082515355272,In House,P206P101Test,Vivacity Tech Demo Chromebook - Intel/4GB/16GB - Non-Touch,"DP8j_mY\o""",Complete,2023-08-29T18:25:32.000Z,Nathan,Conan Malady,,no worky,2023-08-25T20:35:53.000Z
+1407,VAL2023082510340738,In House,P206XP42Test,Vivacity Tech Demo Chromebook - Intel/4GB/16GB - Non-Touch,KFr:C@N+l*,In Transit,2023-08-31T00:00:00.000Z,Manidipa Das,Dream,,Test,2023-08-25T10:34:07.000Z
+1405,VAL2023082521005256,In House,P206P15Test,Lenovo ThinkPad C14 Gen 1 Chromebook - Intel/8GB/256GB - Non-Touch,B`*q!LT3{),Quality Assurance,2023-09-06T18:14:00.886Z,jlondon,Dream,Test,testing,2023-08-25T15:30:52.000Z
+1404,VAL2023082518092811,In House,P206P16Test,Lenovo ThinkPad C14 Gen 1 Chromebook - Intel/8GB/256GB - Non-Touch,"'@zc`T'gBp@",Complete,2023-08-29T00:00:00.000Z,Demo Test,Dream,,testing,2023-08-25T12:39:27.000Z
+1393,VAL2023082416100291,In House,1100907Test,Vivacity Tech Demo Chromebook - Intel/4GB/16GB - Non-Touch,12365,In House,2023-08-24T16:10:02.000Z,TesterRT,Dream,,wewe,2023-08-24T16:10:02.000Z

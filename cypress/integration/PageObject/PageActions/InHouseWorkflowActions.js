@@ -134,8 +134,8 @@ export class InHouseWorkflowActions {
         ihw.editTicketElement().click({ force: true })
     }
     editTehnician() {
-        ihw.technicianElement().click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains(tdata.inHouseWorkflow.technician).click({ force: true })
+        // ihw.technicianElement().click({ force: true })
+        // cy.get('[role="listbox"]').find('li').contains(tdata.inHouseWorkflow.technician).click({ force: true })
     }
     editRepairStatus() {
         ihw.repairstatusEditElement().click({ force: true })

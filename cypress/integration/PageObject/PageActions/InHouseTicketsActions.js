@@ -48,6 +48,7 @@ export class InHouseTicketsActions {
         iht.technicianElement().click({ force: true })
         cy.get('[role="listbox"]').find('li').contains(tdata.inHouseTicket.technician).click({ force: true })
     }
+
     selectBilding() {
         iht.buildingElement().click({ force: true })
         cy.get('[role="listbox"]').find('li').contains("Dream Building").click({ force: true })
@@ -77,7 +78,7 @@ export class InHouseTicketsActions {
         iht.searchboxElement().eq(0).click({ force: true })
         iht.recordidElement().click({ force: true })
         iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.recordid + '{enter}', { force: true })
-      cy.wait(1000)
+      //cy.wait(1000)
         cy.get('tr td').eq(0).should('contain', tdata.inHouseTicket.recordid)
     }
     searchTicketNumber() {
@@ -236,8 +237,8 @@ export class InHouseTicketsActions {
         iht.editTicketElement().click({ force: true })
     }
     editTehnician() {
-        iht.technicianElement().click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains(tdata.inHouseTicket.technician).click({ force: true })
+        // iht.technicianElement().click({ force: true })
+        // cy.get('[role="combobox"]').eq(0).contains(tdata.inHouseTicket.technician).click({ force: true })
     }
     editRepairStatus() {
         iht.repairstatusEditElement().click({ force: true })

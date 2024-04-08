@@ -6,7 +6,7 @@ Feature: Account Details Page Functionality
     Background: Background name
         Given I should navigate to application
         When I should Sign In into the application
-        Then close the terms of service window
+     Then close the terms of service window
 
     Scenario: Adding,add more filter, Clear filter of Account Details page
         Then Account Details -Aaccount Name and no should be visible

@@ -39,8 +39,8 @@ Feature:SrcRepairTickets Page Functionality
     Then Click on Clear filter
     And Click on Download Export button
     Then I should click on Create Student Repair Ticket button
-    And Select failure Type, Serial Device, Technician and building
-    Then Enter the Chromebook issue
+    And Select failure Type, Serial Device, Technician and building 
+    Then Enter the Chromebook issue and Image description
     And Click on save button
     Then Verify New Ticket is added
     And Enter the Search value in search box

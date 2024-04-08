@@ -77,20 +77,20 @@ export class AccountDetailsActions {
         acc.editIconElement().eq(0).click()
     }
     editTitle() {
-        acc.editTitleElement().clear().type(tdata.edit.title)
+        acc.editTitleElement().clear({ force: true }).type(tdata.edit.title)
     }
     editFullname() {
-        acc.editFullnameElement().clear().type(tdata.edit.fullname)
+        acc.editFullnameElement().clear({ force: true }).type(tdata.edit.fullname)
     }
     editCellNumber() {
-        acc.editCellnumberElement().clear().type(tdata.edit.cellnumber)
+        acc.editCellnumberElement().clear({ force: true }).type(tdata.edit.cellnumber)
     }
     editPhone() {
-        acc.editPhoneElement().clear().type(tdata.edit.phone)
+        acc.editPhoneElement().clear({ force: true }).type(tdata.edit.phone)
     }
     editUserRole() {
         acc.editUserroleElement().click({ force: true })
-        cy.get(tdata.edit.userrole).click()
+        cy.get(tdata.edit.userrole).click({ force: true })
     }
     editUserStatus() {
         acc.editUserStatusElement().click({ force: true })
@@ -224,7 +224,7 @@ export class AccountDetailsActions {
         acc.searchboxElement().eq(0).click({ force: true })
         acc.titleElement().click({ force: true })
         acc.searchElement().clear({ force: true }).type(tdata.newaccount.title + '{enter}', { force: true })
-         cy.wait(1000)
+        // cy.wait(1000)
         cy.get('tr td').eq(2).should('contain', tdata.newaccount.title)
     }
     searchPhone() {

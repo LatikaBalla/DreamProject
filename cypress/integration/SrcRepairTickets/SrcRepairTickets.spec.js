@@ -44,8 +44,9 @@ And('Select failure Type, Serial Device, Technician and building', () => {
     srt.selectIssue()
     srt.selectBuilding()
 })
-Then('Enter the Chromebook issue', () => {
+Then('Enter the Chromebook issue and Image description', () => {
     srt.enterChromebookIssue()
+    srt.enterimagedescription()
 })
 And('Click on save button', () => {
     srt.clickOnSaveButton()

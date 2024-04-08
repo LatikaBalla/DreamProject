@@ -551,6 +551,7 @@
         "refreshbtn": "[data-testid='CachedIcon']",
         "failuretype": "#failure_type",
         "technician": "#student_technician",
+        "edittechnician":"#internal_technician",
         "serialdevice": "#device",
         "building": "#building",
         "exportbtn": "Export",

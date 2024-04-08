@@ -28,7 +28,7 @@ export class ImportSerialDevicesActions {
         isd.tableElement().should('be.visible')
     }
     clickOnAddNewImport() {
-        cy.get(':nth-child(2) > .MuiBox-root > .MuiGrid-container > .MuiGrid-root > :nth-child(2)').click()
+        cy.get(':nth-child(2) > .MuiBox-root > .MuiGrid-container > .MuiGrid-root > :nth-child(2)').click({ force: true })
         // isd.addimportElement().eq(1).scrollIntoView().click({force:true})
     }
     uploadcsvFile() {

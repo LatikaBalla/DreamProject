@@ -63,12 +63,12 @@ export class FeaturesActions {
         cy.get('.css-6unjtn').eq(0).should('not.contain', tdata.features.description)
     }
     selectFilterCreator() {
-        cy.contains('+ Add Filter Group').click({ force: true })
+         cy.contains('+ Add Filter Group').click({ force: true })
         ft.fieldNameElement().select('created_by', { force: true })
-        ft.fieldOpElement().select('does_not_contain', { force: true })
+        ft.fieldOpElement().select('contains', { force: true })
         ft.fieldValueElement().type(tdata.features.createdby)
         ft.applyElement().click({ force: true })
-        cy.get('.css-6unjtn').eq(0).should('not.contain', tdata.features.createdby)
+        cy.get('.css-6unjtn').eq(0).should('contain', tdata.features.createdby)
     }
 }
 export default FeaturesActions 

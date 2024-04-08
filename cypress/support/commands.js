@@ -28,23 +28,16 @@ Cypress.Commands.add("AdminLogin", () => {
   //cy.get('#cf-chl-widget-osivq').click({ force: true })
   cy.get('[href="/login"]').click({ force: true })
   //cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
-    //cy.origin('https://dream-vivacity.us.auth0.com/', () => {
+   // cy.origin('https://dream-vivacity.us.auth0.com/', () => {
       cy.origin('https://dream-qa.us.auth0.com/',()=>{
     Cypress.on("uncaught:exception", () => {
       return false;
     });
     cy.get('#input-box-email').type(Cypress.env('USERNAME'))
     cy.get('#input-box-password').type(Cypress.env('PASSWORD'))
-    cy.get('.submit-text').click()
+  cy.get('#btn-login.submit-btn').click({force:true})
     cy.wait(1000)
   })
-//   cy.request('GET', 'https://dream-vivacity.us.auth0.com/oauth/token').then(
-//   (response) => {
-//     let tokenValue=response.body.access_token
-//  cy.log(tokenValue)
-//   }
-//)
-  
 })
 Cypress.Commands.add("VivacityAdminLogin", () => {
   cy.get('[href="/login"]').click({ force: true })
@@ -62,8 +55,9 @@ Cypress.Commands.add("VivacityAdminLogin", () => {
 })
 Cypress.Commands.add("SchoolAdminLogin", () => {
   cy.get('[href="/login"]').click({ force: true })
-   cy.origin('https://dream-vivacity.us.auth0.com/', () => {
+  // cy.origin('https://dream-vivacity.us.auth0.com/', () => {
   //cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
+    cy.origin('https://dream-qa.us.auth0.com/',()=>{
     Cypress.on("uncaught:exception", () => {
       return false;
     });
@@ -78,7 +72,8 @@ Cypress.Commands.add("RepaireTechLogin", () => {
 
   cy.get('[href="/login"]').click({ force: true })
   //cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
-      cy.origin('https://dream-vivacity.us.auth0.com/', () => {
+     // cy.origin('https://dream-vivacity.us.auth0.com/', () => {
+        cy.origin('https://dream-qa.us.auth0.com/',()=>{
     Cypress.on("uncaught:exception", () => {
       return false;
     });
@@ -92,8 +87,8 @@ Cypress.Commands.add("BuildingAdminLogin", () => {
 
   cy.get('[href="/login"]').click({ force: true })
   //cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
-     // cy.origin('https://dream-vivacity.us.auth0.com/', () => {
-        cy.origin('https://dream-qa.us.auth0.com/',()=>{
+     //cy.origin('https://dream-vivacity.us.auth0.com/', () => {
+       cy.origin('https://dream-qa.us.auth0.com/',()=>{
     Cypress.on("uncaught:exception", () => {
       return false;
     });
@@ -156,8 +151,8 @@ Cypress.Commands.add("AdvancedStudentLogin", () => {
 
   cy.get('[href="/login"]').click({ force: true })
   //cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
-      //cy.origin('https://dream-vivacity.us.auth0.com/', () => {
-        cy.origin('https://dream-qa.us.auth0.com/',()=>{
+      cy.origin('https://dream-vivacity.us.auth0.com/', () => {
+      //  cy.origin('https://dream-qa.us.auth0.com/',()=>{
     Cypress.on("uncaught:exception", () => {
       return false;
     });

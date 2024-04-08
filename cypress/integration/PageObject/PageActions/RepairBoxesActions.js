@@ -111,17 +111,17 @@ export class RepairBoxesActions {
     searchTrackingNumber() {
         rb.searchboxElement().eq(0).click({ force: true })
         rb.trackingnumberElement().click({ force: true })
-        rb.searchElement().clear().type(tdata.repairBox.trackingnumber + '{enter}', { force: true })
+        rb.searchElement().clear({ force: true }).type(tdata.repairBox.trackingnumber + '{enter}', { force: true })
       //  cy.wait(4000)
         cy.get('tr td').eq(1).should('contain', tdata.repairBox.trackingnumber)
     }
     searchRecordId() {
         rb.searchboxElement().eq(0).click({ force: true })
         rb.recordidElement().click({ force: true })
-        rb.searchElement().clear().type(tdata.repairBox.recordid + '{enter}', { force: true })
+        rb.searchElement().clear({ force: true }).type(tdata.repairBox.recordid + '{enter}', { force: true })
         // cy.wait(1000)
         cy.get('tr td').eq(0).should('contain', tdata.repairBox.recordid)
-        rb.searchElement().clear()
+        rb.searchElement().clear({ force: true })
     }
     clickOnClearFilter() {
         rb.clearFilterElement().click({ force: true })

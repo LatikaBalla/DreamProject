@@ -59,8 +59,12 @@ export class SrcRepairTicketsActions {
     enterChromebookIssue() {
         srt.chromebookissueElement().type(tdata.srcRepairTicket.chromebookissue, { force: true })
     }
+    enterimagedescription(){
+        srt.imagedescriptionElement().type('image info',{ force: true })
+    }
     clickOnSaveButton() {
         srt.savebtnElement().click({ force: true })
+        cy.wait(5000)
     }
     verifyNewTicket() {
         dash.messageElement().should('contain', tdata.srcRepairTicket.createTicketmsg)
@@ -90,7 +94,7 @@ export class SrcRepairTicketsActions {
         srt.editTicketElement().click({ force: true })
     }
     editTehnician() {
-        srt.technicianElement().click({ force: true })
+        srt.edittechnicianElement().click({ force: true })
         cy.get('[role="listbox"]').find('li').contains(tdata.srcRepairTicket.technician).click({ force: true })
     }
     editRepairStatus() {

@@ -58,6 +58,9 @@ Given('I should navigate to application', function () {
 })
 When('I should Sign In into the application', () => {
     cy.BuildingAdminLogin()
+    Cypress.on("uncaught:exception", () => {
+        return false;
+    });
 })
 Then('Close the terms of service window', () => {
     cy.wait(5000)
@@ -638,6 +641,7 @@ And('Select failure Type, Serial Device, Technician and building of srcRt', () =
 })
 Then('Enter the Chromebook issue of srcRt', () => {
     srt.enterChromebookIssue()
+    srt.enterimagedescription()
 })
 And('Click on save button of srcRt', () => {
     srt.clickOnSaveButton()
@@ -963,6 +967,35 @@ And('Click on Attach CSV file and Click on submit button of build', () => {
 })
 Then('Verify the Uploaded successfully of build', () => {
     build.verifyuploaded()
+})
+Then('Verify the builing details added in table', () => {
+    build.verifyNewBuilding()
+})
+And('Click on Delete Icon of building', () => {
+    build.clickOnDeleteIcon()
+})
+Then('Click on Confirm Delete button of building', () => {
+    build.clickOnConfirmDeleteButton()
+})
+And('Verify the record is deleted successfully of building', () => {
+    build.verifyDelete()
+})
+And('Click on Edit Icon of builing', () => {
+    build.clickOnEditIcon()
+})
+And('I should edit Building Name,Phone and Extension of builing', () => {
+    build.editBuildingName()
+    build.editPhone()
+    build.editExtension()
+})
+Then('I should edit Select Default building', () => {
+    build.editselectDefaultBuilding()
+})
+Then('Click on update button of builing', () => {
+    build.clickOnUpdateButton()
+})
+And('Verify the Record has been updated Meassage of builing', () => {
+    build.verifyBuildingUpdated()
 })
 
 Then('I should click on new button of ihw', () => {

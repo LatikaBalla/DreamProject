@@ -132,10 +132,10 @@ export class BuildingsActions {
     }
     selectFilterPhone() {
         build.fieldNameElement().select('phone', { force: true })
-        build.fieldOpElement().select('Contains', { force: true })
+        build.fieldOpElement().select('Does Not Contain', { force: true })
         build.fieldValueElement().type(tdata.buildings.phoneNo)
         build.applyElement().click({ force: true })
-        cy.get('tr td').eq(2).should('contain', tdata.buildings.phoneNo1)
+        cy.get('tr td').eq(2).should('not.contain', tdata.buildings.phoneNo1)
     }
     selectFilterDefaultBuilding() {
         build.fieldNameElement().select('default_building', { force: true })

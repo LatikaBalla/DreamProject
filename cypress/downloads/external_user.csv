@@ -1,17 +1,13 @@
-full_name,title,email,user_status,phone
-Demo Student,Mr,1711559734571@gmail.com,Active,1231231231
-Demo Student,Mr,1711530392193@gmail.com,Active,1231231231
-,,demo_repairfacilitator@vivacitytech.com,Active,
-test,test,mn@gmail.com,Active,7894564458
-test 1,,test@test.com,Active,
-Add User,user creation,sd@gmail.com,Active,
-Edit Test,Mrs,1690806807082@gmail.com,Inactive,24234234
-UI TEST delete,shya,sd@email.com,Active,89898
-Edit Test,,annaking01@gmail.com,Active,81405463
-Lauren Harris,important,sgarcia@example.org,Active,21962101
-Brian Wilcox,daughter,lori35@example.net,Active,84280551
-Nancy Stewart,school,NStewart@example.com,Active,81405463
-Lisa Burton,Democrat,davidtaylor@example.net,Active,81405463
-Christina Johnson,store,turnerjose@example.com,Active,81405463
-Julie Mcclure,central,johnmorse@example.org,Active,81405463
-Crystal Smith,physical,sgonzalez@example.com,Active,73008689
+record_id,full_name,title,email,user_role,phone,cell_number,user_status
+1044,Demo Test,Mr,1691508033430@gmail.com,Student,1231231231,1231234121,Active
+1005,Demo Test,Mr,1690987110013@gmail.com,Student,1231231231,1231234121,Active
+1036,Demo Test,Mr,1691492097984@gmail.com,Student,1231231231,1231234121,Active
+930,Demo Test,Mr,1690806966527@gmail.com,Student,81405463,1231234121,Active
+936,Demo Test,Mr,1690807767265@gmail.com,Student,81405463,1231234121,Active
+933,Demo Test,Mr,1690807429814@gmail.com,Student,1231231231,1231234121,Active
+1013,Demo Test,Mr,1691155226708@gmail.com,Student,1231231231,1231234121,Active
+941,Search Test,Mr,1690817389935@gmail.com,Student,1231231231,1231234121,Active
+1034,Demo Test,Mr,1691492004283@gmail.com,Student,1231231231,1231234121,Active
+951,Demo Test,Mr,1690884051723@gmail.com,Student,1231231231,1231234121,Active
+1006,Demo Test,Mr,1690987244499@gmail.com,Student,1231231231,1231234121,Active
+2406,Demo Student,Mr,1712592907452@gmail.com,Facilitator,1231231231,1231234121,Active

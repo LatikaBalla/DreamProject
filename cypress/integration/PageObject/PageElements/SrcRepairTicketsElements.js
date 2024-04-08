@@ -242,5 +242,15 @@ export default class SrcRepairTicketsElements {
             timeout: 30000,
         })
     }
+    imagedescriptionElement(){
+        return cy.get(locator.srcRepairTickets.imagedescription, {
+            timeout: 30000,
+        })
+    }
+    edittechnicianElement(){
+        return cy.get(locator.srcRepairTickets.edittechnician, {
+            timeout: 30000,
+        })
+    }
 
 }
