@@ -38,7 +38,7 @@ Then('Enter tilte and phone no', () => {
     mp.enterTitle()
     mp.enterPhone()
 })
-And('Eelect Email preference', () => {
+And('Select Email preference', () => {
     mp.selectEmailPreference()
 })
 Then('click on update button', () => {

@@ -71,11 +71,20 @@ And('Enter the table fields in search box', () => {
 And('Verify the record in searching history', () => {
     mf.verifySearchResult()
 })
+And('Enter the table fields in search box1', () => {
+    mf.enterSearchValue1()
+})
+And('Verify the record in searching history1', () => {
+    mf.verifySearchResult1()
+})
 Then('Click on view Button', () => {
     mf.clickOnViewButton()
 })
 And('Verify the Warranty Description', () => {
     mf.verifyViewResult()
+})
+And('Verify the Warranty Description1', () => {
+    mf.verifyViewResult1()
 })
 Then('Click on Export To CSV', () => {
     mf.clickOnCExportToCSVButton()

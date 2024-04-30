@@ -36,9 +36,11 @@ Then('Enter full name, title and Email', () => {
     user.enterTitle()
     user.enterEmail()
 })
-And('Enter Phone and Cell Number', () => {
+And('Enter Phone, Cell Number, role and building', () => {
     user.enterPhone()
     user.enterCellNumber()
+    user.selectRole()
+    user.selectBuilding()
 })
 And('Click on submit button', () => {
     user.clickOnASubmitButton()

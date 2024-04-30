@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 5336000000
+              "duration": 2816000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 10032000000
+              "duration": 11231000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9081000000
+              "duration": 9170000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 94000000
+              "duration": 124000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on StudentRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 879000000
+              "duration": 706000000
             }
           },
           {
@@ -73,7 +73,47 @@
             "name": "Click on SrcRepairTickets tab",
             "result": {
               "status": "passed",
-              "duration": 59000000
+              "duration": 104000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Verify the Title of SrcRepairTickets Page",
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Filters of SrcRepairTickets should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 966000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Table for SrcRepairTickets should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "Click on Download Export button",
+            "result": {
+              "status": "passed",
+              "duration": 184000000
             }
           },
           {
@@ -83,7 +123,7 @@
             "name": "I should click on Create Student Repair Ticket button",
             "result": {
               "status": "passed",
-              "duration": 1141000000
+              "duration": 424000000
             }
           },
           {
@@ -93,7 +133,7 @@
             "name": "Select failure Type, Serial Device, Technician and building",
             "result": {
               "status": "passed",
-              "duration": 1524000000
+              "duration": 3000000000
             }
           },
           {
@@ -103,7 +143,7 @@
             "name": "Enter the Chromebook issue and Image description",
             "result": {
               "status": "passed",
-              "duration": 1056000000
+              "duration": 3364000000
             }
           },
           {
@@ -113,7 +153,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 5085000000
+              "duration": 5230000000
             }
           },
           {
@@ -123,7 +163,7 @@
             "name": "Verify New Ticket is added",
             "result": {
               "status": "passed",
-              "duration": 11686000000
+              "duration": 19492000000
             }
           },
           {
@@ -133,7 +173,7 @@
             "name": "Enter the Search value in search box",
             "result": {
               "status": "passed",
-              "duration": 449000000
+              "duration": 1205000000
             }
           },
           {
@@ -142,8 +182,9 @@
             "line": 47,
             "name": "Verify the Results in the table",
             "result": {
-              "status": "passed",
-              "duration": 1775000000
+              "status": "failed",
+              "duration": 4698000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `1`, but never found it. Queried from:\n\n              > cy.get(tr td)\n    at SrcRepairTicketsActions.verifySearchResult (cypress/integration/PageObject/PageActions/SrcRepairTicketsActions.js:78:30)\n    at Context.eval (cypress/integration/SrcRepairTickets/SrcRepairTickets.spec.js:61:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -152,8 +193,7 @@
             "line": 48,
             "name": "Click on view button",
             "result": {
-              "status": "passed",
-              "duration": 4605000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +202,7 @@
             "line": 49,
             "name": "Verify the Details of student repair ticket",
             "result": {
-              "status": "passed",
-              "duration": 54000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +211,7 @@
             "line": 50,
             "name": "Click on the Edit Ticket Button",
             "result": {
-              "status": "passed",
-              "duration": 4097000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +220,7 @@
             "line": 51,
             "name": "Update the Technician and Repair Status",
             "result": {
-              "status": "passed",
-              "duration": 765000000
+              "status": "skipped"
             }
           },
           {
@@ -192,8 +229,7 @@
             "line": 52,
             "name": "Click on Update Button",
             "result": {
-              "status": "passed",
-              "duration": 69000000
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +238,7 @@
             "line": 53,
             "name": "Verify Updated successfully",
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +247,7 @@
             "line": 54,
             "name": "Click on Add Line and Verify",
             "result": {
-              "status": "passed",
-              "duration": 2336000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +256,7 @@
             "line": 55,
             "name": "Click on Add Repair Image and Verify",
             "result": {
-              "status": "passed",
-              "duration": 879000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +265,7 @@
             "line": 56,
             "name": "Click on Add Note and Verify",
             "result": {
-              "status": "passed",
-              "duration": 626000000
+              "status": "skipped"
             }
           }
         ]

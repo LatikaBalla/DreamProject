@@ -96,4 +96,9 @@ export default class DashboardElements {
             timeout: 30000,
         });
     }
+    myAccountElement(){
+        return cy.contains(locator.dashboard.myAccount, {
+            timeout: 30000,
+        });
+    }
 }

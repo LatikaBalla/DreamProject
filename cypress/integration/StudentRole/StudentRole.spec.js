@@ -153,7 +153,7 @@ Then ('Verify the WarrantyInfo tab should be visible',()=>{
 
 And('Click on My profile page', () => {
     cy.wait(1000)
-    cy.contains('demo_repairtech@vivacitytech.com').click({force:true})
+    cy.contains('demo_studentnormal@vivacitytech.com').click({force:true})
     mp.clickOnMyProfile()
 })
 Then('Verify the Title of My Profile Page', () => {
@@ -162,7 +162,7 @@ Then('Verify the Title of My Profile Page', () => {
 
 And('Click on Support page', () => {
     cy.wait(1000)
-   // cy.contains('demo_repairtech@vivacitytech.com').click({force:true})
+   // cy.contains('demo_studentSuper@vivacitytech.com').click({force:true})
     su.clickOnSupport()
 })
 Then('Verify the Title of Support Page', () => {
@@ -172,7 +172,7 @@ Then('Verify the Title of Support Page', () => {
 
 And ('Click on features page',()=>{
     cy.wait(1000)
-  //  cy.contains('demo_repairtech@vivacitytech.com').click({force:true})
+  //  cy.contains('demo_studentSuper@vivacitytech.com').click({force:true})
     ft.clickOnFeatures()
 })
 Then('I should be redirected to the Features page', () => {

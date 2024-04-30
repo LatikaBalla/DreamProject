@@ -32,8 +32,14 @@ export class MyFleetActions {
     enterSearchValue() {
         mf.searchElement().clear({force:true}).type(tdata.myFleet.search, { force: true })
     }
+    enterSearchValue1() {
+        mf.searchElement().clear({force:true}).type(tdata.myFleet.search1, { force: true })
+    }
     verifySearchResult() {
         cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.myFleet.search, { force: true })
+    }
+    verifySearchResult1() {
+        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.myFleet.search1, { force: true })
     }
     clickOnMoreFiltersButton() {
         mf.morefiltersElement().scrollIntoView().click({ force: true })
@@ -72,11 +78,14 @@ export class MyFleetActions {
     }
     clickOnViewButton() {
         cy.wait(5000)
-        cy.get('tbody tr').eq(0).find('td').eq(7).scrollIntoView().contains("View").click({ force: true })
+        cy.get('tbody tr').eq(0).find('td').eq(8).scrollIntoView().contains("View").click({ force: true })
         // mf.viewElement().scrollIntoView().click({ force: true })
     }
     verifyViewResult() {
-        cy.contains(tdata.myFleet.serialno).should('be.visible')
+        cy.contains(tdata.myFleet.serialno).should('be.visible',{ force: true })
+    }
+    verifyViewResult1() {
+        cy.contains(tdata.myFleet.serialno1).should('be.visible',{ force: true })
     }
     clickOnAddDevice() {
         mf.addDeviceElement().click({ force: true })

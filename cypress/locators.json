@@ -20,7 +20,8 @@
         "support": "a[href='/support']",
         "logout": "[data-testid='LogoutIcon']",
         "vivaAdmin": "a[href='/admin']",
-        "favorite": "Favorite"
+        "favorite": "Favorite",
+        "myAccount":"My Account"
     },
     "accountDetails": {
         "titleAccount": "My Account Details",
@@ -137,7 +138,7 @@
         "cellnumber": "#cellphone",
         "submit": "[data-testid='btnNewDataSubmit']",
         "editbtn": "Edit",
-        "userrole": "#mui-component-select-name",
+        "userrole": "#mui-component-select-userRole",
         "userstatus": "#mui-component-select-role",
         "inhouserepaire": "#mui-component-select-in_house_repair",
         "building": "#mui-component-select-building",
@@ -342,13 +343,13 @@
     "vivacityRepairCenter": {
         "title": "Vivacity Repair Center",
         "repairTickets": "[data-testid='tabvr-1']",
-        "repairBoxes": "[data-testid='tabvr-2']"
+        "repairBoxes": "[data-testid='tabvr-2']" 
     },
     "repairTickets": {
         "title": "Repair Tickets",
         "filters": ".css-1tx38fa",
         "table": ".css-1owb465",
-        "createTicket": "Create New",
+        "createTicket": "New Ticket",
         "export": "Export",
         "searchbox": "[role='combobox']",
         "refreshbtn": "[data-testid='CachedIcon']",
@@ -463,7 +464,7 @@
         "filters": ".css-1tx38fa",
         "table": ".css-1owb465",
         "view": "View",
-        "createTicket": "Create New",
+        "createTicket": "New Ticket",
         "exportbtn": "Export",
         "failuretype": "#failure_type",
         "serialdevice": "#device",
@@ -547,7 +548,7 @@
         "filters": ".css-1tx38fa",
         "table": ".css-1owb465",
         "search": "[data-testid='txtSearchData']",
-        "createTicket": "Create New",
+        "createTicket": "New Ticket",
         "refreshbtn": "[data-testid='CachedIcon']",
         "failuretype": "#failure_type",
         "technician": "#student_technician",

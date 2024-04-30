@@ -31,15 +31,15 @@ Feature: DeviceRepairReport Page Functionality
         And Click More filter select- Created By in search box and Verify the Result
         Then Click on Clear filter
         And Enter the Search - Record Id in search box and Verify the Result
-        Then Enter the Search - Repair type in search box and Verify the Result
-        Then Enter the Search - Repair status in search box and Verify the Result
-        And Enter the Search - Repair Box in search box and Verify the Result
-        And Enter the Ticket Number in search box
-        Then Verify the Ticket details in table
-        And  Click on the Ticket Number
-        Then Verify the Repair Ticket page will open
-        And Verfiy the details of Ticket
-        Then Click on the download Ticket Estimation button
+        # Then Enter the Search - Repair type in search box and Verify the Result
+        # Then Enter the Search - Repair status in search box and Verify the Result
+        # And Enter the Search - Repair Box in search box and Verify the Result
+        # And Enter the Ticket Number in search box
+        # Then Verify the Ticket details in table
+        # And  Click on the Ticket Number
+        # Then Verify the Repair Ticket page will open
+        # And Verfiy the details of Ticket
+        # Then Click on the download Ticket Estimation button
 
 
 

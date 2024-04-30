@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3761000000
+              "duration": 3745000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 13672000000
+              "duration": 14057000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9386000000
+              "duration": 9149000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 740000000
+              "duration": 297000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on LoanerManagement Tab",
             "result": {
               "status": "passed",
-              "duration": 2261000000
+              "duration": 1407000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Table for LoanerManagement should be visible",
             "result": {
               "status": "passed",
-              "duration": 153000000
+              "duration": 54000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Search the serial no in search box of Available Devices section",
             "result": {
               "status": "passed",
-              "duration": 10214000000
+              "duration": 9969000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Verify the search result",
             "result": {
               "status": "passed",
-              "duration": 185000000
+              "duration": 173000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click on the Add to loaner pool",
             "result": {
               "status": "passed",
-              "duration": 178000000
+              "duration": 266000000
             }
           },
           {
@@ -112,8 +112,9 @@
             "line": 18,
             "name": "Search the serial no in the Available section",
             "result": {
-              "status": "passed",
-              "duration": 10359000000
+              "status": "failed",
+              "duration": 12857000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `2`, but never found it. Queried from:\n\n              > cy.get(.css-1xz8d5v, [object Object]).eq(0).find(tbody tr).eq(0).find(td)\n    at LoanerManagementActions.verifySearchAvailable (cypress/integration/PageObject/PageActions/LoanerManagementActions.js:41:74)\n    at Context.eval (cypress/integration/LoanerManagement/LoanerManagement.spec.js:38:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -122,8 +123,7 @@
             "line": 19,
             "name": "Click on th add Student button",
             "result": {
-              "status": "passed",
-              "duration": 717000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +132,7 @@
             "line": 20,
             "name": "Enter Fullname, title and email",
             "result": {
-              "status": "passed",
-              "duration": 3528000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +141,7 @@
             "line": 21,
             "name": "Select status, building and student_id",
             "result": {
-              "status": "passed",
-              "duration": 1557000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +150,7 @@
             "line": 22,
             "name": "Click on the submit button of form",
             "result": {
-              "status": "passed",
-              "duration": 250000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +159,7 @@
             "line": 23,
             "name": "Verify the student added successfully",
             "result": {
-              "status": "passed",
-              "duration": 2048000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +168,7 @@
             "line": 24,
             "name": "Click on check out button",
             "result": {
-              "status": "passed",
-              "duration": 2261000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +177,7 @@
             "line": 25,
             "name": "Select the student name",
             "result": {
-              "status": "passed",
-              "duration": 1069000000
+              "status": "skipped"
             }
           },
           {
@@ -192,8 +186,7 @@
             "line": 26,
             "name": "Click on the submit button",
             "result": {
-              "status": "passed",
-              "duration": 204000000
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +195,7 @@
             "line": 27,
             "name": "Search the serial no in the check out section",
             "result": {
-              "status": "passed",
-              "duration": 9264000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +204,7 @@
             "line": 28,
             "name": "Click on the Check in button",
             "result": {
-              "status": "passed",
-              "duration": 260000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +213,7 @@
             "line": 29,
             "name": "Enter note and click on submit button",
             "result": {
-              "status": "passed",
-              "duration": 1857000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +222,7 @@
             "line": 30,
             "name": "Verify the device is added in Available section",
             "result": {
-              "status": "passed",
-              "duration": 11309000000
+              "status": "skipped"
             }
           },
           {
@@ -242,8 +231,7 @@
             "line": 31,
             "name": "Click on remove from loaner pool button",
             "result": {
-              "status": "passed",
-              "duration": 10685000000
+              "status": "skipped"
             }
           }
         ]

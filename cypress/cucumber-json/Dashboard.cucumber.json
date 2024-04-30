@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2362000000
+              "duration": 2950000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7176000000
+              "duration": 7108000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8069000000
+              "duration": 9226000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "I should be redirected to the dashboard page",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 5000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of dashborad Page",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 135000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the logo should be visible",
             "result": {
               "status": "passed",
-              "duration": 149000000
+              "duration": 5000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "My Account Detail tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 6000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Verify the Title of Account Details Page",
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 80000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Table for account deatils should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 5000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Building tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 11000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on Buildings Tab",
             "result": {
               "status": "passed",
-              "duration": 65000000
+              "duration": 58000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Filters of Buildings should be visible",
             "result": {
               "status": "passed",
-              "duration": 807000000
+              "duration": 25000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Table for Buildings should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 5000000
             }
           }
         ]
@@ -183,7 +183,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1819000000
+              "duration": 1905000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8110000000
+              "duration": 5746000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8064000000
+              "duration": 9230000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on Buildings Tab",
             "result": {
               "status": "passed",
-              "duration": 72000000
+              "duration": 1079000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "I should click on + Add New button",
             "result": {
               "status": "passed",
-              "duration": 881000000
+              "duration": 78000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "I should Enter Building Name,Phone and Extension",
             "result": {
               "status": "passed",
-              "duration": 1227000000
+              "duration": 950000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Select Default building",
             "result": {
               "status": "passed",
-              "duration": 129000000
+              "duration": 131000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Enter Billing Address and select from dropdown",
             "result": {
               "status": "passed",
-              "duration": 3180000000
+              "duration": 2886000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Click on checkbox Same as Shipping Address",
             "result": {
               "status": "passed",
-              "duration": 6079000000
+              "duration": 6093000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 65000000
+              "duration": 73000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Verify the builing details added in table",
             "result": {
               "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<td.MuiTableCell-root.MuiTableCell-alignCenter.MuiTableCell-sizeMedium.css-42rti1>' to contain 'Dream Building'\n    at BuildingsActions.verifyNewBuilding (cypress/integration/PageObject/PageActions/BuildingsActions.js:70:30)\n    at Context.eval (cypress/integration/Dashboard/Dashboard.spec.js:86:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<td.MuiTableCell-root.MuiTableCell-alignCenter.MuiTableCell-sizeMedium.css-42rti1>' to contain 'Dream Building'\n    at BuildingsActions.verifyNewBuilding (cypress/integration/PageObject/PageActions/BuildingsActions.js:71:30)\n    at Context.eval (cypress/integration/Dashboard/Dashboard.spec.js:86:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {

@@ -13,7 +13,8 @@ When('I should Sign In into the application', () => {
 })
 Then('close the terms of service window', () => {
     cy.wait(8000)
-    build.closeTermsOfServiceWindow()
+    cy.contains('demo_adminsuper@vivacitytech.com').click({ force: true })
+    build.closeTermsOfServiceWindow() 
 })
 And('Click on Buildings Tab', () => {
     build.clickOnBuildingTab()

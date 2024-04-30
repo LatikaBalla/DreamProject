@@ -43,7 +43,7 @@ export class InHouseWorkflowActions {
     }
     selectBuilding() {
         ihw.buildingElement().click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains("Dream Building").click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
     }
     selectRepairissue() {
         ihw.repairissueElement().click({ force: true })

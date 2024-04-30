@@ -15,7 +15,7 @@ Feature:  Users Page Functionality
     And Table for Users unit should be visible
     Then I should click on Add New student
     Then Enter full name, title and Email
-    And Enter Phone and Cell Number
+    And Enter Phone, Cell Number, role and building
     And Click on submit button
     Then Verify the student added in table
     And Click on Edit button
@@ -32,7 +32,7 @@ Feature:  Users Page Functionality
     And Enter the Search - Record Id in search box and Verify the Result
     Then Enter the Search - Full Name in search box and Verify the Result
     And Enter the Search - Email in search box and Verify the Result
-    # Then Enter the Search - Phone in search box and Verify the Result
+    Then Enter the Search - Phone in search box and Verify the Result
     And Enter the Search - CellNumber in search box and Verify the Result
    Then Enter the Search - User Role in search box and Verify the Result
     And Click More filter select- Record Id in search box and Verify the Result

@@ -18,6 +18,8 @@ When('I should Sign In into the application', () => {
 Then('Close the terms of service window', () => {
     cy.wait(8000)
     dash.closeTermsOfServiceWindow()
+    cy.wait(1000)
+    cy.contains('demo_adminsuper@vivacitytech.com').click({ force: true })  
 })
 Then('I should be redirected to the dashboard page', () => {
     cy.url().should('include', '/')

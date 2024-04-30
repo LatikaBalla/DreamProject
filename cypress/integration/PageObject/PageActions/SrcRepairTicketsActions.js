@@ -54,7 +54,7 @@ export class SrcRepairTicketsActions {
     }
     selectBuilding() {
         srt.buildingElement().click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains('Dream Building').click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
     }
     enterChromebookIssue() {
         srt.chromebookissueElement().type(tdata.srcRepairTicket.chromebookissue, { force: true })

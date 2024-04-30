@@ -15,7 +15,7 @@ Feature: MyProfile Page Functionality
         Then Profile and Account deatils section of MyProfile should be visible
         And Click on upload image icon
         Then Enter tilte and phone no
-        And Eelect Email preference
+        And Select Email preference
         Then click on update button
         And Verify the updated successfully
 

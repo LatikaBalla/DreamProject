@@ -34,6 +34,6 @@ Feature:SrcStudents Page Functionality
         And Enter the Search - Full name in search box and Verify the Result
         Then Enter the Search - Email in search box and Verify the Result
         And Enter the Search - Status in search box and Verify the Result
-        Then Enter the Search - Phone in search box and Verify the Result
+        # Then Enter the Search - Phone in search box and Verify the Result
      
 

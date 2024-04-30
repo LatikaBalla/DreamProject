@@ -14,6 +14,8 @@ When('I should Sign In into the application', () => {
 Then('close the terms of service window', () => {
     cy.wait(8000)
     acc.closeTermsOfServiceWindow()
+    cy.wait(1000)
+    cy.contains('demo_adminsuper@vivacitytech.com').click({ force: true })  
 })
 Then('My account Details should be visible', () => {
     acc.verifyMyaccountDeatilsVisbile()

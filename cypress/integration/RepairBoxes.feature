@@ -32,7 +32,7 @@ Feature: RepairBoxes Page Functionality
     # Then Click on Clear filter
     And Enter the Search - Tracking Number in search box and Verify the Result
     Then Enter the Search - Record Id in search box and Verify the Result
-        And Click on Export Button 
+    And Click on Export Button 
     And Click on view button
     Then Verify the Details new box
     And Add another ticket in the same box

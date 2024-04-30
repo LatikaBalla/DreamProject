@@ -9,9 +9,10 @@ export class AccountDetailsActions {
         globalThis.dash1 = new DashboardElements()
     }
     closeTermsOfServiceWindow() {
-        dash1.termsElement().click({ force: true })
+        dash1.termsElement().click({ force: true })  
     }
     verifyTitleAccountDetails() {
+        dash1.myAccountElement().click({force:true})
         acc.titleAccountElement().should('be.visible')
     }
     verifyFiltersVisible() {
@@ -203,20 +204,20 @@ export class AccountDetailsActions {
     searchRecordId() {
         acc.searchboxElement().eq(0).click({ force: true })
         acc.recordidElement().click({ force: true })
-        acc.searchElement().clear().type(tdata.newaccount.recordid + '{enter}', { force: true })
+        acc.searchElement().clear({ force: true }).type(tdata.newaccount.recordid + '{enter}', { force: true })
         // cy.wait(1000)
         cy.get('tr td').eq(0).should('contain', tdata.newaccount.recordid)
     }
     searchFullName() {
         acc.searchboxElement().eq(0).click({ force: true })
         acc.fullNameElement().click({ force: true })
-        acc.searchElement().clear().type(tdata.newaccount.fullName + '{enter}', { force: true })
+        acc.searchElement().clear({ force: true }).type(tdata.newaccount.fullName + '{enter}', { force: true })
         cy.get('tr td').eq(1).should('contain', tdata.newaccount.fullName)
     }
     searchEmail() {
         acc.searchboxElement().eq(0).click({ force: true })
         acc.emaildropElement().click({ force: true })
-        acc.searchElement().clear().type(tdata.newaccount.emaildrop + '{enter}', { force: true })
+        acc.searchElement().clear({ force: true }).type(tdata.newaccount.emaildrop + '{enter}', { force: true })
         cy.get('tr td').eq(3).should('contain', tdata.newaccount.emaildrop)
     }
     searchTitle() {
@@ -230,10 +231,11 @@ export class AccountDetailsActions {
     searchPhone() {
         acc.searchboxElement().eq(0).click({ force: true })
         acc.phoneNoElement().click({ force: true })
-        acc.searchElement().clear().type(tdata.newaccount.cellnumber + '{enter}', { force: true })
+        acc.searchElement().clear({ force: true }).type(tdata.newaccount.cellnumber + '{enter}', { force: true })
         cy.get('tr td').eq(6).should('contain', tdata.newaccount.cellnumber)
     }
     AccountDetailsVisible() {
+        dash1.myAccountElement().click({force:true})
         acc.accountnameElement().should('be.visible')
         acc.accountnoElement().should('be.visible')
     }

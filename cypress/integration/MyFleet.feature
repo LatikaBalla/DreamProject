@@ -60,8 +60,8 @@ Feature: MyFleet  Page Functionality
         And Click More filter select- Student in search box and Verify the Result
         Then Click on Clear filter
         Then Click on Export To CSV
-        And Enter the table fields in search box
-        And Verify the record in searching history
+        And Enter the table fields in search box1
+        And Verify the record in searching history1
         Then Click on view Button
-        And Verify the Warranty Description
+        And Verify the Warranty Description1
 

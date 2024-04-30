@@ -65,6 +65,8 @@ When('I should Sign In into the application', () => {
 Then('Close the terms of service window', () => {
     cy.wait(5000)
     dash.closeTermsOfServiceWindow()
+    cy.wait(9000)
+    cy.contains('demo_adminbuilding@vivacitytech.com').click({ force: true })
 })
 Then('I should be redirected to the dashboard page', () => {
     cy.url().should('include', '/')
@@ -197,7 +199,12 @@ Then('Verify the Title of Support Page', () => {
     cy.title().should('eq', 'Support')
 })
 
-
+And('Click on My profile page of mp', () => {
+    cy.wait(1000)
+    cy.contains('demo_adminbuilding@vivacitytech.com').click({ force: true })
+    cy.get('[data-testid="KeyboardArrowDownIcon"]').click({ force: true })
+    mp.clickOnMyProfile()
+})
 And('Click on features page', () => {
     cy.wait(1000)
     //  cy.contains('demo_repairtech@vivacitytech.com').click({force:true})
@@ -304,8 +311,9 @@ Then('Select failure Type, Return site and Serial Device of rt', () => {
     rt.selectSerialDevice()
 })
 And('Select Building and Chromebook issue of rt', () => {
-    rt.selectBuilding()
+    rt.selectStudent()
     rt.selectChromebookIssue()
+    rt.selectBuilding()
 })
 Then('Enter the Describe Your Issue of rt', () => {
     rt.enterDescritionOfIssue()
@@ -374,20 +382,11 @@ And('Click More filter select- Repair device in search box and Verify the Result
     rt.selectFilterRepairDevice()
 })
 
-
-
 And('Click on RepairBoxes Tab', () => {
-    cy.get('.MuiPaper-rounded > .MuiPaper-root > .MuiToolbar-root > .MuiIconButton-root').click({ force: true })
     rb.clickOnRepairBoxesTab()
-    Cypress.on("uncaught:exception", () => {
-        return false;
-    });
 })
 Then('I should click on create new Box of rb', () => {
     rb.clickOnAddnewBox()
-    Cypress.on("uncaught:exception", () => {
-        return false;
-    });
 })
 Then('Enter weight, height, depth and width of rb', () => {
     rb.enterWeight()
@@ -1134,6 +1133,15 @@ mf.verifyUdated()
 })
 Then('Click on Clear filter of MyF', () => {
     mf.clickOnClearFiltersButton()
+})
+And('Enter the table fields in search box1', () => {
+    mf.enterSearchValue1()
+})
+And('Verify the record in searching history1', () => {
+    mf.verifySearchResult1()
+})
+And('Verify the Warranty Description1', () => {
+    mf.verifyViewResult1()
 })
 And('Enter the table fields in search box of MyF', () => {
     mf.enterSearchValue()

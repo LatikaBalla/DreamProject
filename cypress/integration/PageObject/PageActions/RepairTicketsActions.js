@@ -38,7 +38,7 @@ export class RepairTicketsActions {
     selectReturnSite() {
         rt.returnsiteElement().click({ force: true })
         // cy.get(tdata.repairTickets.returnsite).click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains('Dream Building').click({ force: true })
+        cy.get('[role="listbox"]').eq(0).find('li').contains(tdata.buildings.buildingname).click({ force: true })
     }
     selectSerialDevice() {
         rt.serialdeviceElement().click({ force: true })
@@ -46,8 +46,12 @@ export class RepairTicketsActions {
     }
     selectBuilding() {
         rt.buildingElement().click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains('Dream Building').click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains('Building Two').click({ force: true })
         // cy.get(tdata.repairTickets.building).eq(0).click({ force: true })
+    }
+    selectStudent(){
+        cy.get('#student_id').click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains('Robert Smith (null)').click({ force: true })
     }
     selectChromebookIssue() {
         rt.chromebookissueElement().click({ force: true })
@@ -60,7 +64,7 @@ export class RepairTicketsActions {
         rt.savebtnElement().click({ force: true })
     }
     verifyNewTicket() {
-        cy.wait(6000)
+        cy.wait(8000)
         dash.messageElement().should('contain', tdata.repairTickets.createTicketmsg)
     }
     clickOnExport() {

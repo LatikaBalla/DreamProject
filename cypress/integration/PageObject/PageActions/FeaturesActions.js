@@ -39,6 +39,7 @@ export class FeaturesActions {
         dash.messageElement().should('contain', tdata.features.requestmsg)
     }
     verifyFeatureUnderconsideration() {
+       cy.get('[placeholder="Search for feature"]').type('Testing{enter}')
         cy.contains('Testing').should('be.visible')
     }
     clickOnClearFilter() {
@@ -50,7 +51,7 @@ export class FeaturesActions {
     selectFilterTitle() {
         ft.fieldNameElement().select('title', { force: true })
         ft.fieldOpElement().select('does_not_contain', { force: true })
-        ft.fieldValueElement().type(tdata.features.title)
+        ft.fieldValueElement().type(tdata.features.title,{force:true})
         ft.applyElement().click({ force: true })
         cy.get('.css-6unjtn').eq(0).should('not.have.value', tdata.features.title)
     }
@@ -58,7 +59,7 @@ export class FeaturesActions {
         cy.contains('+ Add Filter Group').click({ force: true })
         ft.fieldNameElement().select('description', { force: true })
         ft.fieldOpElement().select('does_not_contain', { force: true })
-        ft.fieldValueElement().type(tdata.features.description)
+        ft.fieldValueElement().type(tdata.features.description,{force:true})
         ft.applyElement().click({ force: true })
         cy.get('.css-6unjtn').eq(0).should('not.contain', tdata.features.description)
     }
@@ -66,7 +67,7 @@ export class FeaturesActions {
          cy.contains('+ Add Filter Group').click({ force: true })
         ft.fieldNameElement().select('created_by', { force: true })
         ft.fieldOpElement().select('contains', { force: true })
-        ft.fieldValueElement().type(tdata.features.createdby)
+        ft.fieldValueElement().type(tdata.features.createdby,{force:true})
         ft.applyElement().click({ force: true })
         cy.get('.css-6unjtn').eq(0).should('contain', tdata.features.createdby)
     }

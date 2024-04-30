@@ -69,13 +69,13 @@ Then('Click on All Paid Subscription Requests unit', () => {
     vadmin.clickOnallPaidSubcription()
 })
 And('Table should be visible', () => {
-
+vadmin.tableSubscriptionVisible()
 })
 Then('If any subscription request is there then approve or deny the request', () => {
-
+vadmin.approveDenyRequest()
 })
 And('Verify the Request', () => {
-
+vadmin.verifyRequest()
 })
 
 
@@ -436,4 +436,7 @@ And('Enter the Search - Ticket Number in search box and Verify the Result', () =
 And('Click More filter select- Ticket Number in search box and Verify the Result', () => {
     vadmin.clickOnMoreFilter()
     vadmin.selectFilterTicketNumber()
+})
+Then ('Enter the Search - Email in search box and Verify the Result',()=>{
+    vadmin.searchEmail()
 })

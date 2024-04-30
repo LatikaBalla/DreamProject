@@ -37,8 +37,9 @@ Then('Select failure Type, Return site and Serial Device', () => {
     rt.selectSerialDevice()
 })
 And('Select Building and Chromebook issue', () => {
-    rt.selectBuilding()
+    rt.selectStudent()
     rt.selectChromebookIssue()
+    rt.selectBuilding()
 })
 Then('Enter the Describe Your Issue', () => {
     rt.enterDescritionOfIssue()

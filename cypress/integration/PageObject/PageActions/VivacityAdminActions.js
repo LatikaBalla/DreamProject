@@ -62,6 +62,29 @@ export class VivacityAdminActions {
     importPartsCloset() {
         vadmin.section13Element().should('be.visible')
     }
+    tableSubscriptionVisible() {
+        cy.get('.css-1owb465').should('be.visible')
+    }
+    approveDenyRequest() {
+        cy.get('.css-1owb465').eq(0).find('tbody tr').eq(0).find('td').eq(5).scrollIntoView().contains("Approve").click({ force: true })
+        cy.get('.css-4nf26l').click({ force: true })
+    }
+    verifyRequest() {
+
+    }
+    searchEmail() {
+        vadmin.searchEmpElement().eq(0).clear({force:true}).type(tdata.vivacityAdmin.email + '{enter}',{force:true})  
+        cy.get('.css-1owb465').eq(2).find('tr', { timeout: 1000 }).find('td').eq(3).should('contain', tdata.vivacityAdmin.email)
+    }
+    selectFilterFullName() {
+        acc.fieldNameElement().select(1).invoke("val").should("eq", 'full_name', { force: true })
+        acc.fieldOpElement().select('Does Not Contain', { force: true }).should('have.value', 'Does Not Contain')
+        acc.fieldValueElement().type(tdata.newaccount.fullname)
+        acc.applyElement().click({ force: true })
+        cy.get('tr td').eq(0).should('not.contain', tdata.newaccount.fullname)
+    }
+
+
 
     clickOnNewAdmin() {
         vadmin.addnewAdminElement().click({ force: true })
@@ -173,14 +196,14 @@ export class VivacityAdminActions {
         vadmin.wdescriptionElement().type(tdata.vivacityAdmin.wdescription, { force: true })
     }
     clickOnSubmitWar() {
-      //  vadmin.submitbtnElement().click({ force: true })
+        //  vadmin.submitbtnElement().click({ force: true })
         cy.get('form.MuiBox-root > :nth-child(1) > :nth-child(1) > :nth-child(1) > .css-0 > .MuiBox-root > .MuiButtonBase-root').click({ force: true })
     }
     verifyWarrantyRecordAdded() {
         dash.messageElement().should('contain', tdata.vivacityAdmin.warrantymsg)
     }
     enterSearchWarranty() {
-        vadmin.searchWarElement().type(tdata.vivacityAdmin.warrantyName)
+        vadmin.searchWarElement().type(tdata.vivacityAdmin.warrantyName, { force: true })
     }
     verifySearchWarranty() {
 
@@ -219,11 +242,11 @@ export class VivacityAdminActions {
         vadmin.bmonthElement().clear().should('have.value', '').type(tdata.vivacityAdmin.editbmonth)
     }
     editProvider() {
-        vadmin.providerElement().click()
-        cy.get(tdata.vivacityAdmin.editprovider).click()
+        vadmin.providerElement().click({ force: true })
+        cy.get(tdata.vivacityAdmin.editprovider).click({ force: true })
     }
     editWDescription() {
-        vadmin.wdescriptionElement().clear().should('have.value', '').type(tdata.vivacityAdmin.editwdescription)
+        vadmin.wdescriptionElement().clear({ force: true }).should('have.value', '').type(tdata.vivacityAdmin.editwdescription),{ force: true }
     }
     clickOnUpdateButton() {
         //  cy.contains('Update').click({ force: true })

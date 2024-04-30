@@ -411,5 +411,6 @@ export default class VivacityAdminElements {
         return cy.contains(locator.vivacityAdmin.section13, {
             timeout: 30000,
         }) 
-    } 
+    }
+     
 }

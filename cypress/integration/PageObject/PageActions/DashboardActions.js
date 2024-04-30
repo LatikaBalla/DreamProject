@@ -7,8 +7,10 @@ export class DashboardActions {
     }
     closeTermsOfServiceWindow() {
         dash.termsElement().click({ force: true })
+       
     }
     myAccountDetailsTabVisible() {
+        dash.myAccountElement().click({force:true})
         dash.accountDetailsElement().should('be.visible')
     }
     clickOnMyAccountTab() {

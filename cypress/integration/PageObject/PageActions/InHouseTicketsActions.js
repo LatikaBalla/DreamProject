@@ -51,7 +51,7 @@ export class InHouseTicketsActions {
 
     selectBilding() {
         iht.buildingElement().click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains("Dream Building").click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
     }
     selectRepaireIssue() {
         iht.repairissueElement().click({ force: true })

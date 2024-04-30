@@ -15,7 +15,8 @@ export class BuildingsActions {
         dash.buildingsElement().click({ force: true })
     }
     closeTermsOfServiceWindow() {
-        dash.termsElement().click({ force: true })
+        dash.termsElement().click({ force: true })      
+        dash.myAccountElement().click({force:true})
     }
     addNewButtonTabVisible() {
         build.addnewbtnElement().should('be.visible')
