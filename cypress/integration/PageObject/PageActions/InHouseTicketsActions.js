@@ -41,8 +41,10 @@ export class InHouseTicketsActions {
     }
     selectSerialDevice() {
         iht.serialdeviceElement().click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains(tdata.inHouseTicket.serialdevice).click({ force: true })
-        //cy.get(tdata.inHouseTicket.serialdevice).click()
+     
+       // cy.get('[role="listbox"]').find('li').contains(tdata.inHouseTicket.serialdevice).click({ force: true })
+       // cy.get(tdata.inHouseTicket.serialdevice).click()
+        cy.get('#device-option-0').click()
     }
     selectTechnician() {
         iht.technicianElement().click({ force: true })
@@ -245,7 +247,8 @@ export class InHouseTicketsActions {
         cy.get(tdata.inHouseTicket.repairstatusEdit).click({ force: true })
     }
     clickOnUpdate() {
-        iht.updateElement().click({ force: true })
+      //  iht.updateElement().click({ force: true })
+        cy.get('.MuiGrid-container > .MuiBox-root > .MuiButtonBase-root').click({ force: true })
     }
     verifyUpdate() {
         //cy.get('tr td').eq(1).should('contain', tdata.inHouseTicket.recordid)

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2346000000
+              "duration": 2836000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 10857000000
+              "duration": 5453000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9117000000
+              "duration": 9089000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 121000000
+              "duration": 88000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on RepairBoxes Tab",
             "result": {
               "status": "passed",
-              "duration": 883000000
+              "duration": 549000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of RepairBoxes Page",
             "result": {
               "status": "passed",
-              "duration": 45000000
+              "duration": 10000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I should click on create new Box",
             "result": {
               "status": "passed",
-              "duration": 214000000
+              "duration": 68000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Enter weight, height, depth and width",
             "result": {
               "status": "passed",
-              "duration": 2327000000
+              "duration": 351000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Select Pick-up site",
             "result": {
               "status": "passed",
-              "duration": 590000000
+              "duration": 149000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on Create box button",
             "result": {
               "status": "passed",
-              "duration": 336000000
+              "duration": 68000000
             }
           },
           {
@@ -122,8 +122,9 @@
             "line": 20,
             "name": "Select Ticket from dropdownlist",
             "result": {
-              "status": "passed",
-              "duration": 971000000
+              "status": "failed",
+              "duration": 30021000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `#repair_tickets`, but never found it.\n    at RepairBoxesElements.ticketElement (cypress/integration/PageObject/PageElements/RepairBoxesElements.js:67:18)\n    at RepairBoxesActions.selectTickets (cypress/integration/PageObject/PageActions/RepairBoxesActions.js:61:11)\n    at Context.eval (cypress/integration/RepairBoxes/RepairBoxes.spec.js:52:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -132,8 +133,7 @@
             "line": 21,
             "name": "Click on Finish button",
             "result": {
-              "status": "passed",
-              "duration": 322000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +142,7 @@
             "line": 22,
             "name": "Verify new box is added in table",
             "result": {
-              "status": "passed",
-              "duration": 2774000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +151,7 @@
             "line": 23,
             "name": "Click More filter select- Record Id in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2214000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +160,7 @@
             "line": 24,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 284000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +169,7 @@
             "line": 25,
             "name": "Click More filter select- Tracking Number From in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 3732000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +178,7 @@
             "line": 26,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 1080000000
+              "status": "skipped"
             }
           },
           {
@@ -192,9 +187,7 @@
             "line": 27,
             "name": "Click More filter select- Shipping From Cost in search box and Verify the Result",
             "result": {
-              "status": "failed",
-              "duration": 6276000000,
-              "error_message": "CypressError: Timed out retrying after 4000ms: `cy.select()` failed because it could not find a single `<option>` with value, index, or text matching: `shipping_from_cost`\n\nhttps://on.cypress.io/select\n    at getOptions (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:113098:72)\n    at tryCatcher (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:4315:29)\n    at retryOptions (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:113130:70)\n    at tryCatcher (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:4315:29)\n    at whenStable (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:143192:68)\n    at <unknown> (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:143133:14)\n    at tryCatcher (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1701:18)\n    at Promise._fulfill (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1645:18)\n    at <unknown> (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:5450:46)\nFrom Your Spec Code:\n    at RepairBoxesActions.selectFilterShippingFromCost (cypress/integration/PageObject/PageActions/RepairBoxesActions.js:147:30)\n    at Context.eval (cypress/integration/RepairBoxes/RepairBoxes.spec.js:126:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "skipped"
             }
           },
           {

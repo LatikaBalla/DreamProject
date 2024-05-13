@@ -28,6 +28,6 @@ Feature:SrcFacilitators Page Functionality
         Then Click on Clear filter
         And Enter the Search - Full name in search box and Verify the Result
         Then Enter the Search - Email in search box and Verify the Result
-        # And Enter the Search - Status in search box and Verify the Result
-        # Then Enter the Search - Phone in search box and Verify the Result
+        And Enter the Search - Status in search box and Verify the Result
+        Then Enter the Search - Phone in search box and Verify the Result
       

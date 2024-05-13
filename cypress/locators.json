@@ -28,7 +28,8 @@
         "filters": ".css-1tx38fa",
         "accountdetials": "[data-testid='tabacc-1']",
         "buildings": "[data-testid='tabacc-2']",
-        "tableaccount": ".MuiTable-root",
+    
+        "tableaccount": ".css-1owb465",
         "addnewbtn": "button[type='button']",
         "newContactTitle": "Add New Contact",
         "editIcon": "[data-testid='ModeEditOutlinedIcon']",
@@ -210,7 +211,7 @@
         "form": "form[class='MuiBox-root css-0']",
         "failureType": "#failure_type",
         "site": "#outbound_address",
-        "building": "#outbound_address",
+        "building": "#building",
         "serialdevice": "#serial_device",
         "issue": "#repair_issue",
         "describe": "#chromebook_issue",

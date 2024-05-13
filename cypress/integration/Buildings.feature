@@ -24,8 +24,8 @@ Feature: Building Page Functionality
     And Click More filter select- Building Billing Address in search box and Verify the Result
     Then Click on Clear filter
     And Enter the Search - Building Name in search box and Verify the Result
-    # Then Enter the Search - Building Shipping Address in search box and Verify the Result
-    # And Enter the Search - Phone in search box and Verify the Result
+    Then Enter the Search - Building Shipping Address in search box and Verify the Result
+    And Enter the Search - Phone in search box and Verify the Result
     And Click on Export To CSV
     Then Click on Bulk Upload button
     And Click on Attach CSV file and Click on submit button

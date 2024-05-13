@@ -22,6 +22,7 @@ Then('Close the terms of service window', () => {
     cy.contains('demo_adminsuper@vivacitytech.com').click({ force: true })  
 })
 Then('I should be redirected to the dashboard page', () => {
+    cy.contains('My Account').click({force:true})
     cy.url().should('include', '/')
 })
 And('Verify the Title of dashborad Page', () => {

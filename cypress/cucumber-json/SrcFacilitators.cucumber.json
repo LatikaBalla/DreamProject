@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2883000000
+              "duration": 3342000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 12437000000
+              "duration": 6609000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9121000000
+              "duration": 9077000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 144000000
+              "duration": 75000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on StudentRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 736000000
+              "duration": 491000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click on SrcFacilitators tab",
             "result": {
               "status": "passed",
-              "duration": 158000000
+              "duration": 62000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the Title of SrcFacilitators Page",
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 14000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Filters of SrcFacilitators should be visible",
             "result": {
               "status": "passed",
-              "duration": 28000000
+              "duration": 7000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Table for SrcFacilitators should be visible",
             "result": {
               "status": "passed",
-              "duration": 25000000
+              "duration": 10000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on Download Export button",
             "result": {
               "status": "passed",
-              "duration": 387000000
+              "duration": 68000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click More filter select- Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2507000000
+              "duration": 810000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 194000000
+              "duration": 67000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click More filter select- Title in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1391000000
+              "duration": 636000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 193000000
+              "duration": 69000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click More filter select- Eamil in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2209000000
+              "duration": 1091000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 167000000
+              "duration": 73000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click More filter select- User status in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1442000000
+              "duration": 904000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 189000000
+              "duration": 69000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Enter the Search - Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1599000000
+              "duration": 755000000
             }
           },
           {
@@ -212,9 +212,8 @@
             "line": 30,
             "name": "Enter the Search - Email in search box and Verify the Result",
             "result": {
-              "status": "failed",
-              "duration": 6518000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `2`, but never found it. Queried from:\n\n              > cy.get(tr td)\n    at SrcFacilitatorsActions.searchEmail (cypress/integration/PageObject/PageActions/SrcFacilitatorsActions.js:53:30)\n    at Context.eval (cypress/integration/SrcFacilitators/SrcFacilitators.spec.js:50:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 866000000
             }
           },
           {
@@ -223,7 +222,8 @@
             "line": 31,
             "name": "Enter the Search - Status in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1951000000
             }
           },
           {
@@ -232,7 +232,8 @@
             "line": 32,
             "name": "Enter the Search - Phone in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 772000000
             }
           }
         ]

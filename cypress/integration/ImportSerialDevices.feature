@@ -22,8 +22,8 @@ Feature: ImportSerialDevices Page Functionality
         Then Upload the CSV import file
         And Click on submit button
         And Click on refresh button
-        # Then Verify the record in table
-        # And Click on Download import button
-        # And Click on Details button
-        # Then Verify the Device Details
+        Then Verify the record in table
+        And Click on Download import button
+        And Click on Details button
+        Then Verify the Device Details
       

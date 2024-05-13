@@ -51,9 +51,11 @@ When('I should Sign In into the application', () => {
 })
 Then('Close the terms of service window', () => {
     cy.wait(9000)
+    cy.contains('demo_studentadvanced@vivacitytech.com').click({ force: true })
     dash.closeTermsOfServiceWindow()
 })
 Then('I should be redirected to the dashboard page', () => {
+    cy.contains('My Account').click({force:true})
     cy.url().should('include', '/')
 })
 And('Verify the Title of dashborad Page', () => {
@@ -160,7 +162,7 @@ Then ('Verify the WarrantyInfo tab should be visible',()=>{
 And('Click on My profile page', () => {
     cy.wait(1000)
     cy.get('.MuiBox-root.css-hboir5 > .MuiIconButton-root').click({force:true})
-    cy.contains('demo_repairfacilitator@vivacitytech.com').click({force:true})
+    cy.contains('demo_studentadvanced@vivacitytech.com').click({force:true})
     mp.clickOnMyProfile()
 })
 Then('Verify the Title of My Profile Page', () => {
@@ -406,7 +408,9 @@ Then('Verify new box is added in table of rb', () => {
 
 And('Click on My profile page of mp', () => {
     cy.wait(1000)
-    cy.contains('demo_repairfacilitator@vivacitytech.com').click({ force: true })
+   // cy.get('.MuiBox-root.css-hboir5 > .MuiIconButton-root').click({force:true})
+    cy.contains('demo_studentadvanced@vivacitytech.com').click({ force: true })
+    cy.contains('demo_studentadvanced@vivacitytech.com').click({ force: true })
     mp.clickOnMyProfile()
 })
 
@@ -617,6 +621,15 @@ mf.verifyUdated()
 })
 Then('Click on Clear filter of mf', () => {
     mf.clickOnClearFiltersButton()
+})
+And('Enter the table fields in search box1', () => {
+    mf.enterSearchValue1()
+})
+And('Verify the record in searching history1', () => {
+    mf.verifySearchResult1()
+})
+And('Verify the Warranty Description1', () => {
+    mf.verifyViewResult1()
 })
 And('Enter the table fields in search box of mf', () => {
     mf.enterSearchValue()

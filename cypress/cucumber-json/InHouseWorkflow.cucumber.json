@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3551000000
+              "duration": 2723000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 13121000000
+              "duration": 6494000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9156000000
+              "duration": 9085000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 119000000
+              "duration": 86000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on InHouseRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 660000000
+              "duration": 461000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Filters of InHouseWorkflow should be visible",
             "result": {
               "status": "passed",
-              "duration": 56000000
+              "duration": 10000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I should click on new button",
             "result": {
               "status": "passed",
-              "duration": 298000000
+              "duration": 74000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Select failure Type, Serial Device, Technician and repair issue",
             "result": {
               "status": "passed",
-              "duration": 8334000000
+              "duration": 2883000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Select building and Enter the Chromebook issue",
             "result": {
               "status": "passed",
-              "duration": 4399000000
+              "duration": 1422000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 772000000
+              "duration": 97000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Verify New Ticket is added",
             "result": {
               "status": "passed",
-              "duration": 10030000000
+              "duration": 10005000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Enter Search ticket no in search box",
             "result": {
               "status": "passed",
-              "duration": 1169000000
+              "duration": 592000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Verify search result below",
             "result": {
               "status": "passed",
-              "duration": 92000000
+              "duration": 48000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on view button",
             "result": {
               "status": "passed",
-              "duration": 5846000000
+              "duration": 6557000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Verify the Details of student repair ticket",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 5000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on the Edit Ticket Button",
             "result": {
               "status": "passed",
-              "duration": 4117000000
+              "duration": 4107000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Update the Technician and Repair Status",
             "result": {
               "status": "passed",
-              "duration": 147000000
+              "duration": 124000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on Update Button",
             "result": {
               "status": "passed",
-              "duration": 105000000
+              "duration": 66000000
             }
           },
           {
@@ -204,35 +204,6 @@
             "result": {
               "status": "passed",
               "duration": 3000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 28,
-            "name": "Click on Add Line and Verify",
-            "result": {
-              "status": "failed",
-              "duration": 5227000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'demo unit' within the element: <ul#:r3d:.MuiList-root.MuiList-padding.MuiMenu-list.css-r8u8y9> but never did.\n    at InHouseWorkflowActions.clickOnAddLine (cypress/integration/PageObject/PageActions/InHouseWorkflowActions.js:86:35)\n    at Context.eval (cypress/integration/InHouseWorkflow/InHouseWorkflow.spec.js:80:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "Click on Add Repair Image and Verify",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 30,
-            "name": "Click on Add Note and Verify",
-            "result": {
-              "status": "skipped"
             }
           }
         ]

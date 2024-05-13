@@ -34,7 +34,8 @@ export class InHouseWorkflowActions {
     }
     selectSerialDevice() {
         ihw.serialdeviceElement().click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains(tdata.inHouseWorkflow.serialdevice).click({ force: true })
+     //   cy.get('[role="listbox"]').find('li').contains(tdata.inHouseWorkflow.serialdevice).click({ force: true })
+        cy.get('#device-option-0').click()
         // cy.get(tdata.inHouseWorkflow.serialdevice).click()
     }
     selectTechnician() {
@@ -77,7 +78,7 @@ export class InHouseWorkflowActions {
     }
     verfiySearchResult() {
        //cy.wait(8000)
-        cy.get('.css-qha0hh').eq(0).contains(tdata.inHouseWorkflow.ticketno).should('be.visible')
+        cy.get('.css-19midj6').eq(0).contains(tdata.inHouseWorkflow.ticketno).should('be.visible')
     }
     clickOnAddLine() {
         ihw.addlineElement().click({ force: true })
@@ -142,7 +143,8 @@ export class InHouseWorkflowActions {
         cy.get(tdata.inHouseWorkflow.repairstatusEdit).click({ force: true })
     }
     clickOnUpdate() {
-        ihw.updateElement().click({ force: true })
+       // ihw.updateElement().click({ force: true })
+        cy.get('.MuiGrid-container > .MuiBox-root > .MuiButtonBase-root').click({ force: true })
     }
     verifyUpdate() {
         //cy.get('tr td').eq(1).should('contain', tdata.inHouseWorkflow.recordid)

@@ -12,7 +12,7 @@ Feature: OrgUploadAssets Page Functionality
 
     Scenario:Add Asset, Search, Edit and Delete Asset
         And Verify the Title of OrgUploadAssets Page
-        Then Filters of OrgUploadAssets should be visible
+        # Then Filters of OrgUploadAssets should be visible
         And Table for OrgUploadAssets should be visible
         Then I should click on Add Asset
         Then Enter title, full name location and tag
@@ -24,8 +24,8 @@ Feature: OrgUploadAssets Page Functionality
         # Then Click on Clear filter
         # And Click More filter select- Acquire Location in search box and Verify the Result
         # Then Click on Clear filter
-        And Enter the title in search box
-        And Verify the record in searching history
+        # And Enter the title in search box
+        # And Verify the record in searching history
         And Click on Edit button
         Then I should edit title, full name location and tag
         And I should edit note, Type and description

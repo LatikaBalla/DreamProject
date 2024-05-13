@@ -61,11 +61,12 @@ When('I should Sign In into the application', () => {
 })
 Then('Close the terms of service window', () => {
     cy.wait(5000)
+    cy.contains('demo_repairtech@vivacitytech.com').click({ force: true })
     dash.closeTermsOfServiceWindow()
 })
 Then('I should be redirected to the dashboard page', () => {
+    cy.contains('My Account').click({force:true})
     cy.url().should('include', '/')
-
 })
 And('Verify the Title of dashborad Page', () => {
     cy.title().should('eq', 'Account Dashboard')

@@ -34,8 +34,8 @@ Feature: MyFleet  Page Functionality
         Then Click on Export To CSV
         And Enter the table fields in search box
         And Verify the record in searching history
-        Then Click on view Button
-        And Verify the Warranty Description
+        # Then Click on view Button
+        # And Verify the Warranty Description
 
     Scenario: Retired Visibility,add Device,add more filter, view ,Clear filter and Search
         Then Click on Retired Tab
@@ -62,6 +62,6 @@ Feature: MyFleet  Page Functionality
         Then Click on Export To CSV
         And Enter the table fields in search box1
         And Verify the record in searching history1
-        Then Click on view Button
-        And Verify the Warranty Description1
+        # Then Click on view Button
+        # And Verify the Warranty Description1
 

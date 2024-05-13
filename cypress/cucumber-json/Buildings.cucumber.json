@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2150000000
+              "duration": 1786000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6742000000
+              "duration": 8384000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8255000000
+              "duration": 8256000000
             }
           },
           {
@@ -53,147 +53,7 @@
             "name": "Click on Buildings Tab",
             "result": {
               "status": "passed",
-              "duration": 1382000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "Click More filter select- Record Id in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 657000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 80000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "Click More filter select- Building Name in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1006000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 17,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 95000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "Click More filter select- Default Building in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1149000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 82000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "Click More filter select- Phone in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 798000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 81000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "Click More filter select- Building Shipping Address in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1846000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 23,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 86000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "Click More filter select- Building Billing Address in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1694000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 83000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 26,
-            "name": "Enter the Search - Building Name in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 725000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 29,
-            "name": "Click on Export To CSV",
-            "result": {
-              "status": "passed",
-              "duration": 84000000
+              "duration": 531000000
             }
           },
           {
@@ -203,7 +63,7 @@
             "name": "Click on Bulk Upload button",
             "result": {
               "status": "passed",
-              "duration": 86000000
+              "duration": 79000000
             }
           },
           {
@@ -213,7 +73,7 @@
             "name": "Click on Attach CSV file and Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 192000000
+              "duration": 180000000
             }
           },
           {

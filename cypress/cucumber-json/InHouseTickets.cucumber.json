@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3778000000
+              "duration": 2670000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8987000000
+              "duration": 6021000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9084000000
+              "duration": 9092000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 88000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on InHouseRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 515000000
+              "duration": 1374000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click All InHouseTickets tab",
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 61000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the Title of InHouseTickets Page",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 13000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Filters of InHouseTickets should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 9000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Table for InHouseTickets should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 8000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "I should click on Create new button",
             "result": {
               "status": "passed",
-              "duration": 72000000
+              "duration": 73000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Select failure Type, Serial Device, Technician, issue and Building",
             "result": {
               "status": "passed",
-              "duration": 2279000000
+              "duration": 2185000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Enter the Chromebook issue",
             "result": {
               "status": "passed",
-              "duration": 839000000
+              "duration": 951000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Verify New Ticket is added",
             "result": {
               "status": "passed",
-              "duration": 8925000000
+              "duration": 9317000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click on Download Export button",
             "result": {
               "status": "passed",
-              "duration": 72000000
+              "duration": 77000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2373000000
+              "duration": 2282000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Enter the Search - Repair type in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3265000000
+              "duration": 1573000000
             }
           },
           {
@@ -202,9 +202,8 @@
             "line": 27,
             "name": "Enter the Search - Repair status in search box and Verify the Result",
             "result": {
-              "status": "failed",
-              "duration": 5634000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `5`, but never found it. Queried from:\n\n              > cy.get(tr td)\n    at InHouseTicketsActions.searchRepairStatus (cypress/integration/PageObject/PageActions/InHouseTicketsActions.js:102:30)\n    at Context.eval (cypress/integration/InHouseTickets/InHouseTickets.spec.js:72:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 2997000000
             }
           },
           {
@@ -213,7 +212,8 @@
             "line": 28,
             "name": "Click More filter select- Record Id in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 741000000
             }
           },
           {
@@ -222,7 +222,8 @@
             "line": 29,
             "name": "Click on Clear filter",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 71000000
             }
           },
           {
@@ -231,7 +232,8 @@
             "line": 30,
             "name": "Click More filter select- Ticket Number in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 773000000
             }
           },
           {
@@ -240,7 +242,8 @@
             "line": 31,
             "name": "Click on Clear filter",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 186000000
             }
           },
           {
@@ -249,7 +252,8 @@
             "line": 32,
             "name": "Click More filter select- Repair type in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1198000000
             }
           },
           {
@@ -258,7 +262,8 @@
             "line": 33,
             "name": "Click on Clear filter",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 72000000
             }
           },
           {
@@ -267,7 +272,8 @@
             "line": 34,
             "name": "Click More filter select- Serial Number in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 922000000
             }
           },
           {
@@ -276,7 +282,8 @@
             "line": 35,
             "name": "Click on Clear filter",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 74000000
             }
           },
           {
@@ -285,7 +292,8 @@
             "line": 36,
             "name": "Click More filter select- Repair device in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3045000000
             }
           },
           {
@@ -294,7 +302,8 @@
             "line": 37,
             "name": "Click on Clear filter",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 73000000
             }
           },
           {
@@ -303,7 +312,8 @@
             "line": 38,
             "name": "Click More filter select- Repair status in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 814000000
             }
           },
           {
@@ -312,7 +322,8 @@
             "line": 39,
             "name": "Click on Clear filter",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 73000000
             }
           },
           {
@@ -321,7 +332,8 @@
             "line": 40,
             "name": "Click More filter select- Asset tag in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 666000000
             }
           },
           {
@@ -330,7 +342,8 @@
             "line": 41,
             "name": "Click on Clear filter",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 72000000
             }
           },
           {
@@ -339,7 +352,8 @@
             "line": 42,
             "name": "Click More filter select- internal Technician in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1576000000
             }
           },
           {
@@ -348,7 +362,8 @@
             "line": 43,
             "name": "Click on Clear filter",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 149000000
             }
           },
           {
@@ -357,7 +372,8 @@
             "line": 44,
             "name": "Click More filter select- Created By in search box and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1387000000
             }
           },
           {
@@ -366,7 +382,8 @@
             "line": 45,
             "name": "Click on Clear filter",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 76000000
             }
           },
           {
@@ -375,7 +392,8 @@
             "line": 46,
             "name": "Enter the Search value in search box",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 442000000
             }
           },
           {
@@ -384,7 +402,8 @@
             "line": 47,
             "name": "Verify the Results in the table",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1990000000
             }
           },
           {
@@ -393,7 +412,8 @@
             "line": 48,
             "name": "Click on view button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1400000000
             }
           },
           {
@@ -402,7 +422,8 @@
             "line": 49,
             "name": "Verify the Details of student repair ticket",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2343000000
             }
           },
           {
@@ -411,7 +432,8 @@
             "line": 50,
             "name": "Click on the Edit Ticket Button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4112000000
             }
           },
           {
@@ -420,7 +442,8 @@
             "line": 51,
             "name": "Update the Technician and Repair Status",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 136000000
             }
           },
           {
@@ -429,7 +452,8 @@
             "line": 52,
             "name": "Click on Update Button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 68000000
             }
           },
           {
@@ -438,34 +462,8 @@
             "line": 53,
             "name": "Verify Updated successfully",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 54,
-            "name": "Click on Add Line and Verify",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 55,
-            "name": "Click on Add Repair Image and Verify",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 56,
-            "name": "Click on Add Note and Verify",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4000000
             }
           }
         ]

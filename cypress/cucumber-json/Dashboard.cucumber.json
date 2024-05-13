@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2950000000
+              "duration": 1254000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7108000000
+              "duration": 11228000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9226000000
+              "duration": 9171000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "I should be redirected to the dashboard page",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 74000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of dashborad Page",
             "result": {
               "status": "passed",
-              "duration": 135000000
+              "duration": 479000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "My Account Detail tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 77000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Verify the Title of Account Details Page",
             "result": {
               "status": "passed",
-              "duration": 80000000
+              "duration": 81000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Table for account deatils should be visible",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 6000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Building tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 6000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on Buildings Tab",
             "result": {
               "status": "passed",
-              "duration": 58000000
+              "duration": 60000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Verify the Title of Buildings Page",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 14000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Filters of Buildings should be visible",
             "result": {
               "status": "passed",
-              "duration": 25000000
+              "duration": 27000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Table for Buildings should be visible",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 6000000
             }
           }
         ]
@@ -183,7 +183,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1905000000
+              "duration": 2322000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5746000000
+              "duration": 6127000000
             }
           },
           {
@@ -203,93 +203,103 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9230000000
+              "duration": 9159000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I should be redirected to the dashboard page",
+            "result": {
+              "status": "passed",
+              "duration": 74000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 26,
+            "line": 27,
             "name": "Click on Buildings Tab",
             "result": {
               "status": "passed",
-              "duration": 1079000000
+              "duration": 486000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 27,
+            "line": 28,
             "name": "I should click on + Add New button",
             "result": {
               "status": "passed",
-              "duration": 78000000
+              "duration": 79000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 28,
+            "line": 29,
             "name": "I should Enter Building Name,Phone and Extension",
             "result": {
               "status": "passed",
-              "duration": 950000000
+              "duration": 946000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 29,
+            "line": 30,
             "name": "Select Default building",
             "result": {
               "status": "passed",
-              "duration": 131000000
+              "duration": 123000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 30,
+            "line": 31,
             "name": "Enter Billing Address and select from dropdown",
             "result": {
               "status": "passed",
-              "duration": 2886000000
+              "duration": 2825000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 31,
+            "line": 32,
             "name": "Click on checkbox Same as Shipping Address",
             "result": {
               "status": "passed",
-              "duration": 6093000000
+              "duration": 6091000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 32,
+            "line": 33,
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 63000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 33,
+            "line": 34,
             "name": "Verify the builing details added in table",
             "result": {
               "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<td.MuiTableCell-root.MuiTableCell-alignCenter.MuiTableCell-sizeMedium.css-42rti1>' to contain 'Dream Building'\n    at BuildingsActions.verifyNewBuilding (cypress/integration/PageObject/PageActions/BuildingsActions.js:71:30)\n    at Context.eval (cypress/integration/Dashboard/Dashboard.spec.js:86:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<td.MuiTableCell-root.MuiTableCell-alignCenter.MuiTableCell-sizeMedium.css-42rti1>' to contain 'Building One'\n    at BuildingsActions.verifyNewBuilding (cypress/integration/PageObject/PageActions/BuildingsActions.js:71:30)\n    at Context.eval (cypress/integration/Dashboard/Dashboard.spec.js:89:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 34,
+            "line": 35,
             "name": "Click on My Account Details Tab",
             "result": {
               "status": "skipped"
@@ -298,7 +308,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 35,
+            "line": 36,
             "name": "I should click on Add New button",
             "result": {
               "status": "skipped"
@@ -307,7 +317,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 36,
+            "line": 37,
             "name": "Verify the tilte of Add New Contact page",
             "result": {
               "status": "skipped"
@@ -316,7 +326,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 37,
+            "line": 38,
             "name": "Enter title, full name and valid Email",
             "result": {
               "status": "skipped"
@@ -325,7 +335,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 38,
+            "line": 39,
             "name": "Enter Phone and Cell Number",
             "result": {
               "status": "skipped"
@@ -334,7 +344,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 39,
+            "line": 40,
             "name": "Select User Role and Building from Dropdown List",
             "result": {
               "status": "skipped"
@@ -343,7 +353,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 40,
+            "line": 41,
             "name": "Click on save button",
             "result": {
               "status": "skipped"
@@ -352,7 +362,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 41,
+            "line": 42,
             "name": "Verify the account details added in table",
             "result": {
               "status": "skipped"
@@ -361,7 +371,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 42,
+            "line": 43,
             "name": "Verify the record in searching history",
             "result": {
               "status": "skipped"
@@ -370,7 +380,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 43,
+            "line": 44,
             "name": "Click on Edit Icon",
             "result": {
               "status": "skipped"
@@ -379,7 +389,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 44,
+            "line": 45,
             "name": "I should edit title, full name",
             "result": {
               "status": "skipped"
@@ -388,7 +398,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 45,
+            "line": 46,
             "name": "I should edit Phone and Cell Number and user role",
             "result": {
               "status": "skipped"
@@ -397,7 +407,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 46,
+            "line": 47,
             "name": "I edit User Status to inactive",
             "result": {
               "status": "skipped"
@@ -406,7 +416,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 47,
+            "line": 48,
             "name": "Click on Submit button",
             "result": {
               "status": "skipped"
@@ -415,7 +425,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 48,
+            "line": 49,
             "name": "Verify the Record has been updated Meassage",
             "result": {
               "status": "skipped"
@@ -424,7 +434,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 49,
+            "line": 50,
             "name": "Click on Delete Icon",
             "result": {
               "status": "skipped"
@@ -433,7 +443,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 50,
+            "line": 51,
             "name": "Click on Confirm Delete button",
             "result": {
               "status": "skipped"
@@ -442,7 +452,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 51,
+            "line": 52,
             "name": "Verify the record is deleted successfully",
             "result": {
               "status": "skipped"
@@ -451,7 +461,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 52,
+            "line": 53,
             "name": "Click on Buildings Tab",
             "result": {
               "status": "skipped"
@@ -460,7 +470,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 53,
+            "line": 54,
             "name": "Click on Edit Icon of builing",
             "result": {
               "status": "skipped"
@@ -469,7 +479,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 54,
+            "line": 55,
             "name": "I should edit Building Name,Phone and Extension of builing",
             "result": {
               "status": "skipped"
@@ -478,7 +488,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 55,
+            "line": 56,
             "name": "I should edit Select Default building",
             "result": {
               "status": "skipped"
@@ -487,7 +497,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 56,
+            "line": 57,
             "name": "Click on update button of builing",
             "result": {
               "status": "skipped"
@@ -496,7 +506,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 57,
+            "line": 58,
             "name": "Verify the Record has been updated Meassage of builing",
             "result": {
               "status": "skipped"
@@ -505,7 +515,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 58,
+            "line": 59,
             "name": "Click on Delete Icon of building",
             "result": {
               "status": "skipped"
@@ -514,7 +524,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 59,
+            "line": 60,
             "name": "Click on Confirm Delete button of building",
             "result": {
               "status": "skipped"
@@ -523,7 +533,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 60,
+            "line": 61,
             "name": "Verify the record is deleted successfully of building",
             "result": {
               "status": "skipped"

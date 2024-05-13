@@ -23,6 +23,7 @@ Feature: Dashboard Page Functionality
         And Table for Buildings should be visible
 
     Scenario: Adding,Update,add more filter, Clear filter and Search,View Details and Delete new Buildings
+        Then I should be redirected to the dashboard page
         And Click on Buildings Tab
         Then I should click on + Add New button
         And I should Enter Building Name,Phone and Extension

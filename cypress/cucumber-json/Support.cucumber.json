@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3279000000
+              "duration": 2564000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 10347000000
+              "duration": 6619000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8124000000
+              "duration": 8077000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Support page",
             "result": {
               "status": "passed",
-              "duration": 1276000000
+              "duration": 1142000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of Support Page",
             "result": {
               "status": "passed",
-              "duration": 475000000
+              "duration": 403000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Enter Full name",
             "result": {
               "status": "passed",
-              "duration": 834000000
+              "duration": 397000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Select task Priority and Topic",
             "result": {
               "status": "passed",
-              "duration": 595000000
+              "duration": 246000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Upload the image and enter Notes",
             "result": {
               "status": "passed",
-              "duration": 1219000000
+              "duration": 575000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 136000000
+              "duration": 64000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Verify the Send Feedback successfully",
             "result": {
               "status": "passed",
-              "duration": 850000000
+              "duration": 759000000
             }
           }
         ]

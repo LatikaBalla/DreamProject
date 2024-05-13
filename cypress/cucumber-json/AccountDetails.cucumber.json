@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2515000000
+              "duration": 5919000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9064000000
+              "duration": 8049000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9166000000
+              "duration": 9172000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Account Details -Aaccount Name and no should be visible",
             "result": {
               "status": "passed",
-              "duration": 1291000000
+              "duration": 2723000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Account Manager,Billing Address and Shipping Address should be visible",
             "result": {
               "status": "passed",
-              "duration": 25000000
+              "duration": 27000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click More filter select- Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2738000000
+              "duration": 2570000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 281000000
+              "duration": 322000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Click More filter select- Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1213000000
+              "duration": 1125000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click More filter select- Title in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1780000000
+              "duration": 682000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 226000000
+              "duration": 216000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click More filter select- Eamil in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2715000000
+              "duration": 3599000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 196000000
+              "duration": 181000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click More filter select- User Role in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2956000000
+              "duration": 2910000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 258000000
+              "duration": 251000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click More filter select- Phone in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2477000000
+              "duration": 2825000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 72000000
+              "duration": 232000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click More filter select- User Status in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 4369000000
+              "duration": 4347000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 194000000
+              "duration": 189000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1184000000
+              "duration": 939000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Enter the Search - Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 836000000
+              "duration": 641000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Enter the Search - Email in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1082000000
+              "duration": 808000000
             }
           },
           {
@@ -243,17 +243,7 @@
             "name": "Enter the Search - Title in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 783000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 32,
-            "name": "Enter the Search - Phone in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 907000000
+              "duration": 1309000000
             }
           },
           {
@@ -263,7 +253,7 @@
             "name": "Click on Export To CSV",
             "result": {
               "status": "passed",
-              "duration": 91000000
+              "duration": 70000000
             }
           }
         ]

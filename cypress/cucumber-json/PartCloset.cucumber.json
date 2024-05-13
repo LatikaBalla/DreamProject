@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3131000000
+              "duration": 1525000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 12492000000
+              "duration": 7695000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9334000000
+              "duration": 9081000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 154000000
+              "duration": 77000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on PartCloset Tab",
             "result": {
               "status": "passed",
-              "duration": 1439000000
+              "duration": 1248000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of PartCloset Page",
             "result": {
               "status": "passed",
-              "duration": 46000000
+              "duration": 10000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Filters of PartCloset should be visible",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 5000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Table for PartCloset should be visible",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 7000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "I should click on Add New VT part",
             "result": {
               "status": "passed",
-              "duration": 193000000
+              "duration": 69000000
             }
           },
           {
@@ -112,9 +112,8 @@
             "line": 30,
             "name": "Select device and part name",
             "result": {
-              "status": "failed",
-              "duration": 4672000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#device-option-11`, but never found it.\n    at PartClosetActions.selectDevice (cypress/integration/PageObject/PageActions/PartClosetActions.js:76:11)\n    at Context.eval (cypress/integration/PartCloset/PartCloset.spec.js:69:3)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 1432000000
             }
           },
           {
@@ -123,7 +122,8 @@
             "line": 31,
             "name": "Enter quantity and select building",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 310000000
             }
           },
           {
@@ -132,7 +132,8 @@
             "line": 32,
             "name": "Click on submit button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 75000000
             }
           },
           {
@@ -141,7 +142,8 @@
             "line": 33,
             "name": "Verify new VT part is added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7000000
             }
           },
           {
@@ -150,7 +152,8 @@
             "line": 34,
             "name": "I should click on Add New custome part",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 87000000
             }
           },
           {
@@ -159,7 +162,8 @@
             "line": 35,
             "name": "Enter part name, manufacture and parent device",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1021000000
             }
           },
           {
@@ -168,7 +172,8 @@
             "line": 36,
             "name": "Enter part sku and quantity",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 508000000
             }
           },
           {
@@ -177,7 +182,8 @@
             "line": 37,
             "name": "Click on submit button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 70000000
             }
           },
           {
@@ -186,7 +192,8 @@
             "line": 38,
             "name": "Verify new custome part is added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7000000
             }
           },
           {
@@ -195,7 +202,8 @@
             "line": 39,
             "name": "Enter the Search value in search box",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 230000000
             }
           },
           {
@@ -204,7 +212,8 @@
             "line": 40,
             "name": "Verify the Results in the table",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 453000000
             }
           },
           {
@@ -213,7 +222,8 @@
             "line": 41,
             "name": "Click on delete button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 145000000
             }
           },
           {
@@ -222,7 +232,8 @@
             "line": 42,
             "name": "Verify the recode is deleted",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 623000000
             }
           }
         ]
