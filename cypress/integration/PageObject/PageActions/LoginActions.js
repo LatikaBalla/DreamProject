@@ -24,8 +24,8 @@ export class LoginActions {
     clickOnContiune() {
         log.continueElement().click({ force: true })
     }
-    verifyTitleDashboard() {
-        cy.title().should('eq', 'Account Dashboard')
+    verifyTitleReportCenter() {
+        cy.title().should('eq', 'Report Center')
     }
     enterWrongUsername() {
         const uniqueSeed = Date.now();

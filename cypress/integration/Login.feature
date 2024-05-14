@@ -9,12 +9,7 @@ Feature:Login Page Functionality
     Scenario: User logs in with valid credentials
         Then User enters valid credentials
         And Clicks the login button
-        # Then User should be redirected to the dashboard
-
-    # Scenario:  User sees an error with invalid credentials for multiple time tried so lock the account 
-    #     Then User enters invalid credentials for lock
-    #     And Clicks the login button
-    #     Then Verify error lock account message should be displayed
+        Then User should be redirected to the Report center page
 
     Scenario:  User sees an error with invalid credentials
         Then User enters invalid credentials
@@ -25,10 +20,4 @@ Feature:Login Page Functionality
         Then User enter the valid emailid
         And Clicks the ForgetPassword button
         Then Verify recovery password to email has been send message should be displayed
-
-    # Scenario:  User ForgetPassword with entering wrong email id
-    #     Then User enter the wrong emailid
-    #     And Clicks the ForgetPassword button
-    #     Then Verify recovery email has been send message should be displayed
-
 

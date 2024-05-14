@@ -18,9 +18,9 @@ Then('User enters valid credentials', () => {
 And('Clicks the login button', () => {
     log.clickOnContiune()
 })
-Then('User should be redirected to the dashboard', () => {
+Then('User should be redirected to the Report center page', () => {
     log.closeTermsOfServiceWindow()
-    log.verifyTitleDashboard()
+    log.verifyTitleReportCenter()
 })
 Then('User enters invalid credentials', () => {
     log.enterWrongUsername()
