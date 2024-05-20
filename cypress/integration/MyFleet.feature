@@ -34,8 +34,16 @@ Feature: MyFleet  Page Functionality
         Then Click on Export To CSV
         And Enter the table fields in search box
         And Verify the record in searching history
-        # Then Click on view Button
-        # And Verify the Warranty Description
+        Then Click on view Button
+        And Verify the General Device Information
+        Then Click on CPU Status and verify CPU Information
+        And Click on Memory Information and verify Memory Information
+        Then Click on Network Information and verify Network Information
+        And Click on OS Information and verify OS Information
+        Then Click on Battery Information and verify Battery Information
+        And Click on Storage Information and verify Storage Information
+        Then Click on Boot Performance Report and Boot Performance Report
+
 
     Scenario: Retired Visibility,add Device,add more filter, view ,Clear filter and Search
         Then Click on Retired Tab
@@ -62,6 +70,13 @@ Feature: MyFleet  Page Functionality
         Then Click on Export To CSV
         And Enter the table fields in search box1
         And Verify the record in searching history1
-        # Then Click on view Button
-        # And Verify the Warranty Description1
+        Then Click on view Button
+        And Verify the General Device Information
+        Then Click on CPU Status and verify CPU Information
+        And Click on Memory Information and verify Memory Information
+        Then Click on Network Information and verify Network Information
+        And Click on OS Information and verify OS Information
+        Then Click on Battery Information and verify Battery Information
+        And Click on Storage Information and verify Storage Information
+        Then Click on Boot Performance Report and Boot Performance Report
 

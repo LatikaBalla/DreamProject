@@ -30,10 +30,10 @@ export class MyFleetActions {
         mf.tableElement().should('be.visible')
     }
     enterSearchValue() {
-        mf.searchElement().clear({force:true}).type(tdata.myFleet.search, { force: true })
+        mf.searchElement().clear({ force: true }).type(tdata.myFleet.search, { force: true })
     }
     enterSearchValue1() {
-        mf.searchElement().clear({force:true}).type(tdata.myFleet.search1, { force: true })
+        mf.searchElement().clear({ force: true }).type(tdata.myFleet.search1, { force: true })
     }
     verifySearchResult() {
         cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.myFleet.search, { force: true })
@@ -45,11 +45,11 @@ export class MyFleetActions {
         mf.morefiltersElement().scrollIntoView().click({ force: true })
     }
     clickOnEditButton() {
-         cy.wait(3000)
+        cy.wait(3000)
         cy.get('tr td').eq(8).contains('Edit').click({ force: true })
     }
     editInformation() {
-        mf.assetTagElement().clear({ force: true }).type(tdata.myFleet.serialnoEdit,{ force: true })
+        mf.assetTagElement().clear({ force: true }).type(tdata.myFleet.serialnoEdit, { force: true })
         mf.studentinfoElement().click({ force: true })
         cy.get('[role="listbox"]').find('li').contains('Test').click({ force: true })
         // cy.get(tdata.myFleet.studentidEdit).click()
@@ -82,10 +82,11 @@ export class MyFleetActions {
         // mf.viewElement().scrollIntoView().click({ force: true })
     }
     verifyViewResult() {
-        cy.contains(tdata.myFleet.serialno).should('be.visible',{ force: true })
+        cy.get('h6.css-4an0mh').contains('General Device Information').should('be.visible', { force: true })
+        // cy.contains(tdata.myFleet.serialno).should('be.visible',{ force: true })
     }
     verifyViewResult1() {
-        cy.contains(tdata.myFleet.serialno1).should('be.visible',{ force: true })
+        cy.contains(tdata.myFleet.serialno1).should('be.visible', { force: true })
     }
     clickOnAddDevice() {
         mf.addDeviceElement().click({ force: true })
@@ -154,6 +155,48 @@ export class MyFleetActions {
     }
     clickOnRetiredTab() {
         cy.get('[data-testid="tabDeactivate"]').click({ force: true })
+    }
+    clickOnCPUStatus() {
+        cy.get('[type="button"]').contains('CPU Status').click({ force: true })
+    }
+    verifyCPUStatus() {
+        cy.get('h6.css-4an0mh').contains('CPU Information').should('be.visible', { force: true })
+    }
+    clickOnMemory() {
+        cy.get('[type="button"]').contains('Memory Information').click({ force: true })
+     }
+    verifyMemory() {
+        cy.get('h6.css-4an0mh').contains('Memory Information').should('be.visible', { force: true })
+     }
+    clickOnNetwork() { 
+        cy.get('[type="button"]').contains('Network Information').click({ force: true })
+    }
+    verifyNetwork() { 
+        cy.get('h6.css-4an0mh').contains('Network Information').should('be.visible', { force: true })
+    }
+    clickOnOS() {
+        cy.get('[type="button"]').contains('OS Information').click({ force: true })
+     }
+    verifyOS() { 
+        cy.get('h6.css-4an0mh').contains('OS Information').should('be.visible', { force: true })
+    }
+    clickOnBattery() { 
+        cy.get('[type="button"]').contains('Battery Information').click({ force: true })
+    }
+    verifyBattery() { 
+        cy.get('h6.css-4an0mh').contains('Battery Information').should('be.visible', { force: true })
+    }
+    clickOnStorage() { 
+        cy.get('[type="button"]').contains('Storage Information').click({ force: true })
+    }
+    verifyStorage() {
+        cy.get('h6.css-4an0mh').contains('Storage Information').should('be.visible', { force: true })
+     }
+    clickOnBootPerformanceReport() {
+        cy.get('[type="button"]').contains('Boot Performance Report').click({ force: true })
+     }
+    verifBootPerformanceReport() { 
+        cy.get('h6.css-4an0mh').contains('Boot Performance Report').should('be.visible', { force: true })
     }
 }
 export default MyFleetActions 

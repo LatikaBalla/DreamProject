@@ -60,7 +60,7 @@ And('Update Asset tag, student info and building information and Click on update
     mf.clickOnUpdateButton()
 })
 Then('Verfiy Record updated successfully', () => {
-mf.verifyUdated()
+    mf.verifyUdated()
 })
 Then('Click on Clear filter', () => {
     mf.clickOnClearFiltersButton()
@@ -80,7 +80,7 @@ And('Verify the record in searching history1', () => {
 Then('Click on view Button', () => {
     mf.clickOnViewButton()
 })
-And('Verify the Warranty Description', () => {
+And('Verify the General Device Information', () => {
     mf.verifyViewResult()
 })
 And('Verify the Warranty Description1', () => {
@@ -110,4 +110,32 @@ And('Click More filter select- Student in search box and Verify the Result', () 
 })
 Then('Click on Retired Tab', () => {
     mf.clickOnRetiredTab()
+})
+Then('Click on CPU Status and verify CPU Information', () => {
+    mf.clickOnCPUStatus()
+    mf.verifyCPUStatus()
+})
+And('Click on Memory Information and verify Memory Information', () => {
+    mf.clickOnMemory()
+    mf.verifyMemory()
+})
+Then('Click on Network Information and verify Network Information', () => {
+    mf.clickOnNetwork()
+    mf.verifyNetwork()
+})
+And('Click on OS Information and verify OS Information', () => {
+    mf.clickOnOS()
+    mf.verifyOS()
+})
+Then('Click on Battery Information and verify Battery Information', () => {
+    mf.clickOnBattery()
+    mf.verifyBattery()
+})
+And('Click on Storage Information and verify Storage Information', () => {
+    mf.clickOnStorage()
+    mf.verifyStorage()
+})
+Then('Click on Boot Performance Report and Boot Performance Report', () => {
+    mf.clickOnBootPerformanceReport()
+    mf.verifBootPerformanceReport()
 })

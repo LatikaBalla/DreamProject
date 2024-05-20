@@ -91,9 +91,9 @@
   "myFleet": {
     "filename": "fleet_devices.csv",
     "serialno": "VIVATEST12Test",
-    "serialno1": "1CD1000007Test",
+    "serialno1": "98765vhTest",
     "search": "VIVATEST12Test",
-    "search1": "1CD1000007Test",
+    "search1": "98765vhTest",
     "serialNo": "1111",
     "deviceid": "#device-option-38",
     "assetTag": "aa1",
