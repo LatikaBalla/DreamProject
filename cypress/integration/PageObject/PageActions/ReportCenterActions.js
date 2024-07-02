@@ -17,17 +17,20 @@ export class ReportCenterActions {
         repc.vivacityrrElement().should('be.visible')
     }
     inhouseRepairReportTabVisible() {
-        repc.inhouserrElement().should('be.visible')
+        repc.inhouserrElement().scrollIntoView().should('be.visible')
     }
     deviceRepairReportTabVisible() {
         repc.devicerrElement().should('be.visible')
     }
-    nonwarrantyRepairsTabVisible(){
-        cy.get('[data-testid="ChevronLeftIcon"]').click({force:true})
+    nonwarrantyRepairsTabVisible() {
+        cy.get('[data-testid="ChevronLeftIcon"]').click({ force: true })
         repc.warrantyrElement().should('be.visible')
     }
     clickOnReportCenter() {
         dash.reportcenterElement().click({ force: true })
     }
+    telemetryDataTabVisible() {
+        repc.telemetrydElement().should('be.visible')
+    } 
 }
 export default ReportCenterActions 

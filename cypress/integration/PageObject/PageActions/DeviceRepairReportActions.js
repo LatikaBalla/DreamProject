@@ -31,7 +31,7 @@ export class DeviceRepairReportActions {
         dev.searchElement().clear().type(tdata.deviceRepairReport.ticketno, { force: true })
     }
     verifyTicketDetailsTable() {
-        cy.wait(2000)
+       // cy.wait(2000)
         cy.get('tr td').eq(1).should('contain', tdata.deviceRepairReport.ticketno)
     }
     clickOnClearButton() {
@@ -42,11 +42,13 @@ export class DeviceRepairReportActions {
         dev.searchElement().should('be.empty')
     }
     clickOnTicketNumberTable() {
+        cy.get('tr td').eq(9).as('btn').scrollIntoView()
+        cy.get('@btn').contains('View').click({ force: true })   
         cy.window().then(win => {
            // win.open('https://google.com', '_blank');
           });
           cy.get('body').type('{ctrl}t');
-          cy.visit("/repair-center/ticket-detail/"+tdata.deviceRepairReport.recordid1 , {visitTimeout: 30000})
+          cy.visit("/repair-360/ticket-detail/"+tdata.deviceRepairReport.recordid1 , {visitTimeout: 30000})
        //   cy.get('tr td').eq(9).scrollIntoView().contains('View').click({ force: true })    
     }
     verifyRapairTicketPAge() {
@@ -90,14 +92,25 @@ export class DeviceRepairReportActions {
         dev.repairstatusElement().click({ force: true })
         dev.searchdropdownElement().eq(1).click({ force: true })
         dev.intransitElement().click({ force: true })
-        cy.get('tr td').eq(6).should('contain', tdata.repairTickets.repairstatus, { force: true })
+        cy.get('tr td').eq(5).should('contain', tdata.repairTickets.repairstatus, { force: true })
     }
     searchRepairBox() {
         dev.searchdropdownElement().eq(0).click({ force: true })
         dev.repairboxElement().click({ force: true })
-        dev.searchElement().clear().type(tdata.deviceRepairReport.repairbox + '{enter}', { force: true })
-       // cy.wait(4000)
+        dev.searchElement().clear().type(tdata.deviceRepairReport.repairbox + '{enter}', { force: true })     
         cy.get('tr td').eq(6).should('contain', tdata.deviceRepairReport.repairbox, { force: true })
+    }
+    searchSerialNo(){
+        dev.searchdropdownElement().eq(0).click({ force: true })
+        dev.serialNoElement().click({ force: true })
+        dev.searchElement().clear().type(tdata.deviceRepairReport.serialNo + '{enter}', { force: true })   
+        cy.get('tr td').eq(3).should('contain', tdata.deviceRepairReport.serialNo, { force: true })
+    }
+    searchAssetTag(){
+        dev.searchdropdownElement().eq(0).click({ force: true })
+        dev.assetTagElement().click({ force: true })
+        dev.searchElement().clear().type(tdata.deviceRepairReport.assetTag + '{enter}', { force: true })  
+        cy.get('tr td').eq(4).should('contain', tdata.deviceRepairReport.assetTag, { force: true })
     }
     clickOnMoreFilter() {
         dev.addFilterElement().click({ force: true })

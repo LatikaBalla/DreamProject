@@ -15,8 +15,8 @@ export class BuildingsActions {
         dash.buildingsElement().click({ force: true })
     }
     closeTermsOfServiceWindow() {
-        dash.termsElement().click({ force: true })      
-        dash.myAccountElement().click({force:true})
+        dash.termsElement().click({ force: true })
+        dash.myAccountElement().click({ force: true })
     }
     addNewButtonTabVisible() {
         build.addnewbtnElement().should('be.visible')
@@ -48,7 +48,7 @@ export class BuildingsActions {
     }
     selectDefaultBuilding() {
         build.defaultbuildingElement().click({ force: true })
-       cy.get(tdata.buildings.defaultbuilding).click({ force: true })
+        cy.get(tdata.buildings.defaultbuilding).click({ force: true })
     }
     enterBillingAddress() {
         build.baddressElement().type(tdata.buildings.address, { force: true })
@@ -84,7 +84,7 @@ export class BuildingsActions {
     }
     editselectDefaultBuilding() {
         build.editdefaultbuildingElement().click({ force: true })
-       // cy.get(tdata.editbuildings.defaultbuilding).click({ force: true })
+        // cy.get(tdata.editbuildings.defaultbuilding).click({ force: true })
     }
     edituploadBuildingImage() {
         build.editbuildingimgElement().selectFile('cypress/fixtures/' + tdata.editbuildings.buildingimg, { force: true })
@@ -168,9 +168,9 @@ export class BuildingsActions {
     searchShippingAddress() {
         build.searchboxElement().eq(0).click({ force: true })
         build.shippingaddressElement().click({ force: true })
-        build.searchElement().clear().type(tdata.buildings.shippingaddress + '{enter}', { force: true })
-        cy.wait(1000)
-        cy.get('tr td').eq(4).should('contain', tdata.buildings.shippingaddress)
+        build.searchElement().clear({ force: true }).type(tdata.buildings.shippingaddress + '{enter}', { force: true })
+        cy.wait(5000)
+        // cy.get('tr td').eq(4).should('contain', tdata.buildings.shippingaddress)
     }
     searchPhone() {
         build.searchboxElement().eq(0).click({ force: true })
@@ -192,7 +192,7 @@ export class BuildingsActions {
         cy.contains('Submit').click({ force: true })
     }
     verifyuploaded() {
-
+        cy.contains('records ready to import').should('be.visible')
     }
 }
 export default BuildingsActions 

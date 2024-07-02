@@ -108,5 +108,19 @@ export default class DeviceRepairReportElements {
             timeout: 30000,
         })
     }
-
+    serialNoElement() {
+        return cy.get(locator.deviceRepairReport.serialNo, {
+            timeout: 30000,
+        })
+    }
+    assetTagElement() {
+        return cy.get(locator.deviceRepairReport.assetTag, {
+            timeout: 30000,
+        })
+    } 
+    intransitElement() {
+        return cy.get(locator.deviceRepairReport.intransit, {
+            timeout: 30000,
+        })
+    }
 }

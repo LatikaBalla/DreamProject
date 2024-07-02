@@ -3,7 +3,7 @@
         "accountdetials": "[data-testid='tabacc-1']",
         "buildings": "[data-testid='tabacc-2']",
         "sliderMenu": ".css-htxx1b",
-        "terms": ".MuiToolbar-root > .MuiButton-root",
+        "terms": ".MuiDialogActions-root > .MuiButtonBase-root",
         "logo": "[src='/static/media/logo-v-purple.7593cbb85d4fd19e22cc.png']",
         "arrow": "[ data-testid='ChevronLeftIcon']",
         "accountdashboard": "Account Dashboard",
@@ -21,15 +21,14 @@
         "logout": "[data-testid='LogoutIcon']",
         "vivaAdmin": "a[href='/admin']",
         "favorite": "Favorite",
-        "myAccount":"My Account"
+        "myAccount": "My Account"
     },
     "accountDetails": {
         "titleAccount": "My Account Details",
-        "filters": ".css-1tx38fa",
+        "filters": ".css-13zqo1p",
         "accountdetials": "[data-testid='tabacc-1']",
         "buildings": "[data-testid='tabacc-2']",
-    
-        "tableaccount": ".css-1owb465",
+        "tableaccount": ".css-1dj5rr2",
         "addnewbtn": "button[type='button']",
         "newContactTitle": "Add New Contact",
         "editIcon": "[data-testid='ModeEditOutlinedIcon']",
@@ -86,7 +85,7 @@
         "addnewbtn": "Create New",
         "addfilterbtn": "[data-testid='Filters']",
         "refreshbtn": "[data-testid='CachedIcon']",
-        "tablebuilding": ".css-1owb465",
+        "tablebuilding": ".css-1dj5rr2",
         "editIcon": "[data-testid='ModeEditOutlinedIcon']",
         "deleteIcon": "[data-testid='DeleteOutlineOutlinedIcon']",
         "confirmdelete": "[type='button']",
@@ -95,7 +94,7 @@
         "fieldvalue": "[name='fieldValue']",
         "fieldoperation": "[name='fieldOp']",
         "applybtn": "[data-testid='btnHandleApply']",
-        "morefiltersbtn": "+ Add Filter",
+        "morefiltersbtn": "Add Filter",
         "clearfilterbtn": "Clear Filter",
         "addfilterGroup": "+ Add Filter Group",
         "detailsBuildingname": ".MuiTypography-h4",
@@ -162,15 +161,16 @@
         "vivacityrr": "[data-testid='tabrep-1']",
         "inhouserr": "[data-testid='tabrep-2']",
         "devicerr": "[data-testid='tabrep-3']",
-        "warrantyr": "[data-testid='tabrep-4']"
+        "warrantyr": "[data-testid='tabrep-4']",
+        "telemetryd": "[data-testid='tabrep-5']"
     },
     "deviceRepairReport": {
         "title": "Device Repair History",
         "clearbtn": "Clear",
-        "filters": ".css-1tx38fa",
+        "filters": ".css-13zqo1p",
         "searchdropdown": "[role='combobox']",
         "search": "[data-testid='txtSearchData']",
-        "table": ".css-1owb465",
+        "table": ".css-1dj5rr2",
         "printTicket": "Print Ticket Estimate",
         "downloadticket": "Download Ticket Estimate",
         "back": "[data-testid='KeyboardBackspaceIcon']",
@@ -185,16 +185,21 @@
         "fieldName": "[name='fieldName']",
         "fieldOp": "[name='fieldOp']",
         "fieldValue": "[name='fieldValue']",
-        "apply": "[data-testid='btnHandleApply']"
+        "apply": "[data-testid='btnHandleApply']",
+        "serialNo":"[data-value='serial_number']",
+        "assetTag":"[data-value='asset_tag']",
+        "intransit":"[data-value='In Transit']"
     },
     "vivacityRepairReport": {
         "section1": "In Transit to Me",
         "section2": "Headed to Vivacity",
         "section3": "Waiting on Parts",
         "section4": "In Repair",
-        "repairstatus": "Repair Tickets Failure Type",
-        "warranty": "Warranty Claims Approved/Denied",
-        "canvas": ".MuiPaper-root > canvas"
+        "repairstatus": "canvas[role='img']",
+        "warranty": "canvas[role='img']",
+        "canvas": "canvas[role='img']",
+        "buildingdrop": "#building_label",
+        "clearFilter": "Clear Filter"
     },
     "inhouseRepairReport": {
         "section1": "Non-warranty Repairs",
@@ -205,9 +210,9 @@
     },
     "nonWarrantyRepairs": {
         "title": "Non-Warranty Repairs",
-        "filters": ".css-1tx38fa",
+        "filters": ".css-13zqo1p",
         "search": "[data-testid='txtSearchData']",
-        "table": ".css-1owb465",
+        "table": ".css-1dj5rr2",
         "form": "form[class='MuiBox-root css-0']",
         "failureType": "#failure_type",
         "site": "#outbound_address",
@@ -241,7 +246,7 @@
         "title": "Manage Device Fleet",
         "filters": ".css-17bzc13",
         "table": ".css-14cyhk6",
-        "addDevice": " Add Device ",
+        "addDevice": "Create Ticket",
         "serialNo": "#serial_number",
         "deviceid": "#device",
         "assetTag": "#asset_tag",
@@ -344,7 +349,7 @@
     "vivacityRepairCenter": {
         "title": "Vivacity Repair Center",
         "repairTickets": "[data-testid='tabvr-1']",
-        "repairBoxes": "[data-testid='tabvr-2']" 
+        "repairBoxes": "[data-testid='tabvr-2']"
     },
     "repairTickets": {
         "title": "Repair Tickets",
@@ -553,7 +558,7 @@
         "refreshbtn": "[data-testid='CachedIcon']",
         "failuretype": "#failure_type",
         "technician": "#student_technician",
-        "edittechnician":"#internal_technician",
+        "edittechnician": "#internal_technician",
         "serialdevice": "#device",
         "building": "#building",
         "exportbtn": "Export",
@@ -695,8 +700,10 @@
         "title": "[name='title']",
         "description": "textarea[name='description']",
         "uconsideration": "[data-testid='tabres-1']",
-        "uconstruction": "[data-testid='tabres-2']",
-        "launched": "[data-testid='tabres-3']",
+        "uconstruction": "[data-testid='tabres-3']",
+        "launched": "[data-testid='tabres-4']",
+        "Roadmap": "Roadmap",
+        "schecdule": "[data-testid='tabres-2']",
         "submitrequest": "[data-testid='btnItemCreate']",
         "submitbtn": "[data-testid='btnNewDataSubmit']",
         "fieldName": "[name='fieldName']",
@@ -848,5 +855,12 @@
         "star": "[data-testid='StarBorderIcon']",
         "deletebtn": "[data-testid='DeleteOutlinedIcon']",
         "title": "Favorite"
+    },
+    "telemetryData": {
+        "dropdown": "#telemetry-data-selection",
+        "retrievebtn": "[type='button']",
+        "datasection": ".css-sgter1",
+        "deviceTable":".css-sgter1",
+        "graphData":".css-sgter1"
     }
 }

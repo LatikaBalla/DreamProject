@@ -82,7 +82,7 @@ export class MyFleetActions {
         // mf.viewElement().scrollIntoView().click({ force: true })
     }
     verifyViewResult() {
-        cy.get('h6.css-4an0mh').contains('General Device Information').should('be.visible', { force: true })
+        cy.contains('Fleet Device').should('be.visible', { force: true })
         // cy.contains(tdata.myFleet.serialno).should('be.visible',{ force: true })
     }
     verifyViewResult1() {

@@ -26,5 +26,10 @@ export default class ReportCenterElements {
             timeout: 30000,
         })
     }
+    telemetrydElement() {
+        return cy.get(locator.reportCenter.telemetryd, {
+            timeout: 30000,
+        })
+    }
 
 }

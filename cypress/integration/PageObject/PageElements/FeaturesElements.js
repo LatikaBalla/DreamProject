@@ -66,4 +66,14 @@ export default class FeaturesElements {
             timeout: 30000,
         })
     }
+    RoadmapElement() {
+        return cy.contains(locator.features.Roadmap, {
+            timeout: 30000,
+        })
+    }
+    schecduleElement() {
+        return cy.get(locator.features.schecdule, {
+            timeout: 30000,
+        })
+    }
 }

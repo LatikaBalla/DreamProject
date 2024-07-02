@@ -2,9 +2,6 @@ import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 import { LoginActions } from '../PageObject/PageActions/LoginActions'
 
 const log = new LoginActions()
-Cypress.on("uncaught:exception", () => {
-    return false;
-});
 Given('I should navigate to application', function () {
     cy.visit("/");
 })

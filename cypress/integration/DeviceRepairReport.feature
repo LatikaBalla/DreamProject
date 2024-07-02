@@ -34,6 +34,8 @@ Feature: DeviceRepairReport Page Functionality
         Then Enter the Search - Repair type in search box and Verify the Result
         Then Enter the Search - Repair status in search box and Verify the Result
         And Enter the Search - Repair Box in search box and Verify the Result
+        Then Enter the Search - Serial Number in search box and Verify the Result
+        And Enter the Search - Asset tag in search box and Verify the Result
         And Enter the Ticket Number in search box
         Then Verify the Ticket details in table
         And  Click on the Ticket Number

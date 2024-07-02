@@ -4,11 +4,13 @@ import { InHouseRepairReportActions } from '../PageObject/PageActions/InHouseRep
 import { DeviceRepairReportActions } from '../PageObject/PageActions/DeviceRepairReportActions'
 import { VivacityRepairReportActions } from '../PageObject/PageActions/VivacityRepairReportActions'
 import { NonWarrantyRepairsActions } from '../PageObject/PageActions/NonWarrantyRepairsActions.js'
+import { TelemetryDataActions } from '../PageObject/PageActions/TelemetryDataActions.js'
 const viva = new VivacityRepairReportActions()
 const dev = new DeviceRepairReportActions()
 const inh = new InHouseRepairReportActions()
 const repc = new ReportCenterActions()
-const nwr=new NonWarrantyRepairsActions()
+const nwr = new NonWarrantyRepairsActions()
+const td = new TelemetryDataActions()
 
 Cypress.on("uncaught:exception", () => {
     return false;
@@ -42,8 +44,11 @@ And('Verify the InHouseRepairReport tab should be visible', () => {
 Then('Verify the DeviceRepairReport tab should be visible', () => {
     repc.deviceRepairReportTabVisible()
 })
-And('Verify the NonwarrantyRepairs tab should be visible',()=>{
+And('Verify the NonwarrantyRepairs tab should be visible', () => {
     repc.nonwarrantyRepairsTabVisible()
+})
+And('Verify the TelemetryData tab should be visible', () => {
+    repc.telemetryDataTabVisible()
 })
 Then('Click on VivacityRepairReport page', () => {
     viva.clickOnVivacityRepairReport()
@@ -51,14 +56,14 @@ Then('Click on VivacityRepairReport page', () => {
 And('Verify all sections of VivacityRepairReport Page should be visible', () => {
     viva.AllSectionsVisible()
 })
-Then('Verify repair status graph should be visible', () => {
-    viva.repairStatusGraphVisible()
+Then('Verify Repair Tickets Failure Type graph should be visible', () => {
+    viva.cavasOfRepairTicketByStatusVisible()
 })
-Then('Verify warranty claim graph should be visible', () => {
+Then('Verify Manufacturers in Fleet graph should be visible', () => {
     viva.warrantyClaimGraphvisible()
 })
-And('Verify cavas of Repair ticket by status should be visible', () => {
-    viva.cavasOfRepairTicketByStatusVisible()
+And('Verify Repair ticket by status should be visible', () => {
+    viva.repairStatusGraphVisible()
 })
 Then('Click on InHouseRepairReport page', () => {
     inh.clickOnInHouseRepairReport()
@@ -82,115 +87,40 @@ Then('Verify the filters should be visible', () => {
 Then('Verify history table should be visible', () => {
     dev.tableVisible()
 })
-// And ('Enter the Search - Record Id in search box and Verify the Result',()=>{
-//     dev.searchRecordId()
-// })
-// Then ('Enter the Search - Repair type in search box and Verify the Result',()=>{
-//     dev.searchRepairType() 
-// })
-// Then ('Enter the Search - Repair status in search box and Verify the Result',()=>{
-//     //dev.searchRepairStatus() 
-// })
-// And ('Enter the Search - Repair Box in search box and Verify the Result',()=>{
-//     dev.searchRepairBox()
-// })
-// And('Enter the Ticket Number in search box', () => {
-//     dev.selectdropdownList()
-//     dev.enterTicketNumberSearch()
-// })
-// Then('Verify the Ticket details in table', () => {
-//     dev.verifyTicketDetailsTable()
-// })
-// And('Click on the Ticket Number', () => {
-//     dev.clickOnTicketNumberTable()
-// })
-// Then('Verify the Repair Ticket page will open', () => {
-//     dev.verifyRapairTicketPAge()
-// })
-// And('Verfiy the details of Ticket', () => {
-//     dev.verifyTicketDetails()
-// })
-// Then('Click on the download Ticket Estimation button', () => {
-//     dev.clickOnDownloadButton()
-// })
-// And('Verify downloaded ticket successfully', () => {
-//     dev.verifyDownloadSuccessful()
-// })
-// And('Click on clear button', () => {
-//     dev.clickOnClearButton()
-// })
-// Then('Verify the search box is cleared', () => {
-//     dev.searchBoxEmpty()
-// })
-And ('Click on NonwarrantyRepairs page',()=>{
-nwr.clickOnNonWarrantyRepairs()
+And('Click on NonwarrantyRepairs page', () => {
+    nwr.clickOnNonWarrantyRepairs()
 })
-Then ('Verify title of NonWarrantyRepairs Page should be visible',()=>{
-nwr.verifyTitle()
+Then('Verify title of NonWarrantyRepairs Page should be visible', () => {
+    nwr.verifyTitle()
 })
-And ('Verify the NonWarranty Form should be visible',()=>{
-nwr.formVisible()
+And('Verify the NonWarranty Form should be visible', () => {
+    nwr.formVisible()
 })
-Then ('Verify table and filter should be visible',()=>{
-nwr.filtersVisible()
-nwr.tableVisible()
+Then('Verify table and filter should be visible', () => {
+    nwr.filtersVisible()
+    nwr.tableVisible()
 })
-// Then('Click on More filters', () => {
-//     dev.clickOnMoreFilter()
+And('Click on TelemetryData page', () => {
+    td.clickOnTelemetryData()
+})
+And('Verify the Title of TelemetryData Page', () => {
+    cy.title().should('eq', 'Report Center')
+})
+Then('Verify the TelemetryData Tab should be visible', () => {
+    td.TelemetryDataSectionVisible()
+})
+And('Verify the Device information tab should be visible', () => {
+    td.deviceInfoSectionVisible()
+})
+And('Verify the Data graph should be visible', () => {
+    td.dataGraphVisible()
+})
+Then('Select the building from dropdownlist', () => {
+    viva.selectbuilding()
+})
+// And('Verify 3 graphas dislpayed based upon building', () => {
+//     repc.verifyGraphs()
 // })
-// And('Select Field name and Field operation and Enter the Search value', () => {
-//     dev.enterFieldName()
-//     dev.enterFieldOperation()
-//     dev.enterSearchValue()
-// })
-// Then('Click on Apply Button', () => {
-//     dev.clickOnApply()
-// })
-// And('Verify the Results in the table', () => {
-//     dev.verifyResultFilter()
-// })
-
-
-
-// Then ('Select failure Type, Return site and Serial Device',()=>{
-//     nwr.selectFailureType()
-//     nwr.selectSite()
-//     nwr.selectSerialDevice()
-// })
-// And ('Select Building and Chromebook issue',()=>{
-//     //iht.selectBilding()
-//   // nwr.selectRepaireIssue()
-// })
-// Then ('Enter the Describe Your Issue',()=>{
-//     nwr.enterChromebookIssue()
-// })
-// And ('Click on save button',()=>{
-//     nwr.clickOnSaveButton()
-// })
-// Then ('Verify New Ticket is added',()=>{
-//     nwr.verifyNewTicket()
-// })
-// And('Enter the Ticket Number in search box for warranty', () => {
-//     nwr.selectdropdownList()
-//     nwr.enterTicketNumberSearch()
-// })
-// Then('Verify the Ticket details in table for warranty', () => {
-  
-//     nwr.verifyTicketDetailsTable()
-// })
-// And('Click on the Ticket Number for warranty', () => {
-//     nwr.clickOnTicketNumberTable()
-// })
-// Then('Verify the Repair Ticket page will open for warranty', () => {
-//     nwr.verifyRapairTicketPAge()
-// })
-// And('Verfiy the details of Ticket for warranty', () => {
-//     nwr.verifyTicketDetails()
-// })
-// Then('Click on the download Ticket Estimation button for warranty', () => {
-//     nwr.clickOnDownloadButton()
-// })
-// And('Verify downloaded ticket successfully for warranty', () => {
-//     nwr.verifyDownloadSuccessful()
-// })
-
+Then('Click on clear filter', () => {
+    viva.clickonClearFilter()
+}) 

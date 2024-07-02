@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2554000000
+              "duration": 4569000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6550000000
+              "duration": 25807000000
             }
           },
           {
@@ -42,8 +42,9 @@
             "line": 9,
             "name": "close the terms of service window",
             "result": {
-              "status": "passed",
-              "duration": 9079000000
+              "status": "failed",
+              "duration": 38064000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiDialogActions-root > .MuiButtonBase-root`, but never found it.\n    at DashboardElements.termsElement (cypress/integration/PageObject/PageElements/DashboardElements.js:5:18)\n    at ImportSerialDevicesActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/ImportSerialDevicesActions.js:13:13)\n    at Context.eval (cypress/integration/ImportSerialDevices/ImportSerialDevices.spec.js:16:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -52,8 +53,7 @@
             "line": 10,
             "name": "Click on Manage Devices",
             "result": {
-              "status": "passed",
-              "duration": 90000000
+              "status": "skipped"
             }
           },
           {
@@ -62,8 +62,7 @@
             "line": 11,
             "name": "Click on ImportSerialDevices Tab",
             "result": {
-              "status": "passed",
-              "duration": 525000000
+              "status": "skipped"
             }
           },
           {
@@ -72,8 +71,7 @@
             "line": 14,
             "name": "Verify the Title of ImportSerialDevices Page",
             "result": {
-              "status": "passed",
-              "duration": 11000000
+              "status": "skipped"
             }
           },
           {
@@ -82,8 +80,7 @@
             "line": 15,
             "name": "Filters of ImportSerialDevices should be visible",
             "result": {
-              "status": "passed",
-              "duration": 6000000
+              "status": "skipped"
             }
           },
           {
@@ -92,8 +89,7 @@
             "line": 16,
             "name": "Table for ImportSerialDevices should be visible",
             "result": {
-              "status": "passed",
-              "duration": 6000000
+              "status": "skipped"
             }
           },
           {
@@ -102,8 +98,7 @@
             "line": 17,
             "name": "Click More filter select- Importer in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1184000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +107,7 @@
             "line": 18,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 67000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +116,7 @@
             "line": 19,
             "name": "Click More filter select- Quantity Devices in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 672000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +125,7 @@
             "line": 20,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 71000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +134,7 @@
             "line": 21,
             "name": "I should click on Add New Import",
             "result": {
-              "status": "passed",
-              "duration": 62000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +143,7 @@
             "line": 22,
             "name": "Upload the CSV import file",
             "result": {
-              "status": "passed",
-              "duration": 245000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +152,7 @@
             "line": 23,
             "name": "Click on submit button",
             "result": {
-              "status": "passed",
-              "duration": 84000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +161,7 @@
             "line": 24,
             "name": "Click on refresh button",
             "result": {
-              "status": "passed",
-              "duration": 61000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +170,7 @@
             "line": 25,
             "name": "Verify the record in table",
             "result": {
-              "status": "passed",
-              "duration": 2000000
+              "status": "skipped"
             }
           },
           {
@@ -192,8 +179,7 @@
             "line": 26,
             "name": "Click on Download import button",
             "result": {
-              "status": "passed",
-              "duration": 111000000
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +188,7 @@
             "line": 27,
             "name": "Click on Details button",
             "result": {
-              "status": "passed",
-              "duration": 85000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +197,7 @@
             "line": 28,
             "name": "Verify the Device Details",
             "result": {
-              "status": "passed",
-              "duration": 11000000
+              "status": "skipped"
             }
           }
         ]

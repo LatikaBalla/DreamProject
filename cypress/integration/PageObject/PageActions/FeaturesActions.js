@@ -23,6 +23,12 @@ export class FeaturesActions {
     launchedTabVisible() {
         ft.launchedElement().should('be.visible')
     }
+    roadmapVisible(){
+        ft.roadmapElement().should('be.visible')
+    }
+    scheduledVisible(){
+        ft.scheduledElement().should('be.visible')
+    }
     clickOnSubmitfeatureButton() {
         ft.submitrequestElement().click({ force: true })
     }
@@ -71,5 +77,6 @@ export class FeaturesActions {
         ft.applyElement().click({ force: true })
         cy.get('.css-6unjtn').eq(0).should('contain', tdata.features.createdby)
     }
+
 }
 export default FeaturesActions 

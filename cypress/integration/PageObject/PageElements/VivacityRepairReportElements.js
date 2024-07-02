@@ -22,17 +22,27 @@ export default class VivacityRepairReportElements {
         })
     }
     repairstatusElement() {
-        return cy.contains(locator.vivacityRepairReport.repairstatus, {
+        return cy.get(locator.vivacityRepairReport.repairstatus, {
             timeout: 30000,
         })
     }
     warrantyElement() {
-        return cy.contains(locator.vivacityRepairReport.warranty, {
+        return cy.get(locator.vivacityRepairReport.warranty, {
             timeout: 30000,
         })
     }
     canvasElement() {
         return cy.get(locator.vivacityRepairReport.canvas, {
+            timeout: 30000,
+        })
+    }
+    buildingdropElement() {
+        return cy.get(locator.vivacityRepairReport.buildingdrop, {
+            timeout: 30000,
+        })
+    }
+    clearFilterElement() {
+        return cy.contains(locator.vivacityRepairReport.clearFilter, {
             timeout: 30000,
         })
     }

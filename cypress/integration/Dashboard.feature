@@ -42,9 +42,9 @@ Feature: Dashboard Page Functionality
         Then Verify the account details added in table
         And Verify the record in searching history
         And Click on Edit Icon
-        Then I should edit title, full name
+        Then I should edit title
         And I should edit Phone and Cell Number and user role
-        Then I edit User Status to inactive
+        Then I edit User Status to inactive and select checkbox 
         Then Click on Submit button
         And Verify the Record has been updated Meassage
         And Click on Delete Icon

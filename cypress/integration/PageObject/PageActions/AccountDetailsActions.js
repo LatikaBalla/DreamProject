@@ -97,6 +97,9 @@ export class AccountDetailsActions {
         acc.editUserStatusElement().click({ force: true })
         cy.get(tdata.edit.userstatus).click()
     }
+    editCheckbox(){
+        cy.contains('product_updates').click()
+    }
     clickSubmitForUpdate() {
         acc.editSubmitbtnElement().eq(0).click({ force: true })
     }

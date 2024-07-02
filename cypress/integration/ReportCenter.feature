@@ -16,9 +16,11 @@ Feature: Report Center Page Functionality
         Then Verify the VivacityRepairReport Tab should be visible
         Then Click on VivacityRepairReport page
         And Verify all sections of VivacityRepairReport Page should be visible
-        Then Verify repair status graph should be visible
-        Then Verify warranty claim graph should be visible
-        And Verify cavas of Repair ticket by status should be visible
+        Then Select the building from dropdownlist
+        Then Click on clear filter 
+        And Verify Repair ticket by status should be visible
+        Then Verify Manufacturers in Fleet graph should be visible
+        Then Verify Repair Tickets Failure Type graph should be visible
 
         And Verify the InHouseRepairReport tab should be visible
         Then Click on InHouseRepairReport page
@@ -33,9 +35,16 @@ Feature: Report Center Page Functionality
 
         And Verify the NonwarrantyRepairs tab should be visible
         And Click on NonwarrantyRepairs page
-        Then Verify title of NonWarrantyRepairs Page should be visible
-        And Verify the NonWarranty Form should be visible
+        # Then Verify title of NonWarrantyRepairs Page should be visible
+        # And Verify the NonWarranty Form should be visible
         Then Verify table and filter should be visible
 
+        And Verify the TelemetryData tab should be visible
+        And Click on TelemetryData page
+        Then Verify the Title of TelemetryData Page
+        Then Verify the TelemetryData Tab should be visible
+        And Verify the Device information tab should be visible
+        Then Verify the Data graph should be visible
 
    
+

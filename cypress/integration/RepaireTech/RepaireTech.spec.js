@@ -60,7 +60,7 @@ When('I should Sign In into the application', () => {
     cy.RepaireTechLogin()
 })
 Then('Close the terms of service window', () => {
-    cy.wait(5000)
+    cy.wait(8000)
     cy.contains('demo_repairtech@vivacitytech.com').click({ force: true })
     dash.closeTermsOfServiceWindow()
 })
@@ -170,16 +170,16 @@ And('Verify the HowToVideos tab should be visible', () => {
 Then('Verify the WarrantyInfo tab should be visible', () => {
     res.warrantyInfoTabVisible()
 })
-
-
 And('Click on My profile page visible', () => {
     cy.get('[data-testid="ChevronRightIcon"]').click({ force: true })
     cy.wait(1000)
     cy.contains('demo_repairtech@vivacitytech.com').click({ force: true })
     mp.clickOnMyProfile()
 })
+
 And('Click on My profile page', () => {
     cy.contains('demo_repairtech@vivacitytech.com').click({ force: true })
+    cy.get('.css-1finol5').click({ force: true })
     mp.clickOnMyProfile()
 })
 Then('Verify the Title of My Profile Page', () => {
@@ -1112,7 +1112,7 @@ And('Verify the record in searching history of MyF', () => {
 Then('Click on view Button of MyF', () => {
     mf.clickOnViewButton()
 })
-And('Verify the Warranty Description of MyF', () => {
+And('Verify the General Device Information of MyF', () => {
     mf.verifyViewResult()
 })
 Then('Click on Export To CSV of MyF', () => {

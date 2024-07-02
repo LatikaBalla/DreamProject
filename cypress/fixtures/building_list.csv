@@ -1,6 +1,5 @@
 Building_name,phone,default_building,extension,shipping_address_1,shipping_address_2,shipping_city,shipping_zip,shipping_us_state,shipping_country,billing_address_1,billing_address_2,billing_city,billing_zip,billing_us_state,billing_country
-Demo Building1,1234567890,true/false,123,"2005 University Avenue , Saint Paul, MN, 55104","Saint Paul, MN, 55104",Greenville,29303,SC,Un,"2005 University Avenue , Saint Paul, MN, 55104","Saint Paul, MN, 55104",Greenville,29303,SC,Un
-Demo Building,1234567890,true/false,123,"2006 University Avenue , Saint Paul, MN, 55104","Saint Paul, MN, 55105",Greenville,29303,SC,Un,"2006 University Avenue , Saint Paul, MN, 55104","Saint Paul, MN, 55105",Greenville,29303,SC,Un
-Demo Building,1234567890,true/false,123,"2007 University Avenue , Saint Paul, MN, 55104","Saint Paul, MN, 55106",Greenville,29303,SC,Un,"2007 University Avenue , Saint Paul, MN, 55104","Saint Paul, MN, 55106",Greenville,29303,SC,Un
-Demo Building,1234567890,true/false,123,"2008 University Avenue , Saint Paul, MN, 55104","Saint Paul, MN, 55107",Greenville,29303,SC,Un,"2008 University Avenue , Saint Paul, MN, 55104","Saint Paul, MN, 55107",Greenville,29303,SC,Un
-Demo Building,1234567890,true/false,123,"2009 University Avenue , Saint Paul, MN, 55104","Saint Paul, MN, 55108",Greenville,29303,SC,Un,"2009 University Avenue , Saint Paul, MN, 55104","Saint Paul, MN, 55108",Greenville,29303,SC,Un
+Demo Building2,1234567890,TRUE,123,1900 Usa Parkway,,Sparks,89437,NV,US,1900 Usa Parkway,,Sparks,89437,NV,US
+Demo Building3,1234567890,FALSE,123,1900 Usa Parkway,,Sparks,89437,NV,US,1900 Usa Parkway,,Sparks,89437,NV,US
+Demo Building4,1234567890,FALSE,123,1900 Usa Parkway,,Sparks,89437,NV,US,1900 Usa Parkway,,Sparks,89437,NV,US
+Demo Building5,1234567890,FALSE,123,1900 Usa Parkway,,Sparks,89437,NV,US,1900 Usa Parkway,,Sparks,89437,NV,US

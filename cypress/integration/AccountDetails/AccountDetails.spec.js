@@ -6,6 +6,9 @@ Cypress.on("uncaught:exception", () => {
     return false;
 });
 Given('I should navigate to application', function () {
+    Cypress.on('uncaught:exception', (err, runnable) => {
+        return false
+    })
     cy.visit("/");
 })
 When('I should Sign In into the application', () => {

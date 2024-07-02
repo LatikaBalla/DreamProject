@@ -1,7 +1,7 @@
 import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 import { FavoriteActions } from '../PageObject/PageActions/FavoriteActions'
 
-const ft = new FavoriteActions()
+const fv = new FavoriteActions()
 Cypress.on("uncaught:exception", () => {
     return false;
 });
@@ -13,43 +13,43 @@ When('I should Sign In into the application', () => {
 })
 Then('Close the terms of service window', () => {
     cy.wait(9000)
-    ft.closeTermsOfServiceWindow()
+    fv.closeTermsOfServiceWindow()
 })
 And('Click on Favorite page', () => {
     cy.wait(1000)
     cy.contains('demo_adminsuper@vivacitytech.com').click({ force: true })
-    ft.clickOnFavorite()
+    fv.clickOnFavorite()
 })
 And('Verify the Title of Favorite Page', () => {
-    ft.verifyTitle()
+    fv.verifyTitle()
 })
 Then('Delete the Favorite item and verify no favorite items', () => {
-    ft.clickDeleteIcon()
-    ft.verifyFavoriteDeleted()
+    fv.clickDeleteIcon()
+    fv.verifyFavoriteDeleted()
 })
 Then('Click on the Star button of Account Dashboard', () => {
-    ft.clickOnStarAccDash()
+    fv.clickOnStarAccDash()
 })
 Then('Click on the Star button of Report Center', () => {
-    ft.clickOnStarReportCenter()
+    fv.clickOnStarReportCenter()
 })
 Then('Click on the Star button of Manage Devices', () => {
-    ft.clickOnStarManageDevices()
+    fv.clickOnStarManageDevices()
 })
 Then('Click on the Star button of Repair 360', () => {
-    ft.clickOnStarRepair360()
+    fv.clickOnStarRepair360()
 })
 Then('Click on the Star button of Resources', () => {
-    ft.clickOnStarResources()
+    fv.clickOnStarResources()
 })
 Then('Click on the Star button of Repair Ticket Details', () => {
-    ft.clickOnStarRepairTicketDetails()
+    fv.clickOnStarRepairTicketDetails()
 })
 Then('Click on the Star button of Dream Support', () => {
-    ft.clickOnStarSupport()
+    fv.clickOnStarSupport()
 })
 Then('Click on the Star button of Features', () => {
-    ft.clickonStarFeatures()
+    fv.clickonStarFeatures()
 })
 
 

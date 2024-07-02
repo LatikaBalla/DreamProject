@@ -34,8 +34,8 @@ export class InHouseWorkflowActions {
     }
     selectSerialDevice() {
         ihw.serialdeviceElement().click({ force: true })
-     //   cy.get('[role="listbox"]').find('li').contains(tdata.inHouseWorkflow.serialdevice).click({ force: true })
-        cy.get('#device-option-0').click()
+      // cy.get('[role="listbox"]').find('li').contains(tdata.inHouseWorkflow.serialdevice).click({ force: true })
+       cy.get('#device-option-1').click({force: true})
         // cy.get(tdata.inHouseWorkflow.serialdevice).click()
     }
     selectTechnician() {

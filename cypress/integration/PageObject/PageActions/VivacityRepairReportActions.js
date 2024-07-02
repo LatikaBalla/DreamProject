@@ -25,13 +25,21 @@ export class VivacityRepairReportActions {
         viva.section4Element().should('be.visible')
     }
     repairStatusGraphVisible() {
-        viva.repairstatusElement().should('be.visible')
+        viva.repairstatusElement().eq(2).scrollIntoView().should('be.visible')
     }
     warrantyClaimGraphvisible() {
-        viva.warrantyElement().should('be.visible')
+        viva.warrantyElement().eq(1).scrollIntoView().should('be.visible')
     }
     cavasOfRepairTicketByStatusVisible() {
-        viva.canvasElement().should('be.visible')
+        viva.canvasElement().eq(0).scrollIntoView().should('be.visible')
+    }
+    selectbuilding() {
+        viva.buildingdropElement().click({ force: true })    
+        cy.get('[data-value="2336"]').contains('Thompson High School').click({ force: true })
+        cy.get('[data-testid="CheckBoxOutlineBlankIcon"]').eq(1).click({ force: true })
+    }
+    clickonClearFilter() {
+        viva.clearFilterElement().click({ force: true })
     }
 }
 export default VivacityRepairReportActions 

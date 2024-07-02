@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1254000000
+              "duration": 2485000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 11228000000
+              "duration": 6770000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9171000000
+              "duration": 9146000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of dashborad Page",
             "result": {
               "status": "passed",
-              "duration": 479000000
+              "duration": 782000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the logo should be visible",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 6000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "My Account Detail tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 79000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Verify the Title of Account Details Page",
             "result": {
               "status": "passed",
-              "duration": 81000000
+              "duration": 88000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Table for account deatils should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 9000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Building tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 7000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on Buildings Tab",
             "result": {
               "status": "passed",
-              "duration": 60000000
+              "duration": 65000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Verify the Title of Buildings Page",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 18000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Filters of Buildings should be visible",
             "result": {
               "status": "passed",
-              "duration": 27000000
+              "duration": 32000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Table for Buildings should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 7000000
             }
           }
         ]
@@ -183,7 +183,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2322000000
+              "duration": 1993000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6127000000
+              "duration": 5472000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9159000000
+              "duration": 9155000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "I should be redirected to the dashboard page",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 77000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on Buildings Tab",
             "result": {
               "status": "passed",
-              "duration": 486000000
+              "duration": 521000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "I should click on + Add New button",
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 81000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "I should Enter Building Name,Phone and Extension",
             "result": {
               "status": "passed",
-              "duration": 946000000
+              "duration": 1035000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Select Default building",
             "result": {
               "status": "passed",
-              "duration": 123000000
+              "duration": 127000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Enter Billing Address and select from dropdown",
             "result": {
               "status": "passed",
-              "duration": 2825000000
+              "duration": 3006000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Click on checkbox Same as Shipping Address",
             "result": {
               "status": "passed",
-              "duration": 6091000000
+              "duration": 6086000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 96000000
             }
           },
           {
@@ -292,8 +292,8 @@
             "line": 34,
             "name": "Verify the builing details added in table",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<td.MuiTableCell-root.MuiTableCell-alignCenter.MuiTableCell-sizeMedium.css-42rti1>' to contain 'Building One'\n    at BuildingsActions.verifyNewBuilding (cypress/integration/PageObject/PageActions/BuildingsActions.js:71:30)\n    at Context.eval (cypress/integration/Dashboard/Dashboard.spec.js:89:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 10165000000
             }
           },
           {
@@ -302,7 +302,8 @@
             "line": 35,
             "name": "Click on My Account Details Tab",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 73000000
             }
           },
           {
@@ -311,7 +312,8 @@
             "line": 36,
             "name": "I should click on Add New button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1073000000
             }
           },
           {
@@ -320,7 +322,8 @@
             "line": 37,
             "name": "Verify the tilte of Add New Contact page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 15000000
             }
           },
           {
@@ -329,7 +332,8 @@
             "line": 38,
             "name": "Enter title, full name and valid Email",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1079000000
             }
           },
           {
@@ -338,7 +342,8 @@
             "line": 39,
             "name": "Enter Phone and Cell Number",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 584000000
             }
           },
           {
@@ -347,7 +352,8 @@
             "line": 40,
             "name": "Select User Role and Building from Dropdown List",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 288000000
             }
           },
           {
@@ -356,7 +362,8 @@
             "line": 41,
             "name": "Click on save button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 65000000
             }
           },
           {
@@ -365,7 +372,8 @@
             "line": 42,
             "name": "Verify the account details added in table",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3022000000
             }
           },
           {
@@ -374,7 +382,8 @@
             "line": 43,
             "name": "Verify the record in searching history",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 80000000
             }
           },
           {
@@ -383,16 +392,17 @@
             "line": 44,
             "name": "Click on Edit Icon",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2889000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 45,
-            "name": "I should edit title, full name",
+            "name": "I should edit title",
             "result": {
-              "status": "skipped"
+              "status": "undefined"
             }
           },
           {
@@ -408,7 +418,7 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 47,
-            "name": "I edit User Status to inactive",
+            "name": "I edit User Status to inactive and select checkbox",
             "result": {
               "status": "skipped"
             }

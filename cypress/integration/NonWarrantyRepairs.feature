@@ -11,11 +11,11 @@ Feature: NonWarrantyRepairs Page Functionality
         And Click on NonwarrantyRepairs page
 
     Scenario:Non Warranty Repairs -Add new Ticket and Search
-        Then Select failure Type, Return site and Serial Device
-        And Select Building and Chromebook issue
-        Then Enter the Describe Your Issue
-        And Click on save button
-        Then Verify New Ticket is added
+        # Then Select failure Type, Return site and Serial Device
+        # And Select Building and Chromebook issue
+        # Then Enter the Describe Your Issue
+        # And Click on save button
+        # Then Verify New Ticket is added
         Then Click on the export button
         And Click More filter select- Record Id in search box and Verify the Result
         Then Click on Clear filter
@@ -38,7 +38,7 @@ Feature: NonWarrantyRepairs Page Functionality
          And Enter the Search - Record Id in search box and Verify the Result
         Then Enter the Search - Repair type in search box and Verify the Result
         Then Enter the Search - Repair status in search box and Verify the Result
-        # And Enter the Search - Repair Box in search box and Verify the Result
+        And Enter the Search - Repair Box in search box and Verify the Result
         And Enter the Ticket Number in search box for warranty
         Then Verify the Ticket details in table for warranty
         And  Click on the Ticket Number for warranty

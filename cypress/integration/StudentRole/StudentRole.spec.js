@@ -15,8 +15,15 @@ import { RepairBoxesActions } from '../PageObject/PageActions/RepairBoxesActions
 import { AccountDetailsActions } from '../PageObject/PageActions/AccountDetailsActions'
 import { BuildingsActions } from '../PageObject/PageActions/BuildingsActions'
 import { DeviceRepairReportActions } from '../PageObject/PageActions/DeviceRepairReportActions.js'
+import { FavoriteActions } from '../PageObject/PageActions/FavoriteActions'
+import { SrcStudentsActions } from '../PageObject/PageActions/SrcStudentsActions'
+import { SrcFacilitatorsActions } from '../PageObject/PageActions/SrcFacilitatorsActions'
+import { StudentRepairCenterActions } from '../PageObject/PageActions/StudentRepairCenterActions.js'
 
-
+const srepc = new StudentRepairCenterActions()
+const sf = new SrcFacilitatorsActions()
+const ss = new SrcStudentsActions()
+const fv = new FavoriteActions()
 const dev = new DeviceRepairReportActions()
 const build = new BuildingsActions()
 const acc = new AccountDetailsActions()
@@ -151,11 +158,17 @@ And('Verify the HowToVideos tab should be visible', () => {
 Then ('Verify the WarrantyInfo tab should be visible',()=>{
     res.warrantyInfoTabVisible()
 })
-
-
+And('Click on My profile page visible', () => {
+    // cy.get('[data-testid="ChevronRightIcon"]').click({ force: true })
+    // cy.wait(1000)
+    cy.contains('demo_studentnormal@vivacitytech.com').click({ force: true })
+    cy.get('[data-testid="KeyboardArrowDownIcon"]').click({ force: true })
+    mp.clickOnMyProfile()
+})
 And('Click on My profile page', () => {
     cy.wait(1000)
     cy.contains('demo_studentnormal@vivacitytech.com').click({force:true})
+    cy.get('[data-testid="KeyboardArrowDownIcon"]').click({ force: true })
     mp.clickOnMyProfile()
 })
 Then('Verify the Title of My Profile Page', () => {
@@ -571,3 +584,208 @@ Then('Click on Clear filter of drr', () => {
     dev.clickOnClearFilter()
 })
 
+And('Click on Favorite page', () => {
+    cy.wait(1000)
+    cy.contains('demo_studentnormal@vivacitytech.com').click({ force: true })
+    cy.get('[data-testid="KeyboardArrowDownIcon"]').click({ force: true })
+    fv.clickOnFavorite()
+})
+And('Verify the Title of Favorite Page', () => {
+    fv.verifyTitle()
+})
+Then('Click on the Star button of Repair 360', () => {
+    fv.clickOnStarRepair360()
+})
+Then('Click on the Star button of Resources', () => {
+    fv.clickOnStarResources()
+})
+Then('Delete the Favorite item and verify no favorite items', () => {
+    fv.clickDeleteIcon()
+    fv.verifyFavoriteDeleted()
+})
+Then('I should click on Add New student of srcs', () => {
+    ss.clickOnCreateNewStudent()
+})
+Then('Enter title, full name and Email of srcs', () => {
+    ss.enterTitle()
+    ss.enterFullname()
+    ss.enterEmail()
+})
+And('Enter Phone and Cell Number of srcs', () => {
+    ss.enterPhone()
+    ss.enterCellNumber()
+})
+Then('Select User Status of srcs', () => {
+    ss.selectUserStatus()
+    // ss.selectVivaNews()
+    // ss.selectProductUpdate()
+})
+Then('Select Vivacity weekly and Beta tester of srcs', () => {
+    ss.selectViivaWeekly()
+    ss.selectBetaTester()
+})
+Then('Select User notification and in house repair of srcs', () => {
+    ss.selectUserNotification()
+    ss.selectInHouseRepair()
+})
+And('Click on submit button of srcs', () => {
+    ss.clickOnASubmitButton()
+})
+Then('Verify the student added in table of srcs', () => {
+    ss.verifyRecordTable()
+})
+
+Then('Click on SrcStudents tab', () => {
+    ss.clickOnSrcStudentsTab()
+})
+And('Enter the Search - Full name in search box and Verify the Result of srcs', () => {
+    ss.searchFullName()
+})
+Then('Enter the Search - Email in search box and Verify the Result of srcs', () => {
+    ss.searchEmail()
+})
+And('Enter the Search - Status in search box and Verify the Result of srcs', () => {
+    ss.searchStatus()
+})
+Then('Enter the Search - Phone in search box and Verify the Result of srcs', () => {
+    ss.searchPhone()
+})
+Then('Click on Clear filter of srcs', () => {
+    ss.clickOnClearFilter()
+})
+And('Click More filter select- Full name in search box and Verify the Result of srcs', () => {
+    ss.clickOnMoreFilter()
+    ss.selectFilterFullName()
+})
+And('Click More filter select- Phone in search box and Verify the Result of srcs', () => {
+    ss.clickOnMoreFilter()
+    ss.selectFilterPhone()
+})
+And('Click More filter select- Title in search box and Verify the Result of srcs', () => {
+    ss.clickOnMoreFilter()
+    ss.selectFilterTitle()
+})
+And('Click More filter select- Eamil in search box and Verify the Result of srcs', () => {
+    ss.clickOnMoreFilter()
+    ss.selectFilterEmail()
+})
+And('Click More filter select- User status in search box and Verify the Result of srcs', () => {
+    ss.clickOnMoreFilter()
+    ss.selectFilterUserStatus()
+})
+
+//srcRepairTicket
+Then('Click on SrcRepairTickets tab', () => {
+    srt.clickOnSrcRepairTicketsTab()
+})
+Then('I should click on Create Student Repair Ticket button of srcRt', () => {
+    srt.clickOnCreateTicketButton()
+})
+And('Select failure Type, Serial Device, Technician and building of srcRt', () => {
+    srt.selectFailureType()
+    srt.selectTechnician()
+    srt.selectSerialDevice()
+    srt.selectIssue()
+    srt.selectBuilding()
+})
+Then('Enter the Chromebook issue of srcRt', () => {
+    srt.enterChromebookIssue()
+})
+And('Click on save button of srcRt', () => {
+    srt.clickOnSaveButton()
+})
+Then('Verify New Ticket is added of srcRt', () => {
+    srt.verifyNewTicket()
+})
+And('Enter the Search - Record Id in search box and Verify the Result of srcRt', () => {
+    srt.searchRecordId()
+})
+Then('Enter the Search - Ticket Number in search box and Verify the Result of srcRt', () => {
+    srt.searchTicketNumber()
+})
+And('Enter the Search - Repair type in search box and Verify the Result of srcRt', () => {
+    srt.searchRepairType()
+})
+Then('Enter the Search - Repair status in search box and Verify the Result of srcRt', () => {
+    srt.searchRepairStatus()
+})
+Then('Click on Clear filter of srcRt', () => {
+    srt.clickOnClearFilter()
+})
+And('Click More filter select- Record Id in search box and Verify the Result of srcRt', () => {
+    srt.clickOnMoreFilter()
+    srt.selectFilterRecordId()
+})
+And('Click More filter select- Ticket Number in search box and Verify the Result of srcRt', () => {
+    srt.clickOnMoreFilter()
+    srt.selectFilterTicketNumber()
+})
+And('Click More filter select- Repair type in search box and Verify the Result of srcRt', () => {
+    srt.clickOnMoreFilter()
+    srt.selectFilterRepairType()
+})
+And('Click More filter select- Serial Number in search box and Verify the Result of srcRt', () => {
+    srt.clickOnMoreFilter()
+    srt.selectFilterSerialNumber()
+})
+And('Click More filter select- Repair status in search box and Verify the Result of srcRt', () => {
+    srt.clickOnMoreFilter()
+    srt.selectFilterRepairStatus()
+})
+And('Click More filter select- Repair device in search box and Verify the Result of srcRt', () => {
+    srt.clickOnMoreFilter()
+    srt.selectFilterRepairDevice()
+})
+And('Click More filter select- Asset tag in search box and Verify the Result of srcRt', () => {
+    srt.clickOnMoreFilter()
+    srt.selectFilterAssetTag()
+})
+And('Click More filter select- internal Technician in search box and Verify the Result of srcRt', () => {
+    srt.clickOnMoreFilter()
+    srt.selectFilterStudentTechnician()
+})
+And('Click More filter select- Created By in search box and Verify the Result of srcRt', () => {
+    srt.clickOnMoreFilter()
+    srt.selectFilterCreatedBy()
+})
+
+
+//srcFaci
+Then('Click on SrcFacilitators tab', () => {
+    sf.clickOnSrcFacilitatorsTab()
+})
+And('Enter the Search - Full name in search box and Verify the Result of srcF', () => {
+    sf.searchFullName()
+})
+Then('Enter the Search - Email in search box and Verify the Result of srcF', () => {
+    sf.searchEmail()
+})
+And('Enter the Search - Status in search box and Verify the Result of srcF', () => {
+    sf.searchStatus()
+})
+Then('Enter the Search - Phone in search box and Verify the Result of srcF', () => {
+    sf.searchPhone()
+})
+Then('Click on Clear filter of srcF', () => {
+    sf.clickOnClearFilter()
+})
+And('Click More filter select- Full name in search box and Verify the Result of srcF', () => {
+    sf.clickOnMoreFilter()
+    sf.selectFilterFullname()
+})
+And('Click More filter select- Phone in search box and Verify the Result of srcF', () => {
+    sf.clickOnMoreFilter()
+    sf.selectFilterPhone()
+})
+And('Click More filter select- Title in search box and Verify the Result of srcF', () => {
+    sf.clickOnMoreFilter()
+    sf.selectFilterTitle()
+})
+And('Click More filter select- Eamil in search box and Verify the Result of srcF', () => {
+    sf.clickOnMoreFilter()
+    sf.selectFilterEmail()
+})
+And('Click More filter select- User status in search box and Verify the Result of srcF', () => {
+    sf.clickOnMoreFilter()
+    sf.selectFilterUserStatus()
+})

@@ -87,7 +87,7 @@ Then('Enter the Search - Repair type in search box and Verify the Result', () =>
     dev.searchRepairType()
 })
 Then('Enter the Search - Repair status in search box and Verify the Result', () => {
-    //dev.searchRepairStatus() 
+    dev.searchRepairStatus() 
 })
 And('Enter the Search - Repair Box in search box and Verify the Result', () => {
     dev.searchRepairBox()
@@ -175,5 +175,12 @@ And('Click More filter select- Created By in search box and Verify the Result', 
     dev.clickOnMoreFilter()
     dev.selectFilterCreatedBy()
 })
+Then ('Enter the Search - Serial Number in search box and Verify the Result', () => {
+    dev.searchSerialNo()
+})
+And ('Enter the Search - Asset tag in search box and Verify the Result', () => {
+    dev.searchAssetTag()
+})
+
 
 

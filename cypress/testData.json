@@ -3,8 +3,8 @@
     "title": "Miss",
     "fullname": "Account_Test1",
     "email": "@gmail.com",
-    "phone": "1231231231",
-    "cellnumber": "1231231231",
+    "phone": "8648319499",
+    "cellnumber": "8648319499",
     "userrole": "[data-value='9']",
     "addmsg": "Contact form submitted successfully",
     "userstatus": "Inactive",
@@ -20,7 +20,7 @@
     "email": "@gmail.com",
     "phone": "24234234",
     "cellnumber": "32387423",
-    "userrole": "[data-value='10']",
+    "userrole": "[data-value='2']",
     "userstatus": "[data-value='Inactive']",
     "updatemsg": "User has been updated"
   },
@@ -61,17 +61,19 @@
     "active": "yes"
   },
   "deviceRepairReport": {
-    "ticketno": "V0047623",
+    "ticketno": "V0067030",
     "filename": "V0019915.pdf",
     "repairtype": "Vivacity",
-    "repairstatus": "Pending Repair Box",
+    "repairstatus": "In Transit",
     "repairbox": "5423",
     "recordid": "47623",
-    "recordid1": "47623",
-    "ticketnumber": "V0047623",
+    "recordid1": "67030",
+    "ticketnumber": "V0067030",
     "serialnumber": "VIVATEST47Test",
     "repairdevice": "Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
-    "createdby": "demo_adminvivacity@vivacitytech.com"
+    "createdby": "demo_adminvivacity@vivacitytech.com",
+    "assetTag": "Corey1234",
+    "serialNo": "SerialTest1238787"
   },
   "nonwarrantyRepairs": {
     "failuretype": "[data-value='Accidental']",
@@ -82,7 +84,7 @@
     "ticketno": "V0042823",
     "repairtype": "In House",
     "repairstatus": "Pending Repair Box",
-    "repairbox": "247 ",
+    "repairbox": "105",
     "recordid": "42823",
     "serialnumber": "VIVATEST47Test",
     "repairdevice": "Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
@@ -90,9 +92,9 @@
   },
   "myFleet": {
     "filename": "fleet_devices.csv",
-    "serialno": "VIVATEST12Test",
+    "serialno": "VIVATEST138Test",
     "serialno1": "98765vhTest",
-    "search": "VIVATEST12Test",
+    "search": "VIVATEST138Test",
     "search1": "98765vhTest",
     "serialNo": "1111",
     "deviceid": "#device-option-38",
@@ -149,7 +151,7 @@
     "ticketnumber": "V0058206",
     "repairtype": "Vivacity",
     "serialnumber": "VIVATEST12Test",
-    "repairstatus": "In Transit",
+    "repairstatus": "Box Created",
     "repairbox": "8156",
     "assettag": "5678",
     "recordid": "58206",
@@ -173,14 +175,14 @@
   },
   "inHouseWorkflow": {
     "failuretype": "[data-value='Accidental']",
-    "serialdevice": "VIVATEST63Test :  : Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch",
+    "serialdevice": "1CD1000006Test : 12399 : Vivacity Tech Demo Chromebook - Intel/4GB/16GB - Non-Touch",
     "chromebookissue": "There is something fault",
     "technician": "Demo Test",
     "createTicketmsg": "Add new ticket form submitted",
     "filename": "InHouseRepairTickets.csv",
     "repairissue": "[data-value='RAM issue']",
-    "ticketno": "V0061163",
-    "recordid": "61163",
+    "ticketno": "V0063991",
+    "recordid": "63991",
     "repairstatusEdit": "[data-value='In Transit']"
   },
   "inHouseTicket": {
@@ -191,9 +193,9 @@
     "createTicketmsg": "Add new ticket form submitted",
     "filename": "InHouseRepairTickets.csv",
     "repairissue": "[data-value='RAM issue']",
-    "ticketnumber": "V0061160",
+    "ticketnumber": "V0064201",
     "repairtype": "In House",
-    "recordid": "61160",
+    "recordid": "64201",
     "repairstatus": "In Transit",
     "serialnumber": "VIVATEST90Test",
     "repairdevice": "Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
@@ -241,7 +243,7 @@
     "usernotification": "[data-value='true']",
     "inhouserepair": "[data-value='true']",
     "createStudentmsg": "Student created",
-    "fullName": "Lisa Burton",
+    "fullName": "Nancy Stewart",
     "emaildrop": "davidtaylor@example.net",
     "status": "Active",
     "phoneNo1": "81405463",
@@ -364,7 +366,7 @@
     "emaildrop": "[data-value='email']"
   },
   "loanerManagement": {
-    "serialno": "1CD1000008Test",
+    "serialno": "VIVATEST138Test",
     "studentname": "Demo User",
     "title": "Mr",
     "fullname": "Demo Student",
@@ -382,5 +384,11 @@
     "errormsg": "Wrong email or password.",
     "forgotpassmsg": "Password recovery email sent successfully",
     "lockerrormsg": "Your account has been blocked after multiple consecutive login attempts. We've sent you an email with instructions on how to unblock it."
+  },
+  "telemetryData": {
+    "BatteryHealth": "Battery Health",
+    "BatteryCharge": "Battery Charge Capacity",
+    "OSLastUpdate": "OS Last Update",
+    "OSNewPlatform": "OS Versions"
   }
 }

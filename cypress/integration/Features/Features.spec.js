@@ -32,7 +32,7 @@ Then('Verify the Under Consideration Tab should be visible', () => {
 And('Verify the Under Construction tab should be visible', () => {
     ft.underConstructionTabVisible()
 })
-And('Verify the Launched tab should be visible', () => {
+Then('Verify the Launched tab should be visible', () => {
     ft.launchedTabVisible()
 })
 And('Click More filter select- Title in search box and Verify the Result', () => {
@@ -51,5 +51,10 @@ Then('Click on Clear filter', () => {
     ft.clickOnClearFilter()
 })
 
-
+Then ('Verify the Roadmap tab should be visible', () => {
+ft.roadmapVisible()
+})
+And ('Verify the Scheduled tab should be visible', () => {
+ft.scheduledVisible()
+})
 
