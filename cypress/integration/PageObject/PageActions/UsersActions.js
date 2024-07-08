@@ -147,7 +147,7 @@ export class UsersActions {
         user.searchboxElement().eq(0).click({ force: true })
         user.recordidElement().click({ force: true })
         user.searchElement().clear({ force: true }).type(tdata.users.recordid + '{enter}', { force: true })
-        cy.wait(3000)
+       // cy.wait(3000)
         cy.get('tr td').eq(1).should('contain', tdata.users.recordid)
     }
     searchFullName() {

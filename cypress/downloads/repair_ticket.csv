@@ -1,4 +1,6 @@
 record_id,ticket_number,repair_type,serial_number,repair_device,asset_tag,repair_status,student_technician,created_by,last_modified_date
+67189,V0067189,Student,VIVATEST34Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Intake,Demo Student,demo_adminsuper@vivacitytech.com,2024-07-08T11:28:09.000Z
+67183,V0067183,Student,VIVATEST80Test,VT Chromebook,,Intake,Demo Student,demo_adminsuper@vivacitytech.com,2024-07-07T16:46:01.000Z
 67182,V0067182,Student,VIVATEST46Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Intake,Demo Student,demo_adminsuper@vivacitytech.com,2024-07-07T15:50:51.000Z
 67181,V0067181,Student,1100901Test,VT Chromebook,12333,Intake,Demo Student,demo_adminsuper@vivacitytech.com,2024-07-07T11:29:34.000Z
 67180,V0067180,Student,VIVATEST86Test,VT Chromebook,Asset,Intake,Demo Student,demo_adminsuper@vivacitytech.com,2024-07-07T11:27:30.000Z
@@ -14,7 +16,7 @@ record_id,ticket_number,repair_type,serial_number,repair_device,asset_tag,repair
 65290,V0065290,Student,VIVATEST51Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Waiting on Repair Approval,Corey Molloy,Maleja Duque,2024-06-14T17:06:36.220Z
 56229,V0056229,Student,VIVATEST10Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Waiting on Repair Approval,madhuriravilla,Maleja Duque,2024-04-11T19:55:26.000Z
 55523,V0055523,Student,VIVATEST91Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,Carlos Moore,Maleja Duque,2024-04-12T14:48:25.975Z
-51249,V0051249,Student,VIVATEST91Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Waiting on Repair Approval,,,2024-07-07T15:51:33.352Z
+51249,V0051249,Student,VIVATEST91Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Waiting on Repair Approval,,,2024-07-08T11:28:43.849Z
 51248,V0051248,Student,VIVATEST119Test,VT Chromebook,"""0HOpc*q<x",Intake,,,2024-03-13T18:25:51.000Z
 51233,V0051233,Student,VIVATEST44Test,VT Chromebook,,Intake,,,2024-03-13T15:11:40.000Z
 48870,V0048870,Student,VIVATEST91Test,Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch,,Closed,,Conan Malady,2024-03-11T16:45:11.508Z

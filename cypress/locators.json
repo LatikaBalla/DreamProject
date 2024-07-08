@@ -71,13 +71,13 @@
     },
     "edit": {
         "title": "#title",
-        "fullname": "#name",
+        "fullname": "#full_name",
         "email": "#email",
         "phone": "#phone",
-        "cellnumber": "#cellphone",
-        "userrole": "#mui-component-select-name",
-        "userstatus": "#mui-component-select-role",
-        "editsubmit": "[data-testid='btnNewDataSubmit']"
+        "cellnumber": "#cell_number",
+        "userrole": "#mui-component-select-user_role",
+        "userstatus": "#mui-component-select-user_status",
+        "editsubmit": "button[type='button']"
     },
     "buildings": {
         "title": "Building",

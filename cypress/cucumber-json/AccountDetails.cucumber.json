@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3305000000
+              "duration": 10904000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 12171000000
+              "duration": 10484000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9161000000
+              "duration": 9172000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Account Details -Aaccount Name and no should be visible",
             "result": {
               "status": "passed",
-              "duration": 2545000000
+              "duration": 2839000000
             }
           },
           {
@@ -62,8 +62,9 @@
             "line": 13,
             "name": "Account Manager,Billing Address and Shipping Address should be visible",
             "result": {
-              "status": "passed",
-              "duration": 33000000
+              "status": "failed",
+              "duration": 30027000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find content: 'Billing Address' but never did.\n    at AccountDetailsActions.sectionManaddressVisible (cypress/integration/PageObject/PageActions/AccountDetailsActions.js:248:36)\n    at Context.eval (cypress/integration/AccountDetails/AccountDetails.spec.js:150:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -72,8 +73,7 @@
             "line": 14,
             "name": "Click More filter select- Record Id in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 3311000000
+              "status": "skipped"
             }
           },
           {
@@ -82,8 +82,7 @@
             "line": 15,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 366000000
+              "status": "skipped"
             }
           },
           {
@@ -92,8 +91,7 @@
             "line": 16,
             "name": "Click More filter select- Full name in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1259000000
+              "status": "skipped"
             }
           },
           {
@@ -102,8 +100,7 @@
             "line": 17,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 70000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +109,7 @@
             "line": 18,
             "name": "Click More filter select- Title in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1576000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +118,7 @@
             "line": 19,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 452000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +127,7 @@
             "line": 20,
             "name": "Click More filter select- Eamil in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 3096000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +136,7 @@
             "line": 21,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 276000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +145,7 @@
             "line": 22,
             "name": "Click More filter select- User Role in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 3422000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +154,7 @@
             "line": 23,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 344000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +163,7 @@
             "line": 24,
             "name": "Click More filter select- Phone in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2105000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +172,7 @@
             "line": 25,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 69000000
+              "status": "skipped"
             }
           },
           {
@@ -192,8 +181,7 @@
             "line": 26,
             "name": "Click More filter select- User Status in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 3864000000
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +190,7 @@
             "line": 27,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 70000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +199,7 @@
             "line": 28,
             "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1081000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +208,7 @@
             "line": 29,
             "name": "Enter the Search - Full name in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 624000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +217,7 @@
             "line": 30,
             "name": "Enter the Search - Email in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 815000000
+              "status": "skipped"
             }
           },
           {
@@ -242,8 +226,7 @@
             "line": 31,
             "name": "Enter the Search - Title in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 913000000
+              "status": "skipped"
             }
           },
           {
@@ -252,8 +235,7 @@
             "line": 32,
             "name": "Enter the Search - Phone in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1032000000
+              "status": "skipped"
             }
           },
           {
@@ -262,8 +244,7 @@
             "line": 33,
             "name": "Click on Export To CSV",
             "result": {
-              "status": "passed",
-              "duration": 81000000
+              "status": "skipped"
             }
           }
         ]

@@ -140,7 +140,9 @@ export class MyFleetActions {
     }
     clickonGoogleIcon() {
         //cy.get('.MuiButtonBase-root > img').eq(0).click({ force: true })
-        cy.get('.MuiTableRow-root > :nth-child(1) > div > .MuiButtonBase-root').dblclick({ force: true })
+        //mf.deviceIconElement().eq(1).click({ force: true })
+        cy.get('[src="/static/media/G.62bb109f219295189cc1.png"]').eq(0).dblclick({ force: true })
+      
     }
     verifyGoogleGolocation() {
         cy.contains('Google Data').should('be.visible')

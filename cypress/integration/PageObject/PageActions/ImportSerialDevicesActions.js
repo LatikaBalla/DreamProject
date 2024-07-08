@@ -25,7 +25,7 @@ export class ImportSerialDevicesActions {
         isd.filtersElement().should('be.visible')
     }
     tableVisible() {
-        isd.tableElement().should('be.visible')
+        isd.tableElement().scrollIntoView().should('be.visible')
     }
     clickOnAddNewImport() {
         cy.get(':nth-child(2) > .MuiBox-root > .MuiGrid-container > .MuiGrid-root > :nth-child(2)').click({ force: true })

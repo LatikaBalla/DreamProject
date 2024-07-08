@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2022000000
+              "duration": 2609000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6043000000
+              "duration": 10881000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8077000000
+              "duration": 8074000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on features page",
             "result": {
               "status": "passed",
-              "duration": 1147000000
+              "duration": 1137000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I should be redirected to the Features page",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 6000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of Features Page",
             "result": {
               "status": "passed",
-              "duration": 951000000
+              "duration": 398000000
             }
           },
           {
@@ -83,14 +83,14 @@
             "name": "Verify the Under Consideration Tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 10000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 16,
-            "name": "Verify the Under Construction tab should be visible",
+            "name": "Verify the Scheduled tab should be visible",
             "result": {
               "status": "passed",
               "duration": 7000000
@@ -103,45 +103,27 @@
             "name": "Verify the Launched tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 7000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 18,
-            "name": "Click More filter select- Title in search box and Verify the Result",
+            "name": "Verify the Under Construction tab should be visible",
             "result": {
-              "status": "failed",
-              "duration": 4636000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.css-6unjtn`, but never found it.\n    at FeaturesActions.selectFilterTitle (cypress/integration/PageObject/PageActions/FeaturesActions.js:56:11)\n    at Context.eval (cypress/integration/Features/Features.spec.js:40:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 9000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 19,
-            "name": "Click on Clear filter",
+            "name": "Verify the Roadmap tab should be visible",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "Click More filter select- Creator in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 14000000
             }
           }
         ]

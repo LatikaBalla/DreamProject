@@ -14,7 +14,7 @@ export class MyProfileActions {
         dash.myprofileElement().click({ force: true })
     }
     accountDetailsVisible() {
-        mp.accountdetailsElement().should('be.visible')
+        mp.accountdetailsElement().scrollIntoView().should('be.visible')
     }
     profileDetailsVisible() {
         mp.profiledetailsElement().should('be.visible')

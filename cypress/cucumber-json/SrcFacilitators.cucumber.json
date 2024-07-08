@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2565000000
+              "duration": 1733000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5404000000
+              "duration": 7072000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9080000000
+              "duration": 9081000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 83000000
+              "duration": 73000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on StudentRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 1373000000
+              "duration": 712000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click on SrcFacilitators tab",
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 62000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Filters of SrcFacilitators should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 7000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Table for SrcFacilitators should be visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 6000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on Download Export button",
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 72000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click More filter select- Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 846000000
+              "duration": 882000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 88000000
+              "duration": 85000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click More filter select- Title in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 719000000
+              "duration": 693000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 91000000
+              "duration": 89000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click More filter select- Eamil in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1197000000
+              "duration": 1215000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 77000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click More filter select- User status in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 763000000
+              "duration": 796000000
             }
           },
           {
@@ -199,31 +199,11 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 29,
-            "name": "Click More filter select- Last Modified Date in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1046000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 30,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 70000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 31,
             "name": "Enter the Search - Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 803000000
+              "duration": 790000000
             }
           },
           {
@@ -233,7 +213,7 @@
             "name": "Enter the Search - Email in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 801000000
+              "duration": 798000000
             }
           },
           {
@@ -243,7 +223,7 @@
             "name": "Enter the Search - Status in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1891000000
+              "duration": 1728000000
             }
           },
           {
@@ -253,7 +233,7 @@
             "name": "Enter the Search - Phone in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 759000000
+              "duration": 697000000
             }
           }
         ]

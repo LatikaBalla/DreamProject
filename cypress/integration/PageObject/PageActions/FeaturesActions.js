@@ -27,7 +27,7 @@ export class FeaturesActions {
         ft.roadmapElement().should('be.visible')
     }
     scheduledVisible(){
-        ft.scheduledElement().should('be.visible')
+        ft.schecduleElement().should('be.visible')
     }
     clickOnSubmitfeatureButton() {
         ft.submitrequestElement().click({ force: true })

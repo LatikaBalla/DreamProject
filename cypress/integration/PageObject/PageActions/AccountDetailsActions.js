@@ -98,10 +98,11 @@ export class AccountDetailsActions {
         cy.get(tdata.edit.userstatus).click()
     }
     editCheckbox(){
-        cy.contains('product_updates').click()
+        cy.get('[name="product_updates"]').check({ force: true })
+       // cy.contains('product_updates').click()
     }
     clickSubmitForUpdate() {
-        acc.editSubmitbtnElement().eq(0).click({ force: true })
+        acc.editSubmitbtnElement().contains('Save').click({ force: true })
     }
     verfifyDataUpdatedMessage() {
         cy.contains(tdata.edit.updatemsg).should('be.visible')

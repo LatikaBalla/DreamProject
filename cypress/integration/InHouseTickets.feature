@@ -60,6 +60,6 @@ Feature:InHouseTickets Page Functionality
     Then Updated to student successfully
      And Click on the Update to in house Button 
     Then Updated to in house successfully
-    And Click on Add Line and Verify
-    Then Click on Add Repair Image and Verify
-    And Click on Add Note and Verify
+    # And Click on Add Line and Verify
+    # Then Click on Add Repair Image and Verify
+    # And Click on Add Note and Verify

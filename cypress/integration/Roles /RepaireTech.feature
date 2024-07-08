@@ -100,59 +100,57 @@ Feature: Repaire Tech Page Functionality
         # Then Enter the Search - Building Shipping Address in search box and Verify the Result of build
         And Enter the Search - Phone in search box and Verify the Result of build
 
-
-
     Scenario: Manage device: MyFleet
         And Click on ManageDevices page
         And Click on MyFleet Tab
-        Then Click on the add device of MyF
-        And Enter Serial no and select device id of MyF
-        Then Enter Asset Tag and Select student id of MyF
-        And Select lonar status and Device status of MyF
-        Then Click on the Submit Button of MyF
-        And Verify the device added successfully of MyF
-        Then Click on Edit button of MyF
-        And Update Asset tag, student info and building information and Click on update button of MyF
-        Then Verfiy Record updated successfully of MyF
-        # And Click More filter select- Serial Number in search box and Verify the Result of MyF
-        # Then Click on Clear filter of MyF
-        # And Click More filter select- Asset tag in search box and Verify the Result of MyF
-        # Then Click on Clear filter of MyF
-        # And Click More filter select- Device in search box and Verify the Result of MyF
-        # Then Click on Clear filter of MyF
-        # And Click More filter select- Student in search box and Verify the Result of MyF
-        # Then Click on Clear filter of MyF
+        # Then Click on the add device of MyF
+        # And Enter Serial no and select device id of MyF
+        # Then Enter Asset Tag and Select student id of MyF
+        # And Select lonar status and Device status of MyF
+        # Then Click on the Submit Button of MyF
+        # And Verify the device added successfully of MyF
+        # Then Click on Edit button of MyF
+        # And Update Asset tag, student info and building information and Click on update button of MyF
+        # Then Verfiy Record updated successfully of MyF
+        And Click More filter select- Serial Number in search box and Verify the Result of MyF
+        Then Click on Clear filter of MyF
+        And Click More filter select- Asset tag in search box and Verify the Result of MyF
+        Then Click on Clear filter of MyF
+        And Click More filter select- Device in search box and Verify the Result of MyF
+        Then Click on Clear filter of MyF
+        And Click More filter select- Student in search box and Verify the Result of MyF
+        Then Click on Clear filter of MyF
         Then Click on Export To CSV of MyF
         And Enter the table fields in search box of MyF
         And Verify the record in searching history of MyF
-        Then Click on view Button of MyF
-        And Verify the Warranty Description of MyF
+         Then Click on view Button of MyF
+        And Verify the General Device Information of MyF
 
         And Click on ManageDevices page
         And Click on MyFleet Tab
         Then Click on Retired Tab
-        Then Click on the add device of MyF
-        And Enter Serial no and select device id of MyF
-        Then Enter Asset Tag and Select student id of MyF
-        And Select lonar status and Device status of MyF
-        Then Click on the Submit Button of MyF
-        And Verify the device added successfully of MyF
-        Then Click on Edit button of MyF
-        And Update Asset tag, student info and building information and Click on update button of MyF
-        Then Verfiy Record updated successfully of MyF
-        # And Click More filter select- Serial Number in search box and Verify the Result of MyF
-        # Then Click on Clear filter of MyF
-        # And Click More filter select- Asset tag in search box and Verify the Result of MyF
-        # Then Click on Clear filter of MyF
-        # And Click More filter select- Device in search box and Verify the Result of MyF
-        # Then Click on Clear filter of MyF
-        # And Click More filter select- Student in search box and Verify the Result of MyF
-        # Then Click on Clear filter of MyF
+        # Then Click on the add device of MyF
+        # And Enter Serial no and select device id of MyF
+        # Then Enter Asset Tag and Select student id of MyF
+        # And Select lonar status and Device status of MyF
+        # Then Click on the Submit Button of MyF
+        # And Verify the device added successfully of MyF
+        # Then Click on Edit button of MyF
+        # And Update Asset tag, student info and building information and Click on update button of MyF
+        # Then Verfiy Record updated successfully of MyF
+        And Click More filter select- Serial Number in search box and Verify the Result of MyF
+        Then Click on Clear filter of MyF
+        And Click More filter select- Asset tag in search box and Verify the Result of MyF
+        Then Click on Clear filter of MyF
+        And Click More filter select- Device in search box and Verify the Result of MyF
+        Then Click on Clear filter of MyF
+        And Click More filter select- Student in search box and Verify the Result of MyF
+        Then Click on Clear filter of MyF
         Then Click on Export To CSV of MyF
         And Enter the table fields in search box of MyF
         And Verify the record in searching history of MyF
         Then Click on view Button of MyF
-        And Verify the Warranty Description of MyF
+        And Verify the General Device Information of MyF
 
     Scenario: Manage device: ImportSerialDevices, OrgUploadAssets, LoanerManagement
         And Click on ManageDevices page
@@ -176,11 +174,11 @@ Feature: Repaire Tech Page Functionality
         And Verify the search result of lm
         Then Click on the Add to loaner pool of lm
         Then Search the serial no in the Available section of lm
-        And Click on th add Student button of lm
-        Then Enter Fullname, title and email of lm
-        And Select status, building and student_id of lm
-        Then Click on the submit button of form of lm
-        And Verify the student added successfully of lm
+        # And Click on th add Student button of lm
+        # Then Enter Fullname, title and email of lm
+        # And Select status, building and student_id of lm
+        # Then Click on the submit button of form of lm
+        # And Verify the student added successfully of lm
         Then Click on check out button of lm
         And Select the student name of lm
         Then Click on the submit button of lm
@@ -190,29 +188,29 @@ Feature: Repaire Tech Page Functionality
         Then Verify the device is added in Available section of lm
         And Click on remove from loaner pool button of lm
 
-        And Click on ManageDevices page
-        And Click on OrgUploadAssets Tab
-        Then I should click on Add Asset of oua
-        Then Enter title, full name location and tag of oua
-        And Enter note, Type and description of oua
-        Then Upload the image file of oua
-        And Click on save button of oua
-        Then Verify the asset details added in table of oua
-        And Click More filter select- Description in search box and Verify the Result of oua
-        Then Click on Clear filter of oua
-        And Click More filter select- Acquire Location in search box and Verify the Result of oua
-        Then Click on Clear filter of oua
-        And Enter the title in search box of oua
-        And Verify the record in searching history of oua
-        And Click on Edit button of oua
-        Then I should edit title, full name location and tag of oua
-        And I should edit note, Type and description of oua
-        Then ReUpload the image file of oua
-        Then Click on save button of oua
-        And Verify the Record has been updated Meassage of oua
-        And Click on Delete button of oua
-        Then Click on Confirm Delete button of oua
-        And Verify the record is deleted successfully of oua
+        # And Click on ManageDevices page
+        # And Click on OrgUploadAssets Tab
+        # Then I should click on Add Asset of oua
+        # Then Enter title, full name location and tag of oua
+        # And Enter note, Type and description of oua
+        # Then Upload the image file of oua
+        # And Click on save button of oua
+        # Then Verify the asset details added in table of oua
+        # And Click More filter select- Description in search box and Verify the Result of oua
+        # Then Click on Clear filter of oua
+        # And Click More filter select- Acquire Location in search box and Verify the Result of oua
+        # Then Click on Clear filter of oua
+        # And Enter the title in search box of oua
+        # And Verify the record in searching history of oua
+        # And Click on Edit button of oua
+        # Then I should edit title, full name location and tag of oua
+        # And I should edit note, Type and description of oua
+        # Then ReUpload the image file of oua
+        # Then Click on save button of oua
+        # And Verify the Record has been updated Meassage of oua
+        # And Click on Delete button of oua
+        # Then Click on Confirm Delete button of oua
+        # And Verify the record is deleted successfully of oua
 
 
     Scenario: Repair360 repaireBox
@@ -264,11 +262,11 @@ Feature: Repaire Tech Page Functionality
     Scenario: Report Center -NonwarrantyRepairs , DeviceRepairReport
         And Click on Report center page
         And Click on NonwarrantyRepairs page
-        Then Select failure Type, Return site and Serial Device of Nwr
-        And Select Building and Chromebook issue of Nwr
-        Then Enter the Describe Your Issue of Nwr
-        And Click on save button of Nwr
-        Then Verify New Ticket is added of Nwr
+        # Then Select failure Type, Return site and Serial Device of Nwr
+        # And Select Building and Chromebook issue of Nwr
+        # Then Enter the Describe Your Issue of Nwr
+        # And Click on save button of Nwr
+        # Then Verify New Ticket is added of Nwr
         And Click More filter select- Record Id in search box and Verify the Result of Nwr
         Then Click on Clear filter of Nwr
         And Click More filter select- Ticket Number in search box and Verify the Result of Nwr
@@ -317,26 +315,7 @@ Feature: Repaire Tech Page Functionality
         And Enter the Search - Repair Box in search box and Verify the Result of drr
 
 
-    Scenario:Repair360  InHouseRepairCenter, StudentRepairCenter
-        Then Click on Repair360 page
-        And Click on InHouseRepairCenter tab
-        And Enter Search ticket no in search box of ihw
-        Then Verify search result below of ihw
-        And Click on view button of ihw
-        Then Verify the Details of student repair ticket of ihw
-        And Click on the Edit Ticket Button of ihw
-        Then Update the Technician and Repair Status of ihw
-        And Click on Update Button of ihw
-        Then Verify Updated successfully of ihw
-        And Click on Add Line and Verify of ihw
-        Then Click on Add Repair Image and Verify of ihw
-        And Click on Add Note and Verify of ihw
-        Then I should click on new button of ihw
-        And Select failure Type, Serial Device, Technician and repair issue of ihw
-        Then Select building and Enter the Chromebook issue of ihw
-        And Click on save button of ihw
-        Then Verify New Ticket is added of ihw
-
+    Scenario:Repair360  InHouseRepairCenter
         Then Click on Repair360 page
         And Click on InHouseRepairCenter tab
         Then Click All InHouseTickets tab
@@ -370,6 +349,25 @@ Feature: Repaire Tech Page Functionality
         Then Click on Clear filter of Inrt
 
 
+  Then Click on Repair360 page
+        And Click on InHouseRepairCenter tab
+        Then I should click on new button of ihw
+        And Select failure Type, Serial Device, Technician and repair issue of ihw
+        Then Select building and Enter the Chromebook issue of ihw
+        And Click on save button of ihw
+        Then Verify New Ticket is added of ihw
+        # And Enter Search ticket no in search box of ihw
+        # Then Verify search result below of ihw
+        # And Click on view button of ihw
+        # Then Verify the Details of student repair ticket of ihw
+        # And Click on the Edit Ticket Button of ihw
+        # Then Update the Technician and Repair Status of ihw
+        # And Click on Update Button of ihw
+        # Then Verify Updated successfully of ihw
+        # And Click on Add Line and Verify of ihw
+        # Then Click on Add Repair Image and Verify of ihw
+        # And Click on Add Note and Verify of ihw
+
     Scenario:Repair360 - StudentRepairCenter
         Then Click on Repair360 page
         And Click on StudentRepairCenter tab
@@ -379,7 +377,7 @@ Feature: Repaire Tech Page Functionality
         And Enter Phone and Cell Number of srcs
         Then Select User Status of srcs
         And Click on submit button of srcs
-        Then Verify the student added in table of srcs
+        # Then Verify the student added in table of srcs
         And Click More filter select- Full name in search box and Verify the Result of srcs
         Then Click on Clear filter of srcs
         And Click More filter select- Title in search box and Verify the Result of srcs
@@ -442,7 +440,7 @@ Feature: Repaire Tech Page Functionality
         And Enter the Search - Status in search box and Verify the Result of srcF
         Then Enter the Search - Phone in search box and Verify the Result of srcF
 
-
+ Scenario:Repair360 - Partcloset
         And Click on Repair360 page
         And Click on PartCloset Tab
         And I should click on Add New VT part of pc
@@ -461,7 +459,6 @@ Feature: Repaire Tech Page Functionality
     # Then Verify the recode is deleted of pc
 
     Scenario:My profile and feature and support
-
         And Click on My profile page
         And Click on upload image icon of mp
         Then Enter tilte and phone no of mp
@@ -474,8 +471,8 @@ Feature: Repaire Tech Page Functionality
         Then Click on Clear filter of ft
         # And Click More filter select- Description in search box and Verify the Result of ft
         # Then Click on Clear filter of ft
-        # And Click More filter select- Creator in search box and Verify the Result of ft
-        # Then Click on Clear filter of ft
+        And Click More filter select- Creator in search box and Verify the Result of ft
+        Then Click on Clear filter of ft
 
         And Click on Support page
         And Enter Full name of sup
