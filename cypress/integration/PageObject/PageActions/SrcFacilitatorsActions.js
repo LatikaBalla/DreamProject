@@ -105,6 +105,13 @@ export class SrcFacilitatorsActions {
         sf.applyElement().click({ force: true })
         cy.get('tr td').eq(3).should('not.contain', tdata.srcFacilitators.status)
     }
+    selectFilterLastModifiedDate(){
+        sf.fieldNameElement().select('last_modified_date',{force:true})
+        sf.fieldOpElement().select('Contains',{force:true})
+        sf.fieldValueElement().type(tdata.srcFacilitators.lastmodifieddate)
+        sf.applyElement().click({ force: true })
+        cy.get('tr td').eq(5).should('contain', tdata.srcFacilitators.lastmodifieddate)
+    }
     clickOnExport() {
        sf.exportbtnElement().click({ force: true })
     }

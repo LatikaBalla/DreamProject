@@ -52,15 +52,25 @@ Then('Click on the Submit Button', () => {
 And('Verify the device added successfully', () => {
     mf.verfifyDeviceAdded()
 })
-Then('Click on Edit button', () => {
-    mf.clickOnEditButton()
+Then('Click on Edit button of General info', () => {
+    mf.clickOnEditButtonGeneral()
 })
-And('Update Asset tag, student info and building information and Click on update button', () => {
-    mf.editInformation()
+And('Update Asset tag and Click on save button', () => {
+    mf.editGeneral()
     mf.clickOnUpdateButton()
 })
-Then('Verfiy Record updated successfully', () => {
-    mf.verifyUdated()
+Then('Verfiy General info Record updated successfully', () => {
+    mf.verifyGeneralUdate()
+})
+Then('Click on Edit button of Assignment', () => {
+    mf.clickOnEditButtonAssign()
+})
+And('Update student, building, loner status and Click on save button', () => {
+    mf.editAssignment()
+    mf.clickOnUpdateButton()
+})
+Then('Verfiy Assignment Record updated successfully', () => {
+    mf.verifyAssignmnetUdate()
 })
 Then('Click on Clear filter', () => {
     mf.clickOnClearFiltersButton()
@@ -77,7 +87,8 @@ And('Enter the table fields in search box1', () => {
 And('Verify the record in searching history1', () => {
     mf.verifySearchResult1()
 })
-Then('Click on view Button', () => {
+Then('Click on deviceIcon and click on view Button', () => {
+    mf.clickOnDeviceIcon()
     mf.clickOnViewButton()
 })
 And('Verify the General Device Information', () => {
@@ -108,6 +119,10 @@ And('Click More filter select- Student in search box and Verify the Result', () 
     mf.clickOnMoreFiltersButton()
     mf.selectFilterStudent()
 })
+And('Click More filter select- Organization unit in search box and Verify the Result', () => {
+    mf.clickOnMoreFiltersButton()
+    mf.selectFilterOrganization()
+})
 Then('Click on Retired Tab', () => {
     mf.clickOnRetiredTab()
 })
@@ -137,5 +152,45 @@ And('Click on Storage Information and verify Storage Information', () => {
 })
 Then('Click on Boot Performance Report and Boot Performance Report', () => {
     mf.clickOnBootPerformanceReport()
-    mf.verifBootPerformanceReport()
+    mf.verifyBootPerformanceReport()
+})
+And ('Click on Recent Users Information and verify Recent Users Information',()=>{
+    mf.clickOnRecentUser()
+    mf.verifyRecentUser()
+})
+
+
+And('Convert Active to Retired device', () => {
+    mf.converRetired()
+})
+Then('Verify the Device Retired successfully', () => {
+    mf.verifyRetired()
+})
+Then('Verify the Device Active successfully', () => {
+    mf.verifyActive()
+})
+And('Convert Retired to Active device', () => {
+    mf.convertActive()
+})
+And('Enter the table fields in search box for google data record', () => {
+    mf.enterSearchGdata()
+})
+Then('Verify the record in searching history for google data', () => {
+    mf.verifyGoogleRecord()
+})
+And('Click on the Google Icon and click on view Button', () => {
+    mf.clickonGoogleIcon()
+    mf.clickOnViewButton()
+})
+Then('Verify the google data and GoLocation section', () => {
+    mf.verifyGoogleGolocation()
+})
+And('Click on the edit of google data section', () => {
+    mf.clickonEditGoogle()
+})
+Then('Update the note', () => {
+    mf.updateGoogleData()
+})
+And('Verfiy Google data Record updated successfully', () => {
+    mf.verifyGoogleUpdated()
 })

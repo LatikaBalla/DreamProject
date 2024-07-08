@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3404000000
+              "duration": 3102000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6715000000
+              "duration": 5423000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9078000000
+              "duration": 9079000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 79000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of RepairTickets Page",
             "result": {
               "status": "passed",
-              "duration": 1301000000
+              "duration": 1003000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Filters of RepairTickets should be visible",
             "result": {
               "status": "passed",
-              "duration": 981000000
+              "duration": 943000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "I should click on create new ticket",
             "result": {
               "status": "passed",
-              "duration": 115000000
+              "duration": 85000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Select failure Type, Return site and Serial Device",
             "result": {
               "status": "passed",
-              "duration": 1018000000
+              "duration": 1259000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Select Building and Chromebook issue",
             "result": {
               "status": "passed",
-              "duration": 523000000
+              "duration": 296000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Enter the Describe Your Issue",
             "result": {
               "status": "passed",
-              "duration": 2036000000
+              "duration": 1759000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 90000000
+              "duration": 88000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Verify New Ticket is added",
             "result": {
               "status": "passed",
-              "duration": 9373000000
+              "duration": 8016000000
             }
           },
           {
@@ -153,83 +153,93 @@
             "name": "Click on Download import button",
             "result": {
               "status": "passed",
-              "duration": 81000000
+              "duration": 86000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 23,
+            "name": "Enter the Search -  Record Id in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1632000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
             "name": "Enter the Search - Ticket Number in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1969000000
+              "duration": 586000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 24,
+            "line": 25,
             "name": "Enter the Search - Repair type in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1696000000
+              "duration": 1575000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 25,
+            "line": 26,
             "name": "Enter the Search - Serial Number in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 4251000000
+              "duration": 4770000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 26,
+            "line": 27,
             "name": "Enter the Search - Repair status in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1316000000
+              "duration": 330000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 27,
+            "line": 28,
             "name": "Enter the Search - Repair Box in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1927000000
+              "duration": 1526000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 28,
+            "line": 29,
             "name": "Enter the Search - Asset tag in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1735000000
+              "duration": 1728000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 29,
+            "line": 30,
             "name": "Click More filter select- Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 710000000
+              "duration": 771000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 30,
+            "line": 31,
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
@@ -239,97 +249,97 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 31,
+            "line": 32,
             "name": "Click More filter select- Ticket Number in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 809000000
+              "duration": 859000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 32,
+            "line": 33,
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 230000000
+              "duration": 250000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 33,
+            "line": 34,
             "name": "Click More filter select- Repair type in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2581000000
+              "duration": 1112000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 34,
+            "line": 35,
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 233000000
+              "duration": 71000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 35,
+            "line": 36,
             "name": "Click More filter select- Serial Number in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1441000000
+              "duration": 951000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 36,
+            "line": 37,
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 75000000
+              "duration": 266000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 37,
+            "line": 38,
             "name": "Click More filter select- Repair device in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 5244000000
+              "duration": 12421000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 38,
+            "line": 39,
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 281000000
+              "duration": 344000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 39,
+            "line": 40,
             "name": "Click More filter select- Repair status in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1244000000
+              "duration": 1384000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 40,
+            "line": 41,
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
@@ -339,57 +349,17 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 41,
+            "line": 42,
             "name": "Click More filter select- Repair Box in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 709000000
+              "duration": 712000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 42,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 73000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 43,
-            "name": "Click More filter select- Asset tag in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 818000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 44,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 234000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 45,
-            "name": "Click More filter select- Created By in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1831000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 46,
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
@@ -399,106 +369,91 @@
           {
             "arguments": [],
             "keyword": "And ",
+            "line": 44,
+            "name": "Click More filter select- Asset tag in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 824000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 250000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "Click More filter select- Created By in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1895000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
             "line": 47,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 75000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
             "name": "Enter the Search value in search box",
             "result": {
               "status": "passed",
-              "duration": 476000000
+              "duration": 513000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 48,
+            "line": 49,
             "name": "Verify the Results in the table",
             "result": {
               "status": "passed",
-              "duration": 1441000000
+              "duration": 1686000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 49,
+            "line": 50,
             "name": "Click on view button",
             "result": {
               "status": "passed",
-              "duration": 3407000000
+              "duration": 1594000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 50,
+            "line": 51,
             "name": "Verify the Details of student repair ticket",
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 2255000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 51,
-            "name": "Click on the Edit Ticket Button",
-            "result": {
-              "status": "failed",
-              "duration": 34029000000,
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find content: 'Edit Ticket' but never did.\n    at RepairTicketsElements.editTicketElement (cypress/integration/PageObject/PageElements/RepairTicketsElements.js:150:18)\n    at RepairTicketsActions.clickOnEditButton (cypress/integration/PageObject/PageActions/RepairTicketsActions.js:250:11)\n    at Context.eval (cypress/integration/RepairTickets/RepairTickets.spec.js:135:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 52,
-            "name": "Update the Technician and Repair Status",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 53,
-            "name": "Click on Update Button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 54,
-            "name": "Verify Updated successfully",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 55,
-            "name": "Click on Add Line and Verify",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 56,
-            "name": "Click on Add Repair Image and Verify",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 57,
+            "line": 58,
             "name": "Click on Add Note and Verify",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 663000000
             }
           }
         ]

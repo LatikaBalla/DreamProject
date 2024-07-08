@@ -56,6 +56,11 @@ export default class InHouseTicketsElements {
             timeout: 30000,
         })
     }
+    buildingdropElement() {
+        return cy.get(locator.inhouseTickets.buildingdrop, {
+            timeout: 30000,
+        })
+    }
     repairissueElement() {
         return cy.get(locator.inhouseTickets.repairissue, {
             timeout: 30000,
@@ -199,6 +204,16 @@ export default class InHouseTicketsElements {
     }
     partElement() {
         return cy.get(locator.inhouseTickets.part, {
+            timeout: 30000,
+        })
+    }
+    updateInhouseElement() {
+        return cy.contains(locator.inhouseTickets.updateInhouse, {
+            timeout: 30000,
+        })
+    }
+    updateStudentElement() {
+        return cy.contains(locator.inhouseTickets.updateStudent, {
             timeout: 30000,
         })
     }

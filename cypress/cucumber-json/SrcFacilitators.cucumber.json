@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3342000000
+              "duration": 2565000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6609000000
+              "duration": 5404000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9077000000
+              "duration": 9080000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 75000000
+              "duration": 83000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on StudentRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 491000000
+              "duration": 1373000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click on SrcFacilitators tab",
             "result": {
               "status": "passed",
-              "duration": 62000000
+              "duration": 63000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the Title of SrcFacilitators Page",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 19000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Filters of SrcFacilitators should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 8000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Table for SrcFacilitators should be visible",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 9000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click More filter select- Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 810000000
+              "duration": 846000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 67000000
+              "duration": 88000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click More filter select- Title in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 636000000
+              "duration": 719000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 69000000
+              "duration": 91000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click More filter select- Eamil in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1091000000
+              "duration": 1197000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 71000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click More filter select- User status in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 904000000
+              "duration": 763000000
             }
           },
           {
@@ -193,47 +193,67 @@
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 69000000
+              "duration": 72000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 29,
-            "name": "Enter the Search - Full name in search box and Verify the Result",
+            "name": "Click More filter select- Last Modified Date in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 755000000
+              "duration": 1046000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 30,
-            "name": "Enter the Search - Email in search box and Verify the Result",
+            "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 866000000
+              "duration": 70000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 31,
-            "name": "Enter the Search - Status in search box and Verify the Result",
+            "name": "Enter the Search - Full name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1951000000
+              "duration": 803000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 32,
+            "name": "Enter the Search - Email in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 801000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "Enter the Search - Status in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1891000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
             "name": "Enter the Search - Phone in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 772000000
+              "duration": 759000000
             }
           }
         ]

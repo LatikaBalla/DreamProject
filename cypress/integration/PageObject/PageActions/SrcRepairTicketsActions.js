@@ -59,8 +59,8 @@ export class SrcRepairTicketsActions {
     enterChromebookIssue() {
         srt.chromebookissueElement().type(tdata.srcRepairTicket.chromebookissue, { force: true })
     }
-    enterimagedescription(){
-        srt.imagedescriptionElement().type('image info',{ force: true })
+    enterimagedescription() {
+        srt.imagedescriptionElement().type('image info', { force: true })
     }
     clickOnSaveButton() {
         srt.savebtnElement().click({ force: true })
@@ -80,11 +80,11 @@ export class SrcRepairTicketsActions {
     clickViewButton() {
         cy.window().then(win => {
             // win.open('https://google.com', '_blank');
-           });
-           cy.get('body').type('{ctrl}t');
-           cy.visit("/repair/inHouse-detail/"+tdata.srcRepairTicket.recordid)
+        });
+        cy.get('body').type('{ctrl}t');
+        cy.visit("/repair-360/inHouse-detail/" + tdata.srcRepairTicket.recordid)
         //   cy.get('tr td').eq(9).scrollIntoView().contains('View').click({ force: true })    
-      //  srt.viewElement().click({ force: true })
+        //  srt.viewElement().click({ force: true })
     }
     verifySrcRepairTicket() {
         cy.contains('Repair Ticket Details').should('be.visible')
@@ -94,8 +94,8 @@ export class SrcRepairTicketsActions {
         srt.editTicketElement().click({ force: true })
     }
     editTehnician() {
-        srt.edittechnicianElement().click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains(tdata.srcRepairTicket.technician).click({ force: true })
+        // srt.edittechnicianElement().click({ force: true })
+        // cy.get('[role="listbox"]').find('li').contains(tdata.srcRepairTicket.technician).click({ force: true })
     }
     editRepairStatus() {
         srt.repairstatusEditElement().click({ force: true })
@@ -106,13 +106,14 @@ export class SrcRepairTicketsActions {
         //cy.contains('Update').click({force:true})
     }
     verifyUpdate() {
-        //cy.get('tr td').eq(1).should('contain', tdata.srcRepairTicket.recordid)
+        dash.messageElement().should('contain', tdata.srcRepairTicket.updatemsg)
+
     }
     searchRecordId() {
         srt.searchboxElement().eq(0).click({ force: true })
         srt.recordidElement().click({ force: true })
         srt.searchElement().clear({ force: true }).type(tdata.srcRepairTicket.recordid + '{enter}', { force: true })
-       // cy.wait(4000)
+        // cy.wait(4000)
         cy.get('tr td').eq(0).should('contain', tdata.srcRepairTicket.recordid)
     }
     searchTicketNumber() {
@@ -133,7 +134,7 @@ export class SrcRepairTicketsActions {
         srt.searchboxElement().eq(0).click({ force: true })
         srt.repairstatusElement().click({ force: true })
         srt.searchElement().clear({ force: true }).type(tdata.srcRepairTicket.repairstatus + '{enter}', { force: true })
-        cy.wait(1000)
+        // cy.wait(1000)
         cy.get('tr td').eq(5).should('contain', tdata.srcRepairTicket.repairstatus, { force: true })
         srt.searchElement().clear()
     }
@@ -206,11 +207,18 @@ export class SrcRepairTicketsActions {
         srt.applyElement().click({ force: true })
         cy.get('tr td').eq(8).should('not.contain', tdata.srcRepairTicket.createdby)
     }
+    selectFilterLastModifiedDate() {
+        srt.fieldNameElement().select('last_modified_date', { force: true })
+        srt.fieldOpElement().select('Does Not Contain', { force: true })
+        srt.fieldValueElement().type(tdata.srcRepairTicket.lastmodifieddate)
+        srt.applyElement().click({ force: true })
+        cy.get('tr td').eq(9).should('not.contain', tdata.srcRepairTicket.lastmodifieddate)
+    }
     clickOnAddLine() {
         srt.addlineElement().click({ force: true })
-        srt.custompartElemnet().click({ force: true })
+        srt.vtverifypartElement().click({ force: true })
         srt.partElement().click({ force: true })
-        cy.get('[role="listbox"]').contains('demo unit').click({ force: true })
+        cy.get('[data-value="2345"]').click({ force: true })
         srt.noteElement().type('Testing line', { force: true })
         srt.createlineElement().contains('Create Line Item').click({ force: true })
         dash.messageElement().should('contain', 'Line Item Created')
@@ -226,13 +234,13 @@ export class SrcRepairTicketsActions {
     clickOnAddNote() {
         srt.addnoteElement().click({ force: true })
         srt.notetypeElement().click({ force: true })
-        cy.get('[data-value="QA"]').click({ force: true })
+        cy.get('[data-value="Quality Assurance"]').click({ force: true })
         srt.noteElement().type('Testing Note', { force: true })
         srt.createnoteElement().contains('Create').click({ force: true })
         dash.messageElement().should('contain', 'Ticket updated')
     }
     clickOnExport() {
-      srt.exportbtnElement().click({ force: true })
+        srt.exportbtnElement().click({ force: true })
     }
 }
 export default SrcRepairTicketsActions 

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2670000000
+              "duration": 1524000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6021000000
+              "duration": 5495000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9092000000
+              "duration": 9081000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 88000000
+              "duration": 82000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on InHouseRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 1374000000
+              "duration": 1099000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click All InHouseTickets tab",
             "result": {
               "status": "passed",
-              "duration": 61000000
+              "duration": 66000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the Title of InHouseTickets Page",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 16000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Filters of InHouseTickets should be visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 8000000
             }
           },
           {
@@ -103,284 +103,94 @@
             "name": "Table for InHouseTickets should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
-            "name": "I should click on Create new button",
-            "result": {
-              "status": "passed",
-              "duration": 73000000
+              "duration": 12000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 19,
-            "name": "Select failure Type, Serial Device, Technician, issue and Building",
+            "line": 51,
+            "name": "Enter the Search value in search box",
             "result": {
               "status": "passed",
-              "duration": 2185000000
+              "duration": 409000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 20,
-            "name": "Enter the Chromebook issue",
+            "line": 52,
+            "name": "Verify the Results in the table",
             "result": {
               "status": "passed",
-              "duration": 951000000
+              "duration": 1824000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 21,
-            "name": "Click on save button",
+            "line": 53,
+            "name": "Click on view button",
             "result": {
               "status": "passed",
-              "duration": 86000000
+              "duration": 1321000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 22,
-            "name": "Verify New Ticket is added",
+            "line": 54,
+            "name": "Verify the Details of student repair ticket",
             "result": {
               "status": "passed",
-              "duration": 9317000000
+              "duration": 1447000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 23,
-            "name": "Click on Download Export button",
+            "line": 55,
+            "name": "Click on the Edit Ticket Button",
             "result": {
               "status": "passed",
-              "duration": 77000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "Enter the Search - Record Id in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 2282000000
+              "duration": 4098000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 25,
-            "name": "Enter the Search - Ticket Number in search box and Verify the Result",
+            "line": 56,
+            "name": "Update the Technician and Repair Status",
             "result": {
               "status": "passed",
-              "duration": 623000000
+              "duration": 126000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 26,
-            "name": "Enter the Search - Repair type in search box and Verify the Result",
+            "line": 57,
+            "name": "Click on Update Button",
             "result": {
               "status": "passed",
-              "duration": 1573000000
+              "duration": 67000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 27,
-            "name": "Enter the Search - Repair status in search box and Verify the Result",
+            "line": 58,
+            "name": "Verify Updated successfully",
             "result": {
               "status": "passed",
-              "duration": 2997000000
+              "duration": 849000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 28,
-            "name": "Click More filter select- Record Id in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 741000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 71000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 30,
-            "name": "Click More filter select- Ticket Number in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 773000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 31,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 186000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 32,
-            "name": "Click More filter select- Repair type in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1198000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 33,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 72000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 34,
-            "name": "Click More filter select- Serial Number in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 922000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 35,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 74000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 36,
-            "name": "Click More filter select- Repair device in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 3045000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 37,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 73000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 38,
-            "name": "Click More filter select- Repair status in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 814000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 39,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 73000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 40,
-            "name": "Click More filter select- Asset tag in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 666000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 41,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 72000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 42,
-            "name": "Click More filter select- internal Technician in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1576000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 43,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 149000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 44,
-            "name": "Click More filter select- Created By in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1387000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 45,
-            "name": "Click on Clear filter",
+            "line": 59,
+            "name": "Click on the Update to student Button",
             "result": {
               "status": "passed",
               "duration": 76000000
@@ -388,82 +198,62 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 46,
-            "name": "Enter the Search value in search box",
-            "result": {
-              "status": "passed",
-              "duration": 442000000
-            }
-          },
-          {
-            "arguments": [],
             "keyword": "Then ",
-            "line": 47,
-            "name": "Verify the Results in the table",
+            "line": 60,
+            "name": "Updated to student successfully",
             "result": {
               "status": "passed",
-              "duration": 1990000000
+              "duration": 374000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 48,
-            "name": "Click on view button",
+            "line": 61,
+            "name": "Click on the Update to in house Button",
             "result": {
               "status": "passed",
-              "duration": 1400000000
+              "duration": 1257000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 49,
-            "name": "Verify the Details of student repair ticket",
+            "line": 62,
+            "name": "Updated to in house successfully",
             "result": {
               "status": "passed",
-              "duration": 2343000000
+              "duration": 233000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 50,
-            "name": "Click on the Edit Ticket Button",
+            "line": 63,
+            "name": "Click on Add Line and Verify",
             "result": {
               "status": "passed",
-              "duration": 4112000000
+              "duration": 1837000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 51,
-            "name": "Update the Technician and Repair Status",
+            "line": 64,
+            "name": "Click on Add Repair Image and Verify",
             "result": {
               "status": "passed",
-              "duration": 136000000
+              "duration": 831000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 52,
-            "name": "Click on Update Button",
+            "line": 65,
+            "name": "Click on Add Note and Verify",
             "result": {
               "status": "passed",
-              "duration": 68000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 53,
-            "name": "Verify Updated successfully",
-            "result": {
-              "status": "passed",
-              "duration": 4000000
+              "duration": 644000000
             }
           }
         ]

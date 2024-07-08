@@ -130,6 +130,10 @@ And('Click More filter select- Created By in search box and Verify the Result', 
     srt.clickOnMoreFilter()
     srt.selectFilterCreatedBy()
 })
+And ('Click More filter select- Last Modified Date in search box and Verify the Result',()=>{
+    srt.clickOnMoreFilter()
+    srt.selectFilterLastModifiedDate()
+})
 And('Click on Add Line and Verify', () => {
     srt.clickOnAddLine()
 })

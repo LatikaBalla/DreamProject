@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1525000000
+              "duration": 4527000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7695000000
+              "duration": 7848000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9081000000
+              "duration": 9082000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 89000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on PartCloset Tab",
             "result": {
               "status": "passed",
-              "duration": 1248000000
+              "duration": 1642000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of PartCloset Page",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 15000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Filters of PartCloset should be visible",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 6000000
             }
           },
           {
@@ -98,32 +98,32 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 29,
-            "name": "I should click on Add New VT part",
+            "name": "I should click on Add New custome part",
             "result": {
               "status": "passed",
-              "duration": 69000000
+              "duration": 73000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 30,
-            "name": "Select device and part name",
+            "name": "Enter part name, manufacture and parent device",
             "result": {
               "status": "passed",
-              "duration": 1432000000
+              "duration": 1067000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 31,
-            "name": "Enter quantity and select building",
+            "name": "Enter part sku and quantity",
             "result": {
               "status": "passed",
-              "duration": 310000000
+              "duration": 548000000
             }
           },
           {
@@ -133,47 +133,47 @@
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 75000000
+              "duration": 68000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 33,
-            "name": "Verify new VT part is added",
+            "name": "Verify new custome part is added",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 6000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 34,
-            "name": "I should click on Add New custome part",
+            "name": "I should click on Add New VT part",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 98000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 35,
-            "name": "Enter part name, manufacture and parent device",
+            "name": "Select device and part name",
             "result": {
               "status": "passed",
-              "duration": 1021000000
+              "duration": 522000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 36,
-            "name": "Enter part sku and quantity",
+            "name": "Enter quantity and select building",
             "result": {
               "status": "passed",
-              "duration": 508000000
+              "duration": 522000000
             }
           },
           {
@@ -190,10 +190,10 @@
             "arguments": [],
             "keyword": "And ",
             "line": 38,
-            "name": "Verify new custome part is added",
+            "name": "Verify new VT part is added",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 8000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Enter the Search value in search box",
             "result": {
               "status": "passed",
-              "duration": 230000000
+              "duration": 246000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Verify the Results in the table",
             "result": {
               "status": "passed",
-              "duration": 453000000
+              "duration": 738000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on delete button",
             "result": {
               "status": "passed",
-              "duration": 145000000
+              "duration": 150000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Verify the recode is deleted",
             "result": {
               "status": "passed",
-              "duration": 623000000
+              "duration": 770000000
             }
           }
         ]

@@ -25,6 +25,7 @@ Feature:InHouseTickets Page Functionality
     Then Enter the Search - Ticket Number in search box and Verify the Result
     And Enter the Search - Repair type in search box and Verify the Result
     Then Enter the Search - Repair status in search box and Verify the Result
+     And Enter the Search - Building in search box and Verify the Result
     And Click More filter select- Record Id in search box and Verify the Result
     Then Click on Clear filter
     And Click More filter select- Ticket Number in search box and Verify the Result
@@ -39,6 +40,10 @@ Feature:InHouseTickets Page Functionality
     Then Click on Clear filter
     And Click More filter select- Asset tag in search box and Verify the Result
     Then Click on Clear filter
+    And Click More filter select- Building in search box and Verify the Result
+    Then Click on Clear filter
+    And Click More filter select- Last Modified Date in search box and Verify the Result
+    Then Click on Clear filter
     And Click More filter select- internal Technician in search box and Verify the Result
     Then Click on Clear filter
     And Click More filter select- Created By in search box and Verify the Result
@@ -51,6 +56,10 @@ Feature:InHouseTickets Page Functionality
     Then Update the Technician and Repair Status
     And Click on Update Button
     Then Verify Updated successfully
-    # And Click on Add Line and Verify
-    # Then Click on Add Repair Image and Verify
-    # And Click on Add Note and Verify
+     And Click on the Update to student Button
+    Then Updated to student successfully
+     And Click on the Update to in house Button 
+    Then Updated to in house successfully
+    And Click on Add Line and Verify
+    Then Click on Add Repair Image and Verify
+    And Click on Add Note and Verify

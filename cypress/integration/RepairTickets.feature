@@ -20,6 +20,7 @@ Feature:RepairTickets Page Functionality
      And Click on save button
      Then Verify New Ticket is added
     And Click on Download import button
+     And Enter the Search -  Record Id in search box and Verify the Result
     And Enter the Search - Ticket Number in search box and Verify the Result
     Then Enter the Search - Repair type in search box and Verify the Result
     And Enter the Search - Serial Number in search box and Verify the Result
@@ -54,4 +55,4 @@ Feature:RepairTickets Page Functionality
     # Then Verify Updated successfully
     # And Click on Add Line and Verify
     # Then Click on Add Repair Image and Verify
-    # And Click on Add Note and Verify
+    And Click on Add Note and Verify

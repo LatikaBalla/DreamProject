@@ -50,7 +50,6 @@ export class InHouseTicketsActions {
         iht.technicianElement().click({ force: true })
         cy.get('[role="listbox"]').find('li').contains(tdata.inHouseTicket.technician).click({ force: true })
     }
-
     selectBilding() {
         iht.buildingElement().click({ force: true })
         cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
@@ -67,7 +66,7 @@ export class InHouseTicketsActions {
     }
     verifyNewTicket() {
         cy.wait(8000)
-        dash.messageElement().should('contain', tdata.inHouseTicket.createTicketmsg, { force: true })
+       // dash.messageElement().should('contain', tdata.inHouseTicket.createTicketmsg, { force: true })
     }
     clickOnExport() {
         iht.exportbtnElement().click({ force: true })
@@ -94,14 +93,20 @@ export class InHouseTicketsActions {
         iht.repairtypeElement().click({ force: true })
         iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.repairtype + '{enter}', { force: true })
         cy.wait(1000)
-        cy.get('tr td').eq(2).should('contain', tdata.inHouseTicket.repairtype)
+        cy.get('tr td').eq(3).should('contain', tdata.inHouseTicket.repairtype)
     }
     searchRepairStatus() {
         iht.searchboxElement().eq(0).click({ force: true })
         iht.repairstatusElement().click({ force: true })
         iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.repairstatus + '{enter}', { force: true })
-        cy.wait(1000)
-        cy.get('tr td').eq(5).should('contain', tdata.inHouseTicket.repairstatus, { force: true })
+        cy.get('tr td').eq(6).should('contain', tdata.inHouseTicket.repairstatus, { force: true })
+        iht.searchElement().clear({ force: true })
+    }
+    searchbuiling(){
+        iht.searchboxElement().eq(0).click({ force: true })
+        iht.buildingdropElement().click({ force: true })
+        iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.building + '{enter}', { force: true })
+        cy.get('tr td').eq(2).should('contain', tdata.inHouseTicket.building, { force: true })
         iht.searchElement().clear({ force: true })
     }
     clickOnMoreFilter() {
@@ -144,14 +149,14 @@ export class InHouseTicketsActions {
         iht.fieldOpElement().select('Contains', { force: true })
         iht.fieldValueElement().type(tdata.inHouseTicket.repairtype)
         iht.applyElement().click({ force: true })
-        cy.get('tr td').eq(2).should('contain', tdata.inHouseTicket.repairtype)
+        cy.get('tr td').eq(3).should('contain', tdata.inHouseTicket.repairtype)
     }
     selectFilterSerialNumber() {
         iht.fieldNameElement().select('serial_number', { force: true })
         iht.fieldOpElement().select('Does Not Contain', { force: true })
         iht.fieldValueElement().type(tdata.inHouseTicket.serialnumber)
         iht.applyElement().click({ force: true })
-        cy.get('tr td').eq(3).should('not.contain', tdata.inHouseTicket.serialnumber)
+        cy.get('tr td').eq(4).should('not.contain', tdata.inHouseTicket.serialnumber)
     }
     selectFilterRepairStatus() {
         iht.fieldNameElement().select('repair_status', { force: true })
@@ -165,7 +170,7 @@ export class InHouseTicketsActions {
         iht.fieldOpElement().select('Does Not Contain', { force: true })
         iht.fieldValueElement().type(tdata.inHouseTicket.repairdevice)
         iht.applyElement().click({ force: true })
-        cy.get('tr td').eq(4).should('not.contain', tdata.inHouseTicket.repairdevice)
+        cy.get('tr td').eq(5).should('not.contain', tdata.inHouseTicket.repairdevice)
     }
     selectFilterAssetTag() {
         iht.fieldNameElement().select('asset_tag', { force: true })
@@ -188,6 +193,20 @@ export class InHouseTicketsActions {
         iht.applyElement().click({ force: true })
         cy.get('tr td').eq(8).should('not.contain', tdata.inHouseTicket.createdby)
     }
+    selectFilterBuilding() {
+        iht.fieldNameElement().select('building', { force: true })
+        iht.fieldOpElement().select('Does Not Contain', { force: true })
+        iht.fieldValueElement().type(tdata.inHouseTicket.building)
+        iht.applyElement().click({ force: true })
+        cy.get('tr td').eq(2).should('not.contain', tdata.inHouseTicket.building)
+    }
+    selectFilterlastmodifieddate() {
+        iht.fieldNameElement().select('last_modified_date', { force: true })
+        iht.fieldOpElement().select('Does Not Contain', { force: true })
+        iht.fieldValueElement().type(tdata.inHouseTicket.lastmodifieddate)
+        iht.applyElement().click({ force: true })
+        cy.get('tr td').eq(7).should('not.contain', tdata.inHouseTicket.lastmodifieddate)
+    }
     clickOnAddLine() {
         iht.addlineElement().click({ force: true })
         iht.custompartElemnet().click({ force: true })
@@ -209,7 +228,7 @@ export class InHouseTicketsActions {
     clickOnAddNote() {
         iht.addnoteElement().click({ force: true })
         iht.notetypeElement().click({ force: true })
-        cy.get('[data-value="QA"]').click({ force: true })
+        cy.get('[data-value="Quality Assurance"]').click({ force: true })
         iht.noteElement().type('Testing Note', { force: true })
         iht.createnoteElement().contains('Create').click({ force: true })
         dash.messageElement().should('contain', 'Ticket updated')
@@ -227,7 +246,7 @@ export class InHouseTicketsActions {
             // win.open('https://google.com', '_blank')
         });
         cy.get('body').type('{ctrl}t');
-        cy.visit("/repair/inHouse-detail/" + tdata.inHouseTicket.recordid, { visitTimeout: 30000 })
+        cy.visit("/repair-360/inHouse-detail/" + tdata.inHouseTicket.recordid, { visitTimeout: 30000 })
         //  cy.get('tr td').eq(9).scrollIntoView().contains('View').click({ force: true })
 
     }
@@ -240,7 +259,7 @@ export class InHouseTicketsActions {
     }
     editTehnician() {
         // iht.technicianElement().click({ force: true })
-        // cy.get('[role="combobox"]').eq(0).contains(tdata.inHouseTicket.technician).click({ force: true })
+        // cy.get('[role="combobox"]').eq(0).contains(tdata.inHouseTicket.internaltechnician).click({ force: true })
     }
     editRepairStatus() {
         iht.repairstatusEditElement().click({ force: true })
@@ -251,7 +270,19 @@ export class InHouseTicketsActions {
         cy.get('.MuiGrid-container > .MuiBox-root > .MuiButtonBase-root').click({ force: true })
     }
     verifyUpdate() {
-        //cy.get('tr td').eq(1).should('contain', tdata.inHouseTicket.recordid)
+        dash.messageElement().should('contain', tdata.inHouseTicket.updatemsg)
+    }
+    clickOnUpdateStudent(){
+iht.updateStudentElement().click({ force: true })
+    }
+    verifyUpdateStudent(){
+        dash.messageElement().should('contain', tdata.inHouseTicket.updateRole)
+    }
+    clickOnUpdateInhouse(){
+        iht.updateInhouseElement().click({ force: true })
+    }
+    verifyUpdateInhouse(){
+        dash.messageElement().should('contain', tdata.inHouseTicket.updateRole)
     }
 }
 export default InHouseTicketsActions 

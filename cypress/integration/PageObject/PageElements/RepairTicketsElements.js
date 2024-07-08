@@ -182,7 +182,7 @@ export default class RepairTicketsElements {
         })
     }
     uploadimageElement() {
-        return cy.get(locator.repairTickets.uploadimage, {
+        return cy.contains(locator.repairTickets.uploadimage, {
             timeout: 30000,
         })
     }
@@ -226,5 +226,9 @@ export default class RepairTicketsElements {
             timeout: 30000,
         })
     }
-
+    recordIdElement() {
+        return cy.get(locator.repairTickets.recordid, {
+            timeout: 30000,
+        })
+    }
 }

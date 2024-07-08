@@ -52,7 +52,7 @@ export default class MyFleetElements {
         });
     }
    updatebtnElement() {
-        return cy.get(locator.myFleet.updatebtn, {
+        return cy.contains(locator.myFleet.updatebtn, {
             timeout: 30000,
         });
     }
@@ -138,6 +138,16 @@ export default class MyFleetElements {
     }
     applyElement() {
         return cy.get(locator.myFleet.apply, {
+            timeout: 30000,
+        })
+    }
+   deviceIconElement() {
+        return cy.get(locator.myFleet.deviceIcon, {
+            timeout: 30000,
+        })
+    }
+    googleIconElement() {
+        return cy.get(locator.myFleet.googleIcon, {
             timeout: 30000,
         })
     }

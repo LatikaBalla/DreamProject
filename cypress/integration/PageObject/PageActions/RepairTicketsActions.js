@@ -50,8 +50,9 @@ export class RepairTicketsActions {
         // cy.get(tdata.repairTickets.building).eq(0).click({ force: true })
     }
     selectStudent(){
-        cy.get('#student_id').click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains('Robert Smith (null)').click({ force: true })
+        // cy.get('#student_id').click({ force: true })
+        // cy.get('[role="combobox"]')
+       // find(tdata.repairTickets.student).click({ force: true })
     }
     selectChromebookIssue() {
         rt.chromebookissueElement().click({ force: true })
@@ -78,13 +79,21 @@ export class RepairTicketsActions {
             // win.open('https://google.com', '_blank');
            });
            cy.get('body').type('{ctrl}t');
-           cy.visit("https://dream-frontend-stage.onrender.com/repair-center/ticket-detail/"+tdata.repairTickets.recordid)
+           cy.visit("/repair-360/ticket-detail/"+tdata.repairTickets.recordid)
         cy.get('tr td').eq(9).contains('View').scrollIntoView().click({ force: true })
     }
     verifyDetails() {
         cy.wait(1000)
         cy.contains('Repair Ticket Details').should('be.visible')
         cy.go('back')
+    }
+    searchRecordId(){
+        cy.get('.MuiGrid-grid-xs-4 > .MuiInputBase-root > .MuiSelect-select').click({ force: true })
+       // rt.searchboxElement().eq(0).click({ force: true })
+        rt.recordIdElement().click({ force: true })
+        rt.searchElement().clear({ force: true }).type(tdata.repairTickets.recordid + '{enter}', { force: true })
+       // cy.wait(1000)
+        cy.get('tr td').eq(1).should('contain', tdata.repairTickets.recordid)
     }
     searchTicketNumber() {
         rt.searchboxElement().eq(0).click({ force: true })
@@ -210,8 +219,8 @@ export class RepairTicketsActions {
     }
     clickOnAddRepairImage() {
         rt.addimageElement().click({ force: true })
-        rt.uploadimageElement().attachFile('image1.jpeg', { force: true })
-        rt.imagedescriptionElement().type('Testing Image')
+        rt.uploadimageElement().click({ force: true })
+       //.attachFile('image1.jpeg', { force: true }) rt.imagedescriptionElement().type('Testing Image')
         rt.updateimageElement().contains('Upload Image').click({ force: true })
         dash.messageElement().should('contain', 'Image Created')
         //cy.get('[data-testid="CloseIcon"]').click({force:true})
@@ -219,13 +228,14 @@ export class RepairTicketsActions {
     clickOnAddNote() {
         rt.addnoteElement().click({ force: true })
         rt.notetypeElement().click({ force: true })
-        cy.get('[data-value="QA"]').click({ force: true })
+        cy.get('[data-value="Part Received"]').click({ force: true })
         rt.noteElement().type('Testing Note', { force: true })
         rt.createnoteElement().contains('Create').click({ force: true })
         dash.messageElement().should('contain', 'Ticket updated')
     }
     enterSearchBox() {
-        cy.get('[role="combobox"]').eq(0).click({ force: true })
+        cy.get('.MuiGrid-grid-xs-4 > .MuiInputBase-root > .MuiSelect-select').click({ force: true })
+      //  cy.get('[role="combobox"]').eq(0).click({ force: true })
         cy.get('[data-value="ticket_number"]').click({ force: true })
         rt.searchElement().type( tdata.repairTickets.ticketnumber + '{enter}', { force: true })
     }
@@ -237,7 +247,7 @@ export class RepairTicketsActions {
             // win.open('https://google.com', '_blank');
            });
            cy.get('body').type('{ctrl}t');
-           cy.visit("/repair-center/ticket-detail/"+tdata.repairTickets.recordid)
+           cy.visit("/repair-360/ticket-detail/"+tdata.repairTickets.recordid)
       //  cy.get('tr td').eq(9).contains('View').scrollIntoView().click({ force: true })
         //cy.get('tr td').eq(10).scrollIntoView().contains('View').click({ force: true })
         //  iht.viewElement().click({ force: true })

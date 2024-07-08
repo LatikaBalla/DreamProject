@@ -26,16 +26,16 @@ Feature: PartCloset Page Functionality
         # Then Click on Clear filter
         # And Click More filter select- Sku in search box and Verify the Result
         # Then Click on Clear filter
+           Then I should click on Add New custome part
+        Then Enter part name, manufacture and parent device
+        And Enter part sku and quantity
+        Then Click on submit button
+        And Verify new custome part is added
         And I should click on Add New VT part
         Then Select device and part name
         And Enter quantity and select building
         Then Click on submit button
         And Verify new VT part is added
-        Then I should click on Add New custome part
-        Then Enter part name, manufacture and parent device
-        And Enter part sku and quantity
-        Then Click on submit button
-        And Verify new custome part is added
         And Enter the Search value in search box
         Then Verify the Results in the table
         And Click on delete button

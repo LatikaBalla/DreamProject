@@ -66,7 +66,7 @@ And('I should edit Phone and Cell Number and user role', () => {
     user.editPhone()
     user.editUserRole()
 })
-Then('I edit User Status to inactive', () => {
+Then('I edit User Status by clicking on checkbox', () => {
     user.editUserStatus()
 })
 And('I edit Building', () => {

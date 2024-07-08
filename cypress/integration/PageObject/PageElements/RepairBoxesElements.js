@@ -148,4 +148,19 @@ export default class RepairBoxesElements {
             timeout: 30000,
         })
     }
+    standardSizeElement() {
+        return cy.get(locator.repairBoxes.standardSize, {
+            timeout: 30000,
+        })
+    }
+    buildingElement() {
+        return cy.get(locator.repairBoxes.building, {
+            timeout: 30000,
+        })
+    }
+   createdbyElement() {
+        return cy.get(locator.repairBoxes.createdby, {
+            timeout: 30000,
+        })
+    }
 }

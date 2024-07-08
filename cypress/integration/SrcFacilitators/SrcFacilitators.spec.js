@@ -79,3 +79,7 @@ And ('Click More filter select- User status in search box and Verify the Result'
     sf.clickOnMoreFilter()
     sf.selectFilterUserStatus()
 })
+And ('Click More filter select- Last Modified Date in search box and Verify the Result',()=>{
+    sf.clickOnMoreFilter()
+    sf.selectFilterLastModifiedDate()
+})

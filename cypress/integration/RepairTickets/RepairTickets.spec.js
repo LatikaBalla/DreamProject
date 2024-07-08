@@ -62,6 +62,9 @@ rt.clickOnViewButton()
 Then ('Verify the Details of Repair Ticket',()=>{
 rt.verifyDetails()
 })
+And ('Enter the Search -  Record Id in search box and Verify the Result',()=>{
+    rt.searchRecordId()
+})
 And ('Enter the Search - Ticket Number in search box and Verify the Result',()=>{
 rt.searchTicketNumber()
 })

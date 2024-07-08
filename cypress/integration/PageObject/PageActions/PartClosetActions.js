@@ -62,7 +62,7 @@ export class PartClosetActions {
         cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.partCloset.partname)
     }
     clickOnDeleteButton() {
-        cy.get('tbody tr').eq(0).find('td').eq(8).scrollIntoView().contains("Delete").click({ force: true })
+        cy.get('tbody tr').eq(0).find('td').eq(7).scrollIntoView().contains("Delete").click({ force: true })
         cy.get('.MuiPaper-root > .MuiButtonBase-root').click({ force: true })
     }
     verifyDeleted() {

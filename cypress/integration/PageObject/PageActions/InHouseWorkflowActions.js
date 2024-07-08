@@ -101,7 +101,7 @@ export class InHouseWorkflowActions {
     clickOnAddNote() {
         ihw.addnoteElement().click({ force: true })
         ihw.notetypeElement().click({ force: true })
-        cy.get('[data-value="QA"]').click({ force: true })
+        cy.get('[data-value="Quality Assurance"]').click({ force: true })
         ihw.noteElement().type('Testing Note', { force: true })
         ihw.createnoteElement().contains('Create').click({ force: true })
         dash.messageElement().should('contain', 'Ticket updated')
@@ -124,11 +124,11 @@ export class InHouseWorkflowActions {
             // win.open('https://google.com', '_blank')
         });
         cy.get('body').type('{ctrl}t');
-        cy.visit("/repair/inHouse-detail/" + tdata.inHouseWorkflow.recordid, { visitTimeout: 30000 })
+        cy.visit("/repair-360/inHouse-detail/" + tdata.inHouseWorkflow.recordid, { visitTimeout: 30000 })
         cy.wait(4000)
     }
     verifySrcRepairTicket() {
-       // cy.contains('Repair Ticket Details').should('be.visible',{ force: true })
+       cy.contains('Repair Ticket Details').should('be.visible',{ force: true })
     }
     clickOnEditButton() {
         cy.wait(4000)
@@ -141,13 +141,14 @@ export class InHouseWorkflowActions {
     editRepairStatus() {
         ihw.repairstatusEditElement().click({ force: true })
         cy.get(tdata.inHouseWorkflow.repairstatusEdit).click({ force: true })
+        cy.get('#repair_note').type('edit the ticket')
     }
     clickOnUpdate() {
        // ihw.updateElement().click({ force: true })
         cy.get('.MuiGrid-container > .MuiBox-root > .MuiButtonBase-root').click({ force: true })
     }
     verifyUpdate() {
-        //cy.get('tr td').eq(1).should('contain', tdata.inHouseWorkflow.recordid)
+        dash.messageElement().should('contain', tdata.inHouseWorkflow.updatemsg)
     }
 
 }

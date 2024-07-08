@@ -92,9 +92,9 @@
   },
   "myFleet": {
     "filename": "fleet_devices.csv",
-    "serialno": "VIVATEST138Test",
+    "serialno": "SerialTest12366",
     "serialno1": "98765vhTest",
-    "search": "VIVATEST138Test",
+    "search": "SerialTest12366",
     "search1": "98765vhTest",
     "serialNo": "1111",
     "deviceid": "#device-option-38",
@@ -106,7 +106,8 @@
     "devicestatus": "[data-value='Active']",
     "addDevicemsg": "Submitting form",
     "student": "Lyanna Mormont",
-    "device": "Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch - New"
+    "device": "Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch - New",
+    "searchG": "P20769TX"
   },
   "addasset": {
     "title": "AssetTitle",
@@ -151,13 +152,14 @@
     "ticketnumber": "V0058206",
     "repairtype": "Vivacity",
     "serialnumber": "VIVATEST12Test",
-    "repairstatus": "Box Created",
+    "repairstatus": "In Transit",
     "repairbox": "8156",
     "assettag": "5678",
     "recordid": "58206",
     "createdby": "demo_adminsuper@vivacitytech.com",
     "repairdevice": "Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
-    "repairstatusEdit": "[data-value='In Transit']"
+    "repairstatusEdit": "[data-value='In Transit']",
+    "student": "[activedescendant='student_id-option-1']"
   },
   "repairBox": {
     "weight": "10",
@@ -171,7 +173,12 @@
     "recordid": "7949",
     "labelfrom": "",
     "shippeddate": "2023-09-27T11:05:37.000Z",
-    "shippingcost": "$23.36"
+    "shippingcost": "$23.36",
+    "building": "Dream Building",
+    "boxtype": "To Vivacity",
+    "createdby": "demo_adminsuper@vivacitytech.com",
+    "shippingboxstatus": "ShippingFromDistrict",
+    "lastdate": "27-03-2024 01:10:01"
   },
   "inHouseWorkflow": {
     "failuretype": "[data-value='Accidental']",
@@ -181,27 +188,32 @@
     "createTicketmsg": "Add new ticket form submitted",
     "filename": "InHouseRepairTickets.csv",
     "repairissue": "[data-value='RAM issue']",
-    "ticketno": "V0063991",
-    "recordid": "63991",
-    "repairstatusEdit": "[data-value='In Transit']"
+    "ticketno": "V0067031",
+    "recordid": "67031",
+    "repairstatusEdit": "[data-value='Part Received']",
+    "updatemsg":"Ticket updated"
   },
   "inHouseTicket": {
     "failuretype": "[data-value='Accidental']",
     "serialdevice": "1CD1000006Test : 12399 : Vivacity Tech Demo Chromebook - Intel/4GB/16GB - Non-Touch",
     "chromebookissue": "There is something fault",
-    "technician": "Demo Test",
+    "technician": "test : Facilitator",
     "createTicketmsg": "Add new ticket form submitted",
     "filename": "InHouseRepairTickets.csv",
     "repairissue": "[data-value='RAM issue']",
-    "ticketnumber": "V0064201",
+    "ticketnumber": "V0065822",
     "repairtype": "In House",
-    "recordid": "64201",
-    "repairstatus": "In Transit",
-    "serialnumber": "VIVATEST90Test",
+    "recordid": "65822",
+    "repairstatus": "In-House",
+    "serialnumber": "P206P12Test",
     "repairdevice": "Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
-    "internaltechnician": "Demo Test",
+    "internaltechnician": "test : Facilitator",
     "createdby": "demo_adminvivacity@vivacitytech.com",
-    "repairstatusEdit": "[data-value='In Transit']"
+    "repairstatusEdit": "[data-value='Part Queue']",
+    "updatemsg":"Ticket updated",
+    "lastmodifieddate":"15-12-2023 05:43:28",
+    "building":"Building Three",
+    "updateRole":"Ticket updated Successfully"
   },
   "srcRepairTicket": {
     "failuretype": "[data-value='Accidental']",
@@ -215,11 +227,13 @@
     "repairtype": "Student",
     "recordid": "51249",
     "repairstatus": "In Transit",
-    "repairstatusEdit": "[data-value='In Transit']",
+    "repairstatusEdit": "[data-value='Part Received']",
     "serialnumber": "VIVATEST44Test",
     "repairdevice": "Asus Chromebook 11 C201PA-DS01 - Rockchip/2GB/16GB - Non-Touch - New",
     "studenttechnician": "Demo Testing Edit",
-    "createdby": "demo_adminvivacity@vivacitytech.com"
+    "createdby": "demo_adminvivacity@vivacitytech.com",
+    "updatemsg":"Ticket updated",
+    "lastmodifieddate":"07-07-2024 16:57:30"
   },
   "srcFacilitators": {
     "fullName": "Lisa Burton",
@@ -227,7 +241,8 @@
     "status": "Inactive",
     "phoneNo1": "81405463",
     "phoneNo2": "(814) 054-63",
-    "title": "Miss"
+    "title": "Miss",
+    "lastmodifieddate":"07-07-2024 11:43:53"
   },
   "srcStudent": {
     "title": "Mr",
@@ -278,13 +293,13 @@
     "editUserRole": "[data-value='4']",
     "editUserStatus": "[data-value='Inactive']",
     "editInhouseRepaire": "[data-value='true']",
-    "updateStudentmsg": "User has been updated",
+    "updateStudentmsg": "User details updated",
     "deleteStudentmsg": "User has been deleted successfully",
     "filename": "users_list.csv",
     "rolename": "Student",
     "userrole": "Student Repair Technician",
     "userstatus": "Inactive",
-    "recordid": "2522"
+    "recordid": "24496"
   },
   "myprofile": {
     "profileupdatemsg": "Profile updated successfully",
@@ -366,7 +381,7 @@
     "emaildrop": "[data-value='email']"
   },
   "loanerManagement": {
-    "serialno": "VIVATEST138Test",
+    "serialno": "AAAAATest",
     "studentname": "Demo User",
     "title": "Mr",
     "fullname": "Demo Student",
@@ -374,7 +389,7 @@
     "status": "[data-value='Active']",
     "building": "[data-value='2438']",
     "student_id": "[data-value='YS001']",
-    "stdcreatedmsg": "Add new Student form submitted"
+    "stdcreatedmsg": "Student submitted successfully"
   },
   "login": {
     "username": "demo_adminSuper@vivacitytech.com",

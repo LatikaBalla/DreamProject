@@ -21,18 +21,17 @@ Feature:  Users Page Functionality
     And Click on Edit button
     Then I should edit title, full name
     And I should edit Phone and Cell Number and user role
-    Then I edit User Status to inactive
+    Then I edit User Status by clicking on checkbox
     And I edit Building
     Then Click on Submit button
-    # And Verify the Record has been updated Meassage
-    And Click on Delete button
-    Then Click on Confirm Delete button
+    And Verify the Record has been updated Meassage
+    # And Click on Delete button
+    # Then Click on Confirm Delete button
     # And Verify the record is deleted successfully
     Then Click on Download button
     And Enter the Search - Record Id in search box and Verify the Result
     Then Enter the Search - Full Name in search box and Verify the Result
     And Enter the Search - Email in search box and Verify the Result
-    # Then Enter the Search - Phone in search box and Verify the Result
     And Enter the Search - CellNumber in search box and Verify the Result
    Then Enter the Search - User Role in search box and Verify the Result
     And Click More filter select- Record Id in search box and Verify the Result

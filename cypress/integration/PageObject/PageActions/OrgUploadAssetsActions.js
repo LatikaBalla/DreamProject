@@ -95,10 +95,12 @@ export class OrgUploadAssetsActions {
         dash.messageElement().should('contain', tdata.orgAsset.updatemsg)
     }
     clickDeleteIcon() {
-        oua.deleteElement().eq(0).scrollIntoView().click({ force: true })
+       // oua.deleteElement().eq(0).scrollIntoView().click({ force: true })
+        cy.get('tbody tr').eq(0).find('td').eq(4).contains('DELETE').click({ force: true })
     }
     clickConfirmDeleteButton() {
-        oua.conDeletebtnElement().click({ force: true })
+        cy.get('.MuiBox-root > .MuiButton-outlinedError').click({ force: true })
+      //  oua.conDeletebtnElement().click({ force: true })
     }
     verifyRecordDeleted() {
         cy.wait(2000)

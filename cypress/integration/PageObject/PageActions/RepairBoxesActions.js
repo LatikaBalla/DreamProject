@@ -35,7 +35,9 @@ export class RepairBoxesActions {
     }
     enterWeight() {
         rb.weightElement().type(tdata.repairBox.weight)
-        cy.get('[role="combobox"]').eq(2).click({ force: true })
+    }
+    selectStandardSize(){
+        rb.standardSizeElement().click({ force: true })
         cy.get('[role="listbox"]').find('li').contains('1 Unit (18Dx12Wx3H)').click({ force: true })
     }
     enterHeight() {
@@ -72,7 +74,7 @@ export class RepairBoxesActions {
             // win.open('https://google.com', '_blank');
         });
         cy.get('body').type('{ctrl}t');
-        cy.visit("https://dream-frontend-stage.onrender.com/repair-center/box-detail/" + tdata.repairBox.recordid)
+        cy.visit("/repair-360/box-detail/" + tdata.repairBox.recordid)
         //cy.get('tr td').eq(5).contains('View Status').click({ force: true })
     }
     verifyBoxDetails() {
@@ -112,16 +114,26 @@ export class RepairBoxesActions {
         rb.searchboxElement().eq(0).click({ force: true })
         rb.trackingnumberElement().click({ force: true })
         rb.searchElement().clear({ force: true }).type(tdata.repairBox.trackingnumber + '{enter}', { force: true })
-      //  cy.wait(4000)
         cy.get('tr td').eq(1).should('contain', tdata.repairBox.trackingnumber)
     }
     searchRecordId() {
         rb.searchboxElement().eq(0).click({ force: true })
         rb.recordidElement().click({ force: true })
         rb.searchElement().clear({ force: true }).type(tdata.repairBox.recordid + '{enter}', { force: true })
-        // cy.wait(1000)
         cy.get('tr td').eq(0).should('contain', tdata.repairBox.recordid)
         rb.searchElement().clear({ force: true })
+    }
+    searchCreatedby(){
+        rb.searchboxElement().eq(0).click({ force: true })
+        rb.createdbyElement().click({ force: true })
+        rb.searchElement().clear({ force: true }).type(tdata.repairBox.createdby + '{enter}', { force: true })
+        cy.get('tr td').eq(7).should('contain', tdata.repairBox.createdby)
+    }
+    searchBuilding(){
+        rb.searchboxElement().eq(0).click({ force: true })
+        rb.buildingElement().click({ force: true })
+        rb.searchElement().clear({ force: true }).type(tdata.repairBox.building+ '{enter}', { force: true })
+        cy.get('tr td').eq(4).should('contain', tdata.repairBox.building)
     }
     clickOnClearFilter() {
         rb.clearFilterElement().click({ force: true })
@@ -154,7 +166,7 @@ export class RepairBoxesActions {
         rb.addFilterElement().click({ force: true })
         rb.fieldNameElement().select('shipped_from_date', { force: true })
         rb.fieldOpElement().select('Does Not Contain', { force: true })
-        rb.fieldValueElement().type(tdata.repairBox.shippeddate)
+        rb.fieldValueElement().type(tdata.repairBox.shippeddate, { force: true })
         rb.applyElement().click({ force: true })
         cy.get('tr td').eq(3).should('not.contain', tdata.repairBox.shippeddate)
     }
@@ -162,9 +174,49 @@ export class RepairBoxesActions {
         rb.addFilterElement().click({ force: true })
         rb.fieldNameElement().select('label_from', { force: true })
         rb.fieldOpElement().select('Does Not Contain', { force: true })
-        rb.fieldValueElement().type(tdata.repairBox.labelfrom)
+        rb.fieldValueElement().type(tdata.repairBox.labelfrom, { force: true })
         rb.applyElement().click({ force: true })
         cy.get('tr td').eq(6).should('not.contain', tdata.repairBox.labelfrom)
+    }
+    selectFilterBuilding(){
+        rb.addFilterElement().click({ force: true })
+        rb.fieldNameElement().select('building', { force: true })
+        rb.fieldOpElement().select('Contains', { force: true })
+        rb.fieldValueElement().type(tdata.repairBox.building, { force: true })
+        rb.applyElement().click({ force: true })
+        cy.get('tr td').eq(4).should('contain', tdata.repairBox.building)
+    }
+    selectFilterBoxtype(){
+        rb.addFilterElement().click({ force: true })
+        rb.fieldNameElement().select('box_type', { force: true })
+        rb.fieldOpElement().select('Contains', { force: true })
+        rb.fieldValueElement().type(tdata.repairBox.boxtype, { force: true })
+        rb.applyElement().click({ force: true })
+        cy.get('tr td').eq(5).should('contain', tdata.repairBox.boxtype)
+    }
+    selectFiltershippingboxstatus(){
+        rb.addFilterElement().click({ force: true })
+        rb.fieldNameElement().select('shipping_box_status', { force: true })
+        rb.fieldOpElement().select('Contains', { force: true })
+        rb.fieldValueElement().type(tdata.repairBox.shippingboxstatus, { force: true })
+        rb.applyElement().click({ force: true })
+        cy.get('tr td').eq(6).should('contain', tdata.repairBox.shippingboxstatus)
+    }
+    selectFilterCreatedby(){
+        rb.addFilterElement().click({ force: true })
+        rb.fieldNameElement().select('created_by', { force: true })
+        rb.fieldOpElement().select('Contains', { force: true })
+        rb.fieldValueElement().type(tdata.repairBox.createdby, { force: true })
+        rb.applyElement().click({ force: true })
+        cy.get('tr td').eq(7).should('contain', tdata.repairBox.createdby)
+    }
+    selectFilterLastdate (){
+        rb.addFilterElement().click({ force: true })
+        rb.fieldNameElement().select('last_modified_date', { force: true })
+        rb.fieldOpElement().select('Contains', { force: true })
+        rb.fieldValueElement().type(tdata.repairBox.lastdate, { force: true })
+        rb.applyElement().click({ force: true })
+        cy.get('tr td').eq(8).should('contain', tdata.repairBox.lastdate)
     }
 }
 export default RepairBoxesActions 

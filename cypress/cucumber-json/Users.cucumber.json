@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3612000000
+              "duration": 6233000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6962000000
+              "duration": 9804000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Users page",
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 88000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I should be redirected to the Users page",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 6000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Filters of Users unit should be visible",
             "result": {
               "status": "passed",
-              "duration": 978000000
+              "duration": 850000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Table for Users unit should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 9000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "I should click on Add New student",
             "result": {
               "status": "passed",
-              "duration": 69000000
+              "duration": 89000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Enter full name, title and Email",
             "result": {
               "status": "passed",
-              "duration": 1058000000
+              "duration": 1450000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Enter Phone, Cell Number, role and building",
             "result": {
               "status": "passed",
-              "duration": 879000000
+              "duration": 988000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 67000000
+              "duration": 68000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Verify the student added in table",
             "result": {
               "status": "passed",
-              "duration": 1464000000
+              "duration": 1532000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on Edit button",
             "result": {
               "status": "passed",
-              "duration": 929000000
+              "duration": 180000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "I should edit title, full name",
             "result": {
               "status": "passed",
-              "duration": 1280000000
+              "duration": 1156000000
             }
           },
           {
@@ -163,17 +163,17 @@
             "name": "I should edit Phone and Cell Number and user role",
             "result": {
               "status": "passed",
-              "duration": 1076000000
+              "duration": 1281000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 24,
-            "name": "I edit User Status to inactive",
+            "name": "I edit User Status by clicking on checkbox",
             "result": {
               "status": "passed",
-              "duration": 125000000
+              "duration": 69000000
             }
           },
           {
@@ -193,27 +193,17 @@
             "name": "Click on Submit button",
             "result": {
               "status": "passed",
-              "duration": 108000000
+              "duration": 140000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 28,
-            "name": "Click on Delete button",
+            "line": 27,
+            "name": "Verify the Record has been updated Meassage",
             "result": {
               "status": "passed",
-              "duration": 181000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "Click on Confirm Delete button",
-            "result": {
-              "status": "passed",
-              "duration": 65000000
+              "duration": 401000000
             }
           },
           {
@@ -223,7 +213,7 @@
             "name": "Click on Download button",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 90000000
             }
           },
           {
@@ -233,7 +223,7 @@
             "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3577000000
+              "duration": 3729000000
             }
           },
           {
@@ -243,7 +233,7 @@
             "name": "Enter the Search - Full Name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 860000000
+              "duration": 650000000
             }
           },
           {
@@ -253,83 +243,43 @@
             "name": "Enter the Search - Email in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1057000000
+              "duration": 1024000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 36,
+            "line": 35,
             "name": "Enter the Search - CellNumber in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1113000000
+              "duration": 1124000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 37,
+            "line": 36,
             "name": "Enter the Search - User Role in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 966000000
+              "duration": 1234000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 38,
+            "line": 37,
             "name": "Click More filter select- Record Id in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 746000000
+              "duration": 806000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 39,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 70000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 40,
-            "name": "Click More filter select- Full name in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 2198000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 41,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 286000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 42,
-            "name": "Click More filter select- Eamil in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1311000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 43,
+            "line": 38,
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
@@ -339,61 +289,101 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 44,
+            "line": 39,
+            "name": "Click More filter select- Full name in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 2996000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 425000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "Click More filter select- Eamil in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1504000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "Click on Clear filter",
+            "result": {
+              "status": "passed",
+              "duration": 74000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
             "name": "Click More filter select- Cell Number in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1761000000
+              "duration": 1971000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 45,
+            "line": 44,
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 203000000
+              "duration": 793000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 46,
+            "line": 45,
             "name": "Click More filter select- Role Name in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1341000000
+              "duration": 1562000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 47,
+            "line": 46,
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 74000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 48,
+            "line": 47,
             "name": "Click More filter select- User status in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1854000000
+              "duration": 2012000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 49,
+            "line": 48,
             "name": "Click on Clear filter",
             "result": {
               "status": "passed",
-              "duration": 270000000
+              "duration": 275000000
             }
           }
         ]

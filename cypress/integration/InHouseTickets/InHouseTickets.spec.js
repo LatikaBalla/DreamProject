@@ -71,6 +71,9 @@ And('Enter the Search - Repair type in search box and Verify the Result', () => 
 Then('Enter the Search - Repair status in search box and Verify the Result', () => {
     iht.searchRepairStatus()
 })
+And('Enter the Search - Building in search box and Verify the Result', () => {
+    iht.searchbuiling()
+})
 Then('Click on Clear filter', () => {
     iht.clickOnClearFilter()
 })
@@ -111,6 +114,14 @@ And('Click More filter select- Created By in search box and Verify the Result', 
     iht.clickOnMoreFilter()
     iht.selectFilterCreatedBy()
 })
+And ('Click More filter select- Building in search box and Verify the Result',()=>{
+    iht.clickOnMoreFilter()
+    iht.selectFilterBuilding()
+})
+And ('Click More filter select- Last Modified Date in search box and Verify the Result',()=>{
+    iht.clickOnMoreFilter()
+    iht.selectFilterlastmodifieddate()
+})
 And('Enter the Search value in search box', () => {
     iht.enterSearchBox()
 })
@@ -144,4 +155,16 @@ Then('Click on Add Repair Image and Verify', () => {
 })
 And('Click on Add Note and Verify', () => {
     iht.clickOnAddNote()
+})
+And ('Click on the Update to student Button', () => {
+    iht.clickOnUpdateStudent()
+})
+Then ('Updated to student successfully', () => {
+    iht.verifyUpdateStudent()
+})
+ And ('Click on the Update to in house Button', () => {
+    iht.clickOnUpdateInhouse()
+ })
+Then ('Updated to in house successfully', () => {
+    iht.verifyUpdateInhouse()
 })

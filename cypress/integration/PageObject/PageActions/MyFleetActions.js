@@ -36,22 +36,27 @@ export class MyFleetActions {
         mf.searchElement().clear({ force: true }).type(tdata.myFleet.search1, { force: true })
     }
     verifySearchResult() {
-        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.myFleet.search, { force: true })
+        cy.get('tbody tr').eq(0).find('td').eq(1).should('contain', tdata.myFleet.search, { force: true })
     }
     verifySearchResult1() {
-        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.myFleet.search1, { force: true })
+        cy.get('tbody tr').eq(0).find('td').eq(1).should('contain', tdata.myFleet.search1, { force: true })
     }
     clickOnMoreFiltersButton() {
-        mf.morefiltersElement().scrollIntoView().click({ force: true })
+        cy.get('[data-testid="FilterListIcon"]').click({ force: true })
+        //mf.morefiltersElement().scrollIntoView().click({ force: true })
     }
-    clickOnEditButton() {
-        cy.wait(3000)
-        cy.get('tr td').eq(8).contains('Edit').click({ force: true })
+    clickOnEditButtonGeneral() {
+        cy.get('[aria-label="Edit General Device Info"]').click({ force: true })
     }
-    editInformation() {
+    clickOnEditButtonAssign() {
+        cy.get('[aria-label="Edit Device Assignment"]').click({ force: true })
+    }
+    editGeneral() {
         mf.assetTagElement().clear({ force: true }).type(tdata.myFleet.serialnoEdit, { force: true })
+    }
+    editAssignment() {
         mf.studentinfoElement().click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains('Test').click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains('Demo Test').click({ force: true })
         // cy.get(tdata.myFleet.studentidEdit).click()
         mf.buildingElement().click({ force: true })
         cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
@@ -59,9 +64,11 @@ export class MyFleetActions {
     clickOnUpdateButton() {
         mf.updatebtnElement().click({ froce: true })
     }
-    verifyUdated() {
-        dash.messageElement().should('contain', 'Device Update')
-
+    verifyGeneralUdate() {
+        dash.messageElement().should('contain', 'Device info updated')
+    }
+    verifyAssignmnetUdate() {
+        dash.messageElement().should('contain', 'Device assignment updated')
     }
     clickOnClearFiltersButton() {
         mf.clearfilterElement().click({ force: true })
@@ -76,13 +83,17 @@ export class MyFleetActions {
     verifyDownloadSuccessful() {
         cy.verifyDownload("/download/", tdata.myFleet.filename)
     }
+    clickOnDeviceIcon() {
+        mf.deviceIconElement().eq(1).click({ force: true })
+    }
     clickOnViewButton() {
         cy.wait(5000)
-        cy.get('tbody tr').eq(0).find('td').eq(8).scrollIntoView().contains("View").click({ force: true })
-        // mf.viewElement().scrollIntoView().click({ force: true })
+        //cy.get('tbody tr').eq(0).find('td').eq(8).scrollIntoView().contains("View").click({ force: true })
+        mf.viewElement().click({ force: true })
     }
     verifyViewResult() {
-        cy.contains('Fleet Device').should('be.visible', { force: true })
+        //  cy.get('.css-tolxbf').should('be.visible', { force: true })
+        cy.contains('General Info').should('be.visible', { force: true })
         // cy.contains(tdata.myFleet.serialno).should('be.visible',{ force: true })
     }
     verifyViewResult1() {
@@ -120,6 +131,52 @@ export class MyFleetActions {
     }
     verfifyDeviceAdded() {
         dash.messageElement().should('contain', tdata.myFleet.addDevicemsg)
+    }
+    enterSearchGdata() {
+        mf.searchElement().clear({ force: true }).type(tdata.myFleet.searchG, { force: true })
+    }
+    verifyGoogleRecord() {
+        cy.get('tbody tr').eq(0).find('td').eq(1).should('contain', tdata.myFleet.searchG, { force: true })
+    }
+    clickonGoogleIcon() {
+        //cy.get('.MuiButtonBase-root > img').eq(0).click({ force: true })
+        cy.get('.MuiTableRow-root > :nth-child(1) > div > .MuiButtonBase-root').dblclick({ force: true })
+    }
+    verifyGoogleGolocation() {
+        cy.contains('Google Data').should('be.visible')
+        cy.contains('Current Geolocation').scrollIntoView().should('be.visible')
+    }
+    clickonEditGoogle() {
+        cy.get('[aria-label="Edit Google Data"]').click({ force: true })
+    }
+    updateGoogleData() {
+
+    }
+    verifyGoogleUpdated() {
+
+    }
+    converRetired() {
+        cy.get('[data-testid="KeyboardBackspaceIcon"]').click({ force: true })
+        mf.searchElement().clear({ force: true }).type(tdata.myFleet.search, { force: true })
+        mf.deviceIconElement().eq(1).click({ force: true })
+        cy.contains('Retire Device').click({ force: true })
+        dash.messageElement().should('contain', 'Device Retired')
+    }
+    verifyRetired() {
+        cy.get('[data-testid="tabDeactivate"]').click({ force: true })
+        mf.searchElement().clear({ force: true })
+        mf.searchElement().type(tdata.myFleet.search, { force: true })
+        cy.get('tbody tr').eq(0).find('td').eq(1).should('contain', tdata.myFleet.search, { force: true })
+    }
+    convertActive() {
+        mf.deviceIconElement().eq(1).click({ force: true })
+        cy.contains('Activate Device').click({ force: true })
+        dash.messageElement().should('contain', 'Device Activated')
+    }
+    verifyActive() {
+        cy.get('[data-testid="tabActive"]').click({ force: true })
+        mf.searchElement().clear({ force: true }).type(tdata.myFleet.search, { force: true })
+        cy.get('tbody tr').eq(0).find('td').eq(1).should('contain', tdata.myFleet.search, { force: true })
 
     }
     selectFilterSerialNumber() {
@@ -153,6 +210,17 @@ export class MyFleetActions {
         mf.applyElement().click({ force: true })
         cy.get('tr td').eq(2).should('not.contain', 'Lea')
     }
+
+    selectFilterOrganization() {
+        cy.contains('+ Add Filter Group').click({ force: true })
+        mf.fieldNameElement().select('organizational_unit', { force: true })
+        mf.fieldOpElement().select('does_not_contain', { force: true })
+        cy.get('[data-testid="ArrowDropDownIcon"]').click({ force: true })
+        mf.fieldValueElement().click({ force: true })
+        cy.get('#\:r2e\:-option-1').click({ force: true })
+        mf.applyElement().click({ force: true })
+        cy.get('tr td').eq(2).should('not.contain', 'Lea')
+    }
     clickOnRetiredTab() {
         cy.get('[data-testid="tabDeactivate"]').click({ force: true })
     }
@@ -160,43 +228,49 @@ export class MyFleetActions {
         cy.get('[type="button"]').contains('CPU Status').click({ force: true })
     }
     verifyCPUStatus() {
-        cy.get('h6.css-4an0mh').contains('CPU Information').should('be.visible', { force: true })
+        cy.get('.css-1lmgebw').contains('CPU Information').should('be.visible', { force: true })
     }
     clickOnMemory() {
         cy.get('[type="button"]').contains('Memory Information').click({ force: true })
-     }
+    }
     verifyMemory() {
-        cy.get('h6.css-4an0mh').contains('Memory Information').should('be.visible', { force: true })
-     }
-    clickOnNetwork() { 
+        cy.get('.css-1lmgebw').contains('Memory Information').should('be.visible', { force: true })
+    }
+    clickOnNetwork() {
         cy.get('[type="button"]').contains('Network Information').click({ force: true })
     }
-    verifyNetwork() { 
-        cy.get('h6.css-4an0mh').contains('Network Information').should('be.visible', { force: true })
+    verifyNetwork() {
+        cy.get('.css-1lmgebw').contains('Network Information').should('be.visible', { force: true })
     }
     clickOnOS() {
         cy.get('[type="button"]').contains('OS Information').click({ force: true })
-     }
-    verifyOS() { 
-        cy.get('h6.css-4an0mh').contains('OS Information').should('be.visible', { force: true })
     }
-    clickOnBattery() { 
+    verifyOS() {
+        cy.get('.css-1lmgebw').contains('OS Information').should('be.visible', { force: true })
+    }
+    clickOnBattery() {
         cy.get('[type="button"]').contains('Battery Information').click({ force: true })
     }
-    verifyBattery() { 
-        cy.get('h6.css-4an0mh').contains('Battery Information').should('be.visible', { force: true })
+    verifyBattery() {
+        cy.get('.css-1lmgebw').contains('Battery Information').should('be.visible', { force: true })
     }
-    clickOnStorage() { 
+    clickOnStorage() {
         cy.get('[type="button"]').contains('Storage Information').click({ force: true })
     }
     verifyStorage() {
-        cy.get('h6.css-4an0mh').contains('Storage Information').should('be.visible', { force: true })
-     }
+        cy.get('.css-1tqv6h6').contains('Storage Information').should('be.visible', { force: true })
+    }
     clickOnBootPerformanceReport() {
         cy.get('[type="button"]').contains('Boot Performance Report').click({ force: true })
-     }
-    verifBootPerformanceReport() { 
-        cy.get('h6.css-4an0mh').contains('Boot Performance Report').should('be.visible', { force: true })
+    }
+    verifyBootPerformanceReport() {
+        cy.get('.css-4c2hj7').contains('Boot Performance Report').should('be.visible', { force: true })
+    }
+    clickOnRecentUser() {
+        cy.get('[type="button"]').contains('Recent User').click({ force: true })
+    }
+    verifyRecentUser() {
+        cy.get('.css-1lmgebw').contains('Recent User').should('be.visible', { force: true })
     }
 }
 export default MyFleetActions 
