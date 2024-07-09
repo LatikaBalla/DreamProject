@@ -32,7 +32,7 @@ export class LandingActions {
         lan.featurestabElement().click({ force: true })
     }
     verifyFeatureSection() {
-        lan.featureSectionElement().should('be.visible')
+        lan.featureSectionElement().eq(0).should('be.visible')
     }
     clickOnProductTab() {
         lan.producttabElement().click({ force: true })
@@ -41,7 +41,7 @@ export class LandingActions {
         lan.productSectionElement().should('be.visible')
     }
     clickOngoogleSync() {
-        lan.googleSyncElement().click({ force: true })
+        lan.googleSyncElement().eq(0).click({ force: true })
     }
     redrectTogoogleSync() {
         lan.googleSyncSectionElement().should('be.visible')

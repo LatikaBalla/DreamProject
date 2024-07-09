@@ -1,27 +1,17 @@
-full_name,title,email,user_status,phone
-Demo Student,Mr,1720441426575@gmail.com,Active,1231231231
-Demo Student,Mr,1720438166423@gmail.com,Active,1231231231
-Demo Student,Mr,1720437794936@gmail.com,Active,1231231231
-Demo Student,Mr,1720332831283@gmail.com,Active,1231231231
-Demo Student,Mr,1720332588834@gmail.com,Active,1231231231
-Add student june,Add student 15 june,sduttatest12@vivacitytech.com,Active,
-Test Name,,test@gmail.com,Active,
-Corey Tester A,MR,corey.tester.a@yopmail.com,Active,
-Harold Jay Tester,,haroldjaytester@hadd.com,Active,
-Demo Test,,someone@email.com,Active,
-yasna,mr,yasna@gmail.com,Active,
-demo admin sd,demo admin sd,demoadminsd@example.com,Active,1233211234
-,,demo_repairfacilitator@vivacitytech.com,Active,
-test,test,mn@gmail.com,Active,7894564458
-test 1,,test@test.com,Active,
-Add User,user creation,sd@gmail.com,Active,
-Edit Test,Mrs,1690806807082@gmail.com,Inactive,24234234
-UI TEST delete,shya,sd@email.com,Active,89898
-Edit Test,,annaking01@gmail.com,Active,81405463
-Lauren Harris,important,sgarcia@example.org,Active,21962101
-Brian Wilcox,daughter,lori35@example.net,Active,84280551
-Nancy Stewart,school,NStewart@example.com,Active,81405463
-Lisa Burton,Democrat,davidtaylor@example.net,Active,81405463
-Christina Johnson,store,turnerjose@example.com,Active,81405463
-Julie Mcclure,central,johnmorse@example.org,Active,81405463
-Crystal Smith,physical,sgonzalez@example.com,Active,73008689
+record_id,full_name,title,email,user_role,phone,cell_number,user_status
+23502,Casey Rossi,Customer Success Rep I,crossi@vivacitytech.com,Vivacity Admin,8648319499,8648319499,Active
+24499,Account_Test1,Miss,1720427144794@gmail.com,Vivacity Admin,8648319499,8648319499,Active
+24500,Account_Test1,Miss,1720427346649@gmail.com,Vivacity Admin,8648319499,8648319499,Active
+24501,Account_Test1,Miss,1720427545322@gmail.com,Vivacity Admin,8648319499,8648319499,Active
+24502,Account_Test1,Miss,1720428306933@gmail.com,Vivacity Admin,8648319499,8648319499,Active
+24503,Account_Test1,Miss,1720429013635@gmail.com,Vivacity Admin,8648319499,8648319499,Active
+24504,Account_Test1,Miss,1720429114056@gmail.com,Vivacity Admin,8648319499,8648319499,Active
+24505,Account_Test1,Miss,1720429318835@gmail.com,Vivacity Admin,8648319499,8648319499,Active
+24506,Account_Test1,Miss,1720429629587@gmail.com,Vivacity Admin,8648319499,8648319499,Active
+24474,Account_Test1,Miss,1719729193113@gmail.com,Vivacity Admin,8648319499,8648319499,Active
+24475,Account_Test1,Miss,1719733275389@gmail.com,Vivacity Admin,8648319499,8648319499,Active
+24476,Account_Test1,Miss,1719741850595@gmail.com,Vivacity Admin,8648319499,8648319499,Active
+24334,Account_Test1,Miss,1719567788276@gmail.com,Super Admin,8648319499,8648319499,Active
+24335,Account_Test1,Miss,1719580130799@gmail.com,Vivacity Admin,8648319499,8648319499,Active
+24336,Account_Test1,Miss,1719580420864@gmail.com,Vivacity Admin,8648319499,8648319499,Active
+24338,Account_Test1,Miss,1719582852013@gmail.com,Vivacity Admin,8648319499,8648319499,Active

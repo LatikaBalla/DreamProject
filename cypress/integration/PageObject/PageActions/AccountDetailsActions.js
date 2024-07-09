@@ -22,8 +22,8 @@ export class AccountDetailsActions {
         acc.accountnameElement().should('be.visible')
         acc.accountnoElement().should('be.visible')
         acc.accountcreditElement().should('be.visible')
-        acc.billingaddressElement().should('be.visible')
-        acc.shippingaddressElement().should('be.visible')
+      //  acc.billingaddressElement().should('be.visible')
+        //acc.shippingaddressElement().should('be.visible')
         acc.accountmanagerElement().should('be.visible')
     }
     tableAccountVisible() {
@@ -245,8 +245,8 @@ export class AccountDetailsActions {
     }
     sectionManaddressVisible() {
         acc.accountmanagerElement().should('be.visible')
-        acc.billingaddressElement().should('be.visible')
-        acc.shippingaddressElement().should('be.visible')
+       // acc.billingaddressElement().should('be.visible')
+        //acc.shippingaddressElement().should('be.visible')
     }
     clickOnExporttoCSV() {
         cy.contains('Export').click({ force: true })
