@@ -21,83 +21,38 @@ export default class FeaturesElements {
             timeout: 30000,
         });
     }
-    googleSyncElement() {
-        return cy.get(locator.landing.googleSync, {
+    featureFooterElement() {
+        return cy.get(locator.landing.featureFooter, {
             timeout: 30000,
         });
     }
-    roleAccessElement() {
-        return cy.get(locator.landing.roleAccess, {
+    googleAdminSectionElement() {
+        return cy.get(locator.landing.googleAdminSection, {
             timeout: 30000,
         });
     }
-    deviceManElement() {
-        return cy.get(locator.landing.deviceMan, {
+    streamProcessSectionElement() {
+        return cy.get(locator.landing.streamProcessSection, {
             timeout: 30000,
         });
     }
-    deviceTelemetryElement() {
-        return cy.get(locator.landing.deviceTelemetry, {
+    customizationSectionElement() {
+        return cy.get(locator.landing.customizationSection, {
             timeout: 30000,
         });
     }
-    userAccoElement() {
-        return cy.get(locator.landing.userAcco, {
+    customerSupportSectionElement() {
+        return cy.get(locator.landing.customerSupportSection, {
             timeout: 30000,
         });
     }
-    reportCenterElement() {
-        return cy.get(locator.landing.reportCenter, {
+    userUpdatesSectionElement() {
+        return cy.get(locator.landing.userUpdatesSection, {
             timeout: 30000,
         });
     }
-    reportCenterElement() {
-        return cy.get(locator.landing.reportCenter, {
-            timeout: 30000,
-        });
-    }
-    repair360Element() {
-        return cy.get(locator.landing.repair360, {
-            timeout: 30000,
-        });
-    }
-    googleSyncSectionElement() {
-        return cy.get(locator.landing.googleSyncSection, {
-            timeout: 30000,
-        });
-    }
-    roleAccessSectionElement() {
-        return cy.get(locator.landing.roleAccessSection, {
-            timeout: 30000,
-        });
-    }
-    deviceManSectionElement() {
-        return cy.get(locator.landing.deviceManSection, {
-            timeout: 30000,
-        });
-    }
-    deviceTelemetrySectionElement() {
-        return cy.get(locator.landing.deviceTelemetrySection, {
-            timeout: 30000,
-        });
-    }
-    userAccoSectionElement() {
-        return cy.get(locator.landing.userAccoSection, {
-            timeout: 30000,
-        });
-    }
-    reportCenterSectionElement() {
-        return cy.get(locator.landing.reportCenterSection, {
-            timeout: 30000,
-        });
-    }
-    reportCenterSectionElement() {
-        return cy.get(locator.landing.reportCenterSection, {
-            timeout: 30000,
-        });
-    }
-    repair360SectionElement() {
-        return cy.get(locator.landing.repair360Section, {
+    resourceLibrarySectionElement() {
+        return cy.get(locator.landing.resourceLibrarySection, {
             timeout: 30000,
         });
     }
@@ -133,11 +88,6 @@ export default class FeaturesElements {
     }
     googleDisclosureElement() {
         return cy.get(locator.landing.googleDisclosure, {
-            timeout: 30000,
-        });
-    }
-    shippingElement() {
-        return cy.get(locator.landing.shipping, {
             timeout: 30000,
         });
     }

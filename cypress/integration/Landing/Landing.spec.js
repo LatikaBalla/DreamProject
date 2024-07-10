@@ -38,47 +38,41 @@ And('Click on the product tab', () => {
 Then('Redirect to Product section and should be visible', () => {
     lan.verifyProductSection()
 })
-And('Click on Features-Google Admin Console Sync of footer', () => {
+And('Click on Features-Google Admin Console Integration of footer', () => {
     lan.clickOngoogleSync()
 })
-Then('Redirect to the Features-Google Admin Console Sync section', () => {
+Then('Redirect to the Features-Google Admin Console Integration section', () => {
     lan.redrectTogoogleSync()
 })
-And('Click on the Feature-Role-Based Organization Access of footer', () => {
+And('Click on the Feature-Streamlined Process of footer', () => {
     lan.clickOnroleAccess()
 })
-Then('Redirect to Feature-Role-Based Organization Access section', () => {
+Then('Redirect to Feature-Streamlined Process section', () => {
     lan.redrectToroleAccess()
 })
-And('Click on the Feature-Device Management of footer', () => {
+And('Click on the Feature-Customization of footer', () => {
     lan.clickOndeviceMan()
 })
-Then('Redirect to Feature-Device Management section', () => {
+Then('Redirect to Feature-Customization section', () => {
     lan.redrectTodeviceMan()
 })
-And('Click on Features-Device Telemetry Reports of footer', () => {
+And('Click on Features-Customer Support of footer', () => {
     lan.clickOndeviceTelemetry()
 })
-Then('Redirect to the Features-Device Telemetry Reports section', () => {
+Then('Redirect to the Features-Customer Support section', () => {
     lan.redrectTodeviceTelemetry()
 })
-And('Click on the Feature-User Accounts of footer', () => {
+And('Click on the Feature-User Updates of footer', () => {
     lan.clickOnuserAcco()
 })
-Then('Redirect to Feature-User Accounts section', () => {
+Then('Redirect to Feature-User Updates section', () => {
     lan.redrectTouserAcco()
 })
-And('Click on the Feature-Report Center of footer', () => {
+And('Click on the Feature-Resource Library of footer', () => {
     lan.clickOnreportCenter()
 })
-Then('Redirect t0 Feature-Report Center section', () => {
+Then('Redirect to Feature-Resource Library section', () => {
     lan.redrectToreportCenter()
-})
-And('Click on the Feature-Repair 360 of footer', () => {
-    lan.clickOnrepair360()
-})
-Then('Redirect to Feature-Repair 360 section', () => {
-    lan.redrectTorepair360()
 })
 And('Click on Company->Request A Quote of footer', () => {
     lan.clickreqAQuote()

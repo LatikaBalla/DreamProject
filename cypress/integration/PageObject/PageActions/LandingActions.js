@@ -41,46 +41,40 @@ export class LandingActions {
         lan.productSectionElement().should('be.visible')
     }
     clickOngoogleSync() {
-        lan.googleSyncElement().eq(0).click({ force: true })
+        lan.featureFooterElement().eq(0).click({ force: true })
     }
     redrectTogoogleSync() {
-        lan.googleSyncSectionElement().should('be.visible')
+        lan.googleAdminSectionElement().should('be.visible')
     }
     clickOnroleAccess() {
-        lan.roleAccessElement().click({ force: true })
+        lan.featureFooterElement().eq(1).click({ force: true })
     }
     redrectToroleAccess() {
-        lan.roleAccessSectionElement().should('be.visible')
+        lan.streamProcessSectionElement().should('be.visible')
     }
     clickOndeviceMan() {
-        lan.deviceManElement().click({ force: true })
+        lan.featureFooterElement().eq(2).click({ force: true })
     }
     redrectTodeviceMan() {
-        lan.deviceManSectionElement().should('be.visible')
+        lan.customizationSectionElement().should('be.visible')
     }
     clickOndeviceTelemetry() {
-        lan.deviceTelemetryElement().click({ force: true })
+        lan.featureFooterElement().eq(3).click({ force: true })
     }
     redrectTodeviceTelemetry() {
-        lan.deviceTelemetrySectionElement().should('be.visible')
+        lan.customerSupportSectionElement().should('be.visible')
     }
     clickOnuserAcco() {
-        lan.userAccoElement().click({ force: true })
+        lan.featureFooterElement().eq(4).click({ force: true })
     }
     redrectTouserAcco() {
-        lan.userAccoSectionElement().should('be.visible')
+        lan.userUpdatesSectionElement().should('be.visible')
     }
     clickOnreportCenter() {
-        lan.reportCenterElement().click({ force: true })
+        lan.featureFooterElement().eq(5).click({ force: true })
     }
     redrectToreportCenter() {
-        lan.reportCenterSectionElement().should('be.visible')
-    }
-    clickOnrepair360() {
-        lan.repair360Element().click({ force: true })
-    }
-    redrectTorepair360() {
-        lan.repair360SectionElement().should('be.visible')
+        lan.resourceLibrarySectionElement().should('be.visible')
     }
     clickreqAQuote() {
         lan.reqAQuoteElement().click({ force: true })
