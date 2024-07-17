@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2609000000
+              "duration": 2679000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 10881000000
+              "duration": 7870000000
             }
           },
           {
@@ -42,8 +42,9 @@
             "line": 9,
             "name": "Close the terms of service window",
             "result": {
-              "status": "passed",
-              "duration": 8074000000
+              "status": "failed",
+              "duration": 8241000000,
+              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 3 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click\n    at mouseAction (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111447:68)\n    at Context.click (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111611:14)\n    at wrapped (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at FeaturesActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/FeaturesActions.js:11:28)\n    at Context.eval (cypress/integration/Features/Features.spec.js:16:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -52,8 +53,7 @@
             "line": 10,
             "name": "Click on features page",
             "result": {
-              "status": "passed",
-              "duration": 1137000000
+              "status": "skipped"
             }
           },
           {
@@ -62,8 +62,7 @@
             "line": 13,
             "name": "I should be redirected to the Features page",
             "result": {
-              "status": "passed",
-              "duration": 6000000
+              "status": "skipped"
             }
           },
           {
@@ -72,8 +71,7 @@
             "line": 14,
             "name": "Verify the Title of Features Page",
             "result": {
-              "status": "passed",
-              "duration": 398000000
+              "status": "skipped"
             }
           },
           {
@@ -82,8 +80,7 @@
             "line": 15,
             "name": "Verify the Under Consideration Tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 10000000
+              "status": "skipped"
             }
           },
           {
@@ -92,8 +89,7 @@
             "line": 16,
             "name": "Verify the Scheduled tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "skipped"
             }
           },
           {
@@ -102,8 +98,7 @@
             "line": 17,
             "name": "Verify the Launched tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +107,7 @@
             "line": 18,
             "name": "Verify the Under Construction tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 9000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +116,7 @@
             "line": 19,
             "name": "Verify the Roadmap tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 14000000
+              "status": "skipped"
             }
           }
         ]

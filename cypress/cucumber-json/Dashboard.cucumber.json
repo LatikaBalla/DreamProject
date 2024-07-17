@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1974000000
+              "duration": 8889000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7102000000
+              "duration": 14358000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9152000000
+              "duration": 9280000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of dashborad Page",
             "result": {
               "status": "passed",
-              "duration": 1219000000
+              "duration": 931000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the logo should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 8000000
             }
           },
           {
@@ -82,8 +82,9 @@
             "line": 15,
             "name": "My Account Detail tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 80000000
+              "status": "failed",
+              "duration": 30096000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[data-testid='tabacc-1']`, but never found it.\n    at DashboardActions.myAccountDetailsTabVisible (cypress/integration/PageObject/PageActions/DashboardActions.js:15:37)\n    at Context.eval (cypress/integration/Dashboard/Dashboard.spec.js:35:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -92,8 +93,7 @@
             "line": 16,
             "name": "Verify the Title of Account Details Page",
             "result": {
-              "status": "passed",
-              "duration": 87000000
+              "status": "skipped"
             }
           },
           {
@@ -102,8 +102,7 @@
             "line": 17,
             "name": "Filters of account deatils should be visible",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +111,7 @@
             "line": 18,
             "name": "Table for account deatils should be visible",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +120,7 @@
             "line": 19,
             "name": "Building tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 6000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +129,7 @@
             "line": 20,
             "name": "Click on Buildings Tab",
             "result": {
-              "status": "passed",
-              "duration": 61000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +138,7 @@
             "line": 21,
             "name": "Verify the Title of Buildings Page",
             "result": {
-              "status": "passed",
-              "duration": 19000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +147,7 @@
             "line": 22,
             "name": "Filters of Buildings should be visible",
             "result": {
-              "status": "passed",
-              "duration": 33000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +156,7 @@
             "line": 23,
             "name": "Table for Buildings should be visible",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "skipped"
             }
           }
         ]
@@ -183,7 +176,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2131000000
+              "duration": 2349000000
             }
           },
           {
@@ -193,7 +186,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5772000000
+              "duration": 10191000000
             }
           },
           {
@@ -203,7 +196,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9135000000
+              "duration": 9264000000
             }
           },
           {
@@ -222,8 +215,8 @@
             "line": 27,
             "name": "Click on Buildings Tab",
             "result": {
-              "status": "passed",
-              "duration": 657000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[data-testid='tabacc-2']`, but never found it.\n    at DashboardElements.buildingsElement (cypress/integration/PageObject/PageElements/DashboardElements.js:20:18)\n    at BuildingsActions.clickOnBuildingTab (cypress/integration/PageObject/PageActions/BuildingsActions.js:15:13)\n    at Context.eval (cypress/integration/Dashboard/Dashboard.spec.js:50:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -232,8 +225,7 @@
             "line": 28,
             "name": "I should click on + Add New button",
             "result": {
-              "status": "passed",
-              "duration": 89000000
+              "status": "skipped"
             }
           },
           {
@@ -242,8 +234,7 @@
             "line": 29,
             "name": "I should Enter Building Name,Phone and Extension",
             "result": {
-              "status": "passed",
-              "duration": 1001000000
+              "status": "skipped"
             }
           },
           {
@@ -252,8 +243,7 @@
             "line": 30,
             "name": "Select Default building",
             "result": {
-              "status": "passed",
-              "duration": 135000000
+              "status": "skipped"
             }
           },
           {
@@ -262,8 +252,7 @@
             "line": 31,
             "name": "Enter Billing Address and select from dropdown",
             "result": {
-              "status": "passed",
-              "duration": 2924000000
+              "status": "skipped"
             }
           },
           {
@@ -272,8 +261,7 @@
             "line": 32,
             "name": "Click on checkbox Same as Shipping Address",
             "result": {
-              "status": "passed",
-              "duration": 6079000000
+              "status": "skipped"
             }
           },
           {
@@ -282,8 +270,7 @@
             "line": 33,
             "name": "Click on save button",
             "result": {
-              "status": "passed",
-              "duration": 65000000
+              "status": "skipped"
             }
           },
           {
@@ -292,8 +279,7 @@
             "line": 34,
             "name": "Verify the builing details added in table",
             "result": {
-              "status": "passed",
-              "duration": 10163000000
+              "status": "skipped"
             }
           },
           {
@@ -302,8 +288,7 @@
             "line": 35,
             "name": "Click on My Account Details Tab",
             "result": {
-              "status": "passed",
-              "duration": 80000000
+              "status": "skipped"
             }
           },
           {
@@ -312,8 +297,7 @@
             "line": 36,
             "name": "I should click on Add New button",
             "result": {
-              "status": "passed",
-              "duration": 1101000000
+              "status": "skipped"
             }
           },
           {
@@ -322,8 +306,7 @@
             "line": 37,
             "name": "Verify the tilte of Add New Contact page",
             "result": {
-              "status": "passed",
-              "duration": 12000000
+              "status": "skipped"
             }
           },
           {
@@ -332,8 +315,7 @@
             "line": 38,
             "name": "Enter title, full name and valid Email",
             "result": {
-              "status": "passed",
-              "duration": 1115000000
+              "status": "skipped"
             }
           },
           {
@@ -342,8 +324,7 @@
             "line": 39,
             "name": "Enter Phone and Cell Number",
             "result": {
-              "status": "passed",
-              "duration": 567000000
+              "status": "skipped"
             }
           },
           {
@@ -352,8 +333,7 @@
             "line": 40,
             "name": "Select User Role and Building from Dropdown List",
             "result": {
-              "status": "passed",
-              "duration": 299000000
+              "status": "skipped"
             }
           },
           {
@@ -362,8 +342,7 @@
             "line": 41,
             "name": "Click on save button",
             "result": {
-              "status": "passed",
-              "duration": 72000000
+              "status": "skipped"
             }
           },
           {
@@ -372,8 +351,7 @@
             "line": 42,
             "name": "Verify the account details added in table",
             "result": {
-              "status": "passed",
-              "duration": 3031000000
+              "status": "skipped"
             }
           },
           {
@@ -382,8 +360,7 @@
             "line": 43,
             "name": "Verify the record in searching history",
             "result": {
-              "status": "passed",
-              "duration": 66000000
+              "status": "skipped"
             }
           },
           {
@@ -392,8 +369,7 @@
             "line": 44,
             "name": "Click on Edit Icon",
             "result": {
-              "status": "passed",
-              "duration": 2874000000
+              "status": "skipped"
             }
           },
           {
@@ -402,8 +378,7 @@
             "line": 45,
             "name": "I should edit title, full name",
             "result": {
-              "status": "passed",
-              "duration": 734000000
+              "status": "skipped"
             }
           },
           {
@@ -412,8 +387,7 @@
             "line": 46,
             "name": "I should edit Phone and Cell Number and user role",
             "result": {
-              "status": "passed",
-              "duration": 848000000
+              "status": "skipped"
             }
           },
           {
@@ -422,8 +396,7 @@
             "line": 47,
             "name": "I edit User Status to inactive and select checkbox",
             "result": {
-              "status": "passed",
-              "duration": 230000000
+              "status": "skipped"
             }
           },
           {
@@ -432,8 +405,7 @@
             "line": 48,
             "name": "Click on Submit button",
             "result": {
-              "status": "passed",
-              "duration": 121000000
+              "status": "skipped"
             }
           },
           {
@@ -442,8 +414,7 @@
             "line": 49,
             "name": "Verify the Record has been updated Meassage",
             "result": {
-              "status": "passed",
-              "duration": 601000000
+              "status": "skipped"
             }
           },
           {
@@ -452,8 +423,7 @@
             "line": 50,
             "name": "Click on Delete Icon",
             "result": {
-              "status": "passed",
-              "duration": 2072000000
+              "status": "skipped"
             }
           },
           {
@@ -462,8 +432,7 @@
             "line": 51,
             "name": "Click on Confirm Delete button",
             "result": {
-              "status": "passed",
-              "duration": 101000000
+              "status": "skipped"
             }
           },
           {
@@ -472,8 +441,7 @@
             "line": 52,
             "name": "Verify the record is deleted successfully",
             "result": {
-              "status": "passed",
-              "duration": 3952000000
+              "status": "skipped"
             }
           },
           {
@@ -482,8 +450,7 @@
             "line": 53,
             "name": "Click on Buildings Tab",
             "result": {
-              "status": "passed",
-              "duration": 71000000
+              "status": "skipped"
             }
           },
           {
@@ -492,8 +459,7 @@
             "line": 54,
             "name": "Click on Edit Icon of builing",
             "result": {
-              "status": "passed",
-              "duration": 1098000000
+              "status": "skipped"
             }
           },
           {
@@ -502,8 +468,7 @@
             "line": 55,
             "name": "I should edit Building Name,Phone and Extension of builing",
             "result": {
-              "status": "passed",
-              "duration": 1005000000
+              "status": "skipped"
             }
           },
           {
@@ -512,8 +477,7 @@
             "line": 56,
             "name": "I should edit Select Default building",
             "result": {
-              "status": "passed",
-              "duration": 68000000
+              "status": "skipped"
             }
           },
           {
@@ -522,8 +486,7 @@
             "line": 57,
             "name": "Click on update button of builing",
             "result": {
-              "status": "passed",
-              "duration": 81000000
+              "status": "skipped"
             }
           },
           {
@@ -532,8 +495,7 @@
             "line": 58,
             "name": "Verify the Record has been updated Meassage of builing",
             "result": {
-              "status": "passed",
-              "duration": 8000000
+              "status": "skipped"
             }
           },
           {
@@ -542,8 +504,7 @@
             "line": 59,
             "name": "Click on Delete Icon of building",
             "result": {
-              "status": "passed",
-              "duration": 73000000
+              "status": "skipped"
             }
           },
           {
@@ -552,8 +513,7 @@
             "line": 60,
             "name": "Click on Confirm Delete button of building",
             "result": {
-              "status": "passed",
-              "duration": 102000000
+              "status": "skipped"
             }
           },
           {
@@ -562,8 +522,7 @@
             "line": 61,
             "name": "Verify the record is deleted successfully of building",
             "result": {
-              "status": "passed",
-              "duration": 547000000
+              "status": "skipped"
             }
           }
         ]

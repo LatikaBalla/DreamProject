@@ -10,7 +10,9 @@ export class WarrantyInfoActions {
         globalThis.rep1 = new ResourcesElements()
     }
     closeTermsOfServiceWindow() {
-        dash.termsElement().click({ force: true })
+        cy.contains('Remind me Later').click({ force: true }) 
+        dash.termsElement().contains('Dismiss').click({ force: true })
+       // dash.termsElement().click({ force: true })
     }
     verifyTitleWarrantyInfo() {
         war.titleElement()

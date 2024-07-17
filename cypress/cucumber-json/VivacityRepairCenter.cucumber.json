@@ -22,8 +22,8 @@
             "line": 7,
             "name": "I should navigate to application",
             "result": {
-              "status": "passed",
-              "duration": 7401000000
+              "status": "undefined",
+              "duration": 33000000
             }
           },
           {
@@ -32,8 +32,7 @@
             "line": 8,
             "name": "I should Sign In into the application",
             "result": {
-              "status": "passed",
-              "duration": 13636000000
+              "status": "skipped"
             }
           },
           {
@@ -42,8 +41,7 @@
             "line": 9,
             "name": "Close the terms of service window",
             "result": {
-              "status": "passed",
-              "duration": 9108000000
+              "status": "skipped"
             }
           },
           {
@@ -52,8 +50,7 @@
             "line": 10,
             "name": "Click on Repair360 page",
             "result": {
-              "status": "passed",
-              "duration": 116000000
+              "status": "skipped"
             }
           },
           {
@@ -62,8 +59,7 @@
             "line": 13,
             "name": "I should be redirected to the Repair360 page",
             "result": {
-              "status": "passed",
-              "duration": 18000000
+              "status": "skipped"
             }
           },
           {
@@ -72,8 +68,7 @@
             "line": 14,
             "name": "Verify the Title of VivacityRepairCenter Page",
             "result": {
-              "status": "passed",
-              "duration": 1276000000
+              "status": "skipped"
             }
           },
           {
@@ -82,8 +77,7 @@
             "line": 15,
             "name": "Verify the VivaRepairTickets Tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 20000000
+              "status": "skipped"
             }
           },
           {
@@ -92,8 +86,7 @@
             "line": 16,
             "name": "Verify the RepairBoxes tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 18000000
+              "status": "skipped"
             }
           }
         ]

@@ -10,7 +10,9 @@ export class OrgUploadAssetsActions {
         globalThis.oua = new OrgUploadAssetsElements();
     }
     closeTermsOfServiceWindow() {
-        dash.termsElement().click({ force: true })
+        cy.contains('Remind me Later').click({ force: true }) 
+        dash.termsElement().contains('Dismiss').click({ force: true })
+        //dash.termsElement().click({ force: true })
     }
     clickOnManageDevices() {
         //dash.arrowElement().click({ force: true })

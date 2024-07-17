@@ -30,7 +30,7 @@ export class VivacityAdminActions {
         vadmin.section4Element().should('be.visible')
     }
     iserialDevice() {
-        vadmin.section5Element().should('be.visible')
+        vadmin.section5Element().scrollIntoView().should('be.visible')
     }
     accManagement() {
         vadmin.section6Element().should('be.visible')
@@ -54,27 +54,29 @@ export class VivacityAdminActions {
         vadmin.section3Element().click({ force: true })
     }
     importserialdeviceRequest() {
-        vadmin.section11Element().should('be.visible')
+        vadmin.section11Element().scrollIntoView().should('be.visible')
     }
-    spoofDreamUser() {
-        vadmin.section12Element().should('be.visible')
+    trialPaidSubscriptions() {
+        vadmin.section12Element().scrollIntoView().should('be.visible')
     }
     importPartsCloset() {
-        vadmin.section13Element().should('be.visible')
+        vadmin.section13Element().scrollIntoView().should('be.visible')
     }
     tableSubscriptionVisible() {
         cy.get('.css-1owb465').should('be.visible')
     }
     approveDenyRequest() {
         cy.get('.css-1owb465').eq(0).find('tbody tr').eq(0).find('td').eq(5).scrollIntoView().contains("Approve").click({ force: true })
-        cy.get('.css-4nf26l').click({ force: true })
+        cy.get('.css-x5rkm6').click({ force: true })
     }
     verifyRequest() {
 
     }
     searchEmail() {
+        cy.get('[role="combobox"]').eq(0).click({force:true})
+        cy.get('[data-value="email"]').click({force:true})
         vadmin.searchEmpElement().eq(0).clear({force:true}).type(tdata.vivacityAdmin.email + '{enter}',{force:true})  
-        cy.get('.css-1owb465').eq(2).find('tr', { timeout: 1000 }).find('td').eq(3).should('contain', tdata.vivacityAdmin.email)
+        cy.get('.css-1dj5rr2').eq(0).find('tr', { timeout: 1000 }).find('td').eq(3).should('contain', tdata.vivacityAdmin.email)
     }
     selectFilterFullName() {
         acc.fieldNameElement().select(1).invoke("val").should("eq", 'full_name', { force: true })
@@ -131,6 +133,10 @@ export class VivacityAdminActions {
     }
     editPhone() {
         vadmin.phoneElement().clear({ force: true }).should('have.value', '').type(tdata.vivacityAdmin.editPhone, { force: true })
+    }
+    editUserRoleUser() {
+       cy.get('#mui-component-select-role').click({ force: true })
+        cy.get(tdata.users.editUserRole).click({ force: true })
     }
     editUserRole() {
         vadmin.userroleElement().click({ force: true })
@@ -206,11 +212,11 @@ export class VivacityAdminActions {
         vadmin.searchWarElement().type(tdata.vivacityAdmin.warrantyName, { force: true })
     }
     verifySearchWarranty() {
-
+        cy.get('.css-1owb465').eq(2).find('tbody tr').eq(0).find('td').eq(0).should('contain',tdata.vivacityAdmin.warrantyName)
     }
     clickOnWEditIcon() {
         cy.wait(2000)
-        cy.get('.css-1owb465').eq(3).find('tbody tr').eq(0).find('td').eq(4).find("[data-testid='EditOutlinedIcon']").click({ force: true })
+        cy.get('.css-1owb465').eq(2).find('tbody tr').eq(0).find('td').eq(4).find("[data-testid='EditOutlinedIcon']").click({ force: true })
     }
     editName() {
         vadmin.warrantyNameElement().clear().should('have.value', '').type(tdata.vivacityAdmin.editwName)
@@ -258,7 +264,7 @@ export class VivacityAdminActions {
         dash.messageElement().should('contain', tdata.vivacityAdmin.updateWarrantymsg)
     }
     clickDeleteIcon() {
-        cy.get('.css-1owb465').eq(3).find('tbody tr').eq(0).find('td').eq(4).find("[data-testid='DeleteOutlineOutlinedIcon']").click({ force: true })
+        cy.get('.css-1owb465').eq(2).find('tbody tr').eq(0).find('td').eq(4).find("[data-testid='DeleteOutlineOutlinedIcon']").click({ force: true })
     }
     clickConDeleteButton() {
         cy.get('.MuiBox-root > .MuiButton-outlinedError').click({ force: true })
@@ -300,6 +306,9 @@ export class VivacityAdminActions {
         vadmin.accSiteElement().click({ force: true })
         cy.get(tdata.vivacityAdmin.accSite).click({ force: true })
     }
+    enterNetsuiteId(){
+        vadmin.netsuiteidElement().type(tdata.vivacityAdmin.netsuiteid)
+    }
     selectAccountManager() {
         vadmin.accManagerElement().click({ force: true })
         cy.get(tdata.vivacityAdmin.accManager).click({ force: true })
@@ -320,8 +329,8 @@ export class VivacityAdminActions {
         cy.get(tdata.vivacityAdmin.subcription).click({ force: true })
     }
     clickOnUpdateSub() {
-        //cy.get('[type="button"]').contains('Update Subcription').click({ force: true })
-        cy.get('.css-79elbk > .css-1yuhvjn > :nth-child(2)').click({ force: true })
+        cy.get('[type="submit"]').contains('Update Subcription').click({ force: true })
+       // cy.get('.css-79elbk > .css-1yuhvjn > :nth-child(2)').click({ force: true })
         //vadmin.subUpdatebtnElement().click({force:true})
     }
     verifyUpadtedSub() {
@@ -332,7 +341,7 @@ export class VivacityAdminActions {
     }
     clickOnAddAccountUser() {
         cy.wait(2000)
-        cy.get('.css-1owb465').eq(5).find('tbody tr').eq(0).find('td').eq(5).contains('Add Account').click({ force: true })
+        cy.get('.css-1owb465').eq(3).find('tbody tr').eq(0).find('td').eq(5).contains('Add Account').click({ force: true })
     }
     selectAvailableAccount() {
         vadmin.availableAccountElement().click({ force: true })
@@ -361,18 +370,18 @@ export class VivacityAdminActions {
         // vadmin.searchElement().eq(0).type(tdata.vivacityAdmin.fullname + '{enter}', { force: true })
     }
     verifySearchResultAllUser() {
-        cy.get('.css-1owb465').eq(6).find('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.vivacityAdmin.fullname)
+        cy.get('.css-1owb465').eq(4).find('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.vivacityAdmin.fullname)
     }
     clickOnEditButtonAllUser() {
-        cy.get('.css-1owb465').eq(6).find('tbody tr').eq(0).find('td').eq(6).scrollIntoView().contains("Edit").click({ force: true })
+        cy.get('.css-1owb465').eq(4).find('tbody tr').eq(0).find('td').eq(6).scrollIntoView().contains("Edit").click({ force: true })
     }
     clickDeleteButtonAllUser() {
         cy.wait(2000)
-        cy.get('.css-1owb465').eq(6).find('tbody tr').eq(0).find('td').eq(7).scrollIntoView().contains("Delete").click({ force: true })
+        cy.get('.css-1owb465').eq(4).find('tbody tr').eq(0).find('td').eq(7).scrollIntoView().contains("Delete").click({ force: true })
     }
     verifyRecordDeletedAllUser() {
         cy.wait(2000)
-        // cy.get('.css-1owb465').eq(6).find('tbody tr').eq(0).find('td').eq(0).should('not.contain', tdata.vivacityAdmin.editFullname)
+        cy.get('.css-1owb465').eq(4).find('tbody tr').eq(0).find('td').eq(0).should('not.contain', tdata.vivacityAdmin.editFullname)
     }
     enterEmailAllUser() {
         vadmin.emailElement().clear().should('have.value', '').type(uniqueSeed + '1' + tdata.vivacityAdmin.email)
@@ -380,7 +389,6 @@ export class VivacityAdminActions {
     enterusernameAllUser() {
         vadmin.fullnameElement().clear().should('have.value', '').type(tdata.vivacityAdmin.fullname)
     }
-
     clickOnFeatures() {
         dash.featuresElement().click({ force: true })
     }
@@ -432,10 +440,10 @@ export class VivacityAdminActions {
     }
     verifyResultEmp() {
         cy.wait(3000)
-        cy.get('.css-1owb465').eq(2).find('tr', { timeout: 1000 }).find('td').eq(1).should('contain', tdata.vivacityAdmin.fullname)
+        cy.get('.css-1dj5rr2').eq(0).find('tr', { timeout: 1000 }).find('td').eq(1).should('contain', tdata.vivacityAdmin.fullname)
     }
     clickConEditEmp() {
-        cy.get('.css-1owb465').eq(2).find('tr', { timeout: 1000 }).find('td').find('[data-testid="ModeEditOutlinedIcon"]').eq(0).scrollIntoView().click({ force: true })
+        cy.get('.css-1dj5rr2').eq(0).find('tr', { timeout: 1000 }).find('td').find('[data-testid="ModeEditOutlinedIcon"]').eq(0).scrollIntoView().click({ force: true })
     }
     editUserStatusEmp() {
         vadmin.statusElement().click({ force: true })
@@ -449,6 +457,7 @@ export class VivacityAdminActions {
     }
     verifyEmpUpdated() {
         cy.contains('User has been updated').should('be.visible')
+        cy.get('.MuiButton-containedError').click({ force: true })
     }
     clickOnExportEmp() {
         cy.contains('Export').click({ force: true })
@@ -459,7 +468,25 @@ export class VivacityAdminActions {
         vadmin.ticketnumberElement().click({ force: true })
         vadmin.searchtxtElement().eq(2).clear().type(tdata.repairTickets.ticketnumber + '{enter}', { force: true })
         cy.wait(1000)
-        cy.get('.css-1owb465').eq(7).find('tr td').eq(1).should('contain', tdata.repairTickets.ticketnumber)
+        cy.get('.css-1dj5rr2').eq(2).find('tr td').eq(1).should('contain', tdata.repairTickets.ticketnumber)
+        vadmin.searchtxtElement().eq(2).clear()
+        cy.wait(2000)
+    }
+    searchRepairType(){
+        vadmin.searchboxElement().eq(4).click({ force: true })
+        vadmin.repairtypeElement().click({ force: true })
+        vadmin.searchtxtElement().eq(2).clear().type(tdata.repairTickets.repairtype+ '{enter}', { force: true })
+        cy.wait(1000)
+        cy.get('.css-1dj5rr2').eq(2).find('tr td').eq(2).should('contain', tdata.repairTickets.repairtype)
+        vadmin.searchtxtElement().eq(2).clear()
+        cy.wait(2000)
+    }
+    searchFailureType(){
+        vadmin.searchboxElement().eq(4).click({ force: true })
+        vadmin.failuretypeElement().click({ force: true })
+        vadmin.searchtxtElement().eq(2).clear().type(tdata.repairTickets.failuretype+ '{enter}', { force: true })
+        cy.wait(1000)
+        cy.get('.css-1dj5rr2').eq(2).find('tr td').eq(3).should('contain', tdata.repairTickets.failuretype)
         vadmin.searchtxtElement().eq(2).clear()
         cy.wait(2000)
     }
@@ -471,7 +498,60 @@ export class VivacityAdminActions {
         vadmin.fieldOpElement().select('Does Not Contain', { force: true })
         vadmin.fieldValueElement().type(tdata.repairTickets.ticketnumber)
         vadmin.applyElement().click({ force: true })
-        cy.get('.css-1owb465').eq(7).find('tr td').eq(1).should('not.contain', tdata.repairTickets.ticketnumber)
+        cy.get('.css-1dj5rr2').eq(2).find('tr td').eq(1).should('not.contain', tdata.repairTickets.ticketnumber)
+    }
+    clickOnimportdevice(){
+        vadmin.section5Element().click({ force: true })
+    }
+    searchSearialNo(){
+        cy.get(':nth-child(2) > .MuiGrid-container > .MuiGrid-grid-xs-4 > .MuiInputBase-root > .MuiSelect-select').click({ force: true })
+      //  vadmin.searchboxElement().eq(5).click({ force: true })
+        vadmin.searialnoElement().click({ force: true })
+        vadmin.searchtxtElement().eq(1).clear().type(tdata.vivacityAdmin.searialno + '{enter}', { force: true })
+        cy.wait(2000)
+        cy.get('.css-1dj5rr2').eq(1).find('tr td').eq(1).should('contain', tdata.vivacityAdmin.searialno)
+       // vadmin.searchtxtElement().eq(1).clear()
+    }
+    searchAccount(){
+        vadmin.searchboxElement().eq(4).click({ force: true })
+        vadmin.accountnoElement().click({ force: true })
+        vadmin.searchtxtElement().eq(1).clear().type(tdata.vivacityAdmin.accountno + '{enter}', { force: true })
+        cy.wait(1000)
+        cy.get('.css-1dj5rr2').eq(1).find('tr td').eq(16).scrollIntoView().should('contain', tdata.vivacityAdmin.accountno)
+        vadmin.searchtxtElement().eq(1).clear()
+        cy.wait(2000)
+    }
+    searchDevice(){
+        vadmin.searchboxElement().eq(4).click({ force: true })
+        vadmin.deviceElement().click({ force: true })
+        vadmin.searchtxtElement().eq(1).clear().type(tdata.vivacityAdmin.device + '{enter}', { force: true })
+        cy.get('.css-1dj5rr2').eq(1).find('tr td').eq(4).should('contain', tdata.vivacityAdmin.device)
+        vadmin.searchtxtElement().eq(1).clear()
+        cy.wait(2000)
+    }
+    filterSearialNo(){
+        cy.get('[data-testid="Filters"]').eq(1).click({ force: true })
+        vadmin.fieldNameElement().select(1).invoke("val").should("eq", "serial_number")
+        vadmin.fieldOpElement().select('Does Not Contain', { force: true })
+        vadmin.fieldValueElement().type(tdata.vivacityAdmin.searialno)
+        vadmin.applyElement().click({ force: true })
+        cy.get('.css-1dj5rr2').eq(1).find('tr td').eq(1).should('not.contain', tdata.vivacityAdmin.searialno)
+    }
+    filterAccount(){
+        cy.get('[data-testid="Filters"]').eq(1).click({ force: true })
+        vadmin.fieldNameElement().select(16).invoke("val").should("eq", "account")
+        vadmin.fieldOpElement().select('Does Not Contain', { force: true })
+        vadmin.fieldValueElement().type(tdata.vivacityAdmin.accountno)
+        vadmin.applyElement().click({ force: true })
+        cy.get('.css-1dj5rr2').eq(1).find('tr td').eq(1).should('not.contain', tdata.vivacityAdmin.accountno)
+    }
+    filterDevice(){
+        cy.get('[data-testid="Filters"]').eq(1).click({ force: true })
+        vadmin.fieldNameElement().select(4).invoke("val").should("eq", "device")
+        vadmin.fieldOpElement().select('Does Not Contain', { force: true })
+        vadmin.fieldValueElement().type(tdata.vivacityAdmin.device)
+        vadmin.applyElement().click({ force: true })
+        cy.get('.css-1dj5rr2').eq(1).find('tr td').eq(1).should('not.contain', tdata.vivacityAdmin.device)
     }
 }
 export default VivacityAdminActions 

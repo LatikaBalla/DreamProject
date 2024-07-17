@@ -12,7 +12,9 @@ export class RepairBoxesActions {
         globalThis.rc = new VivacityRepairCenterElements();
     }
     closeTermsOfServiceWindow() {
-        dash.termsElement().click({ force: true })
+        cy.contains('Remind me Later').click({ force: true }) 
+        dash.termsElement().contains('Dismiss').click({ force: true })
+        //dash.termsElement().click({ force: true })
     }
     clickOnRepair360() {
         //dash.arrowElement().click({ force: true })
@@ -31,7 +33,7 @@ export class RepairBoxesActions {
         rb.outboundElement().should('be.visible')
     }
     clickOnAddnewBox() {
-        rb.addboxElement().click({ force: true })
+        rb.createboxbtnElement().click({ force: true })
     }
     enterWeight() {
         rb.weightElement().type(tdata.repairBox.weight)
@@ -57,7 +59,8 @@ export class RepairBoxesActions {
         rb.checkboxElement().click({ force: true })
     }
     clickOnCreateBoxButton() {
-        rb.createboxbtnElement().click({ force: true })
+        //rb.createboxbtnElement().eq(1).click({ force: true })
+        cy.get('.css-8atqhb > .MuiButtonBase-root').click({ force: true })
     }
     selectTickets() {
         rb.ticketElement().click()

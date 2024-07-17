@@ -57,8 +57,8 @@ And('Employee management unit should be visible', () => {
 And ('Import serial device Request should be visible',()=>{
     vadmin.importserialdeviceRequest()
 })
-Then ('Spoof Dream User should be visible',()=>{
-    vadmin.spoofDreamUser()
+Then ('Trial Paid Subscriptions should be visible',()=>{
+    vadmin.trialPaidSubscriptions()
 })
 And ('Import Parts Closet should be visible',()=>{
     vadmin.importPartsCloset()
@@ -238,6 +238,7 @@ And('Select In house Repaire and Payment terms', () => {
 And('Select account site and account manager', () => {
     vadmin.selectAccountSite()
     vadmin.selectAccountManager()
+    vadmin.enterNetsuiteId()
 })
 Then('Click on submit button Account', () => {
     vadmin.clickOnSubmitButtonAcc()
@@ -314,7 +315,7 @@ Then('I should edit title, full name for allUser', () => {
 And('I should edit Phone and Cell Number and user role for allUser', () => {
     vadmin.editPhone()
     vadmin.editCellNumber()
-    vadmin.editUserRole()
+    vadmin.editUserRoleUser()
 })
 Then('Click on Submit update button for allUser', () => {
     vadmin.clickSubmitForUpdate()
@@ -430,13 +431,40 @@ And('Verify the Record has been updated Meassage', () => {
 Then('Click on the Export Button for Employee', () => {
     vadmin.clickOnExportEmp()
 })
-And('Enter the Search - Ticket Number in search box and Verify the Result', () => {
+And('Enter the Search - Ticket Number in search box and Verify the Result for RT', () => {
     vadmin.searchTicketNumber()
 })
-And('Click More filter select- Ticket Number in search box and Verify the Result', () => {
+Then('Enter the Search - Repair Type in search box and Verify the Result for RT', () => {
+    vadmin.searchRepairType()
+})
+And('Enter the Search - Failure Type in search box and Verify the Result for RT', () => {
+    vadmin.searchFailureType()
+})
+And('Click More filter select- Ticket Number in search box and Verify the Result for RT', () => {
     vadmin.clickOnMoreFilter()
     vadmin.selectFilterTicketNumber()
 })
 Then ('Enter the Search - Email in search box and Verify the Result',()=>{
     vadmin.searchEmail()
+})
+Then('Click on Import Serial Device unit',()=>{
+    vadmin.clickOnimportdevice()
+})
+And ('Enter the Search - Serial Number in search box and Verify the Result for isd',()=>{
+ vadmin.searchSearialNo()
+})
+Then ('Enter the Search - Account in search box and Verify the Result for isd',()=>{
+vadmin.searchAccount()
+})
+And ('Enter the Search - Device in search box and Verify the Result for isd',()=>{
+vadmin.searchDevice()
+})
+And ('Click More filter select- Serial Number in search box and Verify the Result for isd',()=>{
+vadmin.filterSearialNo()
+})
+Then ('Click More filter select- Account in search box and Verify the Result for isd',()=>{
+vadmin.filterAccount()
+})
+And ('Click More filter select- Device in search box and Verify the Result for isd',()=>{
+vadmin.filterDevice()
 })

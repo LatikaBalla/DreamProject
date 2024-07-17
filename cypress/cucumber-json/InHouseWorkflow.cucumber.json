@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1735000000
+              "duration": 3063000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6760000000
+              "duration": 6901000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9087000000
+              "duration": 9183000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 84000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on InHouseRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 536000000
+              "duration": 1383000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I should click on new button",
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 70000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Select failure Type, Serial Device, Technician and repair issue",
             "result": {
               "status": "passed",
-              "duration": 1785000000
+              "duration": 1627000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Select building and Enter the Chromebook issue",
             "result": {
               "status": "passed",
-              "duration": 1345000000
+              "duration": 1134000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 119000000
+              "duration": 114000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Verify New Ticket is added",
             "result": {
               "status": "passed",
-              "duration": 10002000000
+              "duration": 10004000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Enter Search ticket no in search box",
             "result": {
               "status": "passed",
-              "duration": 734000000
+              "duration": 890000000
             }
           },
           {
@@ -142,8 +142,9 @@
             "line": 21,
             "name": "Verify search result below",
             "result": {
-              "status": "passed",
-              "duration": 1184000000
+              "status": "failed",
+              "duration": 4102000000,
+              "error_message": "CypressError: Timed out retrying after 4000ms: `cy.contains()` failed because it requires a DOM element or document.\n\nNo elements in the current DOM matched your query:\n\n  > cy.get(.css-19midj6).eq(0)\n    at isElement (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:144409:62)\n    at validateType (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:144267:14)\n    at Object.isType (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:144298:7)\n    at Array.<anonymous> (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:134720:24)\n    at $Cy.getSubjectFromChain (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:138069:34)\n    at $Cy.subject (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:138023:17)\n    at Object.subjectFn (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:143310:28)\n    at $Cy.verifyUpcomingAssertions (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:142658:31)\n    at onRetry (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:143305:15)\n    at tryCatcher (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:4315:29)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise.attempt.Promise.try (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:4305:9)\n    at whenStable (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:143192:68)\n    at <unknown> (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:143133:14)\n    at tryCatcher (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1701:18)\n    at Promise._fulfill (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1645:18)\n    at <unknown> (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:5450:46)\nFrom Your Spec Code:\n    at InHouseWorkflowActions.verfiySearchResult (cypress/integration/PageObject/PageActions/InHouseWorkflowActions.js:83:78)\n    at Context.eval (cypress/integration/InHouseWorkflow/InHouseWorkflow.spec.js:58:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -152,8 +153,7 @@
             "line": 22,
             "name": "Click on view button",
             "result": {
-              "status": "passed",
-              "duration": 5864000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +162,7 @@
             "line": 23,
             "name": "Verify the Details of student repair ticket",
             "result": {
-              "status": "passed",
-              "duration": 11000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +171,7 @@
             "line": 24,
             "name": "Click on the Edit Ticket Button",
             "result": {
-              "status": "passed",
-              "duration": 4083000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +180,7 @@
             "line": 25,
             "name": "Update the Technician and Repair Status",
             "result": {
-              "status": "passed",
-              "duration": 758000000
+              "status": "skipped"
             }
           },
           {
@@ -192,8 +189,7 @@
             "line": 26,
             "name": "Click on Update Button",
             "result": {
-              "status": "passed",
-              "duration": 65000000
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +198,7 @@
             "line": 27,
             "name": "Verify Updated successfully",
             "result": {
-              "status": "passed",
-              "duration": 2003000000
+              "status": "skipped"
             }
           }
         ]

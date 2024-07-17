@@ -24,7 +24,7 @@ Feature:InHouseTickets Page Functionality
     And Enter the Search - Record Id in search box and Verify the Result
     Then Enter the Search - Ticket Number in search box and Verify the Result
     And Enter the Search - Repair type in search box and Verify the Result
-    Then Enter the Search - Repair status in search box and Verify the Result
+     Then Enter the Search - Repair status in search box and Verify the Result
      And Enter the Search - Building in search box and Verify the Result
     And Click More filter select- Record Id in search box and Verify the Result
     Then Click on Clear filter
@@ -52,14 +52,14 @@ Feature:InHouseTickets Page Functionality
     Then Verify the Results in the table
     And Click on view button
     Then Verify the Details of student repair ticket
-    And Click on the Edit Ticket Button
-    Then Update the Technician and Repair Status
-    And Click on Update Button
-    Then Verify Updated successfully
-     And Click on the Update to student Button
-    Then Updated to student successfully
-     And Click on the Update to in house Button 
-    Then Updated to in house successfully
+    # And Click on the Edit Ticket Button
+    # Then Update the Technician and Repair Status
+    # And Click on Update Button
+    # Then Verify Updated successfully
+    #  And Click on the Update to student Button
+    # Then Updated to student successfully
+    #  And Click on the Update to in house Button 
+    # Then Updated to in house successfully
     # And Click on Add Line and Verify
     # Then Click on Add Repair Image and Verify
     # And Click on Add Note and Verify

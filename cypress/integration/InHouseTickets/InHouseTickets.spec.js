@@ -42,7 +42,7 @@ And('Select failure Type, Serial Device, Technician, issue and Building', () => 
     iht.selectTechnician()
     iht.selectSerialDevice()
     iht.selectRepaireIssue()
-    iht.selectBilding()
+    iht.selectBuilding()
 })
 Then('Enter the Chromebook issue', () => {
     iht.enterChromebookIssue()

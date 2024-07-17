@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2537000000
+              "duration": 2291000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7606000000
+              "duration": 9291000000
             }
           },
           {
@@ -42,8 +42,9 @@
             "line": 9,
             "name": "close the terms of service window",
             "result": {
-              "status": "passed",
-              "duration": 9071000000
+              "status": "failed",
+              "duration": 8265000000,
+              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 3 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click\n    at mouseAction (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111447:68)\n    at Context.click (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111611:14)\n    at wrapped (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at MyFleetActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/MyFleetActions.js:14:28)\n    at Context.eval (cypress/integration/MyFleet/MyFleet.spec.js:16:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -52,8 +53,7 @@
             "line": 10,
             "name": "Click on Manage Devices",
             "result": {
-              "status": "passed",
-              "duration": 70000000
+              "status": "skipped"
             }
           },
           {
@@ -62,8 +62,7 @@
             "line": 11,
             "name": "Click on MyFleet Tab",
             "result": {
-              "status": "passed",
-              "duration": 1416000000
+              "status": "skipped"
             }
           },
           {
@@ -72,8 +71,7 @@
             "line": 15,
             "name": "Filters of MyFleet should be visible",
             "result": {
-              "status": "passed",
-              "duration": 9000000
+              "status": "skipped"
             }
           },
           {
@@ -82,8 +80,7 @@
             "line": 16,
             "name": "Table for MyFleet should be visible",
             "result": {
-              "status": "passed",
-              "duration": 8000000
+              "status": "skipped"
             }
           },
           {
@@ -92,8 +89,7 @@
             "line": 17,
             "name": "Click on the add device",
             "result": {
-              "status": "passed",
-              "duration": 69000000
+              "status": "skipped"
             }
           },
           {
@@ -102,8 +98,7 @@
             "line": 18,
             "name": "Enter Serial no and select device id",
             "result": {
-              "status": "passed",
-              "duration": 1670000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +107,7 @@
             "line": 19,
             "name": "Enter Asset Tag and Select student id",
             "result": {
-              "status": "passed",
-              "duration": 583000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +116,7 @@
             "line": 20,
             "name": "Select lonar status and Device status",
             "result": {
-              "status": "passed",
-              "duration": 852000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +125,7 @@
             "line": 21,
             "name": "Click on the Submit Button",
             "result": {
-              "status": "passed",
-              "duration": 70000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +134,7 @@
             "line": 22,
             "name": "Verify the device added successfully",
             "result": {
-              "status": "passed",
-              "duration": 10000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +143,7 @@
             "line": 23,
             "name": "Click More filter select- Serial Number in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 805000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +152,7 @@
             "line": 24,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 72000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +161,7 @@
             "line": 25,
             "name": "Click More filter select- Asset tag in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1811000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +170,7 @@
             "line": 26,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 70000000
+              "status": "skipped"
             }
           },
           {
@@ -192,8 +179,7 @@
             "line": 27,
             "name": "Click More filter select- Device in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2747000000
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +188,7 @@
             "line": 28,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 71000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +197,7 @@
             "line": 29,
             "name": "Click More filter select- Student in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1690000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +206,7 @@
             "line": 30,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 68000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +215,7 @@
             "line": 33,
             "name": "Click on Export To CSV",
             "result": {
-              "status": "passed",
-              "duration": 68000000
+              "status": "skipped"
             }
           },
           {
@@ -242,8 +224,7 @@
             "line": 34,
             "name": "Enter the table fields in search box",
             "result": {
-              "status": "passed",
-              "duration": 525000000
+              "status": "skipped"
             }
           },
           {
@@ -252,8 +233,7 @@
             "line": 35,
             "name": "Verify the record in searching history",
             "result": {
-              "status": "passed",
-              "duration": 1275000000
+              "status": "skipped"
             }
           },
           {
@@ -262,8 +242,7 @@
             "line": 36,
             "name": "Click on deviceIcon and click on view Button",
             "result": {
-              "status": "passed",
-              "duration": 5161000000
+              "status": "skipped"
             }
           },
           {
@@ -272,8 +251,7 @@
             "line": 37,
             "name": "Verify the General Device Information",
             "result": {
-              "status": "passed",
-              "duration": 414000000
+              "status": "skipped"
             }
           },
           {
@@ -282,8 +260,7 @@
             "line": 38,
             "name": "Click on Edit button of General info",
             "result": {
-              "status": "passed",
-              "duration": 459000000
+              "status": "skipped"
             }
           },
           {
@@ -292,8 +269,7 @@
             "line": 39,
             "name": "Update Asset tag and Click on save button",
             "result": {
-              "status": "passed",
-              "duration": 447000000
+              "status": "skipped"
             }
           },
           {
@@ -302,8 +278,7 @@
             "line": 40,
             "name": "Verfiy General info Record updated successfully",
             "result": {
-              "status": "passed",
-              "duration": 413000000
+              "status": "skipped"
             }
           },
           {
@@ -312,8 +287,7 @@
             "line": 41,
             "name": "Click on Edit button of Assignment",
             "result": {
-              "status": "passed",
-              "duration": 63000000
+              "status": "skipped"
             }
           },
           {
@@ -322,8 +296,7 @@
             "line": 42,
             "name": "Update student, building, loner status and Click on save button",
             "result": {
-              "status": "passed",
-              "duration": 1122000000
+              "status": "skipped"
             }
           },
           {
@@ -332,8 +305,7 @@
             "line": 43,
             "name": "Verfiy Assignment Record updated successfully",
             "result": {
-              "status": "passed",
-              "duration": 515000000
+              "status": "skipped"
             }
           },
           {
@@ -342,8 +314,7 @@
             "line": 44,
             "name": "Convert Active to Retired device",
             "result": {
-              "status": "passed",
-              "duration": 1748000000
+              "status": "skipped"
             }
           },
           {
@@ -352,8 +323,7 @@
             "line": 45,
             "name": "Verify the Device Retired successfully",
             "result": {
-              "status": "passed",
-              "duration": 2130000000
+              "status": "skipped"
             }
           },
           {
@@ -362,8 +332,7 @@
             "line": 46,
             "name": "Click on Retired Tab",
             "result": {
-              "status": "passed",
-              "duration": 64000000
+              "status": "skipped"
             }
           },
           {
@@ -372,8 +341,7 @@
             "line": 47,
             "name": "Convert Retired to Active device",
             "result": {
-              "status": "passed",
-              "duration": 583000000
+              "status": "skipped"
             }
           },
           {
@@ -382,8 +350,7 @@
             "line": 48,
             "name": "Verify the Device Active successfully",
             "result": {
-              "status": "passed",
-              "duration": 544000000
+              "status": "skipped"
             }
           }
         ]
@@ -403,7 +370,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1816000000
+              "duration": 1831000000
             }
           },
           {
@@ -413,7 +380,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5151000000
+              "duration": 5531000000
             }
           },
           {
@@ -422,8 +389,8 @@
             "line": 9,
             "name": "close the terms of service window",
             "result": {
-              "status": "passed",
-              "duration": 9072000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 3 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click\n    at mouseAction (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111447:68)\n    at Context.click (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111611:14)\n    at wrapped (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at MyFleetActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/MyFleetActions.js:14:28)\n    at Context.eval (cypress/integration/MyFleet/MyFleet.spec.js:16:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -432,8 +399,7 @@
             "line": 10,
             "name": "Click on Manage Devices",
             "result": {
-              "status": "passed",
-              "duration": 71000000
+              "status": "skipped"
             }
           },
           {
@@ -442,8 +408,7 @@
             "line": 11,
             "name": "Click on MyFleet Tab",
             "result": {
-              "status": "passed",
-              "duration": 1225000000
+              "status": "skipped"
             }
           },
           {
@@ -452,8 +417,7 @@
             "line": 69,
             "name": "Click on Retired Tab",
             "result": {
-              "status": "passed",
-              "duration": 67000000
+              "status": "skipped"
             }
           },
           {
@@ -462,8 +426,7 @@
             "line": 71,
             "name": "Filters of MyFleet should be visible",
             "result": {
-              "status": "passed",
-              "duration": 10000000
+              "status": "skipped"
             }
           },
           {
@@ -472,8 +435,7 @@
             "line": 72,
             "name": "Table for MyFleet should be visible",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "skipped"
             }
           },
           {
@@ -482,8 +444,7 @@
             "line": 73,
             "name": "Click on the add device",
             "result": {
-              "status": "passed",
-              "duration": 74000000
+              "status": "skipped"
             }
           },
           {
@@ -492,8 +453,7 @@
             "line": 74,
             "name": "Enter Serial no and select device id",
             "result": {
-              "status": "passed",
-              "duration": 1263000000
+              "status": "skipped"
             }
           },
           {
@@ -502,8 +462,7 @@
             "line": 75,
             "name": "Enter Asset Tag and Select student id",
             "result": {
-              "status": "passed",
-              "duration": 685000000
+              "status": "skipped"
             }
           },
           {
@@ -512,8 +471,7 @@
             "line": 76,
             "name": "Select lonar status and Device status",
             "result": {
-              "status": "passed",
-              "duration": 824000000
+              "status": "skipped"
             }
           },
           {
@@ -522,8 +480,7 @@
             "line": 77,
             "name": "Click on the Submit Button",
             "result": {
-              "status": "passed",
-              "duration": 69000000
+              "status": "skipped"
             }
           },
           {
@@ -532,8 +489,7 @@
             "line": 78,
             "name": "Verify the device added successfully",
             "result": {
-              "status": "passed",
-              "duration": 6000000
+              "status": "skipped"
             }
           },
           {
@@ -542,8 +498,7 @@
             "line": 79,
             "name": "Click More filter select- Serial Number in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 813000000
+              "status": "skipped"
             }
           },
           {
@@ -552,8 +507,7 @@
             "line": 80,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 70000000
+              "status": "skipped"
             }
           },
           {
@@ -562,8 +516,7 @@
             "line": 81,
             "name": "Click More filter select- Asset tag in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1820000000
+              "status": "skipped"
             }
           },
           {
@@ -572,8 +525,7 @@
             "line": 82,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 72000000
+              "status": "skipped"
             }
           },
           {
@@ -582,8 +534,7 @@
             "line": 83,
             "name": "Click More filter select- Device in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2799000000
+              "status": "skipped"
             }
           },
           {
@@ -592,8 +543,7 @@
             "line": 84,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 70000000
+              "status": "skipped"
             }
           },
           {
@@ -602,8 +552,7 @@
             "line": 85,
             "name": "Click More filter select- Student in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1662000000
+              "status": "skipped"
             }
           },
           {
@@ -612,8 +561,7 @@
             "line": 86,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 72000000
+              "status": "skipped"
             }
           },
           {
@@ -622,8 +570,7 @@
             "line": 87,
             "name": "Click on Export To CSV",
             "result": {
-              "status": "passed",
-              "duration": 70000000
+              "status": "skipped"
             }
           },
           {
@@ -632,8 +579,7 @@
             "line": 88,
             "name": "Enter the table fields in search box1",
             "result": {
-              "status": "passed",
-              "duration": 429000000
+              "status": "skipped"
             }
           },
           {
@@ -642,8 +588,7 @@
             "line": 89,
             "name": "Verify the record in searching history1",
             "result": {
-              "status": "passed",
-              "duration": 1330000000
+              "status": "skipped"
             }
           },
           {
@@ -652,8 +597,7 @@
             "line": 90,
             "name": "Click on deviceIcon and click on view Button",
             "result": {
-              "status": "passed",
-              "duration": 5164000000
+              "status": "skipped"
             }
           },
           {
@@ -662,8 +606,7 @@
             "line": 91,
             "name": "Verify the General Device Information",
             "result": {
-              "status": "passed",
-              "duration": 372000000
+              "status": "skipped"
             }
           }
         ]

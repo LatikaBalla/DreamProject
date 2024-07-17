@@ -8,7 +8,9 @@ export class FeaturesActions {
         globalThis.dash = new DashboardElements();
     }
     closeTermsOfServiceWindow() {
-        dash.termsElement().click({ force: true })
+        cy.contains('Remind me Later').click({ force: true }) 
+        dash.termsElement().contains('Dismiss').click({ force: true })  
+        //dash.termsElement().click({ force: true })
     }
     clickOnFeatures() {
         // cy.contains('demo_adminsuper@vivacitytech.com').click({force:true})

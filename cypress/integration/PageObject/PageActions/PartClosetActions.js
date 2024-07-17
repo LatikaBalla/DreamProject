@@ -10,7 +10,9 @@ export class PartClosetActions {
         globalThis.pc = new PartClosetElements();
     }
     closeTermsOfServiceWindow() {
-        dash.termsElement().click({ force: true })
+        cy.contains('Remind me Later').click({ force: true }) 
+        dash.termsElement().contains('Dismiss').click({ force: true })
+        //dash.termsElement().click({ force: true })
     }
     clickOnRepair360() {
         dash.repair360Element().click({ force: true })
@@ -53,7 +55,7 @@ export class PartClosetActions {
         cy.get('[role="listbox"]').find('[role="option"]').eq(0).click({ force: true })
     }
     verifyNewPartAdded() {
-        dash.messageElement().should('contain', 'Submitting form')
+        dash.messageElement().should('contain', 'Part Closet Item created')
     }
     enterPartSKUSearch() {
         pc.searchElement().type(tdata.partCloset.partname, { force: true })
@@ -77,7 +79,7 @@ export class PartClosetActions {
     }
     selectPartName() {
         pc.partidElement().click({ force: true })
-        cy.get('[role="listbox"]').find('[role="option"]').eq(0).click({ force: true })
+        cy.get('[role="listbox"]').find('[role="option"]').eq(1).click({ force: true })
         //   cy.get(tdata.partCloset.partid).click({force:true})
     }
     enterQuantityVT() {
@@ -91,7 +93,7 @@ export class PartClosetActions {
         pc.submitVTElement().click({ force: true })
     }
     verifyNewVTPartAdded() {
-        dash.messageElement().should('contain', 'Submitting form')
+       dash.messageElement().should('contain', 'Part Closet Item created')
         //cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.partCloset.partnameTable)
         //  dash.messageElement().should('contain', tdata.srcStudent.createpartmsg)
     }

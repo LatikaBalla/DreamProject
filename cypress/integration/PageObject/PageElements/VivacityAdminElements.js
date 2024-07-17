@@ -252,7 +252,7 @@ export default class VivacityAdminElements {
         })
     }
     subUpdatebtnElement(){
-        return cy.get(locator.vivacityAdmin.subUpdatebtn, {
+        return cy.contains(locator.vivacityAdmin.subUpdatebtn, {
             timeout: 30000,
         }) 
     }
@@ -409,6 +409,26 @@ export default class VivacityAdminElements {
     } 
     section13Element(){
         return cy.contains(locator.vivacityAdmin.section13, {
+            timeout: 30000,
+        }) 
+    }
+    netsuiteidElement(){
+        return cy.get(locator.vivacityAdmin.netsuiteid, {
+            timeout: 30000,
+        }) 
+    }
+    searialnoElement(){
+        return cy.get(locator.vivacityAdmin.searialno, {
+            timeout: 30000,
+        }) 
+    }
+    accountnoElement(){
+        return cy.get(locator.vivacityAdmin.accountno, {
+            timeout: 30000,
+        }) 
+    }
+    deviceElement(){
+        return cy.get(locator.vivacityAdmin.device, {
             timeout: 30000,
         }) 
     }

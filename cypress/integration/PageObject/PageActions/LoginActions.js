@@ -10,7 +10,9 @@ export class LoginActions {
         globalThis.dash = new DashboardElements();
     }
     closeTermsOfServiceWindow() {
-        dash.termsElement().click({ force: true })
+        cy.contains('Remind me Later').click({ force: true }) 
+        dash.termsElement().contains('Dismiss').click({ force: true })
+       // dash.termsElement().click({ force: true })
     }
     clickOnLoginButton() {
         lan.loginElement().click({ force: true })

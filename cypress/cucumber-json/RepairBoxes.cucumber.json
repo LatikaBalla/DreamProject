@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2788000000
+              "duration": 2887000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8963000000
+              "duration": 6775000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9085000000
+              "duration": 9167000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 72000000
+              "duration": 88000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on RepairBoxes Tab",
             "result": {
               "status": "passed",
-              "duration": 1385000000
+              "duration": 1243000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of RepairBoxes Page",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 11000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I should click on create new Box",
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 65000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Enter weight and Standard Box Size",
             "result": {
               "status": "passed",
-              "duration": 347000000
+              "duration": 338000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Select Pick-up site",
             "result": {
               "status": "passed",
-              "duration": 375000000
+              "duration": 469000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Check the need shipping box",
             "result": {
               "status": "passed",
-              "duration": 115000000
+              "duration": 82000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on Create box button",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 62000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Select Ticket from dropdownlist",
             "result": {
               "status": "passed",
-              "duration": 363000000
+              "duration": 488000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on Finish button",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 78000000
             }
           },
           {
@@ -153,197 +153,7 @@
             "name": "Verify new box is added in table",
             "result": {
               "status": "passed",
-              "duration": 1598000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "Click More filter select- Record Id in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 827000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 73000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "Click More filter select- Tracking Number From in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1205000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 26,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 78000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 27,
-            "name": "Click More filter select- Shipped From Date in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1241000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 28,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 78000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 35,
-            "name": "Click More filter select- Box_type in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1700000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 36,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 360000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "Click More filter select- shipping_box_status in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 3387000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 38,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 197000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 39,
-            "name": "Click More filter select- Created_by in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 2822000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 40,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "passed",
-              "duration": 75000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 43,
-            "name": "Enter the Search - Tracking Number in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 2145000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 44,
-            "name": "Enter the Search - Record Id in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 729000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 45,
-            "name": "Enter the Search - Building in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1141000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 46,
-            "name": "Enter the Search - Created_by in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 2566000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 47,
-            "name": "Click on Export Button",
-            "result": {
-              "status": "passed",
-              "duration": 84000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 48,
-            "name": "Click on view button",
-            "result": {
-              "status": "passed",
-              "duration": 1353000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 49,
-            "name": "Verify the Details new box",
-            "result": {
-              "status": "passed",
-              "duration": 1749000000
+              "duration": 2331000000
             }
           }
         ]

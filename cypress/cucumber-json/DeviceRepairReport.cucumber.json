@@ -22,8 +22,9 @@
             "line": 7,
             "name": "I should navigate to application",
             "result": {
-              "status": "passed",
-              "duration": 2597000000
+              "status": "failed",
+              "duration": 30144000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://dream-frontend-qa.onrender.com/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ESOCKETTIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:2407:12)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:162210:53)\n    at $Cypress.action (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:41015:28)\n    at Runnable.run (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:144798:13)\n    at next (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:154803:10)\n    at <unknown> (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:154847:5)\n    at timeslice (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:145082:27)\nFrom Your Spec Code:\n    at Context.eval (cypress/integration/DeviceRepairReport/DeviceRepairReport.spec.js:14:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: ESOCKETTIMEDOUT\n      at ClientRequest.<anonymous> (<embedded>:2086:99696)\n      at Object.onceWrapper (node:events:641:28)\n      at ClientRequest.emit (node:events:527:28)\n      at TLSSocket.emitRequestTimeout (node:_http_client:771:9)\n      at Object.onceWrapper (node:events:641:28)\n      at TLSSocket.emit (node:events:539:35)\n      at Socket._onTimeout (node:net:516:8)\n      at listOnTimeout (node:internal/timers:559:17)\n      at process.processTimers (node:internal/timers:502:7)"
             }
           },
           {
@@ -32,8 +33,7 @@
             "line": 8,
             "name": "I should Sign In into the application",
             "result": {
-              "status": "passed",
-              "duration": 14115000000
+              "status": "skipped"
             }
           },
           {
@@ -42,8 +42,7 @@
             "line": 9,
             "name": "Close the terms of service window",
             "result": {
-              "status": "passed",
-              "duration": 9109000000
+              "status": "skipped"
             }
           },
           {
@@ -52,8 +51,7 @@
             "line": 10,
             "name": "Click on Report center page",
             "result": {
-              "status": "passed",
-              "duration": 75000000
+              "status": "skipped"
             }
           },
           {
@@ -62,8 +60,7 @@
             "line": 11,
             "name": "Click on DeviceRepairReport page",
             "result": {
-              "status": "passed",
-              "duration": 3064000000
+              "status": "skipped"
             }
           },
           {
@@ -72,8 +69,7 @@
             "line": 14,
             "name": "Click on the export button",
             "result": {
-              "status": "passed",
-              "duration": 76000000
+              "status": "skipped"
             }
           },
           {
@@ -82,8 +78,7 @@
             "line": 15,
             "name": "Click More filter select- Record Id in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 762000000
+              "status": "skipped"
             }
           },
           {
@@ -92,8 +87,7 @@
             "line": 16,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 72000000
+              "status": "skipped"
             }
           },
           {
@@ -102,8 +96,7 @@
             "line": 17,
             "name": "Click More filter select- Ticket Number in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1134000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +105,7 @@
             "line": 18,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 447000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +114,7 @@
             "line": 19,
             "name": "Click More filter select- Repair type in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2340000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +123,7 @@
             "line": 20,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 72000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +132,7 @@
             "line": 21,
             "name": "Click More filter select- Serial Number in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 925000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +141,7 @@
             "line": 22,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 68000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +150,7 @@
             "line": 23,
             "name": "Click More filter select- Repair device in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 14289000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +159,7 @@
             "line": 24,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 393000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +168,7 @@
             "line": 25,
             "name": "Click More filter select- Repair status in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1930000000
+              "status": "skipped"
             }
           },
           {
@@ -192,8 +177,7 @@
             "line": 26,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 70000000
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +186,7 @@
             "line": 27,
             "name": "Click More filter select- Asset tag in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 665000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +195,7 @@
             "line": 28,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 71000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +204,7 @@
             "line": 29,
             "name": "Click More filter select- Repair Box in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 996000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +213,7 @@
             "line": 30,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 72000000
+              "status": "skipped"
             }
           },
           {
@@ -242,8 +222,7 @@
             "line": 31,
             "name": "Click More filter select- Created By in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1804000000
+              "status": "skipped"
             }
           },
           {
@@ -252,8 +231,7 @@
             "line": 32,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 72000000
+              "status": "skipped"
             }
           },
           {
@@ -262,8 +240,7 @@
             "line": 33,
             "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 5424000000
+              "status": "skipped"
             }
           },
           {
@@ -272,8 +249,7 @@
             "line": 34,
             "name": "Enter the Search - Repair type in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1785000000
+              "status": "skipped"
             }
           },
           {
@@ -282,8 +258,7 @@
             "line": 35,
             "name": "Enter the Search - Repair status in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2291000000
+              "status": "skipped"
             }
           },
           {
@@ -292,8 +267,7 @@
             "line": 36,
             "name": "Enter the Search - Repair Box in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2831000000
+              "status": "skipped"
             }
           },
           {
@@ -302,8 +276,7 @@
             "line": 37,
             "name": "Enter the Search - Serial Number in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2527000000
+              "status": "skipped"
             }
           },
           {
@@ -312,8 +285,7 @@
             "line": 38,
             "name": "Enter the Search - Asset tag in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 4439000000
+              "status": "skipped"
             }
           },
           {
@@ -322,8 +294,7 @@
             "line": 39,
             "name": "Enter the Ticket Number in search box",
             "result": {
-              "status": "passed",
-              "duration": 743000000
+              "status": "skipped"
             }
           },
           {
@@ -332,8 +303,7 @@
             "line": 40,
             "name": "Verify the Ticket details in table",
             "result": {
-              "status": "passed",
-              "duration": 2728000000
+              "status": "skipped"
             }
           },
           {
@@ -342,8 +312,7 @@
             "line": 41,
             "name": "Click on the Ticket Number",
             "result": {
-              "status": "passed",
-              "duration": 6845000000
+              "status": "skipped"
             }
           },
           {
@@ -352,8 +321,7 @@
             "line": 42,
             "name": "Verify the Repair Ticket page will open",
             "result": {
-              "status": "passed",
-              "duration": 3074000000
+              "status": "skipped"
             }
           },
           {
@@ -362,8 +330,7 @@
             "line": 43,
             "name": "Verfiy the details of Ticket",
             "result": {
-              "status": "passed",
-              "duration": 1124000000
+              "status": "skipped"
             }
           },
           {
@@ -372,8 +339,7 @@
             "line": 44,
             "name": "Click on the download Ticket Estimation button",
             "result": {
-              "status": "passed",
-              "duration": 1363000000
+              "status": "skipped"
             }
           }
         ]

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2347000000
+              "duration": 1360000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7514000000
+              "duration": 10906000000
             }
           },
           {
@@ -42,8 +42,9 @@
             "line": 9,
             "name": "Close the terms of service window",
             "result": {
-              "status": "passed",
-              "duration": 9071000000
+              "status": "failed",
+              "duration": 8249000000,
+              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 3 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click\n    at mouseAction (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111447:68)\n    at Context.click (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111611:14)\n    at wrapped (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at ResourcesActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/ResourcesActions.js:11:28)\n    at Context.eval (cypress/integration/Resources/Resources.spec.js:22:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -52,8 +53,7 @@
             "line": 10,
             "name": "Click on Resources page",
             "result": {
-              "status": "passed",
-              "duration": 70000000
+              "status": "skipped"
             }
           },
           {
@@ -62,8 +62,7 @@
             "line": 13,
             "name": "I should be redirected to the Resources page",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "skipped"
             }
           },
           {
@@ -72,8 +71,7 @@
             "line": 14,
             "name": "Verify the Title of Resources Page",
             "result": {
-              "status": "passed",
-              "duration": 541000000
+              "status": "skipped"
             }
           },
           {
@@ -82,8 +80,7 @@
             "line": 15,
             "name": "Click on Instructions tab",
             "result": {
-              "status": "passed",
-              "duration": 62000000
+              "status": "skipped"
             }
           },
           {
@@ -92,8 +89,7 @@
             "line": 16,
             "name": "Verify the Instructions Tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 9000000
+              "status": "skipped"
             }
           },
           {
@@ -102,8 +98,7 @@
             "line": 17,
             "name": "Verify the provisionDevice Tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +107,7 @@
             "line": 18,
             "name": "Verify the deprovisionDevice tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 8000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +116,7 @@
             "line": 19,
             "name": "Click on HowToVideos tab",
             "result": {
-              "status": "passed",
-              "duration": 76000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +125,7 @@
             "line": 20,
             "name": "Verify the HowToVideos tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 8000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +134,7 @@
             "line": 22,
             "name": "Click on WarrantyInfo tab",
             "result": {
-              "status": "passed",
-              "duration": 69000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +143,7 @@
             "line": 23,
             "name": "Verify the WarrantyInfo tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +152,7 @@
             "line": 24,
             "name": "Verify the Title of WarrantyInfo Page",
             "result": {
-              "status": "passed",
-              "duration": 53000000
+              "status": "skipped"
             }
           }
         ]

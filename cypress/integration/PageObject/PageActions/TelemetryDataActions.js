@@ -10,7 +10,9 @@ export class TelemetryDataActions {
         globalThis.repc = new ReportCenterElements();
     }
     closeTermsOfServiceWindow() {
-        dash.termsElement().click({ force: true })
+        cy.contains('Remind me Later').click({ force: true }) 
+        dash.termsElement().contains('Dismiss').click({ force: true })
+      //  dash.termsElement().click({ force: true })
     }
     clickOnTelemetryData() {
         repc.telemetrydElement().click({ force: true })

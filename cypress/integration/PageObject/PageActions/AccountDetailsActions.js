@@ -9,7 +9,8 @@ export class AccountDetailsActions {
         globalThis.dash1 = new DashboardElements()
     }
     closeTermsOfServiceWindow() {
-        dash1.termsElement().click({ force: true })  
+        cy.contains('Remind me Later').click({ force: true })  
+        dash1.termsElement().contains('Dismiss').click({ force: true })  
     }
     verifyTitleAccountDetails() {
         dash1.myAccountElement().click({force:true})

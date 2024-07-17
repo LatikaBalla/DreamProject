@@ -17,7 +17,7 @@ export default class RepairTicketsElements {
         })
     }
     viewElement() {
-        return cy.contains(locator.repairTickets.view, {
+        return cy.get(locator.repairTickets.view, {
             timeout: 30000,
         })
     }

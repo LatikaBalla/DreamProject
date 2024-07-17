@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1807000000
+              "duration": 2432000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6968000000
+              "duration": 9040000000
             }
           },
           {
@@ -42,8 +42,9 @@
             "line": 9,
             "name": "Close the terms of service window",
             "result": {
-              "status": "passed",
-              "duration": 9087000000
+              "status": "failed",
+              "duration": 8243000000,
+              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 3 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click\n    at mouseAction (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111447:68)\n    at Context.click (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111611:14)\n    at wrapped (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at ReportCenterActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/ReportCenterActions.js:11:28)\n    at Context.eval (cypress/integration/ReportCenter/ReportCenter.spec.js:26:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -52,8 +53,7 @@
             "line": 10,
             "name": "Click on Report center page",
             "result": {
-              "status": "passed",
-              "duration": 72000000
+              "status": "skipped"
             }
           },
           {
@@ -62,8 +62,7 @@
             "line": 13,
             "name": "I should be redirected to the Report center page",
             "result": {
-              "status": "passed",
-              "duration": 5000000
+              "status": "skipped"
             }
           },
           {
@@ -72,8 +71,7 @@
             "line": 14,
             "name": "Verify the Title of Report center Page",
             "result": {
-              "status": "passed",
-              "duration": 4000000
+              "status": "skipped"
             }
           },
           {
@@ -82,8 +80,7 @@
             "line": 16,
             "name": "Verify the VivacityRepairReport Tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 9000000
+              "status": "skipped"
             }
           },
           {
@@ -92,8 +89,7 @@
             "line": 17,
             "name": "Click on VivacityRepairReport page",
             "result": {
-              "status": "passed",
-              "duration": 61000000
+              "status": "skipped"
             }
           },
           {
@@ -102,8 +98,7 @@
             "line": 18,
             "name": "Verify all sections of VivacityRepairReport Page should be visible",
             "result": {
-              "status": "passed",
-              "duration": 56000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +107,7 @@
             "line": 19,
             "name": "Select the building from dropdownlist",
             "result": {
-              "status": "passed",
-              "duration": 215000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +116,7 @@
             "line": 20,
             "name": "Click on clear filter",
             "result": {
-              "status": "passed",
-              "duration": 104000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +125,7 @@
             "line": 21,
             "name": "Verify Repair ticket by status should be visible",
             "result": {
-              "status": "passed",
-              "duration": 17000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +134,7 @@
             "line": 22,
             "name": "Verify Manufacturers in Fleet graph should be visible",
             "result": {
-              "status": "passed",
-              "duration": 16000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +143,7 @@
             "line": 23,
             "name": "Verify Repair Tickets Failure Type graph should be visible",
             "result": {
-              "status": "passed",
-              "duration": 16000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +152,7 @@
             "line": 25,
             "name": "Verify the InHouseRepairReport tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 14000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +161,7 @@
             "line": 26,
             "name": "Click on InHouseRepairReport page",
             "result": {
-              "status": "passed",
-              "duration": 67000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +170,7 @@
             "line": 27,
             "name": "Verify all sections of InHouseRepairReport Page should be visible",
             "result": {
-              "status": "passed",
-              "duration": 52000000
+              "status": "skipped"
             }
           },
           {
@@ -192,8 +179,7 @@
             "line": 28,
             "name": "Verify ticketdata graph should be visible",
             "result": {
-              "status": "passed",
-              "duration": 14000000
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +188,7 @@
             "line": 30,
             "name": "Verify the DeviceRepairReport tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +197,7 @@
             "line": 31,
             "name": "Click on DeviceRepairReport page",
             "result": {
-              "status": "passed",
-              "duration": 3072000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +206,7 @@
             "line": 32,
             "name": "Verify title of DeviceRepairReport Page should be visible",
             "result": {
-              "status": "passed",
-              "duration": 19000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +215,7 @@
             "line": 33,
             "name": "Verify the filters should be visible",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "skipped"
             }
           },
           {
@@ -242,8 +224,7 @@
             "line": 34,
             "name": "Verify history table should be visible",
             "result": {
-              "status": "passed",
-              "duration": 8000000
+              "status": "skipped"
             }
           },
           {
@@ -252,8 +233,7 @@
             "line": 36,
             "name": "Verify the NonwarrantyRepairs tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 70000000
+              "status": "skipped"
             }
           },
           {
@@ -262,8 +242,7 @@
             "line": 37,
             "name": "Click on NonwarrantyRepairs page",
             "result": {
-              "status": "passed",
-              "duration": 62000000
+              "status": "skipped"
             }
           },
           {
@@ -272,8 +251,7 @@
             "line": 40,
             "name": "Verify table and filter should be visible",
             "result": {
-              "status": "passed",
-              "duration": 14000000
+              "status": "skipped"
             }
           },
           {
@@ -282,8 +260,7 @@
             "line": 42,
             "name": "Verify the TelemetryData tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "skipped"
             }
           },
           {
@@ -292,8 +269,7 @@
             "line": 43,
             "name": "Click on TelemetryData page",
             "result": {
-              "status": "passed",
-              "duration": 66000000
+              "status": "skipped"
             }
           },
           {
@@ -302,8 +278,7 @@
             "line": 44,
             "name": "Verify the Title of TelemetryData Page",
             "result": {
-              "status": "passed",
-              "duration": 5000000
+              "status": "skipped"
             }
           },
           {
@@ -312,8 +287,7 @@
             "line": 45,
             "name": "Verify the TelemetryData Tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 14000000
+              "status": "skipped"
             }
           },
           {
@@ -322,8 +296,7 @@
             "line": 46,
             "name": "Verify the Device information tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 13000000
+              "status": "skipped"
             }
           },
           {
@@ -332,8 +305,7 @@
             "line": 47,
             "name": "Verify the Data graph should be visible",
             "result": {
-              "status": "passed",
-              "duration": 12000000
+              "status": "skipped"
             }
           }
         ]

@@ -56,69 +56,77 @@ And('Click on Download import button', () => {
 Then('Verify the successfully downloaded', () => {
     rt.verifyDownload()
 })
-And ('Click on view the details',()=>{
-rt.clickOnViewButton()
+And('Click on view the details', () => {
+    rt.clickOnViewButton()
 })
-Then ('Verify the Details of Repair Ticket',()=>{
-rt.verifyDetails()
+Then('Verify the Details of Repair Ticket', () => {
+    rt.verifyDetails()
 })
-And ('Enter the Search -  Record Id in search box and Verify the Result',()=>{
+And('Enter the Search -  Record Id in search box and Verify the Result', () => {
     rt.searchRecordId()
 })
-And ('Enter the Search - Ticket Number in search box and Verify the Result',()=>{
-rt.searchTicketNumber()
+And('Enter the Search - Ticket Number in search box and Verify the Result', () => {
+    rt.searchTicketNumber()
 })
-Then ('Enter the Search - Repair type in search box and Verify the Result',()=>{
-rt.searchRepairType()
+Then('Enter the Search - Repair type in search box and Verify the Result', () => {
+    rt.searchRepairType()
 })
-And ('Enter the Search - Serial Number in search box and Verify the Result',()=>{
-rt.searchSerialNumber()
+And('Enter the Search - Serial Number in search box and Verify the Result', () => {
+    rt.searchSerialNumber()
 })
-Then ('Enter the Search - Repair status in search box and Verify the Result',()=>{
-rt.searchRepairStatus()
+Then('Enter the Search - Repair status in search box and Verify the Result', () => {
+    rt.searchRepairStatus()
 })
-And ('Enter the Search - Repair Box in search box and Verify the Result',()=>{
-rt.searchRepairBox()
+And('Enter the Search - Repair Box in search box and Verify the Result', () => {
+    rt.searchRepairBox()
 })
-Then ('Enter the Search - Asset tag in search box and Verify the Result',()=>{
-rt.searchAssetTag()
+Then('Enter the Search - Asset tag in search box and Verify the Result', () => {
+    rt.searchAssetTag()
 })
-And ('Click More filter select- Record Id in search box and Verify the Result',()=>{
+And('Click More filter select- Record Id in search box and Verify the Result', () => {
     rt.clickOnMoreFilter()
     rt.selectFilterRecordId()
 })
-And ('Click More filter select- Ticket Number in search box and Verify the Result',()=>{
+And('Click More filter select- Ticket Number in search box and Verify the Result', () => {
     rt.clickOnMoreFilter()
     rt.selectFilterTicketNumber()
 })
-And ('Click More filter select- Repair type in search box and Verify the Result',()=>{
+And('Click More filter select- Repair type in search box and Verify the Result', () => {
     rt.clickOnMoreFilter()
     rt.selectFilterRepairType()
 })
-And ('Click More filter select- Serial Number in search box and Verify the Result',()=>{
+And('Click More filter select- Serial Number in search box and Verify the Result', () => {
     rt.clickOnMoreFilter()
     rt.selectFilterSerialNumber()
 })
-And ('Click More filter select- Repair status in search box and Verify the Result',()=>{
+And('Click More filter select- Building in search box and Verify the Result', () => {
+    rt.clickOnMoreFilter()
+    rt.selectFilterBuilding()
+})
+And('Click More filter select- Repair status in search box and Verify the Result', () => {
     rt.clickOnMoreFilter()
     rt.selectFilterRepairStatus()
 })
-And ('Click More filter select- Repair Box in search box and Verify the Result',()=>{
+And('Click More filter select- Repair Box in search box and Verify the Result', () => {
     rt.clickOnMoreFilter()
     rt.selectFilterRepairBox()
 })
-And ('Click More filter select- Asset tag in search box and Verify the Result',()=>{
+And('Click More filter select- Asset tag in search box and Verify the Result', () => {
     rt.clickOnMoreFilter()
     rt.selectFilterAssetTag()
 })
-And ('Click More filter select- Created By in search box and Verify the Result',()=>{
+And('Click More filter select- Created By in search box and Verify the Result', () => {
     rt.clickOnMoreFilter()
     rt.selectFilterCreatedBy()
+})
+And('Click More filter select- Last Modified Date in search box and Verify the Result', () => {
+    rt.clickOnMoreFilter()
+    rt.selectFilteLastModifiedDate()
 })
 Then('Click on Clear filter', () => {
     rt.clickOnClearFilter()
 })
-And ('Click More filter select- Repair device in search box and Verify the Result',()=>{
+And('Click More filter select- Repair device in search box and Verify the Result', () => {
     rt.clickOnMoreFilter()
     rt.selectFilterRepairDevice()
 })

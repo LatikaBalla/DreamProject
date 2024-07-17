@@ -8,7 +8,9 @@ export class Repair360Actions {
         globalThis.rep = new Repair360Elements();
     }
     closeTermsOfServiceWindow() {
-        dash.termsElement().click({ force: true })
+        cy.contains('Remind me Later').click({ force: true }) 
+        dash.termsElement().contains('Dismiss').click({ force: true })
+        //dash.termsElement().click({ force: true })
     }
     verifyTitleRepair360() {
         rep.titleElement()

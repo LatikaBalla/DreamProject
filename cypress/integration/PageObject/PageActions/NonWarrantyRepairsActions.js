@@ -11,7 +11,9 @@ export class NonWarrantyRepairsActions {
         globalThis.repc = new ReportCenterElements();
     }
     closeTermsOfServiceWindow() {
-        dash.termsElement().click({ force: true })
+        cy.contains('Remind me Later').click({ force: true }) 
+        dash.termsElement().contains('Dismiss').click({ force: true })
+       // dash.termsElement().click({ force: true })
     }
     clickOnReportCenter() {
         dash.reportcenterElement().click({ force: true })

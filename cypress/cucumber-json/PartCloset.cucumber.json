@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2551000000
+              "duration": 2666000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5483000000
+              "duration": 6982000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9080000000
+              "duration": 9188000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 81000000
+              "duration": 83000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on PartCloset Tab",
             "result": {
               "status": "passed",
-              "duration": 897000000
+              "duration": 856000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of PartCloset Page",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 13000000
             }
           },
           {
@@ -88,22 +88,12 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "Table for PartCloset should be visible",
-            "result": {
-              "status": "passed",
-              "duration": 6000000
-            }
-          },
-          {
-            "arguments": [],
             "keyword": "Then ",
             "line": 29,
             "name": "I should click on Add New custome part",
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 64000000
             }
           },
           {
@@ -113,7 +103,7 @@
             "name": "Enter part name, manufacture and parent device",
             "result": {
               "status": "passed",
-              "duration": 1051000000
+              "duration": 1118000000
             }
           },
           {
@@ -123,7 +113,7 @@
             "name": "Enter part sku and quantity",
             "result": {
               "status": "passed",
-              "duration": 535000000
+              "duration": 604000000
             }
           },
           {
@@ -133,7 +123,7 @@
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 79000000
             }
           },
           {
@@ -143,7 +133,7 @@
             "name": "Verify new custome part is added",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 354000000
             }
           },
           {
@@ -153,7 +143,7 @@
             "name": "I should click on Add New VT part",
             "result": {
               "status": "passed",
-              "duration": 104000000
+              "duration": 76000000
             }
           },
           {
@@ -163,7 +153,7 @@
             "name": "Select device and part name",
             "result": {
               "status": "passed",
-              "duration": 529000000
+              "duration": 581000000
             }
           },
           {
@@ -173,7 +163,7 @@
             "name": "Enter quantity and select building",
             "result": {
               "status": "passed",
-              "duration": 332000000
+              "duration": 322000000
             }
           },
           {
@@ -183,7 +173,7 @@
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 78000000
+              "duration": 81000000
             }
           },
           {
@@ -192,8 +182,9 @@
             "line": 38,
             "name": "Verify new VT part is added",
             "result": {
-              "status": "passed",
-              "duration": 9000000
+              "status": "failed",
+              "duration": 29992000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiAlert-message`, but never found it.\n    at PartClosetActions.verifyNewVTPartAdded (cypress/integration/PageObject/PageActions/PartClosetActions.js:96:29)\n    at Context.eval (cypress/integration/PartCloset/PartCloset.spec.js:80:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -202,8 +193,7 @@
             "line": 39,
             "name": "Enter the Search value in search box",
             "result": {
-              "status": "passed",
-              "duration": 288000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +202,7 @@
             "line": 40,
             "name": "Verify the Results in the table",
             "result": {
-              "status": "passed",
-              "duration": 622000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +211,7 @@
             "line": 41,
             "name": "Click on delete button",
             "result": {
-              "status": "passed",
-              "duration": 145000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +220,7 @@
             "line": 42,
             "name": "Verify the recode is deleted",
             "result": {
-              "status": "passed",
-              "duration": 22000000
+              "status": "skipped"
             }
           }
         ]

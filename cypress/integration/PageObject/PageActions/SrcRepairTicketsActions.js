@@ -12,7 +12,9 @@ export class SrcRepairTicketsActions {
         globalThis.mf1 = new StudentRepairCenterElements()
     }
     closeTermsOfServiceWindow() {
-        dash.termsElement().click({ force: true })
+        cy.contains('Remind me Later').click({ force: true }) 
+        dash.termsElement().contains('Dismiss').click({ force: true })
+       // dash.termsElement().click({ force: true })
     }
     clickOnRepair360() {
         //  dash.arrowElement().click({ force: true })
@@ -47,6 +49,8 @@ export class SrcRepairTicketsActions {
     selectTechnician() {
         srt.technicianElement().click({ force: true })
         cy.get('[role="listbox"]').find('li').contains(tdata.srcRepairTicket.technician).click({ force: true })
+        cy.get('#outbound_address').click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
     }
     selectIssue() {
         srt.issueElement().click({ force: true })
@@ -64,7 +68,7 @@ export class SrcRepairTicketsActions {
     }
     clickOnSaveButton() {
         srt.savebtnElement().click({ force: true })
-        cy.wait(5000)
+        cy.wait(1000)
     }
     verifyNewTicket() {
         dash.messageElement().should('contain', tdata.srcRepairTicket.createTicketmsg)

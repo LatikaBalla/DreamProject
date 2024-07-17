@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2324000000
+              "duration": 2782000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6912000000
+              "duration": 12489000000
             }
           },
           {
@@ -42,8 +42,9 @@
             "line": 9,
             "name": "close the terms of service window",
             "result": {
-              "status": "passed",
-              "duration": 9085000000
+              "status": "failed",
+              "duration": 8273000000,
+              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 3 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click\n    at mouseAction (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111447:68)\n    at Context.click (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111611:14)\n    at wrapped (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at OrgUploadAssetsActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/OrgUploadAssetsActions.js:13:28)\n    at Context.eval (cypress/integration/OrgUploadAssets/OrgUploadAssets.spec.js:16:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -52,8 +53,7 @@
             "line": 10,
             "name": "Click on Manage Devices",
             "result": {
-              "status": "passed",
-              "duration": 73000000
+              "status": "skipped"
             }
           },
           {
@@ -62,8 +62,7 @@
             "line": 11,
             "name": "Click on OrgUploadAssets Tab",
             "result": {
-              "status": "passed",
-              "duration": 1088000000
+              "status": "skipped"
             }
           },
           {
@@ -72,8 +71,7 @@
             "line": 14,
             "name": "Verify the Title of OrgUploadAssets Page",
             "result": {
-              "status": "passed",
-              "duration": 19000000
+              "status": "skipped"
             }
           },
           {
@@ -82,8 +80,7 @@
             "line": 15,
             "name": "Filters of OrgUploadAssets should be visible",
             "result": {
-              "status": "passed",
-              "duration": 8000000
+              "status": "skipped"
             }
           },
           {
@@ -92,8 +89,7 @@
             "line": 16,
             "name": "Table for OrgUploadAssets should be visible",
             "result": {
-              "status": "passed",
-              "duration": 6000000
+              "status": "skipped"
             }
           },
           {
@@ -102,8 +98,7 @@
             "line": 17,
             "name": "I should click on Add Asset",
             "result": {
-              "status": "passed",
-              "duration": 72000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +107,7 @@
             "line": 18,
             "name": "Enter title, full name location and tag",
             "result": {
-              "status": "passed",
-              "duration": 404000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +116,7 @@
             "line": 19,
             "name": "Enter note, Type and description",
             "result": {
-              "status": "passed",
-              "duration": 562000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +125,7 @@
             "line": 20,
             "name": "Upload the image file",
             "result": {
-              "status": "passed",
-              "duration": 447000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +134,7 @@
             "line": 21,
             "name": "Click on save button",
             "result": {
-              "status": "passed",
-              "duration": 71000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +143,7 @@
             "line": 22,
             "name": "Verify the asset details added in table",
             "result": {
-              "status": "passed",
-              "duration": 394000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +152,7 @@
             "line": 27,
             "name": "Enter the title in search box",
             "result": {
-              "status": "passed",
-              "duration": 3173000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +161,7 @@
             "line": 28,
             "name": "Verify the record in searching history",
             "result": {
-              "status": "passed",
-              "duration": 22000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +170,7 @@
             "line": 29,
             "name": "Click on Edit button",
             "result": {
-              "status": "passed",
-              "duration": 85000000
+              "status": "skipped"
             }
           },
           {
@@ -192,8 +179,7 @@
             "line": 30,
             "name": "I should edit title, full name location and tag",
             "result": {
-              "status": "passed",
-              "duration": 474000000
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +188,7 @@
             "line": 31,
             "name": "I should edit note, Type and description",
             "result": {
-              "status": "passed",
-              "duration": 1376000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +197,7 @@
             "line": 32,
             "name": "ReUpload the image file",
             "result": {
-              "status": "passed",
-              "duration": 22000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +206,7 @@
             "line": 33,
             "name": "Click on save button",
             "result": {
-              "status": "passed",
-              "duration": 71000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +215,7 @@
             "line": 34,
             "name": "Verify the Record has been updated Meassage",
             "result": {
-              "status": "passed",
-              "duration": 418000000
+              "status": "skipped"
             }
           },
           {
@@ -242,8 +224,7 @@
             "line": 35,
             "name": "Click on Delete button",
             "result": {
-              "status": "passed",
-              "duration": 427000000
+              "status": "skipped"
             }
           },
           {
@@ -252,8 +233,7 @@
             "line": 36,
             "name": "Click on Confirm Delete button",
             "result": {
-              "status": "passed",
-              "duration": 66000000
+              "status": "skipped"
             }
           },
           {
@@ -262,8 +242,7 @@
             "line": 37,
             "name": "Verify the record is deleted successfully",
             "result": {
-              "status": "passed",
-              "duration": 2032000000
+              "status": "skipped"
             }
           }
         ]

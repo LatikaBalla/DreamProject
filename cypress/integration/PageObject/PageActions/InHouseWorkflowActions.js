@@ -11,7 +11,9 @@ export class InHouseWorkflowActions {
         globalThis.ihw = new InHouseWorkflowElements();
     }
     closeTermsOfServiceWindow() {
-        dash.termsElement().click({ force: true })
+        cy.contains('Remind me Later').click({ force: true }) 
+        dash.termsElement().contains('Dismiss').click({ force: true })
+       // dash.termsElement().click({ force: true })
     }
     clickOnRepair360() {
         dash.repair360Element().click({ force: true })

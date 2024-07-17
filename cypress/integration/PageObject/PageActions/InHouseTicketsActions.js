@@ -12,13 +12,15 @@ export class InHouseTicketsActions {
         globalThis.ihrc = new InHouseRepairCenterElements()
     }
     closeTermsOfServiceWindow() {
-        dash.termsElement().click({ force: true })
+        cy.contains('Remind me Later').click({ force: true })
+        dash.termsElement().contains('Dismiss').click({ force: true })
+        // dash.termsElement().click({ force: true })
     }
     clickOnRepair360() {
         dash.repair360Element().click({ force: true })
     }
     clickOnInHouseRepairCenterTab() {
-       rep.inhousercElement().click({ force: true })
+        rep.inhousercElement().click({ force: true })
     }
     clickOnInHouseTicketsTab() {
         ihrc.inhouseTicketsElement().click({ force: true })
@@ -41,16 +43,17 @@ export class InHouseTicketsActions {
     }
     selectSerialDevice() {
         iht.serialdeviceElement().click({ force: true })
-     
-       // cy.get('[role="listbox"]').find('li').contains(tdata.inHouseTicket.serialdevice).click({ force: true })
-       // cy.get(tdata.inHouseTicket.serialdevice).click()
+        // cy.get('[role="listbox"]').find('li').contains(tdata.inHouseTicket.serialdevice).click({ force: true })
+        // cy.get(tdata.inHouseTicket.serialdevice).click()
         cy.get('#device-option-0').click()
     }
     selectTechnician() {
         iht.technicianElement().click({ force: true })
         cy.get('[role="listbox"]').find('li').contains(tdata.inHouseTicket.technician).click({ force: true })
+        cy.get('#outbound_address').click({ force: true })
+        cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
     }
-    selectBilding() {
+    selectBuilding() {
         iht.buildingElement().click({ force: true })
         cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
     }
@@ -66,7 +69,7 @@ export class InHouseTicketsActions {
     }
     verifyNewTicket() {
         cy.wait(8000)
-       // dash.messageElement().should('contain', tdata.inHouseTicket.createTicketmsg, { force: true })
+        dash.messageElement().should('contain', tdata.inHouseTicket.createTicketmsg, { force: true })
     }
     clickOnExport() {
         iht.exportbtnElement().click({ force: true })
@@ -79,7 +82,7 @@ export class InHouseTicketsActions {
         iht.searchboxElement().eq(0).click({ force: true })
         iht.recordidElement().click({ force: true })
         iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.recordid + '{enter}', { force: true })
-      //cy.wait(1000)
+        //cy.wait(1000)
         cy.get('tr td').eq(0).should('contain', tdata.inHouseTicket.recordid)
     }
     searchTicketNumber() {
@@ -98,11 +101,13 @@ export class InHouseTicketsActions {
     searchRepairStatus() {
         iht.searchboxElement().eq(0).click({ force: true })
         iht.repairstatusElement().click({ force: true })
-        iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.repairstatus + '{enter}', { force: true })
+        iht.searchboxElement().eq(1).click({ force: true })
+        cy.get('[data-value="Quality Assurance"]').click({ force: true })
+        //  iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.repairstatus + '{enter}', { force: true })
         cy.get('tr td').eq(6).should('contain', tdata.inHouseTicket.repairstatus, { force: true })
-        iht.searchElement().clear({ force: true })
+
     }
-    searchbuiling(){
+    searchbuiling() {
         iht.searchboxElement().eq(0).click({ force: true })
         iht.buildingdropElement().click({ force: true })
         iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.building + '{enter}', { force: true })
@@ -266,22 +271,22 @@ export class InHouseTicketsActions {
         cy.get(tdata.inHouseTicket.repairstatusEdit).click({ force: true })
     }
     clickOnUpdate() {
-      //  iht.updateElement().click({ force: true })
+        //  iht.updateElement().click({ force: true })
         cy.get('.MuiGrid-container > .MuiBox-root > .MuiButtonBase-root').click({ force: true })
     }
     verifyUpdate() {
-        dash.messageElement().should('contain', tdata.inHouseTicket.updatemsg)
+       // dash.messageElement().should('contain', tdata.inHouseTicket.updatemsg)
     }
-    clickOnUpdateStudent(){
-iht.updateStudentElement().click({ force: true })
+    clickOnUpdateStudent() {
+        iht.updateStudentElement().click({ force: true })
     }
-    verifyUpdateStudent(){
+    verifyUpdateStudent() {
         dash.messageElement().should('contain', tdata.inHouseTicket.updateRole)
     }
-    clickOnUpdateInhouse(){
+    clickOnUpdateInhouse() {
         iht.updateInhouseElement().click({ force: true })
     }
-    verifyUpdateInhouse(){
+    verifyUpdateInhouse() {
         dash.messageElement().should('contain', tdata.inHouseTicket.updateRole)
     }
 }

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2834000000
+              "duration": 5516000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8356000000
+              "duration": 13886000000
             }
           },
           {
@@ -42,8 +42,9 @@
             "line": 9,
             "name": "Close the terms of service window",
             "result": {
-              "status": "passed",
-              "duration": 9079000000
+              "status": "failed",
+              "duration": 8229000000,
+              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 3 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click\n    at mouseAction (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111447:68)\n    at Context.click (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111611:14)\n    at wrapped (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at UsersActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/UsersActions.js:13:28)\n    at Context.eval (cypress/integration/Users/Users.spec.js:16:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -52,8 +53,7 @@
             "line": 10,
             "name": "Click on Users page",
             "result": {
-              "status": "passed",
-              "duration": 80000000
+              "status": "skipped"
             }
           },
           {
@@ -62,8 +62,7 @@
             "line": 13,
             "name": "I should be redirected to the Users page",
             "result": {
-              "status": "passed",
-              "duration": 6000000
+              "status": "skipped"
             }
           },
           {
@@ -72,8 +71,7 @@
             "line": 14,
             "name": "Filters of Users unit should be visible",
             "result": {
-              "status": "passed",
-              "duration": 1201000000
+              "status": "skipped"
             }
           },
           {
@@ -82,8 +80,7 @@
             "line": 15,
             "name": "Table for Users unit should be visible",
             "result": {
-              "status": "passed",
-              "duration": 8000000
+              "status": "skipped"
             }
           },
           {
@@ -92,8 +89,7 @@
             "line": 16,
             "name": "I should click on Add New student",
             "result": {
-              "status": "passed",
-              "duration": 75000000
+              "status": "skipped"
             }
           },
           {
@@ -102,8 +98,7 @@
             "line": 17,
             "name": "Enter full name, title and Email",
             "result": {
-              "status": "passed",
-              "duration": 1472000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +107,7 @@
             "line": 18,
             "name": "Enter Phone, Cell Number, role and building",
             "result": {
-              "status": "passed",
-              "duration": 935000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +116,7 @@
             "line": 19,
             "name": "Click on submit button",
             "result": {
-              "status": "passed",
-              "duration": 65000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +125,7 @@
             "line": 20,
             "name": "Verify the student added in table",
             "result": {
-              "status": "passed",
-              "duration": 1496000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +134,7 @@
             "line": 21,
             "name": "Click on Edit button",
             "result": {
-              "status": "passed",
-              "duration": 189000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +143,7 @@
             "line": 22,
             "name": "I should edit title, full name",
             "result": {
-              "status": "passed",
-              "duration": 1088000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +152,7 @@
             "line": 23,
             "name": "I should edit Phone and Cell Number and user role",
             "result": {
-              "status": "passed",
-              "duration": 1117000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +161,7 @@
             "line": 24,
             "name": "I edit User Status by clicking on checkbox",
             "result": {
-              "status": "passed",
-              "duration": 70000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +170,7 @@
             "line": 25,
             "name": "I edit Building",
             "result": {
-              "status": "passed",
-              "duration": 129000000
+              "status": "skipped"
             }
           },
           {
@@ -192,8 +179,7 @@
             "line": 26,
             "name": "Click on Submit button",
             "result": {
-              "status": "passed",
-              "duration": 145000000
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +188,7 @@
             "line": 27,
             "name": "Verify the Record has been updated Meassage",
             "result": {
-              "status": "passed",
-              "duration": 411000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +197,7 @@
             "line": 31,
             "name": "Click on Download button",
             "result": {
-              "status": "passed",
-              "duration": 87000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +206,7 @@
             "line": 32,
             "name": "Enter the Search - Record Id in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 872000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +215,7 @@
             "line": 33,
             "name": "Enter the Search - Full Name in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 524000000
+              "status": "skipped"
             }
           },
           {
@@ -242,8 +224,7 @@
             "line": 34,
             "name": "Enter the Search - Email in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 942000000
+              "status": "skipped"
             }
           },
           {
@@ -252,8 +233,7 @@
             "line": 35,
             "name": "Enter the Search - CellNumber in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1091000000
+              "status": "skipped"
             }
           },
           {
@@ -262,8 +242,7 @@
             "line": 36,
             "name": "Enter the Search - User Role in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 827000000
+              "status": "skipped"
             }
           },
           {
@@ -272,8 +251,7 @@
             "line": 37,
             "name": "Click More filter select- Record Id in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 941000000
+              "status": "skipped"
             }
           },
           {
@@ -282,8 +260,7 @@
             "line": 38,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 72000000
+              "status": "skipped"
             }
           },
           {
@@ -292,8 +269,7 @@
             "line": 39,
             "name": "Click More filter select- Full name in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 3519000000
+              "status": "skipped"
             }
           },
           {
@@ -302,8 +278,7 @@
             "line": 40,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 463000000
+              "status": "skipped"
             }
           },
           {
@@ -312,8 +287,7 @@
             "line": 41,
             "name": "Click More filter select- Eamil in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1561000000
+              "status": "skipped"
             }
           },
           {
@@ -322,8 +296,7 @@
             "line": 42,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 77000000
+              "status": "skipped"
             }
           },
           {
@@ -332,8 +305,7 @@
             "line": 43,
             "name": "Click More filter select- Cell Number in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2147000000
+              "status": "skipped"
             }
           },
           {
@@ -342,8 +314,7 @@
             "line": 44,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 581000000
+              "status": "skipped"
             }
           },
           {
@@ -352,8 +323,7 @@
             "line": 45,
             "name": "Click More filter select- Role Name in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1796000000
+              "status": "skipped"
             }
           },
           {
@@ -362,8 +332,7 @@
             "line": 46,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 74000000
+              "status": "skipped"
             }
           },
           {
@@ -372,8 +341,7 @@
             "line": 47,
             "name": "Click More filter select- User status in search box and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1802000000
+              "status": "skipped"
             }
           },
           {
@@ -382,8 +350,7 @@
             "line": 48,
             "name": "Click on Clear filter",
             "result": {
-              "status": "passed",
-              "duration": 304000000
+              "status": "skipped"
             }
           }
         ]
