@@ -125,7 +125,7 @@ Then('Click on Clear filter', () => {
 And('Click More filter select- Record Id in search box and Verify the Result', () => {
     rb.selectFilterRecordId()
 })
-And('Click More filter select- Tracking Number From in search box and Verify the Result', () => {
+And('Click on filter of Tracking Number contain in search box and Verify the Result', () => {
     rb.selectFilterTrackingNumberFrom()
 })
 Then('Click More filter select- Shipping From Cost in search box and Verify the Result', () => {
@@ -133,9 +133,6 @@ Then('Click More filter select- Shipping From Cost in search box and Verify the 
 })
 And('Click More filter select- Shipped From Date in search box and Verify the Result', () => {
     rb.selectFilterShippedFromDate()
-})
-Then('Click More filter select- Label From in search box and Verify the Result', () => {
-    rb.selectFilterLabelFrom()
 })
 And('Click More filter select- Building in search box and Verify the Result', () => {
     rb.selectFilterBuilding()
@@ -150,5 +147,26 @@ And('Click More filter select- Created_by in search box and Verify the Result', 
     rb.selectFilterCreatedby()
 })
 And('Click More filter select- Last_modified_date in search box and Verify the Result', () => {
-    rb.selectFilterLastdate ()
+    rb.selectFilterLastdate()
+})
+And('Click on filter of Tracking Number Does not contain in search box and Verify the Result', () => {
+    rb.filterDoesnotcontain()
+})
+And('Click on filter of Tracking Number Equals in search box and Verify the Result', () => {
+    rb.filterEquals()
+})
+And('Click on filter of Tracking Number Does not equal in search box and Verify the Result', () => {
+    rb.filterNotequal()
+})
+And('Click on filter of Tracking Number Begins with in search box and Verify the Result', () => {
+    rb.filterBeginswith()
+})
+And('Click on filter of Tracking Number Ends with in search box and Verify the Result', () => {
+    rb.Endswith()
+})
+And('Click on filter of Tracking Number Blank in search box and Verify the Result', () => {
+    rb.filterBlank()
+})
+And('Click on filter of Tracking Number Not blank in search box and Verify the Result', () => {
+    rb.filterNotblank()
 })

@@ -124,7 +124,7 @@ export default class RepairBoxesElements {
         })
     }
     clearFilterElement() {
-        return cy.contains(locator.repairBoxes.clearFilter, {
+        return cy.get(locator.repairBoxes.clearFilter, {
             timeout: 30000,
         })
     }
@@ -160,6 +160,11 @@ export default class RepairBoxesElements {
     }
    createdbyElement() {
         return cy.get(locator.repairBoxes.createdby, {
+            timeout: 30000,
+        })
+    }
+    viewElement() {
+        return cy.get(locator.repairBoxes.view, {
             timeout: 30000,
         })
     }

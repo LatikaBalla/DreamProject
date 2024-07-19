@@ -122,7 +122,7 @@ export default class RepairTicketsElements {
         })
     }
     clearFilterElement() {
-        return cy.contains(locator.repairTickets.clearFilter, {
+        return cy.get(locator.repairTickets.clearFilter, {
             timeout: 30000,
         })
     }

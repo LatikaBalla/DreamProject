@@ -95,7 +95,7 @@ And('Click More filter select- Repair type in search box and Verify the Result',
     rt.clickOnMoreFilter()
     rt.selectFilterRepairType()
 })
-And('Click More filter select- Serial Number in search box and Verify the Result', () => {
+And('Click on filter of Serial Number contain in search box and Verify the Result', () => {
     rt.clickOnMoreFilter()
     rt.selectFilterSerialNumber()
 })
@@ -163,4 +163,25 @@ Then('Click on Add Repair Image and Verify', () => {
 })
 And('Click on Add Note and Verify', () => {
     rt.clickOnAddNote()
+})
+And('Click on filter of Serial Number Does not contain in search box and Verify the Result', () => {
+    rt.filterDoesnotcontain()
+})
+And('Click on filter of Serial Number Equals in search box and Verify the Result', () => {
+    rt.filterEquals()
+})
+And('Click on filter of Serial Number Does not equal in search box and Verify the Result', () => {
+    rt.filterNotequal()
+})
+And('Click on filter of Serial Number Begins with in search box and Verify the Result', () => {
+    rt.filterBeginswith()
+})
+And('Click on filter of Serial Number Ends with in search box and Verify the Result', () => {
+    rt.Endswith()
+})
+And('Click on filter of Serial Number Blank in search box and Verify the Result', () => {
+    rt.filterBlank()
+})
+And('Click on filter of Serial Number Not blank in search box and Verify the Result', () => {
+    rt.filterNotblank()
 })

@@ -380,7 +380,7 @@
         "assettag": "[data-value='asset_tag']",
         "intransit": "[data-value='In Transit']",
         "addFilter": "[ref='eMenu']",
-        "clearFilter": "Clear Filter",
+        "clearFilter": "button[ref='resetFilterButton']",
         "fieldName": "[ref='eDisplayField']",
         "fieldOp": "[role='option']",
         "fieldValue": "[placeholder='Filter...']",
@@ -405,7 +405,6 @@
         "title": "Repair Ticket Instructions",
         "inbound": "Inbound Shipments",
         "outbound": "Outbound Shipments",
-   
         "weight": "#weight",
         "height": "#height",
         "depth": "#depth",
@@ -427,13 +426,14 @@
         "trackingnumber": "[data-value='tracking_number_from']",
         "recordid": "[data-value='record_id']",
         "addFilter": "[ref='eMenu']",
-        "clearFilter": "Clear Filter",
+        "clearFilter": "button[ref='resetFilterButton']",
         "fieldName": "[ref='eDisplayField']",
         "fieldOp": "[role='option']",
         "fieldValue": "[placeholder='Filter...']",
         "apply": "button[ref='applyFilterButton']",
         "building":"[data-value='building']",
-        "createdby":"[data-value='created_by']"
+        "createdby":"[data-value='created_by']",
+        "view":"[data-testid='VisibilityIcon']"
     },
     "inhouseRepairCenter": {
         "title": "In-House Repair",

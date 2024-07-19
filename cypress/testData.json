@@ -161,7 +161,7 @@
     "repairstatusEdit": "[data-value='In Transit']",
     "student": "[activedescendant='student_id-option-1']",
     "lastModifiedDate":"2023-12-05",
-    "lastModifiedDate1":"05-12-2023 23:45:14"
+    "lastModifiedDate1":"05-12-2023"
   },
   "repairBox": {
     "weight": "10",
@@ -172,15 +172,17 @@
     "boxcreatedmsg": "New box submitted",
     "filename": "Image.png",
     "trackingnumber": "1Z6X34470301107750",
-    "recordid": "7949",
+    "recordid": "10584",
     "labelfrom": "",
-    "shippeddate": "2023-09-27T11:05:37.000Z",
+    "shippeddate": "2024-07-17",
+    "shippeddate1": "17-07-2024",
     "shippingcost": "$23.36",
     "building": "Dream Building",
-    "boxtype": "To Vivacity",
+    "boxtype": "Inbound",
     "createdby": "demo_adminsuper@vivacitytech.com",
-    "shippingboxstatus": "ShippingFromDistrict",
-    "lastdate": "27-03-2024 01:10:01"
+    "shippingboxstatus": "Not Shipped",
+    "lastdate": "2024-05-02",
+    "lastdate1": "02-05-2024"
   },
   "inHouseWorkflow": {
     "failuretype": "[data-value='Accidental']",
