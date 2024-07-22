@@ -122,32 +122,38 @@ And('Verify the Results in the table', () => {
 Then('Click on Clear filter', () => {
     rb.clickOnClearFilter()
 })
-And('Click More filter select- Record Id in search box and Verify the Result', () => {
-    rb.selectFilterRecordId()
+//RB
+And('Click on filter of Repair Box contain in search box and Verify the Result', () => {
+    rb.selectFilterRepairBox()
 })
+And('Click on filter of Repair Box Does not contain in search box and Verify the Result', () => {
+    rb.filterDoesnotcontainBox()
+})
+And('Click on filter of Repair Box Greater than in search box and Verify the Result', () => {
+    rb.filterGreaterthanBox()
+})
+And('Click on filter of Repair Box Greater than or equal to in search box and Verify the Result', () => {
+    rb.filterGreaterequalBox()
+})
+And('Click on filter of Repair Box Less than in search box and Verify the Result', () => {
+    rb.filterLessthanBox()
+})
+And('Click on filter of Repair Box Less than or equal to in search box and Verify the Result', () => {
+    rb.filterLessequalBox()
+})
+And('Click on filter of Repair Box Between in search box and Verify the Result', () => {
+    rb.filterBetweenBox()
+})
+And('Click on filter of Repair Box Blank in search box and Verify the Result', () => {
+    rb.filterBlankBox()
+})
+And('Click on filter of Repair Box Not blank in search box and Verify the Result', () => {
+    rb.filterNotblankBox()
+})
+
+//TN
 And('Click on filter of Tracking Number contain in search box and Verify the Result', () => {
-    rb.selectFilterTrackingNumberFrom()
-})
-Then('Click More filter select- Shipping From Cost in search box and Verify the Result', () => {
-    rb.selectFilterShippingFromCost()
-})
-And('Click More filter select- Shipped From Date in search box and Verify the Result', () => {
-    rb.selectFilterShippedFromDate()
-})
-And('Click More filter select- Building in search box and Verify the Result', () => {
-    rb.selectFilterBuilding()
-})
-And('Click More filter select- Box_type in search box and Verify the Result', () => {
-    rb.selectFilterBoxtype()
-})
-And('Click More filter select- shipping_box_status in search box and Verify the Result', () => {
-    rb.selectFiltershippingboxstatus()
-})
-And('Click More filter select- Created_by in search box and Verify the Result', () => {
-    rb.selectFilterCreatedby()
-})
-And('Click More filter select- Last_modified_date in search box and Verify the Result', () => {
-    rb.selectFilterLastdate()
+    rb.selectFiltertrackingNumberFrom()
 })
 And('Click on filter of Tracking Number Does not contain in search box and Verify the Result', () => {
     rb.filterDoesnotcontain()
@@ -162,7 +168,7 @@ And('Click on filter of Tracking Number Begins with in search box and Verify the
     rb.filterBeginswith()
 })
 And('Click on filter of Tracking Number Ends with in search box and Verify the Result', () => {
-    rb.Endswith()
+    rb.filterEndswith()
 })
 And('Click on filter of Tracking Number Blank in search box and Verify the Result', () => {
     rb.filterBlank()
@@ -170,3 +176,157 @@ And('Click on filter of Tracking Number Blank in search box and Verify the Resul
 And('Click on filter of Tracking Number Not blank in search box and Verify the Result', () => {
     rb.filterNotblank()
 })
+//SDate
+And('Click on filter of Shipped From Date Equals in search box and Verify the Result', () => {
+    rb.filterEqualsSDate()
+})
+And('Click on filter of Shipped From Date Does not equal in search box and Verify the Result', () => {
+    rb.filterNotequalSDate()
+})
+And('Click on filter of Shipped From Date Before in search box and Verify the Result', () => {
+    rb.filterBeforeSDate()
+})
+And('Click on filter of Shipped From Date After in search box and Verify the Result', () => {
+    rb.filterAfterSDate()
+})
+And ('Click on filter of Shipped From Date Between with in search box and Verify the Result',()=>{
+    rb.filterBetweenSDate() 
+})
+And('Click on filter of Shipped From Date Blank in search box and Verify the Result', () => {
+    rb.filterBlankSDate()
+})
+And('Click on filter of Shipped From Date Not blank in search box and Verify the Result', () => {
+    rb.filterNotblankSDate()
+})
+//B
+And('Click on filter of Building contain in search box and Verify the Result', () => {
+    rb.selectFilterBuilding()
+})
+And('Click on filter of Building Does not contain in search box and Verify the Result', () => {
+    rb.filterDoesnotcontainB()
+})
+And('Click on filter of Building Equals in search box and Verify the Result', () => {
+    rb.filterEqualsB()
+})
+And('Click on filter of Building Does not equal in search box and Verify the Result', () => {
+    rb.filterNotequalB()
+})
+And('Click on filter of Building Begins with in search box and Verify the Result', () => {
+    rb.filterBeginswithB()
+})
+And('Click on filter of Building Ends with in search box and Verify the Result', () => {
+    rb.filterEndswithB()
+})
+And('Click on filter of Building Blank in search box and Verify the Result', () => {
+    rb.filterBlankB()
+})
+And('Click on filter of Building Not blank in search box and Verify the Result', () => {
+    rb.filterNotblankB()
+})
+// Then('Click More filter select- Shipping From Cost in search box and Verify the Result', () => {
+//     rb.selectFilterShippingFromCost()
+// })
+// And('Click More filter select- Shipped From Date in search box and Verify the Result', () => {
+//     rb.selectFilterShippedFromDate()
+// })
+//BT
+And('Click on filter of Box_type contain in search box and Verify the Result', () => {
+    rb.selectFilterBoxtype()
+})
+And('Click on filter of Box_type Does not contain in search box and Verify the Result', () => {
+    rb.filterDoesnotcontainBT()
+})
+And('Click on filter of Box_type Equals in search box and Verify the Result', () => {
+    rb.filterEqualsBT()
+})
+And('Click on filter of Box_type Does not equal in search box and Verify the Result', () => {
+    rb.filterNotequalBT()
+})
+And('Click on filter of Box_type Begins with in search box and Verify the Result', () => {
+    rb.filterBeginswithBT()
+})
+And('Click on filter of Box_type Ends with in search box and Verify the Result', () => {
+    rb.filterEndswithBT()
+})
+And('Click on filter of Box_type Blank in search box and Verify the Result', () => {
+    rb.filterBlankBT()
+})
+And('Click on filter of Box_type Not blank in search box and Verify the Result', () => {
+    rb.filterNotblankBT()
+})
+//Ss
+And('Click on filter of shipping_box_status contain in search box and Verify the Result', () => {
+    rb.selectFiltershippingboxstatus()
+})
+And('Click on filter of shipping_box_status Does not contain in search box and Verify the Result', () => {
+    rb.filterDoesnotcontainSS()
+})
+And('Click on filter of shipping_box_status Equals in search box and Verify the Result', () => {
+    rb.filterEqualsSS()
+})
+And('Click on filter of shipping_box_status Does not equal in search box and Verify the Result', () => {
+    rb.filterNotequalSS()
+})
+And('Click on filter of shipping_box_status Begins with in search box and Verify the Result', () => {
+    rb.filterBeginswithSS()
+})
+And('Click on filter of shipping_box_status Ends with in search box and Verify the Result', () => {
+    rb.filterEndswithSS()
+})
+And('Click on filter of shipping_box_status Blank in search box and Verify the Result', () => {
+    rb.filterBlankSS()
+})
+And('Click on filter of shipping_box_status Not blank in search box and Verify the Result', () => {
+    rb.filterNotblankSS()
+})
+//CBY
+And('Click on filter of Created By contain in search box and Verify the Result', () => {
+    rb.selectFilterCreatedby()
+})
+And('Click on filter of Created By Does not contain in search box and Verify the Result', () => {
+    rb.filterDoesnotcontainCBy()
+})
+And('Click on filter of Created By Equals in search box and Verify the Result', () => {
+    rb.filterEqualsCBy()
+})
+And('Click on filter of Created By Does not equal in search box and Verify the Result', () => {
+    rb.filterNotequalCBy()
+})
+And('Click on filter of Created By Begins with in search box and Verify the Result', () => {
+    rb.filterBeginswithCBy()
+})
+And('Click on filter of Created By Ends with in search box and Verify the Result', () => {
+    rb.filterEndswithCBy()
+})
+And('Click on filter of Created By Blank in search box and Verify the Result', () => {
+    rb.filterBlankCBy()
+})
+And('Click on filter of Created By Not blank in search box and Verify the Result', () => {
+    rb.filterNotblankCBy()
+})
+//LDate
+And('Click on filter of Last Modified Date Equals in search box and Verify the Result', () => {
+    rb.filterEqualsLDate()
+})
+And('Click on filter of Last Modified Date Does not equal in search box and Verify the Result', () => {
+    rb.filterNotequalLDate()
+})
+And('Click on filter of Last Modified Date Before in search box and Verify the Result', () => {
+    rb.filterBeforeLDate()
+})
+And('Click on filter of Last Modified Date Between in search box and Verify the Result', () => {
+    rb.filterBetweenLDate()
+})
+And('Click on filter of Last Modified Date After in search box and Verify the Result', () => {
+    rb.filterAfterLDate()
+})
+And('Click on filter of Last Modified Date Blank in search box and Verify the Result', () => {
+    rb.filterBlankLDate()
+})
+And('Click on filter of Last Modified Date Not blank in search box and Verify the Result', () => {
+    rb.filterNotblankLDate()
+})
+
+
+
+
