@@ -84,50 +84,39 @@ Then('Enter the Search - Asset tag in search box and Verify the Result', () => {
     rt.searchAssetTag()
 })
 And('Click More filter select- Record Id in search box and Verify the Result', () => {
-    rt.clickOnMoreFilter()
     rt.selectFilterRecordId()
 })
 And('Click on filter of Ticket Number contain in search box and Verify the Result', () => {
-    rt.clickOnMoreFilter()
     rt.selectFilterTicketNumber()
 })
 And('Click on filter of Repair type contain in search box and Verify the Result', () => {
-    rt.clickOnMoreFilter()
     rt.selectFilterRepairType()
 })
 And('Click on filter of Serial Number contain in search box and Verify the Result', () => {
-    rt.clickOnMoreFilter()
     rt.selectFilterSerialNumber()
 })
 And('Click on filter of Building contain in search box and Verify the Result', () => {
-    rt.clickOnMoreFilter()
     rt.selectFilterBuilding()
 })
 And('Click More filter select- Repair status in search box and Verify the Result', () => {
-    rt.clickOnMoreFilter()
     rt.selectFilterRepairStatus()
 })
-And('Click on filter of Repair Box contain in search box and Verify the Result', () => {
-    rt.clickOnMoreFilter()
+And('Click on filter of Repair Box Equals in search box and Verify the Result', () => {
     rt.selectFilterRepairBox()
 })
 And('Click on filter of Asset tag contain in search box and Verify the Result', () => {
-    rt.clickOnMoreFilter()
     rt.selectFilterAssetTag()
 })
 And('Click on filter of Created By contain in search box and Verify the Result', () => {
-    rt.clickOnMoreFilter()
     rt.selectFilterCreatedBy()
 })
 And('Click on filter of Last Modified Date contain in search box and Verify the Result', () => {
-    rt.clickOnMoreFilter()
     rt.selectFilteLastModifiedDate()
 })
 Then('Click on Clear filter', () => {
     rt.clickOnClearFilter()
 })
 And('Click on filter of Repair device contain in search box and Verify the Result', () => {
-    rt.clickOnMoreFilter()
     rt.selectFilterRepairDevice()
 })
 And('Enter the Search value in search box', () => {
@@ -274,7 +263,7 @@ And('Click on filter of Repair device Not blank in search box and Verify the Res
     rt.filterNotblankRD()
 })
 
-And('Click on filter of Repair Box Does not contain in search box and Verify the Result', () => {
+And('Click on filter of Repair Box Does not equal in search box and Verify the Result', () => {
     rt.filterDoesnotcontainBox()
 })
 And('Click on filter of Repair Box Greater than in search box and Verify the Result', () => {
@@ -353,10 +342,10 @@ And('Click on filter of Last Modified Date Does not equal in search box and Veri
     rt.filterNotequalDate()
 })
 And('Click on filter of Last Modified Date Before in search box and Verify the Result', () => {
-    rt.filterBeginswithDate()
+    rt.filterBeforeDate()
 })
 And('Click on filter of Last Modified Date After in search box and Verify the Result', () => {
-    rt.filterEndswithDate()
+    rt.filterAfterDate()
 })
 And ('Click on filter of Last Modified Date Between with in search box and Verify the Result',()=>{
     rt.filterBetweenDate()

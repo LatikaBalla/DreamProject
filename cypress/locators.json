@@ -355,7 +355,7 @@
         "repairBoxes": "[data-testid='tabvr-2']"
     },
     "repairTickets": {
-        "title": "Repair Tickets",
+        "title": "Repair 360",
         "filters": ".css-13zqo1p",
         "table": ".css-1dj5rr2",
         "createTicket": "Create Ticket",
@@ -402,7 +402,7 @@
         "custompart": "Custom Part"
     },
     "repairBoxes": {
-        "title": "Repair Ticket Instructions",
+        "title": "Repair 360",
         "inbound": "Inbound Shipments",
         "outbound": "Outbound Shipments",
         "weight": "#weight",
@@ -528,7 +528,7 @@
         "srcStudents": "[data-testid='tabsrc-3']"
     },
     "partCloset": {
-        "title": "Parts Closet",
+        "title": "Repair 360",
         "filters": ".css-1d3bbye",
         "table": ".css-1owb465",
         "search": "[placeholder='Search']",
@@ -552,12 +552,12 @@
         "quantityVT": "#quantity",
         "submitVT": "Submit",
         "cancelVT": "Cancel",
-        "addFilter": "Add Filter",
-        "clearFilter": "Clear Filter",
-        "fieldName": "[name='fieldName']",
-        "fieldOp": "[name='fieldOp']",
-        "fieldValue": "[name='fieldValue']",
-        "apply": "[data-testid='btnHandleApply']"
+        "addFilter": "[ref='eMenu']",
+        "clearFilter": "button[ref='resetFilterButton']",
+        "fieldName": "[ref='eDisplayField']",
+        "fieldOp": "[role='option']",
+        "fieldValue": "[placeholder='Filter...']",
+        "apply": "button[ref='applyFilterButton']"
     },
     "srcRepairTickets": {
         "title": "SRC Repair Tickets",

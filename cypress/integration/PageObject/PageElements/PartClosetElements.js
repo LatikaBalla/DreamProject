@@ -122,12 +122,12 @@ export default class PartClosetElements {
         })
     }
     clearFilterElement() {
-        return cy.contains(locator.partCloset.clearFilter, {
+        return cy.get(locator.partCloset.clearFilter, {
             timeout: 30000,
         })
     }
     addFilterElement() {
-        return cy.contains(locator.partCloset.addFilter, {
+        return cy.get(locator.partCloset.addFilter, {
             timeout: 30000,
         })
     }

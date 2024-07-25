@@ -123,11 +123,11 @@ Then('Click on Clear filter', () => {
     rb.clickOnClearFilter()
 })
 //RB
-And('Click on filter of Repair Box contain in search box and Verify the Result', () => {
+And('Click on filter of Repair Box Equals in search box and Verify the Result', () => {
     rb.selectFilterRepairBox()
 })
-And('Click on filter of Repair Box Does not contain in search box and Verify the Result', () => {
-    rb.filterDoesnotcontainBox()
+And('Click on filter of Repair Box Does not equal in search box and Verify the Result', () => {
+    rb.filterDoesnotequalBox()
 })
 And('Click on filter of Repair Box Greater than in search box and Verify the Result', () => {
     rb.filterGreaterthanBox()

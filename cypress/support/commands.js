@@ -26,6 +26,7 @@
 import 'cypress-file-upload';
 Cypress.Commands.add("AdminLogin", () => {
   //cy.get('#cf-chl-widget-osivq').click({ force: true })
+
   cy.get('[href="/login"]').click({ force: true })
   //cy.origin('https://vivacity-valkyrie.us.auth0.com/', () => {
    // cy.origin('https://dream-vivacity.us.auth0.com/', () => {

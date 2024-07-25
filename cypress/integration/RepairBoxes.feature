@@ -12,8 +12,8 @@ Feature: RepairBoxes Page Functionality
 
   Scenario:  Visiblity check,Create New Box, add ticket and  view details of box with create aonther ticket
     And Verify the Title of RepairBoxes Page
-    And Click on filter of Repair Box contain in search box and Verify the Result
-    And Click on filter of Repair Box Does not contain in search box and Verify the Result
+    And Click on filter of Repair Box Equals in search box and Verify the Result
+    And Click on filter of Repair Box Does not equal in search box and Verify the Result
     And Click on filter of Repair Box Greater than in search box and Verify the Result
     And Click on filter of Repair Box Greater than or equal to in search box and Verify the Result
     And Click on filter of Repair Box Less than in search box and Verify the Result
@@ -57,7 +57,7 @@ Feature: RepairBoxes Page Functionality
     And Click on filter of Box_type Blank in search box and Verify the Result
     And Click on filter of Box_type Not blank in search box and Verify the Result
 
-  And Click on filter of Created By contain in search box and Verify the Result
+    And Click on filter of Created By contain in search box and Verify the Result
     And Click on filter of Created By Does not contain in search box and Verify the Result
     And Click on filter of Created By Equals in search box and Verify the Result
     And Click on filter of Created By Does not equal in search box and Verify the Result
@@ -93,20 +93,20 @@ Feature: RepairBoxes Page Functionality
     Then Verify new box is added in table
     And Click on view button
     Then Verify the Details new box
-# # And Enter the Search - Tracking Number in search box and Verify the Result
-# # Then Enter the Search - Record Id in search box and Verify the Result
-# # And Enter the Search - Building in search box and Verify the Result
-# # Then Enter the Search - Created_by in search box and Verify the Result
-# # And Click on Export Button
-# # And Add another ticket in the same box
-# # Then Select Ticket from dropdownlist
-# # And Click on Add ticket
-# # Then Verify the ticket is added in table
-# # And Click on view the ticket Details
-# # Then Verfiy the ticket Details
-# # And Click on Back button
-# # And Remove the ticket from box
-# # Then Verify the ticket is delete from the table
+# And Enter the Search - Tracking Number in search box and Verify the Result
+# Then Enter the Search - Record Id in search box and Verify the Result
+# And Enter the Search - Building in search box and Verify the Result
+# Then Enter the Search - Created_by in search box and Verify the Result
+# And Click on Export Button
+# And Add another ticket in the same box
+# Then Select Ticket from dropdownlist
+# And Click on Add ticket
+# Then Verify the ticket is added in table
+# And Click on view the ticket Details
+# Then Verfiy the ticket Details
+# And Click on Back button
+# And Remove the ticket from box
+# Then Verify the ticket is delete from the table
 
 
 

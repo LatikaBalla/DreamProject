@@ -154,6 +154,7 @@
     "serialnumber": "VIVATEST12Test",
     "repairstatus": "Box Created",
     "repairbox": "8156",
+    "repairbox1": "10584",
     "assettag": "5678",
     "recordid": "58206",
     "createdby": "demo_adminsuper@vivacitytech.com",
@@ -173,16 +174,17 @@
     "filename": "Image.png",
     "trackingnumber": "1Z6X34470301107750",
     "repairbox": "10584",
+    "repairbox1": "9941",
     "labelfrom": "",
-    "shippeddate": "2024-07-17",
-    "shippeddate1": "17-07-2024",
+    "shippeddate": "2024-06-13",
+    "shippeddate1": "13-06-2024",
     "shippingcost": "$23.36",
     "building": "Dream Building",
     "boxtype": "Inbound",
     "createdby": "demo_adminsuper@vivacitytech.com",
     "shippingboxstatus": "Not Shipped",
-    "lastdate": "2024-05-02",
-    "lastdate1": "02-05-2024"
+    "lastdate": "2024-06-06",
+    "lastdate1": "06-06-2024"
   },
   "inHouseWorkflow": {
     "failuretype": "[data-value='Accidental']",
@@ -269,17 +271,19 @@
     "phoneNo2": "(814) 054-63"
   },
   "partCloset": {
-    "partname": "Hinge Set",
-    "manufacturer": "test manufacturer",
-    "parentdevice": "test device",
-    "partsku": "111111",
-    "quantity": "1",
+    "partname": "Speaker Set",
+    "manufacturer": "Acer",
+    "parentdevice": "Asus Chromebook Flip C214MA-YZ02T - Intel/4GB/32GB - Touch/2in1",
+    "partsku": "DBO4682-4",
+    "quantity": "2",
+    "quantity1": "10",
     "createpartmsg": "Part Closet item created",
     "device": "#device-option-11",
-    "partid": "[data-value='5448']",
+    "partid": "[data-value='3559']",
     "search": "50034089",
     "partnameTable": "TouchPad",
-    "building": "[data-value='2861']"
+    "building": "[data-value='2861']",
+    "partCategory":"Camera_Cable"
   },
   "users": {
     "fullname": "Demo Test",

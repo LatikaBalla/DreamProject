@@ -12,12 +12,11 @@ export class RepairBoxesActions {
         globalThis.rc = new VivacityRepairCenterElements();
     }
     closeTermsOfServiceWindow() {
-        cy.contains('Remind me Later').click({ force: true })
+        cy.wait(5000)
         dash.termsElement().contains('Dismiss').click({ force: true })
-        //dash.termsElement().click({ force: true })
+        cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }
     clickOnRepair360() {
-        //dash.arrowElement().click({ force: true })
         dash.repair360Element().click({ force: true })
     }
     clickOnRepairBoxesTab() {
@@ -59,7 +58,6 @@ export class RepairBoxesActions {
         rb.checkboxElement().click({ force: true })
     }
     clickOnCreateBoxButton() {
-        //rb.createboxbtnElement().eq(1).click({ force: true })
         cy.get('.css-8atqhb > .MuiButtonBase-root').click({ force: true })
     }
     selectTickets() {
@@ -150,16 +148,22 @@ selectFilterRepairBox(){
         rb.fieldOpElement().eq(0).click({ force: true })
         rb.fieldValueElement().type(tdata.repairBox.repairbox)
         rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.repairBox.repairbox)
+        cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
+            let value = parseInt($el.text());
+             expect(value).to.be.equal(10584);
+         })
         rb.clearFilterElement().click({ force: true })
     }
-    filterDoesnotcontainBox() {
+    filterDoesnotequalBox() {
         rb.addFilterElement().eq(0).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(1).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.repairbox)
         rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain', tdata.repairBox.repairbox)
+        cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
+            const value = parseInt($el.text());
+             expect(value).to.not.equal(10584);
+         })
         rb.clearFilterElement().click({ force: true })
     }
     filterGreaterthanBox(){
@@ -168,14 +172,22 @@ selectFilterRepairBox(){
         rb.fieldOpElement().eq(2).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.repairbox)
         rb.applyElement().click({ force: true })
+        cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
+            const value = parseInt($el.text());
+             expect(value).to.be.greaterThan(10584);
+         })
         rb.clearFilterElement().click({ force: true })
     }
-    filterGreaterequalBox() {
+    filterGreaterequalBox() {    
         rb.addFilterElement().eq(0).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(3).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.repairbox)
         rb.applyElement().click({ force: true })
+        cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
+            const value = parseInt($el.text());
+             expect(value).to.be.gte(10584);
+         })
         rb.clearFilterElement().click({ force: true })
     }
     filterLessthanBox() {
@@ -184,7 +196,10 @@ selectFilterRepairBox(){
         rb.fieldOpElement().eq(4).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.repairbox)
         rb.applyElement().click({ force: true })
-       // cy.get('[row-index="0"]').should('be.lessThan',tdata.repairbickets.repairbox )
+        cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
+            const value = parseInt($el.text());
+             expect(value).to.be.lessThan(10584);
+         })
         rb.clearFilterElement().click({ force: true })
     }
     filterLessequalBox(){
@@ -193,17 +208,23 @@ selectFilterRepairBox(){
         rb.fieldOpElement().eq(5).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.repairbox)
         rb.applyElement().click({ force: true })
-      //  cy.get('[row-index="0"]').should('be.lessThan', tdata.repairbickets.repairbox)
+        cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
+            const value = parseInt($el.text());
+             expect(value).to.be.lte(10584);
+         })
         rb.clearFilterElement().click({ force: true })
     }
     filterBetweenBox(){
         rb.addFilterElement().eq(0).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(6).click({ force: true })
-        cy.get('[placeholder="From"]').type(tdata.repairBox.repairbox)
-        cy.get('[placeholder="To"]').type('10587')
+        cy.get('[placeholder="From"]').type(tdata.repairBox.repairbox1)
+        cy.get('[placeholder="To"]').type(tdata.repairBox.repairbox)
         rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '10585')
+        cy.get('.ag-row-first > [col-id="record_id"]').eq(0).then(($el) => {
+            const value = parseInt($el.text());
+             expect(value).to.be.within(9941,10584);
+         })
         rb.clearFilterElement().click({ force: true })
     }
     filterBlankBox() {
@@ -221,7 +242,10 @@ selectFilterRepairBox(){
         rb.fieldOpElement().eq(8).click({ force: true })
         rb.fieldValueElement().eq(1).clear({ force: true }).type('10584', { force: true })
         rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '10584')
+        cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
+            const value = parseInt($el.text());
+             expect(value).to.be.equal(10584);
+         })
         rb.clearFilterElement().click({ force: true })
     }
     //TN
@@ -275,9 +299,9 @@ selectFilterRepairBox(){
         rb.addFilterElement().eq(1).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(5).click({ force: true })
-        rb.fieldValueElement().eq(0).type('70312545702')
+        rb.fieldValueElement().eq(0).type('70312350878')
         rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '70312545702')
+        cy.get('[row-index="0"]').should('contain', '70312350878')
         rb.clearFilterElement().click({ force: true })
     }
     filterBlank() {
@@ -293,9 +317,9 @@ selectFilterRepairBox(){
         rb.addFilterElement().eq(1).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(7).click({ force: true })
-        rb.fieldValueElement().eq(1).type('1Z6X34470325012129', { force: true })
+        rb.fieldValueElement().eq(1).type('1Z6X34470331639405', { force: true })
         rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '1Z6X34470325012129')
+        cy.get('[row-index="0"]').should('contain', '1Z6X34470331639405')
         rb.clearFilterElement().click({ force: true })
     }
 //SDate
