@@ -11,7 +11,7 @@ export class PartClosetActions {
     }
     closeTermsOfServiceWindow() {
         // cy.contains('Remind me Later').click({ force: true }) 
-       // cy.wait(10000)
+        cy.wait(8000)
         dash.termsElement().contains('Dismiss').click({ force: true })
         cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }

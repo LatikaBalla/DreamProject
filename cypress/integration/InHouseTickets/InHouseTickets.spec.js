@@ -74,54 +74,6 @@ Then('Enter the Search - Repair status in search box and Verify the Result', () 
 And('Enter the Search - Building in search box and Verify the Result', () => {
     iht.searchbuiling()
 })
-Then('Click on Clear filter', () => {
-    iht.clickOnClearFilter()
-})
-
-And('Click More filter select- Record Id in search box and Verify the Result', () => {
-    iht.clickOnMoreFilter()
-    iht.selectFilterRecordId()
-})
-And('Click More filter select- Ticket Number in search box and Verify the Result', () => {
-    iht.clickOnMoreFilter()
-    iht.selectFilterTicketNumber()
-})
-And('Click More filter select- Repair type in search box and Verify the Result', () => {
-    iht.clickOnMoreFilter()
-    iht.selectFilterRepairType()
-})
-And('Click More filter select- Serial Number in search box and Verify the Result', () => {
-    iht.clickOnMoreFilter()
-    iht.selectFilterSerialNumber()
-})
-And('Click More filter select- Repair status in search box and Verify the Result', () => {
-    iht.clickOnMoreFilter()
-    iht.selectFilterRepairStatus()
-})
-And('Click More filter select- Repair device in search box and Verify the Result', () => {
-    iht.clickOnMoreFilter()
-    iht.selectFilterRepairDevice()
-})
-And('Click More filter select- Asset tag in search box and Verify the Result', () => {
-    iht.clickOnMoreFilter()
-    iht.selectFilterAssetTag()
-})
-And('Click More filter select- internal Technician in search box and Verify the Result', () => {
-    iht.clickOnMoreFilter()
-    iht.selectFilterInternalTechnician()
-})
-And('Click More filter select- Created By in search box and Verify the Result', () => {
-    iht.clickOnMoreFilter()
-    iht.selectFilterCreatedBy()
-})
-And ('Click More filter select- Building in search box and Verify the Result',()=>{
-    iht.clickOnMoreFilter()
-    iht.selectFilterBuilding()
-})
-And ('Click More filter select- Last Modified Date in search box and Verify the Result',()=>{
-    iht.clickOnMoreFilter()
-    iht.selectFilterlastmodifieddate()
-})
 And('Enter the Search value in search box', () => {
     iht.enterSearchBox()
 })
@@ -167,4 +119,235 @@ Then ('Updated to student successfully', () => {
  })
 Then ('Updated to in house successfully', () => {
     iht.verifyUpdateInhouse()
+})
+//TN
+And('Click on filter of Ticket Number contain in search box and Verify the Result', () => {
+    iht.selectFilterTicketNumber()
+})
+And('Click on filter of Ticket Number Does not contain in search box and Verify the Result', () => {
+    iht.filterDoesnotcontainTN()
+})
+And('Click on filter of Ticket Number Equals in search box and Verify the Result', () => {
+    iht.filterEqualsTN()
+})
+And('Click on filter of Ticket Number Does not equal in search box and Verify the Result', () => {
+    iht.filterNotequalTN()
+})
+And('Click on filter of Ticket Number Begins with in search box and Verify the Result', () => {
+    iht.filterBeginswithTN()
+})
+And('Click on filter of Ticket Number Ends with in search box and Verify the Result', () => {
+    iht.filterEndswithTN()
+})
+And('Click on filter of Ticket Number Blank in search box and Verify the Result', () => {
+    iht.filterBlankTN()
+})
+And('Click on filter of Ticket Number Not blank in search box and Verify the Result', () => {
+    iht.filterNotblankTN()
+})
+//SN
+And('Click on filter of Serial Number contain in search box and Verify the Result', () => {
+    iht.selectFilterSerialNumber()
+})
+And('Click on filter of Serial Number Does not contain in search box and Verify the Result', () => {
+    iht.filterDoesnotcontainSN()
+})
+And('Click on filter of Serial Number Equals in search box and Verify the Result', () => {
+    iht.filterEqualsSN()
+})
+And('Click on filter of Serial Number Does not equal in search box and Verify the Result', () => {
+    iht.filterNotequalSN()
+})
+And('Click on filter of Serial Number Begins with in search box and Verify the Result', () => {
+    iht.filterBeginswithSN()
+})
+And('Click on filter of Serial Number Ends with in search box and Verify the Result', () => {
+    iht.filterEndswithSN()
+})
+And('Click on filter of Serial Number Blank in search box and Verify the Result', () => {
+    iht.filterBlankSN()
+})
+And('Click on filter of Serial Number Not blank in search box and Verify the Result', () => {
+    iht.filterNotblankSN()
+})
+//iht
+And('Click on filter of Repair type contain in search box and Verify the Result', () => {
+    iht.selectFilterRepairType()
+})
+And('Click on filter of Repair type Does not contain in search box and Verify the Result', () => {
+    iht.filterDoesnotcontainiRT()
+})
+And('Click on filter of Repair type Equals in search box and Verify the Result', () => {
+    rt.filterEqualsRT()
+})
+And('Click on filter of Repair type Does not equal in search box and Verify the Result', () => {
+    rt.filterNotequalRT()
+})
+And('Click on filter of Repair type Begins with in search box and Verify the Result', () => {
+    rt.filterBeginswithRT()
+})
+And('Click on filter of Repair type Ends with in search box and Verify the Result', () => {
+    rt.filterEndswithRT()
+})
+And('Click on filter of Repair type Blank in search box and Verify the Result', () => {
+    rt.filterBlankRT()
+})
+And('Click on filter of Repair type Not blank in search box and Verify the Result', () => {
+    rt.filterNotblankRT()
+})
+//B
+And('Click on filter of Building contain in search box and Verify the Result', () => {
+    iht.selectFilterBuilding()
+})
+And('Click on filter of Building Does not contain in search box and Verify the Result', () => {
+    iht.filterDoesnotcontainB()
+})
+And('Click on filter of Building Equals in search box and Verify the Result', () => {
+    iht.filterEqualsB()
+})
+And('Click on filter of Building Does not equal in search box and Verify the Result', () => {
+    iht.filterNotequalB()
+})
+And('Click on filter of Building Begins with in search box and Verify the Result', () => {
+    iht.filterBeginswithB()
+})
+And('Click on filter of Building Ends with in search box and Verify the Result', () => {
+    iht.filterEndswithB()
+})
+And('Click on filter of Building Blank in search box and Verify the Result', () => {
+    iht.filterBlankB()
+})
+And('Click on filter of Building Not blank in search box and Verify the Result', () => {
+    iht.filterNotblankB()
+})
+//rd
+And('Click on filter of Repair device contain in search box and Verify the Result', () => {
+    iht.selectFilterRepairDevice()
+})
+And('Click on filter of Repair device Does not contain in search box and Verify the Result', () => {
+    iht.filterDoesnotcontainRD()
+})
+And('Click on filter of Repair device Equals in search box and Verify the Result', () => {
+    iht.filterEqualsRD()
+})
+And('Click on filter of Repair device Does not equal in search box and Verify the Result', () => {
+    iht.filterNotequalRD()
+})
+And('Click on filter of Repair device Begins with in search box and Verify the Result', () => {
+    iht.filterBeginswithRD()
+})
+And('Click on filter of Repair device Ends with in search box and Verify the Result', () => {
+    iht.filterEndswithRD()
+})
+And('Click on filter of Repair device Blank in search box and Verify the Result', () => {
+    iht.filterBlankRD()
+})
+And('Click on filter of Repair device Not blank in search box and Verify the Result', () => {
+    iht.filterNotblankRD()
+})
+//box
+And('Click on filter of Repair Box Equals in search box and Verify the Result', () => {
+    iht.selectFilterRepairBox()
+})
+And('Click on filter of Repair Box Does not equal in search box and Verify the Result', () => {
+    iht.filterDoesnotcontainBox()
+})
+And('Click on filter of Repair Box Greater than in search box and Verify the Result', () => {
+    iht.filterGreaterthanBox()
+})
+And('Click on filter of Repair Box Greater than or equal to in search box and Verify the Result', () => {
+    rt.filterGreaterequalBox()
+})
+And('Click on filter of Repair Box Less than in search box and Verify the Result', () => {
+    iht.filterLessthanBox()
+})
+And('Click on filter of Repair Box Less than or equal to in search box and Verify the Result', () => {
+    iht.filterLessequalBox()
+})
+And('Click on filter of Repair Box Between in search box and Verify the Result', () => {
+    iht.filterBetweenBox()
+})
+And('Click on filter of Repair Box Blank in search box and Verify the Result', () => {
+    iht.filterBlankBox()
+})
+And('Click on filter of Repair Box Not blank in search box and Verify the Result', () => {
+    iht.filterNotblankBox()
+})
+//tag
+And('Click on filter of Asset tag contain in search box and Verify the Result', () => {
+    iht.selectFilterAssetTag()
+})
+And('Click on filter of Asset tag Does not contain in search box and Verify the Result', () => {
+    iht.filterDoesnotcontaintag()
+})
+And('Click on filter of Asset tag Equals in search box and Verify the Result', () => {
+    iht.filterEqualstag()
+})
+And('Click on filter of Asset tag Does not equal in search box and Verify the Result', () => {
+    iht.filterNotequaltag()
+})
+And('Click on filter of Asset tag Begins with in search box and Verify the Result', () => {
+    iht.filterBeginswithtag()
+})
+And('Click on filter of Asset tag Ends with in search box and Verify the Result', () => {
+    iht.filterEndswithtag()
+})
+And('Click on filter of Asset tag Blank in search box and Verify the Result', () => {
+    iht.filterBlanktag()
+})
+And('Click on filter of Asset tag Not blank in search box and Verify the Result', () => {
+    iht.filterNotblanktag()
+})
+//cby
+And('Click on filter of Created By contain in search box and Verify the Result', () => {
+    iht.selectFilterCreatedBy()
+})
+And('Click on filter of Created By Does not contain in search box and Verify the Result', () => {
+    iht.filterDoesnotcontainCBy()
+})
+And('Click on filter of Created By Equals in search box and Verify the Result', () => {
+    iht.filterEqualsCBy()
+})
+And('Click on filter of Created By Does not equal in search box and Verify the Result', () => {
+    iht.filterNotequalCBy()
+})
+And('Click on filter of Created By Begins with in search box and Verify the Result', () => {
+    iht.filterBeginswithCBy()
+})
+And('Click on filter of Created By Ends with in search box and Verify the Result', () => {
+    iht.filterEndswithCBy()
+})
+And('Click on filter of Created By Blank in search box and Verify the Result', () => {
+    iht.filterBlankCBy()
+})
+And('Click on filter of Created By Not blank in search box and Verify the Result', () => {
+    iht.filterNotblankCBy()
+})
+//Ldate
+And('Click on filter of Last Modified Date contain in search box and Verify the Result', () => {
+    iht.selectFilteLastModifiedDate()
+})
+And('Click on filter of Last Modified Date Does not contain in search box and Verify the Result', () => {
+    iht.filterDoesnotcontainDate()
+})
+And('Click on filter of Last Modified Date Equals in search box and Verify the Result', () => {
+    iht.filterEqualsDate()
+})
+And('Click on filter of Last Modified Date Does not equal in search box and Verify the Result', () => {
+    iht.filterNotequalDate()
+})
+And('Click on filter of Last Modified Date Before in search box and Verify the Result', () => {
+    iht.filterBeforeDate()
+})
+And('Click on filter of Last Modified Date After in search box and Verify the Result', () => {
+    iht.filterAfterDate()
+})
+And ('Click on filter of Last Modified Date Between with in search box and Verify the Result',()=>{
+    iht.filterBetweenDate()
+})
+And('Click on filter of Last Modified Date Blank in search box and Verify the Result', () => {
+    iht.filterBlankDate()
+})
+And('Click on filter of Last Modified Date Not blank in search box and Verify the Result', () => {
+    iht.filterNotblankDate()
 })

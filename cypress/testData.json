@@ -182,7 +182,9 @@
     "building": "Dream Building",
     "boxtype": "Inbound",
     "createdby": "demo_adminsuper@vivacitytech.com",
-    "shippingboxstatus": "Not Shipped",
+    "shippingboxstatus1": "Not Shipped",
+    "shippingboxstatus2": "Recieved By Vivacity",
+    "shippingboxstatus3": "Shipping From District",
     "lastdate": "2024-06-06",
     "lastdate1": "06-06-2024"
   },

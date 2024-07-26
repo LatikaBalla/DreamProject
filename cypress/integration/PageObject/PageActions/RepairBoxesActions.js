@@ -14,6 +14,7 @@ export class RepairBoxesActions {
     closeTermsOfServiceWindow() {
         cy.wait(5000)
         dash.termsElement().contains('Dismiss').click({ force: true })
+        cy.wait(5000)
         cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }
     clickOnRepair360() {
@@ -58,7 +59,8 @@ export class RepairBoxesActions {
         rb.checkboxElement().click({ force: true })
     }
     clickOnCreateBoxButton() {
-        cy.get('.css-8atqhb > .MuiButtonBase-root').click({ force: true })
+        cy.get('.MuiDialogActions-root > .MuiButtonBase-root').click({ force: true })
+       // cy.get('.css-8atqhb > .MuiButtonBase-root').click({ force: true })
     }
     selectTickets() {
         rb.ticketElement().click()
@@ -543,78 +545,68 @@ filterNotblankSDate() {
         rb.clearFilterElement().click({ force: true })
     }
     //ss
-    selectFiltershippingboxstatus() {
+    filterSearchCheck() {
         rb.addFilterElement().eq(5).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
-        rb.fieldOpElement().eq(0).click({ force: true })
-        rb.fieldValueElement().type(tdata.repairBox.shippingboxstatus)
-        rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus)
-        rb.clearFilterElement().click({ force: true })
+        rb.searchElement().type('Vivacity')
+        rb.searchboxElement().eq(1).contains(tdata.repairBox.shippingboxstatus2).click({force:true})
+        cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus2)
+       cy.get('.reset-button').click({ force: true })
+      rb.searchElement().clear({force:true})
     }
-    filterDoesnotcontainSS() {
+    filterCheck1() {
         rb.addFilterElement().eq(5).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
-        rb.fieldOpElement().eq(1).click({ force: true })
-        rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.shippingboxstatus)
-        rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain', tdata.repairBox.shippingboxstatus)
-        rb.clearFilterElement().click({ force: true })
+        rb.searchboxElement().eq(0).contains(tdata.repairBox.shippingboxstatus1).click({force:true})
+        cy.get('[row-index="0"]').should('contain',tdata.repairBox.shippingboxstatus1)
+        cy.get('.reset-button').click({ force: true })
     }
-    filterEqualsSS() {
+    filterCheck2(){
         rb.addFilterElement().eq(5).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
-        rb.fieldOpElement().eq(2).click({ force: true })
-        rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.shippingboxstatus)
-        rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus)
-        rb.clearFilterElement().click({ force: true })
+        rb.searchboxElement().eq(1).contains(tdata.repairBox.shippingboxstatus2).click({force:true})
+        cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus2)
+        cy.get('.reset-button').click({ force: true })
+      
     }
-    filterNotequalSS() {
+    filterCheck3() {
         rb.addFilterElement().eq(5).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
-        rb.fieldOpElement().eq(3).click({ force: true })
-        rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.shippingboxstatus)
-        rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain.value', tdata.repairBox.shippingboxstatus)
-        rb.clearFilterElement().click({ force: true })
+        rb.searchboxElement().eq(2).contains(tdata.repairBox.shippingboxstatus3).click({force:true})
+        cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus3)
+        cy.get('.reset-button').click({ force: true })
     }
-    filterBeginswithSS() {
+    filterCheckAll() {
         rb.addFilterElement().eq(5).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
-        rb.fieldOpElement().eq(4).click({ force: true })
-        rb.fieldValueElement().eq(0).clear({ force: true }).type('Recieved')
-        rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Recieved')
-        rb.clearFilterElement().click({ force: true })
+        rb.searchboxElement().eq(0).contains(tdata.repairBox.shippingboxstatus1).click({force:true})
+        rb.searchboxElement().eq(1).contains(tdata.repairBox.shippingboxstatus2).click({force:true})
+        rb.searchboxElement().eq(2).contains(tdata.repairBox.shippingboxstatus3).click({force:true})
+        cy.get('[row-index="0"]').should('contain',tdata.repairBox.shippingboxstatus1,tdata.repairBox.shippingboxstatus2,tdata.repairBox.shippingboxstatus3 )
+        cy.get('.reset-button').click({ force: true })
     }
-    filterEndswithSS() {
-        rb.addFilterElement().eq(5).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
-        rb.fieldOpElement().eq(5).click({ force: true })
-        rb.fieldValueElement().eq(0).clear({ force: true }).type('Vivacity')
-        rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Vivacity')
-        rb.clearFilterElement().click({ force: true })
-    }
-    filterBlankSS() {
-        rb.addFilterElement().eq(5).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
-        rb.fieldOpElement().eq(6).click({ force: true })
-        rb.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
-        rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', ' ')
-        rb.clearFilterElement().click({ force: true })
-    }
-    filterNotblankSS() {
-        rb.addFilterElement().eq(5).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
-        rb.fieldOpElement().eq(7).click({ force: true })
-        rb.fieldValueElement().eq(1).clear({ force: true }).type('Recieved By Vivacity', { force: true })
-        rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Recieved By Vivacity')
-        rb.clearFilterElement().click({ force: true })
-    }
+    // filterEndswithSS() {
+    //     rb.addFilterElement().eq(5).click({ force: true })
+    //     rb.fieldNameElement().eq(1).click({ force: true })
+    //     rb.fieldOpElement().eq(5).click({ force: true })
+    //     rb.fieldValueElement().eq(0).clear({ force: true }).type('Vivacity')
+    //     rb.applyElement().click({ force: true })
+    //     cy.get('[row-index="0"]').should('contain', 'Vivacity')
+    //     rb.clearFilterElement().click({ force: true })
+    // }
+    // filterBlankSS() {
+    //     rb.addFilterElement().eq(5).click({ force: true })
+    //     rb.fieldNameElement().eq(1).click({ force: true })
+    //     rb.fieldOpElement().eq(6).click({ force: true })
+    //     rb.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+    //     rb.applyElement().click({ force: true })
+    //     cy.get('[row-index="0"]').should('contain', ' ')
+    //     rb.clearFilterElement().click({ force: true })
+    // }
+    // filterNotblankSS() {
+    //     rb.addFilterElement().eq(5).click({ force: true })
+    //     rb.fieldNameElement().eq(1).click({ force: true })
+    //     rb.fieldOpElement().eq(7).click({ force: true })
+    //     rb.fieldValueElement().eq(1).clear({ force: true }).type('Recieved By Vivacity', { force: true })
+    //     rb.applyElement().click({ force: true })
+    //     cy.get('[row-index="0"]').should('contain', 'Recieved By Vivacity')
+    //     rb.clearFilterElement().click({ force: true })
+    // }
     //Cby
     selectFilterCreatedby() {
         rb.addFilterElement().eq(6).click({ force: true })

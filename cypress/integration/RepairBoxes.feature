@@ -66,14 +66,11 @@ Feature: RepairBoxes Page Functionality
     And Click on filter of Created By Blank in search box and Verify the Result
     And Click on filter of Created By Not blank in search box and Verify the Result
 
-    And Click on filter of shipping_box_status contain in search box and Verify the Result
-    # And Click on filter of shipping_box_status Does not contain in search box and Verify the Result
-    And Click on filter of shipping_box_status Equals in search box and Verify the Result
-    And Click on filter of shipping_box_status Does not equal in search box and Verify the Result
-    And Click on filter of shipping_box_status Begins with in search box and Verify the Result
-    And Click on filter of shipping_box_status Ends with in search box and Verify the Result
-    And Click on filter of shipping_box_status Blank in search box and Verify the Result
-    # And Click on filter of shipping_box_status Not blank in search box and Verify the Result
+    And Click on filter of shipping_box_status with search and check the option and Verify the Result
+    And Click on filter of shipping_box_status Not Shipped in search box and Verify the Result
+    And Click on filter of shipping_box_status Recieved By Vivacity in search box and Verify the Result
+    And Click on filter of shipping_box_status Shipping From District with in search box and Verify the Result
+    And Click on filter of shipping_box_status all checked with in search box and Verify the Result
 
     And Click on filter of Last Modified Date Equals in search box and Verify the Result
     And Click on filter of Last Modified Date Does not equal in search box and Verify the Result
@@ -93,20 +90,20 @@ Feature: RepairBoxes Page Functionality
     Then Verify new box is added in table
     And Click on view button
     Then Verify the Details new box
-# And Enter the Search - Tracking Number in search box and Verify the Result
-# Then Enter the Search - Record Id in search box and Verify the Result
-# And Enter the Search - Building in search box and Verify the Result
-# Then Enter the Search - Created_by in search box and Verify the Result
-# And Click on Export Button
-# And Add another ticket in the same box
-# Then Select Ticket from dropdownlist
-# And Click on Add ticket
-# Then Verify the ticket is added in table
-# And Click on view the ticket Details
-# Then Verfiy the ticket Details
-# And Click on Back button
-# And Remove the ticket from box
-# Then Verify the ticket is delete from the table
+# # And Enter the Search - Tracking Number in search box and Verify the Result
+# # Then Enter the Search - Record Id in search box and Verify the Result
+# # And Enter the Search - Building in search box and Verify the Result
+# # Then Enter the Search - Created_by in search box and Verify the Result
+# # And Click on Export Button
+# # And Add another ticket in the same box
+# # Then Select Ticket from dropdownlist
+# # And Click on Add ticket
+# # Then Verify the ticket is added in table
+# # And Click on view the ticket Details
+# # Then Verfiy the ticket Details
+# # And Click on Back button
+# # And Remove the ticket from box
+# # Then Verify the ticket is delete from the table
 
 
 

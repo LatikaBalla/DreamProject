@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3026000000
+              "duration": 7124000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6802000000
+              "duration": 13387000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 8152000000
+              "duration": 16188000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 80000000
+              "duration": 82000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on PartCloset Tab",
             "result": {
               "status": "passed",
-              "duration": 1085000000
+              "duration": 2581000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "I should click on Add New custome part",
             "result": {
               "status": "passed",
-              "duration": 1423000000
+              "duration": 2009000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Enter part name, manufacture and parent device",
             "result": {
               "status": "passed",
-              "duration": 3424000000
+              "duration": 3263000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Enter part sku and quantity",
             "result": {
               "status": "passed",
-              "duration": 595000000
+              "duration": 590000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 124000000
+              "duration": 87000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Verify new custome part is added",
             "result": {
               "status": "passed",
-              "duration": 480000000
+              "duration": 549000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on filter of Part Name contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 4833000000
+              "duration": 4781000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on filter of Part Name Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 749000000
+              "duration": 865000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on filter of Part Name Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 953000000
+              "duration": 1060000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on filter of Part Name Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 898000000
+              "duration": 904000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click on filter of Part Name Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 904000000
+              "duration": 908000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on filter of Part Name Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 752000000
+              "duration": 636000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click on filter of Part Name Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 573000000
+              "duration": 607000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on filter of Part Name Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 919000000
+              "duration": 804000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click on filter of SKU contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3769000000
+              "duration": 3712000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on filter of SKU Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 937000000
+              "duration": 839000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on filter of SKU Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1000000000
+              "duration": 942000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Click on filter of SKU Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 782000000
+              "duration": 841000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Click on filter of SKU Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 725000000
+              "duration": 678000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Click on filter of SKU Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 535000000
+              "duration": 542000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Click on filter of SKU Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 686000000
+              "duration": 653000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Click on filter of SKU Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 819000000
+              "duration": 880000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Click on filter of Parent Device contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3513000000
+              "duration": 3358000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Click on filter of Parent Device Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2509000000
+              "duration": 2493000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "Click on filter of Parent Device Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2631000000
+              "duration": 2733000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "Click on filter of Parent device Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2568000000
+              "duration": 2531000000
             }
           },
           {
@@ -323,7 +323,7 @@
             "name": "Click on filter of Parent device Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1050000000
+              "duration": 1057000000
             }
           },
           {
@@ -333,7 +333,7 @@
             "name": "Click on filter of Parent device Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 790000000
+              "duration": 771000000
             }
           },
           {
@@ -343,7 +343,7 @@
             "name": "Click on filter of Parent device Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 612000000
+              "duration": 678000000
             }
           },
           {
@@ -353,7 +353,7 @@
             "name": "Click on filter of Parent device Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2705000000
+              "duration": 2578000000
             }
           },
           {
@@ -363,7 +363,7 @@
             "name": "Click on filter of Building contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1231000000
+              "duration": 1194000000
             }
           },
           {
@@ -373,7 +373,7 @@
             "name": "Click on filter of Building Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1092000000
+              "duration": 1090000000
             }
           },
           {
@@ -383,7 +383,7 @@
             "name": "Click on filter of Building Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1087000000
+              "duration": 1042000000
             }
           },
           {
@@ -393,7 +393,7 @@
             "name": "Click on filter of Building Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1034000000
+              "duration": 1067000000
             }
           },
           {
@@ -403,7 +403,7 @@
             "name": "Click on filter of Building Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 854000000
+              "duration": 844000000
             }
           },
           {
@@ -413,7 +413,7 @@
             "name": "Click on filter of Building Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 913000000
+              "duration": 820000000
             }
           },
           {
@@ -423,7 +423,7 @@
             "name": "Click on filter of Building Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1798000000
+              "duration": 1753000000
             }
           },
           {
@@ -433,7 +433,7 @@
             "name": "Click on filter of Building Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1770000000
+              "duration": 1723000000
             }
           },
           {
@@ -443,7 +443,7 @@
             "name": "Click on filter of Manufacturer contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2761000000
+              "duration": 2704000000
             }
           },
           {
@@ -453,7 +453,7 @@
             "name": "Click on filter of Manufacturer Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 715000000
+              "duration": 676000000
             }
           },
           {
@@ -463,7 +463,7 @@
             "name": "Click on filter of Manufacturer Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 738000000
+              "duration": 717000000
             }
           },
           {
@@ -473,7 +473,7 @@
             "name": "Click on filter of Manufacturer Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 680000000
+              "duration": 642000000
             }
           },
           {
@@ -483,7 +483,7 @@
             "name": "Click on filter of Manufacturer Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 659000000
+              "duration": 669000000
             }
           },
           {
@@ -493,7 +493,7 @@
             "name": "Click on filter of Manufacturer Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 675000000
+              "duration": 823000000
             }
           },
           {
@@ -503,7 +503,7 @@
             "name": "Click on filter of Manufacturer Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 631000000
+              "duration": 743000000
             }
           },
           {
@@ -513,7 +513,7 @@
             "name": "Click on filter of Manufacturer Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 749000000
+              "duration": 703000000
             }
           },
           {
@@ -523,7 +523,7 @@
             "name": "Click on filter of Part Category contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2831000000
+              "duration": 2791000000
             }
           },
           {
@@ -533,7 +533,7 @@
             "name": "Click on filter of Part Category Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 974000000
+              "duration": 941000000
             }
           },
           {
@@ -543,7 +543,7 @@
             "name": "Click on filter of Part Category Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1023000000
+              "duration": 977000000
             }
           },
           {
@@ -553,7 +553,7 @@
             "name": "Click on filter of Part Category Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1090000000
+              "duration": 1023000000
             }
           },
           {
@@ -563,7 +563,7 @@
             "name": "Click on filter of Part Category Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 812000000
+              "duration": 774000000
             }
           },
           {
@@ -573,7 +573,7 @@
             "name": "Click on filter of Part Category Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 701000000
+              "duration": 698000000
             }
           },
           {
@@ -583,7 +583,7 @@
             "name": "Click on filter of Part Category Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 734000000
+              "duration": 671000000
             }
           },
           {
@@ -593,7 +593,7 @@
             "name": "Click on filter of Part Category Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 960000000
+              "duration": 898000000
             }
           },
           {
@@ -603,7 +603,7 @@
             "name": "Click on filter of Quantity Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2815000000
+              "duration": 2755000000
             }
           },
           {
@@ -613,7 +613,7 @@
             "name": "Click on filter of Quantity Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 701000000
+              "duration": 598000000
             }
           },
           {
@@ -623,7 +623,7 @@
             "name": "Click on filter of Quantity Greater than in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 861000000
+              "duration": 909000000
             }
           },
           {
@@ -633,7 +633,7 @@
             "name": "Click on filter of Quantity Greater than or equal to in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 708000000
+              "duration": 655000000
             }
           },
           {
@@ -643,7 +643,7 @@
             "name": "Click on filter of Quantity Less than in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 738000000
+              "duration": 682000000
             }
           },
           {
@@ -653,7 +653,7 @@
             "name": "Click on filter of Quantity Less than or equal to in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 774000000
+              "duration": 660000000
             }
           },
           {
@@ -663,7 +663,7 @@
             "name": "Click on filter of Quantity Between in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 945000000
+              "duration": 902000000
             }
           },
           {
@@ -673,7 +673,7 @@
             "name": "Click on filter of Quantity Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 824000000
+              "duration": 851000000
             }
           },
           {
@@ -683,7 +683,7 @@
             "name": "Click on filter of Quantity Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 896000000
+              "duration": 980000000
             }
           }
         ]

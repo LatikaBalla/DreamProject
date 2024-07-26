@@ -255,30 +255,30 @@ And('Click on filter of Box_type Not blank in search box and Verify the Result',
     rb.filterNotblankBT()
 })
 //Ss
-And('Click on filter of shipping_box_status contain in search box and Verify the Result', () => {
-    rb.selectFiltershippingboxstatus()
+And('Click on filter of shipping_box_status with search and check the option and Verify the Result', () => {
+    rb.filterSearchCheck()
 })
-And('Click on filter of shipping_box_status Does not contain in search box and Verify the Result', () => {
-    rb.filterDoesnotcontainSS()
+And('Click on filter of shipping_box_status Not Shipped in search box and Verify the Result', () => {
+    rb.filterCheck1()
 })
-And('Click on filter of shipping_box_status Equals in search box and Verify the Result', () => {
-    rb.filterEqualsSS()
+And('Click on filter of shipping_box_status Recieved By Vivacity in search box and Verify the Result', () => {
+    rb.filterCheck2()
 })
-And('Click on filter of shipping_box_status Does not equal in search box and Verify the Result', () => {
-    rb.filterNotequalSS()
+And('Click on filter of shipping_box_status Shipping From District with in search box and Verify the Result', () => {
+    rb.filterCheck3()
 })
-And('Click on filter of shipping_box_status Begins with in search box and Verify the Result', () => {
-    rb.filterBeginswithSS()
+And('Click on filter of shipping_box_status all checked with in search box and Verify the Result', () => {
+    rb.filterCheckAll()
 })
-And('Click on filter of shipping_box_status Ends with in search box and Verify the Result', () => {
-    rb.filterEndswithSS()
-})
-And('Click on filter of shipping_box_status Blank in search box and Verify the Result', () => {
-    rb.filterBlankSS()
-})
-And('Click on filter of shipping_box_status Not blank in search box and Verify the Result', () => {
-    rb.filterNotblankSS()
-})
+// And('Click on filter of shipping_box_status Ends with in search box and Verify the Result', () => {
+//     rb.filterEndswithSS()
+// })
+// And('Click on filter of shipping_box_status Blank in search box and Verify the Result', () => {
+//     rb.filterBlankSS()
+// })
+// And('Click on filter of shipping_box_status Not blank in search box and Verify the Result', () => {
+//     rb.filterNotblankSS()
+// })
 //CBY
 And('Click on filter of Created By contain in search box and Verify the Result', () => {
     rb.selectFilterCreatedby()

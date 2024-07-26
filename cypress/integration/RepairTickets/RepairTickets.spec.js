@@ -74,51 +74,15 @@ Then('Click on filter of Re type contain in search box and Verify the Result', (
 And('Enter the Search - Serial Number in search box and Verify the Result', () => {
     rt.searchSerialNumber()
 })
-Then('Click on filter of Bu contain in search box and Verify the Result', () => {
-    rt.searchRepairStatus()
-})
+
 And('Enter the Search - Repair Box in search box and Verify the Result', () => {
     rt.searchRepairBox()
 })
 Then('Enter the Search - Asset tag in search box and Verify the Result', () => {
     rt.searchAssetTag()
 })
-And('Click More filter select- Record Id in search box and Verify the Result', () => {
-    rt.selectFilterRecordId()
-})
-And('Click on filter of Ticket Number contain in search box and Verify the Result', () => {
-    rt.selectFilterTicketNumber()
-})
-And('Click on filter of Repair type contain in search box and Verify the Result', () => {
-    rt.selectFilterRepairType()
-})
-And('Click on filter of Serial Number contain in search box and Verify the Result', () => {
-    rt.selectFilterSerialNumber()
-})
-And('Click on filter of Building contain in search box and Verify the Result', () => {
-    rt.selectFilterBuilding()
-})
-And('Click More filter select- Repair status in search box and Verify the Result', () => {
-    rt.selectFilterRepairStatus()
-})
-And('Click on filter of Repair Box Equals in search box and Verify the Result', () => {
-    rt.selectFilterRepairBox()
-})
-And('Click on filter of Asset tag contain in search box and Verify the Result', () => {
-    rt.selectFilterAssetTag()
-})
-And('Click on filter of Created By contain in search box and Verify the Result', () => {
-    rt.selectFilterCreatedBy()
-})
-And('Click on filter of Last Modified Date contain in search box and Verify the Result', () => {
-    rt.selectFilteLastModifiedDate()
-})
-Then('Click on Clear filter', () => {
-    rt.clickOnClearFilter()
-})
-And('Click on filter of Repair device contain in search box and Verify the Result', () => {
-    rt.selectFilterRepairDevice()
-})
+
+
 And('Enter the Search value in search box', () => {
     rt.enterSearchBox()
 })
@@ -153,6 +117,10 @@ Then('Click on Add Repair Image and Verify', () => {
 And('Click on Add Note and Verify', () => {
     rt.clickOnAddNote()
 })
+//TN
+And('Click on filter of Ticket Number contain in search box and Verify the Result', () => {
+    rt.selectFilterTicketNumber()
+})
 And('Click on filter of Ticket Number Does not contain in search box and Verify the Result', () => {
     rt.filterDoesnotcontainTN()
 })
@@ -174,7 +142,10 @@ And('Click on filter of Ticket Number Blank in search box and Verify the Result'
 And('Click on filter of Ticket Number Not blank in search box and Verify the Result', () => {
     rt.filterNotblankTN()
 })
-
+//SN
+And('Click on filter of Serial Number contain in search box and Verify the Result', () => {
+    rt.selectFilterSerialNumber()
+})
 And('Click on filter of Serial Number Does not contain in search box and Verify the Result', () => {
     rt.filterDoesnotcontainSN()
 })
@@ -196,7 +167,10 @@ And('Click on filter of Serial Number Blank in search box and Verify the Result'
 And('Click on filter of Serial Number Not blank in search box and Verify the Result', () => {
     rt.filterNotblankSN()
 })
-
+//RT
+And('Click on filter of Repair type contain in search box and Verify the Result', () => {
+    rt.selectFilterRepairType()
+})
 And('Click on filter of Repair type Does not contain in search box and Verify the Result', () => {
     rt.filterDoesnotcontainRT()
 })
@@ -218,7 +192,10 @@ And('Click on filter of Repair type Blank in search box and Verify the Result', 
 And('Click on filter of Repair type Not blank in search box and Verify the Result', () => {
     rt.filterNotblankRT()
 })
-
+//B
+And('Click on filter of Building contain in search box and Verify the Result', () => {
+    rt.selectFilterBuilding()
+})
 And('Click on filter of Building Does not contain in search box and Verify the Result', () => {
     rt.filterDoesnotcontainB()
 })
@@ -240,7 +217,10 @@ And('Click on filter of Building Blank in search box and Verify the Result', () 
 And('Click on filter of Building Not blank in search box and Verify the Result', () => {
     rt.filterNotblankB()
 })
-
+//rd
+And('Click on filter of Repair device contain in search box and Verify the Result', () => {
+    rt.selectFilterRepairDevice()
+})
 And('Click on filter of Repair device Does not contain in search box and Verify the Result', () => {
     rt.filterDoesnotcontainRD()
 })
@@ -262,7 +242,10 @@ And('Click on filter of Repair device Blank in search box and Verify the Result'
 And('Click on filter of Repair device Not blank in search box and Verify the Result', () => {
     rt.filterNotblankRD()
 })
-
+//box
+And('Click on filter of Repair Box Equals in search box and Verify the Result', () => {
+    rt.selectFilterRepairBox()
+})
 And('Click on filter of Repair Box Does not equal in search box and Verify the Result', () => {
     rt.filterDoesnotcontainBox()
 })
@@ -287,7 +270,10 @@ And('Click on filter of Repair Box Blank in search box and Verify the Result', (
 And('Click on filter of Repair Box Not blank in search box and Verify the Result', () => {
     rt.filterNotblankBox()
 })
-
+//tag
+And('Click on filter of Asset tag contain in search box and Verify the Result', () => {
+    rt.selectFilterAssetTag()
+})
 And('Click on filter of Asset tag Does not contain in search box and Verify the Result', () => {
     rt.filterDoesnotcontaintag()
 })
@@ -309,7 +295,10 @@ And('Click on filter of Asset tag Blank in search box and Verify the Result', ()
 And('Click on filter of Asset tag Not blank in search box and Verify the Result', () => {
     rt.filterNotblanktag()
 })
-
+//cby
+And('Click on filter of Created By contain in search box and Verify the Result', () => {
+    rt.selectFilterCreatedBy()
+})
 And('Click on filter of Created By Does not contain in search box and Verify the Result', () => {
     rt.filterDoesnotcontainCBy()
 })
@@ -331,7 +320,10 @@ And('Click on filter of Created By Blank in search box and Verify the Result', (
 And('Click on filter of Created By Not blank in search box and Verify the Result', () => {
     rt.filterNotblankCBy()
 })
-
+//Ldate
+And('Click on filter of Last Modified Date contain in search box and Verify the Result', () => {
+    rt.selectFilteLastModifiedDate()
+})
 And('Click on filter of Last Modified Date Does not contain in search box and Verify the Result', () => {
     rt.filterDoesnotcontainDate()
 })

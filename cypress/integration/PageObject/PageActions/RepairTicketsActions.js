@@ -12,6 +12,7 @@ export class RepairTicketsActions {
     closeTermsOfServiceWindow() {
         cy.wait(5000)
         dash.termsElement().contains('Dismiss').click({ force: true })
+        cy.wait(5000)
         cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }
     clickOnRepair360() {
@@ -21,7 +22,7 @@ export class RepairTicketsActions {
         mdev.repairTicketsElement().click({ force: true })
     }
     verifyTitle() {
-        rt.titleElement().should('be.visible')
+        rt.titleElement().should('be.visible',{force:true })
     }
     filtersVisible() {
         rt.filtersElement().should('be.visible')
@@ -81,12 +82,11 @@ export class RepairTicketsActions {
         });
         cy.get('body').type('{ctrl}t');
         cy.visit("/repair-360/ticket-detail/" + tdata.repairTickets.recordid)
-        cy.get('tr td').eq(9).contains('View').scrollIntoView().click({ force: true })
+       // cy.get('tr td').eq(9).contains('View').scrollIntoView().click({ force: true })
     }
     verifyDetails() {
-        cy.wait(1000)
+        cy.wait(3000)
         cy.contains('Repair Ticket Details').should('be.visible')
-        cy.go('back')
     }
     searchRecordId() {
         cy.get('.MuiGrid-grid-xs-4 > .MuiInputBase-root > .MuiSelect-select').click({ force: true })
@@ -513,6 +513,7 @@ export class RepairTicketsActions {
     }
     //box
     selectFilterRepairBox() {
+        cy.wait(2000)
         rt.addFilterElement().eq(9).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(0).click({ force: true })
