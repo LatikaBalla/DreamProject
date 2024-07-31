@@ -12,7 +12,6 @@ export class RepairBoxesActions {
         globalThis.rc = new VivacityRepairCenterElements();
     }
     closeTermsOfServiceWindow() {
-        cy.wait(5000)
         dash.termsElement().contains('Dismiss').click({ force: true })
         cy.wait(5000)
         cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
@@ -60,7 +59,7 @@ export class RepairBoxesActions {
     }
     clickOnCreateBoxButton() {
         cy.get('.MuiDialogActions-root > .MuiButtonBase-root').click({ force: true })
-       // cy.get('.css-8atqhb > .MuiButtonBase-root').click({ force: true })
+        // cy.get('.css-8atqhb > .MuiButtonBase-root').click({ force: true })
     }
     selectTickets() {
         rb.ticketElement().click()
@@ -73,7 +72,6 @@ export class RepairBoxesActions {
         dash.messageElement().should('contain', tdata.repairBox.boxcreatedmsg)
     }
     clickOnViewButton() {
-
         cy.window().then(win => {
             // win.open('https://google.com', '_blank');
         });
@@ -82,6 +80,7 @@ export class RepairBoxesActions {
         //cy.get('tr td').eq(5).contains('View Status').click({ force: true })
     }
     verifyBoxDetails() {
+        cy.wait(100)
         cy.contains("Box Details").should('be.visible')
     }
     clickOnAddTicket() {
@@ -102,6 +101,7 @@ export class RepairBoxesActions {
         cy.get('tbody tr').eq(0).find('td').eq(7).scrollIntoView().contains('Details').click({ force: true })
     }
     verifyTicketDetails() {
+        cy.wait(2000)
         cy.contains('Repair Ticket Details').should('be.visible')
     }
     clickOnBackButton() {
@@ -142,8 +142,8 @@ export class RepairBoxesActions {
     clickOnClearFilter() {
         rb.clearFilterElement().click({ force: true })
     }
-//RB
-selectFilterRepairBox(){
+    //RB
+    selectFilterRepairBox() {
         cy.wait(2000)
         rb.addFilterElement().eq(0).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
@@ -152,8 +152,8 @@ selectFilterRepairBox(){
         rb.applyElement().click({ force: true })
         cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
             let value = parseInt($el.text());
-             expect(value).to.be.equal(10584);
-         })
+            expect(value).to.be.equal(10584);
+        })
         rb.clearFilterElement().click({ force: true })
     }
     filterDoesnotequalBox() {
@@ -164,11 +164,11 @@ selectFilterRepairBox(){
         rb.applyElement().click({ force: true })
         cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
             const value = parseInt($el.text());
-             expect(value).to.not.equal(10584);
-         })
+            expect(value).to.not.equal(10584);
+        })
         rb.clearFilterElement().click({ force: true })
     }
-    filterGreaterthanBox(){
+    filterGreaterthanBox() {
         rb.addFilterElement().eq(0).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(2).click({ force: true })
@@ -176,11 +176,11 @@ selectFilterRepairBox(){
         rb.applyElement().click({ force: true })
         cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
             const value = parseInt($el.text());
-             expect(value).to.be.greaterThan(10584);
-         })
+            expect(value).to.be.greaterThan(10584);
+        })
         rb.clearFilterElement().click({ force: true })
     }
-    filterGreaterequalBox() {    
+    filterGreaterequalBox() {
         rb.addFilterElement().eq(0).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(3).click({ force: true })
@@ -188,8 +188,8 @@ selectFilterRepairBox(){
         rb.applyElement().click({ force: true })
         cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
             const value = parseInt($el.text());
-             expect(value).to.be.gte(10584);
-         })
+            expect(value).to.be.gte(10584);
+        })
         rb.clearFilterElement().click({ force: true })
     }
     filterLessthanBox() {
@@ -200,11 +200,11 @@ selectFilterRepairBox(){
         rb.applyElement().click({ force: true })
         cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
             const value = parseInt($el.text());
-             expect(value).to.be.lessThan(10584);
-         })
+            expect(value).to.be.lessThan(10584);
+        })
         rb.clearFilterElement().click({ force: true })
     }
-    filterLessequalBox(){
+    filterLessequalBox() {
         rb.addFilterElement().eq(0).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(5).click({ force: true })
@@ -212,11 +212,11 @@ selectFilterRepairBox(){
         rb.applyElement().click({ force: true })
         cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
             const value = parseInt($el.text());
-             expect(value).to.be.lte(10584);
-         })
+            expect(value).to.be.lte(10584);
+        })
         rb.clearFilterElement().click({ force: true })
     }
-    filterBetweenBox(){
+    filterBetweenBox() {
         rb.addFilterElement().eq(0).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(6).click({ force: true })
@@ -225,8 +225,8 @@ selectFilterRepairBox(){
         rb.applyElement().click({ force: true })
         cy.get('.ag-row-first > [col-id="record_id"]').eq(0).then(($el) => {
             const value = parseInt($el.text());
-             expect(value).to.be.within(9941,10584);
-         })
+            expect(value).to.be.within(9941, 10584);
+        })
         rb.clearFilterElement().click({ force: true })
     }
     filterBlankBox() {
@@ -246,8 +246,8 @@ selectFilterRepairBox(){
         rb.applyElement().click({ force: true })
         cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
             const value = parseInt($el.text());
-             expect(value).to.be.equal(10584);
-         })
+            expect(value).to.be.equal(10584);
+        })
         rb.clearFilterElement().click({ force: true })
     }
     //TN
@@ -324,80 +324,80 @@ selectFilterRepairBox(){
         cy.get('[row-index="0"]').should('contain', '1Z6X34470331639405')
         rb.clearFilterElement().click({ force: true })
     }
-//SDate
-selectFilterShippedFromDate() {
-    rb.addFilterElement().eq(2).click({ force: true })
-    rb.fieldNameElement().eq(1).click({ force: true })
-    rb.fieldOpElement().eq(0).click({ force: true })
-    cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
-    rb.applyElement().click({ force: true })
-    cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippeddate1)
-    rb.clearFilterElement().click({ force: true })
-}
-filterEqualsSDate() {
-    rb.addFilterElement().eq(2).click({ force: true })
-    rb.fieldNameElement().eq(1).click({ force: true })
-    rb.fieldOpElement().eq(0).click({ force: true })
-    cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
-    rb.applyElement().click({ force: true })
-    cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippeddate1)
-    rb.clearFilterElement().click({ force: true })
-}
-filterNotequalSDate() {
-    rb.addFilterElement().eq(2).click({ force: true })
-    rb.fieldNameElement().eq(1).click({ force: true })
-    rb.fieldOpElement().eq(1).click({ force: true })
-    cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
-    rb.applyElement().click({ force: true })
-    cy.get('[row-index="0"]').should('not.contain.value', tdata.repairBox.shippeddate1)
-    rb.clearFilterElement().click({ force: true })
-}
-filterBeforeSDate() {
-    rb.addFilterElement().eq(2).click({ force: true })
-    rb.fieldNameElement().eq(1).click({ force: true })
-    rb.fieldOpElement().eq(2).click({ force: true })
-    cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
-    rb.applyElement().click({ force: true })
-    // cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippeddate1)
-    rb.clearFilterElement().click({ force: true })
-}
-filterAfterSDate() {
-    rb.addFilterElement().eq(2).click({ force: true })
-    rb.fieldNameElement().eq(1).click({ force: true })
-    rb.fieldOpElement().eq(3).click({ force: true })
-    cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
-    rb.applyElement().click({ force: true })
-    // cy.get('[row-index="0"]').should('contain', '2024-07-15')
-    rb.clearFilterElement().click({ force: true })
-}
-filterBetweenSDate() {
-    rb.addFilterElement().eq(2).click({ force: true })
-    rb.fieldNameElement().eq(1).click({ force: true })
-    rb.fieldOpElement().eq(4).click({ force: true })
-    cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
-    cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.shippeddate,{ force: true })
-    rb.applyElement().click({ force: true })
-   //  cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippeddate)
-    rb.clearFilterElement().click({ force: true })
-}
-filterBlankSDate() {
-    rb.addFilterElement().eq(2).click({ force: true })
-    rb.fieldNameElement().eq(1).click({ force: true })
-    rb.fieldOpElement().eq(5).click({ force: true })
-    cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.shippeddate, { force: true })
-    rb.applyElement().click({ force: true })
-   // cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippeddate1)
-    rb.clearFilterElement().click({ force: true })
-}
-filterNotblankSDate() {
-    rb.addFilterElement().eq(2).click({ force: true })
-    rb.fieldNameElement().eq(1).click({ force: true })
-    rb.fieldOpElement().eq(6).click({ force: true })
-    cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.shippeddate, { force: true })
-    rb.applyElement().click({ force: true })
-    cy.get('[row-index="0"]').should('not.contain', tdata.repairBox.shippeddate1)
-    rb.clearFilterElement().click({ force: true })
-}
+    //SDate
+    selectFilterShippedFromDate() {
+        rb.addFilterElement().eq(2).click({ force: true })
+        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.fieldOpElement().eq(0).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
+        rb.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippeddate1)
+        rb.clearFilterElement().click({ force: true })
+    }
+    filterEqualsSDate() {
+        rb.addFilterElement().eq(2).click({ force: true })
+        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.fieldOpElement().eq(0).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
+        rb.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippeddate1)
+        rb.clearFilterElement().click({ force: true })
+    }
+    filterNotequalSDate() {
+        rb.addFilterElement().eq(2).click({ force: true })
+        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.fieldOpElement().eq(1).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
+        rb.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.repairBox.shippeddate1)
+        rb.clearFilterElement().click({ force: true })
+    }
+    filterBeforeSDate() {
+        rb.addFilterElement().eq(2).click({ force: true })
+        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.fieldOpElement().eq(2).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
+        rb.applyElement().click({ force: true })
+        // cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippeddate1)
+        rb.clearFilterElement().click({ force: true })
+    }
+    filterAfterSDate() {
+        rb.addFilterElement().eq(2).click({ force: true })
+        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.fieldOpElement().eq(3).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
+        rb.applyElement().click({ force: true })
+        // cy.get('[row-index="0"]').should('contain', '2024-07-15')
+        rb.clearFilterElement().click({ force: true })
+    }
+    filterBetweenSDate() {
+        rb.addFilterElement().eq(2).click({ force: true })
+        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.fieldOpElement().eq(4).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.shippeddate, { force: true })
+        rb.applyElement().click({ force: true })
+        //  cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippeddate)
+        rb.clearFilterElement().click({ force: true })
+    }
+    filterBlankSDate() {
+        rb.addFilterElement().eq(2).click({ force: true })
+        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.fieldOpElement().eq(5).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.shippeddate, { force: true })
+        rb.applyElement().click({ force: true })
+        // cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippeddate1)
+        rb.clearFilterElement().click({ force: true })
+    }
+    filterNotblankSDate() {
+        rb.addFilterElement().eq(2).click({ force: true })
+        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.fieldOpElement().eq(6).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.shippeddate, { force: true })
+        rb.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.repairBox.shippeddate1)
+        rb.clearFilterElement().click({ force: true })
+    }
     //B
     selectFilterBuilding() {
         rb.addFilterElement().eq(3).click({ force: true })
@@ -487,7 +487,7 @@ filterNotblankSDate() {
         rb.fieldOpElement().eq(1).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.boxtype)
         rb.applyElement().click({ force: true })
-       // cy.get('[row-index="0"]').should('not.contain', tdata.repairBox.boxtype)
+        // cy.get('[row-index="0"]').should('not.contain', tdata.repairBox.boxtype)
         rb.clearFilterElement().click({ force: true })
     }
     filterEqualsBT() {
@@ -548,65 +548,38 @@ filterNotblankSDate() {
     filterSearchCheck() {
         rb.addFilterElement().eq(5).click({ force: true })
         rb.searchElement().type('Vivacity')
-        rb.searchboxElement().eq(1).contains(tdata.repairBox.shippingboxstatus2).click({force:true})
+        rb.searchboxElement().eq(1).contains(tdata.repairBox.shippingboxstatus2).click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus2)
-       cy.get('.reset-button').click({ force: true })
-      rb.searchElement().clear({force:true})
+        cy.get('.reset-button').click({ force: true })
+        rb.searchElement().clear({ force: true })
     }
     filterCheck1() {
         rb.addFilterElement().eq(5).click({ force: true })
-        rb.searchboxElement().eq(0).contains(tdata.repairBox.shippingboxstatus1).click({force:true})
-        cy.get('[row-index="0"]').should('contain',tdata.repairBox.shippingboxstatus1)
+        rb.searchboxElement().eq(0).contains(tdata.repairBox.shippingboxstatus1).click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus1)
         cy.get('.reset-button').click({ force: true })
     }
-    filterCheck2(){
+    filterCheck2() {
         rb.addFilterElement().eq(5).click({ force: true })
-        rb.searchboxElement().eq(1).contains(tdata.repairBox.shippingboxstatus2).click({force:true})
+        rb.searchboxElement().eq(1).contains(tdata.repairBox.shippingboxstatus2).click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus2)
         cy.get('.reset-button').click({ force: true })
-      
+
     }
     filterCheck3() {
         rb.addFilterElement().eq(5).click({ force: true })
-        rb.searchboxElement().eq(2).contains(tdata.repairBox.shippingboxstatus3).click({force:true})
+        rb.searchboxElement().eq(2).contains(tdata.repairBox.shippingboxstatus3).click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus3)
         cy.get('.reset-button').click({ force: true })
     }
     filterCheckAll() {
         rb.addFilterElement().eq(5).click({ force: true })
-        rb.searchboxElement().eq(0).contains(tdata.repairBox.shippingboxstatus1).click({force:true})
-        rb.searchboxElement().eq(1).contains(tdata.repairBox.shippingboxstatus2).click({force:true})
-        rb.searchboxElement().eq(2).contains(tdata.repairBox.shippingboxstatus3).click({force:true})
-        cy.get('[row-index="0"]').should('contain',tdata.repairBox.shippingboxstatus1,tdata.repairBox.shippingboxstatus2,tdata.repairBox.shippingboxstatus3 )
+        rb.searchboxElement().eq(0).contains(tdata.repairBox.shippingboxstatus1).click({ force: true })
+        rb.searchboxElement().eq(1).contains(tdata.repairBox.shippingboxstatus2).click({ force: true })
+        rb.searchboxElement().eq(2).contains(tdata.repairBox.shippingboxstatus3).click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus1, tdata.repairBox.shippingboxstatus2, tdata.repairBox.shippingboxstatus3)
         cy.get('.reset-button').click({ force: true })
     }
-    // filterEndswithSS() {
-    //     rb.addFilterElement().eq(5).click({ force: true })
-    //     rb.fieldNameElement().eq(1).click({ force: true })
-    //     rb.fieldOpElement().eq(5).click({ force: true })
-    //     rb.fieldValueElement().eq(0).clear({ force: true }).type('Vivacity')
-    //     rb.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', 'Vivacity')
-    //     rb.clearFilterElement().click({ force: true })
-    // }
-    // filterBlankSS() {
-    //     rb.addFilterElement().eq(5).click({ force: true })
-    //     rb.fieldNameElement().eq(1).click({ force: true })
-    //     rb.fieldOpElement().eq(6).click({ force: true })
-    //     rb.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
-    //     rb.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', ' ')
-    //     rb.clearFilterElement().click({ force: true })
-    // }
-    // filterNotblankSS() {
-    //     rb.addFilterElement().eq(5).click({ force: true })
-    //     rb.fieldNameElement().eq(1).click({ force: true })
-    //     rb.fieldOpElement().eq(7).click({ force: true })
-    //     rb.fieldValueElement().eq(1).clear({ force: true }).type('Recieved By Vivacity', { force: true })
-    //     rb.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', 'Recieved By Vivacity')
-    //     rb.clearFilterElement().click({ force: true })
-    // }
     //Cby
     selectFilterCreatedby() {
         rb.addFilterElement().eq(6).click({ force: true })
@@ -716,12 +689,12 @@ filterNotblankSDate() {
         // cy.get('[row-index="0"]').should('contain', '2024-07-15')
         rb.clearFilterElement().click({ force: true })
     }
-    filterBetweenLDate(){
+    filterBetweenLDate() {
         rb.addFilterElement().eq(7).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.lastdate)
-        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.lastdate,{ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.lastdate, { force: true })
         rb.applyElement().click({ force: true })
         // cy.get('[row-index="0"]').should('contain', '2024-07-15')
         rb.clearFilterElement().click({ force: true })
@@ -732,7 +705,7 @@ filterNotblankSDate() {
         rb.fieldOpElement().eq(5).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.lastdate, { force: true })
         rb.applyElement().click({ force: true })
-       // cy.get('[row-index="0"]').should('contain', tdata.repairBox.lastdate1)
+        // cy.get('[row-index="0"]').should('contain', tdata.repairBox.lastdate1)
         rb.clearFilterElement().click({ force: true })
     }
     filterNotblankLDate() {

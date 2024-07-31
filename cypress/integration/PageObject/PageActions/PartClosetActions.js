@@ -11,16 +11,19 @@ export class PartClosetActions {
     }
     closeTermsOfServiceWindow() {
         // cy.contains('Remind me Later').click({ force: true }) 
-        cy.wait(8000)
+        cy.wait(5000)
         dash.termsElement().contains('Dismiss').click({ force: true })
+        cy.wait(8000)
         cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }
     clickOnRepair360() {
         dash.repair360Element().click({ force: true })
+        cy.wait(2000)
+        cy.get('[data-testid="CloseIcon"]').eq(0).click({ force: true })
     }
     clickOnPartClosetTab() {
         rep.partclosetElement().click({ force: true })
-
+       
     }
     verifyTitle() {
         pc.titleElement().should('be.visible')

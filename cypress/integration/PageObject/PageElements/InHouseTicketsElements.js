@@ -103,7 +103,7 @@ export default class InHouseTicketsElements {
         })
     }
     clearFilterElement() {
-        return cy.contains(locator.inhouseTickets.clearFilter, {
+        return cy.get(locator.inhouseTickets.clearFilter, {
             timeout: 30000,
         })
     }

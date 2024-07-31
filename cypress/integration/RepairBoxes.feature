@@ -79,7 +79,6 @@ Feature: RepairBoxes Page Functionality
     And Click on filter of Last Modified Date Between in search box and Verify the Result
     And Click on filter of Last Modified Date Blank in search box and Verify the Result
     And Click on filter of Last Modified Date Not blank in search box and Verify the Result
-
     Then I should click on create new Box
     Then Enter weight and Standard Box Size
     And Select Pick-up site
@@ -90,20 +89,19 @@ Feature: RepairBoxes Page Functionality
     Then Verify new box is added in table
     And Click on view button
     Then Verify the Details new box
+    And Add another ticket in the same box
+    Then Select Ticket from dropdownlist
+    And Click on Add ticket
+    Then Verify the ticket is added in table
+    And Click on view the ticket Details
+    Then Verfiy the ticket Details
 # # And Enter the Search - Tracking Number in search box and Verify the Result
 # # Then Enter the Search - Record Id in search box and Verify the Result
 # # And Enter the Search - Building in search box and Verify the Result
 # # Then Enter the Search - Created_by in search box and Verify the Result
-# # And Click on Export Button
-# # And Add another ticket in the same box
-# # Then Select Ticket from dropdownlist
-# # And Click on Add ticket
-# # Then Verify the ticket is added in table
-# # And Click on view the ticket Details
-# # Then Verfiy the ticket Details
-# # And Click on Back button
-# # And Remove the ticket from box
-# # Then Verify the ticket is delete from the table
+# And Click on Export Button
+
+
 
 
 

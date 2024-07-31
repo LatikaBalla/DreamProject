@@ -12,9 +12,10 @@ export class SrcStudentsActions {
         globalThis.mf1 = new StudentRepairCenterElements()
     }
     closeTermsOfServiceWindow() {
-        cy.contains('Remind me Later').click({ force: true }) 
+        cy.wait(6000)
         dash.termsElement().contains('Dismiss').click({ force: true })
-       // dash.termsElement().click({ force: true })
+        cy.wait(5000)
+        cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }
     clickOnRepair360() {
         dash.repair360Element().click({ force: true })
@@ -86,9 +87,9 @@ export class SrcStudentsActions {
         cy.get('[type="button"]').contains('Cancel').click({ force: true })
     }
     verifyRecordTable() {
-         cy.get('[data-testid="CachedIcon"]').click({ force: true })
+        cy.get('[data-testid="CachedIcon"]').click({ force: true })
         cy.wait(3000)
-       // dash.messageElement().should('contain', tdata.srcStudent.createStudentmsg)
+        // dash.messageElement().should('contain', tdata.srcStudent.createStudentmsg)
         cy.get('tr td').eq(0).should('contain', tdata.srcStudent.fullname, { force: true })
     }
     clickViewButtton() {
@@ -97,73 +98,453 @@ export class SrcStudentsActions {
     verifyStudentDetails() {
         cy.contains(tdata.srcStudent.fullname).should('be.visible')
     }
-    searchFullName() {
-        ss.searchboxElement().eq(0).click({ force: true })
-        ss.fullNameElement().click({ force: true })
-        ss.searchElement().clear({ force: true }).type(tdata.srcStudent.fullName + '{enter}', { force: true })
-        cy.get('tr td').eq(0).should('contain', tdata.srcStudent.fullName)
-    }
-    searchEmail() {
-        ss.searchboxElement().eq(0).click({ force: true })
-        ss.emaildropElement().click({ force: true })
-        ss.searchElement().clear({ force: true }).type(tdata.srcStudent.emaildrop + '{enter}', { force: true })
-        cy.get('tr td').eq(2).should('contain', tdata.srcStudent.emaildrop)
-    }
-    searchStatus() {
-        ss.searchboxElement().eq(0).click({ force: true })
-        ss.statusElement().click({ force: true })
-        ss.searchElement().clear({ force: true }).type(tdata.srcStudent.status + '{enter}', { force: true })
-        cy.get('tr td').eq(3).should('contain', tdata.srcStudent.status)
-    }
-    searchPhone() {
-        ss.searchboxElement().eq(0).click({ force: true })
-        ss.phoneNoElement().click({ force: true })
-        ss.searchElement().clear({ force: true }).type(tdata.srcStudent.phoneNo1 + '{enter}', { force: true })
-        cy.get('tr td').eq(4).should('contain', tdata.srcStudent.phoneNo2)
-    }
-    clickOnMoreFilter() {
-        ss.addFilterElement().click({ force: true })
-    }
-    clickOnClearFilter() {
-        ss.clearFilterElement().click({ force: true })
-    }
-    selectFilterFullName() {
-        ss.fieldNameElement().select(0).invoke("val").should("eq", 'full_name', { force: true })
-        ss.fieldOpElement().select('Does Not Contain', { force: true }).should('have.value', 'Does Not Contain')
-        ss.fieldValueElement().type(tdata.srcStudent.fullName)
-        ss.applyElement().click({ force: true })
-        cy.get('tr td').eq(0).should('not.contain', tdata.srcStudent.fullName)
-    }
-    selectFilterEmail() {
-        ss.fieldNameElement().select(2).invoke("val").should("eq", "email")
-        ss.fieldOpElement().select('Does Not Contain', { force: true })
-        ss.fieldValueElement().type(tdata.srcStudent.emaildrop)
-        ss.applyElement().click({ force: true })
-        cy.get('tr td').eq(2).should('not.contain', tdata.srcStudent.emaildrop)
-    }
-    selectFilterPhone() {
-        ss.fieldNameElement().select('phone', { force: true })
-        ss.fieldOpElement().select('Does Not Contain', { force: true })
-        ss.fieldValueElement().type(tdata.srcStudent.phoneNo2)
-        ss.applyElement().click({ force: true })
-        cy.get('tr td').eq(4).should('not.contain', tdata.srcStudent.phoneNo2)
-    }
-    selectFilterTitle() {
-        ss.fieldNameElement().select('title', { force: true })
-        ss.fieldOpElement().select('Does Not Contain', { force: true })
-        ss.fieldValueElement().type(tdata.srcStudent.title)
-        ss.applyElement().click({ force: true })
-        cy.get('tr td').eq(1).should('not.contain', tdata.srcStudent.title)
-    }
-    selectFilterUserStatus() {
-        ss.fieldNameElement().select('user_status', { force: true })
-        ss.fieldOpElement().select('Contains', { force: true })
-        ss.fieldValueElement().type(tdata.srcStudent.status)
-        ss.applyElement().click({ force: true })
-        cy.get('tr td').eq(3).should('contain', tdata.srcStudent.status)
-    }
+
     clickOnExport() {
         ss.exportbtnElement().click({ force: true })
+    }
+    //fn
+    filtercontainFN() {
+        cy.wait(4000)
+        ss.addFilterElement().eq(0).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(0).click({ force: true })
+        ss.fieldValueElement().type(tdata.srcStudent.fullName)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.fullName)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainFN() {
+        ss.addFilterElement().eq(0).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(1).click({ force: true })
+        ss.fieldValueElement().eq(0).type(tdata.srcStudent.fullName)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.srcStudent.fullName)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterEqualsFN() {
+        ss.addFilterElement().eq(0).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(2).click({ force: true })
+        ss.fieldValueElement().eq(0).type(tdata.srcStudent.fullName)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.fullName)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterNotequalFN() {
+        ss.addFilterElement().eq(0).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(3).click({ force: true })
+        ss.fieldValueElement().eq(0).type(tdata.srcStudent.fullName)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.srcStudent.fullName)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithFN() {
+        ss.addFilterElement().eq(0).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(4).click({ force: true })
+        ss.fieldValueElement().eq(0).type('Demo')
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'Demo')
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterEndswithFN() {
+        ss.addFilterElement().eq(0).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(5).click({ force: true })
+        ss.fieldValueElement().eq(0).type('Test')
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'Test')
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterBlankFN() {
+        ss.addFilterElement().eq(0).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(6).click({ force: true })
+        ss.fieldValueElement().eq(0).type(' ', { force: true })
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterNotblankFN() {
+        ss.addFilterElement().eq(0).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(7).click({ force: true })
+        ss.fieldValueElement().eq(1).type(tdata.srcStudent.fullName, { force: true })
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.fullName)
+        ss.clearFilterElement().click({ force: true })
+    }
+    //title
+    filtercontainT() {
+        cy.wait(2000)
+        ss.addFilterElement().eq(1).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(0).click({ force: true })
+        ss.fieldValueElement().type(tdata.srcStudent.title)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.title)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainT() {
+        ss.addFilterElement().eq(1).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(1).click({ force: true })
+        ss.fieldValueElement().eq(0).type(tdata.srcStudent.title)
+        ss.applyElement().click({ force: true })
+        cy.get('.ag-row-first > [col-id="title"]').should('not.contain', tdata.srcStudent.title)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterEqualsT() {
+        ss.addFilterElement().eq(1).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(2).click({ force: true })
+        ss.fieldValueElement().eq(0).type(tdata.srcStudent.title)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.title)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterNotequalT() {
+        ss.addFilterElement().eq(1).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(3).click({ force: true })
+        ss.fieldValueElement().eq(0).type(tdata.srcStudent.title)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.srcStudent.title)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithT() {
+        ss.addFilterElement().eq(1).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(4).click({ force: true })
+        ss.fieldValueElement().eq(0).type('tea')
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'tea')
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterEndswithT() {
+        ss.addFilterElement().eq(1).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(5).click({ force: true })
+        ss.fieldValueElement().eq(0).type('cher')
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'cher')
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterBlankT() {
+        ss.addFilterElement().eq(1).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(6).click({ force: true })
+        ss.fieldValueElement().eq(0).type(' ', { force: true })
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterNotblankT() {
+        ss.addFilterElement().eq(1).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(7).click({ force: true })
+        ss.fieldValueElement().eq(1).type(tdata.srcStudent.title, { force: true })
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.title)
+        ss.clearFilterElement().click({ force: true })
+    }
+    //email
+    filtercontainE() {
+        cy.wait(2000)
+        ss.addFilterElement().eq(2).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(0).click({ force: true })
+        ss.fieldValueElement().type(tdata.srcStudent.emailid)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.emailid)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainE() {
+        ss.addFilterElement().eq(2).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(1).click({ force: true })
+        ss.fieldValueElement().eq(0).type(tdata.srcStudent.emailid)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.srcStudent.emailid)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterEqualsE() {
+        ss.addFilterElement().eq(2).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(2).click({ force: true })
+        ss.fieldValueElement().eq(0).type(tdata.srcStudent.emailid)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.emailid)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterNotequalE() {
+        ss.addFilterElement().eq(2).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(3).click({ force: true })
+        ss.fieldValueElement().eq(0).type(tdata.srcStudent.emailid)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.srcStudent.emailid)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithE() {
+        ss.addFilterElement().eq(2).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(4).click({ force: true })
+        ss.fieldValueElement().eq(0).type('admin')
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'admin')
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterEndswithE() {
+        ss.addFilterElement().eq(2).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(5).click({ force: true })
+        ss.fieldValueElement().eq(0).type('vivacitytech.com')
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'vivacitytech.com')
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterBlankE() {
+        ss.addFilterElement().eq(2).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(6).click({ force: true })
+        ss.fieldValueElement().eq(0).type(' ', { force: true })
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterNotblankE() {
+        ss.addFilterElement().eq(2).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(7).click({ force: true })
+        ss.fieldValueElement().eq(1).type(tdata.srcStudent.emailid, { force: true })
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.emailid)
+        ss.clearFilterElement().click({ force: true })
+    }
+    //phone
+    filtercontainP() {
+        cy.wait(2000)
+        ss.addFilterElement().eq(4).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(0).click({ force: true })
+        ss.fieldValueElement().type(tdata.srcStudent.phoneNo1)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.phoneNo2)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainP() {
+        ss.addFilterElement().eq(4).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(1).click({ force: true })
+        ss.fieldValueElement().eq(0).type(tdata.srcStudent.phoneNo1)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.srcStudent.phoneNo2)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterEqualsP() {
+        ss.addFilterElement().eq(4).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(2).click({ force: true })
+        ss.fieldValueElement().eq(0).type(tdata.srcStudent.phoneNo1)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.phoneNo2)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterNotequalP() {
+        ss.addFilterElement().eq(4).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(3).click({ force: true })
+        ss.fieldValueElement().eq(0).type(tdata.srcStudent.phoneNo1)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.srcStudent.phoneNo2)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithP() {
+        ss.addFilterElement().eq(4).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(4).click({ force: true })
+        ss.fieldValueElement().eq(0).type('9999')
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', '(999)')
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterEndswithP() {
+        ss.addFilterElement().eq(4).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(5).click({ force: true })
+        ss.fieldValueElement().eq(0).type('999')
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', '999')
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterBlankP() {
+        ss.addFilterElement().eq(4).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(6).click({ force: true })
+        ss.fieldValueElement().eq(0).type(' ', { force: true })
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterNotblankP() {
+        ss.addFilterElement().eq(4).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(7).click({ force: true })
+        ss.fieldValueElement().eq(1).type(tdata.srcStudent.phoneNo1, { force: true })
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.phoneNo2)
+        ss.clearFilterElement().click({ force: true })
+    }
+    //us
+    filtercontainUS() {
+        cy.wait(2000)
+        ss.addFilterElement().eq(3).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(0).click({ force: true })
+        ss.fieldValueElement().type(tdata.srcStudent.userStatus)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.userStatus)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainUS() {
+        ss.addFilterElement().eq(3).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(1).click({ force: true })
+        ss.fieldValueElement().eq(0).type(tdata.srcStudent.userStatus)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.srcStudent.userStatus)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterEqualsUS() {
+        ss.addFilterElement().eq(3).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(2).click({ force: true })
+        ss.fieldValueElement().eq(0).type(tdata.srcStudent.userStatus)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.userStatus)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterNotequalUS() {
+        ss.addFilterElement().eq(3).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(3).click({ force: true })
+        ss.fieldValueElement().eq(0).type(tdata.srcStudent.userStatus)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.srcStudent.userStatus)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithUS() {
+        ss.addFilterElement().eq(3).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(4).click({ force: true })
+        ss.fieldValueElement().eq(0).type('Ina')
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'Ina')
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterEndswithUS() {
+        ss.addFilterElement().eq(3).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(5).click({ force: true })
+        ss.fieldValueElement().eq(0).type('tive')
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'tive')
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterBlankUS() {
+        ss.addFilterElement().eq(3).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(6).click({ force: true })
+        ss.fieldValueElement().eq(0).type(' ', { force: true })
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterNotblankUS() {
+        ss.addFilterElement().eq(3).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(7).click({ force: true })
+        ss.fieldValueElement().eq(1).type(tdata.srcStudent.userStatus, { force: true })
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.userStatus)
+        ss.clearFilterElement().click({ force: true })
+    }
+    //UR
+    filtercontainUR() {
+        cy.wait(4000)
+        ss.addFilterElement().eq(5).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(0).click({ force: true })
+        ss.fieldValueElement().type(tdata.srcStudent.userRole)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.userRole)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainUR() {
+        ss.addFilterElement().eq(5).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(1).click({ force: true })
+        ss.fieldValueElement().eq(0).type(tdata.srcStudent.userRole)
+        ss.applyElement().click({ force: true })
+    //    cy.get('[row-index="0"]').should('not.contain', tdata.srcStudent.userRole)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterEqualsUR() {
+        ss.addFilterElement().eq(5).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(2).click({ force: true })
+        ss.fieldValueElement().eq(0).type(tdata.srcStudent.userRole)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.userRole)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterNotequalUR() {
+        ss.addFilterElement().eq(5).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(3).click({ force: true })
+        ss.fieldValueElement().eq(0).type(tdata.srcStudent.userRole)
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.srcStudent.userRole)
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithUR() {
+        ss.addFilterElement().eq(5).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(4).click({ force: true })
+        ss.fieldValueElement().eq(0).type('Super')
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'Super')
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterEndswithUR() {
+        ss.addFilterElement().eq(5).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(5).click({ force: true })
+        ss.fieldValueElement().eq(0).type('dent')
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'dent')
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterBlankUR() {
+        ss.addFilterElement().eq(5).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(6).click({ force: true })
+        ss.fieldValueElement().eq(0).type(' ', { force: true })
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        ss.clearFilterElement().click({ force: true })
+    }
+    filterNotblankUR() {
+        ss.addFilterElement().eq(5).click({ force: true })
+        ss.fieldNameElement().eq(1).click({ force: true })
+        ss.fieldOpElement().eq(7).click({ force: true })
+        ss.fieldValueElement().eq(1).type(tdata.srcStudent.userRole, { force: true })
+        ss.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.userRole)
+        ss.clearFilterElement().click({ force: true })
     }
 }
 export default SrcStudentsActions 

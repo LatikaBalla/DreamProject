@@ -68,7 +68,7 @@ export default class SrcFacilitatorsElements {
         })
     }
     clearFilterElement() {
-        return cy.contains(locator.srcFacilitators.clearFilter, {
+        return cy.get(locator.srcFacilitators.clearFilter, {
             timeout: 30000,
         })
     }

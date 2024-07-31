@@ -132,7 +132,7 @@ export default class SrcStudentsElements {
         })
     }
     clearFilterElement() {
-        return cy.contains(locator.srcStudents.clearFilter, {
+        return cy.get(locator.srcStudents.clearFilter, {
             timeout: 30000,
         })
     }
