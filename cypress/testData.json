@@ -116,7 +116,10 @@
     "notes": "Testing",
     "tag": "10",
     "type": "aaabbbccc",
-    "description": "this is description"
+    "description": "this is description",
+    "acquireDate":"2024-05-10",
+    "acquireDate1":"10-05-2024"
+
   },
   "editasset": {
     "title": "EditAssetTitle",
@@ -130,8 +133,11 @@
   "importDevice": {
     "uploadfilename": "serialImportTemplate.csv",
     "downloadfilename": "import_list.csv",
-    "importer": "demo_adminsuper@vivacitytech.com",
-    "quantitydevices": "7"
+    "importdate":"2024-06-17",
+    "importdate1":"17-06-2024",
+    "importer": "demo_adminvivacity@vivacitytech.com",
+    "quantitydevices": "2",
+    "quantitydevices1": "0"
   },
   "orgAsset": {
     "upload": "image1.jpeg",

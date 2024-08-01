@@ -284,12 +284,12 @@
         "submit": "[data-testid='btnNewDataSubmit']",
         "upload": "input[type='file']",
         "devicesDetailsTitle": "Import Devices Details",
-        "addFilter": "Add Filter",
-        "clearFilter": "Clear Filter",
-        "fieldName": "[name='fieldName']",
-        "fieldOp": "[name='fieldOp']",
-        "fieldValue": "[name='fieldValue']",
-        "apply": "[data-testid='btnHandleApply']"
+        "addFilter": "[ref='eMenu']",
+        "clearFilter": "button[ref='resetFilterButton']",
+        "fieldName": "[ref='eDisplayField']",
+        "fieldOp": "[role='option']",
+        "fieldValue": "[placeholder='Filter...']",
+        "apply": "button[ref='applyFilterButton']"
     },
     "orgUploadAssets": {
         "title": "Organization Uploaded Assets",
@@ -310,13 +310,13 @@
         "description": "#description",
         "upload": "[type='file']",
         "savebtn": "Save",
-        "addFilter": "Add Filter",
-        "clearFilter": "Clear Filter",
-        "fieldName": "[name='fieldName']",
-        "fieldOp": "[name='fieldOp']",
-        "fieldValue": "[name='fieldValue']",
-        "apply": "[data-testid='btnHandleApply']"
-    },
+        "addFilter": "[ref='eMenu']",
+        "clearFilter": "button[ref='resetFilterButton']",
+        "fieldName": "[ref='eDisplayField']",
+        "fieldOp": "[role='option']",
+        "fieldValue": "[placeholder='Filter...']",
+        "apply": "button[ref='applyFilterButton']"
+        },
     "loanerManagement": {
         "table": ".css-1xz8d5v",
         "search": "[placeholder='Search by table field values']",

@@ -1,6 +1,6 @@
 [
   {
-    "description": "    As a user\n    I want to access the dashboard page\n    So that I can view my account information and data",
+    "description": "   As a user\n   I want to access the dashboard page\n   So that I can view my account information and data",
     "keyword": "Feature",
     "name": "OrgUploadAssets Page Functionality",
     "line": 1,
@@ -11,7 +11,7 @@
       {
         "id": "orguploadassets-page-functionality;add-asset,-search,-edit-and-delete-asset",
         "keyword": "Scenario",
-        "line": 13,
+        "line": 15,
         "name": "Add Asset, Search, Edit and Delete Asset",
         "tags": [],
         "type": "scenario",
@@ -19,111 +19,129 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
+            "line": 8,
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2782000000
+              "duration": 5196000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 8,
+            "line": 9,
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 12489000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "close the terms of service window",
-            "result": {
-              "status": "failed",
-              "duration": 8273000000,
-              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 3 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click\n    at mouseAction (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111447:68)\n    at Context.click (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111611:14)\n    at wrapped (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at OrgUploadAssetsActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/OrgUploadAssetsActions.js:13:28)\n    at Context.eval (cypress/integration/OrgUploadAssets/OrgUploadAssets.spec.js:16:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "duration": 8901000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 10,
-            "name": "Click on Manage Devices",
+            "name": "close the terms of service window",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "Click on OrgUploadAssets Tab",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "Verify the Title of OrgUploadAssets Page",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 17200000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 15,
-            "name": "Filters of OrgUploadAssets should be visible",
+            "line": 11,
+            "name": "Click on Manage Devices",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 90000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Click on OrgUploadAssets Tab",
+            "result": {
+              "status": "passed",
+              "duration": 1218000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 16,
-            "name": "Table for OrgUploadAssets should be visible",
+            "name": "Verify the Title of OrgUploadAssets Page",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 17,
-            "name": "I should click on Add Asset",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 13000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 18,
+            "name": "I should click on Add Asset",
+            "result": {
+              "status": "passed",
+              "duration": 889000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
             "name": "Enter title, full name location and tag",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 411000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 19,
+            "line": 20,
             "name": "Enter note, Type and description",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 558000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 20,
+            "line": 21,
             "name": "Upload the image file",
+            "result": {
+              "status": "passed",
+              "duration": 589000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Click on save button",
+            "result": {
+              "status": "passed",
+              "duration": 80000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Verify the asset details added in table",
+            "result": {
+              "status": "failed",
+              "duration": 30034000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiAlert-message`, but never found it.\n    at OrgUploadAssetsActions.verifyRecordTable (cypress/integration/PageObject/PageActions/OrgUploadAssetsActions.js:65:30)\n    at Context.eval (cypress/integration/OrgUploadAssets/OrgUploadAssets.spec.js:56:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Click on filter of Description contain in search box and Verify the Result",
             "result": {
               "status": "skipped"
             }
@@ -131,17 +149,8 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 21,
-            "name": "Click on save button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 22,
-            "name": "Verify the asset details added in table",
+            "line": 26,
+            "name": "Click on filter of Description Does not contain in search box and Verify the Result",
             "result": {
               "status": "skipped"
             }
@@ -150,7 +159,7 @@
             "arguments": [],
             "keyword": "And ",
             "line": 27,
-            "name": "Enter the title in search box",
+            "name": "Click on filter of Description Equals in search box and Verify the Result",
             "result": {
               "status": "skipped"
             }
@@ -159,7 +168,7 @@
             "arguments": [],
             "keyword": "And ",
             "line": 28,
-            "name": "Verify the record in searching history",
+            "name": "Click on filter of Description Does not equal in search box and Verify the Result",
             "result": {
               "status": "skipped"
             }
@@ -168,16 +177,16 @@
             "arguments": [],
             "keyword": "And ",
             "line": 29,
-            "name": "Click on Edit button",
+            "name": "Click on filter of Description Begins with in search box and Verify the Result",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 30,
-            "name": "I should edit title, full name location and tag",
+            "name": "Click on filter of Description Ends with in search box and Verify the Result",
             "result": {
               "status": "skipped"
             }
@@ -186,25 +195,16 @@
             "arguments": [],
             "keyword": "And ",
             "line": 31,
-            "name": "I should edit note, Type and description",
+            "name": "Click on filter of Description Blank in search box and Verify the Result",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 32,
-            "name": "ReUpload the image file",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 33,
-            "name": "Click on save button",
+            "name": "Click on filter of Description Not blank in search box and Verify the Result",
             "result": {
               "status": "skipped"
             }
@@ -213,7 +213,7 @@
             "arguments": [],
             "keyword": "And ",
             "line": 34,
-            "name": "Verify the Record has been updated Meassage",
+            "name": "Click on filter of Acquire Date Equals in search box and Verify the Result",
             "result": {
               "status": "skipped"
             }
@@ -222,16 +222,16 @@
             "arguments": [],
             "keyword": "And ",
             "line": 35,
-            "name": "Click on Delete button",
+            "name": "Click on filter of Acquire Date Does not equal in search box and Verify the Result",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 36,
-            "name": "Click on Confirm Delete button",
+            "name": "Click on filter of Acquire Date Before in search box and Verify the Result",
             "result": {
               "status": "skipped"
             }
@@ -240,7 +240,106 @@
             "arguments": [],
             "keyword": "And ",
             "line": 37,
-            "name": "Verify the record is deleted successfully",
+            "name": "Click on filter of Acquire Date After in search box and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "Click on filter of Acquire Date Between with in search box and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "Click on filter of Acquire Date Blank in search box and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "Click on filter of Acquire Date Not blank in search box and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "Click on filter of Location contain in search box and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "Click on filter of Location Does not contain in search box and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "Click on filter of Location Equals in search box and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "Click on filter of Location Does not equal in search box and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "Click on filter of Location Begins with in search box and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "Click on filter of Location Ends with in search box and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "Click on filter of Location Blank in search box and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "Click on filter of Location Not blank in search box and Verify the Result",
             "result": {
               "status": "skipped"
             }

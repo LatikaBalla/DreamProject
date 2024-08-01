@@ -92,12 +92,12 @@ export default class OrgUploadAssetsElements {
         })
     }
     addFilterElement() {
-        return cy.contains(locator.orgUploadAssets.addFilter, {
+        return cy.get(locator.orgUploadAssets.addFilter, {
             timeout: 30000,
         })
     }
     clearFilterElement() {
-        return cy.contains(locator.orgUploadAssets.clearFilter, {
+        return cy.get(locator.orgUploadAssets.clearFilter, {
             timeout: 30000,
         })
     }

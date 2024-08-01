@@ -58,12 +58,12 @@ export default class ImportSerialDevicesElements {
         })
     }
     addFilterElement() {
-        return cy.contains(locator.importSerialDevices.addFilter, {
+        return cy.get(locator.importSerialDevices.addFilter, {
             timeout: 30000,
         })
     }
     clearFilterElement() {
-        return cy.contains(locator.importSerialDevices.clearFilter, {
+        return cy.get(locator.importSerialDevices.clearFilter, {
             timeout: 30000,
         })
     }

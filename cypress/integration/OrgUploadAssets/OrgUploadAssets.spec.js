@@ -106,4 +106,75 @@ And('Click More filter select- Acquire Location in search box and Verify the Res
     oua.clickOnMoreFilter()
     oua.selectFilterAcquireLocation()
 })
-
+//description
+And('Click on filter of Description contain in search box and Verify the Result', () => {
+     oua.filtercontainD()
+})
+And('Click on filter of Description Does not contain in search box and Verify the Result', () => {
+     oua.filterDoesnotcontainD()
+})
+And('Click on filter of Description Equals in search box and Verify the Result', () => {
+     oua.filterEqualsD()
+})
+And('Click on filter of Description Does not equal in search box and Verify the Result', () => {
+     oua.filterNotequalD()
+})
+And('Click on filter of Description Begins with in search box and Verify the Result', () => {
+     oua.filterBeginswithD()
+})
+And('Click on filter of Description Ends with in search box and Verify the Result', () => {
+     oua.filterEndswithD()
+})
+And('Click on filter of Description Blank in search box and Verify the Result', () => {
+     oua.filterBlankD()
+})
+And('Click on filter of Description Not blank in search box and Verify the Result', () => {
+     oua.filterNotblankD()
+})
+//date 
+And('Click on filter of Acquire Date Equals in search box and Verify the Result', () => {
+    oua.filterEqualsDate()
+})
+And('Click on filter of Acquire Date Does not equal in search box and Verify the Result', () => {
+    oua.filterNotequalDate()
+})
+And('Click on filter of Acquire Date Before in search box and Verify the Result', () => {
+    oua.filterBeforeDate()
+})
+And('Click on filter of Acquire Date After in search box and Verify the Result', () => {
+    oua.filterAfterDate()
+})
+And ('Click on filter of Acquire Date Between with in search box and Verify the Result',()=>{
+    oua.filterBetweenDate()
+})
+And('Click on filter of Acquire Date Blank in search box and Verify the Result', () => {
+    oua.filterBlankDate()
+})
+And('Click on filter of Acquire Date Not blank in search box and Verify the Result', () => {
+    oua.filterNotblankDate()
+})
+//location
+And('Click on filter of Location contain in search box and Verify the Result', () => {
+     oua.filtercontainL()
+})
+And('Click on filter of Location Does not contain in search box and Verify the Result', () => {
+     oua.filterDoesnotcontainL()
+})
+And('Click on filter of Location Equals in search box and Verify the Result', () => {
+     oua.filterEqualsL()
+})
+And('Click on filter of Location Does not equal in search box and Verify the Result', () => {
+     oua.filterNotequalL()
+})
+And('Click on filter of Location Begins with in search box and Verify the Result', () => {
+     oua.filterBeginswithL()
+})
+And('Click on filter of Location Ends with in search box and Verify the Result', () => {
+     oua.filterEndswithL()
+})
+And('Click on filter of Location Blank in search box and Verify the Result', () => {
+     oua.filterBlankL()
+})
+And('Click on filter of Location Not blank in search box and Verify the Result', () => {
+     oua.filterNotblankL()
+})

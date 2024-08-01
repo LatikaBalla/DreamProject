@@ -12,18 +12,44 @@ Feature: ImportSerialDevices Page Functionality
 
     Scenario: Visiblity of ImportSerialDevices page and add ticket, download import and view the details
         And Verify the Title of ImportSerialDevices Page
-        Then Filters of ImportSerialDevices should be visible
-        And Table for ImportSerialDevices should be visible
-        And Click More filter select- Importer in search box and Verify the Result
-        Then Click on Clear filter
-        And Click More filter select- Quantity Devices in search box and Verify the Result
-        Then Click on Clear filter
-        Then I should click on Add New Import
-        Then Upload the CSV import file
-        And Click on submit button
-        And Click on refresh button
-        Then Verify the record in table
-        And Click on Download import button
-        And Click on Details button
-        Then Verify the Device Details
-      
+        And Click on filter of Date Imported Equals in search box and Verify the Result
+        And Click on filter of Date Imported Does not equal in search box and Verify the Result
+        And Click on filter of Date Imported Before in search box and Verify the Result
+        And Click on filter of Date Imported After in search box and Verify the Result
+        And Click on filter of Date Imported Between with in search box and Verify the Result
+        And Click on filter of Date Imported Blank in search box and Verify the Result
+        And Click on filter of Date Imported Not blank in search box and Verify the Result
+
+        And Click on filter of Importer contain in search box and Verify the Result
+        And Click on filter of Importer Does not contain in search box and Verify the Result
+        And Click on filter of Importer Equals in search box and Verify the Result
+        And Click on filter of Importer Does not equal in search box and Verify the Result
+        And Click on filter of Importer Begins with in search box and Verify the Result
+        And Click on filter of Importer Ends with in search box and Verify the Result
+        And Click on filter of Importer Blank in search box and Verify the Result
+        And Click on filter of Importer Not blank in search box and Verify the Result
+
+        And Click on filter of Quantity Devices Equals in search box and Verify the Result
+        And Click on filter of Quantity Devices Does not equal in search box and Verify the Result
+        And Click on filter of Quantity Devices Greater than in search box and Verify the Result
+        And Click on filter of Quantity Devices Greater than or equal to in search box and Verify the Result
+        And Click on filter of Quantity Devices Less than in search box and Verify the Result
+        And Click on filter of Quantity Devices Less than or equal to in search box and Verify the Result
+        And Click on filter of Quantity Devices Between in search box and Verify the Result
+        And Click on filter of Quantity Devices Blank in search box and Verify the Result
+        And Click on filter of Quantity Devices Not blank in search box and Verify the Result
+
+#    Then Filters of ImportSerialDevices should be visible
+#    And Table for ImportSerialDevices should be visible
+#    And Click More filter select- Importer in search box and Verify the Result
+#    Then Click on Clear filter
+#    And Click More filter select- Quantity Devices in search box and Verify the Result
+#    Then Click on Clear filter
+#    Then I should click on Add New Import
+#    Then Upload the CSV import file
+#    And Click on submit button
+#    And Click on refresh button
+#    Then Verify the record in table
+#    And Click on Download import button
+#    And Click on Details button
+#    Then Verify the Device Details

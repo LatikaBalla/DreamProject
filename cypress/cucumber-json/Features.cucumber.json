@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2679000000
+              "duration": 5645000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7870000000
+              "duration": 12627000000
             }
           },
           {
@@ -43,8 +43,8 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "failed",
-              "duration": 8241000000,
-              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 3 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click\n    at mouseAction (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111447:68)\n    at Context.click (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111611:14)\n    at wrapped (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at FeaturesActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/FeaturesActions.js:11:28)\n    at Context.eval (cypress/integration/Features/Features.spec.js:16:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "duration": 12062000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Remind me Later' but never did.\n    at FeaturesActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/FeaturesActions.js:11:11)\n    at Context.eval (cypress/integration/Features/Features.spec.js:16:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {

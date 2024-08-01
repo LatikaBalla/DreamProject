@@ -10,9 +10,10 @@ export class ImportSerialDevicesActions {
         globalThis.isd = new ImportSerialDevicesElements();
     }
     closeTermsOfServiceWindow() {
-        cy.contains('Remind me Later').click({ force: true }) 
-        dash.termsElement().contains('Dismiss').click({ force: true }) 
-       // dash.termsElement().click({ force: true })
+        cy.wait(6000)
+        dash.termsElement().contains('Dismiss').click({ force: true })
+        cy.wait(2000)
+        cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }
     clickOnManageDevices() {
         dash.managedevicesElement().click({ force: true })
@@ -40,8 +41,8 @@ export class ImportSerialDevicesActions {
     }
     clickOnSubmitButton() {
         isd.submitElement().click({ force: true })
-       // cy.wait(5000)
-      //  dash.messageElement().should('contain', 'New import has been submitted')
+        // cy.wait(5000)
+        //  dash.messageElement().should('contain', 'New import has been submitted')
     }
     clickOnRefreshButton() {
         isd.refreshbtnElement().click({ force: true })
@@ -67,21 +68,261 @@ export class ImportSerialDevicesActions {
     clickOnClearFilter() {
         isd.clearFilterElement().click({ force: true })
     }
-    selectFilterImporter() {
-        isd.fieldNameElement().select(1).invoke("val").should("eq", 'importer', { force: true })
-        isd.fieldOpElement().select('does_not_contain', { force: true }).should('have.value', 'does_not_contain')
+    //Date Imported
+    filtercontainDate() {
+        isd.addFilterElement().eq(0).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(0).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.importDevice.importdate)
+        isd.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.importDevice.importdate1)
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterEqualsDate() {
+        isd.addFilterElement().eq(0).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(0).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.importDevice.importdate)
+        isd.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.importDevice.importdate1)
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterNotequalDate() {
+        isd.addFilterElement().eq(0).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(1).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.importDevice.importdate)
+        isd.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.importDevice.importdate1)
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterBeforeDate() {
+        isd.addFilterElement().eq(0).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(2).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.importDevice.importdate)
+        isd.applyElement().click({ force: true })
+        // cy.get('[row-index="0"]').should('contain', tdata.importDevice.importdate)
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterAfterDate() {
+        isd.addFilterElement().eq(0).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(3).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.importDevice.importdate)
+        isd.applyElement().click({ force: true })
+        // cy.get('[row-index="0"]').should('contain', '2024-07-15')
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterBetweenDate() {
+        isd.addFilterElement().eq(0).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(4).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.importDevice.importdate)
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.importDevice.importdate, { force: true })
+        isd.applyElement().click({ force: true })
+        //  cy.get('[row-index="0"]').should('contain', tdata.importDevice.importdate)
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterBlankDate() {
+        isd.addFilterElement().eq(0).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(5).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.importDevice.importdate, { force: true })
+        isd.applyElement().click({ force: true })
+        // cy.get('[row-index="0"]').should('contain', tdata.importDevice.importdate1)
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterNotblankDate() {
+        isd.addFilterElement().eq(0).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(6).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.importDevice.importdate, { force: true })
+        isd.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.importDevice.importdate1)
+        isd.clearFilterElement().click({ force: true })
+    }
+    //Importer
+    filtercontainI() {
+        cy.wait(1000)
+        isd.addFilterElement().eq(1).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(0).click({ force: true })
         isd.fieldValueElement().type(tdata.importDevice.importer)
         isd.applyElement().click({ force: true })
-        cy.get('tr td').eq(1).should('not.contain', tdata.importDevice.importer)
+        cy.get('[row-index="0"]').should('contain', tdata.importDevice.importer)
+        isd.clearFilterElement().click({ force: true })
     }
-    selectFilterQuantityDevices() {
-        cy.contains('+ Add Filter Group').click({ force: true })
-        isd.fieldNameElement().select(2).invoke("val").should("eq", "quantity_devices")
-        isd.fieldOpElement().select('does_not_contain', { force: true })
+    filterDoesnotcontainI() {
+        isd.addFilterElement().eq(1).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(1).click({ force: true })
+        isd.fieldValueElement().eq(0).type(tdata.importDevice.importer)
+        isd.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.importDevice.importer)
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterEqualsI() {
+        isd.addFilterElement().eq(1).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(2).click({ force: true })
+        isd.fieldValueElement().eq(0).type(tdata.importDevice.importer)
+        isd.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.importDevice.importer)
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterNotequalI() {
+        isd.addFilterElement().eq(1).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(3).click({ force: true })
+        isd.fieldValueElement().eq(0).type(tdata.importDevice.importer)
+        isd.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.importDevice.importer)
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithI() {
+        isd.addFilterElement().eq(1).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(4).click({ force: true })
+        isd.fieldValueElement().eq(0).type('Conan')
+        isd.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'Conan')
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterEndswithI() {
+        isd.addFilterElement().eq(1).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(5).click({ force: true })
+        isd.fieldValueElement().eq(0).type('Malady')
+        isd.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'Malady')
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterBlankI() {
+        isd.addFilterElement().eq(1).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(6).click({ force: true })
+        isd.fieldValueElement().eq(0).type(' ', { force: true })
+        isd.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterNotblankI() {
+        isd.addFilterElement().eq(1).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(7).click({ force: true })
+        isd.fieldValueElement().eq(1).type(tdata.importDevice.importer, { force: true })
+        isd.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.importDevice.importer)
+        isd.clearFilterElement().click({ force: true })
+    }
+    //q
+    filtercontainQ() {
+        cy.wait(2000)
+        isd.addFilterElement().eq(2).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(0).click({ force: true })
         isd.fieldValueElement().type(tdata.importDevice.quantitydevices)
         isd.applyElement().click({ force: true })
-        cy.get('tr td').eq(2).should('not.contain', tdata.importDevice.quantitydevices)
+        cy.get('.ag-row-first > [col-id="quantity_devices"]').eq(1).then(($el) => {
+            let value = parseInt($el.text());
+            expect(value).to.be.equal(2);
+        })
+        isd.clearFilterElement().click({ force: true })
     }
-
+    filterDoesnotequalQ() {
+        isd.addFilterElement().eq(2).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(1).click({ force: true })
+        isd.fieldValueElement().eq(0).clear({ force: true }).type(tdata.importDevice.quantitydevices)
+        isd.applyElement().click({ force: true })
+        cy.get('.ag-row-first > [col-id="quantity_devices"]').then(($el) => {
+            const value = parseInt($el.text());
+            expect(value).to.not.equal(2);
+        })
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterGreaterthanQ() {
+        isd.addFilterElement().eq(2).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(2).click({ force: true })
+        isd.fieldValueElement().eq(0).clear({ force: true }).type(tdata.importDevice.quantitydevices)
+        isd.applyElement().click({ force: true })
+        cy.get('.ag-row-first > [col-id="quantity_devices"]').then(($el) => {
+            const value = parseInt($el.text());
+            expect(value).to.be.greaterThan(2);
+        })
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterGreaterequalQ() {
+        isd.addFilterElement().eq(2).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(3).click({ force: true })
+        isd.fieldValueElement().eq(0).clear({ force: true }).type(tdata.importDevice.quantitydevices)
+        isd.applyElement().click({ force: true })
+        cy.get('.ag-row-first > [col-id="quantity_devices"]').then(($el) => {
+            const value = parseInt($el.text());
+            expect(value).to.be.gte(2);
+        })
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterLessthanQ() {
+        isd.addFilterElement().eq(2).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(4).click({ force: true })
+        isd.fieldValueElement().eq(0).clear({ force: true }).type(tdata.importDevice.quantitydevices)
+        isd.applyElement().click({ force: true })
+        cy.get('.ag-row-first > [col-id="quantity_devices"]').eq(1).then(($el) => {
+            const value = parseInt($el.text());
+            expect(value).to.be.lessThan(2);
+        })
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterLessequalQ() {
+        isd.addFilterElement().eq(2).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(5).click({ force: true })
+        isd.fieldValueElement().eq(0).clear({ force: true }).type(tdata.importDevice.quantitydevices)
+        isd.applyElement().click({ force: true })
+        cy.get('.ag-row-first > [col-id="quantity_devices"]').eq(0).then(($el) => {
+            const value = parseInt($el.text());
+            expect(value).to.be.lte(2);
+        })
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterBetweenQ() {
+        isd.addFilterElement().eq(2).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(6).click({ force: true })
+        cy.get('[placeholder="From"]').type(tdata.importDevice.quantitydevices1)
+        cy.get('[placeholder="To"]').type(tdata.importDevice.quantitydevices)
+        isd.applyElement().click({ force: true })
+        cy.get('.ag-row-first > [col-id="quantity_devices"]').eq(0).then(($el) => {
+            const value = parseInt($el.text());
+            expect(value).to.be.within(0, 2);
+        })
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterBlankQ() {
+        isd.addFilterElement().eq(2).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(7).click({ force: true })
+        isd.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+        isd.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        isd.clearFilterElement().click({ force: true })
+    }
+    filterNotblankQ() {
+        isd.addFilterElement().eq(2).click({ force: true })
+        isd.fieldNameElement().eq(1).click({ force: true })
+        isd.fieldOpElement().eq(8).click({ force: true })
+        isd.fieldValueElement().eq(1).clear({ force: true }).type(tdata.importDevice.quantitydevices, { force: true })
+        isd.applyElement().click({ force: true })
+        cy.get('.ag-row-first > [col-id="quantity_devices"]').eq(1).then(($el) => {
+            const value = parseInt($el.text());
+            expect(value).to.be.equal(2);
+        })
+        isd.clearFilterElement().click({ force: true })
+    }
 }
 export default ImportSerialDevicesActions 
