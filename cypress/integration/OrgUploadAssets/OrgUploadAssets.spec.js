@@ -97,15 +97,6 @@ And('Verify the record is deleted successfully', () => {
 Then('Click on Clear filter', () => {
     oua.clickOnClearFilter()
 })
-And('Click More filter select- Description in search box and Verify the Result', () => {
-    oua.clickOnMoreFilter()
-    oua.selectFilterDescription()
-    cy.wait(100)
-})
-And('Click More filter select- Acquire Location in search box and Verify the Result', () => {
-    oua.clickOnMoreFilter()
-    oua.selectFilterAcquireLocation()
-})
 //description
 And('Click on filter of Description contain in search box and Verify the Result', () => {
      oua.filtercontainD()

@@ -223,12 +223,6 @@ And('Click on filter of Building Blank in search box and Verify the Result', () 
 And('Click on filter of Building Not blank in search box and Verify the Result', () => {
     rb.filterNotblankB()
 })
-// Then('Click More filter select- Shipping From Cost in search box and Verify the Result', () => {
-//     rb.selectFilterShippingFromCost()
-// })
-// And('Click More filter select- Shipped From Date in search box and Verify the Result', () => {
-//     rb.selectFilterShippedFromDate()
-// })
 //BT
 And('Click on filter of Box_type contain in search box and Verify the Result', () => {
     rb.selectFilterBoxtype()
@@ -270,15 +264,6 @@ And('Click on filter of shipping_box_status Shipping From District with in searc
 And('Click on filter of shipping_box_status all checked with in search box and Verify the Result', () => {
     rb.filterCheckAll()
 })
-// And('Click on filter of shipping_box_status Ends with in search box and Verify the Result', () => {
-//     rb.filterEndswithSS()
-// })
-// And('Click on filter of shipping_box_status Blank in search box and Verify the Result', () => {
-//     rb.filterBlankSS()
-// })
-// And('Click on filter of shipping_box_status Not blank in search box and Verify the Result', () => {
-//     rb.filterNotblankSS()
-// })
 //CBY
 And('Click on filter of Created By contain in search box and Verify the Result', () => {
     rb.selectFilterCreatedby()

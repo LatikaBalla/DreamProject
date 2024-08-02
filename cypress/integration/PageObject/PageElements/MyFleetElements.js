@@ -56,13 +56,13 @@ export default class MyFleetElements {
             timeout: 30000,
         });
     }
-    morefiltersElement() {
-        return cy.contains(locator.myFleet.morefilters, {
+   addFilterElement() {
+        return cy.get(locator.myFleet.addFilter, {
             timeout: 30000,
         });
     }
-    clearfilterElement() {
-        return cy.contains(locator.myFleet.clearfilter, {
+    clearFilterElement() {
+        return cy.get(locator.myFleet.clearFilter, {
             timeout: 30000,
         });
     }

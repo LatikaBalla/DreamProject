@@ -119,27 +119,6 @@ export class OrgUploadAssetsActions {
     verifySearchResult() {
         cy.get('tbody tr').eq(0).find('td').eq(3).should('contain', tdata.addasset.location)
     }
-    clickOnMoreFilter() {
-        oua.addFilterElement().click({ force: true })
-    }
-    clickOnClearFilter() {
-        oua.clearFilterElement().click({ force: true })
-    }
-    selectFilterDescription() {
-        oua.fieldNameElement().select('description', { force: true })
-        oua.fieldOpElement().select('does_not_contain', { force: true })
-        oua.fieldValueElement().type(tdata.addasset.description)
-        oua.applyElement().click({ force: true })
-        cy.get('tr td').eq(1).should('not.contain', tdata.addasset.description)
-    }
-    selectFilterAcquireLocation() {
-        cy.contains('+ Add Filter Group').click({ force: true })
-        oua.fieldNameElement().select('acquire_location', { force: true })
-        oua.fieldOpElement().select('does_not_contain', { force: true })
-        oua.fieldValueElement().type(tdata.addasset.location)
-        oua.applyElement().click({ force: true })
-        cy.get('tr td').eq(3).should('not.contain', tdata.addasset.location)
-    }
 //descritpion
 filtercontainD() {
     cy.wait(3000)

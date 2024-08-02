@@ -194,3 +194,225 @@ Then('Update the note', () => {
 And('Verfiy Google data Record updated successfully', () => {
     mf.verifyGoogleUpdated()
 })
+//sn
+And('Click on filter of Serial Number contain in search box and Verify the Result', () => {
+    mf.selectFilterSerialNumber()
+})
+And('Click on filter of Serial Number Does not contain in search box and Verify the Result', () => {
+    mf.filterDoesnotcontainSN()
+})
+And('Click on filter of Serial Number Equals in search box and Verify the Result', () => {
+    mf.filterEqualsSN()
+})
+And('Click on filter of Serial Number Does not equal in search box and Verify the Result', () => {
+    mf.filterNotequalSN()
+})
+And('Click on filter of Serial Number Begins with in search box and Verify the Result', () => {
+    mf.filterBeginswithSN()
+})
+And('Click on filter of Serial Number Ends with in search box and Verify the Result', () => {
+    mf.filterEndswithSN()
+})
+And('Click on filter of Serial Number Blank in search box and Verify the Result', () => {
+    mf.filterBlankSN()
+})
+And('Click on filter of Serial Number Not blank in search box and Verify the Result', () => {
+    mf.filterNotblankSN()
+})
+//tag
+And('Click on filter of Asset tag contain in search box and Verify the Result', () => {
+    mf.selectFilterAssetTag()
+})
+And('Click on filter of Asset tag Does not contain in search box and Verify the Result', () => {
+    mf.filterDoesnotcontaintag()
+})
+And('Click on filter of Asset tag Equals in search box and Verify the Result', () => {
+    mf.filterEqualstag()
+})
+And('Click on filter of Asset tag Does not equal in search box and Verify the Result', () => {
+    mf.filterNotequaltag()
+})
+And('Click on filter of Asset tag Begins with in search box and Verify the Result', () => {
+    mf.filterBeginswithtag()
+})
+And('Click on filter of Asset tag Ends with in search box and Verify the Result', () => {
+    mf.filterEndswithtag()
+})
+And('Click on filter of Asset tag Blank in search box and Verify the Result', () => {
+    mf.filterBlanktag()
+})
+And('Click on filter of Asset tag Not blank in search box and Verify the Result', () => {
+    mf.filterNotblanktag()
+})
+//model
+And('Click on filter of Model contain in search box and Verify the Result', () => {
+    mf.filtercontainM()
+})
+And('Click on filter of Model Does not contain in search box and Verify the Result', () => {
+    mf.filterDoesnotcontainM()
+})
+And('Click on filter of Model Equals in search box and Verify the Result', () => {
+    mf.filterEqualsM()
+})
+And('Click on filter of Model Does not equal in search box and Verify the Result', () => {
+    mf.filterNotequalM()
+})
+And('Click on filter of Model Begins with in search box and Verify the Result', () => {
+    mf.filterBeginswithM()
+})
+And('Click on filter of Model Ends with in search box and Verify the Result', () => {
+    mf.filterEndswithM()
+})
+And('Click on filter of Model Blank in search box and Verify the Result', () => {
+    mf.filterBlankM()
+})
+And('Click on filter of Model Not blank in search box and Verify the Result', () => {
+    mf.filterNotblankM()
+})
+//sku
+And('Click on filter of SKU contain in search box and Verify the Result', () => {
+    mf.filtercontainSKU()
+})
+And('Click on filter of SKU Does not contain in search box and Verify the Result', () => {
+    mf.filterDoesnotcontainSKU()
+})
+And('Click on filter of SKU Equals in search box and Verify the Result', () => {
+    mf.filterEqualsSKU()
+})
+And('Click on filter of SKU Does not equal in search box and Verify the Result', () => {
+    mf.filterNotequalSKU()
+})
+And('Click on filter of SKU Begins with in search box and Verify the Result', () => {
+    mf.filterBeginswithSKU()
+})
+And('Click on filter of SKU Ends with in search box and Verify the Result', () => {
+    mf.filterEndswithSKU()
+})
+And('Click on filter of SKU Blank in search box and Verify the Result', () => {
+    mf.filterBlankSKU()
+})
+And('Click on filter of SKU Not blank in search box and Verify the Result', () => {
+    mf.filterNotblankSKU()
+})
+//b
+And('Click on filter of Building contain in search box and Verify the Result', () => {
+    mf.selectFilterBuilding()
+})
+And('Click on filter of Building Does not contain in search box and Verify the Result', () => {
+    mf.filterDoesnotcontainB()
+})
+And('Click on filter of Building Equals in search box and Verify the Result', () => {
+    mf.filterEqualsB()
+})
+And('Click on filter of Building Does not equal in search box and Verify the Result', () => {
+    mf.filterNotequalB()
+})
+And('Click on filter of Building Begins with in search box and Verify the Result', () => {
+    mf.filterBeginswithB()
+})
+And('Click on filter of Building Ends with in search box and Verify the Result', () => {
+    mf.filterEndswithB()
+})
+And('Click on filter of Building Blank in search box and Verify the Result', () => {
+    mf.filterBlankB()
+})
+And('Click on filter of Building Not blank in search box and Verify the Result', () => {
+    mf.filterNotblankB()
+})
+//user
+And('Click on filter of User contain in search box and Verify the Result', () => {
+    mf.filtercontainU()
+})
+And('Click on filter of User Does not contain in search box and Verify the Result', () => {
+    mf.filterDoesnotcontainU()
+})
+And('Click on filter of User Equals in search box and Verify the Result', () => {
+    mf.filterEqualsU()
+})
+And('Click on filter of User Does not equal in search box and Verify the Result', () => {
+    mf.filterNotequalU()
+})
+And('Click on filter of User Begins with in search box and Verify the Result', () => {
+    mf.filterBeginswithU()
+})
+And('Click on filter of User Ends with in search box and Verify the Result', () => {
+    mf.filterEndswithU()
+})
+And('Click on filter of User Blank in search box and Verify the Result', () => {
+    mf.filterBlankU()
+})
+And('Click on filter of User Not blank in search box and Verify the Result', () => {
+    mf.filterNotblankU()
+})
+//Warranty
+And('Click on filter of Warranty contain in search box and Verify the Result', () => {
+    mf.filtercontainW()
+})
+And('Click on filter of Warranty Does not contain in search box and Verify the Result', () => {
+    mf.filterDoesnotcontainW()
+})
+And('Click on filter of Warranty Equals in search box and Verify the Result', () => {
+    mf.filterEqualsW()
+})
+And('Click on filter of Warranty Does not equal in search box and Verify the Result', () => {
+    mf.filterNotequalW()
+})
+And('Click on filter of Warranty Begins with in search box and Verify the Result', () => {
+    mf.filterBeginswithW()
+})
+And('Click on filter of Warranty Ends with in search box and Verify the Result', () => {
+    mf.filterEndswithW()
+})
+And('Click on filter of Warranty Blank in search box and Verify the Result', () => {
+    mf.filterBlankW()
+})
+And('Click on filter of Warranty Not blank in search box and Verify the Result', () => {
+    mf.filterNotblankW()
+})
+//Organizational Unit
+And('Click on filter of Organizational Unit contain in search box and Verify the Result', () => {
+    mf.filtercontainOU()
+})
+And('Click on filter of Organizational Unit Does not contain in search box and Verify the Result', () => {
+    mf.filterDoesnotcontainOU()
+})
+And('Click on filter of Organizational Unit Equals in search box and Verify the Result', () => {
+    mf.filterEqualsOU()
+})
+And('Click on filter of Organizational Unit Does not equal in search box and Verify the Result', () => {
+    mf.filterNotequalOU()
+})
+And('Click on filter of Organizational Unit Begins with in search box and Verify the Result', () => {
+    mf.filterBeginswithOU()
+})
+And('Click on filter of Organizational Unit Ends with in search box and Verify the Result', () => {
+    mf.filterEndswithOU()
+})
+And('Click on filter of Organizational Unit Blank in search box and Verify the Result', () => {
+    mf.filterBlankOU()
+})
+And('Click on filter of Organizational Unit Not blank in search box and Verify the Result', () => {
+    mf.filterNotblankOU()
+})
+//Warranty End Date
+And('Click on filter of Warranty End Date Equals in search box and Verify the Result', () => {
+    mf.filterEqualsDate()
+})
+And('Click on filter of Warranty End Date Does not equal in search box and Verify the Result', () => {
+    mf.filterNotequalDate()
+})
+And('Click on filter of Warranty End Date Before in search box and Verify the Result', () => {
+    mf.filterBeforeDate()
+})
+And('Click on filter of Warranty End Date Between in search box and Verify the Result', () => {
+    mf.filterBetweenDate()
+})
+And('Click on filter of Warranty End Date After in search box and Verify the Result', () => {
+    mf.filterAfterDate()
+})
+And('Click on filter of Warranty End Date Blank in search box and Verify the Result', () => {
+    mf.filterBlankDate()
+})
+And('Click on filter of Warranty End Date Not blank in search box and Verify the Result', () => {
+    mf.filterNotblankDate()
+})
