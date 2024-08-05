@@ -184,7 +184,7 @@ export class MyFleetActions {
 
     }
     clickOnRetiredTab() {
-        cy.get('[data-testid="tabDeactivate"]').click({ force: true })
+        cy.get('[data-test-id="tabDeactivate"]').click({ force: true })
     }
     clickOnCPUStatus() {
         cy.get('[type="button"]').contains('CPU Status').click({ force: true })
@@ -878,10 +878,668 @@ export class MyFleetActions {
        mf.addFilterElement().eq(8).click({ force: true })
        mf.fieldNameElement().eq(1).click({ force: true })
        mf.fieldOpElement().eq(6).click({ force: true })
-        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.myFleet.warrantyDate, { force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(2).type(tdata.myFleet.warrantyDate, { force: true })
        mf.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.warrantyDate1)
+        cy.get('[row-index="0"]').should('contain', tdata.myFleet.warrantyDate1)
        mf.clearFilterElement().click({ force: true })
     }
+    //Retire-------------------------
+      //SN
+      selectFilterSerialNumber1() {
+        cy.wait(2000)
+        mf.addFilterElement().eq(0).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(0).click({ force: true })
+        mf.fieldValueElement().type(tdata.myFleet.serialno1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.serialno1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterDoesnotcontainSN1() {
+        mf.addFilterElement().eq(0).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(1).click({ force: true })
+        mf.fieldValueElement().eq(0).type(tdata.myFleet.serialno1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.serialno1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterEqualsSN1() {
+        mf.addFilterElement().eq(0).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(2).click({ force: true })
+        mf.fieldValueElement().eq(0).type(tdata.myFleet.serialno1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.serialno1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterNotequalSN1() {
+        mf.addFilterElement().eq(0).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(3).click({ force: true })
+        mf.fieldValueElement().eq(0).type(tdata.myFleet.serialno1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('not.contain.value', tdata.myFleet.serialno1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterBeginswithSN1() {
+        mf.addFilterElement().eq(0).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(4).click({ force: true })
+        mf.fieldValueElement().eq(0).type('Serial')
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', 'Serial')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterEndswithSN1() {
+        mf.addFilterElement().eq(0).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(5).click({ force: true })
+        mf.fieldValueElement().eq(0).type('Test')
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', 'Test')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterBlankSN1() {
+        mf.addFilterElement().eq(0).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(6).click({ force: true })
+        mf.fieldValueElement().eq(0).type(' ', { force: true })
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', ' ')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterNotblankSN1() {
+        mf.addFilterElement().eq(0).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(7).click({ force: true })
+        mf.fieldValueElement().eq(1).type(tdata.myFleet.serialno1, { force: true })
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.serialno1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     //tag
+     selectFilterAssetTag1() {
+        cy.wait(2000)
+        mf.addFilterElement().eq(1).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(0).click({ force: true })
+        mf.fieldValueElement().type(tdata.myFleet.assettag1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.assettag1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterDoesnotcontaintag1() {
+        mf.addFilterElement().eq(1).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(1).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.assettag1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.assettag1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterEqualstag1() {
+        mf.addFilterElement().eq(1).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(2).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.assettag1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.assettag1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterNotequaltag1() {
+        mf.addFilterElement().eq(1).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(3).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.assettag1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('not.contain.value', tdata.myFleet.assettag1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterBeginswithtag1() {
+        mf.addFilterElement().eq(1).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(4).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type('Chr')
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', 'Chr')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterEndswithtag1() {
+        mf.addFilterElement().eq(1).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(5).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type('itty')
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', 'itty')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterBlanktag1() {
+        mf.addFilterElement().eq(1).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(6).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', ' ')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterNotblanktag1() {
+        mf.addFilterElement().eq(1).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(7).click({ force: true })
+        mf.fieldValueElement().eq(1).clear({ force: true }).type(tdata.myFleet.assettag1, { force: true })
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.assettag1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     //model
+     filtercontainM1() {
+        cy.wait(2000)
+        mf.addFilterElement().eq(2).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(0).click({ force: true })
+        mf.fieldValueElement().clear({ force: true }).type(tdata.myFleet.model1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.model1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterDoesnotcontainM1() {
+        mf.addFilterElement().eq(2).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(1).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.model1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.model1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterEqualsM1() {
+        mf.addFilterElement().eq(2).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(2).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.model1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.model1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterNotequalM1() {
+        mf.addFilterElement().eq(2).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(3).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.model1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('not.contain.value', tdata.myFleet.model1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterBeginswithM1() {
+        mf.addFilterElement().eq(2).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(4).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type('1234')
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', '1234')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterEndswithM1() {
+        mf.addFilterElement().eq(2).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(5).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type('Ab6')
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', 'Ab6')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterBlankM1() {
+        mf.addFilterElement().eq(2).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(6).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', ' ')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterNotblankM1() {
+        mf.addFilterElement().eq(2).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(7).click({ force: true })
+        mf.fieldValueElement().eq(1).clear({ force: true }).type(tdata.myFleet.model1, { force: true })
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.model1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     //SKU
+     filtercontainSKU1() {
+        cy.wait(2000)
+        mf.addFilterElement().eq(3).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(0).click({ force: true })
+        mf.fieldValueElement().clear({ force: true }).type(tdata.myFleet.sku1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.sku1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterDoesnotcontainSKU1() {
+        mf.addFilterElement().eq(3).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(1).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.sku1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.sku1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterEqualsSKU1() {
+        mf.addFilterElement().eq(3).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(2).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.sku1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.sku1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterNotequalSKU1() {
+        mf.addFilterElement().eq(3).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(3).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.sku1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('not.contain.value', tdata.myFleet.sku1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterBeginswithSKU1() {
+        mf.addFilterElement().eq(3).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(4).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type('abcd')
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', 'abcd')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterEndswithSKU1() {
+        mf.addFilterElement().eq(3).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(5).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type('efg')
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', 'efg')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterBlankSKU1() {
+        mf.addFilterElement().eq(3).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(6).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', ' ')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterNotblankSKU1() {
+        mf.addFilterElement().eq(3).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(7).click({ force: true })
+        mf.fieldValueElement().eq(1).clear({ force: true }).type(tdata.myFleet.sku1, { force: true })
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain',tdata.myFleet.sku1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     //b
+     selectFilterBuilding1() {
+        mf.addFilterElement().eq(4).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(0).click({ force: true })
+        mf.fieldValueElement().clear({ force: true }).type(tdata.myFleet.buildingname1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.buildingname1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterDoesnotcontainB1() {
+        mf.addFilterElement().eq(4).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(1).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.buildingname1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.buildingname1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterEqualsB1() {
+        mf.addFilterElement().eq(4).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(2).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.buildingname1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.buildingname1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterNotequalB1() {
+        mf.addFilterElement().eq(4).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(3).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.buildingname1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('not.contain.value', tdata.myFleet.buildingname1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterBeginswithB1() {
+        mf.addFilterElement().eq(4).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(4).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type('Ray')
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', 'Ray')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterEndswithB1() {
+        mf.addFilterElement().eq(4).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(5).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type('ation')
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', 'ation')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterBlankB1() {
+        mf.addFilterElement().eq(4).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(6).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', ' ')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterNotblankB1() {
+        mf.addFilterElement().eq(4).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(7).click({ force: true })
+        mf.fieldValueElement().eq(1).clear({ force: true }).type(tdata.myFleet.buildingname1, { force: true })
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.buildingname1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     //oU
+     filtercontainOU1() {
+        cy.wait(2000)
+        mf.addFilterElement().eq(5).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(0).click({ force: true })
+        mf.fieldValueElement().clear({ force: true }).type(tdata.myFleet.orgUnit1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.orgUnit1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterDoesnotcontainOU1() {
+        mf.addFilterElement().eq(5).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(1).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.orgUnit1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.orgUnit1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterEqualsOU1() {
+        mf.addFilterElement().eq(5).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(2).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.orgUnit1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.orgUnit1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterNotequalOU1() {
+        mf.addFilterElement().eq(5).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(3).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.orgUnit1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('not.contain.value', tdata.myFleet.orgUnit1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterBeginswithOU1() {
+        mf.addFilterElement().eq(5).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(4).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type('/')
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', '/')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterEndswithOU1() {
+        mf.addFilterElement().eq(5).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(5).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type('Users')
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', 'Users')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterBlankOU1() {
+        mf.addFilterElement().eq(5).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(6).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', ' ')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterNotblankOU1() {
+        mf.addFilterElement().eq(5).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(7).click({ force: true })
+        mf.fieldValueElement().eq(1).clear({ force: true }).type(tdata.myFleet.orgUnit1, { force: true })
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.orgUnit1)
+        mf.clearFilterElement().click({ force: true })
+     }
+      //user
+      filtercontainU1() {
+        cy.wait(2000)
+         mf.addFilterElement().eq(6).click({ force: true })
+         mf.fieldNameElement().eq(1).click({ force: true })
+         mf.fieldOpElement().eq(0).click({ force: true })
+         mf.fieldValueElement().clear({ force: true }).type(tdata.myFleet.user1)
+         mf.applyElement().click({ force: true })
+          cy.get('[row-index="0"]').should('contain', tdata.myFleet.user1)
+         mf.clearFilterElement().click({ force: true })
+      }
+      filterDoesnotcontainU1() {
+         mf.addFilterElement().eq(6).click({ force: true })
+         mf.fieldNameElement().eq(1).click({ force: true })
+         mf.fieldOpElement().eq(1).click({ force: true })
+         mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.user1)
+         mf.applyElement().click({ force: true })
+          cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.user1)
+         mf.clearFilterElement().click({ force: true })
+      }
+      filterEqualsU1() {
+         mf.addFilterElement().eq(6).click({ force: true })
+         mf.fieldNameElement().eq(1).click({ force: true })
+         mf.fieldOpElement().eq(2).click({ force: true })
+         mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.user1)
+         mf.applyElement().click({ force: true })
+          cy.get('[row-index="0"]').should('contain', tdata.myFleet.user1)
+         mf.clearFilterElement().click({ force: true })
+      }
+      filterNotequalU1() {
+         mf.addFilterElement().eq(6).click({ force: true })
+         mf.fieldNameElement().eq(1).click({ force: true })
+         mf.fieldOpElement().eq(3).click({ force: true })
+         mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.user1)
+         mf.applyElement().click({ force: true })
+          cy.get('[row-index="0"]').should('not.contain.value', tdata.myFleet.user1)
+         mf.clearFilterElement().click({ force: true })
+      }
+      filterBeginswithU1() {
+         mf.addFilterElement().eq(6).click({ force: true })
+         mf.fieldNameElement().eq(1).click({ force: true })
+         mf.fieldOpElement().eq(4).click({ force: true })
+         mf.fieldValueElement().eq(0).clear({ force: true }).type('Rob')
+         mf.applyElement().click({ force: true })
+          cy.get('[row-index="0"]').should('contain', 'Rob')
+         mf.clearFilterElement().click({ force: true })
+      }
+      filterEndswithU1() {
+         mf.addFilterElement().eq(6).click({ force: true })
+         mf.fieldNameElement().eq(1).click({ force: true })
+         mf.fieldOpElement().eq(5).click({ force: true })
+         mf.fieldValueElement().eq(0).clear({ force: true }).type('mas')
+         mf.applyElement().click({ force: true })
+          cy.get('[row-index="0"]').should('contain', 'mas')
+         mf.clearFilterElement().click({ force: true })
+      }
+      filterBlankU1() {
+         mf.addFilterElement().eq(6).click({ force: true })
+         mf.fieldNameElement().eq(1).click({ force: true })
+         mf.fieldOpElement().eq(6).click({ force: true })
+         mf.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+         mf.applyElement().click({ force: true })
+          cy.get('[row-index="0"]').should('contain', ' ')
+         mf.clearFilterElement().click({ force: true })
+      }
+      filterNotblankU1() {
+         mf.addFilterElement().eq(6).click({ force: true })
+         mf.fieldNameElement().eq(1).click({ force: true })
+         mf.fieldOpElement().eq(7).click({ force: true })
+         mf.fieldValueElement().eq(1).clear({ force: true }).type( tdata.myFleet.user1, { force: true })
+         mf.applyElement().click({ force: true })
+          cy.get('[row-index="0"]').should('contain',  tdata.myFleet.user1)
+         mf.clearFilterElement().click({ force: true })
+      }
+     //warranty
+     filtercontainW1() {
+        cy.wait(2000)
+        mf.addFilterElement().eq(7).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(0).click({ force: true })
+        mf.fieldValueElement().clear({ force: true }).type(tdata.myFleet.warranty1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.warranty1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterDoesnotcontainW1() {
+        mf.addFilterElement().eq(7).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(1).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.warranty1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.warranty1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterEqualsW1() {
+        mf.addFilterElement().eq(7).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(2).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.warranty1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.warranty1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterNotequalW1() {
+        mf.addFilterElement().eq(7).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(3).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.warranty1)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('not.contain.value', tdata.myFleet.warranty1)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterBeginswithW1() {
+        mf.addFilterElement().eq(7).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(4).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type('Vivac')
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', 'Vivac')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterEndswithW1() {
+        mf.addFilterElement().eq(7).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(5).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type('Warranty')
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', 'Warranty')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterBlankW1() {
+        mf.addFilterElement().eq(7).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(6).click({ force: true })
+        mf.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', ' ')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterNotblankW1() {
+        mf.addFilterElement().eq(7).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(7).click({ force: true })
+        mf.fieldValueElement().eq(1).clear({ force: true }).type(tdata.myFleet.warranty1, { force: true })
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain',tdata.myFleet.warranty1 )
+        mf.clearFilterElement().click({ force: true })
+     }
+     //date
+     filterEqualsDate1() {
+        cy.wait(2000)
+        mf.addFilterElement().eq(8).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(0).click({ force: true })
+         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.myFleet.warrantyDate2)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.warrantyDate3)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterNotequalDate1() {
+        mf.addFilterElement().eq(8).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(1).click({ force: true })
+         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.myFleet.warrantyDate2)
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('not.contain.value', tdata.myFleet.warrantyDate3)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterBeforeDate1() {
+        mf.addFilterElement().eq(8).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(2).click({ force: true })
+         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.myFleet.warrantyDate2)
+        mf.applyElement().click({ force: true })
+         // cy.get('[row-index="0"]').should('contain', tdata.myFleet.warrantyDate)
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterAfterDate1() {
+        mf.addFilterElement().eq(8).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(3).click({ force: true })
+         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.myFleet.warrantyDate2)
+        mf.applyElement().click({ force: true })
+         // cy.get('[row-index="0"]').should('contain', '2024-07-15')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterBetweenDate1() {
+        mf.addFilterElement().eq(8).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(3).click({ force: true })
+         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.myFleet.warrantyDate2)
+         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.myFleet.warrantyDate2, { force: true })
+        mf.applyElement().click({ force: true })
+         // cy.get('[row-index="0"]').should('contain', '2024-07-15')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterBlankDate1() {
+        mf.addFilterElement().eq(8).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(5).click({ force: true })
+         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.myFleet.warrantyDate2 ,{ force: true })
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', ' ')
+        mf.clearFilterElement().click({ force: true })
+     }
+     filterNotblankDate1() {
+        mf.addFilterElement().eq(8).click({ force: true })
+        mf.fieldNameElement().eq(1).click({ force: true })
+        mf.fieldOpElement().eq(6).click({ force: true })
+         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.myFleet.warrantyDate2, { force: true })
+        mf.applyElement().click({ force: true })
+         cy.get('[row-index="0"]').should('contain', tdata.myFleet.warrantyDate3)
+        mf.clearFilterElement().click({ force: true })
+     }
 }
 export default MyFleetActions 

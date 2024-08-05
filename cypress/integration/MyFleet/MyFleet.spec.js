@@ -416,3 +416,226 @@ And('Click on filter of Warranty End Date Blank in search box and Verify the Res
 And('Click on filter of Warranty End Date Not blank in search box and Verify the Result', () => {
     mf.filterNotblankDate()
 })
+//Retire--------------------------------------------------------
+//sn
+And('Click on filter of Serial Number contain in search box and Verify the Result in Retired', () => {
+    mf.selectFilterSerialNumber1()
+})
+And('Click on filter of Serial Number Does not contain in search box and Verify the Result in Retired', () => {
+    mf.filterDoesnotcontainSN1()
+})
+And('Click on filter of Serial Number Equals in search box and Verify the Result in Retired', () => {
+    mf.filterEqualsSN1()
+})
+And('Click on filter of Serial Number Does not equal in search box and Verify the Result in Retired', () => {
+    mf.filterNotequalSN1()
+})
+And('Click on filter of Serial Number Begins with in search box and Verify the Result in Retired', () => {
+    mf.filterBeginswithSN1()
+})
+And('Click on filter of Serial Number Ends with in search box and Verify the Result in Retired', () => {
+    mf.filterEndswithSN1()
+})
+And('Click on filter of Serial Number Blank in search box and Verify the Result in Retired', () => {
+    mf.filterBlankSN1()
+})
+And('Click on filter of Serial Number Not blank in search box and Verify the Result in Retired', () => {
+    mf.filterNotblankSN1()
+})
+//tag
+And('Click on filter of Asset tag contain in search box and Verify the Result in Retired', () => {
+    mf.selectFilterAssetTag1()
+})
+And('Click on filter of Asset tag Does not contain in search box and Verify the Result in Retired', () => {
+    mf.filterDoesnotcontaintag1()
+})
+And('Click on filter of Asset tag Equals in search box and Verify the Result in Retired', () => {
+    mf.filterEqualstag1()
+})
+And('Click on filter of Asset tag Does not equal in search box and Verify the Result in Retired', () => {
+    mf.filterNotequaltag1()
+})
+And('Click on filter of Asset tag Begins with in search box and Verify the Result in Retired', () => {
+    mf.filterBeginswithtag1()
+})
+And('Click on filter of Asset tag Ends with in search box and Verify the Result in Retired', () => {
+    mf.filterEndswithtag1()
+})
+And('Click on filter of Asset tag Blank in search box and Verify the Result in Retired', () => {
+    mf.filterBlanktag1()
+})
+And('Click on filter of Asset tag Not blank in search box and Verify the Result in Retired', () => {
+    mf.filterNotblanktag1()
+})
+//model
+And('Click on filter of Model contain in search box and Verify the Result in Retired', () => {
+    mf.filtercontainM1()
+})
+And('Click on filter of Model Does not contain in search box and Verify the Result in Retired', () => {
+    mf.filterDoesnotcontainM1()
+})
+And('Click on filter of Model Equals in search box and Verify the Result in Retired', () => {
+    mf.filterEqualsM1()
+})
+And('Click on filter of Model Does not equal in search box and Verify the Result in Retired', () => {
+    mf.filterNotequalM1()
+})
+And('Click on filter of Model Begins with in search box and Verify the Result in Retired', () => {
+    mf.filterBeginswithM1()
+})
+And('Click on filter of Model Ends with in search box and Verify the Result in Retired', () => {
+    mf.filterEndswithM1()
+})
+And('Click on filter of Model Blank in search box and Verify the Result in Retired', () => {
+    mf.filterBlankM1()
+})
+And('Click on filter of Model Not blank in search box and Verify the Result in Retired', () => {
+    mf.filterNotblankM1()
+})
+//sku
+And('Click on filter of SKU contain in search box and Verify the Result in Retired', () => {
+    mf.filtercontainSKU1()
+})
+And('Click on filter of SKU Does not contain in search box and Verify the Result in Retired' , () => {
+    mf.filterDoesnotcontainSKU1()
+})
+And('Click on filter of SKU Equals in search box and Verify the Result in Retired', () => {
+    mf.filterEqualsSKU1()
+})
+And('Click on filter of SKU Does not equal in search box and Verify the Result in Retired', () => {
+    mf.filterNotequalSKU1()
+})
+And('Click on filter of SKU Begins with in search box and Verify the Result in Retired', () => {
+    mf.filterBeginswithSKU1()
+})
+And('Click on filter of SKU Ends with in search box and Verify the Result in Retired', () => {
+    mf.filterEndswithSKU1()
+})
+And('Click on filter of SKU Blank in search box and Verify the Result in Retired', () => {
+    mf.filterBlankSKU1()
+})
+And('Click on filter of SKU Not blank in search box and Verify the Result in Retired', () => {
+    mf.filterNotblankSKU1()
+})
+//b
+And('Click on filter of Building contain in search box and Verify the Result in Retired', () => {
+    mf.selectFilterBuilding1()
+})
+And('Click on filter of Building Does not contain in search box and Verify the Result in Retired', () => {
+    mf.filterDoesnotcontainB1()
+})
+And('Click on filter of Building Equals in search box and Verify the Result in Retired', () => {
+    mf.filterEqualsB1()
+})
+And('Click on filter of Building Does not equal in search box and Verify the Result in Retired', () => {
+    mf.filterNotequalB1()
+})
+And('Click on filter of Building Begins with in search box and Verify the Result in Retired', () => {
+    mf.filterBeginswithB1()
+})
+And('Click on filter of Building Ends with in search box and Verify the Result in Retired', () => {
+    mf.filterEndswithB1()
+})
+And('Click on filter of Building Blank in search box and Verify the Result in Retired', () => {
+    mf.filterBlankB1()
+})
+And('Click on filter of Building Not blank in search box and Verify the Result in Retired', () => {
+    mf.filterNotblankB1()
+})
+//user
+And('Click on filter of User contain in search box and Verify the Result in Retired', () => {
+    mf.filtercontainU1()
+})
+And('Click on filter of User Does not contain in search box and Verify the Result in Retired', () => {
+    mf.filterDoesnotcontainU1()
+})
+And('Click on filter of User Equals in search box and Verify the Result in Retired', () => {
+    mf.filterEqualsU1()
+})
+And('Click on filter of User Does not equal in search box and Verify the Result in Retired', () => {
+    mf.filterNotequalU1()
+})
+And('Click on filter of User Begins with in search box and Verify the Result in Retired', () => {
+    mf.filterBeginswithU1()
+})
+And('Click on filter of User Ends with in search box and Verify the Result in Retired', () => {
+    mf.filterEndswithU1()
+})
+And('Click on filter of User Blank in search box and Verify the Result in Retired', () => {
+    mf.filterBlankU1()
+})
+And('Click on filter of User Not blank in search box and Verify the Result in Retired', () => {
+    mf.filterNotblankU1()
+})
+//Warranty
+And('Click on filter of Warranty contain in search box and Verify the Result in Retired', () => {
+    mf.filtercontainW1()
+})
+And('Click on filter of Warranty Does not contain in search box and Verify the Result in Retired', () => {
+    mf.filterDoesnotcontainW1()
+})
+And('Click on filter of Warranty Equals in search box and Verify the Result in Retired', () => {
+    mf.filterEqualsW1()
+})
+And('Click on filter of Warranty Does not equal in search box and Verify the Result in Retired', () => {
+    mf.filterNotequalW1()
+})
+And('Click on filter of Warranty Begins with in search box and Verify the Result in Retired', () => {
+    mf.filterBeginswithW1()
+})
+And('Click on filter of Warranty Ends with in search box and Verify the Result in Retired', () => {
+    mf.filterEndswithW1()
+})
+And('Click on filter of Warranty Blank in search box and Verify the Result in Retired', () => {
+    mf.filterBlankW1()
+})
+And('Click on filter of Warranty Not blank in search box and Verify the Result in Retired', () => {
+    mf.filterNotblankW1()
+})
+//Organizational Unit
+And('Click on filter of Organizational Unit contain in search box and Verify the Result in Retired', () => {
+    mf.filtercontainOU1()
+})
+And('Click on filter of Organizational Unit Does not contain in search box and Verify the Result in Retired', () => {
+    mf.filterDoesnotcontainOU1()
+})
+And('Click on filter of Organizational Unit Equals in search box and Verify the Result in Retired', () => {
+    mf.filterEqualsOU1()
+})
+And('Click on filter of Organizational Unit Does not equal in search box and Verify the Result in Retired', () => {
+    mf.filterNotequalOU1()
+})
+And('Click on filter of Organizational Unit Begins with in search box and Verify the Result in Retired', () => {
+    mf.filterBeginswithOU1()
+})
+And('Click on filter of Organizational Unit Ends with in search box and Verify the Result in Retired', () => {
+    mf.filterEndswithOU1()
+})
+And('Click on filter of Organizational Unit Blank in search box and Verify the Result in Retired', () => {
+    mf.filterBlankOU1()
+})
+And('Click on filter of Organizational Unit Not blank in search box and Verify the Result in Retired', () => {
+    mf.filterNotblankOU1()
+})
+//Warranty End Date
+And('Click on filter of Warranty End Date Equals in search box and Verify the Result in Retired', () => {
+    mf.filterEqualsDate1()
+})
+And('Click on filter of Warranty End Date Does not equal in search box and Verify the Result in Retired', () => {
+    mf.filterNotequalDate1()
+})
+And('Click on filter of Warranty End Date Before in search box and Verify the Result in Retired', () => {
+    mf.filterBeforeDate1()
+})
+And('Click on filter of Warranty End Date Between in search box and Verify the Result in Retired', () => {
+    mf.filterBetweenDate1()
+})
+And('Click on filter of Warranty End Date After in search box and Verify the Result in Retired', () => {
+    mf.filterAfterDate1()
+})
+And('Click on filter of Warranty End Date Blank in search box and Verify the Result in Retired', () => {
+    mf.filterBlankDate1()
+})
+And('Click on filter of Warranty End Date Not blank in search box and Verify the Result in Retired', () => {
+    mf.filterNotblankDate1()
+})
