@@ -148,6 +148,7 @@ export class RepairTicketsActions {
     }
     //sn
     selectFilterSerialNumber() {
+        cy.wait(1000)
         rt.addFilterElement().eq(2).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(0).click({ force: true })
@@ -157,6 +158,7 @@ export class RepairTicketsActions {
         rt.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainSN() {
+        cy.wait(1000)
         rt.addFilterElement().eq(2).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(1).click({ force: true })
@@ -855,6 +857,7 @@ export class RepairTicketsActions {
         cy.get('[id="image"]').attachFile('image1.jpeg', { force: true })
         //rt.uploadimageElement().contains('Upload From Gallery').click({ force: true })
         // cy.get('[alt="Profile"]').attachFile('image1.jpeg', { force: true })
+        cy.wait(100)
         rt.imagedescriptionElement().type('Testing Image')
         rt.updateimageElement().contains('Upload Image').click({ force: true })
         // dash.messageElement().should('contain', 'Image Created')

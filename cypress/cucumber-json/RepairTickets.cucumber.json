@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 11292000000
+              "duration": 3510000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9139000000
+              "duration": 6418000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 19247000000
+              "duration": 19275000000
             }
           },
           {
@@ -59,21 +59,41 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 103,
+            "line": 104,
             "name": "Click on view button",
             "result": {
               "status": "passed",
-              "duration": 3118000000
+              "duration": 1813000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 104,
+            "line": 105,
             "name": "Verify the Details of student repair ticket",
             "result": {
               "status": "passed",
-              "duration": 3958000000
+              "duration": 2541000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 106,
+            "name": "Click on Add Repair Image and Verify",
+            "result": {
+              "status": "passed",
+              "duration": 665000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 107,
+            "name": "Click on Add Note and Verify",
+            "result": {
+              "status": "passed",
+              "duration": 580000000
             }
           }
         ]

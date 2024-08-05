@@ -81,7 +81,7 @@ export class RepairBoxesActions {
     }
     verifyBoxDetails() {
         cy.wait(100)
-        cy.contains("Box Details").should('be.visible')
+        cy.contains("Box Details").scrollIntoView().should('be.visible')
     }
     clickOnAddTicket() {
         cy.wait(3000)
@@ -101,8 +101,8 @@ export class RepairBoxesActions {
         cy.get('tbody tr').eq(0).find('td').eq(7).scrollIntoView().contains('Details').click({ force: true })
     }
     verifyTicketDetails() {
-        cy.wait(2000)
-        cy.contains('Repair Ticket Details').should('be.visible')
+        cy.wait(3000)
+        cy.contains('Repair Ticket Details').scrollIntoView().should('be.visible')
     }
     clickOnBackButton() {
         dash.backArrowElement().click({ force: true })
@@ -223,7 +223,7 @@ export class RepairBoxesActions {
         cy.get('[placeholder="From"]').type(tdata.repairBox.repairbox1)
         cy.get('[placeholder="To"]').type(tdata.repairBox.repairbox)
         rb.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="record_id"]').eq(0).then(($el) => {
+        cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
             const value = parseInt($el.text());
             expect(value).to.be.within(9941, 10584);
         })

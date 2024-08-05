@@ -79,7 +79,7 @@ Feature: RepairBoxes Page Functionality
     And Click on filter of Last Modified Date Between in search box and Verify the Result
     And Click on filter of Last Modified Date Blank in search box and Verify the Result
     And Click on filter of Last Modified Date Not blank in search box and Verify the Result
-    Then I should click on create new Box
+     Then I should click on create new Box
     Then Enter weight and Standard Box Size
     And Select Pick-up site
     Then Check the need shipping box

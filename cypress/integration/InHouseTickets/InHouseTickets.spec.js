@@ -120,6 +120,31 @@ Then ('Updated to student successfully', () => {
 Then ('Updated to in house successfully', () => {
     iht.verifyUpdateInhouse()
 })
+//RI
+And('Click on filter of Record Id contain in search box and Verify the Result', () => {
+    iht.filtercontainRI()
+})
+And('Click on filter of Record Id Does not contain in search box and Verify the Result', () => {
+    iht.filterDoesnotcontainRI()
+})
+And('Click on filter of Record Id Equals in search box and Verify the Result', () => {
+    iht.filterEqualsRI()
+})
+And('Click on filter of Record Id Does not equal in search box and Verify the Result', () => {
+    iht.filterNotequalRI()
+})
+And('Click on filter of Record Id Begins with in search box and Verify the Result', () => {
+    iht.filterBeginswithRI()
+})
+And('Click on filter of Record Id Ends with in search box and Verify the Result', () => {
+    iht.filterEndswithRI()
+})
+And('Click on filter of Record Id Blank in search box and Verify the Result', () => {
+    iht.filterBlankRI()
+})
+And('Click on filter of Record Id Not blank in search box and Verify the Result', () => {
+    iht.filterNotblankRI()
+})
 //TN
 And('Click on filter of Ticket Number contain in search box and Verify the Result', () => {
     iht.selectFilterTicketNumber()
@@ -273,55 +298,59 @@ And('Click on filter of Asset tag Not blank in search box and Verify the Result'
     iht.filterNotblanktag()
 })
 //rs
-And('Click on filter of Repair status contain in search box and Verify the Result', () => {
-    iht.selectFilterRepairStatus()
+And('Click on filter of Repair status op1 in search box and Verify the Result', () => {
+    iht.filterOption1()
 })
-And('Click on filter of Repair status Does not contain in search box and Verify the Result', () => {
-    iht.filterDoesnotcontainRS()
+And('Click on filter of Repair status op2 in search box and Verify the Result', () => {
+    iht.filterOption2()
 })
-And('Click on filter of Repair status Equals in search box and Verify the Result', () => {
-    iht.filterEqualsRS()
+And('Click on filter of Repair status op3 in search box and Verify the Result', () => {
+    iht.filterOption3()
 })
-And('Click on filter of Repair status Does not equal in search box and Verify the Result', () => {
-    iht.filterNotequalRS()
+And('Click on filter of Repair status op4 in search box and Verify the Result', () => {
+    iht.filterOption4()
 })
-And('Click on filter of Repair status Begins with in search box and Verify the Result', () => {
-    iht.filterBeginswithRS()
+And('Click on filter of Repair status op5 in search box and Verify the Result', () => {
+    iht.filterOption5()
 })
-And('Click on filter of Repair status Ends with in search box and Verify the Result', () => {
-    iht.filterEndswithRS()
+And('Click on filter of Repair status op6 in search box and Verify the Result', () => {
+    iht.filterOption6()
 })
-And('Click on filter of Repair status Blank in search box and Verify the Result', () => {
-    iht.filterBlankRS()
+And('Click on filter of Repair status op7 in search box and Verify the Result', () => {
+    iht.filterOption7()
 })
-And('Click on filter of Repair status Not blank in search box and Verify the Result', () => {
-    iht.filterNotblankRS()
+And('Click on filter of Repair status op8 in search box and Verify the Result', () => {
+    iht.filterOption8()
+})
+And('Click on filter of Repair status op9 in search box and Verify the Result', () => {
+    iht.filterOption9()
+})
+And('Click on filter of Repair status op10 in search box and Verify the Result', () => {
+    iht.filterOption10()
 })
 //ws
-And('Click on filter of Warranty status contain in search box and Verify the Result', () => {
-    iht.selectFilterWarrantyStatus()
+And('Click on filter of In House status op1 in search box and Verify the Result', () => {
+    iht.filterOptionIhs1()
 })
-And('Click on filter of Warranty status Does not contain in search box and Verify the Result', () => {
-    iht.filterDoesnotcontainWS()
+And('Click on filter of In House status op2 in search box and Verify the Result', () => {
+    iht.filterOptionIhs2()
 })
-And('Click on filter of Warranty status Equals in search box and Verify the Result', () => {
-    iht.filterEqualsWS()
+And('Click on filter of In House status op3 in search box and Verify the Result', () => {
+    iht.filterOptionIhs3()
 })
-And('Click on filter of Warranty status Does not equal in search box and Verify the Result', () => {
-    iht.filterNotequalWS()
+And('Click on filter of In House status op4 in search box and Verify the Result', () => {
+    iht.filterOptionIhs4()
 })
-And('Click on filter of Warranty status Begins with in search box and Verify the Result', () => {
-    iht.filterBeginswithWS()
+And('Click on filter of In House status op5 in search box and Verify the Result', () => {
+    iht.filterOptionIhs5()
 })
-And('Click on filter of Warranty status Ends with in search box and Verify the Result', () => {
-    iht.filterEndswithWS()
+And('Click on filter of Warranty status search in search box and Verify the Result', () => {
+    iht.filterOptionWS1()
 })
-And('Click on filter of Warranty status Blank in search box and Verify the Result', () => {
-    iht.filterBlankWS()
+And('Click on filter of Warranty status Non Warranty in search box and Verify the Result', () => {
+    iht.filterOptionWS2()
 })
-And('Click on filter of Warranty status Not blank in search box and Verify the Result', () => {
-    iht.filterNotblankWS()
-})
+
 //cby
 And('Click on filter of Created By contain in search box and Verify the Result', () => {
     iht.selectFilterCreatedBy()

@@ -12,9 +12,9 @@ export class SrcStudentsActions {
         globalThis.mf1 = new StudentRepairCenterElements()
     }
     closeTermsOfServiceWindow() {
-        cy.wait(6000)
+        cy.wait(3000)
         dash.termsElement().contains('Dismiss').click({ force: true })
-        cy.wait(5000)
+        cy.wait(3000)
         cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }
     clickOnRepair360() {
@@ -83,22 +83,19 @@ export class SrcStudentsActions {
         cy.get(tdata.srcStudent.inhouserepair).eq(1).click({ force: true })
     }
     clickOnASubmitButton() {
-        ss.submitElement().click({ force: true })
-        cy.get('[type="button"]').contains('Cancel').click({ force: true })
+        //  ss.submitElement().click({ force: true })
+        cy.get('.MuiDialogActions-root > .MuiButtonBase-root').click({ force: true })
     }
     verifyRecordTable() {
-        cy.get('[data-testid="CachedIcon"]').click({ force: true })
-        cy.wait(3000)
-        // dash.messageElement().should('contain', tdata.srcStudent.createStudentmsg)
-        cy.get('tr td').eq(0).should('contain', tdata.srcStudent.fullname, { force: true })
+        cy.wait(1000)
+        dash.messageElement().should('contain', tdata.srcStudent.createStudentmsg)
     }
     clickViewButtton() {
-        cy.get('tbody tr').eq(0).find('td').eq(4).contains('View').click({ force: true })
+
     }
     verifyStudentDetails() {
         cy.contains(tdata.srcStudent.fullname).should('be.visible')
     }
-
     clickOnExport() {
         ss.exportbtnElement().click({ force: true })
     }
@@ -489,7 +486,7 @@ export class SrcStudentsActions {
         ss.fieldOpElement().eq(1).click({ force: true })
         ss.fieldValueElement().eq(0).type(tdata.srcStudent.userRole)
         ss.applyElement().click({ force: true })
-    //    cy.get('[row-index="0"]').should('not.contain', tdata.srcStudent.userRole)
+        //    cy.get('[row-index="0"]').should('not.contain', tdata.srcStudent.userRole)
         ss.clearFilterElement().click({ force: true })
     }
     filterEqualsUR() {

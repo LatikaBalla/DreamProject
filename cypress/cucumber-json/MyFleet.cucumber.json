@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 7734000000
+              "duration": 3278000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9292000000
+              "duration": 5128000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 15213000000
+              "duration": 15236000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 86000000
+              "duration": 75000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on MyFleet Tab",
             "result": {
               "status": "passed",
-              "duration": 1737000000
+              "duration": 923000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of MyFleet Page",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 14000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Click on filter of Serial Number contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1521000000
+              "duration": 1960000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Click on filter of Serial Number Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 711000000
+              "duration": 744000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click on filter of Serial Number Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 757000000
+              "duration": 781000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on filter of Serial Number Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 708000000
+              "duration": 696000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on filter of Serial Number Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 624000000
+              "duration": 629000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on filter of Serial Number Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 603000000
+              "duration": 630000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on filter of Serial Number Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 527000000
+              "duration": 614000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on filter of Serial Number Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 700000000
+              "duration": 706000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click on filter of Asset tag contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 653000000
+              "duration": 654000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on filter of Asset tag Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 746000000
+              "duration": 768000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click on filter of Asset tag Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 792000000
+              "duration": 786000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on filter of Asset tag Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 749000000
+              "duration": 746000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click on filter of Asset tag Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 731000000
+              "duration": 729000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on filter of Asset tag Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 729000000
+              "duration": 741000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on filter of Asset tag Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 694000000
+              "duration": 716000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Click on filter of Asset tag Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 752000000
+              "duration": 768000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Click on filter of Model contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1043000000
+              "duration": 1120000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Click on filter of Model Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 898000000
+              "duration": 979000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Click on filter of Model Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 955000000
+              "duration": 1019000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Click on filter of Model Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 820000000
+              "duration": 897000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Click on filter of Model Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 698000000
+              "duration": 710000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "Click on filter of Model Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 689000000
+              "duration": 686000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "Click on filter of Model Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 897000000
+              "duration": 908000000
             }
           },
           {
@@ -323,7 +323,7 @@
             "name": "Click on filter of SKU contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 813000000
+              "duration": 859000000
             }
           },
           {
@@ -333,7 +333,7 @@
             "name": "Click on filter of SKU Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 733000000
+              "duration": 749000000
             }
           },
           {
@@ -343,7 +343,7 @@
             "name": "Click on filter of SKU Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 831000000
+              "duration": 1031000000
             }
           },
           {
@@ -353,7 +353,7 @@
             "name": "Click on filter of SKU Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 734000000
+              "duration": 785000000
             }
           },
           {
@@ -363,7 +363,7 @@
             "name": "Click on filter of SKU Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 716000000
+              "duration": 739000000
             }
           },
           {
@@ -373,7 +373,7 @@
             "name": "Click on filter of SKU Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 717000000
+              "duration": 741000000
             }
           },
           {
@@ -383,7 +383,7 @@
             "name": "Click on filter of SKU Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 698000000
+              "duration": 713000000
             }
           },
           {
@@ -393,7 +393,7 @@
             "name": "Click on filter of SKU Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 822000000
+              "duration": 840000000
             }
           },
           {
@@ -403,7 +403,7 @@
             "name": "Click on filter of Building contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 859000000
+              "duration": 836000000
             }
           },
           {
@@ -413,7 +413,7 @@
             "name": "Click on filter of Building Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1127000000
+              "duration": 1163000000
             }
           },
           {
@@ -423,7 +423,7 @@
             "name": "Click on filter of Building Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 861000000
+              "duration": 868000000
             }
           },
           {
@@ -433,7 +433,7 @@
             "name": "Click on filter of Building Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 842000000
+              "duration": 877000000
             }
           },
           {
@@ -443,7 +443,7 @@
             "name": "Click on filter of Building Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 810000000
+              "duration": 925000000
             }
           },
           {
@@ -453,7 +453,7 @@
             "name": "Click on filter of Building Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 762000000
+              "duration": 828000000
             }
           },
           {
@@ -463,7 +463,7 @@
             "name": "Click on filter of Building Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 716000000
+              "duration": 767000000
             }
           },
           {
@@ -473,7 +473,7 @@
             "name": "Click on filter of Building Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 837000000
+              "duration": 858000000
             }
           },
           {
@@ -483,7 +483,7 @@
             "name": "Click on filter of Organizational Unit contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1183000000
+              "duration": 1301000000
             }
           },
           {
@@ -493,7 +493,7 @@
             "name": "Click on filter of Organizational Unit Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1211000000
+              "duration": 1296000000
             }
           },
           {
@@ -503,7 +503,7 @@
             "name": "Click on filter of Organizational Unit Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1267000000
+              "duration": 1292000000
             }
           },
           {
@@ -513,7 +513,7 @@
             "name": "Click on filter of Organizational Unit Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1238000000
+              "duration": 1383000000
             }
           },
           {
@@ -523,7 +523,7 @@
             "name": "Click on filter of Organizational Unit Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 716000000
+              "duration": 739000000
             }
           },
           {
@@ -533,7 +533,7 @@
             "name": "Click on filter of Organizational Unit Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1218000000
+              "duration": 1344000000
             }
           },
           {
@@ -543,7 +543,7 @@
             "name": "Click on filter of User contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 860000000
+              "duration": 1019000000
             }
           },
           {
@@ -553,7 +553,7 @@
             "name": "Click on filter of User Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 856000000
+              "duration": 1160000000
             }
           },
           {
@@ -563,7 +563,7 @@
             "name": "Click on filter of User Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 912000000
+              "duration": 1074000000
             }
           },
           {
@@ -573,7 +573,7 @@
             "name": "Click on filter of User Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 943000000
+              "duration": 1014000000
             }
           },
           {
@@ -583,7 +583,7 @@
             "name": "Click on filter of User Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 824000000
+              "duration": 992000000
             }
           },
           {
@@ -593,7 +593,7 @@
             "name": "Click on filter of User Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 795000000
+              "duration": 840000000
             }
           },
           {
@@ -603,7 +603,7 @@
             "name": "Click on filter of User Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 810000000
+              "duration": 910000000
             }
           },
           {
@@ -613,7 +613,7 @@
             "name": "Click on filter of User Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 885000000
+              "duration": 1051000000
             }
           },
           {
@@ -623,7 +623,7 @@
             "name": "Click on filter of Warranty contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1425000000
+              "duration": 1575000000
             }
           },
           {
@@ -633,7 +633,7 @@
             "name": "Click on filter of Warranty Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1387000000
+              "duration": 1545000000
             }
           },
           {
@@ -643,7 +643,7 @@
             "name": "Click on filter of Warranty Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1421000000
+              "duration": 1858000000
             }
           },
           {
@@ -653,7 +653,7 @@
             "name": "Click on filter of Warranty Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1400000000
+              "duration": 1533000000
             }
           },
           {
@@ -663,7 +663,7 @@
             "name": "Click on filter of Warranty Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 831000000
+              "duration": 996000000
             }
           },
           {
@@ -673,7 +673,7 @@
             "name": "Click on filter of Warranty Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 897000000
+              "duration": 1056000000
             }
           },
           {
@@ -683,7 +683,7 @@
             "name": "Click on filter of Warranty Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 778000000
+              "duration": 797000000
             }
           },
           {
@@ -693,7 +693,7 @@
             "name": "Click on filter of Warranty Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1414000000
+              "duration": 1506000000
             }
           },
           {
@@ -703,7 +703,7 @@
             "name": "Click on filter of Warranty End Date Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 889000000
+              "duration": 926000000
             }
           },
           {
@@ -713,7 +713,7 @@
             "name": "Click on filter of Warranty End Date Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 897000000
+              "duration": 982000000
             }
           },
           {
@@ -723,7 +723,7 @@
             "name": "Click on filter of Warranty End Date Before in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 963000000
+              "duration": 971000000
             }
           },
           {
@@ -733,7 +733,7 @@
             "name": "Click on filter of Warranty End Date After in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 922000000
+              "duration": 975000000
             }
           },
           {
@@ -743,7 +743,7 @@
             "name": "Click on filter of Warranty End Date Between in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1151000000
+              "duration": 1195000000
             }
           },
           {
@@ -753,7 +753,7 @@
             "name": "Click on filter of Warranty End Date Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 786000000
+              "duration": 805000000
             }
           },
           {
@@ -763,7 +763,157 @@
             "name": "Click on filter of Warranty End Date Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 801000000
+              "duration": 860000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 95,
+            "name": "Click on the add device",
+            "result": {
+              "status": "passed",
+              "duration": 151000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 96,
+            "name": "Enter Serial no and select device id",
+            "result": {
+              "status": "passed",
+              "duration": 2530000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 97,
+            "name": "Enter Asset Tag and Select student id",
+            "result": {
+              "status": "passed",
+              "duration": 1254000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 98,
+            "name": "Select lonar status and Device status",
+            "result": {
+              "status": "passed",
+              "duration": 1018000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 99,
+            "name": "Click on the Submit Button",
+            "result": {
+              "status": "passed",
+              "duration": 130000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 100,
+            "name": "Verify the device added successfully",
+            "result": {
+              "status": "passed",
+              "duration": 1362000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 101,
+            "name": "Click on Export To CSV",
+            "result": {
+              "status": "passed",
+              "duration": 923000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 102,
+            "name": "Click on deviceIcon and click on view Button",
+            "result": {
+              "status": "passed",
+              "duration": 5307000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 103,
+            "name": "Verify the General Device Information",
+            "result": {
+              "status": "passed",
+              "duration": 876000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 104,
+            "name": "Click on Edit button of General info",
+            "result": {
+              "status": "passed",
+              "duration": 136000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 105,
+            "name": "Update Asset tag and Click on save button",
+            "result": {
+              "status": "passed",
+              "duration": 621000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 106,
+            "name": "Verfiy General info Record updated successfully",
+            "result": {
+              "status": "passed",
+              "duration": 422000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 107,
+            "name": "Click on Edit button of Assignment",
+            "result": {
+              "status": "passed",
+              "duration": 125000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 108,
+            "name": "Update student, building, loner status and Click on save button",
+            "result": {
+              "status": "passed",
+              "duration": 1359000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 109,
+            "name": "Verfiy Assignment Record updated successfully",
+            "result": {
+              "status": "passed",
+              "duration": 437000000
             }
           }
         ]
@@ -771,7 +921,7 @@
       {
         "id": "myfleet--page-functionality;retired-visibility,add-device,add-more-filter,-view-,clear-filter-and-search",
         "keyword": "Scenario",
-        "line": 137,
+        "line": 135,
         "name": "Retired Visibility,add Device,add more filter, view ,Clear filter and Search",
         "tags": [],
         "type": "scenario",
@@ -783,7 +933,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2548000000
+              "duration": 3670000000
             }
           },
           {
@@ -793,7 +943,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6087000000
+              "duration": 6495000000
             }
           },
           {
@@ -803,7 +953,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 15270000000
+              "duration": 15249000000
             }
           },
           {
@@ -813,7 +963,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 86000000
+              "duration": 71000000
             }
           },
           {
@@ -823,64 +973,44 @@
             "name": "Click on MyFleet Tab",
             "result": {
               "status": "passed",
-              "duration": 670000000
+              "duration": 1343000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 138,
+            "line": 136,
             "name": "Click on Retired Tab",
             "result": {
               "status": "passed",
-              "duration": 61000000
+              "duration": 62000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 137,
+            "name": "Verify the Title of MyFleet Page",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 138,
+            "name": "Click on filter of Serial Number contain in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 2793000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 139,
-            "name": "Verify the Title of MyFleet Page",
-            "result": {
-              "status": "passed",
-              "duration": 13000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 140,
-            "name": "Click on filter of Serial Number contain in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 2785000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 141,
             "name": "Click on filter of Serial Number Does not contain in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 739000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 142,
-            "name": "Click on filter of Serial Number Equals in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 768000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 143,
-            "name": "Click on filter of Serial Number Does not equal in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
               "duration": 738000000
@@ -889,118 +1019,198 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 144,
+            "line": 140,
+            "name": "Click on filter of Serial Number Equals in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 775000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 141,
+            "name": "Click on filter of Serial Number Does not equal in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 730000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 142,
             "name": "Click on filter of Serial Number Begins with in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 632000000
+              "duration": 650000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 143,
+            "name": "Click on filter of Serial Number Ends with in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 689000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 144,
+            "name": "Click on filter of Serial Number Blank in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 532000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 145,
-            "name": "Click on filter of Serial Number Ends with in search box and Verify the Result in Retired",
+            "name": "Click on filter of Serial Number Not blank in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 687000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 146,
-            "name": "Click on filter of Serial Number Blank in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 535000000
+              "duration": 733000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 147,
-            "name": "Click on filter of Serial Number Not blank in search box and Verify the Result in Retired",
+            "name": "Click on filter of Asset tag contain in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 727000000
+              "duration": 2733000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 148,
+            "name": "Click on filter of Asset tag Does not contain in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 1218000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 149,
-            "name": "Click on filter of Asset tag contain in search box and Verify the Result in Retired",
+            "name": "Click on filter of Asset tag Equals in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 2703000000
+              "duration": 849000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 150,
-            "name": "Click on filter of Asset tag Does not contain in search box and Verify the Result in Retired",
+            "name": "Click on filter of Asset tag Does not equal in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 1047000000
+              "duration": 740000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 151,
-            "name": "Click on filter of Asset tag Equals in search box and Verify the Result in Retired",
+            "name": "Click on filter of Asset tag Begins with in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 751000000
+              "duration": 692000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 152,
-            "name": "Click on filter of Asset tag Does not equal in search box and Verify the Result in Retired",
+            "name": "Click on filter of Asset tag Ends with in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 701000000
+              "duration": 689000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 153,
-            "name": "Click on filter of Asset tag Begins with in search box and Verify the Result in Retired",
+            "name": "Click on filter of Asset tag Blank in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 655000000
+              "duration": 725000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 154,
-            "name": "Click on filter of Asset tag Ends with in search box and Verify the Result in Retired",
+            "name": "Click on filter of Asset tag Not blank in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 678000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 155,
-            "name": "Click on filter of Asset tag Blank in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 717000000
+              "duration": 749000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 156,
-            "name": "Click on filter of Asset tag Not blank in search box and Verify the Result in Retired",
+            "name": "Click on filter of Model contain in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 2793000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 157,
+            "name": "Click on filter of Model Does not contain in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 1127000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 158,
+            "name": "Click on filter of Model Equals in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 800000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 159,
+            "name": "Click on filter of Model Does not equal in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 873000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 160,
+            "name": "Click on filter of Model Begins with in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 786000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 161,
+            "name": "Click on filter of Model Ends with in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
               "duration": 734000000
@@ -1009,188 +1219,108 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 158,
-            "name": "Click on filter of Model contain in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 2777000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 159,
-            "name": "Click on filter of Model Does not contain in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 1103000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 160,
-            "name": "Click on filter of Model Equals in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 788000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 161,
-            "name": "Click on filter of Model Does not equal in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 766000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 162,
-            "name": "Click on filter of Model Begins with in search box and Verify the Result in Retired",
+            "name": "Click on filter of Model Blank in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 746000000
+              "duration": 681000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 163,
-            "name": "Click on filter of Model Ends with in search box and Verify the Result in Retired",
+            "name": "Click on filter of Model Not blank in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 745000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 164,
-            "name": "Click on filter of Model Blank in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 680000000
+              "duration": 798000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 165,
-            "name": "Click on filter of Model Not blank in search box and Verify the Result in Retired",
+            "name": "Click on filter of SKU contain in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 752000000
+              "duration": 2855000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 166,
+            "name": "Click on filter of SKU Does not contain in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 1178000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 167,
-            "name": "Click on filter of SKU contain in search box and Verify the Result in Retired",
+            "name": "Click on filter of SKU Equals in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 2830000000
+              "duration": 873000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 168,
-            "name": "Click on filter of SKU Does not contain in search box and Verify the Result in Retired",
+            "name": "Click on filter of SKU Does not equal in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 1157000000
+              "duration": 863000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 169,
-            "name": "Click on filter of SKU Equals in search box and Verify the Result in Retired",
+            "name": "Click on filter of SKU Begins with in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 843000000
+              "duration": 953000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 170,
-            "name": "Click on filter of SKU Does not equal in search box and Verify the Result in Retired",
+            "name": "Click on filter of SKU Ends with in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 823000000
+              "duration": 781000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 171,
-            "name": "Click on filter of SKU Begins with in search box and Verify the Result in Retired",
+            "name": "Click on filter of SKU Blank in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 782000000
+              "duration": 735000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 172,
-            "name": "Click on filter of SKU Ends with in search box and Verify the Result in Retired",
+            "name": "Click on filter of SKU Not blank in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 760000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 173,
-            "name": "Click on filter of SKU Blank in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 704000000
+              "duration": 836000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 174,
-            "name": "Click on filter of SKU Not blank in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 826000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 176,
             "name": "Click on filter of Building contain in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 963000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 177,
-            "name": "Click on filter of Building Does not contain in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 929000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 178,
-            "name": "Click on filter of Building Equals in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
               "duration": 981000000
@@ -1199,341 +1329,361 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 179,
+            "line": 175,
+            "name": "Click on filter of Building Does not contain in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 964000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 176,
+            "name": "Click on filter of Building Equals in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 1022000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 177,
             "name": "Click on filter of Building Does not equal in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 947000000
+              "duration": 1009000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 178,
+            "name": "Click on filter of Building Begins with in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 766000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 179,
+            "name": "Click on filter of Building Ends with in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 801000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 180,
-            "name": "Click on filter of Building Begins with in search box and Verify the Result in Retired",
+            "name": "Click on filter of Building Blank in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 724000000
+              "duration": 793000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 181,
-            "name": "Click on filter of Building Ends with in search box and Verify the Result in Retired",
+            "name": "Click on filter of Building Not blank in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 787000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 182,
-            "name": "Click on filter of Building Blank in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 921000000
+              "duration": 1023000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 183,
-            "name": "Click on filter of Building Not blank in search box and Verify the Result in Retired",
+            "name": "Click on filter of Organizational Unit contain in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 995000000
+              "duration": 3073000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 184,
+            "name": "Click on filter of Organizational Unit Does not contain in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 1039000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 185,
-            "name": "Click on filter of Organizational Unit contain in search box and Verify the Result in Retired",
+            "name": "Click on filter of Organizational Unit Equals in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 3026000000
+              "duration": 1072000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 186,
-            "name": "Click on filter of Organizational Unit Does not contain in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 1012000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 187,
-            "name": "Click on filter of Organizational Unit Equals in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 1034000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 188,
             "name": "Click on filter of Organizational Unit Does not equal in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 1001000000
+              "duration": 1209000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 191,
+            "line": 189,
             "name": "Click on filter of Organizational Unit Blank in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 721000000
+              "duration": 762000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 190,
+            "name": "Click on filter of Organizational Unit Not blank in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 1062000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 192,
-            "name": "Click on filter of Organizational Unit Not blank in search box and Verify the Result in Retired",
+            "name": "Click on filter of User contain in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 1036000000
+              "duration": 2951000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 193,
+            "name": "Click on filter of User Does not contain in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 990000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 194,
-            "name": "Click on filter of User contain in search box and Verify the Result in Retired",
+            "name": "Click on filter of User Equals in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 2948000000
+              "duration": 1002000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 195,
-            "name": "Click on filter of User Does not contain in search box and Verify the Result in Retired",
+            "name": "Click on filter of User Does not equal in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 950000000
+              "duration": 1009000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 196,
-            "name": "Click on filter of User Equals in search box and Verify the Result in Retired",
+            "name": "Click on filter of User Begins with in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 955000000
+              "duration": 805000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 197,
-            "name": "Click on filter of User Does not equal in search box and Verify the Result in Retired",
+            "name": "Click on filter of User Ends with in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 958000000
+              "duration": 801000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 198,
-            "name": "Click on filter of User Begins with in search box and Verify the Result in Retired",
+            "name": "Click on filter of User Blank in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 757000000
+              "duration": 900000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 199,
-            "name": "Click on filter of User Ends with in search box and Verify the Result in Retired",
+            "name": "Click on filter of User Not blank in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 1517000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 200,
-            "name": "Click on filter of User Blank in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 841000000
+              "duration": 1160000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 201,
-            "name": "Click on filter of User Not blank in search box and Verify the Result in Retired",
+            "name": "Click on filter of Warranty contain in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 1285000000
+              "duration": 4019000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 202,
+            "name": "Click on filter of Warranty Does not contain in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 1993000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 203,
-            "name": "Click on filter of Warranty contain in search box and Verify the Result in Retired",
+            "name": "Click on filter of Warranty Equals in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 4047000000
+              "duration": 2018000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 204,
-            "name": "Click on filter of Warranty Does not contain in search box and Verify the Result in Retired",
+            "name": "Click on filter of Warranty Does not equal in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 1950000000
+              "duration": 2009000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 205,
-            "name": "Click on filter of Warranty Equals in search box and Verify the Result in Retired",
+            "name": "Click on filter of Warranty Begins with in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 1976000000
+              "duration": 874000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 206,
-            "name": "Click on filter of Warranty Does not equal in search box and Verify the Result in Retired",
+            "name": "Click on filter of Warranty Ends with in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 1961000000
+              "duration": 978000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 207,
-            "name": "Click on filter of Warranty Begins with in search box and Verify the Result in Retired",
+            "name": "Click on filter of Warranty Blank in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 846000000
+              "duration": 860000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 208,
-            "name": "Click on filter of Warranty Ends with in search box and Verify the Result in Retired",
+            "name": "Click on filter of Warranty Not blank in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 944000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 209,
-            "name": "Click on filter of Warranty Blank in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 824000000
+              "duration": 2097000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 210,
-            "name": "Click on filter of Warranty Not blank in search box and Verify the Result in Retired",
+            "name": "Click on filter of Warranty End Date Equals in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 2008000000
+              "duration": 2959000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 211,
+            "name": "Click on filter of Warranty End Date Does not equal in search box and Verify the Result in Retired",
+            "result": {
+              "status": "passed",
+              "duration": 1003000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 212,
-            "name": "Click on filter of Warranty End Date Equals in search box and Verify the Result in Retired",
+            "name": "Click on filter of Warranty End Date Before in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 2954000000
+              "duration": 959000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 213,
-            "name": "Click on filter of Warranty End Date Does not equal in search box and Verify the Result in Retired",
+            "name": "Click on filter of Warranty End Date After in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 931000000
+              "duration": 968000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 214,
-            "name": "Click on filter of Warranty End Date Before in search box and Verify the Result in Retired",
+            "name": "Click on filter of Warranty End Date Between in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 916000000
+              "duration": 1283000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 215,
-            "name": "Click on filter of Warranty End Date After in search box and Verify the Result in Retired",
+            "name": "Click on filter of Warranty End Date Blank in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 907000000
+              "duration": 898000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 216,
-            "name": "Click on filter of Warranty End Date Between in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 1225000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 217,
-            "name": "Click on filter of Warranty End Date Blank in search box and Verify the Result in Retired",
-            "result": {
-              "status": "passed",
-              "duration": 879000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 218,
             "name": "Click on filter of Warranty End Date Not blank in search box and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 869000000
+              "duration": 924000000
             }
           }
         ]

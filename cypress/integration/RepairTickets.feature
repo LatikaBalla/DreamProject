@@ -13,7 +13,7 @@ Feature:RepairTickets Page Functionality
     And Verify the Title of RepairTickets Page
     Then I should click on create new ticket
     Then Select failure Type, Return site and Serial Device
-   And Select Building and Chromebook issue
+    And Select Building and Chromebook issue
     Then Enter the Describe Your Issue
     And Click on save button
     Then Verify New Ticket is added
@@ -65,7 +65,7 @@ Feature:RepairTickets Page Functionality
     And Click on filter of Repair device Blank in search box and Verify the Result
     And Click on filter of Repair device Not blank in search box and Verify the Result
 
-   
+
     And Click on filter of Asset tag contain in search box and Verify the Result
     And Click on filter of Asset tag Does not contain in search box and Verify the Result
     And Click on filter of Asset tag Equals in search box and Verify the Result
@@ -92,7 +92,7 @@ Feature:RepairTickets Page Functionality
     And Click on filter of Last Modified Date Blank in search box and Verify the Result
     And Click on filter of Last Modified Date Not blank in search box and Verify the Result
 
-     And Click on filter of Ticket Number contain in search box and Verify the Result
+    And Click on filter of Ticket Number contain in search box and Verify the Result
     And Click on filter of Ticket Number Does not contain in search box and Verify the Result
     And Click on filter of Ticket Number Equals in search box and Verify the Result
     And Click on filter of Ticket Number Does not equal in search box and Verify the Result
@@ -103,6 +103,8 @@ Feature:RepairTickets Page Functionality
     And Click on filter of Ticket Number contain in search box and Verify the Result
     And Click on view button
     Then Verify the Details of student repair ticket
+    Then Click on Add Repair Image and Verify
+    And Click on Add Note and Verify
 # # And Enter the Search value in search box
 # # Then Verify the Results in the table
 # #  And Enter the Search -  Record Id in search box and Verify the Result
@@ -119,5 +121,3 @@ Feature:RepairTickets Page Functionality
 # # And Click on Update Button
 # # Then Verify Updated successfully
 # # And Click on Add Line and Verify
-# # Then Click on Add Repair Image and Verify
-# # And Click on Add Note and Verify

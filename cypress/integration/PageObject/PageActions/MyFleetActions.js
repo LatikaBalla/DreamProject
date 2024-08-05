@@ -105,7 +105,8 @@ export class MyFleetActions {
         mf.addDeviceElement().click({ force: true })
     }
     enterSerialNo() {
-        mf.serialNoElement().type(tdata.myFleet.serialNo)
+      const uniqueSeed = Date.now();
+        mf.serialNoElement().type(uniqueSeed)
     }
     selectDeviceId() {
         mf.deviceidElement().click()

@@ -492,7 +492,7 @@
         "vtverifypart": "VT Verfied Part",
         "building": "#building",
         "searchbox": "[role='combobox']",
-        "search": "[data-testid='txtSearchData']",
+        "search": "[placeholder='Search...']",
         "ticketnumber": "[data-value='ticket_number']",
         "repairtype": "[data-value='repair_type']",
         "recordid": "[data-value='record_id']",

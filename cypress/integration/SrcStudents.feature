@@ -67,15 +67,14 @@ Feature:SrcStudents Page Functionality
         And Click on filter of User Role Blank in search box and Verify the Result
         And Click on filter of User Role Not blank in search box and Verify the Result
 
-#  Then I should click on Add New student
-#         Then Enter title, full name and Email
-#         And Enter Phone and Cell Number
-#         Then Select User Status
-#         And Click on submit button
-#         Then Verify the student added in table
-#         And Click on Download Export button
-#         And Click on view button
-#         Then Veriry the Details of Student
+        Then I should click on Add New student
+        Then Enter title, full name and Email
+        And Enter Phone and Cell Number
+        Then Select User Status
+        And Click on submit button
+        Then Verify the student added in table
+        And Click on Download Export button
+
 
 
 
