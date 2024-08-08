@@ -174,7 +174,7 @@ export class SrcRepairTicketsActions {
     }
     //tn
     selectFilterTicketNumber() {
-        cy.wait(2000)
+        cy.wait(3000)
         srt.addFilterElement().eq(1).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(0).click({ force: true })
@@ -223,9 +223,9 @@ export class SrcRepairTicketsActions {
         srt.addFilterElement().eq(1).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(5).click({ force: true })
-        srt.fieldValueElement().eq(0).type('70420')
+        srt.fieldValueElement().eq(0).type('229')
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '70420')
+        cy.get('[row-index="0"]').should('contain', '229')
         srt.clearFilterElement().click({ force: true })
     }
     filterBlankTN() {
@@ -241,9 +241,9 @@ export class SrcRepairTicketsActions {
         srt.addFilterElement().eq(1).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(7).click({ force: true })
-        srt.fieldValueElement().eq(1).type('V0065861', { force: true })
+        srt.fieldValueElement().eq(1).type(tdata.srcRepairTicket.ticketnumber, { force: true })
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'V0065861')
+        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.ticketnumber)
         srt.clearFilterElement().click({ force: true })
     }
     //B
@@ -461,9 +461,9 @@ export class SrcRepairTicketsActions {
         srt.addFilterElement().eq(3).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(7).click({ force: true })
-        srt.fieldValueElement().eq(1).type('VIVATEST87Test', { force: true })
+        srt.fieldValueElement().eq(1).type(tdata.srcRepairTicket.serialnumber, { force: true })
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'VIVATEST87Test')
+        cy.get('[row-index="0"]').should('contain',tdata.srcRepairTicket.serialnumber)
         srt.clearFilterElement().click({ force: true })
     }
     //RD

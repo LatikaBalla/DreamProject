@@ -310,18 +310,18 @@ filterNotblankD() {
         oua.addFilterElement().eq(2).click({ force: true })
         oua.fieldNameElement().eq(1).click({ force: true })
         oua.fieldOpElement().eq(4).click({ force: true })
-        oua.fieldValueElement().eq(0).type('Rex')
+        oua.fieldValueElement().eq(0).type('Fro')
         oua.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Rex')
+        cy.get('[row-index="0"]').should('contain', 'Fro')
         oua.clearFilterElement().click({ force: true })
     }
     filterEndswithL() {
         oua.addFilterElement().eq(2).click({ force: true })
         oua.fieldNameElement().eq(1).click({ force: true })
         oua.fieldOpElement().eq(5).click({ force: true })
-        oua.fieldValueElement().eq(0).type('mart')
+        oua.fieldValueElement().eq(0).type('ice')
         oua.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'mart')
+        cy.get('[row-index="0"]').should('contain', 'ice')
         oua.clearFilterElement().click({ force: true })
     }
     filterBlankL() {

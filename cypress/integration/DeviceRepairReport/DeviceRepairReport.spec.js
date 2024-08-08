@@ -139,48 +139,231 @@ Then('Click on the export button', () => {
 Then('Click on Clear filter', () => {
     dev.clickOnClearFilter()
 })
-And('Click More filter select- Record Id in search box and Verify the Result', () => {
-    dev.clickOnMoreFilter()
-    dev.selectFilterRecordId()
+//RI
+And('Click on filter of Repair Id Equals in search box and Verify the Result', () => {
+    dev.filtercontainRI()
 })
-And('Click More filter select- Ticket Number in search box and Verify the Result', () => {
-    dev.clickOnMoreFilter()
+And('Click on filter of Repair Id Does not equal in search box and Verify the Result', () => {
+    dev.filterDoesnotcontainRI()
+})
+And('Click on filter of Repair Id Greater than in search box and Verify the Result', () => {
+    dev.filterGreaterthanRI()
+})
+And('Click on filter of Repair Id Greater than or equal to in search box and Verify the Result', () => {
+    dev.filterGreaterequalRI()
+})
+And('Click on filter of Repair Id Less than in search box and Verify the Result', () => {
+    dev.filterLessthanRI()
+})
+And('Click on filter of Repair Id Less than or equal to in search box and Verify the Result', () => {
+    dev.filterLessequalRI()
+})
+And('Click on filter of Repair Id Between in search box and Verify the Result', () => {
+    dev.filterBetweenRI()
+})
+And('Click on filter of Repair Id Blank in search box and Verify the Result', () => {
+    dev.filterBlankRI()
+})
+And('Click on filter of Repair Id Not blank in search box and Verify the Result', () => {
+    dev.filterNotblankRI()
+})
+//TN
+And('Click on filter of Ticket Number contain in search box and Verify the Result', () => {
     dev.selectFilterTicketNumber()
 })
-And('Click More filter select- Repair type in search box and Verify the Result', () => {
-    dev.clickOnMoreFilter()
+And('Click on filter of Ticket Number Does not contain in search box and Verify the Result', () => {
+    dev.filterDoesnotcontainTN()
+})
+And('Click on filter of Ticket Number Equals in search box and Verify the Result', () => {
+    dev.filterEqualsTN()
+})
+And('Click on filter of Ticket Number Does not equal in search box and Verify the Result', () => {
+    dev.filterNotequalTN()
+})
+And('Click on filter of Ticket Number Begins with in search box and Verify the Result', () => {
+    dev.filterBeginswithTN()
+})
+And('Click on filter of Ticket Number Ends with in search box and Verify the Result', () => {
+    dev.filterEndswithTN()
+})
+And('Click on filter of Ticket Number Blank in search box and Verify the Result', () => {
+    dev.filterBlankTN()
+})
+And('Click on filter of Ticket Number Not blank in search box and Verify the Result', () => {
+    dev.filterNotblankTN()
+})
+//RT
+And('Click on filter of Repair type contain in search box and Verify the Result', () => {
     dev.selectFilterRepairType()
 })
-And('Click More filter select- Serial Number in search box and Verify the Result', () => {
-    dev.clickOnMoreFilter()
+And('Click on filter of Repair type Does not contain in search box and Verify the Result', () => {
+    dev.filterDoesnotcontainRT()
+})
+And('Click on filter of Repair type Equals in search box and Verify the Result', () => {
+    dev.filterEqualsRT()
+})
+And('Click on filter of Repair type Does not equal in search box and Verify the Result', () => {
+    dev.filterNotequalRT()
+})
+And('Click on filter of Repair type Begins with in search box and Verify the Result', () => {
+    dev.filterBeginswithRT()
+})
+And('Click on filter of Repair type Ends with in search box and Verify the Result', () => {
+    dev.filterEndswithRT()
+})
+And('Click on filter of Repair type Blank in search box and Verify the Result', () => {
+    dev.filterBlankRT()
+})
+And('Click on filter of Repair type Not blank in search box and Verify the Result', () => {
+    dev.filterNotblankRT()
+})
+//SN
+And('Click on filter of Serial Number contain in search box and Verify the Result', () => {
     dev.selectFilterSerialNumber()
 })
-And('Click More filter select- Repair status in search box and Verify the Result', () => {
-    dev.clickOnMoreFilter()
-    dev.selectFilterRepairStatus()
+And('Click on filter of Serial Number Does not contain in search box and Verify the Result', () => {
+    dev.filterDoesnotcontainSN()
 })
-And('Click More filter select- Repair device in search box and Verify the Result', () => {
-    dev.clickOnMoreFilter()
+And('Click on filter of Serial Number Equals in search box and Verify the Result', () => {
+    dev.filterEqualsSN()
+})
+And('Click on filter of Serial Number Does not equal in search box and Verify the Result', () => {
+    dev.filterNotequalSN()
+})
+And('Click on filter of Serial Number Begins with in search box and Verify the Result', () => {
+    dev.filterBeginswithSN()
+})
+And('Click on filter of Serial Number Ends with in search box and Verify the Result', () => {
+    dev.filterEndswithSN()
+})
+And('Click on filter of Serial Number Blank in search box and Verify the Result', () => {
+    dev.filterBlankSN()
+})
+And('Click on filter of Serial Number Not blank in search box and Verify the Result', () => {
+    dev.filterNotblankSN()
+})
+//dev
+And('Click on filter of Repair status contain in search box and Verify the Result', () => {
+    dev.filtercontainRS()
+})
+And('Click on filter of Repair status Does not contain in search box and Verify the Result', () => {
+    dev.filterDoesnotcontainRS()
+})
+And('Click on filter of Repair status Equals in search box and Verify the Result', () => {
+    dev.filterEqualsRS()
+})
+And('Click on filter of Repair status Does not equal in search box and Verify the Result', () => {
+    dev.filterNotequalRS()
+})
+And('Click on filter of Repair status Begins with in search box and Verify the Result', () => {
+    dev.filterBeginswithRS()
+})
+And('Click on filter of Repair status Ends with in search box and Verify the Result', () => {
+    dev.filterEndswithRS()
+})
+And('Click on filter of Repair status Blank in search box and Verify the Result', () => {
+    dev.filterBlankRS()
+})
+And('Click on filter of Repair status Not blank in search box and Verify the Result', () => {
+    dev.filterNotblankRS()
+})
+//B
+And('Click on filter of Building contain in search box and Verify the Result', () => {
+    dev.selectFilterBuilding()
+})
+And('Click on filter of Building Does not contain in search box and Verify the Result', () => {
+    dev.filterDoesnotcontainB()
+})
+And('Click on filter of Building Equals in search box and Verify the Result', () => {
+    dev.filterEqualsB()
+})
+And('Click on filter of Building Does not equal in search box and Verify the Result', () => {
+    dev.filterNotequalB()
+})
+And('Click on filter of Building Begins with in search box and Verify the Result', () => {
+    dev.filterBeginswithB()
+})
+And('Click on filter of Building Ends with in search box and Verify the Result', () => {
+    dev.filterEndswithB()
+})
+And('Click on filter of Building Blank in search box and Verify the Result', () => {
+    dev.filterBlankB()
+})
+And('Click on filter of Building Not blank in search box and Verify the Result', () => {
+    dev.filterNotblankB()
+})
+//rd
+And('Click on filter of Repair device contain in search box and Verify the Result', () => {
     dev.selectFilterRepairDevice()
 })
-And('Click More filter select- Asset tag in search box and Verify the Result', () => {
-    dev.clickOnMoreFilter()
+And('Click on filter of Repair device Does not contain in search box and Verify the Result', () => {
+    dev.filterDoesnotcontainRD()
+})
+And('Click on filter of Repair device Equals in search box and Verify the Result', () => {
+    dev.filterEqualsRD()
+})
+And('Click on filter of Repair device Does not equal in search box and Verify the Result', () => {
+    dev.filterNotequalRD()
+})
+And('Click on filter of Repair device Begins with in search box and Verify the Result', () => {
+    dev.filterBeginswithRD()
+})
+And('Click on filter of Repair device Ends with in search box and Verify the Result', () => {
+    dev.filterEndswithRD()
+})
+And('Click on filter of Repair device Blank in search box and Verify the Result', () => {
+    dev.filterBlankRD()
+})
+And('Click on filter of Repair device Not blank in search box and Verify the Result', () => {
+    dev.filterNotblankRD()
+})
+//tag
+And('Click on filter of Asset tag contain in search box and Verify the Result', () => {
     dev.selectFilterAssetTag()
 })
-And('Click More filter select- Repair Box in search box and Verify the Result', () => {
-    dev.clickOnMoreFilter()
-    dev.selectFilterRepairBox()
+And('Click on filter of Asset tag Does not contain in search box and Verify the Result', () => {
+    dev.filterDoesnotcontaintag()
 })
-And('Click More filter select- Created By in search box and Verify the Result', () => {
-    dev.clickOnMoreFilter()
+And('Click on filter of Asset tag Equals in search box and Verify the Result', () => {
+    dev.filterEqualstag()
+})
+And('Click on filter of Asset tag Does not equal in search box and Verify the Result', () => {
+    dev.filterNotequaltag()
+})
+And('Click on filter of Asset tag Begins with in search box and Verify the Result', () => {
+    dev.filterBeginswithtag()
+})
+And('Click on filter of Asset tag Ends with in search box and Verify the Result', () => {
+    dev.filterEndswithtag()
+})
+And('Click on filter of Asset tag Blank in search box and Verify the Result', () => {
+    dev.filterBlanktag()
+})
+And('Click on filter of Asset tag Not blank in search box and Verify the Result', () => {
+    dev.filterNotblanktag()
+})
+//cby
+And('Click on filter of Created By contain in search box and Verify the Result', () => {
     dev.selectFilterCreatedBy()
 })
-Then ('Enter the Search - Serial Number in search box and Verify the Result', () => {
-    dev.searchSerialNo()
+And('Click on filter of Created By Does not contain in search box and Verify the Result', () => {
+    dev.filterDoesnotcontainCBy()
 })
-And ('Enter the Search - Asset tag in search box and Verify the Result', () => {
-    dev.searchAssetTag()
+And('Click on filter of Created By Equals in search box and Verify the Result', () => {
+    dev.filterEqualsCBy()
 })
-
-
-
+And('Click on filter of Created By Does not equal in search box and Verify the Result', () => {
+    dev.filterNotequalCBy()
+})
+And('Click on filter of Created By Begins with in search box and Verify the Result', () => {
+    dev.filterBeginswithCBy()
+})
+And('Click on filter of Created By Ends with in search box and Verify the Result', () => {
+    dev.filterEndswithCBy()
+})
+And('Click on filter of Created By Blank in search box and Verify the Result', () => {
+    dev.filterBlankCBy()
+})
+And('Click on filter of Created By Not blank in search box and Verify the Result', () => {
+    dev.filterNotblankCBy()
+})

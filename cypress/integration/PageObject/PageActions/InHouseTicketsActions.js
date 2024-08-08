@@ -261,9 +261,9 @@ export class InHouseTicketsActions {
         iht.addFilterElement().eq(0).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(5).click({ force: true })
-        iht.fieldValueElement().eq(0).clear({ force: true }).type('408')
+        iht.fieldValueElement().eq(0).clear({ force: true }).type('74')
         iht.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '408')
+        cy.get('[row-index="0"]').should('contain', '74')
         iht.clearFilterElement().click({ force: true })
     }
     filterBlankRI() {
@@ -335,9 +335,9 @@ export class InHouseTicketsActions {
         iht.addFilterElement().eq(1).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(5).click({ force: true })
-        iht.fieldValueElement().eq(0).type('70403')
+        iht.fieldValueElement().eq(0).type('186')
         iht.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '70403')
+        cy.get('[row-index="0"]').should('contain', '186')
         iht.clearFilterElement().click({ force: true })
     }
     filterBlankTN() {
@@ -399,18 +399,18 @@ export class InHouseTicketsActions {
         iht.addFilterElement().eq(2).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(4).click({ force: true })
-        iht.fieldValueElement().eq(0).clear({ force: true }).type('Dream')
+        iht.fieldValueElement().eq(0).clear({ force: true }).type('GV')
         iht.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Dream')
+        cy.get('[row-index="0"]').should('contain', 'GV')
         iht.clearFilterElement().click({ force: true })
     }
     filterEndswithB() {
         iht.addFilterElement().eq(2).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(5).click({ force: true })
-        iht.fieldValueElement().eq(0).clear({ force: true }).type('ing')
+        iht.fieldValueElement().eq(0).clear({ force: true }).type('L2')
         iht.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'ing')
+        cy.get('[row-index="0"]').should('contain', 'L2')
         iht.clearFilterElement().click({ force: true })
     }
     filterBlankB() {
@@ -426,9 +426,9 @@ export class InHouseTicketsActions {
         iht.addFilterElement().eq(2).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(7).click({ force: true })
-        iht.fieldValueElement().eq(1).clear({ force: true }).type('GVL', { force: true })
+        iht.fieldValueElement().eq(1).clear({ force: true }).type(tdata.inHouseTicket.building, { force: true })
         iht.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'GVL')
+        cy.get('[row-index="0"]').should('contain', tdata.inHouseTicket.building)
         iht.clearFilterElement().click({ force: true })
     }
     //rt

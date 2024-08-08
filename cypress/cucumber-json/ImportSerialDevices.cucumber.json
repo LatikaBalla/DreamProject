@@ -1,6 +1,6 @@
 [
   {
-    "description": "   As a user\n   I want to access the dashboard page\n   So that I can view my account information and data",
+    "description": "    As a user\n    I want to access the dashboard page\n    So that I can view my account information and data",
     "keyword": "Feature",
     "name": "ImportSerialDevices Page Functionality",
     "line": 1,
@@ -11,7 +11,7 @@
       {
         "id": "importserialdevices-page-functionality;visiblity-of-importserialdevices-page-and-add-ticket,-download-import-and-view-the-details",
         "keyword": "Scenario",
-        "line": 15,
+        "line": 13,
         "name": "Visiblity of ImportSerialDevices page and add ticket, download import and view the details",
         "tags": [],
         "type": "scenario",
@@ -19,78 +19,178 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 8,
+            "line": 7,
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 5238000000
+              "duration": 2386000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 9,
+            "line": 8,
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7377000000
+              "duration": 7720000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "close the terms of service window",
+            "result": {
+              "status": "passed",
+              "duration": 17211000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 10,
-            "name": "close the terms of service window",
-            "result": {
-              "status": "passed",
-              "duration": 17243000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 85000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 12,
+            "line": 11,
             "name": "Click on ImportSerialDevices Tab",
             "result": {
               "status": "passed",
-              "duration": 1484000000
+              "duration": 1699000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 32,
+            "line": 14,
+            "name": "Verify the Title of ImportSerialDevices Page",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
             "name": "Click on filter of Date Imported Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1604000000
+              "duration": 1397000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 33,
+            "line": 16,
             "name": "Click on filter of Date Imported Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 649000000
+              "duration": 638000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 34,
+            "line": 17,
             "name": "Click on filter of Date Imported Before in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 636000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Click on filter of Date Imported After in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 681000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Click on filter of Date Imported Between with in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 916000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Click on filter of Date Imported Blank in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 614000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Click on filter of Date Imported Not blank in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 619000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "Click on filter of Importer contain in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1945000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Click on filter of Importer Does not contain in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1331000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Click on filter of Importer Equals in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 964000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "Click on filter of Importer Does not equal in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 985000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "Click on filter of Importer Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
               "duration": 626000000
@@ -99,211 +199,121 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 35,
-            "name": "Click on filter of Date Imported After in search box and Verify the Result",
+            "line": 28,
+            "name": "Click on filter of Importer Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 657000000
+              "duration": 631000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "Click on filter of Importer Blank in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 532000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "Click on filter of Importer Not blank in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 912000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "Click on filter of Quantity Devices Equals in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 2574000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "Click on filter of Quantity Devices Does not equal in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 624000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "Click on filter of Quantity Devices Greater than in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 641000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "Click on filter of Quantity Devices Greater than or equal to in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 630000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 36,
-            "name": "Click on filter of Date Imported Between with in search box and Verify the Result",
+            "name": "Click on filter of Quantity Devices Less than in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 922000000
+              "duration": 626000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 37,
-            "name": "Click on filter of Date Imported Blank in search box and Verify the Result",
+            "name": "Click on filter of Quantity Devices Less than or equal to in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 622000000
+              "duration": 609000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 38,
-            "name": "Click on filter of Date Imported Not blank in search box and Verify the Result",
+            "name": "Click on filter of Quantity Devices Between in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 582000000
+              "duration": 741000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "Click on filter of Quantity Devices Blank in search box and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 671000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 40,
-            "name": "Click on filter of Importer contain in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1955000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 41,
-            "name": "Click on filter of Importer Does not contain in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1342000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 42,
-            "name": "Click on filter of Importer Equals in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 973000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 43,
-            "name": "Click on filter of Importer Does not equal in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 996000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 44,
-            "name": "Click on filter of Importer Begins with in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 605000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 45,
-            "name": "Click on filter of Importer Ends with in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 620000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 46,
-            "name": "Click on filter of Importer Blank in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 520000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 47,
-            "name": "Click on filter of Importer Not blank in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 919000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 49,
-            "name": "Click on filter of Quantity Devices Equals in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 2596000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 50,
-            "name": "Click on filter of Quantity Devices Does not equal in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 617000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 51,
-            "name": "Click on filter of Quantity Devices Greater than in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 664000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 52,
-            "name": "Click on filter of Quantity Devices Greater than or equal to in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 625000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 53,
-            "name": "Click on filter of Quantity Devices Less than in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 673000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 54,
-            "name": "Click on filter of Quantity Devices Less than or equal to in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 616000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 55,
-            "name": "Click on filter of Quantity Devices Between in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 754000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 56,
-            "name": "Click on filter of Quantity Devices Blank in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 674000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 57,
             "name": "Click on filter of Quantity Devices Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 619000000
+              "duration": 634000000
             }
           }
         ]

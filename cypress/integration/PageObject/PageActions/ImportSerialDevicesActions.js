@@ -137,7 +137,7 @@ export class ImportSerialDevicesActions {
         isd.addFilterElement().eq(0).click({ force: true })
         isd.fieldNameElement().eq(1).click({ force: true })
         isd.fieldOpElement().eq(6).click({ force: true })
-        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.importDevice.importdate, { force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(2).type(tdata.importDevice.importdate, { force: true })
         isd.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.importDevice.importdate1)
         isd.clearFilterElement().click({ force: true })
@@ -224,7 +224,7 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(0).click({ force: true })
         isd.fieldValueElement().type(tdata.importDevice.quantitydevices)
         isd.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity_devices"]').eq(1).then(($el) => {
+        cy.get('.ag-row-first > [col-id="quantity_devices"]').then(($el) => {
             let value = parseInt($el.text());
             expect(value).to.be.equal(2);
         })
@@ -318,7 +318,7 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(8).click({ force: true })
         isd.fieldValueElement().eq(1).clear({ force: true }).type(tdata.importDevice.quantitydevices, { force: true })
         isd.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity_devices"]').eq(1).then(($el) => {
+        cy.get('.ag-row-first > [col-id="quantity_devices"]').then(($el) => {
             const value = parseInt($el.text());
             expect(value).to.be.equal(2);
         })

@@ -295,6 +295,28 @@ And('Click on filter of Asset tag Blank in search box and Verify the Result', ()
 And('Click on filter of Asset tag Not blank in search box and Verify the Result', () => {
     rt.filterNotblanktag()
 })
+//rs
+And('Click on filter of Repair status op1 in search box and Verify the Result', () => {
+    rt.filterOption1()
+})
+And('Click on filter of Repair status op2 in search box and Verify the Result', () => {
+    rt.filterOption2()
+})
+And('Click on filter of Repair status op3 in search box and Verify the Result', () => {
+    rt.filterOption3()
+})
+And('Click on filter of Repair status op4 in search box and Verify the Result', () => {
+    rt.filterOption4()
+})
+And('Click on filter of Repair status op5 in search box and Verify the Result', () => {
+    rt.filterOption5()
+})
+And('Click on filter of Repair status op6 in search box and Verify the Result', () => {
+    rt.filterOption6()
+})
+And('Click on filter of Repair status op7 in search box and Verify the Result', () => {
+    rt.filterOption7()
+})
 //cby
 And('Click on filter of Created By contain in search box and Verify the Result', () => {
     rt.selectFilterCreatedBy()

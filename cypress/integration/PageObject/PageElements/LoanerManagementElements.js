@@ -12,8 +12,33 @@ export default class LoanerManagementElements {
             timeout: 30000,
         })
     }
-    addfilterElement() {
-        return cy.get(locator.loanerManagement.addfilter, {
+    addFilterElement() {
+        return cy.get(locator.loanerManagement.addFilter, {
+            timeout: 30000,
+        })
+    }
+    clearFilterElement() {
+        return cy.get(locator.loanerManagement.clearFilter, {
+            timeout: 30000,
+        })
+    }
+    fieldNameElement() {
+        return cy.get(locator.loanerManagement.fieldName, {
+            timeout: 30000,
+        })
+    }
+    fieldOpElement() {
+        return cy.get(locator.loanerManagement.fieldOp, {
+            timeout: 30000,
+        })
+    }
+    applyElement() {
+        return cy.get(locator.loanerManagement.apply, {
+            timeout: 30000,
+        })
+    }
+    fieldValueElement() {
+        return cy.get(locator.loanerManagement.fieldValue, {
             timeout: 30000,
         })
     }

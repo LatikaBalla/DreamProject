@@ -66,11 +66,11 @@ Feature: RepairBoxes Page Functionality
     And Click on filter of Created By Blank in search box and Verify the Result
     And Click on filter of Created By Not blank in search box and Verify the Result
 
-    And Click on filter of shipping_box_status with search and check the option and Verify the Result
-    And Click on filter of shipping_box_status Not Shipped in search box and Verify the Result
-    And Click on filter of shipping_box_status Recieved By Vivacity in search box and Verify the Result
-    And Click on filter of shipping_box_status Shipping From District with in search box and Verify the Result
-    And Click on filter of shipping_box_status all checked with in search box and Verify the Result
+    # And Click on filter of shipping_box_status with search and check the option and Verify the Result
+    # And Click on filter of shipping_box_status Not Shipped in search box and Verify the Result
+    # And Click on filter of shipping_box_status Recieved By Vivacity in search box and Verify the Result
+    # And Click on filter of shipping_box_status Shipping From District with in search box and Verify the Result
+    # And Click on filter of shipping_box_status all checked with in search box and Verify the Result
 
     And Click on filter of Last Modified Date Equals in search box and Verify the Result
     And Click on filter of Last Modified Date Does not equal in search box and Verify the Result

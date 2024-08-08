@@ -223,7 +223,7 @@ export class RepairBoxesActions {
         cy.get('[placeholder="From"]').type(tdata.repairBox.repairbox1)
         cy.get('[placeholder="To"]').type(tdata.repairBox.repairbox)
         rb.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
+        cy.get('.ag-row-first > [col-id="record_id"]').eq(0).then(($el) => {
             const value = parseInt($el.text());
             expect(value).to.be.within(9941, 10584);
         })
@@ -546,37 +546,39 @@ export class RepairBoxesActions {
     }
     //ss
     filterSearchCheck() {
+        cy.wait(2000)
         rb.addFilterElement().eq(5).click({ force: true })
         rb.searchElement().type('Vivacity')
-        rb.searchboxElement().eq(1).contains(tdata.repairBox.shippingboxstatus2).click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus2)
+        cy.contains(tdata.repairBox.shippingboxstatus1).click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus1)
         cy.get('.reset-button').click({ force: true })
         rb.searchElement().clear({ force: true })
     }
-    filterCheck1() {
+    filterCheck1() {      
+        cy.wait(2000)
         rb.addFilterElement().eq(5).click({ force: true })
-        rb.searchboxElement().eq(0).contains(tdata.repairBox.shippingboxstatus1).click({ force: true })
+        cy.contains(tdata.repairBox.shippingboxstatus1).click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus1)
         cy.get('.reset-button').click({ force: true })
     }
     filterCheck2() {
         rb.addFilterElement().eq(5).click({ force: true })
-        rb.searchboxElement().eq(1).contains(tdata.repairBox.shippingboxstatus2).click({ force: true })
+        cy.contains(tdata.repairBox.shippingboxstatus2).click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus2)
         cy.get('.reset-button').click({ force: true })
 
     }
     filterCheck3() {
         rb.addFilterElement().eq(5).click({ force: true })
-        rb.searchboxElement().eq(2).contains(tdata.repairBox.shippingboxstatus3).click({ force: true })
+        cy.contains(tdata.repairBox.shippingboxstatus3).click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus3)
         cy.get('.reset-button').click({ force: true })
     }
     filterCheckAll() {
         rb.addFilterElement().eq(5).click({ force: true })
-        rb.searchboxElement().eq(0).contains(tdata.repairBox.shippingboxstatus1).click({ force: true })
-        rb.searchboxElement().eq(1).contains(tdata.repairBox.shippingboxstatus2).click({ force: true })
-        rb.searchboxElement().eq(2).contains(tdata.repairBox.shippingboxstatus3).click({ force: true })
+        cy.contains(tdata.repairBox.shippingboxstatus1).click({ force: true })
+        cy.contains(tdata.repairBox.shippingboxstatus2).click({ force: true })
+        cy.contains(tdata.repairBox.shippingboxstatus3).click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus1, tdata.repairBox.shippingboxstatus2, tdata.repairBox.shippingboxstatus3)
         cy.get('.reset-button').click({ force: true })
     }

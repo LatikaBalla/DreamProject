@@ -270,8 +270,6 @@ And('Click on filter of Repair device Blank in search box and Verify the Result'
 And('Click on filter of Repair device Not blank in search box and Verify the Result', () => {
     iht.filterNotblankRD()
 })
-//RS
-
 //tag
 And('Click on filter of Asset tag contain in search box and Verify the Result', () => {
     iht.selectFilterAssetTag()

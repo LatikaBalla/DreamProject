@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2473000000
+              "duration": 2868000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8248000000
+              "duration": 8869000000
             }
           },
           {
@@ -42,9 +42,8 @@
             "line": 9,
             "name": "close the terms of service window",
             "result": {
-              "status": "failed",
-              "duration": 9260000000,
-              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 3 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click\n    at mouseAction (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111447:68)\n    at Context.click (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111611:14)\n    at wrapped (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at LoanerManagementActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/LoanerManagementActions.js:14:28)\n    at Context.eval (cypress/integration/LoanerManagement/LoanerManagement.spec.js:16:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 21309000000
             }
           },
           {
@@ -53,7 +52,8 @@
             "line": 10,
             "name": "Click on Manage Devices",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 77000000
             }
           },
           {
@@ -62,50 +62,36 @@
             "line": 11,
             "name": "Click on LoanerManagement Tab",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1475000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 14,
-            "name": "Table for LoanerManagement should be visible",
+            "line": 126,
+            "name": "Click on filter of Product Description contain and Verify the Result for Checked Out",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "Search the serial no in search box of Available Devices section",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2773000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 16,
-            "name": "Verify the search result",
+            "line": 127,
+            "name": "Click on filter of Product Description Does not contain and Verify the Result for Checked Out",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "duration": 4799000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '[ <div.ag-row-even.ag-row-no-focus.ag-row.ag-row-level-0.ag-row-position-absolute.ag-row-first.ag-row-not-inline-editing>, 2 more... ]' not to contain 'VT Chromebook'\n    at LoanerManagementActions.filterDoesnotcontainPD_C (cypress/integration/PageObject/PageActions/LoanerManagementActions.js:876:34)\n    at Context.eval (cypress/integration/LoanerManagement/LoanerManagement.spec.js:339:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 17,
-            "name": "Click on the Add to loaner pool",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
-            "name": "Search the serial no in the Available section",
+            "keyword": "And ",
+            "line": 128,
+            "name": "Click on filter of Product Description Equals and Verify the Result for Checked Out",
             "result": {
               "status": "skipped"
             }
@@ -113,17 +99,8 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 19,
-            "name": "Click on th add Student button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "Enter Fullname, title and email",
+            "line": 129,
+            "name": "Click on filter of Product Description Does not equal and Verify the Result for Checked Out",
             "result": {
               "status": "skipped"
             }
@@ -131,17 +108,8 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 21,
-            "name": "Select status, building and student_id",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 22,
-            "name": "Click on the submit button of form",
+            "line": 130,
+            "name": "Click on filter of Product Description Begins with and Verify the Result for Checked Out",
             "result": {
               "status": "skipped"
             }
@@ -149,17 +117,8 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 23,
-            "name": "Verify the student added successfully",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "Click on check out button",
+            "line": 131,
+            "name": "Click on filter of Product Description Ends with and Verify the Result for Checked Out",
             "result": {
               "status": "skipped"
             }
@@ -167,17 +126,8 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 25,
-            "name": "Select the student name",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 26,
-            "name": "Click on the submit button",
+            "line": 132,
+            "name": "Click on filter of Product Description Blank and Verify the Result for Checked Out",
             "result": {
               "status": "skipped"
             }
@@ -185,44 +135,8 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 27,
-            "name": "Search the serial no in the check out section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 28,
-            "name": "Click on the Check in button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 29,
-            "name": "Enter note and click on submit button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 30,
-            "name": "Verify the device is added in Available section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "Click on remove from loaner pool button",
+            "line": 133,
+            "name": "Click on filter of Product Description Not blank and Verify the Result for Checked Out",
             "result": {
               "status": "skipped"
             }

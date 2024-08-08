@@ -77,6 +77,7 @@ export class RepairTicketsActions {
         cy.verifyDownload("/download/", tdata.repairTickets.filename)
     }
     clickOnViewButton() {
+        cy.wait(3000)
         cy.window().then(win => {
             // win.open('https://google.com', '_blank');
         });
@@ -139,90 +140,9 @@ export class RepairTicketsActions {
         cy.get('tr td').eq(4).should('contain', tdata.repairTickets.assettag)
         rt.searchElement().clear({ force: true })
     }
-    selectFilterRecordId() {
-        rt.fieldNameElement().select(0).invoke("val").should("eq", 'record_id', { force: true })
-        rt.fieldOpElement().select('Does Not Contain', { force: true }).should('have.value', 'Does Not Contain')
-        rt.fieldValueElement().type(tdata.repairTickets.recordid)
-        rt.applyElement().click({ force: true })
-        cy.get('tr td').eq(0).should('not.contain', tdata.repairTickets.recordid)
-    }
-    //sn
-    selectFilterSerialNumber() {
-        cy.wait(1000)
-        rt.addFilterElement().eq(2).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(0).click({ force: true })
-        rt.fieldValueElement().type(tdata.repairTickets.serialnumber)
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.serialnumber)
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterDoesnotcontainSN() {
-        cy.wait(1000)
-        rt.addFilterElement().eq(2).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(1).click({ force: true })
-        rt.fieldValueElement().eq(0).type(tdata.repairTickets.serialnumber)
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain', tdata.repairTickets.serialnumber)
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterEqualsSN() {
-        rt.addFilterElement().eq(2).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(2).click({ force: true })
-        rt.fieldValueElement().eq(0).type(tdata.repairTickets.serialnumber)
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.serialnumber)
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterNotequalSN() {
-        rt.addFilterElement().eq(2).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(3).click({ force: true })
-        rt.fieldValueElement().eq(0).type(tdata.repairTickets.serialnumber)
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain.value', tdata.repairTickets.serialnumber)
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterBeginswithSN() {
-        rt.addFilterElement().eq(2).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(4).click({ force: true })
-        rt.fieldValueElement().eq(0).type('VIVATEST')
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'VIVATEST')
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterEndswithSN() {
-        rt.addFilterElement().eq(2).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(5).click({ force: true })
-        rt.fieldValueElement().eq(0).type('12Test')
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '12Test')
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterBlankSN() {
-        rt.addFilterElement().eq(2).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(6).click({ force: true })
-        rt.fieldValueElement().eq(0).type(' ', { force: true })
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', ' ')
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterNotblankSN() {
-        rt.addFilterElement().eq(2).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(7).click({ force: true })
-        rt.fieldValueElement().eq(1).type('AAAAATest', { force: true })
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'AAAAATest')
-        rt.clearFilterElement().click({ force: true })
-    }
     //tn
     selectFilterTicketNumber() {
+        cy.wait(3000)
         rt.addFilterElement().eq(0).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(0).click({ force: true })
@@ -367,6 +287,82 @@ export class RepairTicketsActions {
         cy.get('[row-index="0"]').should('contain', tdata.repairTickets.repairtype)
         rt.clearFilterElement().click({ force: true })
     }
+    //sn
+    selectFilterSerialNumber() {
+        cy.wait(2000)
+        rt.addFilterElement().eq(2).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(0).click({ force: true })
+        rt.fieldValueElement().type(tdata.repairTickets.serialnumber)
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.serialnumber)
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainSN() {
+        cy.wait(1000)
+        rt.addFilterElement().eq(2).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(1).click({ force: true })
+        rt.fieldValueElement().eq(0).type(tdata.repairTickets.serialnumber)
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.repairTickets.serialnumber)
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterEqualsSN() {
+        rt.addFilterElement().eq(2).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(2).click({ force: true })
+        rt.fieldValueElement().eq(0).type(tdata.repairTickets.serialnumber)
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.serialnumber)
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterNotequalSN() {
+        rt.addFilterElement().eq(2).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(3).click({ force: true })
+        rt.fieldValueElement().eq(0).type(tdata.repairTickets.serialnumber)
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.repairTickets.serialnumber)
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithSN() {
+        rt.addFilterElement().eq(2).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(4).click({ force: true })
+        rt.fieldValueElement().eq(0).type('VIVATEST')
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'VIVATEST')
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterEndswithSN() {
+        rt.addFilterElement().eq(2).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(5).click({ force: true })
+        rt.fieldValueElement().eq(0).type('12Test')
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', '12Test')
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterBlankSN() {
+        rt.addFilterElement().eq(2).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(6).click({ force: true })
+        rt.fieldValueElement().eq(0).type(' ', { force: true })
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterNotblankSN() {
+        rt.addFilterElement().eq(2).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(7).click({ force: true })
+        rt.fieldValueElement().eq(1).type('AAAAATest', { force: true })
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'AAAAATest')
+        rt.clearFilterElement().click({ force: true })
+    }
+    
     //B
     selectFilterBuilding() {
         rt.addFilterElement().eq(3).click({ force: true })
@@ -513,6 +509,195 @@ export class RepairTicketsActions {
         cy.get('[row-index="0"]').should('contain', 'VT Chromebook')
         rt.clearFilterElement().click({ force: true })
     }
+     //tag
+     selectFilterAssetTag() {
+        rt.addFilterElement().eq(5).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(0).click({ force: true })
+        rt.fieldValueElement().type(tdata.repairTickets.assettag)
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.assettag)
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontaintag() {
+        rt.addFilterElement().eq(5).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(1).click({ force: true })
+        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.assettag)
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.repairTickets.assettag)
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterEqualstag() {
+        rt.addFilterElement().eq(5).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(2).click({ force: true })
+        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.assettag)
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.assettag)
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterNotequaltag() {
+        rt.addFilterElement().eq(5).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(3).click({ force: true })
+        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.assettag)
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.repairTickets.assettag)
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithtag() {
+        rt.addFilterElement().eq(5).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(4).click({ force: true })
+        rt.fieldValueElement().eq(0).clear({ force: true }).type('56')
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', '56')
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterEndswithtag() {
+        rt.addFilterElement().eq(5).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(5).click({ force: true })
+        rt.fieldValueElement().eq(0).clear({ force: true }).type('78')
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', '78')
+        rt.clearFilterElement().click({ force: true })
+    }
+
+    filterBlanktag() {
+        rt.addFilterElement().eq(5).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(6).click({ force: true })
+        rt.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterNotblanktag() {
+        rt.addFilterElement().eq(5).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(7).click({ force: true })
+        rt.fieldValueElement().eq(1).clear({ force: true }).type('5678', { force: true })
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', '5678')
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterOption1() {
+        cy.wait(1000)
+        rt.addFilterElement().eq(7).click({ force: true })
+        cy.get('[value="Pending_Repair_Box"]').click({ force: true })
+        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Pending Repair Box')
+        cy.get('.reset-button').click({ force: true })
+    }
+    filterOption2() {
+        rt.addFilterElement().eq(7).click({ force: true })
+        cy.get('[value="Box_Created"]').click({ force: true })
+        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Box Created')
+        cy.get('.reset-button').click({ force: true })
+    }
+    filterOption3() {
+        rt.addFilterElement().eq(7).click({ force: true })
+        cy.get('[value="Intake"]').click({ force: true })
+        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Intake')
+        cy.get('.reset-button').click({ force: true })
+    }
+    filterOption4() {
+        rt.addFilterElement().eq(7).click({ force: true })
+        cy.get('[value="Estimate_Approved"]').click({ force: true })
+        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Estimate Approved')
+        cy.get('.reset-button').click({ force: true })
+    }
+    filterOption5() {
+        rt.addFilterElement().eq(7).click({ force: true })
+        cy.get('[value="Intake_Queue"]').click({ force: true })
+        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Intake Queue')
+        cy.get('.reset-button').click({ force: true })
+    }
+    filterOption6() {
+        rt.addFilterElement().eq(7).click({ force: true })
+        cy.get('[value="Shipping_to_Vivacity"]').click({ force: true })
+        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Shipping to Vivacity')
+        cy.get('.reset-button').click({ force: true })
+    }
+    filterOption7() {
+        rt.addFilterElement().eq(7).click({ force: true })
+        cy.get('[value="Estimate_Denied"]').click({ force: true })
+        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Estimate Denied')
+        cy.get('.reset-button').click({ force: true })
+    }
+    //cby
+    selectFilterCreatedBy() {
+        rt.addFilterElement().eq(8).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(0).click({ force: true })
+        rt.fieldValueElement().type(tdata.repairTickets.createdby)
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.createdby)
+    }
+    filterDoesnotcontainCBy() {
+        rt.addFilterElement().eq(8).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(1).click({ force: true })
+        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.createdby)
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.repairTickets.createdby)
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterEqualsCBy() {
+        rt.addFilterElement().eq(8).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(2).click({ force: true })
+        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.createdby)
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.createdby)
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterNotequalCBy() {
+        rt.addFilterElement().eq(8).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(3).click({ force: true })
+        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.createdby)
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.repairTickets.createdby)
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithCBy() {
+        rt.addFilterElement().eq(8).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(4).click({ force: true })
+        rt.fieldValueElement().eq(0).clear({ force: true }).type('demo')
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'demo')
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterEndswithCBy() {
+        rt.addFilterElement().eq(8).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(5).click({ force: true })
+        rt.fieldValueElement().eq(0).clear({ force: true }).type('vivacitytech.com')
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'vivacitytech.com')
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterBlankCBy() {
+        rt.addFilterElement().eq(8).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(6).click({ force: true })
+        rt.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterNotblankCBy() {
+        rt.addFilterElement().eq(8).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(7).click({ force: true })
+        rt.fieldValueElement().eq(1).clear({ force: true }).type('Maleja Duque', { force: true })
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'Maleja Duque')
+        rt.clearFilterElement().click({ force: true })
+    }
     //box
     selectFilterRepairBox() {
         cy.wait(2000)
@@ -619,152 +804,6 @@ export class RepairTicketsActions {
             const value = parseInt($el.text());
             expect(value).to.equal(10584)
         })
-        rt.clearFilterElement().click({ force: true })
-    }
-    //tag
-    selectFilterAssetTag() {
-        rt.addFilterElement().eq(5).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(0).click({ force: true })
-        rt.fieldValueElement().type(tdata.repairTickets.assettag)
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.assettag)
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterDoesnotcontaintag() {
-        rt.addFilterElement().eq(5).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(1).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.assettag)
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain', tdata.repairTickets.assettag)
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterEqualstag() {
-        rt.addFilterElement().eq(5).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(2).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.assettag)
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.assettag)
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterNotequaltag() {
-        rt.addFilterElement().eq(5).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(3).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.assettag)
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain.value', tdata.repairTickets.assettag)
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterBeginswithtag() {
-        rt.addFilterElement().eq(5).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(4).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type('56')
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '56')
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterEndswithtag() {
-        rt.addFilterElement().eq(5).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(5).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type('78')
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '78')
-        rt.clearFilterElement().click({ force: true })
-    }
-
-    filterBlanktag() {
-        rt.addFilterElement().eq(5).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(6).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', ' ')
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterNotblanktag() {
-        rt.addFilterElement().eq(5).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(7).click({ force: true })
-        rt.fieldValueElement().eq(1).clear({ force: true }).type('5678', { force: true })
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '5678')
-        rt.clearFilterElement().click({ force: true })
-    }
-    //cby
-    selectFilterCreatedBy() {
-        rt.addFilterElement().eq(8).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(0).click({ force: true })
-        rt.fieldValueElement().type(tdata.repairTickets.createdby)
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.createdby)
-    }
-    filterDoesnotcontainCBy() {
-        rt.addFilterElement().eq(8).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(1).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.createdby)
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain', tdata.repairTickets.createdby)
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterEqualsCBy() {
-        rt.addFilterElement().eq(8).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(2).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.createdby)
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.createdby)
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterNotequalCBy() {
-        rt.addFilterElement().eq(8).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(3).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.createdby)
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain.value', tdata.repairTickets.createdby)
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterBeginswithCBy() {
-        rt.addFilterElement().eq(8).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(4).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type('demo')
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'demo')
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterEndswithCBy() {
-        rt.addFilterElement().eq(8).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(5).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type('vivacitytech.com')
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'vivacitytech.com')
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterBlankCBy() {
-        rt.addFilterElement().eq(8).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(6).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', ' ')
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterNotblankCBy() {
-        rt.addFilterElement().eq(8).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(7).click({ force: true })
-        rt.fieldValueElement().eq(1).clear({ force: true }).type('Maleja Duque', { force: true })
-        rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Maleja Duque')
         rt.clearFilterElement().click({ force: true })
     }
     //date

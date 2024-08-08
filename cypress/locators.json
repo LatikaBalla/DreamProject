@@ -271,10 +271,9 @@
         "view": "View Details",
         "deviceIcon":"[data-testid='DevicesIcon']",
         "googleIcon":"[src='/static/media/G.62bb109f219295189cc1.png']"
-
     },
     "importSerialDevices": {
-        "title": "Past Imports",
+        "title": "Manage Devices",
         "filters": ".css-h719to",
         "table": ".css-1xz8d5v",
         "instructions": "Import Instructions",
@@ -323,7 +322,6 @@
         "search": "[placeholder='Search by table field values']",
         "searchAbove": "[placeholder='Search ']",
         "addstudent": "[data-testid='checkoutFilter']",
-        "addfilter": "[data-testid='checkoutFilter']",
         "refreshbtn": "[data-testid='CachedIcon']",
         "addfilterDevices": "[data-testid='deviceTableFilter']",
         "serialFilter": "#Serial Number",
@@ -341,7 +339,13 @@
         "studentEmail": "#email",
         "studentStatus": "#status",
         "building": "#buildings",
-        "notes": "[placeholder='Notes']"
+        "notes": "[placeholder='Notes']",
+        "addFilter": "[ref='eMenu']",
+        "clearFilter": "button[ref='resetFilterButton']",
+        "fieldName": "[ref='eDisplayField']",
+        "fieldOp": "[role='option']",
+        "fieldValue": "[placeholder='Filter...']",
+        "apply": "button[ref='applyFilterButton']"
     },
     "repair360": {
         "title": "Repair 360",

@@ -61,8 +61,8 @@ Feature: MyFleet  Page Functionality
         And Click on filter of Organizational Unit Does not contain in search box and Verify the Result
         And Click on filter of Organizational Unit Equals in search box and Verify the Result
         And Click on filter of Organizational Unit Does not equal in search box and Verify the Result
-        # And Click on filter of Organizational Unit Begins with in search box and Verify the Result
-        # And Click on filter of Organizational Unit Ends with in search box and Verify the Result
+        And Click on filter of Organizational Unit Begins with in search box and Verify the Result
+        And Click on filter of Organizational Unit Ends with in search box and Verify the Result
         And Click on filter of Organizational Unit Blank in search box and Verify the Result
         And Click on filter of Organizational Unit Not blank in search box and Verify the Result
 
@@ -107,29 +107,29 @@ Feature: MyFleet  Page Functionality
         Then Click on Edit button of Assignment
         And Update student, building, loner status and Click on save button
         Then Verfiy Assignment Record updated successfully
-# And Convert Active to Retired device
-# Then Verify the Device Retired successfully
-# Then Click on Retired Tab
-# And Convert Retired to Active device
-# Then Verify the Device Active successfully
+    # # And Convert Active to Retired device
+    # # Then Verify the Device Retired successfully
+    # # Then Click on Retired Tab
+    # # And Convert Retired to Active device
+    # # Then Verify the Device Active successfully
 
 
-# Scenario: Google Data
-#     And Enter the table fields in search box for google data record
-#     Then Verify the record in searching history for google data
-#     And Click on the Google Icon and click on view Button
-#     Then Verify the google data and GoLocation section
-#     And Click on the edit of google data section
-#     Then Update the note
-#     And Verfiy Google data Record updated successfully
-#     Then Click on CPU Status and verify CPU Information
-#     And Click on Memory Information and verify Memory Information
-#     Then Click on Network Information and verify Network Information
-#     And Click on OS Information and verify OS Information
-#     Then Click on Battery Information and verify Battery Information
-#     And Click on Storage Information and verify Storage Information
-#     Then Click on Boot Performance Report and Boot Performance Report
-#     And Click on Recent Users Information and verify Recent Users Information
+    # Scenario: Google Data
+    #     And Enter the table fields in search box for google data record
+    #     Then Verify the record in searching history for google data
+    #     And Click on the Google Icon and click on view Button
+    #     Then Verify the google data and GoLocation section
+    #     And Click on the edit of google data section
+    #     Then Update the note
+    #     And Verfiy Google data Record updated successfully
+    #     Then Click on CPU Status and verify CPU Information
+    #     And Click on Memory Information and verify Memory Information
+    #     Then Click on Network Information and verify Network Information
+    #     And Click on OS Information and verify OS Information
+    #     Then Click on Battery Information and verify Battery Information
+    #     And Click on Storage Information and verify Storage Information
+    #     Then Click on Boot Performance Report and Boot Performance Report
+    #     And Click on Recent Users Information and verify Recent Users Information
 
 
     Scenario: Retired Visibility,add Device,add more filter, view ,Clear filter and Search
@@ -184,8 +184,8 @@ Feature: MyFleet  Page Functionality
         And Click on filter of Organizational Unit Does not contain in search box and Verify the Result in Retired
         And Click on filter of Organizational Unit Equals in search box and Verify the Result in Retired
         And Click on filter of Organizational Unit Does not equal in search box and Verify the Result in Retired
-        # And Click on filter of Organizational Unit Begins with in search box and Verify the Result in Retired
-        # And Click on filter of Organizational Unit Ends with in search box and Verify the Result in Retired
+        And Click on filter of Organizational Unit Begins with in search box and Verify the Result in Retired
+        And Click on filter of Organizational Unit Ends with in search box and Verify the Result in Retired
         And Click on filter of Organizational Unit Blank in search box and Verify the Result in Retired
         And Click on filter of Organizational Unit Not blank in search box and Verify the Result in Retired
 
