@@ -13,8 +13,9 @@ export class PartClosetActions {
         // cy.contains('Remind me Later').click({ force: true }) 
         cy.wait(5000)
         dash.termsElement().contains('Dismiss').click({ force: true })
-        cy.wait(8000)
+        cy.wait(4000)
         cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
+        cy.wait(2000)
     }
     clickOnRepair360() {
         dash.repair360Element().click({ force: true })
@@ -570,6 +571,7 @@ export class PartClosetActions {
         pc.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainQ() {
+        cy.wait(1000)
         pc.addFilterElement().eq(6).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(1).click({ force: true })
@@ -582,6 +584,7 @@ export class PartClosetActions {
         pc.clearFilterElement().click({ force: true })
     }
     filterGreaterthanQ() {
+        cy.wait(1000)
         pc.addFilterElement().eq(6).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(2).click({ force: true })
@@ -594,6 +597,7 @@ export class PartClosetActions {
         pc.clearFilterElement().click({ force: true })
     }
     filterGreaterequalQ() {
+        cy.wait(1000)
         pc.addFilterElement().eq(6).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(3).click({ force: true })
@@ -606,6 +610,7 @@ export class PartClosetActions {
         pc.clearFilterElement().click({ force: true })
     }
     filterLessthanQ() {
+        cy.wait(1000)
         pc.addFilterElement().eq(6).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(4).click({ force: true })
@@ -618,18 +623,20 @@ export class PartClosetActions {
         pc.clearFilterElement().click({ force: true })
     }
     filterLessequalQ() {
+        cy.wait(1000)
         pc.addFilterElement().eq(6).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(5).click({ force: true })
         pc.fieldValueElement().eq(0).type(tdata.partCloset.quantity,{ force: true })
         pc.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity"]').eq(1).then(($el) => {
+        cy.get('.ag-row-first > [col-id="quantity"]').eq(0).then(($el) => {
             const value = parseInt($el.text());
             expect(value).to.be.lte(2);
         })
         pc.clearFilterElement().click({ force: true })
     }
     filterBetweenQ() {
+        cy.wait(1000)
         pc.addFilterElement().eq(6).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(6).click({ force: true })
@@ -643,6 +650,7 @@ export class PartClosetActions {
         pc.clearFilterElement().click({ force: true })
     }
     filterBlankQ() {
+        cy.wait(1000)
         pc.addFilterElement().eq(6).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(7).click({ force: true })
@@ -652,6 +660,7 @@ export class PartClosetActions {
         pc.clearFilterElement().click({ force: true })
     }
     filterNotblankQ() {
+        cy.wait(1000)
         pc.addFilterElement().eq(6).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(8).click({ force: true })
