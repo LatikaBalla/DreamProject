@@ -24,10 +24,10 @@ And('Click on Report center page', () => {
 And('Click on NonwarrantyRepairs page', () => {
     nwr.clickOnNonWarrantyRepairs()
 })
-Then('Select failure Type, Return site and Serial Device', () => {
+Then('Select failure Type, Return site and Serial device', () => {
     nwr.selectFailureType()
     nwr.selectSite()
-    nwr.selectSerialDevice()
+    nwr.selectSerialdevice()
 })
 And('Select Building and Chromebook issue', () => {
     nwr.selectBuilding()
@@ -42,81 +42,259 @@ And('Click on save button', () => {
 Then('Verify New Ticket is added', () => {
     nwr.verifyNewTicket()
 })
-And('Enter the Search - Record Id in search box and Verify the Result', () => {
-    nwr.searchRecordId()
-})
-Then('Enter the Search - Repair type in search box and Verify the Result', () => {
-    nwr.searchRepairType()
-})
-Then('Enter the Search - Repair status in search box and Verify the Result', () => {
-    nwr.searchRepairStatus() 
-})
-And('Enter the Search - Repair Box in search box and Verify the Result', () => {
-    nwr.searchRepairBox()
-})
-And('Enter the Ticket Number in search box for warranty', () => {
-    nwr.selectdropdownList()
-    nwr.enterTicketNumberSearch()
-})
-Then('Verify the Ticket details in table for warranty', () => {
-
-    nwr.verifyTicketDetailsTable()
-})
-And('Click on the Ticket Number for warranty', () => {
+And('Click on the view button', () => {
     nwr.clickOnTicketNumberTable()
 })
-Then('Verify the Repair Ticket page will open for warranty', () => {
+Then('Verify the Repair Ticket page will open', () => {
     nwr.verifyRapairTicketPAge()
 })
-And('Verfiy the details of Ticket for warranty', () => {
+And('Verfiy the details of Ticket', () => {
     nwr.verifyTicketDetails()
 })
-Then('Click on the download Ticket Estimation button for warranty', () => {
+Then('Click on the download Ticket Estimation button', () => {
     nwr.clickOnDownloadButton()
     cy.go('back')
 })
-And('Verify downloaded ticket successfully for warranty', () => {
+And('Click on the download Ticket Estimation button', () => {
     nwr.verifyDownloadSuccessful()
 })
 Then('Click on the export button', () => {
     nwr.clickOnExport()
 })
-Then('Click on Clear filter', () => {
-    nwr.clickOnClearFilter()
+//RI
+And('Click on filter of Repair Id Equals and Verify the Result', () => {
+    nwr.filtercontainRI()
 })
-And('Click More filter select- Record Id in search box and Verify the Result', () => {
-    nwr.clickOnMoreFilter()
-    nwr.selectFilterRecordId()
+And('Click on filter of Repair Id Does not equal and Verify the Result', () => {
+    nwr.filterDoesnotcontainRI()
 })
-And('Click More filter select- Ticket Number in search box and Verify the Result', () => {
-    nwr.clickOnMoreFilter()
+And('Click on filter of Repair Id Greater than and Verify the Result', () => {
+    nwr.filterGreaterthanRI()
+})
+And('Click on filter of Repair Id Greater than or equal to and Verify the Result', () => {
+    nwr.filterGreaterequalRI()
+})
+And('Click on filter of Repair Id Less than and Verify the Result', () => {
+    nwr.filterLessthanRI()
+})
+And('Click on filter of Repair Id Less than or equal to and Verify the Result', () => {
+    nwr.filterLessequalRI()
+})
+And('Click on filter of Repair Id Between and Verify the Result', () => {
+    nwr.filterBetweenRI()
+})
+And('Click on filter of Repair Id Blank and Verify the Result', () => {
+    nwr.filterBlankRI()
+})
+And('Click on filter of Repair Id Not blank and Verify the Result', () => {
+    nwr.filterNotblankRI()
+})
+//TN
+And('Click on filter of Ticket Number contain and Verify the Result', () => {
     nwr.selectFilterTicketNumber()
 })
-And('Click More filter select- Repair type in search box and Verify the Result', () => {
-    nwr.clickOnMoreFilter()
+And('Click on filter of Ticket Number Does not contain and Verify the Result', () => {
+    nwr.filterDoesnotcontainTN()
+})
+And('Click on filter of Ticket Number Equals and Verify the Result', () => {
+    nwr.filterEqualsTN()
+})
+And('Click on filter of Ticket Number Does not equal and Verify the Result', () => {
+    nwr.filterNotequalTN()
+})
+And('Click on filter of Ticket Number Begins with and Verify the Result', () => {
+    nwr.filterBeginswithTN()
+})
+And('Click on filter of Ticket Number Ends with and Verify the Result', () => {
+    nwr.filterEndswithTN()
+})
+And('Click on filter of Ticket Number Blank and Verify the Result', () => {
+    nwr.filterBlankTN()
+})
+And('Click on filter of Ticket Number Not blank and Verify the Result', () => {
+    nwr.filterNotblankTN()
+})
+//RT
+And('Click on filter of Repair type contain and Verify the Result', () => {
     nwr.selectFilterRepairType()
 })
-And('Click More filter select- Serial Number in search box and Verify the Result', () => {
-    nwr.clickOnMoreFilter()
+And('Click on filter of Repair type Does not contain and Verify the Result', () => {
+    nwr.filterDoesnotcontainRT()
+})
+And('Click on filter of Repair type Equals and Verify the Result', () => {
+    nwr.filterEqualsRT()
+})
+And('Click on filter of Repair type Does not equal and Verify the Result', () => {
+    nwr.filterNotequalRT()
+})
+And('Click on filter of Repair type Begins with and Verify the Result', () => {
+    nwr.filterBeginswithRT()
+})
+And('Click on filter of Repair type Ends with and Verify the Result', () => {
+    nwr.filterEndswithRT()
+})
+And('Click on filter of Repair type Blank and Verify the Result', () => {
+    nwr.filterBlankRT()
+})
+And('Click on filter of Repair type Not blank and Verify the Result', () => {
+    nwr.filterNotblankRT()
+})
+//SN
+And('Click on filter of Serial Number contain and Verify the Result', () => {
     nwr.selectFilterSerialNumber()
 })
-And('Click More filter select- Repair status in search box and Verify the Result', () => {
-    nwr.clickOnMoreFilter()
-    nwr.selectFilterRepairStatus()
+And('Click on filter of Serial Number Does not contain and Verify the Result', () => {
+    nwr.filterDoesnotcontainSN()
 })
-And('Click More filter select- Repair device in search box and Verify the Result', () => {
-    nwr.clickOnMoreFilter()
-    nwr.selectFilterRepairDevice()
+And('Click on filter of Serial Number Equals and Verify the Result', () => {
+    nwr.filterEqualsSN()
 })
-And('Click More filter select- Asset tag in search box and Verify the Result', () => {
-    nwr.clickOnMoreFilter()
+And('Click on filter of Serial Number Does not equal and Verify the Result', () => {
+    nwr.filterNotequalSN()
+})
+And('Click on filter of Serial Number Begins with and Verify the Result', () => {
+    nwr.filterBeginswithSN()
+})
+And('Click on filter of Serial Number Ends with and Verify the Result', () => {
+    nwr.filterEndswithSN()
+})
+And('Click on filter of Serial Number Blank and Verify the Result', () => {
+    nwr.filterBlankSN()
+})
+And('Click on filter of Serial Number Not blank and Verify the Result', () => {
+    nwr.filterNotblankSN()
+})
+//ds
+And('Click on filter of Repair status op1 and Verify the Result', () => {
+    nwr.filterOption1()
+})
+And('Click on filter of Repair status op2 and Verify the Result', () => {
+    nwr.filterOption2()
+})
+And('Click on filter of Repair status op3 and Verify the Result', () => {
+    nwr.filterOption3()
+})
+And('Click on filter of Repair status op4 and Verify the Result', () => {
+    nwr.filterOption4()
+})
+And('Click on filter of Repair status op5 and Verify the Result', () => {
+    nwr.filterOption5()
+})
+And('Click on filter of Repair status op6 and Verify the Result', () => {
+    nwr.filterOption6()
+})
+And('Click on filter of Repair status op7 and Verify the Result', () => {
+    nwr.filterOption7()
+})
+And('Click on filter of Repair status op8 and Verify the Result', () => {
+    nwr.filterOption8()
+})
+And('Click on filter of Repair status op9 and Verify the Result', () => {
+    nwr.filterOption9()
+})
+And('Click on filter of Repair status op10 and Verify the Result', () => {
+    nwr.filterOption10()
+})
+And('Click on filter of Repair status op11 and Verify the Result', () => {
+    nwr.filterOption11()
+})
+//B
+And('Click on filter of Building contain and Verify the Result', () => {
+    nwr.selectFilterBuilding()
+})
+And('Click on filter of Building Does not contain and Verify the Result', () => {
+    nwr.filterDoesnotcontainB()
+})
+And('Click on filter of Building Equals and Verify the Result', () => {
+    nwr.filterEqualsB()
+})
+And('Click on filter of Building Does not equal and Verify the Result', () => {
+    nwr.filterNotequalB()
+})
+And('Click on filter of Building Begins with and Verify the Result', () => {
+    nwr.filterBeginswithB()
+})
+And('Click on filter of Building Ends with and Verify the Result', () => {
+    nwr.filterEndswithB()
+})
+And('Click on filter of Building Blank and Verify the Result', () => {
+    nwr.filterBlankB()
+})
+And('Click on filter of Building Not blank and Verify the Result', () => {
+    nwr.filterNotblankB()
+})
+//rd
+And('Click on filter of Repair device contain and Verify the Result', () => {
+    nwr.selectFilterRepairnwrice()
+})
+And('Click on filter of Repair device Does not contain and Verify the Result', () => {
+    nwr.filterDoesnotcontainRD()
+})
+And('Click on filter of Repair device Equals and Verify the Result', () => {
+    nwr.filterEqualsRD()
+})
+And('Click on filter of Repair device Does not equal and Verify the Result', () => {
+    nwr.filterNotequalRD()
+})
+And('Click on filter of Repair device Begins with and Verify the Result', () => {
+    nwr.filterBeginswithRD()
+})
+And('Click on filter of Repair device Ends with and Verify the Result', () => {
+    nwr.filterEndswithRD()
+})
+And('Click on filter of Repair device Blank and Verify the Result', () => {
+    nwr.filterBlankRD()
+})
+And('Click on filter of Repair device Not blank and Verify the Result', () => {
+    nwr.filterNotblankRD()
+})
+//tag
+And('Click on filter of Asset tag contain and Verify the Result', () => {
     nwr.selectFilterAssetTag()
 })
-And('Click More filter select- Repair Box in search box and Verify the Result', () => {
-    nwr.clickOnMoreFilter()
-    nwr.selectFilterRepairBox()
+And('Click on filter of Asset tag Does not contain and Verify the Result', () => {
+    nwr.filterDoesnotcontaintag()
 })
-And('Click More filter select- Created By in search box and Verify the Result', () => {
-    nwr.clickOnMoreFilter()
+And('Click on filter of Asset tag Equals and Verify the Result', () => {
+    nwr.filterEqualstag()
+})
+And('Click on filter of Asset tag Does not equal and Verify the Result', () => {
+    nwr.filterNotequaltag()
+})
+And('Click on filter of Asset tag Begins with and Verify the Result', () => {
+    nwr.filterBeginswithtag()
+})
+And('Click on filter of Asset tag Ends with and Verify the Result', () => {
+    nwr.filterEndswithtag()
+})
+And('Click on filter of Asset tag Blank and Verify the Result', () => {
+    nwr.filterBlanktag()
+})
+And('Click on filter of Asset tag Not blank and Verify the Result', () => {
+    nwr.filterNotblanktag()
+})
+//cby
+And('Click on filter of Created By contain and Verify the Result', () => {
     nwr.selectFilterCreatedBy()
+})
+And('Click on filter of Created By Does not contain and Verify the Result', () => {
+    nwr.filterDoesnotcontainCBy()
+})
+And('Click on filter of Created By Equals and Verify the Result', () => {
+    nwr.filterEqualsCBy()
+})
+And('Click on filter of Created By Does not equal and Verify the Result', () => {
+    nwr.filterNotequalCBy()
+})
+And('Click on filter of Created By Begins with and Verify the Result', () => {
+    nwr.filterBeginswithCBy()
+})
+And('Click on filter of Created By Ends with and Verify the Result', () => {
+    nwr.filterEndswithCBy()
+})
+And('Click on filter of Created By Blank and Verify the Result', () => {
+    nwr.filterBlankCBy()
+})
+And('Click on filter of Created By Not blank and Verify the Result', () => {
+    nwr.filterNotblankCBy()
 })

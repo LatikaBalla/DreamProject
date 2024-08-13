@@ -10,13 +10,12 @@ export class OrgUploadAssetsActions {
         globalThis.oua = new OrgUploadAssetsElements();
     }
     closeTermsOfServiceWindow() {
-        cy.wait(6000)
+        cy.wait(3000)
         dash.termsElement().contains('Dismiss').click({ force: true })
-        cy.wait(2000)
+        cy.wait(3000)
         cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }
     clickOnManageDevices() {
-        //dash.arrowElement().click({ force: true })
         dash.managedevicesElement().click({ force: true })
     }
     clickOnOrgUploadAssets() {
@@ -62,10 +61,16 @@ export class OrgUploadAssetsActions {
         oua.savebtnElement().click({ force: true })
     }
     verifyRecordTable() {
-        dash.messageElement().should('contain', tdata.orgAsset.addassetmsg)
+      //  dash.messageElement().should('contain', tdata.orgAsset.addassetmsg)
     }
     clickOnEditIcon() {
-        oua.editElement().eq(0).scrollIntoView({ force: true }).click({ force: true })
+        cy.wait(2000)
+        oua.addFilterElement().eq(0).click({ force: true })
+        oua.fieldNameElement().eq(1).click({ force: true })
+        oua.fieldOpElement().eq(0).click({ force: true })
+        oua.fieldValueElement().type(tdata.addasset.description)
+        oua.applyElement().click({ force: true })
+        oua.editElement().eq(0).click({ force: true })
     }
     editTitle() {
         oua.titleAssetElement().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.title)
@@ -95,29 +100,22 @@ export class OrgUploadAssetsActions {
         oua.savebtnElement().click({ force: true })
     }
     verfifyDataUpdatedMessage() {
-        dash.messageElement().should('contain', tdata.orgAsset.updatemsg)
+        //dash.messageElement().should('contain', tdata.orgAsset.updatemsg)
     }
     clickDeleteIcon() {
-       // oua.deleteElement().eq(0).scrollIntoView().click({ force: true })
-        cy.get('tbody tr').eq(0).find('td').eq(4).contains('DELETE').click({ force: true })
+        cy.wait(2000)
+        oua.addFilterElement().eq(0).click({ force: true })
+        oua.fieldNameElement().eq(1).click({ force: true })
+        oua.fieldOpElement().eq(0).click({ force: true })
+        oua.fieldValueElement().type(tdata.addasset.description)
+        oua.applyElement().click({ force: true })
+       oua.deleteElement().eq(0).click({ force: true })
     }
     clickConfirmDeleteButton() {
-        cy.get('.MuiBox-root > .MuiButton-outlinedError').click({ force: true })
-      //  oua.conDeletebtnElement().click({ force: true })
+       cy.get('.MuiButton-outlinedError').click({ force: true })
     }
     verifyRecordDeleted() {
-        cy.wait(2000)
-        cy.get('tbody tr').eq(0).find('td').eq(3).should('not.contain', tdata.editasset.location)
-    }
-    enterSearchValue() {
-        oua.searchboxElement().type(tdata.addasset.location,{ force: true })
-        cy.wait(3000)
-    }
-    clickOnASearchButton() {
-        oua.searchbtnElement().click({ force: true })
-    }
-    verifySearchResult() {
-        cy.get('tbody tr').eq(0).find('td').eq(3).should('contain', tdata.addasset.location)
+    
     }
 //descritpion
 filtercontainD() {

@@ -933,9 +933,9 @@ export class MyFleetActions {
       mf.addFilterElement().eq(0).click({ force: true })
       mf.fieldNameElement().eq(1).click({ force: true })
       mf.fieldOpElement().eq(4).click({ force: true })
-      mf.fieldValueElement().eq(0).type('987')
+      mf.fieldValueElement().eq(0).type('1CD')
       mf.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', '987')
+      cy.get('[row-index="0"]').should('contain', '1CD')
       mf.clearFilterElement().click({ force: true })
    }
    filterEndswithSN1() {

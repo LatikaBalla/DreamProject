@@ -10,9 +10,10 @@ export class DeviceRepairReportActions {
       globalThis.repc = new ReportCenterElements();
    }
    closeTermsOfServiceWindow() {
-      cy.contains('Remind me Later').click({ force: true })
+      cy.wait(5000)
       dash.termsElement().contains('Dismiss').click({ force: true })
-      //   dash.termsElement().click({ force: true })
+      cy.wait(5000)
+      cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
    }
    clickOnReportCenter() {
       dash.reportcenterElement().click({ force: true })
@@ -43,14 +44,12 @@ export class DeviceRepairReportActions {
    searchBoxEmpty() {
       dev.searchElement().should('be.empty')
    }
-   clickOnTicketNumberTable() {
-      cy.get('tr td').eq(9).as('btn').scrollIntoView()
-      cy.get('@btn').contains('View').click({ force: true })
+   clickOnviewButton() {
       cy.window().then(win => {
          // win.open('https://google.com', '_blank');
       });
       cy.get('body').type('{ctrl}t');
-      cy.visit("/repair-360/ticket-detail/" + tdata.deviceRepairReport.recordid1, { visitTimeout: 30000 })
+      cy.visit("/repair-360/ticket-detail/" + tdata.deviceRepairReport.recordid, { visitTimeout: 30000 })
       //   cy.get('tr td').eq(9).scrollIntoView().contains('View').click({ force: true })    
    }
    verifyRapairTicketPAge() {
@@ -58,11 +57,10 @@ export class DeviceRepairReportActions {
       dev.headingElement().should('be.visible', { force: true })
    }
    verifyTicketDetails() {
-      cy.contains(tdata.deviceRepairReport.ticketno).should('be.visible')
+      cy.contains(tdata.deviceRepairReport.ticketnumber).should('be.visible')
    }
    clickOnDownloadButton() {
       dev.downloadticketElement().click({ force: true })
-      //  cy.get('body').type('{ctrl}w');
    }
    verifyDownloadSuccessful() {
       cy.verifyDownload("/download/", tdata.deviceRepairReport.filename)
@@ -128,13 +126,14 @@ export class DeviceRepairReportActions {
       dev.fieldOpElement().eq(0).click({ force: true })
       dev.fieldValueElement().type(tdata.deviceRepairReport.recordid)
       dev.applyElement().click({ force: true })
-      cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
+      cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
          const value = parseInt($el.text());
-         expect(value).to.equal(8156);
+         expect(value).to.equal(56677);
       })
       dev.clearFilterElement().click({ force: true })
    }
    filterDoesnotcontainRI() {
+      cy.wait(1000)
       dev.addFilterElement().eq(0).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(1).click({ force: true })
@@ -142,11 +141,12 @@ export class DeviceRepairReportActions {
       dev.applyElement().click({ force: true })
       cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
          const value = parseInt($el.text());
-         expect(value).to.not.equal(8156);
+         expect(value).to.not.equal(56677);
       })
       dev.clearFilterElement().click({ force: true })
    }
    filterGreaterthanRI() {
+      cy.wait(1000)
       dev.addFilterElement().eq(0).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(2).click({ force: true })
@@ -154,11 +154,12 @@ export class DeviceRepairReportActions {
       dev.applyElement().click({ force: true })
       cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
          const value = parseInt($el.text());
-         expect(value).to.be.greaterThan(8156);
+         expect(value).to.be.greaterThan(56677);
       })
       dev.clearFilterElement().click({ force: true })
    }
    filterGreaterequalRI() {
+      cy.wait(1000)
       dev.addFilterElement().eq(0).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(3).click({ force: true })
@@ -166,11 +167,12 @@ export class DeviceRepairReportActions {
       dev.applyElement().click({ force: true })
       cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
          const value = parseInt($el.text());
-         expect(value).to.be.gte(8156);
+         expect(value).to.be.gte(56677);
       })
       dev.clearFilterElement().click({ force: true })
    }
    filterLessthanRI() {
+      cy.wait(1000)
       dev.addFilterElement().eq(0).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(4).click({ force: true })
@@ -178,11 +180,12 @@ export class DeviceRepairReportActions {
       dev.applyElement().click({ force: true })
       cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
          const value = parseInt($el.text());
-         expect(value).to.be.lessThan(8156);
+         expect(value).to.be.lessThan(56677);
       })
       dev.clearFilterElement().click({ force: true })
    }
    filterLessequalRI() {
+      cy.wait(1000)
       dev.addFilterElement().eq(0).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(5).click({ force: true })
@@ -190,24 +193,26 @@ export class DeviceRepairReportActions {
       dev.applyElement().click({ force: true })
       cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
          const value = parseInt($el.text());
-         expect(value).to.be.lte(8156);
+         expect(value).to.be.lte(56677);
       })
       dev.clearFilterElement().click({ force: true })
    }
    filterBetweenRI() {
+      cy.wait(1000)
       dev.addFilterElement().eq(0).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(6).click({ force: true })
       cy.get('[placeholder="From"]').type(tdata.deviceRepairReport.recordid)
       cy.get('[placeholder="To"]').type(tdata.deviceRepairReport.recordid1)
       dev.applyElement().click({ force: true })
-      cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
+      cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
          const value = parseInt($el.text());
-         expect(value).to.be.within(8156, 10584);
+         expect(value).to.be.within(56677, 70664);
       })
       dev.clearFilterElement().click({ force: true })
    }
    filterBlankRI() {
+      cy.wait(1000)
       dev.addFilterElement().eq(0).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(7).click({ force: true })
@@ -217,14 +222,15 @@ export class DeviceRepairReportActions {
       dev.clearFilterElement().click({ force: true })
    }
    filterNotblankRI() {
+      cy.wait(1000)
       dev.addFilterElement().eq(0).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(8).click({ force: true })
       dev.fieldValueElement().eq(1).clear({ force: true }).type(tdata.deviceRepairReport.recordid1, { force: true })
       dev.applyElement().click({ force: true })
-      cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
+      cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
          const value = parseInt($el.text());
-         expect(value).to.equal(10584)
+         expect(value).to.equal(70664)
       })
       dev.clearFilterElement().click({ force: true })
    }
@@ -269,18 +275,18 @@ export class DeviceRepairReportActions {
       dev.addFilterElement().eq(1).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(4).click({ force: true })
-      dev.fieldValueElement().eq(0).type('V0070')
+      dev.fieldValueElement().eq(0).type('V00')
       dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', 'V0070')
+      cy.get('[row-index="0"]').should('contain', 'V00')
       dev.clearFilterElement().click({ force: true })
    }
    filterEndswithTN() {
       dev.addFilterElement().eq(1).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(5).click({ force: true })
-      dev.fieldValueElement().eq(0).type('022')
+      dev.fieldValueElement().eq(0).type('677')
       dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', '022')
+      cy.get('[row-index="0"]').should('contain', '677')
       dev.clearFilterElement().click({ force: true })
    }
    filterBlankTN() {
@@ -296,9 +302,9 @@ export class DeviceRepairReportActions {
       dev.addFilterElement().eq(1).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(7).click({ force: true })
-      dev.fieldValueElement().eq(1).type('V0070011', { force: true })
+      dev.fieldValueElement().eq(1).type(tdata.deviceRepairReport.ticketnumber, { force: true })
       dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', 'V0070011')
+      cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.ticketnumber)
       dev.clearFilterElement().click({ force: true })
    }
    //sn
@@ -376,78 +382,73 @@ export class DeviceRepairReportActions {
       dev.clearFilterElement().click({ force: true })
    } 
    //RS
-   filtercontainRS() {
+   filterOption1() {
+      cy.wait(1000)
       dev.addFilterElement().eq(7).click({ force: true })
-      dev.fieldNameElement().eq(1).click({ force: true })
-      dev.fieldOpElement().eq(0).click({ force: true })
-      dev.fieldValueElement().clear({ force: true }).type(tdata.deviceRepairReport.repairtype)
-      dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.repairtype)
-      dev.clearFilterElement().click({ force: true })
-   }
-   filterDoesnotcontainRS() {
-      dev.addFilterElement().eq(7).click({ force: true })
-      dev.fieldNameElement().eq(1).click({ force: true })
-      dev.fieldOpElement().eq(1).click({ force: true })
-      dev.fieldValueElement().eq(0).clear({ force: true }).type(tdata.deviceRepairReport.repairtype)
-      dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', ' ')
-      dev.clearFilterElement().click({ force: true })
-   }
-   filterEqualsRS() {
-      dev.addFilterElement().eq(7).click({ force: true })
-      dev.fieldNameElement().eq(1).click({ force: true })
-      dev.fieldOpElement().eq(2).click({ force: true })
-      dev.fieldValueElement().eq(0).clear({ force: true }).type(tdata.deviceRepairReport.repairtype)
-      dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.repairtype)
-      dev.clearFilterElement().click({ force: true })
-   }
-   filterNotequalRS() {
-      dev.addFilterElement().eq(7).click({ force: true })
-      dev.fieldNameElement().eq(1).click({ force: true })
-      dev.fieldOpElement().eq(3).click({ force: true })
-      dev.fieldValueElement().eq(0).clear({ force: true }).type(tdata.deviceRepairReport.repairtype)
-      dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('not.contain.value', tdata.deviceRepairReport.repairtype)
-      dev.clearFilterElement().click({ force: true })
-   }
-   filterBeginswithRS() {
-      dev.addFilterElement().eq(7).click({ force: true })
-      dev.fieldNameElement().eq(1).click({ force: true })
-      dev.fieldOpElement().eq(4).click({ force: true })
-      dev.fieldValueElement().eq(0).clear({ force: true }).type('Viva')
-      dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', 'Viva')
-      dev.clearFilterElement().click({ force: true })
-   }
-   filterEndswithRS() {
-      dev.addFilterElement().eq(7).click({ force: true })
-      dev.fieldNameElement().eq(1).click({ force: true })
-      dev.fieldOpElement().eq(5).click({ force: true })
-      dev.fieldValueElement().eq(0).clear({ force: true }).type('city')
-      dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', 'city')
-      dev.clearFilterElement().click({ force: true })
-   }
-   filterBlankRS() {
-      dev.addFilterElement().eq(7).click({ force: true })
-      dev.fieldNameElement().eq(1).click({ force: true })
-      dev.fieldOpElement().eq(6).click({ force: true })
-      dev.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
-      dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', ' ')
-      dev.clearFilterElement().click({ force: true })
-   }
-   filterNotblankRS() {
-      dev.addFilterElement().eq(7).click({ force: true })
-      dev.fieldNameElement().eq(1).click({ force: true })
-      dev.fieldOpElement().eq(7).click({ force: true })
-      dev.fieldValueElement().eq(1).clear({ force: true }).type(tdata.deviceRepairReport.repairtype, { force: true })
-      dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.repairtype)
-      dev.clearFilterElement().click({ force: true })
-   }
+      cy.get('[value="Pending_Repair_Box"]').click({ force: true })
+      cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Pending Repair Box')
+      cy.get('.reset-button').click({ force: true })
+  }
+  filterOption2() {
+   dev.addFilterElement().eq(7).click({ force: true })
+      cy.get('[value="Box_Created"]').click({ force: true })
+      cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Box Created')
+      cy.get('.reset-button').click({ force: true })
+  }
+  filterOption3() {
+   dev.addFilterElement().eq(7).click({ force: true })
+      cy.get('[value="Intake"]').click({ force: true })
+      cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Intake')
+      cy.get('.reset-button').click({ force: true })
+  }
+  filterOption4() {
+   dev.addFilterElement().eq(7).click({ force: true })
+      cy.get('[value="Estimate_Approved"]').click({ force: true })
+      cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Estimate Approved')
+      cy.get('.reset-button').click({ force: true })
+  }
+  filterOption5() {
+   dev.addFilterElement().eq(7).click({ force: true })
+      cy.get('[value="Intake_Queue"]').click({ force: true })
+      cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Intake Queue')
+      cy.get('.reset-button').click({ force: true })
+  }
+  filterOption6() {
+   dev.addFilterElement().eq(7).click({ force: true })
+      cy.get('[value="Shipping_to_Vivacity"]').click({ force: true })
+      cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Shipping to Vivacity')
+      cy.get('.reset-button').click({ force: true })
+  }
+  filterOption7() {
+   dev.addFilterElement().eq(7).click({ force: true })
+      cy.get('[value="Estimate_Denied"]').click({ force: true })
+      cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Estimate Denied')
+      cy.get('.reset-button').click({ force: true })
+  }
+  filterOption8() {
+   dev.addFilterElement().eq(7).click({ force: true })
+      cy.get('[value="On_Hold"]').click({ force: true })
+      cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'On Hold')
+      cy.get('.reset-button').click({ force: true })
+  }
+  filterOption9() {
+   dev.addFilterElement().eq(7).click({ force: true })
+      cy.get('[value="Part_Ordered"]').click({ force: true })
+      cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Part Ordered')
+      cy.get('.reset-button').click({ force: true })
+  }
+  filterOption10() {
+   dev.addFilterElement().eq(7).click({ force: true })
+      cy.get('[value="Part_Queue"]').click({ force: true })
+      cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Part Queue')
+      cy.get('.reset-button').click({ force: true })
+  }
+  filterOption11() {
+   dev.addFilterElement().eq(7).click({ force: true })
+      cy.get('[value="Claim_Overage"]').click({ force: true })
+      cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Claim Overage')
+      cy.get('.reset-button').click({ force: true })
+  }
    //B
    selectFilterBuilding() {
       dev.addFilterElement().eq(2).click({ force: true })
@@ -523,76 +524,76 @@ export class DeviceRepairReportActions {
    }
     //RT
     selectFilterRepairType() {
-      rt.addFilterElement().eq(3).click({ force: true })
-      rt.fieldNameElement().eq(1).click({ force: true })
-      rt.fieldOpElement().eq(0).click({ force: true })
-      rt.fieldValueElement().clear({ force: true }).type(tdata.deviceRepairReport.repairtype)
-      rt.applyElement().click({ force: true })
+      dev.addFilterElement().eq(3).click({ force: true })
+      dev.fieldNameElement().eq(1).click({ force: true })
+      dev.fieldOpElement().eq(0).click({ force: true })
+      dev.fieldValueElement().clear({ force: true }).type(tdata.deviceRepairReport.repairtype)
+      dev.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.repairtype)
-      rt.clearFilterElement().click({ force: true })
+      dev.clearFilterElement().click({ force: true })
   }
   filterDoesnotcontainRT() {
-      rt.addFilterElement().eq(3).click({ force: true })
-      rt.fieldNameElement().eq(1).click({ force: true })
-      rt.fieldOpElement().eq(1).click({ force: true })
-      rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.deviceRepairReport.repairtype)
-      rt.applyElement().click({ force: true })
+      dev.addFilterElement().eq(3).click({ force: true })
+      dev.fieldNameElement().eq(1).click({ force: true })
+      dev.fieldOpElement().eq(1).click({ force: true })
+      dev.fieldValueElement().eq(0).clear({ force: true }).type(tdata.deviceRepairReport.repairtype)
+      dev.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', ' ')
-      rt.clearFilterElement().click({ force: true })
+      dev.clearFilterElement().click({ force: true })
   }
   filterEqualsRT() {
-      rt.addFilterElement().eq(3).click({ force: true })
-      rt.fieldNameElement().eq(1).click({ force: true })
-      rt.fieldOpElement().eq(2).click({ force: true })
-      rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.deviceRepairReport.repairtype)
-      rt.applyElement().click({ force: true })
+      dev.addFilterElement().eq(3).click({ force: true })
+      dev.fieldNameElement().eq(1).click({ force: true })
+      dev.fieldOpElement().eq(2).click({ force: true })
+      dev.fieldValueElement().eq(0).clear({ force: true }).type(tdata.deviceRepairReport.repairtype)
+      dev.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.repairtype)
-      rt.clearFilterElement().click({ force: true })
+      dev.clearFilterElement().click({ force: true })
   }
   filterNotequalRT() {
-      rt.addFilterElement().eq(3).click({ force: true })
-      rt.fieldNameElement().eq(1).click({ force: true })
-      rt.fieldOpElement().eq(3).click({ force: true })
-      rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.deviceRepairReport.repairtype)
-      rt.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('not.contain.value', tdata.rdeviceRepairReport.repairtype)
-      rt.clearFilterElement().click({ force: true })
+      dev.addFilterElement().eq(3).click({ force: true })
+      dev.fieldNameElement().eq(1).click({ force: true })
+      dev.fieldOpElement().eq(3).click({ force: true })
+      dev.fieldValueElement().eq(0).clear({ force: true }).type(tdata.deviceRepairReport.repairtype)
+      dev.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('not.contain.value', tdata.deviceRepairReport.repairtype)
+      dev.clearFilterElement().click({ force: true })
   }
   filterBeginswithRT() {
-      rt.addFilterElement().eq(3).click({ force: true })
-      rt.fieldNameElement().eq(1).click({ force: true })
-      rt.fieldOpElement().eq(4).click({ force: true })
-      rt.fieldValueElement().eq(0).clear({ force: true }).type('Viva')
-      rt.applyElement().click({ force: true })
+      dev.addFilterElement().eq(3).click({ force: true })
+      dev.fieldNameElement().eq(1).click({ force: true })
+      dev.fieldOpElement().eq(4).click({ force: true })
+      dev.fieldValueElement().eq(0).clear({ force: true }).type('Viva')
+      dev.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', 'Viva')
-      rt.clearFilterElement().click({ force: true })
+      dev.clearFilterElement().click({ force: true })
   }
   filterEndswithRT() {
-      rt.addFilterElement().eq(3).click({ force: true })
-      rt.fieldNameElement().eq(1).click({ force: true })
-      rt.fieldOpElement().eq(5).click({ force: true })
-      rt.fieldValueElement().eq(0).clear({ force: true }).type('city')
-      rt.applyElement().click({ force: true })
+      dev.addFilterElement().eq(3).click({ force: true })
+      dev.fieldNameElement().eq(1).click({ force: true })
+      dev.fieldOpElement().eq(5).click({ force: true })
+      dev.fieldValueElement().eq(0).clear({ force: true }).type('city')
+      dev.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', 'city')
-      rt.clearFilterElement().click({ force: true })
+      dev.clearFilterElement().click({ force: true })
   }
   filterBlankRT() {
-      rt.addFilterElement().eq(3).click({ force: true })
-      rt.fieldNameElement().eq(1).click({ force: true })
-      rt.fieldOpElement().eq(6).click({ force: true })
-      rt.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
-      rt.applyElement().click({ force: true })
+      dev.addFilterElement().eq(3).click({ force: true })
+      dev.fieldNameElement().eq(1).click({ force: true })
+      dev.fieldOpElement().eq(6).click({ force: true })
+      dev.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+      dev.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', ' ')
-      rt.clearFilterElement().click({ force: true })
+      dev.clearFilterElement().click({ force: true })
   }
   filterNotblankRT() {
-      rt.addFilterElement().eq(3).click({ force: true })
-      rt.fieldNameElement().eq(1).click({ force: true })
-      rt.fieldOpElement().eq(7).click({ force: true })
-      rt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.deviceRepairReport.repairtype, { force: true })
-      rt.applyElement().click({ force: true })
+      dev.addFilterElement().eq(3).click({ force: true })
+      dev.fieldNameElement().eq(1).click({ force: true })
+      dev.fieldOpElement().eq(7).click({ force: true })
+      dev.fieldValueElement().eq(1).clear({ force: true }).type(tdata.deviceRepairReport.repairtype, { force: true })
+      dev.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.repairtype)
-      rt.clearFilterElement().click({ force: true })
+      dev.clearFilterElement().click({ force: true })
   }
    //RD
    selectFilterRepairDevice() {
@@ -635,18 +636,18 @@ export class DeviceRepairReportActions {
       dev.addFilterElement().eq(5).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(4).click({ force: true })
-      dev.fieldValueElement().eq(0).clear({ force: true }).type('Dell Chromebook 11 3100')
+      dev.fieldValueElement().eq(0).clear({ force: true }).type('Viva')
       dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', 'Dell Chromebook 11 3100')
+      cy.get('[row-index="0"]').should('contain', 'Viva')
       dev.clearFilterElement().click({ force: true })
    }
    filterEndswithRD() {
       dev.addFilterElement().eq(5).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(5).click({ force: true })
-      dev.fieldValueElement().eq(0).clear({ force: true }).type(' Non-Touch')
+      dev.fieldValueElement().eq(0).clear({ force: true }).type('Touch')
       dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', ' Non-Touch')
+      cy.get('[row-index="0"]').should('contain', 'Touch')
       dev.clearFilterElement().click({ force: true })
    }
    filterBlankRD() {
@@ -662,9 +663,9 @@ export class DeviceRepairReportActions {
       dev.addFilterElement().eq(5).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(7).click({ force: true })
-      dev.fieldValueElement().eq(1).clear({ force: true }).type('VT Chromebook', { force: true })
+      dev.fieldValueElement().eq(1).clear({ force: true }).type(tdata.deviceRepairReport.repairdevice, { force: true })
       dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', 'VT Chromebook')
+      cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.repairdevice)
       dev.clearFilterElement().click({ force: true })
    }
    //tag
@@ -708,18 +709,18 @@ export class DeviceRepairReportActions {
       dev.addFilterElement().eq(6).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(4).click({ force: true })
-      dev.fieldValueElement().eq(0).clear({ force: true }).type('56')
+      dev.fieldValueElement().eq(0).clear({ force: true }).type('H4r')
       dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', '56')
+      cy.get('[row-index="0"]').should('contain', 'H4r')
       dev.clearFilterElement().click({ force: true })
    }
    filterEndswithtag() {
       dev.addFilterElement().eq(6).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(5).click({ force: true })
-      dev.fieldValueElement().eq(0).clear({ force: true }).type('78')
+      dev.fieldValueElement().eq(0).clear({ force: true }).type('&Lo')
       dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', '78')
+      cy.get('[row-index="0"]').should('contain', '&Lo')
       dev.clearFilterElement().click({ force: true })
    }
    filterBlanktag() {
@@ -735,9 +736,9 @@ export class DeviceRepairReportActions {
       dev.addFilterElement().eq(6).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(7).click({ force: true })
-      dev.fieldValueElement().eq(1).clear({ force: true }).type('5678', { force: true })
+      dev.fieldValueElement().eq(1).clear({ force: true }).type( tdata.deviceRepairReport.assettag, { force: true })
       dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', '5678')
+      cy.get('[row-index="0"]').should('contain',  tdata.deviceRepairReport.assettag)
       dev.clearFilterElement().click({ force: true })
    }
    //cby
@@ -807,9 +808,9 @@ export class DeviceRepairReportActions {
       dev.addFilterElement().eq(8).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(7).click({ force: true })
-      dev.fieldValueElement().eq(1).clear({ force: true }).type('Maleja Duque', { force: true })
+      dev.fieldValueElement().eq(1).clear({ force: true }).type(tdata.deviceRepairReport.createdby, { force: true })
       dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', 'Maleja Duque')
+      cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.createdby)
       dev.clearFilterElement().click({ force: true })
    }
 }

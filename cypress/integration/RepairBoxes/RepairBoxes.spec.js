@@ -25,7 +25,6 @@ And('Click on RepairBoxes Tab', () => {
 And('Verify the Title of RepairBoxes Page', () => {
     rb.verifyTitle()
 })
-
 And('Outbound and Inbound Shipments for RepairBoxes should be visible', () => {
     rb.outboundVisible()
     rb.inboundVisible()
@@ -93,34 +92,11 @@ Then('Verify the ticket is delete from the table', () => {
     rb.verifyTicketDeleted()
     //cy.go('back')
 })
-And('Enter the Search - Tracking Number in search box and Verify the Result', () => {
-    rb.searchTrackingNumber()
+Then('Click on Add Repair Image and Verify', () => {
+    rb.clickOnAddRepairImage()
 })
-Then('Enter the Search - Record Id in search box and Verify the Result', () => {
-    rb.searchRecordId()
-})
-And('Enter the Search - Building in search box and Verify the Result', () => {
-    rb.searchBuilding()
-})
-Then('Enter the Search - Created_by in search box and Verify the Result', () => {
-    rb.searchCreatedby()
-})
-Then('Click on More filters', () => {
-    rb.clickOnMoreFilter()
-})
-And('Select Field name and Field operation and Enter the Search value', () => {
-    rb.enterFieldName()
-    rb.enterFieldOperation()
-    rb.enterSearchValue()
-})
-Then('Click on Apply Button', () => {
-    rb.clickOnApply()
-})
-And('Verify the Results in the table', () => {
-    rb.verifyResultFilter()
-})
-Then('Click on Clear filter', () => {
-    rb.clickOnClearFilter()
+And('Click on Add Note and Verify', () => {
+    rb.clickOnAddNote()
 })
 //RB
 And('Click on filter of Repair Box Equals in search box and Verify the Result', () => {

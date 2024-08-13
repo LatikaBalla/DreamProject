@@ -8,9 +8,10 @@ export class VivacityRepairCenterActions {
         globalThis.rep = new VivacityRepairCenterElements();
     }
     closeTermsOfServiceWindow() {
-        cy.contains('Remind me Later').click({ force: true }) 
+        cy.wait(1000)
         dash.termsElement().contains('Dismiss').click({ force: true })
-        //dash.termsElement().click({ force: true })
+        cy.wait(5000)
+        cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }
     verifyTitleVivacityRepairCenter() {
         rep.titleElement()

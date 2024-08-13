@@ -8,9 +8,10 @@ export class MyProfileActions {
         globalThis.mp = new MyProfileElements();
     }
     closeTermsOfServiceWindow() {
-        cy.contains('Remind me Later').click({ force: true }) 
+        cy.wait(3000)
         dash.termsElement().contains('Dismiss').click({ force: true })
-      //  dash.termsElement().click({ force: true })
+        cy.wait(5000)
+        cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }
     clickOnMyProfile() {
         dash.myprofileElement().click({ force: true })

@@ -109,7 +109,7 @@ export default class NonWarrantyRepairsElements {
         })
     }
     clearFilterElement() {
-        return cy.contains(locator.nonWarrantyRepairs.clearFilter, {
+        return cy.get(locator.nonWarrantyRepairs.clearFilter, {
             timeout: 30000,
         })
     }

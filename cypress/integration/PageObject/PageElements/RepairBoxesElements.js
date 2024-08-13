@@ -168,4 +168,59 @@ export default class RepairBoxesElements {
             timeout: 30000,
         })
     }
+    exportElement(){
+        return cy.get(locator.repairBoxes.export, {
+            timeout: 30000,
+        }) 
+    }
+    addlineElement() {
+        return cy.contains(locator.repairBoxes.addline, {
+            timeout: 30000,
+        })
+    }
+    addimageElement() {
+        return cy.contains(locator.repairBoxes.addimage, {
+            timeout: 30000,
+        })
+    }
+    addnoteElement() {
+        return cy.contains(locator.repairBoxes.addnote, {
+            timeout: 30000,
+        })
+    }
+    noteElement() {
+        return cy.get(locator.repairBoxes.note, {
+            timeout: 30000,
+        })
+    }
+    uploadimageElement() {
+        return cy.contains(locator.repairBoxes.uploadimage, {
+            timeout: 30000,
+        })
+    }
+    imagedescriptionElement() {
+        return cy.get(locator.repairBoxes.imagedescription, {
+            timeout: 30000,
+        })
+    }
+    notetypeElement() {
+        return cy.get(locator.repairBoxes.notetype, {
+            timeout: 30000,
+        })
+    }
+    createlineElement() {
+        return cy.get(locator.repairBoxes.createline, {
+            timeout: 30000,
+        })
+    }
+    updateimageElement() {
+        return cy.get(locator.repairBoxes.updateimage, {
+            timeout: 30000,
+        })
+    }
+    createnoteElement() {
+        return cy.get(locator.repairBoxes.createnote, {
+            timeout: 30000,
+        })
+    }
 }

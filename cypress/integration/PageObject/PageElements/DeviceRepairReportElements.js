@@ -84,7 +84,7 @@ export default class DeviceRepairReportElements {
         })
     }
     clearFilterElement() {
-        return cy.contains(locator.deviceRepairReport.clearFilter, {
+        return cy.get(locator.deviceRepairReport.clearFilter, {
             timeout: 30000,
         })
     }

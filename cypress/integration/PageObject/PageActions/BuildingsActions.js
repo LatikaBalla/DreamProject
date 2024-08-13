@@ -15,9 +15,10 @@ export class BuildingsActions {
         dash.buildingsElement().click({ force: true })
     }
     closeTermsOfServiceWindow() {
-        cy.contains('Remind me Later').click({ force: true })  
-        dash.termsElement().contains('Dismiss').click({ force: true })  
-       // dash.termsElement().click({ force: true })
+        cy.wait(1000)
+        dash.termsElement().contains('Dismiss').click({ force: true })
+        cy.wait(5000)
+        cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
         dash.myAccountElement().click({ force: true })
     }
     addNewButtonTabVisible() {

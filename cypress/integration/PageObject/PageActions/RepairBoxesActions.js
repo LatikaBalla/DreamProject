@@ -59,7 +59,6 @@ export class RepairBoxesActions {
     }
     clickOnCreateBoxButton() {
         cy.get('.MuiDialogActions-root > .MuiButtonBase-root').click({ force: true })
-        // cy.get('.css-8atqhb > .MuiButtonBase-root').click({ force: true })
     }
     selectTickets() {
         rb.ticketElement().click()
@@ -73,11 +72,10 @@ export class RepairBoxesActions {
     }
     clickOnViewButton() {
         cy.window().then(win => {
-            // win.open('https://google.com', '_blank');
+            
         });
         cy.get('body').type('{ctrl}t');
         cy.visit("/repair-360/box-detail/" + tdata.repairBox.recordid)
-        //cy.get('tr td').eq(5).contains('View Status').click({ force: true })
     }
     verifyBoxDetails() {
         cy.wait(100)
@@ -88,7 +86,7 @@ export class RepairBoxesActions {
         rb.addticketElement().click({ force: true })
     }
     clickOnDownloadLabel() {
-        cy.contains('Exporb').click({ force: true })
+        rb.exportElement().click({ force: true })
     }
     clickOnAddTicket_s() {
         rb.addticketbtnElement().click({ force: true })
@@ -97,7 +95,6 @@ export class RepairBoxesActions {
         dash.messageElement().should('contain', tdata.repairBox.boxcreatedmsg)
     }
     clickOnViewButtonTicket() {
-        //cy.wait(5000)
         cy.get('tbody tr').eq(0).find('td').eq(7).scrollIntoView().contains('Details').click({ force: true })
     }
     verifyTicketDetails() {
@@ -111,36 +108,25 @@ export class RepairBoxesActions {
         cy.get('tbody tr').eq(0).find('td').eq(8).scrollIntoView().contains('Remove').click({ force: true })
     }
     verifyTicketDeleted() {
-        //   cy.wait(1000)
         // cy.get('tbody tr').eq(0).should('not.be.visible')
     }
-    searchTrackingNumber() {
-        rb.searchboxElement().eq(0).click({ force: true })
-        rb.trackingnumberElement().click({ force: true })
-        rb.searchElement().clear({ force: true }).type(tdata.repairBox.trackingnumber + '{enter}', { force: true })
-        cy.get('tr td').eq(1).should('contain', tdata.repairBox.trackingnumber)
+    clickOnAddRepairImage() {
+        rb.addimageElement().click({ force: true })
+        cy.get('.MuiGrid-root > .MuiBox-root > :nth-child(2)').click({ force: true })
+        cy.get('[id="image"]').attachFile('image1.jpeg', { force: true })
+        cy.wait(100)
+        rb.imagedescriptionElement().type('Testing Image')
+        rb.updateimageElement().contains('Upload Image').click({ force: true })
+        // dash.messageElement().should('contain', 'Image Created')
     }
-    searchRecordId() {
-        rb.searchboxElement().eq(0).click({ force: true })
-        rb.recordidElement().click({ force: true })
-        rb.searchElement().clear({ force: true }).type(tdata.repairBox.recordid + '{enter}', { force: true })
-        cy.get('tr td').eq(0).should('contain', tdata.repairBox.recordid)
-        rb.searchElement().clear({ force: true })
-    }
-    searchCreatedby() {
-        rb.searchboxElement().eq(0).click({ force: true })
-        rb.createdbyElement().click({ force: true })
-        rb.searchElement().clear({ force: true }).type(tdata.repairBox.createdby + '{enter}', { force: true })
-        cy.get('tr td').eq(7).should('contain', tdata.repairBox.createdby)
-    }
-    searchBuilding() {
-        rb.searchboxElement().eq(0).click({ force: true })
-        rb.buildingElement().click({ force: true })
-        rb.searchElement().clear({ force: true }).type(tdata.repairBox.building + '{enter}', { force: true })
-        cy.get('tr td').eq(4).should('contain', tdata.repairBox.building)
-    }
-    clickOnClearFilter() {
-        rb.clearFilterElement().click({ force: true })
+    clickOnAddNote() {
+        cy.wait(100)
+        rb.addnoteElement().click({ force: true })
+        rb.notetypeElement().click({ force: true })
+        cy.get('[data-value="Part Received"]').click({ force: true })
+        rb.noteElement().type('Testing Note', { force: true })
+        rb.createnoteElement().contains('Create').click({ force: true })
+        // dash.messageElement().should('contain', 'Ticket updated')
     }
     //RB
     selectFilterRepairBox() {
@@ -545,41 +531,31 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     //ss
-    filterSearchCheck() {
-        cy.wait(2000)
-        rb.addFilterElement().eq(5).click({ force: true })
-        rb.searchElement().type('Vivacity')
-        cy.contains(tdata.repairBox.shippingboxstatus1).click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus1)
-        cy.get('.reset-button').click({ force: true })
-        rb.searchElement().clear({ force: true })
-    }
     filterCheck1() {      
         cy.wait(2000)
         rb.addFilterElement().eq(5).click({ force: true })
-        cy.contains(tdata.repairBox.shippingboxstatus1).click({ force: true })
+        cy.get('[value="RecievedByVivacity"]').click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus1)
         cy.get('.reset-button').click({ force: true })
     }
     filterCheck2() {
         rb.addFilterElement().eq(5).click({ force: true })
-        cy.contains(tdata.repairBox.shippingboxstatus2).click({ force: true })
+        cy.get('[value="NotShipped"]').click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus2)
         cy.get('.reset-button').click({ force: true })
-
     }
     filterCheck3() {
         rb.addFilterElement().eq(5).click({ force: true })
-        cy.contains(tdata.repairBox.shippingboxstatus3).click({ force: true })
+        cy.get('[value="ShippingFromDistrict"]').click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus3)
         cy.get('.reset-button').click({ force: true })
     }
     filterCheckAll() {
         rb.addFilterElement().eq(5).click({ force: true })
-        cy.contains(tdata.repairBox.shippingboxstatus1).click({ force: true })
-        cy.contains(tdata.repairBox.shippingboxstatus2).click({ force: true })
-        cy.contains(tdata.repairBox.shippingboxstatus3).click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus1, tdata.repairBox.shippingboxstatus2, tdata.repairBox.shippingboxstatus3)
+        cy.get('[value="RecievedByVivacity"]').click({ force: true })
+        cy.get('[value="NotShipped"]').click({ force: true })
+        cy.get('[value="ShippingFromDistrict"]').click({ force: true })
+        cy.get('[col-id="shipping_box_status"]').should('contain', tdata.repairBox.shippingboxstatus1, tdata.repairBox.shippingboxstatus2, tdata.repairBox.shippingboxstatus3)
         cy.get('.reset-button').click({ force: true })
     }
     //Cby

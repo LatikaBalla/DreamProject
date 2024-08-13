@@ -10,8 +10,7 @@ export class PartClosetActions {
         globalThis.pc = new PartClosetElements();
     }
     closeTermsOfServiceWindow() {
-        // cy.contains('Remind me Later').click({ force: true }) 
-        cy.wait(5000)
+        cy.wait(3000)
         dash.termsElement().contains('Dismiss').click({ force: true })
         cy.wait(4000)
         cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
@@ -24,7 +23,6 @@ export class PartClosetActions {
     }
     clickOnPartClosetTab() {
         rep.partclosetElement().click({ force: true })
-       
     }
     verifyTitle() {
         pc.titleElement().should('be.visible')
@@ -86,13 +84,7 @@ export class PartClosetActions {
     selectPartName() {
         cy.wait(1000)
         pc.partidElement().click({ force: true })
-        // cy.get('[role="listbox"]>li').eq(1).then(($el) => {
-        //     // Ensure the element is not disabled or hidden
-        //     if (!$el.is(':disabled') && $el.is(':visible')) {
-        //       cy.wrap($el).click();
-        //     }
-        //   });
-       cy.get('[role="listbox"]').find('[role="option"]').eq(0).click({ force: true })
+        cy.get('[role="listbox"]').find('[role="option"]').eq(0).click({ force: true })
     }
     enterQuantityVT() {
         pc.quantityVTElement().type(tdata.partCloset.quantity, { force: true })
@@ -106,8 +98,16 @@ export class PartClosetActions {
     }
     verifyNewVTPartAdded() {
         dash.messageElement().should('contain', 'Part Closet Item created')
-        //cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.partCloset.partnameTable)
-        //  dash.messageElement().should('contain', tdata.srcStudent.createpartmsg)
+    }
+    clickOnOrderMore() {
+        cy.get('[type="button"]').contains('Order More').eq(0).click({ force: true })
+    }
+    enterQuantityMore() {
+        cy.get('[placeholder="Quantity"]').type('10')
+        cy.contains('Submit Request').click({ force: true })
+    }
+    verifyRequestQuantity() {
+      //  dash.messageElement().should('contain', 'Request for more parts sent')
     }
     //PN
     selectFilterPartName() {
@@ -133,7 +133,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(0).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(2).click({ force: true })
-        pc.fieldValueElement().eq(0).type(tdata.partCloset.partname,{ force: true })
+        pc.fieldValueElement().eq(0).type(tdata.partCloset.partname, { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.partCloset.partname)
         pc.clearFilterElement().click({ force: true })
@@ -142,7 +142,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(0).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(3).click({ force: true })
-        pc.fieldValueElement().eq(0).type(tdata.partCloset.partname,{ force: true })
+        pc.fieldValueElement().eq(0).type(tdata.partCloset.partname, { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('not.contain.value', tdata.partCloset.partname)
         pc.clearFilterElement().click({ force: true })
@@ -151,7 +151,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(0).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(4).click({ force: true })
-        pc.fieldValueElement().eq(0).type('Speaker',{ force: true })
+        pc.fieldValueElement().eq(0).type('Speaker', { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', 'Speaker')
         pc.clearFilterElement().click({ force: true })
@@ -160,7 +160,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(0).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(5).click({ force: true })
-        pc.fieldValueElement().eq(0).type('Set',{ force: true })
+        pc.fieldValueElement().eq(0).type('Set', { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', 'Set')
         pc.clearFilterElement().click({ force: true })
@@ -178,9 +178,9 @@ export class PartClosetActions {
         pc.addFilterElement().eq(0).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(7).click({ force: true })
-        pc.fieldValueElement().eq(1).type('Wi-Fi Card', { force: true })
+        pc.fieldValueElement().eq(1).type(tdata.partCloset.partname, { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Wi-Fi Card')
+        cy.get('[row-index="0"]').should('contain', tdata.partCloset.partname)
         pc.clearFilterElement().click({ force: true })
     }
     // SKU
@@ -207,7 +207,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(1).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(2).click({ force: true })
-        pc.fieldValueElement().eq(0).type(tdata.partCloset.partsku,{ force: true })
+        pc.fieldValueElement().eq(0).type(tdata.partCloset.partsku, { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.partCloset.partsku)
         pc.clearFilterElement().click({ force: true })
@@ -216,7 +216,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(1).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(3).click({ force: true })
-        pc.fieldValueElement().eq(0).type(tdata.partCloset.partsku,{ force: true })
+        pc.fieldValueElement().eq(0).type(tdata.partCloset.partsku, { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('not.contain.value', tdata.partCloset.partsku)
         pc.clearFilterElement().click({ force: true })
@@ -225,7 +225,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(1).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(4).click({ force: true })
-        pc.fieldValueElement().eq(0).type('ULD',{ force: true })
+        pc.fieldValueElement().eq(0).type('ULD', { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', 'ULD')
         pc.clearFilterElement().click({ force: true })
@@ -234,7 +234,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(1).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(5).click({ force: true })
-        pc.fieldValueElement().eq(0).type('5',{ force: true })
+        pc.fieldValueElement().eq(0).type('5', { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', '5')
         pc.clearFilterElement().click({ force: true })
@@ -252,9 +252,9 @@ export class PartClosetActions {
         pc.addFilterElement().eq(1).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(7).click({ force: true })
-        pc.fieldValueElement().eq(1).type('RCM6593-5', { force: true })
+        pc.fieldValueElement().eq(1).type(tdata.partCloset.partsku, { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'RCM6593-5')
+        cy.get('[row-index="0"]').should('contain', tdata.partCloset.partsku)
         pc.clearFilterElement().click({ force: true })
     }
     //PD
@@ -281,16 +281,16 @@ export class PartClosetActions {
         pc.addFilterElement().eq(2).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(2).click({ force: true })
-        pc.fieldValueElement().eq(0).type(tdata.partCloset.parentdevice,{ force: true })
+        pc.fieldValueElement().eq(0).type(tdata.partCloset.parentdevice, { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain',tdata.partCloset.parentdevice)
+        cy.get('[row-index="0"]').should('contain', tdata.partCloset.parentdevice)
         pc.clearFilterElement().click({ force: true })
     }
     filterNotequalPD() {
         pc.addFilterElement().eq(2).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(3).click({ force: true })
-        pc.fieldValueElement().eq(0).type(tdata.partCloset.parentdevice,{ force: true })
+        pc.fieldValueElement().eq(0).type(tdata.partCloset.parentdevice, { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('not.contain.value', tdata.partCloset.parentdevice)
         pc.clearFilterElement().click({ force: true })
@@ -299,7 +299,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(2).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(4).click({ force: true })
-        pc.fieldValueElement().eq(0).type('Acer Chromebook',{ force: true })
+        pc.fieldValueElement().eq(0).type('Acer Chromebook', { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', 'Acer Chromebook')
         pc.clearFilterElement().click({ force: true })
@@ -308,7 +308,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(2).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(5).click({ force: true })
-        pc.fieldValueElement().eq(0).type('Non-Touch',{ force: true })
+        pc.fieldValueElement().eq(0).type('Non-Touch', { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', 'Non-Touch')
         pc.clearFilterElement().click({ force: true })
@@ -326,9 +326,9 @@ export class PartClosetActions {
         pc.addFilterElement().eq(2).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(7).click({ force: true })
-        pc.fieldValueElement().eq(1).type('Acer Chromebook Spin 11 R751T-C4XP - Intel/4GB/32GB - Touch/2in1', { force: true })
+        pc.fieldValueElement().eq(1).type(tdata.partCloset.parentdevice, { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Acer Chromebook Spin 11 R751T-C4XP - Intel/4GB/32GB - Touch/2in1')
+        cy.get('[row-index="0"]').should('contain', tdata.partCloset.parentdevice)
         pc.clearFilterElement().click({ force: true })
     }
     //b 
@@ -336,16 +336,16 @@ export class PartClosetActions {
         pc.addFilterElement().eq(3).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(0).click({ force: true })
-        pc.fieldValueElement().clear({ force: true }).type(tdata.buildings.buildingname,{ force: true })
+        pc.fieldValueElement().clear({ force: true }).type(tdata.buildings.buildingname, { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.buildings.buildingname,{ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.buildings.buildingname, { force: true })
         pc.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainB() {
         pc.addFilterElement().eq(3).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(1).click({ force: true })
-        pc.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.buildingname,{ force: true })
+        pc.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.buildingname, { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('not.contain', tdata.buildings.buildingname)
         pc.clearFilterElement().click({ force: true })
@@ -354,7 +354,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(3).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(2).click({ force: true })
-        pc.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.buildingname,{ force: true })
+        pc.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.buildingname, { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.buildings.buildingname)
         pc.clearFilterElement().click({ force: true })
@@ -372,7 +372,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(3).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(4).click({ force: true })
-        pc.fieldValueElement().eq(0).clear({ force: true }).type('Build',{ force: true })
+        pc.fieldValueElement().eq(0).clear({ force: true }).type('Build', { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', 'Build')
         pc.clearFilterElement().click({ force: true })
@@ -381,7 +381,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(3).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(5).click({ force: true })
-        pc.fieldValueElement().eq(0).clear({ force: true }).type('One',{ force: true })
+        pc.fieldValueElement().eq(0).clear({ force: true }).type('One', { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', 'One')
         pc.clearFilterElement().click({ force: true })
@@ -401,9 +401,9 @@ export class PartClosetActions {
         pc.addFilterElement().eq(3).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(7).click({ force: true })
-        pc.fieldValueElement().eq(1).clear({ force: true }).type('GVL', { force: true })
+        pc.fieldValueElement().eq(1).clear({ force: true }).type(tdata.buildings.buildingname, { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'GVL')
+        cy.get('[row-index="0"]').should('contain', tdata.buildings.buildingname)
         pc.clearFilterElement().click({ force: true })
     }
 
@@ -431,7 +431,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(4).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(2).click({ force: true })
-        pc.fieldValueElement().eq(0).type(tdata.partCloset.manufacturer,{ force: true })
+        pc.fieldValueElement().eq(0).type(tdata.partCloset.manufacturer, { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.partCloset.manufacturer)
         pc.clearFilterElement().click({ force: true })
@@ -440,16 +440,16 @@ export class PartClosetActions {
         pc.addFilterElement().eq(4).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(3).click({ force: true })
-        pc.fieldValueElement().eq(0).type(tdata.partCloset.manufacturer,{ force: true })
+        pc.fieldValueElement().eq(0).type(tdata.partCloset.manufacturer, { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain.value',tdata.partCloset.manufacturer)
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.partCloset.manufacturer)
         pc.clearFilterElement().click({ force: true })
     }
     filterBeginswithM() {
         pc.addFilterElement().eq(4).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(4).click({ force: true })
-        pc.fieldValueElement().eq(0).type('HP',{ force: true })
+        pc.fieldValueElement().eq(0).type('HP', { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', 'HP')
         pc.clearFilterElement().click({ force: true })
@@ -458,7 +458,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(4).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(5).click({ force: true })
-        pc.fieldValueElement().eq(0).type('Inc.',{ force: true })
+        pc.fieldValueElement().eq(0).type('Inc.', { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', 'Inc.')
         pc.clearFilterElement().click({ force: true })
@@ -505,7 +505,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(5).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(2).click({ force: true })
-        pc.fieldValueElement().eq(0).type(tdata.partCloset.partCategory,{ force: true })
+        pc.fieldValueElement().eq(0).type(tdata.partCloset.partCategory, { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.partCloset.partCategory)
         pc.clearFilterElement().click({ force: true })
@@ -514,7 +514,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(5).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(3).click({ force: true })
-        pc.fieldValueElement().eq(0).type(tdata.partCloset.partCategory,{ force: true })
+        pc.fieldValueElement().eq(0).type(tdata.partCloset.partCategory, { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('not.contain.value', tdata.partCloset.partCategory)
         pc.clearFilterElement().click({ force: true })
@@ -523,7 +523,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(5).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(4).click({ force: true })
-        pc.fieldValueElement().eq(0).type('Speaker',{ force: true })
+        pc.fieldValueElement().eq(0).type('Speaker', { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', 'Speaker')
         pc.clearFilterElement().click({ force: true })
@@ -532,7 +532,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(5).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(5).click({ force: true })
-        pc.fieldValueElement().eq(0).type('Set',{ force: true })
+        pc.fieldValueElement().eq(0).type('Set', { force: true })
         pc.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', 'Set')
         pc.clearFilterElement().click({ force: true })
@@ -550,21 +550,21 @@ export class PartClosetActions {
         pc.addFilterElement().eq(5).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(7).click({ force: true })
-        pc.fieldValueElement().eq(1).type('Wi_Fi_Card', { force: true })
+        pc.fieldValueElement().eq(1).type(tdata.partCloset.partCategory, { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Wi_Fi_Card')
+        cy.get('[row-index="0"]').should('contain', tdata.partCloset.partCategory)
         pc.clearFilterElement().click({ force: true })
     }
     //quatity
     selectFilterQuantity() {
-        cy.wait(2000)
+        cy.wait(4000)
         pc.addFilterElement().eq(6).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(0).click({ force: true })
-        pc.fieldValueElement().type(tdata.partCloset.quantity,{ force: true })
+        pc.fieldValueElement().type(tdata.partCloset.quantity, { force: true })
         pc.applyElement().click({ force: true })
         cy.wait(100)
-        cy.get('.ag-row-first> [col-id="quantity"]>div>span').eq(1).then(($el) => {
+        cy.get('.ag-row-first> [col-id="quantity"]').then(($el) => {
             const value = parseInt($el.text());
             expect(value).to.equal(2);
         })
@@ -575,7 +575,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(6).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(1).click({ force: true })
-        pc.fieldValueElement().eq(0).type(tdata.partCloset.quantity,{ force: true })
+        pc.fieldValueElement().eq(0).type(tdata.partCloset.quantity, { force: true })
         pc.applyElement().click({ force: true })
         cy.get('.ag-row-first > [col-id="quantity"]').then(($el) => {
             const value = parseInt($el.text());
@@ -588,7 +588,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(6).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(2).click({ force: true })
-        pc.fieldValueElement().eq(0).clear({ force: true }).type(tdata.partCloset.quantity,{ force: true })
+        pc.fieldValueElement().eq(0).clear({ force: true }).type(tdata.partCloset.quantity, { force: true })
         pc.applyElement().click({ force: true })
         cy.get('.ag-row-first > [col-id="quantity"]').then(($el) => {
             const value = parseInt($el.text());
@@ -601,7 +601,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(6).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(3).click({ force: true })
-        pc.fieldValueElement().eq(0).type(tdata.partCloset.quantity,{ force: true })
+        pc.fieldValueElement().eq(0).type(tdata.partCloset.quantity, { force: true })
         pc.applyElement().click({ force: true })
         cy.get('.ag-row-first > [col-id="quantity"]').then(($el) => {
             const value = parseInt($el.text());
@@ -614,7 +614,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(6).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(4).click({ force: true })
-        pc.fieldValueElement().eq(0).type(tdata.partCloset.quantity,{ force: true })
+        pc.fieldValueElement().eq(0).type(tdata.partCloset.quantity, { force: true })
         pc.applyElement().click({ force: true })
         cy.get('.ag-row-first > [col-id="quantity"]').eq(1).then(($el) => {
             const value = parseInt($el.text());
@@ -627,7 +627,7 @@ export class PartClosetActions {
         pc.addFilterElement().eq(6).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(5).click({ force: true })
-        pc.fieldValueElement().eq(0).type(tdata.partCloset.quantity,{ force: true })
+        pc.fieldValueElement().eq(0).type(tdata.partCloset.quantity, { force: true })
         pc.applyElement().click({ force: true })
         cy.get('.ag-row-first > [col-id="quantity"]').eq(0).then(($el) => {
             const value = parseInt($el.text());
@@ -640,12 +640,12 @@ export class PartClosetActions {
         pc.addFilterElement().eq(6).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(6).click({ force: true })
-        cy.get('[placeholder="From"]').type(tdata.partCloset.quantity,{ force: true })
-        cy.get('[placeholder="To"]').type(tdata.partCloset.quantity1,{ force: true })
+        cy.get('[placeholder="From"]').type(tdata.partCloset.quantity, { force: true })
+        cy.get('[placeholder="To"]').type(tdata.partCloset.quantity1, { force: true })
         pc.applyElement().click({ force: true })
         cy.get('.ag-row-first > [col-id="quantity"]').eq(1).then(($el) => {
             const value = parseInt($el.text());
-            expect(value).to.be.within(2,10);
+            expect(value).to.be.within(2, 10);
         })
         pc.clearFilterElement().click({ force: true })
     }

@@ -130,18 +130,17 @@ Feature:InHouseTickets Page Functionality
     And Click on Download Export button
     And Click on view button
     Then Verify the Details of student repair ticket
+    And Click on the Update to student Button
+    Then Updated to student successfully
+    And Click on the Update to in house Button
+    Then Updated to in house successfully
+    And Click on the Edit Ticket Button
+    Then Update the Technician and Repair Status
+    And Click on Update Button
+    Then Verify Updated successfully
     And Click on Add Line and Verify
     Then Click on Add Repair Image and Verify
     And Click on Add Note and Verify
 
-# And Enter the Search value in search box
-# Then Verify the Results in the table
-# And Click on the Edit Ticket Button
-# Then Update the Technician and Repair Status
-# And Click on Update Button
-# Then Verify Updated successfully
-#  And Click on the Update to student Button
-# Then Updated to student successfully
-#  And Click on the Update to in house Button
-# Then Updated to in house successfully
+
 

@@ -33,11 +33,12 @@ And('Select failure Type, Serial Device, Technician and repair issue', () => {
     ihw.selectFailureType()
     ihw.selectTechnician()
     ihw.selectSerialDevice()
+    ihw.selectReturnsite()
     ihw.selectRepairissue()
 })
 Then('Select building and Enter the Chromebook issue', () => {
     ihw.selectBuilding()
-    ihw.enterChromebookIssue()
+    ihw.enterChromebookIssue() 
 })
 And('Click on save button', () => {
     ihw.clickOnSaveButton()

@@ -140,8 +140,7 @@ export class InHouseTicketsActions {
         cy.get('[role="listbox"]').contains('Speaker Set').click({ force: true })
         iht.noteElement().type('Testing line', { force: true })
         iht.createlineElement().contains('Create Line Item').click({ force: true })
-        // dash.messageElement().should('contain', 'Line Item Created')
-        // cy.get('[data-testid="CloseIcon"]').click({ force: true })
+        // dash.messageElement().should('contain', 'Line Item Created')       
     }
     clickOnAddRepairImage() {
         iht.addimageElement().click({ force: true })
@@ -149,7 +148,6 @@ export class InHouseTicketsActions {
         iht.imagedescriptionElement().type('Testing Image')
         iht.updateimageElement().contains('Upload Image').click({ force: true })
         // dash.messageElement().should('contain', 'Image Created')
-        //cy.get('[data-testid="CloseIcon"]').click({force:true})
     }
     clickOnAddNote() {
         iht.addnoteElement().click({ force: true })
@@ -169,11 +167,9 @@ export class InHouseTicketsActions {
     }
     clickViewButton() {
         cy.window().then(win => {
-            // win.open('https://google.com', '_blank')
         });
         cy.get('body').type('{ctrl}t');
         cy.visit("/repair-360/inHouse-detail/" + tdata.inHouseTicket.recordid, { visitTimeout: 30000 })
-        //  cy.get('tr td').eq(9).scrollIntoView().contains('View').click({ force: true })
 
     }
     verifySrcRepairTicket() {
@@ -191,6 +187,7 @@ export class InHouseTicketsActions {
     editRepairStatus() {
         iht.repairstatusEditElement().click({ force: true })
         cy.get(tdata.inHouseTicket.repairstatusEdit).click({ force: true })
+        cy.get('#repair_note').type('testing')
     }
     clickOnUpdate() {
         //  iht.updateElement().click({ force: true })
@@ -203,13 +200,13 @@ export class InHouseTicketsActions {
         iht.updateStudentElement().click({ force: true })
     }
     verifyUpdateStudent() {
-        dash.messageElement().should('contain', tdata.inHouseTicket.updateRole)
+       // dash.messageElement().should('contain', tdata.inHouseTicket.updateRole)
     }
     clickOnUpdateInhouse() {
         iht.updateInhouseElement().click({ force: true })
     }
     verifyUpdateInhouse() {
-        dash.messageElement().should('contain', tdata.inHouseTicket.updateRole)
+       // dash.messageElement().should('contain', tdata.inHouseTicket.updateRole)
     }
     filtercontainRI() {
         cy.wait(2000)

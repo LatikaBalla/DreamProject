@@ -10,7 +10,7 @@ export class ImportSerialDevicesActions {
         globalThis.isd = new ImportSerialDevicesElements();
     }
     closeTermsOfServiceWindow() {
-        cy.wait(6000)
+        cy.wait(3000)
         dash.termsElement().contains('Dismiss').click({ force: true })
         cy.wait(2000)
         cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
@@ -24,15 +24,8 @@ export class ImportSerialDevicesActions {
     verifyTitle() {
         isd.titleElement().should('be.visible')
     }
-    filtersVisible() {
-        isd.filtersElement().should('be.visible')
-    }
-    tableVisible() {
-        isd.tableElement().scrollIntoView().should('be.visible')
-    }
     clickOnAddNewImport() {
-        cy.get(':nth-child(2) > .MuiBox-root > .MuiGrid-container > .MuiGrid-root > :nth-child(2)').click({ force: true })
-        // isd.addimportElement().eq(1).scrollIntoView().click({force:true})
+        isd.addimportElement().click({ force: true })
     }
     uploadcsvFile() {
         cy.get('#quantityDevices').type(tdata.importDevice.quantitydevices)
@@ -40,15 +33,10 @@ export class ImportSerialDevicesActions {
         isd.uploadElement().attachFile(tdata.importDevice.uploadfilename, { force: true })
     }
     clickOnSubmitButton() {
+        cy.wait(1000)
         isd.submitElement().click({ force: true })
-        // cy.wait(5000)
-        //  dash.messageElement().should('contain', 'New import has been submitted')
-    }
-    clickOnRefreshButton() {
-        isd.refreshbtnElement().click({ force: true })
-    }
-    verfiyImportTable() {
-        //cy.get('tbody tr').eq(0).find('td').eq(1).should('contain', 'demo_adminsuper@vivacitytech.com',{force:true})
+        cy.wait(1000)
+        dash.messageElement().should('contain', 'New Import request has been submitted')
     }
     clickOnDownloadImport() {
         isd.downloadimportElement().click({ force: true })
@@ -57,19 +45,14 @@ export class ImportSerialDevicesActions {
         cy.verifyDownload("/download/", tdata.importDevice.downloadfilename)
     }
     clickOnDetailsButton() {
-        cy.get('tbody tr').eq(0).find('td').eq(4).contains("Details").click({ force: true })
+        cy.get('[data-testid="VisibilityIcon"]').eq(0).click({ force: true })
     }
     verifyDeviceDetails() {
         isd.devicesDetailsTitleElement().should('be.visible')
     }
-    clickOnMoreFilter() {
-        isd.addFilterElement().click({ force: true })
-    }
-    clickOnClearFilter() {
-        isd.clearFilterElement().click({ force: true })
-    }
     //Date Imported
     filtercontainDate() {
+        cy.wait(3000)
         isd.addFilterElement().eq(0).click({ force: true })
         isd.fieldNameElement().eq(1).click({ force: true })
         isd.fieldOpElement().eq(0).click({ force: true })
@@ -184,18 +167,18 @@ export class ImportSerialDevicesActions {
         isd.addFilterElement().eq(1).click({ force: true })
         isd.fieldNameElement().eq(1).click({ force: true })
         isd.fieldOpElement().eq(4).click({ force: true })
-        isd.fieldValueElement().eq(0).type('Conan')
+        isd.fieldValueElement().eq(0).type('demo')
         isd.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Conan')
+        cy.get('[row-index="0"]').should('contain', 'demo')
         isd.clearFilterElement().click({ force: true })
     }
     filterEndswithI() {
         isd.addFilterElement().eq(1).click({ force: true })
         isd.fieldNameElement().eq(1).click({ force: true })
         isd.fieldOpElement().eq(5).click({ force: true })
-        isd.fieldValueElement().eq(0).type('Malady')
+        isd.fieldValueElement().eq(0).type('tech.com')
         isd.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Malady')
+        cy.get('[row-index="0"]').should('contain', 'tech.com')
         isd.clearFilterElement().click({ force: true })
     }
     filterBlankI() {

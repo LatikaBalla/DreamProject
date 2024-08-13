@@ -1,5 +1,7 @@
 serial_number,asset_tag,device.model,device.sku,building.name,organizational_unit,student.external_user.full_name,current_warranty.name,current_warranty.end_date
-1723115736934,SerialTest1237878,11eG3,20GE0002US,Proterworth,,Ryker Swensen,,
+1723536607852,SerialTest1237878,11eG3,20GE0002US,Proterworth,,Ryker Swensen,,
+1723201830710,TestTag,11eG3,20GE0002US,Proterworth,,Demo Test,,
+1723115736934,TestTag,11eG3,20GE0002US,Proterworth,,Demo Test,,
 1723115193127,TestTag,11eG3,20GE0002US,Proterworth,,Demo Test,,
 1723114960031,TestTag,11eG3,20GE0002US,Proterworth,,Demo Test,,
 1723113872704,TestTag,11eG3,20GE0002US,Proterworth,,Demo Test,,

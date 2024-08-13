@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 4507000000
+              "duration": 7009000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5045000000
+              "duration": 7797000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 20197000000
+              "duration": 20240000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 96000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on StudentRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 1675000000
+              "duration": 1451000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click on SrcRepairTickets tab",
             "result": {
               "status": "passed",
-              "duration": 2088000000
+              "duration": 2069000000
             }
           },
           {
@@ -89,158 +89,208 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 26,
-            "name": "Click on filter of Ticket Number contain in search box and Verify the Result",
+            "line": 16,
+            "name": "Click on filter of Record Id Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3722000000
+              "duration": 2674000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Click on filter of Record Id Does not equal and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1745000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Click on filter of Record Id Greater than and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1733000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Click on filter of Record Id Greater than or equal to and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1736000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Click on filter of Record Id Less than and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1899000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Click on filter of Record Id Less than or equal to and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1898000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Click on filter of Record Id Between and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1857000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "Click on filter of Record Id Blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1698000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Click on filter of Record Id Not blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1763000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "Click on filter of Ticket Number contain and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 3748000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 27,
-            "name": "Click on filter of Ticket Number Does not contain in search box and Verify the Result",
+            "name": "Click on filter of Ticket Number Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 657000000
+              "duration": 628000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 28,
-            "name": "Click on filter of Ticket Number Equals in search box and Verify the Result",
+            "name": "Click on filter of Ticket Number Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 840000000
+              "duration": 683000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 29,
-            "name": "Click on filter of Ticket Number Does not equal in search box and Verify the Result",
+            "name": "Click on filter of Ticket Number Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 665000000
+              "duration": 649000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 30,
-            "name": "Click on filter of Ticket Number Begins with in search box and Verify the Result",
+            "name": "Click on filter of Ticket Number Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 589000000
+              "duration": 575000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 31,
-            "name": "Click on filter of Ticket Number Ends with in search box and Verify the Result",
+            "name": "Click on filter of Ticket Number Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 647000000
+              "duration": 831000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 32,
-            "name": "Click on filter of Ticket Number Blank in search box and Verify the Result",
+            "name": "Click on filter of Ticket Number Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 572000000
+              "duration": 590000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 33,
-            "name": "Click on filter of Ticket Number Not blank in search box and Verify the Result",
+            "name": "Click on filter of Ticket Number Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 665000000
+              "duration": 652000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 34,
-            "name": "Click on filter of Ticket Number contain in search box and Verify the Result",
+            "name": "Click on filter of Ticket Number contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3743000000
+              "duration": 3735000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 36,
-            "name": "Click on filter of Repair type contain in search box and Verify the Result",
+            "name": "Click on filter of Repair type contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 602000000
+              "duration": 576000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 37,
-            "name": "Click on filter of Repair type Does not contain in search box and Verify the Result",
+            "name": "Click on filter of Repair type Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 657000000
+              "duration": 635000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 38,
-            "name": "Click on filter of Repair type Equals in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 607000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 39,
-            "name": "Click on filter of Repair type Does not equal in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 667000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 40,
-            "name": "Click on filter of Repair type Begins with in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 578000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 41,
-            "name": "Click on filter of Repair type Ends with in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 571000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 42,
-            "name": "Click on filter of Repair type Blank in search box and Verify the Result",
+            "name": "Click on filter of Repair type Equals and Verify the Result",
             "result": {
               "status": "passed",
               "duration": 592000000
@@ -249,238 +299,228 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 43,
-            "name": "Click on filter of Repair type Not blank in search box and Verify the Result",
+            "line": 39,
+            "name": "Click on filter of Repair type Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 623000000
+              "duration": 640000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "Click on filter of Repair type Begins with and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 543000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "Click on filter of Repair type Ends with and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 602000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "Click on filter of Repair type Blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 567000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "Click on filter of Repair type Not blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 608000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 45,
-            "name": "Click on filter of Serial Number contain in search box and Verify the Result",
+            "name": "Click on filter of Serial Number contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2840000000
+              "duration": 2861000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 46,
-            "name": "Click on filter of Serial Number Does not contain in search box and Verify the Result",
+            "name": "Click on filter of Serial Number Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 809000000
+              "duration": 747000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 47,
-            "name": "Click on filter of Serial Number Equals in search box and Verify the Result",
+            "name": "Click on filter of Serial Number Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 837000000
+              "duration": 801000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 48,
-            "name": "Click on filter of Serial Number Does not equal in search box and Verify the Result",
+            "name": "Click on filter of Serial Number Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 800000000
+              "duration": 760000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 49,
-            "name": "Click on filter of Serial Number Begins with in search box and Verify the Result",
+            "name": "Click on filter of Serial Number Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 770000000
+              "duration": 701000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 50,
-            "name": "Click on filter of Serial Number Ends with in search box and Verify the Result",
+            "name": "Click on filter of Serial Number Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 677000000
+              "duration": 651000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 51,
-            "name": "Click on filter of Serial Number Blank in search box and Verify the Result",
+            "name": "Click on filter of Serial Number Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 722000000
+              "duration": 584000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 52,
-            "name": "Click on filter of Serial Number Not blank in search box and Verify the Result",
+            "name": "Click on filter of Serial Number Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 814000000
+              "duration": 865000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 54,
-            "name": "Click on filter of Repair device contain in search box and Verify the Result",
+            "name": "Click on filter of Repair device contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1333000000
+              "duration": 1498000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 55,
-            "name": "Click on filter of Repair device Does not contain in search box and Verify the Result",
+            "name": "Click on filter of Repair device Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1664000000
+              "duration": 2052000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 56,
-            "name": "Click on filter of Repair device Equals in search box and Verify the Result",
+            "name": "Click on filter of Repair device Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1307000000
+              "duration": 1507000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 57,
-            "name": "Click on filter of Repair device Does not equal in search box and Verify the Result",
+            "name": "Click on filter of Repair device Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1448000000
+              "duration": 1472000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 58,
-            "name": "Click on filter of Repair device Begins with in search box and Verify the Result",
+            "name": "Click on filter of Repair device Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1067000000
+              "duration": 1168000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 59,
-            "name": "Click on filter of Repair device Ends with in search box and Verify the Result",
+            "name": "Click on filter of Repair device Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 868000000
+              "duration": 980000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 60,
-            "name": "Click on filter of Repair device Blank in search box and Verify the Result",
+            "name": "Click on filter of Repair device Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 671000000
+              "duration": 634000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 61,
-            "name": "Click on filter of Repair device Not blank in search box and Verify the Result",
+            "name": "Click on filter of Repair device Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 822000000
+              "duration": 924000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 63,
-            "name": "Click on filter of Asset tag contain in search box and Verify the Result",
+            "name": "Click on filter of Asset tag contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 819000000
+              "duration": 759000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 64,
-            "name": "Click on filter of Asset tag Does not contain in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 839000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 65,
-            "name": "Click on filter of Asset tag Equals in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 864000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 66,
-            "name": "Click on filter of Asset tag Does not equal in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 827000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 67,
-            "name": "Click on filter of Asset tag Begins with in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 871000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 68,
-            "name": "Click on filter of Asset tag Ends with in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 822000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 69,
-            "name": "Click on filter of Asset tag Blank in search box and Verify the Result",
+            "name": "Click on filter of Asset tag Does not contain and Verify the Result",
             "result": {
               "status": "passed",
               "duration": 845000000
@@ -489,68 +529,158 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 70,
-            "name": "Click on filter of Asset tag Not blank in search box and Verify the Result",
+            "line": 65,
+            "name": "Click on filter of Asset tag Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 869000000
+              "duration": 895000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 66,
+            "name": "Click on filter of Asset tag Does not equal and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 840000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 67,
+            "name": "Click on filter of Asset tag Begins with and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 888000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 68,
+            "name": "Click on filter of Asset tag Ends with and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 827000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 69,
+            "name": "Click on filter of Asset tag Blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 754000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 70,
+            "name": "Click on filter of Asset tag Not blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 850000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 72,
+            "name": "Click on filter of Repair status op1 and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 278000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 73,
+            "name": "Click on filter of Repair status op2 and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 339000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 74,
+            "name": "Click on filter of Repair status op3 and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 378000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 75,
+            "name": "Click on filter of Repair status op4 and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 408000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 76,
+            "name": "Click on filter of Repair status op5 and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 589000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 77,
+            "name": "Click on filter of Repair status op6 and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 567000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 79,
+            "name": "Click on filter of Internal Technician contain and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 3894000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 80,
+            "name": "Click on filter of Internal Technician Does not contain and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 977000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 81,
-            "name": "Click on filter of Internal Technician contain in search box and Verify the Result",
+            "name": "Click on filter of Internal Technician Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 4008000000
+              "duration": 1005000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 82,
-            "name": "Click on filter of Internal Technician Does not contain in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 969000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 83,
-            "name": "Click on filter of Internal Technician Equals in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1003000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 84,
-            "name": "Click on filter of Internal Technician Does not equal in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 986000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 85,
-            "name": "Click on filter of Internal Technician Begins with in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 922000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 86,
-            "name": "Click on filter of Internal Technician Ends with in search box and Verify the Result",
+            "name": "Click on filter of Internal Technician Does not equal and Verify the Result",
             "result": {
               "status": "passed",
               "duration": 966000000
@@ -559,138 +689,88 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 87,
-            "name": "Click on filter of Internal Technician Blank in search box and Verify the Result",
+            "line": 83,
+            "name": "Click on filter of Internal Technician Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 881000000
+              "duration": 890000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 84,
+            "name": "Click on filter of Internal Technician Ends with and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 932000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 85,
+            "name": "Click on filter of Internal Technician Blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 821000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 86,
+            "name": "Click on filter of Internal Technician Not blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1011000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 88,
-            "name": "Click on filter of Internal Technician Not blank in search box and Verify the Result",
+            "name": "Click on filter of Created By contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1044000000
+              "duration": 1129000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 89,
+            "name": "Click on filter of Created By Does not contain and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1687000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 90,
-            "name": "Click on filter of Created By contain in search box and Verify the Result",
+            "name": "Click on filter of Created By Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1196000000
+              "duration": 1419000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 91,
-            "name": "Click on filter of Created By Does not contain in search box and Verify the Result",
+            "name": "Click on filter of Created By Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1681000000
+              "duration": 1419000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 92,
-            "name": "Click on filter of Created By Equals in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1457000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 93,
-            "name": "Click on filter of Created By Does not equal in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1405000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 94,
-            "name": "Click on filter of Created By Begins with in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 955000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 95,
-            "name": "Click on filter of Created By Ends with in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1192000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 96,
-            "name": "Click on filter of Created By Blank in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 967000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 97,
-            "name": "Click on filter of Created By Not blank in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1095000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 99,
-            "name": "Click on filter of Last Modified Date Equals in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1028000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 100,
-            "name": "Click on filter of Last Modified Date Does not equal in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 933000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 101,
-            "name": "Click on filter of Last Modified Date Before in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 991000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 102,
-            "name": "Click on filter of Last Modified Date After in search box and Verify the Result",
+            "name": "Click on filter of Created By Begins with and Verify the Result",
             "result": {
               "status": "passed",
               "duration": 952000000
@@ -699,31 +779,201 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 103,
-            "name": "Click on filter of Last Modified Date Between with in search box and Verify the Result",
+            "line": 93,
+            "name": "Click on filter of Created By Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1251000000
+              "duration": 1128000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 104,
-            "name": "Click on filter of Last Modified Date Blank in search box and Verify the Result",
+            "line": 94,
+            "name": "Click on filter of Created By Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1306000000
+              "duration": 868000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 95,
+            "name": "Click on filter of Created By Not blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1041000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 97,
+            "name": "Click on filter of Last Modified Date Equals and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 890000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 98,
+            "name": "Click on filter of Last Modified Date Does not equal and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 808000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 99,
+            "name": "Click on filter of Last Modified Date Before and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 884000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 100,
+            "name": "Click on filter of Last Modified Date After and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 825000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 101,
+            "name": "Click on filter of Last Modified Date Between with and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1120000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 102,
+            "name": "Click on filter of Last Modified Date Blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 887000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 103,
+            "name": "Click on filter of Last Modified Date Not blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 938000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 105,
-            "name": "Click on filter of Last Modified Date Not blank in search box and Verify the Result",
+            "name": "Click on Download Export button",
             "result": {
               "status": "passed",
-              "duration": 1030000000
+              "duration": 153000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 106,
+            "name": "I should click on Create Student Repair Ticket button",
+            "result": {
+              "status": "passed",
+              "duration": 2171000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 107,
+            "name": "Select failure Type, Serial Device, Technician and building",
+            "result": {
+              "status": "passed",
+              "duration": 1949000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 108,
+            "name": "Enter the Chromebook issue and Image description",
+            "result": {
+              "status": "passed",
+              "duration": 1698000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 109,
+            "name": "Click on save button",
+            "result": {
+              "status": "passed",
+              "duration": 1224000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 110,
+            "name": "Verify New Ticket is added",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 111,
+            "name": "Click on view button",
+            "result": {
+              "status": "passed",
+              "duration": 4571000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 112,
+            "name": "Verify the Details of student repair ticket",
+            "result": {
+              "status": "passed",
+              "duration": 121000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 113,
+            "name": "Click on Add Repair Image and Verify",
+            "result": {
+              "status": "passed",
+              "duration": 955000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 114,
+            "name": "Click on Add Note and Verify",
+            "result": {
+              "status": "passed",
+              "duration": 1082000000
             }
           }
         ]

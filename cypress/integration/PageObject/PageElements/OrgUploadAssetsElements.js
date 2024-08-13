@@ -17,7 +17,7 @@ export default class OrgUploadAssetsElements {
         })
     }
     deleteElement() {
-        return cy.contains(locator.orgUploadAssets.delete, {
+        return cy.get(locator.orgUploadAssets.delete, {
             timeout: 30000,
         })
     }
@@ -27,7 +27,7 @@ export default class OrgUploadAssetsElements {
         })
     }
     editElement() {
-        return cy.contains(locator.orgUploadAssets.edit, {
+        return cy.get(locator.orgUploadAssets.edit, {
             timeout: 30000,
         })
     }

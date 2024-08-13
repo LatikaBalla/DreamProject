@@ -11,41 +11,87 @@ Feature: NonWarrantyRepairs Page Functionality
         And Click on NonwarrantyRepairs page
 
     Scenario:Non Warranty Repairs -Add new Ticket and Search
-        # Then Select failure Type, Return site and Serial Device
-        # And Select Building and Chromebook issue
-        # Then Enter the Describe Your Issue
-        # And Click on save button
-        # Then Verify New Ticket is added
-        Then Click on the export button
-        And Click More filter select- Record Id in search box and Verify the Result
-        Then Click on Clear filter
-        And Click More filter select- Ticket Number in search box and Verify the Result
-        Then Click on Clear filter
-        And Click More filter select- Repair type in search box and Verify the Result
-        Then Click on Clear filter
-        And Click More filter select- Serial Number in search box and Verify the Result
-        Then Click on Clear filter
-        And Click More filter select- Repair device in search box and Verify the Result
-        Then Click on Clear filter
-        And Click More filter select- Repair status in search box and Verify the Result
-        Then Click on Clear filter
-        And Click More filter select- Asset tag in search box and Verify the Result
-        Then Click on Clear filter
-        And Click More filter select- Repair Box in search box and Verify the Result
-        Then Click on Clear filter
-        And Click More filter select- Created By in search box and Verify the Result
-        Then Click on Clear filter
-         And Enter the Search - Record Id in search box and Verify the Result
-        Then Enter the Search - Repair type in search box and Verify the Result
-        Then Enter the Search - Repair status in search box and Verify the Result
-        And Enter the Search - Repair Box in search box and Verify the Result
-        And Enter the Ticket Number in search box for warranty
-        Then Verify the Ticket details in table for warranty
-        And  Click on the Ticket Number for warranty
-        Then Verify the Repair Ticket page will open for warranty
-        And Verfiy the details of Ticket for warranty
-        Then Click on the download Ticket Estimation button for warranty
- 
+        And Click on filter of Repair Id Equals and Verify the Result
+        And Click on filter of Repair Id Does not equal and Verify the Result
+        And Click on filter of Repair Id Greater than and Verify the Result
+        And Click on filter of Repair Id Greater than or equal to and Verify the Result
+        And Click on filter of Repair Id Less than and Verify the Result
+        And Click on filter of Repair Id Less than or equal to and Verify the Result
+        And Click on filter of Repair Id Between and Verify the Result
+        And Click on filter of Repair Id Blank and Verify the Result
+        And Click on filter of Repair Id Not blank and Verify the Result
+
+        And Click on filter of Ticket Number contain and Verify the Result
+        And Click on filter of Ticket Number Does not contain and Verify the Result
+        And Click on filter of Ticket Number Equals and Verify the Result
+        And Click on filter of Ticket Number Does not equal and Verify the Result
+        And Click on filter of Ticket Number Begins with and Verify the Result
+        And Click on filter of Ticket Number Ends with and Verify the Result
+        And Click on filter of Ticket Number Blank and Verify the Result
+        And Click on filter of Ticket Number Not blank and Verify the Result
+
+        And Click on filter of Repair type contain and Verify the Result
+        And Click on filter of Repair type Does not contain and Verify the Result
+        And Click on filter of Repair type Equals and Verify the Result
+        And Click on filter of Repair type Does not equal and Verify the Result
+        And Click on filter of Repair type Begins with and Verify the Result
+        And Click on filter of Repair type Ends with and Verify the Result
+        And Click on filter of Repair type Blank and Verify the Result
+        And Click on filter of Repair type Not blank and Verify the Result
+
+        And Click on filter of Serial Number contain and Verify the Result
+        And Click on filter of Serial Number Does not contain and Verify the Result
+        And Click on filter of Serial Number Equals and Verify the Result
+        And Click on filter of Serial Number Does not equal and Verify the Result
+        And Click on filter of Serial Number Begins with and Verify the Result
+        And Click on filter of Serial Number Ends with and Verify the Result
+        And Click on filter of Serial Number Blank and Verify the Result
+        And Click on filter of Serial Number Not blank and Verify the Result
+
+        And Click on filter of Repair device contain and Verify the Result
+        And Click on filter of Repair device Does not contain and Verify the Result
+        And Click on filter of Repair device Equals and Verify the Result
+        And Click on filter of Repair device Does not equal and Verify the Result
+        And Click on filter of Repair device Begins with and Verify the Result
+        And Click on filter of Repair device Ends with and Verify the Result
+        And Click on filter of Repair device Blank and Verify the Result
+        And Click on filter of Repair device Not blank and Verify the Result
+
+        And Click on filter of Asset tag contain and Verify the Result
+        And Click on filter of Asset tag Does not contain and Verify the Result
+        And Click on filter of Asset tag Equals and Verify the Result
+        And Click on filter of Asset tag Does not equal and Verify the Result
+        And Click on filter of Asset tag Begins with and Verify the Result
+        And Click on filter of Asset tag Ends with and Verify the Result
+        And Click on filter of Asset tag Blank and Verify the Result
+        And Click on filter of Asset tag Not blank and Verify the Result
+
+        And Click on filter of Repair status op1 and Verify the Result
+        And Click on filter of Repair status op2 and Verify the Result
+        And Click on filter of Repair status op3 and Verify the Result
+        And Click on filter of Repair status op4 and Verify the Result
+        And Click on filter of Repair status op5 and Verify the Result
+        And Click on filter of Repair status op6 and Verify the Result
+        And Click on filter of Repair status op7 and Verify the Result
+        And Click on filter of Repair status op8 and Verify the Result
+        And Click on filter of Repair status op9 and Verify the Result
+        And Click on filter of Repair status op10 and Verify the Result
+        # And Click on filter of Repair status op11 and Verify the Result
+
+        And Click on filter of Created By contain and Verify the Result
+        And Click on filter of Created By Does not contain and Verify the Result
+        And Click on filter of Created By Equals and Verify the Result
+        And Click on filter of Created By Does not equal and Verify the Result
+        And Click on filter of Created By Begins with and Verify the Result
+        And Click on filter of Created By Ends with and Verify the Result
+        And Click on filter of Created By Blank and Verify the Result
+        And Click on filter of Created By Not blank and Verify the Result
+   
+        And Click on the view button
+        Then Verify the Repair Ticket page will open
+        And Verfiy the details of Ticket
+        Then Click on the download Ticket Estimation button
+
 
 
 

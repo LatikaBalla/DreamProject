@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2976000000
+              "duration": 3648000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8312000000
+              "duration": 4895000000
             }
           },
           {
@@ -42,9 +42,8 @@
             "line": 9,
             "name": "Close the terms of service window",
             "result": {
-              "status": "failed",
-              "duration": 8246000000,
-              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 3 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click\n    at mouseAction (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111447:68)\n    at Context.click (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111611:14)\n    at wrapped (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at ManageDevicesActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/ManageDevicesActions.js:11:28)\n    at Context.eval (cypress/integration/ManageDevices/ManageDevices.spec.js:16:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 17216000000
             }
           },
           {
@@ -53,7 +52,8 @@
             "line": 10,
             "name": "Click on ManageDevices page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 86000000
             }
           },
           {
@@ -62,7 +62,8 @@
             "line": 13,
             "name": "I should be redirected to theManageDevices page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6000000
             }
           },
           {
@@ -71,7 +72,8 @@
             "line": 14,
             "name": "Verify the Title of ManageDevices Page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1326000000
             }
           },
           {
@@ -80,7 +82,8 @@
             "line": 15,
             "name": "Verify the My Fleet Tab should be visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 16000000
             }
           },
           {
@@ -89,7 +92,8 @@
             "line": 16,
             "name": "Verify the Loaner Management tab should be visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 13000000
             }
           },
           {
@@ -98,7 +102,8 @@
             "line": 17,
             "name": "Verify the Import Serial Devices tab should be visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 10000000
             }
           },
           {
@@ -107,7 +112,8 @@
             "line": 18,
             "name": "Verify the Organization Uploaded Assets tab should be visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 12000000
             }
           }
         ]

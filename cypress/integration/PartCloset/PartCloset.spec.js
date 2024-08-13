@@ -78,6 +78,15 @@ Then('Click on submit button', () => {
 And('Verify new VT part is added', () => {
     pc.verifyNewVTPartAdded()
 })
+Then ('Click on the order more quantity', () => {
+    pc.clickOnOrderMore()
+})
+And ('Enter the quantity value', () => {
+    pc.enterQuantityMore()
+})
+Then ('Verify the request of quantity', () => {
+    pc.verifyRequestQuantity()
+}) 
 //pn
 And('Click on filter of Part Name contain in search box and Verify the Result', () => {
     pc.selectFilterPartName()

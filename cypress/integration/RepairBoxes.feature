@@ -66,11 +66,10 @@ Feature: RepairBoxes Page Functionality
     And Click on filter of Created By Blank in search box and Verify the Result
     And Click on filter of Created By Not blank in search box and Verify the Result
 
-    # And Click on filter of shipping_box_status with search and check the option and Verify the Result
-    # And Click on filter of shipping_box_status Not Shipped in search box and Verify the Result
-    # And Click on filter of shipping_box_status Recieved By Vivacity in search box and Verify the Result
-    # And Click on filter of shipping_box_status Shipping From District with in search box and Verify the Result
-    # And Click on filter of shipping_box_status all checked with in search box and Verify the Result
+    And Click on filter of shipping_box_status Not Shipped in search box and Verify the Result
+    And Click on filter of shipping_box_status Recieved By Vivacity in search box and Verify the Result
+    And Click on filter of shipping_box_status Shipping From District with in search box and Verify the Result
+    And Click on filter of shipping_box_status all checked with in search box and Verify the Result
 
     And Click on filter of Last Modified Date Equals in search box and Verify the Result
     And Click on filter of Last Modified Date Does not equal in search box and Verify the Result
@@ -79,7 +78,8 @@ Feature: RepairBoxes Page Functionality
     And Click on filter of Last Modified Date Between in search box and Verify the Result
     And Click on filter of Last Modified Date Blank in search box and Verify the Result
     And Click on filter of Last Modified Date Not blank in search box and Verify the Result
-     Then I should click on create new Box
+    And Click on Export Button
+    Then I should click on create new Box
     Then Enter weight and Standard Box Size
     And Select Pick-up site
     Then Check the need shipping box
@@ -95,11 +95,10 @@ Feature: RepairBoxes Page Functionality
     Then Verify the ticket is added in table
     And Click on view the ticket Details
     Then Verfiy the ticket Details
-# # And Enter the Search - Tracking Number in search box and Verify the Result
-# # Then Enter the Search - Record Id in search box and Verify the Result
-# # And Enter the Search - Building in search box and Verify the Result
-# # Then Enter the Search - Created_by in search box and Verify the Result
-# And Click on Export Button
+    Then Click on Add Repair Image and Verify
+    And Click on Add Note and Verify
+
+
 
 
 
