@@ -72,12 +72,12 @@ export default class UsersElements {
         })
     }
     editbtnElement() {
-        return cy.contains(locator.users.editbtn, {
+        return cy.get(locator.users.editbtn, {
             timeout: 30000,
         })
     }
     deletebtnElement() {
-        return cy.contains(locator.users.deletebtn, {
+        return cy.get(locator.users.deletebtn, {
             timeout: 30000,
         })
     }
@@ -87,7 +87,7 @@ export default class UsersElements {
         })
     }
     downloadbtnElement() {
-        return cy.contains(locator.users.downloadbtn, {
+        return cy.get(locator.users.downloadbtn, {
             timeout: 30000,
         })
     }
@@ -116,13 +116,18 @@ export default class UsersElements {
             timeout: 30000,
         });
     }
-    addfilterbtnElement() {
-        return cy.contains(locator.users.addfilterbtn, {
+    addFilterElement() {
+        return cy.get(locator.users.addFilter, {
             timeout: 30000,
         });
     }
-    clearfilterbtnElement() {
-        return cy.contains(locator.users.clearfilterbtn, {
+    clearFilterElement() {
+        return cy.get(locator.users.clearFilter, {
+            timeout: 30000,
+        });
+    }
+   viewElement() {
+        return cy.get(locator.users.view, {
             timeout: 30000,
         });
     }
@@ -131,34 +136,4 @@ export default class UsersElements {
             timeout: 30000,
         });
     } 
-    fullnamedropElement() {
-        return cy.get(locator.users.fullnamedrop, {
-            timeout: 30000,
-        });
-    }
-     phonedropElement() {
-        return cy.get(locator.users.phonedrop, {
-            timeout: 30000,
-        });
-    } 
-    emaildropElement() {
-        return cy.get(locator.users.emaildrop, {
-            timeout: 30000,
-        });
-    } 
-    cellnumberdropElement() {
-        return cy.get(locator.users.cellnumberdrop, {
-            timeout: 30000,
-        });
-    } 
-    userroledropElement() {
-        return cy.get(locator.users.userroledrop, {
-            timeout: 30000,
-        });
-    }
-    searchboxElement() {
-        return cy.get(locator.users.searchbox, {
-            timeout: 30000,
-        });
-    }
 }

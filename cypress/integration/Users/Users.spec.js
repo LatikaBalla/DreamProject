@@ -54,7 +54,8 @@ And('Enter the Search value in search box', () => {
 Then('Verify the Results in the table', () => {
     user.verifySearchResult()
 })
-And('Click on Edit button', () => {
+And('Click on view button and click on Edit button', () => {
+    user.clickOnviewButton()
     user.clickOnEditButton()
 })
 Then('I should edit title, full name', () => {
@@ -94,7 +95,7 @@ Then('Select Field name and Field operation', () => {
     user.selectFieldName()
     user.selectfieldOperation()
 })
-And('Enter the Search value in search box of Filter', () => {
+And('Enter the Search value of Filter', () => {
     user.enterFieldValueSearchBox()
 })
 Then('Click on Apply Button', () => {
@@ -106,49 +107,137 @@ And('Verify the Filter Results in the table', () => {
 Then('Click on Download button', () => {
     user.clickOnDownload()
 })
-And('Enter the Search - Record Id in search box and Verify the Result', () => {
-    user.searchRecordId()
+//ri
+And('Click on filter of Record Id Equals and Verify the Result', () => {
+    user.filtercontainRI()
 })
-Then('Enter the Search - Full Name in search box and Verify the Result', () => {
-    user.searchFullName()
+And('Click on filter of Record Id Does not equal and Verify the Result', () => {
+    user.filterDoesnotcontainRI()
 })
-And('Enter the Search - Email in search box and Verify the Result', () => {
-    user.searchEmail()
+And('Click on filter of Record Id Greater than and Verify the Result', () => {
+    user.filterGreaterthanRI()
 })
-Then('Enter the Search - Phone in search box and Verify the Result', () => {
-    user.searchPhone()
+And('Click on filter of Record Id Greater than or equal to and Verify the Result', () => {
+    user.filterGreaterequalRI()
 })
-And('Enter the Search - CellNumber in search box and Verify the Result', () => {
-    user.searchCellNumber()
+And('Click on filter of Record Id Less than and Verify the Result', () => {
+    user.filterLessthanRI()
 })
-Then('Enter the Search - User Role in search box and Verify the Result', () => {
-    user.searchUserRole()
+And('Click on filter of Record Id Less than or equal to and Verify the Result', () => {
+    user.filterLessEqualRI()
 })
-Then('Click on Clear filter', () => {
-    user.clickOnClearFilter()
+And('Click on filter of Record Id Between and Verify the Result', () => {
+    user.filterBetweenRI()
 })
-And('Click More filter select- Record Id in search box and Verify the Result', () => {
-    user.clickOnMoreFilter()
-    user.selectFilterRecordId()
+And('Click on filter of Record Id Blank and Verify the Result', () => {
+    user.filterBlankRI()
 })
-And ('Click More filter select- Full name in search box and Verify the Result',()=>{
-    user.clickOnMoreFilter()
-    user.selectFilterFullname()
+And('Click on filter of Record Id Not blank and Verify the Result', () => {
+    user.filterNotblankRI()
 })
-
-And ('Click More filter select- Cell Number in search box and Verify the Result',()=>{
-    user.clickOnMoreFilter()
-    user.selectFilterCellNumber()
+//fn
+And('Click on filter of Full name contain and Verify the Result', () => {
+    user.filtercontainFN()
 })
-And ('Click More filter select- Eamil in search box and Verify the Result',()=>{
-    user.clickOnMoreFilter()
-    user.selectFilterEmail()
+And('Click on filter of Full name Does not contain and Verify the Result', () => {
+    user.filterDoesnotcontainFN()
 })
-And ('Click More filter select- Role Name in search box and Verify the Result',()=>{
-    user.clickOnMoreFilter()
-    user.selectFilterRoleName()
+And('Click on filter of Full name Equals and Verify the Result', () => {
+    user.filterEqualsFN()
 })
-And ('Click More filter select- User status in search box and Verify the Result',()=>{
-    user.clickOnMoreFilter()
-    user.selectFilterUserStatus()
+And('Click on filter of Full name Does not equal and Verify the Result', () => {
+    user.filterNotequalFN()
+})
+And('Click on filter of Full name Begins with and Verify the Result', () => {
+    user.filterBeginswithFN()
+})
+And('Click on filter of Full name Ends with and Verify the Result', () => {
+    user.filterEndswithFN()
+})
+And('Click on filter of Full name Blank and Verify the Result', () => {
+    user.filterBlankFN()
+})
+And('Click on filter of Full name Not blank and Verify the Result', () => {
+    user.filterNotblankFN()
+})
+//email
+And('Click on filter of Eamil contain and Verify the Result', () => {
+    user.filtercontainE()
+})
+And('Click on filter of Eamil Does not contain and Verify the Result', () => {
+    user.filterDoesnotcontainE()
+})
+And('Click on filter of Eamil Equals and Verify the Result', () => {
+    user.filterEqualsE()
+})
+And('Click on filter of Eamil Does not equal and Verify the Result', () => {
+    user.filterNotequalE()
+})
+And('Click on filter of Eamil Begins with and Verify the Result', () => {
+    user.filterBeginswithE()
+})
+And('Click on filter of Eamil Ends with and Verify the Result', () => {
+    user.filterEndswithE()
+})
+And('Click on filter of Eamil Blank and Verify the Result', () => {
+    user.filterBlankE()
+})
+And('Click on filter of Eamil Not blank and Verify the Result', () => {
+    user.filterNotblankE()
+})
+//us
+And('Click on filter of User status contain and Verify the Result', () => {
+    user.filtercontainUS()
+})
+And('Click on filter of User status Does not contain and Verify the Result', () => {
+    user.filterDoesnotcontainUS()
+})
+And('Click on filter of User status Equals and Verify the Result', () => {
+    user.filterEqualsUS()
+})
+And('Click on filter of User status Does not equal and Verify the Result', () => {
+    user.filterNotequalUS()
+})
+And('Click on filter of User status Begins with and Verify the Result', () => {
+    user.filterBeginswithUS()
+})
+And('Click on filter of User status Ends with and Verify the Result', () => {
+    user.filterEndswithUS()
+})
+And('Click on filter of User status Blank and Verify the Result', () => {
+    user.filterBlankUS()
+})
+And('Click on filter of User status Not blank and Verify the Result', () => {
+    user.filterNotblankUS()
+})
+//ur
+And('Click on filter of User Role op1 and Verify the Result', () => {
+    user.filterURop1()
+})
+And('Click on filter of User Role op2 and Verify the Result', () => {
+    user.filterURop2()
+})
+And('Click on filter of User Role op3 and Verify the Result', () => {
+    user.filterURop3()
+})
+And('Click on filter of User Role op4 and Verify the Result', () => {
+    user.filterURop4()
+})
+And('Click on filter of User Role op5 and Verify the Result', () => {
+    user.filterURop5()
+})
+And('Click on filter of User Role op6 and Verify the Result', () => {
+    user.filterURop6()
+})
+And('Click on filter of User Role op7 and Verify the Result', () => {
+    user.filterURop7()
+})
+And('Click on filter of User Role op8 and Verify the Result', () => {
+    user.filterURop8()
+})
+And('Click on filter of User Role op9 and Verify the Result', () => {
+    user.filterURop9()
+})
+And('Click on filter of User Role op10 and Verify the Result', () => {
+    user.filterURop10()
 })

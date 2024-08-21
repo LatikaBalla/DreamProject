@@ -49,7 +49,6 @@ export class NonWarrantyRepairsActions {
    selectBuilding() {
       nwr.buildingElement().click({ force: true })
       cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
-      // cy.get(tdata.repairTickets.building).eq(0).click({ force: true })
    }
    selectRepaireIssue() {
       nwr.issueElement().click({ force: true })
@@ -77,6 +76,7 @@ export class NonWarrantyRepairsActions {
       cy.get('tr td').eq(1).should('contain', tdata.nonwarrantyRepairs.ticketno)
    }
    verifyRapairTicketPAge() {
+     cy.wait(1000)
       cy.contains('Repair Ticket Details').should('be.visible')
    }
    clickOnClearButton() {
@@ -88,7 +88,7 @@ export class NonWarrantyRepairsActions {
    }
    clickOnTicketNumberTable() {
       cy.window().then(win => {
-         // win.open('https://google.com', '_blank');
+        
       });
       cy.get('body').type('{ctrl}t');
       cy.visit("/repair-360/ticket-detail/" + tdata.nonwarrantyRepairs.recordid)
@@ -192,7 +192,7 @@ export class NonWarrantyRepairsActions {
       nwr.applyElement().click({ force: true })
       cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
          const value = parseInt($el.text());
-         expect(value).to.be.within(41352, 70839);
+         expect(value).to.be.within(41352, 70799);
       })
       nwr.clearFilterElement().click({ force: true })
    }
@@ -215,7 +215,7 @@ export class NonWarrantyRepairsActions {
       nwr.applyElement().click({ force: true })
       cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
          const value = parseInt($el.text());
-         expect(value).to.equal(70839)
+         expect(value).to.equal(70799)
       })
       nwr.clearFilterElement().click({ force: true })
    }

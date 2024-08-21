@@ -11,40 +11,68 @@ Feature:  Users Page Functionality
 
   Scenario: visibilty check,Add new Srudent, Search, Edit and search Delete the User and download
     Then I should be redirected to the Users page
-    Then Filters of Users unit should be visible
-    And Table for Users unit should be visible
+    And Click on filter of Record Id Equals and Verify the Result
+    And Click on filter of Record Id Does not equal and Verify the Result
+    And Click on filter of Record Id Greater than and Verify the Result
+    And Click on filter of Record Id Greater than or equal to and Verify the Result
+    And Click on filter of Record Id Less than and Verify the Result
+    And Click on filter of Record Id Less than or equal to and Verify the Result
+    And Click on filter of Record Id Between and Verify the Result
+    And Click on filter of Record Id Blank and Verify the Result
+    And Click on filter of Record Id Not blank and Verify the Result
+
+    And Click on filter of Full name contain and Verify the Result
+    And Click on filter of Full name Does not contain and Verify the Result
+    And Click on filter of Full name Equals and Verify the Result
+    And Click on filter of Full name Does not equal and Verify the Result
+    And Click on filter of Full name Begins with and Verify the Result
+    And Click on filter of Full name Ends with and Verify the Result
+    And Click on filter of Full name Blank and Verify the Result
+    And Click on filter of Full name Not blank and Verify the Result
+
+    And Click on filter of Eamil contain and Verify the Result
+    And Click on filter of Eamil Does not contain and Verify the Result
+    And Click on filter of Eamil Equals and Verify the Result
+    And Click on filter of Eamil Does not equal and Verify the Result
+    And Click on filter of Eamil Begins with and Verify the Result
+    And Click on filter of Eamil Ends with and Verify the Result
+    And Click on filter of Eamil Blank and Verify the Result
+    And Click on filter of Eamil Not blank and Verify the Result
+
+    And Click on filter of User Role op1 and Verify the Result
+    And Click on filter of User Role op2 and Verify the Result
+    And Click on filter of User Role op3 and Verify the Result
+    And Click on filter of User Role op4 and Verify the Result
+    And Click on filter of User Role op5 and Verify the Result
+    And Click on filter of User Role op6 and Verify the Result
+    And Click on filter of User Role op7 and Verify the Result
+    And Click on filter of User Role op8 and Verify the Result
+    And Click on filter of User Role op9 and Verify the Result
+    And Click on filter of User Role op10 and Verify the Result
+
+    And Click on filter of User status contain and Verify the Result
+    And Click on filter of User status Does not contain and Verify the Result
+    And Click on filter of User status Equals and Verify the Result
+    And Click on filter of User status Does not equal and Verify the Result
+    And Click on filter of User status Begins with and Verify the Result
+    And Click on filter of User status Ends with and Verify the Result
+    And Click on filter of User status Blank and Verify the Result
+    And Click on filter of User status Not blank and Verify the Result
+
     Then I should click on Add New student
     Then Enter full name, title and Email
     And Enter Phone, Cell Number, role and building
     And Click on submit button
     Then Verify the student added in table
-    And Click on Edit button
+    Then Click on Download button
+    And Click on view button and click on Edit button
     Then I should edit title, full name
     And I should edit Phone and Cell Number and user role
     Then I edit User Status by clicking on checkbox
     And I edit Building
     Then Click on Submit button
     And Verify the Record has been updated Meassage
-    # And Click on Delete button
-    # Then Click on Confirm Delete button
-    # And Verify the record is deleted successfully
-    Then Click on Download button
-    And Enter the Search - Record Id in search box and Verify the Result
-    Then Enter the Search - Full Name in search box and Verify the Result
-    And Enter the Search - Email in search box and Verify the Result
-    And Enter the Search - CellNumber in search box and Verify the Result
-   Then Enter the Search - User Role in search box and Verify the Result
-    And Click More filter select- Record Id in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- Full name in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- Eamil in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- Cell Number in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- Role Name in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- User status in search box and Verify the Result
-    Then Click on Clear filter
-
+# And Click on Delete button
+# Then Click on Confirm Delete button
+# And Verify the record is deleted successfully
 

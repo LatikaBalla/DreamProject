@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 5516000000
+              "duration": 4856000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 13886000000
+              "duration": 6519000000
             }
           },
           {
@@ -42,9 +42,8 @@
             "line": 9,
             "name": "Close the terms of service window",
             "result": {
-              "status": "failed",
-              "duration": 8229000000,
-              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 3 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click\n    at mouseAction (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111447:68)\n    at Context.click (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111611:14)\n    at wrapped (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at UsersActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/UsersActions.js:13:28)\n    at Context.eval (cypress/integration/Users/Users.spec.js:16:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 17207000000
             }
           },
           {
@@ -53,7 +52,8 @@
             "line": 10,
             "name": "Click on Users page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 89000000
             }
           },
           {
@@ -62,295 +62,568 @@
             "line": 13,
             "name": "I should be redirected to the Users page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 22000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 14,
-            "name": "Filters of Users unit should be visible",
+            "name": "Click on filter of Record Id Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4717000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 15,
-            "name": "Table for Users unit should be visible",
+            "name": "Click on filter of Record Id Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1662000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 16,
-            "name": "I should click on Add New student",
+            "name": "Click on filter of Record Id Greater than and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1973000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 17,
-            "name": "Enter full name, title and Email",
+            "name": "Click on filter of Record Id Greater than or equal to and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1911000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 18,
-            "name": "Enter Phone, Cell Number, role and building",
+            "name": "Click on filter of Record Id Less than and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1951000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 19,
-            "name": "Click on submit button",
+            "name": "Click on filter of Record Id Less than or equal to and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1959000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 20,
-            "name": "Verify the student added in table",
+            "name": "Click on filter of Record Id Between and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2138000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 21,
-            "name": "Click on Edit button",
+            "name": "Click on filter of Record Id Blank and Verify the Result",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 22,
-            "name": "I should edit title, full name",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2114000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 23,
-            "name": "I should edit Phone and Cell Number and user role",
+            "line": 22,
+            "name": "Click on filter of Record Id Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1767000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 24,
-            "name": "I edit User Status by clicking on checkbox",
+            "name": "Click on filter of Full name contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4851000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 25,
-            "name": "I edit Building",
+            "name": "Click on filter of Full name Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 737000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 26,
-            "name": "Click on Submit button",
+            "name": "Click on filter of Full name Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 756000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 27,
-            "name": "Verify the Record has been updated Meassage",
+            "name": "Click on filter of Full name Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 31,
-            "name": "Click on Download button",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 717000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 32,
-            "name": "Enter the Search - Record Id in search box and Verify the Result",
+            "line": 28,
+            "name": "Click on filter of Full name Begins with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 757000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 33,
-            "name": "Enter the Search - Full Name in search box and Verify the Result",
+            "keyword": "And ",
+            "line": 29,
+            "name": "Click on filter of Full name Ends with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 883000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "Click on filter of Full name Blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 644000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "Click on filter of Full name Not blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 795000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "Click on filter of Eamil contain and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 3024000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 34,
-            "name": "Enter the Search - Email in search box and Verify the Result",
+            "name": "Click on filter of Eamil Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1030000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 35,
-            "name": "Enter the Search - CellNumber in search box and Verify the Result",
+            "name": "Click on filter of Eamil Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1078000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 36,
-            "name": "Enter the Search - User Role in search box and Verify the Result",
+            "name": "Click on filter of Eamil Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1075000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 37,
-            "name": "Click More filter select- Record Id in search box and Verify the Result",
+            "name": "Click on filter of Eamil Begins with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 934000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 38,
-            "name": "Click on Clear filter",
+            "name": "Click on filter of Eamil Ends with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 779000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 39,
-            "name": "Click More filter select- Full name in search box and Verify the Result",
+            "name": "Click on filter of Eamil Blank and Verify the Result",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 40,
-            "name": "Click on Clear filter",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 661000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 41,
-            "name": "Click More filter select- Eamil in search box and Verify the Result",
+            "line": 40,
+            "name": "Click on filter of Eamil Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1047000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 42,
-            "name": "Click on Clear filter",
+            "name": "Click on filter of User Role op1 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4377000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 43,
-            "name": "Click More filter select- Cell Number in search box and Verify the Result",
+            "name": "Click on filter of User Role op2 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 385000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 44,
-            "name": "Click on Clear filter",
+            "name": "Click on filter of User Role op3 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 419000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 45,
-            "name": "Click More filter select- Role Name in search box and Verify the Result",
+            "name": "Click on filter of User Role op4 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 472000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 46,
-            "name": "Click on Clear filter",
+            "name": "Click on filter of User Role op5 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 344000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 47,
-            "name": "Click More filter select- User status in search box and Verify the Result",
+            "name": "Click on filter of User Role op6 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 350000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "Click on filter of User Role op7 and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 336000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "Click on filter of User Role op8 and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 332000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "Click on filter of User Role op9 and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 366000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "Click on filter of User Role op10 and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 341000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "Click on filter of User status contain and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 4741000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 54,
+            "name": "Click on filter of User status Does not contain and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 997000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 55,
+            "name": "Click on filter of User status Equals and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 746000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 56,
+            "name": "Click on filter of User status Does not equal and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 798000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 57,
+            "name": "Click on filter of User status Begins with and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 727000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "Click on filter of User status Ends with and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 787000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 59,
+            "name": "Click on filter of User status Blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 620000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 60,
+            "name": "Click on filter of User status Not blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 701000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 48,
-            "name": "Click on Clear filter",
+            "line": 62,
+            "name": "I should click on Add New student",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 179000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 63,
+            "name": "Enter full name, title and Email",
+            "result": {
+              "status": "passed",
+              "duration": 1515000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 64,
+            "name": "Enter Phone, Cell Number, role and building",
+            "result": {
+              "status": "passed",
+              "duration": 1033000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 65,
+            "name": "Click on submit button",
+            "result": {
+              "status": "passed",
+              "duration": 115000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 66,
+            "name": "Verify the student added in table",
+            "result": {
+              "status": "passed",
+              "duration": 575000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 67,
+            "name": "Click on Download button",
+            "result": {
+              "status": "passed",
+              "duration": 131000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 68,
+            "name": "Click on view button and click on Edit button",
+            "result": {
+              "status": "passed",
+              "duration": 252000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 69,
+            "name": "I should edit title, full name",
+            "result": {
+              "status": "passed",
+              "duration": 1852000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 70,
+            "name": "I should edit Phone and Cell Number and user role",
+            "result": {
+              "status": "passed",
+              "duration": 1538000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 71,
+            "name": "I edit User Status by clicking on checkbox",
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 72,
+            "name": "I edit Building",
+            "result": {
+              "status": "passed",
+              "duration": 219000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 73,
+            "name": "Click on Submit button",
+            "result": {
+              "status": "passed",
+              "duration": 158000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 74,
+            "name": "Verify the Record has been updated Meassage",
+            "result": {
+              "status": "passed",
+              "duration": 1028000000
             }
           }
         ]

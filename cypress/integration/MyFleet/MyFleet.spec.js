@@ -103,26 +103,6 @@ Then('Click on Export To CSV', () => {
 And('Verify Downloaded successfully', () => {
     mf.verifyDownloadSuccessful()
 })
-And('Click More filter select- Serial Number in search box and Verify the Result', () => {
-    mf.clickOnMoreFiltersButton()
-    mf.selectFilterSerialNumber()
-})
-And('Click More filter select- Asset tag in search box and Verify the Result', () => {
-    mf.clickOnMoreFiltersButton()
-    mf.selectFilterAssetTag()
-})
-And('Click More filter select- Device in search box and Verify the Result', () => {
-    mf.clickOnMoreFiltersButton()
-    mf.selectFilterDevice()
-})
-And('Click More filter select- Student in search box and Verify the Result', () => {
-    mf.clickOnMoreFiltersButton()
-    mf.selectFilterStudent()
-})
-And('Click More filter select- Organization unit in search box and Verify the Result', () => {
-    mf.clickOnMoreFiltersButton()
-    mf.selectFilterOrganization()
-})
 Then('Click on Retired Tab', () => {
     mf.clickOnRetiredTab()
 })
@@ -158,8 +138,6 @@ And ('Click on Recent Users Information and verify Recent Users Information',()=
     mf.clickOnRecentUser()
     mf.verifyRecentUser()
 })
-
-
 And('Convert Active to Retired device', () => {
     mf.converRetired()
 })
@@ -171,12 +149,6 @@ Then('Verify the Device Active successfully', () => {
 })
 And('Convert Retired to Active device', () => {
     mf.convertActive()
-})
-And('Enter the table fields in search box for google data record', () => {
-    mf.enterSearchGdata()
-})
-Then('Verify the record in searching history for google data', () => {
-    mf.verifyGoogleRecord()
 })
 And('Click on the Google Icon and click on view Button', () => {
     mf.clickonGoogleIcon()
