@@ -28,6 +28,6 @@ And('Verify the Title of VivacityRepairCenter Page', () => {
 Then('Verify the VivaRepairTickets Tab should be visible', () => {
     repc.vivaRepairTicketsTabVisible()
 })
-And ('Verify the RepairBoxes tab should be visible',()=>{
+And('Verify the RepairBoxes tab should be visible', () => {
     repc.repairBoxesTabVisible()
 })

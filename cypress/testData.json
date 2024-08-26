@@ -34,19 +34,21 @@
   "buildings": {
     "buildingname": "Building One",
     "phone": "1233211234",
-    "extension": "1",
+    "extension": "777",
     "defaultbuilding": "[data-value='true']",
     "address": "641 Fairview Avenue Northeast",
     "savebtn": "[type='submit']",
-    "addmsg": "Add New Building",
+    "addmsg": "Building added",
     "deletemsg": "Building Deleted",
-    "recordid": "2424",
+    "recordid": "555",
     "defaultBuilding": "true",
-    "shippingaddress": "2005 University Avenue , Saint Paul, MN, 55104",
-    "billingaddress": "2005 University Avenue , Saint Paul, MN, 55104",
+    "shippingaddress": "1425 Western Avenue, Seattle, WA, 98101",
+    "billingaddress": "1425 Western Avenue, Seattle, WA, 98101",
     "phoneNo": "1233211234",
     "phoneNo1": "(123) 321-1234",
-    "uploadfilename": "building_list.csv"
+    "uploadfilename": "building_list.csv",
+    "buildingAbbreviation":"null",
+    "uploadmsg":"Building CSV submitted"
   },
   "editbuildings": {
     "buildingname": "Building_E1",
@@ -136,8 +138,8 @@
     "tag": "10",
     "type": "aaabbbccc",
     "description": "this is description",
-    "acquireDate":"2024-05-10",
-    "acquireDate1":"10-05-2024"
+    "acquireDate":"2024-08-25",
+    "acquireDate1":"25-08-2024"
   },
   "editasset": {
     "title": "EditAssetTitle",
@@ -161,7 +163,8 @@
     "upload": "image1.jpeg",
     "reupload": "image2.jpg",
     "addassetmsg": "Add new asset form submitted",
-    "updatemsg": "Update asset form submitted"
+    "updatemsg": "Update asset form submitted",
+    "deletemsg":"Asset deleted successfully"
   },
   "repairTickets": {
     "failuretype": "[data-value='Accidental']",

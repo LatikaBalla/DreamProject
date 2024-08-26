@@ -136,4 +136,29 @@ export default class UsersElements {
             timeout: 30000,
         });
     } 
+    expandElement() {
+        return cy.get(locator.users.expand, {
+            timeout: 30000,
+        });
+    } 
+    checkbox1Element() {
+        return cy.get(locator.users.checkbox1, {
+            timeout: 30000,
+        });
+    } 
+   checkbox2Element() {
+        return cy.get(locator.users.checkbox2, {
+            timeout: 30000,
+        });
+    } 
+    checkbox3Element() {
+        return cy.get(locator.users.checkbox3, {
+            timeout: 30000,
+        });
+    } 
+   checkbox4Element() {
+        return cy.get(locator.users.checkbox4, {
+            timeout: 30000,
+        });
+    } 
 }

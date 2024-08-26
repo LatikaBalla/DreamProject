@@ -93,9 +93,6 @@ And('Click on NonwarrantyRepairs page', () => {
 Then('Verify title of NonWarrantyRepairs Page should be visible', () => {
     nwr.verifyTitle()
 })
-And('Verify the NonWarranty Form should be visible', () => {
-    nwr.formVisible()
-})
 Then('Verify table and filter should be visible', () => {
     nwr.filtersVisible()
     nwr.tableVisible()
@@ -118,9 +115,6 @@ And('Verify the Data graph should be visible', () => {
 Then('Select the building from dropdownlist', () => {
     viva.selectbuilding()
 })
-// And('Verify 3 graphas dislpayed based upon building', () => {
-//     repc.verifyGraphs()
-// })
 Then('Click on clear filter', () => {
     viva.clickonClearFilter()
 }) 

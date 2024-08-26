@@ -100,49 +100,6 @@ And('Enter the full name in search box', () => {
 And('Verify the record in searching history', () => {
     acc.verifySearchResult()
 })
-And('Click More filter select- Full name in search box and Verify the Result', () => {
-    acc.clickOnMoreFilter()
-    acc.selectFilterFullName()
-})
-And('Click More filter select- Phone in search box and Verify the Result', () => {
-    acc.clickOnMoreFilter()
-    acc.selectFilterPhone()
-})
-And('Click More filter select- Title in search box and Verify the Result', () => {
-    acc.clickOnMoreFilter()
-    acc.selectFilterTitle()
-})
-And('Click More filter select- Eamil in search box and Verify the Result', () => {
-    acc.clickOnMoreFilter()
-    acc.selectFilterEmail()
-})
-And('Click More filter select- Record Id in search box and Verify the Result', () => {
-    acc.clickOnMoreFilter()
-    acc.selectFilterRecordId()
-})
-And('Click More filter select- User Role in search box and Verify the Result', () => {
-    acc.clickOnMoreFilter()
-    acc.selectFilterUserRole()
-})
-And('Click More filter select- User Status in search box and Verify the Result', () => {
-    acc.clickOnMoreFilter()
-    acc.selectFilterUserStatus()
-})
-And('Enter the Search - Record Id in search box and Verify the Result', () => {
-    acc.searchRecordId()
-})
-And('Enter the Search - Full name in search box and Verify the Result', () => {
-    acc.searchFullName()
-})
-Then('Enter the Search - Email in search box and Verify the Result', () => {
-    acc.searchEmail()
-})
-And('Enter the Search - Title in search box and Verify the Result', () => {
-    acc.searchTitle()
-})
-Then('Enter the Search - Phone in search box and Verify the Result', () => {
-    acc.searchPhone()
-})
 Then('Account Details -Aaccount Name and no should be visible', () => {
     acc.AccountDetailsVisible()
 })

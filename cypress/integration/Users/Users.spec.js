@@ -79,16 +79,16 @@ Then('Click on Submit button', () => {
 And('Verify the Record has been updated Meassage', () => {
     user.verfifyDataUpdatedMessage()
 })
-And ('Click on Delete button',()=>{
-    user.clickDeleteButton() 
+And('Click on Delete button', () => {
+    user.clickDeleteButton()
 })
-Then ('Click on Confirm Delete button',()=>{
-    user.clickConfirmDeleteButton() 
+Then('Click on Confirm Delete button', () => {
+    user.clickConfirmDeleteButton()
 })
-And ('Verify the record is deleted successfully',()=>{
+And('Verify the record is deleted successfully', () => {
     user.verifyRecordDeleted()
 })
-Then ('Click on Add Filter',()=>{
+Then('Click on Add Filter', () => {
     user.clickOnAddFilterButton()
 })
 Then('Select Field name and Field operation', () => {
@@ -107,6 +107,32 @@ And('Verify the Filter Results in the table', () => {
 Then('Click on Download button', () => {
     user.clickOnDownload()
 })
+Then('All Organizational Units Search with Devices checkbox', () => {
+    user.searchOrgUnitDevices()
+})
+And('Verify the result Devices in gird', () => {
+    user.verifysearchResult1()
+})
+Then('All Organizational Units Search with Google Bootcamp Users checkbox', () => {
+    user.searchOrgUnitGoogleBU()
+})
+And('Verify the result Google Bootcamp Users in gird', () => {
+    user.verifysearchResult2()
+})
+Then('All Organizational Units Search with Test OU checkbox', () => {
+    user.searchOrgUnitTestOU()
+})
+And('Verify the result Test OU in gird', () => {
+    user.verifysearchResult3()
+})
+Then('All Organizational Units Search with VT Employees checkbox', () => {
+    user.searchOrgUnitVTEmployee()
+})
+And('Verify the result VT Employees in gird', () => {
+    user.verifysearchResult4()
+})
+
+
 //ri
 And('Click on filter of Record Id Equals and Verify the Result', () => {
     user.filtercontainRI()

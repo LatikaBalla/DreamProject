@@ -11,21 +11,73 @@ Feature: Building Page Functionality
 
 
   Scenario: Adding,Update,add more filter, Clear filter and Search,View Details and Delete new Buildings
-    And Click More filter select- Record Id in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- Building Name in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- Default Building in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- Phone in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- Building Shipping Address in search box and Verify the Result
-    Then Click on Clear filter
-    And Click More filter select- Building Billing Address in search box and Verify the Result
-    Then Click on Clear filter
-    And Enter the Search - Building Name in search box and Verify the Result
-    Then Enter the Search - Building Shipping Address in search box and Verify the Result
-    And Enter the Search - Phone in search box and Verify the Result
+    And Click on filter of Building Name contain and Verify the Result
+    And Click on filter of Building Name Does not contain and Verify the Result
+    And Click on filter of Building Name Equals and Verify the Result
+    And Click on filter of Building Name Does not equal and Verify the Result
+    And Click on filter of Building Name Begins with and Verify the Result
+    And Click on filter of Building Name Ends with and Verify the Result
+    And Click on filter of Building Name Blank and Verify the Result
+    And Click on filter of Building Name Not blank and Verify the Result
+    And Click on filter of Building Name contain and Verify the Result
+
+    And Click on filter of Building ID contain and Verify the Result
+    And Click on filter of Building ID Does not contain and Verify the Result
+    And Click on filter of Building ID Equals and Verify the Result
+    And Click on filter of Building ID Does not equal and Verify the Result
+    And Click on filter of Building ID Begins with and Verify the Result
+    And Click on filter of Building ID Ends with and Verify the Result
+    And Click on filter of Building ID Blank and Verify the Result
+    And Click on filter of Building ID Not blank and Verify the Result
+
+    And Click on filter of Building Shipping Address contain and Verify the Result
+    And Click on filter of Building Shipping Address Does not contain and Verify the Result
+    And Click on filter of Building Shipping Address Equals and Verify the Result
+    And Click on filter of Building Shipping Address Does not equal and Verify the Result
+    And Click on filter of Building Shipping Address Begins with and Verify the Result
+    And Click on filter of Building Shipping Address Ends with and Verify the Result
+    And Click on filter of Building Shipping Address Blank and Verify the Result
+    And Click on filter of Building Shipping Address Not blank and Verify the Result
+
+    And Click on filter of Building Billing Address contain and Verify the Result
+    And Click on filter of Building Billing Address Does not contain and Verify the Result
+    And Click on filter of Building Billing Address Equals and Verify the Result
+    And Click on filter of Building Billing Address Does not equal and Verify the Result
+    And Click on filter of Building Billing Address Begins with and Verify the Result
+    And Click on filter of Building Billing Address Ends with and Verify the Result
+    And Click on filter of Building Billing Address Blank and Verify the Result
+    And Click on filter of Building Billing Address Not blank and Verify the Result
+
+    And Click on filter of Building Abbreviation contain and Verify the Result
+    And Click on filter of Building Abbreviation Does not contain and Verify the Result
+    And Click on filter of Building Abbreviation Equals and Verify the Result
+    And Click on filter of Building Abbreviation Does not equal and Verify the Result
+    And Click on filter of Building Abbreviation Begins with and Verify the Result
+    And Click on filter of Building Abbreviation Ends with and Verify the Result
+    And Click on filter of Building Abbreviation Blank and Verify the Result
+    And Click on filter of Building Abbreviation Not blank and Verify the Result
+
+    And Click on filter of Default Building true and Verify the Result
+    And Click on filter of Default Building false and Verify the Result
+
+    And Click on filter of Extension contain and Verify the Result
+    And Click on filter of Extension Does not contain and Verify the Result
+    And Click on filter of Extension Equals and Verify the Result
+    And Click on filter of Extension Does not equal and Verify the Result
+    And Click on filter of Extension Begins with and Verify the Result
+    And Click on filter of Extension Ends with and Verify the Result
+    And Click on filter of Extension Blank and Verify the Result
+    And Click on filter of Extension Not blank and Verify the Result
+
+    And Click on filter of Phone contain and Verify the Result
+    And Click on filter of Phone Does not contain and Verify the Result
+    And Click on filter of Phone Equals and Verify the Result
+    And Click on filter of Phone Does not equal and Verify the Result
+    And Click on filter of Phone Begins with and Verify the Result
+    And Click on filter of Phone Ends with and Verify the Result
+    And Click on filter of Phone Blank and Verify the Result
+    And Click on filter of Phone Not blank and Verify the Result
+
     And Click on Export To CSV
     Then Click on Bulk Upload button
     And Click on Attach CSV file and Click on submit button

@@ -59,6 +59,15 @@ Feature:  Users Page Functionality
     And Click on filter of User status Blank and Verify the Result
     And Click on filter of User status Not blank and Verify the Result
 
+    Then All Organizational Units Search with Devices checkbox
+    And Verify the result Devices in gird
+    Then All Organizational Units Search with Google Bootcamp Users checkbox
+    And Verify the result Google Bootcamp Users in gird
+    Then All Organizational Units Search with Test OU checkbox
+    And Verify the result Test OU in gird
+    Then All Organizational Units Search with VT Employees checkbox
+    And Verify the result VT Employees in gird
+    
     Then I should click on Add New student
     Then Enter full name, title and Email
     And Enter Phone, Cell Number, role and building

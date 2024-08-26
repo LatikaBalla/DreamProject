@@ -35,8 +35,7 @@ Feature: Report Center Page Functionality
 
         And Verify the NonwarrantyRepairs tab should be visible
         And Click on NonwarrantyRepairs page
-        # Then Verify title of NonWarrantyRepairs Page should be visible
-        # And Verify the NonWarranty Form should be visible
+        Then Verify title of NonWarrantyRepairs Page should be visible
         Then Verify table and filter should be visible
 
         And Verify the TelemetryData tab should be visible

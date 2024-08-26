@@ -25,7 +25,6 @@ And('Click on InHouseRepairCenter tab', () => {
 Then('Filters of InHouseWorkflow should be visible', () => {
     ihw.filtersVisible()
 })
-
 Then('I should click on new button', () => {
     ihw.clickOnNewButton()
 })

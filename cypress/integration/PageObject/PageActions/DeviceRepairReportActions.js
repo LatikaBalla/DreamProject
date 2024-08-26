@@ -34,7 +34,6 @@ export class DeviceRepairReportActions {
       dev.searchElement().clear().type(tdata.deviceRepairReport.ticketno, { force: true })
    }
    verifyTicketDetailsTable() {
-      // cy.wait(2000)
       cy.get('tr td').eq(1).should('contain', tdata.deviceRepairReport.ticketno)
    }
    clickOnClearButton() {
@@ -46,11 +45,9 @@ export class DeviceRepairReportActions {
    }
    clickOnviewButton() {
       cy.window().then(win => {
-         // win.open('https://google.com', '_blank');
       });
       cy.get('body').type('{ctrl}t');
       cy.visit("/repair-360/ticket-detail/" + tdata.deviceRepairReport.recordid, { visitTimeout: 30000 })
-      //   cy.get('tr td').eq(9).scrollIntoView().contains('View').click({ force: true })    
    }
    verifyRapairTicketPAge() {
       cy.wait(1000)
@@ -72,51 +69,20 @@ export class DeviceRepairReportActions {
       dev.searchdropdownElement().eq(0).click({ force: true })
       dev.ticketnumberElement().click({ force: true })
    }
-   searchRecordId() {
-      cy.wait(3000)
-      dev.searchdropdownElement().eq(0).click({ force: true })
-      dev.recordidElement().click({ force: true })
-      // cy.wait(1000)
-      dev.searchElement().clear().type(tdata.deviceRepairReport.recordid + '{enter}', { force: true })
-      cy.get('tr td').eq(0).should('contain', tdata.deviceRepairReport.recordid)
+   clickOnAddRepairImage() {
+      dev.addimageElement().click({ force: true })
+      dev.uploadimageElement().attachFile('image1.jpeg', { force: true })
+      dev.imagedescriptionElement().type('Testing Image')
+      dev.updateimageElement().contains('Upload Image').click({ force: true })
+      // dash.messageElement().should('contain', 'Image Created')
    }
-   searchRepairType() {
-      dev.searchdropdownElement().eq(0).click({ force: true })
-      dev.repairtypeElement().click({ force: true })
-      dev.searchElement().clear().type(tdata.deviceRepairReport.repairtype + '{enter}', { force: true })
-      cy.wait(1000)
-      cy.get('tr td').eq(2).should('contain', tdata.deviceRepairReport.repairtype)
-   }
-   searchRepairStatus() {
-      dev.searchdropdownElement().eq(0).click({ force: true })
-      dev.repairstatusElement().click({ force: true })
-      dev.searchdropdownElement().eq(1).click({ force: true })
-      dev.intransitElement().click({ force: true })
-      cy.get('tr td').eq(5).should('contain', tdata.deviceRepairReport.repairstatus, { force: true })
-   }
-   searchRepairBox() {
-      dev.searchdropdownElement().eq(0).click({ force: true })
-      dev.repairboxElement().click({ force: true })
-      dev.searchElement().clear().type(tdata.deviceRepairReport.repairbox + '{enter}', { force: true })
-      cy.get('tr td').eq(6).should('contain', tdata.deviceRepairReport.repairbox, { force: true })
-   }
-   searchSerialNo() {
-      dev.searchdropdownElement().eq(0).click({ force: true })
-      dev.serialNoElement().click({ force: true })
-      dev.searchElement().clear().type(tdata.deviceRepairReport.serialNo + '{enter}', { force: true })
-      cy.get('tr td').eq(3).should('contain', tdata.deviceRepairReport.serialNo, { force: true })
-   }
-   searchAssetTag() {
-      dev.searchdropdownElement().eq(0).click({ force: true })
-      dev.assetTagElement().click({ force: true })
-      dev.searchElement().clear().type(tdata.deviceRepairReport.assetTag + '{enter}', { force: true })
-      cy.get('tr td').eq(4).should('contain', tdata.deviceRepairReport.assetTag, { force: true })
-   }
-   clickOnMoreFilter() {
-      dev.addFilterElement().click({ force: true })
-   }
-   clickOnClearFilter() {
-      dev.clearFilterElement().click({ force: true })
+   clickOnAddNote() {
+      dev.addnoteElement().click({ force: true })
+      dev.notetypeElement().click({ force: true })
+      cy.get('[data-value="Quality Assurance"]').click({ force: true })
+      dev.noteElement().scrollIntoView().type('Testing Note', { force: true })
+      dev.createnoteElement().contains('Create').click({ force: true })
+      //dash.messageElement().should('contain', 'Ticket updated')
    }
    //RI
    filtercontainRI() {
@@ -376,11 +342,11 @@ export class DeviceRepairReportActions {
       dev.addFilterElement().eq(4).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(7).click({ force: true })
-      dev.fieldValueElement().eq(1).type('AAAAATest', { force: true })
+      dev.fieldValueElement().eq(1).type(tdata.deviceRepairReport.serialnumber, { force: true })
       dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', 'AAAAATest')
+      cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.serialnumber)
       dev.clearFilterElement().click({ force: true })
-   } 
+   }
    //RS
    filterOption1() {
       cy.wait(1000)
@@ -388,67 +354,67 @@ export class DeviceRepairReportActions {
       cy.get('[value="Pending_Repair_Box"]').click({ force: true })
       cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Pending Repair Box')
       cy.get('.reset-button').click({ force: true })
-  }
-  filterOption2() {
-   dev.addFilterElement().eq(7).click({ force: true })
+   }
+   filterOption2() {
+      dev.addFilterElement().eq(7).click({ force: true })
       cy.get('[value="Box_Created"]').click({ force: true })
       cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Box Created')
       cy.get('.reset-button').click({ force: true })
-  }
-  filterOption3() {
-   dev.addFilterElement().eq(7).click({ force: true })
+   }
+   filterOption3() {
+      dev.addFilterElement().eq(7).click({ force: true })
       cy.get('[value="Intake"]').click({ force: true })
       cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Intake')
       cy.get('.reset-button').click({ force: true })
-  }
-  filterOption4() {
-   dev.addFilterElement().eq(7).click({ force: true })
+   }
+   filterOption4() {
+      dev.addFilterElement().eq(7).click({ force: true })
       cy.get('[value="Estimate_Approved"]').click({ force: true })
       cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Estimate Approved')
       cy.get('.reset-button').click({ force: true })
-  }
-  filterOption5() {
-   dev.addFilterElement().eq(7).click({ force: true })
+   }
+   filterOption5() {
+      dev.addFilterElement().eq(7).click({ force: true })
       cy.get('[value="Intake_Queue"]').click({ force: true })
       cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Intake Queue')
       cy.get('.reset-button').click({ force: true })
-  }
-  filterOption6() {
-   dev.addFilterElement().eq(7).click({ force: true })
+   }
+   filterOption6() {
+      dev.addFilterElement().eq(7).click({ force: true })
       cy.get('[value="Shipping_to_Vivacity"]').click({ force: true })
       cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Shipping to Vivacity')
       cy.get('.reset-button').click({ force: true })
-  }
-  filterOption7() {
-   dev.addFilterElement().eq(7).click({ force: true })
+   }
+   filterOption7() {
+      dev.addFilterElement().eq(7).click({ force: true })
       cy.get('[value="Estimate_Denied"]').click({ force: true })
       cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Estimate Denied')
       cy.get('.reset-button').click({ force: true })
-  }
-  filterOption8() {
-   dev.addFilterElement().eq(7).click({ force: true })
+   }
+   filterOption8() {
+      dev.addFilterElement().eq(7).click({ force: true })
       cy.get('[value="On_Hold"]').click({ force: true })
       cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'On Hold')
       cy.get('.reset-button').click({ force: true })
-  }
-  filterOption9() {
-   dev.addFilterElement().eq(7).click({ force: true })
+   }
+   filterOption9() {
+      dev.addFilterElement().eq(7).click({ force: true })
       cy.get('[value="Part_Ordered"]').click({ force: true })
       cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Part Ordered')
       cy.get('.reset-button').click({ force: true })
-  }
-  filterOption10() {
-   dev.addFilterElement().eq(7).click({ force: true })
+   }
+   filterOption10() {
+      dev.addFilterElement().eq(7).click({ force: true })
       cy.get('[value="Part_Queue"]').click({ force: true })
       cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Part Queue')
       cy.get('.reset-button').click({ force: true })
-  }
-  filterOption11() {
-   dev.addFilterElement().eq(7).click({ force: true })
+   }
+   filterOption11() {
+      dev.addFilterElement().eq(7).click({ force: true })
       cy.get('[value="Claim_Overage"]').click({ force: true })
       cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Claim Overage')
       cy.get('.reset-button').click({ force: true })
-  }
+   }
    //B
    selectFilterBuilding() {
       dev.addFilterElement().eq(2).click({ force: true })
@@ -517,13 +483,13 @@ export class DeviceRepairReportActions {
       dev.addFilterElement().eq(2).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(7).click({ force: true })
-      dev.fieldValueElement().eq(1).clear({ force: true }).type('GVL', { force: true })
+      dev.fieldValueElement().eq(1).clear({ force: true }).type( tdata.buildings.buildingname, { force: true })
       dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', 'GVL')
+      cy.get('[row-index="0"]').should('contain', tdata.buildings.buildingname)
       dev.clearFilterElement().click({ force: true })
    }
-    //RT
-    selectFilterRepairType() {
+   //RT
+   selectFilterRepairType() {
       dev.addFilterElement().eq(3).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(0).click({ force: true })
@@ -531,8 +497,8 @@ export class DeviceRepairReportActions {
       dev.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.repairtype)
       dev.clearFilterElement().click({ force: true })
-  }
-  filterDoesnotcontainRT() {
+   }
+   filterDoesnotcontainRT() {
       dev.addFilterElement().eq(3).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(1).click({ force: true })
@@ -540,8 +506,8 @@ export class DeviceRepairReportActions {
       dev.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', ' ')
       dev.clearFilterElement().click({ force: true })
-  }
-  filterEqualsRT() {
+   }
+   filterEqualsRT() {
       dev.addFilterElement().eq(3).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(2).click({ force: true })
@@ -549,8 +515,8 @@ export class DeviceRepairReportActions {
       dev.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.repairtype)
       dev.clearFilterElement().click({ force: true })
-  }
-  filterNotequalRT() {
+   }
+   filterNotequalRT() {
       dev.addFilterElement().eq(3).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(3).click({ force: true })
@@ -558,8 +524,8 @@ export class DeviceRepairReportActions {
       dev.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('not.contain.value', tdata.deviceRepairReport.repairtype)
       dev.clearFilterElement().click({ force: true })
-  }
-  filterBeginswithRT() {
+   }
+   filterBeginswithRT() {
       dev.addFilterElement().eq(3).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(4).click({ force: true })
@@ -567,8 +533,8 @@ export class DeviceRepairReportActions {
       dev.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', 'Viva')
       dev.clearFilterElement().click({ force: true })
-  }
-  filterEndswithRT() {
+   }
+   filterEndswithRT() {
       dev.addFilterElement().eq(3).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(5).click({ force: true })
@@ -576,8 +542,8 @@ export class DeviceRepairReportActions {
       dev.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', 'city')
       dev.clearFilterElement().click({ force: true })
-  }
-  filterBlankRT() {
+   }
+   filterBlankRT() {
       dev.addFilterElement().eq(3).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(6).click({ force: true })
@@ -585,8 +551,8 @@ export class DeviceRepairReportActions {
       dev.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', ' ')
       dev.clearFilterElement().click({ force: true })
-  }
-  filterNotblankRT() {
+   }
+   filterNotblankRT() {
       dev.addFilterElement().eq(3).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(7).click({ force: true })
@@ -594,7 +560,7 @@ export class DeviceRepairReportActions {
       dev.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.repairtype)
       dev.clearFilterElement().click({ force: true })
-  }
+   }
    //RD
    selectFilterRepairDevice() {
       dev.addFilterElement().eq(5).click({ force: true })
@@ -736,9 +702,9 @@ export class DeviceRepairReportActions {
       dev.addFilterElement().eq(6).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(7).click({ force: true })
-      dev.fieldValueElement().eq(1).clear({ force: true }).type( tdata.deviceRepairReport.assettag, { force: true })
+      dev.fieldValueElement().eq(1).clear({ force: true }).type(tdata.deviceRepairReport.assettag, { force: true })
       dev.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain',  tdata.deviceRepairReport.assettag)
+      cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.assettag)
       dev.clearFilterElement().click({ force: true })
    }
    //cby

@@ -78,6 +78,10 @@ Feature: RepairBoxes Page Functionality
     And Click on filter of Last Modified Date Between in search box and Verify the Result
     And Click on filter of Last Modified Date Blank in search box and Verify the Result
     And Click on filter of Last Modified Date Not blank in search box and Verify the Result
+
+
+    Then Click on label form of image and Verify
+    Then Click on label form of Pdf and Verify
     And Click on Export Button
     Then I should click on create new Box
     Then Enter weight and Standard Box Size
@@ -97,6 +101,8 @@ Feature: RepairBoxes Page Functionality
     Then Verfiy the ticket Details
     Then Click on Add Repair Image and Verify
     And Click on Add Note and Verify
+    Then Click on Remove button for deleting ticket
+    And Verify the ticket removed
 
 
 

@@ -9,7 +9,7 @@ export class UsersActions {
         globalThis.dash = new DashboardElements();
     }
     closeTermsOfServiceWindow() {
-        cy.wait(3000)
+      //  cy.wait(3000)
         dash.termsElement().contains('Dismiss').click({ force: true })
         cy.wait(5000)
         cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
@@ -113,27 +113,46 @@ export class UsersActions {
     verifyRecordDeleted() {
         dash.messageElement().should('contain', tdata.users.deleteStudentmsg)
     }
-    clickOnMoreFilter() {
-        user.addfilterbtnElement().click({ force: true })
-    }
-    selectFieldName() {
-        user.fieldnameElement().select('role_name')
-    }
-    selectfieldOperation() {
-        user.fieldoperationElement().select("does_not_contain")
-    }
-    enterFieldValueSearchBox() {
-        user.fieldvalueElement().type('Student')
-    }
-    clickOnApplyButton() {
-        user.applybtnElement().click({ force: true })
-    }
-    verifyResultAfterFilter() {
-        cy.wait(2000)
-        //cy.get('tbody tr td').should('not.contain', "Student")
-    }
     clickOnDownload() {
         user.downloadbtnElement().click({ force: true })
+    }
+    searchOrgUnitDevices() {
+        cy.wait(1000)
+        user.expandElement().click({ force: true })
+        cy.get('[aria-label="Vivacity Tech"]').click({ force: true })
+        user.checkbox1Element().click({ force: true })
+        cy.get('[aria-label="Vivacity Tech"]').click({ force: true })
+    }
+    verifysearchResult1() {
+        cy.get('[row-index="0"]').should('contain', "/Devices")
+        user.checkbox1Element().click({ force: true })
+    }
+    searchOrgUnitGoogleBU(){
+        cy.get('[aria-label="Vivacity Tech"]').click({ force: true })
+        user.checkbox2Element().click({ force: true })
+        cy.get('[aria-label="Vivacity Tech"]').click({ force: true })
+    }
+    verifysearchResult2(){
+        cy.get('[row-index="0"]').should('contain', "/Google Bootcamp Users")
+        user.checkbox2Element().click({ force: true })
+    }
+    searchOrgUnitTestOU(){
+        cy.get('[aria-label="Vivacity Tech"]').click({ force: true })
+        user.checkbox3Element().click({ force: true })
+        cy.get('[aria-label="Vivacity Tech"]').click({ force: true })
+    }
+    verifysearchResult3(){
+       // cy.get('[row-index="0"]').should('contain', "/")
+        user.checkbox3Element().click({ force: true })
+    }
+    searchOrgUnitVTEmployee(){
+        cy.get('[aria-label="Vivacity Tech"]').click({ force: true })
+        user.checkbox4Element().click({ force: true })
+        cy.get('[aria-label="Vivacity Tech"]').click({ force: true })
+    }
+    verifysearchResult4(){
+        cy.get('[row-index="0"]').should('contain', "/VT Employees")
+        user.checkbox4Element().click({ force: true })
     }
     //ri
     filtercontainRI() {
@@ -475,7 +494,7 @@ export class UsersActions {
         user.fieldOpElement().eq(0).click({ force: true })
         user.fieldValueElement().type(tdata.users.userStatus)
         user.applyElement().click({ force: true })
-       // cy.get('[row-index="0"]').should('contain', tdata.users.userStatus)
+        // cy.get('[row-index="0"]').should('contain', tdata.users.userStatus)
         user.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainUS() {
@@ -484,7 +503,7 @@ export class UsersActions {
         user.fieldOpElement().eq(1).click({ force: true })
         user.fieldValueElement().eq(0).type(tdata.users.userStatus)
         user.applyElement().click({ force: true })
-         cy.get('[row-index="0"]').should('not.contain', tdata.users.userStatus)
+        cy.get('[row-index="0"]').should('not.contain', tdata.users.userStatus)
         user.clearFilterElement().click({ force: true })
     }
     filterEqualsUS() {
@@ -529,7 +548,7 @@ export class UsersActions {
         user.fieldOpElement().eq(6).click({ force: true })
         user.fieldValueElement().eq(0).type(' ', { force: true })
         user.applyElement().click({ force: true })
-       // cy.get('[row-index="0"]').should('contain', ' ')
+        // cy.get('[row-index="0"]').should('contain', ' ')
         user.clearFilterElement().click({ force: true })
     }
     filterNotblankUS() {
@@ -538,7 +557,7 @@ export class UsersActions {
         user.fieldOpElement().eq(7).click({ force: true })
         user.fieldValueElement().eq(1).type(tdata.users.userStatus, { force: true })
         user.applyElement().click({ force: true })
-       // cy.get('[row-index="0"]').should('contain', tdata.users.userStatus)
+        // cy.get('[row-index="0"]').should('contain', tdata.users.userStatus)
         user.clearFilterElement().click({ force: true })
     }
 }

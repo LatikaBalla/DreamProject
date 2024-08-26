@@ -137,7 +137,6 @@ And('Click on filter of SKU Blank in search box and Verify the Result', () => {
 And('Click on filter of SKU Not blank in search box and Verify the Result', () => {
     pc.filterNotblankSKU()
 })
-
 //Parent Device
 And('Click on filter of Parent Device contain in search box and Verify the Result', () => {
     pc.selectFilterParentDevice()

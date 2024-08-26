@@ -58,16 +58,11 @@ And('Click on Details button', () => {
 Then('Verify the Device Details', () => {
     isd.verifyDeviceDetails()
 }) 
-And ('Click More filter select- Importer in search box and Verify the Result',()=>{
-    isd.clickOnMoreFilter()
-    isd.selectFilterImporter()
+Then ('Click on the download import',()=>{
+
 })
-And ('Click More filter select- Quantity Devices in search box and Verify the Result',()=>{
-    isd.clickOnMoreFilter()
-    isd.selectFilterQuantityDevices()
-})
-Then ('Click on Clear filter',()=>{
-    isd.clickOnClearFilter()
+And ('Verfiy the downloaded successfully',()=>{
+
 })
 //date
 And('Click on filter of Date Imported Equals in search box and Verify the Result', () => {

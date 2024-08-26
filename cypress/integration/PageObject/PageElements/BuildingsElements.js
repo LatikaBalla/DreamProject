@@ -31,8 +31,8 @@ export default class BuildingsElements {
             timeout: 30000,
         })
     }
-    addfilterbtnElement() {
-        return cy.get(locator.buildings.addfilterbtn, {
+    addFilterElement() {
+        return cy.get(locator.buildings.addFilter, {
             timeout: 30000,
         })
     }
@@ -46,13 +46,18 @@ export default class BuildingsElements {
             timeout: 30000,
         })
     }
-    baddressElement() {
-        return cy.get(locator.newbuilding.baddress, {
+    saddressElement() {
+        return cy.get(locator.newbuilding.saddress, {
             timeout: 30000,
         })
     }
     buildingnameElement() {
         return cy.get(locator.newbuilding.buildingname, {
+            timeout: 30000,
+        })
+    }
+    buildingIdElement() {
+        return cy.get(locator.newbuilding.buildingId, {
             timeout: 30000,
         })
     }
@@ -76,7 +81,22 @@ export default class BuildingsElements {
             timeout: 30000,
         })
     }
+    filtersElement(){
+        return cy.get(locator.buildings.filters, {
+            timeout: 30000,
+        })
+    }
+    buildabbreviationElement(){
+        return cy.get(locator.newbuilding.buildabbreviation, {
+            timeout: 30000,
+        })
+    }
     //edit
+    buildingIconElement() {
+        return cy.get(locator.editbuilding.buildingIcon, {
+            timeout: 30000,
+        })
+    }
     editbuildingnameElement() {
         return cy.get(locator.editbuilding.buildingname, {
             timeout: 30000,
@@ -103,37 +123,27 @@ export default class BuildingsElements {
         })
     }
     fieldNameElement() {
-        return cy.get(locator.buildings.fieldname, {
+        return cy.get(locator.buildings.fieldName, {
             timeout: 30000,
         });
     }
     fieldValueElement() {
-        return cy.get(locator.buildings.fieldvalue, {
+        return cy.get(locator.buildings.fieldValue, {
             timeout: 30000,
         });
     }
     fieldOpElement() {
-        return cy.get(locator.buildings.fieldoperation, {
+        return cy.get(locator.buildings.fieldOp, {
             timeout: 30000,
         });
     }
     applyElement() {
-        return cy.get(locator.buildings.applybtn, {
+        return cy.get(locator.buildings.apply, {
             timeout: 30000,
         });
     }
-    morefiltersbtnElement() {
-        return cy.contains(locator.buildings.morefiltersbtn, {
-            timeout: 30000,
-        });
-    }
-    clearfilterbtnElement() {
-        return cy.contains(locator.buildings.clearfilterbtn, {
-            timeout: 30000,
-        });
-    }
-    addfilterElement() {
-        return cy.contains(locator.buildings.addfilter, {
+    clearFilterElement() {
+        return cy.get(locator.buildings.clearFilter, {
             timeout: 30000,
         });
     }

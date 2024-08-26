@@ -63,8 +63,6 @@ Then ('Trial Paid Subscriptions should be visible',()=>{
 And ('Import Parts Closet should be visible',()=>{
     vadmin.importPartsCloset()
 })
-
-
 Then('Click on All Paid Subscription Requests unit', () => {
     vadmin.clickOnallPaidSubcription()
 })
@@ -77,9 +75,6 @@ vadmin.approveDenyRequest()
 And('Verify the Request', () => {
 vadmin.verifyRequest()
 })
-
-
-
 Then('Click on Admin Users unit', () => {
     vadmin.clickOnAdminUser()
 })

@@ -17,7 +17,7 @@ export default class DashboardElements {
         });
     }
     buildingsElement() {
-        return cy.get(locator.dashboard.buildings, {
+        return cy.contains(locator.dashboard.buildings, {
             timeout: 30000,
         });
     }

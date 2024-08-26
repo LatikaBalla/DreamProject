@@ -70,7 +70,6 @@ Then('Click on DeviceRepairReport page', () => {
     dev.clickOnDeviceRepairReport()
     cy.wait(3000)
 })
-
 And('Verify title of DeviceRepairReport Page should be visible', () => {
     dev.verifyTitle()
 })
@@ -87,7 +86,7 @@ Then('Enter the Search - Repair type and Verify the Result', () => {
     dev.searchRepairType()
 })
 Then('Enter the Search - Repair status and Verify the Result', () => {
-    dev.searchRepairStatus() 
+    dev.searchRepairStatus()
 })
 And('Enter the Search - Repair Box and Verify the Result', () => {
     dev.searchRepairBox()
@@ -136,8 +135,11 @@ Then('Verify table and filter should be visible', () => {
 Then('Click on the export button', () => {
     dev.clickOnExport()
 })
-Then('Click on Clear filter', () => {
-    dev.clickOnClearFilter()
+Then('Click on Add Repair Image and Verify', () => {
+    dev.clickOnAddRepairImage()
+})
+And('Click on Add Note and Verify', () => {
+    dev.clickOnAddNote()
 })
 //RI
 And('Click on filter of Repair Id Equals and Verify the Result', () => {

@@ -25,12 +25,6 @@ export class RepairBoxesActions {
     verifyTitle() {
         rb.titleElement().should('be.visible')
     }
-    inboundVisible() {
-        // rb.inboundElement().should('be.visible')
-    }
-    outboundVisible() {
-        rb.outboundElement().should('be.visible')
-    }
     clickOnAddnewBox() {
         rb.createboxbtnElement().click({ force: true })
     }
@@ -72,13 +66,12 @@ export class RepairBoxesActions {
     }
     clickOnViewButton() {
         cy.window().then(win => {
-            
         });
         cy.get('body').type('{ctrl}t');
         cy.visit("/repair-360/box-detail/" + tdata.repairBox.recordid)
     }
     verifyBoxDetails() {
-        cy.wait(100)
+        cy.wait(1000)
         cy.contains("Box Details").scrollIntoView().should('be.visible')
     }
     clickOnAddTicket() {
@@ -117,7 +110,6 @@ export class RepairBoxesActions {
         cy.wait(100)
         rb.imagedescriptionElement().type('Testing Image')
         rb.updateimageElement().contains('Upload Image').click({ force: true })
-        // dash.messageElement().should('contain', 'Image Created')
     }
     clickOnAddNote() {
         cy.wait(100)
@@ -126,7 +118,19 @@ export class RepairBoxesActions {
         cy.get('[data-value="Part Received"]').click({ force: true })
         rb.noteElement().type('Testing Note', { force: true })
         rb.createnoteElement().contains('Create').click({ force: true })
-        // dash.messageElement().should('contain', 'Ticket updated')
+    }
+    clickOnRemoveButton() {
+        cy.get('[data-testid="KeyboardBackspaceIcon"]').click({ force: true })
+        cy.get('.css-1a4b21o').eq(8).contains('Remove').dblclick({ force: true })
+    }
+    verifyRemoveTicket() {
+        dash.messageElement().should('contain', 'Ticket removed successfully.')
+    }
+    ClickOnImagelabel() {
+        rb.imageIconElement().eq(0).click({ force: true })
+    }
+    ClickOnPdflabel() {
+        rb.pdfIconElement().eq(0).click({ force: true })
     }
     //RB
     selectFilterRepairBox() {
@@ -203,6 +207,7 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBetweenBox() {
+        cy.wait(1000)
         rb.addFilterElement().eq(0).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(6).click({ force: true })
@@ -531,7 +536,7 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     //ss
-    filterCheck1() {      
+    filterCheck1() {
         cy.wait(2000)
         rb.addFilterElement().eq(5).click({ force: true })
         cy.get('[value="RecievedByVivacity"]').click({ force: true })

@@ -1,7 +1,7 @@
 {
     "dashboard": {
         "accountdetials": "[data-testid='tabacc-1']",
-        "buildings": "[data-testid='tabacc-2']",
+        "buildings": "My Buildings",
         "sliderMenu": ".css-htxx1b",
         "terms": "button[type='button']",
         "logo": "[src='/static/media/logo-v-purple.7593cbb85d4fd19e22cc.png']",
@@ -81,22 +81,21 @@
     },
     "buildings": {
         "title": "Building",
+        "filters": ".css-14ce5e3",
         "search": "[data-testid='txtSearchData']",
-        "addnewbtn": "Create New",
-        "addfilterbtn": "[data-testid='Filters']",
+        "addnewbtn": "Add Building",
         "refreshbtn": "[data-testid='CachedIcon']",
-        "tablebuilding": ".css-1dj5rr2",
-        "editIcon": "[data-testid='ModeEditOutlinedIcon']",
-        "deleteIcon": "[data-testid='DeleteOutlineOutlinedIcon']",
+        "tablebuilding": "[role='treegrid']",
+        "editIcon": "[data-testid='EditIcon']",
+        "deleteIcon": "[data-testid='DeleteIcon']",
         "confirmdelete": "[type='button']",
         "detailsbtn": "Details",
-        "fieldname": "[name='fieldName']",
-        "fieldvalue": "[name='fieldValue']",
-        "fieldoperation": "[name='fieldOp']",
-        "applybtn": "[data-testid='btnHandleApply']",
-        "morefiltersbtn": "Add Filter",
-        "clearfilterbtn": "Clear Filter",
-        "addfilterGroup": "+ Add Filter Group",
+        "addFilter": "[ref='eMenu']",
+        "clearFilter": "button[ref='resetFilterButton']",
+        "fieldName": "[ref='eDisplayField']",
+        "fieldOp": "[role='option']",
+        "fieldValue": "[placeholder='Filter...']",
+        "apply": "button[ref='applyFilterButton']",
         "detailsBuildingname": ".MuiTypography-h4",
         "buildingnamedrop": "[data-value='building_name']",
         "shippingaddress": "[data-value='building_shipping_address']",
@@ -110,11 +109,14 @@
         "phone": "#phone",
         "extension": "#extension",
         "defaultbuilding": "#default_building",
-        "baddress": "#mapbox-autofill",
-        "check": "input[type='checkbox']",
-        "savebtn": "[type='submit']"
+        "saddress": "#shipping_address_address_1",
+        "check": "[name='same_as_shipping']",
+        "savebtn": "[type='button']",
+        "buildingId": "#custom_building_id",
+        "buildabbreviation": "#building_abbreviation"
     },
     "editbuilding": {
+        "buildingIcon":"[data-testid='ApartmentOutlinedIcon']",
         "buildingname": "#building_name",
         "phone": "#phone",
         "extension": "#extension",
@@ -137,7 +139,7 @@
         "phone": "#phone",
         "cellnumber": "#cellphone",
         "submit": "[data-testid='btnNewDataSubmit']",
-        "view":"[data-testid='AccountCircleIcon']",
+        "view": "[data-testid='AccountCircleIcon']",
         "editbtn": "[data-testid='EditIcon']",
         "userrole": "#mui-component-select-userRole",
         "userstatus": "#mui-component-select-role",
@@ -150,7 +152,12 @@
         "fieldOp": "[role='option']",
         "fieldValue": "[placeholder='Filter...']",
         "apply": "button[ref='applyFilterButton']",
-        "recordid": "[data-value='record_id']"
+        "recordid": "[data-value='record_id']",
+        "expand": "[data-testid='TreeViewExpandIconIcon']",
+        "checkbox1": "[aria-label='Devices']",
+        "checkbox2": "[aria-label='Google Bootcamp Users']",
+        "checkbox3": "[aria-label='Test OU']",
+        "checkbox4": "[aria-label='VT Employees']"
     },
     "reportCenter": {
         "title": "Report Center",
@@ -161,12 +168,12 @@
         "telemetryd": "[data-testid='tabrep-5']"
     },
     "deviceRepairReport": {
-        "title": "Device Repair History",
+        "title": "Report Center",
         "clearbtn": "Clear",
-        "filters": ".css-13zqo1p",
+        "filters": ".css-14ce5e3",
         "searchdropdown": "[role='combobox']",
         "search": "[data-testid='txtSearchData']",
-        "table": ".css-1dj5rr2",
+        "table": "[role='treegrid']",
         "printTicket": "Print Ticket Estimate",
         "downloadticket": "Download Ticket Estimate",
         "back": "[data-testid='KeyboardBackspaceIcon']",
@@ -182,9 +189,20 @@
         "fieldOp": "[role='option']",
         "fieldValue": "[placeholder='Filter...']",
         "apply": "button[ref='applyFilterButton']",
-        "serialNo":"[data-value='serial_number']",
-        "assetTag":"[data-value='asset_tag']",
-        "intransit":"[data-value='In Transit']"
+        "serialNo": "[data-value='serial_number']",
+        "assetTag": "[data-value='asset_tag']",
+        "intransit": "[data-value='In Transit']",
+        "addimage": "Add New Repair Image",
+        "addnote": "Add New Note",
+        "note": "#note",
+        "createline": "button[type='submit']",
+        "uploadimage": "#image",
+        "imagedescription": "#image_description",
+        "updateimage": "button[type='submit']",
+        "notetype": "#note_type",
+        "createnote": "button[type='submit']",
+        "part": "#part",
+        "custompart": "Custom Part"
     },
     "vivacityRepairReport": {
         "section1": "In Transit to Me",
@@ -200,15 +218,15 @@
     "inhouseRepairReport": {
         "section1": "Non-warranty Repairs",
         "section2": "Tickets in QA",
-        "section3": "Tickets Approved",
-        "section4": "Tickets Created",
+        "section3": "Tickets in Repair",
+        "section4": "Open Tickets",
         "ticketdata": "Ticket Data By Dates"
     },
     "nonWarrantyRepairs": {
-        "title": "Non-Warranty Repairs",
-        "filters": ".css-13zqo1p",
+        "title": "Report Center",
+        "filters": ".css-14ce5e3",
         "search": "[data-testid='txtSearchData']",
-        "table": ".css-1dj5rr2",
+        "table": "[role='treegrid']",
         "form": "form[class='MuiBox-root css-0']",
         "failureType": "#failure_type",
         "site": "#outbound_address",
@@ -265,8 +283,8 @@
         "apply": "button[ref='applyFilterButton']",
         "addfilterGroup": "+ Add Filter Group",
         "view": "View Details",
-        "deviceIcon":"[data-testid='DevicesIcon']",
-        "googleIcon":"[src='/static/media/G.62bb109f219295189cc1.png']"
+        "deviceIcon": "[data-testid='DevicesIcon']",
+        "googleIcon": "[src='/static/media/G.62bb109f219295189cc1.png']"
     },
     "importSerialDevices": {
         "title": "Manage Devices",
@@ -312,7 +330,7 @@
         "fieldOp": "[role='option']",
         "fieldValue": "[placeholder='Filter...']",
         "apply": "button[ref='applyFilterButton']"
-        },
+    },
     "loanerManagement": {
         "table": ".css-1xz8d5v",
         "search": "[placeholder='Search by table field values']",
@@ -372,7 +390,7 @@
         "description": "#chromebook_issue",
         "savebtn": "Save",
         "search": "[data-testid='txtSearchData']",
-        "recordid":"[data-value='record_id']",
+        "recordid": "[data-value='record_id']",
         "ticketnumber": "[data-value='ticket_number']",
         "repairtype": "[data-value='repair_type']",
         "serialnumber": "[data-value='serial_number']",
@@ -410,7 +428,7 @@
         "height": "#height",
         "depth": "#depth",
         "width": "#width",
-        "standardSize":"#standardSize",
+        "standardSize": "#standardSize",
         "pickupsite": "#building",
         "checkbox": "[name='shipping_box']",
         "createboxbtn": "Create Box",
@@ -432,10 +450,10 @@
         "fieldOp": "[role='option']",
         "fieldValue": "[placeholder='Filter...']",
         "apply": "button[ref='applyFilterButton']",
-        "building":"[data-value='building']",
-        "createdby":"[data-value='created_by']",
-        "view":"[data-testid='VisibilityIcon']",
-        "export":"[data-testid='FileDownloadIcon']",
+        "building": "[data-value='building']",
+        "createdby": "[data-value='created_by']",
+        "view": "[data-testid='VisibilityIcon']",
+        "export": "[data-testid='FileDownloadIcon']",
         "addline": "Add New Line Item",
         "addimage": "Add New Repair Image",
         "addnote": "Add New Note",
@@ -445,7 +463,9 @@
         "imagedescription": "#image_description",
         "updateimage": "button[type='submit']",
         "notetype": "#note_type",
-        "createnote": "button[type='submit']"
+        "createnote": "button[type='submit']",
+        "imageIcon":"[data-testid='ImageIcon']",
+        "pdfIcon":"[data-testid='PictureAsPdfIcon']"
     },
     "inhouseRepairCenter": {
         "title": "In-House Repair",
@@ -529,9 +549,9 @@
         "createnote": "button[type='submit']",
         "part": "#part",
         "custompart": "Custom Part",
-        "buildingdrop":"[data-value='building']",
-        "updateStudent":"Update to Student",
-        "updateInhouse":"Update to In House"
+        "buildingdrop": "[data-value='building']",
+        "updateStudent": "Update to Student",
+        "updateInhouse": "Update to In House"
     },
     "studentRepairCenter": {
         "title": "Student Repair Center",
@@ -731,7 +751,7 @@
         "fieldName": "[name='fieldName']",
         "fieldValue": "[name='fieldValue']",
         "fieldOp": "[name='fieldOp']",
-        "apply": "[data-testid='btnHandleApply']",
+        "apply": ".css-5s3yqi",
         "addFilter": "Add Filter",
         "clearFilter": "Clear Filter"
     },
@@ -786,7 +806,7 @@
         "submit": "[data-testid='btnNewDataSubmit']",
         "section5": "Import Serial Device",
         "addAccount": "Add Account",
-        "netsuiteid":"#netsuite_id",
+        "netsuiteid": "#netsuite_id",
         "accountName": "#account_name",
         "phoneNo": "#phone_number",
         "domain": "#domain",
@@ -829,10 +849,9 @@
         "section11": "Import serial device request",
         "section12": "Trial Paid Subscriptions",
         "section13": "Import Parts Closet",
-        "searialno":"[data-value='serial_number']",
-        "accountno":"[data-value='account']",
-        "device":"[data-value='device']"
-        
+        "searialno": "[data-value='serial_number']",
+        "accountno": "[data-value='account']",
+        "device": "[data-value='device']"
     },
     "landing": {
         "title": "Device and Asset Management",
@@ -880,7 +899,7 @@
         "dropdown": "#telemetry-data-selection",
         "retrievebtn": "[type='button']",
         "datasection": ".css-sgter1",
-        "deviceTable":".css-sgter1",
-        "graphData":".css-sgter1"
+        "deviceTable": ".css-sgter1",
+        "graphData": ".css-sgter1"
     }
 }

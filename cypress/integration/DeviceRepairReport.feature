@@ -102,6 +102,8 @@ Feature: DeviceRepairReport Page Functionality
     Then Verify the Repair Ticket page will open
     And Verfiy the details of Ticket
     Then Click on the download Ticket Estimation button
+    Then Click on Add Repair Image and Verify
+    And Click on Add Note and Verify
 
 
 

@@ -51,13 +51,9 @@ And('Click on Buildings Tab', () => {
 })
 And('Verify the Title of Buildings Page', () => {
     build.verifyTitleBuildingPage()
-
 })
 Then('Filters of Buildings should be visible', () => {
-    build.addNewButtonTabVisible()
-    build.addfilterButtonVisible()
-    build.searchBoxVisible()
-    build.refreshButtonVisible()
+    build.filterVisible()
 })
 And('Table for Buildings should be visible', () => {
     build.tableofBuildingsVisible()
@@ -65,7 +61,7 @@ And('Table for Buildings should be visible', () => {
 Then('Slider Menu should be visible', () => {
     dash.sliderMenuvisible()
 })
-Then('I should click on + Add New button', () => {
+Then('I should click on Add building button', () => {
     build.clickOnAddnewButton()
 })
 And('I should Enter Building Name,Phone and Extension', () => {
@@ -73,11 +69,13 @@ And('I should Enter Building Name,Phone and Extension', () => {
     build.enterPhone()
     build.enterExtension()
 })
-Then('Select Default building', () => {
+Then('I should Enter Building Abbreviation and Select Default building', () => {
+    build.enterBuildingAb()
     build.selectDefaultBuilding()
 })
-And('Enter Billing Address and select from dropdown', () => {
-    build.enterBillingAddress()
+And('Enter Billing Id, Shipping Address and select from dropdown', () => {
+    build.enterBuilingId()
+    build.enterShippingAddress()
 })
 Then('Click on checkbox Same as Shipping Address', () => {
     build.clickOnCheckbox()
@@ -100,7 +98,6 @@ And('Verify the record is deleted successfully of building', () => {
 And('Click on My Account Details Tab', () => {
     dash.clickOnMyAccountTab()
 })
-
 Then('I should click on Add New button', () => {
     acc.clickOnAddNewbutton()
 })
@@ -126,7 +123,6 @@ And('Click on save button', () => {
 Then('Verify the account details added in table', () => {
     acc.verifyRecordTable()
 })
-
 And('Click on Edit Icon', () => {
     acc.clickOnEditIcon()
     cy.wait(2000)
@@ -165,7 +161,6 @@ Then('Click on Confirm Delete button', () => {
 And('Verify the record is deleted successfully', () => {
     acc.verifyRecordDeleted()
 })
-
 Then('Enter title, full name and valid Email for Search', () => {
     acc.enterTitle()
     acc.enterFullnameSearch()
@@ -199,7 +194,6 @@ And('Enter the full name in search box', () => {
 And('Verify the record in searching history', () => {
     acc.verifySearchResult()
 })
-
 And('Click on Edit Icon of builing', () => {
     build.clickOnEditIcon()
 })

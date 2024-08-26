@@ -84,8 +84,6 @@ And('Click on remove from loaner pool button', () => {
     loan.serachAvailableDevice()
     loan.clickOnRemoveFromPool()
 })
-
-
 And('Click on filter of Asset Tag contain and Verify the Result', () => {
     loan.filtercontainTag()
 })
@@ -110,7 +108,6 @@ And('Click on filter of Asset Tag Blank and Verify the Result', () => {
 And('Click on filter of Asset Tag Not blank and Verify the Result', () => {
     loan.filterNotblankTag()
 })
-
 And('Click on filter of Serial contain and Verify the Result', () => {
     loan.filtercontainS()
 })
@@ -135,7 +132,6 @@ And('Click on filter of Serial Blank and Verify the Result', () => {
 And('Click on filter of Serial Not blank and Verify the Result', () => {
     loan.filterNotblankS()
 })
-
 And('Click on filter of Student Info contain and Verify the Result', () => {
     loan.filtercontainSI()
 })
@@ -160,7 +156,6 @@ And('Click on filter of Student Info Blank and Verify the Result', () => {
 And('Click on filter of Student Info Not blank and Verify the Result', () => {
     loan.filterNotblankSI()
 })
-
 And('Click on filter of Device contain and Verify the Result', () => {
     loan.filtercontainD()
 })
@@ -185,7 +180,6 @@ And('Click on filter of Device Blank and Verify the Result', () => {
 And('Click on filter of Device Not blank and Verify the Result', () => {
     loan.filterNotblankD()
 })
-
 And('Click on filter of Warranty contain and Verify the Result', () => {
     loan.filtercontainW()
 })
@@ -210,7 +204,6 @@ And('Click on filter of Warranty Blank and Verify the Result', () => {
 And('Click on filter of Warranty Not blank and Verify the Result', () => {
     loan.filterNotblankW()
 })
-
 And('Click on filter of Product Description contain and Verify the Result for Available', () => {
     loan.filtercontainPD_A()
 })
@@ -356,7 +349,6 @@ And('Click on filter of Product Description Blank and Verify the Result for Chec
 And('Click on filter of Product Description Not blank and Verify the Result for Checked Out', () => {
     loan.filterNotblankPD_C()
 })
-
 And('Click on filter of SKU contain and Verify the Result for Checked Out', () => {
     loan.filtercontainSKU_C()
 })
@@ -381,7 +373,6 @@ And('Click on filter of SKU Blank and Verify the Result for Checked Out', () => 
 And('Click on filter of SKU Not blank and Verify the Result for Checked Out', () => {
     loan.filterNotblankSKU_C()
 })
-
 And('Click on filter of Warranty contain and Verify the Result for Checked Out', () => {
     loan.filtercontainW_C()
 })
@@ -406,7 +397,6 @@ And('Click on filter of Warranty Blank and Verify the Result for Checked Out', (
 And('Click on filter of Warranty Not blank and Verify the Result for Checked Out', () => {
     loan.filterNotblankW_C()
 })
-
 And('Click on filter of Serial contain and Verify the Result for Checked Out', () => {
     loan.filtercontainS_C()
 })
@@ -431,7 +421,6 @@ And('Click on filter of Serial Blank and Verify the Result for Checked Out', () 
 And('Click on filter of Serial Not blank and Verify the Result for Checked Out', () => {
     loan.filterNotblankS_C()
 })
-
 And('Click on filter of Asset Tag Does not contain and Verify the Result for Checked Out', () => {
     loan.filtercontainTag_C()
 })

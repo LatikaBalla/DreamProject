@@ -35,15 +35,12 @@ Then('I should click on Add Asset', () => {
     oua.clickOnAddAssetbutton()
 })
 Then('Enter title, full name location and tag', () => {
-    // oua.enterTitle()
-    // oua.enterFullname()
     oua.enterLocation()
     oua.enterTag()
 })
 And('Enter note, Type and description', () => {
     oua.enterNote()
     oua.enterType()
-    //  oua.enterDescription()
 })
 Then('Upload the image file', () => {
     oua.selectFileForUpload()
@@ -54,12 +51,6 @@ And('Click on save button', () => {
 })
 Then('Verify the asset details added in table', () => {
     oua.verifyRecordTable()
-})
-And('Enter the title in search box', () => {
-    oua.enterSearchValue()
-})
-Then('Click on Search button', () => {
-    oua.clickOnASearchButton()
 })
 And('Verify the record in searching history', () => {
     oua.verifySearchResult()
@@ -80,7 +71,7 @@ Then('ReUpload the image file', () => {
     oua.editUpload()
 })
 Then('Click on save button', () => {
-    oua.clickSubmitForUpdate()
+    oua.clickSaveForUpdate()
 })
 And('Verify the Record has been updated Meassage', () => {
     oua.verfifyDataUpdatedMessage()

@@ -51,11 +51,11 @@ When('I should Sign In into the application', () => {
 })
 Then('Close the terms of service window', () => {
     cy.wait(9000)
-    cy.contains('demo_studentnormal@vivacitytech.com').click({force:true})
+    cy.contains('demo_studentnormal@vivacitytech.com').click({ force: true })
     dash.closeTermsOfServiceWindow()
 })
 Then('I should be redirected to the dashboard page', () => {
-    cy.contains('My Account').click({force:true})
+    cy.contains('My Account').click({ force: true })
     cy.url().should('include', '/')
 })
 And('Verify the Title of dashborad Page', () => {
@@ -95,7 +95,7 @@ And('Verify the NonwarrantyRepairs tab should be visible', () => {
 
 
 And('Click on ManageDevices page', () => {
-    cy.get('[data-testid="ChevronRightIcon"]').click({force:true})
+    cy.get('[data-testid="ChevronRightIcon"]').click({ force: true })
     mdev.clickOnManageDevices()
 })
 Then('I should be redirected to theManageDevices page', () => {
@@ -140,7 +140,7 @@ And('Verify the PartCloset tab should be visible', () => {
 })
 
 And('Click on Resources page', () => {
-   
+
     res.clickOnResources()
 })
 Then('I should be redirected to the Resources page', () => {
@@ -155,7 +155,7 @@ Then('Verify the Instructions Tab should be visible', () => {
 And('Verify the HowToVideos tab should be visible', () => {
     res.howToVideosTabVisible()
 })
-Then ('Verify the WarrantyInfo tab should be visible',()=>{
+Then('Verify the WarrantyInfo tab should be visible', () => {
     res.warrantyInfoTabVisible()
 })
 And('Click on My profile page visible', () => {
@@ -167,7 +167,7 @@ And('Click on My profile page visible', () => {
 })
 And('Click on My profile page', () => {
     cy.wait(1000)
-    cy.contains('demo_studentnormal@vivacitytech.com').click({force:true})
+    cy.contains('demo_studentnormal@vivacitytech.com').click({ force: true })
     cy.get('[data-testid="KeyboardArrowDownIcon"]').click({ force: true })
     mp.clickOnMyProfile()
 })
@@ -177,7 +177,7 @@ Then('Verify the Title of My Profile Page', () => {
 
 And('Click on Support page', () => {
     cy.wait(1000)
-   // cy.contains('demo_studentSuper@vivacitytech.com').click({force:true})
+    // cy.contains('demo_studentSuper@vivacitytech.com').click({force:true})
     su.clickOnSupport()
 })
 Then('Verify the Title of Support Page', () => {
@@ -185,9 +185,9 @@ Then('Verify the Title of Support Page', () => {
 })
 
 
-And ('Click on features page',()=>{
+And('Click on features page', () => {
     cy.wait(1000)
-  //  cy.contains('demo_studentSuper@vivacitytech.com').click({force:true})
+    //  cy.contains('demo_studentSuper@vivacitytech.com').click({force:true})
     ft.clickOnFeatures()
 })
 Then('I should be redirected to the Features page', () => {
@@ -224,7 +224,7 @@ Then('Enter the Describe Your Issue of Nwr', () => {
 And('Click on save button of Nwr', () => {
     nwr.clickOnSaveButton()
 })
-Then('Verify New Ticket is added of Nwr' , () => {
+Then('Verify New Ticket is added of Nwr', () => {
     nwr.verifyNewTicket()
 })
 
@@ -283,52 +283,52 @@ Then('Enter the Search - Repair status in search box and Verify the Result of Nw
 And('Click on PartCloset Tab', () => {
     pc.clickOnPartClosetTab()
 })
-Then ('I should click on Add New custome part',()=>{
-pc.clickOnNewCustomePart()
+Then('I should click on Add New custome part', () => {
+    pc.clickOnNewCustomePart()
 })
-Then ('Enter part name, manufacture and parent device of pc',()=>{
-pc.enterPartname()
-pc.enterManufacture()
-pc.enterParentDevice()
+Then('Enter part name, manufacture and parent device of pc', () => {
+    pc.enterPartname()
+    pc.enterManufacture()
+    pc.enterParentDevice()
 })
-And ('Enter part sku and quantity of pc',()=>{
-pc.enterPartSKU()
-pc.enterQuantity()
-pc.selectBuilding()
+And('Enter part sku and quantity of pc', () => {
+    pc.enterPartSKU()
+    pc.enterQuantity()
+    pc.selectBuilding()
 })
-Then ('Click on submit button of pc',()=>{
-pc.clickOnSubmitButton()
+Then('Click on submit button of pc', () => {
+    pc.clickOnSubmitButton()
 })
-And ('Verify new custome part is added of pc',()=>{
-pc.verifyNewPartAdded()
+And('Verify new custome part is added of pc', () => {
+    pc.verifyNewPartAdded()
 })
-And ('Enter the Search value in search box of pc',()=>{
-pc.enterPartSKUSearch()
+And('Enter the Search value in search box of pc', () => {
+    pc.enterPartSKUSearch()
 })
-Then ('Verify the Results in the table of pc',()=>{
-pc.verifySearchResult()
+Then('Verify the Results in the table of pc', () => {
+    pc.verifySearchResult()
 })
-And ('Click on delete button of pc',()=>{
-pc.clickOnDeleteButton()
+And('Click on delete button of pc', () => {
+    pc.clickOnDeleteButton()
 })
-Then ('Verify the recode is deleted of pc',()=>{
-pc.verifyDeleted()
+Then('Verify the recode is deleted of pc', () => {
+    pc.verifyDeleted()
 })
-And ('I should click on Add New VT part of pc',()=>{
+And('I should click on Add New VT part of pc', () => {
     pc.clickOnNewVTPart()
 })
-Then ('Select device and part name of pc',()=>{
-pc.selectDevice()
-pc.selectPartName()
+Then('Select device and part name of pc', () => {
+    pc.selectDevice()
+    pc.selectPartName()
 })
-And ('Enter quantity and select building of pc',()=>{
-pc.enterQuantityVT()
-pc.selectBuilding()
+And('Enter quantity and select building of pc', () => {
+    pc.enterQuantityVT()
+    pc.selectBuilding()
 })
-Then ('Click on submit button of pc',()=>{
-pc.clickOnSubmitVTButton()
+Then('Click on submit button of pc', () => {
+    pc.clickOnSubmitVTButton()
 })
-And ('Verify new VT part is added of pc',()=>{
+And('Verify new VT part is added of pc', () => {
     pc.verifyNewVTPartAdded()
 })
 
@@ -456,15 +456,15 @@ And('Click More filter select- Eamil in search box and Verify the Result of acc'
     acc.clickOnMoreFilter()
     acc.selectFilterEmail()
 })
-And ('Click More filter select- Record Id in search box and Verify the Result of acc', () => {
+And('Click More filter select- Record Id in search box and Verify the Result of acc', () => {
     acc.clickOnMoreFilter()
     acc.selectFilterRecordId()
 })
-  And ('Click More filter select- User Role in search box and Verify the Result of acc', () => {
+And('Click More filter select- User Role in search box and Verify the Result of acc', () => {
     acc.clickOnMoreFilter()
     acc.selectFilterUserRole()
 })
-  And ('Click More filter select- User Status in search box and Verify the Result of acc', () => {
+And('Click More filter select- User Status in search box and Verify the Result of acc', () => {
     acc.clickOnMoreFilter()
     acc.selectFilterUserStatus()
 })

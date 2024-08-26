@@ -12,85 +12,85 @@ Feature: MyFleet  Page Functionality
 
     Scenario: Active Visibility,add Device,add more filter, view ,Clear filter and Search
         And Verify the Title of MyFleet Page
-        And Click on filter of Serial Number contain in search box and Verify the Result
-        And Click on filter of Serial Number Does not contain in search box and Verify the Result
-        And Click on filter of Serial Number Equals in search box and Verify the Result
-        And Click on filter of Serial Number Does not equal in search box and Verify the Result
-        And Click on filter of Serial Number Begins with in search box and Verify the Result
-        And Click on filter of Serial Number Ends with in search box and Verify the Result
-        And Click on filter of Serial Number Blank in search box and Verify the Result
-        And Click on filter of Serial Number Not blank in search box and Verify the Result
+        And Click on filter of Serial Number contain and Verify the Result
+        And Click on filter of Serial Number Does not contain and Verify the Result
+        And Click on filter of Serial Number Equals and Verify the Result
+        And Click on filter of Serial Number Does not equal and Verify the Result
+        And Click on filter of Serial Number Begins with and Verify the Result
+        And Click on filter of Serial Number Ends with and Verify the Result
+        And Click on filter of Serial Number Blank and Verify the Result
+        And Click on filter of Serial Number Not blank and Verify the Result
 
-        And Click on filter of Asset tag contain in search box and Verify the Result
-        And Click on filter of Asset tag Does not contain in search box and Verify the Result
-        And Click on filter of Asset tag Equals in search box and Verify the Result
-        And Click on filter of Asset tag Does not equal in search box and Verify the Result
-        And Click on filter of Asset tag Begins with in search box and Verify the Result
-        And Click on filter of Asset tag Ends with in search box and Verify the Result
-        And Click on filter of Asset tag Blank in search box and Verify the Result
-        And Click on filter of Asset tag Not blank in search box and Verify the Result
+        And Click on filter of Asset tag contain and Verify the Result
+        And Click on filter of Asset tag Does not contain and Verify the Result
+        And Click on filter of Asset tag Equals and Verify the Result
+        And Click on filter of Asset tag Does not equal and Verify the Result
+        And Click on filter of Asset tag Begins with and Verify the Result
+        And Click on filter of Asset tag Ends with and Verify the Result
+        And Click on filter of Asset tag Blank and Verify the Result
+        And Click on filter of Asset tag Not blank and Verify the Result
 
-        And Click on filter of Model contain in search box and Verify the Result
-        And Click on filter of Model Does not contain in search box and Verify the Result
-        And Click on filter of Model Equals in search box and Verify the Result
-        And Click on filter of Model Does not equal in search box and Verify the Result
-        And Click on filter of Model Begins with in search box and Verify the Result
-        And Click on filter of Model Ends with in search box and Verify the Result
-        And Click on filter of Model Blank in search box and Verify the Result
-        And Click on filter of Model Not blank in search box and Verify the Result
+        And Click on filter of Model contain and Verify the Result
+        And Click on filter of Model Does not contain and Verify the Result
+        And Click on filter of Model Equals and Verify the Result
+        And Click on filter of Model Does not equal and Verify the Result
+        And Click on filter of Model Begins with and Verify the Result
+        And Click on filter of Model Ends with and Verify the Result
+        And Click on filter of Model Blank and Verify the Result
+        And Click on filter of Model Not blank and Verify the Result
 
-        And Click on filter of SKU contain in search box and Verify the Result
-        And Click on filter of SKU Does not contain in search box and Verify the Result
-        And Click on filter of SKU Equals in search box and Verify the Result
-        And Click on filter of SKU Does not equal in search box and Verify the Result
-        And Click on filter of SKU Begins with in search box and Verify the Result
-        And Click on filter of SKU Ends with in search box and Verify the Result
-        And Click on filter of SKU Blank in search box and Verify the Result
-        And Click on filter of SKU Not blank in search box and Verify the Result
+        And Click on filter of SKU contain and Verify the Result
+        And Click on filter of SKU Does not contain and Verify the Result
+        And Click on filter of SKU Equals and Verify the Result
+        And Click on filter of SKU Does not equal and Verify the Result
+        And Click on filter of SKU Begins with and Verify the Result
+        And Click on filter of SKU Ends with and Verify the Result
+        And Click on filter of SKU Blank and Verify the Result
+        And Click on filter of SKU Not blank and Verify the Result
 
-        And Click on filter of Building contain in search box and Verify the Result
-        And Click on filter of Building Does not contain in search box and Verify the Result
-        And Click on filter of Building Equals in search box and Verify the Result
-        And Click on filter of Building Does not equal in search box and Verify the Result
-        And Click on filter of Building Begins with in search box and Verify the Result
-        And Click on filter of Building Ends with in search box and Verify the Result
-        And Click on filter of Building Blank in search box and Verify the Result
-        And Click on filter of Building Not blank in search box and Verify the Result
+        And Click on filter of Building contain and Verify the Result
+        And Click on filter of Building Does not contain and Verify the Result
+        And Click on filter of Building Equals and Verify the Result
+        And Click on filter of Building Does not equal and Verify the Result
+        And Click on filter of Building Begins with and Verify the Result
+        And Click on filter of Building Ends with and Verify the Result
+        And Click on filter of Building Blank and Verify the Result
+        And Click on filter of Building Not blank and Verify the Result
 
-        And Click on filter of Organizational Unit contain in search box and Verify the Result
-        And Click on filter of Organizational Unit Does not contain in search box and Verify the Result
-        And Click on filter of Organizational Unit Equals in search box and Verify the Result
-        And Click on filter of Organizational Unit Does not equal in search box and Verify the Result
-        And Click on filter of Organizational Unit Begins with in search box and Verify the Result
-        And Click on filter of Organizational Unit Ends with in search box and Verify the Result
-        And Click on filter of Organizational Unit Blank in search box and Verify the Result
-        And Click on filter of Organizational Unit Not blank in search box and Verify the Result
+        And Click on filter of Organizational Unit contain and Verify the Result
+        And Click on filter of Organizational Unit Does not contain and Verify the Result
+        And Click on filter of Organizational Unit Equals and Verify the Result
+        And Click on filter of Organizational Unit Does not equal and Verify the Result
+        And Click on filter of Organizational Unit Begins with and Verify the Result
+        And Click on filter of Organizational Unit Ends with and Verify the Result
+        And Click on filter of Organizational Unit Blank and Verify the Result
+        And Click on filter of Organizational Unit Not blank and Verify the Result
 
-        And Click on filter of User contain in search box and Verify the Result
-        And Click on filter of User Does not contain in search box and Verify the Result
-        And Click on filter of User Equals in search box and Verify the Result
-        And Click on filter of User Does not equal in search box and Verify the Result
-        And Click on filter of User Begins with in search box and Verify the Result
-        And Click on filter of User Ends with in search box and Verify the Result
-        And Click on filter of User Blank in search box and Verify the Result
-        And Click on filter of User Not blank in search box and Verify the Result
+        And Click on filter of User contain and Verify the Result
+        And Click on filter of User Does not contain and Verify the Result
+        And Click on filter of User Equals and Verify the Result
+        And Click on filter of User Does not equal and Verify the Result
+        And Click on filter of User Begins with and Verify the Result
+        And Click on filter of User Ends with and Verify the Result
+        And Click on filter of User Blank and Verify the Result
+        And Click on filter of User Not blank and Verify the Result
 
-        And Click on filter of Warranty contain in search box and Verify the Result
-        And Click on filter of Warranty Does not contain in search box and Verify the Result
-        And Click on filter of Warranty Equals in search box and Verify the Result
-        And Click on filter of Warranty Does not equal in search box and Verify the Result
-        And Click on filter of Warranty Begins with in search box and Verify the Result
-        And Click on filter of Warranty Ends with in search box and Verify the Result
-        And Click on filter of Warranty Blank in search box and Verify the Result
-        And Click on filter of Warranty Not blank in search box and Verify the Result
+        And Click on filter of Warranty contain and Verify the Result
+        And Click on filter of Warranty Does not contain and Verify the Result
+        And Click on filter of Warranty Equals and Verify the Result
+        And Click on filter of Warranty Does not equal and Verify the Result
+        And Click on filter of Warranty Begins with and Verify the Result
+        And Click on filter of Warranty Ends with and Verify the Result
+        And Click on filter of Warranty Blank and Verify the Result
+        And Click on filter of Warranty Not blank and Verify the Result
 
-        And Click on filter of Warranty End Date Equals in search box and Verify the Result
-        And Click on filter of Warranty End Date Does not equal in search box and Verify the Result
-        And Click on filter of Warranty End Date Before in search box and Verify the Result
-        And Click on filter of Warranty End Date After in search box and Verify the Result
-        And Click on filter of Warranty End Date Between in search box and Verify the Result
-        And Click on filter of Warranty End Date Blank in search box and Verify the Result
-        And Click on filter of Warranty End Date Not blank in search box and Verify the Result
+        And Click on filter of Warranty End Date Equals and Verify the Result
+        And Click on filter of Warranty End Date Does not equal and Verify the Result
+        And Click on filter of Warranty End Date Before and Verify the Result
+        And Click on filter of Warranty End Date After and Verify the Result
+        And Click on filter of Warranty End Date Between and Verify the Result
+        And Click on filter of Warranty End Date Blank and Verify the Result
+        And Click on filter of Warranty End Date Not blank and Verify the Result
 
         Then Click on the add device
         And Enter Serial no and select device id
@@ -132,85 +132,85 @@ Feature: MyFleet  Page Functionality
     Scenario: Retired Visibility,add Device,add more filter, view ,Clear filter and Search
         Then Click on Retired Tab
         And Verify the Title of MyFleet Page
-        And Click on filter of Serial Number contain in search box and Verify the Result in Retired
-        And Click on filter of Serial Number Does not contain in search box and Verify the Result in Retired
-        And Click on filter of Serial Number Equals in search box and Verify the Result in Retired
-        And Click on filter of Serial Number Does not equal in search box and Verify the Result in Retired
-        And Click on filter of Serial Number Begins with in search box and Verify the Result in Retired
-        And Click on filter of Serial Number Ends with in search box and Verify the Result in Retired
-        And Click on filter of Serial Number Blank in search box and Verify the Result in Retired
-        And Click on filter of Serial Number Not blank in search box and Verify the Result in Retired
+        And Click on filter of Serial Number contain and Verify the Result in Retired
+        And Click on filter of Serial Number Does not contain and Verify the Result in Retired
+        And Click on filter of Serial Number Equals and Verify the Result in Retired
+        And Click on filter of Serial Number Does not equal and Verify the Result in Retired
+        And Click on filter of Serial Number Begins with and Verify the Result in Retired
+        And Click on filter of Serial Number Ends with and Verify the Result in Retired
+        And Click on filter of Serial Number Blank and Verify the Result in Retired
+        And Click on filter of Serial Number Not blank and Verify the Result in Retired
 
-        And Click on filter of Asset tag contain in search box and Verify the Result in Retired
-        And Click on filter of Asset tag Does not contain in search box and Verify the Result in Retired
-        And Click on filter of Asset tag Equals in search box and Verify the Result in Retired
-        And Click on filter of Asset tag Does not equal in search box and Verify the Result in Retired
-        And Click on filter of Asset tag Begins with in search box and Verify the Result in Retired
-        And Click on filter of Asset tag Ends with in search box and Verify the Result in Retired
-        And Click on filter of Asset tag Blank in search box and Verify the Result in Retired
-        And Click on filter of Asset tag Not blank in search box and Verify the Result in Retired
+        And Click on filter of Asset tag contain and Verify the Result in Retired
+        And Click on filter of Asset tag Does not contain and Verify the Result in Retired
+        And Click on filter of Asset tag Equals and Verify the Result in Retired
+        And Click on filter of Asset tag Does not equal and Verify the Result in Retired
+        And Click on filter of Asset tag Begins with and Verify the Result in Retired
+        And Click on filter of Asset tag Ends with and Verify the Result in Retired
+        And Click on filter of Asset tag Blank and Verify the Result in Retired
+        And Click on filter of Asset tag Not blank and Verify the Result in Retired
 
-        And Click on filter of Model contain in search box and Verify the Result in Retired
-        And Click on filter of Model Does not contain in search box and Verify the Result in Retired
-        And Click on filter of Model Equals in search box and Verify the Result in Retired
-        And Click on filter of Model Does not equal in search box and Verify the Result in Retired
-        And Click on filter of Model Begins with in search box and Verify the Result in Retired
-        And Click on filter of Model Ends with in search box and Verify the Result in Retired
-        And Click on filter of Model Blank in search box and Verify the Result in Retired
-        And Click on filter of Model Not blank in search box and Verify the Result in Retired
+        And Click on filter of Model contain and Verify the Result in Retired
+        And Click on filter of Model Does not contain and Verify the Result in Retired
+        And Click on filter of Model Equals and Verify the Result in Retired
+        And Click on filter of Model Does not equal and Verify the Result in Retired
+        And Click on filter of Model Begins with and Verify the Result in Retired
+        And Click on filter of Model Ends with and Verify the Result in Retired
+        And Click on filter of Model Blank and Verify the Result in Retired
+        And Click on filter of Model Not blank and Verify the Result in Retired
 
-        And Click on filter of SKU contain in search box and Verify the Result in Retired
-        And Click on filter of SKU Does not contain in search box and Verify the Result in Retired
-        And Click on filter of SKU Equals in search box and Verify the Result in Retired
-        And Click on filter of SKU Does not equal in search box and Verify the Result in Retired
-        And Click on filter of SKU Begins with in search box and Verify the Result in Retired
-        And Click on filter of SKU Ends with in search box and Verify the Result in Retired
-        And Click on filter of SKU Blank in search box and Verify the Result in Retired
-        And Click on filter of SKU Not blank in search box and Verify the Result in Retired
+        And Click on filter of SKU contain and Verify the Result in Retired
+        And Click on filter of SKU Does not contain and Verify the Result in Retired
+        And Click on filter of SKU Equals and Verify the Result in Retired
+        And Click on filter of SKU Does not equal and Verify the Result in Retired
+        And Click on filter of SKU Begins with and Verify the Result in Retired
+        And Click on filter of SKU Ends with and Verify the Result in Retired
+        And Click on filter of SKU Blank and Verify the Result in Retired
+        And Click on filter of SKU Not blank and Verify the Result in Retired
 
-        And Click on filter of Building contain in search box and Verify the Result in Retired
-        And Click on filter of Building Does not contain in search box and Verify the Result in Retired
-        And Click on filter of Building Equals in search box and Verify the Result in Retired
-        And Click on filter of Building Does not equal in search box and Verify the Result in Retired
-        And Click on filter of Building Begins with in search box and Verify the Result in Retired
-        And Click on filter of Building Ends with in search box and Verify the Result in Retired
-        And Click on filter of Building Blank in search box and Verify the Result in Retired
-        And Click on filter of Building Not blank in search box and Verify the Result in Retired
+        And Click on filter of Building contain and Verify the Result in Retired
+        And Click on filter of Building Does not contain and Verify the Result in Retired
+        And Click on filter of Building Equals and Verify the Result in Retired
+        And Click on filter of Building Does not equal and Verify the Result in Retired
+        And Click on filter of Building Begins with and Verify the Result in Retired
+        And Click on filter of Building Ends with and Verify the Result in Retired
+        And Click on filter of Building Blank and Verify the Result in Retired
+        And Click on filter of Building Not blank and Verify the Result in Retired
 
-        And Click on filter of Organizational Unit contain in search box and Verify the Result in Retired
-        And Click on filter of Organizational Unit Does not contain in search box and Verify the Result in Retired
-        And Click on filter of Organizational Unit Equals in search box and Verify the Result in Retired
-        And Click on filter of Organizational Unit Does not equal in search box and Verify the Result in Retired
-        And Click on filter of Organizational Unit Begins with in search box and Verify the Result in Retired
-        And Click on filter of Organizational Unit Ends with in search box and Verify the Result in Retired
-        And Click on filter of Organizational Unit Blank in search box and Verify the Result in Retired
-        And Click on filter of Organizational Unit Not blank in search box and Verify the Result in Retired
+        And Click on filter of Organizational Unit contain and Verify the Result in Retired
+        And Click on filter of Organizational Unit Does not contain and Verify the Result in Retired
+        And Click on filter of Organizational Unit Equals and Verify the Result in Retired
+        And Click on filter of Organizational Unit Does not equal and Verify the Result in Retired
+        And Click on filter of Organizational Unit Begins with and Verify the Result in Retired
+        And Click on filter of Organizational Unit Ends with and Verify the Result in Retired
+        And Click on filter of Organizational Unit Blank and Verify the Result in Retired
+        And Click on filter of Organizational Unit Not blank and Verify the Result in Retired
 
-        And Click on filter of User contain in search box and Verify the Result in Retired
-        And Click on filter of User Does not contain in search box and Verify the Result in Retired
-        And Click on filter of User Equals in search box and Verify the Result in Retired
-        And Click on filter of User Does not equal in search box and Verify the Result in Retired
-        And Click on filter of User Begins with in search box and Verify the Result in Retired
-        And Click on filter of User Ends with in search box and Verify the Result in Retired
-        And Click on filter of User Blank in search box and Verify the Result in Retired
-        And Click on filter of User Not blank in search box and Verify the Result in Retired
+        And Click on filter of User contain and Verify the Result in Retired
+        And Click on filter of User Does not contain and Verify the Result in Retired
+        And Click on filter of User Equals and Verify the Result in Retired
+        And Click on filter of User Does not equal and Verify the Result in Retired
+        And Click on filter of User Begins with and Verify the Result in Retired
+        And Click on filter of User Ends with and Verify the Result in Retired
+        And Click on filter of User Blank and Verify the Result in Retired
+        And Click on filter of User Not blank and Verify the Result in Retired
 
-        And Click on filter of Warranty contain in search box and Verify the Result in Retired
-        And Click on filter of Warranty Does not contain in search box and Verify the Result in Retired
-        And Click on filter of Warranty Equals in search box and Verify the Result in Retired
-        And Click on filter of Warranty Does not equal in search box and Verify the Result in Retired
-        And Click on filter of Warranty Begins with in search box and Verify the Result in Retired
-        And Click on filter of Warranty Ends with in search box and Verify the Result in Retired
-        And Click on filter of Warranty Blank in search box and Verify the Result in Retired
-        And Click on filter of Warranty Not blank in search box and Verify the Result in Retired
+        And Click on filter of Warranty contain and Verify the Result in Retired
+        And Click on filter of Warranty Does not contain and Verify the Result in Retired
+        And Click on filter of Warranty Equals and Verify the Result in Retired
+        And Click on filter of Warranty Does not equal and Verify the Result in Retired
+        And Click on filter of Warranty Begins with and Verify the Result in Retired
+        And Click on filter of Warranty Ends with and Verify the Result in Retired
+        And Click on filter of Warranty Blank and Verify the Result in Retired
+        And Click on filter of Warranty Not blank and Verify the Result in Retired
 
-        And Click on filter of Warranty End Date Equals in search box and Verify the Result in Retired
-        And Click on filter of Warranty End Date Does not equal in search box and Verify the Result in Retired
-        And Click on filter of Warranty End Date Before in search box and Verify the Result in Retired
-        And Click on filter of Warranty End Date After in search box and Verify the Result in Retired
-        And Click on filter of Warranty End Date Between in search box and Verify the Result in Retired
-        And Click on filter of Warranty End Date Blank in search box and Verify the Result in Retired
-        And Click on filter of Warranty End Date Not blank in search box and Verify the Result in Retired
+        And Click on filter of Warranty End Date Equals and Verify the Result in Retired
+        And Click on filter of Warranty End Date Does not equal and Verify the Result in Retired
+        And Click on filter of Warranty End Date Before and Verify the Result in Retired
+        And Click on filter of Warranty End Date After and Verify the Result in Retired
+        And Click on filter of Warranty End Date Between and Verify the Result in Retired
+        And Click on filter of Warranty End Date Blank and Verify the Result in Retired
+        And Click on filter of Warranty End Date Not blank and Verify the Result in Retired
         Then Click on the add device
         And Enter Serial no and select device id
         Then Enter Asset Tag and Select student id

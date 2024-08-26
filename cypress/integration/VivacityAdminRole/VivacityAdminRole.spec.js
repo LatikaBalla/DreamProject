@@ -60,7 +60,7 @@ Then('Close the terms of service window', () => {
     dash.closeTermsOfServiceWindow()
 })
 Then('I should be redirected to the dashboard page', () => {
-    cy.contains('My Account').click({force:true})
+    cy.contains('My Account').click({ force: true })
     cy.url().should('include', '/')
 })
 And('Verify the Title of dashborad Page', () => {
@@ -94,10 +94,7 @@ Then('Verify the DeviceRepairReport tab should be visible', () => {
 })
 And('Verify the NonwarrantyRepairs tab should be visible', () => {
     repc.nonwarrantyRepairsTabVisible()
-
 })
-
-
 And('Click on ManageDevices page', () => {
     cy.get('[data-testid="ChevronRightIcon"]').click({ force: true })
     mdev.clickOnManageDevices()
@@ -120,10 +117,8 @@ Then('Verify the Import Serial Devices tab should be visible', () => {
 And('Verify the Organization Uploaded Assets tab should be visible', () => {
     mdev.organizationUploadedAssetsTabVisible()
 })
-
 And('Click on Repair360 page', () => {
     rep.clickOnRepair360()
-
 })
 Then('I should be redirected to the Repair360 page', () => {
     cy.url().should('include', '/repair-360')
@@ -143,9 +138,7 @@ Then('Verify the StudentRepairCenter tab should be visible', () => {
 And('Verify the PartCloset tab should be visible', () => {
     rep.partclosetTabVisible()
 })
-
 And('Click on Resources page', () => {
-
     res.clickOnResources()
 })
 Then('I should be redirected to the Resources page', () => {
@@ -163,8 +156,6 @@ And('Verify the HowToVideos tab should be visible', () => {
 Then('Verify the WarrantyInfo tab should be visible', () => {
     res.warrantyInfoTabVisible()
 })
-
-
 And('Click on My profile page', () => {
     cy.wait(1000)
     cy.contains('demo_adminvivacity@vivacitytech.com').click({ force: true })
@@ -173,7 +164,6 @@ And('Click on My profile page', () => {
 Then('Verify the Title of My Profile Page', () => {
     cy.title().should('eq', 'My Profile')
 })
-
 And('Click on Support page', () => {
     cy.wait(1000)
     // cy.contains('demo_adminVivacity@vivacitytech.com').click({force:true})
@@ -182,8 +172,6 @@ And('Click on Support page', () => {
 Then('Verify the Title of Support Page', () => {
     cy.title().should('eq', 'Support')
 })
-
-
 And('Click on features page', () => {
     cy.wait(1000)
     //  cy.contains('demo_adminVivacity@vivacitytech.com').click({force:true})
@@ -204,7 +192,6 @@ And('Verify the Under Construction tab should be visible', () => {
 And('Verify the Launched tab should be visible', () => {
     ft.launchedTabVisible()
 })
-
 And('Click on NonwarrantyRepairs page', () => {
     nwr.clickOnNonWarrantyRepairs()
 })
@@ -214,8 +201,8 @@ Then('Select failure Type, Return site and Serial Device of Nwr', () => {
     nwr.selectSerialDevice()
 })
 And('Select Building and Chromebook issue of Nwr', () => {
-    //     iht.selectBilding()
-    //   nwr.selectRepaireIssue()
+    iht.selectBilding()
+    nwr.selectRepaireIssue()
 })
 Then('Enter the Describe Your Issue of Nwr', () => {
     nwr.enterChromebookIssue()
@@ -226,8 +213,6 @@ And('Click on save button of Nwr', () => {
 Then('Verify New Ticket is added of Nwr', () => {
     nwr.verifyNewTicket()
 })
-
-
 And('Click on PartCloset Tab', () => {
     pc.clickOnPartClosetTab()
 })
@@ -279,8 +264,6 @@ Then('Click on submit button of pc', () => {
 And('Verify new VT part is added of pc', () => {
     pc.verifyNewVTPartAdded()
 })
-
-
 Then('I should click on create new ticket of rt', () => {
     rt.clickOnCreateNewTicket()
 })
@@ -359,9 +342,6 @@ And('Click More filter select- Repair device in search box and Verify the Result
     rt.clickOnMoreFilter()
     rt.selectFilterRepairDevice()
 })
-
-
-
 And('Click on RepairBoxes Tab', () => {
     cy.get('.MuiPaper-rounded > .MuiPaper-root > .MuiToolbar-root > .MuiIconButton-root').click({ force: true })
     rb.clickOnRepairBoxesTab()
@@ -408,15 +388,11 @@ And('Enter the Search - Tracking Number in search box and Verify the Result of r
 Then('Enter the Search - Record Id in search box and Verify the Result of rb', () => {
     rb.searchRecordId()
 })
-
-
-
 And('Click on My profile page', () => {
     cy.wait(1000)
     cy.contains('demo_adminvivacity@vivacitytech.com').click({ force: true })
     mp.clickOnMyProfile()
 })
-
 And('Click on upload image icon of mp', () => {
     mp.clickOnImageIcone()
 })
@@ -433,8 +409,6 @@ Then('click on update button of mp', () => {
 And('Verify the updated successfully of mp', () => {
     mp.verifyUpdate()
 })
-
-
 Then('Click on Clear filter of Nwr', () => {
     nwr.clickOnClearFilter()
 })
@@ -483,7 +457,6 @@ Then('Enter the Search - Repair type in search box and Verify the Result of Nwr'
 Then('Enter the Search - Repair status in search box and Verify the Result of Nwr', () => {
     nwr.searchRepairStatus()
 })
-
 Then('Click on DeviceRepairReport page', () => {
     dev.clickOnDeviceRepairReport()
     cy.wait(3000)
@@ -495,7 +468,7 @@ Then('Enter the Search - Repair type in search box and Verify the Result of drr'
     dev.searchRepairType()
 })
 Then('Enter the Search - Repair status in search box and Verify the Result of drr', () => {
-    //dev.searchRepairStatus() 
+    dev.searchRepairStatus()
 })
 And('Enter the Search - Repair Box in search box and Verify the Result of drr', () => {
     dev.searchRepairBox()
@@ -554,8 +527,6 @@ And('Enter Phone and Cell Number of srcs', () => {
 })
 Then('Select User Status of srcs', () => {
     ss.selectUserStatus()
-    // ss.selectVivaNews()
-    // ss.selectProductUpdate()
 })
 Then('Select Vivacity weekly and Beta tester of srcs', () => {
     ss.selectViivaWeekly()
@@ -610,7 +581,6 @@ And('Click More filter select- User status in search box and Verify the Result o
     ss.clickOnMoreFilter()
     ss.selectFilterUserStatus()
 })
-
 //srcRepairTicket
 And('Click on StudentRepairCenter tab', () => {
     srt.clickOnStudentRepairCenterTab()
@@ -688,8 +658,6 @@ And('Click More filter select- Created By in search box and Verify the Result of
     srt.clickOnMoreFilter()
     srt.selectFilterCreatedBy()
 })
-
-
 //srcFaci
 Then('Click on SrcFacilitators tab', () => {
     sf.clickOnSrcFacilitatorsTab()
@@ -729,7 +697,6 @@ And('Click More filter select- User status in search box and Verify the Result o
     sf.clickOnMoreFilter()
     sf.selectFilterUserStatus()
 })
-
 //inhouse -ticket
 And('Click on InHouseRepairCenter tab', () => {
     iht.clickOnInHouseRepairCenterTab()
@@ -777,7 +744,6 @@ Then('Enter the Search - Repair status in search box and Verify the Result of In
 Then('Click on Clear filter of Inrt', () => {
     iht.clickOnClearFilter()
 })
-
 And('Click More filter select- Record Id in search box and Verify the Result of Inrt', () => {
     iht.clickOnMoreFilter()
     iht.selectFilterRecordId()
@@ -814,7 +780,6 @@ And('Click More filter select- Created By in search box and Verify the Result of
     iht.clickOnMoreFilter()
     iht.selectFilterCreatedBy()
 })
-
 //inhouse workflow
 And('Click on InHouseRepairCenter tab', () => {
     ihw.clickOnInHouseRepairCenter()
@@ -838,14 +803,12 @@ And('Click on save button of inw', () => {
 Then('Verify New Ticket is added of inw', () => {
     ihw.verifyNewTicket()
 })
-
 Then('Account Details -Aaccount Name and no should be visible of acc', () => {
     acc.AccountDetailsVisible()
 })
 And('Account Manager,Billing Address and Shipping Address should be visible of acc', () => {
     acc.sectionManaddressVisible()
 })
-
 Then('Click on Clear filter of acc', () => {
     acc.clickOnClearFiltersButton()
 })
@@ -904,7 +867,6 @@ And('Click on Attach CSV file and Click on submit button of acc', () => {
 Then('Verify the Uploaded successfully of acc', () => {
     acc.verifyuploaded()
 })
-
 And('Click on Buildings Tab', () => {
     build.clickOnBuildingTab()
 })
@@ -956,7 +918,6 @@ And('Click on Attach CSV file and Click on submit button of build', () => {
 Then('Verify the Uploaded successfully of build', () => {
     build.verifyuploaded()
 })
-
 Then('I should click on + Add New button of build', () => {
     build.clickOnAddnewButton()
 })
@@ -1056,7 +1017,6 @@ Then('Click on Confirm Delete button of acc', () => {
 And('Verify the record is deleted successfully of acc', () => {
     acc.verifyRecordDeleted()
 })
-
 Then('Enter title, full name and valid Email for Search of acc', () => {
     acc.enterTitle()
     acc.enterFullnameSearch()
@@ -1090,7 +1050,6 @@ And('Enter the full name in search box of acc', () => {
 And('Verify the record in searching history of acc', () => {
     acc.verifySearchResult()
 })
-
 And('Click on Edit Icon of build', () => {
     build.clickOnEditIcon()
 })
@@ -1108,8 +1067,6 @@ Then('Click on update button of build', () => {
 And('Verify the Record has been updated Meassage of build', () => {
     build.verifyBuildingUpdated()
 })
-
-
 Then('I should click on new button of ihw', () => {
     ihw.clickOnNewButton()
 })
@@ -1169,14 +1126,13 @@ Then('Click on Add Repair Image and Verify of ihw', () => {
 And('Click on Add Note and Verify of ihw', () => {
     ihw.clickOnAddNote()
 })
-
 And('Click on ImportSerialDevices Tab', () => {
     isd.clickOnImportSerialDevices()
 })
 Then('I should click on Add New Import of isd', () => {
     isd.clickOnAddNewImport()
 })
-Then('Upload the CSV import file of isd' , () => {
+Then('Upload the CSV import file of isd', () => {
     isd.uploadcsvFile()
 })
 And('Click on submit button of isd', () => {
@@ -1196,20 +1152,18 @@ And('Click on Details button of isd', () => {
 })
 Then('Verify the Device Details of isd', () => {
     isd.verifyDeviceDetails()
-}) 
-And ('Click More filter select- Importer in search box and Verify the Result of isd',()=>{
+})
+And('Click More filter select- Importer in search box and Verify the Result of isd', () => {
     isd.clickOnMoreFilter()
     isd.selectFilterImporter()
 })
-And ('Click More filter select- Quantity Devices in search box and Verify the Result of isd',()=>{
+And('Click More filter select- Quantity Devices in search box and Verify the Result of isd', () => {
     isd.clickOnMoreFilter()
     isd.selectFilterQuantityDevices()
 })
-Then ('Click on Clear filter of isd',()=>{
+Then('Click on Clear filter of isd', () => {
     isd.clickOnClearFilter()
 })
-
-
 And('Click on ManageDevices page', () => {
     mdev.clickOnManageDevices()
 })
@@ -1245,7 +1199,7 @@ And('Update Asset tag, student info and building information and Click on update
     mf.clickOnUpdateButton()
 })
 Then('Verfiy Record updated successfully of MyF', () => {
-mf.verifyUdated()
+    mf.verifyUdated()
 })
 Then('Click on Clear filter of MyF', () => {
     mf.clickOnClearFiltersButton()
@@ -1287,7 +1241,6 @@ And('Click More filter select- Student in search box and Verify the Result of My
 Then('Click on Retired Tab', () => {
     mf.clickOnRetiredTab()
 })
-
 And('Click on LoanerManagement Tab', () => {
     loan.clickOnLoanerManagement()
 })
@@ -1359,15 +1312,12 @@ Then('I should click on Add Asset of oua', () => {
     oua.clickOnAddAssetbutton()
 })
 Then('Enter title, full name location and tag of oua', () => {
-    // oua.enterTitle()
-    // oua.enterFullname()
     oua.enterLocation()
     oua.enterTag()
 })
 And('Enter note, Type and description of oua', () => {
     oua.enterNote()
     oua.enterType()
-    //  oua.enterDescription()
 })
 Then('Upload the image file of oua', () => {
     oua.selectFileForUpload()
@@ -1430,8 +1380,6 @@ And('Click More filter select- Acquire Location in search box and Verify the Res
     oua.clickOnMoreFilter()
     oua.selectFilterAcquireLocation()
 })
-
-
 And('Click on Users page', () => {
     dash.closeTermsOfServiceWindow()
     user.clickOnUsers()
@@ -1485,16 +1433,16 @@ Then('Click on Submit button of user', () => {
 And('Verify the Record has been updated Meassage of user', () => {
     user.verfifyDataUpdatedMessage()
 })
-And ('Click on Delete button of user',()=>{
-    user.clickDeleteButton() 
+And('Click on Delete button of user', () => {
+    user.clickDeleteButton()
 })
-Then ('Click on Confirm Delete button of user',()=>{
-    user.clickConfirmDeleteButton() 
+Then('Click on Confirm Delete button of user', () => {
+    user.clickConfirmDeleteButton()
 })
-And ('Verify the record is deleted successfully of user',()=>{
+And('Verify the record is deleted successfully of user', () => {
     user.verifyRecordDeleted()
 })
-Then ('Click on Add Filter of user',()=>{
+Then('Click on Add Filter of user', () => {
     user.clickOnAddFilterButton()
 })
 Then('Select Field name and Field operation of user', () => {
@@ -1538,28 +1486,26 @@ And('Click More filter select- Record Id in search box and Verify the Result of 
     user.clickOnMoreFilter()
     user.selectFilterRecordId()
 })
-And ('Click More filter select- Full name in search box and Verify the Result of user',()=>{
+And('Click More filter select- Full name in search box and Verify the Result of user', () => {
     user.clickOnMoreFilter()
     user.selectFilterFullname()
 })
-And ('Click More filter select- Cell Number in search box and Verify the Result of user',()=>{
+And('Click More filter select- Cell Number in search box and Verify the Result of user', () => {
     user.clickOnMoreFilter()
     user.selectFilterCellNumber()
 })
-And ('Click More filter select- Eamil in search box and Verify the Result of user',()=>{
+And('Click More filter select- Eamil in search box and Verify the Result of user', () => {
     user.clickOnMoreFilter()
     user.selectFilterEmail()
 })
-And ('Click More filter select- Role Name in search box and Verify the Result of user',()=>{
+And('Click More filter select- Role Name in search box and Verify the Result of user', () => {
     user.clickOnMoreFilter()
     user.selectFilterRoleName()
 })
-And ('Click More filter select- User status in search box and Verify the Result of user',()=>{
+And('Click More filter select- User status in search box and Verify the Result of user', () => {
     user.clickOnMoreFilter()
     user.selectFilterUserStatus()
 })
-
-
 And('Click More filter select- Title in search box and Verify the Result of ft', () => {
     ft.clickOnMoreFilter()
     ft.selectFilterTitle()
@@ -1588,14 +1534,11 @@ And('Upload the image and enter Notes of sup', () => {
     su.enterNotes()
 })
 Then('Click on submit button of sup', () => {
-  su.clickOnSubmit()
+    su.clickOnSubmit()
 })
 And('Verify the Send Feedback successfully of sup', () => {
     su.verfiyFeedbackSuccess()
 })
-
-
-
 And('Click on Vivacity Admin page', () => {
     vadmin.clickOnVivacityAdmin()
 })
@@ -1630,12 +1573,12 @@ Then('Repair Ticket Creation unit should be visible', () => {
 And('Employee management unit should be visible', () => {
     vadmin.employeeManagment()
 })
-And ('Import serial device Request should be visible',()=>{
+And('Import serial device Request should be visible', () => {
     vadmin.importserialdeviceRequest()
 })
-Then ('Spoof Dream User should be visible',()=>{
+Then('Spoof Dream User should be visible', () => {
     vadmin.spoofDreamUser()
 })
-And ('Import Parts Closet should be visible',()=>{
+And('Import Parts Closet should be visible', () => {
     vadmin.importPartsCloset()
 })

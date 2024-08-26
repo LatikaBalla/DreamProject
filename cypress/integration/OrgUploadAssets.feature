@@ -50,9 +50,9 @@ Feature: OrgUploadAssets Page Functionality
         Then ReUpload the image file
         Then Click on save button
         And Verify the Record has been updated Meassage
-        # And Click on Delete button
-        # Then Click on Confirm Delete button
-        # And Verify the record is deleted successfully
+        And Click on Delete button
+        Then Click on Confirm Delete button
+        And Verify the record is deleted successfully
 
 
 

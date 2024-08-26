@@ -31,7 +31,7 @@ Then('Select failure Type, Return site and Serial device', () => {
 })
 And('Select Building and Chromebook issue', () => {
     nwr.selectBuilding()
-      nwr.selectRepaireIssue()
+    nwr.selectRepaireIssue()
 })
 Then('Enter the Describe Your Issue', () => {
     nwr.enterChromebookIssue()

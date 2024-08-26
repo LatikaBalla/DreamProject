@@ -12,7 +12,7 @@ When('I should Sign In into the application', () => {
     cy.AdminLogin()
 })
 Then('Close the terms of service window', () => {
-    cy.wait(9000)
+    cy.wait(8000)
     fv.closeTermsOfServiceWindow()
 })
 And('Click on Favorite page', () => {

@@ -62,7 +62,16 @@ export default class RepairBoxesElements {
             timeout: 30000,
         })
     }
- 
+    imageIconElement() {
+        return cy.get(locator.repairBoxes.imageIcon, {
+            timeout: 30000,
+        })
+    }
+    pdfIconElement() {
+        return cy.get(locator.repairBoxes.pdfIcon, {
+            timeout: 30000,
+        })
+    }
     ticketElement() {
         return cy.get(locator.repairBoxes.ticket, {
             timeout: 30000,

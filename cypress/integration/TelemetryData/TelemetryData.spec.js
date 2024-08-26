@@ -25,21 +25,18 @@ Then('I should be redirected to the TelemetryData page', () => {
 })
 And('Select Battery Charge Capacity', () => {
     td.selectBatteryCharge()
-    //td.clickOnRetrievebutton()
 })
 Then('Verify the Battery Charge Capacity device and Graph', () => {
     td.verifyBatteryChargeData()
 })
 And('Select OS Last Update', () => {
     td.selectOSLastUpdate()
-   // td.clickOnRetrievebutton()
 })
 Then('Verify the OS Last Update device and Graph', () => {
     td.verifyOSLastUpdateData()
 })
 And('Select OS New Platform Version', () => {
     td.selectOSNewPlatform()
-   // td.clickOnRetrievebutton()
 })
 Then('Verify the OS New Platform Version device and Graph', () => {
     td.verifyOSNewPlatformData()

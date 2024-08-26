@@ -25,19 +25,12 @@ And('Click on RepairBoxes Tab', () => {
 And('Verify the Title of RepairBoxes Page', () => {
     rb.verifyTitle()
 })
-And('Outbound and Inbound Shipments for RepairBoxes should be visible', () => {
-    rb.outboundVisible()
-    rb.inboundVisible()
-})
 Then('I should click on create new Box', () => {
     rb.clickOnAddnewBox()
 })
 Then('Enter weight and Standard Box Size', () => {
     rb.enterWeight()
     rb.selectStandardSize()
-    // rb.enterHeight()
-    //rb.enterDepth()
-    //rb.enterwidth()
 })
 And('Select Pick-up site', () => {
     rb.selectPickupSite()
@@ -66,7 +59,6 @@ And('Click on view button', () => {
 Then('Verify the Details new box', () => {
     rb.verifyBoxDetails()
 })
-
 And('Add another ticket in the same box', () => {
     rb.clickOnAddTicket()
 })
@@ -90,13 +82,24 @@ And('Remove the ticket from box', () => {
 })
 Then('Verify the ticket is delete from the table', () => {
     rb.verifyTicketDeleted()
-    //cy.go('back')
 })
 Then('Click on Add Repair Image and Verify', () => {
     rb.clickOnAddRepairImage()
 })
 And('Click on Add Note and Verify', () => {
     rb.clickOnAddNote()
+})
+Then('Click on Remove button for deleting ticket', () => {
+    rb.clickOnRemoveButton()
+})
+And('Verify the ticket removed', () => {
+    rb.verifyRemoveTicket()
+})
+Then('Click on label form of image and Verify', () => {
+    rb.ClickOnImagelabel()
+})
+Then('Click on label form of Pdf and Verify', () => {
+    rb.ClickOnPdflabel()
 })
 //RB
 And('Click on filter of Repair Box Equals in search box and Verify the Result', () => {
@@ -126,7 +129,6 @@ And('Click on filter of Repair Box Blank in search box and Verify the Result', (
 And('Click on filter of Repair Box Not blank in search box and Verify the Result', () => {
     rb.filterNotblankBox()
 })
-
 //TN
 And('Click on filter of Tracking Number contain in search box and Verify the Result', () => {
     rb.selectFiltertrackingNumberFrom()
@@ -165,8 +167,8 @@ And('Click on filter of Shipped From Date Before in search box and Verify the Re
 And('Click on filter of Shipped From Date After in search box and Verify the Result', () => {
     rb.filterAfterSDate()
 })
-And ('Click on filter of Shipped From Date Between with in search box and Verify the Result',()=>{
-    rb.filterBetweenSDate() 
+And('Click on filter of Shipped From Date Between with in search box and Verify the Result', () => {
+    rb.filterBetweenSDate()
 })
 And('Click on filter of Shipped From Date Blank in search box and Verify the Result', () => {
     rb.filterBlankSDate()

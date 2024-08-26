@@ -12,20 +12,21 @@ export class BuildingsActions {
         build.titleElement().should('be.visible')
     }
     clickOnBuildingTab() {
+       cy.wait(2000)
         dash.buildingsElement().click({ force: true })
     }
     closeTermsOfServiceWindow() {
         cy.wait(1000)
         dash.termsElement().contains('Dismiss').click({ force: true })
-        cy.wait(5000)
+        cy.wait(3000)
         cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
-        dash.myAccountElement().click({ force: true })
+        cy.contains('demo_adminsuper@vivacitytech.com').click({ force: true })  
     }
-    addNewButtonTabVisible() {
-        build.addnewbtnElement().should('be.visible')
+    addNewButtonTabVisible() {     
+       build.addnewbtnElement().should('be.visible')
     }
-    addfilterButtonVisible() {
-        build.addfilterbtnElement().should('be.visible')
+    filterVisible(){
+        build.filtersElement().should('be.visible')
     }
     tableofBuildingsVisible() {
         build.tablebuildingElement().should('be.visible')
@@ -40,7 +41,6 @@ export class BuildingsActions {
         build.addnewbtnElement().click({ force: true })
     }
     enterBuildingName() {
-        cy.get('[data-testid="ChevronLeftIcon"]').click()
         build.buildingnameElement().type(tdata.buildings.buildingname, { force: true })
     }
     enterPhone() {
@@ -49,31 +49,41 @@ export class BuildingsActions {
     enterExtension() {
         build.extensionElement().type(tdata.buildings.extension, { force: true })
     }
+    enterBuildingAb(){
+        build.buildabbreviationElement().type(tdata.buildings.buildingAbbreviation)
+    }
     selectDefaultBuilding() {
         build.defaultbuildingElement().click({ force: true })
         cy.get(tdata.buildings.defaultbuilding).click({ force: true })
     }
-    enterBillingAddress() {
-        build.baddressElement().type(tdata.buildings.address, { force: true })
+    enterBuilingId(){
+        const uniqueSeed = Date.now();
+        build.buildingIdElement().type(uniqueSeed)
+    }
+    enterShippingAddress() {
+        build.saddressElement().type(tdata.buildings.address, { force: true })
         cy.wait(2000)
-        build.baddressElement().type(' {downArrow}{enter}', { force: true })
+        build.saddressElement().type('{downArrow}{enter}', { force: true })
     }
     clickOnCheckbox() {
         cy.wait(3000)
         build.checkElement().click({ force: true })
-        cy.wait(3000)
     }
     clickOnSaveButton() {
-        build.savebtnElement().click({ force: true })
-
+        cy.get('.MuiDialogActions-root > :nth-child(2)').click({ force: true })   
     }
     verifyNewBuilding() {
-        cy.wait(5000)
-        cy.get('[data-testid="CachedIcon"]').click({ force: true })
-        cy.wait(5000)
-        cy.get('tr td').eq(1).should('contain', tdata.buildings.buildingname)
+        cy.wait(2000)
+        dash.messageElement().should('contain', tdata.buildings.addmsg)
     }
     clickOnEditIcon() {
+        cy.wait(3000)
+        build.addFilterElement().eq(0).click({ force: true })
+        build.fieldNameElement().eq(1).click({ force: true })
+        build.fieldOpElement().eq(0).click({ force: true })
+        build.fieldValueElement().type(tdata.buildings.buildingname)
+        build.applyElement().click({ force: true })
+        build.buildingIconElement().eq(0).click({ force: true })
         build.editIconElement().eq(0).click({ force: true })
     }
     editBuildingName() {
@@ -87,7 +97,6 @@ export class BuildingsActions {
     }
     editselectDefaultBuilding() {
         build.editdefaultbuildingElement().click({ force: true })
-        // cy.get(tdata.editbuildings.defaultbuilding).click({ force: true })
     }
     edituploadBuildingImage() {
         build.editbuildingimgElement().selectFile('cypress/fixtures/' + tdata.editbuildings.buildingimg, { force: true })
@@ -99,6 +108,13 @@ export class BuildingsActions {
         dash.messageElement().should('contain', tdata.editbuildings.updatemsg)
     }
     clickOnDeleteIcon() {
+        cy.wait(4000)
+        build.addFilterElement().eq(0).click({ force: true })
+        build.fieldNameElement().eq(1).click({ force: true })
+        build.fieldOpElement().eq(0).click({ force: true })
+        build.fieldValueElement().type(tdata.editbuildings.buildingname)
+        build.applyElement().click({ force: true })
+        build.buildingIconElement().eq(0).click({ force: true })
         build.deleteIconElement().eq(0).click({ force: true })
     }
     clickOnConfirmDeleteButton() {
@@ -120,69 +136,6 @@ export class BuildingsActions {
     verifyDelete() {
         dash.messageElement().should('contain', tdata.buildings.deletemsg)
     }
-    selectFilterRecordId() {
-        build.fieldNameElement().select(0).invoke("val").should("eq", 'record_id', { force: true })
-        build.fieldOpElement().select('Does Not Contain', { force: true }).should('have.value', 'Does Not Contain')
-        build.fieldValueElement().type(tdata.buildings.recordid)
-        build.applyElement().click({ force: true })
-        cy.get('tr td').eq(0).should('not.contain', tdata.buildings.recordid)
-    }
-    selectFilterBuildingName() {
-        build.fieldNameElement().select(1).invoke("val").should("eq", "building_name")
-        build.fieldOpElement().select('Does Not Contain', { force: true })
-        build.fieldValueElement().type(tdata.buildings.buildingname)
-        build.applyElement().click({ force: true })
-        cy.get('tr td').eq(1).should('not.contain', tdata.buildings.buildingname)
-    }
-    selectFilterPhone() {
-        build.fieldNameElement().select('phone', { force: true })
-        build.fieldOpElement().select('Does Not Contain', { force: true })
-        build.fieldValueElement().type(tdata.buildings.phoneNo)
-        build.applyElement().click({ force: true })
-        cy.get('tr td').eq(2).should('not.contain', tdata.buildings.phoneNo1)
-    }
-    selectFilterDefaultBuilding() {
-        build.fieldNameElement().select('default_building', { force: true })
-        build.fieldOpElement().select('Does Not Contain', { force: true })
-        build.fieldValueElement().type(tdata.buildings.defaultbuilding)
-        build.applyElement().click({ force: true })
-        cy.get('tr td').eq(3).should('not.contain', tdata.buildings.defaultbuilding)
-    }
-    selectFilterShippingAddress() {
-        build.fieldNameElement().select('building_shipping_address', { force: true })
-        build.fieldOpElement().select('Does Not Contain', { force: true })
-        build.fieldValueElement().type(tdata.buildings.shippingaddress)
-        build.applyElement().click({ force: true })
-        cy.get('tr td').eq(4).should('not.contain', tdata.buildings.shippingaddress)
-    }
-    selectFilterBillingAddress() {
-        build.fieldNameElement().select('building_billing_address', { force: true })
-        build.fieldOpElement().select('Does Not Contain', { force: true })
-        build.fieldValueElement().type(tdata.buildings.billingaddress)
-        build.applyElement().click({ force: true })
-        cy.get('tr td').eq(5).should('not.contain', tdata.buildings.billingaddress)
-    }
-    searchBuildingName() {
-        build.searchboxElement().eq(0).click({ force: true })
-        build.buildingnamedropElement().click({ force: true })
-        build.searchElement().type(tdata.buildings.buildingname + '{enter}', { force: true })
-        cy.get('tr td').eq(1).should('contain', tdata.buildings.buildingname)
-    }
-    searchShippingAddress() {
-        build.searchboxElement().eq(0).click({ force: true })
-        build.shippingaddressElement().click({ force: true })
-        build.searchElement().clear({ force: true }).type(tdata.buildings.shippingaddress + '{enter}', { force: true })
-        cy.wait(5000)
-        // cy.get('tr td').eq(4).should('contain', tdata.buildings.shippingaddress)
-    }
-    searchPhone() {
-        build.searchboxElement().eq(0).click({ force: true })
-        build.phonedropElement().click({ force: true })
-        build.searchElement().clear({ force: true }).type(tdata.buildings.phoneNo + '{enter}', { force: true })
-        cy.wait(1000)
-        cy.get('tr td').eq(2).should('contain', tdata.buildings.phoneNo1)
-        build.searchElement().clear({ force: true })
-    }
     clickOnExport() {
         build.exportElement().click({ force: true })
     }
@@ -192,10 +145,541 @@ export class BuildingsActions {
     attachCsvfile() {
         cy.contains('Attach CSV file').click({ force: true })
         build.uploadElement().attachFile(tdata.buildings.uploadfilename, { force: true })
+        cy.wait(100)
         cy.contains('Submit').click({ force: true })
     }
-    verifyuploaded() {
-        cy.contains('records ready to import').should('be.visible')
+    verifyuploaded() { 
+         dash.messageElement().should('contain', tdata.buildings.uploadmsg)
     }
+   //Bn
+   filtercontainBN() {
+    cy.wait(3000)
+    build.addFilterElement().eq(0).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(0).click({ force: true })
+    build.fieldValueElement().type(tdata.buildings.buildingname)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.buildingname)
+    build.clearFilterElement().click({ force: true })
+}
+filterDoesnotcontainBN() {
+    build.addFilterElement().eq(0).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(1).click({ force: true })
+    build.fieldValueElement().eq(0).type(tdata.buildings.buildingname)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('not.contain', tdata.buildings.buildingname)
+    build.clearFilterElement().click({ force: true })
+}
+filterEqualsBN() {
+    build.addFilterElement().eq(0).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(2).click({ force: true })
+    build.fieldValueElement().eq(0).type(tdata.buildings.buildingname)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.buildingname)
+    build.clearFilterElement().click({ force: true })
+}
+filterNotequalBN() {
+    build.addFilterElement().eq(0).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(3).click({ force: true })
+    build.fieldValueElement().eq(0).type(tdata.buildings.buildingname)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('not.contain.value', tdata.buildings.buildingname)
+    build.clearFilterElement().click({ force: true })
+}
+filterBeginswithBN() {
+    build.addFilterElement().eq(0).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(4).click({ force: true })
+    build.fieldValueElement().eq(0).type('Build')
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', 'Build')
+    build.clearFilterElement().click({ force: true })
+}
+filterEndswithBN() {
+    build.addFilterElement().eq(0).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(5).click({ force: true })
+    build.fieldValueElement().eq(0).type('One')
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', 'One')
+    build.clearFilterElement().click({ force: true })
+}
+filterBlankBN() {
+    build.addFilterElement().eq(0).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(6).click({ force: true })
+    build.fieldValueElement().eq(0).type(' ', { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', ' ')
+    build.clearFilterElement().click({ force: true })
+}
+filterNotblankBN() {
+    build.addFilterElement().eq(0).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(7).click({ force: true })
+    build.fieldValueElement().eq(1).type(tdata.buildings.buildingname, { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.buildingname)
+    build.clearFilterElement().click({ force: true })
+}
+//BI
+filtercontainBI() {
+    build.addFilterElement().eq(1).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(0).click({ force: true })
+    build.fieldValueElement().clear({ force: true }).type(tdata.buildings.recordid)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.recordid)
+    build.clearFilterElement().click({ force: true })
+}
+filterDoesnotcontainBI() {
+    build.addFilterElement().eq(1).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(1).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.recordid)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('not.contain', tdata.buildings.recordid)
+    build.clearFilterElement().click({ force: true })
+}
+filterEqualsBI() {
+    build.addFilterElement().eq(1).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(2).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.recordid)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.recordid)
+    build.clearFilterElement().click({ force: true })
+}
+filterNotequalBI() {
+    build.addFilterElement().eq(1).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(3).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.recordid)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('not.contain.value', tdata.buildings.recordid)
+    build.clearFilterElement().click({ force: true })
+}
+filterBeginswithBI() {
+    build.addFilterElement().eq(1).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(4).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type('55')
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', '55')
+    build.clearFilterElement().click({ force: true })
+}
+filterEndswithBI() {
+    build.addFilterElement().eq(1).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(5).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type('55')
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', '55')
+    build.clearFilterElement().click({ force: true })
+}
+filterBlankBI() {
+    build.addFilterElement().eq(1).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(6).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', ' ')
+    build.clearFilterElement().click({ force: true })
+}
+filterNotblankBI() {
+    build.addFilterElement().eq(1).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(7).click({ force: true })
+    build.fieldValueElement().eq(1).clear({ force: true }).type(tdata.buildings.recordid, { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.recordid)
+    build.clearFilterElement().click({ force: true })
+}
+//Building Shipping Address
+filtercontainBSA() {
+    build.addFilterElement().eq(2).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(0).click({ force: true })
+    build.fieldValueElement().type(tdata.buildings.shippingaddress, { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.shippingaddress)
+    build.clearFilterElement().click({ force: true })
+}
+filterDoesnotcontainBSA() {
+    build.addFilterElement().eq(2).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(1).click({ force: true })
+    build.fieldValueElement().eq(0).type(tdata.buildings.shippingaddress, { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('not.contain', tdata.buildings.shippingaddress)
+    build.clearFilterElement().click({ force: true })
+}
+filterEqualsBSA() {
+    build.addFilterElement().eq(2).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(2).click({ force: true })
+    build.fieldValueElement().eq(0).type(tdata.buildings.shippingaddress, { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.shippingaddress)
+    build.clearFilterElement().click({ force: true })
+}
+filterNotequalBSA() {
+    build.addFilterElement().eq(2).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(3).click({ force: true })
+    build.fieldValueElement().eq(0).type(tdata.buildings.shippingaddress, { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('not.contain.value', tdata.buildings.shippingaddress)
+    build.clearFilterElement().click({ force: true })
+}
+filterBeginswithBSA() {
+    build.addFilterElement().eq(2).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(4).click({ force: true })
+    build.fieldValueElement().eq(0).type('1425', { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', '1425')
+    build.clearFilterElement().click({ force: true })
+}
+filterEndswithBSA() {
+    build.addFilterElement().eq(2).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(5).click({ force: true })
+    build.fieldValueElement().eq(0).type('98101', { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', '98101')
+    build.clearFilterElement().click({ force: true })
+}
+filterBlankBSA() {
+    build.addFilterElement().eq(2).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(6).click({ force: true })
+    build.fieldValueElement().eq(0).type(' ', { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', ' ')
+    build.clearFilterElement().click({ force: true })
+}
+filterNotblankBSA() {
+    build.addFilterElement().eq(2).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(7).click({ force: true })
+    build.fieldValueElement().eq(1).type(tdata.buildings.shippingaddress, { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.shippingaddress)
+    build.clearFilterElement().click({ force: true })
+}
+//Building Billing Address
+filtercontainBBA() {
+    cy.wait(2000)
+    build.addFilterElement().eq(3).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(0).click({ force: true })
+    build.fieldValueElement().type(tdata.buildings.billingaddress)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.billingaddress)
+    build.clearFilterElement().click({ force: true })
+}
+filterDoesnotcontainBBA() {
+    build.addFilterElement().eq(3).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(1).click({ force: true })
+    build.fieldValueElement().eq(0).type(tdata.buildings.billingaddress)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('not.contain', tdata.buildings.billingaddress)
+    build.clearFilterElement().click({ force: true })
+}
+filterEqualsBBA() {
+    build.addFilterElement().eq(3).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(2).click({ force: true })
+    build.fieldValueElement().eq(0).type(tdata.buildings.billingaddress)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.billingaddress)
+    build.clearFilterElement().click({ force: true })
+}
+filterNotequalBBA() {
+    build.addFilterElement().eq(3).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(3).click({ force: true })
+    build.fieldValueElement().eq(0).type(tdata.buildings.billingaddress)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('not.contain.value', tdata.buildings.billingaddress)
+    build.clearFilterElement().click({ force: true })
+}
+filterBeginswithBBA() {
+    build.addFilterElement().eq(3).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(4).click({ force: true })
+    build.fieldValueElement().eq(0).type('1425')
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', '1425')
+    build.clearFilterElement().click({ force: true })
+}
+filterEndswithBBA() {
+    build.addFilterElement().eq(3).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(5).click({ force: true })
+    build.fieldValueElement().eq(0).type('98101')
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', '98101')
+    build.clearFilterElement().click({ force: true })
+}
+filterBlankBBA() {
+    build.addFilterElement().eq(3).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(6).click({ force: true })
+    build.fieldValueElement().eq(0).type(' ', { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', ' ')
+    build.clearFilterElement().click({ force: true })
+}
+filterNotblankBBA() {
+    build.addFilterElement().eq(3).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(7).click({ force: true })
+    build.fieldValueElement().eq(1).type(tdata.buildings.billingaddress, { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain',tdata.buildings.billingaddress)
+    build.clearFilterElement().click({ force: true })
+}
+//Building Abbreviation
+filtercontainBA() {
+    build.addFilterElement().eq(4).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(0).click({ force: true })
+    build.fieldValueElement().type(tdata.buildings.buildingAbbreviation)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.buildingAbbreviation, { force: true })
+    build.clearFilterElement().click({ force: true })
+}
+filterDoesnotcontainBA() {
+    build.addFilterElement().eq(4).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(1).click({ force: true })
+    build.fieldValueElement().eq(0).type(tdata.buildings.buildingAbbreviation, { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('not.contain', tdata.buildings.buildingAbbreviation)
+    build.clearFilterElement().click({ force: true })
+}
+filterEqualsBA() {
+    build.addFilterElement().eq(4).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(2).click({ force: true })
+    build.fieldValueElement().eq(0).type(tdata.buildings.buildingAbbreviation, { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.buildingAbbreviation)
+    build.clearFilterElement().click({ force: true })
+}
+filterNotequalBA() {
+    build.addFilterElement().eq(4).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(3).click({ force: true })
+    build.fieldValueElement().eq(0).type(tdata.buildings.buildingAbbreviation, { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('not.contain.value', tdata.buildings.buildingAbbreviation)
+    build.clearFilterElement().click({ force: true })
+}
+filterBeginswithBA() {
+    build.addFilterElement().eq(4).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(4).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type('null')
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', 'null')
+    build.clearFilterElement().click({ force: true })
+}
+filterEndswithBA() {
+    build.addFilterElement().eq(4).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(5).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type('null')
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', 'null')
+    build.clearFilterElement().click({ force: true })
+}
+filterBlankBA() {
+    build.addFilterElement().eq(4).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(6).click({ force: true })
+    build.fieldValueElement().eq(0).type(' ', { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', ' ')
+    build.clearFilterElement().click({ force: true })
+}
+filterNotblankBA() {
+    build.addFilterElement().eq(4).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(7).click({ force: true })
+    build.fieldValueElement().eq(1).type(tdata.buildings.buildingAbbreviation, { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain',tdata.buildings.buildingAbbreviation )
+    build.clearFilterElement().click({ force: true })
+}
+//DB
+filtertrueDB(){
+    build.addFilterElement().eq(5).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    cy.contains('True').click({ force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[aria-label="checked"]').should('be.checked')
+    cy.get('[ref="resetFilterButton"]').click({ force: true })
+}
+filterfalseDB(){
+    build.addFilterElement().eq(5).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    cy.contains('False').click({ force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[aria-label="unchecked"]').should('not.be.checked')
+    cy.get('[ref="resetFilterButton"]').click({ force: true })
+}
+//Extension
+filtercontainE() {
+    build.addFilterElement().eq(6).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(0).click({ force: true })
+    build.fieldValueElement().type(tdata.buildings.extension)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.extension)
+    build.clearFilterElement().click({ force: true })
+}
+filterDoesnotcontainE() {
+    build.addFilterElement().eq(6).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(1).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.extension)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('not.contain', tdata.buildings.extension)
+    build.clearFilterElement().click({ force: true })
+}
+filterEqualsE() {
+    build.addFilterElement().eq(6).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(2).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.extension)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.extension)
+    build.clearFilterElement().click({ force: true })
+}
+filterNotequalE() {
+    build.addFilterElement().eq(6).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(3).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.extension)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('not.contain.value', tdata.buildings.extension)
+    build.clearFilterElement().click({ force: true })
+}
+filterBeginswithE() {
+    build.addFilterElement().eq(6).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(4).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type('77')
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', '77')
+    build.clearFilterElement().click({ force: true })
+}
+filterEndswithE() {
+    build.addFilterElement().eq(6).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(5).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type('77')
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', '77')
+    build.clearFilterElement().click({ force: true })
+}
+filterBlankE() {
+    build.addFilterElement().eq(6).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(6).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', ' ')
+    build.clearFilterElement().click({ force: true })
+}
+filterNotblankE() {
+    build.addFilterElement().eq(6).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(7).click({ force: true })
+    build.fieldValueElement().eq(1).clear({ force: true }).type(tdata.buildings.extension, { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.extension)
+    build.clearFilterElement().click({ force: true })
+}
+//Phone
+filtercontainP() {
+    build.addFilterElement().eq(7).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(0).click({ force: true })
+    build.fieldValueElement().type(tdata.buildings.phoneNo)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.phoneNo1)
+    build.clearFilterElement().click({ force: true })
+}
+filterDoesnotcontainP() {
+    build.addFilterElement().eq(7).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(1).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.phoneNo)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('not.contain', tdata.buildings.phoneNo1)
+    build.clearFilterElement().click({ force: true })
+}
+filterEqualsP() {
+    build.addFilterElement().eq(7).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(2).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.phoneNo)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.phoneNo1)
+    build.clearFilterElement().click({ force: true })
+}
+filterNotequalP() {
+    build.addFilterElement().eq(7).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(3).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.phoneNo)
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('not.contain.value', tdata.buildings.phoneNo1)
+    build.clearFilterElement().click({ force: true })
+}
+filterBeginswithP() {
+    build.addFilterElement().eq(7).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(4).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type('888')
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', '(888)')
+    build.clearFilterElement().click({ force: true })
+}
+filterEndswithP() {
+    build.addFilterElement().eq(7).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(5).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type('88')
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', '88')
+    build.clearFilterElement().click({ force: true })
+}
+filterBlankP() {
+    build.addFilterElement().eq(7).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(6).click({ force: true })
+    build.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', ' ')
+    build.clearFilterElement().click({ force: true })
+}
+filterNotblankP() {
+    build.addFilterElement().eq(7).click({ force: true })
+    build.fieldNameElement().eq(1).click({ force: true })
+    build.fieldOpElement().eq(7).click({ force: true })
+    build.fieldValueElement().eq(1).clear({ force: true }).type(tdata.buildings.phoneNo, { force: true })
+    build.applyElement().click({ force: true })
+    cy.get('[row-index="0"]').should('contain', tdata.buildings.phoneNo1)
+    build.clearFilterElement().click({ force: true })
+}
 }
 export default BuildingsActions 

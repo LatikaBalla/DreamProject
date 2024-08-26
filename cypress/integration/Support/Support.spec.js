@@ -17,7 +17,7 @@ Then('Close the terms of service window', () => {
 })
 And('Click on Support page', () => {
     cy.wait(1000)
-    cy.contains('demo_adminsuper@vivacitytech.com').click({force:true})
+    cy.contains('demo_adminsuper@vivacitytech.com').click({ force: true })
     su.clickOnSupport()
 })
 Then('Verify the Title of Support Page', () => {
@@ -35,7 +35,7 @@ And('Upload the image and enter Notes', () => {
     su.enterNotes()
 })
 Then('Click on submit button', () => {
-  su.clickOnSubmit()
+    su.clickOnSubmit()
 })
 And('Verify the Send Feedback successfully', () => {
     su.verfiyFeedbackSuccess()

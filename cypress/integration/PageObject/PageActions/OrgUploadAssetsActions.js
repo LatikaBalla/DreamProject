@@ -61,7 +61,6 @@ export class OrgUploadAssetsActions {
         oua.savebtnElement().click({ force: true })
     }
     verifyRecordTable() {
-      //  dash.messageElement().should('contain', tdata.orgAsset.addassetmsg)
     }
     clickOnEditIcon() {
         cy.wait(2000)
@@ -100,112 +99,112 @@ export class OrgUploadAssetsActions {
         oua.savebtnElement().click({ force: true })
     }
     verfifyDataUpdatedMessage() {
-        //dash.messageElement().should('contain', tdata.orgAsset.updatemsg)
     }
     clickDeleteIcon() {
         cy.wait(2000)
         oua.addFilterElement().eq(0).click({ force: true })
         oua.fieldNameElement().eq(1).click({ force: true })
         oua.fieldOpElement().eq(0).click({ force: true })
-        oua.fieldValueElement().type(tdata.addasset.description)
+        oua.fieldValueElement().type(tdata.editasset.description)
         oua.applyElement().click({ force: true })
-       oua.deleteElement().eq(0).click({ force: true })
+        cy.wait(1000)
+        cy.get('[col-id="button"]').eq(1).find('[data-testid="DeleteIcon"]').click({ force: true })
     }
     clickConfirmDeleteButton() {
-       cy.get('.MuiButton-outlinedError').click({ force: true })
+        cy.get('.MuiButton-outlinedError').click({ force: true })
     }
     verifyRecordDeleted() {
-    
+        dash.messageElement().should('contain', tdata.orgAsset.deletemsg)  
     }
-//descritpion
-filtercontainD() {
-    cy.wait(3000)
-    oua.addFilterElement().eq(0).click({ force: true })
-    oua.fieldNameElement().eq(1).click({ force: true })
-    oua.fieldOpElement().eq(0).click({ force: true })
-    oua.fieldValueElement().type(tdata.addasset.description)
-    oua.applyElement().click({ force: true })
-    cy.get('[row-index="0"]').should('contain', tdata.addasset.description)
-    oua.clearFilterElement().click({ force: true })
-}
-filterDoesnotcontainD() {
-    oua.addFilterElement().eq(0).click({ force: true })
-    oua.fieldNameElement().eq(1).click({ force: true })
-    oua.fieldOpElement().eq(1).click({ force: true })
-    oua.fieldValueElement().eq(0).type(tdata.addasset.description)
-    oua.applyElement().click({ force: true })
-    cy.get('[row-index="0"]').should('not.contain',tdata.addasset.description)
-    oua.clearFilterElement().click({ force: true })
-}
-filterEqualsD() {
-    oua.addFilterElement().eq(0).click({ force: true })
-    oua.fieldNameElement().eq(1).click({ force: true })
-    oua.fieldOpElement().eq(2).click({ force: true })
-    oua.fieldValueElement().eq(0).type(tdata.addasset.description)
-    oua.applyElement().click({ force: true })
-    cy.get('[row-index="0"]').should('contain', tdata.addasset.description)
-    oua.clearFilterElement().click({ force: true })
-}
-filterNotequalD() {
-    oua.addFilterElement().eq(0).click({ force: true })
-    oua.fieldNameElement().eq(1).click({ force: true })
-    oua.fieldOpElement().eq(3).click({ force: true })
-    oua.fieldValueElement().eq(0).type(tdata.addasset.description)
-    oua.applyElement().click({ force: true })
-    cy.get('[row-index="0"]').should('not.contain.value', tdata.addasset.description)
-    oua.clearFilterElement().click({ force: true })
-}
-filterBeginswithD() {
-    oua.addFilterElement().eq(0).click({ force: true })
-    oua.fieldNameElement().eq(1).click({ force: true })
-    oua.fieldOpElement().eq(4).click({ force: true })
-    oua.fieldValueElement().eq(0).type('this')
-    oua.applyElement().click({ force: true })
-    cy.get('[row-index="0"]').should('contain', 'this')
-    oua.clearFilterElement().click({ force: true })
-}
-filterEndswithD() {
-    oua.addFilterElement().eq(0).click({ force: true })
-    oua.fieldNameElement().eq(1).click({ force: true })
-    oua.fieldOpElement().eq(5).click({ force: true })
-    oua.fieldValueElement().eq(0).type('tion')
-    oua.applyElement().click({ force: true })
-    cy.get('[row-index="0"]').should('contain', 'tion')
-    oua.clearFilterElement().click({ force: true })
-}
-filterBlankD() {
-    oua.addFilterElement().eq(0).click({ force: true })
-    oua.fieldNameElement().eq(1).click({ force: true })
-    oua.fieldOpElement().eq(6).click({ force: true })
-    oua.fieldValueElement().eq(0).type(' ', { force: true })
-    oua.applyElement().click({ force: true })
-    cy.get('[row-index="0"]').should('contain', ' ')
-    oua.clearFilterElement().click({ force: true })
-}
-filterNotblankD() {
-    oua.addFilterElement().eq(0).click({ force: true })
-    oua.fieldNameElement().eq(1).click({ force: true })
-    oua.fieldOpElement().eq(7).click({ force: true })
-    oua.fieldValueElement().eq(1).type(tdata.addasset.description, { force: true })
-    oua.applyElement().click({ force: true })
-    cy.get('[row-index="0"]').should('contain', tdata.addasset.description)
-    oua.clearFilterElement().click({ force: true })
-}
+    //descritpion
+    filtercontainD() {
+        cy.wait(3000)
+        oua.addFilterElement().eq(0).click({ force: true })
+        oua.fieldNameElement().eq(1).click({ force: true })
+        oua.fieldOpElement().eq(0).click({ force: true })
+        oua.fieldValueElement().type(tdata.addasset.description)
+        oua.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.addasset.description)
+        oua.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainD() {
+        oua.addFilterElement().eq(0).click({ force: true })
+        oua.fieldNameElement().eq(1).click({ force: true })
+        oua.fieldOpElement().eq(1).click({ force: true })
+        oua.fieldValueElement().eq(0).type(tdata.addasset.description)
+        oua.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.addasset.description)
+        oua.clearFilterElement().click({ force: true })
+    }
+    filterEqualsD() {
+        oua.addFilterElement().eq(0).click({ force: true })
+        oua.fieldNameElement().eq(1).click({ force: true })
+        oua.fieldOpElement().eq(2).click({ force: true })
+        oua.fieldValueElement().eq(0).type(tdata.addasset.description)
+        oua.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.addasset.description)
+        oua.clearFilterElement().click({ force: true })
+    }
+    filterNotequalD() {
+        oua.addFilterElement().eq(0).click({ force: true })
+        oua.fieldNameElement().eq(1).click({ force: true })
+        oua.fieldOpElement().eq(3).click({ force: true })
+        oua.fieldValueElement().eq(0).type(tdata.addasset.description)
+        oua.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.addasset.description)
+        oua.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithD() {
+        oua.addFilterElement().eq(0).click({ force: true })
+        oua.fieldNameElement().eq(1).click({ force: true })
+        oua.fieldOpElement().eq(4).click({ force: true })
+        oua.fieldValueElement().eq(0).type('this')
+        oua.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'this')
+        oua.clearFilterElement().click({ force: true })
+    }
+    filterEndswithD() {
+        oua.addFilterElement().eq(0).click({ force: true })
+        oua.fieldNameElement().eq(1).click({ force: true })
+        oua.fieldOpElement().eq(5).click({ force: true })
+        oua.fieldValueElement().eq(0).type('tion')
+        oua.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'tion')
+        oua.clearFilterElement().click({ force: true })
+    }
+    filterBlankD() {
+        oua.addFilterElement().eq(0).click({ force: true })
+        oua.fieldNameElement().eq(1).click({ force: true })
+        oua.fieldOpElement().eq(6).click({ force: true })
+        oua.fieldValueElement().eq(0).type(' ', { force: true })
+        oua.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        oua.clearFilterElement().click({ force: true })
+    }
+    filterNotblankD() {
+        oua.addFilterElement().eq(0).click({ force: true })
+        oua.fieldNameElement().eq(1).click({ force: true })
+        oua.fieldOpElement().eq(7).click({ force: true })
+        oua.fieldValueElement().eq(1).type(tdata.addasset.description, { force: true })
+        oua.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.addasset.description)
+        oua.clearFilterElement().click({ force: true })
+    }
     //date 
     filtercontainDate() {
         oua.addFilterElement().eq(1).click({ force: true })
         oua.fieldNameElement().eq(1).click({ force: true })
         oua.fieldOpElement().eq(0).click({ force: true })
-        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata. addasset.acquireDate)
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.addasset.acquireDate)
         oua.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata. addasset.acquireDate1)
+        cy.get('[row-index="0"]').should('contain', tdata.addasset.acquireDate1)
         oua.clearFilterElement().click({ force: true })
     }
     filterEqualsDate() {
         oua.addFilterElement().eq(1).click({ force: true })
         oua.fieldNameElement().eq(1).click({ force: true })
         oua.fieldOpElement().eq(0).click({ force: true })
-        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata. addasset.acquireDate)
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.addasset.acquireDate)
         oua.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.addasset.acquireDate1)
         oua.clearFilterElement().click({ force: true })
@@ -225,7 +224,7 @@ filterNotblankD() {
         oua.fieldOpElement().eq(2).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.addasset.acquireDate)
         oua.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('contain', tdata.addasset.acquireDate)
+        // cy.get('[row-index="0"]').should('contain', tdata.addasset.acquireDate1)
         oua.clearFilterElement().click({ force: true })
     }
     filterAfterDate() {
@@ -234,7 +233,7 @@ filterNotblankD() {
         oua.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.addasset.acquireDate)
         oua.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('contain', '2024-07-15')
+        // cy.get('[row-index="0"]').should('contain', tdata.addasset.acquireDate1)
         oua.clearFilterElement().click({ force: true })
     }
     filterBetweenDate() {
@@ -244,7 +243,7 @@ filterNotblankD() {
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.addasset.acquireDate)
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.addasset.acquireDate, { force: true })
         oua.applyElement().click({ force: true })
-        //  cy.get('[row-index="0"]').should('contain', tdata.addasset.importdate)
+        //  cy.get('[row-index="0"]').should('contain', tdata.addasset.importdate1)
         oua.clearFilterElement().click({ force: true })
     }
     filterBlankDate() {
@@ -253,7 +252,7 @@ filterNotblankD() {
         oua.fieldOpElement().eq(5).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.addasset.acquireDate, { force: true })
         oua.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('contain', tdata.addasset.importdate1)
+        cy.get('[row-index="0"]').should('contain', tdata.addasset.acquireDate1)
         oua.clearFilterElement().click({ force: true })
     }
     filterNotblankDate() {
@@ -292,7 +291,7 @@ filterNotblankD() {
         oua.fieldOpElement().eq(2).click({ force: true })
         oua.fieldValueElement().eq(0).type(tdata.addasset.location)
         oua.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain',tdata.addasset.location)
+        cy.get('[row-index="0"]').should('contain', tdata.addasset.location)
         oua.clearFilterElement().click({ force: true })
     }
     filterNotequalL() {
@@ -308,18 +307,18 @@ filterNotblankD() {
         oua.addFilterElement().eq(2).click({ force: true })
         oua.fieldNameElement().eq(1).click({ force: true })
         oua.fieldOpElement().eq(4).click({ force: true })
-        oua.fieldValueElement().eq(0).type('Fro')
+        oua.fieldValueElement().eq(0).type('In')
         oua.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Fro')
+        cy.get('[row-index="0"]').should('contain', 'In')
         oua.clearFilterElement().click({ force: true })
     }
     filterEndswithL() {
         oua.addFilterElement().eq(2).click({ force: true })
         oua.fieldNameElement().eq(1).click({ force: true })
         oua.fieldOpElement().eq(5).click({ force: true })
-        oua.fieldValueElement().eq(0).type('ice')
+        oua.fieldValueElement().eq(0).type('dia')
         oua.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'ice')
+        cy.get('[row-index="0"]').should('contain', 'dia')
         oua.clearFilterElement().click({ force: true })
     }
     filterBlankL() {

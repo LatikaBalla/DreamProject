@@ -123,4 +123,59 @@ export default class DeviceRepairReportElements {
             timeout: 30000,
         })
     }
+    addimageElement() {
+        return cy.contains(locator.deviceRepairReport.addimage, {
+            timeout: 30000,
+        })
+    }
+    addnoteElement() {
+        return cy.contains(locator.deviceRepairReport.addnote, {
+            timeout: 30000,
+        })
+    }
+    noteElement() {
+        return cy.get(locator.deviceRepairReport.note, {
+            timeout: 30000,
+        })
+    }
+    uploadimageElement() {
+        return cy.get(locator.deviceRepairReport.uploadimage, {
+            timeout: 30000,
+        })
+    }
+    imagedescriptionElement() {
+        return cy.get(locator.deviceRepairReport.imagedescription, {
+            timeout: 30000,
+        })
+    }
+    notetypeElement() {
+        return cy.get(locator.deviceRepairReport.notetype, {
+            timeout: 30000,
+        })
+    }
+    createlineElement() {
+        return cy.get(locator.deviceRepairReport.createline, {
+            timeout: 30000,
+        })
+    }
+    updateimageElement() {
+        return cy.get(locator.deviceRepairReport.updateimage, {
+            timeout: 30000,
+        })
+    }
+    createnoteElement() {
+        return cy.get(locator.deviceRepairReport.createnote, {
+            timeout: 30000,
+        })
+    }
+    custompartElemnet() {
+        return cy.contains(locator.deviceRepairReport.custompart, {
+            timeout: 30000,
+        })
+    }
+    partElement() {
+        return cy.get(locator.deviceRepairReport.part, {
+            timeout: 30000,
+        })
+    }
 }

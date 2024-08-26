@@ -78,61 +78,6 @@ export class InHouseTicketsActions {
     verifyDownload() {
         cy.verifyDownload("/download/", tdata.inHouseTicket.filename)
     }
-    searchRecordId() {
-        cy.wait(1000)
-        iht.searchboxElement().eq(0).click({ force: true })
-        iht.recordidElement().click({ force: true })
-        iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.recordid + '{enter}', { force: true })
-        //cy.wait(1000)
-        cy.get('tr td').eq(0).should('contain', tdata.inHouseTicket.recordid)
-    }
-    searchTicketNumber() {
-        iht.searchboxElement().eq(0).click({ force: true })
-        iht.ticketnumberElement().click({ force: true })
-        iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.ticketnumber + '{enter}', { force: true })
-        cy.get('tr td').eq(1).should('contain', tdata.inHouseTicket.ticketnumber)
-    }
-    searchRepairType() {
-        iht.searchboxElement().eq(0).click({ force: true })
-        iht.repairtypeElement().click({ force: true })
-        iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.repairtype + '{enter}', { force: true })
-        cy.wait(1000)
-        cy.get('tr td').eq(3).should('contain', tdata.inHouseTicket.repairtype)
-    }
-    searchRepairStatus() {
-        iht.searchboxElement().eq(0).click({ force: true })
-        iht.repairstatusElement().click({ force: true })
-        iht.searchboxElement().eq(1).click({ force: true })
-        cy.get('[data-value="Quality Assurance"]').click({ force: true })
-        //  iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.repairstatus + '{enter}', { force: true })
-        cy.get('tr td').eq(6).should('contain', tdata.inHouseTicket.repairstatus, { force: true })
-
-    }
-    searchbuiling() {
-        iht.searchboxElement().eq(0).click({ force: true })
-        iht.buildingdropElement().click({ force: true })
-        iht.searchElement().clear({ force: true }).type(tdata.inHouseTicket.building + '{enter}', { force: true })
-        cy.get('tr td').eq(2).should('contain', tdata.inHouseTicket.building, { force: true })
-        iht.searchElement().clear({ force: true })
-    }
-    clickOnMoreFilter() {
-        iht.addFilterElement().click({ force: true })
-    }
-    enterFieldName() {
-        iht.fieldNameElement().select('Ticket Number')
-    }
-    enterFieldOperation() {
-        iht.fieldOpElement().select('Does Not Contain')
-    }
-    enterSearchValue() {
-        iht.fieldValueElement().type(tdata.inHouseTicket.ticketnumber, { force: true })
-    }
-    clickOnApply() {
-        iht.applyElement().click({ force: true })
-    }
-    verifyResultFilter() {
-        cy.get('tr td').eq(1).should('not.contain', tdata.inHouseTicket.ticketnumber, { force: true })
-    }
     clickOnAddLine() {
         iht.addlineElement().click({ force: true })
         iht.custompartElemnet().click({ force: true })

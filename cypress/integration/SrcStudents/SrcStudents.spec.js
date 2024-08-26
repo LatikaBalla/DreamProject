@@ -48,8 +48,6 @@ And('Enter Phone and Cell Number', () => {
 })
 Then('Select User Status', () => {
     ss.selectUserStatus()
-    // ss.selectVivaNews()
-    // ss.selectProductUpdate()
 })
 Then('Select Vivacity weekly and Beta tester', () => {
     ss.selectViivaWeekly()
@@ -65,27 +63,12 @@ And('Click on submit button', () => {
 Then('Verify the student added in table', () => {
     ss.verifyRecordTable()
 })
-
 And('Click on view button', () => {
     ss.clickViewButtton()
 })
 Then('Veriry the Details of Student', () => {
     ss.verifyStudentDetails()
 })
-
-And('Enter the Search - Full name in search box and Verify the Result', () => {
-    ss.searchFullName()
-})
-Then('Enter the Search - Email in search box and Verify the Result', () => {
-    ss.searchEmail()
-})
-And('Enter the Search - Status in search box and Verify the Result', () => {
-    ss.searchStatus()
-})
-Then('Enter the Search - Phone in search box and Verify the Result', () => {
-    ss.searchPhone()
-})
-
 And('Click on Download Export button', () => {
     ss.clickOnExport()
 })

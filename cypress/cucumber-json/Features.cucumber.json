@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 5645000000
+              "duration": 3994000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 12627000000
+              "duration": 6755000000
             }
           },
           {
@@ -42,9 +42,8 @@
             "line": 9,
             "name": "Close the terms of service window",
             "result": {
-              "status": "failed",
-              "duration": 12062000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Remind me Later' but never did.\n    at FeaturesActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/FeaturesActions.js:11:11)\n    at Context.eval (cypress/integration/Features/Features.spec.js:16:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 14208000000
             }
           },
           {
@@ -53,7 +52,8 @@
             "line": 10,
             "name": "Click on features page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1139000000
             }
           },
           {
@@ -62,7 +62,8 @@
             "line": 13,
             "name": "I should be redirected to the Features page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5000000
             }
           },
           {
@@ -71,7 +72,8 @@
             "line": 14,
             "name": "Verify the Title of Features Page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 906000000
             }
           },
           {
@@ -80,7 +82,8 @@
             "line": 15,
             "name": "Verify the Under Consideration Tab should be visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 9000000
             }
           },
           {
@@ -89,7 +92,8 @@
             "line": 16,
             "name": "Verify the Scheduled tab should be visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 8000000
             }
           },
           {
@@ -98,7 +102,8 @@
             "line": 17,
             "name": "Verify the Launched tab should be visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 8000000
             }
           },
           {
@@ -107,7 +112,8 @@
             "line": 18,
             "name": "Verify the Under Construction tab should be visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7000000
             }
           },
           {
@@ -116,7 +122,8 @@
             "line": 19,
             "name": "Verify the Roadmap tab should be visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 17000000
             }
           }
         ]

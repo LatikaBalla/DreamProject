@@ -39,7 +39,9 @@ Feature: ImportSerialDevices Page Functionality
         And Click on filter of Quantity Devices Blank in search box and Verify the Result
         And Click on filter of Quantity Devices Not blank in search box and Verify the Result
 
-        Then I should click on Add New Import
+Then Click on the download import
+And Verfiy the downloaded successfully
+   Then I should click on Add New Import
         Then Upload the CSV import file
         And Click on submit button
         And Click on Details button

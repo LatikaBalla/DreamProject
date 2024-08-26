@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2580000000
+              "duration": 5210000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 10643000000
+              "duration": 10468000000
             }
           },
           {
@@ -42,9 +42,8 @@
             "line": 9,
             "name": "Close the terms of service window",
             "result": {
-              "status": "failed",
-              "duration": 8262000000,
-              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 3 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click\n    at mouseAction (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111447:68)\n    at Context.click (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:111611:14)\n    at wrapped (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at MyProfileActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/MyProfileActions.js:11:28)\n    at Context.eval (cypress/integration/MyProfile/MyProfile.spec.js:16:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 16199000000
             }
           },
           {
@@ -53,7 +52,8 @@
             "line": 10,
             "name": "Click on My profile page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1138000000
             }
           },
           {
@@ -62,7 +62,8 @@
             "line": 13,
             "name": "Verify the Title of My Profile Page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 974000000
             }
           },
           {
@@ -71,7 +72,8 @@
             "line": 14,
             "name": "User and User photo of MyProfile should be visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 344000000
             }
           },
           {
@@ -80,7 +82,8 @@
             "line": 15,
             "name": "Profile and Account deatils section of MyProfile should be visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 26000000
             }
           },
           {
@@ -89,7 +92,8 @@
             "line": 16,
             "name": "Click on upload image icon",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 29000000
             }
           },
           {
@@ -98,7 +102,8 @@
             "line": 17,
             "name": "Enter tilte and phone no",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 581000000
             }
           },
           {
@@ -107,7 +112,8 @@
             "line": 18,
             "name": "Select Email preference",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 122000000
             }
           },
           {
@@ -116,7 +122,8 @@
             "line": 19,
             "name": "click on update button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 67000000
             }
           },
           {
@@ -125,7 +132,8 @@
             "line": 20,
             "name": "Verify the updated successfully",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 400000000
             }
           }
         ]
