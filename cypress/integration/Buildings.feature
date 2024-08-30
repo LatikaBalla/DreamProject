@@ -11,6 +11,18 @@ Feature: Building Page Functionality
 
 
   Scenario: Adding,Update,add more filter, Clear filter and Search,View Details and Delete new Buildings
+    And Verify the Title of Buildings Page
+    Then Filters of Buildings should be visible
+    And Table for Buildings should be visible
+
+    Then I should click on Add building button
+    And I should Enter Building Name,Phone and Extension
+    Then I should Enter Building Abbreviation and Select Default building
+    And Enter Billing Id, Shipping Address and select from dropdown
+    Then Click on checkbox Same as Shipping Address
+    And Click on save button
+    Then Verify the builing details added in table
+
     And Click on filter of Building Name contain and Verify the Result
     And Click on filter of Building Name Does not contain and Verify the Result
     And Click on filter of Building Name Equals and Verify the Result
@@ -77,6 +89,15 @@ Feature: Building Page Functionality
     And Click on filter of Phone Ends with and Verify the Result
     And Click on filter of Phone Blank and Verify the Result
     And Click on filter of Phone Not blank and Verify the Result
+
+    And Click on Edit Icon of builing
+    And I should edit Building Name,Phone and Extension of builing
+    Then I should edit Select Default building
+    Then Click on update button of builing
+    And Verify the Record has been updated Meassage of builing
+    And Click on Delete Icon of building
+    Then Click on Confirm Delete button of building
+    And Verify the record is deleted successfully of building
 
     And Click on Export To CSV
     Then Click on Bulk Upload button

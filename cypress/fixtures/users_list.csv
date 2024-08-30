@@ -1,0 +1,10 @@
+account_name,record_id,userdomain,full_name,title,email,phone,account,user_status,role,user_role,profile_image,vivacity_news,product_updates,vivacity_weekly,user_notifications,in_house_repair,building,organizational_unit,google_id
+Vivacity Demo Account,1062,vivacitytech.com,Demo Testing Edit,Mr,mn@gmail.com,8888888888,1,Inactive,Repair Tech,4,,TRUE,TRUE,TRUE,TRUE,FALSE,3171,,
+Vivacity Demo Account,43,vivacitytech.com,Akash Deep Bhattacharyya,Mr,abhattacharya@vivacitytech.com,8622042108,1,Active,Super Admin,2,/uploads/profile_image/profile_imagedfe6b351808f48a487a5735ca8629075.jpg,TRUE,TRUE,TRUE,TRUE,TRUE,45,,
+Vivacity Demo Account,571,vivacitytech.com,Joe Paloney,Sales Rep,jpalony@vivacitytech.com,81405463,1,Active,Super Admin,2,,FALSE,FALSE,FALSE,FALSE,TRUE,3173,,
+Vivacity Demo Account,573,vivacitytech.com,Luke,Product Manager,lrose@vivacitytech.com,81405463,1,Active,Super Admin,2,,FALSE,FALSE,FALSE,FALSE,TRUE,3171,,
+Vivacity Demo Account,23562,vivacitytech.com,Ryker SwensentEST,test,testtesttesttest@test.com,9090909099,1,Active,Loaner Manager,10,,FALSE,FALSE,FALSE,FALSE,FALSE,2409,,
+Vivacity Demo Account,23564,vivacitytech.com,Ryker Swensen,TEST,mravilla+19@vivacitytech.net,9090909099,1,Active,Student,1,,FALSE,FALSE,FALSE,FALSE,FALSE,3171,,
+Vivacity Demo Account,23565,vivacitytech.com,Ryker Swensen,srgoh,swe1800343455@byui.edu,9090909099,1,Active,Student,1,,FALSE,FALSE,FALSE,FALSE,FALSE,3174,,
+Vivacity Demo Account,23567,vivacitytech.com,Afeefa Zaman,Test399,test399@gmail.com,9090909099,1,Active,Repair Tech,4,,FALSE,FALSE,FALSE,FALSE,FALSE,3171,,
+Vivacity Demo Account,23569,vivacitytech.com,Johnny Smith,Test399,johnny.smith@example.com,9090909099,1,Active,Student,1,,FALSE,FALSE,FALSE,FALSE,FALSE,3045,,

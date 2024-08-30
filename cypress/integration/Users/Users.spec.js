@@ -131,7 +131,18 @@ Then('All Organizational Units Search with VT Employees checkbox', () => {
 And('Verify the result VT Employees in gird', () => {
     user.verifysearchResult4()
 })
-
+And('Click on Export To CSV', () => {
+    user.clickOnExport()
+})
+Then('Click on Bulk Upload button', () => {
+    user.clickOnBulkUpload()
+})
+And('Click on Attach CSV file and Click on submit button', () => {
+    user.attachCsvfile()
+})
+Then('Verify the Uploaded successfully', () => {
+    user.verifyuploaded()
+})
 
 //ri
 And('Click on filter of Record Id Equals and Verify the Result', () => {

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1044000000
+              "duration": 5542000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6709000000
+              "duration": 6742000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 21327000000
+              "duration": 21363000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 75000000
             }
           },
           {
@@ -63,25 +63,25 @@
             "name": "Click on LoanerManagement Tab",
             "result": {
               "status": "passed",
-              "duration": 601000000
+              "duration": 581000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 126,
-            "name": "Click on filter of Product Description contain and Verify the Result for Checked Out",
+            "line": 33,
+            "name": "Click on filter of Asset Tag contain and Verify the Result",
             "result": {
               "status": "failed",
-              "duration": 32244000000,
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[role='option']`, but never found it.\n    at LoanerManagementElements.fieldOpElement (cypress/integration/PageObject/PageElements/LoanerManagementElements.js:31:18)\n    at LoanerManagementActions.filtercontainPD_C (cypress/integration/PageObject/PageActions/LoanerManagementActions.js:864:13)\n    at Context.eval (cypress/integration/LoanerManagement/LoanerManagement.spec.js:336:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "duration": 8109000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `ag-cell-label-container`, but never found it.\n    at LoanerManagementActions.filtercontainTag (cypress/integration/PageObject/PageActions/LoanerManagementActions.js:118:11)\n    at Context.eval (cypress/integration/LoanerManagement/LoanerManagement.spec.js:88:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 127,
-            "name": "Click on filter of Product Description Does not contain and Verify the Result for Checked Out",
+            "line": 34,
+            "name": "Click on filter of Asset Tag Does not contain and Verify the Result",
             "result": {
               "status": "skipped"
             }
@@ -89,8 +89,8 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 128,
-            "name": "Click on filter of Product Description Equals and Verify the Result for Checked Out",
+            "line": 35,
+            "name": "Click on filter of Asset Tag Equals and Verify the Result",
             "result": {
               "status": "skipped"
             }
@@ -98,8 +98,8 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 129,
-            "name": "Click on filter of Product Description Does not equal and Verify the Result for Checked Out",
+            "line": 36,
+            "name": "Click on filter of Asset Tag Does not equal and Verify the Result",
             "result": {
               "status": "skipped"
             }
@@ -107,8 +107,8 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 130,
-            "name": "Click on filter of Product Description Begins with and Verify the Result for Checked Out",
+            "line": 37,
+            "name": "Click on filter of Asset Tag Begins with and Verify the Result",
             "result": {
               "status": "skipped"
             }
@@ -116,8 +116,8 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 131,
-            "name": "Click on filter of Product Description Ends with and Verify the Result for Checked Out",
+            "line": 38,
+            "name": "Click on filter of Asset Tag Ends with  and Verify the Result",
             "result": {
               "status": "skipped"
             }
@@ -125,8 +125,8 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 132,
-            "name": "Click on filter of Product Description Blank and Verify the Result for Checked Out",
+            "line": 39,
+            "name": "Click on filter of Asset Tag Blank and Verify the Result",
             "result": {
               "status": "skipped"
             }
@@ -134,8 +134,296 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 133,
-            "name": "Click on filter of Product Description Not blank and Verify the Result for Checked Out",
+            "line": 40,
+            "name": "Click on filter of Asset Tag Not blank and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "Click on filter of Serial contain and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "Click on filter of Serial Does not contain and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "Click on filter of Serial Equals and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "Click on filter of Serial Does not equal and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "Click on filter of Serial Begins with and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "Click on filter of Serial Ends with and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "Click on filter of Serial Blank and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "Click on filter of Serial Not blank and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "Click on filter of Student Info contain and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "Click on filter of Student Info Does not contain and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "Click on filter of Student Info Equals and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 54,
+            "name": "Click on filter of Student Info Does not equal and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 55,
+            "name": "Click on filter of Student Info Begins with and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 56,
+            "name": "Click on filter of Student Info Ends with and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 57,
+            "name": "Click on filter of Student Info Blank and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "Click on filter of Student Info Not blank and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 60,
+            "name": "Click on filter of Device contain and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "Click on filter of Device Does not contain and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 62,
+            "name": "Click on filter of Device Equals and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 63,
+            "name": "Click on filter of Device Does not equal and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 64,
+            "name": "Click on filter of Device Begins with and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 65,
+            "name": "Click on filter of Device Ends with and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 66,
+            "name": "Click on filter of Device Blank and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 67,
+            "name": "Click on filter of Device Not blank and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 69,
+            "name": "Click on filter of Warranty contain and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 70,
+            "name": "Click on filter of Warranty Does not contain and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 71,
+            "name": "Click on filter of Warranty Equals and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 72,
+            "name": "Click on filter of Warranty Does not equal and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 73,
+            "name": "Click on filter of Warranty Begins with and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 74,
+            "name": "Click on filter of Warranty Ends with and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 75,
+            "name": "Click on filter of Warranty Blank and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 76,
+            "name": "Click on filter of Warranty Not blank and Verify the Result",
             "result": {
               "status": "skipped"
             }

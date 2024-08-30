@@ -24,11 +24,12 @@
         "myAccount": "My Account"
     },
     "accountDetails": {
-        "titleAccount": "My Account Details",
+        "titleAccount": "Account Dashboard",
         "filters": ".css-13zqo1p",
         "accountdetials": "[data-testid='tabacc-1']",
         "buildings": "[data-testid='tabacc-2']",
         "tableaccount": ".css-1dj5rr2",
+        "vivaTech":"Vivacity Tech Dream",
         "addnewbtn": "button[type='button']",
         "newContactTitle": "Add New Contact",
         "editIcon": "[data-testid='ModeEditOutlinedIcon']",
@@ -42,22 +43,7 @@
         "credit": "$100.00",
         "billingaddress": "Billing Address",
         "shippingaddress": "Shipping Address",
-        "accountmanager": "Account Manager",
-        "fieldname": "[name='fieldName']",
-        "fieldvalue": "[name='fieldValue']",
-        "fieldoperation": "[name='fieldOp']",
-        "applybtn": "[data-testid='btnHandleApply']",
-        "morefiltersbtn": "[data-testid='Filters']",
-        "clearfilterbtn": "Clear Filter",
-        "addfilterGroup": "+ Add Filter Group",
-        "searchbox": "[role='combobox']",
-        "fullName": "[data-value='full_name']",
-        "emaildrop": "[data-value='email']",
-        "status": "[data-value='status']",
-        "title": "[data-value='title']",
-        "phoneNo": "[data-value='cell_number']",
-        "recordid": "[data-value='record_id']",
-        "upload": "input[type='file']"
+        "accountmanager": "Account Manager"
     },
     "newaccount": {
         "titlenew": "#title",
@@ -157,7 +143,9 @@
         "checkbox1": "[aria-label='Devices']",
         "checkbox2": "[aria-label='Google Bootcamp Users']",
         "checkbox3": "[aria-label='Test OU']",
-        "checkbox4": "[aria-label='VT Employees']"
+        "checkbox4": "[aria-label='VT Employees']",
+        "export": "Export to CSV",
+        "upload": "input[type='file']"
     },
     "reportCenter": {
         "title": "Report Center",

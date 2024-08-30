@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 4979000000
+              "duration": 2670000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5715000000
+              "duration": 7308000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 12317000000
+              "duration": 12273000000
             }
           },
           {
@@ -53,174 +53,134 @@
             "name": "Click on Buildings Tab",
             "result": {
               "status": "passed",
-              "duration": 2087000000
+              "duration": 2084000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 14,
-            "name": "Click on filter of Building Name contain and Verify the Result",
+            "name": "Verify the Title of Buildings Page",
             "result": {
               "status": "passed",
-              "duration": 3764000000
+              "duration": 858000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 15,
-            "name": "Click on filter of Building Name Does not contain and Verify the Result",
+            "name": "Filters of Buildings should be visible",
             "result": {
               "status": "passed",
-              "duration": 755000000
+              "duration": 853000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 16,
-            "name": "Click on filter of Building Name Equals and Verify the Result",
+            "name": "Table for Buildings should be visible",
             "result": {
               "status": "passed",
-              "duration": 743000000
+              "duration": 7000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "Click on filter of Building Name Does not equal and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 684000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 18,
-            "name": "Click on filter of Building Name Begins with and Verify the Result",
+            "name": "I should click on Add building button",
             "result": {
               "status": "passed",
-              "duration": 689000000
+              "duration": 143000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 19,
-            "name": "Click on filter of Building Name Ends with and Verify the Result",
+            "name": "I should Enter Building Name,Phone and Extension",
             "result": {
               "status": "passed",
-              "duration": 605000000
+              "duration": 1038000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 20,
-            "name": "Click on filter of Building Name Blank and Verify the Result",
+            "name": "I should Enter Building Abbreviation and Select Default building",
             "result": {
               "status": "passed",
-              "duration": 557000000
+              "duration": 382000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 21,
-            "name": "Click on filter of Building Name Not blank and Verify the Result",
+            "name": "Enter Billing Id, Shipping Address and select from dropdown",
             "result": {
               "status": "passed",
-              "duration": 652000000
+              "duration": 3621000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 22,
-            "name": "Click on filter of Building Name contain and Verify the Result",
+            "name": "Click on checkbox Same as Shipping Address",
             "result": {
               "status": "passed",
-              "duration": 3741000000
+              "duration": 3117000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
+            "line": 23,
+            "name": "Click on save button",
+            "result": {
+              "status": "passed",
+              "duration": 67000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
             "line": 24,
-            "name": "Click on filter of Building ID contain and Verify the Result",
+            "name": "Verify the builing details added in table",
             "result": {
               "status": "passed",
-              "duration": 653000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "Click on filter of Building ID Does not contain and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 728000000
+              "duration": 2013000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 26,
-            "name": "Click on filter of Building ID Equals and Verify the Result",
+            "name": "Click on filter of Building Name contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 757000000
+              "duration": 3747000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 27,
-            "name": "Click on filter of Building ID Does not equal and Verify the Result",
+            "name": "Click on filter of Building Name Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 715000000
+              "duration": 1055000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 28,
-            "name": "Click on filter of Building ID Begins with and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 745000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 29,
-            "name": "Click on filter of Building ID Ends with and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 823000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 30,
-            "name": "Click on filter of Building ID Blank and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 756000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "Click on filter of Building ID Not blank and Verify the Result",
+            "name": "Click on filter of Building Name Equals and Verify the Result",
             "result": {
               "status": "passed",
               "duration": 751000000
@@ -229,348 +189,468 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 33,
-            "name": "Click on filter of Building Shipping Address contain and Verify the Result",
+            "line": 29,
+            "name": "Click on filter of Building Name Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1110000000
+              "duration": 701000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "Click on filter of Building Name Begins with and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 705000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "Click on filter of Building Name Ends with and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 615000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "Click on filter of Building Name Blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 524000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "Click on filter of Building Name Not blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 671000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 34,
-            "name": "Click on filter of Building Shipping Address Does not contain and Verify the Result",
+            "name": "Click on filter of Building Name contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1044000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 35,
-            "name": "Click on filter of Building Shipping Address Equals and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1015000000
+              "duration": 3734000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 36,
-            "name": "Click on filter of Building Shipping Address Does not equal and Verify the Result",
+            "name": "Click on filter of Building ID contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1033000000
+              "duration": 681000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 37,
-            "name": "Click on filter of Building Shipping Address Begins with and Verify the Result",
+            "name": "Click on filter of Building ID Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 583000000
+              "duration": 640000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 38,
-            "name": "Click on filter of Building Shipping Address Ends with and Verify the Result",
+            "name": "Click on filter of Building ID Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 627000000
+              "duration": 685000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 39,
-            "name": "Click on filter of Building Shipping Address Blank and Verify the Result",
+            "name": "Click on filter of Building ID Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 562000000
+              "duration": 647000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 40,
-            "name": "Click on filter of Building Shipping Address Not blank and Verify the Result",
+            "name": "Click on filter of Building ID Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1027000000
+              "duration": 679000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "Click on filter of Building ID Ends with and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 664000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 42,
-            "name": "Click on filter of Building Billing Address contain and Verify the Result",
+            "name": "Click on filter of Building ID Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3095000000
+              "duration": 686000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 43,
-            "name": "Click on filter of Building Billing Address Does not contain and Verify the Result",
+            "name": "Click on filter of Building ID Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1160000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 44,
-            "name": "Click on filter of Building Billing Address Equals and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 1116000000
+              "duration": 669000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 45,
-            "name": "Click on filter of Building Billing Address Does not equal and Verify the Result",
+            "name": "Click on filter of Building Shipping Address contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1054000000
+              "duration": 1053000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 46,
-            "name": "Click on filter of Building Billing Address Begins with and Verify the Result",
+            "name": "Click on filter of Building Shipping Address Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 657000000
+              "duration": 1029000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 47,
-            "name": "Click on filter of Building Billing Address Ends with and Verify the Result",
+            "name": "Click on filter of Building Shipping Address Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 689000000
+              "duration": 1103000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 48,
-            "name": "Click on filter of Building Billing Address Blank and Verify the Result",
+            "name": "Click on filter of Building Shipping Address Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 580000000
+              "duration": 1049000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 49,
-            "name": "Click on filter of Building Billing Address Not blank and Verify the Result",
+            "name": "Click on filter of Building Shipping Address Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1031000000
+              "duration": 615000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "Click on filter of Building Shipping Address Ends with and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 621000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 51,
-            "name": "Click on filter of Building Abbreviation contain and Verify the Result",
+            "name": "Click on filter of Building Shipping Address Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 670000000
+              "duration": 581000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 52,
-            "name": "Click on filter of Building Abbreviation Does not contain and Verify the Result",
+            "name": "Click on filter of Building Shipping Address Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 950000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 53,
-            "name": "Click on filter of Building Abbreviation Equals and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 631000000
+              "duration": 1175000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 54,
-            "name": "Click on filter of Building Abbreviation Does not equal and Verify the Result",
+            "name": "Click on filter of Building Billing Address contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 623000000
+              "duration": 3223000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 55,
-            "name": "Click on filter of Building Abbreviation Begins with and Verify the Result",
+            "name": "Click on filter of Building Billing Address Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 845000000
+              "duration": 1260000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 56,
-            "name": "Click on filter of Building Abbreviation Ends with and Verify the Result",
+            "name": "Click on filter of Building Billing Address Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 867000000
+              "duration": 1231000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 57,
-            "name": "Click on filter of Building Abbreviation Blank and Verify the Result",
+            "name": "Click on filter of Building Billing Address Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 646000000
+              "duration": 1230000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 58,
-            "name": "Click on filter of Building Abbreviation Not blank and Verify the Result",
+            "name": "Click on filter of Building Billing Address Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 923000000
+              "duration": 667000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 59,
+            "name": "Click on filter of Building Billing Address Ends with and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 721000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 60,
-            "name": "Click on filter of Default Building true and Verify the Result",
+            "name": "Click on filter of Building Billing Address Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 513000000
+              "duration": 616000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 61,
-            "name": "Click on filter of Default Building false and Verify the Result",
+            "name": "Click on filter of Building Billing Address Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 445000000
+              "duration": 1260000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 63,
-            "name": "Click on filter of Extension contain and Verify the Result",
+            "name": "Click on filter of Building Abbreviation contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 672000000
+              "duration": 695000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 64,
-            "name": "Click on filter of Extension Does not contain and Verify the Result",
+            "name": "Click on filter of Building Abbreviation Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 808000000
+              "duration": 981000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 65,
-            "name": "Click on filter of Extension Equals and Verify the Result",
+            "name": "Click on filter of Building Abbreviation Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 811000000
+              "duration": 739000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 66,
-            "name": "Click on filter of Extension Does not equal and Verify the Result",
+            "name": "Click on filter of Building Abbreviation Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 831000000
+              "duration": 633000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 67,
-            "name": "Click on filter of Extension Begins with and Verify the Result",
+            "name": "Click on filter of Building Abbreviation Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 826000000
+              "duration": 777000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 68,
-            "name": "Click on filter of Extension Ends with and Verify the Result",
+            "name": "Click on filter of Building Abbreviation Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 839000000
+              "duration": 777000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 69,
-            "name": "Click on filter of Extension Blank and Verify the Result",
+            "name": "Click on filter of Building Abbreviation Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 819000000
+              "duration": 619000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 70,
-            "name": "Click on filter of Extension Not blank and Verify the Result",
+            "name": "Click on filter of Building Abbreviation Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 780000000
+              "duration": 668000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 72,
-            "name": "Click on filter of Phone contain and Verify the Result",
+            "name": "Click on filter of Default Building true and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 494000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 73,
+            "name": "Click on filter of Default Building false and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 484000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 75,
+            "name": "Click on filter of Extension contain and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 738000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 76,
+            "name": "Click on filter of Extension Does not contain and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1094000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 77,
+            "name": "Click on filter of Extension Equals and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 812000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 78,
+            "name": "Click on filter of Extension Does not equal and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 783000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 79,
+            "name": "Click on filter of Extension Begins with and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 798000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 80,
+            "name": "Click on filter of Extension Ends with and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 788000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 81,
+            "name": "Click on filter of Extension Blank and Verify the Result",
             "result": {
               "status": "passed",
               "duration": 858000000
@@ -579,111 +659,211 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 73,
+            "line": 82,
+            "name": "Click on filter of Extension Not blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 787000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 84,
+            "name": "Click on filter of Phone contain and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 881000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 85,
             "name": "Click on filter of Phone Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 958000000
+              "duration": 1235000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 74,
+            "line": 86,
             "name": "Click on filter of Phone Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1037000000
+              "duration": 945000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 75,
+            "line": 87,
             "name": "Click on filter of Phone Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1010000000
+              "duration": 972000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 76,
+            "line": 88,
             "name": "Click on filter of Phone Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 908000000
+              "duration": 844000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 77,
+            "line": 89,
             "name": "Click on filter of Phone Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 873000000
+              "duration": 856000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 78,
+            "line": 90,
             "name": "Click on filter of Phone Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 797000000
+              "duration": 1001000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 79,
+            "line": 91,
             "name": "Click on filter of Phone Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 970000000
+              "duration": 935000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 81,
+            "line": 93,
+            "name": "Click on Edit Icon of builing",
+            "result": {
+              "status": "passed",
+              "duration": 4028000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 94,
+            "name": "I should edit Building Name,Phone and Extension of builing",
+            "result": {
+              "status": "passed",
+              "duration": 1215000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 95,
+            "name": "I should edit Select Default building",
+            "result": {
+              "status": "passed",
+              "duration": 92000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 96,
+            "name": "Click on update button of builing",
+            "result": {
+              "status": "passed",
+              "duration": 105000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 97,
+            "name": "Verify the Record has been updated Meassage of builing",
+            "result": {
+              "status": "passed",
+              "duration": 711000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 98,
+            "name": "Click on Delete Icon of building",
+            "result": {
+              "status": "passed",
+              "duration": 4987000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 99,
+            "name": "Click on Confirm Delete button of building",
+            "result": {
+              "status": "passed",
+              "duration": 132000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 100,
+            "name": "Verify the record is deleted successfully of building",
+            "result": {
+              "status": "passed",
+              "duration": 457000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 102,
             "name": "Click on Export To CSV",
             "result": {
               "status": "passed",
-              "duration": 206000000
+              "duration": 140000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 82,
+            "line": 103,
             "name": "Click on Bulk Upload button",
             "result": {
               "status": "passed",
-              "duration": 239000000
+              "duration": 120000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 83,
+            "line": 104,
             "name": "Click on Attach CSV file and Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 426000000
+              "duration": 387000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 84,
+            "line": 105,
             "name": "Verify the Uploaded successfully",
             "result": {
               "status": "passed",
-              "duration": 812000000
+              "duration": 365000000
             }
           }
         ]

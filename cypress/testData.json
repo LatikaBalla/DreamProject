@@ -34,7 +34,7 @@
   "buildings": {
     "buildingname": "Building One",
     "phone": "1233211234",
-    "extension": "777",
+    "extension": "1111",
     "defaultbuilding": "[data-value='true']",
     "address": "641 Fairview Avenue Northeast",
     "savebtn": "[type='submit']",
@@ -240,7 +240,7 @@
     "repairissue": "[data-value='RAM issue']",
     "ticketnumber": "V0070674",
     "repairtype": "In_House",
-    "recordid": "70851",
+    "recordid": "71692",
     "repairstatus": "Intake",
     "repairstatus1": "Waiting on Repair Approval",
     "warrantystatus": "Non Warranty",
@@ -359,7 +359,9 @@
     "recordid1": "58332",
     "phoneNo1":"9999999999",
     "phoneNo2":"(999) 999-9999",
-    "userStatus":"Active"
+    "userStatus":"Active",
+    "uploadfilename":"users_list.csv",
+    "uploadmsg":"User CSV submitted"
   },
   "myprofile": {
     "profileupdatemsg": "Profile updated successfully",

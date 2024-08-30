@@ -154,6 +154,22 @@ export class UsersActions {
         cy.get('[row-index="0"]').should('contain', "/VT Employees")
         user.checkbox4Element().click({ force: true })
     }
+    clickOnExport() {
+        user.exportElement().click({ force: true })
+    }
+    clickOnBulkUpload() {
+        cy.contains('Bulk Update').click({ force: true })
+    }
+    attachCsvfile() {
+       //  cy.contains('Attach CSV file').click({ force: true })
+        cy.get('.css-0 > .MuiButtonBase-root').scrollIntoView().click({ force: true })
+        user.uploadElement().attachFile(tdata.users.uploadfilename, { force: true })
+        cy.wait(100)
+        cy.contains('Upload').click({ force: true })
+    }
+    verifyuploaded() { 
+         dash.messageElement().should('contain', tdata.user.uploadmsg)
+    }
     //ri
     filtercontainRI() {
         cy.wait(4000)

@@ -301,7 +301,7 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(8).click({ force: true })
         isd.fieldValueElement().eq(1).clear({ force: true }).type(tdata.importDevice.quantitydevices, { force: true })
         isd.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity_devices"]').then(($el) => {
+        cy.get('.ag-row-first > [col-id="quantity_devices"]').eq(1).then(($el) => {
             const value = parseInt($el.text());
             expect(value).to.be.equal(2);
         })

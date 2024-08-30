@@ -9,10 +9,10 @@
     "uri": "Dashboard.feature",
     "elements": [
       {
-        "id": "dashboard-page-functionality;adding,update,add-more-filter,-clear-filter-and-search,view-details-and-delete-new-buildings",
+        "id": "dashboard-page-functionality;admin-can-access-the-dashboard-page-and-check-the-visiblity",
         "keyword": "Scenario",
-        "line": 25,
-        "name": "Adding,Update,add more filter, Clear filter and Search,View Details and Delete new Buildings",
+        "line": 11,
+        "name": "Admin can access the dashboard page and check the visiblity",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 8829000000
+              "duration": 7329000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9149000000
+              "duration": 7411000000
             }
           },
           {
@@ -43,144 +43,44 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 15287000000
+              "duration": 15305000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 26,
+            "line": 12,
             "name": "I should be redirected to the dashboard page",
             "result": {
               "status": "passed",
-              "duration": 72000000
+              "duration": 75000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 27,
-            "name": "Click on Buildings Tab",
+            "line": 13,
+            "name": "Verify the Title of dashborad Page",
             "result": {
               "status": "passed",
-              "duration": 2069000000
+              "duration": 1269000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 28,
-            "name": "I should click on Add building button",
+            "line": 14,
+            "name": "Verify the logo should be visible",
             "result": {
               "status": "passed",
-              "duration": 1661000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 29,
-            "name": "I should Enter Building Name,Phone and Extension",
-            "result": {
-              "status": "passed",
-              "duration": 918000000
+              "duration": 6000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 30,
-            "name": "I should Enter Building Abbreviation and Select Default building",
-            "result": {
-              "status": "passed",
-              "duration": 381000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "Enter Billing Id, Shipping Address and select from dropdown",
-            "result": {
-              "status": "passed",
-              "duration": 3606000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 32,
-            "name": "Click on checkbox Same as Shipping Address",
-            "result": {
-              "status": "passed",
-              "duration": 3093000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 33,
-            "name": "Click on save button",
-            "result": {
-              "status": "passed",
-              "duration": 62000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 34,
-            "name": "Verify the builing details added in table",
-            "result": {
-              "status": "passed",
-              "duration": 2039000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 53,
-            "name": "Click on Buildings Tab",
-            "result": {
-              "status": "passed",
-              "duration": 2107000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 54,
-            "name": "Click on Edit Icon of builing",
-            "result": {
-              "status": "passed",
-              "duration": 3766000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 55,
-            "name": "I should edit Building Name,Phone and Extension of builing",
-            "result": {
-              "status": "passed",
-              "duration": 1277000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 56,
-            "name": "I should edit Select Default building",
-            "result": {
-              "status": "passed",
-              "duration": 67000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 57,
-            "name": "Click on update button of builing",
+            "line": 15,
+            "name": "My Account Detail tab should be visible",
             "result": {
               "status": "passed",
               "duration": 64000000
@@ -189,41 +89,57 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 58,
-            "name": "Verify the Record has been updated Meassage of builing",
+            "line": 16,
+            "name": "Verify the Title of Account Details Page",
             "result": {
-              "status": "passed",
-              "duration": 472000000
+              "status": "failed",
+              "duration": 30091000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find content: 'My Account Details' but never did.\n    at AccountDetailsActions.verifyTitleAccountDetails (cypress/integration/PageObject/PageActions/AccountDetailsActions.js:19:34)\n    at Context.eval (cypress/integration/Dashboard/Dashboard.spec.js:38:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 59,
-            "name": "Click on Delete Icon of building",
+            "line": 19,
+            "name": "Building tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 4742000000
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Click on Buildings Tab",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Verify the Title of Buildings Page",
+            "result": {
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 60,
-            "name": "Click on Confirm Delete button of building",
+            "line": 22,
+            "name": "Filters of Buildings should be visible",
             "result": {
-              "status": "passed",
-              "duration": 84000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 61,
-            "name": "Verify the record is deleted successfully of building",
+            "line": 23,
+            "name": "Table for Buildings should be visible",
             "result": {
-              "status": "passed",
-              "duration": 497000000
+              "status": "skipped"
             }
           }
         ]

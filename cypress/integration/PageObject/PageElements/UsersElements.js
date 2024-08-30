@@ -161,4 +161,15 @@ export default class UsersElements {
             timeout: 30000,
         });
     } 
+    exportElement() {
+        return cy.contains(locator.users.export, {
+            timeout: 30000,
+        });
+    }
+    uploadElement(){
+        return cy.get(locator.users.upload, {
+            timeout: 30000,
+        })
+    }
+
 }

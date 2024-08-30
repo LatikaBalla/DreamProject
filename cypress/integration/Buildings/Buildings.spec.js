@@ -18,6 +18,72 @@ Then('close the terms of service window', () => {
 And('Click on Buildings Tab', () => {
     build.clickOnBuildingTab()
 })
+And('Building tab should be visible', () => {
+    dash.buildingTabVisible()
+})
+And('Click on Buildings Tab', () => {
+    build.clickOnBuildingTab()
+})
+And('Verify the Title of Buildings Page', () => {
+    build.verifyTitleBuildingPage()
+})
+Then('Filters of Buildings should be visible', () => {
+    build.filterVisible()
+})
+And('Table for Buildings should be visible', () => {
+    build.tableofBuildingsVisible()
+})
+Then('I should click on Add building button', () => {
+    build.clickOnAddnewButton()
+})
+And('I should Enter Building Name,Phone and Extension', () => {
+    build.enterBuildingName()
+    build.enterPhone()
+    build.enterExtension()
+})
+Then('I should Enter Building Abbreviation and Select Default building', () => {
+    build.enterBuildingAb()
+    build.selectDefaultBuilding()
+})
+And('Enter Billing Id, Shipping Address and select from dropdown', () => {
+    build.enterBuilingId()
+    build.enterShippingAddress()
+})
+Then('Click on checkbox Same as Shipping Address', () => {
+    build.clickOnCheckbox()
+})
+And('Click on save button', () => {
+    build.clickOnSaveButton()
+})
+Then('Verify the builing details added in table', () => {
+    build.verifyNewBuilding()
+})
+And('Click on Delete Icon of building', () => {
+    build.clickOnDeleteIcon()
+})
+Then('Click on Confirm Delete button of building', () => {
+    build.clickOnConfirmDeleteButton()
+})
+And('Verify the record is deleted successfully of building', () => {
+    build.verifyDelete()
+})
+And('Click on Edit Icon of builing', () => {
+    build.clickOnEditIcon()
+})
+And('I should edit Building Name,Phone and Extension of builing', () => {
+    build.editBuildingName()
+    build.editPhone()
+    build.editExtension()
+})
+Then('I should edit Select Default building', () => {
+    build.editselectDefaultBuilding()
+})
+Then('Click on update button of builing', () => {
+    build.clickOnUpdateButton()
+})
+And('Verify the Record has been updated Meassage of builing', () => {
+    build.verifyBuildingUpdated()
+})
 And('Click on Export To CSV', () => {
     build.clickOnExport()
 })
