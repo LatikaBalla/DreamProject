@@ -12,6 +12,12 @@ Feature: OrgUploadAssets Page Functionality
 
     Scenario:Add Asset, Search, Edit and Delete Asset
         And Verify the Title of OrgUploadAssets Page
+        Then I should click on Add Asset
+        Then Enter title, full name location and tag
+        And Enter note, Type and description
+        Then Upload the image file
+        And Click on save button
+        Then Verify the asset details added in table
         And Click on filter of Description contain in search box and Verify the Result
         And Click on filter of Description Does not contain in search box and Verify the Result
         And Click on filter of Description Equals in search box and Verify the Result
@@ -38,12 +44,6 @@ Feature: OrgUploadAssets Page Functionality
         And Click on filter of Location Blank in search box and Verify the Result
         And Click on filter of Location Not blank in search box and Verify the Result
 
-        Then I should click on Add Asset
-        Then Enter title, full name location and tag
-        And Enter note, Type and description
-        Then Upload the image file
-        And Click on save button
-        Then Verify the asset details added in table
         And Click on Edit button
         Then I should edit title, full name location and tag
         And I should edit note, Type and description

@@ -320,7 +320,7 @@
         "apply": "button[ref='applyFilterButton']"
     },
     "loanerManagement": {
-        "table": ".css-1xz8d5v",
+        "table": "[role='treegrid']",
         "search": "[placeholder='Search by table field values']",
         "searchAbove": "[placeholder='Search ']",
         "addstudent": "[data-testid='checkoutFilter']",

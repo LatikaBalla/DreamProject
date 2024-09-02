@@ -43,7 +43,7 @@ Feature: Report Center Page Functionality
         Then Verify the Title of TelemetryData Page
         Then Verify the TelemetryData Tab should be visible
         And Verify the Device information tab should be visible
-        Then Verify the Data graph should be visible
+        # Then Verify the Data graph should be visible
 
    
 

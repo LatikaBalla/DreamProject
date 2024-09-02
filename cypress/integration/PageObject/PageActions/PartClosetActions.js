@@ -100,14 +100,16 @@ export class PartClosetActions {
         dash.messageElement().should('contain', 'Part Closet Item created')
     }
     clickOnOrderMore() {
+        cy.wait(100)
         cy.get('[type="button"]').contains('Order More').eq(0).click({ force: true })
     }
     enterQuantityMore() {
+
         cy.get('[placeholder="Quantity"]').type('10')
         cy.contains('Submit Request').click({ force: true })
     }
     verifyRequestQuantity() {
-      //  dash.messageElement().should('contain', 'Request for more parts sent')
+      //dash.messageElement().should('contain', 'Request for more parts sent')
     }
     //PN
     selectFilterPartName() {
@@ -564,7 +566,7 @@ export class PartClosetActions {
         pc.fieldValueElement().type(tdata.partCloset.quantity, { force: true })
         pc.applyElement().click({ force: true })
         cy.wait(100)
-        cy.get('.ag-row-first> [col-id="quantity"]').then(($el) => {
+        cy.get('.ag-row-first> [col-id="quantity"]').eq(1).then(($el) => {
             const value = parseInt($el.text());
             expect(value).to.equal(2);
         })

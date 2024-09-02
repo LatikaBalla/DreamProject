@@ -16,6 +16,8 @@ Then('Close the terms of service window', () => {
     fv.closeTermsOfServiceWindow()
 })
 And('Click on Favorite page', () => {
+    cy.wait(8000)
+    acc.closeTermsOfServiceWindow()
     cy.wait(1000)
     cy.contains('demo_adminsuper@vivacitytech.com').click({ force: true })
     fv.clickOnFavorite()

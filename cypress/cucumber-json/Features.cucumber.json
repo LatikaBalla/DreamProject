@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3994000000
+              "duration": 2638000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6755000000
+              "duration": 6500000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 14208000000
+              "duration": 14200000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of Features Page",
             "result": {
               "status": "passed",
-              "duration": 906000000
+              "duration": 419000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the Under Consideration Tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 7000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Verify the Scheduled tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 6000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Verify the Launched tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 5000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Verify the Under Construction tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 6000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Verify the Roadmap tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 8000000
             }
           }
         ]

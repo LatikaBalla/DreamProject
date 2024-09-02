@@ -344,6 +344,7 @@ export class RepairTicketsActions {
         rt.clearFilterElement().click({ force: true })
     }
     filterBlankSN() {
+        cy.wait(1000)
         rt.addFilterElement().eq(2).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(6).click({ force: true })
