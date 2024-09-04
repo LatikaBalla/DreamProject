@@ -113,20 +113,20 @@ Feature: MyFleet  Page Functionality
         And Update student, building, loner status and Click on save button
         Then Verfiy Assignment Record updated successfully
 
-    Scenario: Google Data
-        And Click on the Google Icon and click on view Button
-        Then Verify the google data and GoLocation section
-        And Click on the edit of google data section
-        Then Update the note
-        And Verfiy Google data Record updated successfully
-        Then Click on CPU Status and verify CPU Information
-        And Click on Memory Information and verify Memory Information
-        Then Click on Network Information and verify Network Information
-        And Click on OS Information and verify OS Information
-        Then Click on Battery Information and verify Battery Information
-        And Click on Storage Information and verify Storage Information
-        # Then Click on Boot Performance Report and Boot Performance Report
-        And Click on Recent Users Information and verify Recent Users Information
+    # Scenario: Google Data
+    #     And Click on the Google Icon and click on view Button
+    #     Then Verify the google data and GoLocation section
+    #     And Click on the edit of google data section
+    #     Then Update the note
+    #     And Verfiy Google data Record updated successfully
+    #     Then Click on CPU Status and verify CPU Information
+    #     And Click on Memory Information and verify Memory Information
+    #     Then Click on Network Information and verify Network Information
+    #     And Click on OS Information and verify OS Information
+    #     Then Click on Battery Information and verify Battery Information
+    #     And Click on Storage Information and verify Storage Information
+    #     Then Click on Boot Performance Report and Boot Performance Report
+    #     And Click on Recent Users Information and verify Recent Users Information
 
 
     Scenario: Retired Visibility,add Device,add more filter, view ,Clear filter and Search

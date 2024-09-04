@@ -76,7 +76,7 @@ export class NonWarrantyRepairsActions {
       cy.get('tr td').eq(1).should('contain', tdata.nonwarrantyRepairs.ticketno)
    }
    verifyRapairTicketPAge() {
-     cy.wait(1000)
+     cy.wait(3000)
       cy.contains('Repair Ticket Details').should('be.visible')
    }
    clickOnClearButton() {

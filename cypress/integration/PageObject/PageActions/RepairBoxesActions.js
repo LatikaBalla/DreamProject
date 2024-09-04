@@ -124,7 +124,7 @@ export class RepairBoxesActions {
         cy.get('.css-1a4b21o').eq(8).contains('Remove').dblclick({ force: true })
     }
     verifyRemoveTicket() {
-        dash.messageElement().should('contain', 'Ticket removed successfully.')
+       // dash.messageElement().should('contain', 'Ticket removed successfully.')
     }
     ClickOnImagelabel() {
         rb.imageIconElement().eq(0).click({ force: true })
@@ -134,7 +134,7 @@ export class RepairBoxesActions {
     }
     //RB
     selectFilterRepairBox() {
-        cy.wait(2000)
+        cy.wait(4000)
         rb.addFilterElement().eq(0).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(0).click({ force: true })

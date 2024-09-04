@@ -82,7 +82,7 @@ export class InHouseTicketsActions {
         iht.addlineElement().click({ force: true })
         iht.custompartElemnet().click({ force: true })
         iht.partElement().click({ force: true })
-        cy.get('[role="listbox"]').contains("Corey's Custom Part C").click({ force: true })
+        cy.get('[role="listbox"]').contains("System Board").click({ force: true })
         iht.noteElement().type('Testing line', { force: true })
         iht.createlineElement().contains('Create Line Item').click({ force: true })
         // dash.messageElement().should('contain', 'Line Item Created')       
@@ -115,7 +115,6 @@ export class InHouseTicketsActions {
         });
         cy.get('body').type('{ctrl}t');
         cy.visit("/repair-360/inHouse-detail/" + tdata.inHouseTicket.recordid, { visitTimeout: 30000 })
-
     }
     verifySrcRepairTicket() {
         cy.wait(2000)
@@ -154,7 +153,7 @@ export class InHouseTicketsActions {
        // dash.messageElement().should('contain', tdata.inHouseTicket.updateRole)
     }
     filtercontainRI() {
-        cy.wait(2000)
+        cy.wait(4000)
         iht.addFilterElement().eq(0).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(0).click({ force: true })

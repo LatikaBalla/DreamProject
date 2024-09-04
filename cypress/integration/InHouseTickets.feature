@@ -13,6 +13,12 @@ Feature:InHouseTickets Page Functionality
 
   Scenario: Visiblity check, Create a ticket and download export
     And Verify the Title of InHouseTickets Page
+     Then I should click on Create new button
+    And Select failure Type, Serial Device, Technician, issue and Building
+    Then Enter the Chromebook issue
+    And Click on save button
+    Then Verify New Ticket is added
+
     And Click on filter of Record Id contain in search box and Verify the Result
     And Click on filter of Record Id Does not contain in search box and Verify the Result
     And Click on filter of Record Id Equals in search box and Verify the Result
@@ -122,11 +128,7 @@ Feature:InHouseTickets Page Functionality
     And Click on filter of Created By Blank in search box and Verify the Result
     And Click on filter of Created By Not blank in search box and Verify the Result
 
-    Then I should click on Create new button
-    And Select failure Type, Serial Device, Technician, issue and Building
-    Then Enter the Chromebook issue
-    And Click on save button
-    Then Verify New Ticket is added
+   
     And Click on Download Export button
     And Click on view button
     Then Verify the Details of student repair ticket

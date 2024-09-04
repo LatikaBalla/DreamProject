@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1936000000
+              "duration": 4968000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5374000000
+              "duration": 35130000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 20249000000
+              "duration": 20189000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on StudentRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 1137000000
+              "duration": 1383000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click on SrcFacilitators tab",
             "result": {
               "status": "passed",
-              "duration": 62000000
+              "duration": 68000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Click on filter of Full name contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3657000000
+              "duration": 3643000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click on filter of Full name Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 633000000
+              "duration": 622000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on filter of Full name Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 631000000
+              "duration": 621000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on filter of Full name Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 621000000
+              "duration": 618000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on filter of Full name Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 575000000
+              "duration": 569000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on filter of Full name Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 569000000
+              "duration": 533000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on filter of Full name Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 495000000
+              "duration": 467000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click on filter of Full name Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 649000000
+              "duration": 599000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on filter of Title contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2615000000
+              "duration": 2661000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click on filter of Title Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 583000000
+              "duration": 586000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on filter of Title Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 611000000
+              "duration": 582000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click on filter of Title Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 706000000
+              "duration": 601000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on filter of Title Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 553000000
+              "duration": 515000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on filter of Title Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 572000000
+              "duration": 534000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Click on filter of Title Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 498000000
+              "duration": 469000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Click on filter of Title Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 591000000
+              "duration": 577000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Click on filter of Eamil contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 4018000000
+              "duration": 3973000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Click on filter of Eamil Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 971000000
+              "duration": 959000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Click on filter of Eamil Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1001000000
+              "duration": 964000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Click on filter of Eamil Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 984000000
+              "duration": 960000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Click on filter of Eamil Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 549000000
+              "duration": 522000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "Click on filter of Eamil Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 652000000
+              "duration": 600000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "Click on filter of Eamil Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 510000000
+              "duration": 484000000
             }
           },
           {
@@ -323,7 +323,7 @@
             "name": "Click on filter of Eamil Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 983000000
+              "duration": 960000000
             }
           },
           {
@@ -333,7 +333,7 @@
             "name": "Click on filter of User status contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2605000000
+              "duration": 2573000000
             }
           },
           {
@@ -343,7 +343,7 @@
             "name": "Click on filter of User status Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 605000000
+              "duration": 644000000
             }
           },
           {
@@ -353,7 +353,7 @@
             "name": "Click on filter of User status Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 598000000
+              "duration": 567000000
             }
           },
           {
@@ -363,7 +363,7 @@
             "name": "Click on filter of User status Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 617000000
+              "duration": 573000000
             }
           },
           {
@@ -373,7 +373,7 @@
             "name": "Click on filter of User status Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 559000000
+              "duration": 535000000
             }
           },
           {
@@ -383,7 +383,7 @@
             "name": "Click on filter of User status Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 563000000
+              "duration": 550000000
             }
           },
           {
@@ -393,7 +393,7 @@
             "name": "Click on filter of User status Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 533000000
+              "duration": 501000000
             }
           },
           {
@@ -403,7 +403,7 @@
             "name": "Click on filter of User status Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 576000000
+              "duration": 561000000
             }
           },
           {
@@ -413,7 +413,7 @@
             "name": "Click on filter of Phone No contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3672000000
+              "duration": 3635000000
             }
           },
           {
@@ -423,7 +423,7 @@
             "name": "Click on filter of Phone No Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 655000000
+              "duration": 600000000
             }
           },
           {
@@ -433,7 +433,7 @@
             "name": "Click on filter of Phone No Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 681000000
+              "duration": 617000000
             }
           },
           {
@@ -443,7 +443,7 @@
             "name": "Click on filter of Phone No Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 656000000
+              "duration": 615000000
             }
           },
           {
@@ -453,7 +453,7 @@
             "name": "Click on filter of Phone No Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 616000000
+              "duration": 559000000
             }
           },
           {
@@ -463,7 +463,7 @@
             "name": "Click on filter of Phone No Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 630000000
+              "duration": 559000000
             }
           },
           {
@@ -473,7 +473,7 @@
             "name": "Click on filter of Phone No Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 552000000
+              "duration": 513000000
             }
           },
           {
@@ -483,7 +483,7 @@
             "name": "Click on filter of Phone No Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 947000000
+              "duration": 605000000
             }
           },
           {
@@ -493,7 +493,7 @@
             "name": "Click on filter of Last Modified Date Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 690000000
+              "duration": 641000000
             }
           },
           {
@@ -503,7 +503,7 @@
             "name": "Click on filter of Last Modified Date Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 666000000
+              "duration": 619000000
             }
           },
           {
@@ -513,7 +513,7 @@
             "name": "Click on filter of Last Modified Date Before in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 663000000
+              "duration": 657000000
             }
           },
           {
@@ -523,7 +523,7 @@
             "name": "Click on filter of Last Modified Date After in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 681000000
+              "duration": 627000000
             }
           },
           {
@@ -533,7 +533,7 @@
             "name": "Click on filter of Last Modified Date Between with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 959000000
+              "duration": 881000000
             }
           },
           {
@@ -543,7 +543,7 @@
             "name": "Click on filter of Last Modified Date Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 697000000
+              "duration": 644000000
             }
           },
           {
@@ -553,7 +553,7 @@
             "name": "Click on filter of Last Modified Date Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 713000000
+              "duration": 652000000
             }
           },
           {
@@ -563,7 +563,7 @@
             "name": "Click on Download Export button",
             "result": {
               "status": "passed",
-              "duration": 100000000
+              "duration": 83000000
             }
           }
         ]

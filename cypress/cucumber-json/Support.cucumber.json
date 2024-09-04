@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2486000000
+              "duration": 2655000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6820000000
+              "duration": 9756000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 14216000000
+              "duration": 14185000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Support page",
             "result": {
               "status": "passed",
-              "duration": 1204000000
+              "duration": 1148000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of Support Page",
             "result": {
               "status": "passed",
-              "duration": 399000000
+              "duration": 992000000
             }
           }
         ]

@@ -90,13 +90,10 @@ export class MyFleetActions {
    }
    clickOnViewButton() {
       cy.wait(5000)
-      //cy.get('tbody tr').eq(0).find('td').eq(8).scrollIntoView().contains("View").click({ force: true })
-      mf.viewElement().click({ force: true })
+      mf.viewElement().click({ force: true }); 
    }
-   verifyViewResult() {
-      //  cy.get('.css-tolxbf').should('be.visible', { force: true })
+   verifyViewResult() { 
       cy.contains('General Info').should('be.visible', { force: true })
-      // cy.contains(tdata.myFleet.serialno).should('be.visible',{ force: true })
    }
    verifyViewResult1() {
       cy.contains(tdata.myFleet.serialno1).should('be.visible', { force: true })
@@ -122,11 +119,9 @@ export class MyFleetActions {
    selectLonarStatus() {
       mf.lonarstatusElement().click()
       cy.get('.MuiList-root > [tabindex="0"]').click()
-      // cy.get(tdata.myFleet.loanarstatus).click()
    }
    selectDeviceStatus() {
       mf.devicestatusElement().click()
-      //  cy.get('.MuiList-root > [tabindex="0"]').click()
       cy.get(tdata.myFleet.devicestatus).click({ force: true })
    }
    clickOnsubmitButton() {
@@ -142,7 +137,7 @@ export class MyFleetActions {
       mf.fieldOpElement().eq(0).click({ force: true })
       mf.fieldValueElement().type(tdata.myFleet.searchG)
       mf.applyElement().click({ force: true })
-      cy.get('[src="/static/media/G.62bb109f219295189cc1.png"]').eq(0).dblclick({ force: true })
+      cy.get('#cell-button-120 > .MuiBox-root > .MuiButtonBase-root').dbclick({ force: true })
    }
    verifyGoogleGolocation() {
       cy.contains('Google Data').should('be.visible')
@@ -226,7 +221,7 @@ export class MyFleetActions {
       cy.get('[type="button"]').contains('Boot Performance Report').click({ force: true })
    }
    verifyBootPerformanceReport() {
-      cy.get('.css-4c2hj7').contains('Boot Performance Report').should('be.visible', { force: true })
+      cy.get('.css-15j76c0').contains('Boot Performance Report').should('be.visible', { force: true })
    }
    clickOnRecentUser() {
       cy.get('[type="button"]').contains('Recent User').click({ force: true })

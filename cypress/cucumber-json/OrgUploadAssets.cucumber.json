@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1873000000
+              "duration": 1697000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 4750000000
+              "duration": 9952000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 15209000000
+              "duration": 15182000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 75000000
+              "duration": 70000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on OrgUploadAssets Tab",
             "result": {
               "status": "passed",
-              "duration": 891000000
+              "duration": 1629000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of OrgUploadAssets Page",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 12000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I should click on Add Asset",
             "result": {
               "status": "passed",
-              "duration": 708000000
+              "duration": 779000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Enter title, full name location and tag",
             "result": {
               "status": "passed",
-              "duration": 402000000
+              "duration": 385000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Enter note, Type and description",
             "result": {
               "status": "passed",
-              "duration": 530000000
+              "duration": 526000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Upload the image file",
             "result": {
               "status": "passed",
-              "duration": 463000000
+              "duration": 442000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 68000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Verify the asset details added in table",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 1000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on filter of Description contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3761000000
+              "duration": 3743000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on filter of Description Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 749000000
+              "duration": 720000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click on filter of Description Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 744000000
+              "duration": 716000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on filter of Description Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 736000000
+              "duration": 717000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click on filter of Description Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 545000000
+              "duration": 522000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on filter of Description Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 548000000
+              "duration": 521000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click on filter of Description Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 497000000
+              "duration": 464000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on filter of Description Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 717000000
+              "duration": 692000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on filter of Acquire Date Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2651000000
+              "duration": 2630000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Click on filter of Acquire Date Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 630000000
+              "duration": 607000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Click on filter of Acquire Date Before in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 630000000
+              "duration": 595000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Click on filter of Acquire Date After in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 692000000
+              "duration": 598000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Click on filter of Acquire Date Between with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 898000000
+              "duration": 858000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Click on filter of Acquire Date Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 601000000
+              "duration": 576000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Click on filter of Acquire Date Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 616000000
+              "duration": 589000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Click on filter of Location contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1593000000
+              "duration": 1562000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "Click on filter of Location Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 582000000
+              "duration": 569000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "Click on filter of Location Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 585000000
+              "duration": 544000000
             }
           },
           {
@@ -323,7 +323,7 @@
             "name": "Click on filter of Location Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 575000000
+              "duration": 553000000
             }
           },
           {
@@ -333,7 +333,7 @@
             "name": "Click on filter of Location Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 538000000
+              "duration": 505000000
             }
           },
           {
@@ -343,7 +343,7 @@
             "name": "Click on filter of Location Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 562000000
+              "duration": 519000000
             }
           },
           {
@@ -353,7 +353,7 @@
             "name": "Click on filter of Location Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 507000000
+              "duration": 471000000
             }
           },
           {
@@ -363,7 +363,7 @@
             "name": "Click on filter of Location Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 570000000
+              "duration": 529000000
             }
           },
           {
@@ -373,7 +373,7 @@
             "name": "Click on Edit button",
             "result": {
               "status": "passed",
-              "duration": 2783000000
+              "duration": 2751000000
             }
           },
           {
@@ -383,7 +383,7 @@
             "name": "I should edit title, full name location and tag",
             "result": {
               "status": "passed",
-              "duration": 528000000
+              "duration": 494000000
             }
           },
           {
@@ -393,7 +393,7 @@
             "name": "I should edit note, Type and description",
             "result": {
               "status": "passed",
-              "duration": 1480000000
+              "duration": 1415000000
             }
           },
           {
@@ -403,7 +403,7 @@
             "name": "ReUpload the image file",
             "result": {
               "status": "passed",
-              "duration": 37000000
+              "duration": 24000000
             }
           },
           {
@@ -413,7 +413,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 78000000
+              "duration": 71000000
             }
           },
           {
@@ -423,7 +423,7 @@
             "name": "Verify the Record has been updated Meassage",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 2000000
             }
           },
           {
@@ -433,7 +433,7 @@
             "name": "Click on Delete button",
             "result": {
               "status": "passed",
-              "duration": 3903000000
+              "duration": 3865000000
             }
           },
           {
@@ -443,7 +443,7 @@
             "name": "Click on Confirm Delete button",
             "result": {
               "status": "passed",
-              "duration": 75000000
+              "duration": 70000000
             }
           },
           {
@@ -453,7 +453,7 @@
             "name": "Verify the record is deleted successfully",
             "result": {
               "status": "passed",
-              "duration": 375000000
+              "duration": 324000000
             }
           }
         ]
