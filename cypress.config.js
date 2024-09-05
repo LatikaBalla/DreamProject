@@ -21,6 +21,7 @@ module.exports = defineConfig({
       PASSWORD: 'VIVA!dreamdemo'
      },
     "reporter": "cypress-mochawesome-reporter",
+    "video": false,
     "reporterOptions": {
       "reportDir": "cypress/report",
       "saveHtml": true,

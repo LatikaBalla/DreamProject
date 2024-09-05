@@ -82,7 +82,7 @@ export class InHouseTicketsActions {
         iht.addlineElement().click({ force: true })
         iht.custompartElemnet().click({ force: true })
         iht.partElement().click({ force: true })
-        cy.get('[role="listbox"]').contains("System Board").click({ force: true })
+        cy.get('[role="listbox"]').contains("Corey's Custom Part D").click({ force: true })
         iht.noteElement().type('Testing line', { force: true })
         iht.createlineElement().contains('Create Line Item').click({ force: true })
         // dash.messageElement().should('contain', 'Line Item Created')       

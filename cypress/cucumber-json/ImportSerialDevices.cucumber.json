@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2357000000
+              "duration": 2242000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7428000000
+              "duration": 6573000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 14183000000
+              "duration": 14237000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on ImportSerialDevices Tab",
             "result": {
               "status": "passed",
-              "duration": 997000000
+              "duration": 1307000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of ImportSerialDevices Page",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 13000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Click on filter of Date Imported Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1902000000
+              "duration": 1464000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Click on filter of Date Imported Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 594000000
+              "duration": 629000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click on filter of Date Imported Before in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 633000000
+              "duration": 613000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on filter of Date Imported After in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 636000000
+              "duration": 628000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on filter of Date Imported Between with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 892000000
+              "duration": 896000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on filter of Date Imported Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 616000000
+              "duration": 603000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on filter of Date Imported Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 626000000
+              "duration": 641000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on filter of Importer contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1949000000
+              "duration": 1945000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click on filter of Importer Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1336000000
+              "duration": 1309000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on filter of Importer Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 970000000
+              "duration": 944000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click on filter of Importer Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 968000000
+              "duration": 963000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on filter of Importer Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 539000000
+              "duration": 546000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on filter of Importer Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 492000000
+              "duration": 516000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on filter of Importer Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 915000000
+              "duration": 967000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Click on filter of Quantity Devices Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2528000000
+              "duration": 2538000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Click on filter of Quantity Devices Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 571000000
+              "duration": 646000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Click on filter of Quantity Devices Greater than in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 601000000
+              "duration": 683000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Click on filter of Quantity Devices Greater than or equal to in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 580000000
+              "duration": 662000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Click on filter of Quantity Devices Less than in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 581000000
+              "duration": 676000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Click on filter of Quantity Devices Less than or equal to in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 567000000
+              "duration": 657000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Click on filter of Quantity Devices Between in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 670000000
+              "duration": 720000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "Click on filter of Quantity Devices Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 650000000
+              "duration": 658000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "Click on filter of Quantity Devices Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 591000000
+              "duration": 679000000
             }
           },
           {
@@ -323,7 +323,7 @@
             "name": "Click on the download import",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 6000000
             }
           },
           {
@@ -333,7 +333,7 @@
             "name": "Verfiy the downloaded successfully",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 2000000
             }
           },
           {
@@ -343,7 +343,7 @@
             "name": "I should click on Add New Import",
             "result": {
               "status": "passed",
-              "duration": 113000000
+              "duration": 154000000
             }
           },
           {
@@ -353,7 +353,7 @@
             "name": "Upload the CSV import file",
             "result": {
               "status": "passed",
-              "duration": 262000000
+              "duration": 282000000
             }
           },
           {
@@ -363,7 +363,7 @@
             "name": "Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 2102000000
+              "duration": 2095000000
             }
           },
           {
@@ -373,7 +373,7 @@
             "name": "Click on Details button",
             "result": {
               "status": "passed",
-              "duration": 318000000
+              "duration": 224000000
             }
           },
           {
@@ -383,7 +383,7 @@
             "name": "Verify the Device Details",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 14000000
             }
           }
         ]

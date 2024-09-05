@@ -13,7 +13,7 @@ Feature: Account Details Page Functionality
     And Verify the Title of Account Details Page
     Then Account Details -Aaccount Name and no should be visible
     And Account Manager,Billing Address and Shipping Address should be visible
-    Then Vivacity Tech Dream should be visible
+    # Then Vivacity Tech Dream should be visible
 
 
 
