@@ -1,5 +1,4 @@
 record_id,full_name,email,phone,user_role,organizational_unit,user_status
-820,Shyama Dutta,sdutta@vivacitytech.com,,2,,Active
 24654,nathanbirchtest555555@vivacitytech.com,nathanbirchtest555555@vivacitytech.com,,8,,Active
 1061,test,SName2333@example.com,7894564458,7,,Active
 1062,test,mn@gmail.com,7894564458,5,,Active
@@ -14,7 +13,6 @@ record_id,full_name,email,phone,user_role,organizational_unit,user_status
 23570,Johnny Smith,Johnny.Smith@example.com,,1,,Active
 23583,Faithful,bria@gedu.demo.vivacitytech.com,,6,,Active
 2019,Jesus Del Barrio Sanchez,jdelbarriosanchez@vivacitytech.com,,7,,Active
-24820,Admin Backup,admin@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees/Admins,
 24821,Allen McNorrill,amcnorrill@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees/Admins,
 24822,Andy Warhol,andy.warhol@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users,
 24823,Arun Sebastian,asebastian@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees/Devs,
@@ -310,5 +308,13 @@ record_id,full_name,email,phone,user_role,organizational_unit,user_status
 2345,demo_practicestudent@vivacitytech.com,demo_practicestudent@vivacitytech.com,,11,,Active
 1123,demo_adminsuper@vivacitytech.com,demo_adminsuper@vivacitytech.com,9090909090,2,,Active
 111237,Dream Admin,1725536131560@gmail.com,9999999999,6,,Active
+111239,Dream Admin,1726066653326@gmail.com,9999999999,6,,Active
+111241,Demo Student,1726068646950@gmail.com,1231231231,1,,Active
 111235,Demo Student,1725517221925@gmail.com,1231231231,1,,Active
+24820,Demo Testing Edit,admin@gedu.demo.vivacitytech.com,8888888888,4,,Inactive
+111240,Dream Admin,1726067012874@gmail.com,9999999999,6,,Active
+111242,Demo Student,1726119762281@gmail.com,1231231231,1,,Active
 111236,Dream Admin,1725535998432@gmail.com,9999999999,6,,Active
+111238,Dream Admin,1726066042492@gmail.com,9999999999,6,,Active
+820,Demo Testing Edit,sdutta@vivacitytech.com,8888888888,4,,Inactive
+111243,Dream Admin,1726119905610@gmail.com,9999999999,6,,Active

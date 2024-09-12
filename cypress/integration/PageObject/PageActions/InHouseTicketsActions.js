@@ -80,7 +80,8 @@ export class InHouseTicketsActions {
     }
     clickOnAddLine() {
         iht.addlineElement().click({ force: true })
-        iht.custompartElemnet().click({ force: true })
+        cy.get('.css-aqrc0a').click({ force: true })
+       // iht.custompartElemnet().click({ force: true })
         iht.partElement().click({ force: true })
         cy.get('[role="listbox"]').contains("Corey's Custom Part D").click({ force: true })
         iht.noteElement().type('Testing line', { force: true })

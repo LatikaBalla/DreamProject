@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2743000000
+              "duration": 4518000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9892000000
+              "duration": 19146000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 14198000000
+              "duration": 14180000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 89000000
+              "duration": 79000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on RepairBoxes Tab",
             "result": {
               "status": "passed",
-              "duration": 1404000000
+              "duration": 1120000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of RepairBoxes Page",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 13000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Click on filter of Repair Box Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 4653000000
+              "duration": 4620000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Click on filter of Repair Box Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 628000000
+              "duration": 596000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click on filter of Repair Box Greater than in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 611000000
+              "duration": 607000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on filter of Repair Box Greater than or equal to in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 600000000
+              "duration": 599000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on filter of Repair Box Less than in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 687000000
+              "duration": 686000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on filter of Repair Box Less than or equal to in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 686000000
+              "duration": 685000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on filter of Repair Box Between in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1816000000
+              "duration": 1801000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on filter of Repair Box Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 657000000
+              "duration": 638000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click on filter of Repair Box Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 645000000
+              "duration": 660000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on filter of Tracking Number contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1779000000
+              "duration": 1761000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click on filter of Tracking Number Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 778000000
+              "duration": 718000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on filter of Tracking Number Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 785000000
+              "duration": 749000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click on filter of Tracking Number Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 713000000
+              "duration": 722000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on filter of Tracking Number Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 574000000
+              "duration": 568000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on filter of Tracking Number Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 683000000
+              "duration": 659000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Click on filter of Tracking Number Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 520000000
+              "duration": 515000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Click on filter of Tracking Number Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 755000000
+              "duration": 738000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Click on filter of Shipped From Date Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 733000000
+              "duration": 672000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Click on filter of Shipped From Date Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 626000000
+              "duration": 622000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Click on filter of Shipped From Date Before in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 719000000
+              "duration": 721000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Click on filter of Shipped From Date After in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 632000000
+              "duration": 612000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Click on filter of Shipped From Date Between with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 920000000
+              "duration": 907000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "Click on filter of Shipped From Date Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 648000000
+              "duration": 633000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "Click on filter of Shipped From Date Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 599000000
+              "duration": 598000000
             }
           },
           {
@@ -323,7 +323,7 @@
             "name": "Click on filter of Building contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 733000000
+              "duration": 705000000
             }
           },
           {
@@ -333,7 +333,7 @@
             "name": "Click on filter of Building Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 723000000
+              "duration": 711000000
             }
           },
           {
@@ -343,7 +343,7 @@
             "name": "Click on filter of Building Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 781000000
+              "duration": 748000000
             }
           },
           {
@@ -353,7 +353,7 @@
             "name": "Click on filter of Building Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 718000000
+              "duration": 716000000
             }
           },
           {
@@ -363,7 +363,7 @@
             "name": "Click on filter of Building Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 680000000
+              "duration": 673000000
             }
           },
           {
@@ -373,7 +373,7 @@
             "name": "Click on filter of Building Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 674000000
+              "duration": 649000000
             }
           },
           {
@@ -383,7 +383,7 @@
             "name": "Click on filter of Building Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 687000000
+              "duration": 674000000
             }
           },
           {
@@ -393,7 +393,7 @@
             "name": "Click on filter of Building Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 664000000
+              "duration": 672000000
             }
           },
           {
@@ -403,7 +403,7 @@
             "name": "Click on filter of Box_type contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 602000000
+              "duration": 591000000
             }
           },
           {
@@ -413,7 +413,7 @@
             "name": "Click on filter of Box_type Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 706000000
+              "duration": 707000000
             }
           },
           {
@@ -423,7 +423,7 @@
             "name": "Click on filter of Box_type Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 680000000
+              "duration": 669000000
             }
           },
           {
@@ -433,7 +433,7 @@
             "name": "Click on filter of Box_type Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 701000000
+              "duration": 710000000
             }
           },
           {
@@ -443,7 +443,7 @@
             "name": "Click on filter of Box_type Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 632000000
+              "duration": 609000000
             }
           },
           {
@@ -453,7 +453,7 @@
             "name": "Click on filter of Box_type Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 608000000
+              "duration": 620000000
             }
           },
           {
@@ -463,7 +463,7 @@
             "name": "Click on filter of Box_type Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 694000000
+              "duration": 697000000
             }
           },
           {
@@ -473,7 +473,7 @@
             "name": "Click on filter of Box_type Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 689000000
+              "duration": 683000000
             }
           },
           {
@@ -483,7 +483,7 @@
             "name": "Click on filter of Created By contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 994000000
+              "duration": 946000000
             }
           },
           {
@@ -493,7 +493,7 @@
             "name": "Click on filter of Created By Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1416000000
+              "duration": 1454000000
             }
           },
           {
@@ -503,7 +503,7 @@
             "name": "Click on filter of Created By Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1084000000
+              "duration": 1036000000
             }
           },
           {
@@ -513,7 +513,7 @@
             "name": "Click on filter of Created By Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1157000000
+              "duration": 1044000000
             }
           },
           {
@@ -523,7 +523,7 @@
             "name": "Click on filter of Created By Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 710000000
+              "duration": 703000000
             }
           },
           {
@@ -533,7 +533,7 @@
             "name": "Click on filter of Created By Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 896000000
+              "duration": 870000000
             }
           },
           {
@@ -543,7 +543,7 @@
             "name": "Click on filter of Created By Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 747000000
+              "duration": 713000000
             }
           },
           {
@@ -553,7 +553,7 @@
             "name": "Click on filter of Created By Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 869000000
+              "duration": 822000000
             }
           },
           {
@@ -563,7 +563,7 @@
             "name": "Click on filter of shipping_box_status Not Shipped in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2304000000
+              "duration": 2294000000
             }
           },
           {
@@ -573,7 +573,7 @@
             "name": "Click on filter of shipping_box_status Recieved By Vivacity in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 307000000
+              "duration": 250000000
             }
           },
           {
@@ -583,7 +583,7 @@
             "name": "Click on filter of shipping_box_status Shipping From District with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 300000000
+              "duration": 289000000
             }
           },
           {
@@ -593,7 +593,7 @@
             "name": "Click on filter of shipping_box_status all checked with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 462000000
+              "duration": 514000000
             }
           },
           {
@@ -603,7 +603,7 @@
             "name": "Click on filter of Last Modified Date Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 619000000
+              "duration": 621000000
             }
           },
           {
@@ -613,7 +613,7 @@
             "name": "Click on filter of Last Modified Date Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 740000000
+              "duration": 713000000
             }
           },
           {
@@ -623,7 +623,7 @@
             "name": "Click on filter of Last Modified Date Before in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 891000000
+              "duration": 773000000
             }
           },
           {
@@ -633,7 +633,7 @@
             "name": "Click on filter of Last Modified Date After in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 724000000
+              "duration": 693000000
             }
           },
           {
@@ -643,7 +643,7 @@
             "name": "Click on filter of Last Modified Date Between in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 982000000
+              "duration": 944000000
             }
           },
           {
@@ -653,7 +653,7 @@
             "name": "Click on filter of Last Modified Date Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 702000000
+              "duration": 705000000
             }
           },
           {
@@ -663,7 +663,7 @@
             "name": "Click on filter of Last Modified Date Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 689000000
+              "duration": 675000000
             }
           },
           {
@@ -673,7 +673,7 @@
             "name": "Click on label form of image and Verify",
             "result": {
               "status": "passed",
-              "duration": 100000000
+              "duration": 103000000
             }
           },
           {
@@ -683,7 +683,7 @@
             "name": "Click on label form of Pdf and Verify",
             "result": {
               "status": "passed",
-              "duration": 99000000
+              "duration": 100000000
             }
           },
           {
@@ -693,7 +693,7 @@
             "name": "Click on Export Button",
             "result": {
               "status": "passed",
-              "duration": 102000000
+              "duration": 108000000
             }
           },
           {
@@ -703,7 +703,7 @@
             "name": "I should click on create new Box",
             "result": {
               "status": "passed",
-              "duration": 116000000
+              "duration": 103000000
             }
           },
           {
@@ -713,7 +713,7 @@
             "name": "Enter weight and Standard Box Size",
             "result": {
               "status": "passed",
-              "duration": 577000000
+              "duration": 570000000
             }
           },
           {
@@ -723,7 +723,7 @@
             "name": "Select Pick-up site",
             "result": {
               "status": "passed",
-              "duration": 216000000
+              "duration": 187000000
             }
           },
           {
@@ -733,7 +733,7 @@
             "name": "Check the need shipping box",
             "result": {
               "status": "passed",
-              "duration": 154000000
+              "duration": 85000000
             }
           },
           {
@@ -743,7 +743,7 @@
             "name": "Click on Create box button",
             "result": {
               "status": "passed",
-              "duration": 95000000
+              "duration": 177000000
             }
           },
           {
@@ -753,7 +753,7 @@
             "name": "Select Ticket from dropdownlist",
             "result": {
               "status": "passed",
-              "duration": 362000000
+              "duration": 373000000
             }
           },
           {
@@ -763,7 +763,7 @@
             "name": "Click on Finish button",
             "result": {
               "status": "passed",
-              "duration": 105000000
+              "duration": 101000000
             }
           },
           {
@@ -773,7 +773,7 @@
             "name": "Verify new box is added in table",
             "result": {
               "status": "passed",
-              "duration": 2635000000
+              "duration": 2121000000
             }
           },
           {
@@ -783,7 +783,7 @@
             "name": "Click on view button",
             "result": {
               "status": "passed",
-              "duration": 1189000000
+              "duration": 2323000000
             }
           },
           {
@@ -793,7 +793,7 @@
             "name": "Verify the Details new box",
             "result": {
               "status": "passed",
-              "duration": 1932000000
+              "duration": 2120000000
             }
           },
           {
@@ -803,7 +803,7 @@
             "name": "Add another ticket in the same box",
             "result": {
               "status": "passed",
-              "duration": 3082000000
+              "duration": 3088000000
             }
           },
           {
@@ -813,7 +813,7 @@
             "name": "Select Ticket from dropdownlist",
             "result": {
               "status": "passed",
-              "duration": 360000000
+              "duration": 334000000
             }
           },
           {
@@ -823,7 +823,7 @@
             "name": "Click on Add ticket",
             "result": {
               "status": "passed",
-              "duration": 106000000
+              "duration": 100000000
             }
           },
           {
@@ -833,7 +833,7 @@
             "name": "Verify the ticket is added in table",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 18000000
             }
           },
           {
@@ -843,7 +843,7 @@
             "name": "Click on view the ticket Details",
             "result": {
               "status": "passed",
-              "duration": 139000000
+              "duration": 119000000
             }
           },
           {
@@ -853,7 +853,7 @@
             "name": "Verfiy the ticket Details",
             "result": {
               "status": "passed",
-              "duration": 3035000000
+              "duration": 3041000000
             }
           },
           {
@@ -863,7 +863,7 @@
             "name": "Click on Add Repair Image and Verify",
             "result": {
               "status": "passed",
-              "duration": 970000000
+              "duration": 788000000
             }
           },
           {
@@ -873,7 +873,7 @@
             "name": "Click on Add Note and Verify",
             "result": {
               "status": "passed",
-              "duration": 839000000
+              "duration": 821000000
             }
           },
           {
@@ -883,7 +883,7 @@
             "name": "Click on Remove button for deleting ticket",
             "result": {
               "status": "passed",
-              "duration": 2101000000
+              "duration": 1642000000
             }
           },
           {
@@ -893,7 +893,7 @@
             "name": "Verify the ticket removed",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 4000000
             }
           }
         ]

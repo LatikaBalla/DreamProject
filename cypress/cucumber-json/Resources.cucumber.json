@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1598000000
+              "duration": 3988000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7407000000
+              "duration": 12185000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 17234000000
+              "duration": 17194000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of Resources Page",
             "result": {
               "status": "passed",
-              "duration": 451000000
+              "duration": 1151000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Click on Instructions tab",
             "result": {
               "status": "passed",
-              "duration": 61000000
+              "duration": 65000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Verify the provisionDevice Tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 7000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Verify the deprovisionDevice tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 6000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on HowToVideos tab",
             "result": {
               "status": "passed",
-              "duration": 93000000
+              "duration": 94000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on WarrantyInfo tab",
             "result": {
               "status": "passed",
-              "duration": 75000000
+              "duration": 76000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Verify the WarrantyInfo tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 12000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Verify the Title of WarrantyInfo Page",
             "result": {
               "status": "passed",
-              "duration": 29000000
+              "duration": 22000000
             }
           }
         ]

@@ -110,13 +110,8 @@ export class LoanerManagementActions {
     }
     //tag
     filtercontainTag() {
-        // cy.get('[data-testid="ChevronLeftIcon"]').click({force:true})
-        // cy.window().then(win => {
-        //     win.scrollTo(0, win.document.body.scrollHeight);
-        // });
+    cy.get('.ag-body-horizontal-scroll-viewport[ref="eViewport"]').eq(2).click()
         cy.wait(4000)
-        // cy.get('ag-cell-label-container').eq(14).find('[ref="eMenu"]').click({ force: true })
-        //cy.get('.ag-header-active > .ag-header-cell-comp-wrapper > .ag-cell-label-container > .ag-header-cell-menu-button > .ag-icon').click({ force: true })
         loan.addFilterElement().eq(10).scrollIntoView().click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(0).click({ force: true })

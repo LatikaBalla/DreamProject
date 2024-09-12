@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2967000000
+              "duration": 8879000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6967000000
+              "duration": 10090000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 15297000000
+              "duration": 15247000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on My Account Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 70000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of Account Details Page",
             "result": {
               "status": "passed",
-              "duration": 1167000000
+              "duration": 1114000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Account Details -Aaccount Name and no should be visible",
             "result": {
               "status": "passed",
-              "duration": 680000000
+              "duration": 893000000
             }
           },
           {
@@ -81,6 +81,16 @@
             "keyword": "And ",
             "line": 15,
             "name": "Account Manager,Billing Address and Shipping Address should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Vivacity Tech Dream should be visible",
             "result": {
               "status": "passed",
               "duration": 8000000

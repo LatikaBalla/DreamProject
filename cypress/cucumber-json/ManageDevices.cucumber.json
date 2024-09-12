@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2473000000
+              "duration": 2071000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6138000000
+              "duration": 9301000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 17222000000
+              "duration": 17188000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on ManageDevices page",
             "result": {
               "status": "passed",
-              "duration": 78000000
+              "duration": 71000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I should be redirected to theManageDevices page",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 6000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of ManageDevices Page",
             "result": {
               "status": "passed",
-              "duration": 1135000000
+              "duration": 837000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Verify the Loaner Management tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 8000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Verify the Import Serial Devices tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 10000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Verify the Organization Uploaded Assets tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 8000000
             }
           }
         ]

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3526000000
+              "duration": 2618000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7627000000
+              "duration": 11127000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 15231000000
+              "duration": 15186000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 81000000
+              "duration": 79000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on OrgUploadAssets Tab",
             "result": {
               "status": "passed",
-              "duration": 1050000000
+              "duration": 1032000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of OrgUploadAssets Page",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 9000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I should click on Add Asset",
             "result": {
               "status": "passed",
-              "duration": 719000000
+              "duration": 707000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Enter title, full name location and tag",
             "result": {
               "status": "passed",
-              "duration": 396000000
+              "duration": 390000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Enter note, Type and description",
             "result": {
               "status": "passed",
-              "duration": 533000000
+              "duration": 515000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Upload the image file",
             "result": {
               "status": "passed",
-              "duration": 452000000
+              "duration": 444000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 69000000
+              "duration": 73000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on filter of Description contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3754000000
+              "duration": 3741000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on filter of Description Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 731000000
+              "duration": 707000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click on filter of Description Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 733000000
+              "duration": 718000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on filter of Description Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 730000000
+              "duration": 715000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click on filter of Description Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 520000000
+              "duration": 523000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on filter of Description Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 523000000
+              "duration": 525000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click on filter of Description Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 468000000
+              "duration": 466000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on filter of Description Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 696000000
+              "duration": 688000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on filter of Acquire Date Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2639000000
+              "duration": 2630000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Click on filter of Acquire Date Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 620000000
+              "duration": 603000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Click on filter of Acquire Date Before in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 615000000
+              "duration": 605000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Click on filter of Acquire Date After in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 617000000
+              "duration": 608000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Click on filter of Acquire Date Between with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 862000000
+              "duration": 870000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Click on filter of Acquire Date Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 585000000
+              "duration": 580000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Click on filter of Acquire Date Not blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 597000000
+              "duration": 592000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Click on filter of Location contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1573000000
+              "duration": 1564000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "Click on filter of Location Does not contain in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 556000000
+              "duration": 548000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "Click on filter of Location Equals in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 547000000
+              "duration": 552000000
             }
           },
           {
@@ -323,7 +323,7 @@
             "name": "Click on filter of Location Does not equal in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 559000000
+              "duration": 543000000
             }
           },
           {
@@ -333,7 +333,7 @@
             "name": "Click on filter of Location Begins with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 513000000
+              "duration": 511000000
             }
           },
           {
@@ -343,7 +343,7 @@
             "name": "Click on filter of Location Ends with in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 527000000
+              "duration": 524000000
             }
           },
           {
@@ -353,7 +353,7 @@
             "name": "Click on filter of Location Blank in search box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 487000000
+              "duration": 475000000
             }
           },
           {
@@ -373,7 +373,7 @@
             "name": "Click on Edit button",
             "result": {
               "status": "passed",
-              "duration": 2773000000
+              "duration": 2754000000
             }
           },
           {
@@ -383,7 +383,7 @@
             "name": "I should edit title, full name location and tag",
             "result": {
               "status": "passed",
-              "duration": 528000000
+              "duration": 503000000
             }
           },
           {
@@ -393,7 +393,7 @@
             "name": "I should edit note, Type and description",
             "result": {
               "status": "passed",
-              "duration": 1433000000
+              "duration": 1394000000
             }
           },
           {
@@ -403,7 +403,7 @@
             "name": "ReUpload the image file",
             "result": {
               "status": "passed",
-              "duration": 28000000
+              "duration": 29000000
             }
           },
           {
@@ -413,7 +413,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 70000000
             }
           },
           {
@@ -433,7 +433,7 @@
             "name": "Click on Delete button",
             "result": {
               "status": "passed",
-              "duration": 3856000000
+              "duration": 3855000000
             }
           },
           {
@@ -453,7 +453,7 @@
             "name": "Verify the record is deleted successfully",
             "result": {
               "status": "passed",
-              "duration": 873000000
+              "duration": 332000000
             }
           }
         ]

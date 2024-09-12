@@ -128,7 +128,6 @@ Feature:InHouseTickets Page Functionality
     And Click on filter of Created By Blank in search box and Verify the Result
     And Click on filter of Created By Not blank in search box and Verify the Result
 
-   
     And Click on Download Export button
     And Click on view button
     Then Verify the Details of student repair ticket

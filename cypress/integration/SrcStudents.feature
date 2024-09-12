@@ -13,6 +13,12 @@ Feature:SrcStudents Page Functionality
 
     Scenario: Add new Srudent, search and view
         And Verify the Title of SrcStudents Page
+        Then I should click on Add New student
+        Then Enter title, full name and Email
+        And Enter Phone and Cell Number
+        Then Select User Status
+        And Click on submit button
+        Then Verify the student added in table
         And Click on filter of Full name contain in search box and Verify the Result
         And Click on filter of Full name Does not contain in search box and Verify the Result
         And Click on filter of Full name Equals in search box and Verify the Result
@@ -67,12 +73,7 @@ Feature:SrcStudents Page Functionality
         And Click on filter of User Role Blank in search box and Verify the Result
         And Click on filter of User Role Not blank in search box and Verify the Result
 
-        Then I should click on Add New student
-        Then Enter title, full name and Email
-        And Enter Phone and Cell Number
-        Then Select User Status
-        And Click on submit button
-        Then Verify the student added in table
+
         And Click on Download Export button
 
 

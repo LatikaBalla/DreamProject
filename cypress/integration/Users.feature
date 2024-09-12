@@ -16,15 +16,15 @@ Feature:  Users Page Functionality
     And Enter Phone, Cell Number, role and building
     And Click on submit button
     Then Verify the student added in table
-    # And Click on filter of Record Id Equals and Verify the Result
-    # And Click on filter of Record Id Does not equal and Verify the Result
-    # And Click on filter of Record Id Greater than and Verify the Result
-    # And Click on filter of Record Id Greater than or equal to and Verify the Result
-    # And Click on filter of Record Id Less than and Verify the Result
-    # And Click on filter of Record Id Less than or equal to and Verify the Result
-    # And Click on filter of Record Id Between and Verify the Result
-    # And Click on filter of Record Id Blank and Verify the Result
-    # And Click on filter of Record Id Not blank and Verify the Result
+    And Click on filter of Record Id Equals and Verify the Result
+    And Click on filter of Record Id Does not equal and Verify the Result
+    And Click on filter of Record Id Greater than and Verify the Result
+    And Click on filter of Record Id Greater than or equal to and Verify the Result
+    And Click on filter of Record Id Less than and Verify the Result
+    And Click on filter of Record Id Less than or equal to and Verify the Result
+    And Click on filter of Record Id Between and Verify the Result
+    And Click on filter of Record Id Blank and Verify the Result
+    And Click on filter of Record Id Not blank and Verify the Result
 
     And Click on filter of Full name contain and Verify the Result
     And Click on filter of Full name Does not contain and Verify the Result
@@ -64,20 +64,19 @@ Feature:  Users Page Functionality
     And Click on filter of User status Blank and Verify the Result
     And Click on filter of User status Not blank and Verify the Result
 
-    # Then All Organizational Units Search with Devices checkbox
-    # And Verify the result Devices in gird
-    # Then All Organizational Units Search with Google Bootcamp Users checkbox
-    # And Verify the result Google Bootcamp Users in gird
-    # Then All Organizational Units Search with Test OU checkbox
-    # And Verify the result Test OU in gird
-    # Then All Organizational Units Search with VT Employees checkbox
-    # And Verify the result VT Employees in gird
+    Then All Organizational Units Search with Devices checkbox
+    And Verify the result Devices in gird
+    Then All Organizational Units Search with Google Bootcamp Users checkbox
+    And Verify the result Google Bootcamp Users in gird
+    Then All Organizational Units Search with Test OU checkbox
+    And Verify the result Test OU in gird
+    Then All Organizational Units Search with VT Employees checkbox
+    And Verify the result VT Employees in gird
 
     And Click on Export To CSV
-    # Then Click on Bulk Upload button
-    # And Click on Attach CSV file and Click on submit button
+    Then Click on Bulk Upload button
+    And Click on Attach CSV file and Click on submit button
     # Then Verify the Uploaded successfully
-
 
     Then Click on Download button
     And Click on view button and click on Edit button

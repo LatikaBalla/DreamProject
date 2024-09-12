@@ -289,18 +289,18 @@ export class SrcStudentsActions {
         ss.addFilterElement().eq(2).click({ force: true })
         ss.fieldNameElement().eq(1).click({ force: true })
         ss.fieldOpElement().eq(4).click({ force: true })
-        ss.fieldValueElement().eq(0).type('admin')
+        ss.fieldValueElement().eq(0).type('demo')
         ss.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'admin')
+        cy.get('[row-index="0"]').should('contain', 'demo')
         ss.clearFilterElement().click({ force: true })
     }
     filterEndswithE() {
         ss.addFilterElement().eq(2).click({ force: true })
         ss.fieldNameElement().eq(1).click({ force: true })
         ss.fieldOpElement().eq(5).click({ force: true })
-        ss.fieldValueElement().eq(0).type('vivacitytech.com')
+        ss.fieldValueElement().eq(0).type('@gmail.com')
         ss.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'vivacitytech.com')
+        cy.get('[row-index="0"]').should('contain', '@gmail.com')
         ss.clearFilterElement().click({ force: true })
     }
     filterBlankE() {
