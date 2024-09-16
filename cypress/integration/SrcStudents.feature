@@ -72,8 +72,6 @@ Feature:SrcStudents Page Functionality
         And Click on filter of User Role Ends with in search box and Verify the Result
         And Click on filter of User Role Blank in search box and Verify the Result
         And Click on filter of User Role Not blank in search box and Verify the Result
-
-
         And Click on Download Export button
 
 

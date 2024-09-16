@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2555000000
+              "duration": 4088000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7820000000
+              "duration": 4651000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 19173000000
+              "duration": 19247000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 78000000
+              "duration": 83000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on InHouseRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 1230000000
+              "duration": 949000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Filters of InHouseWorkflow should be visible",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 15000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I should click on new button",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 65000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Select failure Type, Serial Device, Technician and repair issue",
             "result": {
               "status": "passed",
-              "duration": 1931000000
+              "duration": 2505000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Select building and Enter the Chromebook issue",
             "result": {
               "status": "passed",
-              "duration": 1022000000
+              "duration": 1241000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 89000000
+              "duration": 93000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Verify New Ticket is added",
             "result": {
               "status": "passed",
-              "duration": 5042000000
+              "duration": 5498000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Enter Search ticket no in search box",
             "result": {
               "status": "passed",
-              "duration": 683000000
+              "duration": 701000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Verify search result below",
             "result": {
               "status": "passed",
-              "duration": 1011000000
+              "duration": 1094000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on view button",
             "result": {
               "status": "passed",
-              "duration": 6209000000
+              "duration": 6887000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Verify the Details of student repair ticket",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 11000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on the Edit Ticket Button",
             "result": {
               "status": "passed",
-              "duration": 4098000000
+              "duration": 4095000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Update the Technician and Repair Status",
             "result": {
               "status": "passed",
-              "duration": 756000000
+              "duration": 765000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on Update Button",
             "result": {
               "status": "passed",
-              "duration": 67000000
+              "duration": 68000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on Add Line and Verify",
             "result": {
               "status": "passed",
-              "duration": 1489000000
+              "duration": 990000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on Add Repair Image and Verify",
             "result": {
               "status": "passed",
-              "duration": 486000000
+              "duration": 525000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Click on Add Note and Verify",
             "result": {
               "status": "passed",
-              "duration": 622000000
+              "duration": 639000000
             }
           }
         ]

@@ -52,7 +52,7 @@ export class RepairBoxesActions {
         rb.checkboxElement().click({ force: true })
     }
     clickOnCreateBoxButton() {
-        cy.get('.MuiDialogActions-root > .MuiButtonBase-root').click({ force: true })
+       cy.get('.MuiDialogActions-root > .MuiButtonBase-root').click({ force: true })
     }
     selectTickets() {
         rb.ticketElement().click()

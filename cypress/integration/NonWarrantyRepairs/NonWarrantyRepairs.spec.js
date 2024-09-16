@@ -53,13 +53,19 @@ And('Verfiy the details of Ticket', () => {
 })
 Then('Click on the download Ticket Estimation button', () => {
     nwr.clickOnDownloadButton()
-    cy.go('back')
+   // cy.go('back')
 })
 And('Click on the download Ticket Estimation button', () => {
     nwr.verifyDownloadSuccessful()
 })
 Then('Click on the export button', () => {
     nwr.clickOnExport()
+})
+Then('Click on Add Repair Image and Verify', () => {
+    nwr.clickOnAddRepairImage()
+})
+And('Click on Add Note and Verify', () => {
+    nwr.clickOnAddNote()
 })
 //RI
 And('Click on filter of Repair Id Equals and Verify the Result', () => {

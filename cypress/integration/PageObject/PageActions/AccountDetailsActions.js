@@ -11,7 +11,7 @@ export class AccountDetailsActions {
     closeTermsOfServiceWindow() {
         cy.wait(1000)
         dash.termsElement().contains('Dismiss').click({ force: true })
-        cy.wait(5000)
+        cy.wait(4000)
         cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }
     clickonAccountDash(){

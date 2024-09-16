@@ -133,4 +133,59 @@ export default class NonWarrantyRepairsElements {
             timeout: 30000,
         })
     }
+    addimageElement() {
+        return cy.contains(locator.nonWarrantyRepairs.addimage, {
+            timeout: 30000,
+        })
+    }
+    addnoteElement() {
+        return cy.contains(locator.nonWarrantyRepairs.addnote, {
+            timeout: 30000,
+        })
+    }
+    noteElement() {
+        return cy.get(locator.nonWarrantyRepairs.note, {
+            timeout: 30000,
+        })
+    }
+    uploadimageElement() {
+        return cy.get(locator.nonWarrantyRepairs.uploadimage, {
+            timeout: 30000,
+        })
+    }
+    imagedescriptionElement() {
+        return cy.get(locator.nonWarrantyRepairs.imagedescription, {
+            timeout: 30000,
+        })
+    }
+    notetypeElement() {
+        return cy.get(locator.nonWarrantyRepairs.notetype, {
+            timeout: 30000,
+        })
+    }
+    createlineElement() {
+        return cy.get(locator.nonWarrantyRepairs.createline, {
+            timeout: 30000,
+        })
+    }
+    updateimageElement() {
+        return cy.get(locator.nonWarrantyRepairs.updateimage, {
+            timeout: 30000,
+        })
+    }
+    createnoteElement() {
+        return cy.get(locator.nonWarrantyRepairs.createnote, {
+            timeout: 30000,
+        })
+    }
+    custompartElemnet() {
+        return cy.contains(locator.nonWarrantyRepairs.custompart, {
+            timeout: 30000,
+        })
+    }
+    partElement() {
+        return cy.get(locator.nonWarrantyRepairs.part, {
+            timeout: 30000,
+        })
+    }
 } 

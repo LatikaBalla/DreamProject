@@ -102,6 +102,21 @@ export class NonWarrantyRepairsActions {
    clickOnExport() {
       cy.contains('Export').click({ force: true })
    }
+   clickOnAddRepairImage() {
+      nwr.addimageElement().click({ force: true })
+      nwr.uploadimageElement().attachFile('image1.jpeg', { force: true })
+      nwr.imagedescriptionElement().type('Testing Image')
+      nwr.updateimageElement().contains('Upload Image').click({ force: true })
+      // dash.messageElement().should('contain', 'Image Created')
+   }
+   clickOnAddNote() {
+      nwr.addnoteElement().click({ force: true })
+      nwr.notetypeElement().click({ force: true })
+      cy.get('[data-value="Quality Assurance"]').click({ force: true })
+      nwr.noteElement().scrollIntoView().type('Testing Note', { force: true })
+      nwr.createnoteElement().contains('Create').click({ force: true })
+      //dash.messageElement().should('contain', 'Ticket updated')
+   }
    //RI
    filtercontainRI() {
       cy.wait(2000)

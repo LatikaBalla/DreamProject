@@ -235,7 +235,18 @@
         "fieldName": "[ref='eDisplayField']",
         "fieldOp": "[role='option']",
         "fieldValue": "[placeholder='Filter...']",
-        "apply": "button[ref='applyFilterButton']"
+        "apply": "button[ref='applyFilterButton']",
+        "addimage": "Add New Repair Image",
+        "addnote": "Add New Note",
+        "note": "#note",
+        "createline": "button[type='submit']",
+        "uploadimage": "#image",
+        "imagedescription": "#image_description",
+        "updateimage": "button[type='submit']",
+        "notetype": "#note_type",
+        "createnote": "button[type='submit']",
+        "part": "#part",
+        "custompart": "Custom Part"
     },
     "manageDevices": {
         "title": "Devices",
