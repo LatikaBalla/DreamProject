@@ -54,10 +54,14 @@ export class InHouseWorkflowActions {
         cy.get('#outbound_address').click({ force: true })
         cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
     }
+    selectStudent(){
+        cy.get('#student_id').click({ force: true })
+        cy.get('#student_id-option-1').click({ force: true })
+    }
     selectRepairissue() {
         ihw.repairissueElement().click({ force: true })
         cy.get(tdata.inHouseWorkflow.repairissue).click({ force: true })
-        cy.get('[data-testid="CloseIcon"]').eq(4).click({ force: true })
+        // cy.get('[data-testid="CloseIcon"]').eq(4).click({ force: true })
     }
     enterChromebookIssue() {
         ihw.chromebookissueElement().type(tdata.inHouseWorkflow.chromebookissue, { force: true })

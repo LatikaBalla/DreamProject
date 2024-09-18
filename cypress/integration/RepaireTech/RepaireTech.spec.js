@@ -64,8 +64,8 @@ Then('Close the terms of service window', () => {
     acc.closeTermsOfServiceWindow()
 })
 Then('I should be redirected to the dashboard page', () => {
-  
-    cy.contains('My Account').click({force:true})
+
+    cy.contains('My Account').click({ force: true })
     cy.url().should('include', '/')
 })
 And('Verify the Title of dashborad Page', () => {
@@ -208,22 +208,22 @@ And('Verify the Launched tab should be visible', () => {
 And('Click on NonwarrantyRepairs page', () => {
     nwr.clickOnNonWarrantyRepairs()
 })
-Then('Select failure Type, Return site and Serial Device of Nwr', () => {
+Then('Select failure Type, Return site and Serial Device of NonwarrantyRepairs', () => {
     nwr.selectFailureType()
     nwr.selectSite()
     nwr.selectSerialDevice()
 })
-And('Select Building and Chromebook issue of Nwr', () => {
+And('Select Building and Chromebook issue of NonwarrantyRepairs', () => {
     //     iht.selectBilding()
     //   nwr.selectRepaireIssue()
 })
-Then('Enter the Describe Your Issue of Nwr', () => {
+Then('Enter the Describe Your Issue of NonwarrantyRepairs', () => {
     nwr.enterChromebookIssue()
 })
-And('Click on save button of Nwr', () => {
+And('Click on save button of NonwarrantyRepairs', () => {
     nwr.clickOnSaveButton()
 })
-Then('Verify New Ticket is added of Nwr', () => {
+Then('Verify New Ticket is added of NonwarrantyRepairs', () => {
     nwr.verifyNewTicket()
 })
 And('Click on PartCloset Tab', () => {
@@ -232,182 +232,182 @@ And('Click on PartCloset Tab', () => {
 Then('I should click on Add New custome part', () => {
     pc.clickOnNewCustomePart()
 })
-Then('Enter part name, manufacture and parent device of pc', () => {
+Then('Enter part name, manufacture and parent device of PartCloset', () => {
     pc.enterPartname()
     pc.enterManufacture()
     pc.enterParentDevice()
 })
-And('Enter part sku and quantity of pc', () => {
+And('Enter part sku and quantity of PartCloset', () => {
     pc.enterPartSKU()
     pc.enterQuantity()
     pc.selectBuilding()
 })
-Then('Click on submit button of pc', () => {
+Then('Click on submit button of PartCloset', () => {
     pc.clickOnSubmitButton()
 })
-And('Verify new custome part is added of pc', () => {
+And('Verify new custome part is added of PartCloset', () => {
     pc.verifyNewPartAdded()
 })
-And('Enter the Search value in search box of pc', () => {
+And('Enter the Search value in search box of PartCloset', () => {
     pc.enterPartSKUSearch()
 })
-Then('Verify the Results in the table of pc', () => {
+Then('Verify the Results in the table of PartCloset', () => {
     pc.verifySearchResult()
 })
-And('Click on delete button of pc', () => {
+And('Click on delete button of PartCloset', () => {
     pc.clickOnDeleteButton()
 })
-Then('Verify the recode is deleted of pc', () => {
+Then('Verify the recode is deleted of PartCloset', () => {
     pc.verifyDeleted()
 })
-And('I should click on Add New VT part of pc', () => {
+And('I should click on Add New VT part of PartCloset', () => {
     pc.clickOnNewVTPart()
 })
-Then('Select device and part name of pc', () => {
+Then('Select device and part name of PartCloset', () => {
     pc.selectDevice()
     pc.selectPartName()
 })
-And('Enter quantity and select building of pc', () => {
+And('Enter quantity and select building of PartCloset', () => {
     pc.enterQuantityVT()
     pc.selectBuilding()
 })
-Then('Click on submit button of pc', () => {
+Then('Click on submit button of PartCloset', () => {
     pc.clickOnSubmitVTButton()
 })
-And('Verify new VT part is added of pc', () => {
+And('Verify new VT part is added of PartCloset', () => {
     pc.verifyNewVTPartAdded()
 })
-Then('I should click on create new ticket of rt', () => {
+Then('I should click on create new ticket of RepairTickets', () => {
     cy.wait(1000)
     rt.clickOnCreateNewTicket()
 })
-Then('Select failure Type, Return site and Serial Device of rt', () => {
+Then('Select failure Type, Return site and Serial Device of RepairTickets', () => {
     rt.selectFailureType()
     rt.selectReturnSite()
     rt.selectSerialDevice()
 })
-And('Select Building and Chromebook issue of rt', () => {
+And('Select Building and Chromebook issue of RepairTickets', () => {
     rt.selectBuilding()
     rt.selectChromebookIssue()
 })
-Then('Enter the Describe Your Issue of rt', () => {
+Then('Enter the Describe Your Issue of RepairTickets', () => {
     rt.enterDescritionOfIssue()
 })
-And('Click on save button of rt', () => {
+And('Click on save button of RepairTickets', () => {
     rt.clickOnSaveButton()
 })
-Then('Verify New Ticket is added of rt', () => {
+Then('Verify New Ticket is added of RepairTickets', () => {
     rt.verifyNewTicket()
 })
-And('Click on Download import button of rt', () => {
+And('Click on Download import button of RepairTickets', () => {
     rt.clickOnExport()
 })
-And('Click on view button of rt', () => {
+And('Click on view button of RepairTickets', () => {
     rt.clickViewButton()
 })
-Then('Verify the Details of student repair ticket of rt', () => {
+Then('Verify the Details of student repair ticket of RepairTickets', () => {
     rt.verifySrcRepairTicket()
 })
-And('Click on the Edit Ticket Button of rt', () => {
+And('Click on the Edit Ticket Button of RepairTickets', () => {
     rt.clickOnEditButton()
 })
-Then('Update the Technician and Repair Status of rt', () => {
+Then('Update the Technician and Repair Status of RepairTickets', () => {
     rt.editTehnician()
     rt.editRepairStatus()
 })
-And('Click on Update Button of rt', () => {
+And('Click on Update Button of RepairTickets', () => {
     rt.clickOnUpdate()
 })
-Then('Verify Updated successfully of rt', () => {
+Then('Verify Updated successfully of RepairTickets', () => {
     rt.verifyUpdate()
 })
-And('Click on Add Line and Verify of rt', () => {
+And('Click on Add Line and Verify of RepairTickets', () => {
     rt.clickOnAddLine()
 })
-Then('Click on Add Repair Image and Verify of rt', () => {
+Then('Click on Add Repair Image and Verify of RepairTickets', () => {
     rt.clickOnAddRepairImage()
 })
-And('Click on Add Note and Verify of rt', () => {
+And('Click on Add Note and Verify of RepairTickets', () => {
     rt.clickOnAddNote()
 })
 And('Click on RepairBoxes Tab', () => {
     cy.wait(1000)
     rb.clickOnRepairBoxesTab()
 })
-Then('I should click on create new Box of rb', () => {
+Then('I should click on create new Box of RepairBoxes', () => {
     rb.clickOnAddnewBox()
 })
-Then('Enter weight and Standard Box Size of rb', () => {
+Then('Enter weight and Standard Box Size of RepairBoxes', () => {
     rb.enterWeight()
     rb.selectStandardSize()
 })
-And('Select Pick-up site of rb', () => {
+And('Select Pick-up site of RepairBoxes', () => {
     rb.selectPickupSite()
 })
-Then('Check the need shipping box of rb', () => {
+Then('Check the need shipping box of RepairBoxes', () => {
     rb.checkNeedShippingBox()
 })
-And('Click on Create box button of rb', () => {
+And('Click on Create box button of RepairBoxes', () => {
     rb.clickOnCreateBoxButton()
 })
-Then('Select Ticket from dropdownlist of rb', () => {
+Then('Select Ticket from dropdownlist of RepairBoxes', () => {
     rb.selectTickets()
 })
-And('Click on Finish button of rb', () => {
+And('Click on Finish button of RepairBoxes', () => {
     rb.clickOnFinishButton()
 })
-Then('Verify new box is added in table of rb', () => {
+Then('Verify new box is added in table of RepairBoxes', () => {
     rb.verifyNewBoxAdd()
 })
-And('Click on Export Button of rb', () => {
+And('Click on Export Button of RepairBoxes', () => {
     rb.clickOnDownloadLabel()
 })
-And('Click on view button of rb', () => {
+And('Click on view button of RepairBoxes', () => {
     rb.clickOnViewButton()
 })
-Then('Verify the Details new box of rb', () => {
+Then('Verify the Details new box of RepairBoxes', () => {
     rb.verifyBoxDetails()
 })
-And('Add another ticket in the same box of rb', () => {
+And('Add another ticket in the same box of RepairBoxes', () => {
     rb.clickOnAddTicket()
 })
-And('Click on Add ticket of rb', () => {
+And('Click on Add ticket of RepairBoxes', () => {
     rb.clickOnAddTicket_s()
 })
-Then('Verify the ticket is added in table of rb', () => {
+Then('Verify the ticket is added in table of RepairBoxes', () => {
     rb.verifyTicketAdded()
 })
-And('Click on view the ticket Details of rb', () => {
+And('Click on view the ticket Details of RepairBoxes', () => {
     rb.clickOnViewButtonTicket()
 })
-Then('Verfiy the ticket Details of rb', () => {
+Then('Verfiy the ticket Details of RepairBoxes', () => {
     rb.verifyTicketDetails()
 })
-And('Click on Back button of rb', () => {
+And('Click on Back button of RepairBoxes', () => {
     rb.clickOnBackButton()
 })
-And('Remove the ticket from box of rb', () => {
+And('Remove the ticket from box of RepairBoxes', () => {
     rb.clickOnRemoveButton()
 })
-Then('Verify the ticket is delete from the table of rb', () => {
+Then('Verify the ticket is delete from the table of RepairBoxes', () => {
     rb.verifyTicketDeleted()
 })
-Then('Click on Add Repair Image and Verify of rb', () => {
+Then('Click on Add Repair Image and Verify of RepairBoxes', () => {
     rb.clickOnAddRepairImage()
 })
-And('Click on Add Note and Verify of rb', () => {
+And('Click on Add Note and Verify of RepairBoxes', () => {
     rb.clickOnAddNote()
 })
-Then('Click on Remove button for deleting ticket of rb', () => {
+Then('Click on Remove button for deleting ticket of RepairBoxes', () => {
     rb.clickOnRemoveButton()
 })
-And('Verify the ticket removed of rb', () => {
+And('Verify the ticket removed of RepairBoxes', () => {
     rb.verifyRemoveTicket()
 })
-Then('Click on label form of image and Verify of rb', () => {
+Then('Click on label form of image and Verify of RepairBoxes', () => {
     rb.ClickOnImagelabel()
 })
-Then('Click on label form of Pdf and Verify of rb', () => {
+Then('Click on label form of Pdf and Verify of RepairBoxes', () => {
     rb.ClickOnPdflabel()
 })
 
@@ -416,96 +416,96 @@ And('Click on My profile page', () => {
     cy.contains('demo_repairtech@vivacitytech.com').click({ force: true })
     mp.clickOnMyProfile()
 })
-And('Click on upload image icon of mp', () => {
+And('Click on upload image icon of Myprofile', () => {
     mp.clickOnImageIcone()
 })
-Then('Enter tilte and phone no of mp', () => {
+Then('Enter tilte and phone no of Myprofile', () => {
     mp.enterTitle()
     mp.enterPhone()
 })
-And('Eelect Email preference of mp', () => {
+And('Eelect Email preference of Myprofile', () => {
     mp.selectEmailPreference()
 })
-Then('click on update button of mp', () => {
+Then('click on update button of Myprofile', () => {
     mp.clickOnUpdateButton()
 })
-And('Verify the updated successfully of mp', () => {
+And('Verify the updated successfully of Myprofile', () => {
     mp.verifyUpdate()
 })
-And('Click on the view button of Nwr', () => {
+And('Click on the view button of NonwarrantyRepairs', () => {
     nwr.clickOnTicketNumberTable()
 })
-Then('Verify the Repair Ticket page will open of Nwr', () => {
+Then('Verify the Repair Ticket page will open of NonwarrantyRepairs', () => {
     nwr.verifyRapairTicketPAge()
 })
-And('Verfiy the details of Ticket of Nwr', () => {
+And('Verfiy the details of Ticket of NonwarrantyRepairs', () => {
     nwr.verifyTicketDetails()
 })
-Then('Click on the download Ticket Estimation button of Nwr', () => {
+Then('Click on the download Ticket Estimation button of NonwarrantyRepairs', () => {
     nwr.clickOnDownloadButton()
     cy.go('back')
 })
-And('Click on the download Ticket Estimation button of Nwr', () => {
+And('Click on the download Ticket Estimation button of NonwarrantyRepairs', () => {
     nwr.verifyDownloadSuccessful()
 })
-Then('Click on Add Repair Image and Verify of Nwr', () => {
+Then('Click on Add Repair Image and Verify of NonwarrantyRepairs', () => {
     nwr.clickOnAddRepairImage()
 })
-And('Click on Add Note and Verify of Nwr', () => {
+And('Click on Add Note and Verify of NonwarrantyRepairs', () => {
     nwr.clickOnAddNote()
 })
 Then('Click on DeviceRepairReport page', () => {
     dev.clickOnDeviceRepairReport()
     cy.wait(3000)
 })
-And('Click on the View button of drr', () => {
+And('Click on the View button of DeviceRepairReport', () => {
     dev.clickOnviewButton()
 })
-Then('Verify the Repair Ticket page will open of drr', () => {
+Then('Verify the Repair Ticket page will open of DeviceRepairReport', () => {
     dev.verifyRapairTicketPAge()
 })
-And('Verfiy the details of Ticket of drr', () => {
+And('Verfiy the details of Ticket of DeviceRepairReport', () => {
     dev.verifyTicketDetails()
 })
-Then('Click on the download Ticket Estimation button of drr', () => {
+Then('Click on the download Ticket Estimation button of DeviceRepairReport', () => {
     dev.clickOnDownloadButton()
 })
-And('Verify downloaded ticket successfully of drr', () => {
+And('Verify downloaded ticket successfully of DeviceRepairReport', () => {
     dev.verifyDownloadSuccessful()
 })
-Then('Click on Add Repair Image and Verify of drr', () => {
+Then('Click on Add Repair Image and Verify of DeviceRepairReport', () => {
     dev.clickOnAddRepairImage()
 })
-And('Click on Add Note and Verify of drr', () => {
+And('Click on Add Note and Verify of DeviceRepairReport', () => {
     dev.clickOnAddNote()
 })
-Then('I should click on Add New student of srcs', () => {
+Then('I should click on Add New student of SrcStudents', () => {
     ss.clickOnCreateNewStudent()
 })
-Then('Enter title, full name and Email of srcs', () => {
+Then('Enter title, full name and Email of SrcStudents', () => {
     ss.enterTitle()
     ss.enterFullname()
     ss.enterEmail()
 })
-And('Enter Phone and Cell Number of srcs', () => {
+And('Enter Phone and Cell Number of SrcStudents', () => {
     ss.enterPhone()
     ss.enterCellNumber()
 })
-Then('Select User Status of srcs', () => {
+Then('Select User Status of SrcStudents', () => {
     ss.selectUserStatus()
 })
-Then('Select Vivacity weekly and Beta tester of srcs', () => {
+Then('Select Vivacity weekly and Beta tester of SrcStudents', () => {
     ss.selectViivaWeekly()
     ss.selectBetaTester()
 })
-Then('Select User notification and in house repair of srcs', () => {
+Then('Select User notification and in house repair of SrcStudents', () => {
     ss.selectUserNotification()
     ss.selectInHouseRepair()
 })
-And('Click on submit button of srcs', () => {
+And('Click on submit button of SrcStudents', () => {
     ss.clickOnASubmitButton()
 })
-Then('Verify the student added in table of srcs', () => {
+Then('Verify the student added in table of SrcStudents', () => {
     ss.verifyRecordTable()
 })
 Then('Click on SrcStudents tab', () => {
@@ -515,42 +515,42 @@ Then('Click on SrcStudents tab', () => {
 Then('Click on SrcRepairTickets tab', () => {
     srt.clickOnSrcRepairTicketsTab()
 })
-Then('I should click on Create Student Repair Ticket button of srcRt', () => {
+Then('I should click on Create Student Repair Ticket button of SrcRepairTickets', () => {
     srt.clickOnCreateTicketButton()
 })
-And('Select failure Type, Serial Device, Technician and building of srcRt', () => {
+And('Select failure Type, Serial Device, Technician and building of SrcRepairTickets', () => {
     srt.selectFailureType()
     srt.selectTechnician()
     srt.selectSerialDevice()
     srt.selectIssue()
     srt.selectBuilding()
 })
-Then('Enter the Chromebook issue of srcRt', () => {
+Then('Enter the Chromebook issue of SrcRepairTickets', () => {
     srt.enterChromebookIssue()
 })
-And('Click on save button of srcRt', () => {
+And('Click on save button of SrcRepairTickets', () => {
     srt.clickOnSaveButton()
 })
-Then('Verify New Ticket is added of srcRt', () => {
+Then('Verify New Ticket is added of SrcRepairTickets', () => {
     srt.verifyNewTicket()
 })
-And('Click on view button of srcRt', () => {
+And('Click on view button of SrcRepairTickets', () => {
     srt.clickViewButton()
 })
-Then('Verify the Details of student repair ticket of srcRt', () => {
+Then('Verify the Details of student repair ticket of SrcRepairTickets', () => {
     srt.verifySrcRepairTicket()
 })
-Then('Click on Add Repair Image and Verify of srcRt', () => {
+Then('Click on Add Repair Image and Verify of SrcRepairTickets', () => {
     srt.clickOnAddRepairImage()
 })
-And('Click on Add Note and Verify of srcRt', () => {
+And('Click on Add Note and Verify of SrcRepairTickets', () => {
     srt.clickOnAddNote()
 })
 //srcFaci
 Then('Click on SrcFacilitators tab', () => {
     sf.clickOnSrcFacilitatorsTab()
 })
-And('Click on Download Export button of srcF', () => {
+And('Click on Download Export button of SrcFacilitators', () => {
     sf.clickOnExport()
 })
 //inhouse -ticket
@@ -560,358 +560,300 @@ And('Click on InHouseRepairCenter tab', () => {
 Then('Click All InHouseTickets tab', () => {
     iht.clickOnInHouseTicketsTab()
 })
-Then('I should click on Create new button of Inrt', () => {
+Then('I should click on Create new button of InHouseTickets', () => {
     iht.clickOnCreateTicketButton()
 })
-And('Select failure Type, Serial Device, Technician, issue and Building of Inrt', () => {
+And('Select failure Type, Serial Device, Technician, issue and Building of InHouseTickets', () => {
     iht.selectFailureType()
     iht.selectTechnician()
     iht.selectSerialDevice()
     iht.selectRepaireIssue()
     iht.selectBuilding()
 })
-Then('Enter the Chromebook issue of Inrt', () => {
+Then('Enter the Chromebook issue of InHouseTickets', () => {
     iht.enterChromebookIssue()
 })
-And('Click on save button of Inrt', () => {
+And('Click on save button of InHouseTickets', () => {
     iht.clickOnSaveButton()
 })
-Then('Verify New Ticket is added of Inrt', () => {
+Then('Verify New Ticket is added of InHouseTickets', () => {
     iht.verifyNewTicket()
 })
-And('Click on Download Export button of Inrt', () => {
+And('Click on Download Export button of InHouseTickets', () => {
     iht.clickOnExport()
 })
-Then('Verify the successfully downloaded of Inrt', () => {
+Then('Verify the successfully downloaded of InHouseTickets', () => {
     iht.verifyDownload()
 })
-And('Enter the Search value in search box of Inrt', () => {
+And('Enter the Search value in search box of InHouseTickets', () => {
     iht.enterSearchBox()
 })
-Then('Verify the Results in the table of Inrt', () => {
+Then('Verify the Results in the table of InHouseTickets', () => {
     iht.verifySearchResult()
 })
-And('Click on view button of Inrt', () => {
+And('Click on view button of InHouseTickets', () => {
     iht.clickViewButton()
 })
-Then('Verify the Details of student repair ticket of Inrt', () => {
+Then('Verify the Details of student repair ticket of InHouseTickets', () => {
     iht.verifySrcRepairTicket()
 })
-And('Click on the Edit Ticket Button of Inrt', () => {
+And('Click on the Edit Ticket Button of InHouseTickets', () => {
     iht.clickOnEditButton()
 })
-Then('Update the Technician and Repair Status of Inrt', () => {
+Then('Update the Technician and Repair Status of InHouseTickets', () => {
     iht.editTehnician()
     iht.editRepairStatus()
 })
-And('Click on Update Button of Inrt', () => {
+And('Click on Update Button of InHouseTickets', () => {
     iht.clickOnUpdate()
 })
-Then('Verify Updated successfully of Inrt', () => {
+Then('Verify Updated successfully of InHouseTickets', () => {
     iht.verifyUpdate()
 })
-And('Click on Add Line and Verify of Inrt', () => {
+And('Click on Add Line and Verify of InHouseTickets', () => {
     iht.clickOnAddLine()
 })
-Then('Click on Add Repair Image and Verify of Inrt', () => {
+Then('Click on Add Repair Image and Verify of InHouseTickets', () => {
     iht.clickOnAddRepairImage()
 })
-And('Click on Add Note and Verify of Inrt', () => {
+And('Click on Add Note and Verify of InHouseTickets', () => {
     iht.clickOnAddNote()
 })
-And ('Click on the Update to student Button of Inrt', () => {
+And('Click on the Update to student Button of InHouseTickets', () => {
     iht.clickOnUpdateStudent()
 })
-Then ('Updated to student successfully of Inrt', () => {
+Then('Updated to student successfully of InHouseTickets', () => {
     iht.verifyUpdateStudent()
 })
- And ('Click on the Update to in house Button of Inrt', () => {
+And('Click on the Update to in house Button of InHouseTickets', () => {
     iht.clickOnUpdateInhouse()
- })
-Then ('Updated to in house successfully of Inrt', () => {
+})
+Then('Updated to in house successfully of InHouseTickets', () => {
     iht.verifyUpdateInhouse()
 })
-//inhouse workflow
-Then('I should click on new button of ihw', () => {
-    ihw.clickOnNewButton()
-})
-And('Select failure Type, Serial Device, Technician and repair issue of ihw', () => {
-    ihw.selectFailureType()
-    ihw.selectTechnician()
-    ihw.selectSerialDevice()
-    ihw.selectReturnsite()
-    ihw.selectRepairissue()
-})
-Then('Select building and Enter the Chromebook issue of ihw', () => {
-    ihw.selectBuilding()
-    ihw.enterChromebookIssue() 
-})
-And('Click on save button of ihw', () => {
-    ihw.clickOnSaveButton()
-})
-Then('Verify New Ticket is added of ihw', () => {
-    ihw.verifyNewTicket()
-})
-And('Click on Download Export button of ihw', () => {
-    ihw.clickOnExport()
-})
-Then('Verify the successfully downloaded of ihw', () => {
-    ihw.verifyDownload()
-})
-And('Enter Search ticket no in search box of ihw', () => {
-    ihw.searchTicketNo()
-})
-Then('Verify search result below of ihw', () => {
-    ihw.verfiySearchResult()
-})
-And('Click on view button of ihw', () => {
-    ihw.clickViewButton()
-})
-Then('Verify the Details of student repair ticket of ihw', () => {
-    ihw.verifySrcRepairTicket()
-})
-And('Click on the Edit Ticket Button of ihw', () => {
-    ihw.clickOnEditButton()
-})
-Then('Update the Technician and Repair Status of ihw', () => {
-    ihw.editTehnician()
-    ihw.editRepairStatus()
-})
-And('Click on Update Button of ihw', () => {
-    ihw.clickOnUpdate()
-})
-Then('Verify Updated successfully of ihw', () => {
-    ihw.verifyUpdate()
-})
-And('Click on Add Line and Verify of ihw', () => {
-    ihw.clickOnAddLine()
-})
-Then('Click on Add Repair Image and Verify of ihw', () => {
-    ihw.clickOnAddRepairImage()
-})
-And('Click on Add Note and Verify of ihw', () => {
-    ihw.clickOnAddNote()
-})
-Then('Account Details -Aaccount Name and no should be visible of acc', () => {
+Then('Account Details -Aaccount Name and no should be visible of Account', () => {
     acc.AccountDetailsVisible()
 })
-And('Account Manager,Billing Address and Shipping Address should be visible of acc', () => {
+And('Account Manager,Billing Address and Shipping Address should be visible of Account', () => {
     acc.sectionManaddressVisible()
 })
 And('Click on Buildings Tab', () => {
     build.clickOnBuildingTab()
 })
-And('Click on Export To CSV of build', () => {
+And('Click on Export To CSV of building', () => {
     build.clickOnExport()
 })
-Then('Click on Bulk Upload button of build', () => {
+Then('Click on Bulk Upload button of building', () => {
     build.clickOnBulkUpload()
 })
-And('Click on Attach CSV file and Click on submit button of build', () => {
+And('Click on Attach CSV file and Click on submit button of building', () => {
     build.attachCsvfile()
 })
-Then('Verify the Uploaded successfully of build', () => {
+Then('Verify the Uploaded successfully of building', () => {
     build.verifyuploaded()
 })
-Then('I should click on new button of ihw', () => {
+Then('I should click on new button of InHouseWork', () => {
     ihw.clickOnNewButton()
 })
-And('Select failure Type, Serial Device, Technician and repair issue of ihw', () => {
+And('Select failure Type, Serial Device, Technician and repair issue of InHouseWork', () => {
     ihw.selectFailureType()
     ihw.selectTechnician()
-    ihw.selectSerialDevice()
     ihw.selectRepairissue()
+    ihw.selectSerialDevice()
+    ihw.selectReturnsite()
+    ihw.selectStudent()
 })
-Then('Select building and Enter the Chromebook issue of ihw', () => {
+Then('Select building and Enter the Chromebook issue of InHouseWork', () => {
+    cy.wait(100)
     ihw.selectBuilding()
     ihw.enterChromebookIssue()
 })
-And('Click on save button of ihw', () => {
+And('Click on save button of InHouseWork', () => {
     ihw.clickOnSaveButton()
 })
-Then('Verify New Ticket is added of ihw', () => {
+Then('Verify New Ticket is added of InHouseWork', () => {
     ihw.verifyNewTicket()
 })
-And('Click on Download Export button of ihw', () => {
+And('Click on Download Export button of InHouseWork', () => {
     ihw.clickOnExport()
 })
-Then('Verify the successfully downloaded of ihw', () => {
+Then('Verify the successfully downloaded of InHouseWork', () => {
     ihw.verifyDownload()
 })
-And('Enter Search ticket no in search box of ihw', () => {
+And('Enter Search ticket no in search box of InHouseWork', () => {
     ihw.searchTicketNo()
 })
-Then('Verify search result below of ihw', () => {
+Then('Verify search result below of InHouseWork', () => {
     ihw.verfiySearchResult()
 })
-And('Click on view button of ihw', () => {
+And('Click on view button of InHouseWork', () => {
     ihw.clickViewButton()
 })
-Then('Verify the Details of student repair ticket of ihw', () => {
+Then('Verify the Details of student repair ticket of InHouseWork', () => {
     ihw.verifySrcRepairTicket()
 })
-And('Click on the Edit Ticket Button of ihw', () => {
+And('Click on the Edit Ticket Button of InHouseWork', () => {
     ihw.clickOnEditButton()
 })
-Then('Update the Technician and Repair Status of ihw', () => {
+Then('Update the Technician and Repair Status of InHouseWork', () => {
     ihw.editTehnician()
     ihw.editRepairStatus()
 })
-And('Click on Update Button of ihw', () => {
+And('Click on Update Button of InHouseWork', () => {
     ihw.clickOnUpdate()
 })
-Then('Verify Updated successfully of ihw', () => {
+Then('Verify Updated successfully of InHouseWork', () => {
     ihw.verifyUpdate()
 })
-And('Click on Add Line and Verify of ihw', () => {
+And('Click on Add Line and Verify of InHouseWork', () => {
     ihw.clickOnAddLine()
 })
-Then('Click on Add Repair Image and Verify of ihw', () => {
+Then('Click on Add Repair Image and Verify of InHouseWork', () => {
     ihw.clickOnAddRepairImage()
 })
-And('Click on Add Note and Verify of ihw', () => {
+And('Click on Add Note and Verify of InHouseWork', () => {
     ihw.clickOnAddNote()
 })
 And('Click on ImportSerialDevices Tab', () => {
     isd.clickOnImportSerialDevices()
     cy.get('.MuiDialogActions-root > :nth-child(2)').click({ force: true })
 })
-Then('I should click on Add New Import of isd', () => {
+Then('I should click on Add New Import of ImportSerialDevices', () => {
     isd.clickOnAddNewImport()
 })
-Then('Upload the CSV import file of isd' , () => {
+Then('Upload the CSV import file of ImportSerialDevices', () => {
     isd.uploadcsvFile()
 })
-And('Click on submit button of isd', () => {
+And('Click on submit button of ImportSerialDevices', () => {
     isd.clickOnSubmitButton()
 })
-And('Click on refresh button of isd', () => {
+And('Click on refresh button of ImportSerialDevices', () => {
     isd.clickOnRefreshButton()
 })
-Then('Verify the record in table of isd', () => {
+Then('Verify the record in table of ImportSerialDevices', () => {
     isd.verfiyImportTable()
 })
-And('Click on Download import button of isd', () => {
+And('Click on Download import button of ImportSerialDevices', () => {
     isd.clickOnDownloadImport()
 })
-And('Click on Details button of isd', () => {
+And('Click on Details button of ImportSerialDevices', () => {
     isd.clickOnDetailsButton()
 })
-Then('Verify the Device Details of isd', () => {
+Then('Verify the Device Details of ImportSerialDevices', () => {
     isd.verifyDeviceDetails()
-}) 
+})
 And('Click on MyFleet Tab', () => {
     mf.clickOnMyFleet()
-   // cy.get('.MuiDialogActions-root > :nth-child(2)').click({ force: true })
+    // cy.get('.MuiDialogActions-root > :nth-child(2)').click({ force: true })
 })
-And('Convert Active to Retired device of MyF', () => {
+And('Convert Active to Retired device of MyFleet', () => {
     mf.converRetired()
 })
-Then('Verify the Device Retired successfully of MyF', () => {
+Then('Verify the Device Retired successfully of MyFleet', () => {
     mf.verifyRetired()
 })
-Then('Verify the Device Active successfully of MyF', () => {
+Then('Verify the Device Active successfully of MyFleet', () => {
     mf.verifyActive()
 })
-And('Convert Retired to Active device of MyF', () => {
+And('Convert Retired to Active device of MyFleet', () => {
     mf.convertActive()
 })
-Then('Click on the add device of MyF', () => {
+Then('Click on the add device of MyFleet', () => {
     mf.clickOnAddDevice()
 })
-And('Enter Serial no and select device id of MyF', () => {
+And('Enter Serial no and select device id of MyFleet', () => {
     mf.enterSerialNo()
     mf.selectDeviceId()
 })
-Then('Enter Asset Tag and Select student id of MyF', () => {
+Then('Enter Asset Tag and Select student id of MyFleet', () => {
     mf.enterAssetTag()
     mf.selectStudentid()
 })
-And('Select lonar status and Device status of MyF', () => {
+And('Select lonar status and Device status of MyFleet', () => {
     mf.selectLonarStatus()
     mf.selectDeviceStatus()
 })
-Then('Click on the Submit Button of MyF', () => {
+Then('Click on the Submit Button of MyFleet', () => {
     mf.clickOnsubmitButton()
 })
-And('Verify the device added successfully of MyF', () => {
+And('Verify the device added successfully of MyFleet', () => {
     mf.verfifyDeviceAdded()
 })
-Then('Click on Edit button of MyF', () => {
+Then('Click on Edit button of MyFleet', () => {
     mf.clickOnEditButton()
 })
-And('Update Asset tag, student info and building information and Click on update button of MyF', () => {
+And('Update Asset tag, student info and building information and Click on update button of MyFleet', () => {
     mf.editInformation()
     mf.clickOnUpdateButton()
 })
-Then('Verfiy Record updated successfully of MyF', () => {
-mf.verifyUdated()
+Then('Verfiy Record updated successfully of MyFleet', () => {
+    mf.verifyUdated()
 })
-Then('Click on Clear filter of MyF', () => {
+Then('Click on Clear filter of MyFleet', () => {
     mf.clickOnClearFiltersButton()
 })
-And('Enter the table fields in search box of MyF', () => {
+And('Enter the table fields in search box of MyFleet', () => {
     mf.enterSearchValue()
 })
-And('Verify the record in searching history of MyF', () => {
+And('Verify the record in searching history of MyFleet', () => {
     mf.verifySearchResult()
 })
-Then('Click on view Button of MyF', () => {
+Then('Click on view Button of MyFleet', () => {
     mf.clickOnViewButton()
 })
-And('Verify the General Device Information of MyF', () => {
+And('Verify the General Device Information of MyFleet', () => {
     mf.verifyViewResult()
 })
-Then('Click on deviceIcon and click on view Button of MyF', () => {
+Then('Click on deviceIcon and click on view Button of MyFleet', () => {
     mf.clickOnDeviceIcon()
     mf.clickOnViewButton()
 })
-And('Verify the General Device Information of MyF', () => {
+And('Verify the General Device Information of MyFleet', () => {
     mf.verifyViewResult()
 })
-And('Verify the Warranty Description1 of MyF', () => {
+And('Verify the Warranty Description1 of MyFleet', () => {
     mf.verifyViewResult1()
 })
-Then('Click on Edit button of General info of MyF', () => {
+Then('Click on Edit button of General info of MyFleet', () => {
     mf.clickOnEditButtonGeneral()
 })
-And('Update Asset tag and Click on save button of MyF', () => {
+And('Update Asset tag and Click on save button of MyFleet', () => {
     mf.editGeneral()
     mf.clickOnUpdateButton()
 })
-Then('Verfiy General info Record updated successfully of MyF', () => {
+Then('Verfiy General info Record updated successfully of MyFleet', () => {
     mf.verifyGeneralUdate()
 })
-Then('Click on Edit button of Assignment of MyF', () => {
+Then('Click on Edit button of Assignment of MyFleet', () => {
     mf.clickOnEditButtonAssign()
 })
-And('Update student, building, loner status and Click on save button of MyF', () => {
+And('Update student, building, loner status and Click on save button of MyFleet', () => {
     mf.editAssignment()
     mf.clickOnUpdateButton()
 })
-Then('Verfiy Assignment Record updated successfully of MyF', () => {
+Then('Verfiy Assignment Record updated successfully of MyFleet', () => {
     mf.verifyAssignmnetUdate()
-    cy.get('.MuiButtonBase-root > .MuiTypography-root').click({force:true})
+    cy.get('.MuiButtonBase-root > .MuiTypography-root').click({ force: true })
 })
-Then('Click on Export To CSV of MyF', () => {
+Then('Click on Export To CSV of MyFleet', () => {
     mf.clickOnCExportToCSVButton()
 })
-And('Verify Downloaded successfully of MyF', () => {
+And('Verify Downloaded successfully of MyFleet', () => {
     mf.verifyDownloadSuccessful()
 })
-And('Click More filter select- Serial Number in search box and Verify the Result of MyF', () => {
+And('Click More filter select- Serial Number in search box and Verify the Result of MyFleet', () => {
     mf.clickOnMoreFiltersButton()
     mf.selectFilterSerialNumber()
 })
-And('Click More filter select- Asset tag in search box and Verify the Result of MyF', () => {
+And('Click More filter select- Asset tag in search box and Verify the Result of MyFleet', () => {
     mf.clickOnMoreFiltersButton()
     mf.selectFilterAssetTag()
 })
-And('Click More filter select- Device in search box and Verify the Result of MyF', () => {
+And('Click More filter select- Device in search box and Verify the Result of MyFleet', () => {
     mf.clickOnMoreFiltersButton()
     mf.selectFilterDevice()
 })
-And('Click More filter select- Student in search box and Verify the Result of MyF', () => {
+And('Click More filter select- Student in search box and Verify the Result of MyFleet', () => {
     mf.clickOnMoreFiltersButton()
     mf.selectFilterStudent()
 })
@@ -920,147 +862,147 @@ Then('Click on Retired Tab', () => {
 })
 
 And('Click on LoanerManagement Tab', () => {
-   
+
     loan.clickOnLoanerManagement()
 })
-Then('Search the serial no in search box of Available Devices section of lm', () => {
+Then('Search the serial no in search box of Available Devices section of LoanerManagement', () => {
     loan.serachAvailableDevice()
 })
-And('Verify the search result of lm', () => {
+And('Verify the search result of LoanerManagement', () => {
     loan.verifySerachAvailableDevice()
 })
-Then('Click on the Add to loaner pool of lm', () => {
+Then('Click on the Add to loaner pool of LoanerManagement', () => {
     loan.clickOnAddtoLoanerPool()
 })
-Then('Search the serial no in the Available section of lm', () => {
+Then('Search the serial no in the Available section of LoanerManagement', () => {
     loan.searchAvailable()
     loan.verifySearchAvailable()
 })
-And('Click on th add Student button of lm', () => {
+And('Click on th add Student button of LoanerManagement', () => {
     loan.clickOnAddStudent()
 })
-Then('Enter Fullname, title and email of lm', () => {
+Then('Enter Fullname, title and email of LoanerManagement', () => {
     loan.enterFullname()
     loan.enterTitle()
     loan.enterEmail()
 })
-And('Select status, building and student_id of lm', () => {
+And('Select status, building and student_id of LoanerManagement', () => {
     loan.selectStatus()
     loan.selectBuilding()
     loan.selectStudent_id()
 })
-Then('Click on the submit button of form of lm', () => {
+Then('Click on the submit button of form of LoanerManagement', () => {
     loan.clickOnsubmitForm()
 })
-And('Verify the student added successfully of lm', () => {
+And('Verify the student added successfully of LoanerManagement', () => {
     loan.verifyStudentAdded()
 })
-Then('Click on check out button of lm', () => {
+Then('Click on check out button of LoanerManagement', () => {
     loan.clickOnCheckOut()
 })
-And('Select the student name of lm', () => {
+And('Select the student name of LoanerManagement', () => {
     loan.selectStudentName()
 })
-Then('Click on the submit button of lm', () => {
+Then('Click on the submit button of LoanerManagement', () => {
     loan.clickOnSubmitbtn()
 })
-And('Search the serial no in the check out section of lm', () => {
+And('Search the serial no in the check out section of LoanerManagement', () => {
     loan.serachCheckOut()
     loan.verifySerachCheckOut()
 })
-Then('Click on the Check in button of lm', () => {
+Then('Click on the Check in button of LoanerManagement', () => {
     loan.clickOnCheckIn()
 })
-And('Enter note and click on submit button of lm', () => {
+And('Enter note and click on submit button of LoanerManagement', () => {
     loan.enterNote()
     loan.clickOnSubmitNote()
 })
-Then('Verify the device is added in Available section of lm', () => {
+Then('Verify the device is added in Available section of LoanerManagement', () => {
     loan.searchAvailable()
     loan.verifySerachAvailable()
 })
-And('Click on remove from loaner pool button of lm', () => {
+And('Click on remove from loaner pool button of LoanerManagement', () => {
     loan.serachAvailableDevice()
     loan.clickOnRemoveFromPool()
 })
 And('Click on OrgUploadAssets Tab', () => {
     oua.clickOnOrgUploadAssets()
 })
-Then('I should click on Add Asset of oua', () => {
+Then('I should click on Add Asset of OrgUploadAssets', () => {
     oua.clickOnAddAssetbutton()
 })
-Then('Enter title, full name location and tag of oua', () => {
+Then('Enter title, full name location and tag of OrgUploadAssets', () => {
     oua.enterLocation()
     oua.enterTag()
 })
-And('Enter note, Type and description of oua', () => {
+And('Enter note, Type and description of OrgUploadAssets', () => {
     oua.enterNote()
-    oua.enterType() 
+    oua.enterType()
 })
-Then('Upload the image file of oua', () => {
+Then('Upload the image file of OrgUploadAssets', () => {
     oua.selectFileForUpload()
     oua.enterDescription()
 })
-And('Click on save button of oua', () => {
+And('Click on save button of OrgUploadAssets', () => {
     oua.clickOnASaveButton()
 })
-Then('Verify the asset details added in table of oua', () => {
+Then('Verify the asset details added in table of OrgUploadAssets', () => {
     oua.verifyRecordTable()
 })
-And('Enter the title in search box of oua', () => {
+And('Enter the title in search box of OrgUploadAssets', () => {
     oua.enterSearchValue()
 })
-Then('Click on Search button of oua', () => {
+Then('Click on Search button of OrgUploadAssets', () => {
     oua.clickOnASearchButton()
 })
-And('Verify the record in searching history of oua', () => {
+And('Verify the record in searching history of OrgUploadAssets', () => {
     oua.verifySearchResult()
 })
-And('Click on Edit button of oua', () => {
+And('Click on Edit button of OrgUploadAssets', () => {
     oua.clickOnEditIcon()
 })
-Then('I should edit title, full name location and tag of oua', () => {
+Then('I should edit title, full name location and tag of OrgUploadAssets', () => {
     oua.editLocation()
     oua.editTag()
 })
-And('I should edit note, Type and description of oua', () => {
+And('I should edit note, Type and description of OrgUploadAssets', () => {
     oua.editNotes()
     oua.editType()
     oua.editDescription()
 })
-Then('ReUpload the image file of oua', () => {
+Then('ReUpload the image file of OrgUploadAssets', () => {
     oua.editUpload()
 })
-Then('Click on save button of oua', () => {
+Then('Click on save button of OrgUploadAssets', () => {
     oua.clickSubmitForUpdate()
 })
-And('Verify the Record has been updated Meassage of oua', () => {
+And('Verify the Record has been updated Meassage of OrgUploadAssets', () => {
     oua.verfifyDataUpdatedMessage()
 })
-And('Click on Delete button of oua', () => {
+And('Click on Delete button of OrgUploadAssets', () => {
     oua.clickDeleteIcon()
 })
-Then('Click on Confirm Delete button of oua', () => {
+Then('Click on Confirm Delete button of OrgUploadAssets', () => {
     oua.clickConfirmDeleteButton()
 })
-And('Verify the record is deleted successfully of oua', () => {
+And('Verify the record is deleted successfully of OrgUploadAssets', () => {
     oua.verifyRecordDeleted()
 })
-And('Enter Full name of sup', () => {
+And('Enter Full name of Support', () => {
     su.enterFullname()
 })
-Then('Select task Priority and Topic of sup', () => {
+Then('Select task Priority and Topic of Support', () => {
     su.selectPriority()
     su.selectTopic()
 })
-And('Upload the image and enter Notes of sup', () => {
+And('Upload the image and enter Notes of Support', () => {
     su.uploadImage()
     su.enterNotes()
 })
-Then('Click on submit button of sup', () => {
-  su.clickOnSubmit()
+Then('Click on submit button of Support', () => {
+    su.clickOnSubmit()
 })
-And('Verify the Send Feedback successfully of sup', () => {
+And('Verify the Send Feedback successfully of Support', () => {
     su.verfiyFeedbackSuccess()
 })
 

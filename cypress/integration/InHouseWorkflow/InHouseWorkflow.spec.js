@@ -36,6 +36,7 @@ And('Select failure Type, Serial Device, Technician and repair issue', () => {
     ihw.selectRepairissue()
 })
 Then('Select building and Enter the Chromebook issue', () => {
+    cy.wait(100)
     ihw.selectBuilding()
     ihw.enterChromebookIssue() 
 })
