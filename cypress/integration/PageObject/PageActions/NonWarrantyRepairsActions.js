@@ -13,8 +13,6 @@ export class NonWarrantyRepairsActions {
    closeTermsOfServiceWindow() {
       cy.wait(5000)
       dash.termsElement().contains('Dismiss').click({ force: true })
-      cy.wait(5000)
-      cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
    }
    clickOnReportCenter() {
       dash.reportcenterElement().click({ force: true })

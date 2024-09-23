@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2901000000
+              "duration": 3595000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7265000000
+              "duration": 12044000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 16166000000
+              "duration": 11118000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on My profile page",
             "result": {
               "status": "passed",
-              "duration": 1141000000
+              "duration": 1142000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of My Profile Page",
             "result": {
               "status": "passed",
-              "duration": 368000000
+              "duration": 417000000
             }
           },
           {
@@ -72,8 +72,9 @@
             "line": 14,
             "name": "User and User photo of MyProfile should be visible",
             "result": {
-              "status": "passed",
-              "duration": 366000000
+              "status": "failed",
+              "duration": 30233000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `h1`, but never found it.\n    at MyProfileActions.userNameVisible (cypress/integration/PageObject/PageActions/MyProfileActions.js:24:30)\n    at Context.eval (cypress/integration/MyProfile/MyProfile.spec.js:27:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -82,8 +83,7 @@
             "line": 15,
             "name": "Profile and Account deatils section of MyProfile should be visible",
             "result": {
-              "status": "passed",
-              "duration": 22000000
+              "status": "skipped"
             }
           },
           {
@@ -92,8 +92,7 @@
             "line": 16,
             "name": "Click on upload image icon",
             "result": {
-              "status": "passed",
-              "duration": 20000000
+              "status": "skipped"
             }
           },
           {
@@ -102,8 +101,7 @@
             "line": 17,
             "name": "Enter tilte and phone no",
             "result": {
-              "status": "passed",
-              "duration": 650000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +110,7 @@
             "line": 18,
             "name": "Select Email preference",
             "result": {
-              "status": "passed",
-              "duration": 128000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +119,7 @@
             "line": 19,
             "name": "click on update button",
             "result": {
-              "status": "passed",
-              "duration": 60000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +128,7 @@
             "line": 20,
             "name": "Verify the updated successfully",
             "result": {
-              "status": "passed",
-              "duration": 473000000
+              "status": "skipped"
             }
           }
         ]

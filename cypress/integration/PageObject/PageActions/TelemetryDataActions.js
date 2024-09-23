@@ -12,8 +12,6 @@ export class TelemetryDataActions {
     closeTermsOfServiceWindow() {
         cy.wait(3000)
         dash.termsElement().contains('Dismiss').click({ force: true })
-        cy.wait(5000)
-        cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }
     clickOnTelemetryData() {
         repc.telemetrydElement().click({ force: true })

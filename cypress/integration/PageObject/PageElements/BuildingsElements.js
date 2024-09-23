@@ -27,7 +27,7 @@ export default class BuildingsElements {
         })
     }
     addnewbtnElement() {
-        return cy.contains(locator.buildings.addnewbtn, {
+        return cy.get(locator.buildings.addnewbtn, {
             timeout: 30000,
         })
     }

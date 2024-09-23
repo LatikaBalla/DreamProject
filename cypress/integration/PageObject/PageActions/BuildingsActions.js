@@ -18,8 +18,6 @@ export class BuildingsActions {
     closeTermsOfServiceWindow() {
         cy.wait(1000)
         dash.termsElement().contains('Dismiss').click({ force: true })
-        cy.wait(3000)
-        cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
         cy.contains('demo_adminsuper@vivacitytech.com').click({ force: true })  
     }
     addNewButtonTabVisible() {     

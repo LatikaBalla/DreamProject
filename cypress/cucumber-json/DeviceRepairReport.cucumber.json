@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2875000000
+              "duration": 2683000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9390000000
+              "duration": 8391000000
             }
           },
           {
@@ -42,9 +42,8 @@
             "line": 9,
             "name": "Close the terms of service window",
             "result": {
-              "status": "failed",
-              "duration": 17294000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Dismiss' within the element: <button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.css-1r8qces> but never did.\n    at ReportCenterActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/ReportCenterActions.js:12:28)\n    at Context.eval (cypress/integration/DeviceRepairReport/DeviceRepairReport.spec.js:21:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 14126000000
             }
           },
           {
@@ -53,7 +52,8 @@
             "line": 10,
             "name": "Click on Report center page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 86000000
             }
           },
           {
@@ -62,7 +62,8 @@
             "line": 11,
             "name": "Click on DeviceRepairReport page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3064000000
             }
           },
           {
@@ -71,7 +72,8 @@
             "line": 14,
             "name": "Click on filter of Repair Id Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2727000000
             }
           },
           {
@@ -80,7 +82,8 @@
             "line": 15,
             "name": "Click on filter of Repair Id Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1629000000
             }
           },
           {
@@ -89,7 +92,8 @@
             "line": 16,
             "name": "Click on filter of Repair Id Greater than and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1643000000
             }
           },
           {
@@ -98,7 +102,8 @@
             "line": 17,
             "name": "Click on filter of Repair Id Greater than or equal to and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1629000000
             }
           },
           {
@@ -107,7 +112,8 @@
             "line": 18,
             "name": "Click on filter of Repair Id Less than and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1690000000
             }
           },
           {
@@ -116,7 +122,8 @@
             "line": 19,
             "name": "Click on filter of Repair Id Less than or equal to and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1680000000
             }
           },
           {
@@ -125,7 +132,8 @@
             "line": 20,
             "name": "Click on filter of Repair Id Between and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1867000000
             }
           },
           {
@@ -134,7 +142,8 @@
             "line": 21,
             "name": "Click on filter of Repair Id Blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1611000000
             }
           },
           {
@@ -143,7 +152,8 @@
             "line": 22,
             "name": "Click on filter of Repair Id Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1672000000
             }
           },
           {
@@ -152,7 +162,8 @@
             "line": 24,
             "name": "Click on filter of Ticket Number contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 617000000
             }
           },
           {
@@ -161,7 +172,8 @@
             "line": 25,
             "name": "Click on filter of Ticket Number Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 598000000
             }
           },
           {
@@ -170,7 +182,8 @@
             "line": 26,
             "name": "Click on filter of Ticket Number Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 623000000
             }
           },
           {
@@ -179,7 +192,8 @@
             "line": 27,
             "name": "Click on filter of Ticket Number Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 634000000
             }
           },
           {
@@ -188,7 +202,8 @@
             "line": 28,
             "name": "Click on filter of Ticket Number Begins with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 563000000
             }
           },
           {
@@ -197,7 +212,8 @@
             "line": 29,
             "name": "Click on filter of Ticket Number Ends with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 562000000
             }
           },
           {
@@ -206,7 +222,8 @@
             "line": 30,
             "name": "Click on filter of Ticket Number Blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 507000000
             }
           },
           {
@@ -215,7 +232,8 @@
             "line": 31,
             "name": "Click on filter of Ticket Number Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 607000000
             }
           },
           {
@@ -224,7 +242,8 @@
             "line": 32,
             "name": "Click on filter of Ticket Number contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 631000000
             }
           },
           {
@@ -233,7 +252,8 @@
             "line": 34,
             "name": "Click on filter of Building contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 744000000
             }
           },
           {
@@ -242,7 +262,8 @@
             "line": 35,
             "name": "Click on filter of Building Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 781000000
             }
           },
           {
@@ -251,7 +272,8 @@
             "line": 36,
             "name": "Click on filter of Building Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 793000000
             }
           },
           {
@@ -260,7 +282,8 @@
             "line": 37,
             "name": "Click on filter of Building Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 773000000
             }
           },
           {
@@ -269,7 +292,8 @@
             "line": 38,
             "name": "Click on filter of Building Begins with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 638000000
             }
           },
           {
@@ -278,7 +302,8 @@
             "line": 39,
             "name": "Click on filter of Building Ends with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 600000000
             }
           },
           {
@@ -287,7 +312,8 @@
             "line": 40,
             "name": "Click on filter of Building Blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 671000000
             }
           },
           {
@@ -296,7 +322,8 @@
             "line": 41,
             "name": "Click on filter of Building Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 727000000
             }
           },
           {
@@ -305,7 +332,8 @@
             "line": 43,
             "name": "Click on filter of Repair type contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 676000000
             }
           },
           {
@@ -314,7 +342,8 @@
             "line": 44,
             "name": "Click on filter of Repair type Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 736000000
             }
           },
           {
@@ -323,7 +352,8 @@
             "line": 45,
             "name": "Click on filter of Repair type Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 677000000
             }
           },
           {
@@ -332,7 +362,8 @@
             "line": 46,
             "name": "Click on filter of Repair type Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 708000000
             }
           },
           {
@@ -341,7 +372,8 @@
             "line": 47,
             "name": "Click on filter of Repair type Begins with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 631000000
             }
           },
           {
@@ -350,7 +382,8 @@
             "line": 48,
             "name": "Click on filter of Repair type Ends with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 624000000
             }
           },
           {
@@ -359,7 +392,8 @@
             "line": 49,
             "name": "Click on filter of Repair type Blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 656000000
             }
           },
           {
@@ -368,7 +402,8 @@
             "line": 50,
             "name": "Click on filter of Repair type Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 685000000
             }
           },
           {
@@ -377,7 +412,8 @@
             "line": 52,
             "name": "Click on filter of Serial Number contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1738000000
             }
           },
           {
@@ -386,7 +422,8 @@
             "line": 53,
             "name": "Click on filter of Serial Number Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 720000000
             }
           },
           {
@@ -395,7 +432,8 @@
             "line": 54,
             "name": "Click on filter of Serial Number Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 735000000
             }
           },
           {
@@ -404,7 +442,8 @@
             "line": 55,
             "name": "Click on filter of Serial Number Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 710000000
             }
           },
           {
@@ -413,7 +452,8 @@
             "line": 56,
             "name": "Click on filter of Serial Number Begins with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 630000000
             }
           },
           {
@@ -422,7 +462,8 @@
             "line": 57,
             "name": "Click on filter of Serial Number Ends with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 666000000
             }
           },
           {
@@ -431,7 +472,8 @@
             "line": 58,
             "name": "Click on filter of Serial Number Blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 563000000
             }
           },
           {
@@ -440,7 +482,8 @@
             "line": 59,
             "name": "Click on filter of Serial Number Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 713000000
             }
           },
           {
@@ -449,7 +492,8 @@
             "line": 61,
             "name": "Click on filter of Repair device contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1562000000
             }
           },
           {
@@ -458,7 +502,8 @@
             "line": 62,
             "name": "Click on filter of Repair device Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1504000000
             }
           },
           {
@@ -467,7 +512,8 @@
             "line": 63,
             "name": "Click on filter of Repair device Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1526000000
             }
           },
           {
@@ -476,7 +522,8 @@
             "line": 64,
             "name": "Click on filter of Repair device Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1519000000
             }
           },
           {
@@ -485,7 +532,8 @@
             "line": 65,
             "name": "Click on filter of Repair device Begins with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 731000000
             }
           },
           {
@@ -494,7 +542,8 @@
             "line": 66,
             "name": "Click on filter of Repair device Ends with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 690000000
             }
           },
           {
@@ -503,7 +552,8 @@
             "line": 67,
             "name": "Click on filter of Repair device Blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 704000000
             }
           },
           {
@@ -512,7 +562,8 @@
             "line": 68,
             "name": "Click on filter of Repair device Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1677000000
             }
           },
           {
@@ -521,7 +572,8 @@
             "line": 70,
             "name": "Click on filter of Asset tag contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 736000000
             }
           },
           {
@@ -530,7 +582,8 @@
             "line": 71,
             "name": "Click on filter of Asset tag Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 770000000
             }
           },
           {
@@ -539,7 +592,8 @@
             "line": 72,
             "name": "Click on filter of Asset tag Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 873000000
             }
           },
           {
@@ -548,7 +602,8 @@
             "line": 73,
             "name": "Click on filter of Asset tag Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 760000000
             }
           },
           {
@@ -557,7 +612,8 @@
             "line": 74,
             "name": "Click on filter of Asset tag Begins with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 695000000
             }
           },
           {
@@ -566,7 +622,8 @@
             "line": 75,
             "name": "Click on filter of Asset tag Ends with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 700000000
             }
           },
           {
@@ -575,7 +632,8 @@
             "line": 76,
             "name": "Click on filter of Asset tag Blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 679000000
             }
           },
           {
@@ -584,7 +642,8 @@
             "line": 77,
             "name": "Click on filter of Asset tag Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 841000000
             }
           },
           {
@@ -593,7 +652,8 @@
             "line": 79,
             "name": "Click on filter of Repair status op1 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1257000000
             }
           },
           {
@@ -602,7 +662,8 @@
             "line": 80,
             "name": "Click on filter of Repair status op2 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 344000000
             }
           },
           {
@@ -611,7 +672,8 @@
             "line": 81,
             "name": "Click on filter of Repair status op3 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 331000000
             }
           },
           {
@@ -620,7 +682,8 @@
             "line": 82,
             "name": "Click on filter of Repair status op4 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 322000000
             }
           },
           {
@@ -629,7 +692,8 @@
             "line": 83,
             "name": "Click on filter of Repair status op5 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 317000000
             }
           },
           {
@@ -638,7 +702,8 @@
             "line": 84,
             "name": "Click on filter of Repair status op6 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 334000000
             }
           },
           {
@@ -647,7 +712,8 @@
             "line": 85,
             "name": "Click on filter of Repair status op7 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 386000000
             }
           },
           {
@@ -656,7 +722,8 @@
             "line": 86,
             "name": "Click on filter of Repair status op8 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 311000000
             }
           },
           {
@@ -665,7 +732,8 @@
             "line": 87,
             "name": "Click on filter of Repair status op9 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 308000000
             }
           },
           {
@@ -674,7 +742,8 @@
             "line": 88,
             "name": "Click on filter of Repair status op10 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 336000000
             }
           },
           {
@@ -683,7 +752,8 @@
             "line": 89,
             "name": "Click on filter of Repair status op11 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 345000000
             }
           },
           {
@@ -692,7 +762,8 @@
             "line": 91,
             "name": "Click on filter of Created By contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1097000000
             }
           },
           {
@@ -701,7 +772,9 @@
             "line": 92,
             "name": "Click on filter of Created By Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "duration": 5411000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<div.ag-row-even.ag-row-no-focus.ag-row.ag-row-level-0.ag-row-position-absolute.ag-row-first.ag-row-not-inline-editing>' not to contain 'demo_adminvivacity@vivacitytech.com'\n    at DeviceRepairReportActions.filterDoesnotcontainCBy (cypress/integration/PageObject/PageActions/DeviceRepairReportActions.js:723:32)\n    at Context.eval (cypress/integration/DeviceRepairReport/DeviceRepairReport.spec.js:361:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {

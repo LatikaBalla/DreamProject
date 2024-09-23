@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 7445000000
+              "duration": 2522000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 10670000000
+              "duration": 9314000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 15269000000
+              "duration": 13094000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 83000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on MyFleet Tab",
             "result": {
               "status": "passed",
-              "duration": 1223000000
+              "duration": 1289000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of MyFleet Page",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 16000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Click on filter of Serial Number contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1873000000
+              "duration": 2110000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Click on filter of Serial Number Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 868000000
+              "duration": 730000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click on filter of Serial Number Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 866000000
+              "duration": 1075000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on filter of Serial Number Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 906000000
+              "duration": 745000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on filter of Serial Number Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 816000000
+              "duration": 929000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on filter of Serial Number Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 823000000
+              "duration": 913000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on filter of Serial Number Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 753000000
+              "duration": 460000000
             }
           },
           {
@@ -152,8 +152,9 @@
             "line": 22,
             "name": "Click on filter of Serial Number Not blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1003000000
+              "status": "failed",
+              "duration": 4888000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<div.ag-row-even.ag-row-no-focus.ag-row.ag-row-level-0.ag-row-position-absolute.ag-row-first.ag-row-not-inline-editing>' to contain 'SerialTest12387875'\n    at MyFleetActions.filterNotblankSN (cypress/integration/PageObject/PageActions/MyFleetActions.js:301:32)\n    at Context.eval (cypress/integration/MyFleet/MyFleet.spec.js:177:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -162,8 +163,7 @@
             "line": 24,
             "name": "Click on filter of Asset tag contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1613000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +172,7 @@
             "line": 25,
             "name": "Click on filter of Asset tag Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 640000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +181,7 @@
             "line": 26,
             "name": "Click on filter of Asset tag Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 741000000
+              "status": "skipped"
             }
           },
           {
@@ -192,8 +190,7 @@
             "line": 27,
             "name": "Click on filter of Asset tag Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 735000000
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +199,7 @@
             "line": 28,
             "name": "Click on filter of Asset tag Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 698000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +208,7 @@
             "line": 29,
             "name": "Click on filter of Asset tag Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 680000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +217,7 @@
             "line": 30,
             "name": "Click on filter of Asset tag Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 657000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +226,7 @@
             "line": 31,
             "name": "Click on filter of Asset tag Not blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 821000000
+              "status": "skipped"
             }
           },
           {
@@ -242,8 +235,7 @@
             "line": 33,
             "name": "Click on filter of Model contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1953000000
+              "status": "skipped"
             }
           },
           {
@@ -252,8 +244,7 @@
             "line": 34,
             "name": "Click on filter of Model Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 857000000
+              "status": "skipped"
             }
           },
           {
@@ -262,8 +253,7 @@
             "line": 35,
             "name": "Click on filter of Model Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 938000000
+              "status": "skipped"
             }
           },
           {
@@ -272,8 +262,7 @@
             "line": 36,
             "name": "Click on filter of Model Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 869000000
+              "status": "skipped"
             }
           },
           {
@@ -282,8 +271,7 @@
             "line": 37,
             "name": "Click on filter of Model Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 760000000
+              "status": "skipped"
             }
           },
           {
@@ -292,8 +280,7 @@
             "line": 38,
             "name": "Click on filter of Model Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 747000000
+              "status": "skipped"
             }
           },
           {
@@ -302,8 +289,7 @@
             "line": 39,
             "name": "Click on filter of Model Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 652000000
+              "status": "skipped"
             }
           },
           {
@@ -312,8 +298,7 @@
             "line": 40,
             "name": "Click on filter of Model Not blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 924000000
+              "status": "skipped"
             }
           },
           {
@@ -322,8 +307,7 @@
             "line": 42,
             "name": "Click on filter of SKU contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1841000000
+              "status": "skipped"
             }
           },
           {
@@ -332,8 +316,7 @@
             "line": 43,
             "name": "Click on filter of SKU Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 761000000
+              "status": "skipped"
             }
           },
           {
@@ -342,8 +325,7 @@
             "line": 44,
             "name": "Click on filter of SKU Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 826000000
+              "status": "skipped"
             }
           },
           {
@@ -352,8 +334,7 @@
             "line": 45,
             "name": "Click on filter of SKU Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 782000000
+              "status": "skipped"
             }
           },
           {
@@ -362,8 +343,7 @@
             "line": 46,
             "name": "Click on filter of SKU Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 734000000
+              "status": "skipped"
             }
           },
           {
@@ -372,8 +352,7 @@
             "line": 47,
             "name": "Click on filter of SKU Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 779000000
+              "status": "skipped"
             }
           },
           {
@@ -382,8 +361,7 @@
             "line": 48,
             "name": "Click on filter of SKU Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 668000000
+              "status": "skipped"
             }
           },
           {
@@ -392,8 +370,7 @@
             "line": 49,
             "name": "Click on filter of SKU Not blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 847000000
+              "status": "skipped"
             }
           },
           {
@@ -402,8 +379,7 @@
             "line": 51,
             "name": "Click on filter of Building contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1847000000
+              "status": "skipped"
             }
           },
           {
@@ -412,8 +388,7 @@
             "line": 52,
             "name": "Click on filter of Building Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1167000000
+              "status": "skipped"
             }
           },
           {
@@ -422,8 +397,7 @@
             "line": 53,
             "name": "Click on filter of Building Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 880000000
+              "status": "skipped"
             }
           },
           {
@@ -432,8 +406,7 @@
             "line": 54,
             "name": "Click on filter of Building Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 911000000
+              "status": "skipped"
             }
           },
           {
@@ -442,8 +415,7 @@
             "line": 55,
             "name": "Click on filter of Building Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 759000000
+              "status": "skipped"
             }
           },
           {
@@ -452,8 +424,7 @@
             "line": 56,
             "name": "Click on filter of Building Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 748000000
+              "status": "skipped"
             }
           },
           {
@@ -462,8 +433,7 @@
             "line": 57,
             "name": "Click on filter of Building Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 682000000
+              "status": "skipped"
             }
           },
           {
@@ -472,8 +442,7 @@
             "line": 58,
             "name": "Click on filter of Building Not blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 843000000
+              "status": "skipped"
             }
           },
           {
@@ -482,8 +451,7 @@
             "line": 60,
             "name": "Click on filter of Organizational Unit contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 711000000
+              "status": "skipped"
             }
           },
           {
@@ -492,8 +460,7 @@
             "line": 61,
             "name": "Click on filter of Organizational Unit Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 693000000
+              "status": "skipped"
             }
           },
           {
@@ -502,8 +469,7 @@
             "line": 62,
             "name": "Click on filter of Organizational Unit Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 762000000
+              "status": "skipped"
             }
           },
           {
@@ -512,8 +478,7 @@
             "line": 63,
             "name": "Click on filter of Organizational Unit Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 724000000
+              "status": "skipped"
             }
           },
           {
@@ -522,8 +487,7 @@
             "line": 64,
             "name": "Click on filter of Organizational Unit Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 729000000
+              "status": "skipped"
             }
           },
           {
@@ -532,8 +496,7 @@
             "line": 65,
             "name": "Click on filter of Organizational Unit Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 737000000
+              "status": "skipped"
             }
           },
           {
@@ -542,8 +505,7 @@
             "line": 66,
             "name": "Click on filter of Organizational Unit Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 713000000
+              "status": "skipped"
             }
           },
           {
@@ -552,8 +514,7 @@
             "line": 67,
             "name": "Click on filter of Organizational Unit Not blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 742000000
+              "status": "skipped"
             }
           },
           {
@@ -562,8 +523,7 @@
             "line": 69,
             "name": "Click on filter of User contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1993000000
+              "status": "skipped"
             }
           },
           {
@@ -572,8 +532,7 @@
             "line": 70,
             "name": "Click on filter of User Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 988000000
+              "status": "skipped"
             }
           },
           {
@@ -582,8 +541,7 @@
             "line": 71,
             "name": "Click on filter of User Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 997000000
+              "status": "skipped"
             }
           },
           {
@@ -592,8 +550,7 @@
             "line": 72,
             "name": "Click on filter of User Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 919000000
+              "status": "skipped"
             }
           },
           {
@@ -602,8 +559,7 @@
             "line": 73,
             "name": "Click on filter of User Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 831000000
+              "status": "skipped"
             }
           },
           {
@@ -612,8 +568,7 @@
             "line": 74,
             "name": "Click on filter of User Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 851000000
+              "status": "skipped"
             }
           },
           {
@@ -622,8 +577,7 @@
             "line": 75,
             "name": "Click on filter of User Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 777000000
+              "status": "skipped"
             }
           },
           {
@@ -632,8 +586,7 @@
             "line": 76,
             "name": "Click on filter of User Not blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 942000000
+              "status": "skipped"
             }
           },
           {
@@ -642,8 +595,7 @@
             "line": 78,
             "name": "Click on filter of Warranty contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1455000000
+              "status": "skipped"
             }
           },
           {
@@ -652,8 +604,7 @@
             "line": 79,
             "name": "Click on filter of Warranty Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1392000000
+              "status": "skipped"
             }
           },
           {
@@ -662,8 +613,7 @@
             "line": 80,
             "name": "Click on filter of Warranty Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1462000000
+              "status": "skipped"
             }
           },
           {
@@ -672,8 +622,7 @@
             "line": 81,
             "name": "Click on filter of Warranty Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1398000000
+              "status": "skipped"
             }
           },
           {
@@ -682,8 +631,7 @@
             "line": 82,
             "name": "Click on filter of Warranty Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 847000000
+              "status": "skipped"
             }
           },
           {
@@ -692,8 +640,7 @@
             "line": 83,
             "name": "Click on filter of Warranty Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 979000000
+              "status": "skipped"
             }
           },
           {
@@ -702,8 +649,7 @@
             "line": 84,
             "name": "Click on filter of Warranty Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 776000000
+              "status": "skipped"
             }
           },
           {
@@ -712,8 +658,7 @@
             "line": 85,
             "name": "Click on filter of Warranty Not blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1458000000
+              "status": "skipped"
             }
           },
           {
@@ -722,8 +667,7 @@
             "line": 87,
             "name": "Click on filter of Warranty End Date Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 821000000
+              "status": "skipped"
             }
           },
           {
@@ -732,8 +676,7 @@
             "line": 88,
             "name": "Click on filter of Warranty End Date Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 841000000
+              "status": "skipped"
             }
           },
           {
@@ -742,8 +685,7 @@
             "line": 89,
             "name": "Click on filter of Warranty End Date Before and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 832000000
+              "status": "skipped"
             }
           },
           {
@@ -752,8 +694,7 @@
             "line": 90,
             "name": "Click on filter of Warranty End Date After and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 845000000
+              "status": "skipped"
             }
           },
           {
@@ -762,8 +703,7 @@
             "line": 91,
             "name": "Click on filter of Warranty End Date Between and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1091000000
+              "status": "skipped"
             }
           },
           {
@@ -772,8 +712,7 @@
             "line": 92,
             "name": "Click on filter of Warranty End Date Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 737000000
+              "status": "skipped"
             }
           },
           {
@@ -782,8 +721,7 @@
             "line": 93,
             "name": "Click on filter of Warranty End Date Not blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 796000000
+              "status": "skipped"
             }
           },
           {
@@ -792,8 +730,7 @@
             "line": 95,
             "name": "Click on the add device",
             "result": {
-              "status": "passed",
-              "duration": 130000000
+              "status": "skipped"
             }
           },
           {
@@ -802,8 +739,7 @@
             "line": 96,
             "name": "Enter Serial no and select device id",
             "result": {
-              "status": "passed",
-              "duration": 2420000000
+              "status": "skipped"
             }
           },
           {
@@ -812,8 +748,7 @@
             "line": 97,
             "name": "Enter Asset Tag and Select student id",
             "result": {
-              "status": "passed",
-              "duration": 892000000
+              "status": "skipped"
             }
           },
           {
@@ -822,8 +757,7 @@
             "line": 98,
             "name": "Select lonar status and Device status",
             "result": {
-              "status": "passed",
-              "duration": 911000000
+              "status": "skipped"
             }
           },
           {
@@ -832,8 +766,7 @@
             "line": 99,
             "name": "Click on the Submit Button",
             "result": {
-              "status": "passed",
-              "duration": 104000000
+              "status": "skipped"
             }
           },
           {
@@ -842,8 +775,7 @@
             "line": 100,
             "name": "Verify the device added successfully",
             "result": {
-              "status": "passed",
-              "duration": 1513000000
+              "status": "skipped"
             }
           },
           {
@@ -852,8 +784,7 @@
             "line": 101,
             "name": "Click on Export To CSV",
             "result": {
-              "status": "passed",
-              "duration": 933000000
+              "status": "skipped"
             }
           },
           {
@@ -862,8 +793,7 @@
             "line": 102,
             "name": "Convert Active to Retired device",
             "result": {
-              "status": "passed",
-              "duration": 4923000000
+              "status": "skipped"
             }
           },
           {
@@ -872,8 +802,7 @@
             "line": 103,
             "name": "Verify the Device Retired successfully",
             "result": {
-              "status": "passed",
-              "duration": 480000000
+              "status": "skipped"
             }
           },
           {
@@ -882,8 +811,7 @@
             "line": 104,
             "name": "Click on Retired Tab",
             "result": {
-              "status": "passed",
-              "duration": 90000000
+              "status": "skipped"
             }
           },
           {
@@ -892,8 +820,7 @@
             "line": 105,
             "name": "Convert Retired to Active device",
             "result": {
-              "status": "passed",
-              "duration": 4931000000
+              "status": "skipped"
             }
           },
           {
@@ -902,8 +829,7 @@
             "line": 106,
             "name": "Verify the Device Active successfully",
             "result": {
-              "status": "passed",
-              "duration": 505000000
+              "status": "skipped"
             }
           },
           {
@@ -912,8 +838,7 @@
             "line": 107,
             "name": "Click on deviceIcon and click on view Button",
             "result": {
-              "status": "passed",
-              "duration": 5875000000
+              "status": "skipped"
             }
           },
           {
@@ -922,8 +847,7 @@
             "line": 108,
             "name": "Verify the General Device Information",
             "result": {
-              "status": "passed",
-              "duration": 1070000000
+              "status": "skipped"
             }
           },
           {
@@ -932,8 +856,7 @@
             "line": 109,
             "name": "Click on Edit button of General info",
             "result": {
-              "status": "passed",
-              "duration": 109000000
+              "status": "skipped"
             }
           },
           {
@@ -942,8 +865,7 @@
             "line": 110,
             "name": "Update Asset tag and Click on save button",
             "result": {
-              "status": "passed",
-              "duration": 619000000
+              "status": "skipped"
             }
           },
           {
@@ -952,8 +874,7 @@
             "line": 111,
             "name": "Verfiy General info Record updated successfully",
             "result": {
-              "status": "passed",
-              "duration": 496000000
+              "status": "skipped"
             }
           },
           {
@@ -962,8 +883,7 @@
             "line": 112,
             "name": "Click on Edit button of Assignment",
             "result": {
-              "status": "passed",
-              "duration": 104000000
+              "status": "skipped"
             }
           },
           {
@@ -972,8 +892,7 @@
             "line": 113,
             "name": "Update student, building, loner status and Click on save button",
             "result": {
-              "status": "passed",
-              "duration": 1396000000
+              "status": "skipped"
             }
           },
           {
@@ -982,8 +901,7 @@
             "line": 114,
             "name": "Verfiy Assignment Record updated successfully",
             "result": {
-              "status": "passed",
-              "duration": 511000000
+              "status": "skipped"
             }
           }
         ]
@@ -1003,7 +921,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2823000000
+              "duration": 2230000000
             }
           },
           {
@@ -1013,7 +931,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5566000000
+              "duration": 5988000000
             }
           },
           {
@@ -1023,7 +941,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 15256000000
+              "duration": 13096000000
             }
           },
           {
@@ -1033,7 +951,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 67000000
+              "duration": 84000000
             }
           },
           {
@@ -1043,7 +961,7 @@
             "name": "Click on MyFleet Tab",
             "result": {
               "status": "passed",
-              "duration": 1481000000
+              "duration": 1039000000
             }
           },
           {
@@ -1053,7 +971,7 @@
             "name": "Click on Retired Tab",
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 62000000
             }
           },
           {
@@ -1063,7 +981,7 @@
             "name": "Verify the Title of MyFleet Page",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 12000000
             }
           },
           {
@@ -1073,7 +991,7 @@
             "name": "Click on filter of Serial Number contain and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 2719000000
+              "duration": 3045000000
             }
           },
           {
@@ -1083,7 +1001,7 @@
             "name": "Click on filter of Serial Number Does not contain and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 657000000
+              "duration": 682000000
             }
           },
           {
@@ -1093,7 +1011,7 @@
             "name": "Click on filter of Serial Number Equals and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 682000000
+              "duration": 1051000000
             }
           },
           {
@@ -1103,7 +1021,7 @@
             "name": "Click on filter of Serial Number Does not equal and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 655000000
+              "duration": 682000000
             }
           },
           {
@@ -1113,7 +1031,7 @@
             "name": "Click on filter of Serial Number Begins with and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 551000000
+              "duration": 912000000
             }
           },
           {
@@ -1123,7 +1041,7 @@
             "name": "Click on filter of Serial Number Ends with and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 601000000
+              "duration": 543000000
             }
           },
           {
@@ -1133,7 +1051,7 @@
             "name": "Click on filter of Serial Number Blank and Verify the Result in Retired",
             "result": {
               "status": "passed",
-              "duration": 563000000
+              "duration": 463000000
             }
           },
           {
@@ -1142,8 +1060,8 @@
             "line": 142,
             "name": "Click on filter of Serial Number Not blank and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 671000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<div.ag-row-even.ag-row-no-focus.ag-row.ag-row-level-0.ag-row-position-absolute.ag-row-first.ag-row-not-inline-editing>' to contain 'VIVATEST98Test'\n    at MyFleetActions.filterNotblankSN1 (cypress/integration/PageObject/PageActions/MyFleetActions.js:957:32)\n    at Context.eval (cypress/integration/MyFleet/MyFleet.spec.js:400:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -1152,8 +1070,7 @@
             "line": 144,
             "name": "Click on filter of Asset tag contain and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 3650000000
+              "status": "skipped"
             }
           },
           {
@@ -1162,8 +1079,7 @@
             "line": 145,
             "name": "Click on filter of Asset tag Does not contain and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 2728000000
+              "status": "skipped"
             }
           },
           {
@@ -1172,8 +1088,7 @@
             "line": 146,
             "name": "Click on filter of Asset tag Equals and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 750000000
+              "status": "skipped"
             }
           },
           {
@@ -1182,8 +1097,7 @@
             "line": 147,
             "name": "Click on filter of Asset tag Does not equal and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 705000000
+              "status": "skipped"
             }
           },
           {
@@ -1192,8 +1106,7 @@
             "line": 148,
             "name": "Click on filter of Asset tag Begins with and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 685000000
+              "status": "skipped"
             }
           },
           {
@@ -1202,8 +1115,7 @@
             "line": 149,
             "name": "Click on filter of Asset tag Ends with and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 876000000
+              "status": "skipped"
             }
           },
           {
@@ -1212,8 +1124,7 @@
             "line": 150,
             "name": "Click on filter of Asset tag Blank and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 675000000
+              "status": "skipped"
             }
           },
           {
@@ -1222,8 +1133,7 @@
             "line": 151,
             "name": "Click on filter of Asset tag Not blank and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 751000000
+              "status": "skipped"
             }
           },
           {
@@ -1232,8 +1142,7 @@
             "line": 153,
             "name": "Click on filter of Model contain and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 2830000000
+              "status": "skipped"
             }
           },
           {
@@ -1242,8 +1151,7 @@
             "line": 154,
             "name": "Click on filter of Model Does not contain and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 781000000
+              "status": "skipped"
             }
           },
           {
@@ -1252,8 +1160,7 @@
             "line": 155,
             "name": "Click on filter of Model Equals and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 838000000
+              "status": "skipped"
             }
           },
           {
@@ -1262,8 +1169,7 @@
             "line": 156,
             "name": "Click on filter of Model Does not equal and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 787000000
+              "status": "skipped"
             }
           },
           {
@@ -1272,8 +1178,7 @@
             "line": 157,
             "name": "Click on filter of Model Begins with and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 758000000
+              "status": "skipped"
             }
           },
           {
@@ -1282,8 +1187,7 @@
             "line": 158,
             "name": "Click on filter of Model Ends with and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 756000000
+              "status": "skipped"
             }
           },
           {
@@ -1292,8 +1196,7 @@
             "line": 159,
             "name": "Click on filter of Model Blank and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 646000000
+              "status": "skipped"
             }
           },
           {
@@ -1302,8 +1205,7 @@
             "line": 160,
             "name": "Click on filter of Model Not blank and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 808000000
+              "status": "skipped"
             }
           },
           {
@@ -1312,8 +1214,7 @@
             "line": 162,
             "name": "Click on filter of SKU contain and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 2893000000
+              "status": "skipped"
             }
           },
           {
@@ -1322,8 +1223,7 @@
             "line": 163,
             "name": "Click on filter of SKU Does not contain and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 850000000
+              "status": "skipped"
             }
           },
           {
@@ -1332,8 +1232,7 @@
             "line": 164,
             "name": "Click on filter of SKU Equals and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 875000000
+              "status": "skipped"
             }
           },
           {
@@ -1342,8 +1241,7 @@
             "line": 165,
             "name": "Click on filter of SKU Does not equal and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 863000000
+              "status": "skipped"
             }
           },
           {
@@ -1352,8 +1250,7 @@
             "line": 166,
             "name": "Click on filter of SKU Begins with and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 773000000
+              "status": "skipped"
             }
           },
           {
@@ -1362,8 +1259,7 @@
             "line": 167,
             "name": "Click on filter of SKU Ends with and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 764000000
+              "status": "skipped"
             }
           },
           {
@@ -1372,8 +1268,7 @@
             "line": 168,
             "name": "Click on filter of SKU Blank and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 681000000
+              "status": "skipped"
             }
           },
           {
@@ -1382,8 +1277,7 @@
             "line": 169,
             "name": "Click on filter of SKU Not blank and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 862000000
+              "status": "skipped"
             }
           },
           {
@@ -1392,8 +1286,7 @@
             "line": 171,
             "name": "Click on filter of Building contain and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 957000000
+              "status": "skipped"
             }
           },
           {
@@ -1402,8 +1295,7 @@
             "line": 172,
             "name": "Click on filter of Building Does not contain and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 928000000
+              "status": "skipped"
             }
           },
           {
@@ -1412,8 +1304,7 @@
             "line": 173,
             "name": "Click on filter of Building Equals and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 967000000
+              "status": "skipped"
             }
           },
           {
@@ -1422,8 +1313,7 @@
             "line": 174,
             "name": "Click on filter of Building Does not equal and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 935000000
+              "status": "skipped"
             }
           },
           {
@@ -1432,8 +1322,7 @@
             "line": 175,
             "name": "Click on filter of Building Begins with and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 755000000
+              "status": "skipped"
             }
           },
           {
@@ -1442,8 +1331,7 @@
             "line": 176,
             "name": "Click on filter of Building Ends with and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 787000000
+              "status": "skipped"
             }
           },
           {
@@ -1452,8 +1340,7 @@
             "line": 177,
             "name": "Click on filter of Building Blank and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 743000000
+              "status": "skipped"
             }
           },
           {
@@ -1462,8 +1349,7 @@
             "line": 178,
             "name": "Click on filter of Building Not blank and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 976000000
+              "status": "skipped"
             }
           },
           {
@@ -1472,8 +1358,7 @@
             "line": 180,
             "name": "Click on filter of Organizational Unit contain and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 2715000000
+              "status": "skipped"
             }
           },
           {
@@ -1482,8 +1367,7 @@
             "line": 181,
             "name": "Click on filter of Organizational Unit Does not contain and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 711000000
+              "status": "skipped"
             }
           },
           {
@@ -1492,8 +1376,7 @@
             "line": 182,
             "name": "Click on filter of Organizational Unit Equals and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 724000000
+              "status": "skipped"
             }
           },
           {
@@ -1502,8 +1385,7 @@
             "line": 183,
             "name": "Click on filter of Organizational Unit Does not equal and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 735000000
+              "status": "skipped"
             }
           },
           {
@@ -1512,8 +1394,7 @@
             "line": 184,
             "name": "Click on filter of Organizational Unit Begins with and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 723000000
+              "status": "skipped"
             }
           },
           {
@@ -1522,8 +1403,7 @@
             "line": 185,
             "name": "Click on filter of Organizational Unit Ends with and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 743000000
+              "status": "skipped"
             }
           },
           {
@@ -1532,8 +1412,7 @@
             "line": 186,
             "name": "Click on filter of Organizational Unit Blank and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 717000000
+              "status": "skipped"
             }
           },
           {
@@ -1542,8 +1421,7 @@
             "line": 187,
             "name": "Click on filter of Organizational Unit Not blank and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 712000000
+              "status": "skipped"
             }
           },
           {
@@ -1552,8 +1430,7 @@
             "line": 189,
             "name": "Click on filter of User contain and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 2964000000
+              "status": "skipped"
             }
           },
           {
@@ -1562,8 +1439,7 @@
             "line": 190,
             "name": "Click on filter of User Does not contain and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 945000000
+              "status": "skipped"
             }
           },
           {
@@ -1572,8 +1448,7 @@
             "line": 191,
             "name": "Click on filter of User Equals and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 1141000000
+              "status": "skipped"
             }
           },
           {
@@ -1582,8 +1457,7 @@
             "line": 192,
             "name": "Click on filter of User Does not equal and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 956000000
+              "status": "skipped"
             }
           },
           {
@@ -1592,8 +1466,7 @@
             "line": 193,
             "name": "Click on filter of User Begins with and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 801000000
+              "status": "skipped"
             }
           },
           {
@@ -1602,8 +1475,7 @@
             "line": 194,
             "name": "Click on filter of User Ends with and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 799000000
+              "status": "skipped"
             }
           },
           {
@@ -1612,8 +1484,7 @@
             "line": 195,
             "name": "Click on filter of User Blank and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 771000000
+              "status": "skipped"
             }
           },
           {
@@ -1622,8 +1493,7 @@
             "line": 196,
             "name": "Click on filter of User Not blank and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 986000000
+              "status": "skipped"
             }
           },
           {
@@ -1632,8 +1502,7 @@
             "line": 198,
             "name": "Click on filter of Warranty contain and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 3975000000
+              "status": "skipped"
             }
           },
           {
@@ -1642,8 +1511,7 @@
             "line": 199,
             "name": "Click on filter of Warranty Does not contain and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 1937000000
+              "status": "skipped"
             }
           },
           {
@@ -1652,8 +1520,7 @@
             "line": 200,
             "name": "Click on filter of Warranty Equals and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 1989000000
+              "status": "skipped"
             }
           },
           {
@@ -1662,8 +1529,7 @@
             "line": 201,
             "name": "Click on filter of Warranty Does not equal and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 1908000000
+              "status": "skipped"
             }
           },
           {
@@ -1672,8 +1538,7 @@
             "line": 202,
             "name": "Click on filter of Warranty Begins with and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 855000000
+              "status": "skipped"
             }
           },
           {
@@ -1682,8 +1547,7 @@
             "line": 203,
             "name": "Click on filter of Warranty Ends with and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 913000000
+              "status": "skipped"
             }
           },
           {
@@ -1692,8 +1556,7 @@
             "line": 204,
             "name": "Click on filter of Warranty Blank and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 785000000
+              "status": "skipped"
             }
           },
           {
@@ -1702,8 +1565,7 @@
             "line": 205,
             "name": "Click on filter of Warranty Not blank and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 1985000000
+              "status": "skipped"
             }
           },
           {
@@ -1712,8 +1574,7 @@
             "line": 207,
             "name": "Click on filter of Warranty End Date Equals and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 2818000000
+              "status": "skipped"
             }
           },
           {
@@ -1722,8 +1583,7 @@
             "line": 208,
             "name": "Click on filter of Warranty End Date Does not equal and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 835000000
+              "status": "skipped"
             }
           },
           {
@@ -1732,8 +1592,7 @@
             "line": 209,
             "name": "Click on filter of Warranty End Date Before and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 815000000
+              "status": "skipped"
             }
           },
           {
@@ -1742,8 +1601,7 @@
             "line": 210,
             "name": "Click on filter of Warranty End Date After and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 819000000
+              "status": "skipped"
             }
           },
           {
@@ -1752,8 +1610,7 @@
             "line": 211,
             "name": "Click on filter of Warranty End Date Between and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 1124000000
+              "status": "skipped"
             }
           },
           {
@@ -1762,8 +1619,7 @@
             "line": 212,
             "name": "Click on filter of Warranty End Date Blank and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 765000000
+              "status": "skipped"
             }
           },
           {
@@ -1772,8 +1628,7 @@
             "line": 213,
             "name": "Click on filter of Warranty End Date Not blank and Verify the Result in Retired",
             "result": {
-              "status": "passed",
-              "duration": 797000000
+              "status": "skipped"
             }
           },
           {
@@ -1782,8 +1637,7 @@
             "line": 214,
             "name": "Click on the add device",
             "result": {
-              "status": "passed",
-              "duration": 133000000
+              "status": "skipped"
             }
           },
           {
@@ -1792,8 +1646,7 @@
             "line": 215,
             "name": "Enter Serial no and select device id",
             "result": {
-              "status": "passed",
-              "duration": 3273000000
+              "status": "skipped"
             }
           },
           {
@@ -1802,8 +1655,7 @@
             "line": 216,
             "name": "Enter Asset Tag and Select student id",
             "result": {
-              "status": "passed",
-              "duration": 964000000
+              "status": "skipped"
             }
           },
           {
@@ -1812,8 +1664,7 @@
             "line": 217,
             "name": "Select lonar status and Device status",
             "result": {
-              "status": "passed",
-              "duration": 925000000
+              "status": "skipped"
             }
           },
           {
@@ -1822,8 +1673,7 @@
             "line": 218,
             "name": "Click on the Submit Button",
             "result": {
-              "status": "passed",
-              "duration": 109000000
+              "status": "skipped"
             }
           },
           {
@@ -1832,8 +1682,7 @@
             "line": 219,
             "name": "Verify the device added successfully",
             "result": {
-              "status": "passed",
-              "duration": 1533000000
+              "status": "skipped"
             }
           },
           {
@@ -1842,8 +1691,7 @@
             "line": 220,
             "name": "Click on deviceIcon and click on view Button",
             "result": {
-              "status": "passed",
-              "duration": 5862000000
+              "status": "skipped"
             }
           },
           {
@@ -1852,8 +1700,7 @@
             "line": 221,
             "name": "Verify the General Device Information",
             "result": {
-              "status": "passed",
-              "duration": 1550000000
+              "status": "skipped"
             }
           }
         ]

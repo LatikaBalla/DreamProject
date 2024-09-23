@@ -13,8 +13,6 @@ export class MyFleetActions {
    closeTermsOfServiceWindow() {
       cy.wait(4000)
       dash.termsElement().contains('Dismiss').click({ force: true })
-      cy.wait(2000)
-      cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
    }
    clickOnManageDevices() {
       dash.managedevicesElement().click({ force: true })

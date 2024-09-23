@@ -12,8 +12,6 @@ export class LoginActions {
     closeTermsOfServiceWindow() {
         cy.wait(1000)
         dash.termsElement().contains('Dismiss').click({ force: true })
-        cy.wait(5000)
-        cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }
     clickOnLoginButton() {
         lan.loginElement().click({ force: true })

@@ -12,8 +12,6 @@ export class DeviceRepairReportActions {
    closeTermsOfServiceWindow() {
       cy.wait(5000)
       dash.termsElement().contains('Dismiss').click({ force: true })
-      cy.wait(5000)
-      cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
    }
    clickOnReportCenter() {
       dash.reportcenterElement().click({ force: true })
@@ -144,7 +142,7 @@ export class DeviceRepairReportActions {
       dev.fieldOpElement().eq(4).click({ force: true })
       dev.fieldValueElement().eq(0).clear({ force: true }).type(tdata.deviceRepairReport.recordid)
       dev.applyElement().click({ force: true })
-      cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
+      cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
          const value = parseInt($el.text());
          expect(value).to.be.lessThan(56677);
       })
@@ -157,7 +155,7 @@ export class DeviceRepairReportActions {
       dev.fieldOpElement().eq(5).click({ force: true })
       dev.fieldValueElement().eq(0).clear({ force: true }).type(tdata.deviceRepairReport.recordid)
       dev.applyElement().click({ force: true })
-      cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
+      cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
          const value = parseInt($el.text());
          expect(value).to.be.lte(56677);
       })

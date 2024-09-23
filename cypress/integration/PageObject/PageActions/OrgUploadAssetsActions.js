@@ -12,8 +12,6 @@ export class OrgUploadAssetsActions {
     closeTermsOfServiceWindow() {
         cy.wait(3000)
         dash.termsElement().contains('Dismiss').click({ force: true })
-        cy.wait(3000)
-        cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }
     clickOnManageDevices() {
         dash.managedevicesElement().click({ force: true })
