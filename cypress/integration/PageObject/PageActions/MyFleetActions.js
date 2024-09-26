@@ -244,7 +244,7 @@ export class MyFleetActions {
       mf.fieldOpElement().eq(1).click({ force: true })
       mf.fieldValueElement().eq(0).type(tdata.myFleet.serialno)
       mf.applyElement().click({ force: true })
-     // cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.serialno)
+     cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.serialno)
       mf.clearFilterElement().click({ force: true })
    }
    filterEqualsSN() {
@@ -289,7 +289,7 @@ export class MyFleetActions {
       mf.fieldOpElement().eq(6).click({ force: true })
       mf.fieldValueElement().eq(0).type(' ', { force: true })
       mf.applyElement().click({ force: true })
-      //  cy.get('[row-index="0"]').should('contain', ' ')
+      cy.get('[row-index="0"]').should('contain', ' ')
       mf.clearFilterElement().click({ force: true })
    }
    filterNotblankSN() {
@@ -298,6 +298,7 @@ export class MyFleetActions {
       mf.fieldOpElement().eq(7).click({ force: true })
       mf.fieldValueElement().eq(1).type(tdata.myFleet.serialno, { force: true })
       mf.applyElement().click({ force: true })
+      cy.wait(100)
       cy.get('[row-index="0"]').should('contain', tdata.myFleet.serialno)
       mf.clearFilterElement().click({ force: true })
    }
@@ -931,11 +932,13 @@ export class MyFleetActions {
       mf.clearFilterElement().click({ force: true })
    }
    filterEndswithSN1() {
+
       mf.addFilterElement().eq(0).click({ force: true })
       mf.fieldNameElement().eq(1).click({ force: true })
       mf.fieldOpElement().eq(5).click({ force: true })
       mf.fieldValueElement().eq(0).type('Test')
       mf.applyElement().click({ force: true })
+    cy.wait(100)
       cy.get('[row-index="0"]').should('contain', 'Test')
       mf.clearFilterElement().click({ force: true })
    }
@@ -945,7 +948,7 @@ export class MyFleetActions {
       mf.fieldOpElement().eq(6).click({ force: true })
       mf.fieldValueElement().eq(0).type(' ', { force: true })
       mf.applyElement().click({ force: true })
-     // cy.get('[row-index="0"]').should('contain', ' ')
+     cy.get('[row-index="0"]').should('contain', ' ')
       mf.clearFilterElement().click({ force: true })
    }
    filterNotblankSN1() {
@@ -954,6 +957,7 @@ export class MyFleetActions {
       mf.fieldOpElement().eq(7).click({ force: true })
       mf.fieldValueElement().eq(1).type(tdata.myFleet.serialno1, { force: true })
       mf.applyElement().click({ force: true })
+      cy.wait(100)
       cy.get('[row-index="0"]').should('contain', tdata.myFleet.serialno1)
       mf.clearFilterElement().click({ force: true })
    }

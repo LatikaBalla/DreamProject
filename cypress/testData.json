@@ -47,8 +47,8 @@
     "phoneNo": "1233211234",
     "phoneNo1": "(123) 321-1234",
     "uploadfilename": "building_list.csv",
-    "buildingAbbreviation":"null",
-    "uploadmsg":"Building CSV submitted"
+    "buildingAbbreviation": "null",
+    "uploadmsg": "Building CSV submitted"
   },
   "editbuildings": {
     "buildingname": "Building_E1",
@@ -82,19 +82,19 @@
     "chromebookissue": "There is something fault",
     "createTicketmsg": "Add new ticket form submitted",
     "repairissue": "[data-value='RAM issue']",
-    "ticketnumber": "V0041352",
-    "repairtype": "In_House",
+    "ticketnumber": "V0071690",
+    "repairtype": "In-House",
     "repairstatus": "Pending Repair Box",
     "repairbox": "105",
-    "recordid": "41352",
-    "recordid1":"70799",
-    "assettag": "VivaTEST2Test",
-    "serialnumber": "VIVATEST82Test",
+    "recordid": "71690",
+    "recordid1": "70799",
+    "assettag": "673TY",
+    "serialnumber": "VIVATEST50Test",
     "repairdevice": "Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch",
     "createdby": "demo_adminvivacity@vivacitytech.com"
   },
   "myFleet": {
-    "filename": "fleet_devices.csv",  
+    "filename": "fleet_devices.csv",
     "search": "SerialTest12366",
     "search1": "98765vhTest",
     "serialNo": "1111",
@@ -109,26 +109,26 @@
     "device": "Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch - New",
     "searchG": "5CD031J7GP",
     "serialno": "SerialTest12387875",
-    "serialno1": "VIVATEST98Test",
-    "serialnumber":"1723638002760",
+    "serialno1": "VIVATEST91Test",
+    "serialnumber": "1723638002760",
     "assettag": "Tyrique",
     "assettag1": "Novella",
-    "model":"Generic Chromebook",
-    "model1":"Unidentified",
-    "sku":"VT-Generic",
-    "sku1":"VT-Unidentified",
-    "orgUnit":"/",
-    "orgUnit1":"/",
-    "buildingname":"Proterworth",
-    "buildingname1":"Raynes Administration",
-    "user":"Ryker Swenson",
-    "user1":"Samantha Miller",
-    "warranty":"Manufacturer 1-Year Base Limited Warranty",
-    "warranty1":"Vivacity Tech 3-Year Empower Plus Warranty (Touchscreen) (VT3YR-EMPLUS-TS)",
-    "warrantyDate":"2027-03-15",
-    "warrantyDate1":"15-03-2027",
-    "warrantyDate2":"2024-10-02",
-    "warrantyDate3":"02-10-2024"
+    "model": "Generic Chromebook",
+    "model1": "Unidentified",
+    "sku": "VT-Generic",
+    "sku1": "VT-Unidentified",
+    "orgUnit": "/",
+    "orgUnit1": "/",
+    "buildingname": "Proterworth",
+    "buildingname1": "Raynes Administration",
+    "user": "Ryker Swenson",
+    "user1": "Samantha Miller",
+    "warranty": "Manufacturer 1-Year Base Limited Warranty",
+    "warranty1": "Vivacity Tech 3-Year Empower Plus Warranty (Touchscreen) (VT3YR-EMPLUS-TS)",
+    "warrantyDate": "2027-03-15",
+    "warrantyDate1": "15-03-2027",
+    "warrantyDate2": "2024-10-02",
+    "warrantyDate3": "02-10-2024"
   },
   "addasset": {
     "title": "AssetTitle",
@@ -138,8 +138,8 @@
     "tag": "10",
     "type": "aaabbbccc",
     "description": "this is description",
-    "acquireDate":"2024-08-25",
-    "acquireDate1":"25-08-2024"
+    "acquireDate": "2024-08-25",
+    "acquireDate1": "25-08-2024"
   },
   "editasset": {
     "title": "EditAssetTitle",
@@ -153,8 +153,8 @@
   "importDevice": {
     "uploadfilename": "serialImportTemplate.csv",
     "downloadfilename": "import_list.csv",
-    "importdate":"2024-03-28",
-    "importdate1":"28-03-2024",
+    "importdate": "2024-03-28",
+    "importdate1": "03-28-2024",
     "importer": "demo_adminvivacity@vivacitytech.com",
     "quantitydevices": "2",
     "quantitydevices1": "0"
@@ -164,7 +164,7 @@
     "reupload": "image2.jpg",
     "addassetmsg": "Add new asset form submitted",
     "updatemsg": "Update asset form submitted",
-    "deletemsg":"Asset deleted successfully"
+    "deletemsg": "Asset deleted successfully"
   },
   "repairTickets": {
     "failuretype": "[data-value='Accidental']",
@@ -184,13 +184,17 @@
     "repairbox1": "10584",
     "assettag": "5678",
     "recordid": "70470",
-    "studentInfo":"Nathan Birch",
+    "studentInfo": "Sohan Saini",
+    "studentTechnician": "Nathan Birch",
     "createdby": "demo_adminsuper@vivacitytech.com",
     "repairdevice": "Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch",
     "repairstatusEdit": "[data-value='In Transit']",
     "student": "[activedescendant='student_id-option-1']",
-    "lastModifiedDate":"2023-12-05",
-    "lastModifiedDate1":"05-12-2023"
+    "lastModifiedDate": "2023-08-24",
+    "lastModifiedDate1": "08-24-2023",
+    "lastModifiedDate2": "2024-09-23",
+    "createdDate": "2023-09-11",
+    "createdDate1": "09-11-2023"
   },
   "repairBox": {
     "weight": "10",
@@ -206,16 +210,18 @@
     "repairbox1": "9941",
     "labelfrom": "",
     "shippeddate": "2024-06-13",
-    "shippeddate1": "13-06-2024",
+    "shippeddate1": "06-13-2024",
     "shippingcost": "$23.36",
     "building": "Dream Building",
-    "boxtype": "Inbound",
+    "boxtype": "To Vivacity",
     "createdby": "demo_adminsuper@vivacitytech.com",
     "shippingboxstatus1": "Recieved By Vivacity",
     "shippingboxstatus2": "Not Shipped",
     "shippingboxstatus3": "Shipping From District",
-    "lastdate": "2024-06-06",
-    "lastdate1": "06-06-2024"
+    "lastdate": "2024-09-19",
+    "lastdate1": "09-19-2024",
+    "createdDate": "2023-09-11",
+    "createdDate1": "09-11-2023"
   },
   "inHouseWorkflow": {
     "failuretype": "[data-value='Accidental']",
@@ -225,10 +231,10 @@
     "createTicketmsg": "Add new ticket form submitted",
     "filename": "InHouseRepairTickets.csv",
     "repairissue": "[data-value='RAM issue']",
-    "ticketno": "V0074377",
-    "recordid": "74377",
+    "ticketno": "V0074526",
+    "recordid": "74526",
     "repairstatusEdit": "[data-value='Part Received']",
-    "updatemsg":"Ticket updated"
+    "updatemsg": "Ticket updated"
   },
   "inHouseTicket": {
     "failuretype": "[data-value='Accidental']",
@@ -249,12 +255,12 @@
     "internaltechnician": "Shyma Dutta",
     "createdby": "demo_adminvivacity@vivacitytech.com",
     "repairstatusEdit": "[data-value='Part Queue']",
-    "updatemsg":"Ticket updated",
-    "lastModifiedDate":"2024-05-31",
-    "lastModifiedDate1":"31-05-2024",
-    "building":"Building Two",
-    "updateRole":"Ticket updated Successfully",
-    "assettag":"VivaTEST2Test"
+    "updatemsg": "Ticket updated",
+    "lastModifiedDate": "2024-05-31",
+    "lastModifiedDate1": "31-05-2024",
+    "building": "Building Two",
+    "updateRole": "Ticket updated Successfully",
+    "assettag": "VivaTEST2Test"
   },
   "srcRepairTicket": {
     "failuretype": "[data-value='Accidental']",
@@ -273,9 +279,9 @@
     "repairdevice": "Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch",
     "studenttechnician": "Demo Testing Edit",
     "createdby": "demo_adminsuper@vivacitytech.com",
-    "updatemsg":"Ticket updated",
-    "lastModifiedDate":"2024-03-11",
-    "lastModifiedDate1":"11-03-2024",
+    "updatemsg": "Ticket updated",
+    "lastModifiedDate": "2024-03-11",
+    "lastModifiedDate1": "11-03-2024",
     "assettag": "673TY",
     "internaltechnician": "Sohan Saini",
     "repairstatus1": "Intake",
@@ -283,7 +289,7 @@
     "repairstatus3": "Closed",
     "repairstatus4": "Complete",
     "repairstatus5": "In Transit",
-    "repairstatus6":"Repair"
+    "repairstatus6": "Repair"
   },
   "srcFacilitators": {
     "fullName": "Lisa Burton",
@@ -292,8 +298,8 @@
     "phoneNo1": "81405463",
     "phoneNo2": "(814) 054-63",
     "title": "Democrat",
-    "lastModifiedDate":"2024-05-30",
-    "lastModifiedDate1":"30-05-2024",
+    "lastModifiedDate": "2024-05-30",
+    "lastModifiedDate1": "30-05-2024",
     "userStatus": "Active"
   },
   "srcStudent": {
@@ -317,8 +323,8 @@
     "userRole": "Student",
     "phoneNo1": "81405463",
     "phoneNo2": "(814) 054-63",
-    "lastModifiedDate":"2024-03-11",
-    "lastModifiedDate1":"11-03-2024"
+    "lastModifiedDate": "2024-03-11",
+    "lastModifiedDate1": "11-03-2024"
   },
   "partCloset": {
     "partname": "Speaker Set",
@@ -333,7 +339,7 @@
     "search": "50034089",
     "partnameTable": "TouchPad",
     "building": "[data-value='2861']",
-    "partCategory":"Camera_Cable"
+    "partCategory": "Camera_Cable"
   },
   "users": {
     "fullName": "Dream Admin",
@@ -357,18 +363,18 @@
     "userstatus": "Inactive",
     "recordid": "24868",
     "recordid1": "58332",
-    "phoneNo1":"9999999999",
-    "phoneNo2":"(999) 999-9999",
-    "userStatus":"Active",
-    "uploadfilename":"users_list.csv",
-    "uploadmsg":"User CSV submitted"
+    "phoneNo1": "9999999999",
+    "phoneNo2": "(999) 999-9999",
+    "userStatus": "Active",
+    "uploadfilename": "users_list.csv",
+    "uploadmsg": "User CSV submitted"
   },
   "myprofile": {
     "profileupdatemsg": "Profile updated successfully",
     "emailname": "demo_adminsuper@vivacitytech.com",
     "title": "MR",
     "phone": "9090909090",
-    "option": "[data-value='vivacity_news']",
+    "option": "In House Repair",
     "image": "image1.jpeg"
   },
   "support": {
@@ -434,7 +440,7 @@
     "ihrepairs": "[data-value='true']",
     "paymentTerms": "[data-value='Net 60 Days']",
     "addAccountymsg": "Account added successfully",
-    "netsuiteid":"100",
+    "netsuiteid": "100",
     "subcription": "[data-value='Professional']",
     "subUpdatemsg": "Update Subcription submmited",
     "account": "#accounts-option-1",
@@ -442,11 +448,11 @@
     "status": "[data-value='Active']",
     "editStatus": "[data-value='Inactive']",
     "emaildrop": "[data-value='email']",
-    "repairtype":"Vivacity",
-    "failuretype":"Mechanical",
-    "searialno":"gg7fxe3wq1gc",
-    "accountno":"21845",
-    "device":"Apple iPad 9th Gen - Apple/32GB - Touch"
+    "repairtype": "Vivacity",
+    "failuretype": "Mechanical",
+    "searialno": "gg7fxe3wq1gc",
+    "accountno": "21845",
+    "device": "Apple iPad 9th Gen - Apple/32GB - Touch"
   },
   "loanerManagement": {
     "serialno": "VIVATEST20Test",
@@ -458,10 +464,10 @@
     "building": "[data-value='2438']",
     "student_id": "[data-value='YS001']",
     "stdcreatedmsg": "Student submitted successfully",
-    "assettag":"673TY",
-    "device":"VT Chromebook",
-    "warranty":"TEST-WARRANTY",
-    "sku":"VT-Generic"
+    "assettag": "673TY",
+    "device": "VT Chromebook",
+    "warranty": "TEST-WARRANTY",
+    "sku": "VT-Generic"
   },
   "login": {
     "username": "demo_adminSuper@vivacitytech.com",

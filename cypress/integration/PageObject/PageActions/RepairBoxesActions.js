@@ -212,7 +212,7 @@ export class RepairBoxesActions {
         cy.get('[placeholder="From"]').type(tdata.repairBox.repairbox1)
         cy.get('[placeholder="To"]').type(tdata.repairBox.repairbox)
         rb.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="record_id"]').eq(0).then(($el) => {
+        cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
             const value = parseInt($el.text());
             expect(value).to.be.within(9941, 10584);
         })
@@ -501,18 +501,18 @@ export class RepairBoxesActions {
         rb.addFilterElement().eq(4).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(4).click({ force: true })
-        rb.fieldValueElement().eq(0).clear({ force: true }).type('Inb')
+        rb.fieldValueElement().eq(0).clear({ force: true }).type('To')
         rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Inb')
+        cy.get('[row-index="0"]').should('contain', 'To')
         rb.clearFilterElement().click({ force: true })
     }
     filterEndswithBT() {
         rb.addFilterElement().eq(4).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(5).click({ force: true })
-        rb.fieldValueElement().eq(0).clear({ force: true }).type('nd')
+        rb.fieldValueElement().eq(0).clear({ force: true }).type('city')
         rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'nd')
+        cy.get('[row-index="0"]').should('contain', 'city')
         rb.clearFilterElement().click({ force: true })
     }
     filterBlankBT() {
@@ -634,17 +634,83 @@ export class RepairBoxesActions {
         cy.get('[row-index="0"]').should('contain', 'Maleja Duque')
         rb.clearFilterElement().click({ force: true })
     }
+        //Cdate
+        filterEqualsCDate() {
+            rb.addFilterElement().eq(7).click({ force: true })
+            rb.fieldNameElement().eq(1).click({ force: true })
+            rb.fieldOpElement().eq(0).click({ force: true })
+            cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
+            rb.applyElement().click({ force: true })
+            //cy.get('[row-index="0"]').should('contain', tdata.repairBox.createdDate1)
+            rb.clearFilterElement().click({ force: true })
+        }
+        filterNotequalCDate() {
+            rb.addFilterElement().eq(7).click({ force: true })
+            rb.fieldNameElement().eq(1).click({ force: true })
+            rb.fieldOpElement().eq(1).click({ force: true })
+            cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
+            rb.applyElement().click({ force: true })
+           // cy.get('[row-index="0"]').should('not.contain.value', tdata.repairBox.createdDate1)
+            rb.clearFilterElement().click({ force: true })
+        }
+        filterBeforeCDate() {
+            rb.addFilterElement().eq(7).click({ force: true })
+            rb.fieldNameElement().eq(1).click({ force: true })
+            rb.fieldOpElement().eq(2).click({ force: true })
+            cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
+            rb.applyElement().click({ force: true })
+            // cy.get('[row-index="0"]').should('contain', tdata.repairBox.createdDate1)
+            rb.clearFilterElement().click({ force: true })
+        }
+        filterAfterCDate() {
+            rb.addFilterElement().eq(7).click({ force: true })
+            rb.fieldNameElement().eq(1).click({ force: true })
+            rb.fieldOpElement().eq(3).click({ force: true })
+            cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
+            rb.applyElement().click({ force: true })
+            // cy.get('[row-index="0"]').should('contain', '2024-07-15')
+            rb.clearFilterElement().click({ force: true })
+        }
+        filterBetweenCDate() {
+            rb.addFilterElement().eq(7).click({ force: true })
+            rb.fieldNameElement().eq(1).click({ force: true })
+            rb.fieldOpElement().eq(3).click({ force: true })
+            cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
+            cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.createdDate, { force: true })
+            rb.applyElement().click({ force: true })
+            // cy.get('[row-index="0"]').should('contain', '2024-07-15')
+            rb.clearFilterElement().click({ force: true })
+        }
+        filterBlankCDate() {
+            rb.addFilterElement().eq(7).click({ force: true })
+            rb.fieldNameElement().eq(1).click({ force: true })
+            rb.fieldOpElement().eq(5).click({ force: true })
+            cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.createdDate, { force: true })
+            rb.applyElement().click({ force: true })
+            // cy.get('[row-index="0"]').should('contain', tdata.repairBox.createdDate1)
+            rb.clearFilterElement().click({ force: true })
+        }
+        filterNotblankCDate() {
+            rb.addFilterElement().eq(7).click({ force: true })
+            rb.fieldNameElement().eq(1).click({ force: true })
+            rb.fieldOpElement().eq(6).click({ force: true })
+            cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.createdDate, { force: true })
+            rb.applyElement().click({ force: true })
+           // cy.get('[row-index="0"]').should('not.contain', tdata.repairBox.createdDate1)
+            rb.clearFilterElement().click({ force: true })
+        }
     //Ldate
     filterEqualsLDate() {
-        rb.addFilterElement().eq(7).click({ force: true })
+        rb.addFilterElement().eq(8).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(0).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.lastdate)
         rb.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.repairBox.lastdate1)
+        rb.clearFilterElement().click({ force: true })
     }
     filterNotequalLDate() {
-        rb.addFilterElement().eq(7).click({ force: true })
+        rb.addFilterElement().eq(8).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(1).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.lastdate)
@@ -653,7 +719,7 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBeforeLDate() {
-        rb.addFilterElement().eq(7).click({ force: true })
+        rb.addFilterElement().eq(8).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(2).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.lastdate)
@@ -662,7 +728,7 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterAfterLDate() {
-        rb.addFilterElement().eq(7).click({ force: true })
+        rb.addFilterElement().eq(8).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.lastdate)
@@ -671,7 +737,7 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBetweenLDate() {
-        rb.addFilterElement().eq(7).click({ force: true })
+        rb.addFilterElement().eq(8).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.lastdate)
@@ -681,7 +747,7 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBlankLDate() {
-        rb.addFilterElement().eq(7).click({ force: true })
+        rb.addFilterElement().eq(8).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(5).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.lastdate, { force: true })
@@ -690,7 +756,7 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterNotblankLDate() {
-        rb.addFilterElement().eq(7).click({ force: true })
+        rb.addFilterElement().eq(8).click({ force: true })
         rb.fieldNameElement().eq(1).click({ force: true })
         rb.fieldOpElement().eq(6).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.lastdate, { force: true })

@@ -132,8 +132,8 @@ Then('Verify table and filter should be visible', () => {
     nwr.filtersVisible()
     nwr.tableVisible()
 })
-Then('Click on the export button', () => {
-    dev.clickOnExport()
+Then('Click on the download button', () => {
+    dev.clickOndownload()
 })
 Then('Click on Add Repair Image and Verify', () => {
     dev.clickOnAddRepairImage()

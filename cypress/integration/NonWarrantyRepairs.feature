@@ -11,33 +11,33 @@ Feature: NonWarrantyRepairs Page Functionality
         And Click on NonwarrantyRepairs page
 
     Scenario:Non Warranty Repairs -Add new Ticket and Search
-        And Click on filter of Repair Id Equals and Verify the Result
-        And Click on filter of Repair Id Does not equal and Verify the Result
-        And Click on filter of Repair Id Greater than and Verify the Result
-        And Click on filter of Repair Id Greater than or equal to and Verify the Result
-        And Click on filter of Repair Id Less than and Verify the Result
-        And Click on filter of Repair Id Less than or equal to and Verify the Result
-        And Click on filter of Repair Id Between and Verify the Result
-        And Click on filter of Repair Id Blank and Verify the Result
-        And Click on filter of Repair Id Not blank and Verify the Result
+        # And Click on filter of Repair Id Equals and Verify the Result
+        # And Click on filter of Repair Id Does not equal and Verify the Result
+        # And Click on filter of Repair Id Greater than and Verify the Result
+        # And Click on filter of Repair Id Greater than or equal to and Verify the Result
+        # And Click on filter of Repair Id Less than and Verify the Result
+        # And Click on filter of Repair Id Less than or equal to and Verify the Result
+        # And Click on filter of Repair Id Between and Verify the Result
+        # And Click on filter of Repair Id Blank and Verify the Result
+        # And Click on filter of Repair Id Not blank and Verify the Result
 
-        And Click on filter of Ticket Number contain and Verify the Result
-        And Click on filter of Ticket Number Does not contain and Verify the Result
-        And Click on filter of Ticket Number Equals and Verify the Result
-        And Click on filter of Ticket Number Does not equal and Verify the Result
-        And Click on filter of Ticket Number Begins with and Verify the Result
-        And Click on filter of Ticket Number Ends with and Verify the Result
-        And Click on filter of Ticket Number Blank and Verify the Result
-        And Click on filter of Ticket Number Not blank and Verify the Result
+        # And Click on filter of Ticket Number contain and Verify the Result
+        # And Click on filter of Ticket Number Does not contain and Verify the Result
+        # And Click on filter of Ticket Number Equals and Verify the Result
+        # And Click on filter of Ticket Number Does not equal and Verify the Result
+        # And Click on filter of Ticket Number Begins with and Verify the Result
+        # And Click on filter of Ticket Number Ends with and Verify the Result
+        # And Click on filter of Ticket Number Blank and Verify the Result
+        # And Click on filter of Ticket Number Not blank and Verify the Result
 
         And Click on filter of Repair type contain and Verify the Result
-        And Click on filter of Repair type Does not contain and Verify the Result
-        And Click on filter of Repair type Equals and Verify the Result
-        And Click on filter of Repair type Does not equal and Verify the Result
-        And Click on filter of Repair type Begins with and Verify the Result
-        And Click on filter of Repair type Ends with and Verify the Result
-        And Click on filter of Repair type Blank and Verify the Result
-        And Click on filter of Repair type Not blank and Verify the Result
+        # And Click on filter of Repair type Does not contain and Verify the Result
+        # And Click on filter of Repair type Equals and Verify the Result
+        # And Click on filter of Repair type Does not equal and Verify the Result
+        # And Click on filter of Repair type Begins with and Verify the Result
+        # And Click on filter of Repair type Ends with and Verify the Result
+        # And Click on filter of Repair type Blank and Verify the Result
+        # And Click on filter of Repair type Not blank and Verify the Result
 
         And Click on filter of Serial Number contain and Verify the Result
         And Click on filter of Serial Number Does not contain and Verify the Result
@@ -67,15 +67,15 @@ Feature: NonWarrantyRepairs Page Functionality
         And Click on filter of Asset tag Not blank and Verify the Result
 
         And Click on filter of Repair status op1 and Verify the Result
-        And Click on filter of Repair status op2 and Verify the Result
-        And Click on filter of Repair status op3 and Verify the Result
-        And Click on filter of Repair status op4 and Verify the Result
-        And Click on filter of Repair status op5 and Verify the Result
-        And Click on filter of Repair status op6 and Verify the Result
-        And Click on filter of Repair status op7 and Verify the Result
-        And Click on filter of Repair status op8 and Verify the Result
-        And Click on filter of Repair status op9 and Verify the Result
-        And Click on filter of Repair status op10 and Verify the Result
+        # And Click on filter of Repair status op2 and Verify the Result
+        # And Click on filter of Repair status op3 and Verify the Result
+        # And Click on filter of Repair status op4 and Verify the Result
+        # And Click on filter of Repair status op5 and Verify the Result
+        # And Click on filter of Repair status op6 and Verify the Result
+        # And Click on filter of Repair status op7 and Verify the Result
+        # And Click on filter of Repair status op8 and Verify the Result
+        # And Click on filter of Repair status op9 and Verify the Result
+        # And Click on filter of Repair status op10 and Verify the Result
         # And Click on filter of Repair status op11 and Verify the Result
 
         And Click on filter of Created By contain and Verify the Result

@@ -34,7 +34,7 @@ export class MyProfileActions {
     }
     selectEmailPreference() {
         mp.preferencesElement().click({ force: true })
-        cy.get(tdata.myprofile.option).click({ force: true })
+        cy.contains(tdata.myprofile.option).click({ force: true })
     }
     clickOnUpdateButton() {
         mp.profileupdateElement().click({ force: true })

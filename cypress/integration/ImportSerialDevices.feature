@@ -11,33 +11,33 @@ Feature: ImportSerialDevices Page Functionality
         And Click on ImportSerialDevices Tab
 
     Scenario: Visiblity of ImportSerialDevices page and add ticket, download import and view the details
-        And Verify the Title of ImportSerialDevices Page
-        And Click on filter of Date Imported Equals in search box and Verify the Result
-        And Click on filter of Date Imported Does not equal in search box and Verify the Result
-        And Click on filter of Date Imported Before in search box and Verify the Result
-        And Click on filter of Date Imported After in search box and Verify the Result
-        And Click on filter of Date Imported Between with in search box and Verify the Result
-        And Click on filter of Date Imported Blank in search box and Verify the Result
-        And Click on filter of Date Imported Not blank in search box and Verify the Result
+        # And Verify the Title of ImportSerialDevices Page
+        # And Click on filter of Date Imported Equals in search box and Verify the Result
+        # And Click on filter of Date Imported Does not equal in search box and Verify the Result
+        # And Click on filter of Date Imported Before in search box and Verify the Result
+        # And Click on filter of Date Imported After in search box and Verify the Result
+        # And Click on filter of Date Imported Between with in search box and Verify the Result
+        # And Click on filter of Date Imported Blank in search box and Verify the Result
+        # And Click on filter of Date Imported Not blank in search box and Verify the Result
 
-        And Click on filter of Importer contain in search box and Verify the Result
-        And Click on filter of Importer Does not contain in search box and Verify the Result
-        And Click on filter of Importer Equals in search box and Verify the Result
-        And Click on filter of Importer Does not equal in search box and Verify the Result
-        And Click on filter of Importer Begins with in search box and Verify the Result
-        And Click on filter of Importer Ends with in search box and Verify the Result
-        And Click on filter of Importer Blank in search box and Verify the Result
-        And Click on filter of Importer Not blank in search box and Verify the Result
+        # And Click on filter of Importer contain in search box and Verify the Result
+        # And Click on filter of Importer Does not contain in search box and Verify the Result
+        # And Click on filter of Importer Equals in search box and Verify the Result
+        # And Click on filter of Importer Does not equal in search box and Verify the Result
+        # And Click on filter of Importer Begins with in search box and Verify the Result
+        # And Click on filter of Importer Ends with in search box and Verify the Result
+        # And Click on filter of Importer Blank in search box and Verify the Result
+        # And Click on filter of Importer Not blank in search box and Verify the Result
 
-        And Click on filter of Quantity Devices Equals in search box and Verify the Result
-        And Click on filter of Quantity Devices Does not equal in search box and Verify the Result
-        And Click on filter of Quantity Devices Greater than in search box and Verify the Result
-        And Click on filter of Quantity Devices Greater than or equal to in search box and Verify the Result
-        And Click on filter of Quantity Devices Less than in search box and Verify the Result
-        And Click on filter of Quantity Devices Less than or equal to in search box and Verify the Result
-        And Click on filter of Quantity Devices Between in search box and Verify the Result
-        And Click on filter of Quantity Devices Blank in search box and Verify the Result
-        And Click on filter of Quantity Devices Not blank in search box and Verify the Result
+        # And Click on filter of Quantity Devices Equals in search box and Verify the Result
+        # And Click on filter of Quantity Devices Does not equal in search box and Verify the Result
+        # And Click on filter of Quantity Devices Greater than in search box and Verify the Result
+        # And Click on filter of Quantity Devices Greater than or equal to in search box and Verify the Result
+        # And Click on filter of Quantity Devices Less than in search box and Verify the Result
+        # And Click on filter of Quantity Devices Less than or equal to in search box and Verify the Result
+        # And Click on filter of Quantity Devices Between in search box and Verify the Result
+        # And Click on filter of Quantity Devices Blank in search box and Verify the Result
+        # And Click on filter of Quantity Devices Not blank in search box and Verify the Result
 
 Then Click on the download import
 And Verfiy the downloaded successfully

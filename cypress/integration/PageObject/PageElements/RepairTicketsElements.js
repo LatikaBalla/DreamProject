@@ -231,4 +231,19 @@ export default class RepairTicketsElements {
             timeout: 30000,
         })
     }
+    optionElement() {
+        return cy.get(locator.repairTickets.option, {
+            timeout: 30000,
+        })
+    }
+    sortAscendingElement() {
+        return cy.contains(locator.repairTickets.sortAscending, {
+            timeout: 30000,
+        })
+    }
+    sortDescendingElement() {
+        return cy.contains(locator.repairTickets.sortDescending, {
+            timeout: 30000,
+        })
+    }
 }

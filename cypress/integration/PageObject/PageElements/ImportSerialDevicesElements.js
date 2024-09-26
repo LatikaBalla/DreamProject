@@ -22,7 +22,7 @@ export default class ImportSerialDevicesElements {
         })
     }
     addimportElement() {
-        return cy.contains(locator.importSerialDevices.addimport, {
+        return cy.get(locator.importSerialDevices.addimport, {
             timeout: 30000,
         })
     }

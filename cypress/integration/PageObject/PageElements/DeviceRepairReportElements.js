@@ -178,4 +178,9 @@ export default class DeviceRepairReportElements {
             timeout: 30000,
         })
     }
+    downloadbtnElement() {
+        return cy.get(locator.deviceRepairReport.downloadbtn, {
+            timeout: 30000,
+        })
+    }
 }

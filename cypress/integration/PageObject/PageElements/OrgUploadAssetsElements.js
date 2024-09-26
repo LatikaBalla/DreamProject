@@ -32,7 +32,7 @@ export default class OrgUploadAssetsElements {
         })
     }
     addassetElement() {
-        return cy.contains(locator.orgUploadAssets.addasset, {
+        return cy.get(locator.orgUploadAssets.addasset, {
             timeout: 30000,
         })
     }

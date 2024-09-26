@@ -74,7 +74,7 @@ export class NonWarrantyRepairsActions {
       cy.get('tr td').eq(1).should('contain', tdata.nonwarrantyRepairs.ticketno)
    }
    verifyRapairTicketPAge() {
-     cy.wait(3000)
+      cy.wait(3000)
       cy.contains('Repair Ticket Details').should('be.visible')
    }
    clickOnClearButton() {
@@ -86,7 +86,7 @@ export class NonWarrantyRepairsActions {
    }
    clickOnTicketNumberTable() {
       cy.window().then(win => {
-        
+
       });
       cy.get('body').type('{ctrl}t');
       cy.visit("/repair-360/ticket-detail/" + tdata.nonwarrantyRepairs.recordid)
@@ -125,7 +125,7 @@ export class NonWarrantyRepairsActions {
       nwr.applyElement().click({ force: true })
       cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
          const value = parseInt($el.text());
-         expect(value).to.equal(41352);
+         expect(value).to.equal(71690);
       })
       nwr.clearFilterElement().click({ force: true })
    }
@@ -138,7 +138,7 @@ export class NonWarrantyRepairsActions {
       nwr.applyElement().click({ force: true })
       cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
          const value = parseInt($el.text());
-         expect(value).to.not.equal(41352);
+         expect(value).to.not.equal(71690);
       })
       nwr.clearFilterElement().click({ force: true })
    }
@@ -151,7 +151,7 @@ export class NonWarrantyRepairsActions {
       nwr.applyElement().click({ force: true })
       cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
          const value = parseInt($el.text());
-         expect(value).to.be.greaterThan(41352);
+         expect(value).to.be.greaterThan(71690);
       })
       nwr.clearFilterElement().click({ force: true })
    }
@@ -164,7 +164,7 @@ export class NonWarrantyRepairsActions {
       nwr.applyElement().click({ force: true })
       cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
          const value = parseInt($el.text());
-         expect(value).to.be.gte(41352);
+         expect(value).to.be.gte(71690);
       })
       nwr.clearFilterElement().click({ force: true })
    }
@@ -177,7 +177,7 @@ export class NonWarrantyRepairsActions {
       nwr.applyElement().click({ force: true })
       cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
          const value = parseInt($el.text());
-         expect(value).to.be.lessThan(41352);
+         expect(value).to.be.lessThan(71690);
       })
       nwr.clearFilterElement().click({ force: true })
    }
@@ -189,9 +189,9 @@ export class NonWarrantyRepairsActions {
       nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.recordid)
       nwr.applyElement().click({ force: true })
       cy.wait(100)
-      cy.get('.ag-row-first > [col-id="record_id"]').eq(0).then(($el) => {
+      cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
          const value = parseInt($el.text());
-         expect(value).to.be.lte(41352);
+         expect(value).to.be.lte(71690);
       })
       nwr.clearFilterElement().click({ force: true })
    }
@@ -200,12 +200,12 @@ export class NonWarrantyRepairsActions {
       nwr.addFilterElement().eq(0).click({ force: true })
       nwr.fieldNameElement().eq(1).click({ force: true })
       nwr.fieldOpElement().eq(6).click({ force: true })
-      cy.get('[placeholder="From"]').type(tdata.nonwarrantyRepairs.recordid)
-      cy.get('[placeholder="To"]').type(tdata.nonwarrantyRepairs.recordid1)
+      cy.get('[placeholder="From"]').type(tdata.nonwarrantyRepairs.recordid1)
+      cy.get('[placeholder="To"]').type(tdata.nonwarrantyRepairs.recordid)
       nwr.applyElement().click({ force: true })
-      cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
+      cy.get('.ag-row-first > [col-id="record_id"]').eq(0).then(($el) => {
          const value = parseInt($el.text());
-         expect(value).to.be.within(41352, 70799);
+         expect(value).to.be.within(70799, 71690);
       })
       nwr.clearFilterElement().click({ force: true })
    }
@@ -282,9 +282,9 @@ export class NonWarrantyRepairsActions {
       nwr.addFilterElement().eq(1).click({ force: true })
       nwr.fieldNameElement().eq(1).click({ force: true })
       nwr.fieldOpElement().eq(5).click({ force: true })
-      nwr.fieldValueElement().eq(0).type('237')
+      nwr.fieldValueElement().eq(0).type('690')
       nwr.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', '237')
+      cy.get('[row-index="0"]').should('contain', '690')
       nwr.clearFilterElement().click({ force: true })
    }
    filterBlankTN() {
@@ -308,12 +308,9 @@ export class NonWarrantyRepairsActions {
    //RT
    selectFilterRepairType() {
       nwr.addFilterElement().eq(2).click({ force: true })
-      nwr.fieldNameElement().eq(1).click({ force: true })
-      nwr.fieldOpElement().eq(0).click({ force: true })
-      nwr.fieldValueElement().clear({ force: true }).type(tdata.nonwarrantyRepairs.repairtype)
-      nwr.applyElement().click({ force: true })
+      cy.get('[value="In_House"]').click({ force: true })
       cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.repairtype)
-      nwr.clearFilterElement().click({ force: true })
+      cy.get('[class="reset-button"]').click({ force: true })
    }
    filterDoesnotcontainRT() {
       nwr.addFilterElement().eq(2).click({ force: true })
@@ -449,11 +446,11 @@ export class NonWarrantyRepairsActions {
       nwr.fieldOpElement().eq(7).click({ force: true })
       nwr.fieldValueElement().eq(1).type(tdata.nonwarrantyRepairs.serialnumber, { force: true })
       nwr.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain',tdata.nonwarrantyRepairs.serialnumber)
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.serialnumber)
       nwr.clearFilterElement().click({ force: true })
    }
-    //RD
-    selectFilterRepairnwrice() {
+   //RD
+   selectFilterRepairnwrice() {
       nwr.addFilterElement().eq(4).click({ force: true })
       nwr.fieldNameElement().eq(1).click({ force: true })
       nwr.fieldOpElement().eq(0).click({ force: true })
@@ -566,18 +563,18 @@ export class NonWarrantyRepairsActions {
       nwr.addFilterElement().eq(5).click({ force: true })
       nwr.fieldNameElement().eq(1).click({ force: true })
       nwr.fieldOpElement().eq(4).click({ force: true })
-      nwr.fieldValueElement().eq(0).clear({ force: true }).type('Viva')
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type('67')
       nwr.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', 'Viva')
+      cy.get('[row-index="0"]').should('contain', '67')
       nwr.clearFilterElement().click({ force: true })
    }
    filterEndswithtag() {
       nwr.addFilterElement().eq(5).click({ force: true })
       nwr.fieldNameElement().eq(1).click({ force: true })
       nwr.fieldOpElement().eq(5).click({ force: true })
-      nwr.fieldValueElement().eq(0).clear({ force: true }).type('Test')
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type('TY')
       nwr.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', 'Test')
+      cy.get('[row-index="0"]').should('contain', 'TY')
       nwr.clearFilterElement().click({ force: true })
    }
    filterBlanktag() {
@@ -668,7 +665,7 @@ export class NonWarrantyRepairsActions {
    }
    //cby
    selectFilterCreatedBy() {
-      nwr.addFilterElement().eq(8).click({ force: true })
+      nwr.addFilterElement().eq(10).click({ force: true })
       nwr.fieldNameElement().eq(1).click({ force: true })
       nwr.fieldOpElement().eq(0).click({ force: true })
       nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.createdby)
@@ -676,7 +673,7 @@ export class NonWarrantyRepairsActions {
       cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.createdby)
    }
    filterDoesnotcontainCBy() {
-      nwr.addFilterElement().eq(8).click({ force: true })
+      nwr.addFilterElement().eq(10).click({ force: true })
       nwr.fieldNameElement().eq(1).click({ force: true })
       nwr.fieldOpElement().eq(1).click({ force: true })
       nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.createdby)
@@ -685,7 +682,7 @@ export class NonWarrantyRepairsActions {
       nwr.clearFilterElement().click({ force: true })
    }
    filterEqualsCBy() {
-      nwr.addFilterElement().eq(8).click({ force: true })
+      nwr.addFilterElement().eq(10).click({ force: true })
       nwr.fieldNameElement().eq(1).click({ force: true })
       nwr.fieldOpElement().eq(2).click({ force: true })
       nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.createdby)
@@ -694,7 +691,7 @@ export class NonWarrantyRepairsActions {
       nwr.clearFilterElement().click({ force: true })
    }
    filterNotequalCBy() {
-      nwr.addFilterElement().eq(8).click({ force: true })
+      nwr.addFilterElement().eq(10).click({ force: true })
       nwr.fieldNameElement().eq(1).click({ force: true })
       nwr.fieldOpElement().eq(3).click({ force: true })
       nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.createdby)
@@ -703,7 +700,7 @@ export class NonWarrantyRepairsActions {
       nwr.clearFilterElement().click({ force: true })
    }
    filterBeginswithCBy() {
-      nwr.addFilterElement().eq(8).click({ force: true })
+      nwr.addFilterElement().eq(10).click({ force: true })
       nwr.fieldNameElement().eq(1).click({ force: true })
       nwr.fieldOpElement().eq(4).click({ force: true })
       nwr.fieldValueElement().eq(0).clear({ force: true }).type('demo')
@@ -712,7 +709,7 @@ export class NonWarrantyRepairsActions {
       nwr.clearFilterElement().click({ force: true })
    }
    filterEndswithCBy() {
-      nwr.addFilterElement().eq(8).click({ force: true })
+      nwr.addFilterElement().eq(10).click({ force: true })
       nwr.fieldNameElement().eq(1).click({ force: true })
       nwr.fieldOpElement().eq(5).click({ force: true })
       nwr.fieldValueElement().eq(0).clear({ force: true }).type('vivacitytech.com')
@@ -721,7 +718,7 @@ export class NonWarrantyRepairsActions {
       nwr.clearFilterElement().click({ force: true })
    }
    filterBlankCBy() {
-      nwr.addFilterElement().eq(8).click({ force: true })
+      nwr.addFilterElement().eq(10).click({ force: true })
       nwr.fieldNameElement().eq(1).click({ force: true })
       nwr.fieldOpElement().eq(6).click({ force: true })
       nwr.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
@@ -730,7 +727,7 @@ export class NonWarrantyRepairsActions {
       nwr.clearFilterElement().click({ force: true })
    }
    filterNotblankCBy() {
-      nwr.addFilterElement().eq(8).click({ force: true })
+      nwr.addFilterElement().eq(10).click({ force: true })
       nwr.fieldNameElement().eq(1).click({ force: true })
       nwr.fieldOpElement().eq(7).click({ force: true })
       nwr.fieldValueElement().eq(1).clear({ force: true }).type(tdata.nonwarrantyRepairs.createdby, { force: true })

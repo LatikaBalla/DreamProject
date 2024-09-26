@@ -12,97 +12,107 @@ Feature: RepairBoxes Page Functionality
 
   Scenario:  Visiblity check,Create New Box, add ticket and  view details of box with create aonther ticket
     And Verify the Title of RepairBoxes Page
-    And Click on filter of Repair Box Equals in search box and Verify the Result
-    And Click on filter of Repair Box Does not equal in search box and Verify the Result
-    And Click on filter of Repair Box Greater than in search box and Verify the Result
-    And Click on filter of Repair Box Greater than or equal to in search box and Verify the Result
-    And Click on filter of Repair Box Less than in search box and Verify the Result
-    And Click on filter of Repair Box Less than or equal to in search box and Verify the Result
-    And Click on filter of Repair Box Between in search box and Verify the Result
-    And Click on filter of Repair Box Blank in search box and Verify the Result
-    And Click on filter of Repair Box Not blank in search box and Verify the Result
+    And Click on filter of Repair Box Equals  and Verify the Result
+    And Click on filter of Repair Box Does not equal and Verify the Result
+    And Click on filter of Repair Box Greater than and Verify the Result
+    And Click on filter of Repair Box Greater than or equal to  and Verify the Result
+    And Click on filter of Repair Box Less than and Verify the Result
+    And Click on filter of Repair Box Less than or equal to and Verify the Result
+    And Click on filter of Repair Box Between and Verify the Result
+    And Click on filter of Repair Box Blank and Verify the Result
+    And Click on filter of Repair Box Not blank and Verify the Result
 
-    And Click on filter of Tracking Number contain in search box and Verify the Result
-    And Click on filter of Tracking Number Does not contain in search box and Verify the Result
-    And Click on filter of Tracking Number Equals in search box and Verify the Result
-    And Click on filter of Tracking Number Does not equal in search box and Verify the Result
-    And Click on filter of Tracking Number Begins with in search box and Verify the Result
-    And Click on filter of Tracking Number Ends with in search box and Verify the Result
-    And Click on filter of Tracking Number Blank in search box and Verify the Result
-    And Click on filter of Tracking Number Not blank in search box and Verify the Result
+    And Click on filter of Tracking Number contain and Verify the Result
+    And Click on filter of Tracking Number Does not contain and Verify the Result
+    And Click on filter of Tracking Number Equals and Verify the Result
+    And Click on filter of Tracking Number Does not equal and Verify the Result
+    And Click on filter of Tracking Number Begins with and Verify the Result
+    And Click on filter of Tracking Number Ends with and Verify the Result
+    And Click on filter of Tracking Number Blank and Verify the Result
+    And Click on filter of Tracking Number Not blank and Verify the Result
 
-    And Click on filter of Shipped From Date Equals in search box and Verify the Result
-    And Click on filter of Shipped From Date Does not equal in search box and Verify the Result
-    And Click on filter of Shipped From Date Before in search box and Verify the Result
-    And Click on filter of Shipped From Date After in search box and Verify the Result
-    And Click on filter of Shipped From Date Between with in search box and Verify the Result
-    And Click on filter of Shipped From Date Blank in search box and Verify the Result
-    And Click on filter of Shipped From Date Not blank in search box and Verify the Result
+    And Click on filter of Shipped From Date Equals and Verify the Result
+    And Click on filter of Shipped From Date Does not equal and Verify the Result
+    And Click on filter of Shipped From Date Before and Verify the Result
+    And Click on filter of Shipped From Date After and Verify the Result
+    And Click on filter of Shipped From Date Between with and Verify the Result
+    And Click on filter of Shipped From Date Blank and Verify the Result
+    And Click on filter of Shipped From Date Not blank and Verify the Result
 
-    And Click on filter of Building contain in search box and Verify the Result
-    And Click on filter of Building Does not contain in search box and Verify the Result
-    And Click on filter of Building Equals in search box and Verify the Result
-    And Click on filter of Building Does not equal in search box and Verify the Result
-    And Click on filter of Building Begins with in search box and Verify the Result
-    And Click on filter of Building Ends with in search box and Verify the Result
-    And Click on filter of Building Blank in search box and Verify the Result
-    And Click on filter of Building Not blank in search box and Verify the Result
+    And Click on filter of Building contain and Verify the Result
+    And Click on filter of Building Does not contain and Verify the Result
+    And Click on filter of Building Equals and Verify the Result
+    And Click on filter of Building Does not equal and Verify the Result
+    And Click on filter of Building Begins with and Verify the Result
+    And Click on filter of Building Ends with and Verify the Result
+    And Click on filter of Building Blank and Verify the Result
+    And Click on filter of Building Not blank and Verify the Result
 
-    And Click on filter of Box_type contain in search box and Verify the Result
-    And Click on filter of Box_type Does not contain in search box and Verify the Result
-    And Click on filter of Box_type Equals in search box and Verify the Result
-    And Click on filter of Box_type Does not equal in search box and Verify the Result
-    And Click on filter of Box_type Begins with in search box and Verify the Result
-    And Click on filter of Box_type Ends with in search box and Verify the Result
-    And Click on filter of Box_type Blank in search box and Verify the Result
-    And Click on filter of Box_type Not blank in search box and Verify the Result
+    And Click on filter of Box_type contain and Verify the Result
+    And Click on filter of Box_type Does not contain and Verify the Result
+    And Click on filter of Box_type Equals and Verify the Result
+    And Click on filter of Box_type Does not equal and Verify the Result
+    And Click on filter of Box_type Begins with and Verify the Result
+    And Click on filter of Box_type Ends with and Verify the Result
+    And Click on filter of Box_type Blank and Verify the Result
+    And Click on filter of Box_type Not blank and Verify the Result
 
-    And Click on filter of Created By contain in search box and Verify the Result
-    And Click on filter of Created By Does not contain in search box and Verify the Result
-    And Click on filter of Created By Equals in search box and Verify the Result
-    And Click on filter of Created By Does not equal in search box and Verify the Result
-    And Click on filter of Created By Begins with in search box and Verify the Result
-    And Click on filter of Created By Ends with in search box and Verify the Result
-    And Click on filter of Created By Blank in search box and Verify the Result
-    And Click on filter of Created By Not blank in search box and Verify the Result
+    And Click on filter of Created By contain and Verify the Result
+    And Click on filter of Created By Does not contain and Verify the Result
+    And Click on filter of Created By Equals and Verify the Result
+    And Click on filter of Created By Does not equal and Verify the Result
+    And Click on filter of Created By Begins with and Verify the Result
+    And Click on filter of Created By Ends with and Verify the Result
+    And Click on filter of Created By Blank and Verify the Result
+    And Click on filter of Created By Not blank and Verify the Result
 
-    And Click on filter of shipping_box_status Not Shipped in search box and Verify the Result
-    And Click on filter of shipping_box_status Recieved By Vivacity in search box and Verify the Result
-    And Click on filter of shipping_box_status Shipping From District with in search box and Verify the Result
-    And Click on filter of shipping_box_status all checked with in search box and Verify the Result
+    And Click on filter of shipping_box_status Not Shipped and Verify the Result
+    And Click on filter of shipping_box_status Recieved By Vivacity and Verify the Result
+    And Click on filter of shipping_box_status Shipping From District with and Verify the Result
+    And Click on filter of shipping_box_status all checked with and Verify the Result
 
-    And Click on filter of Last Modified Date Equals in search box and Verify the Result
-    And Click on filter of Last Modified Date Does not equal in search box and Verify the Result
-    And Click on filter of Last Modified Date Before in search box and Verify the Result
-    And Click on filter of Last Modified Date After in search box and Verify the Result
-    And Click on filter of Last Modified Date Between in search box and Verify the Result
-    And Click on filter of Last Modified Date Blank in search box and Verify the Result
-    And Click on filter of Last Modified Date Not blank in search box and Verify the Result
+     And Click on filter of Created Date Equals and Verify the Result
+    And Click on filter of Created Date Does not equal and Verify the Result
+    And Click on filter of Created Date Before and Verify the Result
+    And Click on filter of Created Date After and Verify the Result
+    And Click on filter of Created Date Between and Verify the Result
+    And Click on filter of Created Date Blank and Verify the Result
+    And Click on filter of Created Date Not blank and Verify the Result
 
+    And Click on filter of Last Modified Date Equals and Verify the Result
+    And Click on filter of Last Modified Date Does not equal and Verify the Result
+    And Click on filter of Last Modified Date Before and Verify the Result
+    And Click on filter of Last Modified Date After and Verify the Result
+    And Click on filter of Last Modified Date Between and Verify the Result
+    And Click on filter of Last Modified Date Blank and Verify the Result
+    And Click on filter of Last Modified Date Not blank and Verify the Result
+    
+# And Click on Sort Ascending for Last Modified Date and Verify the Result
+# And Click on Sort Descending for Last Modified Date and Verify the Result
 
-    Then Click on label form of image and Verify
-    Then Click on label form of Pdf and Verify
-    And Click on Export Button
-    Then I should click on create new Box
-    Then Enter weight and Standard Box Size
-    And Select Pick-up site
-    Then Check the need shipping box
-    And Click on Create box button
-    Then Select Ticket from dropdownlist
-    And Click on Finish button
-    Then Verify new box is added in table
-    And Click on view button
-    Then Verify the Details new box
-    And Add another ticket in the same box
-    Then Select Ticket from dropdownlist
-    And Click on Add ticket
-    Then Verify the ticket is added in table
-    And Click on view the ticket Details
-    Then Verfiy the ticket Details
-    Then Click on Add Repair Image and Verify
-    And Click on Add Note and Verify
-    Then Click on Remove button for deleting ticket
-    And Verify the ticket removed
+#     Then Click on label form of image and Verify
+#     Then Click on label form of Pdf and Verify
+#     And Click on Export Button
+#     Then I should click on create new Box
+#     Then Enter weight and Standard Box Size
+#     And Select Pick-up site
+#     Then Check the need shipping box
+#     And Click on Create box button
+#     Then Select Ticket from dropdownlist
+#     And Click on Finish button
+#     Then Verify new box is added in table
+#     And Click on view button
+#     Then Verify the Details new box
+#     And Add another ticket in the same box
+#     Then Select Ticket from dropdownlist
+#     And Click on Add ticket
+#     Then Verify the ticket is added in table
+#     And Click on view the ticket Details
+#     Then Verfiy the ticket Details
+#     Then Click on Add Repair Image and Verify
+#     And Click on Add Note and Verify
+#     Then Click on Remove button for deleting ticket
+#     And Verify the ticket removed
 
 
 

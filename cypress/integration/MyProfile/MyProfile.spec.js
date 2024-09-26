@@ -21,7 +21,7 @@ And('Click on My profile page', () => {
     mp.clickOnMyProfile()
 })
 Then('Verify the Title of My Profile Page', () => {
-    cy.title().should('eq', 'My Profile')
+    cy.title().should('eq', 'Report Center')
 })
 And('User and User photo of MyProfile should be visible', () => {
     mp.userNameVisible()

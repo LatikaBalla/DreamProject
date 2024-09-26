@@ -2,6 +2,8 @@
 const Repair360Elements = require("../PageElements/Repair360Elements.js")
 const DashboardElements = require("../PageElements/DashboardElements.js")
 const RepairTicketsElements = require("../PageElements/RepairTicketsElements.js")
+chai.use(require('chai-sorted'))
+import {recurse} from 'cypress-recurse'
 const tdata = require("../../../testData.json");
 export class RepairTicketsActions {
     constructor() {
@@ -620,18 +622,18 @@ export class RepairTicketsActions {
         rt.addFilterElement().eq(6).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(4).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type('Nat')
+        rt.fieldValueElement().eq(0).clear({ force: true }).type('Soh')
         rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Nat')
+        cy.get('[row-index="0"]').should('contain', 'Soh')
         rt.clearFilterElement().click({ force: true })
     }
     filterEndswithSI() {
         rt.addFilterElement().eq(6).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(5).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type('rch')
+        rt.fieldValueElement().eq(0).clear({ force: true }).type('ini')
         rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'rch')
+        cy.get('[row-index="0"]').should('contain', 'ini')
         rt.clearFilterElement().click({ force: true })
     }
     filterBlankSI() {
@@ -652,77 +654,151 @@ export class RepairTicketsActions {
         cy.get('[row-index="0"]').should('contain', tdata.repairTickets.studentInfo)
         rt.clearFilterElement().click({ force: true })
     }
+     //ST
+     filtercontainST() {
+        rt.addFilterElement().eq(7).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(0).click({ force: true })
+        rt.fieldValueElement().type(tdata.repairTickets.studentTechnician)
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.studentTechnician)
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainST() {
+        rt.addFilterElement().eq(7).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(1).click({ force: true })
+        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.studentTechnician)
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.repairTickets.studentTechnician)
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterEqualsST() {
+        rt.addFilterElement().eq(7).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(2).click({ force: true })
+        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.studentTechnician)
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.studentTechnician)
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterNotequalST() {
+        rt.addFilterElement().eq(7).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(3).click({ force: true })
+        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.studentTechnician)
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.repairTickets.studentTechnician)
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithST() {
+        rt.addFilterElement().eq(7).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(4).click({ force: true })
+        rt.fieldValueElement().eq(0).clear({ force: true }).type('Nat')
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'Nat')
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterEndswithST() {
+        rt.addFilterElement().eq(7).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(5).click({ force: true })
+        rt.fieldValueElement().eq(0).clear({ force: true }).type('rch')
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'rch')
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterBlankST() {
+        rt.addFilterElement().eq(7).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(6).click({ force: true })
+        rt.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterNotblankST() {
+        rt.addFilterElement().eq(7).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(7).click({ force: true })
+        rt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.repairTickets.studentTechnician, { force: true })
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.studentTechnician)
+        rt.clearFilterElement().click({ force: true })
+    }
     //Rs
     filterOption1() {
         cy.wait(1000)
-        rt.addFilterElement().eq(7).click({ force: true })
+        rt.addFilterElement().eq(8).click({ force: true })
         cy.get('[value="Pending_Repair_Box"]').click({ force: true })
         cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Pending Repair Box')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption2() {
-        rt.addFilterElement().eq(7).click({ force: true })
+        cy.wait(1000)
+        rt.addFilterElement().eq(8).click({ force: true })
         cy.get('[value="Box_Created"]').click({ force: true })
         cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Box Created')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption3() {
-        rt.addFilterElement().eq(7).click({ force: true })
+        rt.addFilterElement().eq(8).click({ force: true })
         cy.get('[value="Intake"]').click({ force: true })
         cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Intake')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption4() {
-        rt.addFilterElement().eq(7).click({ force: true })
+        rt.addFilterElement().eq(8).click({ force: true })
         cy.get('[value="Estimate_Approved"]').click({ force: true })
         cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Estimate Approved')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption5() {
-        rt.addFilterElement().eq(7).click({ force: true })
+        rt.addFilterElement().eq(8).click({ force: true })
         cy.get('[value="Intake_Queue"]').click({ force: true })
         cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Intake Queue')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption6() {
-        rt.addFilterElement().eq(7).click({ force: true })
+        rt.addFilterElement().eq(8).click({ force: true })
         cy.get('[value="Shipping_to_Vivacity"]').click({ force: true })
         cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Shipping to Vivacity')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption7() {
-        rt.addFilterElement().eq(7).click({ force: true })
+        rt.addFilterElement().eq(8).click({ force: true })
         cy.get('[value="Estimate_Denied"]').click({ force: true })
         cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Estimate Denied')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption8() {
-        rt.addFilterElement().eq(7).click({ force: true })
+        rt.addFilterElement().eq(8).click({ force: true })
         cy.get('[value="On_Hold"]').click({ force: true })
         cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'On Hold')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption9() {
-        rt.addFilterElement().eq(7).click({ force: true })
+        rt.addFilterElement().eq(8).click({ force: true })
         cy.get('[value="Part_Ordered"]').click({ force: true })
         cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Part Ordered')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption10() {
-        rt.addFilterElement().eq(7).click({ force: true })
+        rt.addFilterElement().eq(8).click({ force: true })
         cy.get('[value="Part_Queue"]').click({ force: true })
         cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Part Queue')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption11() {
-        rt.addFilterElement().eq(7).click({ force: true })
+        rt.addFilterElement().eq(8).click({ force: true })
         cy.get('[value="Claim_Overage"]').click({ force: true })
         cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', 'Claim Overage')
         cy.get('.reset-button').click({ force: true })
     }
     //cby
     selectFilterCreatedBy() {
-        rt.addFilterElement().eq(8).click({ force: true })
+        rt.addFilterElement().eq(9).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(0).click({ force: true })
         rt.fieldValueElement().type(tdata.repairTickets.createdby)
@@ -730,7 +806,7 @@ export class RepairTicketsActions {
         cy.get('[row-index="0"]').should('contain', tdata.repairTickets.createdby)
     }
     filterDoesnotcontainCBy() {
-        rt.addFilterElement().eq(8).click({ force: true })
+        rt.addFilterElement().eq(9).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(1).click({ force: true })
         rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.createdby)
@@ -739,7 +815,7 @@ export class RepairTicketsActions {
         rt.clearFilterElement().click({ force: true })
     }
     filterEqualsCBy() {
-        rt.addFilterElement().eq(8).click({ force: true })
+        rt.addFilterElement().eq(9).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(2).click({ force: true })
         rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.createdby)
@@ -748,7 +824,7 @@ export class RepairTicketsActions {
         rt.clearFilterElement().click({ force: true })
     }
     filterNotequalCBy() {
-        rt.addFilterElement().eq(8).click({ force: true })
+        rt.addFilterElement().eq(9).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(3).click({ force: true })
         rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.createdby)
@@ -757,7 +833,7 @@ export class RepairTicketsActions {
         rt.clearFilterElement().click({ force: true })
     }
     filterBeginswithCBy() {
-        rt.addFilterElement().eq(8).click({ force: true })
+        rt.addFilterElement().eq(9).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(4).click({ force: true })
         rt.fieldValueElement().eq(0).clear({ force: true }).type('demo')
@@ -766,7 +842,7 @@ export class RepairTicketsActions {
         rt.clearFilterElement().click({ force: true })
     }
     filterEndswithCBy() {
-        rt.addFilterElement().eq(8).click({ force: true })
+        rt.addFilterElement().eq(9).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(5).click({ force: true })
         rt.fieldValueElement().eq(0).clear({ force: true }).type('vivacitytech.com')
@@ -775,7 +851,7 @@ export class RepairTicketsActions {
         rt.clearFilterElement().click({ force: true })
     }
     filterBlankCBy() {
-        rt.addFilterElement().eq(8).click({ force: true })
+        rt.addFilterElement().eq(9).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(6).click({ force: true })
         rt.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
@@ -784,7 +860,7 @@ export class RepairTicketsActions {
         rt.clearFilterElement().click({ force: true })
     }
     filterNotblankCBy() {
-        rt.addFilterElement().eq(8).click({ force: true })
+        rt.addFilterElement().eq(9).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(7).click({ force: true })
         rt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.repairTickets.createdby, { force: true })
@@ -793,124 +869,168 @@ export class RepairTicketsActions {
         rt.clearFilterElement().click({ force: true })
     }
     //box
-    selectFilterRepairBox() {
-        cy.wait(4000)
-        rt.addFilterElement().eq(9).scrollIntoView().click({ force: true })
+    filterContainBox() {
+        cy.wait(3000)
+        rt.addFilterElement().eq(10).scrollIntoView().click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(0).click({ force: true })
         rt.fieldValueElement().type(tdata.repairTickets.repairbox)
         rt.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="repair_box"]').then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.equal(8156);
-        })
+        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.repairbox)
         rt.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainBox() {
-        cy.wait(1000)
-        rt.addFilterElement().eq(9).click({ force: true })
+        rt.addFilterElement().eq(10).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(1).click({ force: true })
         rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.repairbox)
         rt.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="repair_box"]').then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.not.equal(8156);
-        })
+        cy.get('[row-index="0"]').should('not.contain', tdata.repairTickets.repairbox)
         rt.clearFilterElement().click({ force: true })
     }
-    filterGreaterthanBox() {
+    filterEqualsBox() {
         cy.wait(1000)
-        rt.addFilterElement().eq(9).click({ force: true })
+        rt.addFilterElement().eq(10).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(2).click({ force: true })
         rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.repairbox)
         rt.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="repair_box"]').then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.greaterThan(8156);
-        })
+        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.repairbox)
         rt.clearFilterElement().click({ force: true })
     }
-    filterGreaterequalBox() {
+    filterDoesnotequalBox() {
         cy.wait(1000)
-        rt.addFilterElement().eq(9).click({ force: true })
+        rt.addFilterElement().eq(10).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(3).click({ force: true })
         rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.repairbox)
         rt.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="repair_box"]').then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.gte(8156);
-        })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.repairTickets.repairbox)
         rt.clearFilterElement().click({ force: true })
     }
-    filterLessthanBox() {
-        cy.wait(1000)
-        rt.addFilterElement().eq(9).click({ force: true })
+    filterBeginswithBox() {
+        rt.addFilterElement().eq(10).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(4).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.createdby)
+        rt.fieldValueElement().eq(0).clear({ force: true }).type('81')
         rt.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="repair_box"]').then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.lessThan(8156);
-        })
+        cy.get('[row-index="0"]').should('contain', '81')
         rt.clearFilterElement().click({ force: true })
     }
-    filterLessequalBox() {
-        cy.wait(1000)
-        rt.addFilterElement().eq(9).click({ force: true })
+    filterEndswithBox() {
+        rt.addFilterElement().eq(10).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(5).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.repairbox)
+        rt.fieldValueElement().eq(0).clear({ force: true }).type('56')
         rt.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="repair_box"]').then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.lte(8156);
-        })
-        rt.clearFilterElement().click({ force: true })
-    }
-    filterBetweenBox() {
-        cy.wait(1000)
-        rt.addFilterElement().eq(9).click({ force: true })
-        rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(6).click({ force: true })
-        cy.get('[placeholder="From"]').type(tdata.repairTickets.repairbox)
-        cy.get('[placeholder="To"]').type(tdata.repairTickets.repairbox1)
-        rt.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="repair_box"]').then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.within(8156, 10584);
-        })
+        cy.get('[row-index="0"]').should('contain', '56')
         rt.clearFilterElement().click({ force: true })
     }
     filterBlankBox() {
-        cy.wait(1000)
-        rt.addFilterElement().eq(9).click({ force: true })
+        rt.addFilterElement().eq(10).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(7).click({ force: true })
+        rt.fieldOpElement().eq(6).click({ force: true })
         rt.fieldValueElement().eq(1).clear({ force: true }).type(' ', { force: true })
         rt.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', ' ')
         rt.clearFilterElement().click({ force: true })
     }
     filterNotblankBox() {
-        cy.wait(1000)
-        rt.addFilterElement().eq(9).click({ force: true })
+        rt.addFilterElement().eq(10).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(8).click({ force: true })
-        rt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.repairTickets.repairbox1, { force: true })
+        rt.fieldOpElement().eq(7).click({ force: true })
+        rt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.repairTickets.repairbox, { force: true })
         rt.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="repair_box"]').then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.equal(10584)
+        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.repairbox)
+        rt.clearFilterElement().click({ force: true })
+    }
+    //Cdate
+    filterEqualsCDate() {
+        rt.addFilterElement().eq(11).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(0).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.createdDate)
+        rt.applyElement().click({ force: true })
+        cy.get('.ag-row-first > [col-id="created_date"]').should('contain', tdata.repairTickets.createdDate1)
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterNotequalCDate() {
+        rt.addFilterElement().eq(11).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(1).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.createdDate)
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.repairTickets.createdDate1)
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterBeforeCDate() {
+        rt.addFilterElement().eq(11).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(2).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.createdDate)
+        rt.applyElement().click({ force: true })
+        const dateString = '09-11-2023 09:54:00';
+        const reformattedDateString = dateString.split('-').reverse().join('-');
+        const dateObj = new Date(reformattedDateString);
+        const timestamp = dateObj.getTime();
+        cy.get('.ag-row-first > [col-id="created_date"]').should(($el) => {
+            const value = $el.text();
+            const reformattedDate = value.split('-').reverse().join('-');
+            const dateObj1 = new Date(reformattedDate);
+            const timestamp1 = dateObj1.getTime();
+            expect(timestamp1).to.be.lessThan(timestamp)
         })
         rt.clearFilterElement().click({ force: true })
     }
-    //date
+    filterAfterCDate() {
+        rt.addFilterElement().eq(11).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(3).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.createdDate)
+        rt.applyElement().click({ force: true })
+        const dateString = '09-11-2023 09:54:00';
+        const reformattedDateString = dateString.split('-').reverse().join('-');
+        const dateObj = new Date(reformattedDateString);
+        const timestamp = dateObj.getTime();
+        cy.get('.ag-row-first > [col-id="created_date"]').should(($el) => {
+            const value = $el.text();
+            const reformattedDate = value.split('-').reverse().join('-');
+            const dateObj1 = new Date(reformattedDate);
+            const timestamp1 = dateObj1.getTime();
+            expect(timestamp1).to.be.greaterThan(timestamp)
+        })
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterBetweenCDate() {
+        rt.addFilterElement().eq(11).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(4).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.createdDate)
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type('2024-05-19', { force: true })
+        rt.applyElement().click({ force: true })
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterBlankCDate() {
+        rt.addFilterElement().eq(11).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(5).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairTickets.createdDate, { force: true })
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        rt.clearFilterElement().click({ force: true })
+    }
+    filterNotblankCDate() {
+        rt.addFilterElement().eq(11).click({ force: true })
+        rt.fieldNameElement().eq(1).click({ force: true })
+        rt.fieldOpElement().eq(6).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(2).type(tdata.repairTickets.createdDate, { force: true })
+        rt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.createdDate1)
+        rt.clearFilterElement().click({ force: true })
+    }
+    //Ldate
     filterEqualsDate() {
-        rt.addFilterElement().eq(10).click({ force: true })
+        rt.addFilterElement().eq(12).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(0).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.lastModifiedDate)
@@ -919,7 +1039,7 @@ export class RepairTicketsActions {
         rt.clearFilterElement().click({ force: true })
     }
     filterNotequalDate() {
-        rt.addFilterElement().eq(10).click({ force: true })
+        rt.addFilterElement().eq(12).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(1).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.lastModifiedDate)
@@ -928,35 +1048,54 @@ export class RepairTicketsActions {
         rt.clearFilterElement().click({ force: true })
     }
     filterBeforeDate() {
-        rt.addFilterElement().eq(10).click({ force: true })
+        rt.addFilterElement().eq(12).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(2).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.lastModifiedDate)
         rt.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('contain', tdata.repairTickets.lastModifiedDate1)
+        const dateString = '08-24-2023 17:50:48';
+        const reformattedDateString = dateString.split('-').reverse().join('-');
+        const dateObj = new Date(reformattedDateString);
+        const timestamp = dateObj.getTime();
+        cy.get('.ag-row-first > [col-id="last_modified_date"]').should(($el) => {
+            const value = $el.text();
+            const reformattedDate = value.split('-').reverse().join('-');
+            const dateObj1 = new Date(reformattedDate);
+            const timestamp1 = dateObj1.getTime();
+            expect(timestamp1).to.be.lessThan(timestamp)
+        })
         rt.clearFilterElement().click({ force: true })
     }
     filterAfterDate() {
-        rt.addFilterElement().eq(10).click({ force: true })
+        rt.addFilterElement().eq(12).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.lastModifiedDate)
         rt.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('contain', '2024-07-15')
+        const dateString = '08-24-2023 17:50:48';
+        const reformattedDateString = dateString.split('-').reverse().join('-');
+        const dateObj = new Date(reformattedDateString);
+        const timestamp = dateObj.getTime();
+        cy.get('.ag-row-first > [col-id="last_modified_date"]').should(($el) => {
+            const value = $el.text();
+            const reformattedDate = value.split('-').reverse().join('-');
+            const dateObj1 = new Date(reformattedDate);
+            const timestamp1 = dateObj1.getTime();
+            expect(timestamp1).to.be.greaterThan(timestamp)
+        })
         rt.clearFilterElement().click({ force: true })
     }
     filterBetweenDate() {
-        rt.addFilterElement().eq(10).click({ force: true })
+        rt.addFilterElement().eq(12).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
-        rt.fieldOpElement().eq(3).click({ force: true })
-        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.lastModifiedDate)
-        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairTickets.lastModifiedDate, { force: true })
+        rt.fieldOpElement().eq(4).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.lastModifiedDate2, { force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairTickets.lastModifiedDate)
         rt.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('contain', '2024-07-15')
         rt.clearFilterElement().click({ force: true })
     }
     filterBlankDate() {
-        rt.addFilterElement().eq(10).click({ force: true })
+        rt.addFilterElement().eq(12).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(5).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairTickets.lastModifiedDate, { force: true })
@@ -965,14 +1104,171 @@ export class RepairTicketsActions {
         rt.clearFilterElement().click({ force: true })
     }
     filterNotblankDate() {
-        rt.addFilterElement().eq(10).click({ force: true })
+        rt.addFilterElement().eq(12).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(6).click({ force: true })
-        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairTickets.lastModifiedDate, { force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(2).type(tdata.repairTickets.lastModifiedDate, { force: true })
         rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain', tdata.repairTickets.lastModifiedDate1)
+        cy.get('[row-index="0"]').should('contain', tdata.repairTickets.lastModifiedDate1)
         rt.clearFilterElement().click({ force: true })
     }
+    // clickOnSortAscending(){
+    //     cy.get('[data-ref="eMenu"]').eq(1).click({ force: true })
+    //     cy.contains('Sort Ascending').click({ force: true })
+    //     cy.get('[role="gridcell"][col-id="ticket_number"]')
+    //     .then(($cells)=>Cypress._.map($cells,'innerText'))
+    //     .then((strings)=>Cypress._.map(strings, parseInt))
+    //     .should('not.be.sorted',{insensitive: true })
+    // }
+    // clickOnSortAscending(){
+    //     cy.get('[data-ref="eMenu"]').eq(13).click({ force: true })
+    //     cy.contains('Sort Ascending').click({ force: true })
+    //     cy.get('[role="gridcell"][col-id="last_modified_date"]').should(($cells)=>{
+    //         const timestapm=Cypress._.map($cells,($c)=>$c.innerText)
+    //     .map((s)=>new Date(s))
+    //     .map((d)=>d.getTime())
+    //     const sorted = Cypress._.sortBy(timestapm)
+    // expect(sorted,'sorted timestamp').to.deep.equal(timestapm)
+    //     })
 
+    // }
+    // clickOnSortAscending(){
+    //     cy.get('[data-ref="eMenu"]').eq(13).click({ force: true })
+    //     cy.contains('Clear Sort').click({ force: true })
+    //     cy.get('[data-ref="eMenu"]').eq(13).click({ force: true })
+    //     cy.contains('Sort Descending').click({ force: true })
+    //     cy.get('[role="gridcell"][col-id="last_modified_date"]').should(($cells)=>{
+    //         const timestapm=Cypress._.map($cells,($c)=>$c.innerText)
+    //     .map((s)=>new Date(s))
+    //     .map((d)=>d.getTime())
+    //     const sorted = Cypress._.sortBy(timestapm)
+    // expect(sorted,'sorted timestamp').not.to.deep.equal(timestapm)
+    //     })
+    // clickOnSortAscending(){
+    //         cy.get('[data-ref="eMenu"]').eq(13).click({ force: true })
+    //         cy.contains('Clear Sort').click({ force: true })
+    //         cy.get('[data-ref="eMenu"]').eq(13).click({ force: true })
+    //         cy.contains('Sort Descending').click({ force: true })
+    //         cy.get('[role="gridcell"][col-id="last_modified_date"]').should(($cells)=>{
+    //             const timestapm=Cypress._.map($cells,($c)=>$c.innerText)
+    //         .map((s)=>new Date(s))
+    //         .map((d)=>d.getTime())
+    //         const sorted = Cypress._.sortBy(timestapm)
+    //     expect(sorted,'sorted timestamp').not.to.deep.equal(timestapm)
+    //         })
+    sortAscendingTN() {
+        cy.wait(2000)
+        rt.optionElement().eq(5).click({ force: true })
+        rt.sortAscendingElement().click({ force: true })
+        cy.get('[role="gridcell"][col-id="repair_device"]').then($num=>{
+            const text1 =Cypress._.map($num,(c)=>c.innerText)
+            cy.log(text1.slice(0,5).join(', '))
+         const sorted = Cypress._.sortBy(text1)
+        cy.log(sorted.slice(0,5).join(', '))
+        expect(sorted).to.deep.equal(text1)
+        })
+    }
+    sortDescendingTN() {
+        rt.optionElement().eq(1).click({ force: true })
+        rt.sortDescendingElement().click({ force: true })
+        cy.get('[role="gridcell"][col-id="ticket_number"]')
+            .then(($cells) => Cypress._.map($cells, 'innerText'))
+            .then((strings) => Cypress._.map(strings, parseFloat))
+            .should('to.be.descending', { insensitive: true })
+    }
+    sortAscendingBox() {
+        rt.optionElement().eq(11).click({ force: true })
+        rt.sortAscendingElement().click({ force: true })
+        recurse(
+            ()=> cy.get('[role="gridcell"][col-id="repair_box"]')
+            .then(($cells) => Cypress._.map($cells, 'innerText'))
+            .then((strings) => Cypress._.map(strings, parseInt)),
+            (numbers) => expect(numbers).to.be.descending,
+            {
+                timeout:5000,
+                delay: 1000,
+                log : false,
+            },
+        )
+//         const cellsToPriceObjects = (cells$) => {
+//             return _.map(cells$, (cell$) => {
+//               return {
+//                 price: Number(cell$.textContent),
+//                 rowIndex: Number(cell$.parentElement.attributes['row-index'].value),
+//               }
+//             })
+//           }
+//         cy.get('[role="gridcell"][col-id="repair_box"]')
+//   .then(cellsToPriceObjects)
+//   .then((prices) => {
+//     const sorted = _.sortBy(prices, 'rowIndex')
+
+//     // extract just the price numbers and check if they are sorted
+//     const justPrices = _.map(sorted, 'price')
+
+//     const sortedPrices = _.sortBy(justPrices)
+
+//     expect(justPrices, 'cells are sorted 📈').to.deep.equal(sortedPrices)
+//   })
+
+    }
+    sortDescendingBox() {
+        rt.optionElement().eq(11).click({ force: true })
+        cy.contains('Clear Sort').click({ force: true })
+        rt.optionElement().eq(11).click({ force: true })
+        rt.sortDescendingElement().click({ force: true })
+        cy.get('[role="gridcell"][col-id="repair_box"]')
+            .then(($cells) => Cypress._.map($cells, 'innerText'))
+            .then((strings) => Cypress._.map(strings, parseInt))
+            .should('to.not.be.sorted')
+    }
+    sortAscendingCdate() {
+        rt.optionElement().eq(12).click({ force: true })
+        rt.sortAscendingElement().click({ force: true })
+        cy.get('[role="gridcell"][col-id="created_date"]').should(($cells) => {
+            const timestapm = Cypress._.map($cells, ($c) => $c.innerText)
+                .map((s) => new Date(s))
+                .map((d) => d.getTime())
+            const sorted = Cypress._.sortBy(timestapm)
+            expect(sorted, 'sorted timestamp').to.deep.equal(timestapm)
+        })
+    }
+    sortDescendingCdate() {
+        rt.optionElement().eq(12).click({ force: true })
+        cy.contains('Clear Sort').click({ force: true })
+        rt.optionElement().eq(12).click({ force: true })
+        rt.sortDescendingElement().click({ force: true })
+        cy.get('[role="gridcell"][col-id="created_date"]').should(($cells) => {
+            const timestapm = Cypress._.map($cells, ($c) => $c.innerText)
+                .map((s) => new Date(s))
+                .map((d) => d.getTime())
+            const sorted = Cypress._.sortBy(timestapm)
+            expect(sorted, 'sorted timestamp').to.not.deep.equal(timestapm)
+        })
+    }
+    sortAscendingLdate() {
+        rt.optionElement().eq(13).click({ force: true })
+        rt.sortAscendingElement().click({ force: true })
+        cy.get('[role="gridcell"][col-id="last_modified_date"]').should(($cells) => {
+            const timestapm = Cypress._.map($cells, ($c) => $c.innerText)
+                .map((s) => new Date(s))
+                .map((d) => d.getTime())
+            const sorted = Cypress._.sortBy(timestapm)
+            expect(sorted, 'sorted timestamp').to.deep.equal(timestapm)
+        })
+    }
+    sortDescendingLdate() {
+        rt.optionElement().eq(13).click({ force: true })
+        cy.contains('Clear Sort').click({ force: true })
+        rt.optionElement().eq(13).click({ force: true })
+        rt.sortDescendingElement().click({ force: true })
+        cy.get('[role="gridcell"][col-id="last_modified_date"]').should(($cells) => {
+            const timestapm = Cypress._.map($cells, ($c) => $c.innerText)
+                .map((s) => new Date(s))
+                .map((d) => d.getTime())
+            const sorted = Cypress._.sortBy(timestapm)
+            expect(sorted, 'sorted timestamp').to.not.deep.equal(timestapm)
+        })
+    }
 }
 export default RepairTicketsActions 

@@ -60,8 +60,8 @@ export class DeviceRepairReportActions {
    verifyDownloadSuccessful() {
       cy.verifyDownload("/download/", tdata.deviceRepairReport.filename)
    }
-   clickOnExport() {
-      cy.contains('Export').click({ force: true })
+   clickOndownload() {
+      dev.downloadbtnElement().click({ force: true })
    }
    selectdropdownList() {
       dev.searchdropdownElement().eq(0).click({ force: true })
@@ -707,7 +707,7 @@ export class DeviceRepairReportActions {
    }
    //cby
    selectFilterCreatedBy() {
-      dev.addFilterElement().eq(8).click({ force: true })
+      dev.addFilterElement().eq(9).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(0).click({ force: true })
       dev.fieldValueElement().type(tdata.deviceRepairReport.createdby)
@@ -715,7 +715,7 @@ export class DeviceRepairReportActions {
       cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.createdby)
    }
    filterDoesnotcontainCBy() {
-      dev.addFilterElement().eq(8).click({ force: true })
+      dev.addFilterElement().eq(9).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(1).click({ force: true })
       dev.fieldValueElement().eq(0).clear({ force: true }).type(tdata.deviceRepairReport.createdby)
@@ -724,7 +724,7 @@ export class DeviceRepairReportActions {
       dev.clearFilterElement().click({ force: true })
    }
    filterEqualsCBy() {
-      dev.addFilterElement().eq(8).click({ force: true })
+      dev.addFilterElement().eq(9).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(2).click({ force: true })
       dev.fieldValueElement().eq(0).clear({ force: true }).type(tdata.deviceRepairReport.createdby)
@@ -733,7 +733,7 @@ export class DeviceRepairReportActions {
       dev.clearFilterElement().click({ force: true })
    }
    filterNotequalCBy() {
-      dev.addFilterElement().eq(8).click({ force: true })
+      dev.addFilterElement().eq(9).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(3).click({ force: true })
       dev.fieldValueElement().eq(0).clear({ force: true }).type(tdata.deviceRepairReport.createdby)
@@ -742,7 +742,7 @@ export class DeviceRepairReportActions {
       dev.clearFilterElement().click({ force: true })
    }
    filterBeginswithCBy() {
-      dev.addFilterElement().eq(8).click({ force: true })
+      dev.addFilterElement().eq(9).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(4).click({ force: true })
       dev.fieldValueElement().eq(0).clear({ force: true }).type('demo')
@@ -751,7 +751,7 @@ export class DeviceRepairReportActions {
       dev.clearFilterElement().click({ force: true })
    }
    filterEndswithCBy() {
-      dev.addFilterElement().eq(8).click({ force: true })
+      dev.addFilterElement().eq(9).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(5).click({ force: true })
       dev.fieldValueElement().eq(0).clear({ force: true }).type('vivacitytech.com')
@@ -760,7 +760,7 @@ export class DeviceRepairReportActions {
       dev.clearFilterElement().click({ force: true })
    }
    filterBlankCBy() {
-      dev.addFilterElement().eq(8).click({ force: true })
+      dev.addFilterElement().eq(9).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(6).click({ force: true })
       dev.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
@@ -769,7 +769,7 @@ export class DeviceRepairReportActions {
       dev.clearFilterElement().click({ force: true })
    }
    filterNotblankCBy() {
-      dev.addFilterElement().eq(8).click({ force: true })
+      dev.addFilterElement().eq(9).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(7).click({ force: true })
       dev.fieldValueElement().eq(1).clear({ force: true }).type(tdata.deviceRepairReport.createdby, { force: true })

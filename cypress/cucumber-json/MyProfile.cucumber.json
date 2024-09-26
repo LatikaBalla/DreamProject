@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3595000000
+              "duration": 567000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 12044000000
+              "duration": 4374000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 11118000000
+              "duration": 11107000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on My profile page",
             "result": {
               "status": "passed",
-              "duration": 1142000000
+              "duration": 1138000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of My Profile Page",
             "result": {
               "status": "passed",
-              "duration": 417000000
+              "duration": 4000000
             }
           },
           {
@@ -72,9 +72,8 @@
             "line": 14,
             "name": "User and User photo of MyProfile should be visible",
             "result": {
-              "status": "failed",
-              "duration": 30233000000,
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `h1`, but never found it.\n    at MyProfileActions.userNameVisible (cypress/integration/PageObject/PageActions/MyProfileActions.js:24:30)\n    at Context.eval (cypress/integration/MyProfile/MyProfile.spec.js:27:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 1477000000
             }
           },
           {
@@ -83,7 +82,8 @@
             "line": 15,
             "name": "Profile and Account deatils section of MyProfile should be visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 15000000
             }
           },
           {
@@ -92,7 +92,8 @@
             "line": 16,
             "name": "Click on upload image icon",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 26000000
             }
           },
           {
@@ -101,7 +102,8 @@
             "line": 17,
             "name": "Enter tilte and phone no",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 708000000
             }
           },
           {
@@ -110,7 +112,8 @@
             "line": 18,
             "name": "Select Email preference",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 130000000
             }
           },
           {
@@ -119,7 +122,8 @@
             "line": 19,
             "name": "click on update button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 62000000
             }
           },
           {
@@ -128,7 +132,8 @@
             "line": 20,
             "name": "Verify the updated successfully",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 434000000
             }
           }
         ]

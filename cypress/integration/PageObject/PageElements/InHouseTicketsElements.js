@@ -42,12 +42,12 @@ export default class InHouseTicketsElements {
         })
     }
     createTicketElement() {
-        return cy.contains(locator.inhouseTickets.createTicket, {
+        return cy.get(locator.inhouseTickets.createTicket, {
             timeout: 30000,
         })
     }
     exportbtnElement() {
-        return cy.contains(locator.inhouseTickets.exportbtn, {
+        return cy.get(locator.inhouseTickets.exportbtn, {
             timeout: 30000,
         })
     }

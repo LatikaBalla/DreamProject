@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2731000000
+              "duration": 2170000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9064000000
+              "duration": 4764000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 14121000000
+              "duration": 14182000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 85000000
+              "duration": 80000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on InHouseRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 566000000
+              "duration": 1231000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click All InHouseTickets tab",
             "result": {
               "status": "passed",
-              "duration": 65000000
+              "duration": 63000000
             }
           },
           {
@@ -92,9 +92,8 @@
             "line": 16,
             "name": "I should click on Create new button",
             "result": {
-              "status": "failed",
-              "duration": 30254000000,
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find content: 'Create Ticket' but never did.\n    at InHouseTicketsElements.createTicketElement (cypress/integration/PageObject/PageElements/InHouseTicketsElements.js:45:18)\n    at InHouseTicketsActions.clickOnCreateTicketButton (cypress/integration/PageObject/PageActions/InHouseTicketsActions.js:37:12)\n    at Context.eval (cypress/integration/InHouseTickets/InHouseTickets.spec.js:38:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 1940000000
             }
           },
           {
@@ -103,7 +102,8 @@
             "line": 17,
             "name": "Select failure Type, Serial Device, Technician, issue and Building",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1298000000
             }
           },
           {
@@ -112,7 +112,8 @@
             "line": 18,
             "name": "Enter the Chromebook issue",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1043000000
             }
           },
           {
@@ -121,7 +122,8 @@
             "line": 19,
             "name": "Click on save button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 93000000
             }
           },
           {
@@ -130,7 +132,8 @@
             "line": 20,
             "name": "Verify New Ticket is added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4822000000
             }
           }
         ]

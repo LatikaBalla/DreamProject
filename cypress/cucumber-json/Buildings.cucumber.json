@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3970000000
+              "duration": 7490000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9929000000
+              "duration": 10961000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9185000000
+              "duration": 9187000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Buildings Tab",
             "result": {
               "status": "passed",
-              "duration": 2087000000
+              "duration": 2077000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of Buildings Page",
             "result": {
               "status": "passed",
-              "duration": 618000000
+              "duration": 1240000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Filters of Buildings should be visible",
             "result": {
               "status": "passed",
-              "duration": 494000000
+              "duration": 474000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Table for Buildings should be visible",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 5000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "I should click on Add building button",
             "result": {
               "status": "passed",
-              "duration": 172000000
+              "duration": 174000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "I should Enter Building Name,Phone and Extension",
             "result": {
               "status": "passed",
-              "duration": 1039000000
+              "duration": 973000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "I should Enter Building Abbreviation and Select Default building",
             "result": {
               "status": "passed",
-              "duration": 385000000
+              "duration": 346000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Enter Billing Id, Shipping Address and select from dropdown",
             "result": {
               "status": "failed",
-              "duration": 30847000000,
+              "duration": 30599000000,
               "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `#shipping_address_address_1`, but never found it.\n    at BuildingsElements.saddressElement (cypress/integration/PageObject/PageElements/BuildingsElements.js:50:18)\n    at BuildingsActions.enterShippingAddress (cypress/integration/PageObject/PageActions/BuildingsActions.js:62:14)\n    at Context.eval (cypress/integration/Buildings/Buildings.spec.js:50:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
