@@ -88,9 +88,9 @@ export class MyFleetActions {
    }
    clickOnViewButton() {
       cy.wait(5000)
-      mf.viewElement().click({ force: true }); 
+      mf.viewElement().click({ force: true });
    }
-   verifyViewResult() { 
+   verifyViewResult() {
       cy.contains('General Info').should('be.visible', { force: true })
    }
    verifyViewResult1() {
@@ -151,12 +151,12 @@ export class MyFleetActions {
 
    }
    converRetired() {
-     cy.wait(4000)
-     mf.addFilterElement().eq(0).click({ force: true })
-     mf.fieldNameElement().eq(1).click({ force: true })
-     mf.fieldOpElement().eq(0).click({ force: true })
-     mf.fieldValueElement().type(tdata.myFleet.serialnumber)
-     mf.applyElement().click({ force: true })
+      cy.wait(4000)
+      mf.addFilterElement().eq(0).click({ force: true })
+      mf.fieldNameElement().eq(1).click({ force: true })
+      mf.fieldOpElement().eq(0).click({ force: true })
+      mf.fieldValueElement().type(tdata.myFleet.serialnumber)
+      mf.applyElement().click({ force: true })
       mf.deviceIconElement().eq(1).click({ force: true })
       cy.contains('Retire Device').click({ force: true })
    }
@@ -244,7 +244,7 @@ export class MyFleetActions {
       mf.fieldOpElement().eq(1).click({ force: true })
       mf.fieldValueElement().eq(0).type(tdata.myFleet.serialno)
       mf.applyElement().click({ force: true })
-     cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.serialno)
+      cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.serialno)
       mf.clearFilterElement().click({ force: true })
    }
    filterEqualsSN() {
@@ -598,6 +598,18 @@ export class MyFleetActions {
       cy.get('[row-index="0"]').should('contain', tdata.myFleet.buildingname)
       mf.clearFilterElement().click({ force: true })
    }
+   filterVToption1(){
+      mf.addFilterElement().eq(5).click({ force: true })
+      cy.get('[value="Yes"]').click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'Yes')
+      cy.get('[class="reset-button"]').click({ force: true })
+   }
+   filterVToption2(){
+      mf.addFilterElement().eq(5).click({ force: true })
+      cy.get('[value="No"]').click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'No')
+      cy.get('[class="reset-button"]').click({ force: true })
+   }
    //oU
    filtercontainOU() {
       mf.addFilterElement().eq(5).click({ force: true })
@@ -614,7 +626,7 @@ export class MyFleetActions {
       mf.fieldOpElement().eq(1).click({ force: true })
       mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.orgUnit)
       mf.applyElement().click({ force: true })
-     // cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.orgUnit)
+      // cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.orgUnit)
       mf.clearFilterElement().click({ force: true })
    }
    filterEqualsOU() {
@@ -883,8 +895,31 @@ export class MyFleetActions {
       cy.get('[row-index="0"]').should('contain', tdata.myFleet.warrantyDate1)
       mf.clearFilterElement().click({ force: true })
    }
+   filterLSOption1() {
+      mf.addFilterElement().eq(9).click({ force: true })
+      cy.get('[value="Checked Out"]').click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'Checked Out')
+      cy.get('[class="reset-button"]').click({ force: true })
+   }
+   filterLSOption2() {
+      mf.addFilterElement().eq(9).click({ force: true })
+      cy.get('[value="In Loaner Pool"]').click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'In Loaner Pool')
+      cy.get('[class="reset-button"]').click({ force: true })
+   }
+   filterLSOption3() {
+      mf.addFilterElement().eq(9).click({ force: true })
+      cy.get('[value="Not In Loaner Pool"]').click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'Not In Loaner Pool')
+      cy.get('[class="reset-button"]').click({ force: true })
+   }
+   filterLSOption4() {
+      mf.addFilterElement().eq(9).click({ force: true })
+      cy.get('[value="Not Set"]').click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'Not Set')
+      cy.get('[class="reset-button"]').click({ force: true })
+   }
    //Retire-------------------------
-   //SN
    selectFilterSerialNumber1() {
       cy.wait(2000)
       mf.addFilterElement().eq(0).click({ force: true })
@@ -938,7 +973,7 @@ export class MyFleetActions {
       mf.fieldOpElement().eq(5).click({ force: true })
       mf.fieldValueElement().eq(0).type('Test')
       mf.applyElement().click({ force: true })
-    cy.wait(100)
+      cy.wait(100)
       cy.get('[row-index="0"]').should('contain', 'Test')
       mf.clearFilterElement().click({ force: true })
    }
@@ -948,7 +983,7 @@ export class MyFleetActions {
       mf.fieldOpElement().eq(6).click({ force: true })
       mf.fieldValueElement().eq(0).type(' ', { force: true })
       mf.applyElement().click({ force: true })
-     cy.get('[row-index="0"]').should('contain', ' ')
+      cy.get('[row-index="0"]').should('contain', ' ')
       mf.clearFilterElement().click({ force: true })
    }
    filterNotblankSN1() {
@@ -1024,7 +1059,7 @@ export class MyFleetActions {
       mf.fieldOpElement().eq(6).click({ force: true })
       mf.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
       mf.applyElement().click({ force: true })
-     // cy.get('[row-index="0"]').should('contain', ' ')
+      // cy.get('[row-index="0"]').should('contain', ' ')
       mf.clearFilterElement().click({ force: true })
    }
    filterNotblanktag1() {
@@ -1172,7 +1207,7 @@ export class MyFleetActions {
       mf.fieldOpElement().eq(6).click({ force: true })
       mf.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
       mf.applyElement().click({ force: true })
-    //  cy.get('[row-index="0"]').should('contain', ' ')
+      //  cy.get('[row-index="0"]').should('contain', ' ')
       mf.clearFilterElement().click({ force: true })
    }
    filterNotblankSKU1() {
@@ -1245,7 +1280,7 @@ export class MyFleetActions {
       mf.fieldOpElement().eq(6).click({ force: true })
       mf.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
       mf.applyElement().click({ force: true })
-     // cy.get('[row-index="0"]').should('contain', ' ')
+      // cy.get('[row-index="0"]').should('contain', ' ')
       mf.clearFilterElement().click({ force: true })
    }
    filterNotblankB1() {
@@ -1274,7 +1309,7 @@ export class MyFleetActions {
       mf.fieldOpElement().eq(1).click({ force: true })
       mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.orgUnit1)
       mf.applyElement().click({ force: true })
-     // cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.orgUnit1)
+      // cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.orgUnit1)
       mf.clearFilterElement().click({ force: true })
    }
    filterEqualsOU1() {
@@ -1348,7 +1383,7 @@ export class MyFleetActions {
       mf.fieldOpElement().eq(1).click({ force: true })
       mf.fieldValueElement().eq(0).clear({ force: true }).type(tdata.myFleet.user1)
       mf.applyElement().click({ force: true })
-     // cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.user1)
+      // cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.user1)
       mf.clearFilterElement().click({ force: true })
    }
    filterEqualsU1() {
@@ -1393,7 +1428,7 @@ export class MyFleetActions {
       mf.fieldOpElement().eq(6).click({ force: true })
       mf.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
       mf.applyElement().click({ force: true })
-     // cy.get('[row-index="0"]').should('contain', ' ')
+      // cy.get('[row-index="0"]').should('contain', ' ')
       mf.clearFilterElement().click({ force: true })
    }
    filterNotblankU1() {
@@ -1467,7 +1502,7 @@ export class MyFleetActions {
       mf.fieldOpElement().eq(6).click({ force: true })
       mf.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
       mf.applyElement().click({ force: true })
-    // cy.get('[row-index="0"]').should('contain', ' ')
+      // cy.get('[row-index="0"]').should('contain', ' ')
       mf.clearFilterElement().click({ force: true })
    }
    filterNotblankW1() {

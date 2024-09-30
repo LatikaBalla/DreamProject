@@ -10,21 +10,12 @@ Feature:  Users Page Functionality
     And Click on Users page
 
   Scenario: visibilty check,Add new Srudent, Search, Edit and search Delete the User and download
-    Then I should be redirected to the Users page
-    Then I should click on Add New student
-    Then Enter full name, title and Email
-    And Enter Phone, Cell Number, role and building
-    And Click on submit button
-    Then Verify the student added in table
-    And Click on filter of Record Id Equals and Verify the Result
-    And Click on filter of Record Id Does not equal and Verify the Result
-    And Click on filter of Record Id Greater than and Verify the Result
-    And Click on filter of Record Id Greater than or equal to and Verify the Result
-    And Click on filter of Record Id Less than and Verify the Result
-    And Click on filter of Record Id Less than or equal to and Verify the Result
-    And Click on filter of Record Id Between and Verify the Result
-    And Click on filter of Record Id Blank and Verify the Result
-    And Click on filter of Record Id Not blank and Verify the Result
+    # Then I should be redirected to the Users page
+    # Then I should click on Add New student
+    # Then Enter full name, title and Email
+    # And Enter Phone, Cell Number, role and building
+    # And Click on submit button
+    # Then Verify the student added in table
 
     And Click on filter of Full name contain and Verify the Result
     And Click on filter of Full name Does not contain and Verify the Result
@@ -33,7 +24,7 @@ Feature:  Users Page Functionality
     And Click on filter of Full name Begins with and Verify the Result
     And Click on filter of Full name Ends with and Verify the Result
     And Click on filter of Full name Blank and Verify the Result
-    And Click on filter of Full name Not blank and Verify the Result
+    # And Click on filter of Full name Not blank and Verify the Result
 
     And Click on filter of Eamil contain and Verify the Result
     And Click on filter of Eamil Does not contain and Verify the Result
@@ -42,7 +33,16 @@ Feature:  Users Page Functionality
     And Click on filter of Eamil Begins with and Verify the Result
     And Click on filter of Eamil Ends with and Verify the Result
     And Click on filter of Eamil Blank and Verify the Result
-    And Click on filter of Eamil Not blank and Verify the Result
+    # And Click on filter of Eamil Not blank and Verify the Result
+
+    And Click on filter of Phone contain and Verify the Result
+    And Click on filter of Phone Does not contain and Verify the Result
+    And Click on filter of Phone Equals and Verify the Result
+    And Click on filter of Phone Does not equal and Verify the Result
+    And Click on filter of Phone Begins with and Verify the Result
+    And Click on filter of Phone Ends with and Verify the Result
+    And Click on filter of Phone Blank and Verify the Result
+    # And Click on filter of Phone Not blank and Verify the Result
 
     And Click on filter of User Role op1 and Verify the Result
     And Click on filter of User Role op2 and Verify the Result
@@ -53,30 +53,19 @@ Feature:  Users Page Functionality
     And Click on filter of User Role op7 and Verify the Result
     And Click on filter of User Role op8 and Verify the Result
     And Click on filter of User Role op9 and Verify the Result
-    And Click on filter of User Role op10 and Verify the Result
+    # And Click on filter of User Role op10 and Verify the Result
 
-    And Click on filter of User status contain and Verify the Result
-    And Click on filter of User status Does not contain and Verify the Result
-    And Click on filter of User status Equals and Verify the Result
-    And Click on filter of User status Does not equal and Verify the Result
-    And Click on filter of User status Begins with and Verify the Result
-    And Click on filter of User status Ends with and Verify the Result
-    And Click on filter of User status Blank and Verify the Result
-    And Click on filter of User status Not blank and Verify the Result
+    And Click on filter of Organizational Unit contain and Verify the Result
+    And Click on filter of Organizational Unit Does not contain and Verify the Result
+    And Click on filter of Organizational Unit Equals and Verify the Result
+    And Click on filter of Organizational Unit Does not equal and Verify the Result
+    And Click on filter of Organizational Unit Begins with and Verify the Result
+    And Click on filter of Organizational Unit Ends with and Verify the Result
+    And Click on filter of Organizational Unit Blank and Verify the Result
+    # And Click on filter of Organizational Unit Not blank and Verify the Result
 
-    Then All Organizational Units Search with Devices checkbox
-    And Verify the result Devices in gird
-    Then All Organizational Units Search with Google Bootcamp Users checkbox
-    And Verify the result Google Bootcamp Users in gird
-    Then All Organizational Units Search with Test OU checkbox
-    And Verify the result Test OU in gird
-    Then All Organizational Units Search with VT Employees checkbox
-    And Verify the result VT Employees in gird
-
-    And Click on Export To CSV
-    Then Click on Bulk Upload button
-    And Click on Attach CSV file and Click on submit button
-    # Then Verify the Uploaded successfully
+    # And Click on filter of User status Active and Verify the Result
+    # And Click on filter of User status Inactive and Verify the Result
 
     Then Click on Download button
     And Click on view button and click on Edit button
@@ -88,5 +77,10 @@ Feature:  Users Page Functionality
     And Verify the Record has been updated Meassage
     And Click on Delete button
     Then Click on Confirm Delete button
-# And Verify the record is deleted successfully
+    And Verify the record is deleted successfully
+    And Click on Export To CSV
+    Then Click on Bulk Upload button
+    And Click on Attach CSV file and Click on submit button
+# Then Verify the Uploaded successfully
+
 

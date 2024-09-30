@@ -276,6 +276,12 @@ And('Click on filter of Building Blank and Verify the Result', () => {
 And('Click on filter of Building Not blank and Verify the Result', () => {
     mf.filterNotblankB()
 })
+And ('Click on filter of VT Verified op1 and Verify the Result',()=>{
+mf.filterVToption1()
+})
+And ('Click on filter of VT Verified op2 and Verify the Result',()=>{
+    mf.filterVToption2()
+})
 //user
 And('Click on filter of User contain and Verify the Result', () => {
     mf.filtercontainU()
@@ -595,4 +601,17 @@ And('Click on filter of Warranty End Date Blank and Verify the Result in Retired
 })
 And('Click on filter of Warranty End Date Not blank and Verify the Result in Retired', () => {
     mf.filterNotblankDate1()
+})
+//Ls
+And ('Click on filter of Loaner Status op1 and Verify the Result', () => {
+    mf.filterLSOption1() 
+})
+And ('Click on filter of Loaner Status op2 and Verify the Result', () => {
+    mf.filterLSOption2() 
+})
+And ('Click on filter of Loaner Status op3 and Verify the Result', () => {
+    mf.filterLSOption3() 
+})
+And ('Click on filter of Loaner Status op4 and Verify the Result', () => {
+    mf.filterLSOption4() 
 })

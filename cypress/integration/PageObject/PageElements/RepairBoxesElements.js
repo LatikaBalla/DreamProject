@@ -23,7 +23,7 @@ export default class RepairBoxesElements {
         })
     }
     addboxElement() {
-        return cy.contains(locator.repairBoxes.addbox, {
+        return cy.get(locator.repairBoxes.addbox, {
             timeout: 30000,
         })
     }
@@ -58,7 +58,7 @@ export default class RepairBoxesElements {
         })
     }
     createboxbtnElement() {
-        return cy.contains(locator.repairBoxes.createboxbtn, {
+        return cy.get(locator.repairBoxes.createboxbtn, {
             timeout: 30000,
         })
     }

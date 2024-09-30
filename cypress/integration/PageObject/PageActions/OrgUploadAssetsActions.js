@@ -32,12 +32,6 @@ export class OrgUploadAssetsActions {
     clickOnAddAssetbutton() {
         oua.addassetElement().click({ force: true })
     }
-    enterTitle() {
-        oua.titleAssetElement().type(tdata.addasset.title)
-    }
-    enterFullname() {
-        oua.fullnameElement().type(tdata.addasset.fullname)
-    }
     enterLocation() {
         oua.locationElement().type(tdata.addasset.location)
     }
@@ -49,6 +43,37 @@ export class OrgUploadAssetsActions {
     }
     enterType() {
         oua.typeElement().type(tdata.addasset.type)
+    }
+    enterSerialNo() {
+        oua.serialnoElement().type(tdata.addasset.serialno)
+    }
+    enterVendor() {
+        oua.vendorElement().type(tdata.addasset.vendor)
+    }
+    enterinvoice() {
+        oua.invoiceElement().type(tdata.addasset.invoice)
+    }
+    enterAssignment() {
+        oua.assignmentElement().type(tdata.addasset.assignment)
+    }
+    enterQuantity() {
+        oua.quantityElement().type(tdata.addasset.quantity)
+    }
+    enterCost() {
+        oua.costElement().type(tdata.addasset.cost)
+    }
+    enterFieldValue1and2() {
+        oua.fieldValue1Element().type(tdata.addasset.fieldValue1)
+        oua.fieldValue2Element().type(tdata.addasset.fieldValue2)
+    }
+    enterPO() {
+        oua.poElement().type(tdata.addasset.po)
+    }
+    enterModel() {
+        oua.modelElement().type(tdata.addasset.model)
+    }
+    enterWarrantyinfo(){
+        oua.warrantyinfoElement().type(tdata.addasset.warrantyinfo)
     }
     enterDescription() {
         oua.descriptionElement().type(tdata.addasset.description)
@@ -70,11 +95,11 @@ export class OrgUploadAssetsActions {
         oua.applyElement().click({ force: true })
         oua.editElement().eq(0).click({ force: true })
     }
-    editTitle() {
-        oua.titleAssetElement().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.title)
+    editSerialno() {
+        oua.serialnoElement().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.serialno)
     }
-    editFullname() {
-        oua.fullnameElement().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.fullname)
+    editModel() {
+        oua.modelElement().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.model)
     }
     editNotes() {
         oua.notesElement().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.notes)
@@ -91,6 +116,30 @@ export class OrgUploadAssetsActions {
     editDescription() {
         oua.descriptionElement().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.description)
     }
+    editQuantity(){
+        oua.quantityElement().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.quantity)
+    }
+    editPO() {
+        oua.poElement().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.po)
+    }
+    editAssignment(){
+        oua.assignmentElement().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.assignment)
+    }
+    editCost() {
+        oua.costElement().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.cost)
+    }
+    editfieldValue1() {
+        oua.fieldValue1Element().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.fieldValue1)
+    }
+    editfieldValue2() {
+        oua.fieldValue2Element().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.fieldValue2)
+    }
+    editInvoice() {
+        oua.invoiceElement().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.invoice)
+    }
+    editVendor() {
+        oua.vendorElement().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.vendor)
+    }
     editUpload() {
         oua.uploadElement().attachFile(tdata.orgAsset.reupload)
     }
@@ -98,6 +147,7 @@ export class OrgUploadAssetsActions {
         oua.savebtnElement().click({ force: true })
     }
     verfifyDataUpdatedMessage() {
+
     }
     clickDeleteIcon() {
         cy.wait(2000)
@@ -199,7 +249,7 @@ export class OrgUploadAssetsActions {
         oua.fieldOpElement().eq(0).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(currentDate)
         oua.applyElement().click({ force: true })
-       // cy.get('[row-index="0"]').should('contain',currentDate1)
+        // cy.get('[row-index="0"]').should('contain',currentDate1)
         oua.clearFilterElement().click({ force: true })
     }
     filterNotequalDate() {

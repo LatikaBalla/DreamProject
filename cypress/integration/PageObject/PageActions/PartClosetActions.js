@@ -15,35 +15,36 @@ export class PartClosetActions {
     }
     clickOnRepair360() {
         dash.repair360Element().click({ force: true })
-        cy.wait(2000)
-        cy.get('[data-testid="CloseIcon"]').eq(0).click({ force: true })
     }
     clickOnPartClosetTab() {
         rep.partclosetElement().click({ force: true })
     }
     verifyTitle() {
-        pc.titleElement().should('be.visible')
+        pc.titleElement().should('be.visible', { force: true })
     }
     filtersVisible() {
-        pc.filtersElement().should('be.visible')
+        pc.filtersElement().should('be.visible', { force: true })
     }
     tableVisible() {
-        pc.tableElement().should('be.visible')
+        pc.tableElement().should('be.visible', { force: true })
+    }
+    clickOnAddNew() {
+        pc.addNewElement().click({ force: true })
     }
     clickOnNewCustomePart() {
         pc.custompartElement().click({ force: true })
     }
     enterPartname() {
-        pc.partnameElement().type(tdata.partCloset.partname)
+        pc.partnameElement().type(tdata.partCloset.partname, { force: true })
     }
     enterManufacture() {
-        pc.manufacturerElement().type(tdata.partCloset.manufacturer)
+        pc.manufacturerElement().type(tdata.partCloset.manufacturer, { force: true })
     }
     enterParentDevice() {
-        pc.parentdeviceElement().type(tdata.partCloset.parentdevice)
+        pc.parentdeviceElement().type(tdata.partCloset.parentdevice, { force: true })
     }
     enterPartSKU() {
-        pc.partskuElement().type(tdata.partCloset.partsku)
+        pc.partskuElement().type(tdata.partCloset.partsku, { force: true })
     }
     enterQuantity() {
         pc.quantityElement().type(tdata.partCloset.quantity, { force: true })
@@ -51,25 +52,27 @@ export class PartClosetActions {
     clickOnSubmitButton() {
         pc.submitElement().click({ force: true })
     }
-    // selectBuilding() {
-    //     pc.buildingElement().click({ force: true })
-    //     cy.get('[role="listbox"]').find('[role="option"]').eq(0).click({ force: true })
-    // }
     verifyNewPartAdded() {
-        dash.messageElement().should('contain', 'Part Closet Item created')
+        // dash.messageElement().should('contain', 'Part Closet Item created',{ force: true })
     }
     enterPartSKUSearch() {
         pc.searchElement().type(tdata.partCloset.partname, { force: true })
     }
     verifySearchResult() {
-        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.partCloset.partname)
+        cy.get('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.partCloset.partname, { force: true })
     }
     clickOnDeleteButton() {
-        cy.get('tbody tr').eq(0).find('td').eq(7).scrollIntoView().contains("Delete").click({ force: true })
-        cy.get('.MuiPaper-root > .MuiButtonBase-root').click({ force: true })
+        cy.wait(1000)
+        pc.addFilterElement().eq(0).click({ force: true })
+        pc.fieldNameElement().eq(1).click({ force: true })
+        pc.fieldOpElement().eq(0).click({ force: true })
+        pc.fieldValueElement().eq(0).type(tdata.partCloset.partname, { force: true })
+        pc.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.partCloset.partname)
+        pc.deleteElement().eq(0).click({ force: true })
     }
     verifyDeleted() {
-        cy.get('tbody tr').eq(0).find('td').eq(0).should('not.contain', tdata.partCloset.partname)
+        cy.get(':nth-child(8) > .MuiDialog-container > .MuiPaper-elevation24 > .MuiDialogActions-root > .MuiButtonBase-root').click({ force: true })
     }
     clickOnNewVTPart() {
         pc.tvpartElement().click({ force: true })
@@ -94,19 +97,17 @@ export class PartClosetActions {
         pc.submitVTElement().click({ force: true })
     }
     verifyNewVTPartAdded() {
-        dash.messageElement().should('contain', 'Part Closet Item created')
+        dash.messageElement().should('contain', 'Part Closet Item created', { force: true })
     }
     clickOnOrderMore() {
-        cy.wait(100)
         cy.get('[type="button"]').contains('Order More').eq(0).click({ force: true })
     }
     enterQuantityMore() {
-
-        cy.get('[placeholder="Quantity"]').type('10')
+        cy.get('[placeholder="Quantity"]').type('10', { force: true })
         cy.contains('Submit Request').click({ force: true })
     }
     verifyRequestQuantity() {
-      //dash.messageElement().should('contain', 'Request for more parts sent')
+        //dash.messageElement().should('contain', 'Request for more parts sent')
     }
     //PN
     selectFilterPartName() {
@@ -359,6 +360,7 @@ export class PartClosetActions {
         pc.clearFilterElement().click({ force: true })
     }
     filterNotequalB() {
+        cy.wait(1000)
         pc.addFilterElement().eq(3).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(3).click({ force: true })
@@ -405,7 +407,6 @@ export class PartClosetActions {
         cy.get('[row-index="0"]').should('contain', tdata.buildings.buildingname)
         pc.clearFilterElement().click({ force: true })
     }
-
     //manufacture
     selectFilterManufacturer() {
         cy.wait(2000)

@@ -3,7 +3,7 @@ const Repair360Elements = require("../PageElements/Repair360Elements.js")
 const DashboardElements = require("../PageElements/DashboardElements.js")
 const RepairTicketsElements = require("../PageElements/RepairTicketsElements.js")
 chai.use(require('chai-sorted'))
-import {recurse} from 'cypress-recurse'
+import { recurse } from 'cypress-recurse'
 const tdata = require("../../../testData.json");
 export class RepairTicketsActions {
     constructor() {
@@ -39,20 +39,20 @@ export class RepairTicketsActions {
     }
     selectReturnSite() {
         rt.returnsiteElement().click({ force: true })
-        cy.get('[role="listbox"]').eq(0).find('li').contains(tdata.buildings.buildingname).click({ force: true })
+        cy.get('#outbound_address-option-5').click({ force: true })
     }
     selectSerialDevice() {
-        rt.serialdeviceElement().click({ force: true })
-        cy.get(tdata.repairTickets.serialdevice).click({ force: true })
+        cy.get('.css-1uvydh2').eq(1).click({ force: true })
+        cy.get('ul[role="listbox"]').find('li').contains(tdata.repairTickets.serialdevice).click({ force: true })
+    }
+    selectStudent() {
+        cy.get('#student_id').click({ force: true })
+        cy.get('#student_id-option-5').click({ force: true })
     }
     selectBuilding() {
         cy.wait(1000)
         rt.buildingElement().click({ force: true })
-        cy.get('[role="listbox"]').find('li').contains('Building Three').click({ force: true })
-    }
-    selectStudent() {
-        // cy.get('#student_id').click({ force: true })
-        // cy.get('[role="combobox"]').find(tdata.repairTickets.student).click({ force: true })
+        cy.get('#building-option-5').click({ force: true })
     }
     selectChromebookIssue() {
         rt.chromebookissueElement().click({ force: true })
@@ -119,6 +119,7 @@ export class RepairTicketsActions {
         cy.visit("/repair-360/ticket-detail/" + tdata.repairTickets.recordid)
     }
     verifySrcRepairTicket() {
+        cy.wait(1000)
         cy.contains('Repair Ticket Details').should('be.visible')
     }
     clickOnEditButton() {
@@ -654,8 +655,8 @@ export class RepairTicketsActions {
         cy.get('[row-index="0"]').should('contain', tdata.repairTickets.studentInfo)
         rt.clearFilterElement().click({ force: true })
     }
-     //ST
-     filtercontainST() {
+    //ST
+    filtercontainST() {
         rt.addFilterElement().eq(7).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(0).click({ force: true })
@@ -1160,12 +1161,12 @@ export class RepairTicketsActions {
         cy.wait(2000)
         rt.optionElement().eq(5).click({ force: true })
         rt.sortAscendingElement().click({ force: true })
-        cy.get('[role="gridcell"][col-id="repair_device"]').then($num=>{
-            const text1 =Cypress._.map($num,(c)=>c.innerText)
-            cy.log(text1.slice(0,5).join(', '))
-         const sorted = Cypress._.sortBy(text1)
-        cy.log(sorted.slice(0,5).join(', '))
-        expect(sorted).to.deep.equal(text1)
+        cy.get('[role="gridcell"][col-id="repair_device"]').then($num => {
+            const text1 = Cypress._.map($num, (c) => c.innerText)
+            cy.log(text1.slice(0, 5).join(', '))
+            const sorted = Cypress._.sortBy(text1)
+            cy.log(sorted.slice(0, 5).join(', '))
+            expect(sorted).to.deep.equal(text1)
         })
     }
     sortDescendingTN() {
@@ -1180,36 +1181,36 @@ export class RepairTicketsActions {
         rt.optionElement().eq(11).click({ force: true })
         rt.sortAscendingElement().click({ force: true })
         recurse(
-            ()=> cy.get('[role="gridcell"][col-id="repair_box"]')
-            .then(($cells) => Cypress._.map($cells, 'innerText'))
-            .then((strings) => Cypress._.map(strings, parseInt)),
+            () => cy.get('[role="gridcell"][col-id="repair_box"]')
+                .then(($cells) => Cypress._.map($cells, 'innerText'))
+                .then((strings) => Cypress._.map(strings, parseInt)),
             (numbers) => expect(numbers).to.be.descending,
             {
-                timeout:5000,
+                timeout: 5000,
                 delay: 1000,
-                log : false,
+                log: false,
             },
         )
-//         const cellsToPriceObjects = (cells$) => {
-//             return _.map(cells$, (cell$) => {
-//               return {
-//                 price: Number(cell$.textContent),
-//                 rowIndex: Number(cell$.parentElement.attributes['row-index'].value),
-//               }
-//             })
-//           }
-//         cy.get('[role="gridcell"][col-id="repair_box"]')
-//   .then(cellsToPriceObjects)
-//   .then((prices) => {
-//     const sorted = _.sortBy(prices, 'rowIndex')
+        //         const cellsToPriceObjects = (cells$) => {
+        //             return _.map(cells$, (cell$) => {
+        //               return {
+        //                 price: Number(cell$.textContent),
+        //                 rowIndex: Number(cell$.parentElement.attributes['row-index'].value),
+        //               }
+        //             })
+        //           }
+        //         cy.get('[role="gridcell"][col-id="repair_box"]')
+        //   .then(cellsToPriceObjects)
+        //   .then((prices) => {
+        //     const sorted = _.sortBy(prices, 'rowIndex')
 
-//     // extract just the price numbers and check if they are sorted
-//     const justPrices = _.map(sorted, 'price')
+        //     // extract just the price numbers and check if they are sorted
+        //     const justPrices = _.map(sorted, 'price')
 
-//     const sortedPrices = _.sortBy(justPrices)
+        //     const sortedPrices = _.sortBy(justPrices)
 
-//     expect(justPrices, 'cells are sorted 📈').to.deep.equal(sortedPrices)
-//   })
+        //     expect(justPrices, 'cells are sorted 📈').to.deep.equal(sortedPrices)
+        //   })
 
     }
     sortDescendingBox() {

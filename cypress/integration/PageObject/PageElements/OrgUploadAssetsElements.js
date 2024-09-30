@@ -121,4 +121,64 @@ export default class OrgUploadAssetsElements {
             timeout: 30000,
         })
     }
+    poElement() {
+        return cy.get(locator.orgUploadAssets.po, {
+            timeout: 30000,
+        })
+    }
+    serialnoElement() {
+        return cy.get(locator.orgUploadAssets.serialno, {
+            timeout: 30000,
+        })
+    }
+    modelElement() {
+        return cy.get(locator.orgUploadAssets.model, {
+            timeout: 30000,
+        })
+    }
+    assignmentElement() {
+        return cy.get(locator.orgUploadAssets.assignment, {
+            timeout: 30000,
+        })
+    }
+    warrantyinfoElement() {
+        return cy.get(locator.orgUploadAssets.warrantyinfo, {
+            timeout: 30000,
+        })
+    }
+    fundsourceElement() {
+        return cy.get(locator.orgUploadAssets.fundsource, {
+            timeout: 30000,
+        })
+    }
+    invoiceElement() {
+        return cy.get(locator.orgUploadAssets.invoice, {
+            timeout: 30000,
+        })
+    }
+    vendorElement() {
+        return cy.get(locator.orgUploadAssets.vendor, {
+            timeout: 30000,
+        })
+    }
+    costElement() {
+        return cy.get(locator.orgUploadAssets.cost, {
+            timeout: 30000,
+        })
+    }
+    quantityElement() {
+        return cy.get(locator.orgUploadAssets.quantity, {
+            timeout: 30000,
+        })
+    }
+    fieldValue1Element() {
+        return cy.get(locator.orgUploadAssets.fieldValue1, {
+            timeout: 30000,
+        })
+    }
+    fieldValue2Element() {
+        return cy.get(locator.orgUploadAssets.fieldValue2, {
+            timeout: 30000,
+        })
+    }
 }

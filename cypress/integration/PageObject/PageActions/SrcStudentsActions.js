@@ -327,7 +327,7 @@ export class SrcStudentsActions {
         ss.fieldOpElement().eq(0).click({ force: true })
         ss.fieldValueElement().type(tdata.srcStudent.phoneNo1)
         ss.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.phoneNo2)
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.phoneNo1)
         ss.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainP() {
@@ -336,7 +336,7 @@ export class SrcStudentsActions {
         ss.fieldOpElement().eq(1).click({ force: true })
         ss.fieldValueElement().eq(0).type(tdata.srcStudent.phoneNo1)
         ss.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain', tdata.srcStudent.phoneNo2)
+        cy.get('[row-index="0"]').should('not.contain', tdata.srcStudent.phoneNo1)
         ss.clearFilterElement().click({ force: true })
     }
     filterEqualsP() {
@@ -345,7 +345,7 @@ export class SrcStudentsActions {
         ss.fieldOpElement().eq(2).click({ force: true })
         ss.fieldValueElement().eq(0).type(tdata.srcStudent.phoneNo1)
         ss.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.phoneNo2)
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.phoneNo1)
         ss.clearFilterElement().click({ force: true })
     }
     filterNotequalP() {
@@ -354,7 +354,7 @@ export class SrcStudentsActions {
         ss.fieldOpElement().eq(3).click({ force: true })
         ss.fieldValueElement().eq(0).type(tdata.srcStudent.phoneNo1)
         ss.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain.value', tdata.srcStudent.phoneNo2)
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.srcStudent.phoneNo1)
         ss.clearFilterElement().click({ force: true })
     }
     filterBeginswithP() {
@@ -363,7 +363,7 @@ export class SrcStudentsActions {
         ss.fieldOpElement().eq(4).click({ force: true })
         ss.fieldValueElement().eq(0).type('9999')
         ss.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '(999)')
+        cy.get('[row-index="0"]').should('contain', '999')
         ss.clearFilterElement().click({ force: true })
     }
     filterEndswithP() {
@@ -390,7 +390,7 @@ export class SrcStudentsActions {
         ss.fieldOpElement().eq(7).click({ force: true })
         ss.fieldValueElement().eq(1).type(tdata.srcStudent.phoneNo1, { force: true })
         ss.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.phoneNo2)
+        cy.get('[row-index="0"]').should('contain', tdata.srcStudent.phoneNo1)
         ss.clearFilterElement().click({ force: true })
     }
     //us
@@ -408,9 +408,9 @@ export class SrcStudentsActions {
         ss.addFilterElement().eq(3).click({ force: true })
         ss.fieldNameElement().eq(1).click({ force: true })
         ss.fieldOpElement().eq(1).click({ force: true })
-        ss.fieldValueElement().eq(0).type(tdata.srcStudent.userStatus)
+        ss.fieldValueElement().eq(0).type('Inactive')
         ss.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain', tdata.srcStudent.userStatus)
+        cy.get('[row-index="0"]').should('not.contain','Inactive')
         ss.clearFilterElement().click({ force: true })
     }
     filterEqualsUS() {

@@ -705,6 +705,78 @@ export class DeviceRepairReportActions {
       cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.assettag)
       dev.clearFilterElement().click({ force: true })
    }
+     //StdN
+     filterContainStdN() {
+      dev.addFilterElement().eq(8).click({ force: true })
+      dev.fieldNameElement().eq(1).click({ force: true })
+      dev.fieldOpElement().eq(0).click({ force: true })
+      dev.fieldValueElement().type(tdata.deviceRepairReport.studentName)
+      dev.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.studentName)
+   }
+   filterDoesnotcontainStdN() {
+      dev.addFilterElement().eq(8).click({ force: true })
+      dev.fieldNameElement().eq(1).click({ force: true })
+      dev.fieldOpElement().eq(1).click({ force: true })
+      dev.fieldValueElement().eq(0).clear({ force: true }).type(tdata.deviceRepairReport.studentName)
+      dev.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('not.contain', tdata.deviceRepairReport.studentName)
+      dev.clearFilterElement().click({ force: true })
+   }
+   filterEqualsStdN() {
+      dev.addFilterElement().eq(8).click({ force: true })
+      dev.fieldNameElement().eq(1).click({ force: true })
+      dev.fieldOpElement().eq(2).click({ force: true })
+      dev.fieldValueElement().eq(0).clear({ force: true }).type(tdata.deviceRepairReport.studentName)
+      dev.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.studentName)
+      dev.clearFilterElement().click({ force: true })
+   }
+   filterNotequalStdN() {
+      dev.addFilterElement().eq(8).click({ force: true })
+      dev.fieldNameElement().eq(1).click({ force: true })
+      dev.fieldOpElement().eq(3).click({ force: true })
+      dev.fieldValueElement().eq(0).clear({ force: true }).type(tdata.deviceRepairReport.studentName)
+      dev.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('not.contain.value', tdata.deviceRepairReport.studentName)
+      dev.clearFilterElement().click({ force: true })
+   }
+   filterBeginswithStdN() {
+      dev.addFilterElement().eq(8).click({ force: true })
+      dev.fieldNameElement().eq(1).click({ force: true })
+      dev.fieldOpElement().eq(4).click({ force: true })
+      dev.fieldValueElement().eq(0).clear({ force: true }).type('Soh')
+      dev.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'Soh')
+      dev.clearFilterElement().click({ force: true })
+   }
+   filterEndswithStdN() {
+      dev.addFilterElement().eq(8).click({ force: true })
+      dev.fieldNameElement().eq(1).click({ force: true })
+      dev.fieldOpElement().eq(5).click({ force: true })
+      dev.fieldValueElement().eq(0).clear({ force: true }).type('ini')
+      dev.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'ini')
+      dev.clearFilterElement().click({ force: true })
+   }
+   filterBlankStdN() {
+      dev.addFilterElement().eq(8).click({ force: true })
+      dev.fieldNameElement().eq(1).click({ force: true })
+      dev.fieldOpElement().eq(6).click({ force: true })
+      dev.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+      dev.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', ' ')
+      dev.clearFilterElement().click({ force: true })
+   }
+   filterNotblankStdN() {
+      dev.addFilterElement().eq(8).click({ force: true })
+      dev.fieldNameElement().eq(1).click({ force: true })
+      dev.fieldOpElement().eq(7).click({ force: true })
+      dev.fieldValueElement().eq(1).clear({ force: true }).type(tdata.deviceRepairReport.studentName, { force: true })
+      dev.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.studentName)
+      dev.clearFilterElement().click({ force: true })
+   }
    //cby
    selectFilterCreatedBy() {
       dev.addFilterElement().eq(9).click({ force: true })

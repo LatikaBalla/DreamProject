@@ -88,6 +88,15 @@ Feature: DeviceRepairReport Page Functionality
     And Click on filter of Repair status op10 and Verify the Result
     And Click on filter of Repair status op11 and Verify the Result
 
+    And Click on filter of Student Name contain and Verify the Result
+    And Click on filter of Student Name Does not contain and Verify the Result
+    And Click on filter of Student Name Equals and Verify the Result
+    And Click on filter of Student Name Does not equal and Verify the Result
+    And Click on filter of Student Name Begins with and Verify the Result
+    And Click on filter of Student Name Ends with and Verify the Result
+    And Click on filter of Student Name Blank and Verify the Result
+    And Click on filter of Student Name Not blank and Verify the Result
+
     And Click on filter of Created By contain and Verify the Result
     And Click on filter of Created By Does not contain and Verify the Result
     And Click on filter of Created By Equals and Verify the Result
@@ -96,6 +105,7 @@ Feature: DeviceRepairReport Page Functionality
     And Click on filter of Created By Ends with and Verify the Result
     And Click on filter of Created By Blank and Verify the Result
     And Click on filter of Created By Not blank and Verify the Result
+
 
     Then Click on the download button
     And  Click on the View button

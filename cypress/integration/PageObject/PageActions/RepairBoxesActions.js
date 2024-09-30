@@ -54,7 +54,7 @@ export class RepairBoxesActions {
     }
     selectTickets() {
         rb.ticketElement().click()
-        cy.get('[role="listbox"]').find('[role="option"]').eq(1).click()
+        cy.get('[role="listbox"]').find('[role="option"]').eq(1).click({ force: true })
     }
     clickOnFinishButton() {
         rb.finishbtnElement().click({ force: true })
@@ -86,20 +86,20 @@ export class RepairBoxesActions {
         dash.messageElement().should('contain', tdata.repairBox.boxcreatedmsg)
     }
     clickOnViewButtonTicket() {
-        cy.get('tbody tr').eq(0).find('td').eq(7).scrollIntoView().contains('Details').click({ force: true })
+        cy.get('tbody tr').eq(0).find('td').eq(8).scrollIntoView().contains('Details').click({ force: true })
     }
     verifyTicketDetails() {
-        cy.wait(3000)
+        cy.wait(1000)
         cy.contains('Repair Ticket Details').scrollIntoView().should('be.visible')
     }
     clickOnBackButton() {
         dash.backArrowElement().click({ force: true })
     }
-    clickOnRemoveButton() {
+    clickOnRemoveButton1() {
         cy.get('tbody tr').eq(0).find('td').eq(8).scrollIntoView().contains('Remove').click({ force: true })
     }
     verifyTicketDeleted() {
-        // cy.get('tbody tr').eq(0).should('not.be.visible')
+        dash.messageElement().should('contain', 'Ticket removed successfully.')
     }
     clickOnAddRepairImage() {
         rb.addimageElement().click({ force: true })
@@ -117,12 +117,13 @@ export class RepairBoxesActions {
         rb.noteElement().type('Testing Note', { force: true })
         rb.createnoteElement().contains('Create').click({ force: true })
     }
-    clickOnRemoveButton() {
+    clickOnRemoveButton2() {
         cy.get('[data-testid="KeyboardBackspaceIcon"]').click({ force: true })
-        cy.get('.css-1a4b21o').eq(8).contains('Remove').dblclick({ force: true })
+        cy.get('.css-1a4b21o').eq(9).contains('Remove').dblclick({ force: true })
     }
     verifyRemoveTicket() {
-       // dash.messageElement().should('contain', 'Ticket removed successfully.')
+        cy.wait(2000)
+        dash.messageElement().should('contain', 'Ticket removed successfully.')
     }
     ClickOnImagelabel() {
         rb.imageIconElement().eq(0).click({ force: true })

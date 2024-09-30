@@ -178,7 +178,7 @@ export default class BuildingsElements {
         });
     }
     exportElement() {
-        return cy.contains(locator.buildings.export, {
+        return cy.get(locator.buildings.export, {
             timeout: 30000,
         });
     }

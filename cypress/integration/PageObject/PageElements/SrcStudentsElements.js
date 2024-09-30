@@ -17,7 +17,7 @@ export default class SrcStudentsElements {
         })
     }
     addstudentElement(){
-        return cy.contains(locator.srcStudents.addstudent, {
+        return cy.get(locator.srcStudents.addstudent, {
             timeout: 30000,
         })
     }
@@ -157,7 +157,7 @@ export default class SrcStudentsElements {
         })
     }
     exportbtnElement() {
-        return cy.contains(locator.srcStudents.exportbtn, {
+        return cy.get(locator.srcStudents.exportbtn, {
             timeout: 30000,
         })
     }

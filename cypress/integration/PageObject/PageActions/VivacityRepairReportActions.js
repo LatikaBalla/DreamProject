@@ -38,7 +38,7 @@ export class VivacityRepairReportActions {
     }
     selectbuilding() {
         viva.buildingdropElement().click({ force: true })    
-        cy.get('[data-value="2336"]').contains('Thompson High School').click({ force: true })
+        cy.get('#building_label-option-2').click({ force: true })
         cy.get('[data-testid="CheckBoxOutlineBlankIcon"]').eq(1).click({ force: true })
     }
     clickonClearFilter() {

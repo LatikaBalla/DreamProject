@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2731000000
+              "duration": 2006000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 10089000000
+              "duration": 4408000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 15106000000
+              "duration": 15141000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 86000000
+              "duration": 100000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on StudentRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 897000000
+              "duration": 1578000000
             }
           },
           {
@@ -73,244 +73,64 @@
             "name": "Click on SrcFacilitators tab",
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 61000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 15,
-            "name": "Verify the Title of SrcFacilitators Page",
+            "line": 52,
+            "name": "Click on filter of Phone No contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 3608000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 16,
-            "name": "Click on filter of Full name contain in search box and Verify the Result",
+            "line": 53,
+            "name": "Click on filter of Phone No Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3656000000
+              "duration": 568000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 17,
-            "name": "Click on filter of Full name Does not contain in search box and Verify the Result",
+            "line": 54,
+            "name": "Click on filter of Phone No Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 621000000
+              "duration": 588000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 18,
-            "name": "Click on filter of Full name Equals in search box and Verify the Result",
+            "line": 55,
+            "name": "Click on filter of Phone No Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 631000000
+              "duration": 572000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 19,
-            "name": "Click on filter of Full name Does not equal in search box and Verify the Result",
+            "line": 56,
+            "name": "Click on filter of Phone No Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 632000000
+              "duration": 538000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 20,
-            "name": "Click on filter of Full name Begins with in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 569000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "Click on filter of Full name Ends with in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 560000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "Click on filter of Full name Blank in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 472000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "Click on filter of Full name Not blank in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 599000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "Click on filter of Title contain in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 2603000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 26,
-            "name": "Click on filter of Title Does not contain in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 584000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 27,
-            "name": "Click on filter of Title Equals in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 590000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 28,
-            "name": "Click on filter of Title Does not equal in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 586000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 29,
-            "name": "Click on filter of Title Begins with in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 522000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 30,
-            "name": "Click on filter of Title Ends with in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 535000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "Click on filter of Title Blank in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 571000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 32,
-            "name": "Click on filter of Title Not blank in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 577000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 34,
-            "name": "Click on filter of Eamil contain in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 3972000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 35,
-            "name": "Click on filter of Eamil Does not contain in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 988000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 36,
-            "name": "Click on filter of Eamil Equals in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 977000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "Click on filter of Eamil Does not equal in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 974000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 38,
-            "name": "Click on filter of Eamil Begins with in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 524000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 39,
-            "name": "Click on filter of Eamil Ends with in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 604000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 40,
-            "name": "Click on filter of Eamil Blank in search box and Verify the Result",
+            "line": 57,
+            "name": "Click on filter of Phone No Ends with and Verify the Result",
             "result": {
               "status": "passed",
               "duration": 514000000
@@ -319,88 +139,18 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 41,
-            "name": "Click on filter of Eamil Not blank in search box and Verify the Result",
+            "line": 58,
+            "name": "Click on filter of Phone No Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 965000000
+              "duration": 466000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 43,
-            "name": "Click on filter of User status contain in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 2583000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 44,
-            "name": "Click on filter of User status Does not contain in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 603000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 45,
-            "name": "Click on filter of User status Equals in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 573000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 46,
-            "name": "Click on filter of User status Does not equal in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 581000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 47,
-            "name": "Click on filter of User status Begins with in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 540000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 48,
-            "name": "Click on filter of User status Ends with in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 534000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 49,
-            "name": "Click on filter of User status Blank in search box and Verify the Result",
-            "result": {
-              "status": "passed",
-              "duration": 494000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 50,
-            "name": "Click on filter of User status Not blank in search box and Verify the Result",
+            "line": 59,
+            "name": "Click on filter of Phone No Not blank and Verify the Result",
             "result": {
               "status": "passed",
               "duration": 561000000
@@ -409,138 +159,71 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 52,
-            "name": "Click on filter of Phone No contain in search box and Verify the Result",
-            "result": {
-              "status": "failed",
-              "duration": 7755000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<div.ag-row-no-focus.ag-row.ag-row-level-0.ag-row-position-absolute.ag-row-not-inline-editing.ag-row-even.ag-row-first>' to contain '(814) 054-63'\n    at SrcFacilitatorsActions.filtercontainP (cypress/integration/PageObject/PageActions/SrcFacilitatorsActions.js:305:34)\n    at Context.eval (cypress/integration/SrcFacilitators/SrcFacilitators.spec.js:123:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 53,
-            "name": "Click on filter of Phone No Does not contain in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 54,
-            "name": "Click on filter of Phone No Equals in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 55,
-            "name": "Click on filter of Phone No Does not equal in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 56,
-            "name": "Click on filter of Phone No Begins with in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 57,
-            "name": "Click on filter of Phone No Ends with in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 58,
-            "name": "Click on filter of Phone No Blank in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 59,
-            "name": "Click on filter of Phone No Not blank in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 61,
-            "name": "Click on filter of Last Modified Date Equals in search box and Verify the Result",
+            "name": "Click on filter of Last Modified Date Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 610000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 62,
-            "name": "Click on filter of Last Modified Date Does not equal in search box and Verify the Result",
+            "name": "Click on filter of Last Modified Date Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 661000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 63,
-            "name": "Click on filter of Last Modified Date Before in search box and Verify the Result",
+            "name": "Click on filter of Last Modified Date Before and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 597000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 64,
-            "name": "Click on filter of Last Modified Date After in search box and Verify the Result",
+            "name": "Click on filter of Last Modified Date After and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 605000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 65,
-            "name": "Click on filter of Last Modified Date Between with in search box and Verify the Result",
+            "name": "Click on filter of Last Modified Date Between with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 817000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 66,
-            "name": "Click on filter of Last Modified Date Blank in search box and Verify the Result",
+            "name": "Click on filter of Last Modified Date Blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 591000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 67,
-            "name": "Click on filter of Last Modified Date Not blank in search box and Verify the Result",
+            "name": "Click on filter of Last Modified Date Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 598000000
             }
           },
           {
@@ -549,7 +232,8 @@
             "line": 68,
             "name": "Click on Download Export button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 66000000
             }
           }
         ]

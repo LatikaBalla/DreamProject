@@ -55,20 +55,21 @@ export class BuildingsActions {
         cy.get(tdata.buildings.defaultbuilding).click({ force: true })
     }
     enterBuilingId(){
+        cy.get('#building_abbreviation').type('abc')
         const uniqueSeed = Date.now();
         build.buildingIdElement().type(uniqueSeed)
     }
     enterShippingAddress() {
-        build.saddressElement().type(tdata.buildings.address, { force: true })
+        cy.get('input[role="combobox"]').eq(0).type(tdata.buildings.address, { force: true })
         cy.wait(2000)
-        build.saddressElement().type('{downArrow}{enter}', { force: true })
+        cy.get('input[role="combobox"]').eq(0).type('{downArrow}{enter}', { force: true })
     }
     clickOnCheckbox() {
         cy.wait(3000)
         build.checkElement().click({ force: true })
     }
     clickOnSaveButton() {
-        cy.get('.MuiDialogActions-root > :nth-child(2)').click({ force: true })   
+        cy.get('button[type="button"]').contains('Save').click({ force: true })   
     }
     verifyNewBuilding() {
         cy.wait(2000)
@@ -100,7 +101,8 @@ export class BuildingsActions {
         build.editbuildingimgElement().selectFile('cypress/fixtures/' + tdata.editbuildings.buildingimg, { force: true })
     }
     clickOnUpdateButton() {
-        build.updatebtnElement().click({ force: true })
+        cy.get('button[type="button"]').contains('Update').click({ force: true })   
+       // build.updatebtnElement().click({ force: true })
     }
     verifyBuildingUpdated() {
         dash.messageElement().should('contain', tdata.editbuildings.updatemsg)
@@ -138,7 +140,7 @@ export class BuildingsActions {
         build.exportElement().click({ force: true })
     }
     clickOnBulkUpload() {
-        cy.contains('Bulk Upload').click({ force: true })
+        cy.get('[data-testid="UploadFileIcon"]').click({ force: true })
     }
     attachCsvfile() {
         cy.contains('Attach CSV file').click({ force: true })
@@ -519,19 +521,21 @@ filterNotblankBA() {
 //DB
 filtertrueDB(){
     build.addFilterElement().eq(5).click({ force: true })
-    build.fieldNameElement().eq(1).click({ force: true })
-    cy.contains('True').click({ force: true })
-    build.applyElement().click({ force: true })
+    cy.get('[value="Yes"]').click({ force: true })
+    // build.fieldNameElement().eq(1).click({ force: true })
+    // cy.contains('True').click({ force: true })
+    //build.applyElement().click({ force: true })
     cy.get('[aria-label="checked"]').should('be.checked')
-    cy.get('[ref="resetFilterButton"]').click({ force: true })
+    cy.contains('Clear Filters').click({ force: true })
 }
 filterfalseDB(){
     build.addFilterElement().eq(5).click({ force: true })
-    build.fieldNameElement().eq(1).click({ force: true })
-    cy.contains('False').click({ force: true })
-    build.applyElement().click({ force: true })
-    cy.get('[aria-label="unchecked"]').should('not.be.checked')
-    cy.get('[ref="resetFilterButton"]').click({ force: true })
+    cy.get('[value="No"]').click({ force: true })
+    // build.fieldNameElement().eq(1).click({ force: true })
+    // cy.contains('False').click({ force: true })
+   // build.applyElement().click({ force: true })
+    cy.get('[aria-label="checked"]').should('be.checked')
+    cy.contains('Clear Filters').click({ force: true })
 }
 //Extension
 filtercontainE() {

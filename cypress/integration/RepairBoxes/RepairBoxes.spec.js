@@ -78,7 +78,7 @@ And('Click on Back button', () => {
     rb.clickOnBackButton()
 })
 And('Remove the ticket from box', () => {
-    rb.clickOnRemoveButton()
+    rb.clickOnRemoveButton1()
 })
 Then('Verify the ticket is delete from the table', () => {
     rb.verifyTicketDeleted()
@@ -90,7 +90,7 @@ And('Click on Add Note and Verify', () => {
     rb.clickOnAddNote()
 })
 Then('Click on Remove button for deleting ticket', () => {
-    rb.clickOnRemoveButton()
+    rb.clickOnRemoveButton2()
 })
 And('Verify the ticket removed', () => {
     rb.verifyRemoveTicket()

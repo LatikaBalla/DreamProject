@@ -34,17 +34,31 @@ And('Table for OrgUploadAssets should be visible', () => {
 Then('I should click on Add Asset', () => {
     oua.clickOnAddAssetbutton()
 })
-Then('Enter title, full name location and tag', () => {
+Then('Enter location, tag, notes, category, serialno and model', () => {
     oua.enterLocation()
     oua.enterTag()
-})
-And('Enter note, Type and description', () => {
     oua.enterNote()
     oua.enterType()
+    oua.enterSerialNo()
+    oua.enterModel()
+})
+And('Enter assignment, po, invoice, vendor and description', () => {
+    oua.enterAssignment()
+    oua.enterPO()
+    oua.enterinvoice()
+    oua.enterVendor()
+    oua.enterWarrantyinfo()
+    oua.enterDescription()
+})
+Then('Enter cost and quantity', () => {
+    oua.enterCost()
+    oua.enterQuantity()
 })
 Then('Upload the image file', () => {
     oua.selectFileForUpload()
-    oua.enterDescription()
+})
+And('Enter fieldValue1 and fieldValue2', () => {
+    oua.enterFieldValue1and2()
 })
 And('Click on save button', () => {
     oua.clickOnASaveButton()
@@ -58,17 +72,31 @@ And('Verify the record in searching history', () => {
 And('Click on Edit button', () => {
     oua.clickOnEditIcon()
 })
-Then('I should edit title, full name location and tag', () => {
+Then('I should edit location, tag, notes, category, serialno and model', () => {
     oua.editLocation()
     oua.editTag()
-})
-And('I should edit note, Type and description', () => {
     oua.editNotes()
     oua.editType()
+    oua.editSerialno()
+    oua.editModel()
+})
+And('I should edit assignment, po, invoice, vendor and description', () => {
+    oua.editAssignment()
+    oua.editPO()
+    oua.editInvoice()
+    oua.editVendor()
     oua.editDescription()
+})
+Then('I should edit cost and quantity', () => {
+    oua.editCost()
+    oua.editQuantity()
 })
 Then('ReUpload the image file', () => {
     oua.editUpload()
+})
+And('I should edit fieldValue1 and fieldValue2', () => {
+    oua.editfieldValue1()
+    oua.editfieldValue2()
 })
 Then('Click on save button', () => {
     oua.clickSaveForUpdate()
@@ -89,74 +117,74 @@ Then('Click on Clear filter', () => {
     oua.clickOnClearFilter()
 })
 //description
-And('Click on filter of Description contain in search box and Verify the Result', () => {
-     oua.filtercontainD()
+And('Click on filter of Description contain and Verify the Result', () => {
+    oua.filtercontainD()
 })
-And('Click on filter of Description Does not contain in search box and Verify the Result', () => {
-     oua.filterDoesnotcontainD()
+And('Click on filter of Description Does not contain and Verify the Result', () => {
+    oua.filterDoesnotcontainD()
 })
-And('Click on filter of Description Equals in search box and Verify the Result', () => {
-     oua.filterEqualsD()
+And('Click on filter of Description Equals and Verify the Result', () => {
+    oua.filterEqualsD()
 })
-And('Click on filter of Description Does not equal in search box and Verify the Result', () => {
-     oua.filterNotequalD()
+And('Click on filter of Description Does not equal and Verify the Result', () => {
+    oua.filterNotequalD()
 })
-And('Click on filter of Description Begins with in search box and Verify the Result', () => {
-     oua.filterBeginswithD()
+And('Click on filter of Description Begins with and Verify the Result', () => {
+    oua.filterBeginswithD()
 })
-And('Click on filter of Description Ends with in search box and Verify the Result', () => {
-     oua.filterEndswithD()
+And('Click on filter of Description Ends with and Verify the Result', () => {
+    oua.filterEndswithD()
 })
-And('Click on filter of Description Blank in search box and Verify the Result', () => {
-     oua.filterBlankD()
+And('Click on filter of Description Blank and Verify the Result', () => {
+    oua.filterBlankD()
 })
-And('Click on filter of Description Not blank in search box and Verify the Result', () => {
-     oua.filterNotblankD()
+And('Click on filter of Description Not blank and Verify the Result', () => {
+    oua.filterNotblankD()
 })
 //date 
-And('Click on filter of Acquire Date Equals in search box and Verify the Result', () => {
+And('Click on filter of Acquire Date Equals and Verify the Result', () => {
     oua.filterEqualsDate()
 })
-And('Click on filter of Acquire Date Does not equal in search box and Verify the Result', () => {
+And('Click on filter of Acquire Date Does not equal and Verify the Result', () => {
     oua.filterNotequalDate()
 })
-And('Click on filter of Acquire Date Before in search box and Verify the Result', () => {
+And('Click on filter of Acquire Date Before and Verify the Result', () => {
     oua.filterBeforeDate()
 })
-And('Click on filter of Acquire Date After in search box and Verify the Result', () => {
+And('Click on filter of Acquire Date After and Verify the Result', () => {
     oua.filterAfterDate()
 })
-And ('Click on filter of Acquire Date Between with in search box and Verify the Result',()=>{
+And('Click on filter of Acquire Date Between with and Verify the Result', () => {
     oua.filterBetweenDate()
 })
-And('Click on filter of Acquire Date Blank in search box and Verify the Result', () => {
+And('Click on filter of Acquire Date Blank and Verify the Result', () => {
     oua.filterBlankDate()
 })
-And('Click on filter of Acquire Date Not blank in search box and Verify the Result', () => {
+And('Click on filter of Acquire Date Not blank and Verify the Result', () => {
     oua.filterNotblankDate()
 })
 //location
-And('Click on filter of Location contain in search box and Verify the Result', () => {
-     oua.filtercontainL()
+And('Click on filter of Location contain and Verify the Result', () => {
+    oua.filtercontainL()
 })
-And('Click on filter of Location Does not contain in search box and Verify the Result', () => {
-     oua.filterDoesnotcontainL()
+And('Click on filter of Location Does not contain and Verify the Result', () => {
+    oua.filterDoesnotcontainL()
 })
-And('Click on filter of Location Equals in search box and Verify the Result', () => {
-     oua.filterEqualsL()
+And('Click on filter of Location Equals and Verify the Result', () => {
+    oua.filterEqualsL()
 })
-And('Click on filter of Location Does not equal in search box and Verify the Result', () => {
-     oua.filterNotequalL()
+And('Click on filter of Location Does not equal and Verify the Result', () => {
+    oua.filterNotequalL()
 })
-And('Click on filter of Location Begins with in search box and Verify the Result', () => {
-     oua.filterBeginswithL()
+And('Click on filter of Location Begins with and Verify the Result', () => {
+    oua.filterBeginswithL()
 })
-And('Click on filter of Location Ends with in search box and Verify the Result', () => {
-     oua.filterEndswithL()
+And('Click on filter of Location Ends with and Verify the Result', () => {
+    oua.filterEndswithL()
 })
-And('Click on filter of Location Blank in search box and Verify the Result', () => {
-     oua.filterBlankL()
+And('Click on filter of Location Blank and Verify the Result', () => {
+    oua.filterBlankL()
 })
-And('Click on filter of Location Not blank in search box and Verify the Result', () => {
-     oua.filterNotblankL()
+And('Click on filter of Location Not blank and Verify the Result', () => {
+    oua.filterNotblankL()
 })

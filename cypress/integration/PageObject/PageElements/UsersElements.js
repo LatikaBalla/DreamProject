@@ -12,7 +12,7 @@ export default class UsersElements {
         })
     }
     addnewUserbtnElement() {
-        return cy.contains(locator.users.addnewUserbtn, {
+        return cy.get(locator.users.addnewUserbtn, {
             timeout: 30000,
         })
     }
@@ -68,6 +68,11 @@ export default class UsersElements {
     }
     editsubmitElement() {
         return cy.get(locator.users.editsubmit, {
+            timeout: 30000,
+        })
+    }
+    bulkupdatebtnElement() {
+        return cy.get(locator.users.bulkupdatebtn, {
             timeout: 30000,
         })
     }
@@ -162,7 +167,7 @@ export default class UsersElements {
         });
     } 
     exportElement() {
-        return cy.contains(locator.users.export, {
+        return cy.get(locator.users.export, {
             timeout: 30000,
         });
     }

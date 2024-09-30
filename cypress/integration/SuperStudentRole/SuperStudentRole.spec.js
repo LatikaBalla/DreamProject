@@ -225,49 +225,49 @@ Then('Verify New Ticket is added of Nwr' , () => {
 Then('Click on Clear filter of Nwr', () => {
     nwr.clickOnClearFilter()
 })
-And('Click More filter select- Record Id in search box and Verify the Result of Nwr', () => {
+And('Click More filter select- Record Id and Verify the Result of Nwr', () => {
     nwr.clickOnMoreFilter()
     nwr.selectFilterRecordId()
 })
-And('Click More filter select- Ticket Number in search box and Verify the Result of Nwr', () => {
+And('Click More filter select- Ticket Number and Verify the Result of Nwr', () => {
     nwr.clickOnMoreFilter()
     nwr.selectFilterTicketNumber()
 })
-And('Click More filter select- Repair type in search box and Verify the Result of Nwr', () => {
+And('Click More filter select- Repair type and Verify the Result of Nwr', () => {
     nwr.clickOnMoreFilter()
     nwr.selectFilterRepairType()
 })
-And('Click More filter select- Serial Number in search box and Verify the Result of Nwr', () => {
+And('Click More filter select- Serial Number and Verify the Result of Nwr', () => {
     nwr.clickOnMoreFilter()
     nwr.selectFilterSerialNumber()
 })
-And('Click More filter select- Repair status in search box and Verify the Result of Nwr', () => {
+And('Click More filter select- Repair status and Verify the Result of Nwr', () => {
     nwr.clickOnMoreFilter()
     nwr.selectFilterRepairStatus()
 })
-And('Click More filter select- Repair device in search box and Verify the Result of Nwr', () => {
+And('Click More filter select- Repair device and Verify the Result of Nwr', () => {
     nwr.clickOnMoreFilter()
     nwr.selectFilterRepairDevice()
 })
-And('Click More filter select- Asset tag in search box and Verify the Result of Nwr', () => {
+And('Click More filter select- Asset tag and Verify the Result of Nwr', () => {
     nwr.clickOnMoreFilter()
     nwr.selectFilterAssetTag()
 })
-And('Click More filter select- Repair Box in search box and Verify the Result of Nwr', () => {
+And('Click More filter select- Repair Box and Verify the Result of Nwr', () => {
     nwr.clickOnMoreFilter()
     nwr.selectFilterRepairBox()
 })
-And('Click More filter select- Created By in search box and Verify the Result of Nwr', () => {
+And('Click More filter select- Created By and Verify the Result of Nwr', () => {
     nwr.clickOnMoreFilter()
     nwr.selectFilterCreatedBy()
 })
-And('Enter the Search - Record Id in search box and Verify the Result of Nwr', () => {
+And('Enter the Search - Record Id and Verify the Result of Nwr', () => {
     nwr.searchRecordId()
 })
-Then('Enter the Search - Repair type in search box and Verify the Result of Nwr', () => {
+Then('Enter the Search - Repair type and Verify the Result of Nwr', () => {
     nwr.searchRepairType()
 })
-Then('Enter the Search - Repair status in search box and Verify the Result of Nwr', () => {
+Then('Enter the Search - Repair status and Verify the Result of Nwr', () => {
     nwr.searchRepairStatus()
 })
 
@@ -295,7 +295,7 @@ pc.clickOnSubmitButton()
 And ('Verify new custome part is added of pc',()=>{
 pc.verifyNewPartAdded()
 })
-And ('Enter the Search value in search box of pc',()=>{
+And ('Enter the Search value of pc',()=>{
 pc.enterPartSKUSearch()
 })
 Then ('Verify the Results in the table of pc',()=>{
@@ -438,47 +438,47 @@ And('Account Manager,Billing Address and Shipping Address should be visible of a
 Then('Click on Clear filter of acc', () => {
     acc.clickOnClearFiltersButton()
 })
-And('Click More filter select- Full name in search box and Verify the Result of acc', () => {
+And('Click More filter select- Full name and Verify the Result of acc', () => {
     acc.clickOnMoreFilter()
     acc.selectFilterFullName()
 })
-And('Click More filter select- Phone in search box and Verify the Result of acc', () => {
+And('Click More filter select- Phone and Verify the Result of acc', () => {
     acc.clickOnMoreFilter()
     acc.selectFilterPhone()
 })
-And('Click More filter select- Title in search box and Verify the Result of acc', () => {
+And('Click More filter select- Title and Verify the Result of acc', () => {
     acc.clickOnMoreFilter()
     acc.selectFilterTitle()
 })
-And('Click More filter select- Eamil in search box and Verify the Result of acc', () => {
+And('Click More filter select- Eamil and Verify the Result of acc', () => {
     acc.clickOnMoreFilter()
     acc.selectFilterEmail()
 })
-And ('Click More filter select- Record Id in search box and Verify the Result of acc', () => {
+And ('Click More filter select- Record Id and Verify the Result of acc', () => {
     acc.clickOnMoreFilter()
     acc.selectFilterRecordId()
 })
-  And ('Click More filter select- User Role in search box and Verify the Result of acc', () => {
+  And ('Click More filter select- User Role and Verify the Result of acc', () => {
     acc.clickOnMoreFilter()
     acc.selectFilterUserRole()
 })
-  And ('Click More filter select- User Status in search box and Verify the Result of acc', () => {
+  And ('Click More filter select- User Status and Verify the Result of acc', () => {
     acc.clickOnMoreFilter()
     acc.selectFilterUserStatus()
 })
-And('Enter the Search - Record Id in search box and Verify the Result of acc', () => {
+And('Enter the Search - Record Id and Verify the Result of acc', () => {
     acc.searchRecordId()
 })
-And('Enter the Search - Full name in search box and Verify the Result of acc', () => {
+And('Enter the Search - Full name and Verify the Result of acc', () => {
     acc.searchFullName()
 })
-Then('Enter the Search - Email in search box and Verify the Result of acc', () => {
+Then('Enter the Search - Email and Verify the Result of acc', () => {
     acc.searchEmail()
 })
-And('Enter the Search - Title in search box and Verify the Result of acc', () => {
+And('Enter the Search - Title and Verify the Result of acc', () => {
     acc.searchTitle()
 })
-Then('Enter the Search - Phone in search box and Verify the Result of acc', () => {
+Then('Enter the Search - Phone and Verify the Result of acc', () => {
     acc.searchPhone()
 })
 And('Click on Export To CSV of acc', () => {
@@ -501,37 +501,37 @@ And('Click on Buildings Tab', () => {
 Then('Click on Clear filter of build', () => {
     build.clickOnClearFiltersButton()
 })
-And('Click More filter select- Record Id in search box and Verify the Result of build', () => {
+And('Click More filter select- Record Id and Verify the Result of build', () => {
     build.clickOnMoreFiltersButton()
     build.selectFilterRecordId()
 })
-And('Click More filter select- Building Name in search box and Verify the Result of build', () => {
+And('Click More filter select- Building Name and Verify the Result of build', () => {
     build.clickOnMoreFiltersButton()
     build.selectFilterBuildingName()
 })
-And('Click More filter select- Default Building in search box and Verify the Result of build', () => {
+And('Click More filter select- Default Building and Verify the Result of build', () => {
     build.clickOnMoreFiltersButton()
     build.selectFilterDefaultBuilding()
 })
-And('Click More filter select- Phone in search box and Verify the Result of build', () => {
+And('Click More filter select- Phone and Verify the Result of build', () => {
     build.clickOnMoreFiltersButton()
     build.selectFilterPhone()
 })
-And('Click More filter select- Building Shipping Address in search box and Verify the Result of build', () => {
+And('Click More filter select- Building Shipping Address and Verify the Result of build', () => {
     build.clickOnMoreFiltersButton()
     build.selectFilterShippingAddress()
 })
-And('Click More filter select- Building Billing Address in search box and Verify the Result of build', () => {
+And('Click More filter select- Building Billing Address and Verify the Result of build', () => {
     build.clickOnMoreFiltersButton()
     build.selectFilterBillingAddress()
 })
-And('Enter the Search - Building Name in search box and Verify the Result of build', () => {
+And('Enter the Search - Building Name and Verify the Result of build', () => {
     build.searchBuildingName()
 })
-Then('Enter the Search - Building Shipping Address in search box and Verify the Result of build', () => {
+Then('Enter the Search - Building Shipping Address and Verify the Result of build', () => {
     build.searchShippingAddress()
 })
-And('Enter the Search - Phone in search box and Verify the Result of build', () => {
+And('Enter the Search - Phone and Verify the Result of build', () => {
     build.searchPhone()
 })
 And('Click on Export To CSV of build', () => {
@@ -551,51 +551,51 @@ Then('Click on DeviceRepairReport page', () => {
     dev.clickOnDeviceRepairReport()
     cy.wait(3000)
 })
-And('Enter the Search - Record Id in search box and Verify the Result of drr', () => {
+And('Enter the Search - Record Id and Verify the Result of drr', () => {
     dev.searchRecordId()
 })
-Then('Enter the Search - Repair type in search box and Verify the Result of drr', () => {
+Then('Enter the Search - Repair type and Verify the Result of drr', () => {
     dev.searchRepairType()
 })
-Then('Enter the Search - Repair status in search box and Verify the Result of drr', () => {
+Then('Enter the Search - Repair status and Verify the Result of drr', () => {
     //dev.searchRepairStatus() 
 })
-And('Enter the Search - Repair Box in search box and Verify the Result of drr', () => {
+And('Enter the Search - Repair Box and Verify the Result of drr', () => {
     dev.searchRepairBox()
 })
-And('Click More filter select- Record Id in search box and Verify the Result of drr', () => {
+And('Click More filter select- Record Id and Verify the Result of drr', () => {
     dev.clickOnMoreFilter()
     dev.selectFilterRecordId()
 })
-And('Click More filter select- Ticket Number in search box and Verify the Result of drr', () => {
+And('Click More filter select- Ticket Number and Verify the Result of drr', () => {
     dev.clickOnMoreFilter()
     dev.selectFilterTicketNumber()
 })
-And('Click More filter select- Repair type in search box and Verify the Result of drr', () => {
+And('Click More filter select- Repair type and Verify the Result of drr', () => {
     dev.clickOnMoreFilter()
     dev.selectFilterRepairType()
 })
-And('Click More filter select- Serial Number in search box and Verify the Result of drr', () => {
+And('Click More filter select- Serial Number and Verify the Result of drr', () => {
     dev.clickOnMoreFilter()
     dev.selectFilterSerialNumber()
 })
-And('Click More filter select- Repair status in search box and Verify the Result of drr', () => {
+And('Click More filter select- Repair status and Verify the Result of drr', () => {
     dev.clickOnMoreFilter()
     dev.selectFilterRepairStatus()
 })
-And('Click More filter select- Repair device in search box and Verify the Result of drr', () => {
+And('Click More filter select- Repair device and Verify the Result of drr', () => {
     dev.clickOnMoreFilter()
     dev.selectFilterRepairDevice()
 })
-And('Click More filter select- Asset tag in search box and Verify the Result of drr', () => {
+And('Click More filter select- Asset tag and Verify the Result of drr', () => {
     dev.clickOnMoreFilter()
     dev.selectFilterAssetTag()
 })
-And('Click More filter select- Repair Box in search box and Verify the Result of drr', () => {
+And('Click More filter select- Repair Box and Verify the Result of drr', () => {
     dev.clickOnMoreFilter()
     dev.selectFilterRepairBox()
 })
-And('Click More filter select- Created By in search box and Verify the Result of drr', () => {
+And('Click More filter select- Created By and Verify the Result of drr', () => {
     dev.clickOnMoreFilter()
     dev.selectFilterCreatedBy()
 })
@@ -620,7 +620,7 @@ mf.verifyUdated()
 Then('Click on Clear filter of mf', () => {
     mf.clickOnClearFiltersButton()
 })
-And('Enter the table fields in search box of mf', () => {
+And('Enter the table fields of mf', () => {
     mf.enterSearchValue()
 })
 And('Verify the record in searching history of mf', () => {
@@ -632,19 +632,19 @@ Then('Click on view Button of mf', () => {
 And('Verify the Warranty Description of mf', () => {
     mf.verifyViewResult()
 })
-And('Click More filter select- Serial Number in search box and Verify the Result of mf', () => {
+And('Click More filter select- Serial Number and Verify the Result of mf', () => {
     mf.clickOnMoreFiltersButton()
     mf.selectFilterSerialNumber()
 })
-And('Click More filter select- Asset tag in search box and Verify the Result of mf', () => {
+And('Click More filter select- Asset tag and Verify the Result of mf', () => {
     mf.clickOnMoreFiltersButton()
     mf.selectFilterAssetTag()
 })
-And('Click More filter select- Device in search box and Verify the Result of mf', () => {
+And('Click More filter select- Device and Verify the Result of mf', () => {
     mf.clickOnMoreFiltersButton()
     mf.selectFilterDevice()
 })
-And('Click More filter select- Student in search box and Verify the Result of mf', () => {
+And('Click More filter select- Student and Verify the Result of mf', () => {
     mf.clickOnMoreFiltersButton()
     mf.selectFilterStudent()
 })
@@ -656,12 +656,12 @@ Then('Click on Retired Tab', () => {
 And('Click on OrgUploadAssets Tab', () => {
     oua.clickOnOrgUploadAssets()
 })
-And('Click More filter select- Description in search box and Verify the Result of oua', () => {
+And('Click More filter select- Description and Verify the Result of oua', () => {
     oua.clickOnMoreFilter()
     oua.selectFilterDescription()
     cy.wait(100)
 })
-And('Click More filter select- Acquire Location in search box and Verify the Result of oua', () => {
+And('Click More filter select- Acquire Location and Verify the Result of oua', () => {
     oua.clickOnMoreFilter()
     oua.selectFilterAcquireLocation()
 })
@@ -672,11 +672,11 @@ Then('Click on Clear filter of oua', () => {
 And('Click on ImportSerialDevices Tab', () => {
     isd.clickOnImportSerialDevices()
 })
-And ('Click More filter select- Importer in search box and Verify the Result of ims',()=>{
+And ('Click More filter select- Importer and Verify the Result of ims',()=>{
     isd.clickOnMoreFilter()
     isd.selectFilterImporter()
 })
-And ('Click More filter select- Quantity Devices in search box and Verify the Result of ims',()=>{
+And ('Click More filter select- Quantity Devices and Verify the Result of ims',()=>{
     isd.clickOnMoreFilter()
     isd.selectFilterQuantityDevices()
 })
@@ -706,7 +706,7 @@ And('Verify the Send Feedback successfully of sup', () => {
 And('Click on LoanerManagement Tab', () => {
     loan.clickOnLoanerManagement()
 })
-Then('Search the serial no in search box of Available Devices section of lm', () => {
+Then('Search the serial no of Available Devices section of lm', () => {
     loan.serachAvailableDevice()
 })
 And('Verify the search result of lm', () => {
@@ -767,15 +767,15 @@ And('Click on remove from loaner pool button of lm', () => {
     loan.clickOnRemoveFromPool()
 })
 
-And('Click More filter select- Title in search box and Verify the Result of ft', () => {
+And('Click More filter select- Title and Verify the Result of ft', () => {
     ft.clickOnMoreFilter()
     ft.selectFilterTitle()
 })
-And('Click More filter select- Description in search box and Verify the Result of ft', () => {
+And('Click More filter select- Description and Verify the Result of ft', () => {
     ft.clickOnMoreFilter()
     ft.selectFilterDescription()
 })
-And('Click More filter select- Creator in search box and Verify the Result of ft', () => {
+And('Click More filter select- Creator and Verify the Result of ft', () => {
     ft.clickOnMoreFilter()
     ft.selectFilterCreator()
 })

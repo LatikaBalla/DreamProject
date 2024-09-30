@@ -11,6 +11,11 @@ export default class PartClosetElements {
             timeout: 30000,
         })
     }
+    addNewElement(){
+        return cy.get(locator.partCloset.addNew, {
+            timeout: 30000,
+        }) 
+    }
     tableElement() {
         return cy.get(locator.partCloset.table, {
             timeout: 30000,
@@ -22,12 +27,12 @@ export default class PartClosetElements {
         })
     }
     custompartElement() {
-        return cy.contains(locator.partCloset.custompart, {
+        return cy.get(locator.partCloset.custompart, {
             timeout: 30000,
         })
     }
     tvpartElement() {
-        return cy.contains(locator.partCloset.tvpart, {
+        return cy.get(locator.partCloset.tvpart, {
             timeout: 30000,
         })
     }
@@ -47,7 +52,7 @@ export default class PartClosetElements {
         })
     }
     deleteElement() {
-        return cy.contains(locator.partCloset.delete, {
+        return cy.get(locator.partCloset.delete, {
             timeout: 30000,
         })
     }

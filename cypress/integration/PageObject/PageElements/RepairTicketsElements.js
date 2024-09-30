@@ -22,12 +22,12 @@ export default class RepairTicketsElements {
         })
     }
     createTicketElement() {
-        return cy.contains(locator.repairTickets.createTicket, {
+        return cy.get(locator.repairTickets.createTicket, {
             timeout: 30000,
         })
     }
     exportElement() {
-        return cy.contains(locator.repairTickets.export, {
+        return cy.get(locator.repairTickets.export, {
             timeout: 30000,
         })
     }

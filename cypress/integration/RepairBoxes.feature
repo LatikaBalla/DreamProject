@@ -12,10 +12,10 @@ Feature: RepairBoxes Page Functionality
 
   Scenario:  Visiblity check,Create New Box, add ticket and  view details of box with create aonther ticket
     And Verify the Title of RepairBoxes Page
-    And Click on filter of Repair Box Equals  and Verify the Result
+    And Click on filter of Repair Box Equals and Verify the Result
     And Click on filter of Repair Box Does not equal and Verify the Result
     And Click on filter of Repair Box Greater than and Verify the Result
-    And Click on filter of Repair Box Greater than or equal to  and Verify the Result
+    And Click on filter of Repair Box Greater than or equal to and Verify the Result
     And Click on filter of Repair Box Less than and Verify the Result
     And Click on filter of Repair Box Less than or equal to and Verify the Result
     And Click on filter of Repair Box Between and Verify the Result
@@ -90,29 +90,29 @@ Feature: RepairBoxes Page Functionality
 # And Click on Sort Ascending for Last Modified Date and Verify the Result
 # And Click on Sort Descending for Last Modified Date and Verify the Result
 
-#     Then Click on label form of image and Verify
-#     Then Click on label form of Pdf and Verify
-#     And Click on Export Button
-#     Then I should click on create new Box
-#     Then Enter weight and Standard Box Size
-#     And Select Pick-up site
-#     Then Check the need shipping box
-#     And Click on Create box button
-#     Then Select Ticket from dropdownlist
-#     And Click on Finish button
-#     Then Verify new box is added in table
-#     And Click on view button
-#     Then Verify the Details new box
-#     And Add another ticket in the same box
-#     Then Select Ticket from dropdownlist
-#     And Click on Add ticket
-#     Then Verify the ticket is added in table
-#     And Click on view the ticket Details
-#     Then Verfiy the ticket Details
-#     Then Click on Add Repair Image and Verify
-#     And Click on Add Note and Verify
-#     Then Click on Remove button for deleting ticket
-#     And Verify the ticket removed
+    Then Click on label form of image and Verify
+    Then Click on label form of Pdf and Verify
+    And Click on Export Button
+    Then I should click on create new Box
+    Then Enter weight and Standard Box Size
+    And Select Pick-up site
+    Then Check the need shipping box
+    And Click on Create box button
+    Then Select Ticket from dropdownlist
+    And Click on Finish button
+    Then Verify new box is added in table
+    And Click on view button
+    Then Verify the Details new box
+    And Add another ticket in the same box
+    Then Select Ticket from dropdownlist
+    And Click on Add ticket
+    Then Verify the ticket is added in table
+    And Click on view the ticket Details
+    Then Verfiy the ticket Details
+    Then Click on Add Repair Image and Verify
+    And Click on Add Note and Verify
+    Then Click on Remove button for deleting ticket
+    And Verify the ticket removed
 
 
 

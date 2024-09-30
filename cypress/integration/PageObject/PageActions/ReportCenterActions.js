@@ -21,7 +21,7 @@ export class ReportCenterActions {
         repc.inhouserrElement().scrollIntoView().should('be.visible')
     }
     deviceRepairReportTabVisible() {
-        repc.devicerrElement().should('be.visible')
+        repc.devicerrElement().scrollIntoView().should('be.visible')
     }
     nonwarrantyRepairsTabVisible() {
         cy.get('[data-testid="ChevronLeftIcon"]').click({ force: true })

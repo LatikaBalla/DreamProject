@@ -45,30 +45,6 @@ export class SrcFacilitatorsActions {
     verifyViewDetails() {
         sf.detailsRoleElement()
     }
-    searchFullName() {
-        sf.searchboxElement().eq(0).click({ force: true })
-        sf.fullNameElement().click({ force: true })
-        sf.searchElement().clear({ force: true }).type(tdata.srcFacilitators.fullName + '{enter}', { force: true })
-        cy.get('tr td').eq(0).should('contain', tdata.srcFacilitators.fullName)
-    }
-    searchEmail() {
-        sf.searchboxElement().eq(0).click({ force: true })
-        sf.emaildropElement().click({ force: true })
-        sf.searchElement().clear({ force: true }).type(tdata.srcFacilitators.emaildrop + '{enter}', { force: true })
-        cy.get('tr td').eq(2).should('contain', tdata.srcFacilitators.emaildrop)
-    }
-    searchStatus() {
-        sf.searchboxElement().eq(0).click({ force: true })
-        sf.statusElement().click({ force: true })
-        sf.searchElement().clear({ force: true }).type(tdata.srcFacilitators.status + '{enter}', { force: true })
-        cy.get('tr td').eq(3).should('contain', tdata.srcFacilitators.status)
-    }
-    searchPhone() {
-        sf.searchboxElement().eq(0).click({ force: true })
-        sf.phoneNoElement().click({ force: true })
-        sf.searchElement().clear({ force: true }).type(tdata.srcFacilitators.phoneNo1 + '{enter}', { force: true })
-        cy.get('tr td').eq(4).should('contain', tdata.srcFacilitators.phoneNo2)
-    }
     clickOnExport() {
         sf.exportbtnElement().click({ force: true })
     }
@@ -302,7 +278,7 @@ export class SrcFacilitatorsActions {
         sf.fieldOpElement().eq(0).click({ force: true })
         sf.fieldValueElement().type(tdata.srcFacilitators.phoneNo1)
         sf.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.srcFacilitators.phoneNo2)
+        cy.get('[row-index="0"]').should('contain', tdata.srcFacilitators.phoneNo1)
         sf.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainP() {
@@ -311,7 +287,7 @@ export class SrcFacilitatorsActions {
         sf.fieldOpElement().eq(1).click({ force: true })
         sf.fieldValueElement().eq(0).type(tdata.srcFacilitators.phoneNo1)
         sf.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain', tdata.srcFacilitators.phoneNo2)
+        cy.get('[row-index="0"]').should('not.contain', tdata.srcFacilitators.phoneNo1)
         sf.clearFilterElement().click({ force: true })
     }
     filterEqualsP() {
@@ -320,7 +296,7 @@ export class SrcFacilitatorsActions {
         sf.fieldOpElement().eq(2).click({ force: true })
         sf.fieldValueElement().eq(0).type(tdata.srcFacilitators.phoneNo1)
         sf.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.srcFacilitators.phoneNo2)
+        cy.get('[row-index="0"]').should('contain', tdata.srcFacilitators.phoneNo1)
         sf.clearFilterElement().click({ force: true })
     }
     filterNotequalP() {
@@ -329,7 +305,7 @@ export class SrcFacilitatorsActions {
         sf.fieldOpElement().eq(3).click({ force: true })
         sf.fieldValueElement().eq(0).type(tdata.srcFacilitators.phoneNo1)
         sf.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain.value', tdata.srcFacilitators.phoneNo2)
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.srcFacilitators.phoneNo1)
         sf.clearFilterElement().click({ force: true })
     }
     filterBeginswithP() {
@@ -338,7 +314,7 @@ export class SrcFacilitatorsActions {
         sf.fieldOpElement().eq(4).click({ force: true })
         sf.fieldValueElement().eq(0).type('814')
         sf.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '(814)')
+        cy.get('[row-index="0"]').should('contain', '814')
         sf.clearFilterElement().click({ force: true })
     }
     filterEndswithP() {
@@ -347,7 +323,7 @@ export class SrcFacilitatorsActions {
         sf.fieldOpElement().eq(5).click({ force: true })
         sf.fieldValueElement().eq(0).type('463')
         sf.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '4-63')
+        cy.get('[row-index="0"]').should('contain', '463')
         sf.clearFilterElement().click({ force: true })
     }
     filterBlankP() {
@@ -365,7 +341,7 @@ export class SrcFacilitatorsActions {
         sf.fieldOpElement().eq(7).click({ force: true })
         sf.fieldValueElement().eq(1).type(tdata.srcFacilitators.phoneNo1, { force: true })
         sf.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.srcFacilitators.phoneNo2)
+        cy.get('[row-index="0"]').should('contain', tdata.srcFacilitators.phoneNo1)
         sf.clearFilterElement().click({ force: true })
     }
     //us

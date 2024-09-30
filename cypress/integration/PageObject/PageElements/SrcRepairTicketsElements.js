@@ -27,7 +27,7 @@ export default class SrcRepairTicketsElements {
         })
     }
     createTicketElement() {
-        return cy.contains(locator.srcRepairTickets.createTicket, {
+        return cy.get(locator.srcRepairTickets.createTicket, {
             timeout: 30000,
         })
     }
@@ -237,8 +237,13 @@ export default class SrcRepairTicketsElements {
             timeout: 30000,
         })
     }
+    editnoteElement() {
+        return cy.get(locator.srcRepairTickets.editnote, {
+            timeout: 30000,
+        })
+    }
     exportbtnElement() {
-        return cy.contains(locator.srcRepairTickets.exportbtn, {
+        return cy.get(locator.srcRepairTickets.exportbtn, {
             timeout: 30000,
         })
     }

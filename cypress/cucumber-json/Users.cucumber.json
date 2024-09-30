@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2353000000
+              "duration": 2850000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9762000000
+              "duration": 5039000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9099000000
+              "duration": 9100000000
             }
           },
           {
@@ -53,289 +53,217 @@
             "name": "Click on Users page",
             "result": {
               "status": "passed",
-              "duration": 84000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "I should be redirected to the Users page",
-            "result": {
-              "status": "passed",
-              "duration": 8000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "I should click on Add New student",
-            "result": {
-              "status": "failed",
-              "duration": 30221000000,
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find content: 'Add New User' but never did.\n    at UsersElements.addnewUserbtnElement (cypress/integration/PageObject/PageElements/UsersElements.js:15:18)\n    at UsersActions.clickOnCreateNewStudent (cypress/integration/PageObject/PageActions/UsersActions.js:25:13)\n    at Context.eval (cypress/integration/Users/Users.spec.js:32:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "Enter full name, title and Email",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "Enter Phone, Cell Number, role and building",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "Click on submit button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
-            "name": "Verify the student added in table",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "Click on filter of Record Id Equals and Verify the Result",
-            "result": {
-              "status": "skipped"
+              "duration": 81000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 20,
-            "name": "Click on filter of Record Id Does not equal and Verify the Result",
+            "name": "Click on filter of Full name contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4999000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 21,
-            "name": "Click on filter of Record Id Greater than and Verify the Result",
+            "name": "Click on filter of Full name Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 653000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 22,
-            "name": "Click on filter of Record Id Greater than or equal to and Verify the Result",
+            "name": "Click on filter of Full name Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1028000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 23,
-            "name": "Click on filter of Record Id Less than and Verify the Result",
+            "name": "Click on filter of Full name Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 619000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 24,
-            "name": "Click on filter of Record Id Less than or equal to and Verify the Result",
+            "name": "Click on filter of Full name Begins with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 931000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 25,
-            "name": "Click on filter of Record Id Between and Verify the Result",
+            "name": "Click on filter of Full name Ends with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 961000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 26,
-            "name": "Click on filter of Record Id Blank and Verify the Result",
+            "name": "Click on filter of Full name Blank and Verify the Result",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 27,
-            "name": "Click on filter of Record Id Not blank and Verify the Result",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 476000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 29,
-            "name": "Click on filter of Full name contain and Verify the Result",
+            "name": "Click on filter of Eamil contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3220000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 30,
-            "name": "Click on filter of Full name Does not contain and Verify the Result",
+            "name": "Click on filter of Eamil Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 895000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 31,
-            "name": "Click on filter of Full name Equals and Verify the Result",
+            "name": "Click on filter of Eamil Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1272000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 32,
-            "name": "Click on filter of Full name Does not equal and Verify the Result",
+            "name": "Click on filter of Eamil Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 911000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 33,
-            "name": "Click on filter of Full name Begins with and Verify the Result",
+            "name": "Click on filter of Eamil Begins with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1112000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 34,
-            "name": "Click on filter of Full name Ends with and Verify the Result",
+            "name": "Click on filter of Eamil Ends with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1045000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 35,
-            "name": "Click on filter of Full name Blank and Verify the Result",
+            "name": "Click on filter of Eamil Blank and Verify the Result",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 36,
-            "name": "Click on filter of Full name Not blank and Verify the Result",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 514000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 38,
-            "name": "Click on filter of Eamil contain and Verify the Result",
+            "name": "Click on filter of Phone contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3015000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 39,
-            "name": "Click on filter of Eamil Does not contain and Verify the Result",
+            "name": "Click on filter of Phone Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 658000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 40,
-            "name": "Click on filter of Eamil Equals and Verify the Result",
+            "name": "Click on filter of Phone Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1074000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 41,
-            "name": "Click on filter of Eamil Does not equal and Verify the Result",
+            "name": "Click on filter of Phone Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 693000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 42,
-            "name": "Click on filter of Eamil Begins with and Verify the Result",
+            "name": "Click on filter of Phone Begins with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 947000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 43,
-            "name": "Click on filter of Eamil Ends with and Verify the Result",
+            "name": "Click on filter of Phone Ends with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 965000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 44,
-            "name": "Click on filter of Eamil Blank and Verify the Result",
+            "name": "Click on filter of Phone Blank and Verify the Result",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 45,
-            "name": "Click on filter of Eamil Not blank and Verify the Result",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 512000000
             }
           },
           {
@@ -344,7 +272,8 @@
             "line": 47,
             "name": "Click on filter of User Role op1 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4621000000
             }
           },
           {
@@ -353,7 +282,8 @@
             "line": 48,
             "name": "Click on filter of User Role op2 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 614000000
             }
           },
           {
@@ -362,7 +292,8 @@
             "line": 49,
             "name": "Click on filter of User Role op3 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 706000000
             }
           },
           {
@@ -371,7 +302,8 @@
             "line": 50,
             "name": "Click on filter of User Role op4 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 546000000
             }
           },
           {
@@ -380,7 +312,8 @@
             "line": 51,
             "name": "Click on filter of User Role op5 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 625000000
             }
           },
           {
@@ -389,7 +322,8 @@
             "line": 52,
             "name": "Click on filter of User Role op6 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 592000000
             }
           },
           {
@@ -398,7 +332,8 @@
             "line": 53,
             "name": "Click on filter of User Role op7 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 568000000
             }
           },
           {
@@ -407,7 +342,8 @@
             "line": 54,
             "name": "Click on filter of User Role op8 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 569000000
             }
           },
           {
@@ -416,277 +352,218 @@
             "line": 55,
             "name": "Click on filter of User Role op9 and Verify the Result",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 56,
-            "name": "Click on filter of User Role op10 and Verify the Result",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 590000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 58,
-            "name": "Click on filter of User status contain and Verify the Result",
+            "name": "Click on filter of Organizational Unit contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5060000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 59,
-            "name": "Click on filter of User status Does not contain and Verify the Result",
+            "name": "Click on filter of Organizational Unit Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 579000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 60,
-            "name": "Click on filter of User status Equals and Verify the Result",
+            "name": "Click on filter of Organizational Unit Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 917000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 61,
-            "name": "Click on filter of User status Does not equal and Verify the Result",
+            "name": "Click on filter of Organizational Unit Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 579000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 62,
-            "name": "Click on filter of User status Begins with and Verify the Result",
+            "name": "Click on filter of Organizational Unit Begins with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 967000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 63,
-            "name": "Click on filter of User status Ends with and Verify the Result",
+            "name": "Click on filter of Organizational Unit Ends with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 932000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 64,
-            "name": "Click on filter of User status Blank and Verify the Result",
+            "name": "Click on filter of Organizational Unit Blank and Verify the Result",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 65,
-            "name": "Click on filter of User status Not blank and Verify the Result",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 556000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 67,
-            "name": "All Organizational Units Search with Devices checkbox",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 68,
-            "name": "Verify the result Devices in gird",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 69,
-            "name": "All Organizational Units Search with Google Bootcamp Users checkbox",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 70,
-            "name": "Verify the result Google Bootcamp Users in gird",
+            "name": "Click on Download button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 99000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 71,
-            "name": "All Organizational Units Search with Test OU checkbox",
+            "name": "Click on view button and click on Edit button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1516000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 72,
-            "name": "Verify the result Test OU in gird",
+            "name": "I should edit title, full name",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1351000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 73,
-            "name": "All Organizational Units Search with VT Employees checkbox",
+            "name": "I should edit Phone and Cell Number and user role",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 74,
-            "name": "Verify the result VT Employees in gird",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 76,
-            "name": "Click on Export To CSV",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 749000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 77,
-            "name": "Click on Bulk Upload button",
+            "line": 74,
+            "name": "I edit User Status by clicking on checkbox",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 158000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 75,
+            "name": "I edit Building",
+            "result": {
+              "status": "passed",
+              "duration": 161000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 76,
+            "name": "Click on Submit button",
+            "result": {
+              "status": "passed",
+              "duration": 102000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 77,
+            "name": "Verify the Record has been updated Meassage",
+            "result": {
+              "status": "passed",
+              "duration": 512000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 78,
-            "name": "Click on Attach CSV file and Click on submit button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 81,
-            "name": "Click on Download button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 82,
-            "name": "Click on view button and click on Edit button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 83,
-            "name": "I should edit title, full name",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 84,
-            "name": "I should edit Phone and Cell Number and user role",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 85,
-            "name": "I edit User Status by clicking on checkbox",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 86,
-            "name": "I edit Building",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 87,
-            "name": "Click on Submit button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 88,
-            "name": "Verify the Record has been updated Meassage",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 89,
             "name": "Click on Delete button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1522000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 90,
+            "line": 79,
             "name": "Click on Confirm Delete button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 73000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 80,
+            "name": "Verify the record is deleted successfully",
+            "result": {
+              "status": "passed",
+              "duration": 2231000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 81,
+            "name": "Click on Export To CSV",
+            "result": {
+              "status": "passed",
+              "duration": 104000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 82,
+            "name": "Click on Bulk Upload button",
+            "result": {
+              "status": "passed",
+              "duration": 85000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 83,
+            "name": "Click on Attach CSV file and Click on submit button",
+            "result": {
+              "status": "passed",
+              "duration": 327000000
             }
           }
         ]

@@ -353,6 +353,31 @@ And('Click on filter of Asset tag Blank and Verify the Result', () => {
 And('Click on filter of Asset tag Not blank and Verify the Result', () => {
     dev.filterNotblanktag()
 })
+//StdN
+And('Click on filter of Student Name contain and Verify the Result', () => {
+    dev.filterContainStdN()
+})
+And('Click on filter of Student Name Does not contain and Verify the Result', () => {
+    dev.filterDoesnotcontainStdN()
+})
+And('Click on filter of Student Name Equals and Verify the Result', () => {
+    dev.filterEqualsStdN()
+})
+And('Click on filter of Student Name Does not equal and Verify the Result', () => {
+    dev.filterNotequalStdN()
+})
+And('Click on filter of Student Name Begins with and Verify the Result', () => {
+    dev.filterBeginswithStdN()
+})
+And('Click on filter of Student Name Ends with and Verify the Result', () => {
+    dev.filterEndswithStdN()
+})
+And('Click on filter of Student Name Blank and Verify the Result', () => {
+    dev.filterBlankStdN()
+})
+And('Click on filter of Student Name Not blank and Verify the Result', () => {
+    dev.filterNotblankStdN()
+})
 //cby
 And('Click on filter of Created By contain and Verify the Result', () => {
     dev.selectFilterCreatedBy()

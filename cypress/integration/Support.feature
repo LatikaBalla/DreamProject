@@ -11,11 +11,11 @@ Feature: Support Page Functionality
 
     Scenario: Support Page visiblity
         Then Verify the Title of Support Page
-        # And Enter Full name 
-        # Then Select task Priority and Topic 
-        # And Upload the image and enter Notes  
-        # Then Click on submit button
-        # And Verify the Send Feedback successfully
+        And Enter Full name 
+        Then Select task Priority and Topic 
+        And Upload the image and enter Notes  
+        Then Click on submit button
+        And Verify the Send Feedback successfully
 
 
 

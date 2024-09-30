@@ -28,7 +28,6 @@ Feature:InHouseWorkflow Page Functionality
         And Click on Add Line and Verify
         Then Click on Add Repair Image and Verify
         And Click on Add Note and Verify
-      
-     
+
 
 

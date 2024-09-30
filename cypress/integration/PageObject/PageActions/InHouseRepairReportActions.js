@@ -26,7 +26,7 @@ export class InHouseRepairReportActions {
         inh.section4Element().should('be.visible')
     }
     ticketDataGraphVisible() {
-        inh.ticketdataElement().should('be.visible')
+        inh.ticketdataElement().scrollIntoView().should('be.visible')
     }
 
 }

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 4298000000
+              "duration": 1974000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6615000000
+              "duration": 8182000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 12096000000
+              "duration": 12113000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 88000000
+              "duration": 80000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on OrgUploadAssets Tab",
             "result": {
               "status": "passed",
-              "duration": 1989000000
+              "duration": 1791000000
             }
           },
           {
@@ -83,53 +83,73 @@
             "name": "I should click on Add Asset",
             "result": {
               "status": "passed",
-              "duration": 548000000
+              "duration": 749000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 16,
-            "name": "Enter title, full name location and tag",
+            "name": "Enter location, tag, notes, category, serialno and model",
             "result": {
               "status": "passed",
-              "duration": 616000000
+              "duration": 1706000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 17,
-            "name": "Enter note, Type and description",
+            "name": "Enter assignment, po, invoice, vendor and description",
             "result": {
               "status": "passed",
-              "duration": 571000000
+              "duration": 1534000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 18,
-            "name": "Upload the image file",
+            "name": "Enter cost and quantity",
             "result": {
               "status": "passed",
-              "duration": 581000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "Click on save button",
-            "result": {
-              "status": "passed",
-              "duration": 73000000
+              "duration": 367000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
+            "line": 19,
+            "name": "Upload the image file",
+            "result": {
+              "status": "passed",
+              "duration": 30000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
             "line": 20,
+            "name": "Enter fieldValue1 and fieldValue2",
+            "result": {
+              "status": "passed",
+              "duration": 382000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Click on save button",
+            "result": {
+              "status": "passed",
+              "duration": 76000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
             "name": "Verify the asset details added in table",
             "result": {
               "status": "passed",
@@ -139,291 +159,231 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 21,
-            "name": "Click on filter of Description contain in search box and Verify the Result",
-            "result": {
-              "status": "failed",
-              "duration": 7240000000,
-              "error_message": "CypressError: Timed out retrying after 4000ms: `cy.type()` failed because this element:\n\n`<input data-ref=\"eInput\" class=\"ag-input-field-input ag-text-field-input\" type=\"text\" id=\"ag-92-input\" tabindex=\"0\" placeholder=\"Filter...\" aria-label=\"Filter Value\">`\n\nis being covered by another element:\n\n`<div class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-multiline css-jzwoh5\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n    at ensureIsDescendent (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:112861:68)\n    at ensureDescendents (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:112912:5)\n    at ensureDescendentsAndScroll (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:112918:14)\n    at ensureElIsNotCovered (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:113049:5)\n    at runAllChecks (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:113248:52)\n    at retryActionability (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:113285:16)\n    at tryCatcher (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:4315:29)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise.then (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1132:17)\n    at next (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:144537:64)\n    at <unknown> (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:144558:16)\n    at tryCatcher (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1701:18)\n    at _drainQueueStep (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at OrgUploadAssetsActions.filtercontainD (cypress/integration/PageObject/PageActions/OrgUploadAssetsActions.js:124:32)\n    at Context.eval (cypress/integration/OrgUploadAssets/OrgUploadAssets.spec.js:93:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "Click on filter of Description Does not contain in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 23,
-            "name": "Click on filter of Description Equals in search box and Verify the Result",
+            "name": "Click on filter of Description contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3776000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 24,
-            "name": "Click on filter of Description Does not equal in search box and Verify the Result",
+            "name": "Click on filter of Description Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 715000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 25,
-            "name": "Click on filter of Description Begins with in search box and Verify the Result",
+            "name": "Click on filter of Description Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 725000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 26,
-            "name": "Click on filter of Description Ends with in search box and Verify the Result",
+            "name": "Click on filter of Description Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 733000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 27,
-            "name": "Click on filter of Description Blank in search box and Verify the Result",
+            "name": "Click on filter of Description Begins with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 541000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 28,
-            "name": "Click on filter of Description Not blank in search box and Verify the Result",
+            "name": "Click on filter of Description Ends with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 545000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "Click on filter of Description Blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 522000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 30,
-            "name": "Click on filter of Acquire Date Equals in search box and Verify the Result",
+            "name": "Click on filter of Description Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "Click on filter of Acquire Date Does not equal in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 703000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 32,
-            "name": "Click on filter of Acquire Date Before in search box and Verify the Result",
+            "name": "Click on filter of Acquire Date Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2666000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 33,
-            "name": "Click on filter of Acquire Date After in search box and Verify the Result",
+            "name": "Click on filter of Acquire Date Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 619000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 34,
-            "name": "Click on filter of Acquire Date Between with in search box and Verify the Result",
+            "name": "Click on filter of Acquire Date Before and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 598000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 35,
-            "name": "Click on filter of Acquire Date Blank in search box and Verify the Result",
+            "name": "Click on filter of Acquire Date After and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 626000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 36,
-            "name": "Click on filter of Acquire Date Not blank in search box and Verify the Result",
+            "name": "Click on filter of Acquire Date Between with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 890000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "Click on filter of Acquire Date Blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 612000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 38,
-            "name": "Click on filter of Location contain in search box and Verify the Result",
+            "name": "Click on filter of Acquire Date Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 39,
-            "name": "Click on filter of Location Does not contain in search box and Verify the Result",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 622000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 40,
-            "name": "Click on filter of Location Equals in search box and Verify the Result",
+            "name": "Click on filter of Location contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1587000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 41,
-            "name": "Click on filter of Location Does not equal in search box and Verify the Result",
+            "name": "Click on filter of Location Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 584000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 42,
-            "name": "Click on filter of Location Begins with in search box and Verify the Result",
+            "name": "Click on filter of Location Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 574000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 43,
-            "name": "Click on filter of Location Ends with in search box and Verify the Result",
+            "name": "Click on filter of Location Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 558000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 44,
-            "name": "Click on filter of Location Blank in search box and Verify the Result",
+            "name": "Click on filter of Location Begins with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 529000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 45,
-            "name": "Click on filter of Location Not blank in search box and Verify the Result",
+            "name": "Click on filter of Location Ends with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 548000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "Click on filter of Location Blank and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 517000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 47,
-            "name": "Click on Edit button",
+            "name": "Click on filter of Location Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 48,
-            "name": "I should edit title, full name location and tag",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 49,
-            "name": "I should edit note, Type and description",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 50,
-            "name": "ReUpload the image file",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 51,
-            "name": "Click on save button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 52,
-            "name": "Verify the Record has been updated Meassage",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 53,
-            "name": "Click on Delete button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 54,
-            "name": "Click on Confirm Delete button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 55,
-            "name": "Verify the record is deleted successfully",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 551000000
             }
           }
         ]
