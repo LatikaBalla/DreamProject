@@ -523,18 +523,18 @@ export class PartClosetActions {
         pc.addFilterElement().eq(5).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(4).click({ force: true })
-        pc.fieldValueElement().eq(0).type('Speaker', { force: true })
+        pc.fieldValueElement().eq(0).type('Bot', { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Speaker')
+        cy.get('[row-index="0"]').should('contain', 'Bot')
         pc.clearFilterElement().click({ force: true })
     }
     filterEndswithPC() {
         pc.addFilterElement().eq(5).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(5).click({ force: true })
-        pc.fieldValueElement().eq(0).type('Set', { force: true })
+        pc.fieldValueElement().eq(0).type('ver', { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Set')
+        cy.get('[row-index="0"]').should('contain', 'ver')
         pc.clearFilterElement().click({ force: true })
     }
     filterBlankPC() {
@@ -616,7 +616,7 @@ export class PartClosetActions {
         pc.fieldOpElement().eq(4).click({ force: true })
         pc.fieldValueElement().eq(0).type(tdata.partCloset.quantity, { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity"]').eq(1).then(($el) => {
+        cy.get('.ag-row-first > [col-id="quantity"]').then(($el) => {
             const value = parseInt($el.text());
             expect(value).to.be.lessThan(2);
         })

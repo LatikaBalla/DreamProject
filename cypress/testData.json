@@ -92,7 +92,12 @@
     "assettag": "673TY",
     "serialnumber": "VIVATEST50Test",
     "repairdevice": "Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch",
-    "createdby": "demo_adminvivacity@vivacitytech.com"
+    "createdby": "demo_adminvivacity@vivacitytech.com",
+    "technician":"Conan Malady",
+    "stdName":"Ryker Swensen",
+    "repairBox":"repairBox",
+    "lastdate":"2024-10-01",
+    "lastdate1":"10-01-2024"
   },
   "myFleet": {
     "filename": "fleet_devices.csv",
@@ -234,8 +239,9 @@
     "repairbox": "10584",
     "repairbox1": "9941",
     "labelfrom": "",
-    "shippeddate": "2024-06-13",
-    "shippeddate1": "06-13-2024",
+
+    "shippeddate": "2023-08-29",
+    "shippeddate1": "08-29-2023",
     "shippingcost": "$23.36",
     "building": "Dream Building",
     "boxtype": "To Vivacity",
@@ -243,8 +249,8 @@
     "shippingboxstatus1": "Recieved By Vivacity",
     "shippingboxstatus2": "Not Shipped",
     "shippingboxstatus3": "Shipping From District",
-    "lastdate": "2024-09-19",
-    "lastdate1": "09-19-2024",
+    "lastdate": "2024-09-30",
+    "lastdate1":  "09-30-2024",
     "createdDate": "2023-09-11",
     "createdDate1": "09-11-2023"
   },
@@ -367,10 +373,10 @@
     "search": "50034089",
     "partnameTable": "TouchPad",
     "building": "[data-value='2861']",
-    "partCategory": "Camera_Cable"
+    "partCategory": "Bottom_Cover"
   },
   "users": {
-    "fullName": "Dream Admin",
+    "fullName": "Demo Student",
     "title": "Miss",
     "cellnumber": "1231234121",
     "emailid": "abhattacharya@vivacitytech.com",
@@ -485,6 +491,8 @@
   },
   "loanerManagement": {
     "serialno": "VIVATEST20Test",
+    "serialno1": "VIVATEST11Test",
+    "serialno2": "VIVATEST68Test",
     "studentname": "Ryker Swenson",
     "title": "Mr",
     "fullname": "Demo Student",
@@ -496,7 +504,10 @@
     "assettag": "673TY",
     "device": "VT Chromebook",
     "warranty": "TEST-WARRANTY",
-    "sku": "VT-Generic"
+    "sku": "VT-Generic",
+    "date":"10/08/2024",
+    "checkoutdes":"Check Out description for testing",
+    "checkindes":"Check In description for testing"
   },
   "login": {
     "username": "demo_adminSuper@vivacitytech.com",

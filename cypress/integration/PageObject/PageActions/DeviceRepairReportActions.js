@@ -18,7 +18,7 @@ export class DeviceRepairReportActions {
    }
    clickOnDeviceRepairReport() {
       repc.devicerrElement().click({ force: true })
-   }
+   }   
    verifyTitle() {
       dev.titleElement().should('be.visible')
    }
@@ -27,19 +27,6 @@ export class DeviceRepairReportActions {
    }
    tableVisible() {
       dev.tableElement().should('be.visible')
-   }
-   enterTicketNumberSearch() {
-      dev.searchElement().clear().type(tdata.deviceRepairReport.ticketno, { force: true })
-   }
-   verifyTicketDetailsTable() {
-      cy.get('tr td').eq(1).should('contain', tdata.deviceRepairReport.ticketno)
-   }
-   clickOnClearButton() {
-      cy.get('[data-testid="KeyboardBackspaceIcon"]').click({ force: true })
-      dev.clearbtnElement().click({ force: true })
-   }
-   searchBoxEmpty() {
-      dev.searchElement().should('be.empty')
    }
    clickOnviewButton() {
       cy.window().then(win => {

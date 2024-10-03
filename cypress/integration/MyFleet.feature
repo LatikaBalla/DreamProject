@@ -11,54 +11,54 @@ Feature: MyFleet  Page Functionality
         And Click on MyFleet Tab
 
     Scenario: Active Visibility,add Device,add more filter, view ,Clear filter and Search
-        # And Verify the Title of MyFleet Page
-        # And Click on filter of Serial Number contain and Verify the Result
-        # And Click on filter of Serial Number Does not contain and Verify the Result
-        # And Click on filter of Serial Number Equals and Verify the Result
-        # And Click on filter of Serial Number Does not equal and Verify the Result
-        # And Click on filter of Serial Number Begins with and Verify the Result
-        # And Click on filter of Serial Number Ends with and Verify the Result
-        # And Click on filter of Serial Number Blank and Verify the Result
-        # # And Click on filter of Serial Number Not blank and Verify the Result
+        And Verify the Title of MyFleet Page
+        And Click on filter of Serial Number contain and Verify the Result
+        And Click on filter of Serial Number Does not contain and Verify the Result
+        And Click on filter of Serial Number Equals and Verify the Result
+        And Click on filter of Serial Number Does not equal and Verify the Result
+        And Click on filter of Serial Number Begins with and Verify the Result
+        And Click on filter of Serial Number Ends with and Verify the Result
+        And Click on filter of Serial Number Blank and Verify the Result
+        # And Click on filter of Serial Number Not blank and Verify the Result
 
-        # And Click on filter of Asset tag contain and Verify the Result
-        # And Click on filter of Asset tag Does not contain and Verify the Result
-        # And Click on filter of Asset tag Equals and Verify the Result
-        # And Click on filter of Asset tag Does not equal and Verify the Result
-        # And Click on filter of Asset tag Begins with and Verify the Result
-        # And Click on filter of Asset tag Ends with and Verify the Result
-        # And Click on filter of Asset tag Blank and Verify the Result
-        # # And Click on filter of Asset tag Not blank and Verify the Result
+        And Click on filter of Asset tag contain and Verify the Result
+        And Click on filter of Asset tag Does not contain and Verify the Result
+        And Click on filter of Asset tag Equals and Verify the Result
+        And Click on filter of Asset tag Does not equal and Verify the Result
+        And Click on filter of Asset tag Begins with and Verify the Result
+        And Click on filter of Asset tag Ends with and Verify the Result
+        And Click on filter of Asset tag Blank and Verify the Result
+        # And Click on filter of Asset tag Not blank and Verify the Result
 
-        # And Click on filter of Model contain and Verify the Result
-        # And Click on filter of Model Does not contain and Verify the Result
-        # And Click on filter of Model Equals and Verify the Result
-        # And Click on filter of Model Does not equal and Verify the Result
-        # And Click on filter of Model Begins with and Verify the Result
-        # And Click on filter of Model Ends with and Verify the Result
-        # And Click on filter of Model Blank and Verify the Result
-        # # And Click on filter of Model Not blank and Verify the Result
+        And Click on filter of Model contain and Verify the Result
+        And Click on filter of Model Does not contain and Verify the Result
+        And Click on filter of Model Equals and Verify the Result
+        And Click on filter of Model Does not equal and Verify the Result
+        And Click on filter of Model Begins with and Verify the Result
+        And Click on filter of Model Ends with and Verify the Result
+        And Click on filter of Model Blank and Verify the Result
+        # And Click on filter of Model Not blank and Verify the Result
 
-        # And Click on filter of SKU contain and Verify the Result
-        # And Click on filter of SKU Does not contain and Verify the Result
-        # And Click on filter of SKU Equals and Verify the Result
-        # And Click on filter of SKU Does not equal and Verify the Result
-        # And Click on filter of SKU Begins with and Verify the Result
-        # And Click on filter of SKU Ends with and Verify the Result
-        # And Click on filter of SKU Blank and Verify the Result
-        # # And Click on filter of SKU Not blank and Verify the Result
+        And Click on filter of SKU contain and Verify the Result
+        And Click on filter of SKU Does not contain and Verify the Result
+        And Click on filter of SKU Equals and Verify the Result
+        And Click on filter of SKU Does not equal and Verify the Result
+        And Click on filter of SKU Begins with and Verify the Result
+        And Click on filter of SKU Ends with and Verify the Result
+        And Click on filter of SKU Blank and Verify the Result
+        # And Click on filter of SKU Not blank and Verify the Result
 
-        # And Click on filter of Building contain and Verify the Result
-        # And Click on filter of Building Does not contain and Verify the Result
-        # And Click on filter of Building Equals and Verify the Result
-        # And Click on filter of Building Does not equal and Verify the Result
-        # And Click on filter of Building Begins with and Verify the Result
-        # And Click on filter of Building Ends with and Verify the Result
-        # And Click on filter of Building Blank and Verify the Result
-        # # And Click on filter of Building Not blank and Verify the Result
+        And Click on filter of Building contain and Verify the Result
+        And Click on filter of Building Does not contain and Verify the Result
+        And Click on filter of Building Equals and Verify the Result
+        And Click on filter of Building Does not equal and Verify the Result
+        And Click on filter of Building Begins with and Verify the Result
+        And Click on filter of Building Ends with and Verify the Result
+        And Click on filter of Building Blank and Verify the Result
+        # And Click on filter of Building Not blank and Verify the Result
 
-        # And Click on filter of VT Verified op1 and Verify the Result
-        # And Click on filter of VT Verified op2 and Verify the Result
+        And Click on filter of VT Verified op1 and Verify the Result
+        And Click on filter of VT Verified op2 and Verify the Result
 
         And Click on filter of Organizational Unit contain and Verify the Result
         And Click on filter of Organizational Unit Does not contain and Verify the Result

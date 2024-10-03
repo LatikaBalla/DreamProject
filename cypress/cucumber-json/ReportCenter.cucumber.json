@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2687000000
+              "duration": 1433000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5813000000
+              "duration": 7304000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 14133000000
+              "duration": 14107000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Report center page",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 86000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I should be redirected to the Report center page",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 5000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Click on VivacityRepairReport page",
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 61000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Verify all sections of VivacityRepairReport Page should be visible",
             "result": {
               "status": "passed",
-              "duration": 31000000
+              "duration": 33000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Select the building from dropdownlist",
             "result": {
               "status": "passed",
-              "duration": 199000000
+              "duration": 191000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on clear filter",
             "result": {
               "status": "passed",
-              "duration": 67000000
+              "duration": 68000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Verify Manufacturers in Fleet graph should be visible",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 8000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Verify Repair Tickets Failure Type graph should be visible",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 10000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Verify the InHouseRepairReport tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 5000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on InHouseRepairReport page",
             "result": {
               "status": "passed",
-              "duration": 65000000
+              "duration": 62000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Verify all sections of InHouseRepairReport Page should be visible",
             "result": {
               "status": "passed",
-              "duration": 31000000
+              "duration": 32000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Verify the DeviceRepairReport tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 7000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on DeviceRepairReport page",
             "result": {
               "status": "passed",
-              "duration": 3090000000
+              "duration": 3065000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Verify the filters should be visible",
             "result": {
               "status": "passed",
-              "duration": 24000000
+              "duration": 10000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Verify history table should be visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 9000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Click on NonwarrantyRepairs page",
             "result": {
               "status": "passed",
-              "duration": 61000000
+              "duration": 60000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Verify table and filter should be visible",
             "result": {
               "status": "passed",
-              "duration": 526000000
+              "duration": 695000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Verify the TelemetryData tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 6000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "Click on TelemetryData page",
             "result": {
               "status": "passed",
-              "duration": 66000000
+              "duration": 59000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "Verify the Title of TelemetryData Page",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 5000000
             }
           },
           {

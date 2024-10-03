@@ -48,6 +48,15 @@ Feature:RepairTickets Page Functionality
     And Click on filter of Building Blank and Verify the Result
     And Click on filter of Building Not blank and Verify the Result
 
+    And Click on filter of Return Site contain and Verify the Result
+    And Click on filter of Return Site Does not contain and Verify the Result
+    And Click on filter of Return Site Equals and Verify the Result
+    And Click on filter of Return Site Does not equal and Verify the Result
+    And Click on filter of Return Site Begins with and Verify the Result
+    And Click on filter of Return Site Ends with and Verify the Result
+    And Click on filter of Return Site Blank and Verify the Result
+    And Click on filter of Return Site Not blank and Verify the Result
+
     And Click on filter of Repair device contain and Verify the Result
     And Click on filter of Repair device Does not contain and Verify the Result
     And Click on filter of Repair device Equals and Verify the Result
@@ -170,9 +179,9 @@ Feature:RepairTickets Page Functionality
     Then Verify the Details of student repair ticket
     Then Click on Add Repair Image and Verify
     And Click on Add Note and Verify
-    # And Click on Add Line and Verify
-    # And Click on the Edit Ticket Button
-    # Then Update the Technician and Repair Status
-    # And Click on Update Button
-    # Then Verify Updated successfully
+# And Click on Add Line and Verify
+# And Click on the Edit Ticket Button
+# Then Update the Technician and Repair Status
+# And Click on Update Button
+# Then Verify Updated successfully
 

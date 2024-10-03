@@ -46,6 +46,15 @@ Feature:InHouseTickets Page Functionality
     And Click on filter of Building Blank and Verify the Result
     And Click on filter of Building Not blank and Verify the Result
 
+    And Click on filter of Return Site contain and Verify the Result
+    And Click on filter of Return Site Does not contain and Verify the Result
+    And Click on filter of Return Site Equals and Verify the Result
+    And Click on filter of Return Site Does not equal and Verify the Result
+    And Click on filter of Return Site Begins with and Verify the Result
+    And Click on filter of Return Site Ends with and Verify the Result
+    And Click on filter of Return Site Blank and Verify the Result
+    And Click on filter of Return Site Not blank and Verify the Result
+
     And Click on filter of Repair type contain and Verify the Result
 
     And Click on filter of Serial Number contain and Verify the Result

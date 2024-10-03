@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2850000000
+              "duration": 1627000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5039000000
+              "duration": 8148000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9100000000
+              "duration": 9101000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Users page",
             "result": {
               "status": "passed",
-              "duration": 81000000
+              "duration": 80000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on filter of Full name contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 4999000000
+              "duration": 4653000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click on filter of Full name Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 653000000
+              "duration": 1049000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Click on filter of Full name Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1028000000
+              "duration": 637000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Click on filter of Full name Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 619000000
+              "duration": 681000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click on filter of Full name Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 931000000
+              "duration": 879000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on filter of Full name Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 961000000
+              "duration": 931000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on filter of Full name Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 476000000
+              "duration": 466000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on filter of Eamil contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3220000000
+              "duration": 3216000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on filter of Eamil Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 895000000
+              "duration": 875000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on filter of Eamil Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1272000000
+              "duration": 1247000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click on filter of Eamil Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 911000000
+              "duration": 871000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on filter of Eamil Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1112000000
+              "duration": 938000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click on filter of Eamil Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1045000000
+              "duration": 968000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on filter of Eamil Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 514000000
+              "duration": 471000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click on filter of Phone contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3015000000
+              "duration": 2964000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on filter of Phone Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 658000000
+              "duration": 603000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on filter of Phone Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1074000000
+              "duration": 955000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Click on filter of Phone Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 693000000
+              "duration": 624000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Click on filter of Phone Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 947000000
+              "duration": 904000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Click on filter of Phone Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 965000000
+              "duration": 883000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Click on filter of Phone Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 512000000
+              "duration": 471000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Click on filter of User Role op1 and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 4621000000
+              "duration": 4602000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Click on filter of User Role op2 and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 614000000
+              "duration": 627000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Click on filter of User Role op3 and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 706000000
+              "duration": 1154000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "Click on filter of User Role op4 and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 546000000
+              "duration": 574000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "Click on filter of User Role op5 and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 625000000
+              "duration": 584000000
             }
           },
           {
@@ -323,7 +323,7 @@
             "name": "Click on filter of User Role op6 and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 592000000
+              "duration": 583000000
             }
           },
           {
@@ -333,7 +333,7 @@
             "name": "Click on filter of User Role op7 and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 568000000
+              "duration": 573000000
             }
           },
           {
@@ -343,7 +343,7 @@
             "name": "Click on filter of User Role op8 and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 569000000
+              "duration": 561000000
             }
           },
           {
@@ -353,7 +353,7 @@
             "name": "Click on filter of User Role op9 and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 590000000
+              "duration": 562000000
             }
           },
           {
@@ -363,7 +363,7 @@
             "name": "Click on filter of Organizational Unit contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 5060000000
+              "duration": 4923000000
             }
           },
           {
@@ -373,7 +373,7 @@
             "name": "Click on filter of Organizational Unit Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 579000000
+              "duration": 502000000
             }
           },
           {
@@ -383,7 +383,7 @@
             "name": "Click on filter of Organizational Unit Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 917000000
+              "duration": 854000000
             }
           },
           {
@@ -393,7 +393,7 @@
             "name": "Click on filter of Organizational Unit Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 579000000
+              "duration": 539000000
             }
           },
           {
@@ -403,7 +403,7 @@
             "name": "Click on filter of Organizational Unit Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 967000000
+              "duration": 940000000
             }
           },
           {
@@ -413,7 +413,7 @@
             "name": "Click on filter of Organizational Unit Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 932000000
+              "duration": 916000000
             }
           },
           {
@@ -423,147 +423,7 @@
             "name": "Click on filter of Organizational Unit Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 556000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 70,
-            "name": "Click on Download button",
-            "result": {
-              "status": "passed",
-              "duration": 99000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 71,
-            "name": "Click on view button and click on Edit button",
-            "result": {
-              "status": "passed",
-              "duration": 1516000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 72,
-            "name": "I should edit title, full name",
-            "result": {
-              "status": "passed",
-              "duration": 1351000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 73,
-            "name": "I should edit Phone and Cell Number and user role",
-            "result": {
-              "status": "passed",
-              "duration": 749000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 74,
-            "name": "I edit User Status by clicking on checkbox",
-            "result": {
-              "status": "passed",
-              "duration": 158000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 75,
-            "name": "I edit Building",
-            "result": {
-              "status": "passed",
-              "duration": 161000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 76,
-            "name": "Click on Submit button",
-            "result": {
-              "status": "passed",
-              "duration": 102000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 77,
-            "name": "Verify the Record has been updated Meassage",
-            "result": {
-              "status": "passed",
-              "duration": 512000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 78,
-            "name": "Click on Delete button",
-            "result": {
-              "status": "passed",
-              "duration": 1522000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 79,
-            "name": "Click on Confirm Delete button",
-            "result": {
-              "status": "passed",
-              "duration": 73000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 80,
-            "name": "Verify the record is deleted successfully",
-            "result": {
-              "status": "passed",
-              "duration": 2231000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 81,
-            "name": "Click on Export To CSV",
-            "result": {
-              "status": "passed",
-              "duration": 104000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 82,
-            "name": "Click on Bulk Upload button",
-            "result": {
-              "status": "passed",
-              "duration": 85000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 83,
-            "name": "Click on Attach CSV file and Click on submit button",
-            "result": {
-              "status": "passed",
-              "duration": 327000000
+              "duration": 492000000
             }
           }
         ]

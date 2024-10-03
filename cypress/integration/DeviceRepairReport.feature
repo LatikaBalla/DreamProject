@@ -106,7 +106,6 @@ Feature: DeviceRepairReport Page Functionality
     And Click on filter of Created By Blank and Verify the Result
     And Click on filter of Created By Not blank and Verify the Result
 
-
     Then Click on the download button
     And  Click on the View button
     Then Verify the Repair Ticket page will open

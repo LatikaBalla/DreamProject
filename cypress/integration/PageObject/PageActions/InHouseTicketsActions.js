@@ -42,8 +42,6 @@ export class InHouseTicketsActions {
     }
     selectSerialDevice() {
         iht.serialdeviceElement().click({ force: true })
-        // cy.get('[role="listbox"]').find('li').contains(tdata.inHouseTicket.serialdevice).click({ force: true })
-        // cy.get(tdata.inHouseTicket.serialdevice).click()
         cy.get('#device-option-0').click()
     }
     selectTechnician() {
@@ -293,9 +291,9 @@ export class InHouseTicketsActions {
         iht.addFilterElement().eq(1).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(7).click({ force: true })
-        iht.fieldValueElement().eq(1).type('V0070186', { force: true })
+        iht.fieldValueElement().eq(1).type(tdata.inHouseTicket.ticketnumber, { force: true })
         iht.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'V0070186')
+        cy.get('[row-index="0"]').should('contain', tdata.inHouseTicket.ticketnumber)
         iht.clearFilterElement().click({ force: true })
     }
     //B
@@ -371,16 +369,89 @@ export class InHouseTicketsActions {
         cy.get('[row-index="0"]').should('contain', tdata.inHouseTicket.building)
         iht.clearFilterElement().click({ force: true })
     }
+    //Rsite
+    filterContainRsite() {
+        iht.addFilterElement().eq(3).click({ force: true })
+        iht.fieldNameElement().eq(1).click({ force: true })
+        iht.fieldOpElement().eq(0).click({ force: true })
+        iht.fieldValueElement().clear({ force: true }).type(tdata.inHouseTicket.building)
+        iht.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.inHouseTicket.building)
+        iht.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainRsite() {
+        iht.addFilterElement().eq(3).click({ force: true })
+        iht.fieldNameElement().eq(1).click({ force: true })
+        iht.fieldOpElement().eq(1).click({ force: true })
+        iht.fieldValueElement().eq(0).clear({ force: true }).type(tdata.inHouseTicket.building)
+        iht.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.inHouseTicket.building)
+        iht.clearFilterElement().click({ force: true })
+    }
+    filterEqualsRsite() {
+        iht.addFilterElement().eq(3).click({ force: true })
+        iht.fieldNameElement().eq(1).click({ force: true })
+        iht.fieldOpElement().eq(2).click({ force: true })
+        iht.fieldValueElement().eq(0).clear({ force: true }).type(tdata.inHouseTicket.building)
+        iht.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.inHouseTicket.building)
+        iht.clearFilterElement().click({ force: true })
+    }
+    filterNotequalRsite() {
+        iht.addFilterElement().eq(3).click({ force: true })
+        iht.fieldNameElement().eq(1).click({ force: true })
+        iht.fieldOpElement().eq(3).click({ force: true })
+        iht.fieldValueElement().eq(0).clear({ force: true }).type(tdata.inHouseTicket.building)
+        iht.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.inHouseTicket.building)
+        iht.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithRsite() {
+        iht.addFilterElement().eq(3).click({ force: true })
+        iht.fieldNameElement().eq(1).click({ force: true })
+        iht.fieldOpElement().eq(4).click({ force: true })
+        iht.fieldValueElement().eq(0).clear({ force: true }).type('GV')
+        iht.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'GV')
+        iht.clearFilterElement().click({ force: true })
+    }
+    filterEndswithRsite() {
+        iht.addFilterElement().eq(3).click({ force: true })
+        iht.fieldNameElement().eq(1).click({ force: true })
+        iht.fieldOpElement().eq(5).click({ force: true })
+        iht.fieldValueElement().eq(0).clear({ force: true }).type('L2')
+        iht.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'L2')
+        iht.clearFilterElement().click({ force: true })
+    }
+    filterBlankRsite() {
+        iht.addFilterElement().eq(3).click({ force: true })
+        iht.fieldNameElement().eq(1).click({ force: true })
+        iht.fieldOpElement().eq(6).click({ force: true })
+        iht.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+        iht.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        iht.clearFilterElement().click({ force: true })
+    }
+    filterNotblankRsite(){
+        iht.addFilterElement().eq(3).click({ force: true })
+        iht.fieldNameElement().eq(1).click({ force: true })
+        iht.fieldOpElement().eq(7).click({ force: true })
+        iht.fieldValueElement().eq(1).clear({ force: true }).type(tdata.inHouseTicket.building, { force: true })
+        iht.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.inHouseTicket.building)
+        iht.clearFilterElement().click({ force: true })
+    }
     //rt
     selectFilterRepairType() {
-        iht.addFilterElement().eq(3).click({ force: true })
+        iht.addFilterElement().eq(4).click({ force: true })
         cy.get('[value="In_House"]').click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.inHouseTicket.repairtype)
         cy.get('button[type="button"]').contains('Clear Filters').click({ force: true })
     }
     //sn
     selectFilterSerialNumber() {
-        iht.addFilterElement().eq(4).click({ force: true })
+        iht.addFilterElement().eq(5).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(0).click({ force: true })
         iht.fieldValueElement().type(tdata.inHouseTicket.serialnumber)
@@ -389,7 +460,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainSN() {
-        iht.addFilterElement().eq(4).click({ force: true })
+        iht.addFilterElement().eq(5).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(1).click({ force: true })
         iht.fieldValueElement().eq(0).type(tdata.inHouseTicket.serialnumber)
@@ -398,7 +469,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterEqualsSN() {
-        iht.addFilterElement().eq(4).click({ force: true })
+        iht.addFilterElement().eq(5).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(2).click({ force: true })
         iht.fieldValueElement().eq(0).type(tdata.inHouseTicket.serialnumber)
@@ -407,7 +478,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterNotequalSN() {
-        iht.addFilterElement().eq(4).click({ force: true })
+        iht.addFilterElement().eq(5).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(3).click({ force: true })
         iht.fieldValueElement().eq(0).type(tdata.inHouseTicket.serialnumber)
@@ -416,7 +487,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterBeginswithSN() {
-        iht.addFilterElement().eq(4).click({ force: true })
+        iht.addFilterElement().eq(5).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(4).click({ force: true })
         iht.fieldValueElement().eq(0).type('VIVATEST')
@@ -425,7 +496,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterEndswithSN() {
-        iht.addFilterElement().eq(4).click({ force: true })
+        iht.addFilterElement().eq(5).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(5).click({ force: true })
         iht.fieldValueElement().eq(0).type('12Test')
@@ -434,7 +505,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterBlankSN() {
-        iht.addFilterElement().eq(4).click({ force: true })
+        iht.addFilterElement().eq(5).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(6).click({ force: true })
         iht.fieldValueElement().eq(0).type(' ', { force: true })
@@ -443,17 +514,17 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterNotblankSN() {
-        iht.addFilterElement().eq(4).click({ force: true })
+        iht.addFilterElement().eq(5).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(7).click({ force: true })
-        iht.fieldValueElement().eq(1).type('VIVATEST61Test', { force: true })
+        iht.fieldValueElement().eq(1).type(tdata.inHouseTicket.serialnumber, { force: true })
         iht.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'VIVATEST61Test')
+        cy.get('[row-index="0"]').should('contain', tdata.inHouseTicket.serialnumber)
         iht.clearFilterElement().click({ force: true })
     }
     //RD
     selectFilterRepairDevice() {
-        iht.addFilterElement().eq(5).click({ force: true })
+        iht.addFilterElement().eq(6).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(0).click({ force: true })
         iht.fieldValueElement().clear({ force: true }).type(tdata.inHouseTicket.repairdevice)
@@ -462,7 +533,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainRD() {
-        iht.addFilterElement().eq(5).click({ force: true })
+        iht.addFilterElement().eq(6).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(1).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(tdata.inHouseTicket.repairdevice)
@@ -471,7 +542,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterEqualsRD() {
-        iht.addFilterElement().eq(5).click({ force: true })
+        iht.addFilterElement().eq(6).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(2).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(tdata.inHouseTicket.repairdevice)
@@ -480,7 +551,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterNotequalRD() {
-        iht.addFilterElement().eq(5).click({ force: true })
+        iht.addFilterElement().eq(6).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(3).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(tdata.inHouseTicket.repairdevice)
@@ -489,7 +560,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterBeginswithRD() {
-        iht.addFilterElement().eq(5).click({ force: true })
+        iht.addFilterElement().eq(6).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(4).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type('Dell Chromebook 11 3100')
@@ -498,7 +569,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterEndswithRD() {
-        iht.addFilterElement().eq(5).click({ force: true })
+        iht.addFilterElement().eq(6).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(5).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(' Non-Touch')
@@ -507,7 +578,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterBlankRD() {
-        iht.addFilterElement().eq(5).click({ force: true })
+        iht.addFilterElement().eq(6).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(6).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
@@ -516,17 +587,17 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterNotblankRD() {
-        iht.addFilterElement().eq(5).click({ force: true })
+        iht.addFilterElement().eq(6).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(7).click({ force: true })
-        iht.fieldValueElement().eq(1).clear({ force: true }).type('VT Chromebook', { force: true })
+        iht.fieldValueElement().eq(1).clear({ force: true }).type(tdata.inHouseTicket.repairdevice, { force: true })
         iht.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'VT Chromebook')
+        cy.get('[row-index="0"]').should('contain', tdata.inHouseTicket.repairdevice)
         iht.clearFilterElement().click({ force: true })
     }
     //tag
     selectFilterAssetTag() {
-        iht.addFilterElement().eq(6).click({ force: true })
+        iht.addFilterElement().eq(7).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(0).click({ force: true })
         iht.fieldValueElement().type(tdata.inHouseTicket.assettag)
@@ -535,7 +606,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontaintag() {
-        iht.addFilterElement().eq(6).click({ force: true })
+        iht.addFilterElement().eq(7).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(1).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(tdata.inHouseTicket.assettag)
@@ -544,7 +615,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterEqualstag() {
-        iht.addFilterElement().eq(6).click({ force: true })
+        iht.addFilterElement().eq(7).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(2).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(tdata.inHouseTicket.assettag)
@@ -553,7 +624,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterNotequaltag() {
-        iht.addFilterElement().eq(6).click({ force: true })
+        iht.addFilterElement().eq(7).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(3).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(tdata.inHouseTicket.assettag)
@@ -562,7 +633,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterBeginswithtag() {
-        iht.addFilterElement().eq(6).click({ force: true })
+        iht.addFilterElement().eq(7).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(4).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type('56')
@@ -571,7 +642,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterEndswithtag() {
-        iht.addFilterElement().eq(6).click({ force: true })
+        iht.addFilterElement().eq(7).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(5).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type('78')
@@ -580,7 +651,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterBlanktag() {
-        iht.addFilterElement().eq(6).click({ force: true })
+        iht.addFilterElement().eq(7).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(6).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
@@ -589,7 +660,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterNotblanktag() {
-        iht.addFilterElement().eq(6).click({ force: true })
+        iht.addFilterElement().eq(7).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(7).click({ force: true })
         iht.fieldValueElement().eq(1).clear({ force: true }).type(tdata.inHouseTicket.assettag, { force: true })
@@ -599,7 +670,7 @@ export class InHouseTicketsActions {
     }
     //StdN
     filterContainStdN() {
-        iht.addFilterElement().eq(8).click({ force: true })
+        iht.addFilterElement().eq(9).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(0).click({ force: true })
         iht.fieldValueElement().type(tdata.inHouseTicket.studentName)
@@ -608,7 +679,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainStdN() {
-        iht.addFilterElement().eq(8).click({ force: true })
+        iht.addFilterElement().eq(9).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(1).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(tdata.inHouseTicket.studentName)
@@ -617,7 +688,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterEqualsStdN() {
-        iht.addFilterElement().eq(8).click({ force: true })
+        iht.addFilterElement().eq(9).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(2).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(tdata.inHouseTicket.studentName)
@@ -626,7 +697,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterNotequalStdN() {
-        iht.addFilterElement().eq(8).click({ force: true })
+        iht.addFilterElement().eq(9).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(3).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(tdata.inHouseTicket.studentName)
@@ -635,7 +706,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterBeginswithStdN() {
-        iht.addFilterElement().eq(8).click({ force: true })
+        iht.addFilterElement().eq(9).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(4).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type('Soh')
@@ -644,7 +715,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterEndswithStdN() {
-        iht.addFilterElement().eq(8).click({ force: true })
+        iht.addFilterElement().eq(9).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(5).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type('ini')
@@ -653,7 +724,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterBlankStdN() {
-        iht.addFilterElement().eq(8).click({ force: true })
+        iht.addFilterElement().eq(9).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(6).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
@@ -662,7 +733,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterNotblankStdN() {
-        iht.addFilterElement().eq(8).click({ force: true })
+        iht.addFilterElement().eq(9).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(7).click({ force: true })
         iht.fieldValueElement().eq(1).clear({ force: true }).type(tdata.inHouseTicket.studentName, { force: true })
@@ -673,112 +744,112 @@ export class InHouseTicketsActions {
     //RS
     filterOption1() {
         cy.wait(2000)
-        iht.addFilterElement().eq(9).click({ force: true })
+        iht.addFilterElement().eq(10).click({ force: true })
         cy.get('[value="Waiting_on_Repair_Approval"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="repairStatus"]').should('contain', 'Waiting on Repair Approval')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption2() {
-        iht.addFilterElement().eq(9).click({ force: true })
+        iht.addFilterElement().eq(10).click({ force: true })
         cy.get('[value="Intake"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="repairStatus"]').should('contain', 'Intake')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption3() {
-        iht.addFilterElement().eq(9).click({ force: true })
+        iht.addFilterElement().eq(10).click({ force: true })
         cy.get('[value="InHouse"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="repairStatus"]').should('contain', 'InHouse')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption4() {
-        iht.addFilterElement().eq(9).click({ force: true })
+        iht.addFilterElement().eq(10).click({ force: true })
         cy.get('[value="Repair"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="repairStatus"]').should('contain', 'Repair')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption5() {
-        iht.addFilterElement().eq(9).click({ force: true })
+        iht.addFilterElement().eq(10).click({ force: true })
         cy.get('[value="Complete"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="repairStatus"]').should('contain', 'Complete')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption6() {
-        iht.addFilterElement().eq(9).click({ force: true })
+        iht.addFilterElement().eq(10).click({ force: true })
         cy.get('[value="Part_Queue"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="repairStatus"]').should('contain', 'Part Queue')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption7() {
-        iht.addFilterElement().eq(9).click({ force: true })
+        iht.addFilterElement().eq(10).click({ force: true })
         cy.get('[value="Pending_Repair_Box"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="repairStatus"]').should('contain', 'Pending Repair Box')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption8() {
-        iht.addFilterElement().eq(9).click({ force: true })
+        iht.addFilterElement().eq(10).click({ force: true })
         cy.get('[value="Closed"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="repairStatus"]').should('contain', 'Closed')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption9() {
-        iht.addFilterElement().eq(9).click({ force: true })
+        iht.addFilterElement().eq(10).click({ force: true })
         cy.get('[value="Quality_Assurance"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="repairStatus"]').should('contain', 'Quality Assurance')
         cy.get('.reset-button').click({ force: true })
     }
     filterOption10() {
-        iht.addFilterElement().eq(9).click({ force: true })
+        iht.addFilterElement().eq(10).click({ force: true })
         cy.get('[value="In_Transit"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="repairStatus"]').should('contain', 'In Transit')
         cy.get('.reset-button').click({ force: true })
     }
     //ws
     filterOptionIhs1() {
-        iht.addFilterElement().eq(10).click({ force: true })
+        iht.addFilterElement().eq(11).click({ force: true })
         cy.get('[value="Intake"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="inHouseStatus"]').should('contain', 'Intake')
         cy.get('.reset-button').click({ force: true })
     }
     filterOptionIhs2() {
-        iht.addFilterElement().eq(10).click({ force: true })
+        iht.addFilterElement().eq(11).click({ force: true })
         cy.get('[value="Complete"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="inHouseStatus"]').should('contain', 'Complete')
         cy.get('.reset-button').click({ force: true })
     }
     filterOptionIhs3() {
-        iht.addFilterElement().eq(10).click({ force: true })
+        iht.addFilterElement().eq(11).click({ force: true })
         cy.get('[value="Part_Queue"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="inHouseStatus"]').should('contain', 'Part Queue')
         cy.get('.reset-button').click({ force: true })
     }
     filterOptionIhs4() {
-        iht.addFilterElement().eq(10).click({ force: true })
+        iht.addFilterElement().eq(11).click({ force: true })
         cy.get('[value="Repair"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="inHouseStatus"]').should('contain', 'Repair')
         cy.get('.reset-button').click({ force: true })
     }
     filterOptionIhs5() {
-        iht.addFilterElement().eq(10).click({ force: true })
+        iht.addFilterElement().eq(11).click({ force: true })
         cy.get('[value="Quality_Assurance"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="inHouseStatus"]').should('contain', 'Quality Assurance')
         cy.get('.reset-button').click({ force: true })
     }
     filterOptionWS1() {
-        iht.addFilterElement().eq(11).click({ force: true })
+        iht.addFilterElement().eq(12).click({ force: true })
         iht.searchElement().type('Warranty')
         cy.get('[value="Non_Warranty"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="warrantyStatus"]').should('contain', 'Warranty')
         cy.get('.reset-button').click({ force: true })
     }
     filterOptionWS2() {
-        iht.addFilterElement().eq(11).click({ force: true })
+        iht.addFilterElement().eq(12).click({ force: true })
         cy.get('[value="Non_Warranty"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="warrantyStatus"]').should('contain', tdata.inHouseTicket.warrantystatus)
         cy.get('.reset-button').click({ force: true })
     }
     //date
     filterEqualsDate() {
-        iht.addFilterElement().eq(13).click({ force: true })
+        iht.addFilterElement().eq(14).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(0).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.inHouseTicket.lastModifiedDate)
@@ -787,7 +858,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterNotequalDate() {
-        iht.addFilterElement().eq(13).click({ force: true })
+        iht.addFilterElement().eq(14).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(1).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.inHouseTicket.lastModifiedDate)
@@ -796,7 +867,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterBeforeDate() {
-        iht.addFilterElement().eq(13).click({ force: true })
+        iht.addFilterElement().eq(14).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(2).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.inHouseTicket.lastModifiedDate)
@@ -805,7 +876,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterAfterDate() {
-        iht.addFilterElement().eq(13).click({ force: true })
+        iht.addFilterElement().eq(14).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.inHouseTicket.lastModifiedDate)
@@ -814,7 +885,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterBetweenDate() {
-        iht.addFilterElement().eq(13).click({ force: true })
+        iht.addFilterElement().eq(14).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.inHouseTicket.lastModifiedDate)
@@ -824,7 +895,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterBlankDate() {
-        iht.addFilterElement().eq(13).click({ force: true })
+        iht.addFilterElement().eq(14).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(5).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.inHouseTicket.lastModifiedDate, { force: true })
@@ -833,7 +904,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterNotblankDate() {
-        iht.addFilterElement().eq(13).click({ force: true })
+        iht.addFilterElement().eq(14).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(6).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(2).type(tdata.inHouseTicket.lastModifiedDate, { force: true })
@@ -844,7 +915,7 @@ export class InHouseTicketsActions {
     //IT
     selectFilterInternalTechnician() {
         cy.wait(2000)
-        iht.addFilterElement().eq(7).click({ force: true })
+        iht.addFilterElement().eq(8).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(0).click({ force: true })
         iht.fieldValueElement().type(tdata.inHouseTicket.internaltechnician)
@@ -853,7 +924,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainIT() {
-        iht.addFilterElement().eq(7).click({ force: true })
+        iht.addFilterElement().eq(8).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(1).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(tdata.inHouseTicket.internaltechnician)
@@ -862,7 +933,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterEqualsIT() {
-        iht.addFilterElement().eq(7).click({ force: true })
+        iht.addFilterElement().eq(8).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(2).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(tdata.inHouseTicket.internaltechnician)
@@ -871,7 +942,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterNotequalIT() {
-        iht.addFilterElement().eq(7).click({ force: true })
+        iht.addFilterElement().eq(8).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(3).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(tdata.inHouseTicket.internaltechnician)
@@ -880,7 +951,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterBeginswithIT() {
-        iht.addFilterElement().eq(7).click({ force: true })
+        iht.addFilterElement().eq(8).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(4).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type('Nancy')
@@ -889,7 +960,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterEndswithIT() {
-        iht.addFilterElement().eq(7).click({ force: true })
+        iht.addFilterElement().eq(8).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(5).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type('Stewart')
@@ -898,7 +969,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterBlankIT() {
-        iht.addFilterElement().eq(7).click({ force: true })
+        iht.addFilterElement().eq(8).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(6).click({ force: true })
         iht.fieldValueElement().eq(1).clear({ force: true }).type(' ', { force: true })
@@ -907,7 +978,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterNotblankIT() {
-        iht.addFilterElement().eq(7).click({ force: true })
+        iht.addFilterElement().eq(8).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(7).click({ force: true })
         iht.fieldValueElement().eq(1).clear({ force: true }).type(tdata.inHouseTicket.internaltechnician, { force: true })
@@ -917,7 +988,7 @@ export class InHouseTicketsActions {
     }
     //cby
     selectFilterCreatedBy() {
-        iht.addFilterElement().eq(12).click({ force: true })
+        iht.addFilterElement().eq(13).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(0).click({ force: true })
         iht.fieldValueElement().type(tdata.inHouseTicket.createdby)
@@ -925,7 +996,7 @@ export class InHouseTicketsActions {
         cy.get('[row-index="0"]').should('contain', tdata.inHouseTicket.createdby)
     }
     filterDoesnotcontainCBy() {
-        iht.addFilterElement().eq(12).click({ force: true })
+        iht.addFilterElement().eq(13).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(1).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(tdata.inHouseTicket.createdby)
@@ -934,7 +1005,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterEqualsCBy() {
-        iht.addFilterElement().eq(12).click({ force: true })
+        iht.addFilterElement().eq(13).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(2).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(tdata.inHouseTicket.createdby)
@@ -943,7 +1014,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterNotequalCBy() {
-        iht.addFilterElement().eq(12).click({ force: true })
+        iht.addFilterElement().eq(13).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(3).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(tdata.inHouseTicket.createdby)
@@ -952,7 +1023,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterBeginswithCBy() {
-        iht.addFilterElement().eq(12).click({ force: true })
+        iht.addFilterElement().eq(13).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(4).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type('demo')
@@ -961,7 +1032,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterEndswithCBy() {
-        iht.addFilterElement().eq(12).click({ force: true })
+        iht.addFilterElement().eq(13).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(5).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type('vivacitytech.com')
@@ -970,7 +1041,7 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterBlankCBy() {
-        iht.addFilterElement().eq(12).click({ force: true })
+        iht.addFilterElement().eq(13).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(6).click({ force: true })
         iht.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
@@ -979,12 +1050,12 @@ export class InHouseTicketsActions {
         iht.clearFilterElement().click({ force: true })
     }
     filterNotblankCBy() {
-        iht.addFilterElement().eq(12).click({ force: true })
+        iht.addFilterElement().eq(13).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(7).click({ force: true })
-        iht.fieldValueElement().eq(1).clear({ force: true }).type('Maleja Duque', { force: true })
+        iht.fieldValueElement().eq(1).clear({ force: true }).type(tdata.inHouseTicket.createdby, { force: true })
         iht.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Maleja Duque')
+        cy.get('[row-index="0"]').should('contain', tdata.inHouseTicket.createdby)
         iht.clearFilterElement().click({ force: true })
     }
 }

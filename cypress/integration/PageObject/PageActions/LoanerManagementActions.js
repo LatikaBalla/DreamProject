@@ -13,6 +13,7 @@ export class LoanerManagementActions {
     closeTermsOfServiceWindow() {
         cy.wait(5000)
         dash.termsElement().contains('Dismiss').click({ force: true })
+        cy.wait(1000)
     }
     clickOnManageDevices() {
         dash.managedevicesElement().click({ force: true })
@@ -20,28 +21,11 @@ export class LoanerManagementActions {
     clickOnLoanerManagement() {
         mdev.loanerManagementElement().click({ force: true })
     }
-    tableVisible() {
-        loan.tableElement().should('be.visible')
-    }
-    serachAvailableDevice() {
-        cy.wait(3000)
-        loan.searchElement().clear({ force: true }).type(tdata.loanerManagement.serialno + '{enter}', { force: true })
-    }
-    verifySerachAvailableDevice() {
-        loan.tableElement().eq(2).find('tbody tr').eq(0).find('td').eq(1).should('contain', tdata.loanerManagement.serialno, { force: true })
-    }
-    clickOnAddtoLoanerPool() {
-        loan.addloanerPoolElement().click({ force: true })
-    }
-    searchAvailable() {
-        cy.wait(3000)
-        loan.searchAboveElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.serialno + '{enter}', { force: true })
-    }
-    verifySearchAvailable() {
-        loan.tableElement().eq(0).find('tbody tr').eq(0).find('td').eq(2).should('contain', tdata.loanerManagement.serialno)
+    verifyTitle() {
+        loan.titleElement().should('be.visible')
     }
     clickOnAddStudent() {
-        loan.addstudentElement().contains("Add Student").click({ force: true })
+        loan.addstudentElement().click({ force: true })
     }
     enterFullname() {
         loan.studentNameElement().type(tdata.loanerManagement.fullname, { force: true })
@@ -64,416 +48,91 @@ export class LoanerManagementActions {
         loan.studentElement().type('abc', { force: true })
     }
     clickOnsubmitForm() {
-        loan.submitbtnElement().click({ force: true })
+        loan.submitbtnElement().contains('Submit').click({ force: true })
     }
     verifyStudentAdded() {
         cy.wait(2000)
         dash.messageElement().should('contain', tdata.loanerManagement.stdcreatedmsg)
     }
+    ///
+    clickOnDeviceIcon() {
+        loan.addFilterElement().eq(2).click({ force: true })
+        loan.fieldNameElement().eq(1).click({ force: true })
+        loan.fieldOpElement().eq(0).click({ force: true })
+        loan.fieldValueElement().type(tdata.loanerManagement.serialno)
+        loan.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').eq(1).should('contain', tdata.loanerManagement.serialno)
+        cy.wait(1000)
+        loan.deviceIconElement().eq(1).click({ force: true })
+    }
     clickOnCheckOut() {
-        cy.wait(2000)
         loan.checkoutbtnElement().click({ force: true })
     }
     selectStudentName() {
         loan.studentElement().click({ force: true })
         cy.get('[role="listbox"]').find('li').contains(tdata.loanerManagement.studentname).click({ force: true })
     }
+    selectDate() {
+        loan.datepickerElement().type(tdata.loanerManagement.date)
+    }
+    enterCheckoutText() {
+        loan.checkoutdesElement().type(tdata.loanerManagement.checkoutdes)
+    }
     clickOnSubmitbtn() {
-        loan.submitbtnElement().click({ force: true })
+        loan.submitbtnElement().contains('Submit').click({ force: true })
+        dash.messageElement().should('contain', 'Check-out successful')
     }
-    serachCheckOut() {
+    clickOnCheckOutTab() {
+        loan.checkoutTabElement().click({ force: true })
         cy.wait(1000)
-        loan.searchAboveElement().eq(1).type(tdata.loanerManagement.serialno + '{enter}', { force: true })
-    }
-    verifySerachCheckOut() {
-        loan.tableElement().eq(1).find('tbody tr').eq(0).find('td').eq(2).should('contain', tdata.loanerManagement.serialno, { force: true })
     }
     clickOnCheckIn() {
-        //  loan.tableElement().eq(1).find('tbody tr').eq(0).find('td').eq(4).contains("Check In").click({force:true})
         loan.checkinbtnElement().click({ force: true })
     }
     enterNote() {
         loan.notesElement().type("Testing completed", { force: true })
     }
+    enterCheckIndes() {
+        loan.checkindesElement().type(tdata.loanerManagement.checkindes)
+    }
     clickOnSubmitNote() {
-        loan.submitbtnElement().click({ force: true })
+        loan.submitbtnElement().contains('Submit').click({ force: true })
+        dash.messageElement().should('contain', 'Check-in successful')
     }
     verifySerachAvailable() {
-        loan.tableElement().eq(0).find('tbody tr').eq(0).find('td').eq(2).should('contain', tdata.loanerManagement.serialno, { force: true })
-    }
-    clickOnRemoveFromPool() {
-        loan.removeloanerPoolElement().click({ force: true })
-    }
-    //tag
-    filtercontainTag() {
-    cy.get('.ag-body-horizontal-scroll-viewport[ref="eViewport"]').eq(2).click()
-        cy.wait(4000)
-        loan.addFilterElement().eq(10).scrollIntoView().click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(0).click({ force: true })
-        loan.fieldValueElement().type(tdata.loanerManagement.assettag)
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', tdata.loanerManagement.assettag)
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterDoesnotcontainTag() {
-        loan.addFilterElement().eq(10).scrollIntoView().click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(1).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.assettag)
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('not.contain', tdata.loanerManagement.assettag)
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterEqualsTag() {
-        loan.addFilterElement().eq(10).scrollIntoView().click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(2).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.assettag)
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', tdata.loanerManagement.assettag)
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterNotequalTag() {
-        loan.addFilterElement().eq(10).scrollIntoView().click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(3).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.assettag)
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('not.contain', tdata.loanerManagement.assettag)
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterBeginswithTag() {
-        loan.addFilterElement().eq(10).scrollIntoView().click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(4).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type('70')
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', '70')
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterEndswithTag() {
-        loan.addFilterElement().eq(10).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(5).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type('408')
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', '408')
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterBlankTag() {
-        loan.addFilterElement().eq(10).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(6).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', ' ')
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterNotblankTag() {
-        loan.addFilterElement().eq(10).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(7).click({ force: true })
-        loan.fieldValueElement().eq(1).type(tdata.loanerManagement.assettag, { force: true })
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', tdata.loanerManagement.assettag)
-        loan.clearFilterElement().click({ force: true })
-    }
-    //Searial
-    filtercontainS() {
-        cy.wait(2000)
-        loan.addFilterElement().eq(11).click({ force: true })
+        loan.checkinTabElement().click({ force: true })
+        loan.addFilterElement().eq(2).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(0).click({ force: true })
         loan.fieldValueElement().type(tdata.loanerManagement.serialno)
         loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', tdata.loanerManagement.serialno)
-        loan.clearFilterElement().click({ force: true })
+        cy.get('[row-index="0"]').eq(1).should('contain', tdata.loanerManagement.serialno)
     }
-    filterDoesnotcontainS() {
-        loan.addFilterElement().eq(11).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(1).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.serialno)
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('not.contain', tdata.loanerManagement.serialno)
-        loan.clearFilterElement().click({ force: true })
+    clickOnDeviceIconViewT() {
+        loan.deviceIconElement().eq(1).click({ force: true })
     }
-    filterEqualsS() {
-        loan.addFilterElement().eq(11).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(2).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.serialno)
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', tdata.loanerManagement.serialno)
-        loan.clearFilterElement().click({ force: true })
+    clickOnViewDetails() {
+        loan.viewDetailsElement().click({ force: true })
     }
-    filterNotequalS() {
-        loan.addFilterElement().eq(11).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(3).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.serialno)
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('not.contain', tdata.loanerManagement.serialno)
-        loan.clearFilterElement().click({ force: true })
+    verifyViewDetails() {
+        cy.contains('General Device Information').should('be.visible')
+        cy.go('back')
     }
-    filterBeginswithS() {
-        loan.addFilterElement().eq(11).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(4).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type('70')
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', '70')
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterEndswithS() {
-        loan.addFilterElement().eq(11).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(5).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type('408')
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', '408')
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterBlankS() {
-        loan.addFilterElement().eq(11).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(6).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', ' ')
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterNotblankS() {
-        loan.addFilterElement().eq(11).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(7).click({ force: true })
-        loan.fieldValueElement().eq(1).type(tdata.loanerManagement.serialno, { force: true })
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', tdata.loanerManagement.serialno)
-        loan.clearFilterElement().click({ force: true })
-    }
-    //student info
-    filtercontainSI() {
-        cy.wait(2000)
-        loan.addFilterElement().eq(12).click({ force: true })
+    clickOnDeviceIconViewHistory() {
+        loan.addFilterElement().eq(2).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(0).click({ force: true })
-        loan.fieldValueElement().type(tdata.loanerManagement.studentname)
+        loan.fieldValueElement().clear().type(tdata.loanerManagement.serialno2)
         loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', tdata.loanerManagement.studentname)
-        loan.clearFilterElement().click({ force: true })
+        cy.get('[row-index="0"]').eq(1).should('contain', tdata.loanerManagement.serialno2)
+        loan.deviceIconElement().eq(1).click({ force: true })
     }
-    filterDoesnotcontainSI() {
-        loan.addFilterElement().eq(12).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(1).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.studentname)
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('not.contain', tdata.loanerManagement.studentname)
-        loan.clearFilterElement().click({ force: true })
+    clickOnViewHistory() {
+        loan.viewHistoryElement().click({ force: true })
     }
-    filterEqualsSI() {
-        loan.addFilterElement().eq(12).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(2).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.studentname)
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', tdata.loanerManagement.studentname)
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterNotequalSI() {
-        loan.addFilterElement().eq(12).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(3).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.studentname)
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('not.contain', tdata.loanerManagement.studentname)
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterBeginswithSI() {
-        loan.addFilterElement().eq(12).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(4).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type('70')
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', '70')
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterEndswithSI() {
-        loan.addFilterElement().eq(12).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(5).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type('408')
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', '408')
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterBlankSI() {
-        loan.addFilterElement().eq(12).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(6).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', ' ')
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterNotblankSI() {
-        loan.addFilterElement().eq(12).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(7).click({ force: true })
-        loan.fieldValueElement().eq(1).type(tdata.loanerManagement.studentname, { force: true })
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', tdata.loanerManagement.studentname)
-        loan.clearFilterElement().click({ force: true })
-    }
-    //device
-    filtercontainD() {
-        cy.wait(2000)
-        loan.addFilterElement().eq(13).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(0).click({ force: true })
-        loan.fieldValueElement().type(tdata.loanerManagement.device)
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', tdata.loanerManagement.device)
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterDoesnotcontainD() {
-        loan.addFilterElement().eq(13).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(1).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.device)
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('not.contain', tdata.loanerManagement.device)
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterEqualsD() {
-        loan.addFilterElement().eq(13).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(2).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.device)
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', tdata.loanerManagement.device)
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterNotequalD() {
-        loan.addFilterElement().eq(13).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(3).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.device)
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('not.contain', tdata.loanerManagement.device)
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterBeginswithD() {
-        loan.addFilterElement().eq(13).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(4).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type('70')
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', '70')
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterEndswithD() {
-        loan.addFilterElement().eq(13).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(5).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type('408')
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', '408')
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterBlankD() {
-        loan.addFilterElement().eq(13).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(6).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', ' ')
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterNotblankD() {
-        loan.addFilterElement().eq(13).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(7).click({ force: true })
-        loan.fieldValueElement().eq(1).type(tdata.loanerManagement.device, { force: true })
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', tdata.loanerManagement.device)
-        loan.clearFilterElement().click({ force: true })
-    }
-    //warranty
-    filtercontainW() {
-        cy.wait(2000)
-        loan.addFilterElement().eq(14).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(0).click({ force: true })
-        loan.fieldValueElement().type(tdata.loanerManagement.warranty)
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', tdata.loanerManagement.warranty)
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterDoesnotcontainW() {
-        loan.addFilterElement().eq(14).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(1).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.warranty)
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('not.contain', tdata.loanerManagement.warranty)
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterEqualsW() {
-        loan.addFilterElement().eq(14).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(2).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.warranty)
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', tdata.loanerManagement.warranty)
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterNotequalW() {
-        loan.addFilterElement().eq(14).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(3).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.warranty)
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('not.contain', tdata.loanerManagement.warranty)
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterBeginswithw() {
-        loan.addFilterElement().eq(14).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(4).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type('70')
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', '70')
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterEndswithW() {
-        loan.addFilterElement().eq(14).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(5).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type('408')
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', '408')
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterBlankW() {
-        loan.addFilterElement().eq(14).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(6).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', ' ')
-        loan.clearFilterElement().click({ force: true })
-    }
-    filterNotblankW() {
-        loan.addFilterElement().eq(14).click({ force: true })
-        loan.fieldNameElement().eq(1).click({ force: true })
-        loan.fieldOpElement().eq(7).click({ force: true })
-        loan.fieldValueElement().eq(1).type(tdata.loanerManagement.warranty, { force: true })
-        loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(2).should('contain', tdata.loanerManagement.warranty)
-        loan.clearFilterElement().click({ force: true })
+    verifyViewHistory() {
+        cy.contains('Device History').should('be.visible')
+        cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }
     //PD-A
     filtercontainPD_A() {
@@ -703,36 +362,36 @@ export class LoanerManagementActions {
         loan.addFilterElement().eq(2).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(0).click({ force: true })
-        loan.fieldValueElement().type(tdata.loanerManagement.serialno)
+        loan.fieldValueElement().type(tdata.loanerManagement.serialno1)
         loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(0).should('contain', tdata.loanerManagement.serialno)
+        cy.get('[row-index="0"]').eq(0).should('contain', tdata.loanerManagement.serialno1)
         loan.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainS_A() {
         loan.addFilterElement().eq(2).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(1).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.serialno)
+        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.serialno1)
         loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(0).should('not.contain', tdata.loanerManagement.serialno)
+        cy.get('[row-index="0"]').eq(0).should('not.contain', tdata.loanerManagement.serialno1)
         loan.clearFilterElement().click({ force: true })
     }
     filterEqualsS_A() {
         loan.addFilterElement().eq(2).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(2).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.serialno)
+        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.serialno1)
         loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(0).should('contain', tdata.loanerManagement.serialno)
+        cy.get('[row-index="0"]').eq(0).should('contain', tdata.loanerManagement.serialno1)
         loan.clearFilterElement().click({ force: true })
     }
     filterNotequalS_A() {
         loan.addFilterElement().eq(2).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(3).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.serialno)
+        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.serialno1)
         loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(0).should('not.contain', tdata.loanerManagement.serialno)
+        cy.get('[row-index="0"]').eq(0).should('not.contain', tdata.loanerManagement.serialno1)
         loan.clearFilterElement().click({ force: true })
     }
     filterBeginswithS_A() {
@@ -766,9 +425,9 @@ export class LoanerManagementActions {
         loan.addFilterElement().eq(2).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(7).click({ force: true })
-        loan.fieldValueElement().eq(1).type(tdata.loanerManagement.serialno, { force: true })
+        loan.fieldValueElement().eq(1).type(tdata.loanerManagement.serialno1, { force: true })
         loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(0).should('contain', tdata.loanerManagement.serialno)
+        cy.get('[row-index="0"]').eq(0).should('contain', tdata.loanerManagement.serialno1)
         loan.clearFilterElement().click({ force: true })
     }
     //tag-A
@@ -847,16 +506,8 @@ export class LoanerManagementActions {
     }
     //PD-C
     filtercontainPD_C() {
-       // cy.scrollTo(0, 500);
-       cy.wait(4000)
-       //cy.scrollTo('topRight')
-       // cy.get('[data-testid="ChevronLeftIcon"]').click({ force: true })
-       // cy.scrollTo(500,0)
-       // cy.get('.ag-scroller-corner').eq(2).scrollTo('left', { duration: 2000 },{ensureScrollable: false})
-        //cy.get('[role="treegrid"]').eq(1).find('[ref="eMenu"]').eq(5).scrollIntoView().click({ force: true })
-       // cy.get(':nth-child(2) > .css-1t4rit > .css-7vgkld > :nth-child(1) > .ag-theme-balham > [style="height: 100%;"] > .ag-root-wrapper > .ag-root-wrapper-body > .ag-root > .ag-header > .ag-header-viewport > .ag-header-container > .ag-header-row > [col-id="device"] > .ag-header-cell-comp-wrapper > .ag-cell-label-container > .ag-header-cell-menu-button > .ag-icon').click({ force: true })
-      // cy.wait(2000)
-       loan.addFilterElement().eq(5).scrollIntoView().trigger("click");
+        cy.wait(4000)
+        loan.addFilterElement().eq(0).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(0).click({ force: true })
         loan.fieldValueElement().type(tdata.loanerManagement.device)
@@ -865,7 +516,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainPD_C() {
-        loan.addFilterElement().eq(5).scrollIntoView().trigger("click");
+        loan.addFilterElement().eq(0).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(1).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.device)
@@ -874,7 +525,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterEqualsPD_C() {
-        loan.addFilterElement().eq(5).scrollIntoView().trigger("click");
+        loan.addFilterElement().eq(0).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(2).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.device)
@@ -883,7 +534,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterNotequalPD_C() {
-        loan.addFilterElement().eq(5).scrollIntoView().trigger("click");
+        loan.addFilterElement().eq(0).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(3).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.device)
@@ -892,7 +543,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterBeginswithPD_C() {
-        loan.addFilterElement().eq(5).scrollIntoView().trigger("click");
+        loan.addFilterElement().eq(0).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(4).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type('HP')
@@ -901,7 +552,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterEndswithPD_C() {
-        loan.addFilterElement().eq(5).scrollIntoView().trigger("click");
+        loan.addFilterElement().eq(0).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(5).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type('book')
@@ -910,7 +561,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterBlankPD_C() {
-        loan.addFilterElement().eq(5).scrollIntoView().trigger("click");
+        loan.addFilterElement().eq(0).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(6).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
@@ -919,7 +570,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterNotblankPD_C() {
-        loan.addFilterElement().eq(5).scrollIntoView().trigger("click");
+        loan.addFilterElement().eq(0).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(7).click({ force: true })
         loan.fieldValueElement().eq(1).type(tdata.loanerManagement.device, { force: true })
@@ -930,16 +581,16 @@ export class LoanerManagementActions {
     //SKU-C
     filtercontainSKU_C() {
         cy.wait(2000)
-        loan.addFilterElement().eq(6).scrollIntoView().trigger("click");
+        loan.addFilterElement().eq(1).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(0).click({ force: true })
-        loan.fieldValueElement().type(tdata.loanerManagement.serialno)
+        loan.fieldValueElement().type(tdata.loanerManagement.sku)
         loan.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.loanerManagement.sku)
         loan.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainSKU_C() {
-        loan.addFilterElement().eq(6).click({ force: true })
+        loan.addFilterElement().eq(1).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(1).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.sku)
@@ -948,7 +599,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterEqualsSKU_C() {
-        loan.addFilterElement().eq(6).click({ force: true })
+        loan.addFilterElement().eq(1).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(2).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.sku)
@@ -957,7 +608,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterNotequalSKU_C() {
-        loan.addFilterElement().eq(6).click({ force: true })
+        loan.addFilterElement().eq(1).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(3).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.sku)
@@ -966,7 +617,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterBeginswithSKU_C() {
-        loan.addFilterElement().eq(6).click({ force: true })
+        loan.addFilterElement().eq(1).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(4).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type('VT-')
@@ -975,7 +626,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterEndswithSKU_C() {
-        loan.addFilterElement().eq(6).click({ force: true })
+        loan.addFilterElement().eq(1).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(5).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type('SMB')
@@ -984,7 +635,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterBlankSKU_C() {
-        loan.addFilterElement().eq(6).click({ force: true })
+        loan.addFilterElement().eq(1).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(6).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
@@ -993,7 +644,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterNotblankSKU_C() {
-        loan.addFilterElement().eq(6).click({ force: true })
+        loan.addFilterElement().eq(1).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(7).click({ force: true })
         loan.fieldValueElement().eq(1).type(tdata.loanerManagement.sku, { force: true })
@@ -1004,7 +655,7 @@ export class LoanerManagementActions {
     //warranty-C
     filtercontainW_C() {
         cy.wait(2000)
-        loan.addFilterElement().eq(9).click({ force: true })
+        loan.addFilterElement().eq(4).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(0).click({ force: true })
         loan.fieldValueElement().type(tdata.loanerManagement.warranty)
@@ -1013,7 +664,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainW_C() {
-        loan.addFilterElement().eq(9).click({ force: true })
+        loan.addFilterElement().eq(4).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(1).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.warranty)
@@ -1022,7 +673,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterEqualsW_C() {
-        loan.addFilterElement().eq(9).click({ force: true })
+        loan.addFilterElement().eq(4).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(2).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.warranty)
@@ -1031,7 +682,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterNotequalW_C() {
-        loan.addFilterElement().eq(9).click({ force: true })
+        loan.addFilterElement().eq(4).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(3).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.warranty)
@@ -1040,25 +691,25 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterBeginswithW_C() {
-        loan.addFilterElement().eq(9).click({ force: true })
+        loan.addFilterElement().eq(4).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(4).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type('70')
+        loan.fieldValueElement().eq(0).clear({ force: true }).type('TEST')
         loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '70')
+        cy.get('[row-index="0"]').should('contain', 'TEST')
         loan.clearFilterElement().click({ force: true })
     }
     filterEndswithW_C() {
-        loan.addFilterElement().eq(9).click({ force: true })
+        loan.addFilterElement().eq(4).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(5).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type('408')
+        loan.fieldValueElement().eq(0).clear({ force: true }).type('NTY')
         loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '408')
+        cy.get('[row-index="0"]').should('contain', 'NTY')
         loan.clearFilterElement().click({ force: true })
     }
     filterBlankW_C() {
-        loan.addFilterElement().eq(9).click({ force: true })
+        loan.addFilterElement().eq(4).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(6).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
@@ -1067,7 +718,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterNotblankW_C() {
-        loan.addFilterElement().eq(9).click({ force: true })
+        loan.addFilterElement().eq(4).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(7).click({ force: true })
         loan.fieldValueElement().eq(1).type(tdata.loanerManagement.warranty, { force: true })
@@ -1078,43 +729,43 @@ export class LoanerManagementActions {
     //s-c
     filtercontainS_C() {
         cy.wait(2000)
-        loan.addFilterElement().eq(7).click({ force: true })
+        loan.addFilterElement().eq(2).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(0).click({ force: true })
-        loan.fieldValueElement().type(tdata.loanerManagement.serialno)
+        loan.fieldValueElement().type(tdata.loanerManagement.serialno2)
         loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.loanerManagement.serialno)
+        cy.get('[row-index="0"]').should('contain', tdata.loanerManagement.serialno2)
         loan.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainS_C() {
-        loan.addFilterElement().eq(7).click({ force: true })
+        loan.addFilterElement().eq(2).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(1).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.serialno)
+        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.serialno2)
         loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain', tdata.loanerManagement.serialno)
+        cy.get('[row-index="0"]').should('not.contain', tdata.loanerManagement.serialno2)
         loan.clearFilterElement().click({ force: true })
     }
     filterEqualsS_C() {
-        loan.addFilterElement().eq(7).click({ force: true })
+        loan.addFilterElement().eq(2).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(2).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.serialno)
+        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.serialno2)
         loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.loanerManagement.serialno)
+        cy.get('[row-index="0"]').should('contain', tdata.loanerManagement.serialno2)
         loan.clearFilterElement().click({ force: true })
     }
     filterNotequalS_C() {
-        loan.addFilterElement().eq(7).click({ force: true })
+        loan.addFilterElement().eq(2).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(3).click({ force: true })
-        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.serialno)
+        loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.serialno2)
         loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain', tdata.loanerManagement.serialno)
+        cy.get('[row-index="0"]').should('not.contain', tdata.loanerManagement.serialno2)
         loan.clearFilterElement().click({ force: true })
     }
     filterBeginswithS_C() {
-        loan.addFilterElement().eq(7).click({ force: true })
+        loan.addFilterElement().eq(2).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(4).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type('VIV')
@@ -1123,7 +774,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterEndswithS_C() {
-        loan.addFilterElement().eq(7).click({ force: true })
+        loan.addFilterElement().eq(2).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(5).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type('Test')
@@ -1132,7 +783,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterBlankS_C() {
-        loan.addFilterElement().eq(7).click({ force: true })
+        loan.addFilterElement().eq(2).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(6).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
@@ -1141,18 +792,18 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterNotblankS_C() {
-        loan.addFilterElement().eq(7).click({ force: true })
+        loan.addFilterElement().eq(2).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(7).click({ force: true })
-        loan.fieldValueElement().eq(1).type(tdata.loanerManagement.serialno, { force: true })
+        loan.fieldValueElement().eq(1).type(tdata.loanerManagement.serialno2, { force: true })
         loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.loanerManagement.serialno)
+        cy.get('[row-index="0"]').should('contain', tdata.loanerManagement.serialno2)
         loan.clearFilterElement().click({ force: true })
     }
     //tag-c
     filtercontainTag_C() {
         cy.wait(2000)
-        loan.addFilterElement().eq(8).click({ force: true })
+        loan.addFilterElement().eq(3).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(0).click({ force: true })
         loan.fieldValueElement().type(tdata.loanerManagement.assettag)
@@ -1161,7 +812,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainTag_C() {
-        loan.addFilterElement().eq(8).click({ force: true })
+        loan.addFilterElement().eq(3).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(1).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.assettag)
@@ -1170,7 +821,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterEqualsTag_C() {
-        loan.addFilterElement().eq(8).click({ force: true })
+        loan.addFilterElement().eq(3).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(2).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.assettag)
@@ -1179,7 +830,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterNotequalTag_C() {
-        loan.addFilterElement().eq(8).click({ force: true })
+        loan.addFilterElement().eq(3).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(3).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type(tdata.loanerManagement.assettag)
@@ -1188,7 +839,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterBeginswithTag_C() {
-        loan.addFilterElement().eq(8).click({ force: true })
+        loan.addFilterElement().eq(3).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(4).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type('123')
@@ -1197,7 +848,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterEndswithTag_C() {
-        loan.addFilterElement().eq(8).click({ force: true })
+        loan.addFilterElement().eq(3).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(5).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type('rick')
@@ -1206,7 +857,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterBlankTag_C() {
-        loan.addFilterElement().eq(8).click({ force: true })
+        loan.addFilterElement().eq(3).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(6).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
@@ -1215,7 +866,7 @@ export class LoanerManagementActions {
         loan.clearFilterElement().click({ force: true })
     }
     filterNotblankTag_C() {
-        loan.addFilterElement().eq(8).click({ force: true })
+        loan.addFilterElement().eq(3).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(7).click({ force: true })
         loan.fieldValueElement().eq(1).type(tdata.loanerManagement.assettag, { force: true })

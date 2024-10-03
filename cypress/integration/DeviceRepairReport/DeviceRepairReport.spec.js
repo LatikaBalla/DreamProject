@@ -3,14 +3,10 @@ import { ReportCenterActions } from '../PageObject/PageActions/ReportCenterActio
 import { DeviceRepairReportActions } from '../PageObject/PageActions/DeviceRepairReportActions.js'
 const dev = new DeviceRepairReportActions()
 const repc = new ReportCenterActions()
-
 Cypress.on("uncaught:exception", () => {
     return false;
 });
 Given('I should navigate to application', function () {
-    Cypress.on("uncaught:exception", () => {
-        return false;
-    });
     cy.visit("/")
 })
 When('I should Sign In into the application', () => {
@@ -19,7 +15,6 @@ When('I should Sign In into the application', () => {
 Then('Close the terms of service window', () => {
     cy.wait(8000)
     repc.closeTermsOfServiceWindow()
-    cy.wait(1000)
 })
 And('Click on Report center page', () => {
     repc.clickOnReportCenter()

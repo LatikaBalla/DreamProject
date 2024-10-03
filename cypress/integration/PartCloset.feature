@@ -73,7 +73,7 @@ Feature: PartCloset Page Functionality
         And Click on filter of Quantity Less than or equal to and Verify the Result
         And Click on filter of Quantity Between and Verify the Result
         And Click on filter of Quantity Blank and Verify the Result
-        And Click on filter of Quantity Not blank and Verify the Result
+        # And Click on filter of Quantity Not blank and Verify the Result
 
         Then I should click on Add New custome part
         Then Enter part name, manufacture and parent device

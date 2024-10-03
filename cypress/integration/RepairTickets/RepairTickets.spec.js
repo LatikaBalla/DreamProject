@@ -190,6 +190,31 @@ And('Click on filter of Building Blank and Verify the Result', () => {
 And('Click on filter of Building Not blank and Verify the Result', () => {
     rt.filterNotblankB()
 })
+//Rsite
+And('Click on filter of Return Site contain and Verify the Result', () => {
+    rt.filterContainRsite()
+})
+And('Click on filter of Return Site Does not contain and Verify the Result', () => {
+    rt.filterDoesnotcontainRsite()
+})
+And('Click on filter of Return Site Equals and Verify the Result', () => {
+    rt.filterEqualsRsite()
+})
+And('Click on filter of Return Site Does not equal and Verify the Result', () => {
+    rt.filterNotequalRsite()
+})
+And('Click on filter of Return Site Begins with and Verify the Result', () => {
+    rt.filterBeginswithRsite()
+})
+And('Click on filter of Return Site Ends with and Verify the Result', () => {
+    rt.filterEndswithRsite()
+})
+And('Click on filter of Return Site Blank and Verify the Result', () => {
+    rt.filterBlankRsite()
+})
+And('Click on filter of Return Site Not blank and Verify the Result', () => {
+    rt.filterNotblankRsite()
+})
 //rd
 And('Click on filter of Repair device contain and Verify the Result', () => {
     rt.selectFilterRepairDevice()

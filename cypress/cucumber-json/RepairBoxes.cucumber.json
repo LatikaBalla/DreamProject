@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1246000000
+              "duration": 4070000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 4210000000
+              "duration": 8866000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9087000000
+              "duration": 9107000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 80000000
+              "duration": 85000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on RepairBoxes Tab",
             "result": {
               "status": "passed",
-              "duration": 531000000
+              "duration": 1302000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of RepairBoxes Page",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 11000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Click on filter of Repair Box Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 4608000000
+              "duration": 4651000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Click on filter of Repair Box Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 602000000
+              "duration": 696000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click on filter of Repair Box Greater than and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 595000000
+              "duration": 671000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on filter of Repair Box Greater than or equal to and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 592000000
+              "duration": 675000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on filter of Repair Box Less than and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 670000000
+              "duration": 743000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on filter of Repair Box Less than or equal to and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 758000000
+              "duration": 743000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on filter of Repair Box Between and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1793000000
+              "duration": 1779000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on filter of Repair Box Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 652000000
+              "duration": 632000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click on filter of Repair Box Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 649000000
+              "duration": 697000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on filter of Tracking Number contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1777000000
+              "duration": 1748000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click on filter of Tracking Number Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 705000000
+              "duration": 710000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on filter of Tracking Number Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 753000000
+              "duration": 747000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click on filter of Tracking Number Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 712000000
+              "duration": 713000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on filter of Tracking Number Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 581000000
+              "duration": 567000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on filter of Tracking Number Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 664000000
+              "duration": 654000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Click on filter of Tracking Number Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 746000000
+              "duration": 745000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Click on filter of Shipped From Date Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 685000000
+              "duration": 667000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Click on filter of Shipped From Date Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 615000000
+              "duration": 621000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Click on filter of Shipped From Date Before and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 688000000
+              "duration": 1000000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Click on filter of Shipped From Date After and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 610000000
+              "duration": 620000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Click on filter of Shipped From Date Between with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 904000000
+              "duration": 895000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "Click on filter of Shipped From Date Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 633000000
+              "duration": 604000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "Click on filter of Shipped From Date Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 602000000
+              "duration": 603000000
             }
           },
           {
@@ -323,7 +323,7 @@
             "name": "Click on filter of Building contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 677000000
+              "duration": 663000000
             }
           },
           {
@@ -333,7 +333,7 @@
             "name": "Click on filter of Building Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 707000000
+              "duration": 777000000
             }
           },
           {
@@ -343,7 +343,7 @@
             "name": "Click on filter of Building Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 773000000
+              "duration": 839000000
             }
           },
           {
@@ -353,7 +353,7 @@
             "name": "Click on filter of Building Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 722000000
+              "duration": 782000000
             }
           },
           {
@@ -363,7 +363,7 @@
             "name": "Click on filter of Building Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 704000000
+              "duration": 740000000
             }
           },
           {
@@ -373,7 +373,7 @@
             "name": "Click on filter of Building Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 646000000
+              "duration": 730000000
             }
           },
           {
@@ -383,7 +383,7 @@
             "name": "Click on filter of Building Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 669000000
+              "duration": 654000000
             }
           },
           {
@@ -393,7 +393,7 @@
             "name": "Click on filter of Building Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 697000000
+              "duration": 794000000
             }
           },
           {
@@ -403,7 +403,7 @@
             "name": "Click on filter of Box_type contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 718000000
+              "duration": 728000000
             }
           },
           {
@@ -413,7 +413,7 @@
             "name": "Click on filter of Box_type Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 694000000
+              "duration": 766000000
             }
           },
           {
@@ -423,7 +423,7 @@
             "name": "Click on filter of Box_type Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 764000000
+              "duration": 820000000
             }
           },
           {
@@ -433,7 +433,7 @@
             "name": "Click on filter of Box_type Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 712000000
+              "duration": 774000000
             }
           },
           {
@@ -443,7 +443,7 @@
             "name": "Click on filter of Box_type Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 654000000
+              "duration": 716000000
             }
           },
           {
@@ -453,7 +453,7 @@
             "name": "Click on filter of Box_type Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 693000000
+              "duration": 739000000
             }
           },
           {
@@ -463,7 +463,7 @@
             "name": "Click on filter of Box_type Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 746000000
+              "duration": 736000000
             }
           },
           {
@@ -473,7 +473,7 @@
             "name": "Click on filter of Box_type Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 829000000
+              "duration": 804000000
             }
           },
           {
@@ -483,7 +483,7 @@
             "name": "Click on filter of Created By contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1107000000
+              "duration": 934000000
             }
           },
           {
@@ -493,7 +493,7 @@
             "name": "Click on filter of Created By Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1464000000
+              "duration": 1443000000
             }
           },
           {
@@ -503,7 +503,7 @@
             "name": "Click on filter of Created By Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1127000000
+              "duration": 1124000000
             }
           },
           {
@@ -513,7 +513,7 @@
             "name": "Click on filter of Created By Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1148000000
+              "duration": 1247000000
             }
           },
           {
@@ -523,7 +523,7 @@
             "name": "Click on filter of Created By Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 673000000
+              "duration": 770000000
             }
           },
           {
@@ -533,7 +533,7 @@
             "name": "Click on filter of Created By Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 831000000
+              "duration": 895000000
             }
           },
           {
@@ -543,7 +543,7 @@
             "name": "Click on filter of Created By Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 752000000
+              "duration": 758000000
             }
           },
           {
@@ -553,7 +553,7 @@
             "name": "Click on filter of Created By Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 887000000
+              "duration": 932000000
             }
           },
           {
@@ -563,7 +563,7 @@
             "name": "Click on filter of shipping_box_status Not Shipped and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2331000000
+              "duration": 2314000000
             }
           },
           {
@@ -573,7 +573,7 @@
             "name": "Click on filter of shipping_box_status Recieved By Vivacity and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 265000000
+              "duration": 264000000
             }
           },
           {
@@ -583,7 +583,7 @@
             "name": "Click on filter of shipping_box_status Shipping From District with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 344000000
+              "duration": 322000000
             }
           },
           {
@@ -593,7 +593,7 @@
             "name": "Click on filter of shipping_box_status all checked with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 496000000
+              "duration": 485000000
             }
           },
           {
@@ -603,7 +603,7 @@
             "name": "Click on filter of Created Date Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 748000000
+              "duration": 716000000
             }
           },
           {
@@ -613,7 +613,7 @@
             "name": "Click on filter of Created Date Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 749000000
+              "duration": 725000000
             }
           },
           {
@@ -623,7 +623,7 @@
             "name": "Click on filter of Created Date Before and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 737000000
+              "duration": 734000000
             }
           },
           {
@@ -633,7 +633,7 @@
             "name": "Click on filter of Created Date After and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 746000000
+              "duration": 741000000
             }
           },
           {
@@ -643,7 +643,7 @@
             "name": "Click on filter of Created Date Between and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1078000000
+              "duration": 1031000000
             }
           },
           {
@@ -653,7 +653,7 @@
             "name": "Click on filter of Created Date Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 676000000
+              "duration": 648000000
             }
           },
           {
@@ -663,7 +663,7 @@
             "name": "Click on filter of Created Date Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 726000000
+              "duration": 784000000
             }
           },
           {
@@ -673,7 +673,7 @@
             "name": "Click on filter of Last Modified Date Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 778000000
+              "duration": 808000000
             }
           },
           {
@@ -683,7 +683,7 @@
             "name": "Click on filter of Last Modified Date Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 757000000
+              "duration": 746000000
             }
           },
           {
@@ -693,7 +693,7 @@
             "name": "Click on filter of Last Modified Date Before and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 812000000
+              "duration": 1125000000
             }
           },
           {
@@ -703,7 +703,7 @@
             "name": "Click on filter of Last Modified Date After and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 808000000
+              "duration": 1532000000
             }
           },
           {
@@ -713,7 +713,7 @@
             "name": "Click on filter of Last Modified Date Between and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1039000000
+              "duration": 1016000000
             }
           },
           {
@@ -723,7 +723,7 @@
             "name": "Click on filter of Last Modified Date Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 810000000
+              "duration": 789000000
             }
           },
           {
@@ -733,7 +733,7 @@
             "name": "Click on filter of Last Modified Date Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 753000000
+              "duration": 696000000
             }
           },
           {
@@ -743,7 +743,7 @@
             "name": "Click on label form of image and Verify",
             "result": {
               "status": "passed",
-              "duration": 118000000
+              "duration": 105000000
             }
           },
           {
@@ -753,7 +753,7 @@
             "name": "Click on label form of Pdf and Verify",
             "result": {
               "status": "passed",
-              "duration": 116000000
+              "duration": 97000000
             }
           },
           {
@@ -763,7 +763,7 @@
             "name": "Click on Export Button",
             "result": {
               "status": "passed",
-              "duration": 94000000
+              "duration": 89000000
             }
           },
           {
@@ -773,7 +773,7 @@
             "name": "I should click on create new Box",
             "result": {
               "status": "passed",
-              "duration": 119000000
+              "duration": 97000000
             }
           },
           {
@@ -783,7 +783,7 @@
             "name": "Enter weight and Standard Box Size",
             "result": {
               "status": "passed",
-              "duration": 590000000
+              "duration": 567000000
             }
           },
           {
@@ -793,7 +793,7 @@
             "name": "Select Pick-up site",
             "result": {
               "status": "passed",
-              "duration": 288000000
+              "duration": 213000000
             }
           },
           {
@@ -803,7 +803,7 @@
             "name": "Check the need shipping box",
             "result": {
               "status": "passed",
-              "duration": 111000000
+              "duration": 206000000
             }
           },
           {
@@ -813,7 +813,7 @@
             "name": "Click on Create box button",
             "result": {
               "status": "passed",
-              "duration": 107000000
+              "duration": 152000000
             }
           },
           {
@@ -823,7 +823,7 @@
             "name": "Select Ticket from dropdownlist",
             "result": {
               "status": "passed",
-              "duration": 411000000
+              "duration": 291000000
             }
           },
           {
@@ -833,7 +833,7 @@
             "name": "Click on Finish button",
             "result": {
               "status": "passed",
-              "duration": 124000000
+              "duration": 120000000
             }
           },
           {
@@ -843,7 +843,7 @@
             "name": "Verify new box is added in table",
             "result": {
               "status": "passed",
-              "duration": 1984000000
+              "duration": 2412000000
             }
           },
           {
@@ -853,7 +853,7 @@
             "name": "Click on view button",
             "result": {
               "status": "passed",
-              "duration": 987000000
+              "duration": 1891000000
             }
           },
           {
@@ -863,7 +863,7 @@
             "name": "Verify the Details new box",
             "result": {
               "status": "passed",
-              "duration": 3750000000
+              "duration": 4784000000
             }
           },
           {
@@ -873,7 +873,7 @@
             "name": "Add another ticket in the same box",
             "result": {
               "status": "passed",
-              "duration": 3094000000
+              "duration": 3096000000
             }
           },
           {
@@ -883,7 +883,7 @@
             "name": "Select Ticket from dropdownlist",
             "result": {
               "status": "passed",
-              "duration": 406000000
+              "duration": 283000000
             }
           },
           {
@@ -893,7 +893,7 @@
             "name": "Click on Add ticket",
             "result": {
               "status": "passed",
-              "duration": 134000000
+              "duration": 132000000
             }
           },
           {
@@ -903,7 +903,7 @@
             "name": "Verify the ticket is added in table",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 18000000
             }
           },
           {
@@ -913,7 +913,7 @@
             "name": "Click on view the ticket Details",
             "result": {
               "status": "passed",
-              "duration": 151000000
+              "duration": 137000000
             }
           },
           {
@@ -923,7 +923,7 @@
             "name": "Verfiy the ticket Details",
             "result": {
               "status": "passed",
-              "duration": 1346000000
+              "duration": 2916000000
             }
           },
           {
@@ -933,7 +933,7 @@
             "name": "Click on Add Repair Image and Verify",
             "result": {
               "status": "passed",
-              "duration": 951000000
+              "duration": 886000000
             }
           },
           {
@@ -943,7 +943,7 @@
             "name": "Click on Add Note and Verify",
             "result": {
               "status": "passed",
-              "duration": 1033000000
+              "duration": 898000000
             }
           },
           {
@@ -953,7 +953,7 @@
             "name": "Click on Remove button for deleting ticket",
             "result": {
               "status": "passed",
-              "duration": 1482000000
+              "duration": 1848000000
             }
           },
           {
@@ -962,8 +962,9 @@
             "line": 115,
             "name": "Verify the ticket removed",
             "result": {
-              "status": "passed",
-              "duration": 2033000000
+              "status": "failed",
+              "duration": 33023000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiAlert-message`, but never found it.\n    at RepairBoxesActions.verifyRemoveTicket (cypress/integration/PageObject/PageActions/RepairBoxesActions.js:126:30)\n    at Context.eval (cypress/integration/RepairBoxes/RepairBoxes.spec.js:96:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
         ]

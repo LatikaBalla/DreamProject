@@ -2,8 +2,8 @@
 const locator = require("../../../locators.json");
 export default class LoanerManagementElements {
 
-    tableElement() {
-        return cy.get(locator.loanerManagement.table, {
+    titleElement(){
+        return cy.contains(locator.loanerManagement.title, {
             timeout: 30000,
         })
     }
@@ -67,18 +67,48 @@ export default class LoanerManagementElements {
             timeout: 30000,
         })
     }
+    deviceIconElement() {
+        return cy.get(locator.loanerManagement.deviceIcon, {
+            timeout: 30000,
+        })
+    }
+    checkoutdesElement() {
+        return cy.get(locator.loanerManagement.checkoutdes, {
+            timeout: 30000,
+        })
+    }
+    checkindesElement() {
+        return cy.get(locator.loanerManagement.checkindes, {
+            timeout: 30000,
+        })
+    }
+    checkoutTabElement() {
+        return cy.get(locator.loanerManagement.checkoutTab, {
+            timeout: 30000,
+        })
+    }
+    checkinTabElement() {
+        return cy.get(locator.loanerManagement.checkinTab, {
+            timeout: 30000,
+        })
+    }
+    datepickerElement() {
+        return cy.get(locator.loanerManagement.datepicker, {
+            timeout: 30000,
+        })
+    }
     deviceNameFilterElement() {
         return cy.get(locator.loanerManagement.deviceNameFilter, {
             timeout: 30000,
         })
     }
-    addloanerPoolElement() {
-        return cy.contains(locator.loanerManagement.addloanerPool, {
+    viewDetailsElement() {
+        return cy.contains(locator.loanerManagement.viewDetails, {
             timeout: 30000,
         })
     }
-    removeloanerPoolElement() {
-        return cy.contains(locator.loanerManagement.removeloanerPool, {
+    viewHistoryElement() {
+        return cy.contains(locator.loanerManagement.viewHistory, {
             timeout: 30000,
         })
     }
@@ -143,4 +173,5 @@ export default class LoanerManagementElements {
             timeout: 30000,
         })
     }
+
 }

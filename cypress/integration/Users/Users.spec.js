@@ -55,7 +55,6 @@ Then('Verify the Results in the table', () => {
     user.verifySearchResult()
 })
 And('Click on view button and click on Edit button', () => {
-
     user.clickOnEditButton()
 })
 Then('I should edit title, full name', () => {

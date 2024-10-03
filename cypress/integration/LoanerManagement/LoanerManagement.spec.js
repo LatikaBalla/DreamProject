@@ -21,21 +21,8 @@ Then('Click on Manage Devices', () => {
 And('Click on LoanerManagement Tab', () => {
     loan.clickOnLoanerManagement()
 })
-And('Table for LoanerManagement should be visible', () => {
-    loan.tableVisible()
-})
-Then('Search the serial no in search box of Available Devices section', () => {
-    loan.serachAvailableDevice()
-})
-And('Verify the search result', () => {
-    loan.verifySerachAvailableDevice()
-})
-Then('Click on the Add to loaner pool', () => {
-    loan.clickOnAddtoLoanerPool()
-})
-Then('Search the serial no in the Available section', () => {
-    loan.searchAvailable()
-    loan.verifySearchAvailable()
+And('Verify the Title of LoanerManagement page', () => {
+    loan.verifyTitle()
 })
 And('Click on th add Student button', () => {
     loan.clickOnAddStudent()
@@ -56,154 +43,53 @@ Then('Click on the submit button of form', () => {
 And('Verify the student added successfully', () => {
     loan.verifyStudentAdded()
 })
-Then('Click on check out button', () => {
+Then('Click on DeviceIcon', () => {
+    loan.clickOnDeviceIcon()
+})
+Then('Click on Check out button', () => {
     loan.clickOnCheckOut()
 })
-And('Select the student name', () => {
+And('Select the student name and Date', () => {
     loan.selectStudentName()
+    loan.selectDate()
 })
-Then('Click on the submit button', () => {
+Then('Enter Check-out Description and click on submit button', () => {
+    loan.enterCheckoutText()
     loan.clickOnSubmitbtn()
 })
-And('Search the serial no in the check out section', () => {
-    loan.serachCheckOut()
-    loan.verifySerachCheckOut()
+And('Click on the Check-Out tab', () => {
+    loan.clickOnCheckOutTab()
 })
-Then('Click on the Check in button', () => {
+And('Click on Check In button', () => {
     loan.clickOnCheckIn()
 })
-And('Enter note and click on submit button', () => {
+Then('Enter Note and Check-in Description', () => {
     loan.enterNote()
+    loan.enterCheckIndes()
     loan.clickOnSubmitNote()
 })
-Then('Verify the device is added in Available section', () => {
-    loan.searchAvailable()
+And('Verify the Serial no in the Available section', () => {
     loan.verifySerachAvailable()
 })
-And('Click on remove from loaner pool button', () => {
-    loan.serachAvailableDevice()
-    loan.clickOnRemoveFromPool()
+Then('Click on DeviceIcon for view ticket', () => {
+    loan.clickOnDeviceIconViewT()
 })
-And('Click on filter of Asset Tag contain and Verify the Result', () => {
-    loan.filtercontainTag()
+And('Click on View Details button', () => {
+    loan.clickOnViewDetails()
 })
-And('Click on filter of Asset Tag Does not contain and Verify the Result ', () => {
-    loan.filterDoesnotcontainTag()
+Then('Verify the Device Details', () => {
+    loan.verifyViewDetails()
 })
-And('Click on filter of Asset Tag Equals and Verify the Result', () => {
-    loan.filterEqualsTag()
+Then('Click on DeviceIcon for view history', () => {
+    loan.clickOnDeviceIconViewHistory()
 })
-And('Click on filter of Asset Tag Does not equal and Verify the Result', () => {
-    loan.filterNotequalTag()
+And('Click on View History button', () => {
+    loan.clickOnViewHistory()
 })
-And('Click on filter of Asset Tag Begins with and Verify the Result', () => {
-    loan.filterBeginswithTag()
+Then('Verify the Device History', () => {
+    loan.verifyViewHistory()
 })
-And('Click on filter of Asset Tag Ends with and Verify the Result', () => {
-    loan.filterEndswithTag()
-})
-And('Click on filter of Asset Tag Blank and Verify the Result', () => {
-    loan.filterBlankTag()
-})
-And('Click on filter of Asset Tag Not blank and Verify the Result', () => {
-    loan.filterNotblankTag()
-})
-And('Click on filter of Serial contain and Verify the Result', () => {
-    loan.filtercontainS()
-})
-And('Click on filter of Serial Does not contain and Verify the Result', () => {
-    loan.filterDoesnotcontainS()
-})
-And('Click on filter of Serial Equals and Verify the Result', () => {
-    loan.filterEqualsS()
-})
-And('Click on filter of Serial Does not equal and Verify the Result', () => {
-    loan.filterNotequalS()
-})
-And('Click on filter of Serial Begins with and Verify the Result', () => {
-    loan.filterBeginswitS()
-})
-And('Click on filter of Serial Ends with and Verify the Result', () => {
-    loan.filterEndswithS()
-})
-And('Click on filter of Serial Blank and Verify the Result', () => {
-    loan.filterBlankS()
-})
-And('Click on filter of Serial Not blank and Verify the Result', () => {
-    loan.filterNotblankS()
-})
-And('Click on filter of Student Info contain and Verify the Result', () => {
-    loan.filtercontainSI()
-})
-And('Click on filter of Student Info Does not contain and Verify the Result', () => {
-    loan.filterDoesnotcontainSI()
-})
-And('Click on filter of Student Info Equals and Verify the Result', () => {
-    loan.filterEqualsSI()
-})
-And('Click on filter of Student Info Does not equal and Verify the Result', () => {
-    loan.filterNotequalSI()
-})
-And('Click on filter of Student Info Begins with and Verify the Result', () => {
-    loan.filterBeginswitSI()
-})
-And('Click on filter of Student Info Ends with and Verify the Result', () => {
-    loan.filterEndswithSI()
-})
-And('Click on filter of Student Info Blank and Verify the Result', () => {
-    loan.filterBlankSI()
-})
-And('Click on filter of Student Info Not blank and Verify the Result', () => {
-    loan.filterNotblankSI()
-})
-And('Click on filter of Device contain and Verify the Result', () => {
-    loan.filtercontainD()
-})
-And('Click on filter of Device Does not contain and Verify the Result', () => {
-    loan.filterDoesnotcontainD()
-})
-And('Click on filter of Device Equals and Verify the Result', () => {
-    loan.filterEqualsD()
-})
-And('Click on filter of Device Does not equal and Verify the Result', () => {
-    loan.filterNotequalD()
-})
-And('Click on filter of Device Begins with and Verify the Result', () => {
-    loan.filterBeginswitD()
-})
-And('Click on filter of Device Ends with and Verify the Result', () => {
-    loan.filterEndswithD()
-})
-And('Click on filter of Device Blank and Verify the Result', () => {
-    loan.filterBlankD()
-})
-And('Click on filter of Device Not blank and Verify the Result', () => {
-    loan.filterNotblankD()
-})
-And('Click on filter of Warranty contain and Verify the Result', () => {
-    loan.filtercontainW()
-})
-And('Click on filter of Warranty Does not contain and Verify the Result', () => {
-    loan.filterDoesnotcontainw()
-})
-And('Click on filter of Warranty Equals and Verify the Result', () => {
-    loan.filterEqualsW()
-})
-And('Click on filter of Warranty Does not equal and Verify the Result', () => {
-    loan.filterNotequalW()
-})
-And('Click on filter of Warranty Begins with and Verify the Result', () => {
-    loan.filterBeginswitW()
-})
-And('Click on filter of Warranty Ends with and Verify the Result', () => {
-    loan.filterEndswithW()
-})
-And('Click on filter of Warranty Blank and Verify the Result', () => {
-    loan.filterBlankW()
-})
-And('Click on filter of Warranty Not blank and Verify the Result', () => {
-    loan.filterNotblankW()
-})
+
 And('Click on filter of Product Description contain and Verify the Result for Available', () => {
     loan.filtercontainPD_A()
 })
@@ -442,5 +328,3 @@ And('Click on filter of Asset Tag Blank and Verify the Result for Checked Out', 
 And('Click on filter of Asset Tag Not blank and Verify the Result for Checked Out', () => {
     loan.filterNotblankTag_C()
 })
-
-

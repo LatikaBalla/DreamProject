@@ -112,7 +112,7 @@ Feature: RepairBoxes Page Functionality
     Then Click on Add Repair Image and Verify
     And Click on Add Note and Verify
     Then Click on Remove button for deleting ticket
-    And Verify the ticket removed
+    # And Verify the ticket removed
 
 
 

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3386000000
+              "duration": 1693000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6722000000
+              "duration": 7062000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9177000000
+              "duration": 9185000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Buildings Tab",
             "result": {
               "status": "passed",
-              "duration": 2091000000
+              "duration": 2089000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of Buildings Page",
             "result": {
               "status": "passed",
-              "duration": 863000000
+              "duration": 513000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Filters of Buildings should be visible",
             "result": {
               "status": "passed",
-              "duration": 1032000000
+              "duration": 455000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Table for Buildings should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 5000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "I should click on Add building button",
             "result": {
               "status": "passed",
-              "duration": 164000000
+              "duration": 163000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "I should Enter Building Name,Phone and Extension",
             "result": {
               "status": "passed",
-              "duration": 926000000
+              "duration": 936000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "I should Enter Building Abbreviation and Select Default building",
             "result": {
               "status": "passed",
-              "duration": 343000000
+              "duration": 336000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Enter Billing Id, Shipping Address and select from dropdown",
             "result": {
               "status": "passed",
-              "duration": 3434000000
+              "duration": 3411000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on checkbox Same as Shipping Address",
             "result": {
               "status": "passed",
-              "duration": 3096000000
+              "duration": 3088000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on save button",
             "result": {
               "status": "passed",
-              "duration": 88000000
+              "duration": 86000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Verify the builing details added in table",
             "result": {
               "status": "passed",
-              "duration": 2014000000
+              "duration": 2012000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click on filter of Building Name contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3660000000
+              "duration": 3662000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on filter of Building Name Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1004000000
+              "duration": 985000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click on filter of Building Name Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 647000000
+              "duration": 633000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on filter of Building Name Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 634000000
+              "duration": 618000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click on filter of Building Name Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 548000000
+              "duration": 539000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on filter of Building Name Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 526000000
+              "duration": 512000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on filter of Building Name Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 508000000
+              "duration": 476000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Click on filter of Building Name Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 627000000
+              "duration": 610000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Click on filter of Building Name contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3660000000
+              "duration": 3655000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Click on filter of Building ID contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 595000000
+              "duration": 605000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Click on filter of Building ID Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 578000000
+              "duration": 589000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Click on filter of Building ID Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 617000000
+              "duration": 606000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Click on filter of Building ID Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 614000000
+              "duration": 564000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Click on filter of Building ID Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 596000000
+              "duration": 592000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "Click on filter of Building ID Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 596000000
+              "duration": 608000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "Click on filter of Building ID Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 628000000
+              "duration": 626000000
             }
           },
           {
@@ -323,7 +323,7 @@
             "name": "Click on filter of Building ID Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 625000000
+              "duration": 600000000
             }
           },
           {
@@ -333,7 +333,7 @@
             "name": "Click on filter of Building Shipping Address contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 984000000
+              "duration": 968000000
             }
           },
           {
@@ -343,7 +343,7 @@
             "name": "Click on filter of Building Shipping Address Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 971000000
+              "duration": 953000000
             }
           },
           {
@@ -353,7 +353,7 @@
             "name": "Click on filter of Building Shipping Address Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 984000000
+              "duration": 992000000
             }
           },
           {
@@ -373,7 +373,7 @@
             "name": "Click on filter of Building Shipping Address Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 554000000
+              "duration": 536000000
             }
           },
           {
@@ -383,7 +383,7 @@
             "name": "Click on filter of Building Shipping Address Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 561000000
+              "duration": 562000000
             }
           },
           {
@@ -393,7 +393,7 @@
             "name": "Click on filter of Building Shipping Address Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 525000000
+              "duration": 541000000
             }
           },
           {
@@ -403,7 +403,7 @@
             "name": "Click on filter of Building Shipping Address Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 994000000
+              "duration": 981000000
             }
           },
           {
@@ -413,7 +413,7 @@
             "name": "Click on filter of Building Billing Address contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3035000000
+              "duration": 3025000000
             }
           },
           {
@@ -423,7 +423,7 @@
             "name": "Click on filter of Building Billing Address Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1002000000
+              "duration": 993000000
             }
           },
           {
@@ -433,7 +433,7 @@
             "name": "Click on filter of Building Billing Address Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1015000000
+              "duration": 1037000000
             }
           },
           {
@@ -443,7 +443,7 @@
             "name": "Click on filter of Building Billing Address Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 986000000
+              "duration": 991000000
             }
           },
           {
@@ -463,7 +463,7 @@
             "name": "Click on filter of Building Billing Address Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 616000000
+              "duration": 588000000
             }
           },
           {
@@ -473,7 +473,7 @@
             "name": "Click on filter of Building Billing Address Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 560000000
+              "duration": 516000000
             }
           },
           {
@@ -483,7 +483,7 @@
             "name": "Click on filter of Building Billing Address Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1024000000
+              "duration": 1015000000
             }
           },
           {
@@ -493,7 +493,7 @@
             "name": "Click on filter of Building Abbreviation contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 598000000
+              "duration": 618000000
             }
           },
           {
@@ -503,7 +503,7 @@
             "name": "Click on filter of Building Abbreviation Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 907000000
+              "duration": 884000000
             }
           },
           {
@@ -513,7 +513,7 @@
             "name": "Click on filter of Building Abbreviation Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 576000000
+              "duration": 563000000
             }
           },
           {
@@ -523,7 +523,7 @@
             "name": "Click on filter of Building Abbreviation Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 545000000
+              "duration": 543000000
             }
           },
           {
@@ -533,7 +533,7 @@
             "name": "Click on filter of Building Abbreviation Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 654000000
+              "duration": 641000000
             }
           },
           {
@@ -543,7 +543,7 @@
             "name": "Click on filter of Building Abbreviation Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 665000000
+              "duration": 648000000
             }
           },
           {
@@ -553,7 +553,7 @@
             "name": "Click on filter of Building Abbreviation Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 527000000
+              "duration": 524000000
             }
           },
           {
@@ -563,7 +563,7 @@
             "name": "Click on filter of Building Abbreviation Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 578000000
+              "duration": 560000000
             }
           },
           {
@@ -573,7 +573,7 @@
             "name": "Click on filter of Default Building true and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 296000000
+              "duration": 292000000
             }
           },
           {
@@ -583,7 +583,7 @@
             "name": "Click on filter of Default Building false and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 252000000
+              "duration": 243000000
             }
           },
           {
@@ -593,7 +593,7 @@
             "name": "Click on filter of Extension contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 602000000
+              "duration": 598000000
             }
           },
           {
@@ -603,7 +603,7 @@
             "name": "Click on filter of Extension Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1024000000
+              "duration": 982000000
             }
           },
           {
@@ -613,7 +613,7 @@
             "name": "Click on filter of Extension Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 718000000
+              "duration": 662000000
             }
           },
           {
@@ -623,7 +623,7 @@
             "name": "Click on filter of Extension Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 651000000
+              "duration": 637000000
             }
           },
           {
@@ -633,7 +633,7 @@
             "name": "Click on filter of Extension Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 659000000
+              "duration": 648000000
             }
           },
           {
@@ -643,7 +643,7 @@
             "name": "Click on filter of Extension Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 644000000
+              "duration": 640000000
             }
           },
           {
@@ -653,7 +653,7 @@
             "name": "Click on filter of Extension Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 715000000
+              "duration": 686000000
             }
           },
           {
@@ -663,7 +663,7 @@
             "name": "Click on filter of Extension Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 711000000
+              "duration": 671000000
             }
           },
           {
@@ -673,7 +673,7 @@
             "name": "Click on filter of Phone contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 754000000
+              "duration": 705000000
             }
           },
           {
@@ -683,7 +683,7 @@
             "name": "Click on filter of Phone Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1120000000
+              "duration": 1117000000
             }
           },
           {
@@ -693,7 +693,7 @@
             "name": "Click on filter of Phone Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 798000000
+              "duration": 776000000
             }
           },
           {
@@ -713,7 +713,7 @@
             "name": "Click on filter of Phone Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 693000000
+              "duration": 670000000
             }
           },
           {
@@ -723,7 +723,7 @@
             "name": "Click on filter of Phone Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 691000000
+              "duration": 657000000
             }
           },
           {
@@ -733,7 +733,7 @@
             "name": "Click on filter of Phone Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 747000000
+              "duration": 722000000
             }
           },
           {
@@ -743,7 +743,7 @@
             "name": "Click on filter of Phone Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 895000000
+              "duration": 804000000
             }
           },
           {
@@ -753,7 +753,7 @@
             "name": "Click on Edit Icon of builing",
             "result": {
               "status": "passed",
-              "duration": 3882000000
+              "duration": 3852000000
             }
           },
           {
@@ -763,7 +763,7 @@
             "name": "I should edit Building Name,Phone and Extension of builing",
             "result": {
               "status": "passed",
-              "duration": 1155000000
+              "duration": 1255000000
             }
           },
           {
@@ -783,7 +783,7 @@
             "name": "Click on update button of builing",
             "result": {
               "status": "passed",
-              "duration": 110000000
+              "duration": 102000000
             }
           },
           {
@@ -793,7 +793,7 @@
             "name": "Verify the Record has been updated Meassage of builing",
             "result": {
               "status": "passed",
-              "duration": 697000000
+              "duration": 694000000
             }
           },
           {
@@ -803,7 +803,7 @@
             "name": "Click on Delete Icon of building",
             "result": {
               "status": "passed",
-              "duration": 4857000000
+              "duration": 4826000000
             }
           },
           {
@@ -813,7 +813,7 @@
             "name": "Click on Confirm Delete button of building",
             "result": {
               "status": "passed",
-              "duration": 120000000
+              "duration": 97000000
             }
           },
           {
@@ -823,7 +823,7 @@
             "name": "Verify the record is deleted successfully of building",
             "result": {
               "status": "passed",
-              "duration": 608000000
+              "duration": 441000000
             }
           },
           {
@@ -833,7 +833,7 @@
             "name": "Click on Export To CSV",
             "result": {
               "status": "passed",
-              "duration": 91000000
+              "duration": 109000000
             }
           },
           {
@@ -843,7 +843,7 @@
             "name": "Click on Bulk Upload button",
             "result": {
               "status": "passed",
-              "duration": 85000000
+              "duration": 110000000
             }
           },
           {
@@ -853,7 +853,7 @@
             "name": "Click on Attach CSV file and Click on submit button",
             "result": {
               "status": "passed",
-              "duration": 325000000
+              "duration": 314000000
             }
           },
           {
@@ -863,7 +863,7 @@
             "name": "Verify the Uploaded successfully",
             "result": {
               "status": "passed",
-              "duration": 329000000
+              "duration": 335000000
             }
           }
         ]

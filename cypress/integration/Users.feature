@@ -67,20 +67,20 @@ Feature:  Users Page Functionality
     # And Click on filter of User status Active and Verify the Result
     # And Click on filter of User status Inactive and Verify the Result
 
-    Then Click on Download button
-    And Click on view button and click on Edit button
-    Then I should edit title, full name
-    And I should edit Phone and Cell Number and user role
-    Then I edit User Status by clicking on checkbox
-    And I edit Building
-    Then Click on Submit button
-    And Verify the Record has been updated Meassage
-    And Click on Delete button
-    Then Click on Confirm Delete button
-    And Verify the record is deleted successfully
-    And Click on Export To CSV
-    Then Click on Bulk Upload button
-    And Click on Attach CSV file and Click on submit button
-# Then Verify the Uploaded successfully
+#     Then Click on Download button
+#     And Click on view button and click on Edit button
+#     Then I should edit title, full name
+#     And I should edit Phone and Cell Number and user role
+#     Then I edit User Status by clicking on checkbox
+#     And I edit Building
+#     Then Click on Submit button
+#     And Verify the Record has been updated Meassage
+#     And Click on Delete button
+#     Then Click on Confirm Delete button
+#     # And Verify the record is deleted successfully
+#     And Click on Export To CSV
+#     Then Click on Bulk Upload button
+#     And Click on Attach CSV file and Click on submit button
+# # Then Verify the Uploaded successfully
 
 

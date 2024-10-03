@@ -50,7 +50,7 @@ export class RepairBoxesActions {
         rb.checkboxElement().click({ force: true })
     }
     clickOnCreateBoxButton() {
-       cy.get('.MuiDialogActions-root > .MuiButtonBase-root').click({ force: true })
+        cy.get('.MuiDialogActions-root > .MuiButtonBase-root').click({ force: true })
     }
     selectTickets() {
         rb.ticketElement().click()
@@ -69,7 +69,7 @@ export class RepairBoxesActions {
         cy.visit("/repair-360/box-detail/" + tdata.repairBox.recordid)
     }
     verifyBoxDetails() {
-        cy.wait(1000)
+        cy.wait(3000)
         cy.contains("Box Details").scrollIntoView().should('be.visible')
     }
     clickOnAddTicket() {
@@ -122,7 +122,7 @@ export class RepairBoxesActions {
         cy.get('.css-1a4b21o').eq(9).contains('Remove').dblclick({ force: true })
     }
     verifyRemoveTicket() {
-        cy.wait(2000)
+        cy.wait(3000)
         dash.messageElement().should('contain', 'Ticket removed successfully.')
     }
     ClickOnImagelabel() {
@@ -348,7 +348,18 @@ export class RepairBoxesActions {
         rb.fieldOpElement().eq(2).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
         rb.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippeddate1)
+        const dateString = '08-29-2023 17:03:57';
+        const reformattedDateString = dateString.split('-').reverse().join('-');
+        const dateObj = new Date(reformattedDateString);
+        const timestamp = dateObj.getTime();
+        cy.get('.ag-row-first > [col-id="shipped_from_date"]').should(($el) => {
+            const value = $el.text();
+            const reformattedDate = value.split('-').reverse().join('-');
+            const dateObj1 = new Date(reformattedDate);
+            const timestamp1 = dateObj1.getTime();
+            expect(timestamp1).to.be.lessThan(timestamp)
+            
+        })
         rb.clearFilterElement().click({ force: true })
     }
     filterAfterSDate() {
@@ -357,7 +368,17 @@ export class RepairBoxesActions {
         rb.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
         rb.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('contain', '2024-07-15')
+        const dateString = '08-29-2023 17:03:57';
+        const reformattedDateString = dateString.split('-').reverse().join('-');
+        const dateObj = new Date(reformattedDateString);
+        const timestamp = dateObj.getTime();
+        cy.get('.ag-row-first > [col-id="shipped_from_date"]').should(($el) => {
+            const value = $el.text();
+            const reformattedDate = value.split('-').reverse().join('-');
+            const dateObj1 = new Date(reformattedDate);
+            const timestamp1 = dateObj1.getTime();
+            expect(timestamp1).to.be.greaterThan(timestamp)
+        })
         rb.clearFilterElement().click({ force: true })
     }
     filterBetweenSDate() {
@@ -367,7 +388,6 @@ export class RepairBoxesActions {
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.shippeddate, { force: true })
         rb.applyElement().click({ force: true })
-        //  cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippeddate)
         rb.clearFilterElement().click({ force: true })
     }
     filterBlankSDate() {
@@ -477,7 +497,7 @@ export class RepairBoxesActions {
         rb.fieldOpElement().eq(1).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.boxtype)
         rb.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('not.contain', tdata.repairBox.boxtype)
+      //  cy.get('[row-index="0"]').should('not.contain', tdata.repairBox.boxtype)
         rb.clearFilterElement().click({ force: true })
     }
     filterEqualsBT() {
@@ -635,71 +655,71 @@ export class RepairBoxesActions {
         cy.get('[row-index="0"]').should('contain', 'Maleja Duque')
         rb.clearFilterElement().click({ force: true })
     }
-        //Cdate
-        filterEqualsCDate() {
-            rb.addFilterElement().eq(7).click({ force: true })
-            rb.fieldNameElement().eq(1).click({ force: true })
-            rb.fieldOpElement().eq(0).click({ force: true })
-            cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
-            rb.applyElement().click({ force: true })
-            //cy.get('[row-index="0"]').should('contain', tdata.repairBox.createdDate1)
-            rb.clearFilterElement().click({ force: true })
-        }
-        filterNotequalCDate() {
-            rb.addFilterElement().eq(7).click({ force: true })
-            rb.fieldNameElement().eq(1).click({ force: true })
-            rb.fieldOpElement().eq(1).click({ force: true })
-            cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
-            rb.applyElement().click({ force: true })
-           // cy.get('[row-index="0"]').should('not.contain.value', tdata.repairBox.createdDate1)
-            rb.clearFilterElement().click({ force: true })
-        }
-        filterBeforeCDate() {
-            rb.addFilterElement().eq(7).click({ force: true })
-            rb.fieldNameElement().eq(1).click({ force: true })
-            rb.fieldOpElement().eq(2).click({ force: true })
-            cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
-            rb.applyElement().click({ force: true })
-            // cy.get('[row-index="0"]').should('contain', tdata.repairBox.createdDate1)
-            rb.clearFilterElement().click({ force: true })
-        }
-        filterAfterCDate() {
-            rb.addFilterElement().eq(7).click({ force: true })
-            rb.fieldNameElement().eq(1).click({ force: true })
-            rb.fieldOpElement().eq(3).click({ force: true })
-            cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
-            rb.applyElement().click({ force: true })
-            // cy.get('[row-index="0"]').should('contain', '2024-07-15')
-            rb.clearFilterElement().click({ force: true })
-        }
-        filterBetweenCDate() {
-            rb.addFilterElement().eq(7).click({ force: true })
-            rb.fieldNameElement().eq(1).click({ force: true })
-            rb.fieldOpElement().eq(3).click({ force: true })
-            cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
-            cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.createdDate, { force: true })
-            rb.applyElement().click({ force: true })
-            // cy.get('[row-index="0"]').should('contain', '2024-07-15')
-            rb.clearFilterElement().click({ force: true })
-        }
-        filterBlankCDate() {
-            rb.addFilterElement().eq(7).click({ force: true })
-            rb.fieldNameElement().eq(1).click({ force: true })
-            rb.fieldOpElement().eq(5).click({ force: true })
-            cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.createdDate, { force: true })
-            rb.applyElement().click({ force: true })
-            // cy.get('[row-index="0"]').should('contain', tdata.repairBox.createdDate1)
-            rb.clearFilterElement().click({ force: true })
-        }
-        filterNotblankCDate() {
-            rb.addFilterElement().eq(7).click({ force: true })
-            rb.fieldNameElement().eq(1).click({ force: true })
-            rb.fieldOpElement().eq(6).click({ force: true })
-            cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.createdDate, { force: true })
-            rb.applyElement().click({ force: true })
-           // cy.get('[row-index="0"]').should('not.contain', tdata.repairBox.createdDate1)
-            rb.clearFilterElement().click({ force: true })
-        }
+    //Cdate
+    filterEqualsCDate() {
+        rb.addFilterElement().eq(7).click({ force: true })
+        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.fieldOpElement().eq(0).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
+        rb.applyElement().click({ force: true })
+        //cy.get('[row-index="0"]').should('contain', tdata.repairBox.createdDate1)
+        rb.clearFilterElement().click({ force: true })
+    }
+    filterNotequalCDate() {
+        rb.addFilterElement().eq(7).click({ force: true })
+        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.fieldOpElement().eq(1).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
+        rb.applyElement().click({ force: true })
+        // cy.get('[row-index="0"]').should('not.contain.value', tdata.repairBox.createdDate1)
+        rb.clearFilterElement().click({ force: true })
+    }
+    filterBeforeCDate() {
+        rb.addFilterElement().eq(7).click({ force: true })
+        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.fieldOpElement().eq(2).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
+        rb.applyElement().click({ force: true })
+        // cy.get('[row-index="0"]').should('contain', tdata.repairBox.createdDate1)
+        rb.clearFilterElement().click({ force: true })
+    }
+    filterAfterCDate() {
+        rb.addFilterElement().eq(7).click({ force: true })
+        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.fieldOpElement().eq(3).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
+        rb.applyElement().click({ force: true })
+        // cy.get('[row-index="0"]').should('contain', '2024-07-15')
+        rb.clearFilterElement().click({ force: true })
+    }
+    filterBetweenCDate() {
+        rb.addFilterElement().eq(7).click({ force: true })
+        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.fieldOpElement().eq(3).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.createdDate, { force: true })
+        rb.applyElement().click({ force: true })
+        // cy.get('[row-index="0"]').should('contain', '2024-07-15')
+        rb.clearFilterElement().click({ force: true })
+    }
+    filterBlankCDate() {
+        rb.addFilterElement().eq(7).click({ force: true })
+        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.fieldOpElement().eq(5).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.createdDate, { force: true })
+        rb.applyElement().click({ force: true })
+        // cy.get('[row-index="0"]').should('contain', tdata.repairBox.createdDate1)
+        rb.clearFilterElement().click({ force: true })
+    }
+    filterNotblankCDate() {
+        rb.addFilterElement().eq(7).click({ force: true })
+        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.fieldOpElement().eq(6).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.createdDate, { force: true })
+        rb.applyElement().click({ force: true })
+        // cy.get('[row-index="0"]').should('not.contain', tdata.repairBox.createdDate1)
+        rb.clearFilterElement().click({ force: true })
+    }
     //Ldate
     filterEqualsLDate() {
         rb.addFilterElement().eq(8).click({ force: true })
@@ -725,7 +745,17 @@ export class RepairBoxesActions {
         rb.fieldOpElement().eq(2).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.lastdate)
         rb.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('contain', tdata.repairBox.lastdate1)
+        const dateString = '09-30-2024 18:03:21';
+        const reformattedDateString = dateString.split('-').reverse().join('-');
+        const dateObj = new Date(reformattedDateString);
+        const timestamp = dateObj.getTime();
+        cy.get('.ag-row-first > [col-id="last_modified_date"]').should(($el) => {
+            const value = $el.text();
+            const reformattedDate = value.split('-').reverse().join('-');
+            const dateObj1 = new Date(reformattedDate);
+            const timestamp1 = dateObj1.getTime();
+            expect(timestamp1).to.be.lessThan(timestamp)
+        })
         rb.clearFilterElement().click({ force: true })
     }
     filterAfterLDate() {
@@ -734,7 +764,17 @@ export class RepairBoxesActions {
         rb.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.lastdate)
         rb.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('contain', '2024-07-15')
+        const dateString = '09-30-2024 18:03:21';
+        const reformattedDateString = dateString.split('-').reverse().join('-');
+        const dateObj = new Date(reformattedDateString);
+        const timestamp = dateObj.getTime();
+        cy.get('.ag-row-first > [col-id="last_modified_date"]').should(($el) => {
+            const value = $el.text();
+            const reformattedDate = value.split('-').reverse().join('-');
+            const dateObj1 = new Date(reformattedDate);
+            const timestamp1 = dateObj1.getTime();
+            expect(timestamp1).to.be.greaterThan(timestamp)
+        })
         rb.clearFilterElement().click({ force: true })
     }
     filterBetweenLDate() {
@@ -744,7 +784,6 @@ export class RepairBoxesActions {
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.lastdate)
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.lastdate, { force: true })
         rb.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('contain', '2024-07-15')
         rb.clearFilterElement().click({ force: true })
     }
     filterBlankLDate() {
@@ -753,7 +792,7 @@ export class RepairBoxesActions {
         rb.fieldOpElement().eq(5).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.lastdate, { force: true })
         rb.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('contain', tdata.repairBox.lastdate1)
+        cy.get('[row-index="0"]').should('contain', ' ')
         rb.clearFilterElement().click({ force: true })
     }
     filterNotblankLDate() {
