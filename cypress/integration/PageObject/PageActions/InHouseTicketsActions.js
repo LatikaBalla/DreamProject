@@ -65,7 +65,7 @@ export class InHouseTicketsActions {
         iht.savebtnElement().click({ force: true })
     }
     verifyNewTicket() {
-        cy.wait(3000)
+        cy.wait(4000)
         dash.messageElement().should('contain', tdata.inHouseTicket.createTicketmsg, { force: true })
     }
     clickOnExport() {
@@ -114,7 +114,7 @@ export class InHouseTicketsActions {
         cy.visit("/repair-360/inHouse-detail/" + tdata.inHouseTicket.recordid, { visitTimeout: 30000 })
     }
     verifySrcRepairTicket() {
-        cy.wait(2000)
+        cy.wait(4000)
         cy.contains('Repair Ticket Details').should('be.visible')
     }
     clickOnEditButton() {

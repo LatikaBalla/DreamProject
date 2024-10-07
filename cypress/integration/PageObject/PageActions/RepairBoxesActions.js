@@ -18,6 +18,7 @@ export class RepairBoxesActions {
         dash.repair360Element().click({ force: true })
     }
     clickOnRepairBoxesTab() {
+        cy.wait(1000)
         rc.repairBoxesElement().click({ force: true })
     }
     verifyTitle() {
