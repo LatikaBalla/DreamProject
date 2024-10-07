@@ -2,7 +2,6 @@
 const Repair360Elements = require("../PageElements/Repair360Elements.js")
 const DashboardElements = require("../PageElements/DashboardElements.js")
 const RepairTicketsElements = require("../PageElements/RepairTicketsElements.js")
-chai.use(require('chai-sorted'))
 const tdata = require("../../../testData.json");
 export class RepairTicketsActions {
     constructor() {
