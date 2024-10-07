@@ -119,7 +119,7 @@ export class RepairTicketsActions {
         cy.visit("/repair-360/ticket-detail/" + tdata.repairTickets.recordid)
     }
     verifySrcRepairTicket() {
-        cy.wait(1000)
+        cy.wait(3000)
         cy.contains('Repair Ticket Details').should('be.visible')
     }
     clickOnEditButton() {

@@ -9,7 +9,7 @@ export class AccountDetailsActions {
         globalThis.dash = new DashboardElements()
     }
     closeTermsOfServiceWindow() {
-        cy.wait(1000)
+        cy.wait(2000)
         dash.termsElement().contains('Dismiss').click({ force: true })
     }
     clickonAccountDash(){

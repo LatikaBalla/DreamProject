@@ -364,9 +364,9 @@ export class PartClosetActions {
         pc.addFilterElement().eq(3).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(3).click({ force: true })
-        pc.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.buildingname)
+        pc.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.buildingname,{ force: true })
         pc.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain.value', tdata.buildings.buildingname)
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.buildings.buildingname,{ force: true })
         pc.clearFilterElement().click({ force: true })
     }
     filterBeginswithB() {
@@ -616,7 +616,7 @@ export class PartClosetActions {
         pc.fieldOpElement().eq(4).click({ force: true })
         pc.fieldValueElement().eq(0).type(tdata.partCloset.quantity, { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity"]').then(($el) => {
+        cy.get('.ag-row-first > [col-id="quantity"]').eq(1).then(($el) => {
             const value = parseInt($el.text());
             expect(value).to.be.lessThan(2);
         })

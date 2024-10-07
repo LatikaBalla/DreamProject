@@ -72,7 +72,7 @@ export default class MyFleetElements {
         });
     }
     exportcsvElement() {
-        return cy.contains(locator.myFleet.exportcsv, {
+        return cy.get(locator.myFleet.exportcsv, {
             timeout: 30000,
         });
     }

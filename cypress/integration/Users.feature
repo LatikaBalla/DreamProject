@@ -10,12 +10,12 @@ Feature:  Users Page Functionality
     And Click on Users page
 
   Scenario: visibilty check,Add new Srudent, Search, Edit and search Delete the User and download
-    # Then I should be redirected to the Users page
-    # Then I should click on Add New student
-    # Then Enter full name, title and Email
-    # And Enter Phone, Cell Number, role and building
-    # And Click on submit button
-    # Then Verify the student added in table
+    Then I should be redirected to the Users page
+    Then I should click on Add New student
+    Then Enter full name, title and Email
+    And Enter Phone, Cell Number, role and building
+    And Click on submit button
+    Then Verify the student added in table
 
     And Click on filter of Full name contain and Verify the Result
     And Click on filter of Full name Does not contain and Verify the Result

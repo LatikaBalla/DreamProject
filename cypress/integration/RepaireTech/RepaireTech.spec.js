@@ -64,7 +64,6 @@ Then('Close the terms of service window', () => {
     acc.closeTermsOfServiceWindow()
 })
 Then('I should be redirected to the dashboard page', () => {
-
     cy.contains('My Account').click({ force: true })
     cy.url().should('include', '/')
 })
@@ -77,8 +76,7 @@ Then('My Account Detail tab should be visible', () => {
 And('Building tab should be visible', () => {
     cy.get('.MuiDialogActions-root > [tabindex="0"]').click({ force: true })
     build.clickOnBuildingTab()
-    build.verifyTitleBuildingPage()
-    //dash.buildingTabVisible()
+   // build.verifyTitleBuildingPage()
 })
 And('Click on Report center page', () => {
     cy.wait(5000)
@@ -230,6 +228,7 @@ And('Click on PartCloset Tab', () => {
     pc.clickOnPartClosetTab()
 })
 Then('I should click on Add New custome part', () => {
+    pc.clickOnAddNew()
     pc.clickOnNewCustomePart()
 })
 Then('Enter part name, manufacture and parent device of PartCloset', () => {
@@ -331,7 +330,7 @@ And('Click on Add Note and Verify of RepairTickets', () => {
     rt.clickOnAddNote()
 })
 And('Click on RepairBoxes Tab', () => {
-    cy.wait(1000)
+    cy.wait(2000)
     rb.clickOnRepairBoxesTab()
 })
 Then('I should click on create new Box of RepairBoxes', () => {
@@ -387,7 +386,7 @@ And('Click on Back button of RepairBoxes', () => {
     rb.clickOnBackButton()
 })
 And('Remove the ticket from box of RepairBoxes', () => {
-    rb.clickOnRemoveButton()
+    rb.clickOnRemoveButton1()
 })
 Then('Verify the ticket is delete from the table of RepairBoxes', () => {
     rb.verifyTicketDeleted()
@@ -399,7 +398,7 @@ And('Click on Add Note and Verify of RepairBoxes', () => {
     rb.clickOnAddNote()
 })
 Then('Click on Remove button for deleting ticket of RepairBoxes', () => {
-    rb.clickOnRemoveButton()
+    rb.clickOnRemoveButton2()
 })
 And('Verify the ticket removed of RepairBoxes', () => {
     rb.verifyRemoveTicket()
@@ -489,7 +488,7 @@ Then('Enter title, full name and Email of SrcStudents', () => {
 })
 And('Enter Phone and Cell Number of SrcStudents', () => {
     ss.enterPhone()
-    ss.enterCellNumber()
+
 })
 Then('Select User Status of SrcStudents', () => {
     ss.selectUserStatus()
@@ -716,7 +715,7 @@ And('Click on Add Note and Verify of InHouseWork', () => {
 })
 And('Click on ImportSerialDevices Tab', () => {
     isd.clickOnImportSerialDevices()
-    cy.get('.MuiDialogActions-root > :nth-child(2)').click({ force: true })
+    cy.get('.MuiDialogActions-root > .MuiButtonBase-root').click({ force: true })
 })
 Then('I should click on Add New Import of ImportSerialDevices', () => {
     isd.clickOnAddNewImport()

@@ -9,7 +9,7 @@ export class BuildingsActions {
         globalThis.build = new BuildingsElements();
     }
     verifyTitleBuildingPage() {
-        build.titleElement().should('be.visible')
+        cy.title().should('eq', 'Account Dashboard');
     }
     clickOnBuildingTab() {
        cy.wait(2000)

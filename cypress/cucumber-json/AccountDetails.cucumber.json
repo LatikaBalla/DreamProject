@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2859000000
+              "duration": 4346000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6965000000
+              "duration": 11414000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 10188000000
+              "duration": 11188000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on My Account Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 70000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of Account Details Page",
             "result": {
               "status": "passed",
-              "duration": 946000000
+              "duration": 953000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Account Details -Aaccount Name and no should be visible",
             "result": {
               "status": "passed",
-              "duration": 942000000
+              "duration": 670000000
             }
           },
           {
@@ -83,17 +83,7 @@
             "name": "Account Manager,Billing Address and Shipping Address should be visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "Vivacity Tech Dream should be visible",
-            "result": {
-              "status": "passed",
-              "duration": 9000000
+              "duration": 8000000
             }
           }
         ]

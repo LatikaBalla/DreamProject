@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1867000000
+              "duration": 5108000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6148000000
+              "duration": 12568000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 12085000000
+              "duration": 12098000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 91000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on OrgUploadAssets Tab",
             "result": {
               "status": "passed",
-              "duration": 978000000
+              "duration": 1674000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of OrgUploadAssets Page",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 11000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I should click on Add Asset",
             "result": {
               "status": "passed",
-              "duration": 579000000
+              "duration": 598000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Enter location, tag, notes, category, serialno and model",
             "result": {
               "status": "passed",
-              "duration": 1678000000
+              "duration": 1645000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Enter assignment, po, invoice, vendor and description",
             "result": {
               "status": "passed",
-              "duration": 1533000000
+              "duration": 1497000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Enter cost and quantity",
             "result": {
               "status": "passed",
-              "duration": 368000000
+              "duration": 364000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Upload the image file",
             "result": {
               "status": "passed",
-              "duration": 24000000
+              "duration": 29000000
             }
           },
           {
@@ -132,8 +132,9 @@
             "line": 20,
             "name": "Enter fieldValue1 and fieldValue2",
             "result": {
-              "status": "passed",
-              "duration": 382000000
+              "status": "failed",
+              "duration": 30021000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[name='additionalFields.0.value']`, but never found it.\n    at OrgUploadAssetsElements.fieldValue1Element (cypress/integration/PageObject/PageElements/OrgUploadAssetsElements.js:175:18)\n    at OrgUploadAssetsActions.enterFieldValue1and2 (cypress/integration/PageObject/PageActions/OrgUploadAssetsActions.js:66:12)\n    at Context.eval (cypress/integration/OrgUploadAssets/OrgUploadAssets.spec.js:61:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -142,8 +143,7 @@
             "line": 21,
             "name": "Click on save button",
             "result": {
-              "status": "passed",
-              "duration": 75000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +152,7 @@
             "line": 22,
             "name": "Verify the asset details added in table",
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +161,7 @@
             "line": 23,
             "name": "Click on filter of Description contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 3756000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +170,7 @@
             "line": 24,
             "name": "Click on filter of Description Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 716000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +179,7 @@
             "line": 25,
             "name": "Click on filter of Description Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 724000000
+              "status": "skipped"
             }
           },
           {
@@ -192,8 +188,7 @@
             "line": 26,
             "name": "Click on filter of Description Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 721000000
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +197,7 @@
             "line": 27,
             "name": "Click on filter of Description Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 530000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +206,7 @@
             "line": 28,
             "name": "Click on filter of Description Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 533000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +215,7 @@
             "line": 29,
             "name": "Click on filter of Description Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 496000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +224,7 @@
             "line": 30,
             "name": "Click on filter of Description Not blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 698000000
+              "status": "skipped"
             }
           },
           {
@@ -242,8 +233,7 @@
             "line": 32,
             "name": "Click on filter of Acquire Date Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2668000000
+              "status": "skipped"
             }
           },
           {
@@ -252,8 +242,7 @@
             "line": 33,
             "name": "Click on filter of Acquire Date Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 614000000
+              "status": "skipped"
             }
           },
           {
@@ -262,8 +251,7 @@
             "line": 34,
             "name": "Click on filter of Acquire Date Before and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 600000000
+              "status": "skipped"
             }
           },
           {
@@ -272,8 +260,7 @@
             "line": 35,
             "name": "Click on filter of Acquire Date After and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 637000000
+              "status": "skipped"
             }
           },
           {
@@ -282,8 +269,7 @@
             "line": 36,
             "name": "Click on filter of Acquire Date Between with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 906000000
+              "status": "skipped"
             }
           },
           {
@@ -292,8 +278,7 @@
             "line": 37,
             "name": "Click on filter of Acquire Date Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 617000000
+              "status": "skipped"
             }
           },
           {
@@ -302,8 +287,7 @@
             "line": 38,
             "name": "Click on filter of Acquire Date Not blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 610000000
+              "status": "skipped"
             }
           },
           {
@@ -312,8 +296,7 @@
             "line": 40,
             "name": "Click on filter of Location contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1570000000
+              "status": "skipped"
             }
           },
           {
@@ -322,8 +305,7 @@
             "line": 41,
             "name": "Click on filter of Location Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 547000000
+              "status": "skipped"
             }
           },
           {
@@ -332,8 +314,7 @@
             "line": 42,
             "name": "Click on filter of Location Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 559000000
+              "status": "skipped"
             }
           },
           {
@@ -342,8 +323,7 @@
             "line": 43,
             "name": "Click on filter of Location Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 555000000
+              "status": "skipped"
             }
           },
           {
@@ -352,8 +332,7 @@
             "line": 44,
             "name": "Click on filter of Location Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 526000000
+              "status": "skipped"
             }
           },
           {
@@ -362,8 +341,7 @@
             "line": 45,
             "name": "Click on filter of Location Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 549000000
+              "status": "skipped"
             }
           },
           {
@@ -372,8 +350,7 @@
             "line": 46,
             "name": "Click on filter of Location Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 529000000
+              "status": "skipped"
             }
           },
           {
@@ -382,8 +359,7 @@
             "line": 47,
             "name": "Click on filter of Location Not blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 540000000
+              "status": "skipped"
             }
           }
         ]

@@ -85,9 +85,9 @@ export class InHouseWorkflowActions {
     }
     clickOnAddLine() {
         ihw.addlineElement().click({ force: true })
-        ihw.custompartElemnet().click({ force: true })
+        cy.get('.css-imb8av').click({ force: true })
         ihw.partElement().click({ force: true })
-        cy.get('[role="listbox"]').contains('demo unit').click({ force: true })
+        cy.get('[role="listbox"]').contains('Speaker Set').click({ force: true })
         ihw.noteElement().type('Testing line', { force: true })
         ihw.createlineElement().contains('Create Line Item').click({ force: true })
         //dash.messageElement().should('contain', 'Line Item Created')

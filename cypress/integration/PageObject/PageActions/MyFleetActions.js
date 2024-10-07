@@ -155,26 +155,31 @@ export class MyFleetActions {
       mf.addFilterElement().eq(0).click({ force: true })
       mf.fieldNameElement().eq(1).click({ force: true })
       mf.fieldOpElement().eq(0).click({ force: true })
-      mf.fieldValueElement().type(tdata.myFleet.serialnumber)
+      mf.fieldValueElement().type(tdata.myFleet.serialnumber, { force: true })
       mf.applyElement().click({ force: true })
+      cy.wait(1000)
       mf.deviceIconElement().eq(1).click({ force: true })
-      cy.contains('Retire Device').click({ force: true })
+      cy.get('[href="/devices"]').eq(4).click({ force: true })
+      cy.get('.css-1877pye').click({ force: true })
    }
    verifyRetired() {
-      dash.messageElement().should('contain', 'Device Retired')
+
+      dash.messageElement().should('contain', 'Device Retired', { force: true })
    }
    convertActive() {
       cy.wait(4000)
       mf.addFilterElement().eq(0).click({ force: true })
       mf.fieldNameElement().eq(1).click({ force: true })
       mf.fieldOpElement().eq(0).click({ force: true })
-      mf.fieldValueElement().type(tdata.myFleet.serialnumber)
+      mf.fieldValueElement().eq(0).type(tdata.myFleet.serialnumber, { force: true })
       mf.applyElement().click({ force: true })
+      cy.wait(1000)
       mf.deviceIconElement().eq(1).click({ force: true })
-      cy.contains('Activate Device').click({ force: true })
+      cy.get('[href="/devices"]').eq(4).click({ force: true })
+      cy.get('.css-1877pye').click({ force: true })
    }
    verifyActive() {
-      dash.messageElement().should('contain', 'Device Activated')
+      dash.messageElement().should('contain', 'Device Activated', { force: true })
    }
    clickOnRetiredTab() {
       cy.get('[data-test-id="tabDeactivate"]').click({ force: true })
@@ -233,7 +238,7 @@ export class MyFleetActions {
       mf.addFilterElement().eq(0).click({ force: true })
       mf.fieldNameElement().eq(1).click({ force: true })
       mf.fieldOpElement().eq(0).click({ force: true })
-      mf.fieldValueElement().type(tdata.myFleet.serialno)
+      mf.fieldValueElement().type(tdata.myFleet.serialno, { force: true })
       mf.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', tdata.myFleet.serialno)
       mf.clearFilterElement().click({ force: true })
@@ -242,7 +247,7 @@ export class MyFleetActions {
       mf.addFilterElement().eq(0).click({ force: true })
       mf.fieldNameElement().eq(1).click({ force: true })
       mf.fieldOpElement().eq(1).click({ force: true })
-      mf.fieldValueElement().eq(0).type(tdata.myFleet.serialno)
+      mf.fieldValueElement().eq(0).type(tdata.myFleet.serialno, { force: true })
       mf.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('not.contain', tdata.myFleet.serialno)
       mf.clearFilterElement().click({ force: true })
@@ -251,7 +256,7 @@ export class MyFleetActions {
       mf.addFilterElement().eq(0).click({ force: true })
       mf.fieldNameElement().eq(1).click({ force: true })
       mf.fieldOpElement().eq(2).click({ force: true })
-      mf.fieldValueElement().eq(0).type(tdata.myFleet.serialno)
+      mf.fieldValueElement().eq(0).type(tdata.myFleet.serialno, { force: true })
       mf.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', tdata.myFleet.serialno)
       mf.clearFilterElement().click({ force: true })

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2081000000
+              "duration": 4917000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7823000000
+              "duration": 5127000000
             }
           },
           {
@@ -42,8 +42,9 @@
             "line": 9,
             "name": "close the terms of service window",
             "result": {
-              "status": "passed",
-              "duration": 12112000000
+              "status": "failed",
+              "duration": 15063000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Dismiss' within the element: <button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.css-t0tdkm> but never did.\n    at SrcStudentsActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/SrcStudentsActions.js:16:28)\n    at Context.eval (cypress/integration/SrcStudents/SrcStudents.spec.js:16:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -52,8 +53,7 @@
             "line": 10,
             "name": "Click on Repair360 page",
             "result": {
-              "status": "passed",
-              "duration": 83000000
+              "status": "skipped"
             }
           },
           {
@@ -62,8 +62,7 @@
             "line": 11,
             "name": "Click on StudentRepairCenter tab",
             "result": {
-              "status": "passed",
-              "duration": 1242000000
+              "status": "skipped"
             }
           },
           {
@@ -72,8 +71,7 @@
             "line": 12,
             "name": "Click on SrcStudents tab",
             "result": {
-              "status": "passed",
-              "duration": 62000000
+              "status": "skipped"
             }
           },
           {
@@ -82,8 +80,7 @@
             "line": 15,
             "name": "Verify the Title of SrcStudents Page",
             "result": {
-              "status": "passed",
-              "duration": 14000000
+              "status": "skipped"
             }
           },
           {
@@ -92,8 +89,7 @@
             "line": 22,
             "name": "Click on filter of Full name contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 4621000000
+              "status": "skipped"
             }
           },
           {
@@ -102,8 +98,7 @@
             "line": 23,
             "name": "Click on filter of Full name Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 591000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +107,7 @@
             "line": 24,
             "name": "Click on filter of Full name Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 587000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +116,7 @@
             "line": 25,
             "name": "Click on filter of Full name Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 591000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +125,7 @@
             "line": 26,
             "name": "Click on filter of Full name Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 521000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +134,7 @@
             "line": 27,
             "name": "Click on filter of Full name Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 529000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +143,7 @@
             "line": 28,
             "name": "Click on filter of Full name Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 462000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +152,7 @@
             "line": 29,
             "name": "Click on filter of Full name Not blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 560000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +161,7 @@
             "line": 31,
             "name": "Click on filter of Title contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2577000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +170,7 @@
             "line": 32,
             "name": "Click on filter of Title Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 909000000
+              "status": "skipped"
             }
           },
           {
@@ -192,8 +179,7 @@
             "line": 33,
             "name": "Click on filter of Title Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 551000000
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +188,7 @@
             "line": 34,
             "name": "Click on filter of Title Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 562000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +197,7 @@
             "line": 35,
             "name": "Click on filter of Title Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 503000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +206,7 @@
             "line": 36,
             "name": "Click on filter of Title Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 532000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +215,7 @@
             "line": 37,
             "name": "Click on filter of Title Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 496000000
+              "status": "skipped"
             }
           },
           {
@@ -242,8 +224,7 @@
             "line": 38,
             "name": "Click on filter of Title Not blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 546000000
+              "status": "skipped"
             }
           },
           {
@@ -252,8 +233,7 @@
             "line": 40,
             "name": "Click on filter of Eamil contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2768000000
+              "status": "skipped"
             }
           },
           {
@@ -262,8 +242,7 @@
             "line": 41,
             "name": "Click on filter of Eamil Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 756000000
+              "status": "skipped"
             }
           },
           {
@@ -272,8 +251,7 @@
             "line": 42,
             "name": "Click on filter of Eamil Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 754000000
+              "status": "skipped"
             }
           },
           {
@@ -282,8 +260,7 @@
             "line": 43,
             "name": "Click on filter of Eamil Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 747000000
+              "status": "skipped"
             }
           },
           {
@@ -292,8 +269,7 @@
             "line": 44,
             "name": "Click on filter of Eamil Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 543000000
+              "status": "skipped"
             }
           },
           {
@@ -302,8 +278,7 @@
             "line": 45,
             "name": "Click on filter of Eamil Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 608000000
+              "status": "skipped"
             }
           },
           {
@@ -312,8 +287,7 @@
             "line": 46,
             "name": "Click on filter of Eamil Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 478000000
+              "status": "skipped"
             }
           },
           {
@@ -322,8 +296,7 @@
             "line": 47,
             "name": "Click on filter of Eamil Not blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 741000000
+              "status": "skipped"
             }
           },
           {
@@ -332,8 +305,7 @@
             "line": 49,
             "name": "Click on filter of User status contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2584000000
+              "status": "skipped"
             }
           },
           {
@@ -342,8 +314,7 @@
             "line": 50,
             "name": "Click on filter of User status Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 583000000
+              "status": "skipped"
             }
           },
           {
@@ -352,8 +323,7 @@
             "line": 51,
             "name": "Click on filter of User status Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 563000000
+              "status": "skipped"
             }
           },
           {
@@ -362,8 +332,7 @@
             "line": 52,
             "name": "Click on filter of User status Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 592000000
+              "status": "skipped"
             }
           },
           {
@@ -372,8 +341,7 @@
             "line": 53,
             "name": "Click on filter of User status Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 538000000
+              "status": "skipped"
             }
           },
           {
@@ -382,8 +350,7 @@
             "line": 54,
             "name": "Click on filter of User status Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 537000000
+              "status": "skipped"
             }
           },
           {
@@ -392,8 +359,7 @@
             "line": 55,
             "name": "Click on filter of User status Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 523000000
+              "status": "skipped"
             }
           },
           {
@@ -402,8 +368,7 @@
             "line": 56,
             "name": "Click on filter of User status Not blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 555000000
+              "status": "skipped"
             }
           },
           {
@@ -412,8 +377,7 @@
             "line": 58,
             "name": "Click on filter of Phone No contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2612000000
+              "status": "skipped"
             }
           },
           {
@@ -422,8 +386,7 @@
             "line": 59,
             "name": "Click on filter of Phone No Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 598000000
+              "status": "skipped"
             }
           },
           {
@@ -432,8 +395,7 @@
             "line": 60,
             "name": "Click on filter of Phone No Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 597000000
+              "status": "skipped"
             }
           },
           {
@@ -442,8 +404,7 @@
             "line": 61,
             "name": "Click on filter of Phone No Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 603000000
+              "status": "skipped"
             }
           },
           {
@@ -452,8 +413,7 @@
             "line": 62,
             "name": "Click on filter of Phone No Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 572000000
+              "status": "skipped"
             }
           },
           {
@@ -462,8 +422,7 @@
             "line": 63,
             "name": "Click on filter of Phone No Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 555000000
+              "status": "skipped"
             }
           },
           {
@@ -472,8 +431,7 @@
             "line": 64,
             "name": "Click on filter of Phone No Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 510000000
+              "status": "skipped"
             }
           },
           {
@@ -482,8 +440,7 @@
             "line": 65,
             "name": "Click on filter of Phone No Not blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 632000000
+              "status": "skipped"
             }
           },
           {
@@ -492,8 +449,7 @@
             "line": 67,
             "name": "Click on filter of User Role contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 4610000000
+              "status": "skipped"
             }
           },
           {
@@ -502,8 +458,7 @@
             "line": 68,
             "name": "Click on filter of User Role Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 597000000
+              "status": "skipped"
             }
           },
           {
@@ -512,8 +467,7 @@
             "line": 69,
             "name": "Click on filter of User Role Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 631000000
+              "status": "skipped"
             }
           },
           {
@@ -522,8 +476,7 @@
             "line": 70,
             "name": "Click on filter of User Role Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 670000000
+              "status": "skipped"
             }
           },
           {
@@ -532,8 +485,7 @@
             "line": 71,
             "name": "Click on filter of User Role Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 587000000
+              "status": "skipped"
             }
           },
           {
@@ -542,8 +494,7 @@
             "line": 72,
             "name": "Click on filter of User Role Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 573000000
+              "status": "skipped"
             }
           },
           {
@@ -552,8 +503,7 @@
             "line": 73,
             "name": "Click on filter of User Role Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 518000000
+              "status": "skipped"
             }
           },
           {
@@ -562,8 +512,7 @@
             "line": 74,
             "name": "Click on filter of User Role Not blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 583000000
+              "status": "skipped"
             }
           },
           {
@@ -572,8 +521,7 @@
             "line": 75,
             "name": "Click on Download Export button",
             "result": {
-              "status": "passed",
-              "duration": 81000000
+              "status": "skipped"
             }
           }
         ]

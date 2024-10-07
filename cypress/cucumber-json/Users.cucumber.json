@@ -22,8 +22,9 @@
             "line": 7,
             "name": "I should navigate to application",
             "result": {
-              "status": "passed",
-              "duration": 1627000000
+              "status": "failed",
+              "duration": 30142000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://dream-frontend-qa.onrender.com/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ESOCKETTIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:131955:74)\n    at visitFailedByErr (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:131354:12)\n    at <unknown> (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:131954:11)\n    at tryCatcher (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:2407:12)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:163227:53)\n    at $Cypress.action (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:41459:28)\n    at Runnable.run (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:145815:13)\n    at next (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:155600:10)\n    at <unknown> (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:155644:5)\n    at timeslice (https://dream-frontend-qa.onrender.com/__cypress/runner/cypress_runner.js:146155:27)\nFrom Your Spec Code:\n    at Context.eval (cypress/integration/Users/Users.spec.js:9:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: ESOCKETTIMEDOUT\n      at ClientRequest.<anonymous> (<embedded>:445:106000)\n      at Object.onceWrapper (node:events:628:28)\n      at ClientRequest.emit (node:events:514:28)\n      at TLSSocket.emitRequestTimeout (node:_http_client:847:9)\n      at Object.onceWrapper (node:events:628:28)\n      at TLSSocket.emit (node:events:526:35)\n      at TLSSocket._onTimeout (node:net:571:8)\n      at listOnTimeout (node:internal/timers:569:17)\n      at process.processTimers (node:internal/timers:512:7)"
             }
           },
           {
@@ -32,8 +33,7 @@
             "line": 8,
             "name": "I should Sign In into the application",
             "result": {
-              "status": "passed",
-              "duration": 8148000000
+              "status": "skipped"
             }
           },
           {
@@ -42,8 +42,7 @@
             "line": 9,
             "name": "Close the terms of service window",
             "result": {
-              "status": "passed",
-              "duration": 9101000000
+              "status": "skipped"
             }
           },
           {
@@ -52,8 +51,61 @@
             "line": 10,
             "name": "Click on Users page",
             "result": {
-              "status": "passed",
-              "duration": 80000000
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should be redirected to the Users page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should click on Add New student",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Enter full name, title and Email",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Enter Phone, Cell Number, role and building",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Click on submit button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Verify the student added in table",
+            "result": {
+              "status": "skipped"
             }
           },
           {
@@ -62,8 +114,7 @@
             "line": 20,
             "name": "Click on filter of Full name contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 4653000000
+              "status": "skipped"
             }
           },
           {
@@ -72,8 +123,7 @@
             "line": 21,
             "name": "Click on filter of Full name Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1049000000
+              "status": "skipped"
             }
           },
           {
@@ -82,8 +132,7 @@
             "line": 22,
             "name": "Click on filter of Full name Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 637000000
+              "status": "skipped"
             }
           },
           {
@@ -92,8 +141,7 @@
             "line": 23,
             "name": "Click on filter of Full name Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 681000000
+              "status": "skipped"
             }
           },
           {
@@ -102,8 +150,7 @@
             "line": 24,
             "name": "Click on filter of Full name Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 879000000
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +159,7 @@
             "line": 25,
             "name": "Click on filter of Full name Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 931000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +168,7 @@
             "line": 26,
             "name": "Click on filter of Full name Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 466000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +177,7 @@
             "line": 29,
             "name": "Click on filter of Eamil contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 3216000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +186,7 @@
             "line": 30,
             "name": "Click on filter of Eamil Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 875000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +195,7 @@
             "line": 31,
             "name": "Click on filter of Eamil Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1247000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +204,7 @@
             "line": 32,
             "name": "Click on filter of Eamil Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 871000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +213,7 @@
             "line": 33,
             "name": "Click on filter of Eamil Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 938000000
+              "status": "skipped"
             }
           },
           {
@@ -182,8 +222,7 @@
             "line": 34,
             "name": "Click on filter of Eamil Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 968000000
+              "status": "skipped"
             }
           },
           {
@@ -192,8 +231,7 @@
             "line": 35,
             "name": "Click on filter of Eamil Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 471000000
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +240,7 @@
             "line": 38,
             "name": "Click on filter of Phone contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 2964000000
+              "status": "skipped"
             }
           },
           {
@@ -212,8 +249,7 @@
             "line": 39,
             "name": "Click on filter of Phone Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 603000000
+              "status": "skipped"
             }
           },
           {
@@ -222,8 +258,7 @@
             "line": 40,
             "name": "Click on filter of Phone Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 955000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +267,7 @@
             "line": 41,
             "name": "Click on filter of Phone Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 624000000
+              "status": "skipped"
             }
           },
           {
@@ -242,8 +276,7 @@
             "line": 42,
             "name": "Click on filter of Phone Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 904000000
+              "status": "skipped"
             }
           },
           {
@@ -252,8 +285,7 @@
             "line": 43,
             "name": "Click on filter of Phone Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 883000000
+              "status": "skipped"
             }
           },
           {
@@ -262,8 +294,7 @@
             "line": 44,
             "name": "Click on filter of Phone Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 471000000
+              "status": "skipped"
             }
           },
           {
@@ -272,8 +303,7 @@
             "line": 47,
             "name": "Click on filter of User Role op1 and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 4602000000
+              "status": "skipped"
             }
           },
           {
@@ -282,8 +312,7 @@
             "line": 48,
             "name": "Click on filter of User Role op2 and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 627000000
+              "status": "skipped"
             }
           },
           {
@@ -292,8 +321,7 @@
             "line": 49,
             "name": "Click on filter of User Role op3 and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 1154000000
+              "status": "skipped"
             }
           },
           {
@@ -302,8 +330,7 @@
             "line": 50,
             "name": "Click on filter of User Role op4 and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 574000000
+              "status": "skipped"
             }
           },
           {
@@ -312,8 +339,7 @@
             "line": 51,
             "name": "Click on filter of User Role op5 and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 584000000
+              "status": "skipped"
             }
           },
           {
@@ -322,8 +348,7 @@
             "line": 52,
             "name": "Click on filter of User Role op6 and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 583000000
+              "status": "skipped"
             }
           },
           {
@@ -332,8 +357,7 @@
             "line": 53,
             "name": "Click on filter of User Role op7 and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 573000000
+              "status": "skipped"
             }
           },
           {
@@ -342,8 +366,7 @@
             "line": 54,
             "name": "Click on filter of User Role op8 and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 561000000
+              "status": "skipped"
             }
           },
           {
@@ -352,8 +375,7 @@
             "line": 55,
             "name": "Click on filter of User Role op9 and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 562000000
+              "status": "skipped"
             }
           },
           {
@@ -362,8 +384,7 @@
             "line": 58,
             "name": "Click on filter of Organizational Unit contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 4923000000
+              "status": "skipped"
             }
           },
           {
@@ -372,8 +393,7 @@
             "line": 59,
             "name": "Click on filter of Organizational Unit Does not contain and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 502000000
+              "status": "skipped"
             }
           },
           {
@@ -382,8 +402,7 @@
             "line": 60,
             "name": "Click on filter of Organizational Unit Equals and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 854000000
+              "status": "skipped"
             }
           },
           {
@@ -392,8 +411,7 @@
             "line": 61,
             "name": "Click on filter of Organizational Unit Does not equal and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 539000000
+              "status": "skipped"
             }
           },
           {
@@ -402,8 +420,7 @@
             "line": 62,
             "name": "Click on filter of Organizational Unit Begins with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 940000000
+              "status": "skipped"
             }
           },
           {
@@ -412,8 +429,7 @@
             "line": 63,
             "name": "Click on filter of Organizational Unit Ends with and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 916000000
+              "status": "skipped"
             }
           },
           {
@@ -422,8 +438,7 @@
             "line": 64,
             "name": "Click on filter of Organizational Unit Blank and Verify the Result",
             "result": {
-              "status": "passed",
-              "duration": 492000000
+              "status": "skipped"
             }
           }
         ]

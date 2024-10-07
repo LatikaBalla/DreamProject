@@ -82,7 +82,7 @@ export class SrcStudentsActions {
     }
     clickOnASubmitButton() {
         //  ss.submitElement().click({ force: true })
-        cy.get('.MuiDialogActions-root > .MuiButtonBase-root').click({ force: true })
+        cy.get('.MuiDialogActions-root > .MuiButtonBase-root').eq(0).click({ force: true })
     }
     verifyRecordTable() {
         cy.wait(1000)

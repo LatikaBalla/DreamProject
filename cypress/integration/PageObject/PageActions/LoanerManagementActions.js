@@ -12,7 +12,7 @@ export class LoanerManagementActions {
     }
     closeTermsOfServiceWindow() {
         cy.wait(5000)
-        dash.termsElement().contains('Dismiss').click({ force: true })
+   dash.termsElement().contains('Dismiss').click({ force: true })
         cy.wait(1000)
     }
     clickOnManageDevices() {
@@ -124,7 +124,7 @@ export class LoanerManagementActions {
         loan.fieldOpElement().eq(0).click({ force: true })
         loan.fieldValueElement().clear().type(tdata.loanerManagement.serialno2)
         loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(1).should('contain', tdata.loanerManagement.serialno2)
+        cy.get('[row-index="0"]').should('contain', tdata.loanerManagement.serialno2)
         loan.deviceIconElement().eq(1).click({ force: true })
     }
     clickOnViewHistory() {

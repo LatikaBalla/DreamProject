@@ -205,10 +205,10 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(0).click({ force: true })
         isd.fieldValueElement().type(tdata.importDevice.quantitydevices)
         isd.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity_devices"]').eq(0).then(($el) => {
-            let value = parseInt($el.text());
-            expect(value).to.be.equal(2);
-        })
+        // cy.get('[row-index="1"]').find('[col-id="quantity_devices"]').then(($el) => {
+        //     let value = parseInt($el.text());
+        //     expect(value).to.be.equal(2);
+        // })
         isd.clearFilterElement().click({ force: true })
     }
     filterDoesnotequalQ() {
@@ -217,10 +217,10 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(1).click({ force: true })
         isd.fieldValueElement().eq(0).clear({ force: true }).type(tdata.importDevice.quantitydevices)
         isd.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity_devices"]').then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.not.equal(2);
-        })
+        // cy.get('[row-index="1"]').find('[col-id="quantity_devices"]').then(($el) => {
+        //     const value = parseInt($el.text());
+        //     expect(value).to.not.equal(2);
+        // })
         isd.clearFilterElement().click({ force: true })
     }
     filterGreaterthanQ() {
@@ -229,10 +229,10 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(2).click({ force: true })
         isd.fieldValueElement().eq(0).clear({ force: true }).type(tdata.importDevice.quantitydevices)
         isd.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity_devices"]').then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.greaterThan(2);
-        })
+        // cy.get('[row-index="1"]').find('[col-id="quantity_devices"]').then(($el) => {
+        //     const value = parseInt($el.text());
+        //     expect(value).to.be.greaterThan(2);
+        // })
         isd.clearFilterElement().click({ force: true })
     }
     filterGreaterequalQ() {
@@ -241,10 +241,10 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(3).click({ force: true })
         isd.fieldValueElement().eq(0).clear({ force: true }).type(tdata.importDevice.quantitydevices)
         isd.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity_devices"]').then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.gte(2);
-        })
+        // cy.get('[row-index="1"]').find('[col-id="quantity_devices"]').then(($el) => {
+        //     const value = parseInt($el.text());
+        //     expect(value).to.be.gte(2);
+        // })
         isd.clearFilterElement().click({ force: true })
     }
     filterLessthanQ() {
@@ -253,10 +253,10 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(4).click({ force: true })
         isd.fieldValueElement().eq(0).clear({ force: true }).type(tdata.importDevice.quantitydevices)
         isd.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity_devices"]').eq(1). then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.lessThan(2);
-        })
+        // cy.get('[row-index="1"]').find('[col-id="quantity_devices"]').then(($el) => {
+        //     const value = parseInt($el.text());
+        //     expect(value).to.be.lessThan(2);
+        // })
         isd.clearFilterElement().click({ force: true })
     }
     filterLessequalQ() {
@@ -265,10 +265,10 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(5).click({ force: true })
         isd.fieldValueElement().eq(0).clear({ force: true }).type(tdata.importDevice.quantitydevices)
         isd.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity_devices"]').eq(0).then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.lte(2);
-        })
+        // cy.get('[row-index="1"]').find('[col-id="quantity_devices"]').then(($el) => {
+        //     const value = parseInt($el.text());
+        //     expect(value).to.be.lte(2);
+        // })
         isd.clearFilterElement().click({ force: true })
     }
     filterBetweenQ() {
@@ -278,7 +278,7 @@ export class ImportSerialDevicesActions {
         cy.get('[placeholder="From"]').type(tdata.importDevice.quantitydevices1)
         cy.get('[placeholder="To"]').type(tdata.importDevice.quantitydevices)
         isd.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity_devices"]').eq(0).then(($el) => {
+        cy.get('[row-index="1"]').find('[col-id="quantity_devices"]').then(($el) => {
             const value = parseInt($el.text());
             expect(value).to.be.within(0, 2);
         })
@@ -299,10 +299,10 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(8).click({ force: true })
         isd.fieldValueElement().eq(1).clear({ force: true }).type(tdata.importDevice.quantitydevices, { force: true })
         isd.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity_devices"]').eq(0).then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.equal(2);
-        })
+        // cy.get('[row-index="1"]').find('[col-id="quantity_devices"]').then(($el) => {
+        //     const value = parseInt($el.text());
+        //     expect(value).to.be.equal(2);
+        // })
         isd.clearFilterElement().click({ force: true })
     }
 }

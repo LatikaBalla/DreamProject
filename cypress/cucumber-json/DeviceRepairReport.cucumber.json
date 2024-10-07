@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 3597000000
+              "duration": 2417000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6224000000
+              "duration": 10023000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "failed",
-              "duration": 17567000000,
+              "duration": 17276000000,
               "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Dismiss' within the element: <button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.css-t0tdkm> but never did.\n    at ReportCenterActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/ReportCenterActions.js:12:28)\n    at Context.eval (cypress/integration/DeviceRepairReport/DeviceRepairReport.spec.js:17:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },

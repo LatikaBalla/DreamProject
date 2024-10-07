@@ -192,7 +192,7 @@ And('Click on filter of Building Not blank and Verify the Result', () => {
 })
 //Rsite
 And('Click on filter of Return Site contain and Verify the Result', () => {
-    rt.filterContainRsite()
+    rt.filterContainclickOnRemoveButton
 })
 And('Click on filter of Return Site Does not contain and Verify the Result', () => {
     rt.filterDoesnotcontainRsite()
