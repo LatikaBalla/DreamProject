@@ -232,4 +232,24 @@ export default class RepairBoxesElements {
             timeout: 30000,
         })
     }
+    sortDescendingElement() {
+        return cy.contains(locator.repairBoxes.sortDescending, {
+            timeout: 30000,
+        })
+    }
+    sortAscendingElement() {
+        return cy.contains(locator.repairBoxes.sortAscending, {
+            timeout: 30000,
+        })
+    }
+    clearSortElement() {
+        return cy.contains(locator.repairBoxes.clearSort, {
+            timeout: 30000,
+        })
+    }
+    optionElement() {
+        return cy.get(locator.repairBoxes.option, {
+            timeout: 30000,
+        })
+    }
 }

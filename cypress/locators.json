@@ -441,7 +441,8 @@
         "custompart": "Custom Part",
         "option":"[data-ref='eMenu']",
         "sortAscending":"Sort Ascending",
-        "sortDescending":"Sort Descending"
+        "sortDescending":"Sort Descending",
+        "clearSort":"Clear Sort"
     },
     "repairBoxes": {
         "title": "Repair 360",
@@ -488,7 +489,11 @@
         "notetype": "#note_type",
         "createnote": "button[type='submit']",
         "imageIcon":"[data-testid='ImageIcon']",
-        "pdfIcon":"[data-testid='PictureAsPdfIcon']"
+        "pdfIcon":"[data-testid='PictureAsPdfIcon']",
+        "option":"[data-ref='eMenu']",
+        "sortAscending":"Sort Ascending",
+        "sortDescending":"Sort Descending",
+        "clearSort":"Clear Sort"
     },
     "inhouseRepairCenter": {
         "title": "In-House Repair",

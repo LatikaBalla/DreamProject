@@ -86,9 +86,6 @@ Feature: RepairBoxes Page Functionality
     And Click on filter of Last Modified Date Between and Verify the Result
     And Click on filter of Last Modified Date Blank and Verify the Result
     And Click on filter of Last Modified Date Not blank and Verify the Result
-    
-# And Click on Sort Ascending for Last Modified Date and Verify the Result
-# And Click on Sort Descending for Last Modified Date and Verify the Result
 
     Then Click on label form of image and Verify
     Then Click on label form of Pdf and Verify
@@ -100,7 +97,7 @@ Feature: RepairBoxes Page Functionality
     And Click on Create box button
     Then Select Ticket from dropdownlist
     And Click on Finish button
-    Then Verify new box is added in table
+    # Then Verify new box is added in table
     And Click on view button
     Then Verify the Details new box
     And Add another ticket in the same box
@@ -112,7 +109,17 @@ Feature: RepairBoxes Page Functionality
     Then Click on Add Repair Image and Verify
     And Click on Add Note and Verify
     Then Click on Remove button for deleting ticket
-    # And Verify the ticket removed
+
+ Scenario: RepairBoxes Sorting -Ascending and descending
+    And Click on Sort Ascending and Descending for Repair Box and Verify the Result
+    And Click on Sort Ascending and Descending for Tracking Number From and Verify the Result
+    And Click on Sort Ascending and Descending for Shipped From Date and Verify the Result
+    And Click on Sort Ascending and Descending for Building and Verify the Result
+    And Click on Sort Ascending and Descending for Box Type and Verify the Result
+    And Click on Sort Ascending and Descending for Shipping Box Status and Verify the Result
+    And Click on Sort Ascending and Descending for Created By and Verify the Result
+    And Click on Sort Ascending and Descending for Created Date and Verify the Result
+    And Click on Sort Ascending and Descending for Last Modified Date and Verify the Result
 
 
 

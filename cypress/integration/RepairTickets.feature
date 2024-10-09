@@ -9,7 +9,7 @@ Feature:RepairTickets Page Functionality
     Then close the terms of service window
     Then Click on Repair360 page
 
-  Scenario:Visiblity check  Create a ticket download export,view and search with all type
+  Scenario:Visiblity check Create a ticket download export,view and search with all type
     And Verify the Title of RepairTickets Page
     And Click on filter of Ticket Number contain and Verify the Result
     And Click on filter of Ticket Number Does not contain and Verify the Result
@@ -139,35 +139,6 @@ Feature:RepairTickets Page Functionality
     And Click on filter of Last Modified Date Blank and Verify the Result
     And Click on filter of Last Modified Date Not blank and Verify the Result
 
-    # And Click on Sort Ascending for Ticket Number and Verify the Result
-    # And Click on Sort Descending for Ticket Number and Verify the Result
-    # And Click on Sort Ascending for Repair Type and Verify the Result
-    # And Click on Sort Descending for Repair Type and Verify the Result
-    # And Click on Sort Ascending for Serial Number and Verify the Result
-    # And Click on Sort Descending for Serial Number and Verify the Result
-    # And Click on Sort Ascending for Building and Verify the Result
-    # And Click on Sort Descending for Building and Verify the Result
-
-    # And Click on Sort Ascending for Repair Device and Verify the Result
-    # And Click on Sort Descending for Repair Device and Verify the Result
-    # And Click on Sort Ascending for Asset Tag and Verify the Result
-    # And Click on Sort Descending for Asset Tag and Verify the Result
-    # And Click on Sort Ascending for Student Info and Verify the Result
-    # And Click on Sort Descending for Student Info and Verify the Result
-    # And Click on Sort Ascending for Student Technician and Verify the Result
-    # And Click on Sort Descending for Student Technician and Verify the Result
-
-    # And Click on Sort Ascending for Repair Status and Verify the Result
-    # And Click on Sort Descending for Repair Status and Verify the Result
-    # And Click on Sort Ascending for Created By and Verify the Result
-    # And Click on Sort Descending for Created By and Verify the Result
-    # And Click on Sort Ascending for Repair Box and Verify the Result
-    # And Click on Sort Descending for Repair Box and Verify the Result
-    # And Click on Sort Ascending for Created Date and Verify the Result
-    # And Click on Sort Descending for Created Date and Verify the Result
-    # And Click on Sort Ascending for Last Modified Date and Verify the Result
-    # And Click on Sort Descending for Last Modified Date and Verify the Result
-
     Then I should click on create new ticket
     Then Select failure Type, Return site and Serial Device
     And Select Building and Chromebook issue
@@ -179,9 +150,25 @@ Feature:RepairTickets Page Functionality
     Then Verify the Details of student repair ticket
     Then Click on Add Repair Image and Verify
     And Click on Add Note and Verify
-# And Click on Add Line and Verify
-# And Click on the Edit Ticket Button
-# Then Update the Technician and Repair Status
-# And Click on Update Button
-# Then Verify Updated successfully
+  # And Click on Add Line and Verify
+  # And Click on the Edit Ticket Button
+  # Then Update the Technician and Repair Status
+  # And Click on Update Button
+  # Then Verify Updated successfully
+
+  Scenario: RepairTickets Sorting -Ascending and descending
+    And Click on Sort Ascending and Descending for Ticket Number and Verify the Result
+    And Click on Sort Ascending and Descending for Repair Type and Verify the Result
+    And Click on Sort Ascending and Descending for Serial Number and Verify the Result
+    And Click on Sort Ascending and Descending for Building and Verify the Result
+    And Click on Sort Ascending and Descending for Return Site and Verify the Result
+    And Click on Sort Ascending and Descending for Repair Device and Verify the Result
+    And Click on Sort Ascending and Descending for Asset Tag and Verify the Result
+    And Click on Sort Ascending and Descending for Student Info and Verify the Result
+    And Click on Sort Ascending and Descending for Student Technician and Verify the Result
+    And Click on Sort Ascending and Descending for Repair Status and Verify the Result
+    And Click on Sort Ascending and Descending for Created By and Verify the Result
+    And Click on Sort Ascending and Descending for Repair Box and Verify the Result
+    And Click on Sort Ascending and Descending for Created Date and Verify the Result
+    And Click on Sort Ascending and Descending for Last Modified Date and Verify the Result
 

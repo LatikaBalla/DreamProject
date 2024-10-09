@@ -1185,5 +1185,131 @@ export class RepairTicketsActions {
         cy.get('[row-index="0"]').should('contain', tdata.repairTickets.lastModifiedDate1)
         rt.clearFilterElement().click({ force: true })
     }
+    sortingTN(){
+        cy.wait(1000)
+        rt.optionElement().eq(1).click({ force: true })
+        rt.sortAscendingElement().click({ force: true })
+        rt.optionElement().eq(1).click({ force: true })
+        rt.sortDescendingElement().click({ force: true })
+        rt.optionElement().eq(1).click({ force: true })
+        cy.contains('Clear Sort').click({ force: true })
+    }
+    sortingRT(){
+        cy.wait(1000)
+        rt.optionElement().eq(2).click({ force: true })
+        rt.sortAscendingElement().click({ force: true })
+        rt.optionElement().eq(2).click({ force: true })
+        rt.sortDescendingElement().click({ force: true })
+        rt.optionElement().eq(2).click({ force: true })
+        cy.contains('Clear Sort').click({ force: true })
+    }
+    sortingSN(){
+        cy.wait(1000)
+        rt.optionElement().eq(3).click({ force: true })
+        rt.sortAscendingElement().click({ force: true })
+        rt.optionElement().eq(3).click({ force: true })
+        rt.sortDescendingElement().click({ force: true })
+        rt.optionElement().eq(3).click({ force: true })
+        cy.contains('Clear Sort').click({ force: true })
+    }
+    sortingB(){
+        cy.wait(1000)
+        rt.optionElement().eq(4).click({ force: true })
+        rt.sortAscendingElement().click({ force: true })
+        rt.optionElement().eq(4).click({ force: true })
+        rt.sortDescendingElement().click({ force: true })
+        rt.optionElement().eq(4).click({ force: true })
+        rt.clearSortElement().click({ force: true })
+    }
+    sortingRSite(){
+        cy.wait(1000)
+        rt.optionElement().eq(5).click({ force: true })
+        rt.sortAscendingElement().click({ force: true })
+        rt.optionElement().eq(5).click({ force: true })
+        rt.sortDescendingElement().click({ force: true })
+        rt.optionElement().eq(5).click({ force: true })
+        rt.clearSortElement().click({ force: true })
+    }
+    sortingRD(){
+        cy.wait(1000)
+        rt.optionElement().eq(6).click({ force: true })
+        rt.sortAscendingElement().click({ force: true })
+        rt.optionElement().eq(6).click({ force: true })
+        rt.sortDescendingElement().click({ force: true })
+        rt.optionElement().eq(6).click({ force: true })
+        rt.clearSortElement().click({ force: true })
+    }
+    sortingTag(){
+        cy.wait(1000)
+        rt.optionElement().eq(7).click({ force: true })
+        rt.sortAscendingElement().click({ force: true })
+        rt.optionElement().eq(7).click({ force: true })
+        rt.sortDescendingElement().click({ force: true })
+        rt.optionElement().eq(7).click({ force: true })
+        rt.clearSortElement().click({ force: true })
+    }
+    sortingInfo(){
+        cy.wait(1000)
+        rt.optionElement().eq(8).click({ force: true })
+        rt.sortAscendingElement().click({ force: true })
+        rt.optionElement().eq(8).click({ force: true })
+        rt.sortDescendingElement().click({ force: true })
+        rt.optionElement().eq(8).click({ force: true })
+        rt.clearSortElement().click({ force: true })
+    }
+    sortingST(){
+        cy.wait(1000)
+        rt.optionElement().eq(9).click({ force: true })
+        rt.sortAscendingElement().click({ force: true })
+        rt.optionElement().eq(9).click({ force: true })
+        rt.sortDescendingElement().click({ force: true })
+        rt.optionElement().eq(9).click({ force: true })
+        rt.clearSortElement().click({ force: true })
+    }
+    sortingRS(){
+        cy.wait(1000)
+        rt.optionElement().eq(10).click({ force: true })
+        rt.sortAscendingElement().click({ force: true })
+        rt.optionElement().eq(10).click({ force: true })
+        rt.sortDescendingElement().click({ force: true })
+        rt.optionElement().eq(10).click({ force: true })
+        rt.clearSortElement().click({ force: true })
+    }
+    sortingCby(){
+        cy.wait(1000)
+        rt.optionElement().eq(11).click({ force: true })
+        rt.sortAscendingElement().click({ force: true })
+        rt.optionElement().eq(11).click({ force: true })
+        rt.sortDescendingElement().click({ force: true })
+        rt.optionElement().eq(11).click({ force: true })
+        rt.clearSortElement().click({ force: true })
+    }
+    sortingBox(){
+        cy.wait(1000)
+        rt.optionElement().eq(12).click({ force: true })
+        rt.sortAscendingElement().click({ force: true })
+        rt.optionElement().eq(12).click({ force: true })
+        rt.sortDescendingElement().click({ force: true })
+        rt.optionElement().eq(12).click({ force: true })
+        rt.clearSortElement().click({ force: true })
+    }
+    sortingCdate(){
+        cy.wait(1000)
+        rt.optionElement().eq(13).click({ force: true })
+        rt.sortAscendingElement().click({ force: true })
+        rt.optionElement().eq(13).click({ force: true })
+        rt.sortDescendingElement().click({ force: true })
+        rt.optionElement().eq(13).click({ force: true })
+        rt.clearSortElement().click({ force: true })
+    }
+    sortingLdate(){
+        cy.wait(1000)
+        rt.optionElement().eq(14).click({ force: true })
+        rt.sortAscendingElement().click({ force: true })
+        rt.optionElement().eq(14).click({ force: true })
+        rt.sortDescendingElement().click({ force: true })
+        rt.optionElement().eq(14).click({ force: true })
+        rt.clearSortElement().click({ force: true })
+    }
 }
 export default RepairTicketsActions 

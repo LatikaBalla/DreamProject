@@ -246,4 +246,9 @@ export default class RepairTicketsElements {
             timeout: 30000,
         })
     }
+    clearSortElement() {
+        return cy.contains(locator.repairTickets.clearSort, {
+            timeout: 30000,
+        })
+    }
 }

@@ -311,7 +311,34 @@ And('Click on filter of Last Modified Date Blank and Verify the Result', () => {
 And('Click on filter of Last Modified Date Not blank and Verify the Result', () => {
     rb.filterNotblankLDate()
 })
-
+//sorting
+And ('Click on Sort Ascending and Descending for Repair Box and Verify the Result',()=>{
+    rb.sortingRBox()
+})
+And ('Click on Sort Ascending and Descending for Tracking Number From and Verify the Result',()=>{
+    rb.sortingTN()
+})
+And ('Click on Sort Ascending and Descending for Shipped From Date and Verify the Result',()=>{
+    rb.sortingSDate()
+})
+And ('Click on Sort Ascending and Descending for Building and Verify the Result',()=>{
+    rb.sortingBuilding()
+})
+And ('Click on Sort Ascending and Descending for Box Type and Verify the Result',()=>{
+    rb.sortingBType()
+})
+And ('Click on Sort Ascending and Descending for Shipping Box Status and Verify the Result',()=>{
+    rb.sortingSBox()
+})
+And ('Click on Sort Ascending and Descending for Created By and Verify the Result',()=>{
+    rb.sortingCBy()
+})
+And ('Click on Sort Ascending and Descending for Created Date and Verify the Result',()=>{
+    rb.sortingCdate()
+})
+And ('Click on Sort Ascending and Descending for Last Modified Date and Verify the Result',()=>{
+    rb.sortingLdate()
+})
 
 
 

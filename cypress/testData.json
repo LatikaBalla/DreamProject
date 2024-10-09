@@ -231,7 +231,7 @@
     "height": "10",
     "depth": "10",
     "width": "10",
-    "pickupsite": "[data-value='2372']",
+    "pickupsite": "[data-value='2328']",
     "boxcreatedmsg": "New box submitted",
     "filename": "Image.png",
     "trackingnumber": "1Z6X34470301107750",
@@ -239,7 +239,6 @@
     "repairbox": "10584",
     "repairbox1": "9941",
     "labelfrom": "",
-
     "shippeddate": "2023-08-29",
     "shippeddate1": "08-29-2023",
     "shippingcost": "$23.36",

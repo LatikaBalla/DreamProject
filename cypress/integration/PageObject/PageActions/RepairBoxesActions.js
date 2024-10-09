@@ -90,7 +90,7 @@ export class RepairBoxesActions {
         cy.get('tbody tr').eq(0).find('td').eq(8).scrollIntoView().contains('Details').click({ force: true })
     }
     verifyTicketDetails() {
-        cy.wait(1000)
+        cy.wait(2000)
         cy.contains('Repair Ticket Details').scrollIntoView().should('be.visible')
     }
     clickOnBackButton() {
@@ -359,7 +359,7 @@ export class RepairBoxesActions {
             const dateObj1 = new Date(reformattedDate);
             const timestamp1 = dateObj1.getTime();
             expect(timestamp1).to.be.lessThan(timestamp)
-            
+
         })
         rb.clearFilterElement().click({ force: true })
     }
@@ -498,7 +498,7 @@ export class RepairBoxesActions {
         rb.fieldOpElement().eq(1).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.boxtype)
         rb.applyElement().click({ force: true })
-      //  cy.get('[row-index="0"]').should('not.contain', tdata.repairBox.boxtype)
+        //  cy.get('[row-index="0"]').should('not.contain', tdata.repairBox.boxtype)
         rb.clearFilterElement().click({ force: true })
     }
     filterEqualsBT() {
@@ -804,6 +804,87 @@ export class RepairBoxesActions {
         rb.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('not.contain', tdata.repairBox.lastdate1)
         rb.clearFilterElement().click({ force: true })
+    }
+    sortingRBox() {
+        cy.wait(1000)
+        rb.optionElement().eq(2).click({ force: true })
+        rb.sortAscendingElement().click({ force: true })
+        rb.optionElement().eq(2).click({ force: true })
+        rb.sortDescendingElement().click({ force: true })
+        rb.optionElement().eq(2).click({ force: true })
+        rb.clearSortElement().click({ force: true })
+    }
+    sortingTN() {
+        cy.wait(1000)
+        rb.optionElement().eq(3).click({ force: true })
+        rb.sortAscendingElement().click({ force: true })
+        rb.optionElement().eq(3).click({ force: true })
+        rb.sortDescendingElement().click({ force: true })
+        rb.optionElement().eq(3).click({ force: true })
+        rb.clearSortElement().click({ force: true })
+    }
+    sortingSDate() {
+        cy.wait(1000)
+        rb.optionElement().eq(4).click({ force: true })
+        rb.sortAscendingElement().click({ force: true })
+        rb.optionElement().eq(4).click({ force: true })
+        rb.sortDescendingElement().click({ force: true })
+        rb.optionElement().eq(4).click({ force: true })
+        rb.clearSortElement().click({ force: true })
+    }
+    sortingBuilding() {
+        cy.wait(1000)
+        rb.optionElement().eq(5).click({ force: true })
+        rb.sortAscendingElement().click({ force: true })
+        rb.optionElement().eq(5).click({ force: true })
+        rb.sortDescendingElement().click({ force: true })
+        rb.optionElement().eq(5).click({ force: true })
+        rb.clearSortElement().click({ force: true })
+    }
+    sortingBType() {
+        cy.wait(1000)
+        rb.optionElement().eq(6).click({ force: true })
+        rb.sortAscendingElement().click({ force: true })
+        rb.optionElement().eq(6).click({ force: true })
+        rb.sortDescendingElement().click({ force: true })
+        rb.optionElement().eq(6).click({ force: true })
+        rb.clearSortElement().click({ force: true })
+    }
+    sortingSBox() {
+        cy.wait(1000)
+        rb.optionElement().eq(7).click({ force: true })
+        rb.sortAscendingElement().click({ force: true })
+        rb.optionElement().eq(7).click({ force: true })
+        rb.sortDescendingElement().click({ force: true })
+        rb.optionElement().eq(7).click({ force: true })
+        rb.clearSortElement().click({ force: true })
+    }
+    sortingCBy() {
+        cy.wait(1000)
+        rb.optionElement().eq(8).click({ force: true })
+        rb.sortAscendingElement().click({ force: true })
+        rb.optionElement().eq(8).click({ force: true })
+        rb.sortDescendingElement().click({ force: true })
+        rb.optionElement().eq(8).click({ force: true })
+        rb.clearSortElement().click({ force: true })
+    }
+    sortingCdate() {
+        cy.wait(1000)
+        rb.optionElement().eq(9).click({ force: true })
+        rb.sortAscendingElement().click({ force: true })
+        rb.optionElement().eq(9).click({ force: true })
+        rb.sortDescendingElement().click({ force: true })
+        rb.optionElement().eq(9).click({ force: true })
+        rb.clearSortElement().click({ force: true })
+    }
+    sortingLdate() {
+        cy.wait(1000)
+        rb.optionElement().eq(10).click({ force: true })
+        rb.sortAscendingElement().click({ force: true })
+        rb.optionElement().eq(10).click({ force: true })
+        rb.sortDescendingElement().click({ force: true })
+        rb.optionElement().eq(10).click({ force: true })
+        rb.clearSortElement().click({ force: true })
     }
 }
 export default RepairBoxesActions 

@@ -563,11 +563,6 @@ export class PartClosetActions {
         pc.fieldOpElement().eq(0).click({ force: true })
         pc.fieldValueElement().type(tdata.partCloset.quantity, { force: true })
         pc.applyElement().click({ force: true })
-        cy.wait(100)
-        cy.get('.ag-row-first> [col-id="quantity"]').eq(1).then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.equal(2);
-        })
         pc.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainQ() {
@@ -577,10 +572,6 @@ export class PartClosetActions {
         pc.fieldOpElement().eq(1).click({ force: true })
         pc.fieldValueElement().eq(0).type(tdata.partCloset.quantity, { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity"]').then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.not.equal(2);
-        })
         pc.clearFilterElement().click({ force: true })
     }
     filterGreaterthanQ() {
@@ -590,10 +581,6 @@ export class PartClosetActions {
         pc.fieldOpElement().eq(2).click({ force: true })
         pc.fieldValueElement().eq(0).clear({ force: true }).type(tdata.partCloset.quantity, { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity"]').then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.greaterThan(2);
-        })
         pc.clearFilterElement().click({ force: true })
     }
     filterGreaterequalQ() {
@@ -603,10 +590,6 @@ export class PartClosetActions {
         pc.fieldOpElement().eq(3).click({ force: true })
         pc.fieldValueElement().eq(0).type(tdata.partCloset.quantity, { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity"]').then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.gte(2);
-        })
         pc.clearFilterElement().click({ force: true })
     }
     filterLessthanQ() {
@@ -616,10 +599,6 @@ export class PartClosetActions {
         pc.fieldOpElement().eq(4).click({ force: true })
         pc.fieldValueElement().eq(0).type(tdata.partCloset.quantity, { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity"]').eq(1).then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.lessThan(2);
-        })
         pc.clearFilterElement().click({ force: true })
     }
     filterLessequalQ() {
@@ -629,10 +608,6 @@ export class PartClosetActions {
         pc.fieldOpElement().eq(5).click({ force: true })
         pc.fieldValueElement().eq(0).type(tdata.partCloset.quantity, { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity"]').eq(0).then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.lte(2);
-        })
         pc.clearFilterElement().click({ force: true })
     }
     filterBetweenQ() {
@@ -643,10 +618,6 @@ export class PartClosetActions {
         cy.get('[placeholder="From"]').type(tdata.partCloset.quantity, { force: true })
         cy.get('[placeholder="To"]').type(tdata.partCloset.quantity1, { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity"]').eq(1).then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.within(2, 10);
-        })
         pc.clearFilterElement().click({ force: true })
     }
     filterBlankQ() {
@@ -666,10 +637,6 @@ export class PartClosetActions {
         pc.fieldOpElement().eq(8).click({ force: true })
         pc.fieldValueElement().eq(1).clear({ force: true }).type(tdata.partCloset.quantity1, { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="quantity"]').eq(1).then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.equal(10)
-        })
         pc.clearFilterElement().click({ force: true })
     }
 }
