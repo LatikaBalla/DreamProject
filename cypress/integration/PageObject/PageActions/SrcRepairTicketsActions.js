@@ -225,7 +225,7 @@ export class SrcRepairTicketsActions {
         cy.get('[placeholder="From"]').type(tdata.srcRepairTicket.recordid1)
         cy.get('[placeholder="To"]').type(tdata.srcRepairTicket.recordid)
         srt.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="record_id"]').eq(0).then(($el) => {
+        cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
            const value = parseInt($el.text());
            expect(value).to.be.within(70773,74493);
         })

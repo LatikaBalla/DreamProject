@@ -78,5 +78,12 @@ export class FavoriteActions {
     clickOnStarSrcRepairTickets(){
         fv.starElement().click({ force: true })
     }
+    clickOnviewRepairTicket(){
+        cy.contains('Repair Ticket Details').click({ force: true })
+    }
+    verifyDetails(){
+        cy.contains('Repair Ticket Details').should('be.visible')
+    }
+
 }
 export default FavoriteActions 

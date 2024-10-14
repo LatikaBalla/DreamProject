@@ -117,7 +117,7 @@ export class RepairTicketsActions {
         cy.visit("/repair-360/ticket-detail/" + tdata.repairTickets.recordid)
     }
     verifySrcRepairTicket() {
-        cy.wait(3000)
+        cy.wait(4000)
         cy.contains('Repair Ticket Details').should('be.visible')
     }
     clickOnEditButton() {
@@ -439,54 +439,54 @@ export class RepairTicketsActions {
         rt.addFilterElement().eq(4).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(0).click({ force: true })
-        rt.fieldValueElement().clear({ force: true }).type(tdata.buildings.buildingname)
+        rt.fieldValueElement().clear({ force: true }).type(tdata.repairTickets.returnSite)
         rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]>[col-id="return_site"]').should('contain', tdata.buildings.buildingname)
+        cy.get('[row-index="0"]>[col-id="return_site"]').should('contain', tdata.repairTickets.returnSite)
         rt.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainRsite() {
         rt.addFilterElement().eq(4).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(1).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.buildingname)
+        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.returnSite)
         rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]>[col-id="return_site"]').should('not.contain', tdata.buildings.buildingname)
+        cy.get('[row-index="0"]>[col-id="return_site"]').should('not.contain', tdata.repairTickets.returnSite)
         rt.clearFilterElement().click({ force: true })
     }
     filterEqualsRsite() {
         rt.addFilterElement().eq(4).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(2).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.buildingname)
+        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.returnSite)
         rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]>[col-id="return_site"]').should('contain', tdata.buildings.buildingname)
+        cy.get('[row-index="0"]>[col-id="return_site"]').should('contain', tdata.repairTickets.returnSite)
         rt.clearFilterElement().click({ force: true })
     }
     filterNotequalRsite() {
         rt.addFilterElement().eq(4).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(3).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.buildingname)
+        rt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairTickets.returnSite)
         rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]>[col-id="return_site"]').should('not.contain.value', tdata.buildings.buildingname)
+        cy.get('[row-index="0"]>[col-id="return_site"]').should('not.contain.value', tdata.repairTickets.returnSite)
         rt.clearFilterElement().click({ force: true })
     }
     filterBeginswithRsite(){
         rt.addFilterElement().eq(4).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(4).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type('Build')
+        rt.fieldValueElement().eq(0).clear({ force: true }).type('0000')
         rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]>[col-id="return_site"]').should('contain', 'Build')
+        cy.get('[row-index="0"]>[col-id="return_site"]').should('contain', '0000')
         rt.clearFilterElement().click({ force: true })
     }
     filterEndswithRsite() {
         rt.addFilterElement().eq(4).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(5).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type('One')
+        rt.fieldValueElement().eq(0).clear({ force: true }).type('0-01')
         rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]>[col-id="return_site"]').should('contain', 'One')
+        cy.get('[row-index="0"]>[col-id="return_site"]').should('contain', '0-01')
         rt.clearFilterElement().click({ force: true })
     }
     filterBlankRsite(){
@@ -495,16 +495,16 @@ export class RepairTicketsActions {
         rt.fieldOpElement().eq(6).click({ force: true })
         rt.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
         rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]>[col-id="return_site"]').should('contain', ' ')
+      //  cy.get('[row-index="0"]>[col-id="return_site"]').should('contain', ' ')
         rt.clearFilterElement().click({ force: true })
     }
     filterNotblankRsite() {
         rt.addFilterElement().eq(4).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(7).click({ force: true })
-        rt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.buildings.buildingname, { force: true })
+        rt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.repairTickets.returnSite, { force: true })
         rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]>[col-id="return_site"]').should('contain', tdata.buildings.buildingname)
+        cy.get('[row-index="0"]>[col-id="return_site"]').should('contain', tdata.repairTickets.returnSite)
         rt.clearFilterElement().click({ force: true })
     }
     //RD

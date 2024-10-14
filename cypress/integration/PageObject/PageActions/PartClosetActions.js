@@ -299,18 +299,18 @@ export class PartClosetActions {
         pc.addFilterElement().eq(2).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(4).click({ force: true })
-        pc.fieldValueElement().eq(0).type('Acer Chromebook', { force: true })
+        pc.fieldValueElement().eq(0).type('Asus Chromebook', { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Acer Chromebook')
+        cy.get('[row-index="0"]').should('contain', 'Asus Chromebook')
         pc.clearFilterElement().click({ force: true })
     }
     filterEndswithPD() {
         pc.addFilterElement().eq(2).click({ force: true })
         pc.fieldNameElement().eq(1).click({ force: true })
         pc.fieldOpElement().eq(5).click({ force: true })
-        pc.fieldValueElement().eq(0).type('Non-Touch', { force: true })
+        pc.fieldValueElement().eq(0).type('Touch/2in1', { force: true })
         pc.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Non-Touch')
+        cy.get('[row-index="0"]').should('contain', 'Touch/2in1')
         pc.clearFilterElement().click({ force: true })
     }
     filterBlankPD() {

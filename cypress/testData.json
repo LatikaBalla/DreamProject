@@ -96,8 +96,8 @@
     "technician":"Conan Malady",
     "stdName":"Ryker Swensen",
     "repairBox":"repairBox",
-    "lastdate":"2024-10-01",
-    "lastdate1":"10-01-2024"
+    "lastdate":"2024-08-17",
+    "lastdate1":"08-17-2024"
   },
   "myFleet": {
     "filename": "fleet_devices.csv",
@@ -224,7 +224,8 @@
     "lastModifiedDate1": "08-24-2023",
     "lastModifiedDate2": "2024-09-23",
     "createdDate": "2023-09-11",
-    "createdDate1": "09-11-2023"
+    "createdDate1": "09-11-2023",
+    "returnSite":"0000-00-01"
   },
   "repairBox": {
     "weight": "10",

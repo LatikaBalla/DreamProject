@@ -78,4 +78,7 @@ And('Click on InHouseRepairCenter tab and All InHouseTickets tab', () => {
     iht.clickOnInHouseRepairCenterTab()
     iht.clickOnInHouseTicketsTab()
 })
-
+And ('Click on Repair Ticket Details and redirect to ticket page',()=>{
+    fv.clickOnviewRepairTicket()
+    fv.verifyDetails()
+})

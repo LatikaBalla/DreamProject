@@ -120,7 +120,7 @@ export class InHouseWorkflowActions {
         });
         cy.get('body').type('{ctrl}t');
         cy.visit("/repair-360/inHouse-detail/" + tdata.inHouseWorkflow.recordid, { visitTimeout: 30000 })
-        cy.wait(4000)
+        cy.wait(2000)
     }
     verifySrcRepairTicket() {
         cy.contains('Repair Ticket Details').should('be.visible', { force: true })

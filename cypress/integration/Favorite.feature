@@ -14,6 +14,8 @@ Feature: Favorite Page Functionality
         And Click on view button of repair ticket
         Then Click on the Star button of Repair Ticket Details
         And Click on Favorite page
+        And Click on Repair Ticket Details and redirect to ticket page
+        And Click on Favorite page
         Then Delete the Favorite item and verify no favorite items
         Then Click on Repair360 page
         And Click on InHouseRepairCenter tab and All InHouseTickets tab
