@@ -76,4 +76,9 @@ export default class FeaturesElements {
             timeout: 30000,
         })
     }
+    searchElement() {
+        return cy.get(locator.features.search, {
+            timeout: 30000,
+        })
+    }
 }

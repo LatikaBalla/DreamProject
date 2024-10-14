@@ -783,7 +783,8 @@
         "fieldOp": "[name='fieldOp']",
         "apply": ".css-5s3yqi",
         "addFilter": "Add Filter",
-        "clearFilter": "Clear Filter"
+        "clearFilter": "Clear Filter",
+        "search":"[placeholder='Search for feature']"
     },
     "support": {
         "title": "Support",

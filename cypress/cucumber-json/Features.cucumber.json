@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2203000000
+              "duration": 1414000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8080000000
+              "duration": 4427000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9103000000
+              "duration": 9095000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on features page",
             "result": {
               "status": "passed",
-              "duration": 1148000000
+              "duration": 1144000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I should be redirected to the Features page",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 5000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of Features Page",
             "result": {
               "status": "passed",
-              "duration": 622000000
+              "duration": 983000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the Under Consideration Tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 6000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Verify the Scheduled tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 10000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Verify the Launched tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 4000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Verify the Under Construction tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 5000000
             }
           },
           {
@@ -123,7 +123,117 @@
             "name": "Verify the Roadmap tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Search for feature title for Under Construction",
+            "result": {
+              "status": "passed",
+              "duration": 211000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Verify the serach history for Under Construction",
+            "result": {
+              "status": "passed",
+              "duration": 520000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "Click on Under Consideration tab",
+            "result": {
+              "status": "passed",
+              "duration": 62000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "Search for feature title for Under Consideration",
+            "result": {
+              "status": "passed",
+              "duration": 236000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Verify the serach history for Under Consideration",
+            "result": {
+              "status": "passed",
+              "duration": 520000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "Click on Scheduled tab",
+            "result": {
+              "status": "passed",
+              "duration": 71000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "Search for feature title for Scheduled",
+            "result": {
+              "status": "passed",
+              "duration": 276000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "Verify the serach history for Scheduled",
+            "result": {
+              "status": "passed",
+              "duration": 1083000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "Click on Launched tab",
+            "result": {
+              "status": "passed",
+              "duration": 63000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "Search for feature title for Launched",
+            "result": {
+              "status": "passed",
+              "duration": 278000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Verify the serach history for Launched",
+            "result": {
+              "status": "passed",
+              "duration": 462000000
             }
           }
         ]

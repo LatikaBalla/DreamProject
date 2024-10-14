@@ -41,4 +41,36 @@ Then('Verify the Roadmap tab should be visible', () => {
 And('Verify the Scheduled tab should be visible', () => {
     ft.scheduledVisible()
 })
-
+And('Search for feature title for Under Consideration', () => {
+    ft.enterSearch1()
+})
+Then('Verify the serach history for Under Consideration', () => {
+    ft.verifySearchHistory1()
+})
+Then('Click on Scheduled tab', () => {
+    ft.clickOnScheduledTab()
+})
+And('Search for feature title for Scheduled', () => {
+    ft.enterSearch2()
+})
+Then('Verify the serach history for Scheduled', () => {
+    ft.verifySearchHistory2()
+})
+Then('Click on Under Consideration tab', () => {
+    ft.clickOnUnderConsiderationTab()
+})
+And('Search for feature title for Under Construction', () => {
+    ft.enterSearch3()
+})
+Then('Verify the serach history for Under Construction', () => {
+    ft.verifySearchHistory3()
+})
+Then('Click on Launched tab', () => {
+    ft.clickOnLaunchedTab()
+})
+And('Search for feature title for Launched', () => {
+    ft.enterSearch4()
+})
+Then('Verify the serach history for Launched', () => {
+    ft.verifySearchHistory4()
+})
