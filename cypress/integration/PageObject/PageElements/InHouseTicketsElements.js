@@ -217,5 +217,24 @@ export default class InHouseTicketsElements {
             timeout: 30000,
         })
     }
-
+    optionElement() {
+        return cy.get(locator.inhouseTickets.option, {
+            timeout: 30000,
+        })
+    }
+    sortAscendingElement() {
+        return cy.contains(locator.inhouseTickets.sortAscending, {
+            timeout: 30000,
+        })
+    }
+    sortDescendingElement() {
+        return cy.contains(locator.inhouseTickets.sortDescending, {
+            timeout: 30000,
+        })
+    }
+    clearSortElement() {
+        return cy.contains(locator.inhouseTickets.clearSort, {
+            timeout: 30000,
+        })
+    }
 }

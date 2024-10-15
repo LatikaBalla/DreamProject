@@ -1058,5 +1058,140 @@ export class InHouseTicketsActions {
         cy.get('[row-index="0"]').should('contain', tdata.inHouseTicket.createdby)
         iht.clearFilterElement().click({ force: true })
     }
+    sortingRI(){
+        cy.wait(1000)
+        iht.optionElement().eq(1).click({ force: true })
+        iht.sortAscendingElement().click({ force: true })
+        iht.optionElement().eq(1).click({ force: true })
+        iht.sortDescendingElement().click({ force: true })
+        iht.optionElement().eq(1).click({ force: true })
+        iht.clearSortElement().click({ force: true })
+    }
+    sortingTN(){
+        cy.wait(1000)
+        iht.optionElement().eq(2).click({ force: true })
+        iht.sortAscendingElement().click({ force: true })
+        iht.optionElement().eq(2).click({ force: true })
+        iht.sortDescendingElement().click({ force: true })
+        iht.optionElement().eq(2).click({ force: true })
+        iht.clearSortElement().click({ force: true })
+    }
+    sortingBuilding(){
+        cy.wait(1000)
+        iht.optionElement().eq(3).click({ force: true })
+        iht.sortAscendingElement().click({ force: true })
+        iht.optionElement().eq(3).click({ force: true })
+        iht.sortDescendingElement().click({ force: true })
+        iht.optionElement().eq(3).click({ force: true })
+        iht.clearSortElement().click({ force: true })
+    }
+    sortingRSite(){
+        cy.wait(1000)
+        iht.optionElement().eq(4).click({ force: true })
+        iht.sortAscendingElement().click({ force: true })
+        iht.optionElement().eq(4).click({ force: true })
+        iht.sortDescendingElement().click({ force: true })
+        iht.optionElement().eq(4).click({ force: true })
+        iht.clearSortElement().click({ force: true })
+    }
+    sortingRtype(){
+        cy.wait(1000)
+        iht.optionElement().eq(5).click({ force: true })
+        iht.sortAscendingElement().click({ force: true })
+        iht.optionElement().eq(5).click({ force: true })
+        iht.sortDescendingElement().click({ force: true })
+        iht.optionElement().eq(5).click({ force: true })
+        iht.clearSortElement().click({ force: true })
+    }
+    sortingSN(){
+        cy.wait(1000)
+        iht.optionElement().eq(6).click({ force: true })
+        iht.sortAscendingElement().click({ force: true })
+        iht.optionElement().eq(6).click({ force: true })
+        iht.sortDescendingElement().click({ force: true })
+        iht.optionElement().eq(6).click({ force: true })
+        iht.clearSortElement().click({ force: true })
+    }
+    sortingRDev(){
+        cy.wait(1000)
+        iht.optionElement().eq(7).click({ force: true })
+        iht.sortAscendingElement().click({ force: true })
+        iht.optionElement().eq(7).click({ force: true })
+        iht.sortDescendingElement().click({ force: true })
+        iht.optionElement().eq(7).click({ force: true })
+        iht.clearSortElement().click({ force: true })
+    }
+    sortingATag(){
+        cy.wait(1000)
+        iht.optionElement().eq(8).click({ force: true })
+        iht.sortAscendingElement().click({ force: true })
+        iht.optionElement().eq(8).click({ force: true })
+        iht.sortDescendingElement().click({ force: true })
+        iht.optionElement().eq(8).click({ force: true })
+        iht.clearSortElement().click({ force: true })
+    }
+    sortingIT(){
+        cy.wait(1000)
+        iht.optionElement().eq(9).click({ force: true })
+        iht.sortAscendingElement().click({ force: true })
+        iht.optionElement().eq(9).click({ force: true })
+        iht.sortDescendingElement().click({ force: true })
+        iht.optionElement().eq(9).click({ force: true })
+        iht.clearSortElement().click({ force: true })
+    }
+    sortingStdN(){
+        cy.wait(1000)
+        iht.optionElement().eq(10).click({ force: true })
+        iht.sortAscendingElement().click({ force: true })
+        iht.optionElement().eq(10).click({ force: true })
+        iht.sortDescendingElement().click({ force: true })
+        iht.optionElement().eq(10).click({ force: true })
+        iht.clearSortElement().click({ force: true })
+    }
+    sortingRStatus(){
+        cy.wait(1000)
+        iht.optionElement().eq(11).click({ force: true })
+        iht.sortAscendingElement().click({ force: true })
+        iht.optionElement().eq(11).click({ force: true })
+        iht.sortDescendingElement().click({ force: true })
+        iht.optionElement().eq(11).click({ force: true })
+        iht.clearSortElement().click({ force: true })
+    }
+    sortingInhouseStatus(){
+        cy.wait(1000)
+        iht.optionElement().eq(12).click({ force: true })
+        iht.sortAscendingElement().click({ force: true })
+        iht.optionElement().eq(12).click({ force: true })
+        iht.sortDescendingElement().click({ force: true })
+        iht.optionElement().eq(12).click({ force: true })
+        iht.clearSortElement().click({ force: true })
+    }
+    sortingWstatus(){
+        cy.wait(1000)
+        iht.optionElement().eq(13).click({ force: true })
+        iht.sortAscendingElement().click({ force: true })
+        iht.optionElement().eq(13).click({ force: true })
+        iht.sortDescendingElement().click({ force: true })
+        iht.optionElement().eq(13).click({ force: true })
+        iht.clearSortElement().click({ force: true })
+    }
+    sortingCBy(){
+        cy.wait(1000)
+        iht.optionElement().eq(14).click({ force: true })
+        iht.sortAscendingElement().click({ force: true })
+        iht.optionElement().eq(14).click({ force: true })
+        iht.sortDescendingElement().click({ force: true })
+        iht.optionElement().eq(14).click({ force: true })
+        iht.clearSortElement().click({ force: true })
+    }
+    sortingLdate(){
+        cy.wait(1000)
+        iht.optionElement().eq(15).click({ force: true })
+        iht.sortAscendingElement().click({ force: true })
+        iht.optionElement().eq(15).click({ force: true })
+        iht.sortDescendingElement().click({ force: true })
+        iht.optionElement().eq(15).click({ force: true })
+        iht.clearSortElement().click({ force: true })
+    }
 }
 export default InHouseTicketsActions 

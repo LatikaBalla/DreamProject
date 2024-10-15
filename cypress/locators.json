@@ -579,7 +579,11 @@
         "custompart": "Custom Part",
         "buildingdrop": "[data-value='building']",
         "updateStudent": "Update to Student",
-        "updateInhouse": "Update to In House"
+        "updateInhouse": "Update to In House",
+        "option":"[data-ref='eMenu']",
+        "sortAscending":"Sort Ascending",
+        "sortDescending":"Sort Descending",
+        "clearSort":"Clear Sort"
     },
     "studentRepairCenter": {
         "title": "Student Repair Center",
@@ -668,7 +672,11 @@
         "imagedescription": "#image_description",
         "updateimage": "button[type='submit']",
         "notetype": "#note_type",
-        "createnote": "button[type='submit']"
+        "createnote": "button[type='submit']",
+        "option":"[data-ref='eMenu']",
+        "sortAscending":"Sort Ascending",
+        "sortDescending":"Sort Descending",
+        "clearSort":"Clear Sort"
     },
     "srcFacilitators": {
         "title": "Repair 360",

@@ -118,6 +118,20 @@ Feature:SrcRepairTickets Page Functionality
 # And Click on Update Button
 # Then Verify Updated successfully
 
+Scenario: SrcRepairTickets Sorting -Ascending and descending
+    And Click on Sort Ascending and Descending for Record ID and Verify the Result
+    And Click on Sort Ascending and Descending for Ticket Number and Verify the Result
+    And Click on Sort Ascending and Descending for Repair Type and Verify the Result
+    And Click on Sort Ascending and Descending for Serial Number and Verify the Result
+    And Click on Sort Ascending and Descending for Repair Device and Verify the Result
+    And Click on Sort Ascending and Descending for Asset Tag and Verify the Result
+    And Click on Sort Ascending and Descending for Repair Status and Verify the Result
+    And Click on Sort Ascending and Descending for Student Technician Name and Verify the Result
+    And Click on Sort Ascending and Descending for Student Name and Verify the Result
+    And Click on Sort Ascending and Descending for Created By and Verify the Result
+    And Click on Sort Ascending and Descending for Last Modified Date and Verify the Result
+
+
 
 
 

@@ -257,5 +257,24 @@ export default class SrcRepairTicketsElements {
             timeout: 30000,
         })
     }
-
+    optionElement() {
+        return cy.get(locator.srcRepairTickets.option, {
+            timeout: 30000,
+        })
+    }
+    sortAscendingElement() {
+        return cy.contains(locator.srcRepairTickets.sortAscending, {
+            timeout: 30000,
+        })
+    }
+    sortDescendingElement() {
+        return cy.contains(locator.srcRepairTickets.sortDescending, {
+            timeout: 30000,
+        })
+    }
+    clearSortElement() {
+        return cy.contains(locator.srcRepairTickets.clearSort, {
+            timeout: 30000,
+        })
+    }
 }

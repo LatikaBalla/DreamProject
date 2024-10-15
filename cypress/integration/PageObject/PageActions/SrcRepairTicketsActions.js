@@ -88,7 +88,7 @@ export class SrcRepairTicketsActions {
         cy.visit("/repair-360/inHouse-detail/" + tdata.srcRepairTicket.recordid)
     }
     verifySrcRepairTicket() {
-        cy.wait(2000)
+        cy.wait(3000)
         cy.contains('Repair Ticket Details').should('be.visible')
     }
     clickOnEditButton() {
@@ -1015,6 +1015,106 @@ export class SrcRepairTicketsActions {
         srt.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain',tdata.srcRepairTicket.createdby)
         srt.clearFilterElement().click({ force: true })
+    }
+    sortingRI(){
+        cy.wait(1000)
+        srt.optionElement().eq(1).click({ force: true })
+        srt.sortAscendingElement().click({ force: true })
+        srt.optionElement().eq(1).click({ force: true })
+        srt.sortDescendingElement().click({ force: true })
+        srt.optionElement().eq(1).click({ force: true })
+        srt.clearSortElement().click({ force: true })
+    }
+    sortingTN(){
+        cy.wait(1000)
+        srt.optionElement().eq(2).click({ force: true })
+        srt.sortAscendingElement().click({ force: true })
+        srt.optionElement().eq(2).click({ force: true })
+        srt.sortDescendingElement().click({ force: true })
+        srt.optionElement().eq(2).click({ force: true })
+        srt.clearSortElement().click({ force: true })
+    }
+
+    sortingRtype(){   
+         cy.wait(1000)
+        srt.optionElement().eq(3).click({ force: true })
+        srt.sortAscendingElement().click({ force: true })
+        srt.optionElement().eq(3).click({ force: true })
+        srt.sortDescendingElement().click({ force: true })
+        srt.optionElement().eq(3).click({ force: true })
+        srt.clearSortElement().click({ force: true })
+    }
+    sortingSN(){
+        cy.wait(1000)
+        srt.optionElement().eq(4).click({ force: true })
+        srt.sortAscendingElement().click({ force: true })
+        srt.optionElement().eq(4).click({ force: true })
+        srt.sortDescendingElement().click({ force: true })
+        srt.optionElement().eq(4).click({ force: true })
+        srt.clearSortElement().click({ force: true })
+    }
+    sortingRDev(){
+        cy.wait(1000)
+        srt.optionElement().eq(5).click({ force: true })
+        srt.sortAscendingElement().click({ force: true })
+        srt.optionElement().eq(5).click({ force: true })
+        srt.sortDescendingElement().click({ force: true })
+        srt.optionElement().eq(5).click({ force: true })
+        srt.clearSortElement().click({ force: true })
+    }
+    sortingATag(){
+        cy.wait(1000)
+        srt.optionElement().eq(6).click({ force: true })
+        srt.sortAscendingElement().click({ force: true })
+        srt.optionElement().eq(6).click({ force: true })
+        srt.sortDescendingElement().click({ force: true })
+        srt.optionElement().eq(6).click({ force: true })
+        srt.clearSortElement().click({ force: true })
+    }
+    sortingRStatus(){
+        cy.wait(1000)
+        srt.optionElement().eq(7).click({ force: true })
+        srt.sortAscendingElement().click({ force: true })
+        srt.optionElement().eq(7).click({ force: true })
+        srt.sortDescendingElement().click({ force: true })
+        srt.optionElement().eq(7).click({ force: true })
+        srt.clearSortElement().click({ force: true })
+    }
+    sortingIT(){
+        cy.wait(1000)
+        srt.optionElement().eq(8).click({ force: true })
+        srt.sortAscendingElement().click({ force: true })
+        srt.optionElement().eq(8).click({ force: true })
+        srt.sortDescendingElement().click({ force: true })
+        srt.optionElement().eq(8).click({ force: true })
+        srt.clearSortElement().click({ force: true })
+    }
+    sortingStdN(){
+        cy.wait(1000)
+        srt.optionElement().eq(9).click({ force: true })
+        srt.sortAscendingElement().click({ force: true })
+        srt.optionElement().eq(9).click({ force: true })
+        srt.sortDescendingElement().click({ force: true })
+        srt.optionElement().eq(9).click({ force: true })
+        srt.clearSortElement().click({ force: true })
+    }
+    sortingCBy(){
+        cy.wait(1000)
+        srt.optionElement().eq(10).click({ force: true })
+        srt.sortAscendingElement().click({ force: true })
+        srt.optionElement().eq(10).click({ force: true })
+        srt.sortDescendingElement().click({ force: true })
+        srt.optionElement().eq(10).click({ force: true })
+        srt.clearSortElement().click({ force: true })
+    }
+    sortingLdate(){
+        cy.wait(1000)
+        srt.optionElement().eq(11).click({ force: true })
+        srt.sortAscendingElement().click({ force: true })
+        srt.optionElement().eq(11).click({ force: true })
+        srt.sortDescendingElement().click({ force: true })
+        srt.optionElement().eq(11).click({ force: true })
+        srt.clearSortElement().click({ force: true })
     }
 }
 export default SrcRepairTicketsActions 

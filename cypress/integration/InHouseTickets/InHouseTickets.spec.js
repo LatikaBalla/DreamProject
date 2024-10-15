@@ -462,3 +462,49 @@ And('Click on filter of Internal Technician Blank and Verify the Result', () => 
 And('Click on filter of Internal Technician Not blank and Verify the Result', () => {
     iht.filterNotblankIT()
 })
+//sorting 
+And('Click on Sort Ascending and Descending for Record ID and Verify the Result',()=>{
+    iht.sortingRI()
+})
+And ('Click on Sort Ascending and Descending for Ticket Number and Verify the Result',()=>{
+    iht.sortingTN()
+})
+And ('Click on Sort Ascending and Descending for Building and Verify the Result',()=>{
+    iht.sortingBuilding()
+})
+And ('Click on Sort Ascending and Descending for Return Site and Verify the Result',()=>{
+    iht.sortingRSite()
+})
+And ('Click on Sort Ascending and Descending for Repair Type and Verify the Result',()=>{
+    iht.sortingRtype()
+})
+And ('Click on Sort Ascending and Descending for Serial Number and Verify the Result',()=>{
+    iht.sortingSN()
+})
+And ('Click on Sort Ascending and Descending for Repair Device and Verify the Result',()=>{
+    iht.sortingRDev()
+})
+And ('Click on Sort Ascending and Descending for Asset Tag and Verify the Result',()=>{
+    iht.sortingATag()
+})
+And ('Click on Sort Ascending and Descending for Internal Technician Name and Verify the Result',()=>{
+    iht.sortingIT()
+})
+And ('Click on Sort Ascending and Descending for Student Name and Verify the Result',()=>{
+    iht.sortingStdN()
+})
+And ('Click on Sort Ascending and Descending for Repair Status and Verify the Result',()=>{
+    iht.sortingRStatus()
+})
+And ('Click on Sort Ascending and Descending for In House Status and Verify the Result',()=>{
+    iht.sortingInhouseStatus()
+})
+And ('Click on Sort Ascending and Descending for Warranty Status and Verify the Result',()=>{
+    iht.sortingWstatus()
+})
+And ('Click on Sort Ascending and Descending for Created By and Verify the Result',()=>{
+    iht.sortingCBy()
+})
+And ('Click on Sort Ascending and Descending for Last Modified Date and Verify the Result',()=>{
+    iht.sortingLdate()
+})
