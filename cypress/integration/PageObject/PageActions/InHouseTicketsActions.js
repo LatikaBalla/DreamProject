@@ -114,7 +114,7 @@ export class InHouseTicketsActions {
         cy.visit("/repair-360/inHouse-detail/" + tdata.inHouseTicket.recordid, { visitTimeout: 30000 })
     }
     verifySrcRepairTicket() {
-        cy.wait(2000)
+        cy.wait(4000)
         cy.contains('Repair Ticket Details').should('be.visible')
     }
     clickOnEditButton() {
