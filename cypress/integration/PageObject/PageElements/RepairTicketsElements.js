@@ -251,4 +251,19 @@ export default class RepairTicketsElements {
             timeout: 30000,
         })
     }
+    helpIconElement(){
+        return cy.get(locator.repairTickets.helpIcon, {
+            timeout: 30000,
+        })
+    }
+    printbtnElement() {
+        return cy.contains(locator.repairTickets.printbtn, {
+            timeout: 30000,
+        })
+    }
+    downloadbtnElement() {
+        return cy.contains(locator.repairTickets.downloadbtn, {
+            timeout: 30000,
+        })
+    }
 }

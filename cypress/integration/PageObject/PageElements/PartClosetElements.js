@@ -156,5 +156,24 @@ export default class PartClosetElements {
             timeout: 30000,
         })
     }
-
+    optionElement() {
+        return cy.get(locator.partCloset.option, {
+            timeout: 30000,
+        })
+    }
+    sortAscendingElement() {
+        return cy.contains(locator.partCloset.sortAscending, {
+            timeout: 30000,
+        })
+    }
+    sortDescendingElement() {
+        return cy.contains(locator.partCloset.sortDescending, {
+            timeout: 30000,
+        })
+    }
+    clearSortElement() {
+        return cy.contains(locator.partCloset.clearSort, {
+            timeout: 30000,
+        })
+    }
 }

@@ -85,7 +85,7 @@ export class InHouseWorkflowActions {
     }
     clickOnAddLine() {
         ihw.addlineElement().click({ force: true })
-        cy.get('.css-imb8av').click({ force: true })
+        cy.get('.css-1ex9n8q').click({ force: true })
         ihw.partElement().click({ force: true })
         cy.get('[role="listbox"]').contains('Speaker Set').click({ force: true })
         ihw.noteElement().type('Testing line', { force: true })

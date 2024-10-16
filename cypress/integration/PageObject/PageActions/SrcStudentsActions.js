@@ -541,5 +541,59 @@ export class SrcStudentsActions {
         cy.get('[row-index="0"]').should('contain', tdata.srcStudent.userRole)
         ss.clearFilterElement().click({ force: true })
     }
+    sortingFName() {
+        cy.wait(1000)
+        ss.optionElement().eq(0).click({ force: true })
+        ss.sortAscendingElement().click({ force: true })
+        ss.optionElement().eq(0).click({ force: true })
+        ss.sortDescendingElement().click({ force: true })
+        ss.optionElement().eq(0).click({ force: true })
+        ss.clearSortElement().click({ force: true })
+    }
+    sortingTitle() {
+        cy.wait(1000)
+        ss.optionElement().eq(1).click({ force: true })
+        ss.sortAscendingElement().click({ force: true })
+        ss.optionElement().eq(1).click({ force: true })
+        ss.sortDescendingElement().click({ force: true })
+        ss.optionElement().eq(1).click({ force: true })
+        ss.clearSortElement().click({ force: true })
+    }
+    sortingEmail() {
+        cy.wait(1000)
+        ss.optionElement().eq(1).click({ force: true })
+        ss.sortAscendingElement().click({ force: true })
+        ss.optionElement().eq(1).click({ force: true })
+        ss.sortDescendingElement().click({ force: true })
+        ss.optionElement().eq(1).click({ force: true })
+        ss.clearSortElement().click({ force: true })
+    }
+    sortingUstatus() {
+        cy.wait(1000)
+        ss.optionElement().eq(2).click({ force: true })
+        ss.sortAscendingElement().click({ force: true })
+        ss.optionElement().eq(2).click({ force: true })
+        ss.sortDescendingElement().click({ force: true })
+        ss.optionElement().eq(2).click({ force: true })
+        ss.clearSortElement().click({ force: true })
+    }
+    sortingPhone() {
+        cy.wait(1000)
+        ss.optionElement().eq(3).click({ force: true })
+        ss.sortAscendingElement().click({ force: true })
+        ss.optionElement().eq(3).click({ force: true })
+        ss.sortDescendingElement().click({ force: true })
+        ss.optionElement().eq(3).click({ force: true })
+        ss.clearSortElement().click({ force: true })
+    }
+    sortingUrole() {
+        cy.wait(1000)
+        ss.optionElement().eq(4).click({ force: true })
+        ss.sortAscendingElement().click({ force: true })
+        ss.optionElement().eq(4).click({ force: true })
+        ss.sortDescendingElement().click({ force: true })
+        ss.optionElement().eq(4).click({ force: true })
+        ss.clearSortElement().click({ force: true })
+    }
 }
 export default SrcStudentsActions 

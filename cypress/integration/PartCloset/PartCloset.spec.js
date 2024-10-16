@@ -267,3 +267,25 @@ And('Click on filter of Quantity Blank and Verify the Result', () => {
 And('Click on filter of Quantity Not blank and Verify the Result', () => {
     pc.filterNotblankQ()
 })
+//sorting
+And ('Click on Sort Ascending and Descending for Part Name and Verify the Result',()=>{
+    pc.sortingPName()
+})
+And ('Click on Sort Ascending and Descending for SKU and Verify the Result',()=>{
+    pc.sortingSKU()
+})
+And('Click on Sort Ascending and Descending for Parent Device and Verify the Result',()=>{
+    pc.sortingPDevice()
+})
+And ('Click on Sort Ascending and Descending for Building and Verify the Result',()=>{
+    pc.sortingBuilding()
+})
+And ('Click on Sort Ascending and Descending for Manufacturer and Verify the Result',()=>{
+    pc.sortingMan()
+})
+And ('Click on Sort Ascending and Descending for Part Category and Verify the Result',()=>{
+    pc.sortingPCat()
+})
+And ('Click on Sort Ascending and Descending for Quantity and Verify the Result',()=>{
+    pc.sortingQnt()
+})

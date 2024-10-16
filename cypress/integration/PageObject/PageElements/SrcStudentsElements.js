@@ -161,4 +161,24 @@ export default class SrcStudentsElements {
             timeout: 30000,
         })
     }
+    optionElement() {
+        return cy.get(locator.srcStudents.option, {
+            timeout: 30000,
+        })
+    }
+    sortAscendingElement() {
+        return cy.contains(locator.srcStudents.sortAscending, {
+            timeout: 30000,
+        })
+    }
+    sortDescendingElement() {
+        return cy.contains(locator.srcStudents.sortDescending, {
+            timeout: 30000,
+        })
+    }
+    clearSortElement() {
+        return cy.contains(locator.srcStudents.clearSort, {
+            timeout: 30000,
+        })
+    }
 }

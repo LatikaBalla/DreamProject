@@ -29,7 +29,7 @@
         "accountdetials": "[data-testid='tabacc-1']",
         "buildings": "[data-testid='tabacc-2']",
         "tableaccount": ".css-1dj5rr2",
-        "vivaTech":"Vivacity Tech Dream",
+        "vivaTech": "Vivacity Tech Dream",
         "addnewbtn": "button[type='button']",
         "newContactTitle": "Add New Contact",
         "editIcon": "[data-testid='ModeEditOutlinedIcon']",
@@ -102,7 +102,7 @@
         "buildabbreviation": "#building_abbreviation"
     },
     "editbuilding": {
-        "buildingIcon":"[data-testid='ApartmentOutlinedIcon']",
+        "buildingIcon": "[data-testid='ApartmentOutlinedIcon']",
         "buildingname": "#building_name",
         "phone": "#phone",
         "extension": "#extension",
@@ -191,7 +191,7 @@
         "createnote": "button[type='submit']",
         "part": "#part",
         "custompart": "Custom Part",
-        "downloadbtn":"[data-testid='FileDownloadIcon']"
+        "downloadbtn": "[data-testid='FileDownloadIcon']"
     },
     "vivacityRepairReport": {
         "section1": "In Transit to Me",
@@ -318,18 +318,18 @@
         "titleAsset": "#title",
         "fullname": "#profile_full_name",
         "location": "#acquire_location",
-        "serialno":"#serial_number",
-        "model":"#model",
-        "assignment":"#assignment",
-        "fundsource":"#fund_source",
-        "po":"#po",
-        "warrantyinfo":"#warranty_info",
-        "invoice":"#invoice",
-        "vendor":"#vendor",
-        "cost":"#cost",
-        "quantity":"#quantity",
-        "fieldValue1":"[name='additionalFields.0.value']",
-        "fieldValue2":"[name='additionalFields.1.value']",
+        "serialno": "#serial_number",
+        "model": "#model",
+        "assignment": "#assignment",
+        "fundsource": "#fund_source",
+        "po": "#po",
+        "warrantyinfo": "#warranty_info",
+        "invoice": "#invoice",
+        "vendor": "#vendor",
+        "cost": "#cost",
+        "quantity": "#quantity",
+        "fieldValue1": "[name='additionalFields.0.value']",
+        "fieldValue2": "[name='additionalFields.1.value']",
         "tag": "#tag",
         "notes": "#notes",
         "type": "#category",
@@ -353,16 +353,16 @@
         "serialFilter": "#Serial Number",
         "assetTagFilter": "#Asset Tag",
         "SKUFilter": "#SKU",
-        "deviceIcon":"[data-testid='DevicesIcon']",
-        "datepicker":"[placeholder='mm/dd/yyyy']",
+        "deviceIcon": "[data-testid='DevicesIcon']",
+        "datepicker": "[placeholder='mm/dd/yyyy']",
         "deviceNameFilter": "#Device Name",
         "addloanerPool": "Add to Loaner Pool",
         "removeloanerPool": "Remove from Loaner Pool",
         "checkoutbtn": "Check Out",
-        "checkoutdes":"#checkout_description",
-        "checkindes":"#checkin_description",
-        "checkinTab":"[data-testid='tab-checkIn']",
-        "checkoutTab":"[data-testid='tab-checkOut']",
+        "checkoutdes": "#checkout_description",
+        "checkindes": "#checkin_description",
+        "checkinTab": "[data-testid='tab-checkIn']",
+        "checkoutTab": "[data-testid='tab-checkOut']",
         "checkinbtn": "Check In",
         "submitbtn": "[type='button']",
         "student": "#student_id",
@@ -378,8 +378,8 @@
         "fieldOp": "[role='option']",
         "fieldValue": "[placeholder='Filter...']",
         "apply": "button[data-ref='applyFilterButton']",
-        "viewDetails":"View Details",
-        "viewHistory":"View History"
+        "viewDetails": "View Details",
+        "viewHistory": "View History"
     },
     "repair360": {
         "title": "Repair 360",
@@ -439,10 +439,13 @@
         "createnote": "button[type='submit']",
         "part": "#part",
         "custompart": "Custom Part",
-        "option":"[data-ref='eMenu']",
-        "sortAscending":"Sort Ascending",
-        "sortDescending":"Sort Descending",
-        "clearSort":"Clear Sort"
+        "option": "[data-ref='eMenu']",
+        "sortAscending": "Sort Ascending",
+        "sortDescending": "Sort Descending",
+        "clearSort": "Clear Sort",
+        "helpIcon": "[data-testid='HelpIcon']",
+        "printbtn": "Print Ticket Estimate",
+        "downloadbtn": "Download Ticket Estimate"
     },
     "repairBoxes": {
         "title": "Repair 360",
@@ -488,12 +491,15 @@
         "updateimage": "button[type='submit']",
         "notetype": "#note_type",
         "createnote": "button[type='submit']",
-        "imageIcon":"[data-testid='ImageIcon']",
-        "pdfIcon":"[data-testid='PictureAsPdfIcon']",
-        "option":"[data-ref='eMenu']",
-        "sortAscending":"Sort Ascending",
-        "sortDescending":"Sort Descending",
-        "clearSort":"Clear Sort"
+        "imageIcon": "[data-testid='ImageIcon']",
+        "pdfIcon": "[data-testid='PictureAsPdfIcon']",
+        "option": "[data-ref='eMenu']",
+        "sortAscending": "Sort Ascending",
+        "sortDescending": "Sort Descending",
+        "clearSort": "Clear Sort",
+        "helpIcon": "[data-testid='HelpIcon']",
+        "printbtn": "Print Ticket Estimate",
+        "downloadbtn": "Download Ticket Estimate"
     },
     "inhouseRepairCenter": {
         "title": "In-House Repair",
@@ -580,10 +586,12 @@
         "buildingdrop": "[data-value='building']",
         "updateStudent": "Update to Student",
         "updateInhouse": "Update to In House",
-        "option":"[data-ref='eMenu']",
-        "sortAscending":"Sort Ascending",
-        "sortDescending":"Sort Descending",
-        "clearSort":"Clear Sort"
+        "option": "[data-ref='eMenu']",
+        "sortAscending": "Sort Ascending",
+        "sortDescending": "Sort Descending",
+        "clearSort": "Clear Sort",
+        "printbtn": "Print Ticket Estimate",
+        "downloadbtn": "Download Ticket Estimate"
     },
     "studentRepairCenter": {
         "title": "Student Repair Center",
@@ -596,7 +604,7 @@
         "filters": ".css-1d3bbye",
         "table": ".css-1owb465",
         "search": "[placeholder='Search']",
-        "addNew":"[data-testid='AddCircleOutlineIcon']",
+        "addNew": "[data-testid='AddCircleOutlineIcon']",
         "custompart": "[data-testid='newCustomPartButton']",
         "tvpart": "[data-testid='newPartButton']",
         "editquality": "[editext='edit-button']",
@@ -622,7 +630,12 @@
         "fieldName": "[data-ref='eDisplayField']",
         "fieldOp": "[role='option']",
         "fieldValue": "[placeholder='Filter...']",
-        "apply": "button[data-ref='applyFilterButton']"
+        "apply": "button[data-ref='applyFilterButton']",
+        "option": "[data-ref='eMenu']",
+        "sortAscending": "Sort Ascending",
+        "sortDescending": "Sort Descending",
+        "clearSort": "Clear Sort",
+        "helpIcon": "[data-testid='HelpIcon']"
     },
     "srcRepairTickets": {
         "title": "Repair 360",
@@ -666,17 +679,20 @@
         "addimage": "Add New Repair Image",
         "addnote": "Add New Note",
         "note": "#note",
-        "editnote":"#repair_note",
+        "editnote": "#repair_note",
         "createline": "button[type='submit']",
         "uploadimage": "#image",
         "imagedescription": "#image_description",
         "updateimage": "button[type='submit']",
         "notetype": "#note_type",
         "createnote": "button[type='submit']",
-        "option":"[data-ref='eMenu']",
-        "sortAscending":"Sort Ascending",
-        "sortDescending":"Sort Descending",
-        "clearSort":"Clear Sort"
+        "option": "[data-ref='eMenu']",
+        "sortAscending": "Sort Ascending",
+        "sortDescending": "Sort Descending",
+        "clearSort": "Clear Sort",
+        "helpIcon": "[data-testid='HelpIcon']",
+        "printbtn": "Print Ticket Estimate",
+        "downloadbtn": "Download Ticket Estimate"
     },
     "srcFacilitators": {
         "title": "Repair 360",
@@ -697,7 +713,12 @@
         "fieldName": "[data-ref='eDisplayField']",
         "fieldOp": "[role='option']",
         "fieldValue": "[placeholder='Filter...']",
-        "apply": "button[data-ref='applyFilterButton']"
+        "apply": "button[data-ref='applyFilterButton']",
+        "option": "[data-ref='eMenu']",
+        "sortAscending": "Sort Ascending",
+        "sortDescending": "Sort Descending",
+        "clearSort": "Clear Sort",
+        "helpIcon": "[data-testid='HelpIcon']"
     },
     "srcStudents": {
         "title": "Repair 360",
@@ -731,7 +752,12 @@
         "fieldName": "[data-ref='eDisplayField']",
         "fieldOp": "[role='option']",
         "fieldValue": "[placeholder='Filter...']",
-        "apply": "button[data-ref='applyFilterButton']"
+        "apply": "button[data-ref='applyFilterButton']",
+        "option": "[data-ref='eMenu']",
+        "sortAscending": "Sort Ascending",
+        "sortDescending": "Sort Descending",
+        "clearSort": "Clear Sort",
+        "helpIcon": "[data-testid='HelpIcon']"
     },
     "resources": {
         "title": "Resources",
@@ -792,7 +818,7 @@
         "apply": ".css-5s3yqi",
         "addFilter": "Add Filter",
         "clearFilter": "Clear Filter",
-        "search":"[placeholder='Search for feature']"
+        "search": "[placeholder='Search for feature']"
     },
     "support": {
         "title": "Support",

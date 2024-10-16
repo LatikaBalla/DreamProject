@@ -639,5 +639,68 @@ export class PartClosetActions {
         pc.applyElement().click({ force: true })
         pc.clearFilterElement().click({ force: true })
     }
+    sortingPName(){
+        cy.wait(1000)
+        pc.optionElement().eq(2).click({ force: true })
+        pc.sortAscendingElement().click({ force: true })
+        pc.optionElement().eq(2).click({ force: true })
+        pc.sortDescendingElement().click({ force: true })
+        pc.optionElement().eq(2).click({ force: true })
+        pc.clearSortElement().click({ force: true })
+    }
+    sortingSKU(){
+        cy.wait(1000)
+        pc.optionElement().eq(3).click({ force: true })
+        pc.sortAscendingElement().click({ force: true })
+        pc.optionElement().eq(3).click({ force: true })
+        pc.sortDescendingElement().click({ force: true })
+        pc.optionElement().eq(3).click({ force: true })
+        pc.clearSortElement().click({ force: true })
+    }
+    sortingPDevice(){
+        cy.wait(1000)
+        pc.optionElement().eq(4).click({ force: true })
+        pc.sortAscendingElement().click({ force: true })
+        pc.optionElement().eq(4).click({ force: true })
+        pc.sortDescendingElement().click({ force: true })
+        pc.optionElement().eq(4).click({ force: true })
+        pc.clearSortElement().click({ force: true })
+    }
+    sortingBuilding(){
+        cy.wait(1000)
+        pc.optionElement().eq(5).click({ force: true })
+        pc.sortAscendingElement().click({ force: true })
+        pc.optionElement().eq(5).click({ force: true })
+        pc.sortDescendingElement().click({ force: true })
+        pc.optionElement().eq(5).click({ force: true })
+        pc.clearSortElement().click({ force: true })
+    }
+    sortingMan(){
+        cy.wait(1000)
+        pc.optionElement().eq(6).click({ force: true })
+        pc.sortAscendingElement().click({ force: true })
+        pc.optionElement().eq(6).click({ force: true })
+        pc.sortDescendingElement().click({ force: true })
+        pc.optionElement().eq(6).click({ force: true })
+        pc.clearSortElement().click({ force: true })
+    }
+    sortingPCat(){
+        cy.wait(1000)
+        pc.optionElement().eq(7).click({ force: true })
+        pc.sortAscendingElement().click({ force: true })
+        pc.optionElement().eq(7).click({ force: true })
+        pc.sortDescendingElement().click({ force: true })
+        pc.optionElement().eq(7).click({ force: true })
+        pc.clearSortElement().click({ force: true })
+    }
+    sortingQnt(){
+        cy.wait(1000)
+        pc.optionElement().eq(8).click({ force: true })
+        pc.sortAscendingElement().click({ force: true })
+        pc.optionElement().eq(8).click({ force: true })
+        pc.sortDescendingElement().click({ force: true })
+        pc.optionElement().eq(8).click({ force: true })
+        pc.clearSortElement().click({ force: true })
+    }
 }
 export default PartClosetActions 

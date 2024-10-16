@@ -189,3 +189,22 @@ And('Click on filter of Last Modified Date Blank and Verify the Result', () => {
 And('Click on filter of Last Modified Date Not blank and Verify the Result', () => {
     sf.filterNotblankDate()
 })
+//sorting
+And ('Click on Sort Ascending and Descending for Full Name and Verify the Result',()=>{
+    sf.sortingFName()
+})
+And ('Click on Sort Ascending and Descending for Title and Verify the Result',()=>{
+    sf.sortingTitle()
+})
+And ('Click on Sort Ascending and Descending for Email and Verify the Result',()=>{
+    sf.sortingEmail()
+})
+And ('Click on Sort Ascending and Descending for User Status and Verify the Result',()=>{
+    sf.sortingUstatus()
+})
+And ('Click on Sort Ascending and Descending for Phone and Verify the Result',()=>{
+    sf.sortingPhone()
+})
+And ('Click on Sort Ascending and Descending for Last Modified Date and Verify the Result',()=>{
+    sf.sortingLdate()
+})

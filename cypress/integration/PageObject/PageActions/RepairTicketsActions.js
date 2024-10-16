@@ -99,7 +99,7 @@ export class RepairTicketsActions {
         cy.wait(100)
         rt.imagedescriptionElement().type('Testing Image')
         rt.updateimageElement().contains('Upload Image').click({ force: true })
-        // dash.messageElement().should('contain', 'Image Created')
+       // dash.messageElement().should('contain', 'Image Created')
     }
     clickOnAddNote() {
         cy.wait(100)
@@ -108,7 +108,7 @@ export class RepairTicketsActions {
         cy.get('[data-value="Part Received"]').click({ force: true })
         rt.noteElement().type('Testing Note', { force: true })
         rt.createnoteElement().contains('Create').click({ force: true })
-        // dash.messageElement().should('contain', 'Ticket updated')
+        dash.messageElement().should('contain', 'Note added successfully')
     }
     clickViewButton() {
         cy.window().then(win => {
@@ -137,6 +137,19 @@ export class RepairTicketsActions {
     }
     verifyUpdate() {
         //cy.get('tr td').eq(1).should('contain', tdata.inHouseTicket.recordid)
+    }
+    clickOnLearnMore() {
+        rt.helpIconElement().click({ force: true })
+    }
+    verifyfilteringGuide() {
+        cy.contains('Dream Data Filtering Guide').should('be.visible')
+        cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
+    }
+    clickOnPrintEstimate(){
+        rt.printbtnElement().click({ force: true })
+    }
+    clickOnDownloadEstimate(){
+        rt.downloadbtnElement().click({ force: true })
     }
     //tn
     selectFilterTicketNumber() {
@@ -434,8 +447,8 @@ export class RepairTicketsActions {
         cy.get('[row-index="0"]>[col-id="building"]').should('contain', tdata.buildings.buildingname)
         rt.clearFilterElement().click({ force: true })
     }
-     //B
-     filterContainRsite() {
+    //B
+    filterContainRsite() {
         rt.addFilterElement().eq(4).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(0).click({ force: true })
@@ -471,31 +484,31 @@ export class RepairTicketsActions {
         cy.get('[row-index="0"]>[col-id="return_site"]').should('not.contain.value', tdata.repairTickets.returnSite)
         rt.clearFilterElement().click({ force: true })
     }
-    filterBeginswithRsite(){
+    filterBeginswithRsite() {
         rt.addFilterElement().eq(4).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(4).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type('0000')
+        rt.fieldValueElement().eq(0).clear({ force: true }).type('Build')
         rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]>[col-id="return_site"]').should('contain', '0000')
+        cy.get('[row-index="0"]>[col-id="return_site"]').should('contain', 'Build')
         rt.clearFilterElement().click({ force: true })
     }
     filterEndswithRsite() {
         rt.addFilterElement().eq(4).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(5).click({ force: true })
-        rt.fieldValueElement().eq(0).clear({ force: true }).type('0-01')
+        rt.fieldValueElement().eq(0).clear({ force: true }).type('One')
         rt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]>[col-id="return_site"]').should('contain', '0-01')
+        cy.get('[row-index="0"]>[col-id="return_site"]').should('contain', 'One')
         rt.clearFilterElement().click({ force: true })
     }
-    filterBlankRsite(){
+    filterBlankRsite() {
         rt.addFilterElement().eq(4).click({ force: true })
         rt.fieldNameElement().eq(1).click({ force: true })
         rt.fieldOpElement().eq(6).click({ force: true })
         rt.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
         rt.applyElement().click({ force: true })
-      //  cy.get('[row-index="0"]>[col-id="return_site"]').should('contain', ' ')
+        //  cy.get('[row-index="0"]>[col-id="return_site"]').should('contain', ' ')
         rt.clearFilterElement().click({ force: true })
     }
     filterNotblankRsite() {
@@ -1185,7 +1198,7 @@ export class RepairTicketsActions {
         cy.get('[row-index="0"]').should('contain', tdata.repairTickets.lastModifiedDate1)
         rt.clearFilterElement().click({ force: true })
     }
-    sortingTN(){
+    sortingTN() {
         cy.wait(1000)
         rt.optionElement().eq(1).click({ force: true })
         rt.sortAscendingElement().click({ force: true })
@@ -1194,7 +1207,7 @@ export class RepairTicketsActions {
         rt.optionElement().eq(1).click({ force: true })
         cy.contains('Clear Sort').click({ force: true })
     }
-    sortingRT(){
+    sortingRT() {
         cy.wait(1000)
         rt.optionElement().eq(2).click({ force: true })
         rt.sortAscendingElement().click({ force: true })
@@ -1203,7 +1216,7 @@ export class RepairTicketsActions {
         rt.optionElement().eq(2).click({ force: true })
         cy.contains('Clear Sort').click({ force: true })
     }
-    sortingSN(){
+    sortingSN() {
         cy.wait(1000)
         rt.optionElement().eq(3).click({ force: true })
         rt.sortAscendingElement().click({ force: true })
@@ -1212,7 +1225,7 @@ export class RepairTicketsActions {
         rt.optionElement().eq(3).click({ force: true })
         cy.contains('Clear Sort').click({ force: true })
     }
-    sortingB(){
+    sortingB() {
         cy.wait(1000)
         rt.optionElement().eq(4).click({ force: true })
         rt.sortAscendingElement().click({ force: true })
@@ -1221,7 +1234,7 @@ export class RepairTicketsActions {
         rt.optionElement().eq(4).click({ force: true })
         rt.clearSortElement().click({ force: true })
     }
-    sortingRSite(){
+    sortingRSite() {
         cy.wait(1000)
         rt.optionElement().eq(5).click({ force: true })
         rt.sortAscendingElement().click({ force: true })
@@ -1230,7 +1243,7 @@ export class RepairTicketsActions {
         rt.optionElement().eq(5).click({ force: true })
         rt.clearSortElement().click({ force: true })
     }
-    sortingRD(){
+    sortingRD() {
         cy.wait(1000)
         rt.optionElement().eq(6).click({ force: true })
         rt.sortAscendingElement().click({ force: true })
@@ -1239,7 +1252,7 @@ export class RepairTicketsActions {
         rt.optionElement().eq(6).click({ force: true })
         rt.clearSortElement().click({ force: true })
     }
-    sortingTag(){
+    sortingTag() {
         cy.wait(1000)
         rt.optionElement().eq(7).click({ force: true })
         rt.sortAscendingElement().click({ force: true })
@@ -1248,7 +1261,7 @@ export class RepairTicketsActions {
         rt.optionElement().eq(7).click({ force: true })
         rt.clearSortElement().click({ force: true })
     }
-    sortingInfo(){
+    sortingInfo() {
         cy.wait(1000)
         rt.optionElement().eq(8).click({ force: true })
         rt.sortAscendingElement().click({ force: true })
@@ -1257,7 +1270,7 @@ export class RepairTicketsActions {
         rt.optionElement().eq(8).click({ force: true })
         rt.clearSortElement().click({ force: true })
     }
-    sortingST(){
+    sortingST() {
         cy.wait(1000)
         rt.optionElement().eq(9).click({ force: true })
         rt.sortAscendingElement().click({ force: true })
@@ -1266,7 +1279,7 @@ export class RepairTicketsActions {
         rt.optionElement().eq(9).click({ force: true })
         rt.clearSortElement().click({ force: true })
     }
-    sortingRS(){
+    sortingRS() {
         cy.wait(1000)
         rt.optionElement().eq(10).click({ force: true })
         rt.sortAscendingElement().click({ force: true })
@@ -1275,7 +1288,7 @@ export class RepairTicketsActions {
         rt.optionElement().eq(10).click({ force: true })
         rt.clearSortElement().click({ force: true })
     }
-    sortingCby(){
+    sortingCby() {
         cy.wait(1000)
         rt.optionElement().eq(11).click({ force: true })
         rt.sortAscendingElement().click({ force: true })
@@ -1284,7 +1297,7 @@ export class RepairTicketsActions {
         rt.optionElement().eq(11).click({ force: true })
         rt.clearSortElement().click({ force: true })
     }
-    sortingBox(){
+    sortingBox() {
         cy.wait(1000)
         rt.optionElement().eq(12).click({ force: true })
         rt.sortAscendingElement().click({ force: true })
@@ -1293,7 +1306,7 @@ export class RepairTicketsActions {
         rt.optionElement().eq(12).click({ force: true })
         rt.clearSortElement().click({ force: true })
     }
-    sortingCdate(){
+    sortingCdate() {
         cy.wait(1000)
         rt.optionElement().eq(13).click({ force: true })
         rt.sortAscendingElement().click({ force: true })
@@ -1302,7 +1315,7 @@ export class RepairTicketsActions {
         rt.optionElement().eq(13).click({ force: true })
         rt.clearSortElement().click({ force: true })
     }
-    sortingLdate(){
+    sortingLdate() {
         cy.wait(1000)
         rt.optionElement().eq(14).click({ force: true })
         rt.sortAscendingElement().click({ force: true })

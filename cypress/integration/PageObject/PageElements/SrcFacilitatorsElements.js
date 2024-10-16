@@ -97,4 +97,24 @@ export default class SrcFacilitatorsElements {
             timeout: 30000,
         })
     }
+    optionElement() {
+        return cy.get(locator.srcFacilitators.option, {
+            timeout: 30000,
+        })
+    }
+    sortAscendingElement() {
+        return cy.contains(locator.srcFacilitators.sortAscending, {
+            timeout: 30000,
+        })
+    }
+    sortDescendingElement() {
+        return cy.contains(locator.srcFacilitators.sortDescending, {
+            timeout: 30000,
+        })
+    }
+    clearSortElement() {
+        return cy.contains(locator.srcFacilitators.clearSort, {
+            timeout: 30000,
+        })
+    }
 }

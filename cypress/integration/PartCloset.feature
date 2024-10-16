@@ -91,5 +91,12 @@ Feature: PartCloset Page Functionality
         And Click on delete button
         Then Verify the recode is deleted
 
+        And Click on Sort Ascending and Descending for Part Name and Verify the Result
+        And Click on Sort Ascending and Descending for SKU and Verify the Result
+        And Click on Sort Ascending and Descending for Parent Device and Verify the Result
+        And Click on Sort Ascending and Descending for Building and Verify the Result
+        And Click on Sort Ascending and Descending for Manufacturer and Verify the Result
+        And Click on Sort Ascending and Descending for Part Category and Verify the Result
+        And Click on Sort Ascending and Descending for Quantity and Verify the Result
 
 

@@ -76,8 +76,8 @@ export class InHouseTicketsActions {
     }
     clickOnAddLine() {
         iht.addlineElement().click({ force: true })
-       cy.get('.css-imb8av').click({ force: true })
-       //  iht.custompartElemnet().click({ force: true })
+        cy.get('.css-1ex9n8q').click({ force: true })
+        //  iht.custompartElemnet().click({ force: true })
         iht.partElement().click({ force: true })
         cy.get('[role="listbox"]').contains("Corey's Custom Part D").click({ force: true })
         iht.noteElement().type('Testing line', { force: true })
@@ -433,7 +433,7 @@ export class InHouseTicketsActions {
         cy.get('[row-index="0"]').should('contain', ' ')
         iht.clearFilterElement().click({ force: true })
     }
-    filterNotblankRsite(){
+    filterNotblankRsite() {
         iht.addFilterElement().eq(3).click({ force: true })
         iht.fieldNameElement().eq(1).click({ force: true })
         iht.fieldOpElement().eq(7).click({ force: true })
@@ -1058,7 +1058,7 @@ export class InHouseTicketsActions {
         cy.get('[row-index="0"]').should('contain', tdata.inHouseTicket.createdby)
         iht.clearFilterElement().click({ force: true })
     }
-    sortingRI(){
+    sortingRI() {
         cy.wait(1000)
         iht.optionElement().eq(1).click({ force: true })
         iht.sortAscendingElement().click({ force: true })
@@ -1067,7 +1067,7 @@ export class InHouseTicketsActions {
         iht.optionElement().eq(1).click({ force: true })
         iht.clearSortElement().click({ force: true })
     }
-    sortingTN(){
+    sortingTN() {
         cy.wait(1000)
         iht.optionElement().eq(2).click({ force: true })
         iht.sortAscendingElement().click({ force: true })
@@ -1076,7 +1076,7 @@ export class InHouseTicketsActions {
         iht.optionElement().eq(2).click({ force: true })
         iht.clearSortElement().click({ force: true })
     }
-    sortingBuilding(){
+    sortingBuilding() {
         cy.wait(1000)
         iht.optionElement().eq(3).click({ force: true })
         iht.sortAscendingElement().click({ force: true })
@@ -1085,7 +1085,7 @@ export class InHouseTicketsActions {
         iht.optionElement().eq(3).click({ force: true })
         iht.clearSortElement().click({ force: true })
     }
-    sortingRSite(){
+    sortingRSite() {
         cy.wait(1000)
         iht.optionElement().eq(4).click({ force: true })
         iht.sortAscendingElement().click({ force: true })
@@ -1094,7 +1094,7 @@ export class InHouseTicketsActions {
         iht.optionElement().eq(4).click({ force: true })
         iht.clearSortElement().click({ force: true })
     }
-    sortingRtype(){
+    sortingRtype() {
         cy.wait(1000)
         iht.optionElement().eq(5).click({ force: true })
         iht.sortAscendingElement().click({ force: true })
@@ -1103,7 +1103,7 @@ export class InHouseTicketsActions {
         iht.optionElement().eq(5).click({ force: true })
         iht.clearSortElement().click({ force: true })
     }
-    sortingSN(){
+    sortingSN() {
         cy.wait(1000)
         iht.optionElement().eq(6).click({ force: true })
         iht.sortAscendingElement().click({ force: true })
@@ -1112,7 +1112,7 @@ export class InHouseTicketsActions {
         iht.optionElement().eq(6).click({ force: true })
         iht.clearSortElement().click({ force: true })
     }
-    sortingRDev(){
+    sortingRDev() {
         cy.wait(1000)
         iht.optionElement().eq(7).click({ force: true })
         iht.sortAscendingElement().click({ force: true })
@@ -1121,7 +1121,7 @@ export class InHouseTicketsActions {
         iht.optionElement().eq(7).click({ force: true })
         iht.clearSortElement().click({ force: true })
     }
-    sortingATag(){
+    sortingATag() {
         cy.wait(1000)
         iht.optionElement().eq(8).click({ force: true })
         iht.sortAscendingElement().click({ force: true })
@@ -1130,7 +1130,7 @@ export class InHouseTicketsActions {
         iht.optionElement().eq(8).click({ force: true })
         iht.clearSortElement().click({ force: true })
     }
-    sortingIT(){
+    sortingIT() {
         cy.wait(1000)
         iht.optionElement().eq(9).click({ force: true })
         iht.sortAscendingElement().click({ force: true })
@@ -1139,7 +1139,7 @@ export class InHouseTicketsActions {
         iht.optionElement().eq(9).click({ force: true })
         iht.clearSortElement().click({ force: true })
     }
-    sortingStdN(){
+    sortingStdN() {
         cy.wait(1000)
         iht.optionElement().eq(10).click({ force: true })
         iht.sortAscendingElement().click({ force: true })
@@ -1148,7 +1148,7 @@ export class InHouseTicketsActions {
         iht.optionElement().eq(10).click({ force: true })
         iht.clearSortElement().click({ force: true })
     }
-    sortingRStatus(){
+    sortingRStatus() {
         cy.wait(1000)
         iht.optionElement().eq(11).click({ force: true })
         iht.sortAscendingElement().click({ force: true })
@@ -1157,7 +1157,7 @@ export class InHouseTicketsActions {
         iht.optionElement().eq(11).click({ force: true })
         iht.clearSortElement().click({ force: true })
     }
-    sortingInhouseStatus(){
+    sortingInhouseStatus() {
         cy.wait(1000)
         iht.optionElement().eq(12).click({ force: true })
         iht.sortAscendingElement().click({ force: true })
@@ -1166,7 +1166,7 @@ export class InHouseTicketsActions {
         iht.optionElement().eq(12).click({ force: true })
         iht.clearSortElement().click({ force: true })
     }
-    sortingWstatus(){
+    sortingWstatus() {
         cy.wait(1000)
         iht.optionElement().eq(13).click({ force: true })
         iht.sortAscendingElement().click({ force: true })
@@ -1175,7 +1175,7 @@ export class InHouseTicketsActions {
         iht.optionElement().eq(13).click({ force: true })
         iht.clearSortElement().click({ force: true })
     }
-    sortingCBy(){
+    sortingCBy() {
         cy.wait(1000)
         iht.optionElement().eq(14).click({ force: true })
         iht.sortAscendingElement().click({ force: true })
@@ -1184,7 +1184,7 @@ export class InHouseTicketsActions {
         iht.optionElement().eq(14).click({ force: true })
         iht.clearSortElement().click({ force: true })
     }
-    sortingLdate(){
+    sortingLdate() {
         cy.wait(1000)
         iht.optionElement().eq(15).click({ force: true })
         iht.sortAscendingElement().click({ force: true })

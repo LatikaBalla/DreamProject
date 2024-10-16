@@ -74,6 +74,11 @@ Feature:SrcStudents Page Functionality
         And Click on filter of User Role Not blank and Verify the Result
         And Click on Download Export button
 
-
+        And Click on Sort Ascending and Descending for Full Name and Verify the Result
+        And Click on Sort Ascending and Descending for Title and Verify the Result
+        And Click on Sort Ascending and Descending for Email and Verify the Result
+        And Click on Sort Ascending and Descending for User Status and Verify the Result
+        And Click on Sort Ascending and Descending for Phone and Verify the Result
+        And Click on Sort Ascending and Descending for User Role and Verify the Result
 
 

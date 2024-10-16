@@ -202,7 +202,7 @@ export class SrcFacilitatorsActions {
         sf.addFilterElement().eq(2).click({ force: true })
         sf.fieldNameElement().eq(1).click({ force: true })
         sf.fieldOpElement().eq(0).click({ force: true })
-        sf.fieldValueElement().type(tdata.srcFacilitators.emailid ,{ force: true })
+        sf.fieldValueElement().type(tdata.srcFacilitators.emailid, { force: true })
         sf.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.srcFacilitators.emailid)
         sf.clearFilterElement().click({ force: true })
@@ -482,6 +482,60 @@ export class SrcFacilitatorsActions {
         sf.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.srcFacilitators.lastModifiedDate1)
         sf.clearFilterElement().click({ force: true })
+    }
+    sortingFName() {
+        cy.wait(1000)
+        sf.optionElement().eq(0).click({ force: true })
+        sf.sortAscendingElement().click({ force: true })
+        sf.optionElement().eq(0).click({ force: true })
+        sf.sortDescendingElement().click({ force: true })
+        sf.optionElement().eq(0).click({ force: true })
+        sf.clearSortElement().click({ force: true })
+    }
+    sortingTitle() {
+        cy.wait(1000)
+        sf.optionElement().eq(1).click({ force: true })
+        sf.sortAscendingElement().click({ force: true })
+        sf.optionElement().eq(1).click({ force: true })
+        sf.sortDescendingElement().click({ force: true })
+        sf.optionElement().eq(1).click({ force: true })
+        sf.clearSortElement().click({ force: true })
+    }
+    sortingEmail() {
+        cy.wait(1000)
+        sf.optionElement().eq(1).click({ force: true })
+        sf.sortAscendingElement().click({ force: true })
+        sf.optionElement().eq(1).click({ force: true })
+        sf.sortDescendingElement().click({ force: true })
+        sf.optionElement().eq(1).click({ force: true })
+        sf.clearSortElement().click({ force: true })
+    }
+    sortingUstatus() {
+        cy.wait(1000)
+        sf.optionElement().eq(2).click({ force: true })
+        sf.sortAscendingElement().click({ force: true })
+        sf.optionElement().eq(2).click({ force: true })
+        sf.sortDescendingElement().click({ force: true })
+        sf.optionElement().eq(2).click({ force: true })
+        sf.clearSortElement().click({ force: true })
+    }
+    sortingPhone() {
+        cy.wait(1000)
+        sf.optionElement().eq(3).click({ force: true })
+        sf.sortAscendingElement().click({ force: true })
+        sf.optionElement().eq(3).click({ force: true })
+        sf.sortDescendingElement().click({ force: true })
+        sf.optionElement().eq(3).click({ force: true })
+        sf.clearSortElement().click({ force: true })
+    }
+    sortingLdate() {
+        cy.wait(1000)
+        sf.optionElement().eq(4).click({ force: true })
+        sf.sortAscendingElement().click({ force: true })
+        sf.optionElement().eq(4).click({ force: true })
+        sf.sortDescendingElement().click({ force: true })
+        sf.optionElement().eq(4).click({ force: true })
+        sf.clearSortElement().click({ force: true })
     }
 }
 export default SrcFacilitatorsActions 

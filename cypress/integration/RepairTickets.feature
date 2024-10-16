@@ -146,8 +146,12 @@ Feature:RepairTickets Page Functionality
     And Click on save button
     Then Verify New Ticket is added
     And Click on Download import button
+    Then Click on Learn More button
+    And Verify Dream Data Filtering Guide should be visible 
     And Click on view button
     Then Verify the Details of student repair ticket
+    And Click on Print Ticket Estimate button 
+    Then Click on Download Ticket Estimate button
     Then Click on Add Repair Image and Verify
     And Click on Add Note and Verify
   # And Click on Add Line and Verify

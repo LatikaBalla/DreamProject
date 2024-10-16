@@ -50,6 +50,18 @@ And('Click on save button', () => {
 Then('Verify New Ticket is added', () => {
     rt.verifyNewTicket()
 })
+Then('Click on Learn More button', () => {
+    rt.clickOnLearnMore()
+})
+And('Verify Dream Data Filtering Guide should be visible', () => {
+    rt.verifyfilteringGuide()
+})
+And('Click on Print Ticket Estimate button', () => {
+    rt.clickOnPrintEstimate()
+})
+Then('Click on Download Ticket Estimate button', () => {
+    rt.clickOnDownloadEstimate()
+})
 And('Click on Download import button', () => {
     rt.clickOnExport()
 })

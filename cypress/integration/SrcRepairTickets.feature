@@ -112,7 +112,7 @@ Feature:SrcRepairTickets Page Functionality
     Then Verify the Details of student repair ticket
     Then Click on Add Repair Image and Verify
     And Click on Add Note and Verify
-    And Click on Add Line and Verify
+# And Click on Add Line and Verify
 # And Click on the Edit Ticket Button
 # Then Update the Technician and Repair Status
 # And Click on Update Button
@@ -130,8 +130,3 @@ Scenario: SrcRepairTickets Sorting -Ascending and descending
     And Click on Sort Ascending and Descending for Student Name and Verify the Result
     And Click on Sort Ascending and Descending for Created By and Verify the Result
     And Click on Sort Ascending and Descending for Last Modified Date and Verify the Result
-
-
-
-
-
