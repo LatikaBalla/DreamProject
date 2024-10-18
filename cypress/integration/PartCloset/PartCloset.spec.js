@@ -12,7 +12,7 @@ When('I should Sign In into the application', () => {
     cy.AdminLogin()
 })
 Then('close the terms of service window', () => {
-    cy.wait(8000)
+    cy.wait(4000)
     pc.closeTermsOfServiceWindow()
 })
 Then('Click on Repair360 page', () => {

@@ -41,22 +41,22 @@ export default class MyFleetElements {
             timeout: 30000,
         });
     }
-   studentinfoElement() {
+    studentinfoElement() {
         return cy.get(locator.myFleet.studentinfo, {
             timeout: 30000,
         });
     }
- buildingElement() {
+    buildingElement() {
         return cy.get(locator.myFleet.building, {
             timeout: 30000,
         });
     }
-   updatebtnElement() {
+    updatebtnElement() {
         return cy.contains(locator.myFleet.updatebtn, {
             timeout: 30000,
         });
     }
-   addFilterElement() {
+    addFilterElement() {
         return cy.get(locator.myFleet.addFilter, {
             timeout: 30000,
         });
@@ -117,7 +117,7 @@ export default class MyFleetElements {
         });
     }
     addDeviceElement() {
-        return cy.contains(locator.myFleet.addDevice, {
+        return cy.get(locator.myFleet.addDevice, {
             timeout: 30000,
         });
     }
@@ -141,13 +141,93 @@ export default class MyFleetElements {
             timeout: 30000,
         })
     }
-   deviceIconElement() {
+    deviceIconElement() {
         return cy.get(locator.myFleet.deviceIcon, {
             timeout: 30000,
         })
     }
     googleIconElement() {
         return cy.get(locator.myFleet.googleIcon, {
+            timeout: 30000,
+        })
+    }
+    orgUnitElement() {
+        return cy.get(locator.myFleet.orgUnit, {
+            timeout: 30000,
+        })
+    }
+    assetIdElement() {
+        return cy.get(locator.myFleet.assetId, {
+            timeout: 30000,
+        })
+    }
+    locationElement() {
+        return cy.get(locator.myFleet.location, {
+            timeout: 30000,
+        })
+    }
+    notesElement() {
+        return cy.get(locator.myFleet.notes, {
+            timeout: 30000,
+        })
+    }
+    addLoanerElement() {
+        return cy.contains(locator.myFleet.addLoaner, {
+            timeout: 30000,
+        });
+    }
+    editDeviceElement() {
+        return cy.contains(locator.myFleet.editDevice, {
+            timeout: 30000,
+        });
+    }
+    createTicketElement() {
+        return cy.contains(locator.myFleet.createTicket, {
+            timeout: 30000,
+        });
+    }
+    savebtnElement() {
+        return cy.contains(locator.myFleet.savebtn, {
+            timeout: 30000,
+        });
+    }
+    failuretypeElement() {
+        return cy.get(locator.myFleet.failuretype, {
+            timeout: 30000,
+        })
+    }
+    returnsiteElement() {
+        return cy.get(locator.myFleet.returnsite, {
+            timeout: 30000,
+        })
+    }
+    chromebookissueElement() {
+        return cy.get(locator.myFleet.chromebookissue, {
+            timeout: 30000,
+        })
+    }
+    descriptionElement() {
+        return cy.get(locator.myFleet.description, {
+            timeout: 30000,
+        })
+    }
+    optionElement() {
+        return cy.get(locator.myFleet.option, {
+            timeout: 30000,
+        })
+    }
+    sortAscendingElement() {
+        return cy.contains(locator.myFleet.sortAscending, {
+            timeout: 30000,
+        })
+    }
+    sortDescendingElement() {
+        return cy.contains(locator.myFleet.sortDescending, {
+            timeout: 30000,
+        })
+    }
+    clearSortElement() {
+        return cy.contains(locator.myFleet.clearSort, {
             timeout: 30000,
         })
     }

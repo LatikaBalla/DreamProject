@@ -82,7 +82,7 @@ And('Verify the General Device Information', () => {
 And('Verify the Warranty Description1', () => {
     mf.verifyViewResult1()
 })
-Then('Click on Export To CSV', () => {
+Then('Click on download button', () => {
     mf.clickOnCExportToCSVButton()
 })
 And('Verify Downloaded successfully', () => {
@@ -119,7 +119,7 @@ Then('Click on Boot Performance Report and Boot Performance Report', () => {
     mf.clickOnBootPerformanceReport()
     mf.verifyBootPerformanceReport()
 })
-And ('Click on Recent Users Information and verify Recent Users Information',()=>{
+And('Click on Recent Users Information and verify Recent Users Information', () => {
     mf.clickOnRecentUser()
     mf.verifyRecentUser()
 })
@@ -145,11 +145,44 @@ Then('Verify the google data and GoLocation section', () => {
 And('Click on the edit of google data section', () => {
     mf.clickonEditGoogle()
 })
-Then('Update the note', () => {
-    mf.updateGoogleData()
+And('Update Org Unit, AssetId, Location, Note and Click on save button', () => {
+    mf.editGoogleData()
+    mf.clickOnUpdateButton()
 })
 And('Verfiy Google data Record updated successfully', () => {
     mf.verifyGoogleUpdated()
+})
+And('Click on deviceIcon and click on create ticket button', () => {
+    cy.go('back')
+    mf.clickOnDeviceIcon()
+    mf.clickOnCreateTicket()
+})
+Then('Select failure Type, Return site', () => {
+    mf.selectFailureType()
+    mf.selectReturnSite()
+})
+And('Select Building and Chromebook issue', () => {
+    mf.selectStudent()
+    mf.selectChromebookIssue()
+    mf.selectBuilding()
+})
+Then('Enter the Describe Your Issue', () => {
+    mf.enterDescritionOfIssue()
+})
+And('Click on save button', () => {
+    mf.clickOnSaveButton()
+})
+Then('Verify New Ticket is added', () => {
+    mf.verifyNewTicket()
+})
+And('Click on deviceIcon and click on add Loaner button', () => {
+    mf.clickOnAddLoaner()
+})
+Then('verify the ticket is added in loaner', () => {
+    mf.verifyaddTicketLoaner()
+})
+And('Click on deviceIcon and click on Edit Device button', () => {
+    mf.clickOnEditDevice()
 })
 //sn
 And('Click on filter of Serial Number contain and Verify the Result', () => {
@@ -276,10 +309,10 @@ And('Click on filter of Building Blank and Verify the Result', () => {
 And('Click on filter of Building Not blank and Verify the Result', () => {
     mf.filterNotblankB()
 })
-And ('Click on filter of VT Verified op1 and Verify the Result',()=>{
-mf.filterVToption1()
+And('Click on filter of VT Verified op1 and Verify the Result', () => {
+    mf.filterVToption1()
 })
-And ('Click on filter of VT Verified op2 and Verify the Result',()=>{
+And('Click on filter of VT Verified op2 and Verify the Result', () => {
     mf.filterVToption2()
 })
 //user
@@ -459,7 +492,7 @@ And('Click on filter of Model Not blank and Verify the Result in Retired', () =>
 And('Click on filter of SKU contain and Verify the Result in Retired', () => {
     mf.filtercontainSKU1()
 })
-And('Click on filter of SKU Does not contain and Verify the Result in Retired' , () => {
+And('Click on filter of SKU Does not contain and Verify the Result in Retired', () => {
     mf.filterDoesnotcontainSKU1()
 })
 And('Click on filter of SKU Equals and Verify the Result in Retired', () => {
@@ -603,15 +636,46 @@ And('Click on filter of Warranty End Date Not blank and Verify the Result in Ret
     mf.filterNotblankDate1()
 })
 //Ls
-And ('Click on filter of Loaner Status op1 and Verify the Result', () => {
-    mf.filterLSOption1() 
+And('Click on filter of Loaner Status op1 and Verify the Result', () => {
+    mf.filterLSOption1()
 })
-And ('Click on filter of Loaner Status op2 and Verify the Result', () => {
-    mf.filterLSOption2() 
+And('Click on filter of Loaner Status op2 and Verify the Result', () => {
+    mf.filterLSOption2()
 })
-And ('Click on filter of Loaner Status op3 and Verify the Result', () => {
-    mf.filterLSOption3() 
+And('Click on filter of Loaner Status op3 and Verify the Result', () => {
+    mf.filterLSOption3()
 })
-And ('Click on filter of Loaner Status op4 and Verify the Result', () => {
-    mf.filterLSOption4() 
+And('Click on filter of Loaner Status op4 and Verify the Result', () => {
+    mf.filterLSOption4()
+})
+//sorting
+And('Click on Sort Ascending and Descending for Serial Number and Verify the Result', () => {
+    mf.sortingSN()
+})
+And('Click on Sort Ascending and Descending for Asset Tag and Verify the Result', () => {
+    mf.sortingATag()
+})
+And('Click on Sort Ascending and Descending for Model and Verify the Result', () => {
+    mf.sortingModel()
+})
+And('Click on Sort Ascending and Descending for SKU and Verify the Result', () => {
+    mf.sortingSKU()
+})
+And('Click on Sort Ascending and Descending for Building and Verify the Result', () => {
+    mf.sortingBuilding()
+})
+And('Click on Sort Ascending and Descending for Serial Number and Verify the Result in Retired', () => {
+    mf.sortingSN1()
+})
+And('Click on Sort Ascending and Descending for Asset Tag and Verify the Result in Retired', () => {
+    mf.sortingATag1()
+})
+And('Click on Sort Ascending and Descending for Model and Verify the Result in Retired', () => {
+    mf.sortingModel1()
+})
+And('Click on Sort Ascending and Descending for SKU and Verify the Result in Retired', () => {
+    mf.sortingSKU1()
+})
+And('Click on Sort Ascending and Descending for Building and Verify the Result in Retired', () => {
+    mf.sortingBuilding1()
 })

@@ -116,7 +116,7 @@
     "searchG": "5CD031J7GP",
     "serialno": "SerialTest12387875",
     "serialno1": "VIVATEST91Test",
-    "serialnumber": "Test123Test",
+    "serialnumber": "VIVATEST80Test",
     "assettag": "Tyrique",
     "assettag1": "Novella",
     "model": "Generic Chromebook",
@@ -134,7 +134,15 @@
     "warrantyDate": "2027-03-15",
     "warrantyDate1": "15-03-2027",
     "warrantyDate2": "2024-10-02",
-    "warrantyDate3": "02-10-2024"
+    "warrantyDate3": "02-10-2024",
+    "editorgUnit":"/Devices",
+    "editassetId":"MalejaQQQ",
+    "editlocation":"Aruns",
+    "editnotes":"Testing for google data",
+    "description": "there is some problem in Battery of the laptop",
+    "createTicketmsg": "Add new ticket form submitted",
+    "chromebookissue":"[data-value='Battery']",
+    "addLoanermsg":"Device Added to Loaner Pool"
   },
   "addasset": {
     "title": "AssetTitle",

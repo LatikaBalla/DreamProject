@@ -57,7 +57,6 @@ export class MyFleetActions {
    editAssignment() {
       mf.studentinfoElement().click({ force: true })
       cy.get('[role="listbox"]').find('li').contains('Demo Test').click({ force: true })
-      // cy.get(tdata.myFleet.studentidEdit).click()
       mf.buildingElement().click({ force: true })
       cy.get('[role="listbox"]').find('li').contains(tdata.myFleet.buildingname).click({ force: true })
    }
@@ -70,14 +69,8 @@ export class MyFleetActions {
    verifyAssignmnetUdate() {
       dash.messageElement().should('contain', 'Device assignment updated')
    }
-   clickOnClearFiltersButton() {
-      mf.clearfilterElement().click({ force: true })
-   }
-   verifyResultAfterFilter() {
-      cy.wait(3000)
-      cy.get('tbody tr td').should('contain', tdata.myFleet.serialno)
-   }
    clickOnCExportToCSVButton() {
+      cy.wait(1000)
       mf.exportcsvElement().click({ force: true })
    }
    verifyDownloadSuccessful() {
@@ -87,7 +80,6 @@ export class MyFleetActions {
       mf.deviceIconElement().eq(1).click({ force: true })
    }
    clickOnViewButton() {
-      cy.wait(5000)
       mf.viewElement().click({ force: true });
    }
    verifyViewResult() {
@@ -104,11 +96,11 @@ export class MyFleetActions {
       mf.serialNoElement().type(uniqueSeed)
    }
    selectDeviceId() {
-      mf.deviceidElement().click()
-      cy.get(tdata.myFleet.deviceid).click()
+      mf.deviceidElement().click({ force: true })
+      cy.get('#device-option-0').click({ force: true })
    }
    enterAssetTag() {
-      mf.assetTagElement().type(tdata.myFleet.serialno)
+      mf.assetTagElement().type(tdata.myFleet.assettag)
    }
    selectStudentid() {
       mf.studentidElement().click({ force: true })
@@ -128,6 +120,60 @@ export class MyFleetActions {
    verfifyDeviceAdded() {
       dash.messageElement().should('contain', tdata.myFleet.addDevicemsg)
    }
+   selectFailureType() {
+      mf.failuretypeElement().click({ force: true })
+      cy.get(tdata.repairTickets.failuretype).click({ force: true })
+   }
+   selectReturnSite() {
+      mf.returnsiteElement().click({ force: true })
+      cy.get('#outbound_address-option-5').click({ force: true })
+   }
+   selectStudent() {
+      cy.get('#student_id').click({ force: true })
+      cy.get('#student_id-option-5').click({ force: true })
+   }
+   selectBuilding() {
+      cy.wait(1000)
+      mf.buildingElement().click({ force: true })
+      cy.get('#building-option-5').click({ force: true })
+   }
+   selectChromebookIssue() {
+      mf.chromebookissueElement().click({ force: true })
+      cy.get(tdata.myFleet.chromebookissue).click({ force: true })
+   }
+   enterDescritionOfIssue() {
+      mf.descriptionElement().type(tdata.myFleet.description, { force: true })
+   }
+   clickOnSaveButton() {
+      mf.savebtnElement().click({ force: true })
+   }
+   verifyNewTicket() {
+      dash.messageElement().should('contain', tdata.myFleet.createTicketmsg)
+   }
+   clickOnAddLoaner() {
+      cy.get('[data-testid="FilterAltIcon"]').click({ force: true })
+      mf.addFilterElement().eq(1).click({ force: true })
+      mf.fieldNameElement().eq(1).click({ force: true })
+      mf.fieldOpElement().eq(0).click({ force: true })
+      mf.fieldValueElement().type(tdata.myFleet.assettag)
+      mf.applyElement().click({ force: true })
+      cy.wait(1000)
+      mf.deviceIconElement().eq(1).click({ force: true })
+      mf.addLoanerElement().click({ force: true })
+   }
+   verifyaddTicketLoaner() {
+      dash.messageElement().should('contain', tdata.myFleet.addLoanermsg)
+   }
+   clickOnEditDevice() {
+      cy.wait(2000)
+      mf.addFilterElement().eq(1).click({ force: true })
+      mf.fieldNameElement().eq(1).click({ force: true })
+      mf.fieldOpElement().eq(0).click({ force: true })
+      mf.fieldValueElement().type(tdata.myFleet.assettag)
+      mf.applyElement().click({ force: true })
+      mf.deviceIconElement().eq(1).click({ force: true })
+      mf.editDeviceElement().click({ force: true })
+   }
    clickonGoogleIcon() {
       cy.wait(4000)
       mf.addFilterElement().eq(0).click({ force: true })
@@ -135,7 +181,7 @@ export class MyFleetActions {
       mf.fieldOpElement().eq(0).click({ force: true })
       mf.fieldValueElement().type(tdata.myFleet.searchG)
       mf.applyElement().click({ force: true })
-      cy.get('#cell-button-120 > .MuiBox-root > .MuiButtonBase-root').dbclick({ force: true })
+      mf.googleIconElement().eq(0).click({ force: true })
    }
    verifyGoogleGolocation() {
       cy.contains('Google Data').should('be.visible')
@@ -144,26 +190,33 @@ export class MyFleetActions {
    clickonEditGoogle() {
       cy.get('[aria-label="Edit Google Data"]').click({ force: true })
    }
-   updateGoogleData() {
-
+   editGoogleData() {
+      mf.orgUnitElement().click({ force: true })
+      cy.contains(tdata.myFleet.editorgUnit).click({ force: true })
+      mf.assetIdElement().clear().type(tdata.myFleet.editassetId)
+      mf.locationElement().clear().type(tdata.myFleet.editlocation)
+      mf.notesElement().clear().type(tdata.myFleet.editnotes)
    }
    verifyGoogleUpdated() {
-
+      dash.messageElement().should('contain', 'Google Chrome OS Device updated')
+   }
+   clickOnCreateTicket() {
+      mf.createTicketElement().click({ force: true });
    }
    converRetired() {
       cy.wait(4000)
+      cy.get('[data-testid="FilterAltIcon"]').click({ force: true })
       mf.addFilterElement().eq(0).click({ force: true })
       mf.fieldNameElement().eq(1).click({ force: true })
       mf.fieldOpElement().eq(0).click({ force: true })
-      mf.fieldValueElement().type(tdata.myFleet.serialnumber, { force: true })
+      mf.fieldValueElement().clear().type(tdata.myFleet.serialnumber, { force: true })
       mf.applyElement().click({ force: true })
       cy.wait(1000)
       mf.deviceIconElement().eq(1).click({ force: true })
       cy.get('[href="/devices"]').eq(4).click({ force: true })
-      cy.get('.css-1877pye').click({ force: true })
+      cy.get('[type="button"]').contains("Confirm").click({ force: true })
    }
    verifyRetired() {
-
       dash.messageElement().should('contain', 'Device Retired', { force: true })
    }
    convertActive() {
@@ -171,12 +224,12 @@ export class MyFleetActions {
       mf.addFilterElement().eq(0).click({ force: true })
       mf.fieldNameElement().eq(1).click({ force: true })
       mf.fieldOpElement().eq(0).click({ force: true })
-      mf.fieldValueElement().eq(0).type(tdata.myFleet.serialnumber, { force: true })
+      mf.fieldValueElement().eq(0).clear().type(tdata.myFleet.serialnumber, { force: true })
       mf.applyElement().click({ force: true })
       cy.wait(1000)
       mf.deviceIconElement().eq(1).click({ force: true })
       cy.get('[href="/devices"]').eq(4).click({ force: true })
-      cy.get('.css-1877pye').click({ force: true })
+      cy.get('[type="button"]').contains("Confirm").click({ force: true })
    }
    verifyActive() {
       dash.messageElement().should('contain', 'Device Activated', { force: true })
@@ -603,13 +656,13 @@ export class MyFleetActions {
       cy.get('[row-index="0"]').should('contain', tdata.myFleet.buildingname)
       mf.clearFilterElement().click({ force: true })
    }
-   filterVToption1(){
+   filterVToption1() {
       mf.addFilterElement().eq(5).click({ force: true })
       cy.get('[value="Yes"]').click({ force: true })
       cy.get('[row-index="0"]').should('contain', 'Yes')
       cy.get('[class="reset-button"]').click({ force: true })
    }
-   filterVToption2(){
+   filterVToption2() {
       mf.addFilterElement().eq(5).click({ force: true })
       cy.get('[value="No"]').click({ force: true })
       cy.get('[row-index="0"]').should('contain', 'No')
@@ -919,7 +972,6 @@ export class MyFleetActions {
       cy.get('[class="reset-button"]').click({ force: true })
    }
    filterLSOption4() {
-      mf.addFilterElement().eq(9).click({ force: true })
       cy.get('[value="Not Set"]').click({ force: true })
       cy.get('[row-index="0"]').should('contain', 'Not Set')
       cy.get('[class="reset-button"]').click({ force: true })
@@ -1584,6 +1636,96 @@ export class MyFleetActions {
       mf.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', tdata.myFleet.warrantyDate3)
       mf.clearFilterElement().click({ force: true })
+   }
+   sortingSN() {
+      cy.wait(1000)
+      mf.optionElement().eq(1).click({ force: true })
+      mf.sortAscendingElement().click({ force: true })
+      mf.optionElement().eq(1).click({ force: true })
+      mf.sortDescendingElement().click({ force: true })
+      mf.optionElement().eq(1).click({ force: true })
+         .click({ force: true })
+   }
+   sortingATag() {
+      cy.wait(1000)
+      mf.optionElement().eq(2).click({ force: true })
+      mf.sortAscendingElement().click({ force: true })
+      mf.optionElement().eq(2).click({ force: true })
+      mf.sortDescendingElement().click({ force: true })
+      mf.optionElement().eq(2).click({ force: true })
+      mf.clearSortElement().click({ force: true })
+   }
+   sortingModel() {
+      cy.wait(1000)
+      mf.optionElement().eq(3).click({ force: true })
+      mf.sortAscendingElement().click({ force: true })
+      mf.optionElement().eq(3).click({ force: true })
+      mf.sortDescendingElement().click({ force: true })
+      mf.optionElement().eq(3).click({ force: true })
+      mf.clearSortElement().click({ force: true })
+   }
+   sortingSKU() {
+      cy.wait(1000)
+      mf.optionElement().eq(4).click({ force: true })
+      mf.sortAscendingElement().click({ force: true })
+      mf.optionElement().eq(4).click({ force: true })
+      mf.sortDescendingElement().click({ force: true })
+      mf.optionElement().eq(4).click({ force: true })
+      mf.clearSortElement().click({ force: true })
+   }
+   sortingBuilding() {
+      cy.wait(1000)
+      mf.optionElement().eq(5).click({ force: true })
+      mf.sortAscendingElement().click({ force: true })
+      mf.optionElement().eq(5).click({ force: true })
+      mf.sortDescendingElement().click({ force: true })
+      mf.optionElement().eq(5).click({ force: true })
+      mf.clearSortElement().click({ force: true })
+   }
+   sortingSN1() {
+      cy.wait(1000)
+      mf.optionElement().eq(1).click({ force: true })
+      mf.sortAscendingElement().click({ force: true })
+      mf.optionElement().eq(1).click({ force: true })
+      mf.sortDescendingElement().click({ force: true })
+      mf.optionElement().eq(1).click({ force: true })
+      mf.clearSortElement().click({ force: true })
+   }
+   sortingATag1() {
+      cy.wait(1000)
+      mf.optionElement().eq(2).click({ force: true })
+      mf.sortAscendingElement().click({ force: true })
+      mf.optionElement().eq(2).click({ force: true })
+      mf.sortDescendingElement().click({ force: true })
+      mf.optionElement().eq(2).click({ force: true })
+      mf.clearSortElement().click({ force: true })
+   }
+   sortingModel1() {
+      cy.wait(1000)
+      mf.optionElement().eq(3).click({ force: true })
+      mf.sortAscendingElement().click({ force: true })
+      mf.optionElement().eq(3).click({ force: true })
+      mf.sortDescendingElement().click({ force: true })
+      mf.optionElement().eq(3).click({ force: true })
+      mf.clearSortElement().click({ force: true })
+   }
+   sortingSKU1() {
+      cy.wait(1000)
+      mf.optionElement().eq(4).click({ force: true })
+      mf.sortAscendingElement().click({ force: true })
+      mf.optionElement().eq(4).click({ force: true })
+      mf.sortDescendingElement().click({ force: true })
+      mf.optionElement().eq(4).click({ force: true })
+      mf.clearSortElement().click({ force: true })
+   }
+   sortingBuilding1() {
+      cy.wait(1000)
+      mf.optionElement().eq(5).click({ force: true })
+      mf.sortAscendingElement().click({ force: true })
+      mf.optionElement().eq(5).click({ force: true })
+      mf.sortDescendingElement().click({ force: true })
+      mf.optionElement().eq(5).click({ force: true })
+      mf.clearSortElement().click({ force: true })
    }
 }
 export default MyFleetActions 
