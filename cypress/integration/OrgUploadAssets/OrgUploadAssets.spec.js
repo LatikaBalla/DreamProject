@@ -57,7 +57,10 @@ Then('Enter cost and quantity', () => {
 Then('Upload the image file', () => {
     oua.selectFileForUpload()
 })
-And('Enter fieldValue1 and fieldValue2', () => {
+And ('Click on Add field button',()=>{
+    oua.clickOnAddField()
+})
+Then('Enter fieldkey and fieldValue', () => {
     oua.enterFieldValue1and2()
 })
 And('Click on save button', () => {
@@ -113,8 +116,20 @@ Then('Click on Confirm Delete button', () => {
 And('Verify the record is deleted successfully', () => {
     oua.verifyRecordDeleted()
 })
-Then('Click on Clear filter', () => {
-    oua.clickOnClearFilter()
+Then('Click on Bulk Upload button', () => {
+    oua.clickOnBulkUpload()
+})
+And('Click on Attach CSV file and Click on submit button', () => {
+    oua.attachCsvfile()
+})
+Then('Verify the Uploaded successfully', () => {
+    oua.verifyuploaded()
+})
+And('Click on help icon for Filtering Guide', () => {
+    oua.clickOnHelpIcon()
+})
+Then('Verify the Dream Data Filtering Guide', () => {
+    oua.verifyfilteringGuide()
 })
 //description
 And('Click on filter of Description contain and Verify the Result', () => {

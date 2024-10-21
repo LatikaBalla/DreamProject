@@ -173,5 +173,9 @@ export default class LoanerManagementElements {
             timeout: 30000,
         })
     }
-
-}
+    filterHelpElement() {
+        return cy.get(locator.loanerManagement.filterHelp, {
+            timeout: 30000,
+        })
+    }
+    }

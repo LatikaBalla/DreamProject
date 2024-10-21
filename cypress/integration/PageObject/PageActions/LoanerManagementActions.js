@@ -12,7 +12,7 @@ export class LoanerManagementActions {
     }
     closeTermsOfServiceWindow() {
         cy.wait(5000)
-   dash.termsElement().contains('Dismiss').click({ force: true })
+        dash.termsElement().contains('Dismiss').click({ force: true })
         cy.wait(1000)
     }
     clickOnManageDevices() {
@@ -54,15 +54,14 @@ export class LoanerManagementActions {
         cy.wait(2000)
         dash.messageElement().should('contain', tdata.loanerManagement.stdcreatedmsg)
     }
-    ///
     clickOnDeviceIcon() {
         loan.addFilterElement().eq(2).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(0).click({ force: true })
         loan.fieldValueElement().type(tdata.loanerManagement.serialno)
         loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(1).should('contain', tdata.loanerManagement.serialno)
         cy.wait(1000)
+        cy.get('[row-index="0"]').should('contain', tdata.loanerManagement.serialno)
         loan.deviceIconElement().eq(1).click({ force: true })
     }
     clickOnCheckOut() {
@@ -106,7 +105,8 @@ export class LoanerManagementActions {
         loan.fieldOpElement().eq(0).click({ force: true })
         loan.fieldValueElement().type(tdata.loanerManagement.serialno)
         loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(1).should('contain', tdata.loanerManagement.serialno)
+        cy.wait(1000)
+        cy.get('[row-index="0"]').should('contain', tdata.loanerManagement.serialno)
     }
     clickOnDeviceIconViewT() {
         loan.deviceIconElement().eq(1).click({ force: true })
@@ -122,8 +122,19 @@ export class LoanerManagementActions {
         loan.addFilterElement().eq(2).click({ force: true })
         loan.fieldNameElement().eq(1).click({ force: true })
         loan.fieldOpElement().eq(0).click({ force: true })
+        loan.fieldValueElement().clear().type(tdata.loanerManagement.serialno1)
+        loan.applyElement().click({ force: true })
+        cy.wait(1000)
+        cy.get('[row-index="0"]').should('contain', tdata.loanerManagement.serialno1)
+        loan.deviceIconElement().eq(1).click({ force: true })
+    }
+    clickOnDeviceIconViewHistory1() {
+        loan.addFilterElement().eq(2).click({ force: true })
+        loan.fieldNameElement().eq(1).click({ force: true })
+        loan.fieldOpElement().eq(0).click({ force: true })
         loan.fieldValueElement().clear().type(tdata.loanerManagement.serialno2)
         loan.applyElement().click({ force: true })
+        cy.wait(1000)
         cy.get('[row-index="0"]').should('contain', tdata.loanerManagement.serialno2)
         loan.deviceIconElement().eq(1).click({ force: true })
     }
@@ -132,6 +143,14 @@ export class LoanerManagementActions {
     }
     verifyViewHistory() {
         cy.contains('Device History').should('be.visible')
+        cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
+        cy.get('[data-testid="FilterAltIcon"]').click({ force: true })
+    }
+    clickOnHelpIcon() {
+        loan.filterHelpElement().click({ force: true })
+    }
+    verifyfilteringGuide() {
+        cy.contains('Dream Data Filtering Guide').should('be.visible')
         cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }
     //PD-A

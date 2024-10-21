@@ -62,8 +62,14 @@ export class OrgUploadAssetsActions {
     enterCost() {
         oua.costElement().type(tdata.addasset.cost)
     }
+    clickOnAddField(){
+        cy.contains('Add Field').click({ force: true })
+    }
     enterFieldValue1and2() {
-        oua.fieldValue1Element().type(tdata.addasset.fieldValue1)
+        oua.fieldKey1Element().type(tdata.addasset.fieldKey1)
+        oua.fieldValue1Element().type(tdata.addasset.fieldValue2)
+        cy.contains('Add Field').click({ force: true })
+        oua.fieldKey2Element().type(tdata.addasset.fieldKey2)
         oua.fieldValue2Element().type(tdata.addasset.fieldValue2)
     }
     enterPO() {
@@ -164,6 +170,25 @@ export class OrgUploadAssetsActions {
     }
     verifyRecordDeleted() {
         dash.messageElement().should('contain', tdata.orgAsset.deletemsg)
+    }
+    clickOnBulkUpload() {
+        cy.get('[data-testid="UploadFileIcon"]').click({ force: true })
+    }
+    attachCsvfile() {
+        cy.contains('Attach CSV file').click({ force: true })
+        oua.uploadElement().attachFile(tdata.orgAsset.uploadfilename, { force: true })
+        cy.wait(100)
+        cy.contains('Save').click({ force: true })
+    }
+    verifyuploaded() { 
+         dash.messageElement().should('contain', tdata.orgAsset.uploadmsg)
+    }
+    clickOnHelpIcon() {
+        oua.filterHelpElement().click({ force: true })
+    }
+    verifyfilteringGuide() {
+        cy.contains('Dream Data Filtering Guide').should('be.visible')
+        cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }
     //descritpion
     filtercontainD() {

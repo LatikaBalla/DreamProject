@@ -231,4 +231,9 @@ export default class MyFleetElements {
             timeout: 30000,
         })
     }
+    filterHelpElement() {
+        return cy.get(locator.myFleet.filterHelp, {
+            timeout: 30000,
+        })
+    }
 }

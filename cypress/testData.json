@@ -165,7 +165,9 @@
     "quantity":"5",
     "fieldValue1":"aa",
     "fieldValue2":"bb",
-    "warrantyinfo":"1year"
+    "warrantyinfo":"1year",
+    "fieldKey1":"F1",
+    "fieldKey2":"F2"
   },
   "editasset": {
     "title": "EditAssetTitle",
@@ -191,8 +193,8 @@
   "importDevice": {
     "uploadfilename": "serialImportTemplate.csv",
     "downloadfilename": "import_list.csv",
-    "importdate": "2024-03-28",
-    "importdate1": "03-28-2024",
+    "importdate": "2023-10-02",
+    "importdate1": "10-02-2023",
     "importer": "demo_adminvivacity@vivacitytech.com",
     "quantitydevices": "2",
     "quantitydevices1": "0"
@@ -202,7 +204,9 @@
     "reupload": "image2.jpg",
     "addassetmsg": "Add new asset form submitted",
     "updatemsg": "Update asset form submitted",
-    "deletemsg": "Asset deleted successfully"
+    "deletemsg": "Asset deleted successfully",
+    "uploadfilename": "Assets.csv",
+    "uploadmsg": "Asset CSV submitted"
   },
   "repairTickets": {
     "failuretype": "[data-value='Accidental']",

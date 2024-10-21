@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1612000000
+              "duration": 4674000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8089000000
+              "duration": 9204000000
             }
           },
           {
@@ -43,627 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 15126000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "Click on Manage Devices",
-            "result": {
-              "status": "passed",
-              "duration": 90000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "Click on LoanerManagement Tab",
-            "result": {
-              "status": "passed",
-              "duration": 1451000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "Verify the Title of LoanerManagement page",
-            "result": {
-              "status": "passed",
-              "duration": 10000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "Click on th add Student button",
-            "result": {
-              "status": "passed",
-              "duration": 1509000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "Enter Fullname, title and email",
-            "result": {
-              "status": "passed",
-              "duration": 929000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "Select status, building and student_id",
-            "result": {
-              "status": "passed",
-              "duration": 468000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
-            "name": "Click on the submit button of form",
-            "result": {
-              "status": "passed",
-              "duration": 84000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "Verify the student added successfully",
-            "result": {
-              "status": "passed",
-              "duration": 2018000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "Click on filter of Product Description contain and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 2659000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "Click on filter of Product Description Does not contain and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 1079000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "Click on filter of Product Description Equals and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 720000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "Click on filter of Product Description Does not equal and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 1071000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "Click on filter of Product Description Begins with and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 588000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 26,
-            "name": "Click on filter of Product Description Ends with and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 581000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 27,
-            "name": "Click on filter of Product Description Blank and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 615000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 28,
-            "name": "Click on filter of Product Description Not blank and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 621000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 30,
-            "name": "Click on filter of SKU contain and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 2621000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "Click on filter of SKU Does not contain and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 1040000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 32,
-            "name": "Click on filter of SKU Equals and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 670000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 33,
-            "name": "Click on filter of SKU Does not equal and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 1033000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 34,
-            "name": "Click on filter of SKU Begins with and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 563000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 35,
-            "name": "Click on filter of SKU Ends with and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 578000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 36,
-            "name": "Click on filter of SKU Blank and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 615000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "Click on filter of SKU Not blank and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 591000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 39,
-            "name": "Click on filter of Warranty contain and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 3024000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 40,
-            "name": "Click on filter of Warranty Does not contain and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 730000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 41,
-            "name": "Click on filter of Warranty Equals and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 1083000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 42,
-            "name": "Click on filter of Warranty Does not equal and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 717000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 43,
-            "name": "Click on filter of Warranty Begins with and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 579000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 44,
-            "name": "Click on filter of Warranty Ends with and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 584000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 45,
-            "name": "Click on filter of Warranty Blank and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 630000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 46,
-            "name": "Click on filter of Warranty Not blank and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 977000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 48,
-            "name": "Click on filter of Serial contain and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 3044000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 49,
-            "name": "Click on filter of Serial Does not contain and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 740000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 50,
-            "name": "Click on filter of Serial Equals and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 1115000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 51,
-            "name": "Click on filter of Serial Does not equal and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 731000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 52,
-            "name": "Click on filter of Serial Begins with and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 612000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 53,
-            "name": "Click on filter of Serial Ends with and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 621000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 54,
-            "name": "Click on filter of Serial Blank and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 648000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 55,
-            "name": "Click on filter of Serial Not blank and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 1019000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 57,
-            "name": "Click on filter of Asset Tag contain and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 2954000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 58,
-            "name": "Click on filter of Asset Tag Does not contain and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 643000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 59,
-            "name": "Click on filter of Asset Tag Equals and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 1042000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 60,
-            "name": "Click on filter of Asset Tag Does not equal and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 644000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 61,
-            "name": "Click on filter of Asset Tag Begins with and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 970000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 62,
-            "name": "Click on filter of Asset Tag Ends with and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 620000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 63,
-            "name": "Click on filter of Asset Tag Blank and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 666000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 64,
-            "name": "Click on filter of Asset Tag Not blank and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 935000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 65,
-            "name": "Click on filter of Asset Tag contain and Verify the Result for Available",
-            "result": {
-              "status": "passed",
-              "duration": 2624000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 67,
-            "name": "Click on DeviceIcon",
-            "result": {
-              "status": "passed",
-              "duration": 1722000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 68,
-            "name": "Click on Check out button",
-            "result": {
-              "status": "passed",
-              "duration": 91000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 69,
-            "name": "Select the student name and Date",
-            "result": {
-              "status": "passed",
-              "duration": 553000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 70,
-            "name": "Enter Check-out Description and click on submit button",
-            "result": {
-              "status": "passed",
-              "duration": 1553000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 71,
-            "name": "Click on the Check-Out tab",
-            "result": {
-              "status": "passed",
-              "duration": 1087000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 72,
-            "name": "Click on DeviceIcon",
-            "result": {
-              "status": "passed",
-              "duration": 1883000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 73,
-            "name": "Click on Check In button",
-            "result": {
-              "status": "passed",
-              "duration": 83000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 74,
-            "name": "Enter Note and Check-in Description",
-            "result": {
-              "status": "passed",
-              "duration": 1552000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 75,
-            "name": "Verify the Serial no in the Available section",
-            "result": {
-              "status": "passed",
-              "duration": 1918000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "loanermanagement-page-functionality;visiblity-and-loanermanagement-checkout-page",
-        "keyword": "Scenario",
-        "line": 77,
-        "name": "Visiblity and LoanerManagement Checkout page",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I should navigate to application",
-            "result": {
-              "status": "passed",
-              "duration": 1142000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I should Sign In into the application",
-            "result": {
-              "status": "passed",
-              "duration": 4881000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "close the terms of service window",
-            "result": {
-              "status": "passed",
-              "duration": 15132000000
+              "duration": 15118000000
             }
           },
           {
@@ -683,154 +63,134 @@
             "name": "Click on LoanerManagement Tab",
             "result": {
               "status": "passed",
-              "duration": 1293000000
+              "duration": 1266000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 78,
-            "name": "Click on the Check-Out tab",
+            "line": 14,
+            "name": "Verify the Title of LoanerManagement page",
             "result": {
               "status": "passed",
-              "duration": 1082000000
+              "duration": 9000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 79,
-            "name": "Click on filter of Product Description contain and Verify the Result for Checked Out",
+            "line": 15,
+            "name": "Click on th add Student button",
             "result": {
               "status": "passed",
-              "duration": 4673000000
+              "duration": 1779000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 80,
-            "name": "Click on filter of Product Description Does not contain and Verify the Result for Checked Out",
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Enter Fullname, title and email",
             "result": {
               "status": "passed",
-              "duration": 692000000
+              "duration": 1025000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 81,
-            "name": "Click on filter of Product Description Equals and Verify the Result for Checked Out",
+            "line": 17,
+            "name": "Select status, building and student_id",
             "result": {
               "status": "passed",
-              "duration": 701000000
+              "duration": 812000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 82,
-            "name": "Click on filter of Product Description Does not equal and Verify the Result for Checked Out",
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Click on the submit button of form",
             "result": {
               "status": "passed",
-              "duration": 690000000
+              "duration": 121000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 83,
-            "name": "Click on filter of Product Description Begins with and Verify the Result for Checked Out",
+            "line": 19,
+            "name": "Verify the student added successfully",
             "result": {
               "status": "passed",
-              "duration": 552000000
+              "duration": 2016000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 84,
-            "name": "Click on filter of Product Description Ends with and Verify the Result for Checked Out",
+            "line": 20,
+            "name": "Click on help icon for Filtering Guide",
             "result": {
               "status": "passed",
-              "duration": 589000000
+              "duration": 70000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 85,
-            "name": "Click on filter of Product Description Blank and Verify the Result for Checked Out",
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Verify the Dream Data Filtering Guide",
             "result": {
               "status": "passed",
-              "duration": 619000000
+              "duration": 73000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 86,
-            "name": "Click on filter of Product Description Not blank and Verify the Result for Checked Out",
+            "line": 23,
+            "name": "Click on filter of Product Description contain and Verify the Result for Available",
             "result": {
               "status": "passed",
-              "duration": 617000000
+              "duration": 2665000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 88,
-            "name": "Click on filter of SKU contain and Verify the Result for Checked Out",
+            "line": 24,
+            "name": "Click on filter of Product Description Does not contain and Verify the Result for Available",
             "result": {
               "status": "passed",
-              "duration": 2616000000
+              "duration": 1065000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 89,
-            "name": "Click on filter of SKU Does not contain and Verify the Result for Checked Out",
+            "line": 25,
+            "name": "Click on filter of Product Description Equals and Verify the Result for Available",
             "result": {
               "status": "passed",
-              "duration": 653000000
+              "duration": 691000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 90,
-            "name": "Click on filter of SKU Equals and Verify the Result for Checked Out",
+            "line": 26,
+            "name": "Click on filter of Product Description Does not equal and Verify the Result for Available",
             "result": {
               "status": "passed",
-              "duration": 671000000
+              "duration": 1074000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 91,
-            "name": "Click on filter of SKU Does not equal and Verify the Result for Checked Out",
-            "result": {
-              "status": "passed",
-              "duration": 655000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 92,
-            "name": "Click on filter of SKU Begins with and Verify the Result for Checked Out",
-            "result": {
-              "status": "passed",
-              "duration": 576000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 93,
-            "name": "Click on filter of SKU Ends with and Verify the Result for Checked Out",
+            "line": 27,
+            "name": "Click on filter of Product Description Begins with and Verify the Result for Available",
             "result": {
               "status": "passed",
               "duration": 594000000
@@ -839,78 +199,28 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 94,
-            "name": "Click on filter of SKU Blank and Verify the Result for Checked Out",
+            "line": 28,
+            "name": "Click on filter of Product Description Ends with and Verify the Result for Available",
             "result": {
               "status": "passed",
-              "duration": 616000000
+              "duration": 590000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 95,
-            "name": "Click on filter of SKU Not blank and Verify the Result for Checked Out",
+            "line": 29,
+            "name": "Click on filter of Product Description Blank and Verify the Result for Available",
             "result": {
               "status": "passed",
-              "duration": 591000000
+              "duration": 609000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 97,
-            "name": "Click on filter of Warranty contain and Verify the Result for Checked Out",
-            "result": {
-              "status": "passed",
-              "duration": 2673000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 98,
-            "name": "Click on filter of Warranty Does not contain and Verify the Result for Checked Out",
-            "result": {
-              "status": "passed",
-              "duration": 720000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 99,
-            "name": "Click on filter of Warranty Equals and Verify the Result for Checked Out",
-            "result": {
-              "status": "passed",
-              "duration": 719000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 100,
-            "name": "Click on filter of Warranty Does not equal and Verify the Result for Checked Out",
-            "result": {
-              "status": "passed",
-              "duration": 709000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 101,
-            "name": "Click on filter of Warranty Begins with and Verify the Result for Checked Out",
-            "result": {
-              "status": "passed",
-              "duration": 631000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 102,
-            "name": "Click on filter of Warranty Ends with and Verify the Result for Checked Out",
+            "line": 30,
+            "name": "Click on filter of Product Description Not blank and Verify the Result for Available",
             "result": {
               "status": "passed",
               "duration": 615000000
@@ -919,8 +229,68 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 103,
-            "name": "Click on filter of Warranty Blank and Verify the Result for Checked Out",
+            "line": 32,
+            "name": "Click on filter of SKU contain and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 2632000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "Click on filter of SKU Does not contain and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 1025000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "Click on filter of SKU Equals and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 670000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "Click on filter of SKU Does not equal and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 1023000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "Click on filter of SKU Begins with and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 573000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "Click on filter of SKU Ends with and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 585000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "Click on filter of SKU Blank and Verify the Result for Available",
             "result": {
               "status": "passed",
               "duration": 621000000
@@ -929,8 +299,188 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 104,
-            "name": "Click on filter of Warranty Not blank and Verify the Result for Checked Out",
+            "line": 39,
+            "name": "Click on filter of SKU Not blank and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 596000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "Click on filter of Warranty contain and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 3032000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "Click on filter of Warranty Does not contain and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 709000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "Click on filter of Warranty Equals and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 1070000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "Click on filter of Warranty Does not equal and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 715000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "Click on filter of Warranty Begins with and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 611000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "Click on filter of Warranty Ends with and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 608000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "Click on filter of Warranty Blank and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 621000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "Click on filter of Warranty Not blank and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 980000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "Click on filter of Serial contain and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 3056000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "Click on filter of Serial Does not contain and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 758000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "Click on filter of Serial Equals and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 1130000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "Click on filter of Serial Does not equal and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 760000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 54,
+            "name": "Click on filter of Serial Begins with and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 622000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 55,
+            "name": "Click on filter of Serial Ends with and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 639000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 56,
+            "name": "Click on filter of Serial Blank and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 646000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 57,
+            "name": "Click on filter of Serial Not blank and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 1090000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 59,
+            "name": "Click on filter of Asset Tag contain and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 2943000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 60,
+            "name": "Click on filter of Asset Tag Does not contain and Verify the Result for Available",
             "result": {
               "status": "passed",
               "duration": 644000000
@@ -939,28 +489,408 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 106,
-            "name": "Click on filter of Serial contain and Verify the Result for Checked Out",
+            "line": 61,
+            "name": "Click on filter of Asset Tag Equals and Verify the Result for Available",
             "result": {
               "status": "passed",
-              "duration": 2698000000
+              "duration": 994000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 107,
-            "name": "Click on filter of Serial Does not contain and Verify the Result for Checked Out",
+            "line": 62,
+            "name": "Click on filter of Asset Tag Does not equal and Verify the Result for Available",
             "result": {
               "status": "passed",
-              "duration": 734000000
+              "duration": 657000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 108,
-            "name": "Click on filter of Serial Equals and Verify the Result for Checked Out",
+            "line": 63,
+            "name": "Click on filter of Asset Tag Begins with and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 976000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 64,
+            "name": "Click on filter of Asset Tag Ends with and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 628000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 65,
+            "name": "Click on filter of Asset Tag Blank and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 685000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 66,
+            "name": "Click on filter of Asset Tag Not blank and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 931000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 67,
+            "name": "Click on filter of Asset Tag contain and Verify the Result for Available",
+            "result": {
+              "status": "passed",
+              "duration": 2626000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 70,
+            "name": "Click on DeviceIcon and Click on View History button",
+            "result": {
+              "status": "passed",
+              "duration": 1964000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 71,
+            "name": "Verify the Device History",
+            "result": {
+              "status": "passed",
+              "duration": 196000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 72,
+            "name": "Click on DeviceIcon and Click on Check out button",
+            "result": {
+              "status": "passed",
+              "duration": 1900000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 73,
+            "name": "Select the student name and Date",
+            "result": {
+              "status": "passed",
+              "duration": 551000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 74,
+            "name": "Enter Check-out Description and click on submit button",
+            "result": {
+              "status": "passed",
+              "duration": 1607000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 75,
+            "name": "Click on the Check-Out tab",
+            "result": {
+              "status": "passed",
+              "duration": 1093000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 76,
+            "name": "Click on DeviceIcon and Click on Check In button",
+            "result": {
+              "status": "passed",
+              "duration": 2081000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 77,
+            "name": "Enter Note and Check-in Description",
+            "result": {
+              "status": "passed",
+              "duration": 1593000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 78,
+            "name": "Verify the Serial no in the Available section",
+            "result": {
+              "status": "passed",
+              "duration": 2636000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "loanermanagement-page-functionality;visiblity-and-loanermanagement-checkout-page",
+        "keyword": "Scenario",
+        "line": 80,
+        "name": "Visiblity and LoanerManagement Checkout page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I should navigate to application",
+            "result": {
+              "status": "passed",
+              "duration": 2258000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I should Sign In into the application",
+            "result": {
+              "status": "passed",
+              "duration": 4963000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "close the terms of service window",
+            "result": {
+              "status": "passed",
+              "duration": 15171000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Click on Manage Devices",
+            "result": {
+              "status": "passed",
+              "duration": 87000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Click on LoanerManagement Tab",
+            "result": {
+              "status": "passed",
+              "duration": 1423000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 81,
+            "name": "Click on the Check-Out tab",
+            "result": {
+              "status": "passed",
+              "duration": 1075000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 82,
+            "name": "Click on filter of Product Description contain and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 4697000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 83,
+            "name": "Click on filter of Product Description Does not contain and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 702000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 84,
+            "name": "Click on filter of Product Description Equals and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 706000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 85,
+            "name": "Click on filter of Product Description Does not equal and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 698000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 86,
+            "name": "Click on filter of Product Description Begins with and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 549000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 87,
+            "name": "Click on filter of Product Description Ends with and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 583000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 88,
+            "name": "Click on filter of Product Description Blank and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 616000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 89,
+            "name": "Click on filter of Product Description Not blank and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 648000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 91,
+            "name": "Click on filter of SKU contain and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 2626000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 92,
+            "name": "Click on filter of SKU Does not contain and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 662000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 93,
+            "name": "Click on filter of SKU Equals and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 665000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 94,
+            "name": "Click on filter of SKU Does not equal and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 653000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 95,
+            "name": "Click on filter of SKU Begins with and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 593000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 96,
+            "name": "Click on filter of SKU Ends with and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 593000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 97,
+            "name": "Click on filter of SKU Blank and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 622000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 98,
+            "name": "Click on filter of SKU Not blank and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 593000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 100,
+            "name": "Click on filter of Warranty contain and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 2675000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 101,
+            "name": "Click on filter of Warranty Does not contain and Verify the Result for Checked Out",
             "result": {
               "status": "passed",
               "duration": 738000000
@@ -969,68 +899,128 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 109,
-            "name": "Click on filter of Serial Does not equal and Verify the Result for Checked Out",
+            "line": 102,
+            "name": "Click on filter of Warranty Equals and Verify the Result for Checked Out",
             "result": {
               "status": "passed",
-              "duration": 745000000
+              "duration": 737000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 103,
+            "name": "Click on filter of Warranty Does not equal and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 711000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 104,
+            "name": "Click on filter of Warranty Begins with and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 604000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 105,
+            "name": "Click on filter of Warranty Ends with and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 610000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 106,
+            "name": "Click on filter of Warranty Blank and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 628000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 107,
+            "name": "Click on filter of Warranty Not blank and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 652000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 109,
+            "name": "Click on filter of Serial contain and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 2714000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 110,
-            "name": "Click on filter of Serial Begins with and Verify the Result for Checked Out",
+            "name": "Click on filter of Serial Does not contain and Verify the Result for Checked Out",
             "result": {
               "status": "passed",
-              "duration": 619000000
+              "duration": 732000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 111,
-            "name": "Click on filter of Serial Ends with and Verify the Result for Checked Out",
+            "name": "Click on filter of Serial Equals and Verify the Result for Checked Out",
             "result": {
               "status": "passed",
-              "duration": 672000000
+              "duration": 782000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 112,
-            "name": "Click on filter of Serial Blank and Verify the Result for Checked Out",
+            "name": "Click on filter of Serial Does not equal and Verify the Result for Checked Out",
             "result": {
               "status": "passed",
-              "duration": 661000000
+              "duration": 748000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 113,
-            "name": "Click on filter of Serial Not blank and Verify the Result for Checked Out",
+            "name": "Click on filter of Serial Begins with and Verify the Result for Checked Out",
             "result": {
               "status": "passed",
-              "duration": 682000000
+              "duration": 614000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 114,
+            "name": "Click on filter of Serial Ends with and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 626000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 115,
-            "name": "Click on filter of Asset Tag Does not contain and Verify the Result for Checked Out",
-            "result": {
-              "status": "passed",
-              "duration": 2602000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 116,
-            "name": "Click on filter of Asset Tag Equals and Verify the Result for Checked Out",
+            "name": "Click on filter of Serial Blank and Verify the Result for Checked Out",
             "result": {
               "status": "passed",
               "duration": 651000000
@@ -1039,28 +1029,48 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 117,
-            "name": "Click on filter of Asset Tag Does not equal and Verify the Result for Checked Out",
+            "line": 116,
+            "name": "Click on filter of Serial Not blank and Verify the Result for Checked Out",
             "result": {
               "status": "passed",
-              "duration": 645000000
+              "duration": 676000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 118,
-            "name": "Click on filter of Asset Tag Begins with and Verify the Result for Checked Out",
+            "name": "Click on filter of Asset Tag Does not contain and Verify the Result for Checked Out",
             "result": {
               "status": "passed",
-              "duration": 645000000
+              "duration": 2607000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 119,
-            "name": "Click on filter of Asset Tag Ends with and Verify the Result for Checked Out",
+            "name": "Click on filter of Asset Tag Equals and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 722000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 120,
+            "name": "Click on filter of Asset Tag Does not equal and Verify the Result for Checked Out",
+            "result": {
+              "status": "passed",
+              "duration": 635000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 121,
+            "name": "Click on filter of Asset Tag Begins with and Verify the Result for Checked Out",
             "result": {
               "status": "passed",
               "duration": 650000000
@@ -1069,101 +1079,111 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 120,
-            "name": "Click on filter of Asset Tag Blank and Verify the Result for Checked Out",
+            "line": 122,
+            "name": "Click on filter of Asset Tag Ends with and Verify the Result for Checked Out",
             "result": {
               "status": "passed",
-              "duration": 669000000
+              "duration": 646000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 121,
-            "name": "Click on filter of Asset Tag Not blank and Verify the Result for Checked Out",
-            "result": {
-              "status": "passed",
-              "duration": 602000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
             "line": 123,
-            "name": "Click on DeviceIcon for view history",
+            "name": "Click on filter of Asset Tag Blank and Verify the Result for Checked Out",
             "result": {
               "status": "passed",
-              "duration": 816000000
+              "duration": 658000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 124,
-            "name": "Click on View History button",
+            "name": "Click on filter of Asset Tag Not blank and Verify the Result for Checked Out",
             "result": {
               "status": "passed",
-              "duration": 83000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 125,
-            "name": "Verify the Device History",
-            "result": {
-              "status": "passed",
-              "duration": 109000000
+              "duration": 591000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 126,
-            "name": "Click on LoanerManagement Tab",
+            "name": "Click on help icon for Filtering Guide",
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 86000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 127,
-            "name": "Click on the Check-Out tab",
+            "name": "Verify the Dream Data Filtering Guide",
             "result": {
               "status": "passed",
-              "duration": 1081000000
+              "duration": 106000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 128,
-            "name": "Click on DeviceIcon for view ticket",
+            "name": "Click on DeviceIcon and Click on View History button for checkout",
             "result": {
               "status": "passed",
-              "duration": 96000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 129,
-            "name": "Click on View Details button",
-            "result": {
-              "status": "passed",
-              "duration": 85000000
+              "duration": 1912000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
+            "line": 129,
+            "name": "Verify the Device History",
+            "result": {
+              "status": "passed",
+              "duration": 230000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
             "line": 130,
+            "name": "Click on LoanerManagement Tab",
+            "result": {
+              "status": "passed",
+              "duration": 91000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 131,
+            "name": "Click on the Check-Out tab",
+            "result": {
+              "status": "passed",
+              "duration": 1076000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 132,
+            "name": "Click on DeviceIcon and Click on View Details button",
+            "result": {
+              "status": "passed",
+              "duration": 188000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 133,
             "name": "Verify the Device Details",
             "result": {
               "status": "passed",
-              "duration": 1674000000
+              "duration": 2011000000
             }
           }
         ]

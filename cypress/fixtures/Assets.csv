@@ -1,0 +1,5 @@
+Location,Tag,Notes,Category,Serial Number,Model,Assignment,Warranty Info,Fund Source,PO,Cost,Invoice,Vendor,Quantity,Image,Description,Custom Data
+India ,1,Test Notes,Test Category,Test Serial Number1,Test Model,Test Assignment,Test Warranty Info,Test Fund,Test PO,1000,Test Invoice,Test vendor,15,image1.jpg,test,"{""Key"":""10""}"
+UK,2,Test Notes,Test Category,Test Serial Number2,Test Model,Test Assignment,Test Warranty Info,Test Fund,Test PO,1000,Test Invoice,Test vendor,15,image1.jpg,test,"{""Key"":""10""}"
+Paris,3,Test Notes,Test Category,Test Serial Number3,Test Model,Test Assignment,Test Warranty Info,Test Fund,Test PO,1000,Test Invoice,Test vendor,15,image1.jpg,test,"{""Key"":""10""}"
+India ,4,Test Notes,Test Category,Test Serial Number4,Test Model,Test Assignment,Test Warranty Info,Test Fund,Test PO,1000,Test Invoice,Test vendor,15,image1.jpg,test,"{""Key"":""10""}"

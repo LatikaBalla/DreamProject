@@ -231,6 +231,12 @@ export class MyFleetActions {
       cy.get('[href="/devices"]').eq(4).click({ force: true })
       cy.get('[type="button"]').contains("Confirm").click({ force: true })
    }
+   clickOnHelpIcon() {
+      mf.filterHelpElement().click({ force: true })
+   }
+   verifyfilteringGuide() {
+      cy.contains('Dream Data Filtering Guide').should('be.visible')
+   }
    verifyActive() {
       dash.messageElement().should('contain', 'Device Activated', { force: true })
    }
@@ -657,7 +663,9 @@ export class MyFleetActions {
       mf.clearFilterElement().click({ force: true })
    }
    filterVToption1() {
-      mf.addFilterElement().eq(5).click({ force: true })
+      cy.get('[col-id="is_verified"] > .ag-header-cell-comp-wrapper > .ag-cell-label-container > .ag-header-cell-filter-button > .ag-icon').scrollIntoView().click({ force: true })
+      //cy.get('[data-ref="eLabel"]').find('[data-ref="eText"]').contains('VT Verified').scrollIntoView().click({ force: true })
+      //mf.addFilterElement().eq(5).click({ force: true })
       cy.get('[value="Yes"]').click({ force: true })
       cy.get('[row-index="0"]').should('contain', 'Yes')
       cy.get('[class="reset-button"]').click({ force: true })

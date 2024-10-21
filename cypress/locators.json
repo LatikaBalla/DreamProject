@@ -275,7 +275,7 @@
         "addDevicesbtn": " Add Device ",
         "exportcsv": "[data-testid='FileDownloadIcon']",
         "search": "[placeholder='Search by table field values']",
-        "addFilter": "[data-ref='eFilterButton']",
+        "addFilter": "[class='ag-cell-label-container']>[data-ref='eFilterButton']",
         "clearFilter": "button[data-ref='resetFilterButton']",
         "fieldName": "[data-ref='eDisplayField']",
         "fieldOp": "[role='option']",
@@ -300,7 +300,8 @@
         "option": "[data-ref='eMenu']",
         "sortAscending": "Sort Ascending",
         "sortDescending": "Sort Descending",
-        "clearSort": "Clear Sort"
+        "clearSort": "Clear Sort",
+        "filterHelp":"[data-testid='HelpIcon']"
     },
     "importSerialDevices": {
         "title": "Manage Devices",
@@ -319,7 +320,8 @@
         "fieldName": "[data-ref='eDisplayField']",
         "fieldOp": "[role='option']",
         "fieldValue": "[placeholder='Filter...']",
-        "apply": "button[data-ref='applyFilterButton']"
+        "apply": "button[data-ref='applyFilterButton']",
+        "filterHelp":"[data-testid='HelpIcon']"
     },
     "orgUploadAssets": {
         "title": "Organization Uploaded Assets",
@@ -344,20 +346,23 @@
         "vendor": "#vendor",
         "cost": "#cost",
         "quantity": "#quantity",
+        "fieldKey1": "[name='additionalFields.0.key']",
+        "fieldKey2": "[name='additionalFields.1.key']",
         "fieldValue1": "[name='additionalFields.0.value']",
         "fieldValue2": "[name='additionalFields.1.value']",
         "tag": "#tag",
         "notes": "#notes",
         "type": "#category",
         "description": "#description",
-        "upload": "[type='file']",
+        "upload": "input[type='file']",
         "savebtn": "Save",
         "addFilter": "[data-ref='eFilterButton']",
         "clearFilter": "button[data-ref='resetFilterButton']",
         "fieldName": "[data-ref='eDisplayField']",
         "fieldOp": "[role='option']",
         "fieldValue": "[placeholder='Filter...']",
-        "apply": "button[data-ref='applyFilterButton']"
+        "apply": "button[data-ref='applyFilterButton']",
+        "filterHelp":"[data-testid='HelpIcon']"
     },
     "loanerManagement": {
         "title": "Manage Devices",
@@ -395,7 +400,8 @@
         "fieldValue": "[placeholder='Filter...']",
         "apply": "button[data-ref='applyFilterButton']",
         "viewDetails": "View Details",
-        "viewHistory": "View History"
+        "viewHistory": "View History",
+        "filterHelp":"[data-testid='HelpIcon']"
     },
     "repair360": {
         "title": "Repair 360",
@@ -515,7 +521,8 @@
         "clearSort": "Clear Sort",
         "helpIcon": "[data-testid='HelpIcon']",
         "printbtn": "Print Ticket Estimate",
-        "downloadbtn": "Download Ticket Estimate"
+        "downloadbtn": "Download Ticket Estimate",
+        "filterHelp":"[data-testid='HelpIcon']"
     },
     "inhouseRepairCenter": {
         "title": "In-House Repair",
@@ -552,7 +559,8 @@
         "notetype": "#note_type",
         "createnote": "button[type='submit']",
         "part": "#part",
-        "custompart": "Custom Part"
+        "custompart": "Custom Part",
+        "filterHelp":"[data-testid='HelpIcon']"
     },
     "inhouseTickets": {
         "title": "Repair 360",
@@ -607,7 +615,8 @@
         "sortDescending": "Sort Descending",
         "clearSort": "Clear Sort",
         "printbtn": "Print Ticket Estimate",
-        "downloadbtn": "Download Ticket Estimate"
+        "downloadbtn": "Download Ticket Estimate",
+        "filterHelp":"[data-testid='HelpIcon']"
     },
     "studentRepairCenter": {
         "title": "Student Repair Center",

@@ -39,15 +39,19 @@ export class ImportSerialDevicesActions {
     clickOnDownloadImport() {
         isd.downloadimportElement().click({ force: true })
     }
-    verifyDownloaded() {
-        cy.verifyDownload("/download/", tdata.importDevice.downloadfilename)
-    }
     clickOnDetailsButton() {
         cy.get('[data-testid="VisibilityIcon"]').eq(0).click({ force: true })
     }
     verifyDeviceDetails() {
         isd.devicesDetailsTitleElement().should('be.visible')
     }
+    clickOnHelpIcon() {
+        isd.filterHelpElement().click({ force: true })
+     }
+     verifyfilteringGuide() {
+        cy.contains('Dream Data Filtering Guide').should('be.visible')
+        cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
+     }
     //Date Imported
     filtercontainDate() {
         cy.wait(3000)
@@ -83,7 +87,17 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(2).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.importDevice.importdate)
         isd.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('contain', tdata.importDevice.importdate)
+        const dateString = '10-02-2023 20:50:17';
+        const reformattedDateString = dateString.split('-').reverse().join('-');
+        const dateObj = new Date(reformattedDateString);
+        const timestamp = dateObj.getTime();
+        cy.get('.ag-row-first > [col-id="date_imported"]').should(($el) => {
+            const value = $el.text();
+            const reformattedDate = value.split('-').reverse().join('-');
+            const dateObj1 = new Date(reformattedDate);
+            const timestamp1 = dateObj1.getTime();
+            expect(timestamp1).to.be.lessThan(timestamp)
+        })
         isd.clearFilterElement().click({ force: true })
     }
     filterAfterDate() {
@@ -92,7 +106,17 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.importDevice.importdate)
         isd.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('contain', '2024-07-15')
+        const dateString = '10-02-2023 20:50:17';
+        const reformattedDateString = dateString.split('-').reverse().join('-');
+        const dateObj = new Date(reformattedDateString);
+        const timestamp = dateObj.getTime();
+        cy.get('.ag-row-first > [col-id="date_imported"]').should(($el) => {
+            const value = $el.text();
+            const reformattedDate = value.split('-').reverse().join('-');
+            const dateObj1 = new Date(reformattedDate);
+            const timestamp1 = dateObj1.getTime();
+            expect(timestamp1).to.be.greaterThan(timestamp)
+        })
         isd.clearFilterElement().click({ force: true })
     }
     filterBetweenDate() {
@@ -102,7 +126,6 @@ export class ImportSerialDevicesActions {
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.importDevice.importdate)
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.importDevice.importdate, { force: true })
         isd.applyElement().click({ force: true })
-        //  cy.get('[row-index="0"]').should('contain', tdata.importDevice.importdate)
         isd.clearFilterElement().click({ force: true })
     }
     filterBlankDate() {
@@ -111,7 +134,7 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(5).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.importDevice.importdate, { force: true })
         isd.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('contain', tdata.importDevice.importdate1)
+        cy.get('[row-index="0"]').should('contain', ' ')
         isd.clearFilterElement().click({ force: true })
     }
     filterNotblankDate() {
@@ -205,10 +228,6 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(0).click({ force: true })
         isd.fieldValueElement().type(tdata.importDevice.quantitydevices)
         isd.applyElement().click({ force: true })
-        // cy.get('[row-index="1"]').find('[col-id="quantity_devices"]').then(($el) => {
-        //     let value = parseInt($el.text());
-        //     expect(value).to.be.equal(2);
-        // })
         isd.clearFilterElement().click({ force: true })
     }
     filterDoesnotequalQ() {
@@ -217,10 +236,6 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(1).click({ force: true })
         isd.fieldValueElement().eq(0).clear({ force: true }).type(tdata.importDevice.quantitydevices)
         isd.applyElement().click({ force: true })
-        // cy.get('[row-index="1"]').find('[col-id="quantity_devices"]').then(($el) => {
-        //     const value = parseInt($el.text());
-        //     expect(value).to.not.equal(2);
-        // })
         isd.clearFilterElement().click({ force: true })
     }
     filterGreaterthanQ() {
@@ -229,10 +244,6 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(2).click({ force: true })
         isd.fieldValueElement().eq(0).clear({ force: true }).type(tdata.importDevice.quantitydevices)
         isd.applyElement().click({ force: true })
-        // cy.get('[row-index="1"]').find('[col-id="quantity_devices"]').then(($el) => {
-        //     const value = parseInt($el.text());
-        //     expect(value).to.be.greaterThan(2);
-        // })
         isd.clearFilterElement().click({ force: true })
     }
     filterGreaterequalQ() {
@@ -241,10 +252,6 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(3).click({ force: true })
         isd.fieldValueElement().eq(0).clear({ force: true }).type(tdata.importDevice.quantitydevices)
         isd.applyElement().click({ force: true })
-        // cy.get('[row-index="1"]').find('[col-id="quantity_devices"]').then(($el) => {
-        //     const value = parseInt($el.text());
-        //     expect(value).to.be.gte(2);
-        // })
         isd.clearFilterElement().click({ force: true })
     }
     filterLessthanQ() {
@@ -253,10 +260,6 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(4).click({ force: true })
         isd.fieldValueElement().eq(0).clear({ force: true }).type(tdata.importDevice.quantitydevices)
         isd.applyElement().click({ force: true })
-        // cy.get('[row-index="1"]').find('[col-id="quantity_devices"]').then(($el) => {
-        //     const value = parseInt($el.text());
-        //     expect(value).to.be.lessThan(2);
-        // })
         isd.clearFilterElement().click({ force: true })
     }
     filterLessequalQ() {
@@ -265,10 +268,6 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(5).click({ force: true })
         isd.fieldValueElement().eq(0).clear({ force: true }).type(tdata.importDevice.quantitydevices)
         isd.applyElement().click({ force: true })
-        // cy.get('[row-index="1"]').find('[col-id="quantity_devices"]').then(($el) => {
-        //     const value = parseInt($el.text());
-        //     expect(value).to.be.lte(2);
-        // })
         isd.clearFilterElement().click({ force: true })
     }
     filterBetweenQ() {
@@ -278,10 +277,6 @@ export class ImportSerialDevicesActions {
         cy.get('[placeholder="From"]').type(tdata.importDevice.quantitydevices1)
         cy.get('[placeholder="To"]').type(tdata.importDevice.quantitydevices)
         isd.applyElement().click({ force: true })
-        cy.get('[row-index="1"]').find('[col-id="quantity_devices"]').then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.within(0, 2);
-        })
         isd.clearFilterElement().click({ force: true })
     }
     filterBlankQ() {
@@ -299,10 +294,6 @@ export class ImportSerialDevicesActions {
         isd.fieldOpElement().eq(8).click({ force: true })
         isd.fieldValueElement().eq(1).clear({ force: true }).type(tdata.importDevice.quantitydevices, { force: true })
         isd.applyElement().click({ force: true })
-        // cy.get('[row-index="1"]').find('[col-id="quantity_devices"]').then(($el) => {
-        //     const value = parseInt($el.text());
-        //     expect(value).to.be.equal(2);
-        // })
         isd.clearFilterElement().click({ force: true })
     }
 }

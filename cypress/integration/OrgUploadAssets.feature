@@ -17,7 +17,8 @@ Feature: OrgUploadAssets Page Functionality
         And Enter assignment, po, invoice, vendor and description
         Then Enter cost and quantity
         Then Upload the image file
-         And Enter fieldValue1 and fieldValue2
+        And Click on Add field button
+        Then Enter fieldkey and fieldValue
         And Click on save button
         Then Verify the asset details added in table
         And Click on filter of Description contain and Verify the Result
@@ -46,6 +47,11 @@ Feature: OrgUploadAssets Page Functionality
         And Click on filter of Location Blank and Verify the Result
         And Click on filter of Location Not blank and Verify the Result
 
+        And Click on help icon for Filtering Guide
+        Then Verify the Dream Data Filtering Guide
+        # Then Click on Bulk Upload button
+        # And Click on Attach CSV file and Click on submit button
+        # Then Verify the Uploaded successfully
         # And Click on Edit button
         # Then I should edit location, tag, notes, category, serialno and model
         # And I should edit assignment, po, invoice, vendor and description

@@ -181,4 +181,20 @@ export default class OrgUploadAssetsElements {
             timeout: 30000,
         })
     }
+    fieldKey1Element() {
+        return cy.get(locator.orgUploadAssets.fieldKey1, {
+            timeout: 30000,
+        })
+    }
+    fieldKey2Element() {
+        return cy.get(locator.orgUploadAssets.fieldKey2, {
+            timeout: 30000,
+        })
+    }
+    filterHelpElement()
+    {
+        return cy.get(locator.orgUploadAssets.filterHelp, {
+            timeout: 30000,
+        })
+    }
 }

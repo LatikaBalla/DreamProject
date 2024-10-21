@@ -87,4 +87,9 @@ export default class ImportSerialDevicesElements {
             timeout: 30000,
         })
     }
+    filterHelpElement(){
+        return cy.get(locator.importSerialDevices.filterHelp, {
+            timeout: 30000,
+        })
+    }
 }

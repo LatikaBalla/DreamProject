@@ -46,10 +46,10 @@ And('Click on refresh button', () => {
 Then('Verify the record in table', () => {
     isd.verfiyImportTable()
 })
-And('Click on Download import button', () => {
+And('Click on the download import button', () => {
     isd.clickOnDownloadImport()
 })
-Then('Verify the successfully downloaded', () => {
+Then('Verfiy the downloaded successfully', () => {
     isd.verifyDownloaded()
 })
 And('Click on Details button', () => {
@@ -58,11 +58,11 @@ And('Click on Details button', () => {
 Then('Verify the Device Details', () => {
     isd.verifyDeviceDetails()
 }) 
-Then ('Click on the download import',()=>{
-
+And('Click on help icon for Filtering Guide', () => {
+    isd.clickOnHelpIcon()
 })
-And ('Verfiy the downloaded successfully',()=>{
-
+Then('Verify the Dream Data Filtering Guide', () => {
+    isd.verifyfilteringGuide()
 })
 //date
 And('Click on filter of Date Imported Equals and Verify the Result', () => {

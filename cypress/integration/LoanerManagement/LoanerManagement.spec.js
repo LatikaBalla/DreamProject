@@ -43,10 +43,8 @@ Then('Click on the submit button of form', () => {
 And('Verify the student added successfully', () => {
     loan.verifyStudentAdded()
 })
-Then('Click on DeviceIcon', () => {
+Then('Click on DeviceIcon and Click on Check out button', () => {
     loan.clickOnDeviceIcon()
-})
-Then('Click on Check out button', () => {
     loan.clickOnCheckOut()
 })
 And('Select the student name and Date', () => {
@@ -60,7 +58,8 @@ Then('Enter Check-out Description and click on submit button', () => {
 And('Click on the Check-Out tab', () => {
     loan.clickOnCheckOutTab()
 })
-And('Click on Check In button', () => {
+Then('Click on DeviceIcon and Click on Check In button', () => {
+    loan.clickOnDeviceIcon()
     loan.clickOnCheckIn()
 })
 Then('Enter Note and Check-in Description', () => {
@@ -71,23 +70,29 @@ Then('Enter Note and Check-in Description', () => {
 And('Verify the Serial no in the Available section', () => {
     loan.verifySerachAvailable()
 })
-Then('Click on DeviceIcon for view ticket', () => {
+Then('Click on DeviceIcon and Click on View Details button', () => {
     loan.clickOnDeviceIconViewT()
-})
-And('Click on View Details button', () => {
     loan.clickOnViewDetails()
 })
 Then('Verify the Device Details', () => {
     loan.verifyViewDetails()
 })
-Then('Click on DeviceIcon for view history', () => {
+Then('Click on DeviceIcon and Click on View History button', () => {
     loan.clickOnDeviceIconViewHistory()
+    loan.clickOnViewHistory()
 })
-And('Click on View History button', () => {
+Then('Click on DeviceIcon and Click on View History button for checkout', () => {
+    loan.clickOnDeviceIconViewHistory1()
     loan.clickOnViewHistory()
 })
 Then('Verify the Device History', () => {
     loan.verifyViewHistory()
+})
+And('Click on help icon for Filtering Guide', () => {
+    loan.clickOnHelpIcon()
+})
+Then('Verify the Dream Data Filtering Guide', () => {
+    loan.verifyfilteringGuide()
 })
 
 And('Click on filter of Product Description contain and Verify the Result for Available', () => {

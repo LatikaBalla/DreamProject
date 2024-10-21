@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1253000000
+              "duration": 1103000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5423000000
+              "duration": 5700000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 12143000000
+              "duration": 12131000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 80000000
+              "duration": 86000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on ImportSerialDevices Tab",
             "result": {
               "status": "passed",
-              "duration": 667000000
+              "duration": 932000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of ImportSerialDevices Page",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 8000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Click on filter of Date Imported Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1808000000
+              "duration": 1442000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Click on filter of Date Imported Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 714000000
+              "duration": 691000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click on filter of Date Imported Before and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 716000000
+              "duration": 1092000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on filter of Date Imported After and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 771000000
+              "duration": 725000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on filter of Date Imported Between with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1073000000
+              "duration": 1043000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on filter of Date Imported Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 697000000
+              "duration": 698000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on filter of Date Imported Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 720000000
+              "duration": 709000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on filter of Importer contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2263000000
+              "duration": 2259000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click on filter of Importer Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1658000000
+              "duration": 1643000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on filter of Importer Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1279000000
+              "duration": 1258000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click on filter of Importer Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1285000000
+              "duration": 1262000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click on filter of Importer Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 714000000
+              "duration": 686000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on filter of Importer Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 541000000
+              "duration": 528000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on filter of Importer Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1212000000
+              "duration": 1246000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Click on filter of Quantity Devices Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2565000000
+              "duration": 2556000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Click on filter of Quantity Devices Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 654000000
+              "duration": 639000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Click on filter of Quantity Devices Greater than and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 662000000
+              "duration": 656000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Click on filter of Quantity Devices Greater than or equal to and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 657000000
+              "duration": 637000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Click on filter of Quantity Devices Less than and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 652000000
+              "duration": 654000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Click on filter of Quantity Devices Less than or equal to and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 657000000
+              "duration": 635000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Click on filter of Quantity Devices Between and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 776000000
+              "duration": 760000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "Click on filter of Quantity Devices Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 710000000
+              "duration": 744000000
             }
           },
           {
@@ -313,77 +313,87 @@
             "name": "Click on filter of Quantity Devices Not blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 673000000
+              "duration": 657000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 42,
-            "name": "Click on the download import",
+            "name": "Click on the download import button",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 221000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 43,
-            "name": "Verfiy the downloaded successfully",
+            "name": "Click on help icon for Filtering Guide",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 82000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 44,
-            "name": "I should click on Add New Import",
+            "name": "Verify the Dream Data Filtering Guide",
             "result": {
               "status": "passed",
-              "duration": 90000000
+              "duration": 95000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 45,
-            "name": "Upload the CSV import file",
+            "name": "I should click on Add New Import",
             "result": {
               "status": "passed",
-              "duration": 483000000
+              "duration": 87000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 46,
-            "name": "Click on submit button",
+            "name": "Upload the CSV import file",
             "result": {
               "status": "passed",
-              "duration": 2125000000
+              "duration": 486000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 47,
+            "name": "Click on submit button",
+            "result": {
+              "status": "passed",
+              "duration": 2117000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
             "name": "Click on Details button",
             "result": {
               "status": "passed",
-              "duration": 332000000
+              "duration": 587000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 48,
+            "line": 49,
             "name": "Verify the Device Details",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 13000000
             }
           }
         ]

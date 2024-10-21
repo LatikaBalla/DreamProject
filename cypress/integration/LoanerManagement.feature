@@ -17,6 +17,8 @@ Feature: LoanerManagement Page Functionality
         And Select status, building and student_id
         Then Click on the submit button of form
         And Verify the student added successfully
+        And Click on help icon for Filtering Guide
+        Then Verify the Dream Data Filtering Guide
 
         And Click on filter of Product Description contain and Verify the Result for Available
         And Click on filter of Product Description Does not contain and Verify the Result for Available
@@ -64,13 +66,14 @@ Feature: LoanerManagement Page Functionality
         And Click on filter of Asset Tag Not blank and Verify the Result for Available
         And Click on filter of Asset Tag contain and Verify the Result for Available
 
-        Then Click on DeviceIcon
-        Then Click on Check out button
+
+        Then Click on DeviceIcon and Click on View History button
+        Then Verify the Device History
+        Then Click on DeviceIcon and Click on Check out button
         And Select the student name and Date
         Then Enter Check-out Description and click on submit button
         And Click on the Check-Out tab
-        Then Click on DeviceIcon
-        And Click on Check In button
+        Then Click on DeviceIcon and Click on Check In button
         Then Enter Note and Check-in Description
         And Verify the Serial no in the Available section
 
@@ -120,11 +123,11 @@ Feature: LoanerManagement Page Functionality
         And Click on filter of Asset Tag Blank and Verify the Result for Checked Out
         And Click on filter of Asset Tag Not blank and Verify the Result for Checked Out
 
-        Then Click on DeviceIcon for view history
-        And Click on View History button
+        And Click on help icon for Filtering Guide
+        Then Verify the Dream Data Filtering Guide
+        Then Click on DeviceIcon and Click on View History button for checkout
         Then Verify the Device History
         And Click on LoanerManagement Tab
         And Click on the Check-Out tab
-        Then Click on DeviceIcon for view ticket
-        And Click on View Details button
+        Then Click on DeviceIcon and Click on View Details button
         Then Verify the Device Details

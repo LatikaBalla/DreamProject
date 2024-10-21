@@ -60,40 +60,40 @@ Feature: MyFleet  Page Functionality
         # And Click on filter of VT Verified op1 and Verify the Result
         # And Click on filter of VT Verified op2 and Verify the Result
 
-        #     And Click on filter of Organizational Unit contain and Verify the Result
-        #     And Click on filter of Organizational Unit Does not contain and Verify the Result
-        #     And Click on filter of Organizational Unit Equals and Verify the Result
-        #     And Click on filter of Organizational Unit Does not equal and Verify the Result
-        #     And Click on filter of Organizational Unit Begins with and Verify the Result
-        #     And Click on filter of Organizational Unit Ends with and Verify the Result
-        #     And Click on filter of Organizational Unit Blank and Verify the Result
-        #     # And Click on filter of Organizational Unit Not blank and Verify the Result
+        # And Click on filter of Organizational Unit contain and Verify the Result
+        # And Click on filter of Organizational Unit Does not contain and Verify the Result
+        # And Click on filter of Organizational Unit Equals and Verify the Result
+        # And Click on filter of Organizational Unit Does not equal and Verify the Result
+        # And Click on filter of Organizational Unit Begins with and Verify the Result
+        # And Click on filter of Organizational Unit Ends with and Verify the Result
+        # And Click on filter of Organizational Unit Blank and Verify the Result
+        # # And Click on filter of Organizational Unit Not blank and Verify the Result
 
-        #     And Click on filter of User contain and Verify the Result
-        #     And Click on filter of User Does not contain and Verify the Result
-        #     And Click on filter of User Equals and Verify the Result
-        #     And Click on filter of User Does not equal and Verify the Result
-        #     And Click on filter of User Begins with and Verify the Result
-        #     And Click on filter of User Ends with and Verify the Result
-        #     And Click on filter of User Blank and Verify the Result
-        #     # And Click on filter of User Not blank and Verify the Result
+        # And Click on filter of User contain and Verify the Result
+        # And Click on filter of User Does not contain and Verify the Result
+        # And Click on filter of User Equals and Verify the Result
+        # And Click on filter of User Does not equal and Verify the Result
+        # And Click on filter of User Begins with and Verify the Result
+        # And Click on filter of User Ends with and Verify the Result
+        # And Click on filter of User Blank and Verify the Result
+        # # And Click on filter of User Not blank and Verify the Result
 
-        #     And Click on filter of Warranty contain and Verify the Result
-        #     And Click on filter of Warranty Does not contain and Verify the Result
-        #     And Click on filter of Warranty Equals and Verify the Result
-        #     And Click on filter of Warranty Does not equal and Verify the Result
-        #     And Click on filter of Warranty Begins with and Verify the Result
-        #     And Click on filter of Warranty Ends with and Verify the Result
-        #     And Click on filter of Warranty Blank and Verify the Result
-        #     # And Click on filter of Warranty Not blank and Verify the Result
+        # And Click on filter of Warranty contain and Verify the Result
+        # And Click on filter of Warranty Does not contain and Verify the Result
+        # And Click on filter of Warranty Equals and Verify the Result
+        # And Click on filter of Warranty Does not equal and Verify the Result
+        # And Click on filter of Warranty Begins with and Verify the Result
+        # And Click on filter of Warranty Ends with and Verify the Result
+        # And Click on filter of Warranty Blank and Verify the Result
+        # # And Click on filter of Warranty Not blank and Verify the Result
 
-        #     And Click on filter of Warranty End Date Equals and Verify the Result
-        #     And Click on filter of Warranty End Date Does not equal and Verify the Result
-        #     And Click on filter of Warranty End Date Before and Verify the Result
-        #     And Click on filter of Warranty End Date After and Verify the Result
-        #     And Click on filter of Warranty End Date Between and Verify the Result
-        #     And Click on filter of Warranty End Date Blank and Verify the Result
-        #     # And Click on filter of Warranty End Date Not blank and Verify the Result
+        # And Click on filter of Warranty End Date Equals and Verify the Result
+        # And Click on filter of Warranty End Date Does not equal and Verify the Result
+        # And Click on filter of Warranty End Date Before and Verify the Result
+        # And Click on filter of Warranty End Date After and Verify the Result
+        # And Click on filter of Warranty End Date Between and Verify the Result
+        # And Click on filter of Warranty End Date Blank and Verify the Result
+        # # And Click on filter of Warranty End Date Not blank and Verify the Result
 
         # And Click on filter of Loaner Status op1 and Verify the Result
         # And Click on filter of Loaner Status op2 and Verify the Result
@@ -112,6 +112,8 @@ Feature: MyFleet  Page Functionality
         Then Click on the Submit Button
         And Verify the device added successfully
         Then Click on download button
+        And Click on help icon for Filtering Guide
+        Then Verify the Dream Data Filtering Guide
 
         Then Click on deviceIcon and click on view Button
         And Verify the General Device Information
@@ -244,14 +246,42 @@ Feature: MyFleet  Page Functionality
         And Click on Sort Ascending and Descending for Asset Tag and Verify the Result in Retired
         And Click on Sort Ascending and Descending for Model and Verify the Result in Retired
         And Click on Sort Ascending and Descending for SKU and Verify the Result in Retired
-      
+
         Then Click on the add device
         And Enter Serial no and select device id
         Then Enter Asset Tag and Select student id
         And Select lonar status and Device status
         Then Click on the Submit Button
         And Verify the device added successfully
+        Then Click on download button
+        And Click on help icon for Filtering Guide
+        Then Verify the Dream Data Filtering Guide
+
         Then Click on deviceIcon and click on view Button
         And Verify the General Device Information
+        Then Click on Edit button of General info
+        And Update Asset tag and Click on save button
+        Then Verfiy General info Record updated successfully
+        Then Click on Edit button of Assignment
+        And Update student, building, loner status and Click on save button
+        Then Verfiy Assignment Record updated successfully
 
+        And Click on deviceIcon and click on create ticket button
+        Then Select failure Type, Return site
+        And Select Building and Chromebook issue
+        Then Enter the Describe Your Issue
+        And Click on save button
+        Then Verify New Ticket is added
 
+        And Click on deviceIcon and click on Edit Device button
+        And Update Asset tag and Click on save button
+        Then Verfiy General info Record updated successfully
+
+        And Click on deviceIcon and click on add Loaner button
+        Then verify the ticket is added in loaner
+
+        And Convert Active to Retired device
+        Then Verify the Device Retired successfully
+        Then Click on Retired Tab
+        And Convert Retired to Active device
+        Then Verify the Device Active successfully
