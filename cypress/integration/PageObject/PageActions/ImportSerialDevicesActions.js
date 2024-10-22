@@ -296,5 +296,32 @@ export class ImportSerialDevicesActions {
         isd.applyElement().click({ force: true })
         isd.clearFilterElement().click({ force: true })
     }
+    sortingDateImported(){
+        cy.wait(1000)
+        isd.optionElement().eq(2).click({ force: true })
+        isd.sortAscendingElement().click({ force: true })
+        isd.optionElement().eq(2).click({ force: true })
+        isd.sortDescendingElement().click({ force: true })
+        isd.optionElement().eq(2).click({ force: true })
+        isd.clearSortElement().click({ force: true })
+    }
+    sortingImporter(){
+        cy.wait(1000)
+        isd.optionElement().eq(3).click({ force: true })
+        isd.sortAscendingElement().click({ force: true })
+        isd.optionElement().eq(3).click({ force: true })
+        isd.sortDescendingElement().click({ force: true })
+        isd.optionElement().eq(3).click({ force: true })
+        isd.clearSortElement().click({ force: true })
+    }
+    sortingQuantityDevices(){
+        cy.wait(1000)
+        isd.optionElement().eq(4).click({ force: true })
+        isd.sortAscendingElement().click({ force: true })
+        isd.optionElement().eq(4).click({ force: true })
+        isd.sortDescendingElement().click({ force: true })
+        isd.optionElement().eq(4).click({ force: true })
+        isd.clearSortElement().click({ force: true })
+    }
 }
 export default ImportSerialDevicesActions 

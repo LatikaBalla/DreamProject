@@ -333,3 +333,34 @@ And('Click on filter of Asset Tag Blank and Verify the Result for Checked Out', 
 And('Click on filter of Asset Tag Not blank and Verify the Result for Checked Out', () => {
     loan.filterNotblankTag_C()
 })
+//sorting
+And('Click on Sort Ascending and Descending for Product Description and Verify the Result', () => {
+    loan.sortingProductDescription()
+})
+And('Click on Sort Ascending and Descending for SKU and Verify the Result', () => {
+    loan.sortingSKU()
+})
+And('Click on Sort Ascending and Descending for Warranty and Verify the Result', () => {
+    loan.sortingWarranty()
+})
+And('Click on Sort Ascending and Descending for Serial Number and Verify the Result', () => {
+    loan.sortingSerialNumber()
+})
+And('Click on Sort Ascending and Descending for Asset Tag and Verify the Result', () => {
+    loan.sortingAssetTag()
+})
+And('Click on Sort Ascending and Descending for Product Description and Verify the Result for Checked Out', () => {
+    loan.sortingProductDescription1()
+})
+And('Click on Sort Ascending and Descending for SKU and Verify the Result for Checked Out', () => {
+    loan.sortingSKU1()
+})
+And('Click on Sort Ascending and Descending for Warranty and Verify the Result for Checked Out', () => {
+    loan.sortingWarranty1()
+})
+And('Click on Sort Ascending and Descending for Serial Number and Verify the Result for Checked Out', () => {
+    loan.sortingSerialNumber1()
+})
+And('Click on Sort Ascending and Descending for Asset Tag and Verify the Result for Checked Out', () => {
+    loan.sortingAssetTag1()
+})

@@ -57,7 +57,7 @@ Then('Enter cost and quantity', () => {
 Then('Upload the image file', () => {
     oua.selectFileForUpload()
 })
-And ('Click on Add field button',()=>{
+And('Click on Add field button', () => {
     oua.clickOnAddField()
 })
 Then('Enter fieldkey and fieldValue', () => {
@@ -202,4 +202,55 @@ And('Click on filter of Location Blank and Verify the Result', () => {
 })
 And('Click on filter of Location Not blank and Verify the Result', () => {
     oua.filterNotblankL()
+})
+And('Click on Sort Ascending and Descending for Description and Verify the Result', () => {
+    oua.sortingDescription()
+})
+And('Click on Sort Ascending and Descending for Acquire Date and Verify the Result', () => {
+    oua.sortingAcquireDate()
+})
+And('Click on Sort Ascending and Descending for Location and Verify the Result', () => {
+    oua.sortingLocation()
+})
+And('Click on Sort Ascending and Descending for Serial Number and Verify the Result', () => {
+    oua.sortingSerialNumber()
+})
+And('Click on Sort Ascending and Descending for Model and Verify the Result', () => {
+    oua.sortingModel()
+})
+And('Click on Sort Ascending and Descending for Assignment and Verify the Result', () => {
+    oua.sortingAssignment()
+})
+And('Click on Sort Ascending and Descending for Warranty Info and Verify the Result', () => {
+    oua.sortingWarrantyInfo()
+})
+And('Click on Sort Ascending and Descending for Fund Source and Verify the Result', () => {
+    oua.sortingFundSource()
+})
+And('Click on Sort Ascending and Descending for PO and Verify the Result', () => {
+    oua.sortingPO()
+})
+And('Click on Sort Ascending and Descending for Invoice and Verify the Result', () => {
+    oua.sortingInvoice()
+})
+And ('Click on Sort Ascending and Descending for Vendor and Verify the Result',()=>{
+    oua.sortingVendor()
+})
+And('Click on Sort Ascending and Descending for Cost and Verify the Result', () => {
+    oua.sortingCost()
+})
+And('Click on Sort Ascending and Descending for Quantity and Verify the Result', () => {
+    oua.sortingQuantity()
+})
+And('Click on Sort Ascending and Descending for F1 and Verify the Result', () => {
+    oua.sortingF1()
+})
+And('Click on Sort Ascending and Descending for F2 and Verify the Result', () => {
+    oua.sortingF2()
+})
+And('Click on Sort Ascending and Descending for F1F1 and Verify the Result', () => {
+    oua.sortingF1F1()
+})
+And('Click on Sort Ascending and Descending for F2f2 and Verify the Result', () => {
+    oua.sortingF2F2()
 })

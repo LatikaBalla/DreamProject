@@ -57,7 +57,7 @@ And('Click on Details button', () => {
 })
 Then('Verify the Device Details', () => {
     isd.verifyDeviceDetails()
-}) 
+})
 And('Click on help icon for Filtering Guide', () => {
     isd.clickOnHelpIcon()
 })
@@ -138,4 +138,13 @@ And('Click on filter of Quantity Devices Blank and Verify the Result', () => {
 })
 And('Click on filter of Quantity Devices Not blank and Verify the Result', () => {
     isd.filterNotblankQ()
+})
+And('Click on Sort Ascending and Descending for Date Imported and Verify the Result', () => {
+    isd.sortingDateImported()
+})
+And('Click on Sort Ascending and Descending for Importer and Verify the Result', () => {
+    isd.sortingImporter()
+})
+And('Click on Sort Ascending and Descending for Quantity Devices and Verify the Result', () => {
+    isd.sortingQuantityDevices()
 })

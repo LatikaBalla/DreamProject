@@ -321,7 +321,12 @@
         "fieldOp": "[role='option']",
         "fieldValue": "[placeholder='Filter...']",
         "apply": "button[data-ref='applyFilterButton']",
-        "filterHelp":"[data-testid='HelpIcon']"
+        "filterHelp":"[data-testid='HelpIcon']",
+        "option": "[data-ref='eMenu']",
+        "sortAscending": "Sort Ascending",
+        "sortDescending": "Sort Descending",
+        "clearSort": "Clear Sort"
+ 
     },
     "orgUploadAssets": {
         "title": "Organization Uploaded Assets",
@@ -362,6 +367,10 @@
         "fieldOp": "[role='option']",
         "fieldValue": "[placeholder='Filter...']",
         "apply": "button[data-ref='applyFilterButton']",
+        "option": "[data-ref='eMenu']",
+        "sortAscending": "Sort Ascending",
+        "sortDescending": "Sort Descending",
+        "clearSort": "Clear Sort",
         "filterHelp":"[data-testid='HelpIcon']"
     },
     "loanerManagement": {
@@ -401,6 +410,10 @@
         "apply": "button[data-ref='applyFilterButton']",
         "viewDetails": "View Details",
         "viewHistory": "View History",
+        "option": "[data-ref='eMenu']",
+        "sortAscending": "Sort Ascending",
+        "sortDescending": "Sort Descending",
+        "clearSort": "Clear Sort",
         "filterHelp":"[data-testid='HelpIcon']"
     },
     "repair360": {

@@ -62,7 +62,7 @@ export class OrgUploadAssetsActions {
     enterCost() {
         oua.costElement().type(tdata.addasset.cost)
     }
-    clickOnAddField(){
+    clickOnAddField() {
         cy.contains('Add Field').click({ force: true })
     }
     enterFieldValue1and2() {
@@ -78,7 +78,7 @@ export class OrgUploadAssetsActions {
     enterModel() {
         oua.modelElement().type(tdata.addasset.model)
     }
-    enterWarrantyinfo(){
+    enterWarrantyinfo() {
         oua.warrantyinfoElement().type(tdata.addasset.warrantyinfo)
     }
     enterDescription() {
@@ -122,13 +122,13 @@ export class OrgUploadAssetsActions {
     editDescription() {
         oua.descriptionElement().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.description)
     }
-    editQuantity(){
+    editQuantity() {
         oua.quantityElement().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.quantity)
     }
     editPO() {
         oua.poElement().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.po)
     }
-    editAssignment(){
+    editAssignment() {
         oua.assignmentElement().clear({ force: true }).should('have.value', '', { timeout: 6000 }).type(tdata.editasset.assignment)
     }
     editCost() {
@@ -180,8 +180,8 @@ export class OrgUploadAssetsActions {
         cy.wait(100)
         cy.contains('Save').click({ force: true })
     }
-    verifyuploaded() { 
-         dash.messageElement().should('contain', tdata.orgAsset.uploadmsg)
+    verifyuploaded() {
+        dash.messageElement().should('contain', tdata.orgAsset.uploadmsg)
     }
     clickOnHelpIcon() {
         oua.filterHelpElement().click({ force: true })
@@ -413,5 +413,159 @@ export class OrgUploadAssetsActions {
         cy.get('[row-index="0"]').should('contain', tdata.addasset.location)
         oua.clearFilterElement().click({ force: true })
     }
-}
+    sortingDescription() {
+        cy.wait(1000)
+        oua.optionElement().eq(2).click({ force: true })
+        oua.sortAscendingElement().click({ force: true })
+        oua.optionElement().eq(2).click({ force: true })
+        oua.sortDescendingElement().click({ force: true })
+        oua.optionElement().eq(2).click({ force: true })
+        oua.clearSortElement().click({ force: true })
+    }
+    sortingAcquireDate() {
+        cy.wait(1000)
+        oua.optionElement().eq(3).click({ force: true })
+        oua.sortAscendingElement().click({ force: true })
+        oua.optionElement().eq(3).click({ force: true })
+        oua.sortDescendingElement().click({ force: true })
+        oua.optionElement().eq(3).click({ force: true })
+        oua.clearSortElement().click({ force: true })
+    }
+    sortingLocation() {
+        cy.wait(1000)
+        oua.optionElement().eq(4).click({ force: true })
+        oua.sortAscendingElement().click({ force: true })
+        oua.optionElement().eq(4).click({ force: true })
+        oua.sortDescendingElement().click({ force: true })
+        oua.optionElement().eq(4).click({ force: true })
+        oua.clearSortElement().click({ force: true })
+    }
+    sortingSerialNumber() {
+        cy.wait(1000)
+        oua.optionElement().eq(5).click({ force: true })
+        oua.sortAscendingElement().click({ force: true })
+        oua.optionElement().eq(5).click({ force: true })
+        oua.sortDescendingElement().click({ force: true })
+        oua.optionElement().eq(5).click({ force: true })
+        oua.clearSortElement().click({ force: true })
+    }
+    sortingModel() {
+        cy.wait(1000)
+        oua.optionElement().eq(6).click({ force: true })
+        oua.sortAscendingElement().click({ force: true })
+        oua.optionElement().eq(6).click({ force: true })
+        oua.sortDescendingElement().click({ force: true })
+        oua.optionElement().eq(6).click({ force: true })
+        oua.clearSortElement().click({ force: true })
+    }
+    sortingAssignment() {
+        cy.wait(1000)
+        oua.optionElement().eq(7).click({ force: true })
+        oua.sortAscendingElement().click({ force: true })
+        oua.optionElement().eq(7).click({ force: true })
+        oua.sortDescendingElement().click({ force: true })
+        oua.optionElement().eq(7).click({ force: true })
+        oua.clearSortElement().click({ force: true })
+    }
+    sortingWarrantyInfo() {
+        cy.wait(1000)
+        oua.optionElement().eq(8).click({ force: true })
+        oua.sortAscendingElement().click({ force: true })
+        oua.optionElement().eq(8).click({ force: true })
+        oua.sortDescendingElement().click({ force: true })
+        oua.optionElement().eq(8).click({ force: true })
+        oua.clearSortElement().click({ force: true })
+    }
+    sortingFundSource() {
+        cy.wait(1000)
+        oua.optionElement().eq(9).click({ force: true })
+        oua.sortAscendingElement().click({ force: true })
+        oua.optionElement().eq(9).click({ force: true })
+        oua.sortDescendingElement().click({ force: true })
+        oua.optionElement().eq(9).click({ force: true })
+        oua.clearSortElement().click({ force: true })
+    }
+    sortingPO() {
+        cy.wait(1000)
+        oua.optionElement().eq(10).click({ force: true })
+        oua.sortAscendingElement().click({ force: true })
+        oua.optionElement().eq(10).click({ force: true })
+        oua.sortDescendingElement().click({ force: true })
+        oua.optionElement().eq(10).click({ force: true })
+        oua.clearSortElement().click({ force: true })
+    }
+    sortingInvoice() {
+        cy.wait(1000)
+        oua.optionElement().eq(11).click({ force: true })
+        oua.sortAscendingElement().click({ force: true })
+        oua.optionElement().eq(11).click({ force: true })
+        oua.sortDescendingElement().click({ force: true })
+        oua.optionElement().eq(11).click({ force: true })
+        oua.clearSortElement().click({ force: true })
+    }
+    sortingVendor() {
+        cy.wait(1000)
+        oua.optionElement().eq(12).click({ force: true })
+        oua.sortAscendingElement().click({ force: true })
+        oua.optionElement().eq(12).click({ force: true })
+        oua.sortDescendingElement().click({ force: true })
+        oua.optionElement().eq(12).click({ force: true })
+        oua.clearSortElement().click({ force: true })
+    }
+    sortingCost() {
+
+            cy.wait(1000)
+            oua.optionElement().eq(13).click({ force: true })
+            oua.sortAscendingElement().click({ force: true })
+            oua.optionElement().eq(13).click({ force: true })
+            oua.sortDescendingElement().click({ force: true })
+            oua.optionElement().eq(13).click({ force: true })
+            oua.clearSortElement().click({ force: true })
+        }
+        sortingQuantity() {
+            cy.wait(1000)
+            oua.optionElement().eq(14).scrollIntoView().click({ force: true })
+            oua.sortAscendingElement().click({ force: true })
+            oua.optionElement().eq(14).scrollIntoView().click({ force: true })
+            oua.sortDescendingElement().click({ force: true })
+            oua.optionElement().eq(14).scrollIntoView().click({ force: true })
+            oua.clearSortElement().click({ force: true })
+        }
+        sortingF1() {
+            cy.wait(1000)
+            oua.optionElement().eq(15).scrollIntoView().click({ force: true })
+            oua.sortAscendingElement().click({ force: true })
+            oua.optionElement().eq(15).scrollIntoView().click({ force: true })
+            oua.sortDescendingElement().click({ force: true })
+            oua.optionElement().eq(15).scrollIntoView().click({ force: true })
+            oua.clearSortElement().click({ force: true })
+        }
+        sortingF2() {
+            cy.wait(1000)
+            oua.optionElement().eq(16).scrollIntoView().click({ force: true })
+            oua.sortAscendingElement().click({ force: true })
+            oua.optionElement().eq(16).scrollIntoView().click({ force: true })
+            oua.sortDescendingElement().click({ force: true })
+            oua.optionElement().eq(16).scrollIntoView().click({ force: true })
+            oua.clearSortElement().click({ force: true })
+        }
+        sortingF1F1() {
+            cy.wait(1000)
+            oua.optionElement().eq(17).scrollIntoView().click({ force: true })
+            oua.sortAscendingElement().click({ force: true })
+            oua.optionElement().eq(17).scrollIntoView().click({ force: true })
+            oua.sortDescendingElement().click({ force: true })
+            oua.optionElement().eq(17).scrollIntoView().click({ force: true })
+            oua.clearSortElement().click({ force: true })
+        }
+        sortingF2F2() {
+            cy.wait(1000)
+            oua.optionElement().eq(18).scrollIntoView().click({ force: true })
+            oua.sortAscendingElement().click({ force: true })
+            oua.optionElement().eq(18).scrollIntoView().click({ force: true })
+            oua.sortDescendingElement().click({ force: true })
+            oua.optionElement().eq(18).scrollIntoView().click({ force: true })
+            oua.clearSortElement().click({ force: true })
+        }
+    }
 export default OrgUploadAssetsActions 

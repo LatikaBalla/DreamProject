@@ -92,4 +92,24 @@ export default class ImportSerialDevicesElements {
             timeout: 30000,
         })
     }
+    optionElement() {
+        return cy.get(locator.importSerialDevices.option, {
+            timeout: 30000,
+        })
+    }
+    sortAscendingElement() {
+        return cy.contains(locator.importSerialDevices.sortAscending, {
+            timeout: 30000,
+        })
+    }
+    sortDescendingElement() {
+        return cy.contains(locator.importSerialDevices.sortDescending, {
+            timeout: 30000,
+        })
+    }
+    clearSortElement() {
+        return cy.contains(locator.importSerialDevices.clearSort, {
+            timeout: 30000,
+        })
+    }
 }

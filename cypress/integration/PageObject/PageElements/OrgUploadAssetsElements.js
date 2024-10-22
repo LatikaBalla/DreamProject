@@ -197,4 +197,24 @@ export default class OrgUploadAssetsElements {
             timeout: 30000,
         })
     }
+    optionElement() {
+        return cy.get(locator.orgUploadAssets.option, {
+            timeout: 30000,
+        })
+    }
+    sortAscendingElement() {
+        return cy.contains(locator.orgUploadAssets.sortAscending, {
+            timeout: 30000,
+        })
+    }
+    sortDescendingElement() {
+        return cy.contains(locator.orgUploadAssets.sortDescending, {
+            timeout: 30000,
+        })
+    }
+    clearSortElement() {
+        return cy.contains(locator.orgUploadAssets.clearSort, {
+            timeout: 30000,
+        })
+    }
 }

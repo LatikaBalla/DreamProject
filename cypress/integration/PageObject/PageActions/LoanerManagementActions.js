@@ -893,5 +893,95 @@ export class LoanerManagementActions {
         cy.get('[row-index="0"]').should('contain', tdata.loanerManagement.assettag)
         loan.clearFilterElement().click({ force: true })
     }
+    sortingProductDescription(){
+        cy.wait(1000)
+        loan.optionElement().eq(1).click({ force: true })
+        loan.sortAscendingElement().click({ force: true })
+        loan.optionElement().eq(1).click({ force: true })
+        loan.sortDescendingElement().click({ force: true })
+        loan.optionElement().eq(1).click({ force: true })
+        loan.clearSortElement().click({ force: true })
+    }
+    sortingSKU(){
+        cy.wait(1000)
+        loan.optionElement().eq(2).click({ force: true })
+        loan.sortAscendingElement().click({ force: true })
+        loan.optionElement().eq(2).click({ force: true })
+        loan.sortDescendingElement().click({ force: true })
+        loan.optionElement().eq(2).click({ force: true })
+        loan.clearSortElement().click({ force: true })
+    }
+    sortingSerialNumber(){
+        cy.wait(1000)
+        loan.optionElement().eq(3).click({ force: true })
+        loan.sortAscendingElement().click({ force: true })
+        loan.optionElement().eq(3).click({ force: true })
+        loan.sortDescendingElement().click({ force: true })
+        loan.optionElement().eq(3).click({ force: true })
+        loan.clearSortElement().click({ force: true })
+    }
+    sortingAssetTag(){
+        cy.wait(1000)
+        loan.optionElement().eq(4).click({ force: true })
+        loan.sortAscendingElement().click({ force: true })
+        loan.optionElement().eq(4).click({ force: true })
+        loan.sortDescendingElement().click({ force: true })
+        loan.optionElement().eq(4).click({ force: true })
+        loan.clearSortElement().click({ force: true })
+    }
+    sortingWarranty(){
+        cy.wait(1000)
+        loan.optionElement().eq(5).click({ force: true })
+        loan.sortAscendingElement().click({ force: true })
+        loan.optionElement().eq(5).click({ force: true })
+        loan.sortDescendingElement().click({ force: true })
+        loan.optionElement().eq(5).click({ force: true })
+        loan.clearSortElement().click({ force: true })
+    }
+    sortingPD1(){
+        cy.wait(1000)
+        loan.optionElement().eq(1).click({ force: true })
+        loan.sortAscendingElement().click({ force: true })
+        loan.optionElement().eq(1).click({ force: true })
+        loan.sortDescendingElement().click({ force: true })
+        loan.optionElement().eq(1).click({ force: true })
+        loan.clearSortElement().click({ force: true })  
+    }
+    sortingSKU1(){
+        cy.wait(1000)
+        loan.optionElement().eq(2).click({ force: true })
+        loan.sortAscendingElement().click({ force: true })
+        loan.optionElement().eq(2).click({ force: true })
+        loan.sortDescendingElement().click({ force: true })
+        loan.optionElement().eq(2).click({ force: true })
+        loan.clearSortElement().click({ force: true })
+    }
+    sortingSerialNumber1(){
+        cy.wait(1000)
+        loan.optionElement().eq(3).click({ force: true })
+        loan.sortAscendingElement().click({ force: true })
+        loan.optionElement().eq(3).click({ force: true })
+        loan.sortDescendingElement().click({ force: true })
+        loan.optionElement().eq(3).click({ force: true })
+        loan.clearSortElement().click({ force: true })
+    }
+    sortingAssetTag1(){
+        cy.wait(1000)
+        loan.optionElement().eq(4).click({ force: true })
+        loan.sortAscendingElement().click({ force: true })
+        loan.optionElement().eq(4).click({ force: true })
+        loan.sortDescendingElement().click({ force: true })
+        loan.optionElement().eq(4).click({ force: true })
+        loan.clearSortElement().click({ force: true })
+    }  
+    sortingWarranty1(){
+        cy.wait(1000)
+        loan.optionElement().eq(5).click({ force: true })
+        loan.sortAscendingElement().click({ force: true })
+        loan.optionElement().eq(5).click({ force: true })
+        loan.sortDescendingElement().click({ force: true })
+        loan.optionElement().eq(5).click({ force: true })
+        loan.clearSortElement().click({ force: true })
+    }
 }
 export default LoanerManagementActions 

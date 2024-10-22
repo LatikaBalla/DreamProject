@@ -2,7 +2,7 @@
 const locator = require("../../../locators.json");
 export default class LoanerManagementElements {
 
-    titleElement(){
+    titleElement() {
         return cy.contains(locator.loanerManagement.title, {
             timeout: 30000,
         })
@@ -178,4 +178,24 @@ export default class LoanerManagementElements {
             timeout: 30000,
         })
     }
+    optionElement() {
+        return cy.get(locator.loanerManagement.option, {
+            timeout: 30000,
+        })
     }
+    sortAscendingElement() {
+        return cy.contains(locator.loanerManagement.sortAscending, {
+            timeout: 30000,
+        })
+    }
+    sortDescendingElement() {
+        return cy.contains(locator.loanerManagement.sortDescending, {
+            timeout: 30000,
+        })
+    }
+    clearSortElement() {
+        return cy.contains(locator.loanerManagement.clearSort, {
+            timeout: 30000,
+        })
+    }
+}
