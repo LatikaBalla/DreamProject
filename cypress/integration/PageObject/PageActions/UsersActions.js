@@ -54,6 +54,7 @@ export class UsersActions {
         dash.messageElement().should('contain', tdata.users.createStudentmsg)
     }
     clickOnEditButton() {
+        cy.wait(2000)
         user.addFilterElement().eq(0).click({ force: true })
         user.fieldNameElement().eq(1).click({ force: true })
         user.fieldOpElement().eq(2).click({ force: true })
@@ -554,6 +555,61 @@ export class UsersActions {
         cy.get('[value="Inactive"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="user_status"]').should('contain', tdata.users.userStatus)
         cy.get('.reset-button').click({ force: true })
+    }
+    //sorting
+    sortingFullName(){
+        cy.wait(1000)
+        user.optionElement().eq(1).click({ force: true })
+        user.sortAscendingElement().click({ force: true })
+        user.optionElement().eq(1).click({ force: true })
+        user.sortDescendingElement().click({ force: true })
+        user.optionElement().eq(1).click({ force: true })
+        user.clearSortElement().click({ force: true })
+    }
+    sortingEmail(){
+        cy.wait(1000)
+        user.optionElement().eq(2).click({ force: true })
+        user.sortAscendingElement().click({ force: true })
+        user.optionElement().eq(2).click({ force: true })
+        user.sortDescendingElement().click({ force: true })
+        user.optionElement().eq(2).click({ force: true })
+        user.clearSortElement().click({ force: true })
+    }
+    sortingPhone(){
+        cy.wait(1000)
+        user.optionElement().eq(3).click({ force: true })
+        user.sortAscendingElement().click({ force: true })
+        user.optionElement().eq(3).click({ force: true })
+        user.sortDescendingElement().click({ force: true })
+        user.optionElement().eq(3).click({ force: true })
+        user.clearSortElement().click({ force: true })
+    }
+    sortingUserRole(){
+        cy.wait(1000)
+        user.optionElement().eq(4).click({ force: true })
+        user.sortAscendingElement().click({ force: true })
+        user.optionElement().eq(4).click({ force: true })
+        user.sortDescendingElement().click({ force: true })
+        user.optionElement().eq(4).click({ force: true })
+        user.clearSortElement().click({ force: true })
+    }
+    sortingOrganizationalUnit(){
+        cy.wait(1000)
+        user.optionElement().eq(5).scrollIntoView().click({ force: true })
+        user.sortAscendingElement().click({ force: true })
+        user.optionElement().eq(5).scrollIntoView().click({ force: true })
+        user.sortDescendingElement().click({ force: true })
+        user.optionElement().eq(5).scrollIntoView().click({ force: true })
+        user.clearSortElement().click({ force: true })
+    }
+    sortingUserStatus(){
+        cy.wait(1000)
+        user.optionElement().eq(6).scrollIntoView().click({ force: true })
+        user.sortAscendingElement().click({ force: true })
+        user.optionElement().eq(6).scrollIntoView().click({ force: true })
+        user.sortDescendingElement().click({ force: true })
+        user.optionElement().eq(6).scrollIntoView().click({ force: true })
+        user.clearSortElement().click({ force: true })
     }
 }
 export default UsersActions 

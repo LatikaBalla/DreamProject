@@ -145,7 +145,12 @@
         "checkbox3": "[aria-label='Test OU']",
         "checkbox4": "[aria-label='VT Employees']",
         "export": "[data-testid='FileDownloadIcon']",
-        "upload": "input[type='file']"
+        "upload": "input[type='file']",
+        "option": "[data-ref='eMenu']",
+        "sortAscending": "Sort Ascending",
+        "sortDescending": "Sort Descending",
+        "clearSort": "Clear Sort",
+        "filterHelp":"[data-testid='HelpIcon']"
     },
     "reportCenter": {
         "title": "Report Center",

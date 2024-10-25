@@ -176,5 +176,24 @@ export default class UsersElements {
             timeout: 30000,
         })
     }
-
+    optionElement() {
+        return cy.get(locator.users.option, {
+            timeout: 30000,
+        })
+    }
+    sortAscendingElement() {
+        return cy.contains(locator.users.sortAscending, {
+            timeout: 30000,
+        })
+    }
+    sortDescendingElement() {
+        return cy.contains(locator.users.sortDescending, {
+            timeout: 30000,
+        })
+    }
+    clearSortElement() {
+        return cy.contains(locator.users.clearSort, {
+            timeout: 30000,
+        })
+    }
 }

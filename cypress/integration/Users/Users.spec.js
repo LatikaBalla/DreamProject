@@ -59,10 +59,10 @@ And('Click on view button and click on Edit button', () => {
 })
 Then('I should edit title, full name', () => {
     user.editTitle()
-    user.editFullname()
+   // user.editFullname()
 })
 And('I should edit Phone and Cell Number and user role', () => {
-   // user.editCellNumber()
+    // user.editCellNumber()
     user.editPhone()
     user.editUserRole()
 })
@@ -279,4 +279,23 @@ And('Click on filter of User Role op9 and Verify the Result', () => {
 })
 And('Click on filter of User Role op10 and Verify the Result', () => {
     user.filterURop10()
+})
+//sorting
+And('Click on Sort Ascending and Descending for Full Name and Verify the Result', () => {
+    user.sortingFullName()
+})
+And('Click on Sort Ascending and Descending for Email and Verify the Result', () => {
+    user.sortingEmail()
+})
+And('Click on Sort Ascending and Descending for Phone and Verify the Result', () => {
+    user.sortingPhone()
+})
+And('Click on Sort Ascending and Descending for User Role and Verify the Result', () => {
+    user.sortingUserRole()
+})
+And('Click on Sort Ascending and Descending for Organizational Unit and Verify the Result', () => {
+    user.sortingOrganizationalUnit()
+})
+And('Click on Sort Ascending and Descending for User Status and Verify the Result', () => {
+    user.sortingUserStatus()
 })

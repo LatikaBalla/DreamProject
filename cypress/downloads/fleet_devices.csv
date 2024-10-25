@@ -1,127 +1,306 @@
-serial_number,asset_tag,device_model,device_sku,building_name,is_verified,organizational_unit,student_external_user_full_name,loaner_status
-VIVATEST91Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST118Test,"u`/""qP.gc=",1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST161Test,OorZSDu[xj,1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST166Test,!3XE/b2jBj,1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST168Test,"{B""1)HaCtI",1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST170Test,`>`4Cwi:'5,1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST171Test,f`RC(:'m:x,1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST173Test,1\VX2b+r'F,1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST175Test,KEO(5RSi?`,1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST176Test,>&?#ZQxy8%,1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST177Test,xK.Uu1%lW[,1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST180Test,"`gBX*""!gkj",1234Ab6,abcdefg,,true,/,Katie Long,In Loaner Pool
-VIVATEST132Test,2luL\>![X5,1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST133Test,wnua.a-*mb,1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST137Test,0h7?\?RZ0q,1234Ab6,abcdefg,,true,/,Katie Long,In Loaner Pool
-VIVATEST141Test,TpQwOT[eg\,1234Ab6,abcdefg,,true,/,Katie Long,In Loaner Pool
-VIVATEST147Test,2|2[hmLwrN,1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST148Test,"mB?3""d,,_W",1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST152Test,kXhTQ==v]#,1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST153Test,+{o[/$Hg+J,1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST154Test,K3`b-GqRyr,1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST103Test,BqQN5pks'?,1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-Teagan,Jeramy,m.#x8:DLM^,esF-eD_XU\,Proterworth,true,/,Samantha Miller,Not In Loaner Pool
-VIVATEST104Test,"d/!$F[M""8d",1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST105Test,.)E5:6Qq<m,1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST106Test,\|_3U}*s6],1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST108Test,"[8h^,YschB",1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST109Test,9len`V:`TJ,1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST116Test,"=5{&h$|4Z,",1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST113Test,+7M)f]/JB%,1234Ab6,abcdefg,,true,/,demo_adminbuildingCSMTEST,Checked Out
-VIVATEST126Test,*&Z5Z`*L*<,1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST127Test,#-T7Q}C-3z,1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST128Test,4MvJ*d)P>),1234Ab6,abcdefg,,true,/,Katie Long,In Loaner Pool
-VIVATEST130Test,(8Mkphe#XH,1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST156Test,q)z&93&D16,1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST157Test,"NB{;Bsa-""b",1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST158Test,"cB\\""w7X\t",1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST142Test,p3i-aRMY;_,1234Ab6,abcdefg,,true,/,New Test user,Checked Out
-VIVATEST163Test,"0eRb+/EAY,",1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST164Test,{1'=GYj>{1,1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST165Test,_)JINNCP@V,1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST169Test,"7FXB4$r<b""",1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST179Test,Fe09u^F1OU,1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST174Test,h!hq^E)4H4,1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST107Test,>YRo5?#|_:,1234Ab6,abcdefg,,true,/,Katie Long,In Loaner Pool
-XYZ,,T730,90JF00A4US,Proterworth,false,,,Not In Loaner Pool
-VIVATEST181Test,}$3;JfUx(-,1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST162Test,.vs2@qkx%E,1234Ab6,abcdefg,,true,/,demo_adminbuildingCSMTEST,Checked Out
-VIVATEST172Test,aoO>4<qK5?,1234Ab6,abcdefg,,true,/,demo_adminbuildingCSMTEST,Checked Out
-VIVATEST160Test,"mqR&},#YCk",1234Ab6,abcdefg,,true,/,Katie Long,In Loaner Pool
-Griffin,Hilton,xu<-je2r<k,!YMl0d`<R%,Proterworth,true,/,Samantha Miller,Not In Loaner Pool
-Jazlyn,Joe,/CFT#:qLXl,"kzB""?*1v,a",Proterworth,true,/,Robert Reynolds,Not In Loaner Pool
-Jeremie,Kitty,O/YcLQrj1D,:4ZNi;u$Nl,Proterworth,true,/,Jamie Smith,In Loaner Pool
-Sydnie,Clark,K$<7ec9P%X,0J%^a^LO8V,Proterworth,true,/,Katie Long,Not In Loaner Pool
-Malvina,Russ,O/YcLQrj1D,:4ZNi;u$Nl,Proterworth,true,/,Jamie Smith,Not In Loaner Pool
-Davonte,Henri,xu<-je2r<k,!YMl0d`<R%,Proterworth,true,/,Robert Reynolds,Not In Loaner Pool
-Kiarra,Christy,qQVPHyBgEN,C45rrr|y&C,Proterworth,true,/,Claire Jones,Not In Loaner Pool
-Charlene,Ulices,qQVPHyBgEN,C45rrr|y&C,Proterworth,true,/,Samantha Miller,In Loaner Pool
-Hassie,Hazel,qQVPHyBgEN,C45rrr|y&C,Proterworth,true,/,Claire Jones,In Loaner Pool
-VIVATEST134Test,x-jW&Ze\l$,1234Ab6,abcdefg,,true,/,,In Loaner Pool
-VIVATEST124Test,H4rR-Qt&Lo,1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST115Test,d.a}urh9Q6,1234Ab6,abcdefg,,true,/,demo_adminbuildingCSMTEST,Checked Out
-VIVATEST120Test,"G,pRsU#Epf",1234Ab6,abcdefg,,true,/,demo_adminbuildingCSMTEST,Checked Out
-VIVATEST129Test,':+AsFZm08,1234Ab6,abcdefg,,true,/,Katie Long,In Loaner Pool
-VIVATEST131Test,"s0:,@?&S`Y",1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-1CD1000007Test,12387,DEMOCBK,DEMO-CBK,Raynes Administration,true,/,test,In Loaner Pool
-Nella,Raoul,xu<-je2r<k,!YMl0d`<R%,Proterworth,true,/,,In Loaner Pool
-VIVATEST146Test,Q-ej(qtc>w,1234Ab6,abcdefg,,true,/,,In Loaner Pool
-VIVATEST102Test,qZ4ztZAaci,1234Ab6,abcdefg,,true,/,,In Loaner Pool
-VIVATEST114Test,33\C8}ctz@,1234Ab6,abcdefg,,true,/,,In Loaner Pool
-VIVATEST117Test,YNZ0iS{)Ds,1234Ab6,abcdefg,,true,/,,In Loaner Pool
-VIVATEST121Test,WG@EJ]oU(6,1234Ab6,abcdefg,,true,/,,In Loaner Pool
-VIVATEST122Test,YF_[4:nQaF,1234Ab6,abcdefg,,true,/,,In Loaner Pool
-VIVATEST136Test,23[Y=pw})e,1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST149Test,HvST&O$ERw,1234Ab6,abcdefg,,true,/,,In Loaner Pool
-VIVATEST135Test,\h1w4@2f[],1234Ab6,abcdefg,,true,/,,In Loaner Pool
-VIVATEST144Test,tq'u%67lK_,1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST150Test,hSQs^ap_!8,1234Ab6,abcdefg,,true,/,Katie Long,In Loaner Pool
-VIVATEST151Test,4L[]2I[m3`,1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-5CD125RXX4,,Unidentified,VT-Unidentified,,false,/,,
-VIVATEST51Test,,3100,TC6KM,,true,/,,In Loaner Pool
-P206XP41-Ross,673TY-1,11AG8EE,2D608UT,,false,,,Not In Loaner Pool
-VIVATEST53Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST63Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST72Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST59Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST79Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST97Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-1234567Test,assasd,C201PA,C201PA-DS01,,true,/,Katie Long,Checked Out
-VIVATEST5Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST25Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST40Test,,3100,TC6KM,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST87Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST98Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST9Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST67Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST77Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST41Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST61Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST70Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST90Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATESTTest,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST50Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST99Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST66Test,,3100,TC6KM,,true,/,test student,Checked Out
-VIVATEST0Test,,3100,TC6KM,,true,/,test add new student,In Loaner Pool
-VIVATEST10Test,,3100,TC6KM,,true,/,Katie Long,In Loaner Pool
-VIVATEST57Test,,3100,TC6KM,,true,/,,In Loaner Pool
-zxcvbnTest,assasd,C201PA,C201PA-DS01,,true,/,,In Loaner Pool
-VIVATEST28Test,,3100,TC6KM,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST145Test,3F[v3}&)`F,1234Ab6,abcdefg,,true,/,,In Loaner Pool
-VIVATEST155Test,XElg8&r7f),1234Ab6,abcdefg,,true,/,Maleja,Checked Out
-98765vhTest,test1555a1321313121,1234Ab6,abcdefg,Test Maleja,true,/,test,Checked Out
-Chasity,Lea,xu<-je2r<k,!YMl0d`<R%,Proterworth,true,/,Katie Long,In Loaner Pool
-Jairo,Novella,m.#x8:DLM^,esF-eD_XU\,Proterworth,true,/,Douglas Thomas,In Loaner Pool
-Nelda,Ramiro,xu<-je2r<k,!YMl0d`<R%,Proterworth,true,/,Samantha Miller,Not In Loaner Pool
-Estella,Carmelo,_e[i95O]1+,6Rg%^''G[0,Proterworth,true,/,Samantha Miller,Not In Loaner Pool
-Christina,Remington,qQVPHyBgEN,C45rrr|y&C,Proterworth,true,/,Robert Reynolds,Not In Loaner Pool
-Damien,Marion,O/YcLQrj1D,:4ZNi;u$Nl,Proterworth,true,/,Meghan Lowe,In Loaner Pool
-Guido,Laurianne,1234Ab6,abcdefg,Proterworth,true,/,,In Loaner Pool
-TEST089,me78,1234Ab6,abcdefg,Raynes Administration,true,/,Kimberly Myers,In Loaner Pool
-VIVATEST110Test,!gns1Jxa6l,1234Ab6,abcdefg,,true,/,Katie Long,Checked Out
-VIVATEST112Test,Qj@h0KLYTl,1234Ab6,abcdefg,,true,/,Katie Long,Not In Loaner Pool
-VIVATEST159Test,Y:(1$`w:;<,1234Ab6,abcdefg,,true,/,,In Loaner Pool
-coreymanualadd3,TestTag,x360G3,3TU44AV,Proterworth,true,/,Demo Test,In Loaner Pool
-VIVATEST123Test,TestTag,1234Ab6,abcdefg,Proterworth,true,/,Demo Test,Checked Out
+full_name,email,phone,user_role,organizational_unit,user_status
+Vera Johnson,vjohnson@sd215.net,2086247472,1,,Active
+test stu,test34@gmail.com,,1,,Active
+Test Student repair,shyamadutta88715@gmail.com,,1,,Active
+Janet Yelson,syelson@testing.com,,1,,Active
+Test Student,sduttatest9@vivacitytech.com,,1,,Active
+Violet Smith,vsmith@sd215.net,2086247472,11,,Active
+Vivian Brown,vbrown@sd215.net,2086247472,1,,Active
+Vivienne Garcia,vgarcia@sd215.net,2086247472,1,,Active
+Valentina Davis,vdavis@sd215.net,2086247472,1,,Active
+Patrick Skelton,pskelton@vivacitytech.com,9999999999,1,/,Inactive
+Valerie Rodriguez,vrodriguez@sd215.net,2086247472,1,,Active
+Jackson Pollock,jackson.pollock@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users,Inactive
+Kate Wilson,kate.wilson@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users/Scott County | June 2024,Inactive
+Corey Molloy,cmolloy@gedu.demo.vivacitytech.com,9999999999,2,/VT Employees/Devs,Active
+Bria Faithful,bria@gedu.demo.vivacitytech.com,,6,/VT Employees/ITT,Active
+Johnny Appleseed,johnny.Appleseed@example.com,,1,,Active
+Akash,akash123@vivacitytech.com,8586996403,3,,Active
+Nancy Stewart,NStewart@example.com,81405463,5,,Active
+Veronica Martinez,vmartinez@sd215.net,2086247472,1,,Active
+Victor Hernandez,vhernandez@sd215.net,2086247472,1,,Inactive
+Sherri,etst@c.com,9123088794,8,,Inactive
+Add User,sd@gmail.com,,5,,Active
+Test Account creation,sdutta+1@vivacitytech.com,1223898989,10,,Active
+TesterSDA,TesterSDA@example.com,1233211234,7,,Active
+TesterBA,TesterBA@example.com,1233211234,3,,Active
+fx,sdfsd@gmail.com,231455,2,,Active
+Colette Morris,cmorris@vivacitytech.com,,9,,Active
+BAName,BAName@example.com,1234561234,3,,Active
+,dave@example.com,,1,,Active
+SAName,SAName@example.com,1234561234,2,,Active
+Madhuri,employee231@gmail.com,12345678,1,,Active
+Katelin Howe,khowe@vivacitytech.com,,9,,Active
+Dream,dreamteam@vivacitytech.com,2085555555,9,,Active
+Jay Amin,jamin@vivacitytech.com,,1,,Active
+demo_adminsuper@vivacitytech.com,demo_adminsuper@vivacitytech.com,,2,,Active
+SName,SName@example.com,1234561234,1,,Active
+demo_repairtech@vivacitytech.com,demo_repairtech@vivacitytech.com,,4,,Active
+,demo_repairfacilitator@vivacitytech.com,,5,,Active
+,demo_studentsuper@vivacitytech.com,,6,,Active
+,demo_studentadvanced@vivacitytech.com,,8,,Active
+,demo_studentnormal@vivacitytech.com,,1,,Active
+Zach Howland,zhowland@vivacitytech.com,81405463,2,,Active
+new user,testusr@gmail.com,81405463,2,,Active
+Edit Test,annaking01@gmail.com,81405463,5,,Active
+Lisa Burton,davidtaylor@example.net,81405463,5,,Active
+Christina Johnson,turnerjose@example.com,81405463,5,,Active
+Julie Mcclure,johnmorse@example.org,81405463,5,,Active
+Edit Test,1690807463411@gmail.com,81405463,3,,Active
+TestAccount Dashboard Role,sd2@gmail.com,81405463,7,,Active
+jajakul,jislam@vivacitytech.com,81405463,9,,Active
+add name clowe,clowe@vivacitytech.com,81405463,9,,Active
+Edit Test,rbeerling@vivacitytech.com,81405463,9,,Active
+Nathan,nathantbirch@gmail.com,81405463,2,,Active
+Edit Test,1690806991927@gmail.com,24234234,3,,Inactive
+Md Jajakul Islam,jajakul.islam@brainiuminfotech.com,,2,,Active
+TesterSRT,TesterSRT@example.com,1233211234,8,,Active
+TesterRT,TesterRT@example.com,1233211234,4,,Active
+Crystal Smith,sgonzalez@example.com,73008689,5,,Active
+Brian Wilcox,lori35@example.net,84280551,5,,Active
+Lauren Harris,sgarcia@example.org,21962101,5,,Active
+Edit Test,1690806807082@gmail.com,24234234,5,,Inactive
+Demo Test,1690806966527@gmail.com,81405463,1,,Active
+Maleja123,mduque+1@vivacitytech.com,1111111111,9,,Active
+Test User,example@example.com,1233211234,4,,Active
+Search Test,1690817389935@gmail.com,1231231231,1,,Active
+TestAccount Dashboard Role1,sd3@gmail.com,1213323233,6,,Active
+,sandip.pyne@brainiuminfotech.com,,8,,Active
+TesterS,TesterS@example.com,1233211234,1,,Active
+Ryker Swensen,rswensenTEST@vivacitytech.com,,1,,Active
+Marcus Edwards,medwards@vivacitytech.com,,9,,Active
+Main_Street,wejqi@gmail.com,1234567890,10,,Active
+demo_adminschooldistrict@vivacitytech.com,demo_adminschooldistrict@vivacitytech.com,,7,,Active
+jlondon,jlondon@vivacitytech.com,81405463,2,,Active
+Demo Test By MD,1691492375589@gmail.com,345678909,7,,Active
+UI TEST delete,sd@email.com,89898,5,,Active
+,krahul@vivacitytech.com,,9,,Active
+Edit Test,1690806546696@gmail.com,81405463,3,,Inactive
+John David,peter4@example.com,81405463,8,,Active
+Testy Mctesterson,testing1@vivacitytech.com,1234567890,9,,Active
+Dream API,"admindev@vivacitytech.com
+",(877) 731-2069,2,,Active
+Testy Mctesterson,testing@vivacitytech.com,1231232131,9,,Active
+test user by MD,testuser@gmail.com,76465875,2,,Active
+Md Raja,abcd@vivacity.com,7694455822,4,,Active
+"Unique user ",add@user.com,8787875555,7,,Active
+QA test manual,sdnew@email.com,,8,,Active
+Demo Test,1690884051723@gmail.com,1231231231,1,,Active
+TesterSS,TesterSS@example.com,1233211234,8,,Active
+John David,peter1@example.com,81405463,2,,Active
+Edit Test,asebastian@vivacitytech.com,81405463,9,,Active
+Edit Test,bhodge@vivacitytech.com,81405463,9,,Active
+Edit Test,thoffer@vivacitytech.com,81405463,9,,Active
+Alejandra Duque,mduqueTEST2@vivacitytech.com,,9,,Active
+Edit Test,ljones@vivacitytech.com,81405463,9,,Active
+Lindsay Garner,lgarner@vivacitytech.com,81405463,9,,Active
+Edit Test,demo@vivacitytech.com,81405463,9,,Active
+Mohammed Raja,mraja@vivacitytech.com,,9,,Active
+,demo_adminbuilding@vivacitytech.com,,3,,Active
+Edit Test,kflake@vivacitytech.com,81405463,9,,Inactive
+demo admin sd,demoadminsd@example.com,1233211234,5,,Active
+mmorris,mmorris@vivacitytech.com,,2,,Active
+fx,bgarritano@vivacitytech.com,81405463,2,,Active
+,demo_loanermanager@vivacitytech.com,,10,,Active
+Sohan Saini,ssaini@vivacitytech.com,,9,,Active
+shyama dutta,shyamadutta715@gmail.com,,1,,Active
+test,test@email.com,1231123333,1,,Active
+Test Akash,abhattacharyatest@vivacitytech.com,9874561230,4,,Active
+Maleja Duque,mduque+test1@vivacitytech.com,7777777777,9,,Active
+Greg Ives,gives@vivacitytech.com,81405463,9,,Active
+Akash deep bhttacharyya,akashdeepbhattacharyya@gmail.com,,1,,Active
+Red,demo_user_red@vivacitytech.com,,1,,Active
+Bob Jones,bob@gmail.com,,2,,Active
+test,adminmike@vivacitytech.com,1231123333,2,,Active
+Maleja1234,mduque+1123@vivacitytech.com,1111111111,9,,Active
+Maleja DB test,mduque+DBtest@vivacitytech.com,7777777777,2,,Active
+shyama.dutta@brainiuminfotech.com,shyama.dutta@brainiuminfotech.com,,2,,Active
+Manidipa Das,mdas@vivacitytech.com,,2,,Active
+Nathan Birch,nbirch@vivacitytech.com,2085555555,9,/Employees/Dev Team,Active
+Admin Backup,admin@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees/Admins,Inactive
+Allen McNorrill,amcnorrill@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees/Admins,Inactive
+Andy Warhol,andy.warhol@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users,Inactive
+Arun Sebastian,asebastian@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees/Devs,Inactive
+Ashley Hibbard,ashley.hibbard@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users/Scott County | June 2024,Inactive
+Beth Smith,beth.smith@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users/Scott County | June 2024,Inactive
+Ben Painter,bpainter@gedu.demo.vivacitytech.com,9999999999,1,/,Inactive
+Crystal Hale,chale@gedu.demo.vivacitytech.com,9999999999,1,/,Inactive
+Christi Scalf,christi.scalf@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users/Scott County | June 2024,Inactive
+Claude Monet,claude.monet@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users,Inactive
+Dream Admin,dreamadmin@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees/Devs,Inactive
+Enroll Device,enroll@gedu.demo.vivacitytech.com,9999999999,1,/Devices,Inactive
+Frida Kahlo,frida.kahlo@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users,Inactive
+Georgia O'Keefe,georgia.okeefe@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users,Inactive
+Super Duper Test,google.oauth.verification@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees,Inactive
+Greshen Willis,greshen.willis@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users/Scott County | June 2024,Inactive
+Henri Matisse,henri.matisse@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users,Inactive
+Ian Davis,ian.davis@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users/Level 1: Moultonborough School District,Inactive
+Verity Jones,vones@sd215.net,2086247472,1,,Active
+Victoria Miller,vmiller@sd215.net,2086247472,1,,Active
+Jay Amin,jamin@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees/Devs,Inactive
+Jesus Del Barrio Sanchez,jdelbarriosanchez@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees/Devs,Inactive
+Jett Lee,jlett@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees,Inactive
+Justin Moll,jmoll@gedu.demo.vivacitytech.com,9999999999,1,/,Inactive
+Shyama Dutta,sdutta@vivacitytech.com,,5,,Active
+Julye Adams,julye.adams@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users/Scott County | June 2024,Inactive
+Huddle Room,ellen.crumbaker@gmail.com,,1,,Active
+Kaleb Bradford,kbradford@gedu.demo.vivacitytech.com,9999999999,1,/,Inactive
+Alecia,alecia@millcommunity.org,,1,,Active
+Jasmine,jasmine@millcommunity.org,,1,,Active
+Angie,Angie@millcommunity.org,,1,,Active
+Niyi,niyi@millcommunity.org,,1,,Active
+Jessica,jessica@millcommunity.org,,1,,Active
+Kyle Mullenix,kmullenix@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees,Inactive
+Leonardo da Vinci,leonardo.davinci@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users,Inactive
+Lindsey Ballard,lindsey.ballard@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users/Scott County | June 2024,Inactive
+Maria Bennett,maria.bennett@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users/Scott County | June 2024,Inactive
+Maleja Duque,mduque@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees/Devs,Inactive
+Marcus Edwards,medwards@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees/Admins,Inactive
+CSM_STUDENT_TEST,cmalady+csm_student_test@vivacitytech.com,,1,,Active
+Michael Wilson,michael.wilson@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users/Scott County | June 2024,Inactive
+Molly Fulton,molly.fulton@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users/Scott County | June 2024,Inactive
+Mike Plucker,mplucker@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees/Admins,Inactive
+Madhuri Ravilla,mravilla@gedu.demo.vivacitytech.com,9999999999,1,/Test OU/Dev Test OU/Developers,Inactive
+Nicky Acevedo,nacevedo@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees/ITT,Inactive
+Natasha Stephen,natasha.stephen@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users/Scott County | June 2024,Inactive
+Nathan Jones,nathan.jones@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users/Scott County | June 2024,Inactive
+Nathan Birch,nbirch@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees/Devs,Inactive
+Nicky Test,nicky@gedu.demo.vivacitytech.com,9999999999,1,/,Inactive
+Tanya Maloley,tanya@vivacitytech.com,9999999999,2,,Inactive
+Pablo Picasso,pablo.picasso@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users,Inactive
+Ross 1 Bryson,rbryson@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees/Devs,Inactive
+Ryker Swensen,rswensen@gedu.demo.vivacitytech.com,9999999999,1,/VT Employees/Devs,Inactive
+Salvador Dali,salvador.dali@gedu.demo.vivacitytech.com,9999999999,1,/Google Bootcamp Users,Inactive
+Shyma Dutta,sdutta@gedu.demo.vivacitytech.com,9999999999,1,/,Inactive
+Yellow,demo_user_yellow@vivacitytech.com,,1,,Active
+Green,demo_user_green@vivacitytech.com,,1,,Active
+John Doe,j.doe@vivacitytech.com,,9,,Active
+Diana Wright,dwright@vivacitytech.com,9999999999,1,/Employees/Customer Success,Inactive
+Jason NotBorn,jnotborn@testing.com,,1,,Active
+Maleja,mduque124@vivacitytech.com,666666,7,,Active
+Maleja,mduque34534@vivacitytech.com,,1,,Active
+AJ Rasmussen,ajrasmussen@vivacitytech.com,9999999999,1,/Employees/Accounting & Finance,Inactive
+Maleja P,adminmaleja+w3eeedd@vivacitytech.com,,10,,Active
+Vincent Williams,vwilliams@sd215.net,2086247472,7,,Active
+test,mn@gmail.com,7894564458,7,,Active
+Corey Molloy,cmolloy@vivacitytech2.com,,1,,Active
+Corey Molloy,cmolloy@vivacitytech3.com,,1,,Active
+Corey Molloy,cmolloy@vivacitytech4.com,,1,,Active
+Test Student,sdutta+12@vivacitytech.com,3333333333,2,,Active
+demo_adminvivacity@vivacitytech.com,demo_adminvivacity@vivacitytech.com,,9,,Active
+Corey Tester A,corey.tester.a@yopmail.com,,5,,Active
+Scott Gasparick,sgasparick@vivacitytech.com,,1,,Active
+Afeefa Zaman,azaman@vivacitytech.com,,9,,Active
+nbtest50000001@gmail.com,nbtest50000001@gmail.com,,1,,Active
+Demo Test,someone@email.com,,5,,Active
+Casey Rossi,crossi@vivacitytech.com,8648319499,9,,Active
+Dillon Burgett,dburgett@vivacitytech.com,8777312069,9,,Active
+Maleja Duque,mduque@vivacitytech.com,2085555555,9,,Active
+Demo Test,1691492004283@gmail.com,1231231231,1,,Active
+Md Raja,md.raja@brainiuminfotech.com,,1,,Active
+Bria Test,briafaithful@gmail.com,,1,,Active
+Demo Test,1691508033430@gmail.com,1231231231,1,,Active
+Sohan Saini,sohan@yopmail.com,09887693769,1,,Active
+Alejandra Duque,magiraldodevelop_delete@gmail.com,,1,,Active
+sd,sdutta9@vivacitytech.com,,1,,Active
+lucidnature23@gmail.com,lucidnature23@gmail.com,,1,,Active
+Johnny Admin,jadmin@vivacitytech.com,,9,,Active
+Madhuri,madhuri123456@gmail.com,,10,,Active
+Aaron Chinander,achinander@vivacitytech.com,,9,,Active
+Ryker Swenson,"rswenson@vivacitytech.com
+",2085555555,1,,Active
+Jerry Pogue,jpouge@hotmail.com,9552223333,2,,Active
+Hansel Poque,gpouge@gmail.com,1112223333,2,,Active
+Demo Test,1690807429814@gmail.com,1231231231,1,,Active
+Demo Test,1690807767265@gmail.com,81405463,1,,Active
+Demo Test,1690987244499@gmail.com,1231231231,1,,Active
+mduque+madhuri@vivacitytech.com,mduque+madhuri@vivacitytech.com,,1,,Active
+Demo Test,1691155226708@gmail.com,1231231231,1,,Active
+Alejandra123 Duque,magiraldodevelop@gmail.com,1231234123,1,,Active
+Jett Lee,jettlee@vivacitytech.com,,1,,Active
+Alejandra1243 Duque Test,magiraldodevelop123123@gmail.com,1231234123,1,,Active
+Chingming Vang,cvang@vivacitytech.com,,1,,Active
+test,shyamadutta715+23@gmail.com,5555555555,1,,Inactive
+Maleja DB test,maleja@test.com,5555555555,1,,Inactive
+demo_practicestudent@vivacitytech.com,demo_practicestudent@vivacitytech.com,,11,,Active
+Bethanie Sprinkel,sprinkelb@students.sps186.org,5555555555,1,,Inactive
+Kaeden Beck,beckk5@students.sps186.org,5555555555,1,,Inactive
+Eddie Snow,snowive@students.sps186.org,5555555555,1,,Inactive
+Eddie O'Brien,obriene@students.sps186.org,5555555555,1,,Inactive
+Keyion Beck,beckk4@students.sps186.org,5555555555,1,,Inactive
+sohanstudent,sohanstudent@gmail.com,5555555555,1,,Inactive
+Sample B,sample-b@yopmail.com,5555555555,1,,Inactive
+Test Student,testDemostudent@vivacityTech.com,5555555555,1,,Inactive
+Green Student,gs@vivacity.com,5555555555,1,,Inactive
+Yellow Student,ys@vivacity.com,5555555555,1,,Inactive
+Red Student,rs@vivacity.com,5555555555,1,,Inactive
+Taylor Roberts,Robertst6@student.sps186.org,5555555555,1,,Inactive
+Jyden Snow Benton,snowbent@students.sps186.org,5555555555,1,,Inactive
+Eric Cutler,cultere1@students.sps186.org,5555555555,1,,Inactive
+Cluck's Room,mcluck@sps186.org,5555555555,1,,Inactive
+Devyn Guse-Humphrey,dgusehumphrey@vivacitytech.com,9999999999,1,/,Inactive
+Katie Ruberto,kruberto@vivacitytech.com,9999999999,1,/No SSO,Inactive
+Matt Wise,mwise@gedu.demo.vivacitytech.com,9999999999,1,/,Inactive
+Debashis Saha,dsaha@vivacitytech.com,9999999999,1,/No SSO,Inactive
+Abigail Thurber,athurber@vivacitytech.com,9999999999,1,/Employees/Operations/Tech Services,Inactive
+Nick Bauer,nbauer@vivacitytech.com,9999999999,1,/Employees/Operations/Tech Services,Inactive
+Akash,test@yopmail.com,5555555555,1,,Inactive
+"test Add new ",st@gmai.com,5555555555,1,,Inactive
+test student,st@gmail.com,5555555555,1,,Inactive
+test add new student,add@st.com,5555555555,1,,Inactive
+KRISHANA,krishana@gmail.com,5555555555,1,,Inactive
+Maleja,maduque+student@gmail.com,5555555555,1,,Inactive
+Lyanna Mormont,Reece_Farrell@gmail.com,5555555555,1,,Inactive
+rohit,sagurohir3332@gmail.com,5555555555,1,,Inactive
+sohan,rohit.amplyn@gmail.com,5555555555,1,,Inactive
+sohan,rohit.amplyn222@gmail.com,5555555555,1,,Inactive
+Md Raja,abcdef@vivacity.com,5555555555,1,,Inactive
+New Test user,testuser@vivacitytech.com,5555555555,1,,Inactive
+Maleja,mduque+student@gmail.com,5555555555,1,,Inactive
+Shiv,Shiv@Shiv.com,5555555555,1,,Inactive
+test1111,test1111@test1111.com,5555555555,1,,Inactive
+Maleja,mduque+student1@vivacitytech.com,5555555555,1,,Inactive
+Loaner Student Add,LoanerStudentAdd@example.com,5555555555,1,,Inactive
+demo_adminbuildingCSMTEST,demo_adminbuildingCSMTEST@example.com,5555555555,1,,Inactive
+Demo User,aaa@gmail.com,5555555555,1,,Inactive
+LLLLLL,aa222a@gmail.com,5555555555,1,,Inactive
+test,test@ee.cc,5555555555,1,,Inactive
+Crystal Torres,Judson_Tromp32@yahoo.com,5555555555,1,,Inactive
+Kevin Cox,Moshe_Brown27@hotmail.com,5555555555,1,,Inactive
+Jason Wolf,Harley.Weber@gmail.com,5555555555,1,,Inactive
+Matthew Moore,Jermain.Renner@yahoo.com,5555555555,1,,Inactive
+Leonard Martin,Ozella.Jenkins47@gmail.com,5555555555,1,,Inactive
+Emily Wise,Jamal.Hane9@hotmail.com,5555555555,1,,Inactive
+Thomas Sims,Guido.Corkery@yahoo.com,5555555555,1,,Inactive
+Christopher Becker,Milford.Shanahan@yahoo.com,5555555555,1,,Inactive
+Jason Farrell,Aditya76@hotmail.com,5555555555,1,,Inactive
+Katie Long,Chyna39@yahoo.com,5555555555,1,,Inactive
+Robert Meadows,Noemy.Turner78@hotmail.com,5555555555,1,,Inactive
+Claire Jones,Bernadine.Weber@yahoo.com,5555555555,1,,Inactive
+Meghan Lowe,Jaron_Bergstrom@gmail.com,5555555555,1,,Inactive
+Janet Owens,Jayne55@gmail.com,5555555555,1,,Inactive
+Jamie Smith,Alisha_Ferry@gmail.com,5555555555,1,,Inactive
+Robert Reynolds,Icie25@gmail.com,5555555555,1,,Inactive
+Douglas Thomas,Anika.Daniel@gmail.com,5555555555,1,,Inactive
+Samantha Miller,Alia.Schinner77@yahoo.com,5555555555,1,,Inactive
+Linda Gillespie,Freida_Johnston34@yahoo.com,5555555555,1,,Inactive
+Annette Bennett,Aliza_Schoen@yahoo.com,5555555555,1,,Inactive
+Jacob Miller,Jodie_Koch@gmail.com,5555555555,1,,Inactive
+Randy Dyer,Bria.Orn@gmail.com,5555555555,1,,Inactive
+Angela Harris,Kenyatta_Klocko@gmail.com,5555555555,1,,Inactive
+Justin Thomas,Joe93@gmail.com,5555555555,1,,Inactive
+Brooke Mckee,Eva_Osinski@yahoo.com,5555555555,1,,Inactive
+Jessica Campos,Enos32@yahoo.com,5555555555,1,,Inactive
+Henry Gomez,Rosella94@yahoo.com,5555555555,1,,Inactive
+Alexis Briggs,Antwan5@gmail.com,5555555555,1,,Inactive
+Tracey Pitts,Colt_Treutel@hotmail.com,5555555555,1,,Inactive
+Rachael Francis,Kendrick.Kohler58@hotmail.com,5555555555,1,,Inactive
+Amanda Green,Brandi_Bahringer13@gmail.com,5555555555,1,,Inactive
+Kimberly Myers,Evelyn.Bashirian@gmail.com,5555555555,1,,Inactive
+Trevor Johnson,Katlyn.Bradtke@hotmail.com,5555555555,1,,Inactive
+Carlos Moore,Deondre78@yahoo.com,5555555555,1,,Inactive
+Sandy Johnson,sandyj@gedu.demo.vivacitytech.com,9999999999,2,,Active
+Demo Testing Edit,vlopez@sd215.net,8888888888,4,,Inactive
+Gabriel Eide,geide@vivacitytech.com,8888888888,4,,Inactive
+Harold Jay Tester,haroldjaytester@hadd.com,,5,,Active
+Test Student,test_student@example.com,1091921,1,,Active
