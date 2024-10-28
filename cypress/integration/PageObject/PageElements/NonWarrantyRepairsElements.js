@@ -188,4 +188,25 @@ export default class NonWarrantyRepairsElements {
             timeout: 30000,
         })
     }
-} 
+    optionElement() {
+        return cy.get(locator.nonWarrantyRepairs.option, {
+            timeout: 30000,
+        })
+    }
+    sortAscendingElement() {
+        return cy.contains(locator.nonWarrantyRepairs.sortAscending, {
+            timeout: 30000,
+        })
+    }
+    sortDescendingElement() {
+        return cy.contains(locator.nonWarrantyRepairs.sortDescending, {
+            timeout: 30000,
+        })
+    }
+    clearSortElement() {
+        return cy.contains(locator.nonWarrantyRepairs.clearSort, {
+            timeout: 30000,
+        })
+    }
+}
+

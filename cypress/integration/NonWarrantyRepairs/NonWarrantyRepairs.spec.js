@@ -331,3 +331,39 @@ And('Click on filter of Last Modified Date Blank and Verify the Result', () => {
 And('Click on filter of Last Modified Date Not blank and Verify the Result', () => {
     nwr.filterNotblankDate()
 })
+And('Click on Sort Ascending and Descending for Record ID and Verify the Result', () => {
+    nwr.sortingRecordID()
+})
+And('Click on Sort Ascending and Descending for Ticket Number and Verify the Result', () => {
+    nwr.sortingTicketNumber()
+})
+And('Click on Sort Ascending and Descending for Return Type and Verify the Result', () => {
+    nwr.sortingReturnType()
+})
+And('Click on Sort Ascending and Descending for Serial Number and Verify the Result', () => {
+    nwr.sortingSerialNumber()
+})
+And('Click on Sort Ascending and Descending for Repair Device and Verify the Result', () => {
+    nwr.sortingRepairDevice()
+})
+And('Click on Sort Ascending and Descending for Asset Tag and Verify the Result', () => {
+    nwr.sortingAssetTag()
+})
+And('Click on Sort Ascending and Descending for Repair Status and Verify the Result', () => {
+    nwr.sortingRepairStatus()
+})
+And('Click on Sort Ascending and Descending for Student Name and Verify the Result', () => {
+    nwr.sortingStudentName()
+})
+And('Click on Sort Ascending and Descending for Created By and Verify the Result', () => {
+    nwr.sortingCreatedBy()
+})
+And('Click on Sort Ascending and Descending for Last Modified Date and Verify the Result', () => {
+    nwr.sortingLastModifiedDate()
+})
+And('Click on Sort Ascending and Descending for Repair Box and Verify the Result', () => {
+    nwr.sortingRepairBox()
+})
+And('Click on Sort Ascending and Descending for Internal Technician Name and Verify the Result', () => {
+    nwr.sortingInternalTechnicianName()
+})

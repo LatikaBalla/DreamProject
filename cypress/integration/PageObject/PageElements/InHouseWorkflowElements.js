@@ -146,7 +146,7 @@ export default class InHouseWorkflowElements {
             timeout: 30000,
         })
     }
-    custompartElemnet() {
+    custompartElement() {
         return cy.contains(locator.inHouseWorkflow.custompart, {
             timeout: 30000,
         })

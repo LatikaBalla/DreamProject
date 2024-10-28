@@ -398,3 +398,33 @@ And('Click on filter of Created By Blank and Verify the Result', () => {
 And('Click on filter of Created By Not blank and Verify the Result', () => {
     dev.filterNotblankCBy()
 })
+And('Click on Sort Ascending and Descending for Record ID and Verify the Result', () => {
+    dev.sortingRecordID()
+})
+And('Click on Sort Ascending and Descending for Ticket Number and Verify the Result', () => {
+    dev.sortingTicketNumber()
+})
+And('Click on Sort Ascending and Descending for Building and Verify the Result', () => {
+    dev.sortingBuilding()
+})
+And('Click on Sort Ascending and Descending for Return Type and Verify the Result', () => {
+    dev.sortingReturnType()
+})
+And('Click on Sort Ascending and Descending for Serial Number and Verify the Result', () => {
+    dev.sortingSerialNumber()
+})
+And('Click on Sort Ascending and Descending for Repair Device and Verify the Result', () => {
+    dev.sortingRepairDevice()
+})
+And('Click on Sort Ascending and Descending for Asset Tag and Verify the Result', () => {
+    dev.sortingAssetTag()
+})
+And('Click on Sort Ascending and Descending for Repair Status and Verify the Result', () => {
+    dev.sortingRepairStatus()
+})
+And('Click on Sort Ascending and Descending for Student Name and Verify the Result', () => {
+    dev.sortingStudentName()
+})
+And('Click on Sort Ascending and Descending for Created By and Verify the Result', () => {
+    dev.sortingCreatedBy()
+})

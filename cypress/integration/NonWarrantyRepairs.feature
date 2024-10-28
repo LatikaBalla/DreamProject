@@ -105,6 +105,19 @@ Feature: NonWarrantyRepairs Page Functionality
         And Click on filter of Last Modified Date Blank and Verify the Result
         And Click on filter of Last Modified Date Not blank and Verify the Result
 
+        And Click on Sort Ascending and Descending for Record ID and Verify the Result
+        And Click on Sort Ascending and Descending for Ticket Number and Verify the Result
+        And Click on Sort Ascending and Descending for Return Type and Verify the Result
+        And Click on Sort Ascending and Descending for Serial Number and Verify the Result
+        And Click on Sort Ascending and Descending for Repair Device and Verify the Result
+        And Click on Sort Ascending and Descending for Asset Tag and Verify the Result
+        And Click on Sort Ascending and Descending for Repair Status and Verify the Result
+        And Click on Sort Ascending and Descending for Internal Technician Name and Verify the Result
+        And Click on Sort Ascending and Descending for Student Name and Verify the Result
+        And Click on Sort Ascending and Descending for Repair Box and Verify the Result
+        And Click on Sort Ascending and Descending for Created By and Verify the Result
+        And Click on Sort Ascending and Descending for Last Modified Date and Verify the Result
+
         And Click on the view button
         Then Verify the Repair Ticket page will open
         And Verfiy the details of Ticket

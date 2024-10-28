@@ -190,6 +190,13 @@ And('Click on help icon for Filtering Guide', () => {
 Then('Verify the Dream Data Filtering Guide', () => {
     mf.verifyfilteringGuide()
 })
+And ('Click on deviceIcon and click on Remove Loaner button',()=>{
+mf.clickOnRemoveLoaner()
+})
+Then ('verify the ticket is removed from loaner',()=>{
+    mf.verifyRemoveTicketLoaner()
+
+})
 //sn
 And('Click on filter of Serial Number contain and Verify the Result', () => {
     mf.selectFilterSerialNumber()

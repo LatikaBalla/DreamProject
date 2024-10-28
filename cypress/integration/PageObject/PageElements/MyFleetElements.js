@@ -176,6 +176,11 @@ export default class MyFleetElements {
             timeout: 30000,
         });
     }
+    removeLoanerElement() {
+        return cy.contains(locator.myFleet.removeLoaner, {
+            timeout: 30000,
+        });
+    }
     editDeviceElement() {
         return cy.contains(locator.myFleet.editDevice, {
             timeout: 30000,

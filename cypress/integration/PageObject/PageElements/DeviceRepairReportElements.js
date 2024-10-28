@@ -183,4 +183,25 @@ export default class DeviceRepairReportElements {
             timeout: 30000,
         })
     }
+    optionElement() {
+        return cy.get(locator.deviceRepairReport.option, {
+            timeout: 30000,
+        })
+    }
+    sortAscendingElement() {
+        return cy.contains(locator.deviceRepairReport.sortAscending, {
+            timeout: 30000,
+        })
+    }
+    sortDescendingElement() {
+        return cy.contains(locator.deviceRepairReport.sortDescending, {
+            timeout: 30000,
+        })
+    }
+    clearSortElement() {
+        return cy.contains(locator.deviceRepairReport.clearSort, {
+            timeout: 30000,
+        })
+    }
 }
+

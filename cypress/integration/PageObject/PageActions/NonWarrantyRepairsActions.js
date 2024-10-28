@@ -644,18 +644,18 @@ export class NonWarrantyRepairsActions {
       nwr.addFilterElement().eq(8).click({ force: true })
       nwr.fieldNameElement().eq(1).click({ force: true })
       nwr.fieldOpElement().eq(4).click({ force: true })
-      nwr.fieldValueElement().eq(0).clear({ force: true }).type('Ryk')
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type('Viv')
       nwr.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', 'Ryk')
+      cy.get('[row-index="0"]').should('contain', 'Viv')
       nwr.clearFilterElement().click({ force: true })
    }
    filterEndswithStdN() {
       nwr.addFilterElement().eq(8).click({ force: true })
       nwr.fieldNameElement().eq(1).click({ force: true })
       nwr.fieldOpElement().eq(5).click({ force: true })
-      nwr.fieldValueElement().eq(0).clear({ force: true }).type('sen')
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type('cia')
       nwr.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', 'sen')
+      cy.get('[row-index="0"]').should('contain', 'cia')
       nwr.clearFilterElement().click({ force: true })
    }
    filterBlankStdN() {
@@ -954,6 +954,114 @@ export class NonWarrantyRepairsActions {
       nwr.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('not.contain', tdata.nonwarrantyRepairs.lastdate1)
       nwr.clearFilterElement().click({ force: true })
+   }
+   sortingRecordID() {
+      cy.wait(1000)
+      nwr.optionElement().eq(1).scrollIntoView().click({ force: true })
+      nwr.sortAscendingElement().click({ force: true })
+      nwr.optionElement().eq(1).scrollIntoView().click({ force: true })
+      nwr.sortDescendingElement().click({ force: true })
+      nwr.optionElement().eq(1).scrollIntoView().click({ force: true })
+      nwr.clearSortElement().click({ force: true })
+   }
+   sortingTicketNumber() {
+      cy.wait(1000)
+      nwr.optionElement().eq(2).scrollIntoView().click({ force: true })
+      nwr.sortAscendingElement().click({ force: true })
+      nwr.optionElement().eq(2).scrollIntoView().click({ force: true })
+      nwr.sortDescendingElement().click({ force: true })
+      nwr.optionElement().eq(2).scrollIntoView().click({ force: true })
+      nwr.clearSortElement().click({ force: true })
+   }
+   sortingReturnType() {
+      cy.wait(1000)
+      nwr.optionElement().eq(3).scrollIntoView().click({ force: true })
+      nwr.sortAscendingElement().click({ force: true })
+      nwr.optionElement().eq(3).scrollIntoView().click({ force: true })
+      nwr.sortDescendingElement().click({ force: true })
+      nwr.optionElement().eq(3).scrollIntoView().click({ force: true })
+      nwr.clearSortElement().click({ force: true })
+   }
+   sortingSerialNumber() {
+      cy.wait(1000)
+      nwr.optionElement().eq(4).scrollIntoView().click({ force: true })
+      nwr.sortAscendingElement().click({ force: true })
+      nwr.optionElement().eq(4).scrollIntoView().click({ force: true })
+      nwr.sortDescendingElement().click({ force: true })
+      nwr.optionElement().eq(4).scrollIntoView().click({ force: true })
+      nwr.clearSortElement().click({ force: true })
+   }
+   sortingRepairDevice() {
+      cy.wait(1000)
+      nwr.optionElement().eq(5).scrollIntoView().click({ force: true })
+      nwr.sortAscendingElement().click({ force: true })
+      nwr.optionElement().eq(5).scrollIntoView().click({ force: true })
+      nwr.sortDescendingElement().click({ force: true })
+      nwr.optionElement().eq(5).scrollIntoView().click({ force: true })
+      nwr.clearSortElement().click({ force: true })
+   }
+   sortingAssetTag() {
+      cy.wait(1000)
+      nwr.optionElement().eq(6).scrollIntoView().click({ force: true })
+      nwr.sortAscendingElement().click({ force: true })
+      nwr.optionElement().eq(6).scrollIntoView().click({ force: true })
+      nwr.sortDescendingElement().click({ force: true })
+      nwr.optionElement().eq(6).scrollIntoView().click({ force: true })
+      nwr.clearSortElement().click({ force: true })
+   }
+   sortingRepairStatus() {
+      cy.wait(1000)
+      nwr.optionElement().eq(7).scrollIntoView().click({ force: true })
+      nwr.sortAscendingElement().click({ force: true })
+      nwr.optionElement().eq(7).scrollIntoView().click({ force: true })
+      nwr.sortDescendingElement().click({ force: true })
+      nwr.optionElement().eq(7).scrollIntoView().click({ force: true })
+      nwr.clearSortElement().click({ force: true })
+   }
+   sortingInternalTechnicianName() {
+      cy.wait(1000)
+      nwr.optionElement().eq(8).scrollIntoView().click({ force: true })
+      nwr.sortAscendingElement().click({ force: true })
+      nwr.optionElement().eq(8).scrollIntoView().click({ force: true })
+      nwr.sortDescendingElement().click({ force: true })
+      nwr.optionElement().eq(8).scrollIntoView().click({ force: true })
+      nwr.clearSortElement().click({ force: true })
+   }
+   sortingStudentName() {
+      cy.wait(1000)
+      nwr.optionElement().eq(9).scrollIntoView().click({ force: true })
+      nwr.sortAscendingElement().click({ force: true })
+      nwr.optionElement().eq(9).scrollIntoView().click({ force: true })
+      nwr.sortDescendingElement().click({ force: true })
+      nwr.optionElement().eq(9).scrollIntoView().click({ force: true })
+      nwr.clearSortElement().click({ force: true })
+   }
+   sortingRepairBox() {
+      cy.wait(1000)
+      nwr.optionElement().eq(10).scrollIntoView().click({ force: true })
+      nwr.sortAscendingElement().click({ force: true })
+      nwr.optionElement().eq(10).scrollIntoView().click({ force: true })
+      nwr.sortDescendingElement().click({ force: true })
+      nwr.optionElement().eq(10).scrollIntoView().click({ force: true })
+      nwr.clearSortElement().click({ force: true })
+   }
+   sortingCreatedBy() {
+      cy.wait(1000)
+      nwr.optionElement().eq(11).scrollIntoView().click({ force: true })
+      nwr.sortAscendingElement().click({ force: true })
+      nwr.optionElement().eq(11).scrollIntoView().click({ force: true })
+      nwr.sortDescendingElement().click({ force: true })
+      nwr.optionElement().eq(11).scrollIntoView().click({ force: true })
+      nwr.clearSortElement().click({ force: true })
+   }
+   sortingLastModifiedDate() {
+      cy.wait(1000)
+      nwr.optionElement().eq(12).scrollIntoView().click({ force: true })
+      nwr.sortAscendingElement().click({ force: true })
+      nwr.optionElement().eq(12).scrollIntoView().click({ force: true })
+      nwr.sortDescendingElement().click({ force: true })
+      nwr.optionElement().eq(12).scrollIntoView().click({ force: true })
+      nwr.clearSortElement().click({ force: true })
    }
 }
 export default NonWarrantyRepairsActions 

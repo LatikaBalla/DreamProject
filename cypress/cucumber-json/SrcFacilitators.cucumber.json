@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 5749000000
+              "duration": 2111000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6318000000
+              "duration": 6257000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 15141000000
+              "duration": 15106000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 81000000
+              "duration": 86000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on StudentRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 1291000000
+              "duration": 961000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click on SrcFacilitators tab",
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 95000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Click on Sort Ascending and Descending for Full Name and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1743000000
+              "duration": 1447000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Click on Sort Ascending and Descending for Title and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1443000000
+              "duration": 1434000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click on Sort Ascending and Descending for Email and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1440000000
+              "duration": 1442000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on Sort Ascending and Descending for User Status and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1446000000
+              "duration": 1434000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on Sort Ascending and Descending for Phone and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1460000000
+              "duration": 1448000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on Sort Ascending and Descending for Last Modified Date and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1480000000
+              "duration": 1465000000
             }
           }
         ]

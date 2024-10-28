@@ -137,6 +137,8 @@ Feature: MyFleet  Page Functionality
 
         And Click on deviceIcon and click on add Loaner button
         Then verify the ticket is added in loaner
+        And Click on deviceIcon and click on Remove Loaner button
+        Then verify the ticket is removed from loaner
 
         And Convert Active to Retired device
         Then Verify the Device Retired successfully
@@ -279,6 +281,8 @@ Feature: MyFleet  Page Functionality
 
         And Click on deviceIcon and click on add Loaner button
         Then verify the ticket is added in loaner
+        And Click on deviceIcon and click on Remove Loaner button
+        Then verify the ticket is removed from loaner
 
         And Convert Active to Retired device
         Then Verify the Device Retired successfully

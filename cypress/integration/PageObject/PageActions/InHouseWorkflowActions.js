@@ -52,7 +52,7 @@ export class InHouseWorkflowActions {
         cy.get('#outbound_address').click({ force: true })
         cy.get('[role="listbox"]').find('li').contains(tdata.buildings.buildingname).click({ force: true })
     }
-    selectStudent(){
+    selectStudent() {
         cy.get('#student_id').click({ force: true })
         cy.get('#student_id-option-1').click({ force: true })
     }
@@ -85,9 +85,10 @@ export class InHouseWorkflowActions {
     }
     clickOnAddLine() {
         ihw.addlineElement().click({ force: true })
-        cy.get('.css-1ex9n8q').click({ force: true })
+        //cy.get('.css-148md0b').click({ force: true })
+        ihw.custompartElement().click({ force: true })
         ihw.partElement().click({ force: true })
-        cy.get('[role="listbox"]').contains('Speaker Set').click({ force: true })
+        cy.get('[role="listbox"]').contains("Corey's Custom Part F").click({ force: true })
         ihw.noteElement().type('Testing line', { force: true })
         ihw.createlineElement().contains('Create Line Item').click({ force: true })
         //dash.messageElement().should('contain', 'Line Item Created')
@@ -123,6 +124,7 @@ export class InHouseWorkflowActions {
         cy.wait(2000)
     }
     verifySrcRepairTicket() {
+        cy.wait(1000)
         cy.contains('Repair Ticket Details').should('be.visible', { force: true })
     }
     clickOnEditButton() {

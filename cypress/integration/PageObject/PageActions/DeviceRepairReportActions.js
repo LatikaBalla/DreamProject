@@ -18,7 +18,7 @@ export class DeviceRepairReportActions {
    }
    clickOnDeviceRepairReport() {
       repc.devicerrElement().click({ force: true })
-   }   
+   }
    verifyTitle() {
       dev.titleElement().should('be.visible')
    }
@@ -468,7 +468,7 @@ export class DeviceRepairReportActions {
       dev.addFilterElement().eq(2).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(7).click({ force: true })
-      dev.fieldValueElement().eq(1).clear({ force: true }).type( tdata.buildings.buildingname, { force: true })
+      dev.fieldValueElement().eq(1).clear({ force: true }).type(tdata.buildings.buildingname, { force: true })
       dev.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', tdata.buildings.buildingname)
       dev.clearFilterElement().click({ force: true })
@@ -692,8 +692,8 @@ export class DeviceRepairReportActions {
       cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.assettag)
       dev.clearFilterElement().click({ force: true })
    }
-     //StdN
-     filterContainStdN() {
+   //StdN
+   filterContainStdN() {
       dev.addFilterElement().eq(8).click({ force: true })
       dev.fieldNameElement().eq(1).click({ force: true })
       dev.fieldOpElement().eq(0).click({ force: true })
@@ -835,6 +835,96 @@ export class DeviceRepairReportActions {
       dev.applyElement().click({ force: true })
       cy.get('[row-index="0"]').should('contain', tdata.deviceRepairReport.createdby)
       dev.clearFilterElement().click({ force: true })
+   }
+   sortingRecordID() {
+      cy.wait(1000)
+      dev.optionElement().eq(1).scrollIntoView().click({ force: true })
+      dev.sortAscendingElement().click({ force: true })
+      dev.optionElement().eq(1).scrollIntoView().click({ force: true })
+      dev.sortDescendingElement().click({ force: true })
+      dev.optionElement().eq(1).scrollIntoView().click({ force: true })
+      dev.clearSortElement().click({ force: true })
+   }
+   sortingTicketNumber() {
+      cy.wait(1000)
+      dev.optionElement().eq(2).scrollIntoView().click({ force: true })
+      dev.sortAscendingElement().click({ force: true })
+      dev.optionElement().eq(2).scrollIntoView().click({ force: true })
+      dev.sortDescendingElement().click({ force: true })
+      dev.optionElement().eq(2).scrollIntoView().click({ force: true })
+      dev.clearSortElement().click({ force: true })
+   }
+   sortingBuilding() {
+      cy.wait(1000)
+      dev.optionElement().eq(3).scrollIntoView().click({ force: true })
+      dev.sortAscendingElement().click({ force: true })
+      dev.optionElement().eq(3).scrollIntoView().click({ force: true })
+      dev.sortDescendingElement().click({ force: true })
+      dev.optionElement().eq(3).scrollIntoView().click({ force: true })
+      dev.clearSortElement().click({ force: true })
+   }
+   sortingReturnType() {
+      cy.wait(1000)
+      dev.optionElement().eq(4).scrollIntoView().click({ force: true })
+      dev.sortAscendingElement().click({ force: true })
+      dev.optionElement().eq(4).scrollIntoView().click({ force: true })
+      dev.sortDescendingElement().click({ force: true })
+      dev.optionElement().eq(4).scrollIntoView().click({ force: true })
+      dev.clearSortElement().click({ force: true })
+   }
+   sortingSerialNumber() {
+      cy.wait(1000)
+      dev.optionElement().eq(5).scrollIntoView().click({ force: true })
+      dev.sortAscendingElement().click({ force: true })
+      dev.optionElement().eq(5).scrollIntoView().click({ force: true })
+      dev.sortDescendingElement().click({ force: true })
+      dev.optionElement().eq(5).scrollIntoView().click({ force: true })
+      dev.clearSortElement().click({ force: true })
+   }
+   sortingRepairDevice() {
+      cy.wait(1000)
+      dev.optionElement().eq(6).scrollIntoView().click({ force: true })
+      dev.sortAscendingElement().click({ force: true })
+      dev.optionElement().eq(6).scrollIntoView().click({ force: true })
+      dev.sortDescendingElement().click({ force: true })
+      dev.optionElement().eq(6).scrollIntoView().click({ force: true })
+      dev.clearSortElement().click({ force: true })
+   }
+   sortingAssetTag() {
+      cy.wait(1000)
+      dev.optionElement().eq(7).scrollIntoView().click({ force: true })
+      dev.sortAscendingElement().click({ force: true })
+      dev.optionElement().eq(7).scrollIntoView().click({ force: true })
+      dev.sortDescendingElement().click({ force: true })
+      dev.optionElement().eq(7).scrollIntoView().click({ force: true })
+      dev.clearSortElement().click({ force: true })
+   }
+   sortingRepairStatus() {
+      cy.wait(1000)
+      dev.optionElement().eq(8).scrollIntoView().click({ force: true })
+      dev.sortAscendingElement().click({ force: true })
+      dev.optionElement().eq(8).scrollIntoView().click({ force: true })
+      dev.sortDescendingElement().click({ force: true })
+      dev.optionElement().eq(8).scrollIntoView().click({ force: true })
+      dev.clearSortElement().click({ force: true })
+   }
+   sortingStudentName() {
+      cy.wait(1000)
+      dev.optionElement().eq(9).scrollIntoView().click({ force: true })
+      dev.sortAscendingElement().click({ force: true })
+      dev.optionElement().eq(9).scrollIntoView().click({ force: true })
+      dev.sortDescendingElement().click({ force: true })
+      dev.optionElement().eq(9).scrollIntoView().click({ force: true })
+      dev.clearSortElement().click({ force: true })
+   }
+   sortingCreatedBy() {
+      cy.wait(1000)
+      dev.optionElement().eq(10).scrollIntoView().click({ force: true })
+      dev.sortAscendingElement().click({ force: true })
+      dev.optionElement().eq(10).scrollIntoView().click({ force: true })
+      dev.sortDescendingElement().click({ force: true })
+      dev.optionElement().eq(10).scrollIntoView().click({ force: true })
+      dev.clearSortElement().click({ force: true })
    }
 }
 export default DeviceRepairReportActions 

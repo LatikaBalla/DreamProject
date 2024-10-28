@@ -54,7 +54,12 @@ And('Enter the Search value in search box', () => {
 Then('Verify the Results in the table', () => {
     user.verifySearchResult()
 })
+And ('Click on view button and click on Edit button inside',()=>{
+    user.clickOnviewButton()
+    user.clickOnEditButtonInside()
+})
 And('Click on view button and click on Edit button', () => {
+    cy.go('back')
     user.clickOnEditButton()
 })
 Then('I should edit title, full name', () => {

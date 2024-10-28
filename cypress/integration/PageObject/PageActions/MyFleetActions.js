@@ -161,8 +161,22 @@ export class MyFleetActions {
       mf.deviceIconElement().eq(1).click({ force: true })
       mf.addLoanerElement().click({ force: true })
    }
+   clickOnRemoveLoaner(){
+      cy.get('[data-testid="FilterAltIcon"]').click({ force: true })
+      mf.addFilterElement().eq(1).click({ force: true })
+      mf.fieldNameElement().eq(1).click({ force: true })
+      mf.fieldOpElement().eq(0).click({ force: true })
+      mf.fieldValueElement().type(tdata.myFleet.assettag)
+      mf.applyElement().click({ force: true })
+      cy.wait(1000)
+      mf.deviceIconElement().eq(1).click({ force: true })
+      mf.removeLoanerElement().click({ force: true })
+   }
    verifyaddTicketLoaner() {
       dash.messageElement().should('contain', tdata.myFleet.addLoanermsg)
+   }
+   verifyRemoveTicketLoaner(){
+      dash.messageElement().should('contain', tdata.myFleet.removeLoanermsg)
    }
    clickOnEditDevice() {
       cy.wait(2000)

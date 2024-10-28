@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2417000000
+              "duration": 1462000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 10023000000
+              "duration": 6127000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "failed",
-              "duration": 17276000000,
+              "duration": 17301000000,
               "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Dismiss' within the element: <button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.css-t0tdkm> but never did.\n    at ReportCenterActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/ReportCenterActions.js:12:28)\n    at Context.eval (cypress/integration/DeviceRepairReport/DeviceRepairReport.spec.js:17:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
@@ -832,9 +832,9 @@
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 109,
-            "name": "Click on the download button",
+            "name": "Click on Sort Ascending and Descending for Record ID and Verify the Result",
             "result": {
               "status": "skipped"
             }
@@ -843,16 +843,16 @@
             "arguments": [],
             "keyword": "And ",
             "line": 110,
-            "name": "Click on the View button",
+            "name": "Click on Sort Ascending and Descending for Ticket Number and Verify the Result",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 111,
-            "name": "Verify the Repair Ticket page will open",
+            "name": "Click on Sort Ascending and Descending for Building and Verify the Result",
             "result": {
               "status": "skipped"
             }
@@ -861,25 +861,25 @@
             "arguments": [],
             "keyword": "And ",
             "line": 112,
-            "name": "Verfiy the details of Ticket",
+            "name": "Click on Sort Ascending and Descending for Return Type and Verify the Result",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 113,
-            "name": "Click on the download Ticket Estimation button",
+            "name": "Click on Sort Ascending and Descending for Serial Number and Verify the Result",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 114,
-            "name": "Click on Add Repair Image and Verify",
+            "name": "Click on Sort Ascending and Descending for Repair Device and Verify the Result",
             "result": {
               "status": "skipped"
             }
@@ -888,6 +888,96 @@
             "arguments": [],
             "keyword": "And ",
             "line": 115,
+            "name": "Click on Sort Ascending and Descending for Asset Tag and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 116,
+            "name": "Click on Sort Ascending and Descending for Repair Status and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 117,
+            "name": "Click on Sort Ascending and Descending for Student Name and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 118,
+            "name": "Click on Sort Ascending and Descending for Created By and Verify the Result",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 120,
+            "name": "Click on the download button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 121,
+            "name": "Click on the View button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 122,
+            "name": "Verify the Repair Ticket page will open",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 123,
+            "name": "Verfiy the details of Ticket",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 124,
+            "name": "Click on the download Ticket Estimation button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 125,
+            "name": "Click on Add Repair Image and Verify",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 126,
             "name": "Click on Add Note and Verify",
             "result": {
               "status": "skipped"

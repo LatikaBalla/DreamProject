@@ -106,6 +106,17 @@ Feature: DeviceRepairReport Page Functionality
     And Click on filter of Created By Blank and Verify the Result
     And Click on filter of Created By Not blank and Verify the Result
 
+    And Click on Sort Ascending and Descending for Record ID and Verify the Result
+    And Click on Sort Ascending and Descending for Ticket Number and Verify the Result
+    And Click on Sort Ascending and Descending for Building and Verify the Result
+    And Click on Sort Ascending and Descending for Return Type and Verify the Result
+    And Click on Sort Ascending and Descending for Serial Number and Verify the Result
+    And Click on Sort Ascending and Descending for Repair Device and Verify the Result
+    And Click on Sort Ascending and Descending for Asset Tag and Verify the Result
+    And Click on Sort Ascending and Descending for Repair Status and Verify the Result
+    And Click on Sort Ascending and Descending for Student Name and Verify the Result
+    And Click on Sort Ascending and Descending for Created By and Verify the Result
+
     Then Click on the download button
     And  Click on the View button
     Then Verify the Repair Ticket page will open

@@ -9,7 +9,7 @@ export class UsersActions {
         globalThis.dash = new DashboardElements();
     }
     closeTermsOfServiceWindow() {
-      //  cy.wait(3000)
+        //  cy.wait(3000)
         dash.termsElement().contains('Dismiss').click({ force: true })
     }
     clickOnUsers() {
@@ -53,6 +53,13 @@ export class UsersActions {
     verifyRecordTable() {
         dash.messageElement().should('contain', tdata.users.createStudentmsg)
     }
+    clickOnviewButton() {
+        user.viewElement().eq(0).click({ force: true })
+        cy.get('[data-testid="VisibilityIcon"]').click({ force: true })
+    }
+    clickOnEditButtonInside() {
+        cy.get('[aria-label="Edit User Details"]').click({ force: true })
+    }
     clickOnEditButton() {
         cy.wait(2000)
         user.addFilterElement().eq(0).click({ force: true })
@@ -88,7 +95,7 @@ export class UsersActions {
         cy.get(tdata.users.editInhouseRepaire).click({ force: true })
     }
     editUserStatus() {
-       cy.get('#mui-component-select-user_status').click({ force: true })
+        cy.get('#mui-component-select-user_status').click({ force: true })
         cy.get('[ data-value="Inactive"]').click({ force: true })
     }
     editBuilding() {
@@ -100,7 +107,7 @@ export class UsersActions {
     }
     verfifyDataUpdatedMessage() {
         dash.messageElement().should('contain', tdata.users.updateStudentmsg)
-        cy.get('[data-testid="FilterAltIcon"]').click({ force: true })
+       // cy.get('[data-testid="FilterAltIcon"]').click({ force: true })
     }
     clickDeleteButton() {
         cy.wait(100)
@@ -135,30 +142,30 @@ export class UsersActions {
         cy.get('[row-index="0"]').should('contain', "/Devices")
         user.checkbox1Element().click({ force: true })
     }
-    searchOrgUnitGoogleBU(){
+    searchOrgUnitGoogleBU() {
         cy.get('[aria-label="Vivacity Tech"]').click({ force: true })
         user.checkbox2Element().click({ force: true })
         cy.get('[aria-label="Vivacity Tech"]').click({ force: true })
     }
-    verifysearchResult2(){
+    verifysearchResult2() {
         cy.get('[row-index="0"]').should('contain', "/Google Bootcamp Users")
         user.checkbox2Element().click({ force: true })
     }
-    searchOrgUnitTestOU(){
+    searchOrgUnitTestOU() {
         cy.get('[aria-label="Vivacity Tech"]').click({ force: true })
         user.checkbox3Element().click({ force: true })
         cy.get('[aria-label="Vivacity Tech"]').click({ force: true })
     }
-    verifysearchResult3(){
-       // cy.get('[row-index="0"]').should('contain', "/")
+    verifysearchResult3() {
+        // cy.get('[row-index="0"]').should('contain', "/")
         user.checkbox3Element().click({ force: true })
     }
-    searchOrgUnitVTEmployee(){
+    searchOrgUnitVTEmployee() {
         cy.get('[aria-label="Vivacity Tech"]').click({ force: true })
         user.checkbox4Element().click({ force: true })
         cy.get('[aria-label="Vivacity Tech"]').click({ force: true })
     }
-    verifysearchResult4(){
+    verifysearchResult4() {
         cy.get('[row-index="0"]').should('contain', "/VT Employees")
         user.checkbox4Element().click({ force: true })
     }
@@ -166,17 +173,17 @@ export class UsersActions {
         user.exportElement().click({ force: true })
     }
     clickOnBulkUpload() {
-      user.bulkupdatebtnElement().click({ force: true })
+        user.bulkupdatebtnElement().click({ force: true })
     }
     attachCsvfile() {
-       //  cy.contains('Attach CSV file').click({ force: true })
+        //  cy.contains('Attach CSV file').click({ force: true })
         cy.get('.css-0 > .MuiButtonBase-root').scrollIntoView().click({ force: true })
         user.uploadElement().attachFile(tdata.users.uploadfilename, { force: true })
         cy.wait(100)
         cy.contains('Upload').click({ force: true })
     }
-    verifyuploaded() { 
-         dash.messageElement().should('contain', tdata.user.uploadmsg)
+    verifyuploaded() {
+        dash.messageElement().should('contain', tdata.user.uploadmsg)
     }
     //fn
     filtercontainFN() {
@@ -542,8 +549,8 @@ export class UsersActions {
         cy.get('[row-index="0"]').should('contain', tdata.users.orgUnit)
         user.clearFilterElement().click({ force: true })
     }
-     //US
-     filterUSOption1() {
+    //US
+    filterUSOption1() {
         cy.wait(4000)
         user.addFilterElement().scrollIntoView().eq(5).click({ force: true })
         cy.get('[value="Active"]').click({ force: true })
@@ -557,7 +564,7 @@ export class UsersActions {
         cy.get('.reset-button').click({ force: true })
     }
     //sorting
-    sortingFullName(){
+    sortingFullName() {
         cy.wait(1000)
         user.optionElement().eq(1).click({ force: true })
         user.sortAscendingElement().click({ force: true })
@@ -566,7 +573,7 @@ export class UsersActions {
         user.optionElement().eq(1).click({ force: true })
         user.clearSortElement().click({ force: true })
     }
-    sortingEmail(){
+    sortingEmail() {
         cy.wait(1000)
         user.optionElement().eq(2).click({ force: true })
         user.sortAscendingElement().click({ force: true })
@@ -575,7 +582,7 @@ export class UsersActions {
         user.optionElement().eq(2).click({ force: true })
         user.clearSortElement().click({ force: true })
     }
-    sortingPhone(){
+    sortingPhone() {
         cy.wait(1000)
         user.optionElement().eq(3).click({ force: true })
         user.sortAscendingElement().click({ force: true })
@@ -584,7 +591,7 @@ export class UsersActions {
         user.optionElement().eq(3).click({ force: true })
         user.clearSortElement().click({ force: true })
     }
-    sortingUserRole(){
+    sortingUserRole() {
         cy.wait(1000)
         user.optionElement().eq(4).click({ force: true })
         user.sortAscendingElement().click({ force: true })
@@ -593,7 +600,7 @@ export class UsersActions {
         user.optionElement().eq(4).click({ force: true })
         user.clearSortElement().click({ force: true })
     }
-    sortingOrganizationalUnit(){
+    sortingOrganizationalUnit() {
         cy.wait(1000)
         user.optionElement().eq(5).scrollIntoView().click({ force: true })
         user.sortAscendingElement().click({ force: true })
@@ -602,7 +609,7 @@ export class UsersActions {
         user.optionElement().eq(5).scrollIntoView().click({ force: true })
         user.clearSortElement().click({ force: true })
     }
-    sortingUserStatus(){
+    sortingUserStatus() {
         cy.wait(1000)
         user.optionElement().eq(6).scrollIntoView().click({ force: true })
         user.sortAscendingElement().click({ force: true })

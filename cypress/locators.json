@@ -196,7 +196,12 @@
         "createnote": "button[type='submit']",
         "part": "#part",
         "custompart": "Custom Part",
-        "downloadbtn": "[data-testid='FileDownloadIcon']"
+        "downloadbtn": "[data-testid='FileDownloadIcon']",
+        "option": "[data-ref='eMenu']",
+        "sortAscending": "Sort Ascending",
+        "sortDescending": "Sort Descending",
+        "clearSort": "Clear Sort",
+        "filterHelp":"[data-testid='HelpIcon']"
     },
     "vivacityRepairReport": {
         "section1": "In Transit to Me",
@@ -252,7 +257,12 @@
         "notetype": "#note_type",
         "createnote": "button[type='submit']",
         "part": "#part",
-        "custompart": "Custom Part"
+        "custompart": "Custom Part",
+        "option": "[data-ref='eMenu']",
+        "sortAscending": "Sort Ascending",
+        "sortDescending": "Sort Descending",
+        "clearSort": "Clear Sort",
+        "filterHelp":"[data-testid='HelpIcon']"
     },
     "manageDevices": {
         "title": "Devices",
@@ -297,6 +307,7 @@
         "createTicket":"Create Ticket",
         "editDevice":"Edit Device",
         "addLoaner":"Add to Loaner Pool",
+       "removeLoaner": "Remove from Loaner Pool",
         "failuretype": "#failure_type",
         "returnsite": "#outbound_address",
         "chromebookissue": "#repair_issue",

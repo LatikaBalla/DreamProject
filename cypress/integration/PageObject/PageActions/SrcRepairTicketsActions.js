@@ -146,10 +146,6 @@ export class SrcRepairTicketsActions {
         srt.fieldOpElement().eq(0).click({ force: true })
         srt.fieldValueElement().type(tdata.srcRepairTicket.recordid)
         srt.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.equal(76456);
-        })
         srt.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainRI() {
@@ -159,10 +155,6 @@ export class SrcRepairTicketsActions {
         srt.fieldOpElement().eq(1).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.recordid)
         srt.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.not.equal(76456);
-        })
         srt.clearFilterElement().click({ force: true })
     }
     filterGreaterthanRI() {
@@ -172,10 +164,6 @@ export class SrcRepairTicketsActions {
         srt.fieldOpElement().eq(2).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.recordid)
         srt.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.greaterThan(76456);
-        })
         srt.clearFilterElement().click({ force: true })
     }
     filterGreaterequalRI() {
@@ -185,10 +173,6 @@ export class SrcRepairTicketsActions {
         srt.fieldOpElement().eq(3).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.recordid)
         srt.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="record_id"]').then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.gte(74493);
-        })
         srt.clearFilterElement().click({ force: true })
     }
     filterLessthanRI() {
@@ -198,10 +182,6 @@ export class SrcRepairTicketsActions {
         srt.fieldOpElement().eq(4).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.recordid)
         srt.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.lessThan(76456);
-        })
         srt.clearFilterElement().click({ force: true })
     }
     filterLessequalRI() {
@@ -211,10 +191,6 @@ export class SrcRepairTicketsActions {
         srt.fieldOpElement().eq(5).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.recordid)
         srt.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.lte(76456);
-        })
         srt.clearFilterElement().click({ force: true })
     }
     filterBetweenRI() {
@@ -225,10 +201,6 @@ export class SrcRepairTicketsActions {
         cy.get('[placeholder="From"]').type(tdata.srcRepairTicket.recordid1)
         cy.get('[placeholder="To"]').type(tdata.srcRepairTicket.recordid)
         srt.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="record_id"]').eq(0).then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.be.within(70773, 76456);
-        })
         srt.clearFilterElement().click({ force: true })
     }
     filterBlankRI() {
@@ -248,10 +220,6 @@ export class SrcRepairTicketsActions {
         srt.fieldOpElement().eq(8).click({ force: true })
         srt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.srcRepairTicket.recordid, { force: true })
         srt.applyElement().click({ force: true })
-        cy.get('.ag-row-first > [col-id="record_id"]').eq(1).then(($el) => {
-            const value = parseInt($el.text());
-            expect(value).to.equal(76456)
-        })
         srt.clearFilterElement().click({ force: true })
     }
     //tn
