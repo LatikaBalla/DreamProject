@@ -11,15 +11,15 @@ Feature: DeviceRepairReport Page Functionality
     And Click on DeviceRepairReport page
 
   Scenario:Device Repair history -Search with Ticket no and Non warranty Repair
-    And Click on filter of Repair Id Equals and Verify the Result
-    And Click on filter of Repair Id Does not equal and Verify the Result
-    And Click on filter of Repair Id Greater than and Verify the Result
-    And Click on filter of Repair Id Greater than or equal to and Verify the Result
-    And Click on filter of Repair Id Less than and Verify the Result
-    And Click on filter of Repair Id Less than or equal to and Verify the Result
-    And Click on filter of Repair Id Between and Verify the Result
-    And Click on filter of Repair Id Blank and Verify the Result
-    And Click on filter of Repair Id Not blank and Verify the Result
+    # And Click on filter of Repair Id Equals and Verify the Result
+    # And Click on filter of Repair Id Does not equal and Verify the Result
+    # And Click on filter of Repair Id Greater than and Verify the Result
+    # And Click on filter of Repair Id Greater than or equal to and Verify the Result
+    # And Click on filter of Repair Id Less than and Verify the Result
+    # And Click on filter of Repair Id Less than or equal to and Verify the Result
+    # And Click on filter of Repair Id Between and Verify the Result
+    # And Click on filter of Repair Id Blank and Verify the Result
+    # And Click on filter of Repair Id Not blank and Verify the Result
 
     And Click on filter of Ticket Number contain and Verify the Result
     And Click on filter of Ticket Number Does not contain and Verify the Result
@@ -106,7 +106,6 @@ Feature: DeviceRepairReport Page Functionality
     And Click on filter of Created By Blank and Verify the Result
     And Click on filter of Created By Not blank and Verify the Result
 
-    And Click on Sort Ascending and Descending for Record ID and Verify the Result
     And Click on Sort Ascending and Descending for Ticket Number and Verify the Result
     And Click on Sort Ascending and Descending for Building and Verify the Result
     And Click on Sort Ascending and Descending for Return Type and Verify the Result

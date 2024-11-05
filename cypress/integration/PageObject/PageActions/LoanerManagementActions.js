@@ -502,7 +502,7 @@ export class LoanerManagementActions {
         loan.fieldOpElement().eq(5).click({ force: true })
         loan.fieldValueElement().eq(0).clear({ force: true }).type('TY')
         loan.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').eq(0).should('contain', 'TY')
+        cy.get('[row-index="0"]').eq(0).should('contain', 'TtY')
         loan.clearFilterElement().click({ force: true })
     }
     filterBlankTag_A() {

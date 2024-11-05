@@ -154,9 +154,9 @@
     },
     "reportCenter": {
         "title": "Report Center",
-        "vivacityrr": "[data-testid='tabrep-1']",
-        "inhouserr": "[data-testid='tabrep-2']",
-        "devicerr": "[data-testid='tabrep-3']",
+        "vivacityrr": "[data-testid='tabrep-2']",
+        "inhouserr": "[data-testid='tabrep-3']",
+        "devicerr": "[data-testid='tabrep-4']",
         "warrantyr": "[data-testid='tabrep-4']",
         "telemetryd": "[data-testid='tabrep-1']"
     },
@@ -416,7 +416,7 @@
         "studentTitle": "#title",
         "studentEmail": "#email",
         "studentStatus": "#status",
-        "building": "#buildings",
+        "building": "#buildings-autocomplete",
         "notes": "#notes",
         "addFilter": "[data-ref='eFilterButton']",
         "clearFilter": "button[data-ref='resetFilterButton']",

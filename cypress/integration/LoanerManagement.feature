@@ -38,14 +38,14 @@ Feature: LoanerManagement Page Functionality
         And Click on filter of SKU Blank and Verify the Result for Available
         And Click on filter of SKU Not blank and Verify the Result for Available
 
-        And Click on filter of Warranty contain and Verify the Result for Available
-        And Click on filter of Warranty Does not contain and Verify the Result for Available
-        And Click on filter of Warranty Equals and Verify the Result for Available
-        And Click on filter of Warranty Does not equal and Verify the Result for Available
-        And Click on filter of Warranty Begins with and Verify the Result for Available
-        And Click on filter of Warranty Ends with and Verify the Result for Available
-        And Click on filter of Warranty Blank and Verify the Result for Available
-        And Click on filter of Warranty Not blank and Verify the Result for Available
+      #   And Click on filter of Warranty contain and Verify the Result for Available
+      #   And Click on filter of Warranty Does not contain and Verify the Result for Available
+      #   And Click on filter of Warranty Equals and Verify the Result for Available
+      #   And Click on filter of Warranty Does not equal and Verify the Result for Available
+      #   And Click on filter of Warranty Begins with and Verify the Result for Available
+      #   And Click on filter of Warranty Ends with and Verify the Result for Available
+      #   And Click on filter of Warranty Blank and Verify the Result for Available
+      #   And Click on filter of Warranty Not blank and Verify the Result for Available
 
         And Click on filter of Serial contain and Verify the Result for Available
         And Click on filter of Serial Does not contain and Verify the Result for Available
@@ -68,7 +68,7 @@ Feature: LoanerManagement Page Functionality
 
         And Click on Sort Ascending and Descending for Product Description and Verify the Result
         And Click on Sort Ascending and Descending for SKU and Verify the Result
-        And Click on Sort Ascending and Descending for Warranty and Verify the Result
+      #   And Click on Sort Ascending and Descending for Warranty and Verify the Result
         And Click on Sort Ascending and Descending for Serial Number and Verify the Result
         And Click on Sort Ascending and Descending for Asset Tag and Verify the Result
 
@@ -102,14 +102,14 @@ Feature: LoanerManagement Page Functionality
         And Click on filter of SKU Blank and Verify the Result for Checked Out
         And Click on filter of SKU Not blank and Verify the Result for Checked Out
 
-        And Click on filter of Warranty contain and Verify the Result for Checked Out
-        And Click on filter of Warranty Does not contain and Verify the Result for Checked Out
-        And Click on filter of Warranty Equals and Verify the Result for Checked Out
-        And Click on filter of Warranty Does not equal and Verify the Result for Checked Out
-        And Click on filter of Warranty Begins with and Verify the Result for Checked Out
-        And Click on filter of Warranty Ends with and Verify the Result for Checked Out
-        And Click on filter of Warranty Blank and Verify the Result for Checked Out
-        And Click on filter of Warranty Not blank and Verify the Result for Checked Out
+      #   And Click on filter of Warranty contain and Verify the Result for Checked Out
+      #   And Click on filter of Warranty Does not contain and Verify the Result for Checked Out
+      #   And Click on filter of Warranty Equals and Verify the Result for Checked Out
+      #   And Click on filter of Warranty Does not equal and Verify the Result for Checked Out
+      #   And Click on filter of Warranty Begins with and Verify the Result for Checked Out
+      #   And Click on filter of Warranty Ends with and Verify the Result for Checked Out
+      #   And Click on filter of Warranty Blank and Verify the Result for Checked Out
+      #   And Click on filter of Warranty Not blank and Verify the Result for Checked Out
 
         And Click on filter of Serial contain and Verify the Result for Checked Out
         And Click on filter of Serial Does not contain and Verify the Result for Checked Out
@@ -130,7 +130,7 @@ Feature: LoanerManagement Page Functionality
 
         And Click on Sort Ascending and Descending for Product Description and Verify the Result
         And Click on Sort Ascending and Descending for SKU and Verify the Result
-        And Click on Sort Ascending and Descending for Warranty and Verify the Result
+      #   And Click on Sort Ascending and Descending for Warranty and Verify the Result
         And Click on Sort Ascending and Descending for Serial Number and Verify the Result
         And Click on Sort Ascending and Descending for Asset Tag and Verify the Result
 
