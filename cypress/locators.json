@@ -158,7 +158,7 @@
         "inhouserr": "[data-testid='tabrep-2']",
         "devicerr": "[data-testid='tabrep-3']",
         "warrantyr": "[data-testid='tabrep-4']",
-        "telemetryd": "[data-testid='tabrep-5']"
+        "telemetryd": "[data-testid='tabrep-1']"
     },
     "deviceRepairReport": {
         "title": "Report Center",
@@ -562,7 +562,7 @@
         "title": "",
         "filters": ".css-k008qs",
         "search": "[placeholder='Ticket No.']",
-        "newbtn": "New",
+        "newbtn": "[data-testid='AddCircleOutlineIcon']",
         "exportbtn": "[data-testid='FileDownloadIcon']",
         "viewdetails": "View Details",
         "moverepairebtn": "Move to Repair Stage",
@@ -836,7 +836,7 @@
         "dellrepairv": "Dell Repair"
     },
     "warrantyInfo": {
-        "title": "EMPOWER+ Warranty",
+        "title": "Resources",
         "heading": "Terms and Conditions"
     },
     "myprofile": {
@@ -854,7 +854,7 @@
         "photo": "img[alt='addimage']",
         "profiledetails": ".css-1dvhtlc",
         "accountdetails": ".css-1c9o6ob",
-        "emailname": ".css-2u7jw1"
+        "emailname": ".css-1drhpkw"
     },
     "features": {
         "title": "[name='title']",
@@ -974,7 +974,7 @@
     },
     "landing": {
         "title": "Device and Asset Management",
-        "header": ".css-1g5poe4",
+        "header": ".css-1m04sfk",
         "footer": ".css-1hadz6d",
         "producttab": "Product",
         "featurestab": "Features",

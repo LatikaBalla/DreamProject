@@ -17,7 +17,7 @@ export default class InHouseWorkflowElements {
         })
     }
     newbtnElement() {
-        return cy.contains(locator.inHouseWorkflow.newbtn, {
+        return cy.get(locator.inHouseWorkflow.newbtn, {
             timeout: 30000,
         })
     }

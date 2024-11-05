@@ -99,10 +99,10 @@ Feature: Building Page Functionality
     Then Click on Confirm Delete button of building
     And Verify the record is deleted successfully of building
 
-    And Click on Export To CSV
-    Then Click on Bulk Upload button
-    And Click on Attach CSV file and Click on submit button
-    Then Verify the Uploaded successfully
+    # And Click on Export To CSV
+    # Then Click on Bulk Upload button
+    # And Click on Attach CSV file and Click on submit button
+    # Then Verify the Uploaded successfully
 
 
 

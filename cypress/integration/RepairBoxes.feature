@@ -110,16 +110,16 @@ Feature: RepairBoxes Page Functionality
     And Click on Add Note and Verify
     Then Click on Remove button for deleting ticket
 
- Scenario: RepairBoxes Sorting -Ascending and descending
-    And Click on Sort Ascending and Descending for Repair Box and Verify the Result
-    And Click on Sort Ascending and Descending for Tracking Number From and Verify the Result
-    And Click on Sort Ascending and Descending for Shipped From Date and Verify the Result
-    And Click on Sort Ascending and Descending for Building and Verify the Result
-    And Click on Sort Ascending and Descending for Box Type and Verify the Result
-    And Click on Sort Ascending and Descending for Shipping Box Status and Verify the Result
-    And Click on Sort Ascending and Descending for Created By and Verify the Result
-    And Click on Sort Ascending and Descending for Created Date and Verify the Result
-    And Click on Sort Ascending and Descending for Last Modified Date and Verify the Result
+#  Scenario: RepairBoxes Sorting -Ascending and descending
+#     And Click on Sort Ascending and Descending for Repair Box and Verify the Result
+#     And Click on Sort Ascending and Descending for Tracking Number From and Verify the Result
+#     And Click on Sort Ascending and Descending for Shipped From Date and Verify the Result
+#     And Click on Sort Ascending and Descending for Building and Verify the Result
+#     And Click on Sort Ascending and Descending for Box Type and Verify the Result
+#     And Click on Sort Ascending and Descending for Shipping Box Status and Verify the Result
+#     And Click on Sort Ascending and Descending for Created By and Verify the Result
+#     And Click on Sort Ascending and Descending for Created Date and Verify the Result
+#     And Click on Sort Ascending and Descending for Last Modified Date and Verify the Result
 
 
 

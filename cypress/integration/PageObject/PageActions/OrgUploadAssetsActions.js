@@ -97,7 +97,7 @@ export class OrgUploadAssetsActions {
         oua.addFilterElement().eq(0).click({ force: true })
         oua.fieldNameElement().eq(1).click({ force: true })
         oua.fieldOpElement().eq(0).click({ force: true })
-        oua.fieldValueElement().type(tdata.addasset.description)
+        oua.fieldValueElement().type(tdata.addasset.description,{force:true})
         oua.applyElement().click({ force: true })
         oua.editElement().eq(0).click({ force: true })
     }
@@ -166,7 +166,7 @@ export class OrgUploadAssetsActions {
         cy.get('[col-id="button"]').eq(1).find('[data-testid="DeleteIcon"]').click({ force: true })
     }
     clickConfirmDeleteButton() {
-        cy.get('.MuiButton-outlinedError').click({ force: true })
+        cy.get('.css-13dncgk').click({ force: true })
     }
     verifyRecordDeleted() {
         dash.messageElement().should('contain', tdata.orgAsset.deletemsg)

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1462000000
+              "duration": 1762000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6127000000
+              "duration": 7345000000
             }
           },
           {
@@ -42,9 +42,8 @@
             "line": 9,
             "name": "Close the terms of service window",
             "result": {
-              "status": "failed",
-              "duration": 17301000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Dismiss' within the element: <button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.css-t0tdkm> but never did.\n    at ReportCenterActions.closeTermsOfServiceWindow (cypress/integration/PageObject/PageActions/ReportCenterActions.js:12:28)\n    at Context.eval (cypress/integration/DeviceRepairReport/DeviceRepairReport.spec.js:17:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 13091000000
             }
           },
           {
@@ -53,7 +52,8 @@
             "line": 10,
             "name": "Click on Report center page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 77000000
             }
           },
           {
@@ -62,7 +62,8 @@
             "line": 11,
             "name": "Click on DeviceRepairReport page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3082000000
             }
           },
           {
@@ -71,7 +72,9 @@
             "line": 14,
             "name": "Click on filter of Repair Id Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "duration": 32392000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[data-ref='eFilterButton']`, but never found it.\n    at DeviceRepairReportElements.addFilterElement (cypress/integration/PageObject/PageElements/DeviceRepairReportElements.js:82:18)\n    at DeviceRepairReportActions.filtercontainRI (cypress/integration/PageObject/PageActions/DeviceRepairReportActions.js:75:10)\n    at Context.eval (cypress/integration/DeviceRepairReport/DeviceRepairReport.spec.js:141:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {

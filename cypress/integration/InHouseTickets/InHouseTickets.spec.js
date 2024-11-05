@@ -93,42 +93,39 @@ Then('Click on Add Repair Image and Verify', () => {
 And('Click on Add Note and Verify', () => {
     iht.clickOnAddNote()
 })
-And ('Click on the Update to student Button', () => {
+And('Click on the Update to student Button', () => {
     iht.clickOnUpdateStudent()
 })
-Then ('Updated to student successfully', () => {
+Then('Updated to student successfully', () => {
     iht.verifyUpdateStudent()
 })
- And ('Click on the Update to in house Button', () => {
+And('Click on the Update to in house Button', () => {
     iht.clickOnUpdateInhouse()
- })
-Then ('Updated to in house successfully', () => {
+})
+Then('Updated to in house successfully', () => {
     iht.verifyUpdateInhouse()
 })
-//RI
-And('Click on filter of Record Id contain and Verify the Result', () => {
-    iht.filtercontainRI()
+//CDate
+And('Click on filter of Created Date Equals and Verify the Result', () => {
+    iht.filterEqualsCDate()
 })
-And('Click on filter of Record Id Does not contain and Verify the Result', () => {
-    iht.filterDoesnotcontainRI()
+And('Click on filter of Created Date Does not equal and Verify the Result', () => {
+    iht.filterNotequalCDate()
 })
-And('Click on filter of Record Id Equals and Verify the Result', () => {
-    iht.filterEqualsRI()
+And('Click on filter of Created Date Before and Verify the Result', () => {
+    iht.filterBeforeCDate()
 })
-And('Click on filter of Record Id Does not equal and Verify the Result', () => {
-    iht.filterNotequalRI()
+And('Click on filter of Created Date After and Verify the Result', () => {
+    iht.filterAfterCDate()
 })
-And('Click on filter of Record Id Begins with and Verify the Result', () => {
-    iht.filterBeginswithRI()
+And('Click on filter of Created Date Between with and Verify the Result', () => {
+    iht.filterBetweenCDate()
 })
-And('Click on filter of Record Id Ends with and Verify the Result', () => {
-    iht.filterEndswithRI()
+And('Click on filter of Created Date Blank and Verify the Result', () => {
+    iht.filterBlankCDate()
 })
-And('Click on filter of Record Id Blank and Verify the Result', () => {
-    iht.filterBlankRI()
-})
-And('Click on filter of Record Id Not blank and Verify the Result', () => {
-    iht.filterNotblankRI()
+And('Click on filter of Created Date Not blank and Verify the Result', () => {
+    iht.filterNotblankCDate()
 })
 //TN
 And('Click on filter of Ticket Number contain and Verify the Result', () => {
@@ -383,7 +380,6 @@ And('Click on filter of Warranty status search and Verify the Result', () => {
 And('Click on filter of Warranty status Non Warranty and Verify the Result', () => {
     iht.filterOptionWS2()
 })
-
 //cby
 And('Click on filter of Created By contain and Verify the Result', () => {
     iht.selectFilterCreatedBy()
@@ -428,7 +424,7 @@ And('Click on filter of Last Modified Date Before and Verify the Result', () => 
 And('Click on filter of Last Modified Date After and Verify the Result', () => {
     iht.filterAfterDate()
 })
-And ('Click on filter of Last Modified Date Between with and Verify the Result',()=>{
+And('Click on filter of Last Modified Date Between with and Verify the Result', () => {
     iht.filterBetweenDate()
 })
 And('Click on filter of Last Modified Date Blank and Verify the Result', () => {
@@ -463,48 +459,48 @@ And('Click on filter of Internal Technician Not blank and Verify the Result', ()
     iht.filterNotblankIT()
 })
 //sorting 
-And('Click on Sort Ascending and Descending for Record ID and Verify the Result',()=>{
-    iht.sortingRI()
-})
-And ('Click on Sort Ascending and Descending for Ticket Number and Verify the Result',()=>{
+And('Click on Sort Ascending and Descending for Ticket Number and Verify the Result', () => {
     iht.sortingTN()
 })
-And ('Click on Sort Ascending and Descending for Building and Verify the Result',()=>{
+And('Click on Sort Ascending and Descending for Building and Verify the Result', () => {
     iht.sortingBuilding()
 })
-And ('Click on Sort Ascending and Descending for Return Site and Verify the Result',()=>{
+And('Click on Sort Ascending and Descending for Return Site and Verify the Result', () => {
     iht.sortingRSite()
 })
-And ('Click on Sort Ascending and Descending for Repair Type and Verify the Result',()=>{
+And('Click on Sort Ascending and Descending for Repair Type and Verify the Result', () => {
     iht.sortingRtype()
 })
-And ('Click on Sort Ascending and Descending for Serial Number and Verify the Result',()=>{
+And('Click on Sort Ascending and Descending for Serial Number and Verify the Result', () => {
     iht.sortingSN()
 })
-And ('Click on Sort Ascending and Descending for Repair Device and Verify the Result',()=>{
+And('Click on Sort Ascending and Descending for Repair Device and Verify the Result', () => {
     iht.sortingRDev()
 })
-And ('Click on Sort Ascending and Descending for Asset Tag and Verify the Result',()=>{
+And('Click on Sort Ascending and Descending for Asset Tag and Verify the Result', () => {
     iht.sortingATag()
 })
-And ('Click on Sort Ascending and Descending for Internal Technician Name and Verify the Result',()=>{
+And('Click on Sort Ascending and Descending for Internal Technician Name and Verify the Result', () => {
     iht.sortingIT()
 })
-And ('Click on Sort Ascending and Descending for Student Name and Verify the Result',()=>{
+And('Click on Sort Ascending and Descending for Student Name and Verify the Result', () => {
     iht.sortingStdN()
 })
-And ('Click on Sort Ascending and Descending for Repair Status and Verify the Result',()=>{
+And('Click on Sort Ascending and Descending for Repair Status and Verify the Result', () => {
     iht.sortingRStatus()
 })
-And ('Click on Sort Ascending and Descending for In House Status and Verify the Result',()=>{
+And('Click on Sort Ascending and Descending for In House Status and Verify the Result', () => {
     iht.sortingInhouseStatus()
 })
-And ('Click on Sort Ascending and Descending for Warranty Status and Verify the Result',()=>{
+And('Click on Sort Ascending and Descending for Warranty Status and Verify the Result', () => {
     iht.sortingWstatus()
 })
-And ('Click on Sort Ascending and Descending for Created By and Verify the Result',()=>{
+And('Click on Sort Ascending and Descending for Created By and Verify the Result', () => {
     iht.sortingCBy()
 })
-And ('Click on Sort Ascending and Descending for Last Modified Date and Verify the Result',()=>{
+And('Click on Sort Ascending and Descending for Last Modified Date and Verify the Result', () => {
     iht.sortingLdate()
+})
+And('Click on Sort Ascending and Descending for Created Date and Verify the Result', () => {
+    iht.sortingCDate()
 })

@@ -526,7 +526,7 @@ filtertrueDB(){
     // cy.contains('True').click({ force: true })
     //build.applyElement().click({ force: true })
     cy.get('[aria-label="checked"]').should('be.checked')
-    cy.contains('Clear Filters').click({ force: true })
+    cy.get('.reset-button').click({ force: true })
 }
 filterfalseDB(){
     build.addFilterElement().eq(5).click({ force: true })
@@ -535,7 +535,7 @@ filterfalseDB(){
     // cy.contains('False').click({ force: true })
    // build.applyElement().click({ force: true })
     cy.get('[aria-label="checked"]').should('be.checked')
-    cy.contains('Clear Filters').click({ force: true })
+    cy.get('.reset-button').click({ force: true })
 }
 //Extension
 filtercontainE() {

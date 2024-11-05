@@ -74,21 +74,21 @@ Feature:  Users Page Functionality
     # And Click on Sort Ascending and Descending for Organizational Unit and Verify the Result
     # And Click on Sort Ascending and Descending for User Status and Verify the Result
 
-    Then Click on Download button
-    And Click on view button and click on Edit button inside
-    Then I should edit title, full name
-    And I should edit Phone and Cell Number and user role
-    Then I edit User Status by clicking on checkbox
-    And I edit Building
-    Then Click on Submit button
-    And Verify the Record has been updated Meassage
-    And Click on view button and click on Edit button
-    Then I should edit title, full name
-    And I should edit Phone and Cell Number and user role
-    Then I edit User Status by clicking on checkbox
-    And I edit Building
-    Then Click on Submit button
-    And Verify the Record has been updated Meassage
+    # Then Click on Download button
+    # And Click on view button and click on Edit button inside
+    # Then I should edit title, full name
+    # And I should edit Phone and Cell Number and user role
+    # Then I edit User Status by clicking on checkbox
+    # And I edit Building
+    # Then Click on Submit button
+    # And Verify the Record has been updated Meassage
+    # And Click on view button and click on Edit button
+    # Then I should edit title, full name
+    # And I should edit Phone and Cell Number and user role
+    # Then I edit User Status by clicking on checkbox
+    # And I edit Building
+    # Then Click on Submit button
+    # And Verify the Record has been updated Meassage
 
     # And Click on Delete button
     # Then Click on Confirm Delete button

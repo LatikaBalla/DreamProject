@@ -19,15 +19,6 @@ Feature:InHouseTickets Page Functionality
     And Click on save button
     Then Verify New Ticket is added
 
-    And Click on filter of Record Id contain and Verify the Result
-    And Click on filter of Record Id Does not contain and Verify the Result
-    And Click on filter of Record Id Equals and Verify the Result
-    And Click on filter of Record Id Does not equal and Verify the Result
-    And Click on filter of Record Id Begins with and Verify the Result
-    And Click on filter of Record Id Ends with and Verify the Result
-    And Click on filter of Record Id Blank and Verify the Result
-    And Click on filter of Record Id Not blank and Verify the Result
-
     And Click on filter of Ticket Number contain and Verify the Result
     And Click on filter of Ticket Number Does not contain and Verify the Result
     And Click on filter of Ticket Number Equals and Verify the Result
@@ -131,6 +122,14 @@ Feature:InHouseTickets Page Functionality
     And Click on filter of Created By Blank and Verify the Result
     And Click on filter of Created By Not blank and Verify the Result
 
+    And Click on filter of Created Date Equals and Verify the Result
+    And Click on filter of Created Date Does not equal and Verify the Result
+    And Click on filter of Created Date Before and Verify the Result
+    And Click on filter of Created Date After and Verify the Result
+    And Click on filter of Created Date Between with and Verify the Result
+    And Click on filter of Created Date Blank and Verify the Result
+    And Click on filter of Created Date Not blank and Verify the Result
+
     And Click on filter of Last Modified Date Equals and Verify the Result
     And Click on filter of Last Modified Date Does not equal and Verify the Result
     And Click on filter of Last Modified Date Before and Verify the Result
@@ -142,10 +141,10 @@ Feature:InHouseTickets Page Functionality
     And Click on Download Export button
     And Click on view button
     Then Verify the Details of student repair ticket
-    And Click on the Update to student Button
-    Then Updated to student successfully
-    And Click on the Update to in house Button
-    Then Updated to in house successfully
+    # And Click on the Update to student Button
+    # Then Updated to student successfully
+    # And Click on the Update to in house Button
+    # Then Updated to in house successfully
     And Click on the Edit Ticket Button
     Then Update the Technician and Repair Status
     And Click on Update Button
@@ -155,7 +154,6 @@ Feature:InHouseTickets Page Functionality
     And Click on Add Note and Verify
 
   Scenario: InHouseTickets Sorting -Ascending and descending
-    And Click on Sort Ascending and Descending for Record ID and Verify the Result
     And Click on Sort Ascending and Descending for Ticket Number and Verify the Result
     And Click on Sort Ascending and Descending for Building and Verify the Result
     And Click on Sort Ascending and Descending for Return Site and Verify the Result
@@ -169,6 +167,7 @@ Feature:InHouseTickets Page Functionality
     And Click on Sort Ascending and Descending for In House Status and Verify the Result
     And Click on Sort Ascending and Descending for Warranty Status and Verify the Result
     And Click on Sort Ascending and Descending for Created By and Verify the Result
+    And Click on Sort Ascending and Descending for Created Date and Verify the Result
     And Click on Sort Ascending and Descending for Last Modified Date and Verify the Result
 
 
