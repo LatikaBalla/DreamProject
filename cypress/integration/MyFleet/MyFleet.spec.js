@@ -176,6 +176,7 @@ Then('Verify New Ticket is added', () => {
     mf.verifyNewTicket()
 })
 And('Click on deviceIcon and click on add Loaner button', () => {
+    cy.go('back')
     mf.clickOnAddLoaner()
 })
 Then('verify the ticket is added in loaner', () => {
@@ -185,6 +186,7 @@ And('Click on deviceIcon and click on Edit Device button', () => {
     mf.clickOnEditDevice()
 })
 And('Click on help icon for Filtering Guide', () => {
+    cy.wait(1000)
     mf.clickOnHelpIcon()
 })
 Then('Verify the Dream Data Filtering Guide', () => {

@@ -834,7 +834,6 @@ export class InHouseTicketsActions {
         cy.get('.ag-row-first > [col-id="inHouseStatus"]').should('contain', 'Quality Assurance')
         cy.get('.reset-button').click({ force: true })
     }
-
     filterOptionWS1() {
         iht.addFilterElement().eq(11).click({ force: true })
         iht.searchElement().type('Warranty')

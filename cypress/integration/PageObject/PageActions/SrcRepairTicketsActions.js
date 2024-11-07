@@ -138,94 +138,10 @@ export class SrcRepairTicketsActions {
     clickOnExport() {
         srt.exportbtnElement().click({ force: true })
     }
-    //ri
-    filtercontainRI() {
-        cy.wait(2000)
-        srt.addFilterElement().eq(0).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(0).click({ force: true })
-        srt.fieldValueElement().type(tdata.srcRepairTicket.recordid)
-        srt.applyElement().click({ force: true })
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterDoesnotcontainRI() {
-        cy.wait(1000)
-        srt.addFilterElement().eq(0).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(1).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.recordid)
-        srt.applyElement().click({ force: true })
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterGreaterthanRI() {
-        cy.wait(1000)
-        srt.addFilterElement().eq(0).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(2).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.recordid)
-        srt.applyElement().click({ force: true })
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterGreaterequalRI() {
-        cy.wait(1000)
-        srt.addFilterElement().eq(0).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(3).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.recordid)
-        srt.applyElement().click({ force: true })
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterLessthanRI() {
-        cy.wait(1000)
-        srt.addFilterElement().eq(0).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(4).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.recordid)
-        srt.applyElement().click({ force: true })
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterLessequalRI() {
-        cy.wait(1000)
-        srt.addFilterElement().eq(0).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(5).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.recordid)
-        srt.applyElement().click({ force: true })
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterBetweenRI() {
-        cy.wait(1000)
-        srt.addFilterElement().eq(0).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(6).click({ force: true })
-        cy.get('[placeholder="From"]').type(tdata.srcRepairTicket.recordid1)
-        cy.get('[placeholder="To"]').type(tdata.srcRepairTicket.recordid)
-        srt.applyElement().click({ force: true })
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterBlankRI() {
-        cy.wait(1000)
-        srt.addFilterElement().eq(0).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(7).click({ force: true })
-        srt.fieldValueElement().eq(1).clear({ force: true }).type(' ', { force: true })
-        srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', ' ')
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterNotblankRI() {
-        cy.wait(1000)
-        srt.addFilterElement().eq(0).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(8).click({ force: true })
-        srt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.srcRepairTicket.recordid, { force: true })
-        srt.applyElement().click({ force: true })
-        srt.clearFilterElement().click({ force: true })
-    }
     //tn
     selectFilterTicketNumber() {
         cy.wait(3000)
-        srt.addFilterElement().eq(1).click({ force: true })
+        srt.addFilterElement().eq(0).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(0).click({ force: true })
         srt.fieldValueElement().type(tdata.srcRepairTicket.ticketnumber)
@@ -234,7 +150,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainTN() {
-        srt.addFilterElement().eq(1).click({ force: true })
+        srt.addFilterElement().eq(0).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(1).click({ force: true })
         srt.fieldValueElement().eq(0).type(tdata.srcRepairTicket.ticketnumber)
@@ -243,7 +159,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterEqualsTN() {
-        srt.addFilterElement().eq(1).click({ force: true })
+        srt.addFilterElement().eq(0).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(2).click({ force: true })
         srt.fieldValueElement().eq(0).type(tdata.srcRepairTicket.ticketnumber)
@@ -252,7 +168,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterNotequalTN() {
-        srt.addFilterElement().eq(1).click({ force: true })
+        srt.addFilterElement().eq(0).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(3).click({ force: true })
         srt.fieldValueElement().eq(0).type(tdata.srcRepairTicket.ticketnumber)
@@ -261,7 +177,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBeginswithTN() {
-        srt.addFilterElement().eq(1).click({ force: true })
+        srt.addFilterElement().eq(0).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(4).click({ force: true })
         srt.fieldValueElement().eq(0).type('V00')
@@ -270,7 +186,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterEndswithTN() {
-        srt.addFilterElement().eq(1).click({ force: true })
+        srt.addFilterElement().eq(0).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(5).click({ force: true })
         srt.fieldValueElement().eq(0).type('229')
@@ -279,7 +195,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBlankTN() {
-        srt.addFilterElement().eq(1).click({ force: true })
+        srt.addFilterElement().eq(0).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(6).click({ force: true })
         srt.fieldValueElement().eq(0).type(' ', { force: true })
@@ -288,7 +204,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterNotblankTN() {
-        srt.addFilterElement().eq(1).click({ force: true })
+        srt.addFilterElement().eq(0).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(7).click({ force: true })
         srt.fieldValueElement().eq(1).type(tdata.srcRepairTicket.ticketnumber, { force: true })
@@ -298,7 +214,7 @@ export class SrcRepairTicketsActions {
     }
     //B
     selectFilterBuilding() {
-        srt.addFilterElement().eq(2).click({ force: true })
+        srt.addFilterElement().eq(1).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(0).click({ force: true })
         srt.fieldValueElement().clear({ force: true }).type(tdata.srcRepairTicket.building)
@@ -307,7 +223,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainB() {
-        srt.addFilterElement().eq(2).click({ force: true })
+        srt.addFilterElement().eq(1).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(1).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.building)
@@ -316,7 +232,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterEqualsB() {
-        srt.addFilterElement().eq(2).click({ force: true })
+        srt.addFilterElement().eq(1).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(2).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.building)
@@ -325,7 +241,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterNotequalB() {
-        srt.addFilterElement().eq(2).click({ force: true })
+        srt.addFilterElement().eq(1).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(3).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.building)
@@ -334,7 +250,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBeginswithB() {
-        srt.addFilterElement().eq(2).click({ force: true })
+        srt.addFilterElement().eq(1).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(4).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type('Dream')
@@ -343,7 +259,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterEndswithB() {
-        srt.addFilterElement().eq(2).click({ force: true })
+        srt.addFilterElement().eq(1).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(5).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type('ing')
@@ -352,7 +268,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBlankB() {
-        srt.addFilterElement().eq(2).click({ force: true })
+        srt.addFilterElement().eq(1).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(6).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
@@ -361,17 +277,90 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterNotblankB() {
+        srt.addFilterElement().eq(1).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(7).click({ force: true })
+        srt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.srcRepairTicket.building, { force: true })
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.building)
+        srt.clearFilterElement().click({ force: true })
+    }
+       //Return Site
+       filterContainRSite() {
+        srt.addFilterElement().eq(2).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(0).click({ force: true })
+        srt.fieldValueElement().clear({ force: true }).type(tdata.srcRepairTicket.building)
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.building)
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainRSite() {
+        srt.addFilterElement().eq(2).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(1).click({ force: true })
+        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.building)
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.srcRepairTicket.building)
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterEqualsRSite() {
+        srt.addFilterElement().eq(2).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(2).click({ force: true })
+        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.building)
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.building)
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterNotequalRSite() {
+        srt.addFilterElement().eq(2).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(3).click({ force: true })
+        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.building)
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.srcRepairTicket.building)
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithRSite() {
+        srt.addFilterElement().eq(2).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(4).click({ force: true })
+        srt.fieldValueElement().eq(0).clear({ force: true }).type('Dream')
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'Dream')
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterEndswithRSite() {
+        srt.addFilterElement().eq(2).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(5).click({ force: true })
+        srt.fieldValueElement().eq(0).clear({ force: true }).type('ing')
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'ing')
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterBlankRSite() {
+        srt.addFilterElement().eq(2).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(6).click({ force: true })
+        srt.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterNotblankRSite() {
         srt.addFilterElement().eq(2).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(7).click({ force: true })
-        srt.fieldValueElement().eq(1).clear({ force: true }).type('GVL', { force: true })
+        srt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.srcRepairTicket.building, { force: true })
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'GVL')
+        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.building)
         srt.clearFilterElement().click({ force: true })
     }
     //rt
     selectFilterRepairType() {
-        srt.addFilterElement().eq(2).click({ force: true })
+        srt.addFilterElement().eq(3).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(0).click({ force: true })
         srt.fieldValueElement().type(tdata.srcRepairTicket.repairtype, { force: true })
@@ -380,7 +369,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainRT() {
-        srt.addFilterElement().eq(2).click({ force: true })
+        srt.addFilterElement().eq(3).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(1).click({ force: true })
         srt.fieldValueElement().eq(0).type(tdata.srcRepairTicket.repairtype, { force: true })
@@ -389,7 +378,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterEqualsRT() {
-        srt.addFilterElement().eq(2).click({ force: true })
+        srt.addFilterElement().eq(3).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(2).click({ force: true })
         srt.fieldValueElement().eq(0).type(tdata.srcRepairTicket.repairtype, { force: true })
@@ -398,7 +387,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterNotequalRT() {
-        srt.addFilterElement().eq(2).click({ force: true })
+        srt.addFilterElement().eq(3).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(3).click({ force: true })
         srt.fieldValueElement().eq(0).type(tdata.srcRepairTicket.repairtype, { force: true })
@@ -407,7 +396,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBeginswithRT() {
-        srt.addFilterElement().eq(2).click({ force: true })
+        srt.addFilterElement().eq(3).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(4).click({ force: true })
         srt.fieldValueElement().eq(0).type('Stu', { force: true })
@@ -416,7 +405,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterEndswithRT() {
-        srt.addFilterElement().eq(2).click({ force: true })
+        srt.addFilterElement().eq(3).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(5).click({ force: true })
         srt.fieldValueElement().eq(0).type('ent', { force: true })
@@ -425,7 +414,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBlankRT() {
-        srt.addFilterElement().eq(2).click({ force: true })
+        srt.addFilterElement().eq(3).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(6).click({ force: true })
         srt.fieldValueElement().eq(0).type(' ', { force: true })
@@ -434,7 +423,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterNotblankRT() {
-        srt.addFilterElement().eq(2).click({ force: true })
+        srt.addFilterElement().eq(3).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(7).click({ force: true })
         srt.fieldValueElement().eq(1).type(tdata.srcRepairTicket.repairtype, { force: true })
@@ -445,7 +434,7 @@ export class SrcRepairTicketsActions {
     //sn
     selectFilterSerialNumber() {
         cy.wait(2000)
-        srt.addFilterElement().eq(3).click({ force: true })
+        srt.addFilterElement().eq(4).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(0).click({ force: true })
         srt.fieldValueElement().type(tdata.srcRepairTicket.serialnumber)
@@ -454,7 +443,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainSN() {
-        srt.addFilterElement().eq(3).click({ force: true })
+        srt.addFilterElement().eq(4).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(1).click({ force: true })
         srt.fieldValueElement().eq(0).type(tdata.srcRepairTicket.serialnumber)
@@ -463,7 +452,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterEqualsSN() {
-        srt.addFilterElement().eq(3).click({ force: true })
+        srt.addFilterElement().eq(4).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(2).click({ force: true })
         srt.fieldValueElement().eq(0).type(tdata.srcRepairTicket.serialnumber)
@@ -472,7 +461,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterNotequalSN() {
-        srt.addFilterElement().eq(3).click({ force: true })
+        srt.addFilterElement().eq(4).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(3).click({ force: true })
         srt.fieldValueElement().eq(0).type(tdata.srcRepairTicket.serialnumber)
@@ -481,7 +470,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBeginswithSN() {
-        srt.addFilterElement().eq(3).click({ force: true })
+        srt.addFilterElement().eq(4).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(4).click({ force: true })
         srt.fieldValueElement().eq(0).type('VIVATEST')
@@ -490,7 +479,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterEndswithSN() {
-        srt.addFilterElement().eq(3).click({ force: true })
+        srt.addFilterElement().eq(4).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(5).click({ force: true })
         srt.fieldValueElement().eq(0).type('Test')
@@ -499,7 +488,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBlankSN() {
-        srt.addFilterElement().eq(3).click({ force: true })
+        srt.addFilterElement().eq(4).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(6).click({ force: true })
         srt.fieldValueElement().eq(0).type(' ', { force: true })
@@ -508,7 +497,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterNotblankSN() {
-        srt.addFilterElement().eq(3).click({ force: true })
+        srt.addFilterElement().eq(4).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(7).click({ force: true })
         srt.fieldValueElement().eq(1).type(tdata.srcRepairTicket.serialnumber, { force: true })
@@ -518,7 +507,7 @@ export class SrcRepairTicketsActions {
     }
     //RD
     selectFilterRepairDevice() {
-        srt.addFilterElement().eq(4).click({ force: true })
+        srt.addFilterElement().eq(5).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(0).click({ force: true })
         srt.fieldValueElement().type(tdata.srcRepairTicket.repairdevice)
@@ -527,7 +516,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainRD() {
-        srt.addFilterElement().eq(4).click({ force: true })
+        srt.addFilterElement().eq(5).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(1).click({ force: true })
         srt.fieldValueElement().eq(0).type(tdata.srcRepairTicket.repairdevice, { force: true })
@@ -536,7 +525,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterEqualsRD() {
-        srt.addFilterElement().eq(4).click({ force: true })
+        srt.addFilterElement().eq(5).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(2).click({ force: true })
         srt.fieldValueElement().eq(0).type(tdata.srcRepairTicket.repairdevice, { force: true })
@@ -545,7 +534,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterNotequalRD() {
-        srt.addFilterElement().eq(4).click({ force: true })
+        srt.addFilterElement().eq(5).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(3).click({ force: true })
         srt.fieldValueElement().eq(0).type(tdata.srcRepairTicket.repairdevice, { force: true })
@@ -554,7 +543,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBeginswithRD() {
-        srt.addFilterElement().eq(4).click({ force: true })
+        srt.addFilterElement().eq(5).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(4).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type('Dell Chromebook 11 3100')
@@ -563,7 +552,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterEndswithRD() {
-        srt.addFilterElement().eq(4).click({ force: true })
+        srt.addFilterElement().eq(5).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(5).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(' Non-Touch')
@@ -572,7 +561,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBlankRD() {
-        srt.addFilterElement().eq(4).click({ force: true })
+        srt.addFilterElement().eq(5).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(6).click({ force: true })
         srt.fieldValueElement().eq(0).type(' ', { force: true })
@@ -581,7 +570,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterNotblankRD() {
-        srt.addFilterElement().eq(4).click({ force: true })
+        srt.addFilterElement().eq(5).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(7).click({ force: true })
         srt.fieldValueElement().eq(1).type('VT Chromebook', { force: true })
@@ -591,7 +580,7 @@ export class SrcRepairTicketsActions {
     }
     //tag
     selectFilterAssetTag() {
-        srt.addFilterElement().eq(5).click({ force: true })
+        srt.addFilterElement().eq(6).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(0).click({ force: true })
         srt.fieldValueElement().type(tdata.srcRepairTicket.assettag)
@@ -600,7 +589,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontaintag() {
-        srt.addFilterElement().eq(5).click({ force: true })
+        srt.addFilterElement().eq(6).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(1).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.assettag)
@@ -609,7 +598,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterEqualstag() {
-        srt.addFilterElement().eq(5).click({ force: true })
+        srt.addFilterElement().eq(6).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(2).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.assettag)
@@ -618,7 +607,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterNotequaltag() {
-        srt.addFilterElement().eq(5).click({ force: true })
+        srt.addFilterElement().eq(6).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(3).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.assettag)
@@ -627,7 +616,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBeginswithtag() {
-        srt.addFilterElement().eq(5).click({ force: true })
+        srt.addFilterElement().eq(6).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(4).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type('Viva')
@@ -636,7 +625,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterEndswithtag() {
-        srt.addFilterElement().eq(5).click({ force: true })
+        srt.addFilterElement().eq(6).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(5).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type('TY')
@@ -645,7 +634,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBlanktag() {
-        srt.addFilterElement().eq(5).click({ force: true })
+        srt.addFilterElement().eq(6).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(6).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
@@ -654,7 +643,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterNotblanktag() {
-        srt.addFilterElement().eq(5).click({ force: true })
+        srt.addFilterElement().eq(6).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(7).click({ force: true })
         srt.fieldValueElement().eq(1).clear({ force: true }).type('12333', { force: true })
@@ -664,45 +653,89 @@ export class SrcRepairTicketsActions {
     }
     //RS
     filterOption1() {
-        srt.addFilterElement().eq(6).click({ force: true })
+        srt.addFilterElement().eq(9).click({ force: true })
         cy.get('[value="Intake"]').click({ force: true })
         cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus1)
         cy.get('.reset-button').click({ force: true })
     }
     filterOption2() {
-        srt.addFilterElement().eq(6).click({ force: true })
+        srt.addFilterElement().eq(9).click({ force: true })
         cy.get('[value="Waiting_on_Repair_Approval"]').click({ force: true })
         cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus2)
         cy.get('.reset-button').click({ force: true })
     }
     filterOption3() {
-        srt.addFilterElement().eq(6).click({ force: true })
+        srt.addFilterElement().eq(9).click({ force: true })
         cy.get('[value="Closed"]').click({ force: true })
         cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus3)
         cy.get('.reset-button').click({ force: true })
     }
     filterOption4() {
-        srt.addFilterElement().eq(6).click({ force: true })
+        srt.addFilterElement().eq(9).click({ force: true })
         cy.get('[value="Complete"]').click({ force: true })
         cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus4)
         cy.get('.reset-button').click({ force: true })
     }
     filterOption5() {
-        srt.addFilterElement().eq(6).click({ force: true })
+        srt.addFilterElement().eq(9).click({ force: true })
         cy.get('[value="In_Transit"]').click({ force: true })
         cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus5)
         cy.get('.reset-button').click({ force: true })
     }
     filterOption6() {
-        srt.addFilterElement().eq(6).click({ force: true })
+        srt.addFilterElement().eq(9).click({ force: true })
         cy.get('[value="Repair"]').click({ force: true })
         cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus6)
         cy.get('.reset-button').click({ force: true })
     }
+  //ws
+  filterOptionIhs1() {
+    srt.addFilterElement().eq(10).click({ force: true })
+    cy.get('[value="Intake"]').click({ force: true })
+    cy.get('.ag-row-first > [col-id="inHouseStatus"]').should('contain', 'Intake')
+    cy.get('.reset-button').click({ force: true })
+}
+filterOptionIhs2() {
+    srt.addFilterElement().eq(10).click({ force: true })
+    cy.get('[value="Part_Received"]').click({ force: true })
+    cy.get('.ag-row-first > [col-id="inHouseStatus"]').should('contain', 'Part Received')
+    cy.get('.reset-button').click({ force: true })
+}
+filterOptionIhs3() {
+    srt.addFilterElement().eq(10).click({ force: true })
+    cy.get('[value="Part_Queue"]').click({ force: true })
+    cy.get('.ag-row-first > [col-id="inHouseStatus"]').should('contain', 'Part Queue')
+    cy.get('.reset-button').click({ force: true })
+}
+filterOptionIhs4() {
+    srt.addFilterElement().eq(10).click({ force: true })
+    cy.get('[value="Repair"]').click({ force: true })
+    cy.get('.ag-row-first > [col-id="inHouseStatus"]').should('contain', 'Repair')
+    cy.get('.reset-button').click({ force: true })
+}
+filterOptionIhs5() {
+    srt.addFilterElement().eq(10).click({ force: true })
+    cy.get('[value="Quality_Assurance"]').click({ force: true })
+    cy.get('.ag-row-first > [col-id="inHouseStatus"]').should('contain', 'Quality Assurance')
+    cy.get('.reset-button').click({ force: true })
+}
+filterOptionWS1() {
+    srt.addFilterElement().eq(11).click({ force: true })
+    srt.searchElement().type('Warranty')
+    cy.get('[value="Non_Warranty"]').click({ force: true })
+    cy.get('.ag-row-first > [col-id="warrantyStatus"]').should('contain', 'Warranty')
+    cy.get('.reset-button').click({ force: true })
+}
+filterOptionWS2() {
+    srt.addFilterElement().eq(11).click({ force: true })
+    cy.get('[value="Non_Warranty"]').click({ force: true })
+    cy.get('.ag-row-first > [col-id="warrantyStatus"]').should('contain', tdata.inHouseTicket.warrantystatus)
+    cy.get('.reset-button').click({ force: true })
+}
     //ws
     selectFilterWarrantyStatus() {
         cy.wait(2000)
-        srt.addFilterElement().eq(8).click({ force: true })
+        srt.addFilterElement().eq(11).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(0).click({ force: true })
         srt.fieldValueElement().type(tdata.srcRepairTicket.warrantystatus)
@@ -711,7 +744,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainWS() {
-        srt.addFilterElement().eq(8).click({ force: true })
+        srt.addFilterElement().eq(11).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(1).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.warrantystatus)
@@ -720,7 +753,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterEqualsWS() {
-        srt.addFilterElement().eq(8).click({ force: true })
+        srt.addFilterElement().eq(11).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(2).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.warrantystatus)
@@ -729,7 +762,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterNotequalWS() {
-        srt.addFilterElement().eq(8).click({ force: true })
+        srt.addFilterElement().eq(11).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(3).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.warrantystatus)
@@ -738,7 +771,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBeginswithWS() {
-        srt.addFilterElement().eq(8).click({ force: true })
+        srt.addFilterElement().eq(11).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(4).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type('Non')
@@ -747,7 +780,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterEndswithWS() {
-        srt.addFilterElement().eq(8).click({ force: true })
+        srt.addFilterElement().eq(11).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(5).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type('anty')
@@ -756,7 +789,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBlankWS() {
-        srt.addFilterElement().eq(8).click({ force: true })
+        srt.addFilterElement().eq(11).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(6).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
@@ -765,7 +798,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterNotblankWS() {
-        srt.addFilterElement().eq(8).click({ force: true })
+        srt.addFilterElement().eq(11).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(7).click({ force: true })
         srt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.srcRepairTicket.warrantystatus, { force: true })
@@ -775,7 +808,7 @@ export class SrcRepairTicketsActions {
     }
     //date
     filterEqualsDate() {
-        srt.addFilterElement().eq(10).click({ force: true })
+        srt.addFilterElement().eq(14).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(0).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
@@ -784,7 +817,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterNotequalDate() {
-        srt.addFilterElement().eq(10).click({ force: true })
+        srt.addFilterElement().eq(14).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(1).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
@@ -793,7 +826,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBeforeDate() {
-        srt.addFilterElement().eq(10).click({ force: true })
+        srt.addFilterElement().eq(14).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(2).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
@@ -802,7 +835,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterAfterDate() {
-        srt.addFilterElement().eq(10).click({ force: true })
+        srt.addFilterElement().eq(14).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
@@ -811,7 +844,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBetweenDate() {
-        srt.addFilterElement().eq(10).click({ force: true })
+        srt.addFilterElement().eq(14).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
@@ -821,7 +854,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBlankDate() {
-        srt.addFilterElement().eq(10).click({ force: true })
+        srt.addFilterElement().eq(14).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(5).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
@@ -830,7 +863,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterNotblankDate() {
-        srt.addFilterElement().eq(10).click({ force: true })
+        srt.addFilterElement().eq(14).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(6).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(2).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
@@ -914,7 +947,7 @@ export class SrcRepairTicketsActions {
     }
     //cby
     selectFilterCreatedBy() {
-        srt.addFilterElement().eq(9).click({ force: true })
+        srt.addFilterElement().eq(12).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(0).click({ force: true })
         srt.fieldValueElement().type(tdata.srcRepairTicket.createdby)
@@ -922,7 +955,7 @@ export class SrcRepairTicketsActions {
         cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.createdby)
     }
     filterDoesnotcontainCBy() {
-        srt.addFilterElement().eq(9).click({ force: true })
+        srt.addFilterElement().eq(12).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(1).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.createdby)
@@ -931,7 +964,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterEqualsCBy() {
-        srt.addFilterElement().eq(9).click({ force: true })
+        srt.addFilterElement().eq(12).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(2).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.createdby)
@@ -940,7 +973,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterNotequalCBy() {
-        srt.addFilterElement().eq(9).click({ force: true })
+        srt.addFilterElement().eq(12).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(3).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.createdby)
@@ -949,7 +982,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBeginswithCBy() {
-        srt.addFilterElement().eq(9).click({ force: true })
+        srt.addFilterElement().eq(12).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(4).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type('demo')
@@ -958,7 +991,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterEndswithCBy() {
-        srt.addFilterElement().eq(9).click({ force: true })
+        srt.addFilterElement().eq(12).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(5).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type('vivacitytech.com')
@@ -967,7 +1000,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterBlankCBy() {
-        srt.addFilterElement().eq(9).click({ force: true })
+        srt.addFilterElement().eq(12).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(6).click({ force: true })
         srt.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
@@ -976,7 +1009,7 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     filterNotblankCBy() {
-        srt.addFilterElement().eq(9).click({ force: true })
+        srt.addFilterElement().eq(12).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(7).click({ force: true })
         srt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.srcRepairTicket.createdby, { force: true })

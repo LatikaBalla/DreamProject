@@ -358,7 +358,7 @@ And('Click on filter of Repair status op9 and Verify the Result', () => {
 And('Click on filter of Repair status op10 and Verify the Result', () => {
     iht.filterOption10()
 })
-//ws
+//InS
 And('Click on filter of In House status op1 and Verify the Result', () => {
     iht.filterOptionIhs1()
 })
@@ -405,13 +405,29 @@ And('Click on filter of Created By Blank and Verify the Result', () => {
 And('Click on filter of Created By Not blank and Verify the Result', () => {
     iht.filterNotblankCBy()
 })
+//CDate
+And('Click on filter of Created Date Equals and Verify the Result', () => {
+    iht.filterEqualsCDate()
+})
+And('Click on filter of Created Date Does not equal and Verify the Result', () => {
+    iht.filterNotequalCDate()
+})
+And('Click on filter of Created Date Before and Verify the Result', () => {
+    iht.filterBeforeCDate()
+})
+And('Click on filter of Created Date After and Verify the Result', () => {
+    iht.filterAfterCDate()
+})
+And('Click on filter of Created Date Between with and Verify the Result', () => {
+    iht.filterBetweenCDate()
+})
+And('Click on filter of Created Date Blank and Verify the Result', () => {
+    iht.filterBlankCDate()
+})
+And('Click on filter of Created Date Not blank and Verify the Result', () => {
+    iht.filterNotblankCDate()
+})
 //Ldate
-And('Click on filter of Last Modified Date contain and Verify the Result', () => {
-    iht.selectFilteLastModifiedDate()
-})
-And('Click on filter of Last Modified Date Does not contain and Verify the Result', () => {
-    iht.filterDoesnotcontainDate()
-})
 And('Click on filter of Last Modified Date Equals and Verify the Result', () => {
     iht.filterEqualsDate()
 })

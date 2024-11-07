@@ -105,7 +105,7 @@
     "search1": "98765vhTest",
     "serialNo": "1111",
     "deviceid": "[data-value='10856']",
-    "serialnoEdit": "TestTag",
+    "assetTagEdit": "AssetTestEdit",
     "studentidEdit": "[data-value='2']",
     "studentid": "[data-value='23565']",
     "lonarstatus": "[data-value='In Loaner Pool']",

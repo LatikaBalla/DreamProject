@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1211000000
+              "duration": 836000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6617000000
+              "duration": 6961000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 13107000000
+              "duration": 13132000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on MyFleet Tab",
             "result": {
               "status": "passed",
-              "duration": 589000000
+              "duration": 2028000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of MyFleet Page",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 10000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Click on filter of Serial Number contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2094000000
+              "duration": 2131000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Click on filter of Serial Number Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 720000000
+              "duration": 693000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click on filter of Serial Number Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1097000000
+              "duration": 1087000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on filter of Serial Number Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 733000000
+              "duration": 724000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on filter of Serial Number Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 984000000
+              "duration": 1021000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on filter of Serial Number Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 868000000
+              "duration": 899000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on filter of Serial Number Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 465000000
+              "duration": 468000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on filter of Asset tag contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2044000000
+              "duration": 2150000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Click on filter of Asset tag Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 653000000
+              "duration": 663000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on filter of Asset tag Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1108000000
+              "duration": 1097000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Click on filter of Asset tag Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 646000000
+              "duration": 654000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Click on filter of Asset tag Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1066000000
+              "duration": 1119000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click on filter of Asset tag Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1091000000
+              "duration": 1151000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Click on filter of Asset tag Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 628000000
+              "duration": 623000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Click on filter of Model contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2246000000
+              "duration": 2287000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Click on filter of Model Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 793000000
+              "duration": 800000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "Click on filter of Model Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1291000000
+              "duration": 1297000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Click on filter of Model Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 794000000
+              "duration": 798000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "Click on filter of Model Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1103000000
+              "duration": 1086000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "Click on filter of Model Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1113000000
+              "duration": 1102000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Click on filter of Model Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 641000000
+              "duration": 666000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "Click on filter of SKU contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2160000000
+              "duration": 2677000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "Click on filter of SKU Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 699000000
+              "duration": 718000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "Click on filter of SKU Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1140000000
+              "duration": 1200000000
             }
           },
           {
@@ -323,7 +323,7 @@
             "name": "Click on filter of SKU Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 723000000
+              "duration": 703000000
             }
           },
           {
@@ -333,7 +333,7 @@
             "name": "Click on filter of SKU Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1125000000
+              "duration": 1082000000
             }
           },
           {
@@ -343,7 +343,7 @@
             "name": "Click on filter of SKU Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1127000000
+              "duration": 1093000000
             }
           },
           {
@@ -353,7 +353,7 @@
             "name": "Click on filter of SKU Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 610000000
+              "duration": 639000000
             }
           },
           {
@@ -363,7 +363,7 @@
             "name": "Click on filter of Building contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1706000000
+              "duration": 1696000000
             }
           },
           {
@@ -373,7 +373,7 @@
             "name": "Click on filter of Building Does not contain and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1077000000
+              "duration": 1100000000
             }
           },
           {
@@ -383,7 +383,7 @@
             "name": "Click on filter of Building Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 731000000
+              "duration": 748000000
             }
           },
           {
@@ -393,7 +393,7 @@
             "name": "Click on filter of Building Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 786000000
+              "duration": 761000000
             }
           },
           {
@@ -403,7 +403,7 @@
             "name": "Click on filter of Building Begins with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 612000000
+              "duration": 689000000
             }
           },
           {
@@ -413,7 +413,7 @@
             "name": "Click on filter of Building Ends with and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1060000000
+              "duration": 657000000
             }
           },
           {
@@ -423,7 +423,7 @@
             "name": "Click on filter of Building Blank and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 665000000
+              "duration": 634000000
             }
           },
           {
@@ -433,7 +433,7 @@
             "name": "Click on Sort Ascending and Descending for Serial Number and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1468000000
+              "duration": 1450000000
             }
           },
           {
@@ -443,7 +443,7 @@
             "name": "Click on Sort Ascending and Descending for Asset Tag and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1472000000
+              "duration": 1465000000
             }
           },
           {
@@ -453,7 +453,7 @@
             "name": "Click on Sort Ascending and Descending for Model and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1467000000
+              "duration": 1466000000
             }
           },
           {
@@ -463,7 +463,7 @@
             "name": "Click on Sort Ascending and Descending for SKU and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1521000000
+              "duration": 1501000000
             }
           },
           {
@@ -473,7 +473,7 @@
             "name": "Click on the add device",
             "result": {
               "status": "passed",
-              "duration": 112000000
+              "duration": 90000000
             }
           },
           {
@@ -483,7 +483,7 @@
             "name": "Enter Serial no and select device id",
             "result": {
               "status": "passed",
-              "duration": 926000000
+              "duration": 1969000000
             }
           },
           {
@@ -493,7 +493,7 @@
             "name": "Enter Asset Tag and Select student id",
             "result": {
               "status": "passed",
-              "duration": 530000000
+              "duration": 504000000
             }
           },
           {
@@ -503,7 +503,7 @@
             "name": "Select lonar status and Device status",
             "result": {
               "status": "passed",
-              "duration": 877000000
+              "duration": 856000000
             }
           },
           {
@@ -513,7 +513,7 @@
             "name": "Click on the Submit Button",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 88000000
             }
           },
           {
@@ -523,7 +523,7 @@
             "name": "Verify the device added successfully",
             "result": {
               "status": "passed",
-              "duration": 1581000000
+              "duration": 1461000000
             }
           },
           {
@@ -533,7 +533,7 @@
             "name": "Click on download button",
             "result": {
               "status": "passed",
-              "duration": 1076000000
+              "duration": 1079000000
             }
           },
           {
@@ -543,7 +543,7 @@
             "name": "Click on help icon for Filtering Guide",
             "result": {
               "status": "passed",
-              "duration": 75000000
+              "duration": 1193000000
             }
           },
           {
@@ -553,7 +553,7 @@
             "name": "Verify the Dream Data Filtering Guide",
             "result": {
               "status": "passed",
-              "duration": 22000000
+              "duration": 23000000
             }
           },
           {
@@ -563,7 +563,7 @@
             "name": "Click on deviceIcon and click on view Button",
             "result": {
               "status": "passed",
-              "duration": 186000000
+              "duration": 231000000
             }
           },
           {
@@ -573,7 +573,7 @@
             "name": "Verify the General Device Information",
             "result": {
               "status": "passed",
-              "duration": 1610000000
+              "duration": 1315000000
             }
           },
           {
@@ -583,7 +583,7 @@
             "name": "Click on Edit button of General info",
             "result": {
               "status": "passed",
-              "duration": 119000000
+              "duration": 92000000
             }
           },
           {
@@ -593,7 +593,7 @@
             "name": "Update Asset tag and Click on save button",
             "result": {
               "status": "passed",
-              "duration": 590000000
+              "duration": 705000000
             }
           },
           {
@@ -603,7 +603,7 @@
             "name": "Verfiy General info Record updated successfully",
             "result": {
               "status": "passed",
-              "duration": 461000000
+              "duration": 412000000
             }
           },
           {
@@ -613,7 +613,7 @@
             "name": "Click on Edit button of Assignment",
             "result": {
               "status": "passed",
-              "duration": 85000000
+              "duration": 89000000
             }
           },
           {
@@ -623,7 +623,7 @@
             "name": "Update student, building, loner status and Click on save button",
             "result": {
               "status": "passed",
-              "duration": 2175000000
+              "duration": 1637000000
             }
           },
           {
@@ -633,171 +633,87 @@
             "name": "Verfiy Assignment Record updated successfully",
             "result": {
               "status": "passed",
-              "duration": 438000000
+              "duration": 949000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 127,
-            "name": "Click on deviceIcon and click on create ticket button",
+            "name": "Click on deviceIcon and click on add Loaner button",
             "result": {
-              "status": "failed",
-              "duration": 31121000000,
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find content: 'Create Ticket' but never did.\n    at MyFleetElements.createTicketElement (cypress/integration/PageObject/PageElements/MyFleetElements.js:190:18)\n    at MyFleetActions.clickOnCreateTicket (cypress/integration/PageObject/PageActions/MyFleetActions.js:218:9)\n    at Context.eval (cypress/integration/MyFleet/MyFleet.spec.js:158:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 2621000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 128,
-            "name": "Select failure Type, Return site",
+            "name": "verify the ticket is added in loaner",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 399000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 129,
-            "name": "Select Building and Chromebook issue",
+            "name": "Click on deviceIcon and click on Remove Loaner button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2050000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 130,
-            "name": "Enter the Describe Your Issue",
+            "name": "verify the ticket is removed from loaner",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 347000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 131,
-            "name": "Click on save button",
+            "line": 132,
+            "name": "Convert Retired to Active device",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6115000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 132,
-            "name": "Verify New Ticket is added",
+            "line": 133,
+            "name": "Verify the Device Active successfully",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 440000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 134,
-            "name": "Click on deviceIcon and click on Edit Device button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 135,
-            "name": "Update Asset tag and Click on save button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 136,
-            "name": "Verfiy General info Record updated successfully",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 138,
-            "name": "Click on deviceIcon and click on add Loaner button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 139,
-            "name": "verify the ticket is added in loaner",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 140,
-            "name": "Click on deviceIcon and click on Remove Loaner button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 141,
-            "name": "verify the ticket is removed from loaner",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 143,
             "name": "Convert Active to Retired device",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6246000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 144,
+            "line": 135,
             "name": "Verify the Device Retired successfully",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 145,
-            "name": "Click on Retired Tab",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 146,
-            "name": "Convert Retired to Active device",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 147,
-            "name": "Verify the Device Active successfully",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 959000000
             }
           }
         ]
@@ -805,7 +721,7 @@
       {
         "id": "myfleet--page-functionality;google-data-view,-edit-and-visiblity-check-of-all-section",
         "keyword": "Scenario",
-        "line": 149,
+        "line": 137,
         "name": "Google Data view, Edit and Visiblity check of all section",
         "tags": [],
         "type": "scenario",
@@ -817,7 +733,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1843000000
+              "duration": 2094000000
             }
           },
           {
@@ -827,7 +743,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7744000000
+              "duration": 6697000000
             }
           },
           {
@@ -837,7 +753,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 13128000000
+              "duration": 13116000000
             }
           },
           {
@@ -847,7 +763,7 @@
             "name": "Click on Manage Devices",
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 81000000
             }
           },
           {
@@ -857,53 +773,53 @@
             "name": "Click on MyFleet Tab",
             "result": {
               "status": "passed",
-              "duration": 684000000
+              "duration": 1180000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 150,
+            "line": 138,
             "name": "Click on the Google Icon and click on view Button",
             "result": {
               "status": "passed",
-              "duration": 5145000000
+              "duration": 5099000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 151,
+            "line": 139,
             "name": "Verify the google data and GoLocation section",
             "result": {
               "status": "passed",
-              "duration": 1049000000
+              "duration": 1610000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 152,
+            "line": 140,
             "name": "Click on the edit of google data section",
             "result": {
               "status": "passed",
-              "duration": 80000000
+              "duration": 73000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 153,
+            "line": 141,
             "name": "Update Org Unit, AssetId, Location, Note and Click on save button",
             "result": {
               "status": "passed",
-              "duration": 2657000000
+              "duration": 2610000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 154,
+            "line": 142,
             "name": "Verfiy Google data Record updated successfully",
             "result": {
               "status": "passed",
@@ -913,7 +829,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 155,
+            "line": 143,
             "name": "Click on CPU Status and verify CPU Information",
             "result": {
               "status": "passed",
@@ -923,37 +839,37 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 156,
+            "line": 144,
             "name": "Click on Memory Information and verify Memory Information",
             "result": {
               "status": "passed",
-              "duration": 80000000
+              "duration": 82000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 157,
+            "line": 145,
             "name": "Click on Network Information and verify Network Information",
             "result": {
               "status": "passed",
-              "duration": 84000000
+              "duration": 80000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 158,
+            "line": 146,
             "name": "Click on OS Information and verify OS Information",
             "result": {
               "status": "passed",
-              "duration": 80000000
+              "duration": 85000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 159,
+            "line": 147,
             "name": "Click on Battery Information and verify Battery Information",
             "result": {
               "status": "passed",
@@ -963,774 +879,31 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 160,
+            "line": 148,
             "name": "Click on Storage Information and verify Storage Information",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.css-1tqv6h6`, but never found it.\n    at MyFleetActions.verifyStorage (cypress/integration/PageObject/PageActions/MyFleetActions.js:294:9)\n    at Context.eval (cypress/integration/MyFleet/MyFleet.spec.js:116:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 77000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 161,
+            "line": 149,
             "name": "Click on Boot Performance Report and Boot Performance Report",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 79000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 162,
+            "line": 150,
             "name": "Click on Recent Users Information and verify Recent Users Information",
             "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "myfleet--page-functionality;retired-visibility,add-device,add-more-filter,-view-,clear-filter-and-search",
-        "keyword": "Scenario",
-        "line": 164,
-        "name": "Retired Visibility,add Device,add more filter, view ,Clear filter and Search",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I should navigate to application",
-            "result": {
               "status": "passed",
-              "duration": 1809000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I should Sign In into the application",
-            "result": {
-              "status": "passed",
-              "duration": 5976000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "close the terms of service window",
-            "result": {
-              "status": "passed",
-              "duration": 13135000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "Click on Manage Devices",
-            "result": {
-              "status": "passed",
-              "duration": 93000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "Click on MyFleet Tab",
-            "result": {
-              "status": "passed",
-              "duration": 806000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 165,
-            "name": "Click on Retired Tab",
-            "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-test-id=\"tabDeactivate\"]`, but never found it.\n    at MyFleetActions.clickOnRetiredTab (cypress/integration/PageObject/PageActions/MyFleetActions.js:258:9)\n    at Context.eval (cypress/integration/MyFleet/MyFleet.spec.js:92:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 166,
-            "name": "Verify the Title of MyFleet Page",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 167,
-            "name": "Click on filter of Serial Number contain and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 168,
-            "name": "Click on filter of Serial Number Does not contain and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 169,
-            "name": "Click on filter of Serial Number Equals and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 170,
-            "name": "Click on filter of Serial Number Does not equal and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 171,
-            "name": "Click on filter of Serial Number Begins with and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 172,
-            "name": "Click on filter of Serial Number Ends with and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 173,
-            "name": "Click on filter of Serial Number Blank and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 176,
-            "name": "Click on filter of Asset tag contain and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 177,
-            "name": "Click on filter of Asset tag Does not contain and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 178,
-            "name": "Click on filter of Asset tag Equals and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 179,
-            "name": "Click on filter of Asset tag Does not equal and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 180,
-            "name": "Click on filter of Asset tag Begins with and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 181,
-            "name": "Click on filter of Asset tag Ends with and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 182,
-            "name": "Click on filter of Asset tag Blank and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 185,
-            "name": "Click on filter of Model contain and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 186,
-            "name": "Click on filter of Model Does not contain and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 187,
-            "name": "Click on filter of Model Equals and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 188,
-            "name": "Click on filter of Model Does not equal and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 189,
-            "name": "Click on filter of Model Begins with and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 190,
-            "name": "Click on filter of Model Ends with and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 191,
-            "name": "Click on filter of Model Blank and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 194,
-            "name": "Click on filter of SKU contain and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 195,
-            "name": "Click on filter of SKU Does not contain and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 196,
-            "name": "Click on filter of SKU Equals and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 197,
-            "name": "Click on filter of SKU Does not equal and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 198,
-            "name": "Click on filter of SKU Begins with and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 199,
-            "name": "Click on filter of SKU Ends with and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 200,
-            "name": "Click on filter of SKU Blank and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 203,
-            "name": "Click on filter of Building contain and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 204,
-            "name": "Click on filter of Building Does not contain and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 205,
-            "name": "Click on filter of Building Equals and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 206,
-            "name": "Click on filter of Building Does not equal and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 207,
-            "name": "Click on filter of Building Begins with and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 208,
-            "name": "Click on filter of Building Ends with and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 209,
-            "name": "Click on filter of Building Blank and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 247,
-            "name": "Click on Sort Ascending and Descending for Serial Number and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 248,
-            "name": "Click on Sort Ascending and Descending for Asset Tag and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 249,
-            "name": "Click on Sort Ascending and Descending for Model and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 250,
-            "name": "Click on Sort Ascending and Descending for SKU and Verify the Result in Retired",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 252,
-            "name": "Click on the add device",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 253,
-            "name": "Enter Serial no and select device id",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 254,
-            "name": "Enter Asset Tag and Select student id",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 255,
-            "name": "Select lonar status and Device status",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 256,
-            "name": "Click on the Submit Button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 257,
-            "name": "Verify the device added successfully",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 258,
-            "name": "Click on download button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 259,
-            "name": "Click on help icon for Filtering Guide",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 260,
-            "name": "Verify the Dream Data Filtering Guide",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 262,
-            "name": "Click on deviceIcon and click on view Button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 263,
-            "name": "Verify the General Device Information",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 264,
-            "name": "Click on Edit button of General info",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 265,
-            "name": "Update Asset tag and Click on save button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 266,
-            "name": "Verfiy General info Record updated successfully",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 267,
-            "name": "Click on Edit button of Assignment",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 268,
-            "name": "Update student, building, loner status and Click on save button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 269,
-            "name": "Verfiy Assignment Record updated successfully",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 271,
-            "name": "Click on deviceIcon and click on create ticket button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 272,
-            "name": "Select failure Type, Return site",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 273,
-            "name": "Select Building and Chromebook issue",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 274,
-            "name": "Enter the Describe Your Issue",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 275,
-            "name": "Click on save button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 276,
-            "name": "Verify New Ticket is added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 278,
-            "name": "Click on deviceIcon and click on Edit Device button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 279,
-            "name": "Update Asset tag and Click on save button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 280,
-            "name": "Verfiy General info Record updated successfully",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 282,
-            "name": "Click on deviceIcon and click on add Loaner button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 283,
-            "name": "verify the ticket is added in loaner",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 284,
-            "name": "Click on deviceIcon and click on Remove Loaner button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 285,
-            "name": "verify the ticket is removed from loaner",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 287,
-            "name": "Convert Active to Retired device",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 288,
-            "name": "Verify the Device Retired successfully",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 289,
-            "name": "Click on Retired Tab",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 290,
-            "name": "Convert Retired to Active device",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 291,
-            "name": "Verify the Device Active successfully",
-            "result": {
-              "status": "skipped"
+              "duration": 84000000
             }
           }
         ]

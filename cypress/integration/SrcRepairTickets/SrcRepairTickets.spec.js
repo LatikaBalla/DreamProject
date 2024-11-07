@@ -222,6 +222,30 @@ And('Click on filter of Building Blank and Verify the Result', () => {
 And('Click on filter of Building Not blank and Verify the Result', () => {
     srt.filterNotblankB()
 })
+And('Click on filter of Return Site contain and Verify the Result', () => {
+    srt.filterContainRsite()
+})
+And('Click on filter of Return Site Does not contain and Verify the Result', () => {
+    srt.filterDoesnotcontainRsite()
+})
+And('Click on filter of Return Site Equals and Verify the Result', () => {
+    srt.filterEqualsRsite()
+})
+And('Click on filter of Return Site Does not equal and Verify the Result', () => {
+    srt.filterNotequalRsite()
+})
+And('Click on filter of Return Site Begins with and Verify the Result', () => {
+    srt.filterBeginswithRsite()
+})
+And('Click on filter of Return Site Ends with and Verify the Result', () => {
+    srt.filterEndswithRsite()
+})
+And('Click on filter of Return Site Blank and Verify the Result', () => {
+    srt.filterBlankRsite()
+})
+And('Click on filter of Return Site Not blank and Verify the Result', () => {
+    srt.filterNotblankRsite()
+})
 //rd
 And('Click on filter of Repair device contain and Verify the Result', () => {
     srt.selectFilterRepairDevice()
@@ -272,6 +296,31 @@ And('Click on filter of Asset tag Blank and Verify the Result', () => {
 And('Click on filter of Asset tag Not blank and Verify the Result', () => {
     srt.filterNotblanktag()
 })
+//StdN
+And('Click on filter of Student Name contain and Verify the Result', () => {
+    srt.filterContainStdN()
+})
+And('Click on filter of Student Name Does not contain and Verify the Result', () => {
+    srt.filterDoesnotcontainStdN()
+})
+And('Click on filter of Student Name Equals and Verify the Result', () => {
+    srt.filterEqualsStdN()
+})
+And('Click on filter of Student Name Does not equal and Verify the Result', () => {
+    srt.filterNotequalStdN()
+})
+And('Click on filter of Student Name Begins with and Verify the Result', () => {
+    srt.filterBeginswithStdN()
+})
+And('Click on filter of Student Name Ends with and Verify the Result', () => {
+    srt.filterEndswithStdN()
+})
+And('Click on filter of Student Name Blank and Verify the Result', () => {
+    srt.filterBlankStdN()
+})
+And('Click on filter of Student Name Not blank and Verify the Result', () => {
+    srt.filterNotblankStdN()
+})
 //rs
 And('Click on filter of Repair status op1 and Verify the Result', () => {
     srt.filterOption1() 
@@ -290,6 +339,28 @@ And('Click on filter of Repair status op5 and Verify the Result', () => {
 })
 And('Click on filter of Repair status op6 and Verify the Result', () => {
     srt.filterOption6() 
+})
+//InS
+And('Click on filter of In House status op1 and Verify the Result', () => {
+    srt.filterOptionIhs1()
+})
+And('Click on filter of In House status op2 and Verify the Result', () => {
+    srt.filterOptionIhs2()
+})
+And('Click on filter of In House status op3 and Verify the Result', () => {
+    srt.filterOptionIhs3()
+})
+And('Click on filter of In House status op4 and Verify the Result', () => {
+    srt.filterOptionIhs4()
+})
+And('Click on filter of In House status op5 and Verify the Result', () => {
+    srt.filterOptionIhs5()
+})
+And('Click on filter of Warranty status search and Verify the Result', () => {
+    srt.filterOptionWS1()
+})
+And('Click on filter of Warranty status Non Warranty and Verify the Result', () => {
+    srt.filterOptionWS2()
 })
 //cby
 And('Click on filter of Created By contain and Verify the Result', () => {
@@ -315,6 +386,34 @@ And('Click on filter of Created By Blank and Verify the Result', () => {
 })
 And('Click on filter of Created By Not blank and Verify the Result', () => {
     srt.filterNotblankCBy()
+})
+//CDate
+And('Click on filter of Last Modified Date contain and Verify the Result', () => {
+    srt.filteContainCDate()
+})
+And('Click on filter of Last Modified Date Does not contain and Verify the Result', () => {
+    srt.filterDoesnotcontainCDate()
+})
+And('Click on filter of Last Modified Date Equals and Verify the Result', () => {
+    srt.filterEqualsCDate()
+})
+And('Click on filter of Last Modified Date Does not equal and Verify the Result', () => {
+    srt.filterNotequalCDate()
+})
+And('Click on filter of Last Modified Date Before and Verify the Result', () => {
+    srt.filterBeforeCDate()
+})
+And('Click on filter of Last Modified Date After and Verify the Result', () => {
+    srt.filterAfterCDate()
+})
+And ('Click on filter of Last Modified Date Between with and Verify the Result',()=>{
+    srt.filterBetweenCDate()
+})
+And('Click on filter of Last Modified Date Blank and Verify the Result', () => {
+    srt.filterBlankCDate()
+})
+And('Click on filter of Last Modified Date Not blank and Verify the Result', () => {
+    srt.filterNotblankCDate()
 })
 //Ldate
 And('Click on filter of Last Modified Date contain and Verify the Result', () => {

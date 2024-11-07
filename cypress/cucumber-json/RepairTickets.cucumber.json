@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1852000000
+              "duration": 2959000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 9795000000
+              "duration": 6776000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 14135000000
+              "duration": 14094000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 76000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of RepairTickets Page",
             "result": {
               "status": "passed",
-              "duration": 1730000000
+              "duration": 1039000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click on filter of Ticket Number contain and Verify the Result",
             "result": {
               "status": "failed",
-              "duration": 33508000000,
+              "duration": 33489000000,
               "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[placeholder='Filter...']`, but never found it.\n    at RepairTicketsElements.fieldValueElement (cypress/integration/PageObject/PageElements/RepairTicketsElements.js:145:18)\n    at RepairTicketsActions.selectFilterTicketNumber (cypress/integration/PageObject/PageActions/RepairTicketsActions.js:160:11)\n    at Context.eval (cypress/integration/RepairTickets/RepairTickets.spec.js:107:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
@@ -1246,7 +1246,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 5579000000
+              "duration": 10843000000
             }
           },
           {
@@ -1256,7 +1256,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6196000000
+              "duration": 5331000000
             }
           },
           {
@@ -1266,7 +1266,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 14126000000
+              "duration": 14133000000
             }
           },
           {
@@ -1276,7 +1276,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 80000000
+              "duration": 76000000
             }
           },
           {
@@ -1286,7 +1286,7 @@
             "name": "Click on Sort Ascending and Descending for Ticket Number and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 3811000000
+              "duration": 3216000000
             }
           },
           {
@@ -1296,7 +1296,7 @@
             "name": "Click on Sort Ascending and Descending for Repair Type and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1576000000
+              "duration": 1511000000
             }
           },
           {
@@ -1306,7 +1306,7 @@
             "name": "Click on Sort Ascending and Descending for Serial Number and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1526000000
+              "duration": 1529000000
             }
           },
           {
@@ -1316,7 +1316,7 @@
             "name": "Click on Sort Ascending and Descending for Building and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1570000000
+              "duration": 1517000000
             }
           },
           {
@@ -1326,7 +1326,7 @@
             "name": "Click on Sort Ascending and Descending for Return Site and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1568000000
+              "duration": 1518000000
             }
           },
           {
@@ -1336,7 +1336,7 @@
             "name": "Click on Sort Ascending and Descending for Repair Device and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1574000000
+              "duration": 1508000000
             }
           },
           {
@@ -1346,7 +1346,7 @@
             "name": "Click on Sort Ascending and Descending for Asset Tag and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1524000000
+              "duration": 1500000000
             }
           },
           {
@@ -1356,7 +1356,7 @@
             "name": "Click on Sort Ascending and Descending for Student Info and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1553000000
+              "duration": 1507000000
             }
           },
           {
@@ -1366,7 +1366,7 @@
             "name": "Click on Sort Ascending and Descending for Student Technician and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1596000000
+              "duration": 1532000000
             }
           },
           {
@@ -1376,7 +1376,7 @@
             "name": "Click on Sort Ascending and Descending for Repair Status and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1569000000
+              "duration": 1519000000
             }
           },
           {
@@ -1396,7 +1396,7 @@
             "name": "Click on Sort Ascending and Descending for Repair Box and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1576000000
+              "duration": 1649000000
             }
           },
           {
@@ -1406,7 +1406,7 @@
             "name": "Click on Sort Ascending and Descending for Created Date and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1568000000
+              "duration": 1536000000
             }
           },
           {

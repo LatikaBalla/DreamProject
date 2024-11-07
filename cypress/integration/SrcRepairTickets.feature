@@ -13,16 +13,6 @@ Feature:SrcRepairTickets Page Functionality
 
   Scenario: visibility check, Create Student repair ticket and Search
     And Verify the Title of SrcRepairTickets Page
-    And Click on filter of Record Id Equals and Verify the Result
-    And Click on filter of Record Id Does not equal and Verify the Result
-    And Click on filter of Record Id Greater than and Verify the Result
-    And Click on filter of Record Id Greater than or equal to and Verify the Result
-    And Click on filter of Record Id Less than and Verify the Result
-    And Click on filter of Record Id Less than or equal to and Verify the Result
-    And Click on filter of Record Id Between and Verify the Result
-    And Click on filter of Record Id Blank and Verify the Result
-    And Click on filter of Record Id Not blank and Verify the Result
-
     And Click on filter of Ticket Number contain and Verify the Result
     And Click on filter of Ticket Number Does not contain and Verify the Result
     And Click on filter of Ticket Number Equals and Verify the Result
@@ -32,6 +22,24 @@ Feature:SrcRepairTickets Page Functionality
     And Click on filter of Ticket Number Blank and Verify the Result
     And Click on filter of Ticket Number Not blank and Verify the Result
     And Click on filter of Ticket Number contain and Verify the Result
+
+    And Click on filter of Building contain and Verify the Result
+    And Click on filter of Building Does not contain and Verify the Result
+    And Click on filter of Building Equals and Verify the Result
+    And Click on filter of Building Does not equal and Verify the Result
+    And Click on filter of Building Begins with and Verify the Result
+    And Click on filter of Building Ends with and Verify the Result
+    And Click on filter of Building Blank and Verify the Result
+    And Click on filter of Building Not blank and Verify the Result
+
+    And Click on filter of Return Site contain and Verify the Result
+    And Click on filter of Return Site Does not contain and Verify the Result
+    And Click on filter of Return Site Equals and Verify the Result
+    And Click on filter of Return Site Does not equal and Verify the Result
+    And Click on filter of Return Site Begins with and Verify the Result
+    And Click on filter of Return Site Ends with and Verify the Result
+    And Click on filter of Return Site Blank and Verify the Result
+    And Click on filter of Return Site Not blank and Verify the Result
 
     And Click on filter of Repair type contain and Verify the Result
     And Click on filter of Repair type Does not contain and Verify the Result
@@ -69,13 +77,6 @@ Feature:SrcRepairTickets Page Functionality
     And Click on filter of Asset tag Blank and Verify the Result
     And Click on filter of Asset tag Not blank and Verify the Result
 
-    And Click on filter of Repair status op1 and Verify the Result
-    And Click on filter of Repair status op2 and Verify the Result
-    And Click on filter of Repair status op3 and Verify the Result
-    And Click on filter of Repair status op4 and Verify the Result
-    And Click on filter of Repair status op5 and Verify the Result
-    And Click on filter of Repair status op6 and Verify the Result
-
     And Click on filter of Internal Technician contain and Verify the Result
     And Click on filter of Internal Technician Does not contain and Verify the Result
     And Click on filter of Internal Technician Equals and Verify the Result
@@ -85,6 +86,31 @@ Feature:SrcRepairTickets Page Functionality
     And Click on filter of Internal Technician Blank and Verify the Result
     And Click on filter of Internal Technician Not blank and Verify the Result
 
+    And Click on filter of Student Name contain and Verify the Result
+    And Click on filter of Student Name Does not contain and Verify the Result
+    And Click on filter of Student Name Equals and Verify the Result
+    And Click on filter of Student Name Does not equal and Verify the Result
+    And Click on filter of Student Name Begins with and Verify the Result
+    And Click on filter of Student Name Ends with and Verify the Result
+    And Click on filter of Student Name Blank and Verify the Result
+    And Click on filter of Student Name Not blank and Verify the Result
+
+    And Click on filter of Repair status op1 and Verify the Result
+    And Click on filter of Repair status op2 and Verify the Result
+    And Click on filter of Repair status op3 and Verify the Result
+    And Click on filter of Repair status op4 and Verify the Result
+    And Click on filter of Repair status op5 and Verify the Result
+    And Click on filter of Repair status op6 and Verify the Result
+
+    And Click on filter of In House status op1 and Verify the Result
+    And Click on filter of In House status op2 and Verify the Result
+    And Click on filter of In House status op3 and Verify the Result
+    And Click on filter of In House status op4 and Verify the Result
+    And Click on filter of In House status op5 and Verify the Result
+
+    And Click on filter of Warranty status search and Verify the Result
+    And Click on filter of Warranty status Non Warranty and Verify the Result
+
     And Click on filter of Created By contain and Verify the Result
     And Click on filter of Created By Does not contain and Verify the Result
     And Click on filter of Created By Equals and Verify the Result
@@ -93,6 +119,14 @@ Feature:SrcRepairTickets Page Functionality
     And Click on filter of Created By Ends with and Verify the Result
     And Click on filter of Created By Blank and Verify the Result
     And Click on filter of Created By Not blank and Verify the Result
+
+    And Click on filter of Created Date Equals and Verify the Result
+    And Click on filter of Created Date Does not equal and Verify the Result
+    And Click on filter of Created Date Before and Verify the Result
+    And Click on filter of Created Date After and Verify the Result
+    And Click on filter of Created Date Between with and Verify the Result
+    And Click on filter of Created Date Blank and Verify the Result
+    And Click on filter of Created Date Not blank and Verify the Result
 
     And Click on filter of Last Modified Date Equals and Verify the Result
     And Click on filter of Last Modified Date Does not equal and Verify the Result
@@ -112,13 +146,13 @@ Feature:SrcRepairTickets Page Functionality
     Then Verify the Details of student repair ticket
     Then Click on Add Repair Image and Verify
     And Click on Add Note and Verify
-# And Click on Add Line and Verify
-# And Click on the Edit Ticket Button
-# Then Update the Technician and Repair Status
-# And Click on Update Button
-# Then Verify Updated successfully
+  # And Click on Add Line and Verify
+  # And Click on the Edit Ticket Button
+  # Then Update the Technician and Repair Status
+  # And Click on Update Button
+  # Then Verify Updated successfully
 
-Scenario: SrcRepairTickets Sorting -Ascending and descending
+  Scenario: SrcRepairTickets Sorting -Ascending and descending
     And Click on Sort Ascending and Descending for Record ID and Verify the Result
     And Click on Sort Ascending and Descending for Ticket Number and Verify the Result
     And Click on Sort Ascending and Descending for Repair Type and Verify the Result

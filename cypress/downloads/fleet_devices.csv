@@ -1,0 +1,279 @@
+serial_number,asset_tag,device_model,device_sku,building_name,is_verified,organizational_unit,student_external_user_full_name,loaner_status,status
+Test123Test,AssetTestEdit,1234Ab6,abcdefg,Proterworth,true,/,Demo Test,Not In Loaner Pool,Active
+VIVATEST55Test,AssetTestEdit,3100,G4YY1,Proterworth,true,/,,In Loaner Pool,Active
+423312,3121212,CA023NR,4BS38UA,,true,/,KRISHANA,Not In Loaner Pool,Active
+VIVATEST68Test,21,3100,G4YY1,GVL,true,/,Md Raja,Checked Out,Active
+VIVATEST64Test,24,3100,G4YY1,GVL,true,/,,Not In Loaner Pool,Active
+v123,VAL-1235,11AG8EE,2D608UT,,false,,,Not In Loaner Pool,Active
+12345620,12345620,Generic Chromebook,VT-Generic,,true,/,Ryker Swenson,Not In Loaner Pool,Active
+21212,12121,CA023NR,4BS38UA,,true,/,Shiv,Not In Loaner Pool,Active
+121212,12121,CA023NR,4BS38UA,,true,/,KRISHANA,Checked Out,Active
+Andreanne,Vito,O/YcLQrj1D,:4ZNi;u$Nl,Proterworth,true,/,Maleja DB test,Checked Out,Active
+Yolanda,Mandy,1234Ab6,abcdefg,Proterworth,true,/,Akash,Checked Out,Active
+Candelario,Amiya,qQVPHyBgEN,C45rrr|y&C,Proterworth,true,/,Ryker Swenson,Checked Out,Active
+P206XP1336Test,mXdwJ\^_Pp,DEMOCBK,DEMO-CBK,Proterworth,true,/,Katie Long,Checked Out,Active
+P206XP44Test,")""9!Ojnq:t",DEMOCBK,DEMO-CBK,Proterworth,true,/,Katie Long,Checked Out,Active
+P206XP42Test,KFr:C@N+l*,DEMOCBK,DEMO-CBK,Proterworth,true,/,Katie Long,Checked Out,Active
+P206XP56Test,;CMtHWVBC),DEMOCBK,DEMO-CBK,Proterworth,true,/,Katie Long,Not In Loaner Pool,Active
+P206P101Test,"DP8j_mY\o""",DEMOCBK,DEMO-CBK,Proterworth,true,/,Katie Long,Not In Loaner Pool,Active
+Bridget,Jailyn,K$<7ec9P%X,0J%^a^LO8V,Proterworth,true,/,Akash,Checked Out,Active
+Mike,Roxane,qQVPHyBgEN,C45rrr|y&C,Proterworth,true,/,Janet Owens,Checked Out,Active
+Cecil,Breana,1234Ab6,abcdefg,Proterworth,true,/,Md Raja,Checked Out,Active
+VIVATEST27Test,1,Generic Chromebook,VT-Generic,Test to address,true,/,Maleja DB test,Checked Out,Active
+12345619,12345619,Generic Chromebook,VT-Generic,,true,/,Md Raja,Checked Out,Active
+VIVATEST47Test,,Generic Chromebook,VT-Generic,Test to address,true,/,Maleja DB test,Checked Out,Active
+VIVATEST26Test,12345612345612,Generic Chromebook,VT-Generic,,true,/,Maleja DB test,Checked Out,Active
+VIVATEST2Test,VivaTEST2Test,Generic Chromebook,VT-Generic,,true,/,Maleja,Checked Out,Active
+VIVATEST22Test,123,Generic Chromebook,VT-Generic,,true,/,Lyanna Mormont,Checked Out,Active
+213213124Test,26,Generic Chromebook,VT-Generic,,true,/,Md Raja,Checked Out,Active
+P206XP41Test,673TY,DEMOCBK,DEMO-CBK,Proterworth,true,/,sohan,Checked Out,Active
+Taya,Stanford,O/YcLQrj1D,:4ZNi;u$Nl,Proterworth,true,/,Maleja DB test,Checked Out,Active
+A111036545,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+SerialTest1238787,test1,11AG8EE,2D608UT,Test to address,true,/,Sohan Saini,Not In Loaner Pool,Active
+VIVATEST76Test,test10231,3100,G4YY1,123 TestMalejawjqnejqe,true,/,demo_practicestudent@vivacitytech.com,Not In Loaner Pool,Active
+SerialTest123,6767,14EG2,82M1000JUS,Brookdale ES,true,/,Lyanna Mormont,Checked Out,Active
+5CD121SK42,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+VIVATEST42Test,,3100,G4YY1,,true,/,,Not In Loaner Pool,Active
+P206P12Test,3,C14 G1,21CAS0S900-SMB,GVL,true,/,Ryker Swenson,Checked Out,Active
+A111036614,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+A111036541,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+A111036593,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+A141000572,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+A141000556,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+A111036589,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+A141000568,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+A111036571,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+5CD0263QZT,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD0260CKY,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD02672HW,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD0266TQ8,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD0269V2F,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD0269Y4S,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD026FFXC,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD026J1MK,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD026J6NP,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD026J04Z,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD026LR9L,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD026LRG8,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD026LS7T,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD026JG7N,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD0295GQ7,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD0295L28,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD0300LTS,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD029L2P9,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD029KN6N,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD029L08Q,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD0303WWT,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD0313GK9,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD030MPND,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD026LQ6C,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD02954XX,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD026LSDF,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD121YX1Y,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+5CD121MQX2,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+5CD121S5GB,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+pf1w1647,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+5CD121MQQL,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+5CD121RSGK,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+5CD121YX17,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+5CD121MSLH,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+5CD117FQ7J,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+5CD117FBK3,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+5CD121MSTW,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+A141000566,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+A141000564,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+A141000563,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+A111038830,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+A141000559,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+A111036528,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+Maximus,Joanne,"L,#IOO`/>K",u>/bi8/=wJ,Proterworth,true,/,Douglas Thomas,Not In Loaner Pool,Active
+Lavada,Hillard,_e[i95O]1+,6Rg%^''G[0,Proterworth,true,/,Jamie Smith,Not In Loaner Pool,Active
+Molly,Dayton,qQVPHyBgEN,C45rrr|y&C,Proterworth,true,/,Robert Reynolds,Not In Loaner Pool,Active
+Clifton,Broderick,O/YcLQrj1D,:4ZNi;u$Nl,Proterworth,true,/,Meghan Lowe,Checked Out,Active
+Jedidiah,Jane,qQVPHyBgEN,C45rrr|y&C,Proterworth,true,/,Ryker Swenson,Checked Out,Active
+Maegan,Aliya,"L,#IOO`/>K",u>/bi8/=wJ,Proterworth,true,/,Janet Owens,Checked Out,Active
+Test,Eeeee,11AG8EE,2D608UT,,false,,Valerie Rodriguez,Not In Loaner Pool,Active
+A141000554,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+5CD0263RW2,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+VIVATEST86Test,Asset,Generic Chromebook,VT-Generic,,true,/,,Not In Loaner Pool,Active
+11180306BD3E,,DFLY,6H5F9UTR,,true,/,,Not In Loaner Pool,Active
+8675309223344,8675309223344,G8EE,1A762UT,,true,/,,Not In Loaner Pool,Active
+P2087N87,,Unidentified,VT-Unidentified,,false,/,,,Active
+P20769TX,,Unidentified,VT-Unidentified,,false,/Test OU/Dev Test OU/Developers/2022,,,Active
+5CD031HRD4,,Unidentified,VT-Unidentified,,false,/Google Bootcamp Users,,,Active
+P206P19Test,1h7A[Wp<KE,C14 G1,21CAS0S900-SMB,Proterworth,true,/,Ryker Swenson,Checked Out,Active
+P206P18Test,"xb*wLw2""Cp",C14 G1,21CAS0S900-SMB,Proterworth,true,/,Ryker Swenson,Checked Out,Active
+P206XP40Test,"ClWL!F""""Zo",DEMOCBK,DEMO-CBK,Proterworth,true,/,Katie Long,Not In Loaner Pool,Active
+P20XP102Test,Lg.2ZOl$/y,DEMOCBK,DEMO-CBK,Proterworth,true,/,Katie Long,Checked Out,Active
+Basdas1122,1,TAB10,NX.H0BAA.001,,true,/,Akash,Not In Loaner Pool,Active
+1100901Test,12333,Generic Chromebook,VT-Generic,,true,/,,In Loaner Pool,Active
+VIVATEST119Test,"""0HOpc*q<x",Generic Chromebook,VT-Generic,Test Maleja,true,/,Maleja,Checked Out,Active
+VIVATEST44Test,,Generic Chromebook,VT-Generic,,true,/,,In Loaner Pool,Active
+VIVATEST23Test,8,Generic Chromebook,VT-Generic,,true,/,,Not In Loaner Pool,Active
+VIVATEST85Test,6767,3100,G4YY1,Brookdale ES,true,/,Maleja DB test,Not In Loaner Pool,Active
+A111036597,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+1212019820910291,11989899898981,CB5,NX.GL4AA.010,,true,/,test,Checked Out,Active
+pf1vgmtm,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+pf1vhn9k,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+pf1w19b5,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+pf1watxe,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+pf1wf948,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+pf1wg2ew,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+1730110395937,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+1730893142714,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+A141000563,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+P206P101Test,"DP8j_mY\o""",DEMOCBK,DEMO-CBK,Proterworth,true,/,Katie Long,Not In Loaner Pool,Active
+5CD0295GQ7,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+1730851920077,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+A141000564,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+pf1bve6f,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+pf266nxp,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+1730119866251,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+1730711340726,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+5CD029L2P9,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+A111036614,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+1730712648247,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+Maximus,Joanne,"L,#IOO`/>K",u>/bi8/=wJ,Proterworth,true,/,Douglas Thomas,Not In Loaner Pool,Active
+A111036611,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+1730120540023,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+P2087N87,,Unidentified,VT-Unidentified,,false,/,,,Active
+120910291,121212,G5,3PD95UT,,true,/,Maleja,Checked Out,Active
+Maegan,Aliya,"L,#IOO`/>K",u>/bi8/=wJ,Proterworth,true,/,Janet Owens,Checked Out,Active
+1730121419109,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+pf237mxr,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+A111036579,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+5CD026LWC3,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD0266TQ8,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+pf1wf948,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+A141000559,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+5CD026LS7T,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+A118000315,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+1730892988954,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+pf265rr3,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+1730812763778,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+5CD117FBK3,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+5CD0313GK9,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+1730956242662,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+pf239vty,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+1730120433424,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+P206P16Test,@zc`T'gBp@,C14 G1,21CAS0S900-SMB,Proterworth,true,/,Ryker Swenson,Checked Out,Active
+P20769TX,,Unidentified,VT-Unidentified,,false,/Test OU/Dev Test OU/Developers/2022,,,Active
+Taya,Stanford,O/YcLQrj1D,:4ZNi;u$Nl,Proterworth,true,/,Maleja DB test,Checked Out,Active
+5CD121SK42,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+5CD117FQ7J,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+5CD025FDLS,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+1730903977107,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+5CD121MQQL,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+A118000253,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+v123,VAL-1235,11AG8EE,2D608UT,,false,,,Not In Loaner Pool,Active
+5CD0295CPD,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD028H4Z1,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+1730122903329,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+pf1t1f71,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+1730118792850,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+5CD02954XX,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+A111036567,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+5CD0300LTS,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+A141000572,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+1730118669924,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+pf24av9y,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+5CD026J04Z,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+SerialTest12387875,345,11AG8EE,2D608UT,South Point Elementary_,false,,Maleja DB test,In Loaner Pool,Active
+5CD031HRD4,,Unidentified,VT-Unidentified,,false,/Google Bootcamp Users,,,Active
+A111036527,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+1730106391071,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,In Loaner Pool,Active
+1730892108869,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+P206XP56Test,;CMtHWVBC),DEMOCBK,DEMO-CBK,Proterworth,true,/,Katie Long,Not In Loaner Pool,Active
+A118000088,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+Bridget,Jailyn,K$<7ec9P%X,0J%^a^LO8V,Proterworth,true,/,Akash,Checked Out,Active
+1730956113902,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+5CD026FG5M,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+1730889533416,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+5CD025J5ZZ,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD026LR9L,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD026J1MK,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+1730891975201,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+1730892775214,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+TEST085,me77,1234Ab6,abcdefg,GVL,true,/,Katie Long,Checked Out,Active
+1730120668587,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+5CD030MPND,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD022DBYC,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+A141000566,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+1234560910,1234560910,DFLY,6H5F9UTR,,true,/,,Not In Loaner Pool,Active
+5CD121RSGK,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+A141000539,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+5CD0300P7Y,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+A111036605,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+1730892873913,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+5CD02954YG,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD026LY26,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+1730123823039,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+VIVATEST13Test,432786,3100,G4YY1,,true,/,,Not In Loaner Pool,Active
+1730891573205,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+1730892328722,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+5CD0303WWT,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD0260FKK,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+1730118560146,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+1730890243059,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+1730890727362,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+pf1t15rg,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+1730890599208,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+5CD028H56C,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+pf1w1647,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+MA,VAL-1234,11eG3,20GE0002US,Proterworth,false,,,Not In Loaner Pool,Active
+5CD121MQX2,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+A141000554,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+5CD026LY31,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+1730117211501,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+1730121130033,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+5CD028HV6Z,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+A118000300,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+1730120838943,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+5CD029KN6N,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+pf2374wt,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+5CD0295L28,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+1730110235910,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+5CD0269V2F,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+1730891329405,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+5CD121MSLH,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+A141000556,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+1730120979237,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+VIVATEST1Test,2,3100,G4YY1,,true,/,,Not In Loaner Pool,Active
+1730121263070,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+pf2hfnvc,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+SerialTest12387875h,test,11AG8EE,2D608UT,,false,,Valentina Davis,Not In Loaner Pool,Active
+1730118946689,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+pf1t985y,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+A111036528,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+5CD121YX1Y,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+pf1w19b5,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+Bryon,Tyrique,xu<-je2r<k,!YMl0d`<R%,Proterworth,true,/,Claire Jones,Not In Loaner Pool,Active
+5CD121YX17,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+pf239feb,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+Clifton,Broderick,O/YcLQrj1D,:4ZNi;u$Nl,Proterworth,true,/,Meghan Lowe,Checked Out,Active
+pf1wxrld,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+Sunny,Cesar,"L,#IOO`/>K",u>/bi8/=wJ,Proterworth,true,/,Ryker Swenson,Checked Out,Active
+5CD031J7GP,,Unidentified,VT-Unidentified,,false,/Devices,,,Active
+1212019820910291,11989899898981,CB5,NX.GL4AA.010,,true,/,test,Checked Out,Active
+A111036582,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+Basdas1122,1,TAB10,NX.H0BAA.001,,true,/,Akash,Not In Loaner Pool,Active
+A111036571,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+5CD02954Y4,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+5CD121S5WV,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+5CD026JG7N,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+VIVATEST49Test,,3100,G4YY1,,true,/,Lyanna Mormont,Not In Loaner Pool,Active
+1730892027459,Tyrique,11AG8EE,2D608UT,,false,,Vivienne Garcia,Not In Loaner Pool,Active
+pf2774j7,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+Lavada,Hillard,_e[i95O]1+,6Rg%^''G[0,Proterworth,true,/,Jamie Smith,Not In Loaner Pool,Active
+pf1wg2ew,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+pf24srv6,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+5CD121S5GB,,G8EE,16W64UTR,,true,/,,Not In Loaner Pool,Active
+pf1vjncn,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+5CD026LRG8,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+A111036597,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+5CD026LSDF,,G8EE,16W64UT,,true,/,,Not In Loaner Pool,Active
+pf1vgmtm,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+pf1watxe,,IDEAPAD3,82BA0000US,,true,/,,Not In Loaner Pool,Active
+A111036581,,CA023NR,4BS38UAR,,true,/,,Not In Loaner Pool,Active
+123461AC,673TtY,11MKG9EE,436B7UT,Shawnee High School,true,/,Katie Long,Not In Loaner Pool,Active
+Molly,Dayton,qQVPHyBgEN,C45rrr|y&C,Proterworth,true,/,Robert Reynolds,Not In Loaner Pool,Active

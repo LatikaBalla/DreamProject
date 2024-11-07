@@ -52,7 +52,8 @@ export class MyFleetActions {
       cy.get('[aria-label="Edit Device Assignment"]').click({ force: true })
    }
    editGeneral() {
-      mf.assetTagElement().clear({ force: true }).type(tdata.myFleet.serialnoEdit, { force: true })
+      mf.assetTagElement().clear({ force: true }).type(tdata.myFleet.assetTagEdit, { force: true })
+
    }
    editAssignment() {
       mf.studentinfoElement().click({ force: true })
@@ -155,27 +156,28 @@ export class MyFleetActions {
       mf.addFilterElement().eq(1).click({ force: true })
       mf.fieldNameElement().eq(1).click({ force: true })
       mf.fieldOpElement().eq(0).click({ force: true })
-      mf.fieldValueElement().type(tdata.myFleet.assettag)
+      mf.fieldValueElement().type(tdata.myFleet.assetTagEdit)
       mf.applyElement().click({ force: true })
       cy.wait(1000)
       mf.deviceIconElement().eq(1).click({ force: true })
       mf.addLoanerElement().click({ force: true })
    }
-   clickOnRemoveLoaner(){
+   clickOnRemoveLoaner() {
       cy.get('[data-testid="FilterAltIcon"]').click({ force: true })
       mf.addFilterElement().eq(1).click({ force: true })
       mf.fieldNameElement().eq(1).click({ force: true })
       mf.fieldOpElement().eq(0).click({ force: true })
-      mf.fieldValueElement().type(tdata.myFleet.assettag)
+      mf.fieldValueElement().type(tdata.myFleet.assetTagEdit)
       mf.applyElement().click({ force: true })
       cy.wait(1000)
       mf.deviceIconElement().eq(1).click({ force: true })
       mf.removeLoanerElement().click({ force: true })
+      cy.get('[data-testid="FilterAltIcon"]').click({ force: true })
    }
    verifyaddTicketLoaner() {
       dash.messageElement().should('contain', tdata.myFleet.addLoanermsg)
    }
-   verifyRemoveTicketLoaner(){
+   verifyRemoveTicketLoaner() {
       dash.messageElement().should('contain', tdata.myFleet.removeLoanermsg)
    }
    clickOnEditDevice() {
@@ -242,11 +244,12 @@ export class MyFleetActions {
       mf.applyElement().click({ force: true })
       cy.wait(1000)
       mf.deviceIconElement().eq(1).click({ force: true })
-      cy.get('[href="/devices"]').eq(4).click({ force: true })
+      cy.get('[href="/devices"]').eq(3).click({ force: true })
       cy.get('[type="button"]').contains("Confirm").click({ force: true })
    }
    clickOnHelpIcon() {
       mf.filterHelpElement().click({ force: true })
+      cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
    }
    verifyfilteringGuide() {
       cy.contains('Dream Data Filtering Guide').should('be.visible')
@@ -291,7 +294,7 @@ export class MyFleetActions {
       cy.get('[type="button"]').contains('Storage Information').click({ force: true })
    }
    verifyStorage() {
-      cy.get('.css-1tqv6h6').contains('Storage Information').should('be.visible', { force: true })
+      cy.get('.css-1qw96cp').contains('Storage Information').should('be.visible', { force: true })
    }
    clickOnBootPerformanceReport() {
       cy.get('[type="button"]').contains('Boot Performance Report').click({ force: true })

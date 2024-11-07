@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 2759000000
+              "duration": 1948000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6586000000
+              "duration": 5190000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 15098000000
+              "duration": 15127000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 78000000
+              "duration": 83000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on StudentRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 983000000
+              "duration": 959000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Click on SrcRepairTickets tab",
             "result": {
               "status": "passed",
-              "duration": 2086000000
+              "duration": 2081000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Verify the Title of SrcRepairTickets Page",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 14000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Click on filter of Record Id Equals and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 2579000000
+              "duration": 2610000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Click on filter of Record Id Does not equal and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1615000000
+              "duration": 1700000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Click on filter of Record Id Greater than and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1669000000
+              "duration": 1744000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Click on filter of Record Id Greater than or equal to and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1591000000
+              "duration": 1698000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Click on filter of Record Id Less than and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1660000000
+              "duration": 1753000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on filter of Record Id Less than or equal to and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1639000000
+              "duration": 1739000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Click on filter of Record Id Between and Verify the Result",
             "result": {
               "status": "failed",
-              "duration": 5458000000,
+              "duration": 5243000000,
               "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[placeholder=\"From\"]`, but never found it.\n    at SrcRepairTicketsActions.filterBetweenRI (cypress/integration/PageObject/PageActions/SrcRepairTicketsActions.js:201:11)\n    at Context.eval (cypress/integration/SrcRepairTickets/SrcRepairTickets.spec.js:117:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
@@ -912,7 +912,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1502000000
+              "duration": 740000000
             }
           },
           {
@@ -922,7 +922,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5245000000
+              "duration": 4393000000
             }
           },
           {
@@ -932,7 +932,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 15142000000
+              "duration": 15156000000
             }
           },
           {
@@ -942,7 +942,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 83000000
+              "duration": 86000000
             }
           },
           {
@@ -952,7 +952,7 @@
             "name": "Click on StudentRepairCenter tab",
             "result": {
               "status": "passed",
-              "duration": 829000000
+              "duration": 604000000
             }
           },
           {
@@ -962,7 +962,7 @@
             "name": "Click on SrcRepairTickets tab",
             "result": {
               "status": "passed",
-              "duration": 2149000000
+              "duration": 2159000000
             }
           },
           {
@@ -972,7 +972,7 @@
             "name": "Click on Sort Ascending and Descending for Record ID and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1594000000
+              "duration": 1658000000
             }
           },
           {
@@ -982,7 +982,7 @@
             "name": "Click on Sort Ascending and Descending for Ticket Number and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1585000000
+              "duration": 1598000000
             }
           },
           {
@@ -992,7 +992,7 @@
             "name": "Click on Sort Ascending and Descending for Repair Type and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1546000000
+              "duration": 1615000000
             }
           },
           {
@@ -1002,7 +1002,7 @@
             "name": "Click on Sort Ascending and Descending for Serial Number and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1505000000
+              "duration": 1512000000
             }
           },
           {
@@ -1012,7 +1012,7 @@
             "name": "Click on Sort Ascending and Descending for Repair Device and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1552000000
+              "duration": 1585000000
             }
           },
           {
@@ -1022,7 +1022,7 @@
             "name": "Click on Sort Ascending and Descending for Asset Tag and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1507000000
+              "duration": 1545000000
             }
           },
           {
@@ -1032,7 +1032,7 @@
             "name": "Click on Sort Ascending and Descending for Repair Status and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1523000000
+              "duration": 1533000000
             }
           },
           {
@@ -1042,7 +1042,7 @@
             "name": "Click on Sort Ascending and Descending for Student Technician Name and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1566000000
+              "duration": 1599000000
             }
           },
           {
@@ -1052,7 +1052,7 @@
             "name": "Click on Sort Ascending and Descending for Student Name and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1538000000
+              "duration": 1578000000
             }
           },
           {
@@ -1062,7 +1062,7 @@
             "name": "Click on Sort Ascending and Descending for Created By and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1514000000
+              "duration": 1520000000
             }
           },
           {
@@ -1072,7 +1072,7 @@
             "name": "Click on Sort Ascending and Descending for Last Modified Date and Verify the Result",
             "result": {
               "status": "passed",
-              "duration": 1514000000
+              "duration": 1524000000
             }
           }
         ]
