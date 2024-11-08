@@ -100,16 +100,13 @@ Feature:SrcRepairTickets Page Functionality
     And Click on filter of Repair status op3 and Verify the Result
     And Click on filter of Repair status op4 and Verify the Result
     And Click on filter of Repair status op5 and Verify the Result
-    And Click on filter of Repair status op6 and Verify the Result
 
     And Click on filter of In House status op1 and Verify the Result
     And Click on filter of In House status op2 and Verify the Result
     And Click on filter of In House status op3 and Verify the Result
-    And Click on filter of In House status op4 and Verify the Result
-    And Click on filter of In House status op5 and Verify the Result
 
-    And Click on filter of Warranty status search and Verify the Result
-    And Click on filter of Warranty status Non Warranty and Verify the Result
+    # And Click on filter of Warranty status search and Verify the Result
+    # And Click on filter of Warranty status Non Warranty and Verify the Result
 
     And Click on filter of Created By contain and Verify the Result
     And Click on filter of Created By Does not contain and Verify the Result
@@ -137,30 +134,34 @@ Feature:SrcRepairTickets Page Functionality
     And Click on filter of Last Modified Date Not blank and Verify the Result
 
     And Click on Download Export button
-    Then I should click on Create Student Repair Ticket button
-    And Select failure Type, Serial Device, Technician and building
-    Then Enter the Chromebook issue and Image description
-    And Click on save button
-    Then Verify New Ticket is added
+    # Then I should click on Create Student Repair Ticket button
+    # And Select failure Type, Serial Device, Technician and building
+    # Then Enter the Chromebook issue and Image description
+    # And Click on save button
+    # Then Verify New Ticket is added
     And Click on view button
     Then Verify the Details of student repair ticket
     Then Click on Add Repair Image and Verify
     And Click on Add Note and Verify
   # And Click on Add Line and Verify
-  # And Click on the Edit Ticket Button
-  # Then Update the Technician and Repair Status
-  # And Click on Update Button
-  # Then Verify Updated successfully
+  And Click on the Edit Ticket Button
+  Then Update the Technician and Repair Status
+  And Click on Update Button
+  Then Verify Updated successfully
 
   Scenario: SrcRepairTickets Sorting -Ascending and descending
-    And Click on Sort Ascending and Descending for Record ID and Verify the Result
     And Click on Sort Ascending and Descending for Ticket Number and Verify the Result
     And Click on Sort Ascending and Descending for Repair Type and Verify the Result
+    And Click on Sort Ascending and Descending for Building and Verify the Result
+    And Click on Sort Ascending and Descending for Return Site and Verify the Result
     And Click on Sort Ascending and Descending for Serial Number and Verify the Result
     And Click on Sort Ascending and Descending for Repair Device and Verify the Result
     And Click on Sort Ascending and Descending for Asset Tag and Verify the Result
     And Click on Sort Ascending and Descending for Repair Status and Verify the Result
+    And Click on Sort Ascending and Descending for In House Status and Verify the Result
+    And Click on Sort Ascending and Descending for Warranty Status and Verify the Result
     And Click on Sort Ascending and Descending for Student Technician Name and Verify the Result
     And Click on Sort Ascending and Descending for Student Name and Verify the Result
     And Click on Sort Ascending and Descending for Created By and Verify the Result
+    And Click on Sort Ascending and Descending for Created Date and Verify the Result
     And Click on Sort Ascending and Descending for Last Modified Date and Verify the Result

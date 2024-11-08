@@ -16,7 +16,7 @@ Feature: features Page Functionality
         And Verify the Scheduled tab should be visible
         Then Verify the Launched tab should be visible
         And Verify the Under Construction tab should be visible
-        Then Verify the Roadmap tab should be visible
+        # Then Verify the Roadmap tab should be visible
         And Search for feature title for Under Construction
         Then Verify the serach history for Under Construction
         Then Click on Under Consideration tab

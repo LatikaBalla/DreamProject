@@ -94,34 +94,6 @@ And('Click on Add Note and Verify', () => {
 And('Click on Download Export button', () => {
     srt.clickOnExport()
 })
-//RI
-And('Click on filter of Record Id Equals and Verify the Result', () => {
-    srt.filtercontainRI()
-})
-And('Click on filter of Record Id Does not equal and Verify the Result', () => {
-    srt.filterDoesnotcontainRI()
-})
-And('Click on filter of Record Id Greater than and Verify the Result', () => {
-    srt.filterGreaterthanRI()
-})
-And('Click on filter of Record Id Greater than or equal to and Verify the Result', () => {
-    srt.filterGreaterequalRI()
-})
-And('Click on filter of Record Id Less than and Verify the Result', () => {
-    srt.filterLessthanRI()
-})
-And('Click on filter of Record Id Less than or equal to and Verify the Result', () => {
-    srt.filterLessequalRI()
-})
-And('Click on filter of Record Id Between and Verify the Result', () => {
-    srt.filterBetweenRI()
-})
-And('Click on filter of Record Id Blank and Verify the Result', () => {
-    srt.filterBlankRI()
-})
-And('Click on filter of Record Id Not blank and Verify the Result', () => {
-    srt.filterNotblankRI()
-})
 //TN
 And('Click on filter of Ticket Number contain and Verify the Result', () => {
     srt.selectFilterTicketNumber()
@@ -147,30 +119,55 @@ And('Click on filter of Ticket Number Blank and Verify the Result', () => {
 And('Click on filter of Ticket Number Not blank and Verify the Result', () => {
     srt.filterNotblankTN()
 })
-//SN
-And('Click on filter of Serial Number contain and Verify the Result', () => {
-    srt.selectFilterSerialNumber()
+//B
+And('Click on filter of Building contain and Verify the Result', () => {
+    srt.filterContainBuilding()
 })
-And('Click on filter of Serial Number Does not contain and Verify the Result', () => {
-    srt.filterDoesnotcontainSN()
+And('Click on filter of Building Does not contain and Verify the Result', () => {
+    srt.filterDoesnotcontainB()
 })
-And('Click on filter of Serial Number Equals and Verify the Result', () => {
-    srt.filterEqualsSN()
+And('Click on filter of Building Equals and Verify the Result', () => {
+    srt.filterEqualsB()
 })
-And('Click on filter of Serial Number Does not equal and Verify the Result', () => {
-    srt.filterNotequalSN()
+And('Click on filter of Building Does not equal and Verify the Result', () => {
+    srt.filterNotequalB()
 })
-And('Click on filter of Serial Number Begins with and Verify the Result', () => {
-    srt.filterBeginswithSN()
+And('Click on filter of Building Begins with and Verify the Result', () => {
+    srt.filterBeginswithB()
 })
-And('Click on filter of Serial Number Ends with and Verify the Result', () => {
-    srt.filterEndswithSN()
+And('Click on filter of Building Ends with and Verify the Result', () => {
+    srt.filterEndswithB()
 })
-And('Click on filter of Serial Number Blank and Verify the Result', () => {
-    srt.filterBlankSN()
+And('Click on filter of Building Blank and Verify the Result', () => {
+    srt.filterBlankB()
 })
-And('Click on filter of Serial Number Not blank and Verify the Result', () => {
-    srt.filterNotblankSN()
+And('Click on filter of Building Not blank and Verify the Result', () => {
+    srt.filterNotblankB()
+})
+//Returnsite
+And('Click on filter of Return Site contain and Verify the Result', () => {
+    srt.filterContainRSite()
+})
+And('Click on filter of Return Site Does not contain and Verify the Result', () => {
+    srt.filterDoesnotcontainRSite()
+})
+And('Click on filter of Return Site Equals and Verify the Result', () => {
+    srt.filterEqualsRSite()
+})
+And('Click on filter of Return Site Does not equal and Verify the Result', () => {
+    srt.filterNotequalRSite()
+})
+And('Click on filter of Return Site Begins with and Verify the Result', () => {
+    srt.filterBeginswithRSite()
+})
+And('Click on filter of Return Site Ends with and Verify the Result', () => {
+    srt.filterEndswithRSite()
+})
+And('Click on filter of Return Site Blank and Verify the Result', () => {
+    srt.filterBlankRSite()
+})
+And('Click on filter of Return Site Not blank and Verify the Result', () => {
+    srt.filterNotblankRSite()
 })
 //RT
 And('Click on filter of Repair type contain and Verify the Result', () => {
@@ -197,54 +194,30 @@ And('Click on filter of Repair type Blank and Verify the Result', () => {
 And('Click on filter of Repair type Not blank and Verify the Result', () => {
     srt.filterNotblankRT()
 })
-//B
-And('Click on filter of Building contain and Verify the Result', () => {
-    srt.selectFilterBuilding()
+//SN
+And('Click on filter of Serial Number contain and Verify the Result', () => {
+    srt.selectFilterSerialNumber()
 })
-And('Click on filter of Building Does not contain and Verify the Result', () => {
-    srt.filterDoesnotcontainB()
+And('Click on filter of Serial Number Does not contain and Verify the Result', () => {
+    srt.filterDoesnotcontainSN()
 })
-And('Click on filter of Building Equals and Verify the Result', () => {
-    srt.filterEqualsB()
+And('Click on filter of Serial Number Equals and Verify the Result', () => {
+    srt.filterEqualsSN()
 })
-And('Click on filter of Building Does not equal and Verify the Result', () => {
-    srt.filterNotequalB()
+And('Click on filter of Serial Number Does not equal and Verify the Result', () => {
+    srt.filterNotequalSN()
 })
-And('Click on filter of Building Begins with and Verify the Result', () => {
-    srt.filterBeginswithB()
+And('Click on filter of Serial Number Begins with and Verify the Result', () => {
+    srt.filterBeginswithSN()
 })
-And('Click on filter of Building Ends with and Verify the Result', () => {
-    srt.filterEndswithB()
+And('Click on filter of Serial Number Ends with and Verify the Result', () => {
+    srt.filterEndswithSN()
 })
-And('Click on filter of Building Blank and Verify the Result', () => {
-    srt.filterBlankB()
+And('Click on filter of Serial Number Blank and Verify the Result', () => {
+    srt.filterBlankSN()
 })
-And('Click on filter of Building Not blank and Verify the Result', () => {
-    srt.filterNotblankB()
-})
-And('Click on filter of Return Site contain and Verify the Result', () => {
-    srt.filterContainRsite()
-})
-And('Click on filter of Return Site Does not contain and Verify the Result', () => {
-    srt.filterDoesnotcontainRsite()
-})
-And('Click on filter of Return Site Equals and Verify the Result', () => {
-    srt.filterEqualsRsite()
-})
-And('Click on filter of Return Site Does not equal and Verify the Result', () => {
-    srt.filterNotequalRsite()
-})
-And('Click on filter of Return Site Begins with and Verify the Result', () => {
-    srt.filterBeginswithRsite()
-})
-And('Click on filter of Return Site Ends with and Verify the Result', () => {
-    srt.filterEndswithRsite()
-})
-And('Click on filter of Return Site Blank and Verify the Result', () => {
-    srt.filterBlankRsite()
-})
-And('Click on filter of Return Site Not blank and Verify the Result', () => {
-    srt.filterNotblankRsite()
+And('Click on filter of Serial Number Not blank and Verify the Result', () => {
+    srt.filterNotblankSN()
 })
 //rd
 And('Click on filter of Repair device contain and Verify the Result', () => {
@@ -295,6 +268,31 @@ And('Click on filter of Asset tag Blank and Verify the Result', () => {
 })
 And('Click on filter of Asset tag Not blank and Verify the Result', () => {
     srt.filterNotblanktag()
+})
+//it
+And('Click on filter of Internal Technician contain and Verify the Result', () => {
+    srt.selectFilterInternalTechnician()
+})
+And('Click on filter of Internal Technician Does not contain and Verify the Result', () => {
+    srt.filterDoesnotcontainIT()
+})
+And('Click on filter of Internal Technician Equals and Verify the Result', () => {
+    srt.filterEqualsIT()
+})
+And('Click on filter of Internal Technician Does not equal and Verify the Result', () => {
+    srt.filterNotequalIT()
+})
+And('Click on filter of Internal Technician Begins with and Verify the Result', () => {
+    srt.filterBeginswithIT()
+})
+And('Click on filter of Internal Technician Ends with and Verify the Result', () => {
+    srt.filterEndswithIT()
+})
+And('Click on filter of Internal Technician Blank and Verify the Result', () => {
+    srt.filterBlankIT()
+})
+And('Click on filter of Internal Technician Not blank and Verify the Result', () => {
+    srt.filterNotblankIT()
 })
 //StdN
 And('Click on filter of Student Name contain and Verify the Result', () => {
@@ -350,12 +348,7 @@ And('Click on filter of In House status op2 and Verify the Result', () => {
 And('Click on filter of In House status op3 and Verify the Result', () => {
     srt.filterOptionIhs3()
 })
-And('Click on filter of In House status op4 and Verify the Result', () => {
-    srt.filterOptionIhs4()
-})
-And('Click on filter of In House status op5 and Verify the Result', () => {
-    srt.filterOptionIhs5()
-})
+
 And('Click on filter of Warranty status search and Verify the Result', () => {
     srt.filterOptionWS1()
 })
@@ -388,40 +381,28 @@ And('Click on filter of Created By Not blank and Verify the Result', () => {
     srt.filterNotblankCBy()
 })
 //CDate
-And('Click on filter of Last Modified Date contain and Verify the Result', () => {
-    srt.filteContainCDate()
-})
-And('Click on filter of Last Modified Date Does not contain and Verify the Result', () => {
-    srt.filterDoesnotcontainCDate()
-})
-And('Click on filter of Last Modified Date Equals and Verify the Result', () => {
+And('Click on filter of Created Date Equals and Verify the Result', () => {
     srt.filterEqualsCDate()
 })
-And('Click on filter of Last Modified Date Does not equal and Verify the Result', () => {
+And('Click on filter of Created Date Does not equal and Verify the Result', () => {
     srt.filterNotequalCDate()
 })
-And('Click on filter of Last Modified Date Before and Verify the Result', () => {
+And('Click on filter of Created Date Before and Verify the Result', () => {
     srt.filterBeforeCDate()
 })
-And('Click on filter of Last Modified Date After and Verify the Result', () => {
+And('Click on filter of Created Date After and Verify the Result', () => {
     srt.filterAfterCDate()
 })
-And ('Click on filter of Last Modified Date Between with and Verify the Result',()=>{
+And ('Click on filter of Created Date Between with and Verify the Result',()=>{
     srt.filterBetweenCDate()
 })
-And('Click on filter of Last Modified Date Blank and Verify the Result', () => {
+And('Click on filter of Created Date Blank and Verify the Result', () => {
     srt.filterBlankCDate()
 })
-And('Click on filter of Last Modified Date Not blank and Verify the Result', () => {
+And('Click on filter of Created Date Not blank and Verify the Result', () => {
     srt.filterNotblankCDate()
 })
 //Ldate
-And('Click on filter of Last Modified Date contain and Verify the Result', () => {
-    srt.selectFilteLastModifiedDate()
-})
-And('Click on filter of Last Modified Date Does not contain and Verify the Result', () => {
-    srt.filterDoesnotcontainDate()
-})
 And('Click on filter of Last Modified Date Equals and Verify the Result', () => {
     srt.filterEqualsDate()
 })
@@ -443,40 +424,19 @@ And('Click on filter of Last Modified Date Blank and Verify the Result', () => {
 And('Click on filter of Last Modified Date Not blank and Verify the Result', () => {
     srt.filterNotblankDate()
 })
-//it
-And('Click on filter of Internal Technician contain and Verify the Result', () => {
-    srt.selectFilterInternalTechnician()
-})
-And('Click on filter of Internal Technician Does not contain and Verify the Result', () => {
-    srt.filterDoesnotcontainIT()
-})
-And('Click on filter of Internal Technician Equals and Verify the Result', () => {
-    srt.filterEqualsIT()
-})
-And('Click on filter of Internal Technician Does not equal and Verify the Result', () => {
-    srt.filterNotequalIT()
-})
-And('Click on filter of Internal Technician Begins with and Verify the Result', () => {
-    srt.filterBeginswithIT()
-})
-And('Click on filter of Internal Technician Ends with and Verify the Result', () => {
-    srt.filterEndswithIT()
-})
-And('Click on filter of Internal Technician Blank and Verify the Result', () => {
-    srt.filterBlankIT()
-})
-And('Click on filter of Internal Technician Not blank and Verify the Result', () => {
-    srt.filterNotblankIT()
-})
+
 //sorting 
-And('Click on Sort Ascending and Descending for Record ID and Verify the Result',()=>{
-    srt.sortingRI()
-})
 And ('Click on Sort Ascending and Descending for Ticket Number and Verify the Result',()=>{
     srt.sortingTN()
 })
 And ('Click on Sort Ascending and Descending for Repair Type and Verify the Result',()=>{
     srt.sortingRtype()
+})
+And ('Click on Sort Ascending and Descending for Building and Verify the Result',()=>{
+    srt.sortingBuilding()
+})
+And ('Click on Sort Ascending and Descending for Return Site and Verify the Result',()=>{
+    srt.sortingRSite()
 })
 And ('Click on Sort Ascending and Descending for Serial Number and Verify the Result',()=>{
     srt.sortingSN()
@@ -496,8 +456,17 @@ And ('Click on Sort Ascending and Descending for Student Name and Verify the Res
 And ('Click on Sort Ascending and Descending for Repair Status and Verify the Result',()=>{
     srt.sortingRStatus()
 })
+And ('Click on Sort Ascending and Descending for In House Status and Verify the Result',()=>{
+    srt.sortingInHouseStatus()
+})
+And ('Click on Sort Ascending and Descending for Warranty Status and Verify the Result',()=>{
+    srt.sortingWarrantyStatus()
+})
 And ('Click on Sort Ascending and Descending for Created By and Verify the Result',()=>{
     srt.sortingCBy()
+})
+And ('Click on Sort Ascending and Descending for Created Date and Verify the Result',()=>{
+    srt.sortingCDate()
 })
 And ('Click on Sort Ascending and Descending for Last Modified Date and Verify the Result',()=>{
     srt.sortingLdate()

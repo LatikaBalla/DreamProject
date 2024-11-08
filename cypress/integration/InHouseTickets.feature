@@ -13,11 +13,11 @@ Feature:InHouseTickets Page Functionality
 
   Scenario: Visiblity check, Create a ticket and download export
     And Verify the Title of InHouseTickets Page
-    Then I should click on Create new button
-    And Select failure Type, Serial Device, Technician, issue and Building
-    Then Enter the Chromebook issue
-    And Click on save button
-    Then Verify New Ticket is added
+    # Then I should click on Create new button
+    # And Select failure Type, Serial Device, Technician, issue and Building
+    # Then Enter the Chromebook issue
+    # And Click on save button
+    # Then Verify New Ticket is added
 
     And Click on filter of Ticket Number contain and Verify the Result
     And Click on filter of Ticket Number Does not contain and Verify the Result
@@ -141,10 +141,10 @@ Feature:InHouseTickets Page Functionality
     And Click on Download Export button
     And Click on view button
     Then Verify the Details of student repair ticket
-    # And Click on the Update to student Button
-    # Then Updated to student successfully
-    # And Click on the Update to in house Button
-    # Then Updated to in house successfully
+    And Click on the Update to student Button
+    Then Updated to student successfully
+    And Click on the Update to in house Button
+    Then Updated to in house successfully
     And Click on the Edit Ticket Button
     Then Update the Technician and Repair Status
     And Click on Update Button

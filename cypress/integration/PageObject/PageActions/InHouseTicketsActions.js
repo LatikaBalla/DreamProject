@@ -41,7 +41,8 @@ export class InHouseTicketsActions {
         cy.get(tdata.inHouseTicket.failuretype).click()
     }
     selectSerialDevice() {
-        iht.serialdeviceElement().click({ force: true })
+        cy.get(':nth-child(1) > .css-tzsjye > .MuiStack-root > .MuiAutocomplete-root > .MuiFormControl-root > .MuiInputBase-root').click({ force: true })
+       // iht.serialdeviceElement().click({ force: true })
         cy.get('#device-option-0').click({ force: true })
     }
     selectTechnician() {

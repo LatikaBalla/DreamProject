@@ -213,58 +213,58 @@ export class SrcRepairTicketsActions {
         srt.clearFilterElement().click({ force: true })
     }
     //B
-    selectFilterBuilding() {
+    filterContainBuilding() {
         srt.addFilterElement().eq(1).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(0).click({ force: true })
-        srt.fieldValueElement().clear({ force: true }).type(tdata.srcRepairTicket.building)
+        srt.fieldValueElement().clear({ force: true }).type(tdata.buildings.buildingname)
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.building)
+        cy.get('[row-index="0"]').should('contain', tdata.buildings.buildingname)
         srt.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainB() {
         srt.addFilterElement().eq(1).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(1).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.building)
+        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.buildingname)
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain', tdata.srcRepairTicket.building)
+        cy.get('[row-index="0"]').should('not.contain', tdata.buildings.buildingname)
         srt.clearFilterElement().click({ force: true })
     }
     filterEqualsB() {
         srt.addFilterElement().eq(1).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(2).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.building)
+        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.buildingname)
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.building)
+        cy.get('[row-index="0"]').should('contain', tdata.buildings.buildingname)
         srt.clearFilterElement().click({ force: true })
     }
     filterNotequalB() {
         srt.addFilterElement().eq(1).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(3).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.building)
+        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.buildingname)
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain.value', tdata.srcRepairTicket.building)
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.buildings.buildingname)
         srt.clearFilterElement().click({ force: true })
     }
     filterBeginswithB() {
         srt.addFilterElement().eq(1).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(4).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type('Dream')
+        srt.fieldValueElement().eq(0).clear({ force: true }).type('Build')
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Dream')
+        cy.get('[row-index="0"]').should('contain', 'Build')
         srt.clearFilterElement().click({ force: true })
     }
     filterEndswithB() {
         srt.addFilterElement().eq(1).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(5).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type('ing')
+        srt.fieldValueElement().eq(0).clear({ force: true }).type('One')
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'ing')
+        cy.get('[row-index="0"]').should('contain', 'One')
         srt.clearFilterElement().click({ force: true })
     }
     filterBlankB() {
@@ -280,64 +280,64 @@ export class SrcRepairTicketsActions {
         srt.addFilterElement().eq(1).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(7).click({ force: true })
-        srt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.srcRepairTicket.building, { force: true })
+        srt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.buildings.buildingname, { force: true })
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.building)
+        cy.get('[row-index="0"]').should('contain', tdata.buildings.buildingname)
         srt.clearFilterElement().click({ force: true })
     }
-       //Return Site
-       filterContainRSite() {
+    //Return Site
+    filterContainRSite() {
         srt.addFilterElement().eq(2).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(0).click({ force: true })
-        srt.fieldValueElement().clear({ force: true }).type(tdata.srcRepairTicket.building)
+        srt.fieldValueElement().clear({ force: true }).type(tdata.buildings.buildingname)
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.building)
+        cy.get('[row-index="0"]').should('contain', tdata.buildings.buildingname)
         srt.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainRSite() {
         srt.addFilterElement().eq(2).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(1).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.building)
+        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.buildingname)
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain', tdata.srcRepairTicket.building)
+        cy.get('[row-index="0"]').should('not.contain', tdata.buildings.buildingname)
         srt.clearFilterElement().click({ force: true })
     }
     filterEqualsRSite() {
         srt.addFilterElement().eq(2).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(2).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.building)
+        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.buildingname)
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.building)
+        cy.get('[row-index="0"]').should('contain', tdata.buildings.buildingname)
         srt.clearFilterElement().click({ force: true })
     }
     filterNotequalRSite() {
         srt.addFilterElement().eq(2).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(3).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.building)
+        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.buildingname)
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain.value', tdata.srcRepairTicket.building)
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.buildings.buildingname)
         srt.clearFilterElement().click({ force: true })
     }
     filterBeginswithRSite() {
         srt.addFilterElement().eq(2).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(4).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type('Dream')
+        srt.fieldValueElement().eq(0).clear({ force: true }).type('Build')
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Dream')
+        cy.get('[row-index="0"]').should('contain', 'Build')
         srt.clearFilterElement().click({ force: true })
     }
     filterEndswithRSite() {
         srt.addFilterElement().eq(2).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(5).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type('ing')
+        srt.fieldValueElement().eq(0).clear({ force: true }).type('One')
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'ing')
+        cy.get('[row-index="0"]').should('contain', 'One')
         srt.clearFilterElement().click({ force: true })
     }
     filterBlankRSite() {
@@ -353,12 +353,12 @@ export class SrcRepairTicketsActions {
         srt.addFilterElement().eq(2).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(7).click({ force: true })
-        srt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.srcRepairTicket.building, { force: true })
+        srt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.buildings.buildingname, { force: true })
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.building)
+        cy.get('[row-index="0"]').should('contain', tdata.buildings.buildingname)
         srt.clearFilterElement().click({ force: true })
     }
-    //rt
+    //RT
     selectFilterRepairType() {
         srt.addFilterElement().eq(3).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
@@ -431,8 +431,8 @@ export class SrcRepairTicketsActions {
         cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.repairtype)
         srt.clearFilterElement().click({ force: true })
     }
-    //sn
-    selectFilterSerialNumber() {
+     //sn
+     selectFilterSerialNumber() {
         cy.wait(2000)
         srt.addFilterElement().eq(4).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
@@ -573,9 +573,9 @@ export class SrcRepairTicketsActions {
         srt.addFilterElement().eq(5).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(7).click({ force: true })
-        srt.fieldValueElement().eq(1).type('VT Chromebook', { force: true })
+        srt.fieldValueElement().eq(1).type(tdata.srcRepairTicket.repairdevice, { force: true })
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'VT Chromebook')
+        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.repairdevice)
         srt.clearFilterElement().click({ force: true })
     }
     //tag
@@ -651,226 +651,6 @@ export class SrcRepairTicketsActions {
         cy.get('[row-index="0"]').should('contain', '12333')
         srt.clearFilterElement().click({ force: true })
     }
-    //RS
-    filterOption1() {
-        srt.addFilterElement().eq(9).click({ force: true })
-        cy.get('[value="Intake"]').click({ force: true })
-        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus1)
-        cy.get('.reset-button').click({ force: true })
-    }
-    filterOption2() {
-        srt.addFilterElement().eq(9).click({ force: true })
-        cy.get('[value="Waiting_on_Repair_Approval"]').click({ force: true })
-        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus2)
-        cy.get('.reset-button').click({ force: true })
-    }
-    filterOption3() {
-        srt.addFilterElement().eq(9).click({ force: true })
-        cy.get('[value="Closed"]').click({ force: true })
-        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus3)
-        cy.get('.reset-button').click({ force: true })
-    }
-    filterOption4() {
-        srt.addFilterElement().eq(9).click({ force: true })
-        cy.get('[value="Complete"]').click({ force: true })
-        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus4)
-        cy.get('.reset-button').click({ force: true })
-    }
-    filterOption5() {
-        srt.addFilterElement().eq(9).click({ force: true })
-        cy.get('[value="In_Transit"]').click({ force: true })
-        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus5)
-        cy.get('.reset-button').click({ force: true })
-    }
-    filterOption6() {
-        srt.addFilterElement().eq(9).click({ force: true })
-        cy.get('[value="Repair"]').click({ force: true })
-        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus6)
-        cy.get('.reset-button').click({ force: true })
-    }
-  //ws
-  filterOptionIhs1() {
-    srt.addFilterElement().eq(10).click({ force: true })
-    cy.get('[value="Intake"]').click({ force: true })
-    cy.get('.ag-row-first > [col-id="inHouseStatus"]').should('contain', 'Intake')
-    cy.get('.reset-button').click({ force: true })
-}
-filterOptionIhs2() {
-    srt.addFilterElement().eq(10).click({ force: true })
-    cy.get('[value="Part_Received"]').click({ force: true })
-    cy.get('.ag-row-first > [col-id="inHouseStatus"]').should('contain', 'Part Received')
-    cy.get('.reset-button').click({ force: true })
-}
-filterOptionIhs3() {
-    srt.addFilterElement().eq(10).click({ force: true })
-    cy.get('[value="Part_Queue"]').click({ force: true })
-    cy.get('.ag-row-first > [col-id="inHouseStatus"]').should('contain', 'Part Queue')
-    cy.get('.reset-button').click({ force: true })
-}
-filterOptionIhs4() {
-    srt.addFilterElement().eq(10).click({ force: true })
-    cy.get('[value="Repair"]').click({ force: true })
-    cy.get('.ag-row-first > [col-id="inHouseStatus"]').should('contain', 'Repair')
-    cy.get('.reset-button').click({ force: true })
-}
-filterOptionIhs5() {
-    srt.addFilterElement().eq(10).click({ force: true })
-    cy.get('[value="Quality_Assurance"]').click({ force: true })
-    cy.get('.ag-row-first > [col-id="inHouseStatus"]').should('contain', 'Quality Assurance')
-    cy.get('.reset-button').click({ force: true })
-}
-filterOptionWS1() {
-    srt.addFilterElement().eq(11).click({ force: true })
-    srt.searchElement().type('Warranty')
-    cy.get('[value="Non_Warranty"]').click({ force: true })
-    cy.get('.ag-row-first > [col-id="warrantyStatus"]').should('contain', 'Warranty')
-    cy.get('.reset-button').click({ force: true })
-}
-filterOptionWS2() {
-    srt.addFilterElement().eq(11).click({ force: true })
-    cy.get('[value="Non_Warranty"]').click({ force: true })
-    cy.get('.ag-row-first > [col-id="warrantyStatus"]').should('contain', tdata.inHouseTicket.warrantystatus)
-    cy.get('.reset-button').click({ force: true })
-}
-    //ws
-    selectFilterWarrantyStatus() {
-        cy.wait(2000)
-        srt.addFilterElement().eq(11).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(0).click({ force: true })
-        srt.fieldValueElement().type(tdata.srcRepairTicket.warrantystatus)
-        srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.warrantystatus)
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterDoesnotcontainWS() {
-        srt.addFilterElement().eq(11).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(1).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.warrantystatus)
-        srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain', tdata.srcRepairTicket.warrantystatus)
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterEqualsWS() {
-        srt.addFilterElement().eq(11).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(2).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.warrantystatus)
-        srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.warrantystatus)
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterNotequalWS() {
-        srt.addFilterElement().eq(11).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(3).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type(tdata.srcRepairTicket.warrantystatus)
-        srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain', tdata.srcRepairTicket.warrantystatus)
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterBeginswithWS() {
-        srt.addFilterElement().eq(11).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(4).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type('Non')
-        srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Non')
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterEndswithWS() {
-        srt.addFilterElement().eq(11).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(5).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type('anty')
-        srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'anty')
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterBlankWS() {
-        srt.addFilterElement().eq(11).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(6).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
-        srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', ' ')
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterNotblankWS() {
-        srt.addFilterElement().eq(11).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(7).click({ force: true })
-        srt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.srcRepairTicket.warrantystatus, { force: true })
-        srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.warrantystatus)
-        srt.clearFilterElement().click({ force: true })
-    }
-    //date
-    filterEqualsDate() {
-        srt.addFilterElement().eq(14).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(0).click({ force: true })
-        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
-        srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.lastModifiedDate1)
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterNotequalDate() {
-        srt.addFilterElement().eq(14).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(1).click({ force: true })
-        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
-        srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain.value', tdata.srcRepairTicket.lastModifiedDate1)
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterBeforeDate() {
-        srt.addFilterElement().eq(14).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(2).click({ force: true })
-        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
-        srt.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.lastModifiedDate1)
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterAfterDate() {
-        srt.addFilterElement().eq(14).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(3).click({ force: true })
-        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
-        srt.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('contain', '2024-07-15')
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterBetweenDate() {
-        srt.addFilterElement().eq(14).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(3).click({ force: true })
-        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
-        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
-        srt.applyElement().click({ force: true })
-        // cy.get('[row-index="0"]').should('contain', '2024-07-15')
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterBlankDate() {
-        srt.addFilterElement().eq(14).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(5).click({ force: true })
-        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
-        srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', ' ')
-        srt.clearFilterElement().click({ force: true })
-    }
-    filterNotblankDate() {
-        srt.addFilterElement().eq(14).click({ force: true })
-        srt.fieldNameElement().eq(1).click({ force: true })
-        srt.fieldOpElement().eq(6).click({ force: true })
-        cy.get('[placeholder="yyyy-mm-dd"]').eq(2).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
-        srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.lastModifiedDate1)
-        srt.clearFilterElement().click({ force: true })
-    }
     //IT
     selectFilterInternalTechnician() {
         cy.wait(3000)
@@ -913,18 +693,18 @@ filterOptionWS2() {
         srt.addFilterElement().eq(7).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(4).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type('Demo')
+        srt.fieldValueElement().eq(0).clear({ force: true }).type('John')
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Demo')
+        cy.get('[row-index="0"]').should('contain', 'John')
         srt.clearFilterElement().click({ force: true })
     }
     filterEndswithIT() {
         srt.addFilterElement().eq(7).click({ force: true })
         srt.fieldNameElement().eq(1).click({ force: true })
         srt.fieldOpElement().eq(5).click({ force: true })
-        srt.fieldValueElement().eq(0).clear({ force: true }).type('Test')
+        srt.fieldValueElement().eq(0).clear({ force: true }).type('min')
         srt.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Test')
+        cy.get('[row-index="0"]').should('contain', 'min')
         srt.clearFilterElement().click({ force: true })
     }
     filterBlankIT() {
@@ -943,6 +723,220 @@ filterOptionWS2() {
         srt.fieldValueElement().eq(1).clear({ force: true }).type(tdata.srcRepairTicket.internaltechnician, { force: true })
         srt.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.internaltechnician)
+        srt.clearFilterElement().click({ force: true })
+    }
+    //StdN
+    filterContainStdN(){
+        srt.addFilterElement().eq(8).scrollIntoView().click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(0).click({ force: true })
+        srt.fieldValueElement().type(tdata.srcRepairTicket.studentName)
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.studentName)
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainStdN(){
+        srt.addFilterElement().eq(8).scrollIntoView().click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(1).click({ force: true })
+        srt.fieldValueElement().type(tdata.srcRepairTicket.studentName)
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.srcRepairTicket.studentName)
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterEqualsStdN(){
+        srt.addFilterElement().eq(8).scrollIntoView().click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(2).click({ force: true })
+        srt.fieldValueElement().type(tdata.srcRepairTicket.studentName)
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.studentName)
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterNotequalStdN(){
+        srt.addFilterElement().eq(8).scrollIntoView().click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(3).click({ force: true })
+        srt.fieldValueElement().type(tdata.srcRepairTicket.studentName)
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.srcRepairTicket.studentName)
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithStdN(){
+        srt.addFilterElement().eq(8).scrollIntoView().click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(4).click({ force: true })
+        srt.fieldValueElement().type('Vivi')
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain','Vivi')
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterEndswithStdN(){
+        srt.addFilterElement().eq(8).scrollIntoView().click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(5).click({ force: true })
+        srt.fieldValueElement().type('rcia')
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'rcia')
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterBlankStdN(){
+        srt.addFilterElement().eq(8).scrollIntoView().click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(6).click({ force: true })
+        srt.fieldValueElement().eq(1).type(' ')
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterNotblankStdN(){
+        srt.addFilterElement().eq(8).scrollIntoView().click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(7).click({ force: true })
+        srt.fieldValueElement().eq(1.).type(tdata.srcRepairTicket.studentName)
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.studentName)
+        srt.clearFilterElement().click({ force: true })
+    }
+    //RS
+    filterOption1() {
+        srt.addFilterElement().eq(9).click({ force: true })
+        cy.get('[value="Intake"]').click({ force: true })
+        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus1)
+        cy.get('.reset-button').click({ force: true })
+    }
+    filterOption2() {
+        srt.addFilterElement().eq(9).click({ force: true })
+        cy.get('[value="Waiting_on_Repair_Approval"]').click({ force: true })
+        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus2)
+        cy.get('.reset-button').click({ force: true })
+    }
+    filterOption3() {
+        srt.addFilterElement().eq(9).click({ force: true })
+        cy.get('[value="Pending_Repair_Box"]').click({ force: true })
+        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus3)
+        cy.get('.reset-button').click({ force: true })
+    }
+    filterOption4() {
+        srt.addFilterElement().eq(9).click({ force: true })
+        cy.get('[value="In_Transit"]').click({ force: true })
+        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus4)
+        cy.get('.reset-button').click({ force: true })
+    }
+    filterOption5() {
+        srt.addFilterElement().eq(9).click({ force: true })
+        cy.get('[value="Repair"]').click({ force: true })
+        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus5)
+        cy.get('.reset-button').click({ force: true })
+    }
+    //ws
+    filterOptionIhs1() {
+        srt.addFilterElement().eq(10).click({ force: true })
+        cy.get('[value="Intake"]').click({ force: true })
+        cy.get('.ag-row-first > [col-id="in_house_status"]').should('contain', 'Intake')
+        cy.get('.reset-button').click({ force: true })
+    }
+    // filterOptionIhs2() {
+    //     srt.addFilterElement().eq(10).click({ force: true })
+    //     cy.get('[value="Part_Received"]').click({ force: true })
+    //     cy.get('.ag-row-first > [col-id="in_house_status"]').should('contain', 'Part Received')
+    //     cy.get('.reset-button').click({ force: true })
+    // }
+    filterOptionIhs2() {
+        srt.addFilterElement().eq(10).click({ force: true })
+        cy.get('[value="Part_Queue"]').click({ force: true })
+        cy.get('.ag-row-first > [col-id="in_house_status"]').should('contain', 'Part Queue')
+        cy.get('.reset-button').click({ force: true })
+    }
+    filterOptionIhs3() {
+        srt.addFilterElement().eq(10).click({ force: true })
+        cy.get('[value="Repair"]').click({ force: true })
+        cy.get('.ag-row-first > [col-id="in_house_status"]').should('contain', 'Repair')
+        cy.get('.reset-button').click({ force: true })
+    }
+    // filterOptionIhs5() {
+    //     srt.addFilterElement().eq(10).click({ force: true })
+    //     cy.get('[value="Quality_Assurance"]').click({ force: true })
+    //     cy.get('.ag-row-first > [col-id="in_house_status"]').should('contain', 'Quality Assurance')
+    //     cy.get('.reset-button').click({ force: true })
+    // }
+    filterOptionWS1() {
+        srt.addFilterElement().eq(11).click({ force: true })
+        srt.searchElement().type('Warranty')
+        cy.get('[value="Non_Warranty"]').click({ force: true })
+        cy.get('.ag-row-first > [col-id="warranty_status"]').should('contain', 'Warranty')
+        cy.get('.reset-button').click({ force: true })
+    }
+    filterOptionWS2() {
+        srt.addFilterElement().eq(11).click({ force: true })
+        cy.get('[value="Non_Warranty"]').click({ force: true })
+        cy.get('.ag-row-first > [col-id="warranty_status"]').should('contain', tdata.inHouseTicket.warrantystatus)
+        cy.get('.reset-button').click({ force: true })
+    }
+   
+    //Cdate
+    filterEqualsCDate() {
+        srt.addFilterElement().eq(14).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(0).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.lastModifiedDate1)
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterNotequalCDate() {
+        srt.addFilterElement().eq(14).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(1).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.srcRepairTicket.lastModifiedDate1)
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterBeforeCDate() {
+        srt.addFilterElement().eq(14).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(2).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
+        srt.applyElement().click({ force: true })
+        // cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.lastModifiedDate1)
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterAfterCDate() {
+        srt.addFilterElement().eq(14).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(3).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
+        srt.applyElement().click({ force: true })
+        // cy.get('[row-index="0"]').should('contain', '2024-07-15')
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterBetweenCDate() {
+        srt.addFilterElement().eq(14).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(3).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
+        srt.applyElement().click({ force: true })
+        // cy.get('[row-index="0"]').should('contain', '2024-07-15')
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterBlankCDate() {
+        srt.addFilterElement().eq(14).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(5).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterNotblankCDate() {
+        srt.addFilterElement().eq(14).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(6).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(2).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.lastModifiedDate1)
         srt.clearFilterElement().click({ force: true })
     }
     //cby
@@ -1017,17 +1011,83 @@ filterOptionWS2() {
         cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.createdby)
         srt.clearFilterElement().click({ force: true })
     }
-    sortingRI() {
-        cy.wait(1000)
-        srt.optionElement().eq(1).click({ force: true })
-        srt.sortAscendingElement().click({ force: true })
-        srt.optionElement().eq(1).click({ force: true })
-        srt.sortDescendingElement().click({ force: true })
-        srt.optionElement().eq(1).click({ force: true })
-        srt.clearSortElement().click({ force: true })
+    //date
+    filterEqualsDate() {
+        srt.addFilterElement().eq(14).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(0).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.lastModifiedDate1)
+        srt.clearFilterElement().click({ force: true })
     }
+    filterNotequalDate() {
+        srt.addFilterElement().eq(14).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(1).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.srcRepairTicket.lastModifiedDate1)
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterBeforeDate() {
+        srt.addFilterElement().eq(14).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(2).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
+        srt.applyElement().click({ force: true })
+        // cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.lastModifiedDate1)
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterAfterDate() {
+        srt.addFilterElement().eq(14).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(3).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
+        srt.applyElement().click({ force: true })
+        // cy.get('[row-index="0"]').should('contain', '2024-07-15')
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterBetweenDate() {
+        srt.addFilterElement().eq(14).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(3).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
+        srt.applyElement().click({ force: true })
+        // cy.get('[row-index="0"]').should('contain', '2024-07-15')
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterBlankDate() {
+        srt.addFilterElement().eq(14).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(5).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        srt.clearFilterElement().click({ force: true })
+    }
+    filterNotblankDate() {
+        srt.addFilterElement().eq(14).click({ force: true })
+        srt.fieldNameElement().eq(1).click({ force: true })
+        srt.fieldOpElement().eq(6).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(2).type(tdata.srcRepairTicket.lastModifiedDate, { force: true })
+        srt.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.srcRepairTicket.lastModifiedDate1)
+        srt.clearFilterElement().click({ force: true })
+    }
+    //Sorting
     sortingTN() {
         cy.wait(1000)
+        srt.optionElement().eq(1).click({ force: true })
+        srt.sortAscendingElement().click({ force: true })
+        srt.optionElement().eq(1).click({ force: true })
+        srt.sortDescendingElement().click({ force: true })
+        srt.optionElement().eq(1).click({ force: true })
+        srt.clearSortElement().click({ force: true })
+    }
+    sortingRtype() {
+        cy.wait(1000)
         srt.optionElement().eq(2).click({ force: true })
         srt.sortAscendingElement().click({ force: true })
         srt.optionElement().eq(2).click({ force: true })
@@ -1035,44 +1095,43 @@ filterOptionWS2() {
         srt.optionElement().eq(2).click({ force: true })
         srt.clearSortElement().click({ force: true })
     }
-
-    sortingRtype() {
+    sortingBuilding() {
         cy.wait(1000)
         srt.optionElement().eq(3).click({ force: true })
         srt.sortAscendingElement().click({ force: true })
         srt.optionElement().eq(3).click({ force: true })
         srt.sortDescendingElement().click({ force: true })
         srt.optionElement().eq(3).click({ force: true })
+        srt.clearSortElement().click({ force: true })
+    }
+    sortingRSite() {
+        cy.wait(1000)
+        srt.optionElement().eq(4).click({ force: true })
+        srt.sortAscendingElement().click({ force: true })
+        srt.optionElement().eq(4).click({ force: true })
+        srt.sortDescendingElement().click({ force: true })
+        srt.optionElement().eq(4).click({ force: true })
         srt.clearSortElement().click({ force: true })
     }
     sortingSN() {
         cy.wait(1000)
-        srt.optionElement().eq(4).click({ force: true })
+        srt.optionElement().eq(5).click({ force: true })
         srt.sortAscendingElement().click({ force: true })
-        srt.optionElement().eq(4).click({ force: true })
+        srt.optionElement().eq(5).click({ force: true })
         srt.sortDescendingElement().click({ force: true })
-        srt.optionElement().eq(4).click({ force: true })
+        srt.optionElement().eq(5).click({ force: true })
         srt.clearSortElement().click({ force: true })
     }
     sortingRDev() {
         cy.wait(1000)
-        srt.optionElement().eq(5).click({ force: true })
+        srt.optionElement().eq(6).click({ force: true })
         srt.sortAscendingElement().click({ force: true })
-        srt.optionElement().eq(5).click({ force: true })
+        srt.optionElement().eq(6).click({ force: true })
         srt.sortDescendingElement().click({ force: true })
-        srt.optionElement().eq(5).click({ force: true })
+        srt.optionElement().eq(6).click({ force: true })
         srt.clearSortElement().click({ force: true })
     }
     sortingATag() {
-        cy.wait(1000)
-        srt.optionElement().eq(6).click({ force: true })
-        srt.sortAscendingElement().click({ force: true })
-        srt.optionElement().eq(6).click({ force: true })
-        srt.sortDescendingElement().click({ force: true })
-        srt.optionElement().eq(6).click({ force: true })
-        srt.clearSortElement().click({ force: true })
-    }
-    sortingRStatus() {
         cy.wait(1000)
         srt.optionElement().eq(7).click({ force: true })
         srt.sortAscendingElement().click({ force: true })
@@ -1099,7 +1158,7 @@ filterOptionWS2() {
         srt.optionElement().eq(9).click({ force: true })
         srt.clearSortElement().click({ force: true })
     }
-    sortingCBy() {
+    sortingRStatus(){
         cy.wait(1000)
         srt.optionElement().eq(10).click({ force: true })
         srt.sortAscendingElement().click({ force: true })
@@ -1108,13 +1167,49 @@ filterOptionWS2() {
         srt.optionElement().eq(10).click({ force: true })
         srt.clearSortElement().click({ force: true })
     }
-    sortingLdate() {
+    sortingInHouseStatus() {
         cy.wait(1000)
         srt.optionElement().eq(11).click({ force: true })
         srt.sortAscendingElement().click({ force: true })
         srt.optionElement().eq(11).click({ force: true })
         srt.sortDescendingElement().click({ force: true })
         srt.optionElement().eq(11).click({ force: true })
+        srt.clearSortElement().click({ force: true })
+    }
+    sortingWarrantyStatus() {
+        cy.wait(1000)
+        srt.optionElement().eq(12).click({ force: true })
+        srt.sortAscendingElement().click({ force: true })
+        srt.optionElement().eq(12).click({ force: true })
+        srt.sortDescendingElement().click({ force: true })
+        srt.optionElement().eq(12).click({ force: true })
+        srt.clearSortElement().click({ force: true })
+    }
+    sortingCBy() {
+        cy.wait(1000)
+        srt.optionElement().eq(13).click({ force: true })
+        srt.sortAscendingElement().click({ force: true })
+        srt.optionElement().eq(13).click({ force: true })
+        srt.sortDescendingElement().click({ force: true })
+        srt.optionElement().eq(13).click({ force: true })
+        srt.clearSortElement().click({ force: true })
+    }
+    sortingCDate(){
+        cy.wait(1000)
+        srt.optionElement().eq(14).click({ force: true })
+        srt.sortAscendingElement().click({ force: true })
+        srt.optionElement().eq(14).click({ force: true })
+        srt.sortDescendingElement().click({ force: true })
+        srt.optionElement().eq(14).click({ force: true })
+        srt.clearSortElement().click({ force: true })
+    }
+    sortingLdate() {
+        cy.wait(1000)
+        srt.optionElement().eq(15).click({ force: true })
+        srt.sortAscendingElement().click({ force: true })
+        srt.optionElement().eq(15).click({ force: true })
+        srt.sortDescendingElement().click({ force: true })
+        srt.optionElement().eq(15).click({ force: true })
         srt.clearSortElement().click({ force: true })
     }
 }
