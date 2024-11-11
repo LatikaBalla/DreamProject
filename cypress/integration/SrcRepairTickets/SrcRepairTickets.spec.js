@@ -348,7 +348,6 @@ And('Click on filter of In House status op2 and Verify the Result', () => {
 And('Click on filter of In House status op3 and Verify the Result', () => {
     srt.filterOptionIhs3()
 })
-
 And('Click on filter of Warranty status search and Verify the Result', () => {
     srt.filterOptionWS1()
 })

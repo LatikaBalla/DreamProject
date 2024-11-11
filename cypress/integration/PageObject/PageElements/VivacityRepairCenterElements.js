@@ -6,6 +6,16 @@ export default class VivacityRepairCenterElements {
             timeout: 30000,
         })
     }
+    howWorksElement() {
+        return cy.contains(locator.vivacityRepairCenter.howWorks, {
+            timeout: 30000,
+        })
+    }
+    nonWarrantyRepairsElement() {
+        return cy.contains(locator.vivacityRepairCenter.nonWarrantyRepairs, {
+            timeout: 30000,
+        })
+    }
     vivaRepairTicketsElement() {
         return cy.get(locator.vivacityRepairCenter.repairTickets, {
             timeout: 30000,

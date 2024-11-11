@@ -12,7 +12,9 @@ Feature: VivacityRepairCenter Page Functionality
     Scenario: Admin can access the  VivacityRepairCenterpage and check the visiblity
         Then I should be redirected to the Repair360 page
         And Verify the Title of VivacityRepairCenter Page
-        Then Verify the VivaRepairTickets Tab should be visible
+        Then Verify the How VivacityRepairCenter Works Tab should be visible
+        And Verify the Non-warranty Repairs tab should be visible
+         Then Verify the VivaRepairTickets Tab should be visible
         And Verify the RepairBoxes tab should be visible
 
 

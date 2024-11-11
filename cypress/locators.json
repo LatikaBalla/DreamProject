@@ -157,7 +157,6 @@
         "vivacityrr": "[data-testid='tabrep-2']",
         "inhouserr": "[data-testid='tabrep-3']",
         "devicerr": "[data-testid='tabrep-4']",
-        "warrantyr": "[data-testid='tabrep-4']",
         "telemetryd": "[data-testid='tabrep-1']"
     },
     "deviceRepairReport": {
@@ -437,12 +436,15 @@
         "vivacityrc": "[data-testid='tabrepa-1']",
         "inhouserc": "[data-testid='tabrepa-2']",
         "studentrc": "[data-testid='tabrepa-3']",
-        "partcloset": "[data-testid='tabrepa-4']"
+        "partcloset": "[data-testid='tabrepa-4']",
+        "nonwarrantyr":"Non-warranty Repairs"
     },
     "vivacityRepairCenter": {
         "title": "Vivacity Repair Center",
         "repairTickets": "[data-testid='tabvr-1']",
-        "repairBoxes": "[data-testid='tabvr-2']"
+        "repairBoxes": "[data-testid='tabvr-2']",
+        "howWorks":"How Vivacity Repair Center Works",
+        "nonWarrantyRepairs":"Non-warranty Repairs"
     },
     "repairTickets": {
         "title": "Repair 360",

@@ -1,8 +1,6 @@
 import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
-import { ReportCenterActions } from '../PageObject/PageActions/ReportCenterActions.js'
 import { NonWarrantyRepairsActions } from '../PageObject/PageActions/NonWarrantyRepairsActions.js'
 
-const repc = new ReportCenterActions()
 const nwr = new NonWarrantyRepairsActions()
 Cypress.on("uncaught:exception", () => {
     return false;
@@ -15,11 +13,11 @@ When('I should Sign In into the application', () => {
 })
 Then('Close the terms of service window', () => {
     cy.wait(8000)
-    repc.closeTermsOfServiceWindow()
+    nwr.closeTermsOfServiceWindow()
     cy.wait(1000)
 })
-And('Click on Report center page', () => {
-    repc.clickOnReportCenter()
+And ('Click on Repair360 page',()=>{
+nwr.clickOnRepair360()
 })
 And('Click on NonwarrantyRepairs page', () => {
     nwr.clickOnNonWarrantyRepairs()
@@ -42,8 +40,9 @@ And('Click on save button', () => {
 Then('Verify New Ticket is added', () => {
     nwr.verifyNewTicket()
 })
-And('Click on the view button', () => {
-    nwr.clickOnTicketNumberTable()
+And('Click on the Action button and Click on the view button', () => {
+    nwr.clickOnActionButton()
+    nwr.clickOnViewdetails()
 })
 Then('Verify the Repair Ticket page will open', () => {
     nwr.verifyRapairTicketPAge()
@@ -68,115 +67,82 @@ And('Click on Add Note and Verify', () => {
     nwr.clickOnAddNote()
 })
 //RI
-And('Click on filter of Repair Id Equals and Verify the Result', () => {
+And('Click on filter of Total Equals and Verify the Result', () => {
     nwr.filtercontainRI()
 })
-And('Click on filter of Repair Id Does not equal and Verify the Result', () => {
+And('Click on filter of Total Does not equal and Verify the Result', () => {
     nwr.filterDoesnotcontainRI()
 })
-And('Click on filter of Repair Id Greater than and Verify the Result', () => {
+And('Click on filter of Total Greater than and Verify the Result', () => {
     nwr.filterGreaterthanRI()
 })
-And('Click on filter of Repair Id Greater than or equal to and Verify the Result', () => {
+And('Click on filter of Total Greater than or equal to and Verify the Result', () => {
     nwr.filterGreaterequalRI()
 })
-And('Click on filter of Repair Id Less than and Verify the Result', () => {
+And('Click on filter of Total Less than and Verify the Result', () => {
     nwr.filterLessthanRI()
 })
-And('Click on filter of Repair Id Less than or equal to and Verify the Result', () => {
+And('Click on filter of Total Less than or equal to and Verify the Result', () => {
     nwr.filterLessequalRI()
 })
-And('Click on filter of Repair Id Between and Verify the Result', () => {
+And('Click on filter of Total Between and Verify the Result', () => {
     nwr.filterBetweenRI()
 })
-And('Click on filter of Repair Id Blank and Verify the Result', () => {
+And('Click on filter of Total Blank and Verify the Result', () => {
     nwr.filterBlankRI()
 })
-And('Click on filter of Repair Id Not blank and Verify the Result', () => {
+And('Click on filter of Total Not blank and Verify the Result', () => {
     nwr.filterNotblankRI()
 })
-//TN
-And('Click on filter of Ticket Number contain and Verify the Result', () => {
-    nwr.selectFilterTicketNumber()
+//issuetype
+And('Click on filter of Issue Type contain and Verify the Result', () => {
+    nwr.filterContainIType()
 })
-And('Click on filter of Ticket Number Does not contain and Verify the Result', () => {
-    nwr.filterDoesnotcontainTN()
+And('Click on filter of Issue Type Does not contain and Verify the Result', () => {
+    nwr.filterDoesnotcontainIType()
 })
-And('Click on filter of Ticket Number Equals and Verify the Result', () => {
-    nwr.filterEqualsTN()
+And('Click on filter of Issue Type Equals and Verify the Result', () => {
+    nwr.filterEqualsIType()
 })
-And('Click on filter of Ticket Number Does not equal and Verify the Result', () => {
-    nwr.filterNotequalTN()
+And('Click on filter of Issue Type Does not equal and Verify the Result', () => {
+    nwr.filterNotequalIType()
 })
-And('Click on filter of Ticket Number Begins with and Verify the Result', () => {
-    nwr.filterBeginswithTN()
+And('Click on filter of Issue Type Begins with and Verify the Result', () => {
+    nwr.filterBeginswithIType()
 })
-And('Click on filter of Ticket Number Ends with and Verify the Result', () => {
-    nwr.filterEndswithTN()
+And('Click on filter of Issue Type Ends with and Verify the Result', () => {
+    nwr.filterEndswithIType()
 })
-And('Click on filter of Ticket Number Blank and Verify the Result', () => {
-    nwr.filterBlankTN()
+And('Click on filter of Issue Type Blank and Verify the Result', () => {
+    nwr.filterBlankIType()
 })
-And('Click on filter of Ticket Number Not blank and Verify the Result', () => {
-    nwr.filterNotblankTN()
+And('Click on filter of Issue Type Not blank and Verify the Result', () => {
+    nwr.filterNotblankIType()
 })
-//RT
-And('Click on filter of Repair type contain and Verify the Result', () => {
-    nwr.selectFilterRepairType()
+//issue
+And('Click on filter of Issue contain and Verify the Result', () => {
+    nwr.filterContainIssue()
 })
-//SN
-And('Click on filter of Serial Number contain and Verify the Result', () => {
-    nwr.selectFilterSerialNumber()
+And('Click on filter of Issue Does not contain and Verify the Result', () => {
+    nwr.filterDoesnotcontainIssue()
 })
-And('Click on filter of Serial Number Does not contain and Verify the Result', () => {
-    nwr.filterDoesnotcontainSN()
+And('Click on filter of Issue Equals and Verify the Result', () => {
+    nwr.filterEqualsIssue()
 })
-And('Click on filter of Serial Number Equals and Verify the Result', () => {
-    nwr.filterEqualsSN()
+And('Click on filter of Issue Does not equal and Verify the Result', () => {
+    nwr.filterNotequalIssue()
 })
-And('Click on filter of Serial Number Does not equal and Verify the Result', () => {
-    nwr.filterNotequalSN()
+And('Click on filter of Issue Begins with and Verify the Result', () => {
+    nwr.filterBeginswithIssue()
 })
-And('Click on filter of Serial Number Begins with and Verify the Result', () => {
-    nwr.filterBeginswithSN()
+And('Click on filter of Issue Ends with and Verify the Result', () => {
+    nwr.filterEndswithIssue()
 })
-And('Click on filter of Serial Number Ends with and Verify the Result', () => {
-    nwr.filterEndswithSN()
+And('Click on filter of Issue Blank and Verify the Result', () => {
+    nwr.filterBlankIssue()
 })
-And('Click on filter of Serial Number Blank and Verify the Result', () => {
-    nwr.filterBlankSN()
-})
-And('Click on filter of Serial Number Not blank and Verify the Result', () => {
-    nwr.filterNotblankSN()
-})
-//ds
-And('Click on filter of Repair status op1 and Verify the Result', () => {
-    nwr.filterOption1()
-})
-//RBox
-And('Click on filter of Repair Box contain and Verify the Result', () => {
-    nwr.filterContainBox()
-})
-And('Click on filter of Repair Box Does not contain and Verify the Result', () => {
-    nwr.filterDoesnotcontainBox()
-})
-And('Click on filter of Repair Box Equals and Verify the Result', () => {
-    nwr.filterEqualsBox()
-})
-And('Click on filter of Repair Box Does not equal and Verify the Result', () => {
-    nwr.filterNotequalBox()
-})
-And('Click on filter of Repair Box Begins with and Verify the Result', () => {
-    nwr.filterBeginswithBox()
-})
-And('Click on filter of Repair Box Ends with and Verify the Result', () => {
-    nwr.filterEndswithBox()
-})
-And('Click on filter of Repair Box Blank and Verify the Result', () => {
-    nwr.filterBlankBox()
-})
-And('Click on filter of Repair Box Not blank and Verify the Result', () => {
-    nwr.filterNotblankBox()
+And('Click on filter of Issue Not blank and Verify the Result', () => {
+    nwr.filterNotblankIssue()
 })
 //rd
 And('Click on filter of Repair device contain and Verify the Result', () => {
@@ -228,30 +194,67 @@ And('Click on filter of Asset tag Blank and Verify the Result', () => {
 And('Click on filter of Asset tag Not blank and Verify the Result', () => {
     nwr.filterNotblanktag()
 })
-//Student Name
-And('Click on filter of Student Name contain and Verify the Result', () => {
-    nwr.filterContainStdN()
+//SN
+And('Click on filter of Serial Number contain and Verify the Result', () => {
+    nwr.selectFilterSerialNumber()
 })
-And('Click on filter of Student Name Does not contain and Verify the Result', () => {
-    nwr.filterDoesnotcontainStdN()
+And('Click on filter of Serial Number Does not contain and Verify the Result', () => {
+    nwr.filterDoesnotcontainSN()
 })
-And('Click on filter of Student Name Equals and Verify the Result', () => {
-    nwr.filterEqualsStdN()
+And('Click on filter of Serial Number Equals and Verify the Result', () => {
+    nwr.filterEqualsSN()
 })
-And('Click on filter of Student Name Does not equal and Verify the Result', () => {
-    nwr.filterNotequalStdN()
+And('Click on filter of Serial Number Does not equal and Verify the Result', () => {
+    nwr.filterNotequalSN()
 })
-And('Click on filter of Student Name Begins with and Verify the Result', () => {
-    nwr.filterBeginswithStdN()
+And('Click on filter of Serial Number Begins with and Verify the Result', () => {
+    nwr.filterBeginswithSN()
 })
-And('Click on filter of Student Name Ends with and Verify the Result', () => {
-    nwr.filterEndswithStdN()
+And('Click on filter of Serial Number Ends with and Verify the Result', () => {
+    nwr.filterEndswithSN()
 })
-And('Click on filter of Student Name Blank and Verify the Result', () => {
-    nwr.filterBlankStdN()
+And('Click on filter of Serial Number Blank and Verify the Result', () => {
+    nwr.filterBlankSN()
 })
-And('Click on filter of Student Name Not blank and Verify the Result', () => {
-    nwr.filterNotblankStdN()
+And('Click on filter of Serial Number Not blank and Verify the Result', () => {
+    nwr.filterNotblankSN()
+})
+//TN
+And('Click on filter of Ticket Number contain and Verify the Result', () => {
+    nwr.selectFilterTicketNumber()
+})
+And('Click on filter of Ticket Number Does not contain and Verify the Result', () => {
+    nwr.filterDoesnotcontainTN()
+})
+And('Click on filter of Ticket Number Equals and Verify the Result', () => {
+    nwr.filterEqualsTN()
+})
+And('Click on filter of Ticket Number Does not equal and Verify the Result', () => {
+    nwr.filterNotequalTN()
+})
+And('Click on filter of Ticket Number Begins with and Verify the Result', () => {
+    nwr.filterBeginswithTN()
+})
+And('Click on filter of Ticket Number Ends with and Verify the Result', () => {
+    nwr.filterEndswithTN()
+})
+And('Click on filter of Ticket Number Blank and Verify the Result', () => {
+    nwr.filterBlankTN()
+})
+And('Click on filter of Ticket Number Not blank and Verify the Result', () => {
+    nwr.filterNotblankTN()
+})
+
+//RT
+And('Click on filter of Repair type op1 and Verify the Result', () => {
+    nwr.selectFilterRepairType1()
+})
+And ('Click on filter of Repair type op2 and Verify the Result',()=>{
+    nwr.selectFilterRepairType2()
+})
+//ds
+And('Click on filter of Repair status op1 and Verify the Result', () => {
+    nwr.filterOption1()
 })
 //IT
 And('Click on filter of Internal Technician Name contain and Verify the Result', () => {
@@ -277,6 +280,56 @@ And('Click on filter of Internal Technician Name Blank and Verify the Result', (
 })
 And('Click on filter of Internal Technician Name Not blank and Verify the Result', () => {
     nwr.filterNotblankIT()
+})
+//Student Name
+And('Click on filter of Student Name contain and Verify the Result', () => {
+    nwr.filterContainStdN()
+})
+And('Click on filter of Student Name Does not contain and Verify the Result', () => {
+    nwr.filterDoesnotcontainStdN()
+})
+And('Click on filter of Student Name Equals and Verify the Result', () => {
+    nwr.filterEqualsStdN()
+})
+And('Click on filter of Student Name Does not equal and Verify the Result', () => {
+    nwr.filterNotequalStdN()
+})
+And('Click on filter of Student Name Begins with and Verify the Result', () => {
+    nwr.filterBeginswithStdN()
+})
+And('Click on filter of Student Name Ends with and Verify the Result', () => {
+    nwr.filterEndswithStdN()
+})
+And('Click on filter of Student Name Blank and Verify the Result', () => {
+    nwr.filterBlankStdN()
+})
+And('Click on filter of Student Name Not blank and Verify the Result', () => {
+    nwr.filterNotblankStdN()
+})
+//RBox
+And('Click on filter of Repair Box contain and Verify the Result', () => {
+    nwr.filterContainBox()
+})
+And('Click on filter of Repair Box Does not contain and Verify the Result', () => {
+    nwr.filterDoesnotcontainBox()
+})
+And('Click on filter of Repair Box Equals and Verify the Result', () => {
+    nwr.filterEqualsBox()
+})
+And('Click on filter of Repair Box Does not equal and Verify the Result', () => {
+    nwr.filterNotequalBox()
+})
+And('Click on filter of Repair Box Begins with and Verify the Result', () => {
+    nwr.filterBeginswithBox()
+})
+And('Click on filter of Repair Box Ends with and Verify the Result', () => {
+    nwr.filterEndswithBox()
+})
+And('Click on filter of Repair Box Blank and Verify the Result', () => {
+    nwr.filterBlankBox()
+})
+And('Click on filter of Repair Box Not blank and Verify the Result', () => {
+    nwr.filterNotblankBox()
 })
 //cby
 And('Click on filter of Created By contain and Verify the Result', () => {
@@ -331,8 +384,15 @@ And('Click on filter of Last Modified Date Blank and Verify the Result', () => {
 And('Click on filter of Last Modified Date Not blank and Verify the Result', () => {
     nwr.filterNotblankDate()
 })
-And('Click on Sort Ascending and Descending for Record ID and Verify the Result', () => {
-    nwr.sortingRecordID()
+//sorting
+And('Click on Sort Ascending and Descending for Total and Verify the Result', () => {
+    nwr.sortingTotal()
+})
+And('Click on Sort Ascending and Descending for Issue Type and Verify the Result', () => {
+    nwr.sortingIssueType()
+})
+And('Click on Sort Ascending and Descending for Issue and Verify the Result', () => {
+    nwr.sortingIssue()
 })
 And('Click on Sort Ascending and Descending for Ticket Number and Verify the Result', () => {
     nwr.sortingTicketNumber()

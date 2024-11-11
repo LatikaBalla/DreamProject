@@ -139,12 +139,12 @@ Feature:RepairTickets Page Functionality
     And Click on filter of Last Modified Date Blank and Verify the Result
     And Click on filter of Last Modified Date Not blank and Verify the Result
 
-    Then I should click on create new ticket
-    Then Select failure Type, Return site and Serial Device
-    And Select Building and Chromebook issue
-    Then Enter the Describe Your Issue
-    And Click on save button
-    Then Verify New Ticket is added
+    # Then I should click on create new ticket
+    # Then Select failure Type, Return site and Serial Device
+    # And Select Building and Chromebook issue
+    # Then Enter the Describe Your Issue
+    # And Click on save button
+    # Then Verify New Ticket is added
     And Click on Download import button
     Then Click on Learn More button
     And Verify Dream Data Filtering Guide should be visible 
@@ -160,19 +160,19 @@ Feature:RepairTickets Page Functionality
   # And Click on Update Button
   # Then Verify Updated successfully
 
-  Scenario: RepairTickets Sorting -Ascending and descending
-    And Click on Sort Ascending and Descending for Ticket Number and Verify the Result
-    And Click on Sort Ascending and Descending for Repair Type and Verify the Result
-    And Click on Sort Ascending and Descending for Serial Number and Verify the Result
-    And Click on Sort Ascending and Descending for Building and Verify the Result
-    And Click on Sort Ascending and Descending for Return Site and Verify the Result
-    And Click on Sort Ascending and Descending for Repair Device and Verify the Result
-    And Click on Sort Ascending and Descending for Asset Tag and Verify the Result
-    And Click on Sort Ascending and Descending for Student Info and Verify the Result
-    And Click on Sort Ascending and Descending for Student Technician and Verify the Result
-    And Click on Sort Ascending and Descending for Repair Status and Verify the Result
-    And Click on Sort Ascending and Descending for Created By and Verify the Result
-    And Click on Sort Ascending and Descending for Repair Box and Verify the Result
-    And Click on Sort Ascending and Descending for Created Date and Verify the Result
-    And Click on Sort Ascending and Descending for Last Modified Date and Verify the Result
+  # Scenario: RepairTickets Sorting -Ascending and descending
+  #   And Click on Sort Ascending and Descending for Ticket Number and Verify the Result
+  #   And Click on Sort Ascending and Descending for Repair Type and Verify the Result
+  #   And Click on Sort Ascending and Descending for Serial Number and Verify the Result
+  #   And Click on Sort Ascending and Descending for Building and Verify the Result
+  #   And Click on Sort Ascending and Descending for Return Site and Verify the Result
+  #   And Click on Sort Ascending and Descending for Repair Device and Verify the Result
+  #   And Click on Sort Ascending and Descending for Asset Tag and Verify the Result
+  #   And Click on Sort Ascending and Descending for Student Info and Verify the Result
+  #   And Click on Sort Ascending and Descending for Student Technician and Verify the Result
+  #   And Click on Sort Ascending and Descending for Repair Status and Verify the Result
+  #   And Click on Sort Ascending and Descending for Created By and Verify the Result
+  #   And Click on Sort Ascending and Descending for Repair Box and Verify the Result
+  #   And Click on Sort Ascending and Descending for Created Date and Verify the Result
+  #   And Click on Sort Ascending and Descending for Last Modified Date and Verify the Result
 

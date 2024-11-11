@@ -25,6 +25,12 @@ Then('I should be redirected to the Repair360 page', () => {
 And('Verify the Title of VivacityRepairCenter Page', () => {
     repc.verifyTitleVivacityRepairCenter()
 })
+Then ('Verify the How VivacityRepairCenter Works Tab should be visible',()=>{
+    repc. HowWorksTabVisible()
+})
+And ('Verify the Non-warranty Repairs tab should be visible',()=>{
+    repc.NonwarrantyRepairsTabVisible()
+})
 Then('Verify the VivaRepairTickets Tab should be visible', () => {
     repc.vivaRepairTicketsTabVisible()
 })
