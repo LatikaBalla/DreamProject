@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1299000000
+              "duration": 1747000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 6450000000
+              "duration": 7957000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9095000000
+              "duration": 9096000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Repair360 page",
             "result": {
               "status": "passed",
-              "duration": 81000000
+              "duration": 83000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on RepairBoxes Tab",
             "result": {
               "status": "passed",
-              "duration": 1120000000
+              "duration": 1109000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of RepairBoxes Page",
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 15000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Click on filter of Repair Box Equals and Verify the Result",
             "result": {
               "status": "failed",
-              "duration": 34482000000,
+              "duration": 34514000000,
               "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[placeholder='Filter...']`, but never found it.\n    at RepairBoxesElements.fieldValueElement (cypress/integration/PageObject/PageElements/RepairBoxesElements.js:156:18)\n    at RepairBoxesActions.selectFilterRepairBox (cypress/integration/PageObject/PageActions/RepairBoxesActions.js:141:11)\n    at Context.eval (cypress/integration/RepairBoxes/RepairBoxes.spec.js:106:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },

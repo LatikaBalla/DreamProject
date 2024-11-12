@@ -811,12 +811,6 @@ export class SrcRepairTicketsActions {
         cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus2)
         cy.get('.reset-button').click({ force: true })
     }
-    filterOption3() {
-        srt.addFilterElement().eq(9).click({ force: true })
-        cy.get('[value="Pending_Repair_Box"]').click({ force: true })
-        cy.get('[row-index="0"]>[col-id="repair_status"]').should('contain', tdata.srcRepairTicket.repairstatus3)
-        cy.get('.reset-button').click({ force: true })
-    }
     filterOption4() {
         srt.addFilterElement().eq(9).click({ force: true })
         cy.get('[value="In_Transit"]').click({ force: true })

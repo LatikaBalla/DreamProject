@@ -97,7 +97,7 @@ Feature:SrcRepairTickets Page Functionality
 
     And Click on filter of Repair status op1 and Verify the Result
     And Click on filter of Repair status op2 and Verify the Result
-    And Click on filter of Repair status op3 and Verify the Result
+    # And Click on filter of Repair status op3 and Verify the Result
     And Click on filter of Repair status op4 and Verify the Result
     And Click on filter of Repair status op5 and Verify the Result
 

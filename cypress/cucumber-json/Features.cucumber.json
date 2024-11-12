@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1384000000
+              "duration": 2389000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 4901000000
+              "duration": 8297000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9082000000
+              "duration": 9101000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on features page",
             "result": {
               "status": "passed",
-              "duration": 1139000000
+              "duration": 1148000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I should be redirected to the Features page",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 6000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of Features Page",
             "result": {
               "status": "passed",
-              "duration": 429000000
+              "duration": 1228000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Verify the Scheduled tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 5000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Verify the Launched tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 5000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Verify the Under Construction tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 4000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Search for feature title for Under Construction",
             "result": {
               "status": "passed",
-              "duration": 221000000
+              "duration": 210000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Verify the serach history for Under Construction",
             "result": {
               "status": "passed",
-              "duration": 594000000
+              "duration": 879000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Click on Under Consideration tab",
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 60000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "Search for feature title for Under Consideration",
             "result": {
               "status": "passed",
-              "duration": 230000000
+              "duration": 242000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Verify the serach history for Under Consideration",
             "result": {
               "status": "passed",
-              "duration": 583000000
+              "duration": 849000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "Search for feature title for Scheduled",
             "result": {
               "status": "passed",
-              "duration": 234000000
+              "duration": 237000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "Verify the serach history for Scheduled",
             "result": {
               "status": "passed",
-              "duration": 605000000
+              "duration": 639000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Click on Launched tab",
             "result": {
               "status": "passed",
-              "duration": 67000000
+              "duration": 62000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Search for feature title for Launched",
             "result": {
               "status": "passed",
-              "duration": 288000000
+              "duration": 278000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Verify the serach history for Launched",
             "result": {
               "status": "passed",
-              "duration": 1042000000
+              "duration": 1092000000
             }
           }
         ]

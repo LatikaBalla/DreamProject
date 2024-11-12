@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 4048000000
+              "duration": 2239000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 8004000000
+              "duration": 8163000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 14106000000
+              "duration": 14095000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on Report center page",
             "result": {
               "status": "passed",
-              "duration": 90000000
+              "duration": 85000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Click on VivacityRepairReport page",
             "result": {
               "status": "passed",
-              "duration": 84000000
+              "duration": 108000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Verify all sections of VivacityRepairReport Page should be visible",
             "result": {
               "status": "passed",
-              "duration": 46000000
+              "duration": 35000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "Select the building from dropdownlist",
             "result": {
               "status": "passed",
-              "duration": 1297000000
+              "duration": 1129000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Verify Repair ticket by status should be visible",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 14000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "Verify the InHouseRepairReport tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 7000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Click on InHouseRepairReport page",
             "result": {
               "status": "passed",
-              "duration": 60000000
+              "duration": 58000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Verify the DeviceRepairReport tab should be visible",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 6000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Verify title of DeviceRepairReport Page should be visible",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 17000000
             }
           },
           {
@@ -252,8 +252,9 @@
             "line": 36,
             "name": "Verify the NonwarrantyRepairs tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 65000000
+              "status": "failed",
+              "duration": 30281000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `undefined`, but never found it.\n    at ReportCenterActions.nonwarrantyRepairsTabVisible (cypress/integration/PageObject/PageActions/ReportCenterActions.js:28:32)\n    at Context.eval (cypress/integration/ReportCenter/ReportCenter.spec.js:48:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -262,8 +263,7 @@
             "line": 37,
             "name": "Click on NonwarrantyRepairs page",
             "result": {
-              "status": "passed",
-              "duration": 63000000
+              "status": "skipped"
             }
           },
           {
@@ -272,8 +272,7 @@
             "line": 38,
             "name": "Verify title of NonWarrantyRepairs Page should be visible",
             "result": {
-              "status": "passed",
-              "duration": 12000000
+              "status": "skipped"
             }
           },
           {
@@ -282,8 +281,7 @@
             "line": 39,
             "name": "Verify table and filter should be visible",
             "result": {
-              "status": "passed",
-              "duration": 12000000
+              "status": "skipped"
             }
           },
           {
@@ -292,8 +290,7 @@
             "line": 41,
             "name": "Verify the TelemetryData tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 8000000
+              "status": "skipped"
             }
           },
           {
@@ -302,8 +299,7 @@
             "line": 42,
             "name": "Click on TelemetryData page",
             "result": {
-              "status": "passed",
-              "duration": 58000000
+              "status": "skipped"
             }
           },
           {
@@ -312,8 +308,7 @@
             "line": 43,
             "name": "Verify the Title of TelemetryData Page",
             "result": {
-              "status": "passed",
-              "duration": 5000000
+              "status": "skipped"
             }
           },
           {
@@ -322,8 +317,7 @@
             "line": 44,
             "name": "Verify the TelemetryData Tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 9000000
+              "status": "skipped"
             }
           },
           {
@@ -332,8 +326,7 @@
             "line": 45,
             "name": "Verify the Device information tab should be visible",
             "result": {
-              "status": "passed",
-              "duration": 11000000
+              "status": "skipped"
             }
           }
         ]

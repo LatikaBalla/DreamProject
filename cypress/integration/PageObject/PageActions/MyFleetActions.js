@@ -249,10 +249,11 @@ export class MyFleetActions {
    }
    clickOnHelpIcon() {
       mf.filterHelpElement().click({ force: true })
-      cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
+      //cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
    }
    verifyfilteringGuide() {
       cy.contains('Dream Data Filtering Guide').should('be.visible')
+      cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
    }
    verifyActive() {
       dash.messageElement().should('contain', 'Device Activated', { force: true })

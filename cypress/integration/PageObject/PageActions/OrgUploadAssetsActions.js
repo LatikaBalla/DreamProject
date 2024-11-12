@@ -166,7 +166,7 @@ export class OrgUploadAssetsActions {
         cy.get('[col-id="button"]').eq(1).find('[data-testid="DeleteIcon"]').click({ force: true })
     }
     clickConfirmDeleteButton() {
-        cy.get('.css-13dncgk').click({ force: true })
+        cy.get('.css-1rt18mr').click({ force: true })
     }
     verifyRecordDeleted() {
         dash.messageElement().should('contain', tdata.orgAsset.deletemsg)

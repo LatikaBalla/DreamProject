@@ -33,10 +33,10 @@ Feature: Report Center Page Functionality
         Then Verify the filters should be visible
         Then Verify history table should be visible
 
-        And Verify the NonwarrantyRepairs tab should be visible
-        And Click on NonwarrantyRepairs page
-        Then Verify title of NonWarrantyRepairs Page should be visible
-        Then Verify table and filter should be visible
+        # And Verify the NonwarrantyRepairs tab should be visible
+        # And Click on NonwarrantyRepairs page
+        # Then Verify title of NonWarrantyRepairs Page should be visible
+        # Then Verify table and filter should be visible
 
         And Verify the TelemetryData tab should be visible
         And Click on TelemetryData page

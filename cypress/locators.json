@@ -856,7 +856,7 @@
         "photo": "img[alt='addimage']",
         "profiledetails": ".css-1dvhtlc",
         "accountdetails": ".css-1c9o6ob",
-        "emailname": ".css-1drhpkw"
+        "emailname": ".css-tx03od"
     },
     "features": {
         "title": "[name='title']",
