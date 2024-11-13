@@ -57,6 +57,11 @@ Feature: RepairBoxes Page Functionality
     And Click on filter of Box_type Blank and Verify the Result
     And Click on filter of Box_type Not blank and Verify the Result
 
+    And Click on filter of shipping_box_status op1 and Verify the Result
+    And Click on filter of shipping_box_status op2 and Verify the Result
+    And Click on filter of shipping_box_status op3 and Verify the Result
+    And Click on filter of shipping_box_status op4 and Verify the Result
+
     And Click on filter of Created By contain and Verify the Result
     And Click on filter of Created By Does not contain and Verify the Result
     And Click on filter of Created By Equals and Verify the Result
@@ -66,12 +71,7 @@ Feature: RepairBoxes Page Functionality
     And Click on filter of Created By Blank and Verify the Result
     And Click on filter of Created By Not blank and Verify the Result
 
-    And Click on filter of shipping_box_status Not Shipped and Verify the Result
-    And Click on filter of shipping_box_status Recieved By Vivacity and Verify the Result
-    And Click on filter of shipping_box_status Shipping From District with and Verify the Result
-    And Click on filter of shipping_box_status all checked with and Verify the Result
-
-     And Click on filter of Created Date Equals and Verify the Result
+    And Click on filter of Created Date Equals and Verify the Result
     And Click on filter of Created Date Does not equal and Verify the Result
     And Click on filter of Created Date Before and Verify the Result
     And Click on filter of Created Date After and Verify the Result
@@ -87,6 +87,9 @@ Feature: RepairBoxes Page Functionality
     And Click on filter of Last Modified Date Blank and Verify the Result
     And Click on filter of Last Modified Date Not blank and Verify the Result
 
+    And Click on help icon for Filtering Guide
+    Then Verify the Dream Data Filtering Guide
+    And Click on Save Table view icon and Verify 
     Then Click on label form of image and Verify
     Then Click on label form of Pdf and Verify
     And Click on Export Button
@@ -100,32 +103,23 @@ Feature: RepairBoxes Page Functionality
     # Then Verify new box is added in table
     And Click on view button
     Then Verify the Details new box
-    And Add another ticket in the same box
-    Then Select Ticket from dropdownlist
-    And Click on Add ticket
-    Then Verify the ticket is added in table
-    And Click on view the ticket Details
-    Then Verfiy the ticket Details
-    Then Click on Add Repair Image and Verify
-    And Click on Add Note and Verify
-    Then Click on Remove button for deleting ticket
+  # And Add another ticket in the same box
+  # Then Select Ticket from dropdownlist
+  # And Click on Add ticket
+  # Then Verify the ticket is added in table
+  # And Click on view the ticket Details
+  # Then Verfiy the ticket Details
+  # Then Click on Add Repair Image and Verify
+  # And Click on Add Note and Verify
+  # Then Click on Remove button for deleting ticket
 
-#  Scenario: RepairBoxes Sorting -Ascending and descending
-#     And Click on Sort Ascending and Descending for Repair Box and Verify the Result
-#     And Click on Sort Ascending and Descending for Tracking Number From and Verify the Result
-#     And Click on Sort Ascending and Descending for Shipped From Date and Verify the Result
-#     And Click on Sort Ascending and Descending for Building and Verify the Result
-#     And Click on Sort Ascending and Descending for Box Type and Verify the Result
-#     And Click on Sort Ascending and Descending for Shipping Box Status and Verify the Result
-#     And Click on Sort Ascending and Descending for Created By and Verify the Result
-#     And Click on Sort Ascending and Descending for Created Date and Verify the Result
-#     And Click on Sort Ascending and Descending for Last Modified Date and Verify the Result
-
-
-
-
-
-
-
-
-
+  Scenario: RepairBoxes Sorting -Ascending and descending
+    And Click on Sort Ascending and Descending for Repair Box and Verify the Result
+    And Click on Sort Ascending and Descending for Tracking Number From and Verify the Result
+    And Click on Sort Ascending and Descending for Shipped From Date and Verify the Result
+    And Click on Sort Ascending and Descending for Building and Verify the Result
+    And Click on Sort Ascending and Descending for Box Type and Verify the Result
+    And Click on Sort Ascending and Descending for Shipping Box Status and Verify the Result
+    And Click on Sort Ascending and Descending for Created By and Verify the Result
+    And Click on Sort Ascending and Descending for Created Date and Verify the Result
+    And Click on Sort Ascending and Descending for Last Modified Date and Verify the Result

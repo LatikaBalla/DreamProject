@@ -101,6 +101,16 @@ Then('Click on label form of image and Verify', () => {
 Then('Click on label form of Pdf and Verify', () => {
     rb.ClickOnPdflabel()
 })
+And ('Click on help icon for Filtering Guide',()=>{
+    rb.clickOnHelpIcon()
+})
+Then ('Verify the Dream Data Filtering Guide',()=>{
+    rb.verifyfilteringGuide()
+})
+And ('Click on Save Table view icon and Verify',()=>{
+    rb.clickOnSaveTableIcon()
+    rb.verifySaveMessage()
+})
 //RB
 And('Click on filter of Repair Box Equals and Verify the Result', () => {
     rb.selectFilterRepairBox()
@@ -230,17 +240,17 @@ And('Click on filter of Box_type Not blank and Verify the Result', () => {
 And('Click on filter of shipping_box_status with search and check the option and Verify the Result', () => {
     rb.filterSearchCheck()
 })
-And('Click on filter of shipping_box_status Not Shipped and Verify the Result', () => {
+And('Click on filter of shipping_box_status op1 and Verify the Result', () => {
     rb.filterCheck1()
 })
-And('Click on filter of shipping_box_status Recieved By Vivacity and Verify the Result', () => {
+And('Click on filter of shipping_box_status op2 and Verify the Result', () => {
     rb.filterCheck2()
 })
-And('Click on filter of shipping_box_status Shipping From District with and Verify the Result', () => {
+And('Click on filter of shipping_box_status op3 and Verify the Result', () => {
     rb.filterCheck3()
 })
-And('Click on filter of shipping_box_status all checked with and Verify the Result', () => {
-    rb.filterCheckAll()
+And('Click on filter of shipping_box_status op4 and Verify the Result', () => {
+    rb.filterCheck4()
 })
 //CBY
 And('Click on filter of Created By contain and Verify the Result', () => {

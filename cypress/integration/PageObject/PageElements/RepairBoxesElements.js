@@ -252,4 +252,14 @@ export default class RepairBoxesElements {
             timeout: 30000,
         })
     }
+    saveIconElement() {
+        return cy.get(locator.repairBoxes.saveIcon, {
+            timeout: 30000,
+        })
+    }
+    filterHelpElement() {
+        return cy.get(locator.repairBoxes.filterHelp, {
+            timeout: 30000,
+        })
+    }
 }

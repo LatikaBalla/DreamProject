@@ -550,10 +550,10 @@
         "sortAscending": "Sort Ascending",
         "sortDescending": "Sort Descending",
         "clearSort": "Clear Sort",
-        "helpIcon": "[data-testid='HelpIcon']",
         "printbtn": "Print Ticket Estimate",
         "downloadbtn": "Download Ticket Estimate",
-        "filterHelp":"[data-testid='HelpIcon']"
+        "filterHelp":"[data-testid='HelpIcon']",
+        "saveIcon":"[data-testid='SaveIcon']"
     },
     "inhouseRepairCenter": {
         "title": "In-House Repair",

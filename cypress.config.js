@@ -5,10 +5,10 @@ module.exports = defineConfig({
       return require('./cypress/plugins/index.js')(on, config)
     },
 
-  baseUrl: 'https://dream-frontend-stage.onrender.com/',
+ // baseUrl: 'https://dream-frontend-stage.onrender.com/',
     //baseUrl:"https://valkyrie-frontend-test.onrender.com/",
     //baseUrl: "https://dream.vivacitytech.com/",
-  //baseUrl:"https://dream-frontend-qa.onrender.com/",
+  baseUrl:"https://dream-frontend-qa.onrender.com/",
     specPattern: 'cypress/integration/*.feature',
     supportFile: 'cypress/support/index.js',
     chromeWebSecurity: false,

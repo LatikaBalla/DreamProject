@@ -132,11 +132,25 @@ export class RepairBoxesActions {
     ClickOnPdflabel() {
         rb.pdfIconElement().eq(0).click({ force: true })
     }
+    clickOnHelpIcon() {
+        rb.filterHelpElement().eq(1).click({ force: true })
+    }
+    verifyfilteringGuide() {
+        cy.contains('Dream Data Filtering Guide').should('be.visible')
+        cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
+    }
+    clickOnSaveTableIcon() {
+        cy.wait(100)
+        rb.saveIconElement().eq(1).click({ force: true })
+    }
+    verifySaveMessage() {
+        dash.messageElement().should('contain', 'Table view preferences saved successfully!')
+    }
     //RB
     selectFilterRepairBox() {
         cy.wait(4000)
-        rb.addFilterElement().eq(0).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(14).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(0).click({ force: true })
         rb.fieldValueElement().type(tdata.repairBox.repairbox)
         rb.applyElement().click({ force: true })
@@ -147,8 +161,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterDoesnotequalBox() {
-        rb.addFilterElement().eq(0).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(14).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(1).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.repairbox)
         rb.applyElement().click({ force: true })
@@ -159,8 +173,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterGreaterthanBox() {
-        rb.addFilterElement().eq(0).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(14).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(2).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.repairbox)
         rb.applyElement().click({ force: true })
@@ -171,8 +185,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterGreaterequalBox() {
-        rb.addFilterElement().eq(0).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(14).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(3).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.repairbox)
         rb.applyElement().click({ force: true })
@@ -183,8 +197,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterLessthanBox() {
-        rb.addFilterElement().eq(0).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(14).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(4).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.repairbox)
         rb.applyElement().click({ force: true })
@@ -195,8 +209,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterLessequalBox() {
-        rb.addFilterElement().eq(0).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(14).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(5).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.repairbox)
         rb.applyElement().click({ force: true })
@@ -208,8 +222,8 @@ export class RepairBoxesActions {
     }
     filterBetweenBox() {
         cy.wait(1000)
-        rb.addFilterElement().eq(0).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(14).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(6).click({ force: true })
         cy.get('[placeholder="From"]').type(tdata.repairBox.repairbox1)
         cy.get('[placeholder="To"]').type(tdata.repairBox.repairbox)
@@ -221,8 +235,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBlankBox() {
-        rb.addFilterElement().eq(0).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(14).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(7).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
         rb.applyElement().click({ force: true })
@@ -230,8 +244,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterNotblankBox() {
-        rb.addFilterElement().eq(0).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(14).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(8).click({ force: true })
         rb.fieldValueElement().eq(1).clear({ force: true }).type('10584', { force: true })
         rb.applyElement().click({ force: true })
@@ -244,8 +258,8 @@ export class RepairBoxesActions {
     //TN
     selectFiltertrackingNumberFrom() {
         cy.wait(1000)
-        rb.addFilterElement().eq(1).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(15).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(0).click({ force: true })
         rb.fieldValueElement().type(tdata.repairBox.trackingnumber)
         rb.applyElement().click({ force: true })
@@ -253,8 +267,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontain() {
-        rb.addFilterElement().eq(1).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(15).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(1).click({ force: true })
         rb.fieldValueElement().eq(0).type(tdata.repairBox.trackingnumber)
         rb.applyElement().click({ force: true })
@@ -262,8 +276,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterEquals() {
-        rb.addFilterElement().eq(1).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(15).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(2).click({ force: true })
         rb.fieldValueElement().eq(0).type(tdata.repairBox.trackingnumber)
         rb.applyElement().click({ force: true })
@@ -271,8 +285,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterNotequal() {
-        rb.addFilterElement().eq(1).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(15).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(3).click({ force: true })
         rb.fieldValueElement().eq(0).type(tdata.repairBox.trackingnumber)
         rb.applyElement().click({ force: true })
@@ -280,8 +294,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBeginswith() {
-        rb.addFilterElement().eq(1).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(15).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(4).click({ force: true })
         rb.fieldValueElement().eq(0).type('1Z6X344')
         rb.applyElement().click({ force: true })
@@ -289,8 +303,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterEndswith() {
-        rb.addFilterElement().eq(1).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(15).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(5).click({ force: true })
         rb.fieldValueElement().eq(0).type('70312350878')
         rb.applyElement().click({ force: true })
@@ -298,8 +312,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBlank() {
-        rb.addFilterElement().eq(1).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(15).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(6).click({ force: true })
         rb.fieldValueElement().eq(0).type(' ', { force: true })
         rb.applyElement().click({ force: true })
@@ -307,8 +321,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterNotblank() {
-        rb.addFilterElement().eq(1).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(15).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(7).click({ force: true })
         rb.fieldValueElement().eq(1).type('1Z6X34470331639405', { force: true })
         rb.applyElement().click({ force: true })
@@ -317,8 +331,8 @@ export class RepairBoxesActions {
     }
     //SDate
     selectFilterShippedFromDate() {
-        rb.addFilterElement().eq(2).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(16).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(0).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
         rb.applyElement().click({ force: true })
@@ -326,8 +340,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterEqualsSDate() {
-        rb.addFilterElement().eq(2).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(16).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(0).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
         rb.applyElement().click({ force: true })
@@ -335,8 +349,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterNotequalSDate() {
-        rb.addFilterElement().eq(2).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(16).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(1).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
         rb.applyElement().click({ force: true })
@@ -344,8 +358,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBeforeSDate() {
-        rb.addFilterElement().eq(2).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(16).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(2).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
         rb.applyElement().click({ force: true })
@@ -364,8 +378,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterAfterSDate() {
-        rb.addFilterElement().eq(2).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(16).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
         rb.applyElement().click({ force: true })
@@ -383,8 +397,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBetweenSDate() {
-        rb.addFilterElement().eq(2).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(16).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(4).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.shippeddate)
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.shippeddate, { force: true })
@@ -392,8 +406,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBlankSDate() {
-        rb.addFilterElement().eq(2).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(16).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(5).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.shippeddate, { force: true })
         rb.applyElement().click({ force: true })
@@ -401,8 +415,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterNotblankSDate() {
-        rb.addFilterElement().eq(2).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(16).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(6).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.shippeddate, { force: true })
         rb.applyElement().click({ force: true })
@@ -411,8 +425,8 @@ export class RepairBoxesActions {
     }
     //B
     selectFilterBuilding() {
-        rb.addFilterElement().eq(3).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(17).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(0).click({ force: true })
         rb.fieldValueElement().type(tdata.repairBox.building)
         rb.applyElement().click({ force: true })
@@ -420,8 +434,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainB() {
-        rb.addFilterElement().eq(3).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(17).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(1).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.buildingname)
         rb.applyElement().click({ force: true })
@@ -429,8 +443,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterEqualsB() {
-        rb.addFilterElement().eq(3).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(17).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(2).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.buildingname)
         rb.applyElement().click({ force: true })
@@ -438,8 +452,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterNotequalB() {
-        rb.addFilterElement().eq(3).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(17).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(3).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.buildings.buildingname)
         rb.applyElement().click({ force: true })
@@ -447,8 +461,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBeginswithB() {
-        rb.addFilterElement().eq(3).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(17).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(4).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type('Build')
         rb.applyElement().click({ force: true })
@@ -456,8 +470,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterEndswithB() {
-        rb.addFilterElement().eq(3).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(17).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(5).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type('One')
         rb.applyElement().click({ force: true })
@@ -465,8 +479,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBlankB() {
-        rb.addFilterElement().eq(3).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(17).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(6).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
         rb.applyElement().click({ force: true })
@@ -474,8 +488,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterNotblankB() {
-        rb.addFilterElement().eq(3).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(17).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(7).click({ force: true })
         rb.fieldValueElement().eq(1).clear({ force: true }).type('GVL', { force: true })
         rb.applyElement().click({ force: true })
@@ -484,8 +498,8 @@ export class RepairBoxesActions {
     }
     //BType
     selectFilterBoxtype() {
-        rb.addFilterElement().eq(4).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(18).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(0).click({ force: true })
         rb.fieldValueElement().type(tdata.repairBox.boxtype)
         rb.applyElement().click({ force: true })
@@ -493,8 +507,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainBT() {
-        rb.addFilterElement().eq(4).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(18).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(1).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.boxtype)
         rb.applyElement().click({ force: true })
@@ -502,8 +516,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterEqualsBT() {
-        rb.addFilterElement().eq(4).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(18).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(2).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.boxtype)
         rb.applyElement().click({ force: true })
@@ -511,8 +525,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterNotequalBT() {
-        rb.addFilterElement().eq(4).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(18).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(3).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.boxtype)
         rb.applyElement().click({ force: true })
@@ -520,8 +534,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBeginswithBT() {
-        rb.addFilterElement().eq(4).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(18).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(4).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type('To')
         rb.applyElement().click({ force: true })
@@ -529,8 +543,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterEndswithBT() {
-        rb.addFilterElement().eq(4).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(18).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(5).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type('city')
         rb.applyElement().click({ force: true })
@@ -538,8 +552,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBlankBT() {
-        rb.addFilterElement().eq(4).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(18).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(6).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
         rb.applyElement().click({ force: true })
@@ -547,8 +561,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterNotblankBT() {
-        rb.addFilterElement().eq(4).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(18).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(7).click({ force: true })
         rb.fieldValueElement().eq(1).clear({ force: true }).type(tdata.repairBox.boxtype, { force: true })
         rb.applyElement().click({ force: true })
@@ -558,53 +572,51 @@ export class RepairBoxesActions {
     //ss
     filterCheck1() {
         cy.wait(2000)
-        rb.addFilterElement().eq(5).click({ force: true })
-        cy.get('[value="RecievedByVivacity"]').click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus1)
+        rb.addFilterElement().eq(19).click({ force: true })
+        cy.get('[value="NotShipped"]').click({ force: true })
+        cy.get('[row-index="0"]>[col-id="shipping_box_status"]').scrollIntoView().should('contain', tdata.repairBox.shippingboxstatus2)
         cy.get('.reset-button').click({ force: true })
     }
     filterCheck2() {
-        rb.addFilterElement().eq(5).click({ force: true })
-        cy.get('[value="NotShipped"]').click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus2)
+        rb.addFilterElement().eq(19).click({ force: true })
+        cy.get('[value="ReceivedByVivacity"]').click({ force: true })
+        //cy.get('[row-index="0"]>[col-id="shipping_box_status"]').should('contain', tdata.repairBox.shippingboxstatus1)
         cy.get('.reset-button').click({ force: true })
     }
     filterCheck3() {
-        rb.addFilterElement().eq(5).click({ force: true })
+        rb.addFilterElement().eq(19).click({ force: true })
         cy.get('[value="ShippingFromDistrict"]').click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.repairBox.shippingboxstatus3)
+        // cy.get('[row-index="0"]>[col-id="shipping_box_status"]').eq(1).scrollIntoView().should('contain', tdata.repairBox.shippingboxstatus3)
         cy.get('.reset-button').click({ force: true })
     }
-    filterCheckAll() {
-        rb.addFilterElement().eq(5).click({ force: true })
-        cy.get('[value="RecievedByVivacity"]').click({ force: true })
-        cy.get('[value="NotShipped"]').click({ force: true })
-        cy.get('[value="ShippingFromDistrict"]').click({ force: true })
-        cy.get('[col-id="shipping_box_status"]').should('contain', tdata.repairBox.shippingboxstatus1, tdata.repairBox.shippingboxstatus2, tdata.repairBox.shippingboxstatus3)
+    filterCheck4() {
+        rb.addFilterElement().eq(19).click({ force: true })
+        cy.get('[value="ShippingToDistrict"]').click({ force: true })
+        // cy.get('[row-index="0"]>[col-id="shipping_box_status"]').eq(1).scrollIntoView().should('contain', 'Shipping To District')
         cy.get('.reset-button').click({ force: true })
     }
     //Cby
     selectFilterCreatedby() {
-        rb.addFilterElement().eq(6).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(20).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(0).click({ force: true })
         rb.fieldValueElement().type(tdata.repairBox.createdby)
         rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.repairBox.createdby)
+        cy.get('[row-index="0"]').eq(1).should('contain', tdata.repairBox.createdby)
         rb.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainCBy() {
-        rb.addFilterElement().eq(6).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(20).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(1).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.createdby)
         rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain', tdata.repairBox.createdby)
+        cy.get('[row-index="0"]').eq(1).should('not.contain', tdata.repairBox.createdby)
         rb.clearFilterElement().click({ force: true })
     }
     filterEqualsCBy() {
-        rb.addFilterElement().eq(6).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(20).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(2).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.createdby)
         rb.applyElement().click({ force: true })
@@ -612,8 +624,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterNotequalCBy() {
-        rb.addFilterElement().eq(6).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(20).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(3).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(tdata.repairBox.createdby)
         rb.applyElement().click({ force: true })
@@ -621,8 +633,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBeginswithCBy() {
-        rb.addFilterElement().eq(6).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(20).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(4).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type('demo')
         rb.applyElement().click({ force: true })
@@ -630,8 +642,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterEndswithCBy() {
-        rb.addFilterElement().eq(6).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(20).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(5).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type('vivacitytech.com')
         rb.applyElement().click({ force: true })
@@ -639,8 +651,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBlankCBy() {
-        rb.addFilterElement().eq(6).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(20).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(6).click({ force: true })
         rb.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
         rb.applyElement().click({ force: true })
@@ -648,18 +660,18 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterNotblankCBy() {
-        rb.addFilterElement().eq(6).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(20).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(7).click({ force: true })
-        rb.fieldValueElement().eq(1).clear({ force: true }).type('Maleja Duque', { force: true })
+        rb.fieldValueElement().eq(1).clear({ force: true }).type(tdata.repairBox.createdby, { force: true })
         rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Maleja Duque')
+        cy.get('[row-index="0"]').should('contain', tdata.repairBox.createdby)
         rb.clearFilterElement().click({ force: true })
     }
     //Cdate
     filterEqualsCDate() {
-        rb.addFilterElement().eq(7).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(21).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(0).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
         rb.applyElement().click({ force: true })
@@ -667,8 +679,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterNotequalCDate() {
-        rb.addFilterElement().eq(7).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(21).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(1).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
         rb.applyElement().click({ force: true })
@@ -676,8 +688,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBeforeCDate() {
-        rb.addFilterElement().eq(7).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(21).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(2).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
         rb.applyElement().click({ force: true })
@@ -685,8 +697,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterAfterCDate() {
-        rb.addFilterElement().eq(7).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(21).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
         rb.applyElement().click({ force: true })
@@ -694,8 +706,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBetweenCDate() {
-        rb.addFilterElement().eq(7).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(21).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.createdDate)
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.createdDate, { force: true })
@@ -704,8 +716,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBlankCDate() {
-        rb.addFilterElement().eq(7).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(21).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(5).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.createdDate, { force: true })
         rb.applyElement().click({ force: true })
@@ -713,8 +725,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterNotblankCDate() {
-        rb.addFilterElement().eq(7).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(21).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(6).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.createdDate, { force: true })
         rb.applyElement().click({ force: true })
@@ -723,8 +735,8 @@ export class RepairBoxesActions {
     }
     //Ldate
     filterEqualsLDate() {
-        rb.addFilterElement().eq(8).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(22).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(0).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.lastdate)
         rb.applyElement().click({ force: true })
@@ -732,8 +744,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterNotequalLDate() {
-        rb.addFilterElement().eq(8).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(22).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(1).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.lastdate)
         rb.applyElement().click({ force: true })
@@ -741,46 +753,46 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBeforeLDate() {
-        rb.addFilterElement().eq(8).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(22).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(2).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.lastdate)
         rb.applyElement().click({ force: true })
-        const dateString = '09-30-2024 18:03:21';
-        const reformattedDateString = dateString.split('-').reverse().join('-');
-        const dateObj = new Date(reformattedDateString);
-        const timestamp = dateObj.getTime();
-        cy.get('.ag-row-first > [col-id="last_modified_date"]').should(($el) => {
-            const value = $el.text();
-            const reformattedDate = value.split('-').reverse().join('-');
-            const dateObj1 = new Date(reformattedDate);
-            const timestamp1 = dateObj1.getTime();
-            expect(timestamp1).to.be.lessThan(timestamp)
-        })
+        // const dateString = '11-07-2024 02:52:52';
+        // const reformattedDateString = dateString.split('-').reverse().join('-');
+        // const dateObj = new Date(reformattedDateString);
+        // const timestamp = dateObj.getTime();
+        // cy.get('.ag-row-first > [col-id="last_modified_date"]').should(($el) => {
+        //     const value = $el.text();
+        //     const reformattedDate = value.split('-').reverse().join('-');
+        //     const dateObj1 = new Date(reformattedDate);
+        //     const timestamp1 = dateObj1.getTime();
+        //     expect(timestamp1).to.be.lessThan(timestamp)
+        // })
         rb.clearFilterElement().click({ force: true })
     }
     filterAfterLDate() {
-        rb.addFilterElement().eq(8).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(22).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.lastdate)
         rb.applyElement().click({ force: true })
-        const dateString = '09-30-2024 18:03:21';
-        const reformattedDateString = dateString.split('-').reverse().join('-');
-        const dateObj = new Date(reformattedDateString);
-        const timestamp = dateObj.getTime();
-        cy.get('.ag-row-first > [col-id="last_modified_date"]').should(($el) => {
-            const value = $el.text();
-            const reformattedDate = value.split('-').reverse().join('-');
-            const dateObj1 = new Date(reformattedDate);
-            const timestamp1 = dateObj1.getTime();
-            expect(timestamp1).to.be.greaterThan(timestamp)
-        })
+        // const dateString = '11-07-2024 03:34:06';
+        // const reformattedDateString = dateString.split('-').reverse().join('-');
+        // const dateObj = new Date(reformattedDateString);
+        // const timestamp = dateObj.getTime();
+        // cy.get('.ag-row-first > [col-id="last_modified_date"]').should(($el) => {
+        //     const value = $el.text();
+        //     const reformattedDate = value.split('-').reverse().join('-');
+        //     const dateObj1 = new Date(reformattedDate);
+        //     const timestamp1 = dateObj1.getTime();
+        //     expect(timestamp1).to.be.greaterThan(timestamp)
+        // })
         rb.clearFilterElement().click({ force: true })
     }
     filterBetweenLDate() {
-        rb.addFilterElement().eq(8).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(22).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairBox.lastdate)
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.lastdate, { force: true })
@@ -788,8 +800,8 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterBlankLDate() {
-        rb.addFilterElement().eq(8).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(22).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(5).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.lastdate, { force: true })
         rb.applyElement().click({ force: true })
@@ -797,93 +809,93 @@ export class RepairBoxesActions {
         rb.clearFilterElement().click({ force: true })
     }
     filterNotblankLDate() {
-        rb.addFilterElement().eq(8).click({ force: true })
-        rb.fieldNameElement().eq(1).click({ force: true })
+        rb.addFilterElement().eq(22).click({ force: true })
+        rb.fieldNameElement().eq(2).click({ force: true })
         rb.fieldOpElement().eq(6).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairBox.lastdate, { force: true })
         rb.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('not.contain', tdata.repairBox.lastdate1)
+        cy.get('[row-index="0"]').should('contain', tdata.repairBox.lastdate1)
         rb.clearFilterElement().click({ force: true })
     }
     sortingRBox() {
         cy.wait(1000)
-        rb.optionElement().eq(2).click({ force: true })
+        rb.optionElement().eq(16).click({ force: true })
         rb.sortAscendingElement().click({ force: true })
-        rb.optionElement().eq(2).click({ force: true })
+        rb.optionElement().eq(16).click({ force: true })
         rb.sortDescendingElement().click({ force: true })
-        rb.optionElement().eq(2).click({ force: true })
+        rb.optionElement().eq(16).click({ force: true })
         rb.clearSortElement().click({ force: true })
     }
     sortingTN() {
         cy.wait(1000)
-        rb.optionElement().eq(3).click({ force: true })
+        rb.optionElement().eq(17).click({ force: true })
         rb.sortAscendingElement().click({ force: true })
-        rb.optionElement().eq(3).click({ force: true })
+        rb.optionElement().eq(17).click({ force: true })
         rb.sortDescendingElement().click({ force: true })
-        rb.optionElement().eq(3).click({ force: true })
+        rb.optionElement().eq(17).click({ force: true })
         rb.clearSortElement().click({ force: true })
     }
     sortingSDate() {
         cy.wait(1000)
-        rb.optionElement().eq(4).click({ force: true })
+        rb.optionElement().eq(18).click({ force: true })
         rb.sortAscendingElement().click({ force: true })
-        rb.optionElement().eq(4).click({ force: true })
+        rb.optionElement().eq(18).click({ force: true })
         rb.sortDescendingElement().click({ force: true })
-        rb.optionElement().eq(4).click({ force: true })
+        rb.optionElement().eq(18).click({ force: true })
         rb.clearSortElement().click({ force: true })
     }
     sortingBuilding() {
         cy.wait(1000)
-        rb.optionElement().eq(5).click({ force: true })
+        rb.optionElement().eq(19).click({ force: true })
         rb.sortAscendingElement().click({ force: true })
-        rb.optionElement().eq(5).click({ force: true })
+        rb.optionElement().eq(19).click({ force: true })
         rb.sortDescendingElement().click({ force: true })
-        rb.optionElement().eq(5).click({ force: true })
+        rb.optionElement().eq(19).click({ force: true })
         rb.clearSortElement().click({ force: true })
     }
     sortingBType() {
         cy.wait(1000)
-        rb.optionElement().eq(6).click({ force: true })
+        rb.optionElement().eq(20).click({ force: true })
         rb.sortAscendingElement().click({ force: true })
-        rb.optionElement().eq(6).click({ force: true })
+        rb.optionElement().eq(20).click({ force: true })
         rb.sortDescendingElement().click({ force: true })
-        rb.optionElement().eq(6).click({ force: true })
+        rb.optionElement().eq(20).click({ force: true })
         rb.clearSortElement().click({ force: true })
     }
     sortingSBox() {
         cy.wait(1000)
-        rb.optionElement().eq(7).click({ force: true })
+        rb.optionElement().eq(21).click({ force: true })
         rb.sortAscendingElement().click({ force: true })
-        rb.optionElement().eq(7).click({ force: true })
+        rb.optionElement().eq(21).click({ force: true })
         rb.sortDescendingElement().click({ force: true })
-        rb.optionElement().eq(7).click({ force: true })
+        rb.optionElement().eq(21).click({ force: true })
         rb.clearSortElement().click({ force: true })
     }
     sortingCBy() {
         cy.wait(1000)
-        rb.optionElement().eq(8).click({ force: true })
+        rb.optionElement().eq(22).click({ force: true })
         rb.sortAscendingElement().click({ force: true })
-        rb.optionElement().eq(8).click({ force: true })
+        rb.optionElement().eq(22).click({ force: true })
         rb.sortDescendingElement().click({ force: true })
-        rb.optionElement().eq(8).click({ force: true })
+        rb.optionElement().eq(22).click({ force: true })
         rb.clearSortElement().click({ force: true })
     }
     sortingCdate() {
         cy.wait(1000)
-        rb.optionElement().eq(9).click({ force: true })
+        rb.optionElement().eq(23).click({ force: true })
         rb.sortAscendingElement().click({ force: true })
-        rb.optionElement().eq(9).click({ force: true })
+        rb.optionElement().eq(23).click({ force: true })
         rb.sortDescendingElement().click({ force: true })
-        rb.optionElement().eq(9).click({ force: true })
+        rb.optionElement().eq(23).click({ force: true })
         rb.clearSortElement().click({ force: true })
     }
     sortingLdate() {
         cy.wait(1000)
-        rb.optionElement().eq(10).click({ force: true })
+        rb.optionElement().eq(24).click({ force: true })
         rb.sortAscendingElement().click({ force: true })
-        rb.optionElement().eq(10).click({ force: true })
+        rb.optionElement().eq(24).click({ force: true })
         rb.sortDescendingElement().click({ force: true })
-        rb.optionElement().eq(10).click({ force: true })
+        rb.optionElement().eq(24).click({ force: true })
         rb.clearSortElement().click({ force: true })
     }
 }

@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 1747000000
+              "duration": 2247000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 7957000000
+              "duration": 6943000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 9096000000
+              "duration": 9098000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Click on RepairBoxes Tab",
             "result": {
               "status": "passed",
-              "duration": 1109000000
+              "duration": 1500000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Verify the Title of RepairBoxes Page",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 11000000
             }
           },
           {
@@ -82,9 +82,8 @@
             "line": 15,
             "name": "Click on filter of Repair Box Equals and Verify the Result",
             "result": {
-              "status": "failed",
-              "duration": 34514000000,
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[placeholder='Filter...']`, but never found it.\n    at RepairBoxesElements.fieldValueElement (cypress/integration/PageObject/PageElements/RepairBoxesElements.js:156:18)\n    at RepairBoxesActions.selectFilterRepairBox (cypress/integration/PageObject/PageActions/RepairBoxesActions.js:141:11)\n    at Context.eval (cypress/integration/RepairBoxes/RepairBoxes.spec.js:106:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 4640000000
             }
           },
           {
@@ -93,7 +92,8 @@
             "line": 16,
             "name": "Click on filter of Repair Box Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 613000000
             }
           },
           {
@@ -102,7 +102,8 @@
             "line": 17,
             "name": "Click on filter of Repair Box Greater than and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 611000000
             }
           },
           {
@@ -111,7 +112,8 @@
             "line": 18,
             "name": "Click on filter of Repair Box Greater than or equal to and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 612000000
             }
           },
           {
@@ -120,7 +122,8 @@
             "line": 19,
             "name": "Click on filter of Repair Box Less than and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 696000000
             }
           },
           {
@@ -129,7 +132,8 @@
             "line": 20,
             "name": "Click on filter of Repair Box Less than or equal to and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 682000000
             }
           },
           {
@@ -138,7 +142,8 @@
             "line": 21,
             "name": "Click on filter of Repair Box Between and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1785000000
             }
           },
           {
@@ -147,7 +152,8 @@
             "line": 22,
             "name": "Click on filter of Repair Box Blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 655000000
             }
           },
           {
@@ -156,7 +162,8 @@
             "line": 23,
             "name": "Click on filter of Repair Box Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 672000000
             }
           },
           {
@@ -165,7 +172,8 @@
             "line": 25,
             "name": "Click on filter of Tracking Number contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1801000000
             }
           },
           {
@@ -174,7 +182,8 @@
             "line": 26,
             "name": "Click on filter of Tracking Number Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 740000000
             }
           },
           {
@@ -183,7 +192,8 @@
             "line": 27,
             "name": "Click on filter of Tracking Number Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 785000000
             }
           },
           {
@@ -192,7 +202,8 @@
             "line": 28,
             "name": "Click on filter of Tracking Number Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 754000000
             }
           },
           {
@@ -201,7 +212,8 @@
             "line": 29,
             "name": "Click on filter of Tracking Number Begins with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 591000000
             }
           },
           {
@@ -210,7 +222,8 @@
             "line": 30,
             "name": "Click on filter of Tracking Number Ends with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 688000000
             }
           },
           {
@@ -219,7 +232,8 @@
             "line": 31,
             "name": "Click on filter of Tracking Number Blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 563000000
             }
           },
           {
@@ -228,7 +242,8 @@
             "line": 32,
             "name": "Click on filter of Tracking Number Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 796000000
             }
           },
           {
@@ -237,7 +252,8 @@
             "line": 34,
             "name": "Click on filter of Shipped From Date Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 698000000
             }
           },
           {
@@ -246,7 +262,8 @@
             "line": 35,
             "name": "Click on filter of Shipped From Date Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 648000000
             }
           },
           {
@@ -255,7 +272,8 @@
             "line": 36,
             "name": "Click on filter of Shipped From Date Before and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1069000000
             }
           },
           {
@@ -264,7 +282,8 @@
             "line": 37,
             "name": "Click on filter of Shipped From Date After and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 669000000
             }
           },
           {
@@ -273,7 +292,8 @@
             "line": 38,
             "name": "Click on filter of Shipped From Date Between with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 924000000
             }
           },
           {
@@ -282,7 +302,8 @@
             "line": 39,
             "name": "Click on filter of Shipped From Date Blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 646000000
             }
           },
           {
@@ -291,7 +312,8 @@
             "line": 40,
             "name": "Click on filter of Shipped From Date Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 640000000
             }
           },
           {
@@ -300,7 +322,8 @@
             "line": 42,
             "name": "Click on filter of Building contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 760000000
             }
           },
           {
@@ -309,7 +332,8 @@
             "line": 43,
             "name": "Click on filter of Building Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 785000000
             }
           },
           {
@@ -318,7 +342,8 @@
             "line": 44,
             "name": "Click on filter of Building Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 843000000
             }
           },
           {
@@ -327,7 +352,8 @@
             "line": 45,
             "name": "Click on filter of Building Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 767000000
             }
           },
           {
@@ -336,7 +362,8 @@
             "line": 46,
             "name": "Click on filter of Building Begins with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 767000000
             }
           },
           {
@@ -345,7 +372,8 @@
             "line": 47,
             "name": "Click on filter of Building Ends with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 709000000
             }
           },
           {
@@ -354,7 +382,8 @@
             "line": 48,
             "name": "Click on filter of Building Blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 762000000
             }
           },
           {
@@ -363,7 +392,8 @@
             "line": 49,
             "name": "Click on filter of Building Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 730000000
             }
           },
           {
@@ -372,7 +402,8 @@
             "line": 51,
             "name": "Click on filter of Box_type contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 785000000
             }
           },
           {
@@ -381,7 +412,8 @@
             "line": 52,
             "name": "Click on filter of Box_type Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 781000000
             }
           },
           {
@@ -390,7 +422,8 @@
             "line": 53,
             "name": "Click on filter of Box_type Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 862000000
             }
           },
           {
@@ -399,7 +432,8 @@
             "line": 54,
             "name": "Click on filter of Box_type Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 834000000
             }
           },
           {
@@ -408,7 +442,8 @@
             "line": 55,
             "name": "Click on filter of Box_type Begins with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 711000000
             }
           },
           {
@@ -417,7 +452,8 @@
             "line": 56,
             "name": "Click on filter of Box_type Ends with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 741000000
             }
           },
           {
@@ -426,7 +462,8 @@
             "line": 57,
             "name": "Click on filter of Box_type Blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 790000000
             }
           },
           {
@@ -435,115 +472,128 @@
             "line": 58,
             "name": "Click on filter of Box_type Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 922000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 60,
-            "name": "Click on filter of Created By contain and Verify the Result",
+            "name": "Click on filter of shipping_box_status op1 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2277000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 61,
-            "name": "Click on filter of Created By Does not contain and Verify the Result",
+            "name": "Click on filter of shipping_box_status op2 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 313000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 62,
-            "name": "Click on filter of Created By Equals and Verify the Result",
+            "name": "Click on filter of shipping_box_status op3 and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 368000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 63,
-            "name": "Click on filter of Created By Does not equal and Verify the Result",
+            "name": "Click on filter of shipping_box_status op4 and Verify the Result",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 64,
-            "name": "Click on filter of Created By Begins with and Verify the Result",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 349000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 65,
-            "name": "Click on filter of Created By Ends with and Verify the Result",
+            "name": "Click on filter of Created By contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1147000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 66,
-            "name": "Click on filter of Created By Blank and Verify the Result",
+            "name": "Click on filter of Created By Does not contain and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1540000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 67,
-            "name": "Click on filter of Created By Not blank and Verify the Result",
+            "name": "Click on filter of Created By Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1249000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 68,
+            "name": "Click on filter of Created By Does not equal and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1273000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 69,
-            "name": "Click on filter of shipping_box_status Not Shipped and Verify the Result",
+            "name": "Click on filter of Created By Begins with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 856000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 70,
-            "name": "Click on filter of shipping_box_status Recieved By Vivacity and Verify the Result",
+            "name": "Click on filter of Created By Ends with and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1022000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 71,
-            "name": "Click on filter of shipping_box_status Shipping From District with and Verify the Result",
+            "name": "Click on filter of Created By Blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 899000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 72,
-            "name": "Click on filter of shipping_box_status all checked with and Verify the Result",
+            "name": "Click on filter of Created By Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1382000000
             }
           },
           {
@@ -552,7 +602,8 @@
             "line": 74,
             "name": "Click on filter of Created Date Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 976000000
             }
           },
           {
@@ -561,7 +612,8 @@
             "line": 75,
             "name": "Click on filter of Created Date Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 805000000
             }
           },
           {
@@ -570,7 +622,8 @@
             "line": 76,
             "name": "Click on filter of Created Date Before and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 844000000
             }
           },
           {
@@ -579,7 +632,8 @@
             "line": 77,
             "name": "Click on filter of Created Date After and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 838000000
             }
           },
           {
@@ -588,7 +642,8 @@
             "line": 78,
             "name": "Click on filter of Created Date Between and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1155000000
             }
           },
           {
@@ -597,7 +652,8 @@
             "line": 79,
             "name": "Click on filter of Created Date Blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 842000000
             }
           },
           {
@@ -606,7 +662,8 @@
             "line": 80,
             "name": "Click on filter of Created Date Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 819000000
             }
           },
           {
@@ -615,7 +672,8 @@
             "line": 82,
             "name": "Click on filter of Last Modified Date Equals and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 913000000
             }
           },
           {
@@ -624,7 +682,8 @@
             "line": 83,
             "name": "Click on filter of Last Modified Date Does not equal and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 861000000
             }
           },
           {
@@ -633,7 +692,8 @@
             "line": 84,
             "name": "Click on filter of Last Modified Date Before and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 900000000
             }
           },
           {
@@ -642,7 +702,8 @@
             "line": 85,
             "name": "Click on filter of Last Modified Date After and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 996000000
             }
           },
           {
@@ -651,7 +712,8 @@
             "line": 86,
             "name": "Click on filter of Last Modified Date Between and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1199000000
             }
           },
           {
@@ -660,7 +722,8 @@
             "line": 87,
             "name": "Click on filter of Last Modified Date Blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 990000000
             }
           },
           {
@@ -669,196 +732,308 @@
             "line": 88,
             "name": "Click on filter of Last Modified Date Not blank and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 829000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 90,
-            "name": "Click on label form of image and Verify",
+            "name": "Click on help icon for Filtering Guide",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 118000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 91,
-            "name": "Click on label form of Pdf and Verify",
+            "name": "Verify the Dream Data Filtering Guide",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 158000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 92,
-            "name": "Click on Export Button",
+            "name": "Click on Save Table view icon and Verify",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1321000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 93,
-            "name": "I should click on create new Box",
+            "name": "Click on label form of image and Verify",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 212000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 94,
-            "name": "Enter weight and Standard Box Size",
+            "name": "Click on label form of Pdf and Verify",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 119000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 95,
-            "name": "Select Pick-up site",
+            "name": "Click on Export Button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 122000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 96,
+            "name": "I should click on create new Box",
+            "result": {
+              "status": "passed",
+              "duration": 135000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 97,
+            "name": "Enter weight and Standard Box Size",
+            "result": {
+              "status": "passed",
+              "duration": 747000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 98,
+            "name": "Select Pick-up site",
+            "result": {
+              "status": "passed",
+              "duration": 303000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 99,
             "name": "Check the need shipping box",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 168000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 97,
+            "line": 100,
             "name": "Click on Create box button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 115000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 98,
+            "line": 101,
             "name": "Select Ticket from dropdownlist",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 315000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 99,
+            "line": 102,
             "name": "Click on Finish button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 148000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 101,
+            "line": 104,
             "name": "Click on view button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1565000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 102,
+            "line": 105,
             "name": "Verify the Details new box",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4978000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "repairboxes-page-functionality;repairboxes-sorting--ascending-and-descending",
+        "keyword": "Scenario",
+        "line": 116,
+        "name": "RepairBoxes Sorting -Ascending and descending",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I should navigate to application",
+            "result": {
+              "status": "passed",
+              "duration": 2119000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I should Sign In into the application",
+            "result": {
+              "status": "passed",
+              "duration": 6318000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "close the terms of service window",
+            "result": {
+              "status": "passed",
+              "duration": 9107000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Click on Repair360 page",
+            "result": {
+              "status": "passed",
+              "duration": 89000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 103,
-            "name": "Add another ticket in the same box",
+            "line": 11,
+            "name": "Click on RepairBoxes Tab",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 104,
-            "name": "Select Ticket from dropdownlist",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1067000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 105,
-            "name": "Click on Add ticket",
+            "line": 117,
+            "name": "Click on Sort Ascending and Descending for Repair Box and Verify the Result",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 106,
-            "name": "Verify the ticket is added in table",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2563000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 107,
-            "name": "Click on view the ticket Details",
+            "line": 118,
+            "name": "Click on Sort Ascending and Descending for Tracking Number From and Verify the Result",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 108,
-            "name": "Verfiy the ticket Details",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 109,
-            "name": "Click on Add Repair Image and Verify",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1658000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 110,
-            "name": "Click on Add Note and Verify",
+            "line": 119,
+            "name": "Click on Sort Ascending and Descending for Shipped From Date and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1598000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 111,
-            "name": "Click on Remove button for deleting ticket",
+            "keyword": "And ",
+            "line": 120,
+            "name": "Click on Sort Ascending and Descending for Building and Verify the Result",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1590000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 121,
+            "name": "Click on Sort Ascending and Descending for Box Type and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1629000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 122,
+            "name": "Click on Sort Ascending and Descending for Shipping Box Status and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1597000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 123,
+            "name": "Click on Sort Ascending and Descending for Created By and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1622000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 124,
+            "name": "Click on Sort Ascending and Descending for Created Date and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1564000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 125,
+            "name": "Click on Sort Ascending and Descending for Last Modified Date and Verify the Result",
+            "result": {
+              "status": "passed",
+              "duration": 1649000000
             }
           }
         ]
