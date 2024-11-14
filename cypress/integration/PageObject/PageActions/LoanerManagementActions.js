@@ -116,7 +116,6 @@ export class LoanerManagementActions {
     }
     verifyViewDetails() {
         cy.contains('General Device Information').should('be.visible')
-        cy.go('back')
     }
     clickOnDeviceIconViewHistory() {
         loan.addFilterElement().eq(2).click({ force: true })
@@ -152,6 +151,13 @@ export class LoanerManagementActions {
     verifyfilteringGuide() {
         cy.contains('Dream Data Filtering Guide').should('be.visible')
         cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
+    }
+    clickOnSaveTableIcon() {
+        cy.wait(100)
+        loan.saveIconElement().click({ force: true })
+    }
+    verifySaveMessage() {
+        dash.messageElement().should('contain', 'Table view preferences saved successfully!')
     }
     //PD-A
     filtercontainPD_A() {

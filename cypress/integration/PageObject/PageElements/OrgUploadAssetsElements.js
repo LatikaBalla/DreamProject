@@ -217,4 +217,9 @@ export default class OrgUploadAssetsElements {
             timeout: 30000,
         })
     }
+    saveIconElement() {
+        return cy.get(locator.orgUploadAssets.saveIcon, {
+            timeout: 30000,
+        })
+    }
 }

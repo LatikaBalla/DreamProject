@@ -198,4 +198,9 @@ export default class LoanerManagementElements {
             timeout: 30000,
         })
     }
+    saveIconElement() {
+        return cy.get(locator.loanerManagement.saveIcon, {
+            timeout: 30000,
+        })
+    }
 }

@@ -131,6 +131,10 @@ And('Click on help icon for Filtering Guide', () => {
 Then('Verify the Dream Data Filtering Guide', () => {
     oua.verifyfilteringGuide()
 })
+And ('Click on Save Table view icon and Verify',()=>{
+    oua.clickOnSaveTableIcon()
+    oua.verifySaveMessage()
+})
 //description
 And('Click on filter of Description contain and Verify the Result', () => {
     oua.filtercontainD()

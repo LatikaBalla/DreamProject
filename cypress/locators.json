@@ -316,7 +316,8 @@
         "sortAscending": "Sort Ascending",
         "sortDescending": "Sort Descending",
         "clearSort": "Clear Sort",
-        "filterHelp":"[data-testid='HelpIcon']"
+        "filterHelp":"[data-testid='HelpIcon']",
+        "saveIcon":"[data-testid='SaveIcon']"
     },
     "importSerialDevices": {
         "title": "Manage Devices",
@@ -340,8 +341,8 @@
         "option": "[data-ref='eMenu']",
         "sortAscending": "Sort Ascending",
         "sortDescending": "Sort Descending",
-        "clearSort": "Clear Sort"
- 
+        "clearSort": "Clear Sort",
+        "saveIcon":"[data-testid='SaveIcon']"
     },
     "orgUploadAssets": {
         "title": "Organization Uploaded Assets",
@@ -386,7 +387,8 @@
         "sortAscending": "Sort Ascending",
         "sortDescending": "Sort Descending",
         "clearSort": "Clear Sort",
-        "filterHelp":"[data-testid='HelpIcon']"
+        "filterHelp":"[data-testid='HelpIcon']",
+        "saveIcon":"[data-testid='SaveIcon']"
     },
     "loanerManagement": {
         "title": "Manage Devices",
@@ -429,7 +431,8 @@
         "sortAscending": "Sort Ascending",
         "sortDescending": "Sort Descending",
         "clearSort": "Clear Sort",
-        "filterHelp":"[data-testid='HelpIcon']"
+        "filterHelp":"[data-testid='HelpIcon']",
+        "saveIcon":"[data-testid='SaveIcon']"
     },
     "repair360": {
         "title": "Repair 360",

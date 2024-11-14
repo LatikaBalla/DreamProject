@@ -105,6 +105,7 @@ Feature: MyFleet  Page Functionality
         And Click on Sort Ascending and Descending for Model and Verify the Result
         And Click on Sort Ascending and Descending for SKU and Verify the Result
 
+        And Click on Save Table view icon and Verify
         Then Click on the add device
         And Enter Serial no and select device id
         Then Enter Asset Tag and Select student id
@@ -134,18 +135,18 @@ Feature: MyFleet  Page Functionality
         And Convert Active to Retired device
         Then Verify the Device Retired successfully
 
-Scenario: Google Data view, Edit and Visiblity check of all section
-    And Click on the Google Icon and click on view Button
-    Then Verify the google data and GoLocation section
-    And Click on the edit of google data section
-    Then Update Org Unit, AssetId, Location, Note and Click on save button
-    And Verfiy Google data Record updated successfully
-    Then Click on CPU Status and verify CPU Information
-    And Click on Memory Information and verify Memory Information
-    Then Click on Network Information and verify Network Information
-    And Click on OS Information and verify OS Information
-    Then Click on Battery Information and verify Battery Information
-    And Click on Storage Information and verify Storage Information
-    Then Click on Boot Performance Report and Boot Performance Report
-    And Click on Recent Users Information and verify Recent Users Information
+    Scenario: Google Data view, Edit and Visiblity check of all section
+        And Click on the Google Icon and click on view Button
+        Then Verify the google data and GoLocation section
+        And Click on the edit of google data section
+        Then Update Org Unit, AssetId, Location, Note and Click on save button
+        And Verfiy Google data Record updated successfully
+        Then Click on CPU Status and verify CPU Information
+        And Click on Memory Information and verify Memory Information
+        Then Click on Network Information and verify Network Information
+        And Click on OS Information and verify OS Information
+        Then Click on Battery Information and verify Battery Information
+        And Click on Storage Information and verify Storage Information
+        Then Click on Boot Performance Report and Boot Performance Report
+        And Click on Recent Users Information and verify Recent Users Information
 

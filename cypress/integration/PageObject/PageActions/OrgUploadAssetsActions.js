@@ -166,7 +166,7 @@ export class OrgUploadAssetsActions {
         cy.get('[col-id="button"]').eq(1).find('[data-testid="DeleteIcon"]').click({ force: true })
     }
     clickConfirmDeleteButton() {
-        cy.get('.css-1rt18mr').click({ force: true })
+        cy.get('.css-13dncgk').click({ force: true })
     }
     verifyRecordDeleted() {
         dash.messageElement().should('contain', tdata.orgAsset.deletemsg)
@@ -190,15 +190,22 @@ export class OrgUploadAssetsActions {
         cy.contains('Dream Data Filtering Guide').should('be.visible')
         cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
     }
+    clickOnSaveTableIcon() {
+        cy.wait(100)
+        oua.saveIconElement().click({ force: true })
+    }
+    verifySaveMessage() {
+        dash.messageElement().should('contain', 'Table view preferences saved successfully!')
+    }
     //descritpion
     filtercontainD() {
         cy.wait(3000)
         oua.addFilterElement().eq(0).click({ force: true })
         oua.fieldNameElement().eq(1).click({ force: true })
         oua.fieldOpElement().eq(0).click({ force: true })
-        oua.fieldValueElement().type(tdata.addasset.description)
+        oua.fieldValueElement().type(tdata.addasset.description,{ force: true })
         oua.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', tdata.addasset.description)
+        cy.get('[row-index="0"]').should('contain', tdata.addasset.description,{ force: true })
         oua.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainD() {

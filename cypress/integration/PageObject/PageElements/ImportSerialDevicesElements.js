@@ -112,4 +112,9 @@ export default class ImportSerialDevicesElements {
             timeout: 30000,
         })
     }
+    saveIconElement() {
+        return cy.get(locator.importSerialDevices.saveIcon, {
+            timeout: 30000,
+        })
+    }
 }

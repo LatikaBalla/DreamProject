@@ -79,7 +79,7 @@ export class NonWarrantyRepairsActions {
       nwr.addFilterElement().eq(6).click({ force: true })
       nwr.fieldNameElement().eq(2).click({ force: true })
       nwr.fieldOpElement().eq(0).click({ force: true })
-      nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.ticketnumber)
+      nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.ticketnumber,{ force: true })
       nwr.applyElement().click({ force: true })
       cy.wait(2000)
       cy.get('[data-testid="ReceiptIcon"]').eq(0).click({ force: true })

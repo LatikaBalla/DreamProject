@@ -94,7 +94,10 @@ And('Click on help icon for Filtering Guide', () => {
 Then('Verify the Dream Data Filtering Guide', () => {
     loan.verifyfilteringGuide()
 })
-
+And ('Click on Save Table view icon and Verify',()=>{
+    loan.clickOnSaveTableIcon()
+    loan.verifySaveMessage()
+})
 And('Click on filter of Product Description contain and Verify the Result for Available', () => {
     loan.filtercontainPD_A()
 })

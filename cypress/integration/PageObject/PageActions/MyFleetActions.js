@@ -249,11 +249,17 @@ export class MyFleetActions {
    }
    clickOnHelpIcon() {
       mf.filterHelpElement().click({ force: true })
-      //cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
    }
    verifyfilteringGuide() {
       cy.contains('Dream Data Filtering Guide').should('be.visible')
       cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
+   }
+   clickOnSaveTableIcon() {
+      cy.wait(100)
+      mf.saveIconElement().click({ force: true })
+   }
+   verifySaveMessage() {
+      dash.messageElement().should('contain', 'Table view preferences saved successfully!')
    }
    verifyActive() {
       dash.messageElement().should('contain', 'Device Activated', { force: true })
@@ -351,18 +357,18 @@ export class MyFleetActions {
       mf.addFilterElement().eq(0).click({ force: true })
       mf.fieldNameElement().eq(1).click({ force: true })
       mf.fieldOpElement().eq(4).click({ force: true })
-      mf.fieldValueElement().eq(0).type('Serial')
+      mf.fieldValueElement().eq(0).type('VIVA')
       mf.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', 'Serial')
+      cy.get('[row-index="0"]').should('contain', 'VIVA')
       mf.clearFilterElement().click({ force: true })
    }
    filterEndswithSN() {
       mf.addFilterElement().eq(0).click({ force: true })
       mf.fieldNameElement().eq(1).click({ force: true })
       mf.fieldOpElement().eq(5).click({ force: true })
-      mf.fieldValueElement().eq(0).type('875')
+      mf.fieldValueElement().eq(0).type('Test')
       mf.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', '875')
+      cy.get('[row-index="0"]').should('contain', 'Test')
       mf.clearFilterElement().click({ force: true })
    }
    filterBlankSN() {

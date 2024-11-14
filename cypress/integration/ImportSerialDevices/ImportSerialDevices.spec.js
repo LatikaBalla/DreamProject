@@ -64,6 +64,10 @@ And('Click on help icon for Filtering Guide', () => {
 Then('Verify the Dream Data Filtering Guide', () => {
     isd.verifyfilteringGuide()
 })
+And ('Click on Save Table view icon and Verify',()=>{
+    isd.clickOnSaveTableIcon()
+    isd.verifySaveMessage()
+})
 //date
 And('Click on filter of Date Imported Equals and Verify the Result', () => {
     isd.filterEqualsDate()

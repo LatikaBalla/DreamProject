@@ -43,6 +43,7 @@ Feature: ImportSerialDevices Page Functionality
         And Click on Sort Ascending and Descending for Importer and Verify the Result
         And Click on Sort Ascending and Descending for Quantity Devices and Verify the Result
 
+        And Click on Save Table view icon and Verify
         Then Click on the download import button
         And Click on help icon for Filtering Guide
         Then Verify the Dream Data Filtering Guide

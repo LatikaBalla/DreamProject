@@ -52,6 +52,13 @@ export class ImportSerialDevicesActions {
         cy.contains('Dream Data Filtering Guide').should('be.visible')
         cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
      }
+     clickOnSaveTableIcon() {
+        cy.wait(100)
+        isd.saveIconElement().click({ force: true })
+    }
+    verifySaveMessage() {
+        dash.messageElement().should('contain', 'Table view preferences saved successfully!')
+    }
     //Date Imported
     filtercontainDate() {
         cy.wait(3000)

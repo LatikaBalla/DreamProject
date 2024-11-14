@@ -241,4 +241,9 @@ export default class MyFleetElements {
             timeout: 30000,
         })
     }
+    saveIconElement() {
+        return cy.get(locator.myFleet.saveIcon, {
+            timeout: 30000,
+        })
+    }
 }
