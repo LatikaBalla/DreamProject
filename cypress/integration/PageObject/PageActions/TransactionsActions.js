@@ -182,60 +182,60 @@ export class TransactionsActions {
     //RT
     filterRepairTypeOp1() {
         cy.wait(1000)
-        trans.addFilterElement().eq(2).click({ force: true })
+        trans.addFilterElement().eq(1).click({ force: true })
         cy.get('[value="In House"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="repair_type"]').should('contain', 'In House')
         cy.get('.reset-button').click({ force: true })
     }
     filterRepairTypeOp2() {
         cy.wait(1000)
-        trans.addFilterElement().eq(2).click({ force: true })
+        trans.addFilterElement().eq(1).click({ force: true })
         cy.get('[value="Student"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="repair_type"]').should('contain', 'Student')
         cy.get('.reset-button').click({ force: true })
     }
     filterRepairTypeOp3() {
         cy.wait(1000)
-        trans.addFilterElement().eq(2).click({ force: true })
+        trans.addFilterElement().eq(1).click({ force: true })
         cy.get('[value="Vivacity"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="repair_type"]').should('contain', 'Vivacity')
         cy.get('.reset-button').click({ force: true })
     }
     //us
     filterURop1() {
-        cy.wait(4000)
-        trans.addFilterElement().eq(3).click({ force: true })
+        cy.wait(1000)
+        trans.addFilterElement().eq(2).click({ force: true })
         cy.get('[value="Pending Repair Box"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="repair_status"]').should('contain', 'Pending Repair Box')
         cy.get('.reset-button').click({ force: true })
     }
     filterURop2() {
-        trans.addFilterElement().eq(3).click({ force: true })
+        trans.addFilterElement().eq(2).click({ force: true })
         cy.get('[value="Intake"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="repair_status"]').should('contain', 'Intake')
         cy.get('.reset-button').click({ force: true })
     }
     filterURop3() {
-        trans.addFilterElement().eq(3).click({ force: true })
+        trans.addFilterElement().eq(2).click({ force: true })
         cy.get('[value="Box Created"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="repair_status"]').should('contain', 'Box Created')
         cy.get('.reset-button').click({ force: true })
     }
     filterURop4() {
-        trans.addFilterElement().eq(3).click({ force: true })
-        cy.get('[value="Estimate Approved"]').click({ force: true })
-        cy.get('.ag-row-first > [col-id="repair_status"]').should('contain', 'Estimate Approved')
+        trans.addFilterElement().eq(2).click({ force: true })
+        cy.get('[value="Quality Assurance"]').click({ force: true })
+        cy.get('.ag-row-first > [col-id="repair_status"]').should('contain', 'Quality Assurance')
         cy.get('.reset-button').click({ force: true })
     }
     filterURop5() {
-        trans.addFilterElement().eq(3).click({ force: true })
+        trans.addFilterElement().eq(2).click({ force: true })
         cy.get('[value="Waiting on Repair Approval"]').click({ force: true })
         cy.get('.ag-row-first > [col-id="repair_status"]').should('contain', 'Waiting on Repair Approval')
         cy.get('.reset-button').click({ force: true })
     }
     //Cdate
     filterEqualsCDate() {
-        trans.addFilterElement().eq(4).click({ force: true })
+        trans.addFilterElement().eq(3).click({ force: true })
         trans.fieldNameElement().eq(1).click({ force: true })
         trans.fieldOpElement().eq(0).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.createdDate)
@@ -244,7 +244,7 @@ export class TransactionsActions {
         trans.clearFilterElement().click({ force: true })
     }
     filterNotequalCDate() {
-        trans.addFilterElement().eq(4).click({ force: true })
+        trans.addFilterElement().eq(3).click({ force: true })
         trans.fieldNameElement().eq(1).click({ force: true })
         trans.fieldOpElement().eq(1).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.createdDate)
@@ -253,7 +253,7 @@ export class TransactionsActions {
         trans.clearFilterElement().click({ force: true })
     }
     filterBeforeCDate() {
-        trans.addFilterElement().eq(4).click({ force: true })
+        trans.addFilterElement().eq(3).click({ force: true })
         trans.fieldNameElement().eq(1).click({ force: true })
         trans.fieldOpElement().eq(2).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.createdDate)
@@ -261,7 +261,7 @@ export class TransactionsActions {
         trans.clearFilterElement().click({ force: true })
     }
     filterAfterCDate() {
-        trans.addFilterElement().eq(4).click({ force: true })
+        trans.addFilterElement().eq(3).click({ force: true })
         trans.fieldNameElement().eq(1).click({ force: true })
         trans.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.createdDate)
@@ -269,7 +269,7 @@ export class TransactionsActions {
         trans.clearFilterElement().click({ force: true })
     }
     filterBetweenCDate() {
-        trans.addFilterElement().eq(4).click({ force: true })
+        trans.addFilterElement().eq(3).click({ force: true })
         trans.fieldNameElement().eq(1).click({ force: true })
         trans.fieldOpElement().eq(4).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.createdDate)
@@ -278,7 +278,7 @@ export class TransactionsActions {
         trans.clearFilterElement().click({ force: true })
     }
     filterBlankCDate() {
-        trans.addFilterElement().eq(4).click({ force: true })
+        trans.addFilterElement().eq(3).click({ force: true })
         trans.fieldNameElement().eq(1).click({ force: true })
         trans.fieldOpElement().eq(5).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairTickets.createdDate, { force: true })
@@ -287,7 +287,7 @@ export class TransactionsActions {
         trans.clearFilterElement().click({ force: true })
     }
     filterNotblankCDate() {
-        trans.addFilterElement().eq(4).click({ force: true })
+        trans.addFilterElement().eq(3).click({ force: true })
         trans.fieldNameElement().eq(1).click({ force: true })
         trans.fieldOpElement().eq(6).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(2).type(tdata.repairTickets.createdDate, { force: true })
@@ -297,7 +297,7 @@ export class TransactionsActions {
     }
     //Ldate
     filterEqualsLDate() {
-        trans.addFilterElement().eq(5).click({ force: true })
+        trans.addFilterElement().eq(4).click({ force: true })
         trans.fieldNameElement().eq(1).click({ force: true })
         trans.fieldOpElement().eq(0).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.lastModifiedDate)
@@ -306,7 +306,7 @@ export class TransactionsActions {
         trans.clearFilterElement().click({ force: true })
     }
     filterNotequalLDate() {
-        trans.addFilterElement().eq(5).click({ force: true })
+        trans.addFilterElement().eq(4).click({ force: true })
         trans.fieldNameElement().eq(1).click({ force: true })
         trans.fieldOpElement().eq(1).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.lastModifiedDate)
@@ -315,7 +315,7 @@ export class TransactionsActions {
         trans.clearFilterElement().click({ force: true })
     }
     filterBeforeLDate() {
-        trans.addFilterElement().eq(5).click({ force: true })
+        trans.addFilterElement().eq(4).click({ force: true })
         trans.fieldNameElement().eq(1).click({ force: true })
         trans.fieldOpElement().eq(2).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.lastModifiedDate)
@@ -323,7 +323,7 @@ export class TransactionsActions {
         trans.clearFilterElement().click({ force: true })
     }
     filterAfterLDate() {
-        trans.addFilterElement().eq(5).click({ force: true })
+        trans.addFilterElement().eq(4).click({ force: true })
         trans.fieldNameElement().eq(1).click({ force: true })
         trans.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.lastModifiedDate)
@@ -331,7 +331,7 @@ export class TransactionsActions {
         trans.clearFilterElement().click({ force: true })
     }
     filterBetweenLDate() {
-        trans.addFilterElement().eq(5).click({ force: true })
+        trans.addFilterElement().eq(4).click({ force: true })
         trans.fieldNameElement().eq(1).click({ force: true })
         trans.fieldOpElement().eq(4).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.repairTickets.lastModifiedDate2, { force: true })
@@ -340,7 +340,7 @@ export class TransactionsActions {
         trans.clearFilterElement().click({ force: true })
     }
     filterBlankLDate() {
-        trans.addFilterElement().eq(5).click({ force: true })
+        trans.addFilterElement().eq(4).click({ force: true })
         trans.fieldNameElement().eq(1).click({ force: true })
         trans.fieldOpElement().eq(5).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.repairTickets.lastModifiedDate, { force: true })
@@ -349,7 +349,7 @@ export class TransactionsActions {
         trans.clearFilterElement().click({ force: true })
     }
     filterNotblankLDate() {
-        trans.addFilterElement().eq(5).click({ force: true })
+        trans.addFilterElement().eq(4).click({ force: true })
         trans.fieldNameElement().eq(1).click({ force: true })
         trans.fieldOpElement().eq(6).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(2).type(tdata.repairTickets.lastModifiedDate, { force: true })
@@ -378,38 +378,38 @@ export class TransactionsActions {
     }
     sortingRepairType() {
         cy.wait(1000)
-        trans.optionElement().eq(3).click({ force: true })
+        trans.optionElement().eq(2).click({ force: true })
         trans.sortAscendingElement().click({ force: true })
-        trans.optionElement().eq(3).click({ force: true })
+        trans.optionElement().eq(2).click({ force: true })
         trans.sortDescendingElement().click({ force: true })
-        trans.optionElement().eq(3).click({ force: true })
+        trans.optionElement().eq(2).click({ force: true })
         trans.clearSortElement().click({ force: true })
     }
     sortingRepairStatus() {
         cy.wait(1000)
-        trans.optionElement().eq(4).click({ force: true })
+        trans.optionElement().eq(3).click({ force: true })
         trans.sortAscendingElement().click({ force: true })
-        trans.optionElement().eq(4).click({ force: true })
+        trans.optionElement().eq(3).click({ force: true })
         trans.sortDescendingElement().click({ force: true })
-        trans.optionElement().eq(4).click({ force: true })
+        trans.optionElement().eq(3).click({ force: true })
         trans.clearSortElement().click({ force: true })
     }
     sortingCreatedDate() {
         cy.wait(1000)
-        trans.optionElement().eq(5).click({ force: true })
+        trans.optionElement().eq(4).click({ force: true })
         trans.sortAscendingElement().click({ force: true })
-        trans.optionElement().eq(5).click({ force: true })
+        trans.optionElement().eq(4).click({ force: true })
         trans.sortDescendingElement().click({ force: true })
-        trans.optionElement().eq(5).click({ force: true })
+        trans.optionElement().eq(4).click({ force: true })
         trans.clearSortElement().click({ force: true })
     }
     sortingLastModifiedDate() {
         cy.wait(1000)
-        trans.optionElement().eq(6).scrollIntoView().click({ force: true })
+        trans.optionElement().eq(5).scrollIntoView().click({ force: true })
         trans.sortAscendingElement().click({ force: true })
-        trans.optionElement().eq(6).scrollIntoView().click({ force: true })
+        trans.optionElement().eq(5).scrollIntoView().click({ force: true })
         trans.sortDescendingElement().click({ force: true })
-        trans.optionElement().eq(6).scrollIntoView().click({ force: true })
+        trans.optionElement().eq(5).scrollIntoView().click({ force: true })
         trans.clearSortElement().click({ force: true })
     }
 }

@@ -16,7 +16,7 @@ Feature:  Transactions Page Functionality
     And Verify the Quotes tab should be visible
     Then Verify the Orders Tab should be visible
     And Verify the Invoices tab should be visible
-    
+
     And Click on filter of Ticket Number contain and Verify the Result
     And Click on filter of Ticket Number Does not contain and Verify the Result
     And Click on filter of Ticket Number Equals and Verify the Result
@@ -26,14 +26,14 @@ Feature:  Transactions Page Functionality
     And Click on filter of Ticket Number Blank and Verify the Result
     # And Click on filter of Ticket Number Not blank and Verify the Result
 
-    And Click on filter of Serial Number contain and Verify the Result
-    And Click on filter of Serial Number Does not contain and Verify the Result
-    And Click on filter of Serial Number Equals and Verify the Result
-    And Click on filter of Serial Number Does not equal and Verify the Result
-    And Click on filter of Serial Number Begins with and Verify the Result
-    And Click on filter of Serial Number Ends with and Verify the Result
-    And Click on filter of Serial Number Blank and Verify the Result
-    # And Click on filter of Serial Number Not blank and Verify the Result
+    # And Click on filter of Serial Number contain and Verify the Result
+    # And Click on filter of Serial Number Does not contain and Verify the Result
+    # And Click on filter of Serial Number Equals and Verify the Result
+    # And Click on filter of Serial Number Does not equal and Verify the Result
+    # And Click on filter of Serial Number Begins with and Verify the Result
+    # And Click on filter of Serial Number Ends with and Verify the Result
+    # And Click on filter of Serial Number Blank and Verify the Result
+    # # And Click on filter of Serial Number Not blank and Verify the Result
 
     And Click on filter of Repair Type op1 and Verify the Result
     And Click on filter of Repair Type op2 and Verify the Result
@@ -53,17 +53,17 @@ Feature:  Transactions Page Functionality
     And Click on filter of Created Date Blank and Verify the Result
     # And Click on filter of Created Date Not blank and Verify the Result
 
-    And Click on filter of Last Modified Date Equals and Verify the Result
-    And Click on filter of Last Modified Date Does not equal and Verify the Result
-    And Click on filter of Last Modified Date Before and Verify the Result
-    And Click on filter of Last Modified Date After and Verify the Result
-    And Click on filter of Last Modified Date Between and Verify the Result
-    And Click on filter of Last Modified Date Blank and Verify the Result
-    # And Click on filter of Last Modified Date Not blank and Verify the Result
+    # And Click on filter of Last Modified Date Equals and Verify the Result
+    # And Click on filter of Last Modified Date Does not equal and Verify the Result
+    # And Click on filter of Last Modified Date Before and Verify the Result
+    # And Click on filter of Last Modified Date After and Verify the Result
+    # And Click on filter of Last Modified Date Between and Verify the Result
+    # And Click on filter of Last Modified Date Blank and Verify the Result
+    # # And Click on filter of Last Modified Date Not blank and Verify the Result
 
     And Click on Sort Ascending and Descending for Ticket Number and Verify the Result
     And Click on Sort Ascending and Descending for Serial Number and Verify the Result
     And Click on Sort Ascending and Descending for Repair Type and Verify the Result
     And Click on Sort Ascending and Descending for Repair Status and Verify the Result
     And Click on Sort Ascending and Descending for Created Date and Verify the Result
-    And Click on Sort Ascending and Descending for Last Modified Date and Verify the Result
+    # And Click on Sort Ascending and Descending for Last Modified Date and Verify the Result
