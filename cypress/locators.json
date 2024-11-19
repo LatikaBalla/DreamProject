@@ -21,7 +21,8 @@
         "logout": "[data-testid='LogoutIcon']",
         "vivaAdmin": "a[href='/admin']",
         "favorite": "Favorite",
-        "myAccount": "My Account"
+        "myAccount": "My Account",
+        "transactions":"Transactions"
     },
     "accountDetails": {
         "titleAccount": "Account Dashboard",
@@ -1025,5 +1026,28 @@
         "datasection": ".css-sgter1",
         "deviceTable": ".css-sgter1",
         "graphData": ".css-sgter1"
+    },
+    "transactions":{
+        "title": "Transactions",
+        "export": "[data-testid='FileDownloadIcon']",
+        "refreshbtn": "[data-testid='CachedIcon']",
+        "view": "[data-testid='VisibilityIcon']",
+        "addFilter": "[data-ref='eFilterButton']",
+        "clearFilter": "button[data-ref='resetFilterButton']",
+        "fieldName": "[data-ref='eDisplayField']",
+        "fieldOp": "[role='option']",
+        "fieldValue": "[placeholder='Filter...']",
+        "apply": "button[data-ref='applyFilterButton']",
+        "option": "[data-ref='eMenu']",
+        "sortAscending": "Sort Ascending",
+        "sortDescending": "Sort Descending",
+        "clearSort": "Clear Sort",
+        "helpIcon": "[data-testid='HelpIcon']",
+        "printbtn": "Print Ticket Estimate",
+        "downloadbtn": "Download Ticket Estimate",
+        "estimates":"[data-testid='tabtran-1']",
+        "quotes":"[data-testid='tabtran-2']",
+        "orders":"[data-testid='tabtran-3']",
+        "invoices":"[data-testid='tabtran-4']"
     }
 }

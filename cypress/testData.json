@@ -545,5 +545,18 @@
     "BatteryCharge": "Battery Charge Capacity",
     "OSLastUpdate": "OS Last Update",
     "OSNewPlatform": "OS Versions"
+  },
+  "transactions": {
+    "ticketnumber": "V0074459",
+    "serialNumber":"VIVATEST64Test",
+    "repairtype": "Vivacity",
+    "repairstatus": "Box Created",
+    "createdby": "demo_adminsuper@vivacitytech.com",
+    "repairdevice": "Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch",
+    "lastModifiedDate": "2023-11-13",
+    "lastModifiedDate1": "11-13-2024",
+    "lastModifiedDate2": "2024-10-11",
+    "createdDate": "2023-11-13",
+    "createdDate1": "11-13-2024"
   }
 }

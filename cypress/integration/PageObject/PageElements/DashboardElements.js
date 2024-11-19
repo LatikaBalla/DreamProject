@@ -101,4 +101,9 @@ export default class DashboardElements {
             timeout: 30000,
         });
     }
+    transactionsElement(){
+        return cy.contains(locator.dashboard.transactions, {
+            timeout: 30000,
+        });
+    }
 }
