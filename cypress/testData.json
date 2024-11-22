@@ -75,13 +75,13 @@
     "createdby": "demo_adminvivacity@vivacitytech.com",
     "assettag": "H4rR-Qt&Lo",
     "serialNo": "SerialTest1238787",
-    "studentName":"Sohan Saini"
+    "studentName": "Sohan Saini"
   },
   "nonwarrantyRepairs": {
     "failuretype": "[data-value='Accidental']",
-    "issueType":"Accidental",
-    "total":"$59.99",
-    "total1":"$0.00",
+    "issueType": "Accidental",
+    "total": "$59.99",
+    "total1": "$0.00",
     "serialdevice": "[data-value='591965']",
     "chromebookissue": "There is something fault",
     "createTicketmsg": "Add new ticket form submitted",
@@ -96,11 +96,11 @@
     "serialnumber": "VIVATEST50Test",
     "repairdevice": "Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch",
     "createdby": "demo_adminvivacity@vivacitytech.com",
-    "technician":"Conan Malady",
-    "stdName":"Vivienne Garcia",
-    "repairBox":"repairBox",
-    "lastdate":"2024-08-17",
-    "lastdate1":"08-17-2024"
+    "technician": "Conan Malady",
+    "stdName": "Vivienne Garcia",
+    "repairBox": "repairBox",
+    "lastdate": "2024-08-17",
+    "lastdate1": "08-17-2024"
   },
   "myFleet": {
     "filename": "fleet_devices.csv",
@@ -138,15 +138,15 @@
     "warrantyDate1": "15-03-2027",
     "warrantyDate2": "2024-10-02",
     "warrantyDate3": "02-10-2024",
-    "editorgUnit":"/Devices",
-    "editassetId":"MalejaQQQ",
-    "editlocation":"Aruns",
-    "editnotes":"Testing for google data",
+    "editorgUnit": "/Devices",
+    "editassetId": "MalejaQQQ",
+    "editlocation": "Aruns",
+    "editnotes": "Testing for google data",
     "description": "there is some problem in Battery of the laptop",
     "createTicketmsg": "Add new ticket form submitted",
-    "chromebookissue":"[data-value='Battery']",
-    "addLoanermsg":"Device Added to Loaner Pool",
-    "removeLoanermsg":"Device Removed from Loaner Pool"
+    "chromebookissue": "[data-value='Battery']",
+    "addLoanermsg": "Device Added to Loaner Pool",
+    "removeLoanermsg": "Device Removed from Loaner Pool"
   },
   "addasset": {
     "title": "AssetTitle",
@@ -158,20 +158,20 @@
     "description": "this is description",
     "acquireDate": "2024-08-25",
     "acquireDate1": "25-08-2024",
-    "serialno":"23432",
-    "model":"Dell",
-    "assignment":"aa",
-    "fundsource":"Bank",
-    "po":"asds",
-    "invoice":"ads",
-    "vendor":"asda",
-    "cost":"1000",
-    "quantity":"5",
-    "fieldValue1":"aa",
-    "fieldValue2":"bb",
-    "warrantyinfo":"1year",
-    "fieldKey1":"F1",
-    "fieldKey2":"F2"
+    "serialno": "23432",
+    "model": "Dell",
+    "assignment": "aa",
+    "fundsource": "Bank",
+    "po": "asds",
+    "invoice": "ads",
+    "vendor": "asda",
+    "cost": "1000",
+    "quantity": "5",
+    "fieldValue1": "aa",
+    "fieldValue2": "bb",
+    "warrantyinfo": "1year",
+    "fieldKey1": "F1",
+    "fieldKey2": "F2"
   },
   "editasset": {
     "title": "EditAssetTitle",
@@ -181,18 +181,18 @@
     "tag": "12",
     "type": "aaabbbccc",
     "description": "I want to edit description",
-    "quantity":"7",
-    "serialno":"11111",
-    "model":"HP",
-    "assignment":"Test",
-    "fundsource":"Bank1",
-    "po":"POAS",
-    "invoice":"text",
-    "vendor":"xyz",
-    "cost":"100",
-    "fieldValue1":"a1",
-    "fieldValue2":"bb2",
-    "warrantyinfo":"2years"
+    "quantity": "7",
+    "serialno": "11111",
+    "model": "HP",
+    "assignment": "Test",
+    "fundsource": "Bank1",
+    "po": "POAS",
+    "invoice": "text",
+    "vendor": "xyz",
+    "cost": "100",
+    "fieldValue1": "a1",
+    "fieldValue2": "bb2",
+    "warrantyinfo": "2years"
   },
   "importDevice": {
     "uploadfilename": "serialImportTemplate.csv",
@@ -241,7 +241,7 @@
     "lastModifiedDate2": "2024-09-23",
     "createdDate": "2023-09-11",
     "createdDate1": "09-11-2023",
-    "returnSite":"Building One"
+    "returnSite": "Building One"
   },
   "repairBox": {
     "weight": "10",
@@ -266,7 +266,7 @@
     "shippingboxstatus2": "Not Shipped",
     "shippingboxstatus3": "Shipping From District",
     "lastdate": "2024-11-07",
-    "lastdate1":  "11-07-2024",
+    "lastdate1": "11-07-2024",
     "createdDate": "2023-09-11",
     "createdDate1": "09-11-2023"
   },
@@ -308,7 +308,7 @@
     "building": "Building Two",
     "updateRole": "Ticket updated Successfully",
     "assettag": "VivaTEST2Test",
-    "studentName":"Sohan Saini"
+    "studentName": "Sohan Saini"
   },
   "srcRepairTicket": {
     "failuretype": "[data-value='Accidental']",
@@ -340,8 +340,8 @@
     "repairstatus3": "Pending Repair Box",
     "repairstatus4": "In Transit",
     "repairstatus5": "Repair",
-    "editnote":"Edit Testing",
-    "studentName":"Vivienne Garcia"
+    "editnote": "Edit Testing",
+    "studentName": "Vivienne Garcia"
   },
   "srcFacilitators": {
     "fullName": "Lisa Burton",
@@ -413,7 +413,7 @@
     "rolename": "Student",
     "userrole": "Student Repair Technician",
     "userstatus": "Inactive",
-    "orgUnit":"/",
+    "orgUnit": "/",
     "recordid": "24868",
     "recordid1": "58332",
     "phoneNo1": "9999999999",
@@ -443,10 +443,10 @@
     "description": "QA Testing the Features page",
     "requestmsg": "Submitting Features request",
     "createdby": "Nathan Birch",
-    "search1":"Helpdesk",
-    "search2":"practice",
-    "search3":"Google",
-    "search4":"manufacturer"
+    "search1": "Helpdesk",
+    "search2": "practice",
+    "search3": "Google",
+    "search4": "manufacturer"
   },
   "vivacityAdmin": {
     "fullname": "Demo UserVivacity",
@@ -527,9 +527,9 @@
     "device": "VT Chromebook",
     "warranty": "TEST-WARRANTY",
     "sku": "VT-Generic",
-    "date":"10/08/2024",
-    "checkoutdes":"Check Out description for testing",
-    "checkindes":"Check In description for testing"
+    "date": "10/08/2024",
+    "checkoutdes": "Check Out description for testing",
+    "checkindes": "Check In description for testing"
   },
   "login": {
     "username": "demo_adminSuper@vivacitytech.com",
@@ -548,15 +548,37 @@
   },
   "transactions": {
     "ticketnumber": "V0074459",
-    "serialNumber":"VIVATEST64Test",
+    "serialNumber": "VIVATEST64Test",
     "repairtype": "Vivacity",
     "repairstatus": "Box Created",
     "createdby": "demo_adminsuper@vivacitytech.com",
     "repairdevice": "Dell Chromebook 11 3100 - Intel/4GB/32GB - Non-Touch",
-    "lastModifiedDate": "2023-11-13",
-    "lastModifiedDate1": "11-13-2024",
+    "lastModifiedDate": "2024-08-17",
+    "lastModifiedDate1": "08-17-2024",
     "lastModifiedDate2": "2024-10-11",
-    "createdDate": "2023-11-13",
-    "createdDate1": "11-13-2024"
+    "lastModifiedDateQuotes": "2024-10-11",
+    "lastModifiedDate1Quotes": "10-11-2024",
+    "createdDate": "2024-08-16",
+    "createdDate1": "08-16-2024",
+    "createdDateQuotes": "2024-10-11",
+    "createdDate1Quotes": "10-11-2024",
+    "quoteNumber": "200",
+    "quoteTotal": "1650.83",
+    "location": "New York",
+    "quoteId": "100",
+    "CPONumber": "PO78911",
+    "createdDateOrder": "2024-09-04",
+    "createdDate1Order": "09-04-2024",
+    "ModifiedDate": "2024-09-04",
+    "ModifiedDate1": "09-04-2024",
+    "trackingNumber": "TN1234567891",
+    "PONumber": "PO78910",
+    "invoiceId": "VIVA123456",
+    "orderId": "VIVA123456",
+    "createdDateInvoice": "2024-09-04",
+    "createdDate1Invoice": "09-04-2024",
+    "UpdatedDate": "2024-09-04",
+    "UpdatedDate1": "09-04-2024",
+    "SAddress": "123 Main St, NY"
   }
 }

@@ -28,20 +28,20 @@ export class UsersActions {
         user.titleElement().type(tdata.users.title)
     }
     enterFullname() {
-        user.fullnameElement().type(tdata.users.fullName)
+        user.fullnameElement().type(tdata.users.fullName,{ force: true })
     }
     enterEmail() {
-        user.emailElement().type(uniqueSeed + tdata.users.email)
+        user.emailElement().type(uniqueSeed + tdata.users.email,{ force: true })
     }
     enterPhone() {
-        user.phoneElement().type(tdata.users.phoneNo1)
+        user.phoneElement().type(tdata.users.phoneNo1,{ force: true })
     }
     enterCellNumber() {
-        user.cellnumberElement().type(tdata.users.cellnumber)
+        user.cellnumberElement().type(tdata.users.cellnumber,{ force: true })
     }
     selectRole() {
         user.userstatusElement().click({ force: true })
-        cy.get('[data-value="6"]').click({ force: true })
+        cy.get('[data-value="Active"]').click({ force: true })
     }
     selectBuilding() {
         user.buildingElement().click({ force: true })
@@ -122,7 +122,7 @@ export class UsersActions {
         user.deletebtnElement().click({ force: true })
     }
     clickConfirmDeleteButton() {
-        cy.get('.css-1877pye').click({ force: true })
+        cy.get('.css-13dncgk').click({ force: true })
     }
     verifyRecordDeleted() {
         cy.wait(2000)
@@ -602,20 +602,20 @@ export class UsersActions {
     }
     sortingOrganizationalUnit() {
         cy.wait(1000)
-        user.optionElement().eq(5).scrollIntoView().click({ force: true })
+        user.optionElement().eq(5).click({ force: true })
         user.sortAscendingElement().click({ force: true })
-        user.optionElement().eq(5).scrollIntoView().click({ force: true })
+        user.optionElement().eq(5).click({ force: true })
         user.sortDescendingElement().click({ force: true })
-        user.optionElement().eq(5).scrollIntoView().click({ force: true })
+        user.optionElement().eq(5).click({ force: true })
         user.clearSortElement().click({ force: true })
     }
     sortingUserStatus() {
         cy.wait(1000)
-        user.optionElement().eq(6).scrollIntoView().click({ force: true })
+        user.optionElement().eq(6).click({ force: true })
         user.sortAscendingElement().click({ force: true })
-        user.optionElement().eq(6).scrollIntoView().click({ force: true })
+        user.optionElement().eq(6).click({ force: true })
         user.sortDescendingElement().click({ force: true })
-        user.optionElement().eq(6).scrollIntoView().click({ force: true })
+        user.optionElement().eq(6).click({ force: true })
         user.clearSortElement().click({ force: true })
     }
 }
