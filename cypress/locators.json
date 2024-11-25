@@ -22,7 +22,7 @@
         "vivaAdmin": "a[href='/admin']",
         "favorite": "Favorite",
         "myAccount": "My Account",
-        "transactions":"Transactions"
+        "transactions": "Transactions"
     },
     "accountDetails": {
         "titleAccount": "Account Dashboard",
@@ -151,7 +151,7 @@
         "sortAscending": "Sort Ascending",
         "sortDescending": "Sort Descending",
         "clearSort": "Clear Sort",
-        "filterHelp":"[data-testid='HelpIcon']"
+        "filterHelp": "[data-testid='HelpIcon']"
     },
     "reportCenter": {
         "title": "Report Center",
@@ -201,7 +201,7 @@
         "sortAscending": "Sort Ascending",
         "sortDescending": "Sort Descending",
         "clearSort": "Clear Sort",
-        "filterHelp":"[data-testid='HelpIcon']"
+        "filterHelp": "[data-testid='HelpIcon']"
     },
     "vivacityRepairReport": {
         "section1": "In Transit to Me",
@@ -262,7 +262,12 @@
         "sortAscending": "Sort Ascending",
         "sortDescending": "Sort Descending",
         "clearSort": "Clear Sort",
-        "filterHelp":"[data-testid='HelpIcon']"
+        "filterHelp": "[data-testid='HelpIcon']",
+        "estimateApproved": "[data-test-id='tabEstimate_Approved']",
+        "estimateDenied": "[data-test-id='tabEstimate_Denied']",
+        "lastWeek": "[data-test-id='tabLast_Week']",
+        "lastMonth": "[data-test-id='tabLast_Month']",
+        "lastYear": "[data-test-id='tabLast_Year']"
     },
     "manageDevices": {
         "title": "Devices",
@@ -300,25 +305,25 @@
         "view": "View Details",
         "deviceIcon": "[data-testid='DevicesIcon']",
         "googleIcon": "[alt='Synced with Google']",
-        "orgUnit":"[name='orgUnitPath']",
-        "assetId":"#annotatedAssetId",
-        "location":"#annotatedLocation",
-        "notes":"#notes",
-        "createTicket":"Create Ticket",
-        "editDevice":"Edit Device",
-        "addLoaner":"Add to Loaner Pool",
-       "removeLoaner": "Remove from Loaner Pool",
+        "orgUnit": "[name='orgUnitPath']",
+        "assetId": "#annotatedAssetId",
+        "location": "#annotatedLocation",
+        "notes": "#notes",
+        "createTicket": "Create Ticket",
+        "editDevice": "Edit Device",
+        "addLoaner": "Add to Loaner Pool",
+        "removeLoaner": "Remove from Loaner Pool",
         "failuretype": "#failure_type",
         "returnsite": "#outbound_address",
         "chromebookissue": "#repair_issue",
         "description": "#chromebook_issue",
-        "savebtn": "Save",       
+        "savebtn": "Save",
         "option": "[data-ref='eMenu']",
         "sortAscending": "Sort Ascending",
         "sortDescending": "Sort Descending",
         "clearSort": "Clear Sort",
-        "filterHelp":"[data-testid='HelpIcon']",
-        "saveIcon":"[data-testid='SaveIcon']"
+        "filterHelp": "[data-testid='HelpIcon']",
+        "saveIcon": "[data-testid='SaveIcon']"
     },
     "importSerialDevices": {
         "title": "Manage Devices",
@@ -338,12 +343,12 @@
         "fieldOp": "[role='option']",
         "fieldValue": "[placeholder='Filter...']",
         "apply": "button[data-ref='applyFilterButton']",
-        "filterHelp":"[data-testid='HelpIcon']",
+        "filterHelp": "[data-testid='HelpIcon']",
         "option": "[data-ref='eMenu']",
         "sortAscending": "Sort Ascending",
         "sortDescending": "Sort Descending",
         "clearSort": "Clear Sort",
-        "saveIcon":"[data-testid='SaveIcon']"
+        "saveIcon": "[data-testid='SaveIcon']"
     },
     "orgUploadAssets": {
         "title": "Organization Uploaded Assets",
@@ -388,8 +393,8 @@
         "sortAscending": "Sort Ascending",
         "sortDescending": "Sort Descending",
         "clearSort": "Clear Sort",
-        "filterHelp":"[data-testid='HelpIcon']",
-        "saveIcon":"[data-testid='SaveIcon']"
+        "filterHelp": "[data-testid='HelpIcon']",
+        "saveIcon": "[data-testid='SaveIcon']"
     },
     "loanerManagement": {
         "title": "Manage Devices",
@@ -432,8 +437,8 @@
         "sortAscending": "Sort Ascending",
         "sortDescending": "Sort Descending",
         "clearSort": "Clear Sort",
-        "filterHelp":"[data-testid='HelpIcon']",
-        "saveIcon":"[data-testid='SaveIcon']"
+        "filterHelp": "[data-testid='HelpIcon']",
+        "saveIcon": "[data-testid='SaveIcon']"
     },
     "repair360": {
         "title": "Repair 360",
@@ -441,14 +446,14 @@
         "inhouserc": "[data-testid='tabrepa-2']",
         "studentrc": "[data-testid='tabrepa-3']",
         "partcloset": "[data-testid='tabrepa-4']",
-        "nonwarrantyr":"Non-warranty Repairs"
+        "nonwarrantyr": "Non-warranty Repairs"
     },
     "vivacityRepairCenter": {
         "title": "Vivacity Repair Center",
         "repairTickets": "[data-testid='tabvr-1']",
         "repairBoxes": "[data-testid='tabvr-2']",
-        "howWorks":"How Vivacity Repair Center Works",
-        "nonWarrantyRepairs":"Non-warranty Repairs"
+        "howWorks": "How Vivacity Repair Center Works",
+        "nonWarrantyRepairs": "Non-warranty Repairs"
     },
     "repairTickets": {
         "title": "Repair 360",
@@ -556,8 +561,8 @@
         "clearSort": "Clear Sort",
         "printbtn": "Print Ticket Estimate",
         "downloadbtn": "Download Ticket Estimate",
-        "filterHelp":"[data-testid='HelpIcon']",
-        "saveIcon":"[data-testid='SaveIcon']"
+        "filterHelp": "[data-testid='HelpIcon']",
+        "saveIcon": "[data-testid='SaveIcon']"
     },
     "inhouseRepairCenter": {
         "title": "In-House Repair",
@@ -595,7 +600,7 @@
         "createnote": "button[type='submit']",
         "part": "#part",
         "custompart": "Custom Part",
-        "filterHelp":"[data-testid='HelpIcon']"
+        "filterHelp": "[data-testid='HelpIcon']"
     },
     "inhouseTickets": {
         "title": "Repair 360",
@@ -651,7 +656,7 @@
         "clearSort": "Clear Sort",
         "printbtn": "Print Ticket Estimate",
         "downloadbtn": "Download Ticket Estimate",
-        "filterHelp":"[data-testid='HelpIcon']"
+        "filterHelp": "[data-testid='HelpIcon']"
     },
     "studentRepairCenter": {
         "title": "Student Repair Center",
@@ -1027,7 +1032,7 @@
         "deviceTable": ".css-sgter1",
         "graphData": ".css-sgter1"
     },
-    "transactions":{
+    "transactions": {
         "title": "Transactions",
         "export": "[data-testid='FileDownloadIcon']",
         "refreshbtn": "[data-testid='CachedIcon']",
@@ -1045,9 +1050,9 @@
         "helpIcon": "[data-testid='HelpIcon']",
         "printbtn": "Print Ticket Estimate",
         "downloadbtn": "Download Ticket Estimate",
-        "estimates":"[data-testid='tabtran-1']",
-        "quotes":"[data-testid='tabtran-2']",
-        "orders":"[data-testid='tabtran-3']",
-        "invoices":"[data-testid='tabtran-4']"
+        "estimates": "[data-testid='tabtran-1']",
+        "quotes": "[data-testid='tabtran-2']",
+        "orders": "[data-testid='tabtran-3']",
+        "invoices": "[data-testid='tabtran-4']"
     }
 }

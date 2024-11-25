@@ -208,5 +208,30 @@ export default class NonWarrantyRepairsElements {
             timeout: 30000,
         })
     }
+    lastYearElement() {
+        return cy.get(locator.nonWarrantyRepairs.lastYear, {
+            timeout: 30000,
+        })
+    }
+    lastMonthElement() {
+        return cy.get(locator.nonWarrantyRepairs.lastMonth, {
+            timeout: 30000,
+        })
+    }
+    lastWeekElement() {
+        return cy.get(locator.nonWarrantyRepairs.lastWeek, {
+            timeout: 30000,
+        })
+    }
+    estimateDeniedElement() {
+        return cy.get(locator.nonWarrantyRepairs.estimateDenied, {
+            timeout: 30000,
+        })
+    }
+    estimateApprovedElement() {
+        return cy.get(locator.nonWarrantyRepairs.estimateApproved, {
+            timeout: 30000,
+        })
+    }
 }
 

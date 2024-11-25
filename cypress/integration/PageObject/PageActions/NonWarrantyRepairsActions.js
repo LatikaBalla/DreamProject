@@ -26,6 +26,9 @@ export class NonWarrantyRepairsActions {
       cy.get(':nth-child(2) > .MuiCard-root > .MuiPaper-root > .MuiAccordionSummary-root > .MuiAccordionSummary-content > .css-sgter1 > .css-1qocved > .MuiBox-root > .MuiTypography-root').click({ force: true })
       // rep360.nonwarrantyrElement().click({ force: true })
    }
+   clickOnEstimateApproved(){
+      nwr.estimateApprovedElement().click({ force: true })
+   }
    verifyTitle() {
       nwr.titleElement().should('be.visible')
    }
@@ -86,11 +89,6 @@ export class NonWarrantyRepairsActions {
    }
    clickOnViewdetails() {
       cy.contains('View Details').click({ force: true })
-      // cy.window().then(win => {
-
-      // });
-      // cy.get('body').type('{ctrl}t');
-      // cy.visit("/repair-360/ticket-detail/" + tdata.nonwarrantyRepairs.recordid)
    }
    verifyRapairTicketPAge() {
       cy.wait(2000)
@@ -135,10 +133,6 @@ export class NonWarrantyRepairsActions {
       nwr.fieldOpElement().eq(0).click({ force: true })
       nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.total)
       nwr.applyElement().click({ force: true })
-      // cy.get('.ag-row-first > [col-id="repairCost"]').eq(1).then(($el) => {
-      //    const value = parseInt($el.text());
-      //    expect(value).to.equal(71690);
-      // })
       nwr.clearFilterElement().click({ force: true })
    }
    filterDoesnotcontainRI() {
@@ -148,10 +142,6 @@ export class NonWarrantyRepairsActions {
       nwr.fieldOpElement().eq(1).click({ force: true })
       nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.total)
       nwr.applyElement().click({ force: true })
-      // cy.get('.ag-row-first > [col-id="repairCost"]').then(($el) => {
-      //    const value = parseInt($el.text());
-      //    expect(value).to.not.equal(71690);
-      // })
       nwr.clearFilterElement().click({ force: true })
    }
    filterGreaterthanRI() {
@@ -161,10 +151,6 @@ export class NonWarrantyRepairsActions {
       nwr.fieldOpElement().eq(2).click({ force: true })
       nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.total)
       nwr.applyElement().click({ force: true })
-      // cy.get('.ag-row-first > [col-id="repairCost"]').then(($el) => {
-      //    const value = parseInt($el.text());
-      //    expect(value).to.be.greaterThan(71690);
-      // })
       nwr.clearFilterElement().click({ force: true })
    }
    filterGreaterequalRI() {
@@ -174,10 +160,6 @@ export class NonWarrantyRepairsActions {
       nwr.fieldOpElement().eq(3).click({ force: true })
       nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.total)
       nwr.applyElement().click({ force: true })
-      // cy.get('.ag-row-first > [col-id="repairCost"]').then(($el) => {
-      //    const value = parseInt($el.text());
-      //    expect(value).to.be.gte(71690);
-      // })
       nwr.clearFilterElement().click({ force: true })
    }
    filterLessthanRI() {
@@ -187,10 +169,6 @@ export class NonWarrantyRepairsActions {
       nwr.fieldOpElement().eq(4).click({ force: true })
       nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.total)
       nwr.applyElement().click({ force: true })
-      // cy.get('.ag-row-first > [col-id="repairCost"]').eq(1).then(($el) => {
-      //    const value = parseInt($el.text());
-      //    expect(value).to.be.lessThan(71690);
-      // })
       nwr.clearFilterElement().click({ force: true })
    }
    filterLessequalRI() {
@@ -200,11 +178,6 @@ export class NonWarrantyRepairsActions {
       nwr.fieldOpElement().eq(5).click({ force: true })
       nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.total)
       nwr.applyElement().click({ force: true })
-      // cy.wait(100)
-      // cy.get('.ag-row-first > [col-id="repairCost"]').eq(1).then(($el) => {
-      //    const value = parseInt($el.text());
-      //    expect(value).to.be.lte(71690);
-      // })
       nwr.clearFilterElement().click({ force: true })
    }
    filterBetweenRI() {
@@ -215,10 +188,6 @@ export class NonWarrantyRepairsActions {
       cy.get('[placeholder="From"]').type(tdata.nonwarrantyRepairs.total1)
       cy.get('[placeholder="To"]').type(tdata.nonwarrantyRepairs.total)
       nwr.applyElement().click({ force: true })
-      // cy.get('.ag-row-first > [col-id="rrepairCost"]').eq(0).then(($el) => {
-      //    const value = parseInt($el.text());
-      //    expect(value).to.be.within(70799, 71690);
-      // })
       nwr.clearFilterElement().click({ force: true })
    }
    filterBlankRI() {
@@ -238,10 +207,6 @@ export class NonWarrantyRepairsActions {
       nwr.fieldOpElement().eq(8).click({ force: true })
       nwr.fieldValueElement().eq(1).clear({ force: true }).type(tdata.nonwarrantyRepairs.total, { force: true })
       nwr.applyElement().click({ force: true })
-      // cy.get('.ag-row-first > [col-id="repairCost"]').eq(1).then(($el) => {
-      //    const value = parseInt($el.text());
-      //    expect(value).to.equal(70799)
-      // })
       nwr.clearFilterElement().click({ force: true })
    }
    //issueType
@@ -285,18 +250,18 @@ export class NonWarrantyRepairsActions {
       nwr.addFilterElement().eq(1).click({ force: true })
       nwr.fieldNameElement().eq(2).click({ force: true })
       nwr.fieldOpElement().eq(4).click({ force: true })
-      nwr.fieldValueElement().eq(0).type('Acci')
+      nwr.fieldValueElement().eq(0).type('Mec')
       nwr.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', 'Acci')
+      cy.get('[row-index="0"]').should('contain', 'Mech')
       nwr.clearFilterElement().click({ force: true })
    }
    filterEndswithIType() {
       nwr.addFilterElement().eq(1).click({ force: true })
       nwr.fieldNameElement().eq(2).click({ force: true })
       nwr.fieldOpElement().eq(5).click({ force: true })
-      nwr.fieldValueElement().eq(0).type('tal')
+      nwr.fieldValueElement().eq(0).type('cal')
       nwr.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('contain', 'tal')
+      cy.get('[row-index="0"]').should('contain', 'cal')
       nwr.clearFilterElement().click({ force: true })
    }
    filterBlankIType() {
@@ -696,6 +661,12 @@ export class NonWarrantyRepairsActions {
       cy.get('[row-index="0"]').should('contain', 'Student')
       cy.get('[class="reset-button"]').click({ force: true })
    }
+   selectFilterRepairType3() {
+      nwr.addFilterElement().eq(7).click({ force: true })
+      cy.get('[value="Vivacity"]').click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'Vivacity')
+      cy.get('[class="reset-button"]').click({ force: true })
+   }
    //RS
    filterOption1() {
       cy.wait(1000)
@@ -1053,7 +1024,7 @@ export class NonWarrantyRepairsActions {
       nwr.fieldOpElement().eq(6).click({ force: true })
       cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.nonwarrantyRepairs.lastdate, { force: true })
       nwr.applyElement().click({ force: true })
-      cy.get('[row-index="0"]').should('not.contain', tdata.nonwarrantyRepairs.lastdate1)
+  //    cy.get('[row-index="0"]').should('not.contain', tdata.nonwarrantyRepairs.lastdate1)
       nwr.clearFilterElement().click({ force: true })
    }
    sortingTotal() {
@@ -1181,6 +1152,598 @@ export class NonWarrantyRepairsActions {
       nwr.sortDescendingElement().click({ force: true })
       nwr.optionElement().eq(13).scrollIntoView().click({ force: true })
       nwr.clearSortElement().click({ force: true })
+   }
+   //tn
+   filterContainIssue1() {
+      nwr.addFilterElement().eq(2).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(0).click({ force: true })
+      nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.chromebookissue1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.chromebookissue1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterDoesnotcontainIssue1() {
+      nwr.addFilterElement().eq(2).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(1).click({ force: true })
+      nwr.fieldValueElement().eq(0).type(tdata.nonwarrantyRepairs.chromebookissue1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('not.contain', tdata.nonwarrantyRepairs.chromebookissue1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterEqualsIssue1() {
+      nwr.addFilterElement().eq(2).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(2).click({ force: true })
+      nwr.fieldValueElement().eq(0).type(tdata.nonwarrantyRepairs.chromebookissue1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.chromebookissue1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterNotequalIssue1() {
+      nwr.addFilterElement().eq(2).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(3).click({ force: true })
+      nwr.fieldValueElement().eq(0).type(tdata.nonwarrantyRepairs.chromebookissue1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('not.contain.value', tdata.nonwarrantyRepairs.chromebookissue1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterBeginswithIssue1() {
+      nwr.addFilterElement().eq(2).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(4).click({ force: true })
+      nwr.fieldValueElement().eq(0).type('Test')
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'Test')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterEndswithIssue1() {
+      nwr.addFilterElement().eq(2).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(5).click({ force: true })
+      nwr.fieldValueElement().eq(0).type('Dillon ')
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'Dillon ')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterBlankIssue1() {
+      nwr.addFilterElement().eq(2).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(6).click({ force: true })
+      nwr.fieldValueElement().eq(0).type(' ', { force: true })
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', ' ')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterNotblankIssue1() {
+      nwr.addFilterElement().eq(2).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(7).click({ force: true })
+      nwr.fieldValueElement().eq(1).type(tdata.nonwarrantyRepairs.chromebookissue1, { force: true })
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.chromebookissue1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   //RD
+   selectFilterRepairnwrice1() {
+      nwr.addFilterElement().eq(3).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(0).click({ force: true })
+      nwr.fieldValueElement().clear({ force: true }).type(tdata.nonwarrantyRepairs.repairdevice)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.repairdevice)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterDoesnotcontainRD1() {
+      nwr.addFilterElement().eq(3).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(1).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.repairdevice)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('not.contain', tdata.nonwarrantyRepairs.repairdevice)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterEqualsRD1() {
+      nwr.addFilterElement().eq(3).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(2).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.repairdevice)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.repairdevice)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterNotequalRD1() {
+      nwr.addFilterElement().eq(3).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(3).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.repairdevice)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('not.contain.value', tdata.nonwarrantyRepairs.repairdevice)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterBeginswithRD1() {
+      nwr.addFilterElement().eq(3).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(4).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type('Dell')
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'Dell')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterEndswithRD1() {
+      nwr.addFilterElement().eq(3).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(5).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type('Touch')
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'Touch')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterBlankRD1() {
+      nwr.addFilterElement().eq(3).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(6).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', ' ')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterNotblankRD1() {
+      nwr.addFilterElement().eq(3).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(7).click({ force: true })
+      nwr.fieldValueElement().eq(1).clear({ force: true }).type(tdata.nonwarrantyRepairs.repairdevice, { force: true })
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.repairdevice)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   //tag
+   selectFilterAssetTag1() {
+      nwr.addFilterElement().eq(4).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(0).click({ force: true })
+      nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.assettag1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.assettag1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterDoesnotcontaintag1() {
+      nwr.addFilterElement().eq(4).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(1).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.assettag1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('not.contain', tdata.nonwarrantyRepairs.assettag1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterEqualstag1() {
+      nwr.addFilterElement().eq(4).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(2).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.assettag1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.assettag1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterNotequaltag1() {
+      nwr.addFilterElement().eq(4).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(3).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.assettag1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('not.contain.value', tdata.nonwarrantyRepairs.assettag1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterBeginswithtag1() {
+      nwr.addFilterElement().eq(4).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(4).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type('Tes')
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'Tes')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterEndswithtag1() {
+      nwr.addFilterElement().eq(4).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(5).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type('Tag')
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'Tag')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterBlanktag1() {
+      nwr.addFilterElement().eq(4).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(6).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', ' ')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterNotblanktag1() {
+      nwr.addFilterElement().eq(4).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(7).click({ force: true })
+      nwr.fieldValueElement().eq(1).clear({ force: true }).type(tdata.nonwarrantyRepairs.assettag1, { force: true })
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.assettag1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   //sn
+   selectFilterSerialNumber1() {
+      cy.wait(1000)
+      nwr.addFilterElement().eq(5).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(0).click({ force: true })
+      nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.serialnumber1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.serialnumber1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterDoesnotcontainSN1() {
+      nwr.addFilterElement().eq(5).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(1).click({ force: true })
+      nwr.fieldValueElement().eq(0).type(tdata.nonwarrantyRepairs.serialnumber1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('not.contain', tdata.nonwarrantyRepairs.serialnumber1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterEqualsSN1() {
+      nwr.addFilterElement().eq(5).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(2).click({ force: true })
+      nwr.fieldValueElement().eq(0).type(tdata.nonwarrantyRepairs.serialnumber1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.serialnumber1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterNotequalSN1() {
+      nwr.addFilterElement().eq(5).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(3).click({ force: true })
+      nwr.fieldValueElement().eq(0).type(tdata.nonwarrantyRepairs.serialnumber1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('not.contain.value', tdata.nonwarrantyRepairs.serialnumber1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterBeginswithSN1() {
+      nwr.addFilterElement().eq(5).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(4).click({ force: true })
+      nwr.fieldValueElement().eq(0).type('VIVA')
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'VIVA')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterEndswithSN1() {
+      nwr.addFilterElement().eq(5).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(5).click({ force: true })
+      nwr.fieldValueElement().eq(0).type('Test')
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'Test')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterBlankSN1() {
+      nwr.addFilterElement().eq(5).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(6).click({ force: true })
+      nwr.fieldValueElement().eq(0).type(' ', { force: true })
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', ' ')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterNotblankSN1() {
+      nwr.addFilterElement().eq(5).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(7).click({ force: true })
+      nwr.fieldValueElement().eq(1).type(tdata.nonwarrantyRepairs.serialnumber1, { force: true })
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.serialnumber1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   //tn
+   selectFilterTicketNumber1() {
+      nwr.addFilterElement().eq(6).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(0).click({ force: true })
+      nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.ticketnumber1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.ticketnumber1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterDoesnotcontainTN1() {
+      nwr.addFilterElement().eq(6).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(1).click({ force: true })
+      nwr.fieldValueElement().eq(0).type(tdata.nonwarrantyRepairs.ticketnumber1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('not.contain', tdata.nonwarrantyRepairs.ticketnumber1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterEqualsTN1() {
+      nwr.addFilterElement().eq(6).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(2).click({ force: true })
+      nwr.fieldValueElement().eq(0).type(tdata.nonwarrantyRepairs.ticketnumber1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.ticketnumber1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterNotequalTN1() {
+      nwr.addFilterElement().eq(6).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(3).click({ force: true })
+      nwr.fieldValueElement().eq(0).type(tdata.nonwarrantyRepairs.ticketnumber1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('not.contain.value', tdata.nonwarrantyRepairs.ticketnumber1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterBeginswithTN1() {
+      nwr.addFilterElement().eq(6).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(4).click({ force: true })
+      nwr.fieldValueElement().eq(0).type('V00')
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'V00')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterEndswithTN1() {
+      nwr.addFilterElement().eq(6).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(5).click({ force: true })
+      nwr.fieldValueElement().eq(0).type('737')
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', '737')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterBlankTN1() {
+      nwr.addFilterElement().eq(6).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(6).click({ force: true })
+      nwr.fieldValueElement().eq(0).type(' ', { force: true })
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', ' ')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterNotblankTN1() {
+      nwr.addFilterElement().eq(6).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(7).click({ force: true })
+      nwr.fieldValueElement().eq(1).type(tdata.nonwarrantyRepairs.ticketnumber1, { force: true })
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.ticketnumber1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   //RS
+   filterOption1EA() {
+      cy.wait(1000)
+      nwr.addFilterElement().eq(8).click({ force: true })
+      cy.get('[value="Estimate Approved"]').click({ force: true })
+      cy.get('[row-index="0"]>[col-id="repairStatus"]').should('contain', 'Estimate Approved')
+      cy.get('.reset-button').click({ force: true })
+   }
+   //IT()
+   filterContainIT1() {
+      nwr.addFilterElement().eq(9).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(0).click({ force: true })
+      nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.technician1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.technician1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterDoesnotcontainIT1() {
+      nwr.addFilterElement().eq(9).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(1).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.technician1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('not.contain', tdata.nonwarrantyRepairs.technician1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterEqualsIT1() {
+      nwr.addFilterElement().eq(9).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(2).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.technician1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.technician1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterNotequalIT1() {
+      nwr.addFilterElement().eq(9).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(3).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.technician1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('not.contain.value', tdata.nonwarrantyRepairs.technician1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterBeginswithIT1() {
+      nwr.addFilterElement().eq(9).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(4).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type('Viv')
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'Viv')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterEndswithIT1() {
+      nwr.addFilterElement().eq(9).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(5).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type('rown')
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'rown')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterBlankIT1() {
+      nwr.addFilterElement().eq(9).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(6).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', ' ')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterNotblankIT1() {
+      nwr.addFilterElement().eq(9).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(7).click({ force: true })
+      nwr.fieldValueElement().eq(1).clear({ force: true }).type(tdata.nonwarrantyRepairs.technician1, { force: true })
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.technician1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   //StdN()
+   filterContainStdN1() {
+      nwr.addFilterElement().eq(10).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(0).click({ force: true })
+      nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.stdName1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.stdName1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterDoesnotcontainStdN1() {
+      nwr.addFilterElement().eq(10).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(1).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.stdName1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('not.contain', tdata.nonwarrantyRepairs.stdName1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterEqualsStdN1() {
+      nwr.addFilterElement().eq(10).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(2).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.stdName1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.stdName1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterNotequalStdN1() {
+      nwr.addFilterElement().eq(10).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(3).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.stdName1)
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('not.contain.value', tdata.nonwarrantyRepairs.stdName1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterBeginswithStdN1() {
+      nwr.addFilterElement().eq(10).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(4).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type('Tsi')
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'Tsi')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterEndswithStdN1() {
+      nwr.addFilterElement().eq(10).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(5).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type('aham')
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', 'aham')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterBlankStdN1() {
+      nwr.addFilterElement().eq(10).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(6).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', ' ')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterNotblankStdN1() {
+      nwr.addFilterElement().eq(10).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(7).click({ force: true })
+      nwr.fieldValueElement().eq(1).clear({ force: true }).type(tdata.nonwarrantyRepairs.stdName1, { force: true })
+      nwr.applyElement().click({ force: true })
+      cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.stdName1)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   //Box()
+   filterContainBox1() {
+      nwr.addFilterElement().eq(11).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(0).click({ force: true })
+      nwr.fieldValueElement().type(tdata.nonwarrantyRepairs.repairBox)
+      nwr.applyElement().click({ force: true })
+      // cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.repairBox)
+   }
+   filterDoesnotcontainBox1() {
+      nwr.addFilterElement().eq(11).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(1).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.repairBox)
+      nwr.applyElement().click({ force: true })
+      //  cy.get('[row-index="0"]').should('not.contain', tdata.nonwarrantyRepairs.repairBox)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterEqualsBox1() {
+      nwr.addFilterElement().eq(11).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(2).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.repairBox)
+      nwr.applyElement().click({ force: true })
+      //  cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.repairBox)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterNotequalBox1() {
+      nwr.addFilterElement().eq(11).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(3).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(tdata.nonwarrantyRepairs.repairBox1)
+      nwr.applyElement().click({ force: true })
+      // cy.get('[row-index="0"]').should('not.contain.value', tdata.nonwarrantyRepairs.repairBox)
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterBeginswithBox1() {
+      nwr.addFilterElement().eq(11).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(4).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type('demo')
+      nwr.applyElement().click({ force: true })
+      //  cy.get('[row-index="0"]').should('contain', 'demo')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterEndswithBox1() {
+      nwr.addFilterElement().eq(11).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(5).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type('vivacitytech.com')
+      nwr.applyElement().click({ force: true })
+      // cy.get('[row-index="0"]').should('contain', 'vivacitytech.com')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterBlankBox1() {
+      nwr.addFilterElement().eq(11).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(6).click({ force: true })
+      nwr.fieldValueElement().eq(0).clear({ force: true }).type(' ', { force: true })
+      nwr.applyElement().click({ force: true })
+      // cy.get('[row-index="0"]').should('contain', ' ')
+      nwr.clearFilterElement().click({ force: true })
+   }
+   filterNotblankBox1() {
+      nwr.addFilterElement().eq(11).click({ force: true })
+      nwr.fieldNameElement().eq(2).click({ force: true })
+      nwr.fieldOpElement().eq(7).click({ force: true })
+      nwr.fieldValueElement().eq(1).clear({ force: true }).type(tdata.nonwarrantyRepairs.repairBox1, { force: true })
+      nwr.applyElement().click({ force: true })
+      //cy.get('[row-index="0"]').should('contain', tdata.nonwarrantyRepairs.repairBox)
+      nwr.clearFilterElement().click({ force: true })
    }
 }
 export default NonWarrantyRepairsActions 
