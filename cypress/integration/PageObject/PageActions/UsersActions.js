@@ -9,7 +9,6 @@ export class UsersActions {
         globalThis.dash = new DashboardElements();
     }
     closeTermsOfServiceWindow() {
-        //  cy.wait(3000)
         dash.termsElement().contains('Dismiss').click({ force: true })
     }
     clickOnUsers() {

@@ -105,7 +105,6 @@ And('Click on filter of Repair Type op2 and Verify the Result', () => {
 And('Click on filter of Repair Type op3 and Verify the Result', () => {
     trans.filterRepairTypeOp3()
 })
-
 //phone
 And('Click on filter of Created Date Equals and Verify the Result', () => {
     trans.filterEqualsCDate()

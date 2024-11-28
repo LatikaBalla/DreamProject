@@ -326,7 +326,6 @@ And('Verify the record is deleted successfully for allUser', () => {
     vadmin.verifyRecordDeletedAllUser()
 })
 
-
 And('Click on features page', () => {
     cy.wait(1000)
     cy.contains('demo_adminvivacity@vivacitytech.com').click({ force: true })
@@ -395,16 +394,9 @@ And('Click on submit button for Employee', () => {
 })
 Then('Verify the Employee added in table', () => {
     vadmin.verifyEmployeeAdded()
-    cy.get('[data-testid="btnNewDataSubmit"]').eq(1).click({ force: true })
 })
 Then('Select Email from Dropdownlist', () => {
     vadmin.selectEmail()
-})
-And('Enter the Search value in search box for employee', () => {
-    vadmin.enterSerachEmp()
-})
-Then('Verify the Results in the table for employee', () => {
-    vadmin.verifyResultEmp()
 })
 And('Click on Edit button new Employee', () => {
     vadmin.clickConEditEmp()
@@ -426,40 +418,137 @@ And('Verify the Record has been updated Meassage', () => {
 Then('Click on the Export Button for Employee', () => {
     vadmin.clickOnExportEmp()
 })
-And('Enter the Search - Ticket Number in search box and Verify the Result for RT', () => {
-    vadmin.searchTicketNumber()
-})
-Then('Enter the Search - Repair Type in search box and Verify the Result for RT', () => {
-    vadmin.searchRepairType()
-})
-And('Enter the Search - Failure Type in search box and Verify the Result for RT', () => {
-    vadmin.searchFailureType()
-})
-And('Click More filter select- Ticket Number in search box and Verify the Result for RT', () => {
-    vadmin.clickOnMoreFilter()
-    vadmin.selectFilterTicketNumber()
-})
-Then ('Enter the Search - Email in search box and Verify the Result',()=>{
-    vadmin.searchEmail()
-})
 Then('Click on Import Serial Device unit',()=>{
     vadmin.clickOnimportdevice()
 })
-And ('Enter the Search - Serial Number in search box and Verify the Result for isd',()=>{
- vadmin.searchSearialNo()
+
+//Emp fn
+And('Click on filter of Full Name contain and Verify the Result', () => {
+    vadmin.filtercontainFN()
 })
-Then ('Enter the Search - Account in search box and Verify the Result for isd',()=>{
-vadmin.searchAccount()
+And('Click on filter of Full Name Does not contain and Verify the Result', () => {
+    vadmin.filterDoesnotcontainFN()
 })
-And ('Enter the Search - Device in search box and Verify the Result for isd',()=>{
-vadmin.searchDevice()
+And('Click on filter of Full Name Equals and Verify the Result', () => {
+    vadmin.filterEqualsFN()
 })
-And ('Click More filter select- Serial Number in search box and Verify the Result for isd',()=>{
-vadmin.filterSearialNo()
+And('Click on filter of Full Name Does not equal and Verify the Result', () => {
+    vadmin.filterNotequalFN()
 })
-Then ('Click More filter select- Account in search box and Verify the Result for isd',()=>{
-vadmin.filterAccount()
+And('Click on filter of Full Name Begins with and Verify the Result', () => {
+    vadmin.filterBeginswithFN()
 })
-And ('Click More filter select- Device in search box and Verify the Result for isd',()=>{
-vadmin.filterDevice()
+And('Click on filter of Full Name Ends with and Verify the Result', () => {
+    vadmin.filterEndswithFN()
+})
+And('Click on filter of Full Name Blank and Verify the Result', () => {
+    vadmin.filterBlankFN()
+})
+And('Click on filter of Full Name Not blank and Verify the Result', () => {
+    vadmin.filterNotblankFN()
+})
+And('Click on filter of Eamil contain and Verify the Result', () => {
+    vadmin.filtercontainE()
+})
+And('Click on filter of Eamil Does not contain and Verify the Result', () => {
+    vadmin.filterDoesnotcontainE()
+})
+And('Click on filter of Eamil Equals and Verify the Result', () => {
+    vadmin.filterEqualsE()
+})
+And('Click on filter of Eamil Does not equal and Verify the Result', () => {
+    vadmin.filterNotequalE()
+})
+And('Click on filter of Eamil Begins with and Verify the Result', () => {
+    vadmin.filterBeginswithE()
+})
+And('Click on filter of Eamil Ends with and Verify the Result', () => {
+    vadmin.filterEndswithE()
+})
+And('Click on filter of Eamil Blank and Verify the Result', () => {
+    vadmin.filterBlankE()
+})
+And('Click on filter of Eamil Not blank and Verify the Result', () => {
+    vadmin.filterNotblankE()
+})
+And('Click on filter of Phone contain and Verify the Result', () => {
+    vadmin.filtercontainP()
+})
+And('Click on filter of Phone Does not contain and Verify the Result', () => {
+    vadmin.filterDoesnotcontainP()
+})
+And('Click on filter of Phone Equals and Verify the Result', () => {
+    vadmin.filterEqualsP()
+})
+And('Click on filter of Phone Does not equal and Verify the Result', () => {
+    vadmin.filterNotequalP()
+})
+And('Click on filter of Phone Begins with and Verify the Result', () => {
+    vadmin.filterBeginswithP()
+})
+And('Click on filter of Phone Ends with and Verify the Result', () => {
+    vadmin.filterEndswithP()
+})
+And('Click on filter of Phone Blank and Verify the Result', () => {
+    vadmin.filterBlankP()
+})
+And('Click on filter of Phone Not blank and Verify the Result', () => {
+    vadmin.filterNotblankP()
+})
+And('Click on filter of Created Date Equals and Verify the Result', () => {
+    vadmin.filterEqualsCDate()
+})
+And('Click on filter of Created Date Does not equal and Verify the Result', () => {
+    vadmin.filterNotequalCDate()
+})
+And('Click on filter of Created Date Before and Verify the Result', () => {
+    vadmin.filterBeforeCDate()
+})
+And('Click on filter of Created Date After and Verify the Result', () => {
+    vadmin.filterAfterCDate()
+})
+And('Click on filter of Created Date Between and Verify the Result', () => {
+    vadmin.filterBetweenCDate()
+})
+And('Click on filter of Created Date Blank and Verify the Result', () => {
+    vadmin.filterBlankCDate()
+})
+And('Click on filter of Created Date Not blank and Verify the Result', () => {
+    vadmin.filterNotblankCDate()
+})
+And('Click on filter of Employee Status contain and Verify the Result', () => {
+    vadmin.filtercontainEmpStatus()
+})
+And('Click on filter of Employee Status Does not contain and Verify the Result', () => {
+    vadmin.filterDoesnotcontainEmpStatus()
+})
+And('Click on filter of Employee Status Equals and Verify the Result', () => {
+    vadmin.filterEqualsEmpStatus()
+})
+And('Click on filter of Employee Status Does not equal and Verify the Result', () => {
+    vadmin.filterNotequalEmpStatus()
+})
+And('Click on filter of Employee Status Begins with and Verify the Result', () => {
+    vadmin.filterBeginswithEmpStatus()
+})
+And('Click on filter of Employee Status Ends with and Verify the Result', () => {
+    vadmin.filterEndswithEmpStatus()
+})
+And('Click on filter of Employee Status Blank and Verify the Result', () => {
+    vadmin.filterBlankEmpStatus()
+})
+And('Click on filter of Employee Status Not blank and Verify the Result', () => {
+    vadmin.filterNotblankEmpStatus()
+})
+And('Click on Sort Ascending and Descending for Full Name and Verify the Result', () => {
+    vadmin.sortingFullName()
+})
+And('Click on Sort Ascending and Descending for Email and Verify the Result', () => {
+    vadmin.sortingEmail()
+})
+And('Click on Sort Ascending and Descending for Phone and Verify the Result', () => {
+    vadmin.sortingPhone()
+})
+And('Click on Sort Ascending and Descending for Employee Status and Verify the Result', () => {
+    vadmin.sortingEmployeeStatus()
 })

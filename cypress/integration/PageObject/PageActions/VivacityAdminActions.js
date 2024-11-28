@@ -12,7 +12,7 @@ export class VivacityAdminActions {
         globalThis.dash = new DashboardElements();
     }
     closeTermsOfServiceWindow() {
-        dash.termsElement().click({ force: true })
+        dash.termsElement().contains('Dismiss').click({ force: true })
     }
     clickOnVivacityAdmin() {
         dash.vivaAdminElement().click({ force: true })
@@ -65,6 +65,447 @@ export class VivacityAdminActions {
     tableSubscriptionVisible() {
         cy.get('.css-1owb465').should('be.visible')
     }
+    //Employee Management 
+    clickOnEmployeeManagment() {
+        cy.wait(2000)
+        vadmin.section10Element().click({ force: true })
+    }
+    clickOnCreateNewEmp() {
+        cy.wait(1000)
+        vadmin.AddEmployeeElement().eq(1).click({ force: true })
+    }
+    enterFullnameEmp() {
+        vadmin.nameElement().type(tdata.vivacityAdmin.fullname)
+    }
+    enterEmailEmp() {
+        vadmin.emailElement().type(uniqueSeed + '2' + tdata.vivacityAdmin.email)
+    }
+    selectUserStatus() {
+        vadmin.statusElement().click({ force: true })
+        cy.get(tdata.vivacityAdmin.status).click({ force: true })
+    }
+    verifyEmployeeAdded() {
+        cy.wait(5000)
+        vadmin.addFilterElement().eq(15).click({ force: true })
+        vadmin.fieldValueElement().type(tdata.vivacityAdmin.fullname)
+        vadmin.applyElement().click({ force: true })
+        cy.wait(100)
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.fullname)
+    }
+    clickConEditEmp() {
+        cy.get('[col-id="button"]').find('[data-testid="EditIcon"]').eq(0).click({ force: true })
+    }
+    editUserStatusEmp() {
+        vadmin.statusElement().click({ force: true })
+        cy.get(tdata.vivacityAdmin.editStatus).click({ force: true })
+    }
+    editFullnameEmp() {
+        vadmin.nameElement().clear().should('have.value', '').type(tdata.vivacityAdmin.fullname)
+    }
+    clickOneditSubmitButton() {
+        cy.get('form > .MuiButton-containedPrimary').click({ force: true })
+    }
+    verifyEmpUpdated() {
+        // cy.contains('User has been updated').should('be.visible')
+        // cy.get('.MuiButton-containedError').click({ force: true })
+    }
+    clickOnExportEmp() {
+        vadmin.exportElement().eq(2).click({ force: true })
+    }
+    //fn
+    filtercontainFN() {
+        cy.wait(4000)
+        vadmin.addFilterElement().eq(15).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(0).click({ force: true })
+        vadmin.fieldValueElement().type(tdata.vivacityAdmin.fullname)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.fullname)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainFN() {
+        vadmin.addFilterElement().eq(15).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(1).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.fullname)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.vivacityAdmin.fullname)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterEqualsFN() {
+        vadmin.addFilterElement().eq(15).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(2).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.fullname)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.fullname)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterNotequalFN() {
+        vadmin.addFilterElement().eq(15).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(3).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.fullname)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.vivacityAdmin.fullname)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithFN() {
+        vadmin.addFilterElement().eq(15).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(4).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type('Dream')
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'Dream')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterEndswithFN() {
+        vadmin.addFilterElement().eq(15).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(5).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type('Admin')
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'Admin')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBlankFN() {
+        vadmin.addFilterElement().eq(15).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(6).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(' ', { force: true })
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterNotblankFN() {
+        vadmin.addFilterElement().eq(15).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(7).click({ force: true })
+        vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.fullname, { force: true })
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.fullname)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    //email
+    filtercontainE() {
+        cy.wait(2000)
+        vadmin.addFilterElement().eq(17).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(0).click({ force: true })
+        vadmin.fieldValueElement().type(tdata.vivacityAdmin.emailid)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.emailid)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainE() {
+        vadmin.addFilterElement().eq(17).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(1).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.emailid)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.vivacityAdmin.emailid)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterEqualsE() {
+        vadmin.addFilterElement().eq(17).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(2).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.emailid)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.emailid)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterNotequalE() {
+        vadmin.addFilterElement().eq(17).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(3).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.emailid)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.vivacityAdmin.emailid)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithE() {
+        vadmin.addFilterElement().eq(17).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(4).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type('mike')
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'mike')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterEndswithE() {
+        vadmin.addFilterElement().eq(17).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(5).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type('tech.com')
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'tech.com')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBlankE() {
+        vadmin.addFilterElement().eq(17).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(6).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(' ', { force: true })
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterNotblankE() {
+        vadmin.addFilterElement().eq(17).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(7).click({ force: true })
+        vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.emailid, { force: true })
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.emailid)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    //phone
+    filtercontainP() {
+        cy.wait(2000)
+        vadmin.addFilterElement().eq(18).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(0).click({ force: true })
+        vadmin.fieldValueElement().type(tdata.vivacityAdmin.phoneNo1)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.phoneNo2)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainP() {
+        vadmin.addFilterElement().eq(18).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(1).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.phoneNo1)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.vivacityAdmin.phoneNo2)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterEqualsP() {
+        vadmin.addFilterElement().eq(18).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(2).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.phoneNo1)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.phoneNo2)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterNotequalP() {
+        vadmin.addFilterElement().eq(18).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(3).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.phoneNo1)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.vivacityAdmin.phoneNo2)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithP() {
+        vadmin.addFilterElement().eq(18).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(4).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type('877')
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', '877')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterEndswithP() {
+        vadmin.addFilterElement().eq(18).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(5).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type('069')
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', '069')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBlankP() {
+        vadmin.addFilterElement().eq(18).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(6).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(' ', { force: true })
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterNotblankP() {
+        vadmin.addFilterElement().eq(18).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(7).click({ force: true })
+        vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.phoneNo1, { force: true })
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.phoneNo2)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    //Cdate
+    filterEqualsCDate() {
+        vadmin.addFilterElement().eq(16).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(0).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.vivacityAdmin.createdDate)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.createdDate1)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterNotequalCDate() {
+        vadmin.addFilterElement().eq(16).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(1).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.vivacityAdmin.createdDate)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.vivacityAdmin.createdDate1)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBeforeCDate() {
+        vadmin.addFilterElement().eq(16).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(2).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.vivacityAdmin.createdDate)
+        vadmin.applyElement().click({ force: true })
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterAfterCDate() {
+        vadmin.addFilterElement().eq(16).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(3).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.vivacityAdmin.createdDate)
+        vadmin.applyElement().click({ force: true })
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBetweenCDate() {
+        vadmin.addFilterElement().eq(16).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(4).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.vivacityAdmin.createdDate)
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type('2024-05-19', { force: true })
+        vadmin.applyElement().click({ force: true })
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBlankCDate() {
+        vadmin.addFilterElement().eq(16).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(5).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.vivacityAdmin.createdDate, { force: true })
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterNotblankCDate() {
+        vadmin.addFilterElement().eq(16).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(6).click({ force: true })
+        cy.get('[placeholder="yyyy-mm-dd"]').eq(2).type(tdata.vivacityAdmin.createdDate, { force: true })
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.createdDate1)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filtercontainEmpStatus() {
+        cy.wait(2000)
+        vadmin.addFilterElement().eq(19).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(0).click({ force: true })
+        vadmin.fieldValueElement().type(tdata.vivacityAdmin.empStatus)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.empStatus)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainEmpStatus() {
+        vadmin.addFilterElement().eq(19).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(1).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.empStatus)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.vivacityAdmin.empStatus)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterEqualsEmpStatus() {
+        vadmin.addFilterElement().eq(19).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(2).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.empStatus)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.empStatus)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterNotequalEmpStatus() {
+        vadmin.addFilterElement().eq(19).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(3).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.empStatus)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.vivacityAdmin.empStatus)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithEmpStatus() {
+        vadmin.addFilterElement().eq(19).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(4).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type('Act')
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'Act')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterEndswithEmpStatus() {
+        vadmin.addFilterElement().eq(19).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(5).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type('ive')
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'ive')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBlankEmpStatus() {
+        vadmin.addFilterElement().eq(19).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(6).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(' ', { force: true })
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterNotblankEmpStatus() {
+        vadmin.addFilterElement().eq(19).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(7).click({ force: true })
+        vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.empStatus, { force: true })
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.empStatus)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    sortingFullName() {
+        cy.wait(1000)
+        vadmin.optionElement().eq(20).click({ force: true })
+        vadmin.sortAscendingElement().click({ force: true })
+        vadmin.optionElement().eq(20).click({ force: true })
+        vadmin.sortDescendingElement().click({ force: true })
+        vadmin.optionElement().eq(20).click({ force: true })
+        vadmin.clearSortElement().click({ force: true })
+    }
+    sortingEmail() {
+        cy.wait(1000)
+        vadmin.optionElement().eq(22).click({ force: true })
+        vadmin.sortAscendingElement().click({ force: true })
+        vadmin.optionElement().eq(22).click({ force: true })
+        vadmin.sortDescendingElement().click({ force: true })
+        vadmin.optionElement().eq(22).click({ force: true })
+        vadmin.clearSortElement().click({ force: true })
+    }
+    sortingPhone() {
+        cy.wait(1000)
+        vadmin.optionElement().eq(23).click({ force: true })
+        vadmin.sortAscendingElement().click({ force: true })
+        vadmin.optionElement().eq(23).click({ force: true })
+        vadmin.sortDescendingElement().click({ force: true })
+        vadmin.optionElement().eq(23).click({ force: true })
+        vadmin.clearSortElement().click({ force: true })
+    }
+    sortingEmployeeStatus() {
+        cy.wait(1000)
+        vadmin.optionElement().eq(21).click({ force: true })
+        vadmin.sortAscendingElement().click({ force: true })
+        vadmin.optionElement().eq(21).click({ force: true })
+        vadmin.sortDescendingElement().click({ force: true })
+        vadmin.optionElement().eq(21).click({ force: true })
+        vadmin.clearSortElement().click({ force: true })
+    }
+
     approveDenyRequest() {
         cy.get('.css-1owb465').eq(0).find('tbody tr').eq(0).find('td').eq(5).scrollIntoView().contains("Approve").click({ force: true })
         cy.get('.css-x5rkm6').click({ force: true })
@@ -72,22 +513,6 @@ export class VivacityAdminActions {
     verifyRequest() {
 
     }
-    searchEmail() {
-        cy.get('[role="combobox"]').eq(0).click({force:true})
-        cy.get('[data-value="email"]').click({force:true})
-        vadmin.searchEmpElement().eq(0).clear({force:true}).type(tdata.vivacityAdmin.email + '{enter}',{force:true})  
-        cy.get('.css-1dj5rr2').eq(0).find('tr', { timeout: 1000 }).find('td').eq(3).should('contain', tdata.vivacityAdmin.email)
-    }
-    selectFilterFullName() {
-        acc.fieldNameElement().select(1).invoke("val").should("eq", 'full_name', { force: true })
-        acc.fieldOpElement().select('Does Not Contain', { force: true }).should('have.value', 'Does Not Contain')
-        acc.fieldValueElement().type(tdata.newaccount.fullname)
-        acc.applyElement().click({ force: true })
-        cy.get('tr td').eq(0).should('not.contain', tdata.newaccount.fullname)
-    }
-
-
-
     clickOnNewAdmin() {
         vadmin.addnewAdminElement().click({ force: true })
     }
@@ -110,14 +535,7 @@ export class VivacityAdminActions {
         vadmin.submitbtnElement().eq(0).click({ force: true })
     }
     verifyRecordTableAdmin() {
-        dash.messageElement().should('contain', tdata.vivacityAdmin.createAdminmsg)
-    }
-    enterSearchValue() {
-        vadmin.searchElement().eq(0).type(tdata.vivacityAdmin.fullname + '{enter}')
-    }
-    verifySearchResult() {
-        // cy.wait(3000)
-        cy.get('.css-1owb465').eq(1).find('tbody tr').eq(0).find('td').eq(0).should('contain', tdata.vivacityAdmin.fullname, { force: true })
+        //dash.messageElement().should('contain', tdata.vivacityAdmin.createAdminmsg)
     }
     clickOnEditButton() {
         cy.get('.css-1owb465').eq(1).find('tbody tr').eq(0).find('td').eq(6).scrollIntoView().contains("Edit").click({ force: true })
@@ -135,7 +553,7 @@ export class VivacityAdminActions {
         vadmin.phoneElement().clear({ force: true }).should('have.value', '').type(tdata.vivacityAdmin.editPhone, { force: true })
     }
     editUserRoleUser() {
-       cy.get('#mui-component-select-role').click({ force: true })
+        cy.get('#mui-component-select-role').click({ force: true })
         cy.get(tdata.users.editUserRole).click({ force: true })
     }
     editUserRole() {
@@ -208,12 +626,6 @@ export class VivacityAdminActions {
     verifyWarrantyRecordAdded() {
         dash.messageElement().should('contain', tdata.vivacityAdmin.warrantymsg)
     }
-    enterSearchWarranty() {
-        vadmin.searchWarElement().type(tdata.vivacityAdmin.warrantyName, { force: true })
-    }
-    verifySearchWarranty() {
-        cy.get('.css-1owb465').eq(2).find('tbody tr').eq(0).find('td').eq(0).should('contain',tdata.vivacityAdmin.warrantyName)
-    }
     clickOnWEditIcon() {
         cy.wait(2000)
         cy.get('.css-1owb465').eq(2).find('tbody tr').eq(0).find('td').eq(4).find("[data-testid='EditOutlinedIcon']").click({ force: true })
@@ -252,7 +664,7 @@ export class VivacityAdminActions {
         cy.get(tdata.vivacityAdmin.editprovider).click({ force: true })
     }
     editWDescription() {
-        vadmin.wdescriptionElement().clear({ force: true }).should('have.value', '').type(tdata.vivacityAdmin.editwdescription),{ force: true }
+        vadmin.wdescriptionElement().clear({ force: true }).should('have.value', '').type(tdata.vivacityAdmin.editwdescription), { force: true }
     }
     clickOnUpdateButton() {
         //  cy.contains('Update').click({ force: true })
@@ -274,7 +686,6 @@ export class VivacityAdminActions {
         cy.wait(2000)
         dash.messageElement().should('contain', tdata.vivacityAdmin.daleteWarrantymsg)
     }
-
 
     clickOnAccountMangment() {
         vadmin.section6Element().click({ force: true })
@@ -306,7 +717,7 @@ export class VivacityAdminActions {
         vadmin.accSiteElement().click({ force: true })
         cy.get(tdata.vivacityAdmin.accSite).click({ force: true })
     }
-    enterNetsuiteId(){
+    enterNetsuiteId() {
         vadmin.netsuiteidElement().type(tdata.vivacityAdmin.netsuiteid)
     }
     selectAccountManager() {
@@ -330,7 +741,7 @@ export class VivacityAdminActions {
     }
     clickOnUpdateSub() {
         cy.get('[type="submit"]').contains('Update Subcription').click({ force: true })
-       // cy.get('.css-79elbk > .css-1yuhvjn > :nth-child(2)').click({ force: true })
+        // cy.get('.css-79elbk > .css-1yuhvjn > :nth-child(2)').click({ force: true })
         //vadmin.subUpdatebtnElement().click({force:true})
     }
     verifyUpadtedSub() {
@@ -412,56 +823,8 @@ export class VivacityAdminActions {
     clickOnRepair360btn() {
         vadmin.repairbtnElement().contains("Repair 360 page").click({ force: true })
     }
-    clickOnEmployeeManagment() {
-        vadmin.section10Element().click({ force: true })
-    }
-    clickOnCreateNewEmp() {
-        vadmin.AddEmployeeElement().click({ force: true })
-    }
-    enterFullnameEmp() {
-        vadmin.nameElement().type(tdata.vivacityAdmin.fullname)
-    }
-    enterEmailEmp() {
-        vadmin.emailElement().type(uniqueSeed + '2' + tdata.vivacityAdmin.email)
-    }
-    selectUserStatus() {
-        vadmin.statusElement().click({ force: true })
-        cy.get(tdata.vivacityAdmin.status).click({ force: true })
-    }
-    verifyEmployeeAdded() {
-        cy.contains('User has been updated').should('be.visible')
-    }
-    // selectEmail() {
-    //     vadmin.searchDropElement().click({ force: true })
-    //     cy.get(tdata.vivacityAdmin.eamildrop).click({ force: true })
-    // }
-    enterSerachEmp() {
-        vadmin.searchEmpElement().eq(0).type(tdata.vivacityAdmin.fullname + '{enter}')
-    }
-    verifyResultEmp() {
-        cy.wait(3000)
-        cy.get('.css-1dj5rr2').eq(0).find('tr', { timeout: 1000 }).find('td').eq(1).should('contain', tdata.vivacityAdmin.fullname)
-    }
-    clickConEditEmp() {
-        cy.get('.css-1dj5rr2').eq(0).find('tr', { timeout: 1000 }).find('td').find('[data-testid="ModeEditOutlinedIcon"]').eq(0).scrollIntoView().click({ force: true })
-    }
-    editUserStatusEmp() {
-        vadmin.statusElement().click({ force: true })
-        cy.get(tdata.vivacityAdmin.editStatus).click({ force: true })
-    }
-    editFullnameEmp() {
-        vadmin.nameElement().clear().should('have.value', '').type(tdata.vivacityAdmin.editfullname)
-    }
-    clickOneditSubmitButton() {
-        cy.get('form > .MuiButton-containedPrimary').click({ force: true })
-    }
-    verifyEmpUpdated() {
-        cy.contains('User has been updated').should('be.visible')
-        cy.get('.MuiButton-containedError').click({ force: true })
-    }
-    clickOnExportEmp() {
-        cy.contains('Export').click({ force: true })
-    }
+
+
     searchTicketNumber() {
         cy.get('[type="checkbox"]').click({ force: true })
         vadmin.searchboxElement().eq(4).click({ force: true })
@@ -472,19 +835,19 @@ export class VivacityAdminActions {
         vadmin.searchtxtElement().eq(2).clear()
         cy.wait(2000)
     }
-    searchRepairType(){
+    searchRepairType() {
         vadmin.searchboxElement().eq(4).click({ force: true })
         vadmin.repairtypeElement().click({ force: true })
-        vadmin.searchtxtElement().eq(2).clear().type(tdata.repairTickets.repairtype+ '{enter}', { force: true })
+        vadmin.searchtxtElement().eq(2).clear().type(tdata.repairTickets.repairtype + '{enter}', { force: true })
         cy.wait(1000)
         cy.get('.css-1dj5rr2').eq(2).find('tr td').eq(2).should('contain', tdata.repairTickets.repairtype)
         vadmin.searchtxtElement().eq(2).clear()
         cy.wait(2000)
     }
-    searchFailureType(){
+    searchFailureType() {
         vadmin.searchboxElement().eq(4).click({ force: true })
         vadmin.failuretypeElement().click({ force: true })
-        vadmin.searchtxtElement().eq(2).clear().type(tdata.repairTickets.failuretype+ '{enter}', { force: true })
+        vadmin.searchtxtElement().eq(2).clear().type(tdata.repairTickets.failuretype + '{enter}', { force: true })
         cy.wait(1000)
         cy.get('.css-1dj5rr2').eq(2).find('tr td').eq(3).should('contain', tdata.repairTickets.failuretype)
         vadmin.searchtxtElement().eq(2).clear()
@@ -500,19 +863,19 @@ export class VivacityAdminActions {
         vadmin.applyElement().click({ force: true })
         cy.get('.css-1dj5rr2').eq(2).find('tr td').eq(1).should('not.contain', tdata.repairTickets.ticketnumber)
     }
-    clickOnimportdevice(){
+    clickOnimportdevice() {
         vadmin.section5Element().click({ force: true })
     }
-    searchSearialNo(){
+    searchSearialNo() {
         cy.get(':nth-child(2) > .MuiGrid-container > .MuiGrid-grid-xs-4 > .MuiInputBase-root > .MuiSelect-select').click({ force: true })
-      //  vadmin.searchboxElement().eq(5).click({ force: true })
+        //  vadmin.searchboxElement().eq(5).click({ force: true })
         vadmin.searialnoElement().click({ force: true })
         vadmin.searchtxtElement().eq(1).clear().type(tdata.vivacityAdmin.searialno + '{enter}', { force: true })
         cy.wait(2000)
         cy.get('.css-1dj5rr2').eq(1).find('tr td').eq(1).should('contain', tdata.vivacityAdmin.searialno)
-       // vadmin.searchtxtElement().eq(1).clear()
+        // vadmin.searchtxtElement().eq(1).clear()
     }
-    searchAccount(){
+    searchAccount() {
         vadmin.searchboxElement().eq(4).click({ force: true })
         vadmin.accountnoElement().click({ force: true })
         vadmin.searchtxtElement().eq(1).clear().type(tdata.vivacityAdmin.accountno + '{enter}', { force: true })
@@ -521,7 +884,7 @@ export class VivacityAdminActions {
         vadmin.searchtxtElement().eq(1).clear()
         cy.wait(2000)
     }
-    searchDevice(){
+    searchDevice() {
         vadmin.searchboxElement().eq(4).click({ force: true })
         vadmin.deviceElement().click({ force: true })
         vadmin.searchtxtElement().eq(1).clear().type(tdata.vivacityAdmin.device + '{enter}', { force: true })
@@ -529,7 +892,7 @@ export class VivacityAdminActions {
         vadmin.searchtxtElement().eq(1).clear()
         cy.wait(2000)
     }
-    filterSearialNo(){
+    filterSearialNo() {
         cy.get('[data-testid="Filters"]').eq(1).click({ force: true })
         vadmin.fieldNameElement().select(1).invoke("val").should("eq", "serial_number")
         vadmin.fieldOpElement().select('Does Not Contain', { force: true })
@@ -537,7 +900,7 @@ export class VivacityAdminActions {
         vadmin.applyElement().click({ force: true })
         cy.get('.css-1dj5rr2').eq(1).find('tr td').eq(1).should('not.contain', tdata.vivacityAdmin.searialno)
     }
-    filterAccount(){
+    filterAccount() {
         cy.get('[data-testid="Filters"]').eq(1).click({ force: true })
         vadmin.fieldNameElement().select(16).invoke("val").should("eq", "account")
         vadmin.fieldOpElement().select('Does Not Contain', { force: true })
@@ -545,7 +908,7 @@ export class VivacityAdminActions {
         vadmin.applyElement().click({ force: true })
         cy.get('.css-1dj5rr2').eq(1).find('tr td').eq(1).should('not.contain', tdata.vivacityAdmin.accountno)
     }
-    filterDevice(){
+    filterDevice() {
         cy.get('[data-testid="Filters"]').eq(1).click({ force: true })
         vadmin.fieldNameElement().select(4).invoke("val").should("eq", "device")
         vadmin.fieldOpElement().select('Does Not Contain', { force: true })

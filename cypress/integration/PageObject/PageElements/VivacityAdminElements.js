@@ -302,7 +302,7 @@ export default class VivacityAdminElements {
         }) 
     } 
     AddEmployeeElement(){
-        return cy.contains(locator.vivacityAdmin.AddEmployee, {
+        return cy.get(locator.vivacityAdmin.AddEmployee, {
             timeout: 30000,
         }) 
     }
@@ -333,12 +333,12 @@ export default class VivacityAdminElements {
         }) 
     }
     clearfilterElement() {
-        return cy.contains(locator.vivacityAdmin.clearfilter, {
+        return cy.get(locator.vivacityAdmin.clearfilter, {
             timeout: 30000,
         })
     }
     exportElement() {
-        return cy.contains(locator.vivacityAdmin.export, {
+        return cy.get(locator.vivacityAdmin.export, {
             timeout: 30000,
         })
     }
@@ -373,7 +373,7 @@ export default class VivacityAdminElements {
         })
     }
     clearFilterElement() {
-        return cy.contains(locator.vivacityAdmin.clearFilter, {
+        return cy.get(locator.vivacityAdmin.clearFilter, {
             timeout: 30000,
         })
     }
@@ -431,6 +431,41 @@ export default class VivacityAdminElements {
         return cy.get(locator.vivacityAdmin.device, {
             timeout: 30000,
         }) 
+    }
+    optionElement() {
+        return cy.get(locator.vivacityAdmin.option, {
+            timeout: 30000,
+        })
+    }
+    sortAscendingElement() {
+        return cy.contains(locator.vivacityAdmin.sortAscending, {
+            timeout: 30000,
+        })
+    }
+    sortDescendingElement() {
+        return cy.contains(locator.vivacityAdmin.sortDescending, {
+            timeout: 30000,
+        })
+    }
+    clearSortElement() {
+        return cy.contains(locator.vivacityAdmin.clearSort, {
+            timeout: 30000,
+        })
+    }
+    helpIconElement() {
+        return cy.get(locator.vivacityAdmin.helpIcon, {
+            timeout: 30000,
+        })
+    }
+    printbtnElement() {
+        return cy.contains(locator.vivacityAdmin.printbtn, {
+            timeout: 30000,
+        })
+    }
+    downloadbtnElement() {
+        return cy.contains(locator.vivacityAdmin.downloadbtn, {
+            timeout: 30000,
+        })
     }
      
 }
