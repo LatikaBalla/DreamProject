@@ -137,7 +137,7 @@ export default class VivacityAdminElements {
         })
     }
     addWarrantyElement() {
-        return cy.contains(locator.vivacityAdmin.addWarranty, {
+        return cy.get(locator.vivacityAdmin.addWarranty, {
             timeout: 30000,
         })
     }

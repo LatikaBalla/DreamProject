@@ -472,7 +472,6 @@ And ('Click on filter of Credit Limit Blank and Verify the Result',()=>{
 And ('Click on filter of Credit Limit Not blank and Verify the Result',()=>{
     vadmin.filterNotblankCreditL()
 })
-
 And ('Click on filter of Account Credit contain and Verify the Result',()=>{
     vadmin.filterContainAccCredit()
 })
@@ -545,7 +544,6 @@ And ('Click on filter of Contact Blank and Verify the Result',()=>{
 And ('Click on filter of Contact Not blank and Verify the Result',()=>{
     vadmin.filterNotblankContact()
 })
-
 And ('Click on filter of Building contain and Verify the Result',()=>{
     vadmin.filterContainBuilding()
 })
@@ -570,7 +568,6 @@ And ('Click on filter of Building Blank and Verify the Result',()=>{
 And ('Click on filter of Building Not blank and Verify the Result',()=>{
     vadmin.filterNotblankBuilding()
 })
-
 And ('Click on filter of Users contain and Verify the Result',()=>{
     vadmin.filterContainUesrs()
 })
@@ -661,64 +658,7 @@ And('Click on filter of Last Full Google Sync Blank and Verify the Result', () =
 And('Click on filter of Last Full Google Sync Not blank and Verify the Result', () => {
     trans.filterNotblankLGoogle()
 })
-
-
-Then('Click on All Paid Subscription Requests unit', () => {
-    vadmin.clickOnallPaidSubcription()
-})
-And('Table should be visible', () => {
-vadmin.tableSubscriptionVisible()
-})
-Then('If any subscription request is there then approve or deny the request', () => {
-vadmin.approveDenyRequest()
-})
-And('Verify the Request', () => {
-vadmin.verifyRequest()
-})
-
-Then('Verify the student added in table of Admin', () => {
-    vadmin.verifyRecordTableAdmin()
-})
-And('Enter the Search value in search box of Admin', () => {
-    vadmin.enterSearchValue()
-})
-Then('Verify the Results in the table of Admin', () => {
-    vadmin.verifySearchResult()
-})
-And('Click on Edit button of Admin', () => {
-    vadmin.clickOnEditButton()
-})
-Then('I should edit title, full name of Admin', () => {
-    vadmin.editTitle()
-    vadmin.editFullname()
-})
-And('I should edit Phone and Cell Number and user role of Admin', () => {
-    vadmin.editPhone()
-    vadmin.editCellNumber()
-    vadmin.editUserRole()
-})
-Then('I edit User Status to inactive of Admin', () => {
-    vadmin.editUserStatus()
-})
-And('I edit In-house Repaire to yes of Admin', () => {
-    vadmin.editInhouseRepaire()
-})
-Then('Click on Submit button of Admin', () => {
-    vadmin.clickSubmitForUpdate()
-})
-And('Verify the Record has been updated Meassage of Admin', () => {
-    vadmin.verfifyDataUpdatedMessage()
-})
-And('Click on Delete button of Admin', () => {
-    vadmin.clickDeleteButton()
-})
-Then('Click on Confirm Delete button of Admin', () => {
-    vadmin.clickConfirmDeleteButton()
-})
-And('Verify the record is deleted successfully of Admin', () => {
-    vadmin.verifyRecordDeleted()
-})
-
+//warranty
 Then('Click on warranty unit', () => {
     vadmin.serialNoWarrantySection()
 })
@@ -791,9 +731,166 @@ And('Click on Delete Icon', () => {
 Then('Click on Confirm Delete Icon', () => {
     vadmin.clickConDeleteButton()
 })
-And('Verify the record is deleted successfully for warranty', () => {
+And('Verify the record is deleted successfully for warranty for warranty', () => {
     vadmin.verifyRecordDeletedWarranty()
 })
+And ('Click on filter of Name contain and Verify the Result for warranty',()=>{
+    vadmin.filterContainNameWar()
+})
+And ('Click on filter of Name Does not contain and Verify the Result for warranty',()=>{
+    vadmin.filterDoesnotcontainNameWar()
+})
+And ('Click on filter of Name Equals and Verify the Result for warranty',()=>{
+    vadmin.filterEqualsNameWar()
+})
+And ('Click on filter of Name Does not equal and Verify the Result for warranty',()=>{
+    vadmin.filterNotequalNameWar()
+})
+And ('Click on filter of Name Begins with and Verify the Result for warranty',()=>{
+    vadmin.filterBeginswithNameWar()
+}) 
+And ('Click on filter of Name Ends with and Verify the Result for warranty',()=>{
+    vadmin.filterEndswithNameWar()
+})
+And ('Click on filter of Name Blank and Verify the Result for warranty',()=>{
+    vadmin.filterBlankNameWar()
+})
+And ('Click on filter of Name Not blank and Verify the Result for warranty',()=>{
+    vadmin.filterNotblankNameWar()
+})
+And ('Click on filter of Provider contain and Verify the Result for warranty',()=>{
+    vadmin.filterContainProvider()
+})
+And ('Click on filter of Provider Does not contain and Verify the Result for warranty',()=>{
+    vadmin.filterDoesnotcontainProvider()
+})
+And ('Click on filter of Provider Equals and Verify the Result for warranty',()=>{
+    vadmin.filterEqualsProvider()
+})
+And ('Click on filter of Provider Does not equal and Verify the Result for warranty',()=>{
+    vadmin.filterNotequalProvider()
+})
+And ('Click on filter of Provider Begins with and Verify the Result for warranty',()=>{
+    vadmin.filterBeginswithProvider()
+}) 
+And ('Click on filter of Provider Ends with and Verify the Result for warranty',()=>{
+    vadmin.filterEndswithProvider()
+})
+And ('Click on filter of Provider Blank and Verify the Result for warranty',()=>{
+    vadmin.filterBlankProvider()
+})
+And ('Click on filter of Provider Not blank and Verify the Result for warranty',()=>{
+    vadmin.filterNotblankProvider()
+})
+And ('Click on filter of SKU contain and Verify the Result for warranty',()=>{
+    vadmin.filterContainSKU()
+})
+And ('Click on filter of SKU Does not contain and Verify the Result for warranty',()=>{
+    vadmin.filterDoesnotcontainSKU()
+})
+And ('Click on filter of SKU Equals and Verify the Result for warranty',()=>{
+    vadmin.filterEqualsSKU()
+})
+And ('Click on filter of SKU Does not equal and Verify the Result for warranty',()=>{
+    vadmin.filterNotequalSKU()
+})
+And ('Click on filter of SKU Begins with and Verify the Result for warranty',()=>{
+    vadmin.filterBeginswithSKU()
+}) 
+And ('Click on filter of SKU Ends with and Verify the Result for warranty',()=>{
+    vadmin.filterEndswithSKU()
+})
+And ('Click on filter of SKU Blank and Verify the Result for warranty',()=>{
+    vadmin.filterBlankSKU()
+})
+And ('Click on filter of SKU Not blank and Verify the Result for warranty',()=>{
+    vadmin.filterNotblankSKU()
+})
+And ('Click on filter of Type contain and Verify the Result for warranty',()=>{
+    vadmin.filterContainType()
+})
+And ('Click on filter of Type Does not contain and Verify the Result for warranty',()=>{
+    vadmin.filterDoesnotcontainType()
+})
+And ('Click on filter of Type Equals and Verify the Result for warranty',()=>{
+    vadmin.filterEqualsType()
+})
+And ('Click on filter of Type Does not equal and Verify the Result for warranty',()=>{
+    vadmin.filterNotequalType()
+})
+And ('Click on filter of Type Begins with and Verify the Result for warranty',()=>{
+    vadmin.filterBeginswithType()
+}) 
+And ('Click on filter of Type Ends with and Verify the Result for warranty',()=>{
+    vadmin.filterEndswithType()
+})
+And ('Click on filter of Type Blank and Verify the Result for warranty',()=>{
+    vadmin.filterBlankType()
+})
+And ('Click on filter of Type Not blank and Verify the Result for warranty',()=>{
+    vadmin.filterNotblankType()
+})
+
+
+
+
+
+Then('Click on All Paid Subscription Requests unit', () => {
+    vadmin.clickOnallPaidSubcription()
+})
+And('Table should be visible', () => {
+vadmin.tableSubscriptionVisible()
+})
+Then('If any subscription request is there then approve or deny the request', () => {
+vadmin.approveDenyRequest()
+})
+And('Verify the Request', () => {
+vadmin.verifyRequest()
+})
+
+Then('Verify the student added in table of Admin', () => {
+    vadmin.verifyRecordTableAdmin()
+})
+And('Enter the Search value in search box of Admin', () => {
+    vadmin.enterSearchValue()
+})
+Then('Verify the Results in the table of Admin', () => {
+    vadmin.verifySearchResult()
+})
+And('Click on Edit button of Admin', () => {
+    vadmin.clickOnEditButton()
+})
+Then('I should edit title, full name of Admin', () => {
+    vadmin.editTitle()
+    vadmin.editFullname()
+})
+And('I should edit Phone and Cell Number and user role of Admin', () => {
+    vadmin.editPhone()
+    vadmin.editCellNumber()
+    vadmin.editUserRole()
+})
+Then('I edit User Status to inactive of Admin', () => {
+    vadmin.editUserStatus()
+})
+And('I edit In-house Repaire to yes of Admin', () => {
+    vadmin.editInhouseRepaire()
+})
+Then('Click on Submit button of Admin', () => {
+    vadmin.clickSubmitForUpdate()
+})
+And('Verify the Record has been updated Meassage of Admin', () => {
+    vadmin.verfifyDataUpdatedMessage()
+})
+And('Click on Delete button of Admin', () => {
+    vadmin.clickDeleteButton()
+})
+Then('Click on Confirm Delete button of Admin', () => {
+    vadmin.clickConfirmDeleteButton()
+})
+And('Verify the record is deleted successfully of Admin', () => {
+    vadmin.verifyRecordDeleted()
+})
+
 
 
 

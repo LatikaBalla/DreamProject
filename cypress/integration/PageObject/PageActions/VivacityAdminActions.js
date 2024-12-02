@@ -1435,236 +1435,13 @@ export class VivacityAdminActions {
         vadmin.clearFilterElement().click({ force: true })
     }
 
-    // filtercontainName() {
-    //     cy.wait(2000)
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(0).click({ force: true })
-    //     vadmin.fieldValueElement().type(tdata.vivacityAdmin.empStatus)
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.empStatus)
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterDoesnotcontainName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(1).click({ force: true })
-    //     vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.empStatus)
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('not.contain', tdata.vivacityAdmin.empStatus)
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterEqualsName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(2).click({ force: true })
-    //     vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.empStatus)
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.empStatus)
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterNotequalName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(3).click({ force: true })
-    //     vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.empStatus)
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('not.contain.value', tdata.vivacityAdmin.empStatus)
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterBeginswithName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(4).click({ force: true })
-    //     vadmin.fieldValueElement().eq(0).type('Act')
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', 'Act')
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterEndswithName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(5).click({ force: true })
-    //     vadmin.fieldValueElement().eq(0).type('ive')
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', 'ive')
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterBlankName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(6).click({ force: true })
-    //     vadmin.fieldValueElement().eq(0).type(' ', { force: true })
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', ' ')
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterNotblankName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(7).click({ force: true })
-    //     vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.empStatus, { force: true })
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.empStatus)
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-
-    // filtercontainName() {
-    //     cy.wait(2000)
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(0).click({ force: true })
-    //     vadmin.fieldValueElement().type(tdata.vivacityAdmin.empStatus)
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.empStatus)
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterDoesnotcontainName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(1).click({ force: true })
-    //     vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.empStatus)
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('not.contain', tdata.vivacityAdmin.empStatus)
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterEqualsName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(2).click({ force: true })
-    //     vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.empStatus)
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.empStatus)
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterNotequalName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(3).click({ force: true })
-    //     vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.empStatus)
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('not.contain.value', tdata.vivacityAdmin.empStatus)
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterBeginswithName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(4).click({ force: true })
-    //     vadmin.fieldValueElement().eq(0).type('Act')
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', 'Act')
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterEndswithName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(5).click({ force: true })
-    //     vadmin.fieldValueElement().eq(0).type('ive')
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', 'ive')
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterBlankName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(6).click({ force: true })
-    //     vadmin.fieldValueElement().eq(0).type(' ', { force: true })
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', ' ')
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterNotblankName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(7).click({ force: true })
-    //     vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.empStatus, { force: true })
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.empStatus)
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-
-    // filtercontainName() {
-    //     cy.wait(2000)
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(0).click({ force: true })
-    //     vadmin.fieldValueElement().type(tdata.vivacityAdmin.empStatus)
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.empStatus)
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterDoesnotcontainName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(1).click({ force: true })
-    //     vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.empStatus)
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('not.contain', tdata.vivacityAdmin.empStatus)
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterEqualsName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(2).click({ force: true })
-    //     vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.empStatus)
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.empStatus)
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterNotequalName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(3).click({ force: true })
-    //     vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.empStatus)
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('not.contain.value', tdata.vivacityAdmin.empStatus)
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterBeginswithName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(4).click({ force: true })
-    //     vadmin.fieldValueElement().eq(0).type('Act')
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', 'Act')
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterEndswithName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(5).click({ force: true })
-    //     vadmin.fieldValueElement().eq(0).type('ive')
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', 'ive')
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterBlankName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(6).click({ force: true })
-    //     vadmin.fieldValueElement().eq(0).type(' ', { force: true })
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', ' ')
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-    // filterNotblankName() {
-    //     vadmin.addFilterElement().eq(19).click({ force: true })
-    //     vadmin.fieldNameElement().eq(10).click({ force: true })
-    //     vadmin.fieldOpElement().eq(7).click({ force: true })
-    //     vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.empStatus, { force: true })
-    //     vadmin.applyElement().click({ force: true })
-    //     cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.empStatus)
-    //     vadmin.clearFilterElement().click({ force: true })
-    // }
-
-
-
-
+    //warranty
+    //Warranty
     serialNoWarrantySection() {
         vadmin.section4Element().click({ force: true })
     }
     clickOnAddWarranty() {
-        vadmin.addWarrantyElement().click({ force: true })
+        vadmin.addWarrantyElement().eq(2).click({ force: true })
     }
     enterName() {
         vadmin.warrantyNameElement().type(tdata.vivacityAdmin.warrantyName, { force: true })
@@ -1710,8 +1487,13 @@ export class VivacityAdminActions {
         dash.messageElement().should('contain', tdata.vivacityAdmin.warrantymsg)
     }
     clickOnWEditIcon() {
-        cy.wait(2000)
-        cy.get('.css-1owb465').eq(2).find('tbody tr').eq(0).find('td').eq(4).find("[data-testid='EditOutlinedIcon']").click({ force: true })
+        cy.wait(5000)
+        vadmin.addFilterElement().eq(20).click({ force: true })
+        vadmin.fieldValueElement().type(tdata.vivacityAdmin.warrantyName)
+        vadmin.applyElement().click({ force: true })
+        cy.wait(100)
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.warrantyName)
+        cy.get('[row-index="0"]').eq(4).find('[data-testid="EditIcon"]').eq(0).click({ force: true })
     }
     editName() {
         vadmin.warrantyNameElement().clear().should('have.value', '').type(tdata.vivacityAdmin.editwName)
@@ -1750,24 +1532,313 @@ export class VivacityAdminActions {
         vadmin.wdescriptionElement().clear({ force: true }).should('have.value', '').type(tdata.vivacityAdmin.editwdescription), { force: true }
     }
     clickOnUpdateButton() {
-        //  cy.contains('Update').click({ force: true })
-        cy.get('form.MuiBox-root > :nth-child(1) > :nth-child(1) > :nth-child(1) > .css-0 > .MuiBox-root > .MuiButtonBase-root').click({ force: true })
-        // cy.get(':nth-child(1) > .css-0 > .MuiBox-root > .MuiButtonBase-root').click({ force: true })
-        // cy.get('.css-0 > .MuiBox-root > .MuiButtonBase-root').click()
+        cy.contains('Update').click({ force: true })
     }
     verifyWarrantyRecordUpdated() {
         dash.messageElement().should('contain', tdata.vivacityAdmin.updateWarrantymsg)
     }
     clickDeleteIcon() {
-        cy.get('.css-1owb465').eq(2).find('tbody tr').eq(0).find('td').eq(4).find("[data-testid='DeleteOutlineOutlinedIcon']").click({ force: true })
+        cy.get('[row-index="0"]').eq(4).find('[data-testid="DeleteIcon"]').eq(0).click({ force: true })
     }
     clickConDeleteButton() {
         cy.get('.MuiBox-root > .MuiButton-outlinedError').click({ force: true })
         // vadmin.conDeletebtnElement().contains('Delete').click({ force: true })
     }
     verifyRecordDeletedWarranty() {
-        cy.wait(2000)
+        cy.wait(100)
         dash.messageElement().should('contain', tdata.vivacityAdmin.daleteWarrantymsg)
+    }
+    filterContainNameWar() {
+        cy.wait(5000)
+        vadmin.addFilterElement().eq(20).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(0).click({ force: true })
+        vadmin.fieldValueElement().type(tdata.vivacityAdmin.warrantyName)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.warrantyName)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainNameWar() {
+        vadmin.addFilterElement().eq(20).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(1).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.warrantyName)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.vivacityAdmin.warrantyName)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterEqualsNameWar() {
+        vadmin.addFilterElement().eq(20).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(2).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.warrantyName)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.warrantyName)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterNotequalNameWar() {
+        vadmin.addFilterElement().eq(20).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(3).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.warrantyName)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.vivacityAdmin.warrantyName)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithNameWar() {
+        vadmin.addFilterElement().eq(20).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(4).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type('Test')
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'Test')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterEndswithNameWar() {
+        vadmin.addFilterElement().eq(20).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(5).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type('anty')
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'anty')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBlankNameWar() {
+        vadmin.addFilterElement().eq(20).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(6).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(' ', { force: true })
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterNotblankNameWar() {
+        vadmin.addFilterElement().eq(20).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(7).click({ force: true })
+        vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.warrantyName, { force: true })
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.warrantyName)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterContainProvider() {
+        cy.wait(2000)
+        vadmin.addFilterElement().eq(21).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(0).click({ force: true })
+        vadmin.fieldValueElement().type(tdata.vivacityAdmin.providerWar)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.providerWar)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainProvider() {
+        vadmin.addFilterElement().eq(21).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(1).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.providerWar)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.vivacityAdmin.providerWar)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterEqualsProvider() {
+        vadmin.addFilterElement().eq(21).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(2).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.providerWar)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.providerWar)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterNotequalProvider() {
+        vadmin.addFilterElement().eq(21).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(3).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.providerWar)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.vivacityAdmin.providerWar)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithProvider() {
+        vadmin.addFilterElement().eq(21).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(4).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type('Man')
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'Man')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterEndswithProvider() {
+        vadmin.addFilterElement().eq(21).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(5).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type('urer')
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'urer')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBlankProvider() {
+        vadmin.addFilterElement().eq(21).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(6).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(' ', { force: true })
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterNotblankProvider() {
+        vadmin.addFilterElement().eq(21).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(7).click({ force: true })
+        vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.providerWar, { force: true })
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.providerWar)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterContainType() {
+        cy.wait(2000)
+        vadmin.addFilterElement().eq(23).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(0).click({ force: true })
+        vadmin.fieldValueElement().type(tdata.vivacityAdmin.warType)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.warType)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainType() {
+        vadmin.addFilterElement().eq(23).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(1).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.warType)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.vivacityAdmin.warType)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterEqualsType() {
+        vadmin.addFilterElement().eq(23).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(2).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.warType)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.warType)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterNotequalType() {
+        vadmin.addFilterElement().eq(23).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(3).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.warType)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.vivacityAdmin.warType)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithType() {
+        vadmin.addFilterElement().eq(23).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(4).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type('bas')
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'bas')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterEndswithType() {
+        vadmin.addFilterElement().eq(23).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(5).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type('se')
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'se')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBlankType() {
+        vadmin.addFilterElement().eq(23).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(6).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(' ', { force: true })
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterNotblankType() {
+        vadmin.addFilterElement().eq(23).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(7).click({ force: true })
+        vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.warType, { force: true })
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.warType)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterContainSKU() {
+        cy.wait(2000)
+        vadmin.addFilterElement().eq(22).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(0).click({ force: true })
+        vadmin.fieldValueElement().type(tdata.vivacityAdmin.sku)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.sku)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterDoesnotcontainSKU() {
+        vadmin.addFilterElement().eq(22).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(1).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.sku)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain', tdata.vivacityAdmin.sku)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterEqualsSKU() {
+        vadmin.addFilterElement().eq(22).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(2).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.sku)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.sku)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterNotequalSKU() {
+        vadmin.addFilterElement().eq(22).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(3).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.sku)
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('not.contain.value', tdata.vivacityAdmin.sku)
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBeginswithSKU() {
+        vadmin.addFilterElement().eq(22).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(4).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type('aab')
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'aab')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterEndswithSKU() {
+        vadmin.addFilterElement().eq(22).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(5).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type('ccc')
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', 'ccc')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterBlankSKU() {
+        vadmin.addFilterElement().eq(22).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(6).click({ force: true })
+        vadmin.fieldValueElement().eq(0).type(' ', { force: true })
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', ' ')
+        vadmin.clearFilterElement().click({ force: true })
+    }
+    filterNotblankSKU() {
+        vadmin.addFilterElement().eq(22).click({ force: true })
+        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldOpElement().eq(7).click({ force: true })
+        vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.sku, { force: true })
+        vadmin.applyElement().click({ force: true })
+        cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.sku)
+        vadmin.clearFilterElement().click({ force: true })
     }
 
 

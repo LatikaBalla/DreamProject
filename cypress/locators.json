@@ -919,7 +919,7 @@
         "editbtn": "Edit",
         "editsubmit": "[data-testid='btnNewDataSubmit']",
         "section4": "Warranties",
-        "addWarranty": "Add Warranty",
+        "addWarranty": "[data-testid='AddCircleOutlineIcon']",
         "bulkWarranty": "Bulk Warranty",
         "upload": "Attach CSV file",
         "warrantyName": "#warranty_name",
