@@ -166,14 +166,14 @@ Feature:Vivacity admin Page Functionality
     Then Click on submit button Account
     And Verify the Account added in table
 
-  And Click on filter of Name contain and Verify the Result
-  # And Click on filter of Name Does not contain and Verify the Result
-  And Click on filter of Name Equals and Verify the Result
-  And Click on filter of Name Does not equal and Verify the Result
-  And Click on filter of Name Begins with and Verify the Result
-  And Click on filter of Name Ends with and Verify the Result
-  # And Click on filter of Name Blank and Verify the Result
-  And Click on filter of Name Not blank and Verify the Result
+    And Click on filter of Name contain and Verify the Result
+    # And Click on filter of Name Does not contain and Verify the Result
+    And Click on filter of Name Equals and Verify the Result
+    And Click on filter of Name Does not equal and Verify the Result
+    And Click on filter of Name Begins with and Verify the Result
+    And Click on filter of Name Ends with and Verify the Result
+    # And Click on filter of Name Blank and Verify the Result
+    And Click on filter of Name Not blank and Verify the Result
 
     And Click on filter of Contact contain and Verify the Result
     And Click on filter of Contact Does not contain and Verify the Result
@@ -328,38 +328,182 @@ Feature:Vivacity admin Page Functionality
     And Click on filter of Type Blank and Verify the Result for warranty
     And Click on filter of Type Not blank and Verify the Result for warranty
 
-# # Scenario: All Paid Subscription and  Roadmap feature request and admin
-# # And Click on Vivacity Admin page
-# # Then Click on All Paid Subscription Requests unit
-# # And Table should be visible
-# # Then If any subscription request is there then approve or deny the request
-# # And Verify the Request
-# # Then Click on All Paid Subscription Requests unit
+  Scenario: Import Serial Device
+    Then Click on Import Serial Device unit
+    And Click on filter of Serial Number contain and Verify the Result
+    And Click on filter of Serial Number Does not contain and Verify the Result
+    And Click on filter of Serial Number Equals and Verify the Result
+    And Click on filter of Serial Number Does not equal and Verify the Result
+    And Click on filter of Serial Number Begins with and Verify the Result
+    And Click on filter of Serial Number Ends with and Verify the Result
+    And Click on filter of Serial Number Blank and Verify the Result
+    # And Click on filter of Serial Number Not blank and Verify the Result
 
-# # And Click on features page
-# # Then Click on Submit a feature request button
-# # And Enter Title and Description
-# # Then Click on Feature submit button
-# # Then Verify Submitting Features request Message
-# # And Click on Vivacity Admin page
-# # Then Click on Roadmap Requests unit
-# # And Click on view button
-# # Then Click on the Close button
-# # And Click on approve button
-# # And Click on features page again
-# # Then Verify the feature added in Underconsideration
+    And Click on filter of Building contain and Verify the Result for ImportSD
+    And Click on filter of Building Does not contain and Verify the Result for ImportSD
+    And Click on filter of Building Equals and Verify the Result for ImportSD
+    And Click on filter of Building Does not equal and Verify the Result for ImportSD
+    And Click on filter of Building Begins with and Verify the Result for ImportSD
+    And Click on filter of Building Ends with and Verify the Result for ImportSD
+    And Click on filter of Building Blank and Verify the Result for ImportSD
+    # And Click on filter of Building Not blank and Verify the Result for ImportSD
 
-# #    And Click on Vivacity Admin page
-# #     Then Click on Admin Users unit
-# #     Then I should click on Add New Admin
-# #     Then Enter full name, title and Email of Admin
-# #     And Enter Phone,Cell Number and select UserRole of Admin
-# #     And Click on submit button of Admin
-# #     # Then Verify the student added in table of Admin
-# #     And Enter the Search value in search box of Admin
-# #     Then Verify the Results in the table of Admin
-# #     And Click on Edit button of Admin
-# #     Then I should edit title, full name of Admin
+    And Click on filter of Import Number Equals and Verify the Result
+    And Click on filter of Import Number Does not equal and Verify the Result
+    And Click on filter of Import Number Greater than and Verify the Result
+    And Click on filter of Import Number Greater than or equal to and Verify the Result
+    And Click on filter of Import Number Less than and Verify the Result
+    And Click on filter of Import Number Less than or equal to and Verify the Result
+    And Click on filter of Import Number Between and Verify the Result
+    And Click on filter of Import Number Blank and Verify the Result
+    # And Click on filter of Import Number Not blank and Verify the Result
+
+    And Click on filter of Device contain and Verify the Result
+    And Click on filter of Device Does not contain and Verify the Result
+    And Click on filter of Device Equals and Verify the Result
+    And Click on filter of Device Does not equal and Verify the Result
+    And Click on filter of Device Begins with and Verify the Result
+    And Click on filter of Device Ends with and Verify the Result
+    And Click on filter of Device Blank and Verify the Result
+  # And Click on filter of Device Not blank and Verify the Result
+
+  #  And Click on filter of Assets Tag contain and Verify the Result
+  # And Click on filter of Assets Tag Does not contain and Verify the Result
+  # And Click on filter of Assets Tag Equals and Verify the Result
+  # And Click on filter of Assets Tag Does not equal and Verify the Result
+  # And Click on filter of Assets Tag Begins with and Verify the Result
+  # And Click on filter of Assets Tag Ends with and Verify the Result
+  # And Click on filter of Assets Tag Blank and Verify the Result
+  # And Click on filter of Assets Tag Not blank and Verify the Result
+
+  # And Click on filter of Loaner Status op1 and Verify the Result
+
+  # And Click on filter of Account contain and Verify the Result
+  # And Click on filter of Account Does not contain and Verify the Result
+  # And Click on filter of Account Equals and Verify the Result
+  # And Click on filter of Account Date Does not equal and Verify the Result
+  # And Click on filter of Account Begins with and Verify the Result
+  # And Click on filter of Account Ends with and Verify the Result
+  # And Click on filter of Account Blank and Verify the Result
+  # And Click on filter of Account Not blank and Verify the Result
+
+  # And Click on filter of Created By contain and Verify the Result
+  # And Click on filter of Created By Does not contain and Verify the Result
+  # And Click on filter of Created By Equals and Verify the Result
+  # And Click on filter of Created By Does not equal and Verify the Result
+  # And Click on filter of Created By Begins with and Verify the Result
+  # And Click on filter of Created By Ends with and Verify the Result
+  # And Click on filter of Created By Blank and Verify the Result
+  # And Click on filter of Created By Not blank and Verify the Result
+
+  # And Click on filter of Last Modified By contain and Verify the Result
+  # And Click on filter of Last Modified By Does not contain and Verify the Result
+  # And Click on filter of Last Modified By Equals and Verify the Result
+  # And Click on filter of Last Modified By Does not equal and Verify the Result
+  # And Click on filter of Last Modified By Begins with and Verify the Result
+  # And Click on filter of Last Modified By Ends with and Verify the Result
+  # And Click on filter of Last Modified By Blank and Verify the Result
+  # And Click on filter of Last Modified By Not blank and Verify the Result
+
+  # And Click on filter of Device Status op1 and Verify the Result
+  # And Click on filter of Device Status op2 and Verify the Result
+
+  Scenario: Import Serial Device Request
+    Then Click on Import Serial Device Request unit
+    And Click on filter of User Name contain and Verify the Result
+    And Click on filter of User Name Does not contain and Verify the Result
+    And Click on filter of User Name Equals and Verify the Result
+    And Click on filter of User Name Does not equal and Verify the Result
+    And Click on filter of User Name Begins with and Verify the Result
+    And Click on filter of User Name Ends with and Verify the Result
+    And Click on filter of User Name Blank and Verify the Result
+    And Click on filter of User Name Not blank and Verify the Result
+
+    And Click on filter of Email contain and Verify the Result
+    And Click on filter of Email Does not contain and Verify the Result
+    And Click on filter of Email Equals and Verify the Result
+    And Click on filter of Email Does not equal and Verify the Result
+    And Click on filter of Email Begins with and Verify the Result
+    And Click on filter of Email Ends with and Verify the Result
+    And Click on filter of Email Blank and Verify the Result
+    And Click on filter of Email Not blank and Verify the Result
+
+    And Click on filter of Account Number contain and Verify the Result
+    And Click on filter of Account Number Does not contain and Verify the Result
+    And Click on filter of Account Number Equals and Verify the Result
+    And Click on filter of Account Number Does not equal and Verify the Result
+    And Click on filter of Account Number Begins with and Verify the Result
+    And Click on filter of Account Number Ends with and Verify the Result
+    And Click on filter of Account Number Blank and Verify the Result
+    And Click on filter of Account Number Not blank and Verify the Result
+
+    And Click on filter of Account Name contain and Verify the Result
+    And Click on filter of Account Name Does not contain and Verify the Result
+    And Click on filter of Account Name Equals and Verify the Result
+    And Click on filter of Account Name Does not equal and Verify the Result
+    And Click on filter of Account Name Begins with and Verify the Result
+    And Click on filter of Account Name Ends with and Verify the Result
+    And Click on filter of Account Name Blank and Verify the Result
+    And Click on filter of Account Name Not blank and Verify the Result
+
+    And Click on filter of Request Date Equals and Verify the Result
+    And Click on filter of Request Date Does not equal and Verify the Result
+    And Click on filter of Request Date Before and Verify the Result
+    And Click on filter of Request Date After and Verify the Result
+    And Click on filter of Request Date Between and Verify the Result
+    And Click on filter of Request Date Blank and Verify the Result
+    And Click on filter of Request Date Not blank and Verify the Result
+
+    And Click on filter of Status contain and Verify the Result
+    And Click on filter of Status Does not contain and Verify the Result
+    And Click on filter of Status Equals and Verify the Result
+    And Click on filter of Status Does not equal and Verify the Result
+    And Click on filter of Status Begins with and Verify the Result
+    And Click on filter of Status Ends with and Verify the Result
+    And Click on filter of Status Blank and Verify the Result
+    And Click on filter of Status Not blank and Verify the Result
+
+    And Click on filter of Quantity Devices contain and Verify the Result
+    And Click on filter of Quantity Devices Does not contain and Verify the Result
+    And Click on filter of Quantity Devices Equals and Verify the Result
+    And Click on filter of Quantity Devices Does not equal and Verify the Result
+    And Click on filter of Quantity Devices Begins with and Verify the Result
+    And Click on filter of Quantity Devices Ends with and Verify the Result
+    And Click on filter of Quantity Devices Blank and Verify the Result
+    And Click on filter of Quantity Devices Not blank and Verify the Result
+
+# # # Scenario: All Paid Subscription and  Roadmap feature request and admin
+# # # And Click on Vivacity Admin page
+# # # Then Click on All Paid Subscription Requests unit
+# # # And Table should be visible
+# # # Then If any subscription request is there then approve or deny the request
+# # # And Verify the Request
+# # # Then Click on All Paid Subscription Requests unit
+
+# # # And Click on features page
+# # # Then Click on Submit a feature request button
+# # # And Enter Title and Description
+# # # Then Click on Feature submit button
+# # # Then Verify Submitting Features request Message
+# # # And Click on Vivacity Admin page
+# # # Then Click on Roadmap Requests unit
+# # # And Click on view button
+# # # Then Click on the Close button
+# # # And Click on approve button
+# # # And Click on features page again
+# # # Then Verify the feature added in Underconsideration
+
+# # #    And Click on Vivacity Admin page
+# # #     Then Click on Admin Users unit
+# # #     Then I should click on Add New Admin
+# # #     Then Enter full name, title and Email of Admin
+# # #     And Enter Phone,Cell Number and select UserRole of Admin
+# # #     And Click on submit button of Admin
+# # #     # Then Verify the student added in table of Admin
+# # #     And Enter the Search value in search box of Admin
+# # #     Then Verify the Results in the table of Admin
+# # #     And Click on Edit button of Admin
+# # #     Then I should edit title, full name of Admin
 # #     And I should edit Phone and Cell Number and user role of Admin
 # #     Then Click on Submit button of Admin
 # #     And Verify the Record has been updated Meassage of Admin
@@ -392,15 +536,6 @@ Feature:Vivacity admin Page Functionality
 # #     And Verify the record is deleted successfully for warranty
 # #     Then Click on warranty unit
 
-# # And Click on Vivacity Admin page
-# #         Then Click on Import Serial Device unit
-# #         And Enter the Search - Serial Number in search box and Verify the Result for isd
-# #         Then Enter the Search - Account in search box and Verify the Result for isd
-# #         And Enter the Search - Device in search box and Verify the Result for isd
-# #         And Click More filter select- Serial Number in search box and Verify the Result for isd
-# #         Then Click More filter select- Account in search box and Verify the Result for isd
-# #         And Click More filter select- Device in search box and Verify the Result for isd
-# #               Then Click on Import Serial Device unit
 
 
 

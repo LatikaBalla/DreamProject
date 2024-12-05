@@ -507,6 +507,8 @@
     "emailid": "mike@vivacitytech.com",
     "createdDate": "2024-08-24",
     "createdDate1": "08-24-2024",
+    "requestDate": "2024-01-31",
+    "requestDate1": "01-31-2024",
     "empStatus":"Active",
     "UserStatus":"Active",
     "UserRole":"Vivacity Admin",
@@ -526,8 +528,21 @@
     "repairtype": "Vivacity",
     "failuretype": "Mechanical",
     "searialno": "gg7fxe3wq1gc",
-    "accountno": "21845",
-    "device": "Apple iPad 9th Gen - Apple/32GB - Touch"
+    "accountno": "20817",
+    "device": "Apple iPad 9th Gen - Apple/32GB - Touch",
+    "serialno":"0F3447323403FB",
+    "builidng":"Alternative Programs",
+    "createdBy":"Dream",
+    "lastModifiedBy":"Nathan Birch",
+    "assetsTag":"23-26-084",
+    "userName":"Gadellnet Administrator",
+    "emailReq":"demo@vivacitytech.com",
+    "accNumber":"21739",
+    "statusReq":"Rejected",
+    "quantity":"350",
+    "importNumber":"2",
+    "importNumber1":"9"
+
   },
   "loanerManagement": {
     "serialno": "VIVATEST20Test",
