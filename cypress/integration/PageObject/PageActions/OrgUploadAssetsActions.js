@@ -11,8 +11,6 @@ export class OrgUploadAssetsActions {
     }
     closeTermsOfServiceWindow() {
         cy.wait(3000)
-        cy.get('.MuiDialogActions-root > .MuiButtonBase-root').click({ force: true })
-        //dash.termsElement().contains('Dismiss').click({ force: true })
     }
     clickOnManageDevices() {
         dash.managedevicesElement().click({ force: true })

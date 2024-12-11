@@ -424,6 +424,62 @@ Then('Click on submit button Account', () => {
 And('Verify the Account added in table', () => {
     vadmin.verifyRecordAccountAdded()
 })
+Then('Click on Image Icon Menu', () => {
+    vadmin.clickOnIamgeIconMenu()
+})
+And('Click on Buildings menu', () => {
+    vadmin.clickOnBuildingMenu()
+})
+Then('Click on add Building', () => {
+    vadmin.clickOnAddBuilding()
+})
+And('Enter the Building information and Click on Save button', () => {
+    vadmin.enterBuildingInformation()
+    vadmin.clickonSaveButton()
+})
+Then ('Click on Users menu',()=>{
+    vadmin.clickOnUsersMenu()
+})
+And ('Click on Add user button',()=>{
+    vadmin.clickOnAddUsersButton()
+})
+Then ('Enter User information and Click on Save button',()=>{
+    vadmin.enterUserinformation()
+    vadmin.clickOnAddUserSave()
+})
+Then ('Verify the User added successfully',()=>{
+    vadmin.verifyAddedSuccessfully()
+})
+And ('Click on Update Subscription menu',()=>{
+    vadmin.clickOnUpdateSubscriptionMenu()
+})
+Then ('Select Subscriptions and click Update subcription button',()=>{
+    vadmin.selectSubscriptions()
+    vadmin.clickOnUpdateSub()
+})
+And ('Verify Subscriptions updated successfully',()=>{
+    vadmin.verifySubscriptionsUpdated()
+})
+Then ('Click on Update Credit menu',()=>{
+    vadmin.clickOnUpdateCreditMenu()
+})
+And ('Credit Increase or decrease by number and Click on update button',()=>{
+    vadmin.changeCreditno()
+    vadmin.clickOnUpdatedCredit()
+})
+Then ('Verify Credit updated successfully',()=>{
+    vadmin.verifyCreditUpdated()
+})
+And ('Click on Update Account Site menu',()=>{
+    vadmin.clickOnUpdateAccountSiteMenu()
+})
+Then ('Select Account Site and click on Update Site button',()=>{
+    vadmin.selectAccountSiteUpdate()
+    vadmin.clickOnUpdateSite()
+})
+And ('Verify Account Site updated successfully',()=>{
+    vadmin.verifyAccountSiteUpdated()
+})
 And('Click on filter of Name contain and Verify the Result', () => {
     vadmin.filterContainName()
 })
@@ -963,7 +1019,7 @@ And('Click on filter of Device Status op2 and Verify the Result', () => {
     vadmin.filterDeviceStatusOp2()
 })
 //Import Serial Device Request
-Then ('Click on Import Serial Device Request unit',()=>{
+Then('Click on Import Serial Device Request unit', () => {
     vadmin.clickOnimportserialdeviceRequest()
 })
 And('Click on filter of User Name contain and Verify the Result', () => {
@@ -1220,18 +1276,18 @@ Then('Click on Confirm Delete button of Admin', () => {
 And('Verify the record is deleted successfully of Admin', () => {
     vadmin.verifyRecordDeleted()
 })
-Then('Click on update subscription', () => {
-    vadmin.clickOnUpdateSubcription()
-})
-And('Select subscription Type', () => {
-    vadmin.selectSubscription()
-})
-Then('Click on update button for subcription', () => {
-    vadmin.clickOnUpdateSub()
-})
-And('Verify Updated subcription successfully', () => {
-    vadmin.verifyUpadtedSub()
-})
+// Then('Click on update subscription', () => {
+//     vadmin.clickOnUpdateSubcription()
+// })
+// And('Select subscription Type', () => {
+//     vadmin.selectSubscription()
+// })
+// Then('Click on update button for subcription', () => {
+//     vadmin.clickOnUpdateSub()
+// })
+// And('Verify Updated subcription successfully', () => {
+//     vadmin.verifyUpadtedSub()
+// })
 Then('Click on Request Users unit', () => {
     vadmin.requestUserSection()
 })

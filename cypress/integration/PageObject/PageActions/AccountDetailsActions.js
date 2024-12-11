@@ -10,7 +10,7 @@ export class AccountDetailsActions {
     }
     closeTermsOfServiceWindow() {
         cy.wait(2000)
-        dash.termsElement().contains('Dismiss').click({ force: true })
+       // dash.termsElement().contains('Agree').click({ force: true })
     }
     clickonAccountDash(){
         dash.myAccountElement().click({force:true})

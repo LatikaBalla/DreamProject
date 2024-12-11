@@ -6,12 +6,12 @@ export default class VivacityAdminElements {
             timeout: 30000,
         })
     }
-    addnewAdminElement(){
+    addnewAdminElement() {
         return cy.get(locator.vivacityAdmin.addnewAdmin, {
             timeout: 30000,
         })
     }
-    emailListElement(){
+    emailListElement() {
         return cy.get(locator.vivacityAdmin.emailList, {
             timeout: 30000,
         })
@@ -206,10 +206,10 @@ export default class VivacityAdminElements {
             timeout: 30000,
         })
     }
-    searchWarElement(){
+    searchWarElement() {
         return cy.get(locator.vivacityAdmin.searchWar, {
             timeout: 30000,
-        }) 
+        })
     }
     addAccountElement() {
         return cy.get(locator.vivacityAdmin.addAccount, {
@@ -245,97 +245,112 @@ export default class VivacityAdminElements {
         return cy.get(locator.vivacityAdmin.creditLimit, {
             timeout: 30000,
         })
-    } 
+    }
     ihrepairsElement() {
         return cy.get(locator.vivacityAdmin.ihrepairs, {
             timeout: 30000,
         })
-    } 
+    }
     paymentTermsElement() {
         return cy.get(locator.vivacityAdmin.paymentTerms, {
             timeout: 30000,
         })
     }
-    subUpdatebtnElement(){
+    subUpdatebtnElement() {
         return cy.contains(locator.vivacityAdmin.subUpdatebtn, {
             timeout: 30000,
-        }) 
+        })
     }
-    subcriptionElement(){
+    subcriptionElement() {
         return cy.get(locator.vivacityAdmin.subcription, {
             timeout: 30000,
-        }) 
+        })
     }
-    updateSubcriptionElement(){
+    updateSubcriptionElement() {
         return cy.contains(locator.vivacityAdmin.updateSubcription, {
             timeout: 30000,
-        }) 
-    } 
-    addbtnElement(){
+        })
+    }
+    addbtnElement() {
         return cy.contains(locator.vivacityAdmin.addbtn, {
             timeout: 30000,
-        }) 
+        })
     }
-    availableAccountElement(){
+    availableAccountElement() {
         return cy.get(locator.vivacityAdmin.availableAccount, {
             timeout: 30000,
-        }) 
+        })
     }
-    viewElement(){
+    imageIconElement() {
+        return cy.get(locator.vivacityAdmin.imageIcon, {
+            timeout: 30000,
+        })
+    }
+    optionmenuElement() {
+        return cy.get(locator.vivacityAdmin.optionmenu, {
+            timeout: 30000,
+        })
+    }
+    adduserElement() {
+        return cy.get(locator.vivacityAdmin.adduser, {
+            timeout: 30000,
+        })
+    }
+    viewElement() {
         return cy.contains(locator.vivacityAdmin.view, {
             timeout: 30000,
-        }) 
+        })
     }
-    closeElement(){
+    closeElement() {
         return cy.get(locator.vivacityAdmin.close, {
             timeout: 30000,
-        }) 
+        })
     }
-    editbtnElement(){
+    editbtnElement() {
         return cy.contains(locator.vivacityAdmin.editbtn, {
             timeout: 30000,
-        }) 
+        })
     }
-    repairbtnElement(){
+    repairbtnElement() {
         return cy.get(locator.vivacityAdmin.repairbtn, {
             timeout: 30000,
-        }) 
+        })
     }
-    section10Element(){
+    section10Element() {
         return cy.contains(locator.vivacityAdmin.section10, {
             timeout: 30000,
-        }) 
-    } 
-    AddEmployeeElement(){
+        })
+    }
+    AddEmployeeElement() {
         return cy.get(locator.vivacityAdmin.AddEmployee, {
             timeout: 30000,
-        }) 
+        })
     }
-    nameElement(){
+    nameElement() {
         return cy.get(locator.vivacityAdmin.name, {
             timeout: 30000,
-        }) 
+        })
     }
-    titleEmpElement(){
+    titleEmpElement() {
         return cy.get(locator.vivacityAdmin.titleEmp, {
             timeout: 30000,
-        }) 
+        })
     }
-    statusElement(){
+    statusElement() {
         return cy.get(locator.vivacityAdmin.status, {
             timeout: 30000,
-        }) 
+        })
     }
- 
-    addfilterElement(){
+
+    addfilterElement() {
         return cy.get(locator.vivacityAdmin.addfilter, {
             timeout: 30000,
-        }) 
+        })
     }
-    searchEmpElement(){
+    searchEmpElement() {
         return cy.get(locator.vivacityAdmin.searchEmp, {
             timeout: 30000,
-        }) 
+        })
     }
     clearfilterElement() {
         return cy.get(locator.vivacityAdmin.clearfilter, {
@@ -347,30 +362,30 @@ export default class VivacityAdminElements {
             timeout: 30000,
         })
     }
-    searchtxtElement(){
+    searchtxtElement() {
         return cy.get(locator.vivacityAdmin.searchtxt, {
             timeout: 30000,
-        }) 
+        })
     }
-    ticketnumberElement(){
+    ticketnumberElement() {
         return cy.get(locator.vivacityAdmin.ticketnumber, {
             timeout: 30000,
-        }) 
+        })
     }
-    repairtypeElement(){
+    repairtypeElement() {
         return cy.get(locator.vivacityAdmin.repairtype, {
             timeout: 30000,
-        }) 
+        })
     }
-    failuretypeElement(){
+    failuretypeElement() {
         return cy.get(locator.vivacityAdmin.failuretype, {
             timeout: 30000,
-        }) 
+        })
     }
-    searchboxElement(){
+    searchboxElement() {
         return cy.get(locator.vivacityAdmin.searchbox, {
             timeout: 30000,
-        }) 
+        })
     }
     addFilterElement() {
         return cy.get(locator.vivacityAdmin.addFilter, {
@@ -402,40 +417,40 @@ export default class VivacityAdminElements {
             timeout: 30000,
         })
     }
-    section11Element(){
+    section11Element() {
         return cy.contains(locator.vivacityAdmin.section11, {
             timeout: 30000,
-        }) 
-    } 
-    section12Element(){
+        })
+    }
+    section12Element() {
         return cy.contains(locator.vivacityAdmin.section12, {
             timeout: 30000,
-        }) 
-    } 
-    section13Element(){
+        })
+    }
+    section13Element() {
         return cy.contains(locator.vivacityAdmin.section13, {
             timeout: 30000,
-        }) 
+        })
     }
-    netsuiteidElement(){
+    netsuiteidElement() {
         return cy.get(locator.vivacityAdmin.netsuiteid, {
             timeout: 30000,
-        }) 
+        })
     }
-    searialnoElement(){
+    searialnoElement() {
         return cy.get(locator.vivacityAdmin.searialno, {
             timeout: 30000,
-        }) 
+        })
     }
-    accountnoElement(){
+    accountnoElement() {
         return cy.get(locator.vivacityAdmin.accountno, {
             timeout: 30000,
-        }) 
+        })
     }
-    deviceElement(){
+    deviceElement() {
         return cy.get(locator.vivacityAdmin.device, {
             timeout: 30000,
-        }) 
+        })
     }
     optionElement() {
         return cy.get(locator.vivacityAdmin.option, {
@@ -472,5 +487,5 @@ export default class VivacityAdminElements {
             timeout: 30000,
         })
     }
-     
+
 }

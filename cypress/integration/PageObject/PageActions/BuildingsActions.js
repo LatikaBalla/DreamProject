@@ -17,7 +17,7 @@ export class BuildingsActions {
     }
     closeTermsOfServiceWindow() {
         cy.wait(1000)
-        dash.termsElement().contains('Dismiss').click({ force: true })
+       // dash.termsElement().contains('Agree').click({ force: true })
         cy.contains('demo_adminsuper@vivacitytech.com').click({ force: true })  
     }
     addNewButtonTabVisible() {     

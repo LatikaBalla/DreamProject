@@ -23,7 +23,7 @@
             "name": "I should navigate to application",
             "result": {
               "status": "passed",
-              "duration": 892000000
+              "duration": 4105000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I should Sign In into the application",
             "result": {
               "status": "passed",
-              "duration": 5321000000
+              "duration": 10698000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "close the terms of service window",
             "result": {
               "status": "passed",
-              "duration": 11231000000
+              "duration": 11103000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Click on My Account Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 66000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Verify the Title of Account Details Page",
             "result": {
               "status": "passed",
-              "duration": 1607000000
+              "duration": 1266000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Account Details -Aaccount Name and no should be visible",
             "result": {
               "status": "passed",
-              "duration": 427000000
+              "duration": 473000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Account Manager,Billing Address and Shipping Address should be visible",
             "result": {
               "status": "passed",
-              "duration": 38000000
+              "duration": 34000000
             }
           }
         ]

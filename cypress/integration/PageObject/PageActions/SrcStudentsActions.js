@@ -13,7 +13,7 @@ export class SrcStudentsActions {
     }
     closeTermsOfServiceWindow() {
         cy.wait(3000)
-        dash.termsElement().contains('Dismiss').click({ force: true })
+        //dash.termsElement().contains('Agree').click({ force: true })
     }
     clickOnRepair360() {
         dash.repair360Element().click({ force: true })
@@ -139,18 +139,18 @@ export class SrcStudentsActions {
         ss.addFilterElement().eq(0).click({ force: true })
         ss.fieldNameElement().eq(1).click({ force: true })
         ss.fieldOpElement().eq(4).click({ force: true })
-        ss.fieldValueElement().eq(0).type('Demo')
+        ss.fieldValueElement().eq(0).type('Tester')
         ss.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Demo')
+        cy.get('[row-index="0"]').should('contain', 'Tester')
         ss.clearFilterElement().click({ force: true })
     }
     filterEndswithFN() {
         ss.addFilterElement().eq(0).click({ force: true })
         ss.fieldNameElement().eq(1).click({ force: true })
         ss.fieldOpElement().eq(5).click({ force: true })
-        ss.fieldValueElement().eq(0).type('Test')
+        ss.fieldValueElement().eq(0).type('city')
         ss.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'Test')
+        cy.get('[row-index="0"]').should('contain', 'city')
         ss.clearFilterElement().click({ force: true })
     }
     filterBlankFN() {
@@ -213,18 +213,18 @@ export class SrcStudentsActions {
         ss.addFilterElement().eq(1).click({ force: true })
         ss.fieldNameElement().eq(1).click({ force: true })
         ss.fieldOpElement().eq(4).click({ force: true })
-        ss.fieldValueElement().eq(0).type('tea')
+        ss.fieldValueElement().eq(0).type('Tester')
         ss.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'tea')
+        cy.get('[row-index="0"]').should('contain', 'Tester')
         ss.clearFilterElement().click({ force: true })
     }
     filterEndswithT() {
         ss.addFilterElement().eq(1).click({ force: true })
         ss.fieldNameElement().eq(1).click({ force: true })
         ss.fieldOpElement().eq(5).click({ force: true })
-        ss.fieldValueElement().eq(0).type('cher')
+        ss.fieldValueElement().eq(0).type('sterSS')
         ss.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', 'cher')
+        cy.get('[row-index="0"]').should('contain', 'sterSS')
         ss.clearFilterElement().click({ force: true })
     }
     filterBlankT() {
@@ -361,18 +361,18 @@ export class SrcStudentsActions {
         ss.addFilterElement().eq(4).click({ force: true })
         ss.fieldNameElement().eq(1).click({ force: true })
         ss.fieldOpElement().eq(4).click({ force: true })
-        ss.fieldValueElement().eq(0).type('9999')
+        ss.fieldValueElement().eq(0).type('814')
         ss.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '999')
+        cy.get('[row-index="0"]').should('contain', '814')
         ss.clearFilterElement().click({ force: true })
     }
     filterEndswithP() {
         ss.addFilterElement().eq(4).click({ force: true })
         ss.fieldNameElement().eq(1).click({ force: true })
         ss.fieldOpElement().eq(5).click({ force: true })
-        ss.fieldValueElement().eq(0).type('999')
+        ss.fieldValueElement().eq(0).type('463')
         ss.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '999')
+        cy.get('[row-index="0"]').should('contain', '463')
         ss.clearFilterElement().click({ force: true })
     }
     filterBlankP() {

@@ -11,7 +11,7 @@ export class DeviceRepairReportActions {
    }
    closeTermsOfServiceWindow() {
       cy.wait(5000)
-      dash.termsElement().contains('Dismiss').click({ force: true })
+     // dash.termsElement().contains('Agree').click({ force: true })
    }
    clickOnReportCenter() {
       dash.reportcenterElement().click({ force: true })

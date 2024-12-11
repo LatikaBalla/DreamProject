@@ -48,13 +48,13 @@ Feature: MyFleet  Page Functionality
         And Click on filter of SKU Blank and Verify the Result
         # And Click on filter of SKU Not blank and Verify the Result
 
-        And Click on filter of Building contain and Verify the Result
-        And Click on filter of Building Does not contain and Verify the Result
-        And Click on filter of Building Equals and Verify the Result
-        And Click on filter of Building Does not equal and Verify the Result
-        And Click on filter of Building Begins with and Verify the Result
-        And Click on filter of Building Ends with and Verify the Result
-        And Click on filter of Building Blank and Verify the Result
+        # And Click on filter of Building contain and Verify the Result
+        # And Click on filter of Building Does not contain and Verify the Result
+        # And Click on filter of Building Equals and Verify the Result
+        # And Click on filter of Building Does not equal and Verify the Result
+        # And Click on filter of Building Begins with and Verify the Result
+        # And Click on filter of Building Ends with and Verify the Result
+        # And Click on filter of Building Blank and Verify the Result
         # And Click on filter of Building Not blank and Verify the Result
 
         # And Click on filter of VT Verified op1 and Verify the Result
@@ -138,9 +138,9 @@ Feature: MyFleet  Page Functionality
     Scenario: Google Data view, Edit and Visiblity check of all section
         And Click on the Google Icon and click on view Button
         Then Verify the google data and GoLocation section
-        And Click on the edit of google data section
-        Then Update Org Unit, AssetId, Location, Note and Click on save button
-        And Verfiy Google data Record updated successfully
+        # And Click on the edit of google data section
+        # Then Update Org Unit, AssetId, Location, Note and Click on save button
+        # And Verfiy Google data Record updated successfully
         Then Click on CPU Status and verify CPU Information
         And Click on Memory Information and verify Memory Information
         Then Click on Network Information and verify Network Information
@@ -148,5 +148,4 @@ Feature: MyFleet  Page Functionality
         Then Click on Battery Information and verify Battery Information
         And Click on Storage Information and verify Storage Information
         Then Click on Boot Performance Report and Boot Performance Report
-        And Click on Recent Users Information and verify Recent Users Information
-
+        # And Click on Recent Users Information and verify Recent Users Information

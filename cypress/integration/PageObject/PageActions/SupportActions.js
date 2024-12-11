@@ -9,7 +9,7 @@ export class SupportActions {
     }
     closeTermsOfServiceWindow() {
         cy.wait(1000)
-        dash.termsElement().contains('Dismiss').click({ force: true })
+        // dash.termsElement().contains('Agree').click({ force: true })
     }
     clickOnSupport() {
         dash.supportElement().click({ force: true })

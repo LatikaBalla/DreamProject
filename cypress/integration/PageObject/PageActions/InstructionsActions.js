@@ -11,7 +11,7 @@ export class InstructionsActions {
     }
     closeTermsOfServiceWindow() {
         cy.contains('Remind me Later').click({ force: true }) 
-        dash.termsElement().contains('Dismiss').click({ force: true })
+        //dash.termsElement().contains('Agree').click({ force: true })
     }
     clickOnInstructions() {
         rep1.instructionsElement().click({ force: true })

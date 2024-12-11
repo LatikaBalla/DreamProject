@@ -4,15 +4,18 @@ import { should } from "chai";
 
 const VivacityAdminElements = require("../PageElements/VivacityAdminElements.js")
 const DashboardElements = require("../PageElements/DashboardElements.js")
+const BuildingsElements = require("../PageElements/BuildingsElements.js")
+
 const tdata = require("../../../testData.json");
 const uniqueSeed = Date.now();
 export class VivacityAdminActions {
     constructor() {
         globalThis.vadmin = new VivacityAdminElements();
         globalThis.dash = new DashboardElements();
+        globalThis.build = new BuildingsElements();
     }
     closeTermsOfServiceWindow() {
-        dash.termsElement().contains('Dismiss').click({ force: true })
+      //  dash.termsElement().contains('Agree').click({ force: true })
     }
     clickOnVivacityAdmin() {
         dash.vivaAdminElement().click({ force: true })
@@ -45,7 +48,7 @@ export class VivacityAdminActions {
         vadmin.section9Element().should('be.visible')
     }
     employeeManagment() {
-        vadmin.section10Element().should('be.visible')
+        vadmin.section9Element().should('be.visible')
     }
     clickOnallPaidSubcription() {
         vadmin.section1Element().click({ force: true })
@@ -992,6 +995,109 @@ export class VivacityAdminActions {
 
     }
     // Account Managment
+    clickOnIamgeIconMenu() {
+        cy.wait(100)
+        vadmin.imageIconElement().eq(0).click({ force: true })
+    }
+    clickOnBuildingMenu() {
+        vadmin.optionmenuElement().contains('Buildings').click({ force: true })
+    }
+    clickOnAddBuilding() {
+        cy.contains('Add Building').click({ force: true })
+    }
+    enterBuildingInformation() {
+        build.buildingnameElement().type(tdata.buildings.buildingname, { force: true })
+        build.phoneElement().type(tdata.buildings.phone, { force: true })
+        build.extensionElement().type(tdata.buildings.extension, { force: true })
+        build.defaultbuildingElement().click({ force: true })
+        cy.get(tdata.buildings.defaultbuilding).click({ force: true })
+        cy.get('input[role="combobox"]').eq(0).type(tdata.buildings.address, { force: true })
+        cy.wait(1000)
+        cy.get('input[role="combobox"]').eq(0).type('{downArrow}{enter}', { force: true })
+        cy.wait(1000)
+        cy.get('[data-testid="CheckBoxOutlineBlankIcon"]').scrollIntoView().click({ force: true })
+    }
+    clickonSaveButton() {
+        cy.get(':nth-child(1) > :nth-child(1) > .css-0 > .MuiBox-root > .MuiButtonBase-root').click({ force: true })
+        cy.get('[data-testid="CloseIcon"]').eq(1).click({ force: true })
+        cy.get('.css-k008qs > :nth-child(2)').click({ force: true })
+    }
+    clickOnUsersMenu() {
+        vadmin.optionmenuElement().contains('Users').click({ force: true })
+    }
+    clickOnAddUsersButton() {
+        vadmin.adduserElement().click({ force: true })
+    }
+    enterUserinformation() {
+        vadmin.fullnameElement().clear().should('have.value', '').type(tdata.vivacityAdmin.fullname)
+        vadmin.titleUserElement().type(tdata.vivacityAdmin.titleUser)
+        vadmin.emailElement().type(uniqueSeed + tdata.vivacityAdmin.email)
+        vadmin.phoneElement().type(tdata.vivacityAdmin.phone)
+        vadmin.statusElement().click({ force: true })
+        cy.get('[data-value="6"]').click({ force: true })
+    }
+    clickOnAddUserSave() {
+        vadmin.submitElement().eq(1).click({ force: true })
+    }
+    verifyAddedSuccessfully() {
+        cy.get('.MuiDialogActions-root > .MuiBox-root > .MuiButtonBase-root').click({ force: true })
+    }
+    clickOnUpdateSubscriptionMenu() {
+        vadmin.optionmenuElement().contains('Update Subscription').click({ force: true })
+    }
+    selectSubscriptions() {
+        cy.get('[title="Open"]').eq(0).click({ force: true })
+        cy.contains('Professional').click({ force: true })
+    }
+    clickOnUpdateSub() {
+        cy.get('.css-1tkoiic').click({ force: true })
+    }
+    verifySubscriptionsUpdated() {
+        dash.messageElement().should('contain', tdata.vivacityAdmin.subUpdatemsg)
+    }
+    clickOnUpdateCreditMenu() {
+        vadmin.optionmenuElement().contains('Update Credit').click({ force: true })
+    }
+    changeCreditno() {
+        cy.get('[type="number"]').type('2')
+    }
+    clickOnUpdatedCredit() {
+        cy.get('.css-uhn137').eq(0).click({ force: true })
+    }
+    verifyCreditUpdated() {
+        dash.messageElement().should('contain', tdata.vivacityAdmin.creditmsg)
+    }
+    clickOnUpdateAccountSiteMenu() {
+        vadmin.optionmenuElement().contains('Update Account Site').click({ force: true })
+    }
+    selectAccountSiteUpdate() {
+        cy.get('.MuiSelect-select').click({ force: true })
+        cy.get('[data-value="1"]').click({ force: true })
+    }
+    clickOnUpdateSite() {
+        cy.contains('Update Site').click({ force: true })
+    }
+    verifyAccountSiteUpdated() {
+        dash.messageElement().should('contain', tdata.vivacityAdmin.accSitemsg)
+
+    }
+    requestUserSection() {
+        vadmin.section7Element().click({ force: true })
+    }
+    clickOnAddAccountUser() {
+        cy.wait(2000)
+        cy.get('.css-1owb465').eq(3).find('tbody tr').eq(0).find('td').eq(5).contains('Add Account').click({ force: true })
+    }
+    selectAvailableAccount() {
+        vadmin.availableAccountElement().click({ force: true })
+        cy.get(tdata.vivacityAdmin.account).click({ force: true })
+    }
+    clickOnAddAccountsubmit() {
+        vadmin.addbtnElement().click({ force: true })
+    }
+    verifyAddAccUser() {
+        dash.messageElement().should('contain', tdata.vivacityAdmin.addAccUsermsg)
+    }
     clickOnAccountMangment() {
         vadmin.section6Element().click({ force: true })
     }
@@ -1038,41 +1144,10 @@ export class VivacityAdminActions {
     verifyRecordAccountAdded() {
         dash.messageElement().should('contain', tdata.vivacityAdmin.addAccountymsg)
     }
-    clickOnUpdateSubcription() {
-
-        vadmin.updateSubcriptionElement().click({ force: true })
-    }
-    selectSubscription() {
-        cy.get('[role="combobox"]').eq(6).click({ force: true })
-        cy.get(tdata.vivacityAdmin.subcription).click({ force: true })
-    }
-    clickOnUpdateSub() {
-        cy.get('[type="submit"]').contains('Update Subcription').click({ force: true })
-    }
-    verifyUpadtedSub() {
-        dash.messageElement().should('contain', tdata.vivacityAdmin.subUpdatemsg)
-    }
-    requestUserSection() {
-        vadmin.section7Element().click({ force: true })
-    }
-    clickOnAddAccountUser() {
-        cy.wait(2000)
-        cy.get('.css-1owb465').eq(3).find('tbody tr').eq(0).find('td').eq(5).contains('Add Account').click({ force: true })
-    }
-    selectAvailableAccount() {
-        vadmin.availableAccountElement().click({ force: true })
-        cy.get(tdata.vivacityAdmin.account).click({ force: true })
-    }
-    clickOnAddAccountsubmit() {
-        vadmin.addbtnElement().click({ force: true })
-    }
-    verifyAddAccUser() {
-        dash.messageElement().should('contain', tdata.vivacityAdmin.addAccUsermsg)
-    }
     filterContainName() {
         cy.wait(5000)
         vadmin.addFilterElement().eq(31).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.accountName)
         vadmin.applyElement().click({ force: true })
@@ -1081,7 +1156,7 @@ export class VivacityAdminActions {
     }
     filterDoesnotcontainName() {
         vadmin.addFilterElement().eq(31).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.accountName)
         vadmin.applyElement().click({ force: true })
@@ -1090,7 +1165,7 @@ export class VivacityAdminActions {
     }
     filterEqualsName() {
         vadmin.addFilterElement().eq(31).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.accountName)
         vadmin.applyElement().click({ force: true })
@@ -1099,7 +1174,7 @@ export class VivacityAdminActions {
     }
     filterNotequalName() {
         vadmin.addFilterElement().eq(31).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.accountName)
         vadmin.applyElement().click({ force: true })
@@ -1108,7 +1183,7 @@ export class VivacityAdminActions {
     }
     filterBeginswithName() {
         vadmin.addFilterElement().eq(31).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('Viva')
         vadmin.applyElement().click({ force: true })
@@ -1117,7 +1192,7 @@ export class VivacityAdminActions {
     }
     filterEndswithName() {
         vadmin.addFilterElement().eq(31).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('ount')
         vadmin.applyElement().click({ force: true })
@@ -1126,7 +1201,7 @@ export class VivacityAdminActions {
     }
     filterBlankName() {
         vadmin.addFilterElement().eq(31).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1135,7 +1210,7 @@ export class VivacityAdminActions {
     }
     filterNotblankName() {
         vadmin.addFilterElement().eq(31).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.accountName, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1145,7 +1220,7 @@ export class VivacityAdminActions {
     filterContainCreditL() {
         cy.wait(2000)
         vadmin.addFilterElement().eq(32).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.creditLimit)
         vadmin.applyElement().click({ force: true })
@@ -1154,7 +1229,7 @@ export class VivacityAdminActions {
     }
     filterDoesnotcontainCreditL() {
         vadmin.addFilterElement().eq(32).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.creditLimit)
         vadmin.applyElement().click({ force: true })
@@ -1163,7 +1238,7 @@ export class VivacityAdminActions {
     }
     filterEqualsCreditL() {
         vadmin.addFilterElement().eq(32).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.creditLimit)
         vadmin.applyElement().click({ force: true })
@@ -1172,7 +1247,7 @@ export class VivacityAdminActions {
     }
     filterNotequalCreditL() {
         vadmin.addFilterElement().eq(32).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.creditLimit)
         vadmin.applyElement().click({ force: true })
@@ -1181,16 +1256,16 @@ export class VivacityAdminActions {
     }
     filterBeginswithCreditL() {
         vadmin.addFilterElement().eq(32).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
-        vadmin.fieldValueElement().eq(0).type('$100')
+        vadmin.fieldValueElement().eq(0).type('$5000')
         vadmin.applyElement().click({ force: true })
-        cy.get('[row-index="0"]').should('contain', '$100')
+        cy.get('[row-index="0"]').should('contain', '$5000')
         vadmin.clearFilterElement().click({ force: true })
     }
     filterEndswithCreditL() {
         vadmin.addFilterElement().eq(32).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('00')
         vadmin.applyElement().click({ force: true })
@@ -1199,7 +1274,7 @@ export class VivacityAdminActions {
     }
     filterBlankCreditL() {
         vadmin.addFilterElement().eq(32).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1208,7 +1283,7 @@ export class VivacityAdminActions {
     }
     filterNotblankCreditL() {
         vadmin.addFilterElement().eq(32).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.creditLimit, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1218,7 +1293,7 @@ export class VivacityAdminActions {
     filterContainAccCredit() {
         cy.wait(2000)
         vadmin.addFilterElement().eq(33).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.creditLimit)
         vadmin.applyElement().click({ force: true })
@@ -1227,7 +1302,7 @@ export class VivacityAdminActions {
     }
     filterDoesnotcontainAccCredit() {
         vadmin.addFilterElement().eq(33).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.creditLimit)
         vadmin.applyElement().click({ force: true })
@@ -1236,7 +1311,7 @@ export class VivacityAdminActions {
     }
     filterEqualsAccCredit() {
         vadmin.addFilterElement().eq(33).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.creditLimit)
         vadmin.applyElement().click({ force: true })
@@ -1245,7 +1320,7 @@ export class VivacityAdminActions {
     }
     filterNotequalAccCredit() {
         vadmin.addFilterElement().eq(33).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.creditLimit)
         vadmin.applyElement().click({ force: true })
@@ -1254,7 +1329,7 @@ export class VivacityAdminActions {
     }
     filterBeginswithAccCredit() {
         vadmin.addFilterElement().eq(33).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('$00')
         vadmin.applyElement().click({ force: true })
@@ -1263,7 +1338,7 @@ export class VivacityAdminActions {
     }
     filterEndswithAccCredit() {
         vadmin.addFilterElement().eq(33).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('00')
         vadmin.applyElement().click({ force: true })
@@ -1272,7 +1347,7 @@ export class VivacityAdminActions {
     }
     filterBlankAccCredit() {
         vadmin.addFilterElement().eq(33).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1281,7 +1356,7 @@ export class VivacityAdminActions {
     }
     filterNotblankAccCredit() {
         vadmin.addFilterElement().eq(33).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.creditLimit, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1291,7 +1366,7 @@ export class VivacityAdminActions {
     filterContainAccBal() {
         cy.wait(2000)
         vadmin.addFilterElement().eq(34).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.creditLimit)
         vadmin.applyElement().click({ force: true })
@@ -1300,7 +1375,7 @@ export class VivacityAdminActions {
     }
     filterDoesnotcontainAccBal() {
         vadmin.addFilterElement().eq(34).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.creditLimit)
         vadmin.applyElement().click({ force: true })
@@ -1309,7 +1384,7 @@ export class VivacityAdminActions {
     }
     filterEqualsAccBal() {
         vadmin.addFilterElement().eq(34).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.creditLimit)
         vadmin.applyElement().click({ force: true })
@@ -1318,7 +1393,7 @@ export class VivacityAdminActions {
     }
     filterNotequalAccBal() {
         vadmin.addFilterElement().eq(34).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.creditLimit)
         vadmin.applyElement().click({ force: true })
@@ -1327,7 +1402,7 @@ export class VivacityAdminActions {
     }
     filterBeginswithAccBal() {
         vadmin.addFilterElement().eq(34).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('$00')
         vadmin.applyElement().click({ force: true })
@@ -1336,7 +1411,7 @@ export class VivacityAdminActions {
     }
     filterEndswithAccBal() {
         vadmin.addFilterElement().eq(34).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('00')
         vadmin.applyElement().click({ force: true })
@@ -1345,7 +1420,7 @@ export class VivacityAdminActions {
     }
     filterBlankAccBal() {
         vadmin.addFilterElement().eq(34).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1354,7 +1429,7 @@ export class VivacityAdminActions {
     }
     filterNotblankAccBal() {
         vadmin.addFilterElement().eq(34).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.creditLimit, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1363,8 +1438,8 @@ export class VivacityAdminActions {
     }
     filterContainContact() {
         cy.wait(2000)
-        vadmin.addFilterElement().eq(33).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.addFilterElement().eq(36).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.phoneNo1)
         vadmin.applyElement().click({ force: true })
@@ -1372,8 +1447,8 @@ export class VivacityAdminActions {
         vadmin.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainContact() {
-        vadmin.addFilterElement().eq(33).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.addFilterElement().eq(36).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.phoneNo1)
         vadmin.applyElement().click({ force: true })
@@ -1381,8 +1456,8 @@ export class VivacityAdminActions {
         vadmin.clearFilterElement().click({ force: true })
     }
     filterEqualsContact() {
-        vadmin.addFilterElement().eq(33).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.addFilterElement().eq(36).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.phoneNo1)
         vadmin.applyElement().click({ force: true })
@@ -1390,8 +1465,8 @@ export class VivacityAdminActions {
         vadmin.clearFilterElement().click({ force: true })
     }
     filterNotequalContact() {
-        vadmin.addFilterElement().eq(33).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.addFilterElement().eq(36).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.phoneNo1)
         vadmin.applyElement().click({ force: true })
@@ -1399,8 +1474,8 @@ export class VivacityAdminActions {
         vadmin.clearFilterElement().click({ force: true })
     }
     filterBeginswithContact() {
-        vadmin.addFilterElement().eq(33).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.addFilterElement().eq(36).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('877')
         vadmin.applyElement().click({ force: true })
@@ -1408,8 +1483,8 @@ export class VivacityAdminActions {
         vadmin.clearFilterElement().click({ force: true })
     }
     filterEndswithContact() {
-        vadmin.addFilterElement().eq(33).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.addFilterElement().eq(36).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('069')
         vadmin.applyElement().click({ force: true })
@@ -1417,8 +1492,8 @@ export class VivacityAdminActions {
         vadmin.clearFilterElement().click({ force: true })
     }
     filterBlankContact() {
-        vadmin.addFilterElement().eq(33).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.addFilterElement().eq(36).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1426,16 +1501,14 @@ export class VivacityAdminActions {
         vadmin.clearFilterElement().click({ force: true })
     }
     filterNotblankContact() {
-        vadmin.addFilterElement().eq(33).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.addFilterElement().eq(36).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.phoneNo1, { force: true })
         vadmin.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.phoneNo2)
         vadmin.clearFilterElement().click({ force: true })
     }
-
-    //warranty
     //Warranty
     serialNoWarrantySection() {
         vadmin.section4Element().click({ force: true })
@@ -1491,7 +1564,7 @@ export class VivacityAdminActions {
         vadmin.addFilterElement().eq(20).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.warrantyName)
         vadmin.applyElement().click({ force: true })
-        cy.wait(100)
+        cy.wait(90)
         cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.warrantyName)
         cy.get('[row-index="0"]').eq(4).find('[data-testid="EditIcon"]').eq(0).click({ force: true })
     }
@@ -1545,13 +1618,13 @@ export class VivacityAdminActions {
         // vadmin.conDeletebtnElement().contains('Delete').click({ force: true })
     }
     verifyRecordDeletedWarranty() {
-        cy.wait(100)
+        cy.wait(90)
         dash.messageElement().should('contain', tdata.vivacityAdmin.daleteWarrantymsg)
     }
     filterContainNameWar() {
         cy.wait(5000)
         vadmin.addFilterElement().eq(20).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.warrantyName)
         vadmin.applyElement().click({ force: true })
@@ -1560,7 +1633,7 @@ export class VivacityAdminActions {
     }
     filterDoesnotcontainNameWar() {
         vadmin.addFilterElement().eq(20).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.warrantyName)
         vadmin.applyElement().click({ force: true })
@@ -1569,7 +1642,7 @@ export class VivacityAdminActions {
     }
     filterEqualsNameWar() {
         vadmin.addFilterElement().eq(20).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.warrantyName)
         vadmin.applyElement().click({ force: true })
@@ -1578,7 +1651,7 @@ export class VivacityAdminActions {
     }
     filterNotequalNameWar() {
         vadmin.addFilterElement().eq(20).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.warrantyName)
         vadmin.applyElement().click({ force: true })
@@ -1587,7 +1660,7 @@ export class VivacityAdminActions {
     }
     filterBeginswithNameWar() {
         vadmin.addFilterElement().eq(20).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('Test')
         vadmin.applyElement().click({ force: true })
@@ -1596,7 +1669,7 @@ export class VivacityAdminActions {
     }
     filterEndswithNameWar() {
         vadmin.addFilterElement().eq(20).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('anty')
         vadmin.applyElement().click({ force: true })
@@ -1605,7 +1678,7 @@ export class VivacityAdminActions {
     }
     filterBlankNameWar() {
         vadmin.addFilterElement().eq(20).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1614,7 +1687,7 @@ export class VivacityAdminActions {
     }
     filterNotblankNameWar() {
         vadmin.addFilterElement().eq(20).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.warrantyName, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1624,7 +1697,7 @@ export class VivacityAdminActions {
     filterContainProvider() {
         cy.wait(2000)
         vadmin.addFilterElement().eq(21).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.providerWar)
         vadmin.applyElement().click({ force: true })
@@ -1633,7 +1706,7 @@ export class VivacityAdminActions {
     }
     filterDoesnotcontainProvider() {
         vadmin.addFilterElement().eq(21).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.providerWar)
         vadmin.applyElement().click({ force: true })
@@ -1642,7 +1715,7 @@ export class VivacityAdminActions {
     }
     filterEqualsProvider() {
         vadmin.addFilterElement().eq(21).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.providerWar)
         vadmin.applyElement().click({ force: true })
@@ -1651,7 +1724,7 @@ export class VivacityAdminActions {
     }
     filterNotequalProvider() {
         vadmin.addFilterElement().eq(21).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.providerWar)
         vadmin.applyElement().click({ force: true })
@@ -1660,7 +1733,7 @@ export class VivacityAdminActions {
     }
     filterBeginswithProvider() {
         vadmin.addFilterElement().eq(21).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('Man')
         vadmin.applyElement().click({ force: true })
@@ -1669,7 +1742,7 @@ export class VivacityAdminActions {
     }
     filterEndswithProvider() {
         vadmin.addFilterElement().eq(21).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('urer')
         vadmin.applyElement().click({ force: true })
@@ -1678,7 +1751,7 @@ export class VivacityAdminActions {
     }
     filterBlankProvider() {
         vadmin.addFilterElement().eq(21).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1687,7 +1760,7 @@ export class VivacityAdminActions {
     }
     filterNotblankProvider() {
         vadmin.addFilterElement().eq(21).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.providerWar, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1697,7 +1770,7 @@ export class VivacityAdminActions {
     filterContainType() {
         cy.wait(2000)
         vadmin.addFilterElement().eq(23).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.warType)
         vadmin.applyElement().click({ force: true })
@@ -1706,7 +1779,7 @@ export class VivacityAdminActions {
     }
     filterDoesnotcontainType() {
         vadmin.addFilterElement().eq(23).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.warType)
         vadmin.applyElement().click({ force: true })
@@ -1715,7 +1788,7 @@ export class VivacityAdminActions {
     }
     filterEqualsType() {
         vadmin.addFilterElement().eq(23).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.warType)
         vadmin.applyElement().click({ force: true })
@@ -1724,7 +1797,7 @@ export class VivacityAdminActions {
     }
     filterNotequalType() {
         vadmin.addFilterElement().eq(23).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.warType)
         vadmin.applyElement().click({ force: true })
@@ -1733,7 +1806,7 @@ export class VivacityAdminActions {
     }
     filterBeginswithType() {
         vadmin.addFilterElement().eq(23).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('bas')
         vadmin.applyElement().click({ force: true })
@@ -1742,7 +1815,7 @@ export class VivacityAdminActions {
     }
     filterEndswithType() {
         vadmin.addFilterElement().eq(23).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('se')
         vadmin.applyElement().click({ force: true })
@@ -1751,7 +1824,7 @@ export class VivacityAdminActions {
     }
     filterBlankType() {
         vadmin.addFilterElement().eq(23).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1760,7 +1833,7 @@ export class VivacityAdminActions {
     }
     filterNotblankType() {
         vadmin.addFilterElement().eq(23).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.warType, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1770,7 +1843,7 @@ export class VivacityAdminActions {
     filterContainSKU() {
         cy.wait(2000)
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.sku)
         vadmin.applyElement().click({ force: true })
@@ -1779,7 +1852,7 @@ export class VivacityAdminActions {
     }
     filterDoesnotcontainSKU() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.sku)
         vadmin.applyElement().click({ force: true })
@@ -1788,7 +1861,7 @@ export class VivacityAdminActions {
     }
     filterEqualsSKU() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.sku)
         vadmin.applyElement().click({ force: true })
@@ -1797,7 +1870,7 @@ export class VivacityAdminActions {
     }
     filterNotequalSKU() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.sku)
         vadmin.applyElement().click({ force: true })
@@ -1806,7 +1879,7 @@ export class VivacityAdminActions {
     }
     filterBeginswithSKU() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('aab')
         vadmin.applyElement().click({ force: true })
@@ -1815,7 +1888,7 @@ export class VivacityAdminActions {
     }
     filterEndswithSKU() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('ccc')
         vadmin.applyElement().click({ force: true })
@@ -1824,7 +1897,7 @@ export class VivacityAdminActions {
     }
     filterBlankSKU() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1833,7 +1906,7 @@ export class VivacityAdminActions {
     }
     filterNotblankSKU() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.sku, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1847,7 +1920,7 @@ export class VivacityAdminActions {
     filterContainSN() {
         cy.wait(4000)
         vadmin.addFilterElement().eq(24).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.serialno)
         vadmin.applyElement().click({ force: true })
@@ -1857,7 +1930,7 @@ export class VivacityAdminActions {
     }
     filterDoesnotcontainSN() {
         vadmin.addFilterElement().eq(24).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.serialno)
         vadmin.applyElement().click({ force: true })
@@ -1867,7 +1940,7 @@ export class VivacityAdminActions {
     }
     filterEqualsSN() {
         vadmin.addFilterElement().eq(24).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.serialno)
         vadmin.applyElement().click({ force: true })
@@ -1877,7 +1950,7 @@ export class VivacityAdminActions {
     }
     filterNotequalSN() {
         vadmin.addFilterElement().eq(24).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.serialno)
         vadmin.applyElement().click({ force: true })
@@ -1887,7 +1960,7 @@ export class VivacityAdminActions {
     }
     filterBeginswithSN() {
         vadmin.addFilterElement().eq(24).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('0F34')
         vadmin.applyElement().click({ force: true })
@@ -1897,7 +1970,7 @@ export class VivacityAdminActions {
     }
     filterEndswithSN() {
         vadmin.addFilterElement().eq(24).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('03FB')
         vadmin.applyElement().click({ force: true })
@@ -1907,7 +1980,7 @@ export class VivacityAdminActions {
     }
     filterBlankSN() {
         vadmin.addFilterElement().eq(24).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1917,7 +1990,7 @@ export class VivacityAdminActions {
     }
     filterNotblankSN() {
         vadmin.addFilterElement().eq(24).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.serialno, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1928,7 +2001,7 @@ export class VivacityAdminActions {
     filterContainBuild() {
         cy.wait(2000)
         vadmin.addFilterElement().eq(25).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.builidng)
         vadmin.applyElement().click({ force: true })
@@ -1938,7 +2011,7 @@ export class VivacityAdminActions {
     }
     filterDoesnotcontainBuild() {
         vadmin.addFilterElement().eq(25).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.builidng)
         vadmin.applyElement().click({ force: true })
@@ -1948,7 +2021,7 @@ export class VivacityAdminActions {
     }
     filterEqualsBuild() {
         vadmin.addFilterElement().eq(25).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.builidng)
         vadmin.applyElement().click({ force: true })
@@ -1958,7 +2031,7 @@ export class VivacityAdminActions {
     }
     filterNotequalBuild() {
         vadmin.addFilterElement().eq(25).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.builidng)
         vadmin.applyElement().click({ force: true })
@@ -1968,7 +2041,7 @@ export class VivacityAdminActions {
     }
     filterBeginswithBuild() {
         vadmin.addFilterElement().eq(25).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('Alter')
         vadmin.applyElement().click({ force: true })
@@ -1978,7 +2051,7 @@ export class VivacityAdminActions {
     }
     filterEndswithBuild() {
         vadmin.addFilterElement().eq(25).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('rams')
         vadmin.applyElement().click({ force: true })
@@ -1988,7 +2061,7 @@ export class VivacityAdminActions {
     }
     filterBlankBuild() {
         vadmin.addFilterElement().eq(25).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -1998,7 +2071,7 @@ export class VivacityAdminActions {
     }
     filterNotblankBuild() {
         vadmin.addFilterElement().eq(25).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.builidng, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -2006,255 +2079,255 @@ export class VivacityAdminActions {
         cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.builidng)
         vadmin.clearFilterElement().click({ force: true })
     }
-    filterEqualsImpNumber(){
+    filterEqualsImpNumber() {
         cy.wait(2000)
         vadmin.addFilterElement().eq(26).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.importNumber)
         vadmin.applyElement().click({ force: true })
         vadmin.clearFilterElement().click({ force: true })
-     }
-     filterNotequalImpNumber() {
-        cy.wait(1000)
+    }
+    filterNotequalImpNumber() {
+        cy.wait(900)
         vadmin.addFilterElement().eq(26).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).clear({ force: true }).type(tdata.vivacityAdmin.importNumber)
         vadmin.applyElement().click({ force: true })
         vadmin.clearFilterElement().click({ force: true })
-     }
-     filterGreaterthanImpNumber() {
-        cy.wait(1000)
+    }
+    filterGreaterthanImpNumber() {
+        cy.wait(900)
         vadmin.addFilterElement().eq(26).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).clear({ force: true }).type(tdata.vivacityAdmin.importNumber)
         vadmin.applyElement().click({ force: true })
         vadmin.clearFilterElement().click({ force: true })
-     }
-     filterGreaterequalImpNumber(){
-        cy.wait(1000)
+    }
+    filterGreaterequalImpNumber() {
+        cy.wait(900)
         vadmin.addFilterElement().eq(26).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).clear({ force: true }).type(tdata.vivacityAdmin.importNumber)
         vadmin.applyElement().click({ force: true })
         vadmin.clearFilterElement().click({ force: true })
-     }
-     filterLessthanImpNumber() {
-        cy.wait(1000)
+    }
+    filterLessthanImpNumber() {
+        cy.wait(900)
         vadmin.addFilterElement().eq(26).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).clear({ force: true }).type(tdata.vivacityAdmin.importNumber)
         vadmin.applyElement().click({ force: true })
         vadmin.clearFilterElement().click({ force: true })
-     }
-     filterLessequalImpNumber(){
-        cy.wait(1000)
+    }
+    filterLessequalImpNumber() {
+        cy.wait(900)
         vadmin.addFilterElement().eq(26).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).clear({ force: true }).type(tdata.vivacityAdmin.importNumber)
         vadmin.applyElement().click({ force: true })
         vadmin.clearFilterElement().click({ force: true })
-     }
-     filterBetweenImpNumber() {
-        cy.wait(1000)
+    }
+    filterBetweenImpNumber() {
+        cy.wait(900)
         vadmin.addFilterElement().eq(26).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         cy.get('[placeholder="From"]').type(tdata.vivacityAdmin.importNumber1)
         cy.get('[placeholder="To"]').type(tdata.vivacityAdmin.importNumber)
         vadmin.applyElement().click({ force: true })
         vadmin.clearFilterElement().click({ force: true })
-     }
-     filterBlankImpNumber() {
-        cy.wait(1000)
+    }
+    filterBlankImpNumber() {
+        cy.wait(900)
         vadmin.addFilterElement().eq(26).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).clear({ force: true }).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', ' ')
         vadmin.clearFilterElement().click({ force: true })
-     }
-     filterNotblankImpNumber() {
-        cy.wait(1000)
+    }
+    filterNotblankImpNumber() {
+        cy.wait(900)
         vadmin.addFilterElement().eq(26).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(8).click({ force: true })
         vadmin.fieldValueElement().eq(1).clear({ force: true }).type(tdata.vivacityAdmin.importNumber, { force: true })
         vadmin.applyElement().click({ force: true })
         vadmin.clearFilterElement().click({ force: true })
-     }
+    }
     filterContainDevice() {
         cy.wait(2000)
         vadmin.addFilterElement().eq(27).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.device)
         vadmin.applyElement().click({ force: true })
-        cy.wait(100)
+        cy.wait(90)
         cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.device)
         vadmin.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainDevice() {
         vadmin.addFilterElement().eq(27).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.device)
         vadmin.applyElement().click({ force: true })
-        cy.wait(100)
+        cy.wait(90)
         cy.get('[row-index="0"]').should('not.contain', tdata.vivacityAdmin.device)
         vadmin.clearFilterElement().click({ force: true })
     }
     filterEqualsDevice() {
         vadmin.addFilterElement().eq(27).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.device)
         vadmin.applyElement().click({ force: true })
-        cy.wait(100)
+        cy.wait(90)
         cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.device)
         vadmin.clearFilterElement().click({ force: true })
     }
     filterNotequalDevice() {
         vadmin.addFilterElement().eq(27).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.device)
         vadmin.applyElement().click({ force: true })
-        cy.wait(100)
+        cy.wait(90)
         cy.get('[row-index="0"]').should('not.contain.value', tdata.vivacityAdmin.device)
         vadmin.clearFilterElement().click({ force: true })
     }
     filterBeginswithDevice() {
         vadmin.addFilterElement().eq(27).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('Apple')
         vadmin.applyElement().click({ force: true })
-        cy.wait(100)
+        cy.wait(90)
         cy.get('[row-index="0"]').should('contain', 'Apple')
         vadmin.clearFilterElement().click({ force: true })
     }
     filterEndswithDevice() {
         vadmin.addFilterElement().eq(27).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('Touch')
         vadmin.applyElement().click({ force: true })
-        cy.wait(100)
+        cy.wait(90)
         cy.get('[row-index="0"]').should('contain', 'Touch')
         vadmin.clearFilterElement().click({ force: true })
     }
     filterBlankDevice() {
         vadmin.addFilterElement().eq(27).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
-        cy.wait(100)
+        cy.wait(90)
         cy.get('[row-index="0"]').should('contain', ' ')
         vadmin.clearFilterElement().click({ force: true })
     }
     filterNotblankDevice() {
         vadmin.addFilterElement().eq(27).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.device, { force: true })
         vadmin.applyElement().click({ force: true })
-        cy.wait(100)
+        cy.wait(90)
         cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.device)
         vadmin.clearFilterElement().click({ force: true })
     }
     filterContainAssetsTag() {
         cy.wait(3000)
         vadmin.addFilterElement().eq(29).scrollIntoView().click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.assetsTag)
         vadmin.applyElement().click({ force: true })
-        cy.wait(100)
+        cy.wait(90)
         cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.assetsTag)
         vadmin.clearFilterElement().click({ force: true })
     }
     filterDoesnotcontainAssetsTag() {
         vadmin.addFilterElement().eq(29).scrollIntoView().click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.assetsTag)
         vadmin.applyElement().click({ force: true })
-        cy.wait(100)
+        cy.wait(90)
         cy.get('[row-index="0"]').should('not.contain', tdata.vivacityAdmin.assetsTag)
         vadmin.clearFilterElement().click({ force: true })
     }
     filterEqualsAssetsTag() {
         vadmin.addFilterElement().eq(30).scrollIntoView().click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.assetsTag)
         vadmin.applyElement().click({ force: true })
-        cy.wait(100)
+        cy.wait(90)
         cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.assetsTag)
         vadmin.clearFilterElement().click({ force: true })
     }
     filterNotequalAssetsTag() {
         vadmin.addFilterElement().eq(30).scrollIntoView().click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.assetsTag)
         vadmin.applyElement().click({ force: true })
-        cy.wait(100)
+        cy.wait(90)
         cy.get('[row-index="0"]').should('not.contain.value', tdata.vivacityAdmin.assetsTag)
         vadmin.clearFilterElement().click({ force: true })
     }
     filterBeginswithAssetsTag() {
         vadmin.addFilterElement().eq(30).scrollIntoView().click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('23-')
         vadmin.applyElement().click({ force: true })
-        cy.wait(100)
+        cy.wait(90)
         cy.get('[row-index="0"]').should('contain', '23-')
         vadmin.clearFilterElement().click({ force: true })
     }
     filterEndswithAssetsTag() {
         vadmin.addFilterElement().eq(30).scrollIntoView().click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('084')
         vadmin.applyElement().click({ force: true })
-        cy.wait(100)
+        cy.wait(90)
         cy.get('[row-index="0"]').should('contain', '084')
         vadmin.clearFilterElement().click({ force: true })
     }
     filterBlankAssetsTag() {
         vadmin.addFilterElement().eq(30).scrollIntoView().click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
-        cy.wait(100)
+        cy.wait(90)
         cy.get('[row-index="0"]').should('contain', ' ')
         vadmin.clearFilterElement().click({ force: true })
     }
     filterNotblankAssetsTag() {
         vadmin.addFilterElement().eq(30).scrollIntoView().click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.assetsTag, { force: true })
         vadmin.applyElement().click({ force: true })
-        cy.wait(100)
+        cy.wait(90)
         cy.get('[row-index="0"]').should('contain', tdata.vivacityAdmin.assetsTag)
         vadmin.clearFilterElement().click({ force: true })
     }
     filterContainAccount() {
         cy.wait(2000)
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.accountno)
         vadmin.applyElement().click({ force: true })
@@ -2263,7 +2336,7 @@ export class VivacityAdminActions {
     }
     filterDoesnotcontainAccount() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.accountno)
         vadmin.applyElement().click({ force: true })
@@ -2272,7 +2345,7 @@ export class VivacityAdminActions {
     }
     filterEqualsAccount() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.accountno)
         vadmin.applyElement().click({ force: true })
@@ -2281,7 +2354,7 @@ export class VivacityAdminActions {
     }
     filterNotequalAccount() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.accountno)
         vadmin.applyElement().click({ force: true })
@@ -2290,7 +2363,7 @@ export class VivacityAdminActions {
     }
     filterBeginswithAccount() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('aab')
         vadmin.applyElement().click({ force: true })
@@ -2299,7 +2372,7 @@ export class VivacityAdminActions {
     }
     filterEndswithAccount() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('ccc')
         vadmin.applyElement().click({ force: true })
@@ -2308,7 +2381,7 @@ export class VivacityAdminActions {
     }
     filterBlankAccount() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -2317,7 +2390,7 @@ export class VivacityAdminActions {
     }
     filterNotblankAccount() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.accountno, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -2327,7 +2400,7 @@ export class VivacityAdminActions {
     filterContainCreatedBy() {
         cy.wait(2000)
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.createdBy)
         vadmin.applyElement().click({ force: true })
@@ -2336,7 +2409,7 @@ export class VivacityAdminActions {
     }
     filterDoesnotcontainCreatedBy() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.createdBy)
         vadmin.applyElement().click({ force: true })
@@ -2345,7 +2418,7 @@ export class VivacityAdminActions {
     }
     filterEqualsCreatedBy() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.createdBy)
         vadmin.applyElement().click({ force: true })
@@ -2354,7 +2427,7 @@ export class VivacityAdminActions {
     }
     filterNotequalCreatedBy() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.createdBy)
         vadmin.applyElement().click({ force: true })
@@ -2363,7 +2436,7 @@ export class VivacityAdminActions {
     }
     filterBeginswithCreatedBy() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('Dre')
         vadmin.applyElement().click({ force: true })
@@ -2372,7 +2445,7 @@ export class VivacityAdminActions {
     }
     filterEndswithCreatedBy() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('eam')
         vadmin.applyElement().click({ force: true })
@@ -2381,7 +2454,7 @@ export class VivacityAdminActions {
     }
     filterBlankCreatedBy() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -2390,7 +2463,7 @@ export class VivacityAdminActions {
     }
     filterNotblankCreatedBy() {
         vadmin.addFilterElement().eq(22).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.createdBy, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -2398,7 +2471,7 @@ export class VivacityAdminActions {
         vadmin.clearFilterElement().click({ force: true })
     }
 
-    
+
     filterLoanerStatus1() {
         iht.addFilterElement().eq(3).click({ force: true })
         cy.get('[value="Not Set"]').click({ force: true })
@@ -2424,7 +2497,7 @@ export class VivacityAdminActions {
     filterContainUserName() {
         cy.wait(4000)
         vadmin.addFilterElement().eq(43).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.userName)
         vadmin.applyElement().click({ force: true })
@@ -2433,7 +2506,7 @@ export class VivacityAdminActions {
     }
     filterDoesnotcontainUserName() {
         vadmin.addFilterElement().eq(43).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.userName)
         vadmin.applyElement().click({ force: true })
@@ -2442,7 +2515,7 @@ export class VivacityAdminActions {
     }
     filterEqualsUserName() {
         vadmin.addFilterElement().eq(43).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.userName)
         vadmin.applyElement().click({ force: true })
@@ -2451,7 +2524,7 @@ export class VivacityAdminActions {
     }
     filterNotequalUserName() {
         vadmin.addFilterElement().eq(43).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.userName)
         vadmin.applyElement().click({ force: true })
@@ -2460,7 +2533,7 @@ export class VivacityAdminActions {
     }
     filterBeginswithUserName() {
         vadmin.addFilterElement().eq(43).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('Gadel')
         vadmin.applyElement().click({ force: true })
@@ -2469,7 +2542,7 @@ export class VivacityAdminActions {
     }
     filterEndswithUserName() {
         vadmin.addFilterElement().eq(43).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('ator')
         vadmin.applyElement().click({ force: true })
@@ -2478,7 +2551,7 @@ export class VivacityAdminActions {
     }
     filterBlankUserName() {
         vadmin.addFilterElement().eq(43).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -2487,7 +2560,7 @@ export class VivacityAdminActions {
     }
     filterNotblankUserName() {
         vadmin.addFilterElement().eq(43).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.userName, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -2497,7 +2570,7 @@ export class VivacityAdminActions {
     filterContainEmail() {
         cy.wait(2000)
         vadmin.addFilterElement().eq(44).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.emailReq)
         vadmin.applyElement().click({ force: true })
@@ -2506,7 +2579,7 @@ export class VivacityAdminActions {
     }
     filterDoesnotcontainEmail() {
         vadmin.addFilterElement().eq(44).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.emailReq)
         vadmin.applyElement().click({ force: true })
@@ -2515,7 +2588,7 @@ export class VivacityAdminActions {
     }
     filterEqualsEmail() {
         vadmin.addFilterElement().eq(44).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.emailReq)
         vadmin.applyElement().click({ force: true })
@@ -2524,7 +2597,7 @@ export class VivacityAdminActions {
     }
     filterNotequalEmail() {
         vadmin.addFilterElement().eq(44).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.emailReq)
         vadmin.applyElement().click({ force: true })
@@ -2533,7 +2606,7 @@ export class VivacityAdminActions {
     }
     filterBeginswithEmail() {
         vadmin.addFilterElement().eq(44).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('demo')
         vadmin.applyElement().click({ force: true })
@@ -2542,7 +2615,7 @@ export class VivacityAdminActions {
     }
     filterEndswithEmail() {
         vadmin.addFilterElement().eq(44).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('com')
         vadmin.applyElement().click({ force: true })
@@ -2551,7 +2624,7 @@ export class VivacityAdminActions {
     }
     filterBlankEmail() {
         vadmin.addFilterElement().eq(44).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -2560,7 +2633,7 @@ export class VivacityAdminActions {
     }
     filterNotblankEmail() {
         vadmin.addFilterElement().eq(44).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.emailReq, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -2570,7 +2643,7 @@ export class VivacityAdminActions {
     filterContainAccountNumber() {
         cy.wait(2000)
         vadmin.addFilterElement().eq(45).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.accNumber)
         vadmin.applyElement().click({ force: true })
@@ -2579,7 +2652,7 @@ export class VivacityAdminActions {
     }
     filterDoesnotcontainAccountNumber() {
         vadmin.addFilterElement().eq(45).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.accNumber)
         vadmin.applyElement().click({ force: true })
@@ -2588,7 +2661,7 @@ export class VivacityAdminActions {
     }
     filterEqualsAccountNumber() {
         vadmin.addFilterElement().eq(45).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.accNumber)
         vadmin.applyElement().click({ force: true })
@@ -2597,7 +2670,7 @@ export class VivacityAdminActions {
     }
     filterNotequalAccountNumber() {
         vadmin.addFilterElement().eq(45).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.accNumber)
         vadmin.applyElement().click({ force: true })
@@ -2606,7 +2679,7 @@ export class VivacityAdminActions {
     }
     filterBeginswithAccountNumber() {
         vadmin.addFilterElement().eq(45).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('217')
         vadmin.applyElement().click({ force: true })
@@ -2615,7 +2688,7 @@ export class VivacityAdminActions {
     }
     filterEndswithAccountNumber() {
         vadmin.addFilterElement().eq(45).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('739')
         vadmin.applyElement().click({ force: true })
@@ -2624,7 +2697,7 @@ export class VivacityAdminActions {
     }
     filterBlankAccountNumber() {
         vadmin.addFilterElement().eq(45).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -2633,7 +2706,7 @@ export class VivacityAdminActions {
     }
     filterNotblankAccountNumber() {
         vadmin.addFilterElement().eq(45).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.accNumber, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -2643,7 +2716,7 @@ export class VivacityAdminActions {
     filterContainAccountName() {
         cy.wait(2000)
         vadmin.addFilterElement().eq(46).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.accountName)
         vadmin.applyElement().click({ force: true })
@@ -2652,7 +2725,7 @@ export class VivacityAdminActions {
     }
     filterDoesnotcontainAccountName() {
         vadmin.addFilterElement().eq(46).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.accountName)
         vadmin.applyElement().click({ force: true })
@@ -2661,7 +2734,7 @@ export class VivacityAdminActions {
     }
     filterEqualsAccountName() {
         vadmin.addFilterElement().eq(46).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.accountName)
         vadmin.applyElement().click({ force: true })
@@ -2670,7 +2743,7 @@ export class VivacityAdminActions {
     }
     filterNotequalAccountName() {
         vadmin.addFilterElement().eq(46).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.accountName)
         vadmin.applyElement().click({ force: true })
@@ -2679,7 +2752,7 @@ export class VivacityAdminActions {
     }
     filterBeginswithAccountName() {
         vadmin.addFilterElement().eq(46).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('Viva')
         vadmin.applyElement().click({ force: true })
@@ -2688,7 +2761,7 @@ export class VivacityAdminActions {
     }
     filterEndswithAccountName() {
         vadmin.addFilterElement().eq(46).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('count')
         vadmin.applyElement().click({ force: true })
@@ -2697,7 +2770,7 @@ export class VivacityAdminActions {
     }
     filterBlankAccountName() {
         vadmin.addFilterElement().eq(46).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -2706,7 +2779,7 @@ export class VivacityAdminActions {
     }
     filterNotblankAccountName() {
         vadmin.addFilterElement().eq(46).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.accountName, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -2716,7 +2789,7 @@ export class VivacityAdminActions {
     filterContainStatus() {
         cy.wait(2000)
         vadmin.addFilterElement().eq(48).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.statusReq)
         vadmin.applyElement().click({ force: true })
@@ -2725,7 +2798,7 @@ export class VivacityAdminActions {
     }
     filterDoesnotcontainStatus() {
         vadmin.addFilterElement().eq(48).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.statusReq)
         vadmin.applyElement().click({ force: true })
@@ -2734,7 +2807,7 @@ export class VivacityAdminActions {
     }
     filterEqualsStatus() {
         vadmin.addFilterElement().eq(48).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.statusReq)
         vadmin.applyElement().click({ force: true })
@@ -2743,7 +2816,7 @@ export class VivacityAdminActions {
     }
     filterNotequalStatus() {
         vadmin.addFilterElement().eq(48).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.statusReq)
         vadmin.applyElement().click({ force: true })
@@ -2752,7 +2825,7 @@ export class VivacityAdminActions {
     }
     filterBeginswithStatus() {
         vadmin.addFilterElement().eq(48).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('Rej')
         vadmin.applyElement().click({ force: true })
@@ -2761,7 +2834,7 @@ export class VivacityAdminActions {
     }
     filterEndswithStatus() {
         vadmin.addFilterElement().eq(48).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('cted')
         vadmin.applyElement().click({ force: true })
@@ -2770,7 +2843,7 @@ export class VivacityAdminActions {
     }
     filterBlankStatus() {
         vadmin.addFilterElement().eq(48).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -2779,7 +2852,7 @@ export class VivacityAdminActions {
     }
     filterNotblankStatus() {
         vadmin.addFilterElement().eq(48).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.statusReq, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -2789,7 +2862,7 @@ export class VivacityAdminActions {
     filterContainQuantity() {
         cy.wait(2000)
         vadmin.addFilterElement().eq(49).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         vadmin.fieldValueElement().type(tdata.vivacityAdmin.quantity)
         vadmin.applyElement().click({ force: true })
@@ -2798,7 +2871,7 @@ export class VivacityAdminActions {
     }
     filterDoesnotcontainQuantity() {
         vadmin.addFilterElement().eq(49).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.quantity)
         vadmin.applyElement().click({ force: true })
@@ -2807,7 +2880,7 @@ export class VivacityAdminActions {
     }
     filterEqualsQuantity() {
         vadmin.addFilterElement().eq(49).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.quantity)
         vadmin.applyElement().click({ force: true })
@@ -2816,7 +2889,7 @@ export class VivacityAdminActions {
     }
     filterNotequalQuantity() {
         vadmin.addFilterElement().eq(49).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(tdata.vivacityAdmin.quantity)
         vadmin.applyElement().click({ force: true })
@@ -2825,7 +2898,7 @@ export class VivacityAdminActions {
     }
     filterBeginswithQuantity() {
         vadmin.addFilterElement().eq(49).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('159')
         vadmin.applyElement().click({ force: true })
@@ -2834,7 +2907,7 @@ export class VivacityAdminActions {
     }
     filterEndswithQuantity() {
         vadmin.addFilterElement().eq(49).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         vadmin.fieldValueElement().eq(0).type('52')
         vadmin.applyElement().click({ force: true })
@@ -2843,7 +2916,7 @@ export class VivacityAdminActions {
     }
     filterBlankQuantity() {
         vadmin.addFilterElement().eq(49).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         vadmin.fieldValueElement().eq(0).type(' ', { force: true })
         vadmin.applyElement().click({ force: true })
@@ -2852,7 +2925,7 @@ export class VivacityAdminActions {
     }
     filterNotblankQuantity() {
         vadmin.addFilterElement().eq(49).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(7).click({ force: true })
         vadmin.fieldValueElement().eq(1).type(tdata.vivacityAdmin.quantity, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -2861,7 +2934,7 @@ export class VivacityAdminActions {
     }
     filterEqualsRequestDate() {
         vadmin.addFilterElement().eq(47).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(0).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.vivacityAdmin.requestDate)
         vadmin.applyElement().click({ force: true })
@@ -2870,7 +2943,7 @@ export class VivacityAdminActions {
     }
     filterNotequalRequestDate() {
         vadmin.addFilterElement().eq(47).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(1).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.vivacityAdmin.requestDate)
         vadmin.applyElement().click({ force: true })
@@ -2879,7 +2952,7 @@ export class VivacityAdminActions {
     }
     filterBeforeRequestDate() {
         vadmin.addFilterElement().eq(47).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(2).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.vivacityAdmin.requestDate)
         vadmin.applyElement().click({ force: true })
@@ -2887,7 +2960,7 @@ export class VivacityAdminActions {
     }
     filterAfterRequestDate() {
         vadmin.addFilterElement().eq(47).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(3).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.vivacityAdmin.requestDate)
         vadmin.applyElement().click({ force: true })
@@ -2895,7 +2968,7 @@ export class VivacityAdminActions {
     }
     filterBetweenRequestDate() {
         vadmin.addFilterElement().eq(47).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(4).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(0).type(tdata.vivacityAdmin.requestDate)
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type('2024-05-19', { force: true })
@@ -2904,7 +2977,7 @@ export class VivacityAdminActions {
     }
     filterBlankRequestDate() {
         vadmin.addFilterElement().eq(47).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(5).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(1).type(tdata.vivacityAdmin.requestDate, { force: true })
         vadmin.applyElement().click({ force: true })
@@ -2913,7 +2986,7 @@ export class VivacityAdminActions {
     }
     filterNotblankRequestDate() {
         vadmin.addFilterElement().eq(47).click({ force: true })
-        vadmin.fieldNameElement().eq(10).click({ force: true })
+        vadmin.fieldNameElement().eq(9).click({ force: true })
         vadmin.fieldOpElement().eq(6).click({ force: true })
         cy.get('[placeholder="yyyy-mm-dd"]').eq(2).type(tdata.vivacityAdmin.requestDate, { force: true })
         vadmin.applyElement().click({ force: true })

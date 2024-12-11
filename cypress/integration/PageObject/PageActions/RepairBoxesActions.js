@@ -12,7 +12,7 @@ export class RepairBoxesActions {
         globalThis.rc = new VivacityRepairCenterElements();
     }
     closeTermsOfServiceWindow() {
-        dash.termsElement().contains('Dismiss').click({ force: true })
+       // dash.termsElement().contains('Agree').click({ force: true })
     }
     clickOnRepair360() {
         dash.repair360Element().click({ force: true })
@@ -133,7 +133,7 @@ export class RepairBoxesActions {
         rb.pdfIconElement().eq(0).click({ force: true })
     }
     clickOnHelpIcon() {
-        rb.filterHelpElement().eq(1).click({ force: true })
+        rb.filterHelpElement().click({ force: true })
     }
     verifyfilteringGuide() {
         cy.contains('Dream Data Filtering Guide').should('be.visible')
@@ -141,7 +141,7 @@ export class RepairBoxesActions {
     }
     clickOnSaveTableIcon() {
         cy.wait(100)
-        rb.saveIconElement().eq(1).click({ force: true })
+        rb.saveIconElement().click({ force: true })
     }
     verifySaveMessage() {
         dash.messageElement().should('contain', 'Table view preferences saved successfully!')

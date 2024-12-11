@@ -12,7 +12,7 @@ export class MyFleetActions {
    }
    closeTermsOfServiceWindow() {
       cy.wait(4000)
-      dash.termsElement().contains('Dismiss').click({ force: true })
+     // dash.termsElement().contains('Agree').click({ force: true })
    }
    clickOnManageDevices() {
       dash.managedevicesElement().click({ force: true })
@@ -109,7 +109,7 @@ export class MyFleetActions {
    }
    selectLonarStatus() {
       mf.lonarstatusElement().click()
-      cy.get('.MuiList-root > [tabindex="0"]').click()
+     // cy.get('.MuiList-root > [tabindex="0"]').click()
    }
    selectDeviceStatus() {
       mf.devicestatusElement().click()
@@ -271,49 +271,49 @@ export class MyFleetActions {
       cy.get('[type="button"]').contains('CPU Status').click({ force: true })
    }
    verifyCPUStatus() {
-      cy.get('.css-1lmgebw').contains('CPU Information').should('be.visible', { force: true })
+      cy.get('.css-1qw96cp').contains('CPU Cores Temperature').should('be.visible', { force: true })
    }
    clickOnMemory() {
       cy.get('[type="button"]').contains('Memory Information').click({ force: true })
    }
    verifyMemory() {
-      cy.get('.css-1lmgebw').contains('Memory Information').should('be.visible', { force: true })
+      cy.get('.css-1qw96cp').contains('Memory Available Over Time').should('be.visible', { force: true })
    }
    clickOnNetwork() {
       cy.get('[type="button"]').contains('Network Information').click({ force: true })
    }
    verifyNetwork() {
-      cy.get('.css-1lmgebw').contains('Network Information').should('be.visible', { force: true })
+      cy.get('.css-boebq5').eq(0).contains('Network Information').should('be.visible', { force: true })
    }
    clickOnOS() {
       cy.get('[type="button"]').contains('OS Information').click({ force: true })
    }
    verifyOS() {
-      cy.get('.css-1lmgebw').contains('OS Information').should('be.visible', { force: true })
+      cy.get('.css-sgter1').contains('OS Information').should('be.visible', { force: true })
    }
    clickOnBattery() {
       cy.get('[type="button"]').contains('Battery Information').click({ force: true })
    }
    verifyBattery() {
-      cy.get('.css-1lmgebw').contains('Battery Information').should('be.visible', { force: true })
+      cy.get('.css-boebq5').contains('Battery Information').should('be.visible', { force: true })
    }
    clickOnStorage() {
       cy.get('[type="button"]').contains('Storage Information').click({ force: true })
    }
    verifyStorage() {
-      cy.get('.css-1qw96cp').contains('Storage Information').should('be.visible', { force: true })
+      cy.get('.css-13srkaz').contains('Storage Information').should('be.visible', { force: true })
    }
    clickOnBootPerformanceReport() {
       cy.get('[type="button"]').contains('Boot Performance Report').click({ force: true })
    }
    verifyBootPerformanceReport() {
-      cy.get('.css-15j76c0').contains('Boot Performance Report').should('be.visible', { force: true })
+      cy.get('.css-boebq5').contains('Boot Performance Report').should('be.visible', { force: true })
    }
    clickOnRecentUser() {
       cy.get('[type="button"]').contains('Recent User').click({ force: true })
    }
    verifyRecentUser() {
-      cy.get('.css-1lmgebw').contains('Recent User').should('be.visible', { force: true })
+      cy.get('.css-1qw96cp').contains('Recent User').should('be.visible', { force: true })
    }
    //SN
    selectFilterSerialNumber() {

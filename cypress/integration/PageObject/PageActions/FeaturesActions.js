@@ -9,7 +9,7 @@ export class FeaturesActions {
     }
     closeTermsOfServiceWindow() {
         cy.wait(1000)
-        dash.termsElement().contains('Dismiss').click({ force: true })
+       // dash.termsElement().contains('Agree').click({ force: true })
     }
     clickOnFeatures() {
         dash.featuresElement().click({ force: true })

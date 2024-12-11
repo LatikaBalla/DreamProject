@@ -10,8 +10,8 @@ export class RepairTicketsActions {
         globalThis.rt = new RepairTicketsElements();
     }
     closeTermsOfServiceWindow() {
-        cy.wait(5000)
-        dash.termsElement().contains('Dismiss').click({ force: true })
+        cy.wait(3000)
+       // dash.termsElement().contains('Agree').click({ force: true })
     }
     clickOnRepair360() {
         dash.repair360Element().click({ force: true })
@@ -139,7 +139,7 @@ export class RepairTicketsActions {
         //cy.get('tr td').eq(1).should('contain', tdata.inHouseTicket.recordid)
     }
     clickOnLearnMore() {
-        rt.helpIconElement().eq(1).click({ force: true })
+        rt.helpIconElement().click({ force: true })
     }
     verifyfilteringGuide() {
         cy.contains('Dream Data Filtering Guide').should('be.visible')

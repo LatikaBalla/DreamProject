@@ -9,7 +9,7 @@ export class UsersActions {
         globalThis.dash = new DashboardElements();
     }
     closeTermsOfServiceWindow() {
-        dash.termsElement().contains('Dismiss').click({ force: true })
+        //dash.termsElement().contains('Agree').click({ force: true })
     }
     clickOnUsers() {
         dash.usersElement().click({ force: true })
@@ -113,7 +113,7 @@ export class UsersActions {
         user.addFilterElement().eq(0).click({ force: true })
         user.fieldNameElement().eq(1).click({ force: true })
         user.fieldOpElement().eq(2).click({ force: true })
-        user.fieldValueElement().type(tdata.users.editFullname)
+        user.fieldValueElement().eq(0).type(tdata.users.editFullname)
         user.applyElement().click({ force: true })
         cy.get('[row-index="0"]').should('contain', tdata.users.editFullname)
         cy.wait(100)

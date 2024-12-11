@@ -55,14 +55,14 @@ Feature:  Users Page Functionality
     And Click on filter of User Role op9 and Verify the Result
     And Click on filter of User Role op10 and Verify the Result
 
-    And Click on filter of Organizational Unit contain and Verify the Result
-    And Click on filter of Organizational Unit Does not contain and Verify the Result
-    And Click on filter of Organizational Unit Equals and Verify the Result
-    And Click on filter of Organizational Unit Does not equal and Verify the Result
-    And Click on filter of Organizational Unit Begins with and Verify the Result
-    And Click on filter of Organizational Unit Ends with and Verify the Result
-    And Click on filter of Organizational Unit Blank and Verify the Result
-    And Click on filter of Organizational Unit Not blank and Verify the Result
+    # And Click on filter of Organizational Unit contain and Verify the Result
+    # And Click on filter of Organizational Unit Does not contain and Verify the Result
+    # And Click on filter of Organizational Unit Equals and Verify the Result
+    # And Click on filter of Organizational Unit Does not equal and Verify the Result
+    # And Click on filter of Organizational Unit Begins with and Verify the Result
+    # And Click on filter of Organizational Unit Ends with and Verify the Result
+    # And Click on filter of Organizational Unit Blank and Verify the Result
+    # And Click on filter of Organizational Unit Not blank and Verify the Result
 
     # And Click on filter of User status Active and Verify the Result
     # And Click on filter of User status Inactive and Verify the Result

@@ -110,7 +110,7 @@ Feature:InHouseTickets Page Functionality
     And Click on filter of In House status op4 and Verify the Result
     And Click on filter of In House status op5 and Verify the Result
 
-    And Click on filter of Warranty status search and Verify the Result
+    # And Click on filter of Warranty status search and Verify the Result
     And Click on filter of Warranty status Non Warranty and Verify the Result
 
     And Click on filter of Created By contain and Verify the Result

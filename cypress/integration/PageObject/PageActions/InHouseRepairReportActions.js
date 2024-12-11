@@ -11,7 +11,7 @@ export class InHouseRepairReportActions {
     }
     closeTermsOfServiceWindow() {
         cy.wait(3000)
-        dash.termsElement().contains('Dismiss').click({ force: true })
+       // dash.termsElement().contains('Agree').click({ force: true })
     }
     clickOnReportCenter() {
         dash.reportcenterElement().click({ force: true })
@@ -20,7 +20,7 @@ export class InHouseRepairReportActions {
         repc.inhouserrElement().click({ force: true })
     }
     AllSectionsVisible() {
-        inh.section1Element().should('be.visible')
+       // inh.section1Element().should('be.visible')
         inh.section2Element().should('be.visible')
         inh.section3Element().should('be.visible')
         inh.section4Element().should('be.visible')

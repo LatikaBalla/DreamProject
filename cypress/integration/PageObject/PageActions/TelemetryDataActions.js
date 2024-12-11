@@ -11,7 +11,7 @@ export class TelemetryDataActions {
     }
     closeTermsOfServiceWindow() {
         cy.wait(3000)
-        dash.termsElement().contains('Dismiss').click({ force: true })
+       // dash.termsElement().contains('Agree').click({ force: true })
     }
     clickOnTelemetryData() {
         repc.telemetrydElement().click({ force: true })

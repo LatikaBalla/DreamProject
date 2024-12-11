@@ -12,8 +12,8 @@ export class LoanerManagementActions {
     }
     closeTermsOfServiceWindow() {
         cy.wait(5000)
-        dash.termsElement().contains('Dismiss').click({ force: true })
-        cy.wait(1000)
+    //   //  dash.termsElement().contains('Agree').click({ force: true })
+    //     cy.wait(1000)
     }
     clickOnManageDevices() {
         dash.managedevicesElement().click({ force: true })

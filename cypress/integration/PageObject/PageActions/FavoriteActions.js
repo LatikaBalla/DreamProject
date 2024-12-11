@@ -11,7 +11,7 @@ export class FavoriteActions {
     }
     closeTermsOfServiceWindow() {
         cy.wait(1000)
-        dash.termsElement().contains('Dismiss').click({ force: true })
+       // dash.termsElement().contains('Agree').click({ force: true })
     }
     clickOnRepair360() {
         dash.repair360Element().click({ force: true })

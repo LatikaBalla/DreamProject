@@ -288,7 +288,7 @@
         "updatebtn": "Save",
         "studentinfo": "#student",
         "studentid": "#student",
-        "lonarstatus": "#loaner_status",
+        "lonarstatus": "[name='loaner_status']",
         "devicestatus": "#device_status",
         "submitbtn": "Save",
         "morefilters": " More Filters",
@@ -453,7 +453,7 @@
         "repairTickets": "[data-testid='tabvr-1']",
         "repairBoxes": "[data-testid='tabvr-2']",
         "howWorks": "How Vivacity Repair Center Works",
-        "nonWarrantyRepairs": "Non-warranty Repairs"
+        "nonWarrantyRepairs": "Out-of-Warranty Repairs"
     },
     "repairTickets": {
         "title": "Repair 360",
@@ -865,7 +865,7 @@
         "photo": "img[alt='addimage']",
         "profiledetails": ".css-1dvhtlc",
         "accountdetails": ".css-1c9o6ob",
-        "emailname": ".css-tx03od"
+        "emailname": ".css-1drhpkw"
     },
     "features": {
         "title": "[name='title']",
@@ -988,7 +988,10 @@
         "clearSort": "Clear Sort",
         "helpIcon": "[data-testid='HelpIcon']", 
         "printbtn": "Print Ticket Estimate",
-        "downloadbtn": "Download Ticket Estimate"
+        "downloadbtn": "Download Ticket Estimate",
+        "imageIcon":"[data-testid='AccountCircleIcon']",
+        "optionmenu":"[role='menuitem']",
+        "adduser":"[data-testid='AddIcon']"
     },
     "landing": {
         "title": "Device and Asset Management",

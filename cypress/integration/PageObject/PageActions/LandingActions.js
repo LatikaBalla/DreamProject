@@ -9,7 +9,7 @@ export class LandingActions {
     }
     closeTermsOfServiceWindow() {
         cy.contains('Remind me Later').click({ force: true }) 
-        dash.termsElement().contains('Dismiss').click({ force: true })
+       // dash.termsElement().contains('Agree').click({ force: true })
     }
     verifyTitle() {
         lan.titleElement().should('be.visible')

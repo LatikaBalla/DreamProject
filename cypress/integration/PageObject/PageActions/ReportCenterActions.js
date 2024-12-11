@@ -9,7 +9,7 @@ export class ReportCenterActions {
     }
     closeTermsOfServiceWindow() {
         cy.wait(5000)
-        dash.termsElement().contains('Dismiss').click({ force: true })
+       // dash.termsElement().contains('Agree').click({ force: true })
     }
     verifyTitleReportCenter() {
         repc.titleElement()

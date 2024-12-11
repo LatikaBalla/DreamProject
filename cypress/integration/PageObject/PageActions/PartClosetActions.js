@@ -11,8 +11,8 @@ export class PartClosetActions {
     }
     closeTermsOfServiceWindow() {
         cy.wait(3000)
-        dash.termsElement().contains('Dismiss').click({ force: true })   
-        cy.wait(3000)
+        // dash.termsElement().contains('Agree').click({ force: true })   
+        // cy.wait(3000)
     }
     clickOnRepair360() {
         dash.repair360Element().click({ force: true }) 

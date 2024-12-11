@@ -9,7 +9,7 @@ export class ResourcesActions {
     }
     closeTermsOfServiceWindow() {
         cy.wait(3000)
-        dash.termsElement().contains('Dismiss').click({ force: true })
+       // dash.termsElement().contains('Agree').click({ force: true })
     }
     verifyTitleResources() {
         res.titleElement()

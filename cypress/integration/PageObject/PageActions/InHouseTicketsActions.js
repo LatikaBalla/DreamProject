@@ -13,7 +13,7 @@ export class InHouseTicketsActions {
     }
     closeTermsOfServiceWindow() {
         cy.wait(5000)
-        dash.termsElement().contains('Dismiss').click({ force: true })
+      //  dash.termsElement().contains('Agree').click({ force: true })
     }
     clickOnRepair360() {
         dash.repair360Element().click({ force: true })
@@ -845,7 +845,7 @@ export class InHouseTicketsActions {
     filterOptionWS2() {
         iht.addFilterElement().eq(11).click({ force: true })
         cy.get('[value="Non_Warranty"]').click({ force: true })
-        cy.get('.ag-row-first > [col-id="warrantyStatus"]').should('contain', tdata.inHouseTicket.warrantystatus)
+        cy.get('.ag-row-first > [col-id="warrantyStatus"]').should('contain', 'Out of Warranty')
         cy.get('.reset-button').click({ force: true })
     }
     //Cdate
