@@ -615,5 +615,16 @@
     "UpdatedDate": "2024-09-04",
     "UpdatedDate1": "09-04-2024",
     "SAddress": "123 Main St, NY"
+  },
+  "fleetValue": {
+    "deviceName": "HP Chromebook 14-ca023nr - Intel/4GB/32GB - Non-Touch",
+    "deviceModel": "CA023NR",
+    "sku": "4BS38UAR",
+    "quantity1": "80",
+    "quantity": "29",
+    "price":"100",
+    "price1":"200",
+    "total":"2000",
+    "total1":"5000"
   }
 }

@@ -31,6 +31,9 @@ export default class ReportCenterElements {
             timeout: 30000,
         })
     }
-
-
+    fleetValueElement() {
+        return cy.get(locator.reportCenter.fleetValue, {
+            timeout: 30000,
+        })
+    }
 }

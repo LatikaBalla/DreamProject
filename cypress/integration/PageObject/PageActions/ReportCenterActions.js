@@ -8,8 +8,7 @@ export class ReportCenterActions {
         globalThis.repc = new ReportCenterElements();
     }
     closeTermsOfServiceWindow() {
-        cy.wait(5000)
-       // dash.termsElement().contains('Agree').click({ force: true })
+        cy.wait(3000)
     }
     verifyTitleReportCenter() {
         repc.titleElement()
@@ -23,9 +22,9 @@ export class ReportCenterActions {
     deviceRepairReportTabVisible() {
         repc.devicerrElement().scrollIntoView().should('be.visible')
     }
-    nonwarrantyRepairsTabVisible() {
-        cy.get('[data-testid="ChevronLeftIcon"]').click({ force: true })
-        repc.warrantyrElement().should('be.visible')
+    fleetValueTabVisible() {
+      //  cy.get('[data-testid="ChevronLeftIcon"]').click({ force: true })
+        repc.fleetValueElement().should('be.visible')
     }
     clickOnReportCenter() {
         dash.reportcenterElement().click({ force: true })

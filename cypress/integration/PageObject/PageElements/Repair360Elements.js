@@ -26,8 +26,8 @@ export default class Repair360Elements {
             timeout: 30000,
         })
     }
-    nonwarrantyrElement(){
-        return cy.contains(locator.repair360.nonwarrantyr, {
+    fleetValueElement(){
+        return cy.get(locator.repair360.fleetValue, {
             timeout: 30000,
         })
     }

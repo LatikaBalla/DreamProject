@@ -158,7 +158,8 @@
         "vivacityrr": "[data-testid='tabrep-2']",
         "inhouserr": "[data-testid='tabrep-3']",
         "devicerr": "[data-testid='tabrep-4']",
-        "telemetryd": "[data-testid='tabrep-1']"
+        "telemetryd": "[data-testid='tabrep-1']",
+        "fleetValue": "[data-testid='tabrep-5']"
     },
     "deviceRepairReport": {
         "title": "Report Center",
@@ -268,6 +269,24 @@
         "lastWeek": "[data-test-id='tabLast_Week']",
         "lastMonth": "[data-test-id='tabLast_Month']",
         "lastYear": "[data-test-id='tabLast_Year']"
+    },
+    "fleetValue": {
+        "title": "Report Center",
+        "filters": ".css-1azrcpm",
+        "table": ".ag-layout-auto-height",
+        "sections": ".css-bv2dmt",
+        "export": "[data-testid='FileDownloadIcon']",
+        "addFilter": "[data-ref='eFilterButton']",
+        "clearFilter": "button[data-ref='resetFilterButton']",
+        "fieldName": "[data-ref='eDisplayField']",
+        "fieldOp": "[role='option']",
+        "fieldValue": "[placeholder='Filter...']",
+        "apply": "button[data-ref='applyFilterButton']",   
+        "option": "[data-ref='eMenu']",
+        "sortAscending": "Sort Ascending",
+        "sortDescending": "Sort Descending",
+        "clearSort": "Clear Sort",
+        "filterHelp": "[data-testid='HelpIcon']"
     },
     "manageDevices": {
         "title": "Devices",
@@ -446,7 +465,8 @@
         "inhouserc": "[data-testid='tabrepa-2']",
         "studentrc": "[data-testid='tabrepa-3']",
         "partcloset": "[data-testid='tabrepa-4']",
-        "nonwarrantyr": "Non-warranty Repairs"
+        "nonwarrantyr": "Non-warranty Repairs",
+        "fleetValue":"[data-testid='tabrep-5']"
     },
     "vivacityRepairCenter": {
         "title": "Vivacity Repair Center",
@@ -986,12 +1006,12 @@
         "sortAscending": "Sort Ascending",
         "sortDescending": "Sort Descending",
         "clearSort": "Clear Sort",
-        "helpIcon": "[data-testid='HelpIcon']", 
+        "helpIcon": "[data-testid='HelpIcon']",
         "printbtn": "Print Ticket Estimate",
         "downloadbtn": "Download Ticket Estimate",
-        "imageIcon":"[data-testid='AccountCircleIcon']",
-        "optionmenu":"[role='menuitem']",
-        "adduser":"[data-testid='AddIcon']"
+        "imageIcon": "[data-testid='AccountCircleIcon']",
+        "optionmenu": "[role='menuitem']",
+        "adduser": "[data-testid='AddIcon']"
     },
     "landing": {
         "title": "Device and Asset Management",

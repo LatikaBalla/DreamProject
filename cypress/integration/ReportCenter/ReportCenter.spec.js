@@ -3,13 +3,13 @@ import { ReportCenterActions } from '../PageObject/PageActions/ReportCenterActio
 import { InHouseRepairReportActions } from '../PageObject/PageActions/InHouseRepairReportActions'
 import { DeviceRepairReportActions } from '../PageObject/PageActions/DeviceRepairReportActions'
 import { VivacityRepairReportActions } from '../PageObject/PageActions/VivacityRepairReportActions'
-import { NonWarrantyRepairsActions } from '../PageObject/PageActions/NonWarrantyRepairsActions.js'
+import { FleetValueActions } from '../PageObject/PageActions/FleetValueActions.js'
 import { TelemetryDataActions } from '../PageObject/PageActions/TelemetryDataActions.js'
 const viva = new VivacityRepairReportActions()
 const dev = new DeviceRepairReportActions()
 const inh = new InHouseRepairReportActions()
 const repc = new ReportCenterActions()
-const nwr = new NonWarrantyRepairsActions()
+const fle = new FleetValueActions()
 const td = new TelemetryDataActions()
 
 Cypress.on("uncaught:exception", () => {
@@ -24,7 +24,6 @@ When('I should Sign In into the application', () => {
 Then('Close the terms of service window', () => {
     cy.wait(8000)
     repc.closeTermsOfServiceWindow()
-    cy.wait(1000)
 })
 And('Click on Report center page', () => {
     repc.clickOnReportCenter()
@@ -44,8 +43,8 @@ And('Verify the InHouseRepairReport tab should be visible', () => {
 Then('Verify the DeviceRepairReport tab should be visible', () => {
     repc.deviceRepairReportTabVisible()
 })
-And('Verify the NonwarrantyRepairs tab should be visible', () => {
-    repc.nonwarrantyRepairsTabVisible()
+And('Verify the FleetValue tab should be visible', () => {
+    repc.fleetValueTabVisible()
 })
 And('Verify the TelemetryData tab should be visible', () => {
     repc.telemetryDataTabVisible()
@@ -87,15 +86,18 @@ Then('Verify the filters should be visible', () => {
 Then('Verify history table should be visible', () => {
     dev.tableVisible()
 })
-And('Click on NonwarrantyRepairs page', () => {
-    nwr.clickOnNonWarrantyRepairs()
+And('Click on FleetValue page', () => {
+    fle.clickOnFleetValue()
 })
-Then('Verify title of NonWarrantyRepairs Page should be visible', () => {
-    nwr.verifyTitle()
+Then('Verify title of FleetValue Page should be visible', () => {
+    fle.verifyTitle()
 })
 Then('Verify table and filter should be visible', () => {
-    nwr.filtersVisible()
-    nwr.tableVisible()
+    fle.filtersVisible()
+    fle.tableVisible()
+})
+And('Verify all sections of FleetValue Page should be visible', () => {
+    fle.allsectionsVisible()
 })
 And('Click on TelemetryData page', () => {
     td.clickOnTelemetryData()
